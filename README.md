@@ -1,98 +1,6 @@
-# 🎓 Pravna Informatika - Tim 7
+# Automatska AKOMA/NtTSO Anotacija Krivičnog Zakonika
 
-## Sistem za Podršku Sudijama u Donošenju Odluka
-
-> **⚠️ VAŽNO: Projekat je refaktorisan po SOLID i Clean Architecture principima!**
-> 
-> 👉 **NOVI KORISNICI:** Pročitajte [QUICK_START.md](QUICK_START.md) ili [README_NEW.md](README_NEW.md)  
-> 👉 **POSTOJEĆI KORISNICI:** Pročitajte [MIGRATION_GUIDE.md](MIGRATION_GUIDE.md)  
-> 👉 **SVI:** Pogledajte [DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md) za kompletnu dokumentaciju
-
----
-
-## ⚡ Quick Start
-
-```bash
-# 1. Instalacija
-pip install -r requirements_refactored.txt
-
-# 2. Test (bez API-ja)
-python -c "from src.domain.entities import LegalDocument; print('✓ Works!')"
-
-# 3. Konfiguracija
-cp .env.template .env
-# Dodaj API token
-
-# 4. Pokreni (sa API-jem)
-python main_refactored.py --input zakon.txt --output test.xml --limit 5
-```
-
-**Više detalja:** [QUICK_START.md](QUICK_START.md)
-
----
-
-## 📚 Dokumentacija
-
-| Dokument | Opis |
-|----------|------|
-| **[QUICK_START.md](QUICK_START.md)** | 🚀 Brzi početak (2-10 min) |
-| **[README_NEW.md](README_NEW.md)** | 📖 Glavni README |
-| **[ARCHITECTURE.md](ARCHITECTURE.md)** | 🏗️ Arhitektura i SOLID |
-| **[MIGRATION_GUIDE.md](MIGRATION_GUIDE.md)** | 🔄 Prelazak sa starog |
-| **[DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md)** | 📑 Index dokumentacije |
-| **[examples.py](examples.py)** | 💡 6 praktičnih primera |
-
----
-
-## 🎯 Status Projekta
-
-✅ **Zadatak 1: Akoma Ntoso Anotacija** - ZAVRŠENO i REFAKTORISANO  
-🔄 **Zadatak 2-9** - Priprema za implementaciju
-
-**Detalji:** [PROJECT_STATUS.md](PROJECT_STATUS.md)
-
----
-
-## 🏗️ Nova Arhitektura
-
-```
-src/
-├── domain/          # ❤️ Čisto jezgro
-├── application/     # 🎯 Use cases  
-├── infrastructure/  # 🔧 Implementacije
-└── presentation/    # 🖥️ UI
-```
-
-**Zašto?** SOLID principi + Clean Architecture = Testabilno, Održivo, Proširivo
-
-**Detaljnije:** [ARCHITECTURE.md](ARCHITECTURE.md)
-
----
-
-## 🚀 Korišćenje
-
-### Novi Način (Preporučeno)
-
-```bash
-python main_refactored.py --input zakon.txt --output output.xml --limit 10
-```
-
-### Stari Način (I dalje radi!)
-
-```bash
-python main.py --input zakon.txt --output output.xml --limit 10
-```
-
----
-
-## 📖 Stara Dokumentacija (ispod)
-
-> ⚠️ Dokumentacija ispod je za **stari sistem** (main.py, legal_parser.py, itd.)  
-> Za **novi refaktorisani sistem** pogledaj fajlove gore!
-
----
-
-# Stari Sistem - Dokumentacija
+Sistem za automatsku semantičku anotaciju pravnih tekstova koristeći LLM.
 
 ## Arhitektura
 
@@ -102,14 +10,27 @@ zakon.txt → legal_parser → llm_annotator → akoma_exporter → output.xml
 
 ### Moduli
 
-1. **legal_parser.py** - Segmentacija zakona
-2. **llm_annotator.py** - LLM semantička anotacija  
+1. **legal_parser.py** - Segmentacija zakona na strukturne jedinice
+   - Prepoznaje: GLAVA → Član → stav → tačka
+   - Vraća hijerarhijsku strukturu
+
+2. **llm_annotator.py** - LLM semantička anotacija
+   - GitHub Models API (GPT-4o / Claude)
+   - Strukturiran JSON output
+   - Retry logika i validacija
+
 3. **akoma_exporter.py** - AKOMA Ntoso XML generisanje
+   - Kompatibilno sa AKOMA Ntoso 3.0
+   - Integracija semantičkih anotacija u XML
+
 4. **main.py** - Orchestrator pipeline
+   - CLI interface
+   - Error handling
+   - Statistika i reporting
 
-## Setup (Stari Način)
+## Setup
 
-### 1. Instaliraj
+### 1. Instaliraj dependencies
 
 ```bash
 pip install requests python-dotenv
@@ -117,10 +38,16 @@ pip install requests python-dotenv
 
 ### 2. Konfiguracija
 
+Kreiraj `.env` fajl:
+
+#### Za GitHub Models:
 ```env
-GITHUB_TOKEN=your_token
-# ILI
-OPENROUTER_API_KEY=your_key
+GITHUB_TOKEN=your_github_token_here
+```
+
+#### Za OpenRouter:
+```env
+OPENROUTER_API_KEY=your_openrouter_key_here
 ``` (GitHub Models)
 
 ```bash

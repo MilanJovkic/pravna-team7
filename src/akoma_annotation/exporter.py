@@ -145,7 +145,7 @@ class AkomaExporter:
     def _add_semantic_annotations(self, p_element: Element, annotation: SemanticAnnotation) -> None:
         if annotation.references:
             for ref in annotation.references:
-                if ref.get("type") == "internal" and "article_number" in ref:
+                if isinstance(ref, dict) and ref.get("type") == "internal" and "article_number" in ref:
                     art_num = ref["article_number"]
                     ref_elem = SubElement(p_element, "ref", href=f"#art_{art_num}")
                     ref_elem.text = ref.get("target", f"Član {art_num}")

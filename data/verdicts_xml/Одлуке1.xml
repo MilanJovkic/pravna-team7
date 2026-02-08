@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке1">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке1/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке1"/>
+                    <FRBRdate date="2015-09-10" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке1/sr@2015-09-10/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке1/sr@2015-09-10"/>
+                    <FRBRdate date="2015-09-10"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке1/sr@2015-09-10/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке1/sr@2015-09-10/!main.akn"/>
+                    <FRBRdate date="2026-02-07"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court"/>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>Одлуке1</docNumber>
+                </block>
+                <block name="date">
+                    <docDate date="2015-09-10">2015-09-10</docDate>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Osnovni sud u Podgorici oglasio je okrivljenog B. M. krivim za krivično djelo teška tjelesna povreda i osudio ga na kaznu zatvora u trajanju od 5 mjeseci, uz obavezu plaćanja troškova postupka.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Teška tjelesna povreda</p>
+                    <p>Primjena sporazuma o priznanju krivice</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#">Krivični zakonik Crne Gore</ref>
+                    <ref href="#">Zakonik o krivičnom postupku Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="#">Član 151 stav 1</ref>
+                    <ref href="#">Članovi 3, 4, 5, 13, 15, 32, 36, 42, 45, 46 Krivičnog zakonika</ref>
+                    <ref href="#">Članovi 226, 229, 303, 374 Zakonika o krivičnom postupku</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je zaključio da postoje dovoljni dokazi o krivici okrivljenog na osnovu dokaza dostavljenih od strane državnog tužioca i priznavanja krivice od strane okrivljenog.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усвојено">
+                    <p>Optuženi se oglašava krivim.</p>
+                </block>
+            </decision>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

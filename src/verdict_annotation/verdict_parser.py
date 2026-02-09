@@ -31,8 +31,10 @@ class VerdictParser:
             re.IGNORECASE
         )
         self.court_pattern = re.compile(
-            r'(Врховни суд|Виши суд|Основни суд|Апелациони суд|Привредни суд)'
-            r'(?:\s+(?:Црне\s+Горе|Подгорице|Београда))?',
+            r'((?:Врховни|Виши|Основни|Апелациони|Привредни)\s+суд'
+            r'|(?:Vrhovni|Viši|Visi|Osnovni|Apelacioni|Privredni)\s+sud)'
+            r'(?:\s+u\s+[A-ZČĆŽŠĐА-Я][\wčćžšđа-я]+)?'
+            r'(?:\s+(?:Црне\s+Горе|Crne\s+Gore))?',
             re.IGNORECASE
         )
         self.date_pattern = re.compile(
@@ -40,13 +42,25 @@ class VerdictParser:
             re.IGNORECASE
         )
         self.judge_pattern = re.compile(
-            r'[Сс]уди[јy]а:?\s+([A-ZČĆŽŠĐА-ЯШЂЧЋЖЏ][a-zčćžšđа-яшђчћжџ]+(?:\s+[A-ZČĆŽŠĐА-ЯШЂЧЋЖЏ][a-zčćžšđа-яшђчћжџ]+)*)',
+            r'(?:[Сс]уди[јy]а|[Ss]udija|[Ss]utkinja):?\s+'
+            r'([A-ZČĆŽŠĐА-ЯŠĐČĆŽ][a-zčćžšđа-яšđčćž]+(?:\s+[A-ZČĆŽŠĐА-ЯŠĐČĆŽ][a-zčćžšđа-яšđčćž]+)*)',
             re.IGNORECASE
         )
         self.article_ref_pattern = re.compile(
-            r'член(?:а|у|om)?\s+(\d+[a-z]?)',
+            r'(?:č\s*l\s*\.|čl\.|cl\.|član|члан)(?:а|у|ом)?\s*(\d+[a-z]?)',
             re.IGNORECASE
         )
+
+        self.defendant_marker = re.compile(r"okrivljeni:?", re.IGNORECASE)
+        self.victim_pattern = re.compile(
+            r'oštećen(?:i|og|a)?\s+([A-ZČĆŽŠĐА-Я]\.?\s*[A-ZČĆŽŠĐА-Я]\.|[A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+(?:\s+[A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+)*)',
+            re.IGNORECASE
+        )
+        self.applied_law_patterns = [
+            re.compile(r"Krivičn[iy] zakonik Crne Gore", re.IGNORECASE),
+            re.compile(r"Zakonik o krivičnom postupku(?: Crne Gore)?", re.IGNORECASE),
+            re.compile(r"Zakon o [A-Za-zČĆŽŠĐčćžšđ ]+", re.IGNORECASE)
+        ]
 
     def parse(self, text: str, filename: Optional[str] = None) -> VerdictMetadata:
         """
@@ -84,12 +98,38 @@ class VerdictParser:
         # Ekstraktuj sudije
         judge_matches = self.judge_pattern.findall(text)
         if judge_matches:
-            metadata.judges = [j.strip() for j in judge_matches if len(j.strip()) > 3]
+            metadata.judges = list({j.strip() for j in judge_matches if len(j.strip()) > 3})
         
         # Ekstraktuj reference na članke
         article_refs = self.article_ref_pattern.findall(text)
         if article_refs:
             metadata.article_references = [f"Član {ref}" for ref in set(article_refs)]
+
+        # Ekstraktuj stranke (okrivljeni i oštećeni)
+        defendants = self._extract_defendants(text)
+        victims = self.victim_pattern.findall(text)
+        if defendants:
+            metadata.parties["defendant"] = list({d.strip() for d in defendants})
+        if victims:
+            metadata.parties["victim"] = list({v.strip() for v in victims})
+
+        # Ekstraktuj reference na zakone
+        laws = set()
+        for pattern in self.applied_law_patterns:
+            for match in pattern.findall(text):
+                laws.add(match.strip())
+        compact = re.sub(r"\s+", "", text).upper()
+        if "KRIVIČNIZAKONIKCRNEGORE" in compact or "KRIVIČNOGZAKONIKACRNEGORE" in compact or "KRIVICNOGZAKONIKACRNEGORE" in compact:
+            laws.add("Krivični zakonik Crne Gore")
+        if (
+            "ZAKONIKOKRIVIČNOMPOSTUPKUCRNEGORE" in compact
+            or "ZAKONIKOKRIVIČNOMPOSTUPKU" in compact
+            or "ZAKONIKOKRIVICNOMPOSTUPKUCRNEGORE" in compact
+            or "ZAKONIKOKRIVICNOMPOSTUPKU" in compact
+        ):
+            laws.add("Zakonik o krivičnom postupku Crne Gore")
+        if laws:
+            metadata.legal_references = sorted(laws)
         
         # Identifikuj tip presude
         text_lower = text.lower()
@@ -113,6 +153,19 @@ class VerdictParser:
             metadata.organizations = list(set([o.strip() for o in org_matches]))
         
         return metadata
+
+    def _extract_defendants(self, text: str) -> List[str]:
+        defendants = []
+        for match in self.defendant_marker.finditer(text):
+            snippet = text[match.end():match.end() + 120]
+            initials_match = re.search(r"([A-ZČĆŽŠĐА-Я]\.\s*[A-ZČĆŽŠĐА-Я]\.)", snippet)
+            if initials_match:
+                defendants.append(initials_match.group(1).strip())
+                continue
+            name_match = re.search(r"([A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+\s+[A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+)", snippet)
+            if name_match:
+                defendants.append(name_match.group(1).strip())
+        return [d for d in defendants if len(d) >= 3]
 
     def parse_batch(self, texts: dict[str, str]) -> dict[str, VerdictMetadata]:
         """

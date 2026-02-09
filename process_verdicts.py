@@ -38,15 +38,15 @@ def main() -> None:
     parser.add_argument(
         "--provider",
         type=str,
-        default="github",
-        choices=["github", "openrouter"],
-        help="LLM provider (github ili openrouter)"
+        default="openai",
+        choices=["github", "openrouter", "openai"],
+        help="LLM provider (github, openrouter ili openai)"
     )
 
     parser.add_argument(
         "--model",
         type=str,
-        default="gpt-4o",
+        default="gpt-5-nano",
         help="Naziv LLM modela"
     )
 
@@ -75,7 +75,7 @@ def main() -> None:
     # Check .env
     env_path = Path(".env")
     if not env_path.exists():
-        print("⚠ .env fajl nije pronađen. Dodaj GITHUB_TOKEN ili OPENROUTER_API_KEY.")
+        print("⚠ .env fajl nije pronađen. Dodaj GITHUB_TOKEN, OPENROUTER_API_KEY ili OPENAI_API_KEY.")
         sys.exit(1)
 
     pipeline = VerdictAnnotationPipeline(

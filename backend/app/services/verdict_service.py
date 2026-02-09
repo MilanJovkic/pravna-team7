@@ -97,6 +97,16 @@ class VerdictService:
         
         root = verdicts[case_id]["root"]
         annotation = annotations.get(case_id, {})
+
+        xml_summary = self._find_text(root, ".//block[@name='summary']/p")
+        xml_legal_issues = self._find_all_text(root, ".//block[@name='legalIssues']/p")
+        xml_applied_laws = self._find_all_text(root, ".//block[@name='appliedLaws']/ref")
+        xml_applied_articles = self._find_all_text(root, ".//block[@name='appliedArticles']/ref")
+        xml_legal_reasoning = self._find_text(root, ".//block[@name='reasoning']/p")
+        xml_decision = self._find_text(root, ".//block[@name='verdict']/p")
+        xml_outcome = self._find_attr(root, ".//block[@name='verdict']", "outcome")
+        xml_full_text = self._find_text(root, ".//block[@name='fullText']/p")
+        fallback_summary = (xml_full_text[:300] + "...") if xml_full_text and len(xml_full_text) > 300 else xml_full_text
         
         metadata = {
             "case_id": case_id,
@@ -104,12 +114,12 @@ class VerdictService:
             "court_name": self._find_text(root, ".//docTitle"),
             "date": self._find_attr(root, ".//docDate", "date") or self._find_text(root, ".//docDate"),
             "judges": self._find_all_text(root, ".//judge"),
-            "summary": annotation.get("verdict_summary"),
-            "legal_issues": annotation.get("legal_issues", []),
-            "applied_laws": annotation.get("applied_laws", []),
-            "applied_articles": annotation.get("applied_articles", []),
-            "decision": annotation.get("decision"),
-            "outcome": annotation.get("case_outcome"),
+            "summary": annotation.get("verdict_summary") or xml_summary or fallback_summary,
+            "legal_issues": annotation.get("legal_issues") or xml_legal_issues,
+            "applied_laws": annotation.get("applied_laws") or xml_applied_laws,
+            "applied_articles": annotation.get("applied_articles") or xml_applied_articles,
+            "decision": annotation.get("decision") or xml_decision,
+            "outcome": annotation.get("case_outcome") or xml_outcome,
             "legal_concepts": annotation.get("legal_concepts", [])
         }
         

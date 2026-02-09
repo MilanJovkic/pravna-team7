@@ -20,12 +20,15 @@
                 <FRBRManifestation>
                     <FRBRthis value="/akn/me/judgment/Одлуке4/sr@2019-03-25/!main.xml"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке4/sr@2019-03-25/!main.akn"/>
-                    <FRBRdate date="2026-02-07"/>
+                    <FRBRdate date="2026-02-09"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
-            <references source="#court"/>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Nenad Vujanovi"/>
+            </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
             </classification>
@@ -35,17 +38,23 @@
                 <block name="caseNumber">
                     <docNumber>Одлуке4</docNumber>
                 </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U PODGORICI</docTitle>
+                </block>
                 <block name="date">
                     <docDate date="2019-03-25">2019-03-25</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Nenad Vujanovi</judge>
                 </block>
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Osnovni sud u Podgorici osudio je okrivljene G. V. i Z. C. za krivično djelo učestvovanje u tuči, pri čemu je drugom nanijeta teška tjelesna povreda. G. V. je osuđen na kaznu rada u javnom interesu u trajanju od 360 časova.</p>
+                    <p>Okrivljeni G. V. i Z. C. su osuđeni za učešće u tuči koja je rezultirala teškom tjelesnom povredom. Prvostepeni sud je izrekao kaznu rada u javnom interesu.</p>
                 </block>
                 <block name="legalIssues">
-                    <p>učestvovanje u tuči</p>
-                    <p>nanošenje teške tjelesne povrede</p>
+                    <p>učešće u tuči</p>
+                    <p>teška tjelesna povreda</p>
                 </block>
             </introduction>
             <background>
@@ -55,23 +64,17 @@
                 </block>
                 <block name="appliedArticles">
                     <ref href="#">Član 153</ref>
-                    <ref href="#">Član 4 stav 2</ref>
-                    <ref href="#">Član 32</ref>
-                    <ref href="#">Član 41</ref>
-                    <ref href="#">Član 42 stav 1</ref>
                     <ref href="#">Član 226</ref>
-                    <ref href="#">Član 229</ref>
-                    <ref href="#">Član 374</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da su okrivljeni svjesno učestvovali u tuči, pri čemu je oštećeni zadobio tešku tjelesnu povredu. Kazna rada u javnom interesu izrečena je kao adekvatna s obzirom na okolnosti i prethodnu osuđivanost jednog od okrivljenih.</p>
+                    <p>Sud je utvrdio da su okrivljeni svesno izvršili krivično djelo, prouzrokujući tešku povredu oštećenog.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="усвојено">
-                    <p>Optuženi se oglašavaju krivim.</p>
+                    <p>Optuženi se oglašavaju krivim</p>
                 </block>
             </decision>
         </judgmentBody>

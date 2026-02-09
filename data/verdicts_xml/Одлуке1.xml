@@ -20,12 +20,15 @@
                 <FRBRManifestation>
                     <FRBRthis value="/akn/me/judgment/Одлуке1/sr@2015-09-10/!main.xml"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке1/sr@2015-09-10/!main.akn"/>
-                    <FRBRdate date="2026-02-07"/>
+                    <FRBRdate date="2026-02-09"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
-            <references source="#court"/>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Đukovi"/>
+            </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
             </classification>
@@ -35,17 +38,23 @@
                 <block name="caseNumber">
                     <docNumber>Одлуке1</docNumber>
                 </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U PODGORICI</docTitle>
+                </block>
                 <block name="date">
                     <docDate date="2015-09-10">2015-09-10</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Đukovi</judge>
                 </block>
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Osnovni sud u Podgorici oglasio je okrivljenog B. M. krivim za krivično djelo teška tjelesna povreda i osudio ga na kaznu zatvora u trajanju od 5 mjeseci, uz obavezu plaćanja troškova postupka.</p>
+                    <p>Okrivljeni B. M. je osuđen za teško tjelesno povređivanje L. B. nakon što ga je napao pesnicama i staklenom flašom. Na osnovu priznanja krivice, izrečena mu je kazna zatvora od pet meseci.</p>
                 </block>
                 <block name="legalIssues">
-                    <p>Teška tjelesna povreda</p>
-                    <p>Primjena sporazuma o priznanju krivice</p>
+                    <p>teška tjelesna povreda</p>
+                    <p>priznanje krivice</p>
                 </block>
             </introduction>
             <background>
@@ -54,19 +63,17 @@
                     <ref href="#">Zakonik o krivičnom postupku Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="#">Član 151 stav 1</ref>
-                    <ref href="#">Članovi 3, 4, 5, 13, 15, 32, 36, 42, 45, 46 Krivičnog zakonika</ref>
-                    <ref href="#">Članovi 226, 229, 303, 374 Zakonika o krivičnom postupku</ref>
+                    <ref href="#">Član 151</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je zaključio da postoje dovoljni dokazi o krivici okrivljenog na osnovu dokaza dostavljenih od strane državnog tužioca i priznavanja krivice od strane okrivljenog.</p>
+                    <p>Sud je zaključio da su dokazi dovoljno potvrdili krivicu okrivljenog za izvršenje krivičnog dela.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="усвојено">
-                    <p>Optuženi se oglašava krivim.</p>
+                    <p>Okrivljeni B. M. se oglašava krivim.</p>
                 </block>
             </decision>
         </judgmentBody>

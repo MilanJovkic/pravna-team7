@@ -17,8 +17,8 @@ class VerdictAnnotationPipeline:
         output_xml_dir: str,
         output_json: Optional[str] = None,
         api_token: Optional[str] = None,
-        model: str = "gpt-4o",
-        provider: str = "github",
+        model: str = "gpt-5-nano",
+        provider: str = "openai",
         limit: Optional[int] = None
     ):
         self.pdf_folder = Path(pdf_folder)

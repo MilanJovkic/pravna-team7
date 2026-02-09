@@ -16,8 +16,8 @@ class AnnotationPipeline:
         output_xml: str,
         output_json: Optional[str] = None,
         api_token: Optional[str] = None,
-        model: str = "gpt-4o",
-        provider: str = "github",
+        model: str = "gpt-5-nano",
+        provider: str = "openai",
         article_limit: Optional[int] = None
     ):
         self.input_file = input_file

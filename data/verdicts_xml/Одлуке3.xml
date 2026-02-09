@@ -20,12 +20,15 @@
                 <FRBRManifestation>
                     <FRBRthis value="/akn/me/judgment/Одлуке3/sr@2019-01-24/!main.xml"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке3/sr@2019-01-24/!main.akn"/>
-                    <FRBRdate date="2026-02-07"/>
+                    <FRBRdate date="2026-02-09"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
-            <references source="#court"/>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Danijela Rajkovi"/>
+            </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
             </classification>
@@ -35,18 +38,23 @@
                 <block name="caseNumber">
                     <docNumber>Одлуке3</docNumber>
                 </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U PODGORICI</docTitle>
+                </block>
                 <block name="date">
                     <docDate date="2019-01-24">2019-01-24</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Danijela Rajkovi</judge>
                 </block>
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Osnovni sud u Podgorici proglasio je okrivljenog N. R. krivim za krivično djelo laka tjelesna povreda i izrekao mu uslovnu osudu od tri mjeseca zatvora, koja se neće izvršiti ako u roku od dvije godine ne počini novo krivično djelo.</p>
+                    <p>Okrivljeni N. R. je oglašen krivim za lakšu tjelesnu povredu i izrečena mu je uslovna osuda od tri meseca, koja se neće izvršiti ukoliko ne izvrši novo krivično delo u naredne dve godine.</p>
                 </block>
                 <block name="legalIssues">
-                    <p>laka tjelesna povreda</p>
+                    <p>izvršenje krivičnog dela</p>
                     <p>uslovna osuda</p>
-                    <p>troškovi krivičnog postupka</p>
                 </block>
             </introduction>
             <background>
@@ -55,27 +63,19 @@
                     <ref href="#">Zakonik o krivičnom postupku</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="#">Član 152 stav 2 u vezi stava 1</ref>
+                    <ref href="#">Član 152</ref>
                     <ref href="#">Član 4</ref>
                     <ref href="#">Član 32</ref>
-                    <ref href="#">Član 42 stav 1</ref>
-                    <ref href="#">Član 52</ref>
-                    <ref href="#">Član 53</ref>
-                    <ref href="#">Član 54</ref>
-                    <ref href="#">Član 226</ref>
-                    <ref href="#">Član 229</ref>
-                    <ref href="#">Član 239</ref>
-                    <ref href="#">Član 374</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da postoje dovoljni dokazi o krivici okrivljenog na osnovu prikupljenih dokaza i sporazuma o priznanju krivice zaključenog između okrivljenog, njegovog branioca i državnog tužioca.</p>
+                    <p>Sud je ocijenio da postoje dovoljni dokazi o krivici okrivljenog, te je usvojeno priznanje krivice i izrečena uslovna kazna.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="усвојено">
-                    <p>Optuženi se oglašava krivim.</p>
+                    <p>Optuženi se oglašava krivim</p>
                 </block>
             </decision>
         </judgmentBody>

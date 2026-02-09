@@ -146,17 +146,19 @@ class VerdictAkomaExporter:
                     SubElement(issues_block, "p").text = issue
 
         # Background (applied laws and articles)
-        if annotation and (annotation.applied_laws or annotation.applied_articles):
+        applied_laws = annotation.applied_laws if annotation else metadata.legal_references
+        applied_articles = annotation.applied_articles if annotation else metadata.article_references
+        if applied_laws or applied_articles:
             background = SubElement(body, "background")
             
-            if annotation.applied_laws:
+            if applied_laws:
                 laws_block = SubElement(background, "block", name="appliedLaws")
-                for law in annotation.applied_laws:
+                for law in applied_laws:
                     SubElement(laws_block, "ref", href="#").text = law
             
-            if annotation.applied_articles:
+            if applied_articles:
                 articles_block = SubElement(background, "block", name="appliedArticles")
-                for article in annotation.applied_articles:
+                for article in applied_articles:
                     SubElement(articles_block, "ref", href="#").text = article
 
         # Motivation (legal reasoning)
@@ -174,6 +176,22 @@ class VerdictAkomaExporter:
             # Add outcome as attribute
             if annotation.case_outcome:
                 decision_block.set("outcome", annotation.case_outcome)
+
+        # Parties and organizations (metadata fallback)
+        if not annotation and (metadata.parties or metadata.organizations):
+            participants = SubElement(body, "participants")
+            if metadata.parties.get("defendant"):
+                def_block = SubElement(participants, "block", name="defendants")
+                for defendant in metadata.parties["defendant"]:
+                    SubElement(def_block, "person").text = defendant
+            if metadata.parties.get("victim"):
+                vic_block = SubElement(participants, "block", name="victims")
+                for victim in metadata.parties["victim"]:
+                    SubElement(vic_block, "person").text = victim
+            if metadata.organizations:
+                org_block = SubElement(participants, "block", name="organizations")
+                for org in metadata.organizations:
+                    SubElement(org_block, "organization").text = org
 
         # Conclusions (raw text fallback if no annotation)
         if not annotation:

@@ -20,12 +20,15 @@
                 <FRBRManifestation>
                     <FRBRthis value="/akn/me/judgment/Одлуке2/sr@2024-03-19/!main.xml"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке2/sr@2024-03-19/!main.akn"/>
-                    <FRBRdate date="2026-02-07"/>
+                    <FRBRdate date="2026-02-09"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
-            <references source="#court"/>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Goran"/>
+            </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
             </classification>
@@ -35,17 +38,23 @@
                 <block name="caseNumber">
                     <docNumber>Одлуке2</docNumber>
                 </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U PODGORICI</docTitle>
+                </block>
                 <block name="date">
                     <docDate date="2024-03-19">2024-03-19</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Goran</judge>
                 </block>
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni K.B. oglašen je krivim za krivično djelo teške tjelesne povrede prema članu 151 stav 1 Krivičnog zakonika Crne Gore i osuđen na kaznu rada u javnom interesu u trajanju od 120 časova.</p>
+                    <p>Okrivljeni K. B. je proglašen krivim za teško tjelesno povređivanje oštećenog K. N. suprotno odredbama Krivičnog zakonika. On je osuđen na rad u javnom interesu i obavezan je da plati troškove.</p>
                 </block>
                 <block name="legalIssues">
-                    <p>Teška tjelesna povreda</p>
-                    <p>Primjena kazne rada u javnom interesu</p>
+                    <p>teško tjelesno povređivanje</p>
+                    <p>priznavanje krivice</p>
                 </block>
             </introduction>
             <background>
@@ -54,26 +63,18 @@
                     <ref href="#">Zakonik o krivičnom postupku</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="#">Član 151 stav 1</ref>
-                    <ref href="#">Član 4 stav 2</ref>
-                    <ref href="#">Član 32</ref>
-                    <ref href="#">Član 41</ref>
-                    <ref href="#">Član 42</ref>
+                    <ref href="#">Član 151</ref>
                     <ref href="#">Član 226</ref>
-                    <ref href="#">Član 229</ref>
-                    <ref href="#">Član 227</ref>
-                    <ref href="#">Član 239</ref>
-                    <ref href="#">Član 303 stav 1</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je okrivljeni bio svjestan zabranjenosti svog djela i htio njegovo izvršenje, te je primijenio kaznu rada u javnom interesu kao odgovarajuću sankciju.</p>
+                    <p>Sud je ustanovio da je okrivljeni delovao sa namerom i bio svestan posledica svog dela, te su primenjeni zakonski propisi.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="усвојено">
-                    <p>Optuženi se oglašava krivim.</p>
+                    <p>Optuženi se oglašava krivim</p>
                 </block>
             </decision>
         </judgmentBody>

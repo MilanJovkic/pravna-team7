@@ -17,10 +17,11 @@ def ensure_env_file() -> None:
         "# API tokens for annotation providers\n"
         "GITHUB_TOKEN=your_github_token_here\n"
         "OPENROUTER_API_KEY=your_openrouter_key_here\n"
+        "OPENAI_API_KEY=your_openai_key_here\n"
     )
 
     print("⚠ .env fajl nije pronađen. Kreirao sam .env sa placeholder vrednostima.")
-    print("  Dodaj svoj GitHub ili OpenRouter token i pokreni ponovo.")
+    print("  Dodaj svoj OpenAI, GitHub ili OpenRouter token i pokreni ponovo.")
     sys.exit(1)
 
 
@@ -53,15 +54,15 @@ def main() -> None:
     parser.add_argument(
         "--provider",
         type=str,
-        default="github",
-        choices=["github", "openrouter"],
-        help="LLM provider (github ili openrouter)"
+        default="openai",
+        choices=["github", "openrouter", "openai"],
+        help="LLM provider (github, openrouter ili openai)"
     )
 
     parser.add_argument(
         "--model",
         type=str,
-        default="gpt-4o",
+        default="gpt-5-nano",
         help="Naziv LLM modela (npr. gpt-4o ili tngtech/deepseek-... )"
     )
 

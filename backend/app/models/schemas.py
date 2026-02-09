@@ -6,12 +6,15 @@ from pydantic import BaseModel, Field
 class LawArticle(BaseModel):
     """Model for a law article."""
     number: str
+    chapter_number: Optional[str] = None
     title: Optional[str] = None
     content: str
     norm_type: Optional[str] = None
     subjects: List[str] = Field(default_factory=list)
     legal_concepts: List[str] = Field(default_factory=list)
     sanctions: Optional[Dict[str, Any]] = None
+    conditions: List[str] = Field(default_factory=list)
+    references: List[Dict[str, Any]] = Field(default_factory=list)
 
 
 class LawChapter(BaseModel):

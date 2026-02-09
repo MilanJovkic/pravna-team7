@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { VerdictService } from '../services/verdict.service';
+import { LawService } from '../services/law.service';
 import { VerdictDetail } from '../models/models';
 
 @Component({
@@ -54,13 +55,23 @@ import { VerdictDetail } from '../models/models';
         <div class="section" *ngIf="verdict.applied_articles && verdict.applied_articles.length > 0">
           <h3>Primenjeni članci</h3>
           <div class="law-list">
-            <span *ngFor="let article of verdict.applied_articles" class="article-badge">{{ article }}</span>
+            <button
+              *ngFor="let link of appliedArticleLinks"
+              class="article-badge link-badge"
+              [title]="link.source"
+              (click)="openArticle(link.number)">
+              Član {{ link.number }}
+            </button>
           </div>
+          <div class="navigation-hint" *ngIf="appliedArticleLinks.length === 0">
+            Nema referenci na Krivični zakonik u dostupnim podacima.
+          </div>
+          <div class="navigation-error" *ngIf="navigationError">{{ navigationError }}</div>
         </div>
         
         <div class="section" *ngIf="verdict.legal_reasoning">
           <h3>Pravno obrazloženje</h3>
-          <p>{{ verdict.legal_reasoning }}</p>
+          <div class="reasoning-text" [innerHTML]="formatTextWithLinks(verdict.legal_reasoning)"></div>
         </div>
         
         <div class="section" *ngIf="verdict.decision">
@@ -91,7 +102,7 @@ import { VerdictDetail } from '../models/models';
 
         <div class="section" *ngIf="verdict.full_text">
           <h3>Kompletan tekst presude</h3>
-          <pre class="full-text">{{ verdict.full_text }}</pre>
+          <div class="full-text" [innerHTML]="formatTextWithLinks(verdict.full_text)"></div>
         </div>
       </div>
       
@@ -193,6 +204,23 @@ import { VerdictDetail } from '../models/models';
       line-height: 1.8;
       color: #555;
     }
+
+    .reasoning-text {
+      line-height: 1.8;
+      color: #555;
+      white-space: pre-wrap;
+    }
+
+    .reasoning-text :deep(a) {
+      color: #3498db;
+      text-decoration: underline;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .reasoning-text :deep(a):hover {
+      color: #2980b9;
+    }
     
     .section ul {
       list-style-type: disc;
@@ -227,6 +255,17 @@ import { VerdictDetail } from '../models/models';
       background: #f3e5f5;
       color: #6a1b9a;
     }
+
+    .link-badge {
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .link-badge:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
     
     .concept-badge {
       background: #fff3e0;
@@ -256,6 +295,30 @@ import { VerdictDetail } from '../models/models';
       max-height: 520px;
       overflow: auto;
     }
+
+    .full-text :deep(a) {
+      color: #3498db;
+      text-decoration: underline;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .full-text :deep(a):hover {
+      color: #2980b9;
+      background: rgba(52, 152, 219, 0.1);
+    }
+
+    .navigation-error {
+      margin-top: 10px;
+      color: #c0392b;
+      font-size: 14px;
+    }
+
+    .navigation-hint {
+      margin-top: 10px;
+      color: #7f8c8d;
+      font-size: 14px;
+    }
     
     .loading, .error {
       text-align: center;
@@ -271,12 +334,15 @@ export class VerdictDetailComponent implements OnInit {
   verdict?: VerdictDetail;
   loading = true;
   error = '';
+  navigationError = '';
   objectKeys = Object.keys;
+  appliedArticleLinks: Array<{ number: string; source: string }> = [];
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private verdictService: VerdictService
+    private verdictService: VerdictService,
+    private lawService: LawService
   ) {}
 
   ngOnInit() {
@@ -284,12 +350,29 @@ export class VerdictDetailComponent implements OnInit {
     if (caseId) {
       this.loadVerdict(caseId);
     }
+
+    // Handle clicks on article links in content
+    setTimeout(() => {
+      document.addEventListener('click', (e: Event) => {
+        const target = e.target as HTMLElement;
+        if (target.tagName === 'A' && target.hasAttribute('data-article')) {
+          e.preventDefault();
+          const articleNumber = target.getAttribute('data-article');
+          if (articleNumber) {
+            this.openArticle(articleNumber);
+          }
+        }
+      });
+    }, 0);
   }
 
   loadVerdict(caseId: string) {
     this.verdictService.getVerdict(caseId).subscribe({
       next: (data) => {
         this.verdict = data;
+        this.appliedArticleLinks = this.buildAppliedArticleLinks(
+          data.applied_articles || []
+        );
         this.loading = false;
       },
       error: (err) => {
@@ -302,5 +385,72 @@ export class VerdictDetailComponent implements OnInit {
 
   goBack() {
     this.router.navigate(['/verdicts']);
+  }
+
+  buildAppliedArticleLinks(appliedArticles: string[]) {
+    const links: Array<{ number: string; source: string }> = [];
+    const seen = new Set<string>();
+
+    for (const reference of appliedArticles) {
+      if (!this.isCriminalCodeReference(reference)) {
+        continue;
+      }
+      const numbers = this.extractArticleNumbers(reference);
+      for (const number of numbers) {
+        const key = number.toLowerCase();
+        if (!seen.has(key)) {
+          seen.add(key);
+          links.push({ number, source: reference });
+        }
+      }
+    }
+
+    return links;
+  }
+
+  isCriminalCodeReference(reference: string): boolean {
+    const lower = reference.toLowerCase();
+    if (lower.includes('zakonika o krivičnom postupku')) {
+      return false;
+    }
+    if (lower.includes('krivičnog zakonika') || lower.includes('krivični zakonik')) {
+      return true;
+    }
+    return true;
+  }
+
+  extractArticleNumbers(reference: string): string[] {
+    const matches: string[] = [];
+    const pattern = /[ČC]lan(?:ovi)?\s+([0-9a-zA-Z ,.-]+)/gi;
+    let result: RegExpExecArray | null;
+
+    while ((result = pattern.exec(reference)) !== null) {
+      let block = result[1];
+      block = block.split(/stav|u\s+vezi|krivičnog|zakonika|zakon|zkp|zpp/i)[0];
+      const numbers = block.match(/\d+[a-zA-Z]?/g);
+      if (numbers) {
+        matches.push(...numbers);
+      }
+    }
+
+    return matches;
+  }
+
+  openArticle(articleNumber: string) {
+    this.navigationError = '';
+    this.router.navigate(['/laws/article', articleNumber]);
+  }
+
+  formatTextWithLinks(text: string): string {
+    if (!text) {
+      return '';
+    }
+
+    // Match patterns like "član 143", "člana 144", "članu 145", etc.
+    const pattern = /\b[čc]lan(?:a|u|om)?\s+(\d+[a-z]?)\b/gi;
+    
+    return text.replace(pattern, (match, articleNumber) => {
+      return `<a data-article="${articleNumber}">${match}</a>`;
+    });
   }
 }

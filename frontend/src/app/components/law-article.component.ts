@@ -2,67 +2,65 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { LawService } from '../services/law.service';
-import { LawChapter, LawArticle } from '../models/models';
+import { LawArticle } from '../models/models';
 
 @Component({
-  selector: 'app-law-detail',
+  selector: 'app-law-article',
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
     <div class="container">
       <button class="back-btn" (click)="goBack()">← Nazad</button>
-      
-      <div *ngIf="chapter" class="chapter-detail">
-        <h2>{{ chapter.title }}</h2>
-        <p class="chapter-number">Glava {{ chapter.number }}</p>
-        
-        <div class="articles">
-          <div *ngFor="let article of chapter.articles"
-               class="article-card"
-               [attr.id]="'article-' + article.number"
-               [class.focused]="isFocused(article.number)">
-            <div class="article-header">
-              <h3>Član {{ article.number }}</h3>
-              <button class="detail-btn" (click)="openArticle(article.number)">Detalji</button>
-            </div>
-            <h4 *ngIf="article.title">{{ article.title }}</h4>
-            <p class="article-content">{{ article.content }}</p>
-            
-            <div class="metadata" *ngIf="hasMetadata(article)">
-              <div *ngIf="article.norm_type" class="meta-item">
-                <strong>Tip norme:</strong> {{ article.norm_type }}
-              </div>
-              <div *ngIf="article.conditions && article.conditions.length > 0" class="meta-item">
-                <strong>Uslovi:</strong> {{ article.conditions.join(', ') }}
-              </div>
-              <div *ngIf="article.subjects && article.subjects.length > 0" class="meta-item">
-                <strong>Subjekti:</strong> {{ article.subjects.join(', ') }}
-              </div>
-              <div *ngIf="article.legal_concepts && article.legal_concepts.length > 0" class="meta-item">
-                <strong>Pravni koncepti:</strong> {{ article.legal_concepts.join(', ') }}
-              </div>
-              <div *ngIf="article.references && article.references.length > 0" class="meta-item">
-                <strong>Reference:</strong>
-                <div class="references-list">
-                  <ng-container *ngFor="let refLink of getArticleReferences(article)">
-                    <button
-                      *ngIf="refLink.articleNumber"
-                      class="reference-link"
-                      (click)="navigateToArticle(refLink.articleNumber)"
-                      [title]="refLink.original">
-                      {{ refLink.label }}
-                    </button>
-                    <span *ngIf="!refLink.articleNumber" class="reference-text">
-                      {{ refLink.label }}
-                    </span>
-                  </ng-container>
-                </div>
-              </div>
+
+      <div *ngIf="article" class="article-detail">
+        <div class="article-header">
+          <div>
+            <h2>Član {{ article.number }}</h2>
+            <p class="article-title" *ngIf="article.title">{{ article.title }}</p>
+          </div>
+          <button
+            class="secondary-btn"
+            *ngIf="article.chapter_number"
+            (click)="goToChapter(article.chapter_number)">
+            Glava {{ article.chapter_number }}
+          </button>
+        </div>
+
+        <pre class="article-content">{{ article.content }}</pre>
+
+        <div class="metadata" *ngIf="hasMetadata(article)">
+          <div *ngIf="article.norm_type" class="meta-item">
+            <strong>Tip norme:</strong> {{ article.norm_type }}
+          </div>
+          <div *ngIf="article.conditions && article.conditions.length > 0" class="meta-item">
+            <strong>Uslovi:</strong> {{ article.conditions.join(', ') }}
+          </div>
+          <div *ngIf="article.subjects && article.subjects.length > 0" class="meta-item">
+            <strong>Subjekti:</strong> {{ article.subjects.join(', ') }}
+          </div>
+          <div *ngIf="article.legal_concepts && article.legal_concepts.length > 0" class="meta-item">
+            <strong>Pravni koncepti:</strong> {{ article.legal_concepts.join(', ') }}
+          </div>
+          <div *ngIf="article.references && article.references.length > 0" class="meta-item">
+            <strong>Reference:</strong>
+            <div class="references-list">
+              <ng-container *ngFor="let refLink of parsedReferences">
+                <button
+                  *ngIf="refLink.articleNumber"
+                  class="reference-link"
+                  (click)="navigateToArticle(refLink.articleNumber)"
+                  [title]="refLink.original">
+                  {{ refLink.label }}
+                </button>
+                <span *ngIf="!refLink.articleNumber" class="reference-text">
+                  {{ refLink.label }}
+                </span>
+              </ng-container>
             </div>
           </div>
         </div>
       </div>
-      
+
       <div *ngIf="loading" class="loading">Učitavanje...</div>
       <div *ngIf="error" class="error">{{ error }}</div>
     </div>
@@ -73,7 +71,7 @@ import { LawChapter, LawArticle } from '../models/models';
       max-width: 1200px;
       margin: 0 auto;
     }
-    
+
     .back-btn {
       background: #3498db;
       color: white;
@@ -83,95 +81,76 @@ import { LawChapter, LawArticle } from '../models/models';
       cursor: pointer;
       margin-bottom: 20px;
     }
-    
+
     .back-btn:hover {
       background: #2980b9;
     }
-    
-    .chapter-detail h2 {
-      color: #2c3e50;
-      margin-bottom: 5px;
-    }
-    
-    .chapter-number {
-      color: #7f8c8d;
-      margin-bottom: 30px;
-    }
-    
-    .articles {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    
-    .article-card {
+
+    .article-detail {
       background: white;
-      border: 1px solid #ddd;
       border-radius: 8px;
-      padding: 20px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     .article-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 8px;
+      gap: 12px;
+      margin-bottom: 20px;
     }
 
-    .detail-btn {
+    .article-header h2 {
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    .article-title {
+      margin: 5px 0 0 0;
+      color: #34495e;
+      font-weight: 500;
+    }
+
+    .secondary-btn {
       background: #ecf0f1;
       color: #2c3e50;
       border: none;
-      padding: 6px 12px;
+      padding: 8px 14px;
       border-radius: 5px;
       cursor: pointer;
       font-size: 13px;
       font-weight: 600;
+      white-space: nowrap;
     }
 
-    .detail-btn:hover {
+    .secondary-btn:hover {
       background: #dfe6e9;
     }
 
-    .article-card.focused {
-      border-color: #3498db;
-      box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
-      background: #f8fbff;
-    }
-    
-    .article-card h3 {
-      color: #2c3e50;
-      margin: 0 0 5px 0;
-    }
-    
-    .article-card h4 {
-      color: #34495e;
-      margin: 0 0 15px 0;
-      font-weight: 500;
-    }
-    
     .article-content {
+      white-space: pre-wrap;
       line-height: 1.6;
       color: #2c3e50;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      font-family: inherit;
     }
-    
+
     .metadata {
       background: #f8f9fa;
       padding: 15px;
       border-radius: 5px;
       margin-top: 15px;
     }
-    
+
     .meta-item {
       margin-bottom: 10px;
     }
-    
+
     .meta-item:last-child {
       margin-bottom: 0;
     }
-    
+
     .meta-item strong {
       color: #34495e;
     }
@@ -215,22 +194,22 @@ import { LawChapter, LawArticle } from '../models/models';
       border-radius: 5px;
       font-size: 13px;
     }
-    
+
     .loading, .error {
       text-align: center;
       padding: 40px;
     }
-    
+
     .error {
       color: #e74c3c;
     }
   `]
 })
-export class LawDetailComponent implements OnInit {
-  chapter?: LawChapter;
+export class LawArticleComponent implements OnInit {
+  article?: LawArticle;
   loading = true;
   error = '';
-  focusedArticle: string | null = null;
+  parsedReferences: Array<{ label: string; articleNumber: string | null; original: string }> = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -239,27 +218,24 @@ export class LawDetailComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    const chapterNumber = this.route.snapshot.paramMap.get('id');
-    this.route.queryParamMap.subscribe((params) => {
-      this.focusedArticle = params.get('focus');
-      if (this.chapter) {
-        this.scrollToFocused();
+    // Subscribe to route parameter changes to handle navigation within same component
+    this.route.paramMap.subscribe(params => {
+      const articleNumber = params.get('id');
+      if (articleNumber) {
+        this.loadArticle(articleNumber);
       }
     });
-    if (chapterNumber) {
-      this.loadChapter(chapterNumber);
-    }
   }
 
-  loadChapter(chapterNumber: string) {
-    this.lawService.getChapter(chapterNumber).subscribe({
+  loadArticle(articleNumber: string) {
+    this.lawService.getArticle(articleNumber).subscribe({
       next: (data) => {
-        this.chapter = data;
+        this.article = data;
+        this.parsedReferences = this.parseReferences(data.references || []);
         this.loading = false;
-        this.scrollToFocused();
       },
       error: (err) => {
-        this.error = 'Greška pri učitavanju glave';
+        this.error = 'Greška pri učitavanju člana';
         this.loading = false;
         console.error(err);
       }
@@ -267,28 +243,11 @@ export class LawDetailComponent implements OnInit {
   }
 
   hasMetadata(article: LawArticle): boolean {
-    return !!(article.norm_type || 
+    return !!(article.norm_type ||
       (article.conditions && article.conditions.length > 0) ||
       (article.subjects && article.subjects.length > 0) ||
       (article.legal_concepts && article.legal_concepts.length > 0) ||
       (article.references && article.references.length > 0));
-  }
-
-  isFocused(articleNumber: string): boolean {
-    return !!this.focusedArticle && this.focusedArticle === articleNumber;
-  }
-
-  scrollToFocused() {
-    if (!this.focusedArticle) {
-      return;
-    }
-
-    setTimeout(() => {
-      const element = document.getElementById(`article-${this.focusedArticle}`);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }, 0);
   }
 
   formatReference(reference: Record<string, any>): string {
@@ -311,14 +270,10 @@ export class LawDetailComponent implements OnInit {
     return JSON.stringify(reference);
   }
 
-  getArticleReferences(article: LawArticle): Array<{ label: string; articleNumber: string | null; original: string }> {
-    return this.parseReferences(article.references || []);
-  }
-
   parseReferences(references: Array<Record<string, any>>): Array<{ label: string; articleNumber: string | null; original: string }> {
     const parsed: Array<{ label: string; articleNumber: string | null; original: string }> = [];
     
-    console.log('Raw references from backend (chapter view):', references);
+    console.log('Raw references from backend:', references);
     
     for (const ref of references) {
       const original = this.formatReference(ref);
@@ -400,7 +355,7 @@ export class LawDetailComponent implements OnInit {
     this.router.navigate(['/laws']);
   }
 
-  openArticle(articleNumber: string) {
-    this.router.navigate(['/laws/article', articleNumber]);
+  goToChapter(chapterNumber: string) {
+    this.router.navigate(['/laws/chapter', chapterNumber]);
   }
 }

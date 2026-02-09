@@ -1,11 +1,14 @@
 export interface LawArticle {
   number: string;
+  chapter_number?: string;
   title?: string;
   content: string;
   norm_type?: string;
   subjects?: string[];
   legal_concepts?: string[];
   sanctions?: any;
+  conditions?: string[];
+  references?: Array<Record<string, any>>;
 }
 
 export interface LawChapter {

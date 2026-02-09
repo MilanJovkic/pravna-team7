@@ -5,7 +5,7 @@ from pathlib import Path
 
 from src.verdict_annotation.verdict_pipeline import VerdictAnnotationPipeline
 
-DEFAULT_PDF_FOLDER = Path("data/verdicts_pdf")
+DEFAULT_TXT_FOLDER = Path("data/verdicts_txt")
 DEFAULT_XML_OUTPUT = Path("data/verdicts_xml")
 
 
@@ -15,10 +15,10 @@ def main() -> None:
     )
 
     parser.add_argument(
-        "--pdf-folder",
+        "--txt-folder",
         type=str,
-        default=str(DEFAULT_PDF_FOLDER),
-        help="Folder sa PDF presudama (default: data/verdicts_pdf)"
+        default=str(DEFAULT_TXT_FOLDER),
+        help="Folder sa TXT presudama (default: data/verdicts_txt)"
     )
 
     parser.add_argument(
@@ -44,6 +44,12 @@ def main() -> None:
     )
 
     parser.add_argument(
+        "--no-llm",
+        action="store_true",
+        help="Isključi LLM anotaciju (samo regex ekstrakcija)"
+    )
+
+    parser.add_argument(
         "--model",
         type=str,
         default="gpt-5-nano",
@@ -57,34 +63,44 @@ def main() -> None:
         help="Limit broja presuda za testiranje"
     )
 
+    parser.add_argument(
+        "--overrides",
+        type=str,
+        default=None,
+        help="JSON fajl za rucne korekcije metadata/faktickog stanja"
+    )
+
     args = parser.parse_args()
 
-    pdf_folder = Path(args.pdf_folder)
-    if not pdf_folder.exists():
-        print(f"✗ Folder '{pdf_folder}' ne postoji.")
+    txt_folder = Path(args.txt_folder)
+    if not txt_folder.exists():
+        print(f"✗ Folder '{txt_folder}' ne postoji.")
         sys.exit(1)
 
-    # Check for PDFs
-    pdf_files = list(pdf_folder.glob("*.pdf"))
-    if not pdf_files:
-        print(f"✗ Nema PDF fajlova u {pdf_folder}")
+    # Check for TXT files
+    txt_files = list(txt_folder.glob("*.txt"))
+    if not txt_files:
+        print(f"✗ Nema TXT fajlova u {txt_folder}")
         sys.exit(1)
 
-    print(f"Pronađeno {len(pdf_files)} PDF fajlova.")
+    print(f"Pronađeno {len(txt_files)} TXT fajlova.")
 
-    # Check .env
-    env_path = Path(".env")
-    if not env_path.exists():
-        print("⚠ .env fajl nije pronađen. Dodaj GITHUB_TOKEN, OPENROUTER_API_KEY ili OPENAI_API_KEY.")
-        sys.exit(1)
+    if not args.no_llm:
+        # Check .env
+        env_path = Path(".env")
+        if not env_path.exists():
+            print("⚠ .env fajl nije pronađen. Dodaj GITHUB_TOKEN, OPENROUTER_API_KEY ili OPENAI_API_KEY.")
+            sys.exit(1)
 
     pipeline = VerdictAnnotationPipeline(
-        pdf_folder=str(pdf_folder),
+        txt_folder=str(txt_folder),
         output_xml_dir=args.output_dir,
         output_json=args.output_json,
         model=args.model,
         provider=args.provider,
-        limit=args.limit
+        limit=args.limit,
+        overrides_file=args.overrides,
+        enable_llm=not args.no_llm
     )
 
     success = pipeline.run()

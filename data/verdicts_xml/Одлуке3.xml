@@ -6,28 +6,34 @@
                 <FRBRWork>
                     <FRBRthis value="/akn/me/judgment/Одлуке3/!main"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке3"/>
-                    <FRBRdate date="2019-01-24" name="judgment"/>
+                    <FRBRdate date="2015-09-10" name="judgment"/>
                     <FRBRauthor href="#court"/>
                     <FRBRcountry value="me"/>
                 </FRBRWork>
                 <FRBRExpression>
-                    <FRBRthis value="/akn/me/judgment/Одлуке3/sr@2019-01-24/!main"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке3/sr@2019-01-24"/>
-                    <FRBRdate date="2019-01-24"/>
+                    <FRBRthis value="/akn/me/judgment/Одлуке3/sr@2015-09-10/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке3/sr@2015-09-10"/>
+                    <FRBRdate date="2015-09-10"/>
                     <FRBRauthor href="#court"/>
                     <FRBRlanguage language="sr"/>
                 </FRBRExpression>
                 <FRBRManifestation>
-                    <FRBRthis value="/akn/me/judgment/Одлуке3/sr@2019-01-24/!main.xml"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке3/sr@2019-01-24/!main.akn"/>
+                    <FRBRthis value="/akn/me/judgment/Одлуке3/sr@2015-09-10/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке3/sr@2015-09-10/!main.akn"/>
                     <FRBRdate date="2026-02-09"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
             <references source="#court">
-                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U PODGORICI"/>
-                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Danijela Rajkovi"/>
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni Sud u Podgorici"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Đuković Goranu"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Đuković Goran"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="B. M."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="L. B."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="adv"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore" showAs="Zakonik o krivičnom postupku Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -36,41 +42,51 @@
         <judgmentBody>
             <header>
                 <block name="caseNumber">
-                    <docNumber>Одлуке3</docNumber>
+                    <docNumber>K.br. 617/13</docNumber>
                 </block>
                 <block name="court">
-                    <docTitle>OSNOVNI SUD U PODGORICI</docTitle>
+                    <docTitle>Osnovni Sud u Podgorici</docTitle>
                 </block>
                 <block name="date">
-                    <docDate date="2019-01-24">2019-01-24</docDate>
+                    <docDate date="2015-09-10">2015-09-10</docDate>
                 </block>
                 <block name="judges">
-                    <judge>Danijela Rajkovi</judge>
+                    <judge>Đuković Goranu</judge>
+                    <judge>Đuković Goran</judge>
                 </block>
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni N. R. je oglašen krivim za lakšu tjelesnu povredu i izrečena mu je uslovna osuda od tri meseca, koja se neće izvršiti ukoliko ne izvrši novo krivično delo u naredne dve godine.</p>
+                    <p>Okrivljeni B. M. je osuđen za tešku tjelesnu povredu L. B. nakon međusobne svađe, nanijevši mu ozbiljne povrede. Presuda uključuje kaznu zatvora od 5 mjeseci.</p>
                 </block>
                 <block name="legalIssues">
-                    <p>izvršenje krivičnog dela</p>
-                    <p>uslovna osuda</p>
+                    <p>priznavanje krivice</p>
+                    <p>teška tjelesna povreda</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#">Krivični zakonik Crne Gore</ref>
-                    <ref href="#">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_1">Zakonik o krivičnom postupku Crne Gore</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="#">Član 152</ref>
-                    <ref href="#">Član 4</ref>
-                    <ref href="#">Član 32</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_46">Član 46</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_19">Član 19</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_303">Član 303</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_3">Član 3</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je ocijenio da postoje dovoljni dokazi o krivici okrivljenog, te je usvojeno priznanje krivice i izrečena uslovna kazna.</p>
+                    <p>Sud je utvrdio da je okrivljeni u vrijeme i na način opisan u presudi izvršio krivično djelo teška tjelesna povreda.</p>
                 </block>
             </motivation>
             <decision>
@@ -78,6 +94,185 @@
                     <p>Optuženi se oglašava krivim</p>
                 </block>
             </decision>
+            <participants>
+                <block name="defendants">
+                    <person>B. M.</person>
+                </block>
+                <block name="victims">
+                    <person>L. B.</person>
+                    <person>adv</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Podgorici Kv</fact>
+                <fact key="weapon">staklena flaša</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>Osnovni Sud u Podgorici
+K 617/2013
+10. Септембар 2015
+
+ 
+
+K.br.617/13
+
+
+ 
+
+U IME CRNE GORE
+
+ 
+
+OSNOVNI SUD U PODGORICI, po sudiji Đuković Goranu, uz učešće namještenika suda Maraš Ane, kao zapisničara, u krivičnom predmetu protiv okrivljenog B. M., zbog krivičnog djela teška tjelesna povreda iz čl.151 st.1 Krivičnog zakonika Crne Gore, nakon pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice, dana 10.09.2015. godine donio je
+
+ 
+
+P R E S U D U
+
+ 
+
+Okrivljeni: B. M., od oca S. i majke R., rodjene S., rodjen ... godine u P., sa prebivalištem u P. ulica Lj. Ć. br.., nepaposlen, neoženjen, osudjivan presudom Višeg suda u Podgorici Kv.br.949/07 od 01.03.2008. godine, zbog krivičnog djela iz čl.300 st.1 KZ CG, u vezi čl.19 KZJ i čl.151 st.1 KZ CG, na kaznu zatvora u trajanju od jedne godine i jednog mjeseca i presudom Višeg suda u Podgorici K.br.52/06 od 26.11.2010. godine, zbog krivičnog djela iz čl.399 KZ CG, tri mjeseca zatvora uslovnona dvije godine
+
+ 
+
+ 
+
+K r i v j e
+
+ 
+
+Zato što je:
+
+ 
+
+Dana 05.04.2011. godine oko 01,30 časova u ul.S. u P. teško tjelesno povrijedio L. B. na način što ga je prilikom međusobne svađe najprije ispred ugostiteljskog objekta „N. V.“ više puta udario pesnicama u predjelu glave, nakon čega se okrivljeni B. M. vratio u lokal, a za njim je ušao i L. B. gdje ga je okrivljeni B. M. ponovo udario više puta pesnicama i staklenom flašom u predjelu glave nanoseći mu tešku tjelesnu povredu u vidu preloma baze desne očne duplje i iščašenje 21 i 22 zuba, kao i prelom druge klase krunice 12-tog zuba, ranu razderinu poglavine, pri čemu je bio svjestan svog djela, čije izvršenje je htio, znajući da je isto zabranjeno.
+
+ 
+
+- čime je izvršio krivično djelo teška tjelesna povreda iz čl.151 st.1 Krivičnog zakonika Crne Gore.
+
+ 
+
+Pa sud okrivljenog primjenom citiranog zakonskog propisa i čl. 3,4,5,13,15,32,36,42,45 i 46 Krivičnog zakonika Crne Gore i čl. 226, 229, 303 i 374 Zakonika o krivičnom postupku Crne Gore
+
+ 
+
+OSUDJUJE
+
+ 
+
+Na kaznu zatvora u trajanju od 5 (pet) mjeseci.
+
+ 
+
+Obavezuje se okrivljeni da ovom sudu na ime troškova postupka uplati novčani iznos od 41,25 eura, kao i 30,00 eura na ime paušala u roku od 15 dana po pravosnažnosti presude.
+
+ 
+
+O b r a z l o ž e nj e
+
+ 
+
+Optužnim predlogom ODT-a Podgorica Kt.br.655/11 od 27.06.2013. godine okrivljenom B. M. stavljeno je na teret krivično djelo teška tjelesna povreda iz čl.151 st.1 Krivičnog zakonika Crne Gore.
+
+ 
+
+Utvrđujući da li postoji dovoljno dokaza o krivici okrivljenog za predmetno krivično djelo, na ročištu za razmatranje sporazuma o priznanju krivice, zamjenik Osnovnog državnog tužioca u Podgorici je sudu dostavio dokaze koje je prikupio u prethodnom postupku.
+
+ 
+
+Iz sadržine prikupljenih dokaza koji egzistiraju u spisima predmeta, sud je zaključio da je državni tužilac pružio dovoljno dokaza o krivici okrivljenog B. M., i da je okrivljeni u vrijeme, mjesto i na način opisan u izreci ove presude izvršio krivično djelo teška tjelesna povreda iz čl.151 st.1 Krivičnog zakonika Crne Gore, za koje ga je ovaj sud oglasio krivim, a nakon što je u svemu prihvatio sporazum o priznanju krivice.
+
+ 
+
+Odlučujući o kazni za okrivljenog iz sporazuma o priznanju krivice zaključenog izmedju stranaka, ovaj sud je našao da je predlog stranaka u vezi sa kaznom prihvatljiv. Naime, na strani okrivljenog postoji otežavajuća okolnost a to je njegova ranija osudjivanost kao u izreci presude koju je sud utvrdio iz izvoda iz KE za okrivljenog koji egzistira u spisima predmeta, izdat od UP CB Podgorica broj 29-245/13-4212/2-1985 od 05.07.2013. godine, dok olakšavajućih okolnosti nije bilo, pa je sud okrivljenom ublažio kaznu po mjeri osnovom čl.45 st.1 tačka 3 Krivičnog zakonika Crne Gore, poštujući granice ublažavanja kazne propisane čl.46 st.1 tačka 5 Krivičnog zakonika Crne Gore, te okrivljenog osudio na kaznu zatvora u trajanju od 5 mjeseci.
+
+ 
+
+Navedena kazna po stanovištu suda je pravedan balans izmedju zahtjeva za individualizacijom kazne i svrhe kažnjavanja i po ocjeni ovog suda istom se ima ostvariti svrha kažnjavanja iz čl.32 st.2 Krivičnog zakonika Crne Gore u okviru opšte svrhe propisivanja i izricanja krivičnih sankcija iz čl.4 st.2 Krivičnog zakonika Crne Gore.
+
+ 
+
+ 
+
+Odluku o troškovima postupka sud je temeljio na odredbi čl.229 st.1 ZKP-a, pa je obavezao okrivljenog da ovom sudu na ime troškova postupka uplati novčani iznos od 41,25 eura, koji iznos se odnosi na ime nagrade vještaku medicinske struke, dok je visinu paušala sud odmjerio shodno dužini trajanja i složenosti krivičnog postupka.
+
+ 
+
+Sa izloženog, na osnovu čl.303 st.1 Zakonika o krivičnom postupku, odlučeno je kao u izreci presude.
+
+ 
+
+ 
+
+OSNOVNI SUD U PODGORICI
+
+Dana, 10.09.2015. godine
+
+ 
+
+SUDIJA
+
+Đuković Goran s.r.
+
+ 
+
+ 
+
+PRAVNA POUKA:
+
+Protiv ove presude nije dozvoljena žalba.
+
+ 
+
+ 
+
+Z.T.O. Maraš Ana
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+DN-a: Po primjerak presude dostaviti:
+
+ 
+
+- ODT Podgorica
+
+- Okrivljenom B. M.
+
+- Braniocu okrivljenog adv. M. D.
+
+- Oštećenom L. B.
+
+- Punomoćniku oštećenog adv. M. Sn.
+
+ 
+
+Postupljeno dana _____________________
+
+Namještenik suda _____________________</p>
+                </block>
+            </conclusions>
         </judgmentBody>
     </judgment>
 </ns0:akomaNtoso>

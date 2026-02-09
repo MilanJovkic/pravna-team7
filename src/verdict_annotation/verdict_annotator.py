@@ -25,6 +25,8 @@ class VerdictAnnotation:
     legal_concepts: List[str]  # Pravni koncepti
     precedent_value: Optional[str] = None  # Značaj kao presedana
     confidence: Optional[float] = None
+    metadata: Optional[Dict[str, Any]] = None
+    factual_state: Optional[Dict[str, List[str]]] = None
     raw_response: Optional[str] = None
 
 
@@ -102,7 +104,28 @@ Vrati SAMO JSON u sledećem formatu:
     "case_outcome": "<усвојено|одбијено|делимично усвојено>",
     "legal_concepts": ["murder", "self_defense", "mitigating_circumstances"],
     "precedent_value": "<low|medium|high>",
-    "confidence": <0.0-1.0>
+    "confidence": <0.0-1.0>,
+    "metadata": {{
+        "case_number": "<broj predmeta ili null>",
+        "court_name": "<naziv suda ili null>",
+        "date": "<YYYY-MM-DD ili null>",
+        "judges": ["<sudija 1>", "<sudija 2>"],
+        "parties": {{
+            "defendant": ["<okrivljeni>"],
+            "victim": ["<oštećeni>"],
+            "witness": ["<svedok>"]
+        }},
+        "organizations": ["<organizacija 1>"]
+    }},
+    "factual_state": {{
+        "injury_type": ["<npr. teska tjelesna povreda>"],
+        "weapon": ["<npr. metalni kljuc>"],
+        "location": ["<npr. Podgorica>"],
+        "amount": ["<npr. 0.5 g>"],
+        "substance_amount": ["<npr. 0.5 g marihuana>"],
+        "speed": ["<npr. 120 km/h>"],
+        "alcohol_level": ["<npr. 1.2 promila>"]
+    }}
 }}
 
 Vrati SAMO validan JSON bez dodatnog teksta!"""
@@ -263,6 +286,8 @@ Vrati SAMO validan JSON bez dodatnog teksta!"""
             legal_concepts=data.get("legal_concepts", []),
             precedent_value=data.get("precedent_value"),
             confidence=data.get("confidence"),
+            metadata=data.get("metadata") or {},
+            factual_state=data.get("factual_state") or {},
             raw_response=raw_response
         )
 

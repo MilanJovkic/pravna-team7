@@ -139,13 +139,14 @@ class AkomaExporter:
             paragraph.text,
             article_number
         )
+        extracted_external_laws = self._extract_external_law_refs(paragraph.text)
         extracted_sanctions = self._extract_sanctions(paragraph.text)
 
         if paragraph.points:
             intro = SubElement(para_elem, "intro", eId=f"{para_id}__intro")
             intro_p = SubElement(intro, "p")
             intro_p.text = paragraph.text
-            self._add_references(intro_p, annotation, extracted_refs, extracted_paragraph_refs)
+            self._add_references(intro_p, annotation, extracted_refs, extracted_paragraph_refs, extracted_external_laws)
             self._add_sanctions(intro_p, extracted_sanctions)
             for point in paragraph.points:
                 self._build_point(para_elem, point, para_id)
@@ -153,7 +154,7 @@ class AkomaExporter:
             content = SubElement(para_elem, "content", eId=f"{para_id}__content")
             p = SubElement(content, "p")
             p.text = paragraph.text
-            self._add_references(p, annotation, extracted_refs, extracted_paragraph_refs)
+            self._add_references(p, annotation, extracted_refs, extracted_paragraph_refs, extracted_external_laws)
             self._add_sanctions(p, extracted_sanctions)
 
     def _build_point(self, para_elem: Element, point: LegalPoint, para_id: str) -> None:
@@ -168,7 +169,8 @@ class AkomaExporter:
         p_element: Element,
         annotation: Optional[SemanticAnnotation],
         extracted_refs: Set[str],
-        extracted_paragraph_refs: Set[str]
+        extracted_paragraph_refs: Set[str],
+        extracted_external_laws: Set[str]
     ) -> None:
         refs: Set[str] = set(extracted_refs)
 
@@ -179,6 +181,10 @@ class AkomaExporter:
         for para_ref in sorted(extracted_paragraph_refs, key=lambda x: (len(x), x)):
             ref_elem = SubElement(p_element, "ref", href=para_ref)
             ref_elem.text = f"stav {para_ref.split('__para_')[-1]}"
+
+        for law_name in sorted(extracted_external_laws, key=lambda x: (len(x), x)):
+            ref_elem = SubElement(p_element, "ref", href=self._law_href(law_name))
+            ref_elem.text = law_name
 
     def _add_sanctions(self, p_element: Element, sanctions: List[Dict[str, Optional[object]]]) -> None:
         for sanction in sanctions:
@@ -231,6 +237,29 @@ class AkomaExporter:
                 paragraph_refs.add(f"#art_{article_number}__para_{number}")
 
         return article_refs, paragraph_refs
+
+    def _extract_external_law_refs(self, text: str) -> Set[str]:
+        if not text:
+            return set()
+        refs: Set[str] = set()
+        patterns = [
+            re.compile(r"Zakon o [A-Za-zČĆŽŠĐčćžšđ ]+", re.IGNORECASE),
+            re.compile(r"Zakonik o [A-Za-zČĆŽŠĐčćžšđ ]+", re.IGNORECASE),
+            re.compile(r"Krivičn[iy] zakonik(?: Crne Gore)?", re.IGNORECASE),
+        ]
+        for pattern in patterns:
+            for match in pattern.findall(text):
+                refs.add(match.strip())
+        return refs
+
+    def _law_href(self, law_name: str) -> str:
+        name_lower = law_name.lower()
+        if "krivični zakonik" in name_lower or "krivicni zakonik" in name_lower:
+            return f"/akn/{self.country_code}/act/{self.law_year}/!main"
+
+        slug = "".join(ch.lower() if ch.isalnum() else "-" for ch in law_name).strip("-")
+        slug = "-".join([part for part in slug.split("-") if part])
+        return f"/akn/{self.country_code}/act/{slug or 'law'}"
 
     def _extract_sanctions(self, text: str) -> List[Dict[str, Optional[object]]]:
         if not text:

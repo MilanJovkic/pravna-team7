@@ -42,6 +42,8 @@ class VerdictMetadata(BaseModel):
     decision: Optional[str] = None
     outcome: Optional[str] = None
     legal_concepts: List[str] = Field(default_factory=list)
+    parties: Dict[str, List[str]] = Field(default_factory=dict)
+    factual_state: Dict[str, List[str]] = Field(default_factory=dict)
 
 
 class VerdictDetail(VerdictMetadata):
@@ -49,6 +51,7 @@ class VerdictDetail(VerdictMetadata):
     legal_reasoning: Optional[str] = None
     precedent_value: Optional[str] = None
     confidence: Optional[float] = None
+    full_text: Optional[str] = None
 
 
 class VerdictList(BaseModel):

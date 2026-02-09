@@ -28,10 +28,13 @@ export interface VerdictMetadata {
   decision?: string;
   outcome?: string;
   legal_concepts?: string[];
+  parties?: Record<string, string[]>;
+  factual_state?: Record<string, string[]>;
 }
 
 export interface VerdictDetail extends VerdictMetadata {
   legal_reasoning?: string;
   precedent_value?: string;
   confidence?: number;
+  full_text?: string;
 }

@@ -120,14 +120,65 @@ class VerdictService:
             "applied_articles": annotation.get("applied_articles") or xml_applied_articles,
             "decision": annotation.get("decision") or xml_decision,
             "outcome": annotation.get("case_outcome") or xml_outcome,
-            "legal_concepts": annotation.get("legal_concepts", [])
+            "legal_concepts": annotation.get("legal_concepts", []),
+            "parties": self._extract_participants(root),
+            "factual_state": self._extract_factual_state(root, annotation),
+            "full_text": xml_full_text
         }
         
         return metadata
 
+    def _extract_participants(self, root):
+        """Extract participants by role from XML."""
+        participants = {}
+        role_map = {
+            "defendants": "defendant",
+            "victims": "victim",
+            "witnesses": "witness",
+            "clerks": "clerk",
+        }
+
+        for block_name, role in role_map.items():
+            elems = root.findall(f".//block[@name='{block_name}']/person", self.AKOMA_NS)
+            if not elems:
+                elems = root.findall(f".//{{{self.AKOMA_NS['akn']}}}block[@name='{block_name}']/{{{self.AKOMA_NS['akn']}}}person")
+            if not elems:
+                elems = root.findall(f".//block[@name='{block_name}']/person")
+            names = [elem.text for elem in elems if elem.text]
+            if names:
+                participants[role] = names
+
+        return participants
+
+    def _extract_factual_state(self, root, annotation: dict):
+        """Extract factual state from XML or fallback to annotations."""
+        facts = {}
+
+        fact_elems = root.findall(".//facts/fact", self.AKOMA_NS)
+        if not fact_elems:
+            fact_elems = root.findall(f".//{{{self.AKOMA_NS['akn']}}}facts/{{{self.AKOMA_NS['akn']}}}fact")
+        if not fact_elems:
+            fact_elems = root.findall(".//facts/fact")
+
+        for fact in fact_elems:
+            key = fact.get("key")
+            value = fact.text
+            if not key or not value:
+                continue
+            facts.setdefault(key, [])
+            if value not in facts[key]:
+                facts[key].append(value)
+
+        if not facts:
+            return annotation.get("factual_state") or {}
+
+        return facts
+
     def _find_text(self, root, xpath):
         """Find element text."""
         elem = root.find(xpath, self.AKOMA_NS)
+        if elem is None:
+            elem = root.find(self._to_ns_xpath(xpath), self.AKOMA_NS)
         if elem is None:
             tag = xpath.split('/')[-1]
             elem = root.find(f".//{{{self.AKOMA_NS['akn']}}}{tag}")
@@ -139,6 +190,8 @@ class VerdictService:
         """Find element attribute."""
         elem = root.find(xpath, self.AKOMA_NS)
         if elem is None:
+            elem = root.find(self._to_ns_xpath(xpath), self.AKOMA_NS)
+        if elem is None:
             tag = xpath.split('/')[-1]
             elem = root.find(f".//{{{self.AKOMA_NS['akn']}}}{tag}")
         if elem is None:
@@ -149,11 +202,39 @@ class VerdictService:
         """Find all elements text."""
         elems = root.findall(xpath, self.AKOMA_NS)
         if not elems:
+            elems = root.findall(self._to_ns_xpath(xpath), self.AKOMA_NS)
+        if not elems:
             tag = xpath.split('/')[-1]
             elems = root.findall(f".//{{{self.AKOMA_NS['akn']}}}{tag}")
         if not elems:
             elems = root.findall(f".//{tag}")
         return [elem.text for elem in elems if elem.text]
+
+    def _to_ns_xpath(self, xpath: str) -> str:
+        """Convert a simple XPath to a namespace-qualified XPath."""
+        parts = xpath.split('/')
+        ns = self.AKOMA_NS['akn']
+        converted = []
+        for part in parts:
+            if not part or part in {'.', '..'}:
+                converted.append(part)
+                continue
+            if part.startswith('.//'):
+                tag_expr = part[3:]
+                converted.append('.//' + self._qualify_xpath_tag(tag_expr, ns))
+                continue
+            converted.append(self._qualify_xpath_tag(part, ns))
+        return "/".join(converted)
+
+    def _qualify_xpath_tag(self, part: str, ns: str) -> str:
+        if part.startswith('{'):
+            return part
+        if part.startswith('*'):
+            return part
+        if '[' in part:
+            tag, rest = part.split('[', 1)
+            return f"{{{ns}}}{tag}[{rest}"
+        return f"{{{ns}}}{part}"
 
     def search_verdicts(self, query: str, filter_by: Optional[str] = None):
         """Search verdicts by query."""

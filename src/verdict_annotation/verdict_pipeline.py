@@ -1,43 +1,51 @@
 """Pipeline orchestration for verdict annotation workflow."""
 from pathlib import Path
+import json
+import re
 from typing import Dict, Optional
 
-from .pdf_extractor import PDFExtractor
+from .txt_extractor import TextExtractor
 from .verdict_parser import VerdictParser, VerdictMetadata
 from .verdict_annotator import VerdictAnnotator, VerdictAnnotation
 from .verdict_exporter import VerdictAkomaExporter
 
 
 class VerdictAnnotationPipeline:
-    """Orchestrates PDF extraction, parsing, annotation, and XML export for verdicts."""
+    """Orchestrates TXT loading, parsing, annotation, and XML export for verdicts."""
 
     def __init__(
         self,
-        pdf_folder: str,
+        txt_folder: str,
         output_xml_dir: str,
         output_json: Optional[str] = None,
         api_token: Optional[str] = None,
         model: str = "gpt-5-nano",
         provider: str = "openai",
-        limit: Optional[int] = None
+        limit: Optional[int] = None,
+        overrides_file: Optional[str] = None,
+        enable_llm: bool = True
     ):
-        self.pdf_folder = Path(pdf_folder)
+        self.txt_folder = Path(txt_folder)
         self.output_xml_dir = Path(output_xml_dir)
         self.output_json = output_json or str(self.output_xml_dir / "verdicts_annotations.json")
         self.limit = limit
+        self.overrides_file = overrides_file
+        self.enable_llm = enable_llm
 
-        self.pdf_extractor = PDFExtractor()
+        self.text_extractor = TextExtractor()
         self.parser = VerdictParser()
-        self.annotator = VerdictAnnotator(api_token=api_token, model=model, provider=provider)
+        self.annotator = None
+        if self.enable_llm:
+            self.annotator = VerdictAnnotator(api_token=api_token, model=model, provider=provider)
         self.exporter = VerdictAkomaExporter()
 
         print("=" * 70)
         print("ANOTACIJA SUDSKIH PRESUDA (Zadatak 2)")
         print("=" * 70)
-        print(f"PDF folder:  {pdf_folder}")
+        print(f"TXT folder:  {txt_folder}")
         print(f"XML output:  {output_xml_dir}")
-        print(f"Provider:    {provider}")
-        print(f"Model:       {model}")
+        print(f"Provider:    {provider if self.enable_llm else 'disabled'}")
+        print(f"Model:       {model if self.enable_llm else 'n/a'}")
         if limit:
             print(f"Limit:       {limit} presuda (test mode)")
         print("=" * 70)
@@ -45,8 +53,8 @@ class VerdictAnnotationPipeline:
     def run(self) -> bool:
         """Executes the full verdict annotation pipeline."""
         try:
-            print("\n[FAZA 1/4] Ekstrakcija teksta iz PDF fajlova...")
-            texts = self._extract_pdfs()
+            print("\n[FAZA 1/4] Učitavanje teksta iz TXT fajlova...")
+            texts = self._extract_texts()
 
             if not texts:
                 print("✗ Greška: Nema ekstraktovanih tekstova.")
@@ -59,8 +67,16 @@ class VerdictAnnotationPipeline:
                 print("✗ Greška: Nijedna presuda nije parsovana.")
                 return False
 
-            print("\n[FAZA 3/4] LLM semantička anotacija presuda...")
-            annotations = self._annotate_verdicts(verdicts)
+            if self.enable_llm:
+                print("\n[FAZA 3/4] LLM semantička anotacija presuda...")
+                annotations = self._annotate_verdicts(verdicts)
+            else:
+                print("\n[FAZA 3/4] LLM semantička anotacija presuda... (preskočeno)")
+                annotations = {}
+
+            self._merge_llm_metadata(verdicts, annotations)
+            self._apply_overrides(verdicts, annotations)
+            self._normalize_annotation_fields(verdicts, annotations)
 
             print("\n[FAZA 4/4] Generisanje Akoma Ntoso XML fajlova...")
             self._export_results(verdicts, annotations)
@@ -82,9 +98,9 @@ class VerdictAnnotationPipeline:
             traceback.print_exc()
             return False
 
-    def _extract_pdfs(self) -> Dict[str, str]:
-        """Phase 1: Extract text from PDF files."""
-        texts = self.pdf_extractor.extract_from_folder(self.pdf_folder)
+    def _extract_texts(self) -> Dict[str, str]:
+        """Phase 1: Load text from TXT files."""
+        texts = self.text_extractor.extract_from_folder(self.txt_folder)
         
         # Apply limit if set
         if self.limit:
@@ -92,7 +108,7 @@ class VerdictAnnotationPipeline:
             texts = dict(items)
             print(f"\n  → Procesiraće se {len(texts)} presuda (limit primenjen)")
         
-        print(f"\n  ✓ Ekstrahovano {len(texts)} tekstova")
+        print(f"\n  ✓ Učitano {len(texts)} tekstova")
         return texts
 
     def _parse_verdicts(self, texts: Dict[str, str]) -> Dict[str, VerdictMetadata]:
@@ -111,6 +127,8 @@ class VerdictAnnotationPipeline:
             for case_id, metadata in verdicts.items()
         }
         
+        if not self.annotator:
+            return {}
         annotations = self.annotator.annotate_batch(texts_for_annotation)
         
         if texts_for_annotation:
@@ -118,6 +136,295 @@ class VerdictAnnotationPipeline:
             print(f"\n  ✓ Anotirano: {len(annotations)}/{len(texts_for_annotation)} ({success_rate:.1f}% uspešnosti)")
         
         return annotations
+
+    def _merge_llm_metadata(
+        self,
+        verdicts: Dict[str, VerdictMetadata],
+        annotations: Dict[str, VerdictAnnotation]
+    ) -> None:
+        """Merge LLM-extracted metadata and factual state into regex metadata."""
+        for case_id, metadata in verdicts.items():
+            annotation = annotations.get(case_id)
+            if not annotation:
+                continue
+
+            llm_meta = annotation.metadata or {}
+            if not metadata.case_number and llm_meta.get("case_number"):
+                metadata.case_number = llm_meta.get("case_number")
+            if not metadata.court_name and llm_meta.get("court_name"):
+                metadata.court_name = llm_meta.get("court_name")
+            if not metadata.date and llm_meta.get("date"):
+                metadata.date = llm_meta.get("date")
+            if llm_meta.get("judges"):
+                merged_judges = list({*metadata.judges, *[self._normalize_person_name(j) for j in llm_meta.get("judges")]})
+                metadata.judges = self._prefer_full_names(merged_judges)
+
+            llm_parties = llm_meta.get("parties") or {}
+            for role, people in llm_parties.items():
+                if not people:
+                    continue
+                normalized_people = [self._normalize_person_name(p) for p in people]
+                existing = metadata.parties.get(role, [])
+                merged = list({*(existing or []), *normalized_people})
+                metadata.parties[role] = merged
+
+            llm_orgs = llm_meta.get("organizations") or []
+            if llm_orgs:
+                metadata.organizations = list({*metadata.organizations, *llm_orgs})
+
+            if annotation.factual_state:
+                metadata.factual_state = self._merge_dict_lists(
+                    metadata.factual_state, annotation.factual_state
+                )
+
+    def _merge_dict_lists(
+        self,
+        base: Dict[str, list[str]],
+        override: Dict[str, list[str]]
+    ) -> Dict[str, list[str]]:
+        merged = {k: list(v) for k, v in (base or {}).items()}
+        for key, values in (override or {}).items():
+            if not values:
+                continue
+            merged.setdefault(key, [])
+            for value in values:
+                if value not in merged[key]:
+                    merged[key].append(value)
+        return merged
+
+    def _normalize_person_name(self, name: str) -> str:
+        cleaned = " ".join(str(name).replace("\u00a0", " ").split())
+        tokens = cleaned.split()
+        merged_tokens = []
+        idx = 0
+        while idx < len(tokens):
+            token = tokens[idx]
+            if (
+                len(token) == 1
+                and token.isupper()
+                and idx + 1 < len(tokens)
+                and tokens[idx + 1][0].isupper()
+                and tokens[idx + 1][1:].islower()
+            ):
+                next_token = tokens[idx + 1]
+                merged = token + next_token[0].lower() + next_token[1:]
+                merged_tokens.append(merged)
+                idx += 2
+                continue
+            merged_tokens.append(token)
+            idx += 1
+        fixed_tokens = []
+        for token in merged_tokens:
+            if len(token) == 1 and token.isalpha() and fixed_tokens:
+                prev = fixed_tokens[-1]
+                if prev and prev[-1].isalpha():
+                    fixed_tokens[-1] = prev + token
+                    continue
+            fixed_tokens.append(token)
+        cleaned = " ".join(fixed_tokens)
+        cleaned = re.sub(r"([A-ZČĆŽŠĐ])\s+([a-zčćžšđ])", r"\1\2", cleaned)
+        cleaned = re.sub(r"([a-zčćžšđ])\s+([čćžšđ])\b", r"\1\2", cleaned)
+        cleaned = re.sub(r"\s+,", ",", cleaned)
+        return cleaned.strip()
+
+    def _prefer_full_names(self, names: list[str]) -> list[str]:
+        if not names:
+            return []
+        full = [n for n in names if " " in n.strip()]
+        if full:
+            return full
+        return names
+
+    def _normalize_annotation_fields(
+        self,
+        verdicts: Dict[str, VerdictMetadata],
+        annotations: Dict[str, VerdictAnnotation]
+    ) -> None:
+        for case_id, annotation in annotations.items():
+            annotation.applied_articles = self._normalize_article_labels(
+                (annotation.applied_articles or []) + (verdicts.get(case_id).article_references if verdicts.get(case_id) else [])
+            )
+            annotation.applied_laws = [
+                self._normalize_law_name(law)
+                for law in (annotation.applied_laws or [])
+            ]
+            if verdicts.get(case_id) and verdicts.get(case_id).legal_references:
+                annotation.applied_laws = list({
+                    *annotation.applied_laws,
+                    *[self._normalize_law_name(law) for law in verdicts.get(case_id).legal_references]
+                })
+            annotation.legal_concepts = self._normalize_legal_concepts(annotation.legal_concepts)
+
+            metadata = verdicts.get(case_id)
+            if metadata:
+                annotation.metadata = {
+                    "case_number": metadata.case_number or (annotation.metadata or {}).get("case_number"),
+                    "court_name": metadata.court_name or (annotation.metadata or {}).get("court_name"),
+                    "date": metadata.date or (annotation.metadata or {}).get("date"),
+                    "judges": metadata.judges or (annotation.metadata or {}).get("judges", []),
+                    "parties": metadata.parties or (annotation.metadata or {}).get("parties", {}),
+                    "organizations": metadata.organizations or (annotation.metadata or {}).get("organizations", [])
+                }
+                metadata.factual_state = self._normalize_factual_state(metadata.factual_state)
+
+            if annotation.factual_state:
+                annotation.factual_state = self._normalize_factual_state(annotation.factual_state)
+
+    def _normalize_factual_state(self, factual_state: Dict[str, list[str]]) -> Dict[str, list[str]]:
+        if not factual_state:
+            return {}
+
+        normalized: Dict[str, list[str]] = {}
+        for key, values in factual_state.items():
+            cleaned_values: list[str] = []
+            for value in values or []:
+                v = str(value).strip()
+                if not v:
+                    continue
+                v = self._normalize_fact_value(key, v)
+                if v not in cleaned_values:
+                    cleaned_values.append(v)
+            if cleaned_values:
+                normalized[key] = cleaned_values
+        return normalized
+
+    def _normalize_fact_value(self, key: str, value: str) -> str:
+        lowered = value.lower()
+        if key == "weapon":
+            if re.search(r"metaln\w*\s+klju\w*", lowered):
+                return "metalni ključ"
+            if "nož" in lowered or "noz" in lowered:
+                return "nož"
+            if "pistol" in lowered:
+                return "pistolj"
+            if "palic" in lowered:
+                return "palica"
+            if "kamen" in lowered:
+                return "kamen"
+            if "flaš" in lowered or "flas" in lowered:
+                return "staklena flaša"
+
+        if key == "injury_type":
+            if ("tešk" in lowered or "tesk" in lowered) and "povred" in lowered:
+                return "teška tjelesna povreda"
+            if "lak" in lowered and "povred" in lowered:
+                return "laka tjelesna povreda"
+
+        if key == "location":
+            mapping = {
+                "podgorici": "Podgorica",
+                "podgorica": "Podgorica",
+                "danilovgradu": "Danilovgrad",
+                "skadru": "Skadar"
+            }
+            candidate = value.strip()
+            key_lower = candidate.lower()
+            if key_lower in mapping:
+                return mapping[key_lower]
+            if candidate.isupper():
+                return candidate.title()
+            return candidate
+
+        return value
+
+    def _normalize_article_labels(self, articles: list[str]) -> list[str]:
+        normalized = []
+        for label in articles or []:
+            match = re.search(r"\d+[a-z]?", label, re.IGNORECASE)
+            if match:
+                normalized.append(f"Član {match.group(0)}")
+            else:
+                normalized.append(label)
+        return list(dict.fromkeys(normalized))
+
+    def _normalize_law_name(self, law_name: str) -> str:
+        name_lower = law_name.lower()
+        if "krivični zakonik" in name_lower or "krivicni zakonik" in name_lower:
+            if "crne gore" not in name_lower:
+                return "Krivični zakonik Crne Gore"
+        if "krivični zakon" in name_lower or "krivicni zakon" in name_lower:
+            return "Krivični zakonik Crne Gore"
+        if "zakonik o krivičnom postupku" in name_lower or "zakonik o krivicnom postupku" in name_lower:
+            if "crne gore" not in name_lower:
+                return "Zakonik o krivičnom postupku"
+        return law_name
+
+    def _normalize_legal_concepts(self, concepts: list[str]) -> list[str]:
+        mapping = {
+            "heavy bodily injury": "teška tjelesna povreda",
+            "serious bodily injury": "teška tjelesna povreda",
+            "light bodily injury": "laka tjelesna povreda",
+            "teško tjelesno povređenje": "teška tjelesna povreda",
+            "tesko tjelesno povredjenje": "teška tjelesna povreda",
+            "teško telesno povređenje": "teška tjelesna povreda",
+            "tesko telesno povredjenje": "teška tjelesna povreda",
+            "lakša povreda": "laka tjelesna povreda",
+            "laka povreda": "laka tjelesna povreda",
+            "conditioned sentence": "uslovna osuda",
+            "criminal offense": "krivično djelo",
+            "criminal offence": "krivično djelo",
+            "crime": "krivično djelo",
+        }
+        skip = {"lacuna"}
+        normalized = []
+        for concept in concepts or []:
+            key = concept.strip().lower()
+            if key in skip:
+                continue
+            normalized.append(mapping.get(key, concept))
+        return list(dict.fromkeys(normalized))
+
+    def _apply_overrides(
+        self,
+        verdicts: Dict[str, VerdictMetadata],
+        annotations: Dict[str, VerdictAnnotation]
+    ) -> None:
+        """Apply optional manual overrides for metadata/factual state."""
+        if not self.overrides_file:
+            return
+
+        overrides_path = Path(self.overrides_file)
+        if not overrides_path.exists():
+            return
+
+        try:
+            with open(overrides_path, "r", encoding="utf-8") as f:
+                overrides = json.load(f)
+        except Exception as exc:
+            print(f"⚠ Ne mogu da učitam overrides: {exc}")
+            return
+
+        for case_id, override in overrides.items():
+            metadata = verdicts.get(case_id)
+            if not metadata:
+                continue
+
+            meta_override = override.get("metadata") or {}
+            if meta_override.get("case_number"):
+                metadata.case_number = meta_override.get("case_number")
+            if meta_override.get("court_name"):
+                metadata.court_name = meta_override.get("court_name")
+            if meta_override.get("date"):
+                metadata.date = meta_override.get("date")
+            if meta_override.get("judges"):
+                metadata.judges = meta_override.get("judges")
+            if meta_override.get("parties"):
+                metadata.parties = self._merge_dict_lists(
+                    metadata.parties, meta_override.get("parties")
+                )
+            if meta_override.get("organizations"):
+                metadata.organizations = list({*metadata.organizations, *meta_override.get("organizations")})
+
+            if override.get("factual_state"):
+                metadata.factual_state = self._merge_dict_lists(
+                    metadata.factual_state, override.get("factual_state")
+                )
+
+            ann_override = override.get("annotation") or {}
+            if ann_override and case_id in annotations:
+                annotation = annotations[case_id]
+                for key, value in ann_override.items():
+                    setattr(annotation, key, value)
 
     def _export_results(
         self,

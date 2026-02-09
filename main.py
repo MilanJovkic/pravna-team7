@@ -60,6 +60,12 @@ def main() -> None:
     )
 
     parser.add_argument(
+        "--no-llm",
+        action="store_true",
+        help="Isključi LLM anotaciju (samo strukturno parsiranje)"
+    )
+
+    parser.add_argument(
         "--model",
         type=str,
         default="gpt-5-nano",
@@ -82,7 +88,8 @@ def main() -> None:
             print("  Sadržaj se nalazi u data/zakon.txt.")
         sys.exit(1)
 
-    ensure_env_file()
+    if not args.no_llm:
+        ensure_env_file()
 
     output_path = Path(args.output)
     if output_path.parent == Path("."):
@@ -100,7 +107,8 @@ def main() -> None:
         output_json=output_json,
         model=args.model,
         provider=args.provider,
-        article_limit=args.limit
+        article_limit=args.limit,
+        enable_llm=not args.no_llm
     )
 
     success = pipeline.run()

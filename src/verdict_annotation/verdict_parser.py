@@ -18,6 +18,7 @@ class VerdictMetadata:
     legal_references: List[str] = field(default_factory=list)  # Reference ka zakonima
     article_references: List[str] = field(default_factory=list)  # Reference ka članovima
     verdict_type: Optional[str] = None  # presuda, rješenje, zaključak
+    factual_state: dict[str, List[str]] = field(default_factory=dict)
     raw_text: str = ""
 
 
@@ -28,6 +29,10 @@ class VerdictParser:
         # Regex patterns za identifikaciju elemenata
         self.case_number_pattern = re.compile(
             r'(?:Број|Br\.|број)\s*(?:предмета|K|Ki|Kž|Kv)[\s:-]*(\S+)',
+            re.IGNORECASE
+        )
+        self.case_number_inline_pattern = re.compile(
+            r'\bK\.?\s*br\.?\s*([0-9]+\s*/\s*[0-9]+)',
             re.IGNORECASE
         )
         self.court_pattern = re.compile(
@@ -43,7 +48,16 @@ class VerdictParser:
         )
         self.judge_pattern = re.compile(
             r'(?:[Сс]уди[јy]а|[Ss]udija|[Ss]utkinja):?\s+'
-            r'([A-ZČĆŽŠĐА-ЯŠĐČĆŽ][a-zčćžšđа-яšđčćž]+(?:\s+[A-ZČĆŽŠĐА-ЯŠĐČĆŽ][a-zčćžšđа-яšđčćž]+)*)',
+            r'([A-ZČĆŽŠĐА-ЯŠĐČĆŽ][a-zčćžšđа-яšđčćž]+'
+            r'(?:\s+[A-ZČĆŽŠĐА-ЯŠĐČĆŽ][a-zčćžšđа-яšđčćž]+)*'
+            r'(?:\s+[čćžšđ])?)',
+            re.IGNORECASE
+        )
+        self.judge_inline_pattern = re.compile(
+            r'(?:po\s+sudiji|po\s+sutkinji|sudija|sutkinja)\s+'
+            r'([A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+'
+            r'(?:\s+[A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+)*'
+            r'(?:\s+[čćžšđ])?)',
             re.IGNORECASE
         )
         self.article_ref_pattern = re.compile(
@@ -56,10 +70,50 @@ class VerdictParser:
             r'oštećen(?:i|og|a)?\s+([A-ZČĆŽŠĐА-Я]\.?\s*[A-ZČĆŽŠĐА-Я]\.|[A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+(?:\s+[A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+)*)',
             re.IGNORECASE
         )
+        self.witness_pattern = re.compile(
+            r'(?:svjedok|svedok)\s*:?' 
+            r'\s+([A-ZČĆŽŠĐА-Я]\.?:?\s*[A-ZČĆŽŠĐА-Я]\.|[A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+(?:\s+[A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+)*)',
+            re.IGNORECASE
+        )
+        self.clerk_pattern = re.compile(
+            r'(?:zapisni[čc]ar|zapisničar)\s*:?' 
+            r'\s+([A-ZČĆŽŠĐА-Я]\.?:?\s*[A-ZČĆŽŠĐА-Я]\.|[A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+(?:\s+[A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+)*)',
+            re.IGNORECASE
+        )
         self.applied_law_patterns = [
             re.compile(r"Krivičn[iy] zakonik Crne Gore", re.IGNORECASE),
             re.compile(r"Zakonik o krivičnom postupku(?: Crne Gore)?", re.IGNORECASE),
             re.compile(r"Zakon o [A-Za-zČĆŽŠĐčćžšđ ]+", re.IGNORECASE)
+        ]
+
+        # Factual state patterns
+        self.injury_patterns = [
+            (re.compile(r"(teš[kc]a|teska)\s+tjelesn[aeo]\s+povred[ae]", re.IGNORECASE), "teška tjelesna povreda"),
+            (re.compile(r"(lak[aoe])\s+tjelesn[aeo]\s+povred[ae]", re.IGNORECASE), "laka tjelesna povreda"),
+            (re.compile(r"(tešk[ao]|tesk[ao])\s+telesn[aeo]\s+povred[ae]", re.IGNORECASE), "teška tjelesna povreda"),
+            (re.compile(r"(lak[aoe])\s+telesn[aeo]\s+povred[ae]", re.IGNORECASE), "laka tjelesna povreda"),
+            (re.compile(r"тешк[ао]\s+тјелесн[ао]\s+повред[ае]", re.IGNORECASE), "teška tjelesna povreda"),
+            (re.compile(r"лак[ао]\s+тјелесн[ао]\s+повред[ае]", re.IGNORECASE), "laka tjelesna povreda"),
+        ]
+        self.weapon_patterns = [
+            (re.compile(r"metaln[iy]\s+klju[čc]", re.IGNORECASE), "metalni ključ"),
+            (re.compile(r"metaln[iy]\s+ključ", re.IGNORECASE), "metalni ključ"),
+            (re.compile(r"no[žz]", re.IGNORECASE), "nož"),
+            (re.compile(r"pi[šs]tolj", re.IGNORECASE), "pistolj"),
+            (re.compile(r"palic[ae]", re.IGNORECASE), "palica"),
+            (re.compile(r"kamen", re.IGNORECASE), "kamen"),
+            (re.compile(r"staklen[a-zčćžšđ]*\s+fla[šs]a", re.IGNORECASE), "staklena flaša"),
+        ]
+        self.substance_pattern = re.compile(
+            r"(\d+(?:[\.,]\d+)?)\s*(mg|g|kg)\b(?:\s+([A-Za-zČĆŽŠĐčćžšđ]+))?",
+            re.IGNORECASE
+        )
+        self.speed_pattern = re.compile(r"brzin[ao]\s+od\s+(\d+)\s*km/h", re.IGNORECASE)
+        self.alcohol_pattern = re.compile(r"(\d+(?:[\.,]\d+)?)\s*(?:‰|promila)", re.IGNORECASE)
+        self.location_patterns = [
+            re.compile(r"\bu\s+(?:mjestu|mestu)\s+([A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+(?:\s+[A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+)*)"),
+            re.compile(r"\bu\s+ulici\s+([A-ZČĆŽŠĐА-Я][\wčćžšđ]+(?:\s+[A-ZČĆŽŠĐА-Я][\wčćžšđ]+)*)"),
+            re.compile(r"\bu\s+([A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+(?:\s+[A-ZČĆŽŠĐА-Я][a-zčćžšđа-я]+)*)"),
         ]
 
     def parse(self, text: str, filename: Optional[str] = None) -> VerdictMetadata:
@@ -79,9 +133,10 @@ class VerdictParser:
         case_match = self.case_number_pattern.search(text)
         if case_match:
             metadata.case_number = case_match.group(1).strip()
-        elif filename:
-            # Fallback na ime fajla
-            metadata.case_number = filename
+        else:
+            inline_match = self.case_number_inline_pattern.search(text)
+            if inline_match:
+                metadata.case_number = f"K.br. {inline_match.group(1).replace(' ', '')}"
         
         # Ekstraktuj sud
         court_match = self.court_pattern.search(text)
@@ -97,8 +152,11 @@ class VerdictParser:
         
         # Ekstraktuj sudije
         judge_matches = self.judge_pattern.findall(text)
-        if judge_matches:
-            metadata.judges = list({j.strip() for j in judge_matches if len(j.strip()) > 3})
+        inline_judges = self.judge_inline_pattern.findall(text)
+        all_judges = list(judge_matches) + list(inline_judges)
+        if all_judges:
+            normalized = [self._normalize_person_name(j) for j in all_judges if len(j.strip()) > 3]
+            metadata.judges = list({j for j in normalized if j})
         
         # Ekstraktuj reference na članke
         article_refs = self.article_ref_pattern.findall(text)
@@ -109,9 +167,22 @@ class VerdictParser:
         defendants = self._extract_defendants(text)
         victims = self.victim_pattern.findall(text)
         if defendants:
-            metadata.parties["defendant"] = list({d.strip() for d in defendants})
+            normalized_def = [self._normalize_person_name(d) for d in defendants]
+            metadata.parties["defendant"] = list({d.strip() for d in normalized_def if d.strip()})
         if victims:
-            metadata.parties["victim"] = list({v.strip() for v in victims})
+            normalized_vic = [self._normalize_person_name(v) for v in victims]
+            metadata.parties["victim"] = list({v.strip() for v in normalized_vic if v.strip()})
+
+        witnesses = self.witness_pattern.findall(text)
+        clerks = self.clerk_pattern.findall(text)
+        if witnesses:
+            normalized_wit = [self._normalize_person_name(w) for w in witnesses]
+            metadata.parties["witness"] = list({w.strip() for w in normalized_wit if w.strip()})
+        if clerks:
+            normalized_clerk = [self._normalize_person_name(c) for c in clerks]
+            metadata.parties["clerk"] = list({c.strip() for c in normalized_clerk if c.strip()})
+
+        metadata.factual_state = self._extract_factual_state(text)
 
         # Ekstraktuj reference na zakone
         laws = set()
@@ -153,6 +224,123 @@ class VerdictParser:
             metadata.organizations = list(set([o.strip() for o in org_matches]))
         
         return metadata
+
+    def _add_fact(self, facts: dict[str, List[str]], key: str, value: str) -> None:
+        if not value:
+            return
+        key = key.strip()
+        value = value.strip()
+        if not key or not value:
+            return
+        facts.setdefault(key, [])
+        if value not in facts[key]:
+            facts[key].append(value)
+
+    def _extract_factual_state(self, text: str) -> dict[str, List[str]]:
+        facts: dict[str, List[str]] = {}
+
+        for pattern, label in self.injury_patterns:
+            if pattern.search(text):
+                self._add_fact(facts, "injury_type", label)
+
+        for pattern, label in self.weapon_patterns:
+            if pattern.search(text):
+                self._add_fact(facts, "weapon", label)
+
+        for match in self.substance_pattern.findall(text):
+            amount, unit, substance = match
+            amount_norm = amount.replace(",", ".")
+            if substance:
+                self._add_fact(facts, "substance_amount", f"{amount_norm} {unit} {substance}")
+            else:
+                self._add_fact(facts, "amount", f"{amount_norm} {unit}")
+
+        for match in self.speed_pattern.findall(text):
+            self._add_fact(facts, "speed", f"{match} km/h")
+
+        for match in self.alcohol_pattern.findall(text):
+            self._add_fact(facts, "alcohol_level", f"{match} promila")
+
+        for loc in self._extract_locations(text):
+            self._add_fact(facts, "location", loc)
+
+        return facts
+
+    def _normalize_person_name(self, name: str) -> str:
+        cleaned = " ".join(name.replace("\u00a0", " ").split())
+        tokens = cleaned.split()
+        merged_tokens = []
+        idx = 0
+        while idx < len(tokens):
+            token = tokens[idx]
+            if (
+                len(token) == 1
+                and token.isupper()
+                and idx + 1 < len(tokens)
+                and tokens[idx + 1][0].isupper()
+                and tokens[idx + 1][1:].islower()
+            ):
+                next_token = tokens[idx + 1]
+                merged = token + next_token[0].lower() + next_token[1:]
+                merged_tokens.append(merged)
+                idx += 2
+                continue
+            merged_tokens.append(token)
+            idx += 1
+        fixed_tokens = []
+        for token in merged_tokens:
+            if len(token) == 1 and token.isalpha() and fixed_tokens:
+                prev = fixed_tokens[-1]
+                if prev and prev[-1].isalpha():
+                    fixed_tokens[-1] = prev + token
+                    continue
+            fixed_tokens.append(token)
+        cleaned = " ".join(fixed_tokens)
+        cleaned = re.sub(r"([A-ZČĆŽŠĐ])\s+([a-zčćžšđ])", r"\1\2", cleaned)
+        cleaned = re.sub(r"([a-zčćžšđ])\s+([čćžšđ])\b", r"\1\2", cleaned)
+        cleaned = re.sub(r"\s+,", ",", cleaned)
+        return cleaned.strip()
+
+    def _extract_locations(self, text: str) -> List[str]:
+        stopwords = {
+            "ime", "okrivljeni", "okrivljenog", "okrivljenih", "vidu", "roku", "trajanju",
+            "predjelu", "postupku", "spisima", "izreci", "svemu", "okviru", "vezi", "smislu",
+            "periodu", "javnom", "toku", "ulici", "ul", "mjestu", "mestu", "stranaka", "odsustvu",
+            "kafe", "tu", "tuči", "skladu"
+        }
+        results: List[str] = []
+
+        for pattern in self.location_patterns:
+            for match in pattern.findall(text):
+                candidate = match.strip().strip(",.;:)")
+                if not candidate:
+                    continue
+                if candidate.isupper():
+                    candidate = candidate.title()
+                candidate = self._normalize_location(candidate)
+                head = candidate.split()[0].lower()
+                if head in stopwords:
+                    continue
+                if len(candidate) < 3:
+                    continue
+                results.append(candidate)
+
+        unique = []
+        for loc in results:
+            if loc not in unique:
+                unique.append(loc)
+        return unique
+
+    def _normalize_location(self, location: str) -> str:
+        mapping = {
+            "Podgorici": "Podgorica",
+            "Podgorica": "Podgorica",
+            "Danilovgradu": "Danilovgrad",
+            "Skadru": "Skadar"
+        }
+        if location in mapping:
+            return mapping[location]
+        return location
 
     def _extract_defendants(self, text: str) -> List[str]:
         defendants = []

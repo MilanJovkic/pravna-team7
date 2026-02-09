@@ -74,6 +74,25 @@ import { VerdictDetail } from '../models/models';
             <span *ngFor="let concept of verdict.legal_concepts" class="concept-badge">{{ concept }}</span>
           </div>
         </div>
+
+        <div class="section" *ngIf="verdict.factual_state && objectKeys(verdict.factual_state).length > 0">
+          <h3>Činjenično stanje</h3>
+          <div class="facts" *ngFor="let key of objectKeys(verdict.factual_state)">
+            <strong>{{ key }}:</strong> {{ verdict.factual_state[key].join(', ') }}
+          </div>
+        </div>
+
+        <div class="section" *ngIf="verdict.parties && objectKeys(verdict.parties).length > 0">
+          <h3>Učesnici</h3>
+          <div class="facts" *ngFor="let key of objectKeys(verdict.parties)">
+            <strong>{{ key }}:</strong> {{ verdict.parties[key].join(', ') }}
+          </div>
+        </div>
+
+        <div class="section" *ngIf="verdict.full_text">
+          <h3>Kompletan tekst presude</h3>
+          <pre class="full-text">{{ verdict.full_text }}</pre>
+        </div>
       </div>
       
       <div *ngIf="loading" class="loading">Učitavanje...</div>
@@ -220,6 +239,23 @@ import { VerdictDetail } from '../models/models';
       padding: 15px;
       font-weight: 500;
     }
+
+    .facts {
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    .full-text {
+      white-space: pre-wrap;
+      background: #f8f9fa;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      padding: 15px;
+      color: #2c3e50;
+      line-height: 1.6;
+      max-height: 520px;
+      overflow: auto;
+    }
     
     .loading, .error {
       text-align: center;
@@ -235,6 +271,7 @@ export class VerdictDetailComponent implements OnInit {
   verdict?: VerdictDetail;
   loading = true;
   error = '';
+  objectKeys = Object.keys;
 
   constructor(
     private route: ActivatedRoute,

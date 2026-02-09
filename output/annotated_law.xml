@@ -40,7 +40,7 @@
             <chapter eId="chp_četrnaesta">
                 <num>ČETRNAESTA</num>
                 <heading>KRIVIČNA DJELA PROTIV ŽIVOTA I TIJELA</heading>
-                <article eId="art_143" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="criminal liability,aggravated offense" data-aggravated="true">
+                <article eId="art_143" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="ubistvo">
                     <num>Čлан 143</num>
                     <paragraph eId="art_143__para_1">
                         <content eId="art_143__para_1__content">
@@ -51,7 +51,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_144" data-norm-type="sanction" data-subjects="perpetrator" data-concepts="criminal liability,intentional act">
+                <article eId="art_144" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="ubistvo">
                     <num>Čлан 144</num>
                     <paragraph eId="art_144__para_1">
                         <intro eId="art_144__para_1__intro">
@@ -110,7 +110,7 @@
                         </point>
                     </paragraph>
                 </article>
-                <article eId="art_145" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="criminal liability,aggravated offense" data-aggravated="true">
+                <article eId="art_145" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="ubistvo">
                     <num>Čлан 145</num>
                     <paragraph eId="art_145__para_1">
                         <content eId="art_145__para_1__content">
@@ -121,7 +121,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_146" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="teško ubistvo,krivica,kaznena odgovornost" data-aggravated="true">
+                <article eId="art_146" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="ubistvo">
                     <num>Čлан 146</num>
                     <paragraph eId="art_146__para_1">
                         <content eId="art_146__para_1__content">
@@ -132,7 +132,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_147" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="bodily harm,criminal liability" data-aggravated="true">
+                <article eId="art_147" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="ubistvo">
                     <num>Čлан 147</num>
                     <paragraph eId="art_147__para_1">
                         <content eId="art_147__para_1__content">
@@ -143,7 +143,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_148" data-norm-type="sanction" data-subjects="perpetrator" data-concepts="criminal liability,aggravated offense" data-aggravated="true">
+                <article eId="art_148" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="ubistvo">
                     <num>Čлан 148</num>
                     <paragraph eId="art_148__para_1">
                         <content eId="art_148__para_1__content">
@@ -154,7 +154,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_149" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="criminal liability,bodily harm,public safety" data-aggravated="true">
+                <article eId="art_149" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="samoubistvo">
                     <num>Čлан 149</num>
                     <paragraph eId="art_149__para_1">
                         <content eId="art_149__para_1__content">
@@ -200,7 +200,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_150" data-norm-type="sanction" data-subjects="perpetrator" data-concepts="krivično delo,odgovornost,kaznena politika" data-aggravated="true">
+                <article eId="art_150" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="pobacaj">
                     <num>Čлан 150</num>
                     <paragraph eId="art_150__para_1">
                         <content eId="art_150__para_1__content">
@@ -230,7 +230,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_151" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="teško krivično delo,nasilje" data-aggravated="true">
+                <article eId="art_151" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="teska tjelesna povreda">
                     <num>Čлан 151</num>
                     <paragraph eId="art_151__para_1">
                         <content eId="art_151__para_1__content">
@@ -282,7 +282,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_151a" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="krivično delo,teška povreda" data-aggravated="true">
+                <article eId="art_151a" data-norm-type="prohibition" data-subjects="perpetrator">
                     <num>Čлан 151a</num>
                     <paragraph eId="art_151a__para_1">
                         <content eId="art_151a__para_1__content">
@@ -293,7 +293,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_151b" data-norm-type="sanction" data-subjects="perpetrator" data-concepts="criminal liability,intentional harm" data-aggravated="true">
+                <article eId="art_151b" data-norm-type="prohibition" data-subjects="perpetrator">
                     <num>Čлан 151b</num>
                     <paragraph eId="art_151b__para_1">
                         <content eId="art_151b__para_1__content">
@@ -304,7 +304,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_152" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="criminal liability,aggravated offense" data-aggravated="true">
+                <article eId="art_152" data-norm-type="permission" data-subjects="perpetrator" data-concepts="laka tjelesna povreda">
                     <num>Čлан 152</num>
                     <paragraph eId="art_152__para_1">
                         <content eId="art_152__para_1__content">
@@ -339,7 +339,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_153" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="bodily harm,criminal liability" data-aggravated="true">
+                <article eId="art_153" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="ucesce u tuci">
                     <num>Čлан 153</num>
                     <paragraph eId="art_153__para_1">
                         <content eId="art_153__para_1__content">
@@ -350,7 +350,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_154" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="bodily harm,criminal liability" data-aggravated="true">
+                <article eId="art_154" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="ucesce u tuci">
                     <num>Čлан 154</num>
                     <paragraph eId="art_154__para_1">
                         <content eId="art_154__para_1__content">
@@ -361,7 +361,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_155" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="criminal liability,aggravated offense" data-aggravated="true">
+                <article eId="art_155" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="nepruzanje pomoci">
                     <num>Čлан 155</num>
                     <paragraph eId="art_155__para_1">
                         <content eId="art_155__para_1__content">
@@ -390,7 +390,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_156" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="criminal liability,intentional harm" data-aggravated="true">
+                <article eId="art_156" data-norm-type="prohibition" data-subjects="perpetrator" data-concepts="nepruzanje pomoci">
                     <num>Čлан 156</num>
                     <paragraph eId="art_156__para_1">
                         <content eId="art_156__para_1__content">
@@ -419,7 +419,7 @@
                         </content>
                     </paragraph>
                 </article>
-                <article eId="art_157" data-norm-type="sanction" data-subjects="perpetrator,victim" data-concepts="teško krivično delo,nasilje,povreda prava" data-aggravated="true">
+                <article eId="art_157" data-norm-type="prohibition" data-subjects="perpetrator">
                     <num>Čлан 157</num>
                     <paragraph eId="art_157__para_1">
                         <content eId="art_157__para_1__content">

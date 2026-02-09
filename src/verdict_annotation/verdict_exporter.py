@@ -45,13 +45,22 @@ class VerdictAkomaExporter:
         )
 
         judgment = SubElement(root, "judgment", name=case_id)
-        self._build_meta(judgment, verdict_metadata, case_id)
-        self._build_judgment_body(judgment, verdict_metadata, annotation)
+
+        applied_laws = annotation.applied_laws if annotation and annotation.applied_laws else verdict_metadata.legal_references
+        applied_laws = [self._normalize_law_name(law) for law in (applied_laws or [])]
+        law_ref_map = self._build_meta(judgment, verdict_metadata, case_id, applied_laws)
+        self._build_judgment_body(judgment, verdict_metadata, annotation, law_ref_map)
 
         self._write_pretty_xml(root, output_file)
         return output_file
 
-    def _build_meta(self, judgment_element: Element, metadata: VerdictMetadata, case_id: str) -> None:
+    def _build_meta(
+        self,
+        judgment_element: Element,
+        metadata: VerdictMetadata,
+        case_id: str,
+        applied_laws: list[str]
+    ) -> dict[str, str]:
         """Builds <meta> section for judgment."""
         meta = SubElement(judgment_element, "meta")
         identification = SubElement(meta, "identification", source="#court")
@@ -98,16 +107,54 @@ class VerdictAkomaExporter:
                 href=f"/akn/{self.country_code}/ontology/person/judge",
                 showAs=judge
             )
+
+        for idx, defendant in enumerate(metadata.parties.get("defendant", []), 1):
+            SubElement(
+                references, "TLCPerson",
+                eId=f"defendant_{idx}",
+                href=f"/akn/{self.country_code}/ontology/person/defendant",
+                showAs=defendant
+            )
+
+        for idx, victim in enumerate(metadata.parties.get("victim", []), 1):
+            SubElement(
+                references, "TLCPerson",
+                eId=f"victim_{idx}",
+                href=f"/akn/{self.country_code}/ontology/person/victim",
+                showAs=victim
+            )
+
+        for idx, org in enumerate(metadata.organizations, 1):
+            SubElement(
+                references, "TLCOrganization",
+                eId=f"org_{idx}",
+                href=f"/akn/{self.country_code}/ontology/organization",
+                showAs=org
+            )
+
+        law_ref_map: dict[str, str] = {}
+        for idx, law in enumerate(applied_laws or [], 1):
+            law_id = f"law_{idx}"
+            law_ref_map[law] = law_id
+            SubElement(
+                references, "TLCLaw",
+                eId=law_id,
+                href=self._law_href(law),
+                showAs=law
+            )
         
         # Case classification
         classification = SubElement(meta, "classification", source="#court")
         SubElement(classification, "keyword", value="criminal_case", showAs="Krivična stvar")
 
+        return law_ref_map
+
     def _build_judgment_body(
         self,
         judgment_elem: Element,
         metadata: VerdictMetadata,
-        annotation: Optional[VerdictAnnotation]
+        annotation: Optional[VerdictAnnotation],
+        law_ref_map: dict[str, str]
     ) -> None:
         """Builds <judgmentBody> with verdict content."""
         body = SubElement(judgment_elem, "judgmentBody")
@@ -146,20 +193,26 @@ class VerdictAkomaExporter:
                     SubElement(issues_block, "p").text = issue
 
         # Background (applied laws and articles)
-        applied_laws = annotation.applied_laws if annotation else metadata.legal_references
-        applied_articles = annotation.applied_articles if annotation else metadata.article_references
+        applied_laws = annotation.applied_laws if annotation and annotation.applied_laws else metadata.legal_references
+        applied_articles = annotation.applied_articles if annotation and annotation.applied_articles else metadata.article_references
         if applied_laws or applied_articles:
             background = SubElement(body, "background")
             
             if applied_laws:
                 laws_block = SubElement(background, "block", name="appliedLaws")
                 for law in applied_laws:
-                    SubElement(laws_block, "ref", href="#").text = law
+                    law_id = law_ref_map.get(law)
+                    href = f"#{law_id}" if law_id else self._law_href(law)
+                    SubElement(laws_block, "ref", href=href).text = law
             
             if applied_articles:
                 articles_block = SubElement(background, "block", name="appliedArticles")
                 for article in applied_articles:
-                    SubElement(articles_block, "ref", href="#").text = article
+                    SubElement(
+                        articles_block,
+                        "ref",
+                        href=self._article_href(article, applied_laws[0] if applied_laws else None)
+                    ).text = article
 
         # Motivation (legal reasoning)
         if annotation and annotation.legal_reasoning:
@@ -177,8 +230,8 @@ class VerdictAkomaExporter:
             if annotation.case_outcome:
                 decision_block.set("outcome", annotation.case_outcome)
 
-        # Parties and organizations (metadata fallback)
-        if not annotation and (metadata.parties or metadata.organizations):
+        # Parties and organizations (metadata)
+        if metadata.parties or metadata.organizations:
             participants = SubElement(body, "participants")
             if metadata.parties.get("defendant"):
                 def_block = SubElement(participants, "block", name="defendants")
@@ -188,18 +241,59 @@ class VerdictAkomaExporter:
                 vic_block = SubElement(participants, "block", name="victims")
                 for victim in metadata.parties["victim"]:
                     SubElement(vic_block, "person").text = victim
+            if metadata.parties.get("witness"):
+                wit_block = SubElement(participants, "block", name="witnesses")
+                for witness in metadata.parties["witness"]:
+                    SubElement(wit_block, "person").text = witness
+            if metadata.parties.get("clerk"):
+                clerk_block = SubElement(participants, "block", name="clerks")
+                for clerk in metadata.parties["clerk"]:
+                    SubElement(clerk_block, "person").text = clerk
             if metadata.organizations:
                 org_block = SubElement(participants, "block", name="organizations")
                 for org in metadata.organizations:
                     SubElement(org_block, "organization").text = org
 
-        # Conclusions (raw text fallback if no annotation)
-        if not annotation:
+        # Factual state (regex + LLM)
+        factual_state = metadata.factual_state or (annotation.factual_state if annotation else {})
+        if factual_state:
+            facts_elem = SubElement(body, "facts")
+            for key, values in factual_state.items():
+                for value in values:
+                    SubElement(facts_elem, "fact", key=key).text = value
+
+        # Conclusions (full text for UI rendering)
+        if metadata.raw_text:
             conclusions = SubElement(body, "conclusions")
             text_block = SubElement(conclusions, "block", name="fullText")
-            # Truncate long text
-            text_preview = metadata.raw_text[:2000] + "..." if len(metadata.raw_text) > 2000 else metadata.raw_text
-            SubElement(text_block, "p").text = text_preview
+            SubElement(text_block, "p").text = metadata.raw_text
+
+    def _law_href(self, law_name: str) -> str:
+        name_lower = law_name.lower()
+        if "krivični zakonik" in name_lower or "krivicni zakonik" in name_lower:
+            return f"/akn/{self.country_code}/act/2024/!main"
+
+        slug = "".join(ch.lower() if ch.isalnum() else "-" for ch in law_name).strip("-")
+        slug = "-".join([part for part in slug.split("-") if part])
+        return f"/akn/{self.country_code}/act/{slug or 'law'}"
+
+    def _article_href(self, article_label: str, law_name: Optional[str]) -> str:
+        digits = "".join(ch for ch in article_label if ch.isdigit())
+        article_num = digits or ""
+
+        if law_name:
+            return f"{self._law_href(law_name)}#art_{article_num}"
+        return f"/akn/{self.country_code}/act/law#art_{article_num}"
+
+    def _normalize_law_name(self, law_name: str) -> str:
+        name_lower = law_name.lower()
+        if "krivični zakonik" in name_lower or "krivicni zakonik" in name_lower:
+            if "crne gore" not in name_lower:
+                return "Krivični zakonik Crne Gore"
+        if "zakonik o krivičnom postupku" in name_lower or "zakonik o krivicnom postupku" in name_lower:
+            if "crne gore" not in name_lower:
+                return "Zakonik o krivičnom postupku"
+        return law_name
 
     def _write_pretty_xml(self, root: Element, output_file: str) -> None:
         """Writes XML to file with formatting."""

@@ -31,8 +31,11 @@ class LawService:
     def _load_annotations(self):
         """Load annotations if available."""
         if self._annotations is None:
-            # Try to find annotations file
-            potential_files = list(Path(self.law_file.parent).glob("*_annotations.json"))
+            # Try to find annotations file (prefer output folder)
+            output_dir = Path(__file__).parent.parent.parent.parent / "output"
+            potential_files = list(output_dir.glob("*_annotations.json"))
+            if not potential_files:
+                potential_files = list(Path(self.law_file.parent).glob("*_annotations.json"))
             if potential_files:
                 with open(potential_files[0], "r", encoding="utf-8") as f:
                     self._annotations = json.load(f)

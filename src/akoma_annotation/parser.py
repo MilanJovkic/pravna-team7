@@ -121,6 +121,49 @@ class LegalTextParser:
                         i += 1
                         continue
 
+            point_match = self.point_pattern.match(line)
+            if point_match and current_article:
+                if current_article.paragraphs:
+                    last_paragraph = current_article.paragraphs[-1]
+                    if last_paragraph.number is not None and last_paragraph.text:
+                        last_paragraph = LegalParagraph(
+                            number=None,
+                            text="",
+                            raw_text=""
+                        )
+                        current_article.paragraphs.append(last_paragraph)
+                else:
+                    last_paragraph = LegalParagraph(
+                        number=None,
+                        text="",
+                        raw_text=""
+                    )
+                    current_article.paragraphs.append(last_paragraph)
+
+                j = i
+                while j < len(lines):
+                    point_line = lines[j].strip()
+                    if not point_line:
+                        j += 1
+                        continue
+
+                    point_match = self.point_pattern.match(point_line)
+                    if point_match:
+                        point_num = point_match.group(1)
+                        point_text = point_match.group(2).strip()
+                        point_text = point_text.rstrip(';')
+                        last_paragraph.points.append(LegalPoint(
+                            number=point_num,
+                            text=point_text,
+                            raw_text=point_line
+                        ))
+                        j += 1
+                    else:
+                        break
+
+                i = j
+                continue
+
             para_match = self.paragraph_pattern.match(line)
             if para_match and current_article:
                 para_num = int(para_match.group(1))

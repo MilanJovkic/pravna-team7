@@ -39,8 +39,8 @@ def main() -> None:
     parser.add_argument(
         "--output",
         type=str,
-        default="output_annotated.xml",
-        help="Putanja do izlaza u AKOMA Ntoso format (default: output_annotated.xml)"
+        default="output/annotated_law.xml",
+        help="Putanja do izlaza u AKOMA Ntoso format (default: output/annotated_law.xml)"
     )
 
     parser.add_argument(
@@ -83,10 +83,20 @@ def main() -> None:
 
     ensure_env_file()
 
+    output_path = Path(args.output)
+    if output_path.parent == Path("."):
+        output_path = Path("output") / output_path.name
+
+    output_json = args.output_json
+    if output_json:
+        output_json_path = Path(output_json)
+        if output_json_path.parent == Path("."):
+            output_json = str(Path("output") / output_json_path.name)
+
     pipeline = AnnotationPipeline(
         input_file=str(input_path),
-        output_xml=args.output,
-        output_json=args.output_json,
+        output_xml=str(output_path),
+        output_json=output_json,
         model=args.model,
         provider=args.provider,
         article_limit=args.limit

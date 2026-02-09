@@ -1,4 +1,5 @@
 """Pipeline orchestration for Akoma annotation flow."""
+from pathlib import Path
 from typing import Dict, List, Optional
 
 from .annotator import LLMAnnotator, SemanticAnnotation
@@ -102,6 +103,12 @@ class AnnotationPipeline:
         return annotations
 
     def _export_results(self, chapters: List[LegalChapter], annotations: Dict[str, SemanticAnnotation]) -> None:
+        output_xml_path = Path(self.output_xml)
+        output_xml_path.parent.mkdir(parents=True, exist_ok=True)
+
+        output_json_path = Path(self.output_json)
+        output_json_path.parent.mkdir(parents=True, exist_ok=True)
+
         self.exporter.export(chapters, annotations, self.output_xml)
         if annotations:
             self.exporter.export_annotations_json(annotations, self.output_json)

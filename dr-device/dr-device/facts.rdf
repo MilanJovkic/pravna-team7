@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+        xmlns:lc="http://ftn.uns.ac.rs/legal-case#">
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#defendant">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#injury_type">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#weapon">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#location">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+
+    <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case01">
+        <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <lc:defendant>Č. S.</lc:defendant>
+        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:location>Podgorica</lc:location>
+    </lc:case>
+
+    <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case02">
+        <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <lc:defendant>G. V.</lc:defendant>
+        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:location>Podgorica</lc:location>
+    </lc:case>
+
+    <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case03">
+        <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <lc:defendant>G. V.</lc:defendant>
+        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:location>Skadar</lc:location>
+    </lc:case>
+
+    <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case04">
+        <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <lc:defendant>G. V.</lc:defendant>
+        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:location>Sto</lc:location>
+    </lc:case>
+
+    <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case05">
+        <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <lc:defendant>G. V.</lc:defendant>
+        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:location>Danilovgrad</lc:location>
+    </lc:case>
+
+    <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case06">
+        <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <lc:defendant>G. V.</lc:defendant>
+        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:location>Podgorici Kv</lc:location>
+    </lc:case>
+
+    <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case07">
+        <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <lc:defendant>K. B.</lc:defendant>
+        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:weapon>metalni kljuc</lc:weapon>
+        <lc:location>Podgorica</lc:location>
+    </lc:case>
+
+    <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case08">
+        <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <lc:defendant>B. M.</lc:defendant>
+        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:weapon>staklena flasa</lc:weapon>
+        <lc:location>Podgorica</lc:location>
+    </lc:case>
+
+    <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case09">
+        <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <lc:defendant>B. M.</lc:defendant>
+        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:weapon>staklena flasa</lc:weapon>
+        <lc:location>Podgorici Kv</lc:location>
+    </lc:case>
+
+    <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case10">
+        <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <lc:defendant>N. R.</lc:defendant>
+        <lc:injury_type>laka tjelesna povreda</lc:injury_type>
+        <lc:weapon>metalni kljuc</lc:weapon>
+        <lc:location>Podgorica</lc:location>
+    </lc:case>
+</rdf:RDF>

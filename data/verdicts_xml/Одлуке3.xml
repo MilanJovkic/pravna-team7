@@ -108,6 +108,16 @@
                 <fact key="location">Podgorica</fact>
                 <fact key="location">Podgorici Kv</fact>
                 <fact key="weapon">staklena flaša</fact>
+                <fact key="weapon_used">true</fact>
+                <fact key="severe_consequence">true</fact>
+                <fact key="death_result">false</fact>
+                <fact key="negligence">false</fact>
+                <fact key="provocation">false</fact>
+                <fact key="fight_participation">false</fact>
+                <fact key="fight_consequence">none</fact>
+                <fact key="weapon_shown">false</fact>
+                <fact key="caused_danger">false</fact>
+                <fact key="left_without_help">false</fact>
             </facts>
             <conclusions>
                 <block name="fullText">

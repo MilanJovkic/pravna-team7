@@ -73,3 +73,73 @@ class SearchResponse(BaseModel):
     """Model for search response."""
     total_results: int
     results: List[VerdictMetadata]
+
+
+class CaseFacts(BaseModel):
+    """Model for case facts used in reasoning."""
+    defendant: Optional[str] = None
+    injury_type: Optional[str] = None
+    location: Optional[str] = None
+    weapon: Optional[str] = None
+    weapon_used: Optional[bool] = None
+    severe_consequence: Optional[bool] = None
+    death_result: Optional[bool] = None
+    negligence: Optional[bool] = None
+    provocation: Optional[bool] = None
+    fight_participation: Optional[bool] = None
+    fight_consequence: Optional[str] = None
+    left_without_help: Optional[bool] = None
+
+
+class ReasoningRequest(BaseModel):
+    """Request model for rule and case-based reasoning."""
+    facts: CaseFacts
+    top_k: int = 5
+
+
+class RuleReasoningResult(BaseModel):
+    """Result model for rule-based reasoning."""
+    applied_norms: List[str] = Field(default_factory=list)
+    proofs: List[str] = Field(default_factory=list)
+
+
+class CbrMatch(BaseModel):
+    """Single CBR match result."""
+    case_number: Optional[str] = None
+    similarity: float
+    outcome: Optional[str] = None
+
+
+class CbrResult(BaseModel):
+    """CBR response model."""
+    matches: List[CbrMatch] = Field(default_factory=list)
+
+
+class AppliedLawText(BaseModel):
+    """Applied law text for explanation."""
+    article_number: str
+    title: Optional[str] = None
+    content: Optional[str] = None
+
+
+class ReasoningResponse(BaseModel):
+    """Combined reasoning response."""
+    rule_reasoning: RuleReasoningResult
+    cbr: CbrResult
+    applied_articles: List[str] = Field(default_factory=list)
+    applied_law_texts: List[AppliedLawText] = Field(default_factory=list)
+    suggested_verdict: Optional[str] = None
+    suggested_sanction: Optional[str] = None
+
+
+class NewCaseRequest(BaseModel):
+    """Request model for inserting a new case."""
+    case_number: Optional[str] = None
+    outcome: Optional[str] = None
+    facts: CaseFacts
+
+
+class NewCaseResponse(BaseModel):
+    """Response model for inserting a new case."""
+    id: int
+    case_number: str

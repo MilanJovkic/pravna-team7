@@ -106,6 +106,13 @@ pravna-team7/
 
 ```
 
+## Zadatak 6: Rasudjivanje po slucajevima (CBR)
+
+- jColibri projekat: `cbr-jcolibri/`
+- CSV baza slucajeva: `cbr-jcolibri/src/main/resources/presude.csv`
+- Model i slicnosti: `cbr-jcolibri/src/main/java/`
+- Opis: `CBR.md`
+
 ## Napomene
 
 - Oba sistema koriste isti `.env` (GitHub ili OpenRouter token)

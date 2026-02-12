@@ -1,8 +1,17 @@
 """Akoma Ntoso XML exporter for court verdicts (judgment format)."""
+import os
 from datetime import datetime
 from typing import Dict, Optional
 from xml.dom import minidom
 from xml.etree.ElementTree import Element, SubElement, tostring
+
+try:
+    import psycopg2
+    from psycopg2.extras import execute_values
+    POSTGRES_AVAILABLE = True
+except ImportError:
+    POSTGRES_AVAILABLE = False
+    print("⚠️  psycopg2 nije instaliran - upis u bazu podataka je onemogućen")
 
 from .verdict_parser import VerdictMetadata
 from .verdict_annotator import VerdictAnnotation
@@ -13,9 +22,19 @@ class VerdictAkomaExporter:
 
     AKOMA_NS = "http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"
 
-    def __init__(self, country_code: str = "me"):
+    def __init__(self, country_code: str = "me", enable_db_insert: bool = True):
         self.country_code = country_code
         self.current_date = datetime.now().strftime("%Y-%m-%d")
+        self.enable_db_insert = enable_db_insert and POSTGRES_AVAILABLE
+        
+        # Database connection parameters
+        self.db_params = {
+            "host": os.getenv("POSTGRES_HOST", "localhost"),
+            "port": os.getenv("POSTGRES_PORT", "5432"),
+            "database": os.getenv("POSTGRES_DB", "pravna_cbr"),
+            "user": os.getenv("POSTGRES_USER", "pravna_user"),
+            "password": os.getenv("POSTGRES_PASSWORD", "pravna_pass")
+        }
 
     def export(
         self,
@@ -51,7 +70,7 @@ class VerdictAkomaExporter:
         law_ref_map = self._build_meta(judgment, verdict_metadata, case_id, applied_laws)
         self._build_judgment_body(judgment, verdict_metadata, annotation, law_ref_map)
 
-        self._write_pretty_xml(root, output_file)
+        self._write_pretty_xml(root, output_file, case_id, verdict_metadata, annotation)
         return output_file
 
     def _build_meta(
@@ -295,7 +314,14 @@ class VerdictAkomaExporter:
                 return "Zakonik o krivičnom postupku"
         return law_name
 
-    def _write_pretty_xml(self, root: Element, output_file: str) -> None:
+    def _write_pretty_xml(
+        self, 
+        root: Element, 
+        output_file: str, 
+        case_id: str,
+        verdict_metadata: VerdictMetadata,
+        annotation: Optional[VerdictAnnotation]
+    ) -> None:
         """Writes XML to file with formatting."""
         rough_string = tostring(root, encoding='utf-8')
         reparsed = minidom.parseString(rough_string)
@@ -303,6 +329,15 @@ class VerdictAkomaExporter:
 
         with open(output_file, "wb") as f:
             f.write(pretty_xml)
+        
+        # After saving XML, also save to database
+        if self.enable_db_insert:
+            try:
+                factual_state = verdict_metadata.factual_state or (annotation.factual_state if annotation else {})
+                outcome = annotation.case_outcome if annotation else "непознато"
+                self._insert_case_to_db(case_id, factual_state, outcome)
+            except Exception as e:
+                print(f"  ⚠️  Nije uspeo upis u bazu za {case_id}: {e}")
 
     def export_batch(
         self,
@@ -363,3 +398,108 @@ class VerdictAkomaExporter:
 
         print(f"✓ Anotacije presuda eksportovane u JSON: {output_file}")
         return output_file
+
+    def _extract_fact_value(self, factual_state: Dict[str, list], key: str, default: str = "ne") -> str:
+        """Extracts a single fact value from factual_state dict."""
+        values = factual_state.get(key, [])
+        if not values:
+            return default
+        # Take first value if multiple exist
+        return str(values[0]) if values else default
+    
+    def _to_boolean(self, value: str) -> bool:
+        """Converts да/ne/da/не/true/false string to boolean."""
+        value_lower = str(value).lower().strip()
+        return value_lower in ["да", "da", "true", "yes", "1"]
+
+    def _insert_case_to_db(self, case_number: str, factual_state: Dict[str, list], outcome: str):
+        """Inserts case facts into PostgreSQL database."""
+        if not POSTGRES_AVAILABLE:
+            return
+        
+        # Extract individual facts from factual_state
+        facts_dict = {
+            "injury_type": self._extract_fact_value(factual_state, "injury_type", "непознато"),
+            "location": self._extract_fact_value(factual_state, "location", "непознато"),
+            "weapon": self._extract_fact_value(factual_state, "weapon", "непознато"),
+            "weapon_used": self._to_boolean(self._extract_fact_value(factual_state, "weapon_used", "не")),
+            "severe_consequence": self._to_boolean(self._extract_fact_value(factual_state, "severe_consequence", "не")),
+            "death_result": self._to_boolean(self._extract_fact_value(factual_state, "death_result", "не")),
+            "negligence": self._to_boolean(self._extract_fact_value(factual_state, "negligence", "не")),
+            "provocation": self._to_boolean(self._extract_fact_value(factual_state, "provocation", "не")),
+            "fight_participation": self._to_boolean(self._extract_fact_value(factual_state, "fight_participation", "не")),
+            "fight_consequence": self._extract_fact_value(factual_state, "fight_consequence", "непознато"),
+            "left_without_help": self._to_boolean(self._extract_fact_value(factual_state, "left_without_help", "не")),
+            "outcome": outcome
+        }
+        
+        try:
+            conn = psycopg2.connect(**self.db_params)
+            cursor = conn.cursor()
+            
+            # Check if case already exists
+            cursor.execute("SELECT id FROM cases WHERE case_number = %s", (case_number,))
+            existing = cursor.fetchone()
+            
+            if existing:
+                # Update existing case
+                cursor.execute("""
+                    UPDATE cases SET
+                        injury_type = %s,
+                        location = %s,
+                        weapon = %s,
+                        weapon_used = %s,
+                        severe_consequence = %s,
+                        death_result = %s,
+                        negligence = %s,
+                        provocation = %s,
+                        fight_participation = %s,
+                        fight_consequence = %s,
+                        left_without_help = %s,
+                        outcome = %s
+                    WHERE case_number = %s
+                """, (
+                    facts_dict["injury_type"],
+                    facts_dict["location"],
+                    facts_dict["weapon"],
+                    facts_dict["weapon_used"],
+                    facts_dict["severe_consequence"],
+                    facts_dict["death_result"],
+                    facts_dict["negligence"],
+                    facts_dict["provocation"],
+                    facts_dict["fight_participation"],
+                    facts_dict["fight_consequence"],
+                    facts_dict["left_without_help"],
+                    facts_dict["outcome"],
+                    case_number
+                ))
+            else:
+                # Insert new case
+                cursor.execute("""
+                    INSERT INTO cases (
+                        case_number, injury_type, location, weapon, weapon_used,
+                        severe_consequence, death_result, negligence, provocation,
+                        fight_participation, fight_consequence, left_without_help, outcome
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """, (
+                    case_number,
+                    facts_dict["injury_type"],
+                    facts_dict["location"],
+                    facts_dict["weapon"],
+                    facts_dict["weapon_used"],
+                    facts_dict["severe_consequence"],
+                    facts_dict["death_result"],
+                    facts_dict["negligence"],
+                    facts_dict["provocation"],
+                    facts_dict["fight_participation"],
+                    facts_dict["fight_consequence"],
+                    facts_dict["left_without_help"],
+                    facts_dict["outcome"]
+                ))
+            
+            conn.commit()
+            cursor.close()
+            conn.close()
+            
+        except Exception as e:
+            raise Exception(f"Database insert failed: {e}")

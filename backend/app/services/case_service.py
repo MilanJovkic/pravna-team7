@@ -7,6 +7,11 @@ import os
 import psycopg2
 
 from backend.app.models.schemas import CaseFacts
+from backend.app.services.cbr_normalization import (
+    normalize_fight_consequence,
+    normalize_injury_type,
+    normalize_text,
+)
 
 
 class CaseService:
@@ -15,6 +20,21 @@ class CaseService:
     def insert_case(self, facts: CaseFacts, outcome: str | None, case_number: str | None) -> dict:
         case_number = case_number or self._generate_case_number()
         config = self._db_config()
+
+        normalized = CaseFacts(
+            defendant=facts.defendant,
+            injury_type=normalize_injury_type(facts.injury_type),
+            location=normalize_text(facts.location),
+            weapon=normalize_text(facts.weapon),
+            weapon_used=facts.weapon_used,
+            severe_consequence=facts.severe_consequence,
+            death_result=facts.death_result,
+            negligence=facts.negligence,
+            provocation=facts.provocation,
+            fight_participation=facts.fight_participation,
+            fight_consequence=normalize_fight_consequence(facts.fight_consequence),
+            left_without_help=facts.left_without_help,
+        )
 
         conn = psycopg2.connect(**config)
         cursor = conn.cursor()
@@ -32,17 +52,17 @@ class CaseService:
             insert_query,
             (
                 case_number,
-                facts.injury_type,
-                facts.location,
-                facts.weapon,
-                facts.weapon_used,
-                facts.severe_consequence,
-                facts.death_result,
-                facts.negligence,
-                facts.provocation,
-                facts.fight_participation,
-                facts.fight_consequence,
-                facts.left_without_help,
+                normalized.injury_type,
+                normalized.location,
+                normalized.weapon,
+                normalized.weapon_used,
+                normalized.severe_consequence,
+                normalized.death_result,
+                normalized.negligence,
+                normalized.provocation,
+                normalized.fight_participation,
+                normalized.fight_consequence,
+                normalized.left_without_help,
                 outcome,
             ),
         )
@@ -60,7 +80,7 @@ class CaseService:
 
     def _db_config(self) -> dict:
         return {
-            "host": os.getenv("DB_HOST", "localhost"),
+            "host": os.getenv("DB_HOST", "127.0.0.1"),
             "port": int(os.getenv("DB_PORT", "5432")),
             "database": os.getenv("DB_NAME", "pravna_cbr"),
             "user": os.getenv("DB_USER", "pravna_user"),

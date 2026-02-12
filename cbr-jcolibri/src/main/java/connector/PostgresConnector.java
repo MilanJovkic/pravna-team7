@@ -16,9 +16,14 @@ import model.CaseDescription;
 
 public class PostgresConnector implements Connector {
 
-    private static final String JDBC_URL = "jdbc:postgresql://localhost:5432/pravna_cbr";
-    private static final String JDBC_USER = "pravna_user";
-    private static final String JDBC_PASSWORD = "pravna_pass";
+        private static final String JDBC_URL = String.format(
+            "jdbc:postgresql://%s:%s/%s",
+            env("DB_HOST", "127.0.0.1"),
+            env("DB_PORT", "5432"),
+            env("DB_NAME", "pravna_cbr")
+        );
+        private static final String JDBC_USER = env("DB_USER", "pravna_user");
+        private static final String JDBC_PASSWORD = env("DB_PASSWORD", "pravna_pass");
 
     @Override
     public Collection<CBRCase> retrieveAllCases() {
@@ -62,6 +67,14 @@ public class PostgresConnector implements Connector {
         }
 
         return cases;
+    }
+
+    private static String env(String key, String fallback) {
+        String value = System.getenv(key);
+        if (value == null || value.isEmpty()) {
+            return fallback;
+        }
+        return value;
     }
 
     @Override

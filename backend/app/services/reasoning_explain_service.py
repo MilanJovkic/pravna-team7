@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 from backend.app.models.schemas import CbrResult
@@ -25,6 +26,8 @@ class ReasoningExplainService:
         articles = []
         for norm in norms:
             article = mapping.get(norm)
+            if not article:
+                article = self._infer_article(norm)
             if article and article not in articles:
                 articles.append(article)
         return articles
@@ -65,3 +68,9 @@ class ReasoningExplainService:
             else:
                 self._mapping = {}
         return self._mapping
+
+    def _infer_article(self, norm: str) -> str | None:
+        match = re.search(r"crime_art(\d+[a-z]?)", norm, re.IGNORECASE)
+        if not match:
+            return None
+        return match.group(1)

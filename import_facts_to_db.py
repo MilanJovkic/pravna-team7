@@ -1,13 +1,66 @@
 """Import extracted facts from XML verdicts into PostgreSQL database."""
 import xml.etree.ElementTree as ET
 from pathlib import Path
+import os
 import psycopg2
 from psycopg2.extras import execute_values
 
 
+ASCII_MAP = {
+    "č": "c",
+    "ć": "c",
+    "š": "s",
+    "ž": "z",
+    "đ": "dj",
+    "Č": "C",
+    "Ć": "C",
+    "Š": "S",
+    "Ž": "Z",
+    "Đ": "Dj",
+}
+
+
+def normalize_text(value: str | None) -> str | None:
+    if value is None:
+        return None
+    text = value.strip()
+    if not text:
+        return None
+    for src, dst in ASCII_MAP.items():
+        text = text.replace(src, dst)
+    text = " ".join(text.split())
+    return text.lower()
+
+
+def normalize_injury_type(value: str | None) -> str | None:
+    text = normalize_text(value)
+    if not text:
+        return None
+    if "povred" in text:
+        if "tesk" in text:
+            return "teska tjelesna povreda"
+        if "lak" in text:
+            return "laka tjelesna povreda"
+    return text
+
+
+def normalize_fight_consequence(value: str | None) -> str | None:
+    text = normalize_text(value)
+    if not text:
+        return None
+    if text in {"none", "nema", "bez", "bez posledica", "bez posljedica"}:
+        return "none"
+    return text
+
+
 def parse_boolean(value: str) -> bool:
     """Parse string to boolean."""
-    return value.lower() in ('true', '1', 'yes')
+    text = normalize_text(value) or ""
+    if text in ("true", "1", "yes", "da", "t", "y"):
+        return True
+    if text in ("false", "0", "no", "ne", "f", "n"):
+        return False
+    return False
 
 
 def extract_facts_from_xml(xml_path: Path) -> dict:
@@ -54,16 +107,16 @@ def import_to_database(xml_dir: Path, db_config: dict):
             
             record = (
                 facts.get("case_number", ""),
-                facts.get("injury_type", ""),
-                facts.get("location", ""),
-                facts.get("weapon", ""),
+                normalize_injury_type(facts.get("injury_type")) or "",
+                normalize_text(facts.get("location")) or "",
+                normalize_text(facts.get("weapon")) or "",
                 parse_boolean(facts.get("weapon_used", "false")),
                 parse_boolean(facts.get("severe_consequence", "false")),
                 parse_boolean(facts.get("death_result", "false")),
                 parse_boolean(facts.get("negligence", "false")),
                 parse_boolean(facts.get("provocation", "false")),
                 parse_boolean(facts.get("fight_participation", "false")),
-                facts.get("fight_consequence", "none"),
+                normalize_fight_consequence(facts.get("fight_consequence")) or "none",
                 parse_boolean(facts.get("left_without_help", "false")),
                 facts.get("outcome", "")
             )
@@ -94,11 +147,11 @@ def main():
     xml_dir = root / "data" / "verdicts_xml"
     
     db_config = {
-        "host": "localhost",
-        "port": 5432,
-        "database": "pravna_cbr",
-        "user": "pravna_user",
-        "password": "pravna_pass"
+        "host": os.getenv("DB_HOST", "localhost"),
+        "port": int(os.getenv("DB_PORT", "5432")),
+        "database": os.getenv("DB_NAME", "pravna_cbr"),
+        "user": os.getenv("DB_USER", "pravna_user"),
+        "password": os.getenv("DB_PASSWORD", "pravna_pass"),
     }
     
     import_to_database(xml_dir, db_config)

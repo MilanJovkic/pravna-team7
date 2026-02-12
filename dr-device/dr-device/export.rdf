@@ -107,105 +107,21 @@
 </rdf:Property>
 
 <export:crime_art151_1 rdf:about='&export;crime_art151_11'>
-     <export:defendant>u010C. S.</export:defendant>
+     <export:defendant>Test User</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
 </export:crime_art151_1>
 
-<export:crime_art151_1 rdf:about='&export;crime_art151_12'>
-     <export:defendant>G. V.</export:defendant>
+<export:crime_art151_2 rdf:about='&export;crime_art151_21'>
+     <export:defendant>Test User</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
-</export:crime_art151_1>
-
-<export:crime_art151_1 rdf:about='&export;crime_art151_13'>
-     <export:defendant>K. B.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
-</export:crime_art151_1>
-
-<export:crime_art151_1 rdf:about='&export;crime_art151_14'>
-     <export:defendant>B. M.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
-</export:crime_art151_1>
-
-<export:crime_art151_2 rdf:about='&export;crime_art151_21'>
-     <export:defendant>K. B.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
 </export:crime_art151_2>
 
-<export:crime_art151_3 rdf:about='&export;crime_art151_31'>
-     <export:defendant>B. M.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof6</defeasible:proof>
-</export:crime_art151_3>
-
 <export:crime_art151_4 rdf:about='&export;crime_art151_41'>
-     <export:defendant>u010C. S.</export:defendant>
+     <export:defendant>Test User</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof7</defeasible:proof>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
 </export:crime_art151_4>
-
-<export:crime_art151_4 rdf:about='&export;crime_art151_42'>
-     <export:defendant>G. V.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof8</defeasible:proof>
-</export:crime_art151_4>
-
-<export:crime_art151_4 rdf:about='&export;crime_art151_43'>
-     <export:defendant>K. B.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof9</defeasible:proof>
-</export:crime_art151_4>
-
-<export:crime_art151_4 rdf:about='&export;crime_art151_44'>
-     <export:defendant>B. M.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof10</defeasible:proof>
-</export:crime_art151_4>
-
-<export:crime_art151_5 rdf:about='&export;crime_art151_51'>
-     <export:defendant>G. V.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof11</defeasible:proof>
-</export:crime_art151_5>
-
-<export:crime_art152_1 rdf:about='&export;crime_art152_11'>
-     <export:defendant>N. R.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof12</defeasible:proof>
-</export:crime_art152_1>
-
-<export:crime_art152_2 rdf:about='&export;crime_art152_21'>
-     <export:defendant>N. R.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof13</defeasible:proof>
-</export:crime_art152_2>
-
-<export:crime_art153 rdf:about='&export;crime_art1531'>
-     <export:defendant>G. V.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof14</defeasible:proof>
-</export:crime_art153>
-
-<export:crime_art154 rdf:about='&export;crime_art1541'>
-     <export:defendant>G. V.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof15</defeasible:proof>
-</export:crime_art154>
-
-<export:crime_art154 rdf:about='&export;crime_art1542'>
-     <export:defendant>B. M.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof16</defeasible:proof>
-</export:crime_art154>
-
-<export:crime_art155_1 rdf:about='&export;crime_art155_11'>
-     <export:defendant>G. V.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof17</defeasible:proof>
-</export:crime_art155_1>
 
 </rdf:RDF>

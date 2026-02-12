@@ -4,63 +4,47 @@
 <http://ftn.uns.ac.rs/legal-case#injury_type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://ftn.uns.ac.rs/legal-case#injury_type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ftn.uns.ac.rs/legal-case#case> .
 <http://ftn.uns.ac.rs/legal-case#injury_type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://ftn.uns.ac.rs/legal-case#weapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://ftn.uns.ac.rs/legal-case#weapon> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#weapon> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://ftn.uns.ac.rs/legal-case#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://ftn.uns.ac.rs/legal-case#location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ftn.uns.ac.rs/legal-case#case> .
 <http://ftn.uns.ac.rs/legal-case#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ftn.uns.ac.rs/legal-case#weapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://ftn.uns.ac.rs/legal-case#weapon> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ftn.uns.ac.rs/legal-case#case> .
+<http://ftn.uns.ac.rs/legal-case#weapon> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ftn.uns.ac.rs/legal-case#weapon_used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://ftn.uns.ac.rs/legal-case#weapon_used> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ftn.uns.ac.rs/legal-case#case> .
+<http://ftn.uns.ac.rs/legal-case#weapon_used> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ftn.uns.ac.rs/legal-case#severe_consequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://ftn.uns.ac.rs/legal-case#severe_consequence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ftn.uns.ac.rs/legal-case#case> .
+<http://ftn.uns.ac.rs/legal-case#severe_consequence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ftn.uns.ac.rs/legal-case#death_result> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://ftn.uns.ac.rs/legal-case#death_result> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ftn.uns.ac.rs/legal-case#case> .
+<http://ftn.uns.ac.rs/legal-case#death_result> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ftn.uns.ac.rs/legal-case#negligence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://ftn.uns.ac.rs/legal-case#negligence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ftn.uns.ac.rs/legal-case#case> .
+<http://ftn.uns.ac.rs/legal-case#negligence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ftn.uns.ac.rs/legal-case#provocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://ftn.uns.ac.rs/legal-case#provocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ftn.uns.ac.rs/legal-case#case> .
+<http://ftn.uns.ac.rs/legal-case#provocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ftn.uns.ac.rs/legal-case#fight_participation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://ftn.uns.ac.rs/legal-case#fight_participation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ftn.uns.ac.rs/legal-case#case> .
+<http://ftn.uns.ac.rs/legal-case#fight_participation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ftn.uns.ac.rs/legal-case#fight_consequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://ftn.uns.ac.rs/legal-case#fight_consequence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ftn.uns.ac.rs/legal-case#case> .
+<http://ftn.uns.ac.rs/legal-case#fight_consequence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ftn.uns.ac.rs/legal-case#left_without_help> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://ftn.uns.ac.rs/legal-case#left_without_help> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ftn.uns.ac.rs/legal-case#case> .
+<http://ftn.uns.ac.rs/legal-case#left_without_help> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#defendant> "\u010C. S." .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#defendant> "Test User" .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#injury_type> "teska tjelesna povreda" .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#location> "Podgorica" .
-<http://ftn.uns.ac.rs/legal-case#case02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case02> <http://ftn.uns.ac.rs/legal-case#defendant> "G. V." .
-<http://ftn.uns.ac.rs/legal-case#case02> <http://ftn.uns.ac.rs/legal-case#injury_type> "teska tjelesna povreda" .
-<http://ftn.uns.ac.rs/legal-case#case02> <http://ftn.uns.ac.rs/legal-case#location> "Podgorica" .
-<http://ftn.uns.ac.rs/legal-case#case03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case03> <http://ftn.uns.ac.rs/legal-case#defendant> "G. V." .
-<http://ftn.uns.ac.rs/legal-case#case03> <http://ftn.uns.ac.rs/legal-case#injury_type> "teska tjelesna povreda" .
-<http://ftn.uns.ac.rs/legal-case#case03> <http://ftn.uns.ac.rs/legal-case#location> "Skadar" .
-<http://ftn.uns.ac.rs/legal-case#case04> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case04> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case04> <http://ftn.uns.ac.rs/legal-case#defendant> "G. V." .
-<http://ftn.uns.ac.rs/legal-case#case04> <http://ftn.uns.ac.rs/legal-case#injury_type> "teska tjelesna povreda" .
-<http://ftn.uns.ac.rs/legal-case#case04> <http://ftn.uns.ac.rs/legal-case#location> "Sto" .
-<http://ftn.uns.ac.rs/legal-case#case05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case05> <http://ftn.uns.ac.rs/legal-case#defendant> "G. V." .
-<http://ftn.uns.ac.rs/legal-case#case05> <http://ftn.uns.ac.rs/legal-case#injury_type> "teska tjelesna povreda" .
-<http://ftn.uns.ac.rs/legal-case#case05> <http://ftn.uns.ac.rs/legal-case#location> "Danilovgrad" .
-<http://ftn.uns.ac.rs/legal-case#case06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case06> <http://ftn.uns.ac.rs/legal-case#defendant> "G. V." .
-<http://ftn.uns.ac.rs/legal-case#case06> <http://ftn.uns.ac.rs/legal-case#injury_type> "teska tjelesna povreda" .
-<http://ftn.uns.ac.rs/legal-case#case06> <http://ftn.uns.ac.rs/legal-case#location> "Podgorici Kv" .
-<http://ftn.uns.ac.rs/legal-case#case07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case07> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case07> <http://ftn.uns.ac.rs/legal-case#defendant> "K. B." .
-<http://ftn.uns.ac.rs/legal-case#case07> <http://ftn.uns.ac.rs/legal-case#injury_type> "teska tjelesna povreda" .
-<http://ftn.uns.ac.rs/legal-case#case07> <http://ftn.uns.ac.rs/legal-case#weapon> "metalni kljuc" .
-<http://ftn.uns.ac.rs/legal-case#case07> <http://ftn.uns.ac.rs/legal-case#location> "Podgorica" .
-<http://ftn.uns.ac.rs/legal-case#case08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case08> <http://ftn.uns.ac.rs/legal-case#defendant> "B. M." .
-<http://ftn.uns.ac.rs/legal-case#case08> <http://ftn.uns.ac.rs/legal-case#injury_type> "teska tjelesna povreda" .
-<http://ftn.uns.ac.rs/legal-case#case08> <http://ftn.uns.ac.rs/legal-case#weapon> "staklena flasa" .
-<http://ftn.uns.ac.rs/legal-case#case08> <http://ftn.uns.ac.rs/legal-case#location> "Podgorica" .
-<http://ftn.uns.ac.rs/legal-case#case09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case09> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case09> <http://ftn.uns.ac.rs/legal-case#defendant> "B. M." .
-<http://ftn.uns.ac.rs/legal-case#case09> <http://ftn.uns.ac.rs/legal-case#injury_type> "teska tjelesna povreda" .
-<http://ftn.uns.ac.rs/legal-case#case09> <http://ftn.uns.ac.rs/legal-case#weapon> "staklena flasa" .
-<http://ftn.uns.ac.rs/legal-case#case09> <http://ftn.uns.ac.rs/legal-case#location> "Podgorici Kv" .
-<http://ftn.uns.ac.rs/legal-case#case10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case10> <http://ftn.uns.ac.rs/legal-case#defendant> "N. R." .
-<http://ftn.uns.ac.rs/legal-case#case10> <http://ftn.uns.ac.rs/legal-case#injury_type> "laka tjelesna povreda" .
-<http://ftn.uns.ac.rs/legal-case#case10> <http://ftn.uns.ac.rs/legal-case#weapon> "metalni kljuc" .
-<http://ftn.uns.ac.rs/legal-case#case10> <http://ftn.uns.ac.rs/legal-case#location> "Podgorica" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#weapon> "metalni kljuc" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#weapon_used> "true" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#severe_consequence> "true" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#death_result> "false" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#negligence> "false" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#provocation> "false" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#fight_participation> "false" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#fight_consequence> "none" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#left_without_help> "false" .

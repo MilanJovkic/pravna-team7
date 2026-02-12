@@ -14,6 +14,7 @@ import { CommonModule } from '@angular/common';
           <div class="nav-links">
             <a routerLink="/laws" routerLinkActive="active">Zakoni</a>
             <a routerLink="/verdicts" routerLinkActive="active">Presude</a>
+            <a routerLink="/reasoning" routerLinkActive="active">Rasudjivanje</a>
           </div>
         </div>
       </nav>
@@ -30,7 +31,7 @@ import { CommonModule } from '@angular/common';
     }
     
     .navbar {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: linear-gradient(135deg, #0f5c52 0%, #1b6f65 50%, #f4a261 100%);
       color: white;
       padding: 0;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);

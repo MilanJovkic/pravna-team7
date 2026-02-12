@@ -4,6 +4,7 @@ import { LawDetailComponent } from './components/law-detail.component';
 import { LawArticleComponent } from './components/law-article.component';
 import { VerdictListComponent } from './components/verdict-list.component';
 import { VerdictDetailComponent } from './components/verdict-detail.component';
+import { ReasoningComponent } from './components/reasoning.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/laws', pathMatch: 'full' },
@@ -12,4 +13,5 @@ export const routes: Routes = [
   { path: 'laws/chapter/:id', component: LawDetailComponent },
   { path: 'verdicts', component: VerdictListComponent },
   { path: 'verdicts/:id', component: VerdictDetailComponent },
+  { path: 'reasoning', component: ReasoningComponent },
 ];

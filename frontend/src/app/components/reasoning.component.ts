@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ReasoningService } from '../services/reasoning.service';
-import { CaseFacts, ReasoningResponse } from '../models/models';
+import { CaseFacts, ReasoningResponse, VerdictGenerationResponse } from '../models/models';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-reasoning',
@@ -140,6 +141,22 @@ import { CaseFacts, ReasoningResponse } from '../models/models';
                   <div class="value">{{ response.suggested_sanction || 'N/A' }}</div>
                 </div>
               </div>
+              <div class="selection-grid">
+                <label>
+                  Izabrana presuda
+                  <select name="selectedVerdict" [(ngModel)]="selectedVerdict">
+                    <option [ngValue]="''">-- Izaberi --</option>
+                    <option value="osudjen">Osudjen</option>
+                    <option value="oslobodjen">Oslobodjen</option>
+                    <option value="odbijeno">Odbijeno</option>
+                    <option value="delimicno usvojeno">Delimicno usvojeno</option>
+                  </select>
+                </label>
+                <label>
+                  Izabrana sankcija
+                  <input type="text" name="selectedSanction" [(ngModel)]="selectedSanction" placeholder="Kazna zatvora / novcana kazna" />
+                </label>
+              </div>
             </div>
 
             <div class="result-block">
@@ -167,21 +184,47 @@ import { CaseFacts, ReasoningResponse } from '../models/models';
               <div *ngIf="response.cbr.matches.length === 0" class="empty">Nema slicnih slucajeva.</div>
             </div>
 
-            <div class="result-block">
-              <h4>Snimi novi slucaj</h4>
+          <div class="result-block">
+            <h4>Snimi novi slucaj</h4>
+            <div class="save-grid">
+              <label>
+                Broj predmeta (opciono)
+                <input type="text" [(ngModel)]="caseNumber" name="caseNumber" placeholder="USER-..." />
+              </label>
+              <label>
+                Ishod
+                <input type="text" [(ngModel)]="caseOutcome" name="caseOutcome" placeholder="usvojeno / odbijeno" />
+              </label>
+            </div>
               <div class="save-grid">
                 <label>
-                  Broj predmeta (opciono)
-                  <input type="text" [(ngModel)]="caseNumber" name="caseNumber" placeholder="USER-..." />
+                  Vrsta presude
+                  <input type="text" [(ngModel)]="selectedVerdict" name="selectedVerdictInput" placeholder="osudjen / oslobodjen" />
                 </label>
                 <label>
-                  Ishod
-                  <input type="text" [(ngModel)]="caseOutcome" name="caseOutcome" placeholder="usvojeno / odbijeno" />
+                  Sankcija
+                  <input type="text" [(ngModel)]="selectedSanction" name="selectedSanctionInput" placeholder="npr. kazna zatvora 6 mjeseci" />
                 </label>
               </div>
-              <button class="secondary" (click)="saveCase()" [disabled]="saving">Sacuvaj slucaj</button>
-              <div *ngIf="saveMessage" class="save-message">{{ saveMessage }}</div>
+            <button class="secondary" (click)="saveCase()" [disabled]="saving">Sacuvaj slucaj</button>
+            <div *ngIf="saveMessage" class="save-message">{{ saveMessage }}</div>
+          </div>
+
+          <div class="result-block">
+            <h4>Generisi sudsku presudu (Task 9)</h4>
+            <div class="save-grid">
+              <label>
+                Sud (opciono)
+                <input type="text" [(ngModel)]="courtName" name="courtName" placeholder="Osnovni sud u Podgorici" />
+              </label>
+              <label>
+                Sudija (opciono)
+                <input type="text" [(ngModel)]="judgeName" name="judgeName" placeholder="Sudija" />
+              </label>
             </div>
+            <button class="secondary" (click)="generateVerdict()" [disabled]="generating || !response">Generisi presudu</button>
+            <div *ngIf="generationMessage" class="save-message">{{ generationMessage }}</div>
+          </div>
           </div>
         </section>
       </div>
@@ -347,6 +390,13 @@ import { CaseFacts, ReasoningResponse } from '../models/models';
       padding: 12px 14px;
     }
 
+    .selection-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
     .suggestion-grid .label {
       display: block;
       font-size: 12px;
@@ -463,18 +513,34 @@ export class ReasoningComponent {
   response: ReasoningResponse | null = null;
   caseNumber = '';
   caseOutcome = '';
+  selectedVerdict = '';
+  selectedSanction = '';
   saveMessage = '';
+  courtName = '';
+  judgeName = '';
+  generating = false;
+  generationMessage = '';
 
-  constructor(private reasoningService: ReasoningService) {}
+  constructor(private reasoningService: ReasoningService, private router: Router) {}
 
   runReasoning() {
     this.loading = true;
     this.error = '';
     this.saveMessage = '';
+    this.generationMessage = '';
 
     this.reasoningService.runReasoning({ facts: this.facts, top_k: this.topK }).subscribe({
       next: (data: ReasoningResponse) => {
         this.response = data;
+        if (!this.selectedVerdict && data.suggested_verdict) {
+          this.selectedVerdict = data.suggested_verdict;
+        }
+        if (!this.selectedSanction && data.suggested_sanction) {
+          this.selectedSanction = data.suggested_sanction;
+        }
+        if (!this.caseOutcome && data.suggested_verdict) {
+          this.caseOutcome = data.suggested_verdict;
+        }
         this.loading = false;
       },
       error: (err: unknown) => {
@@ -492,6 +558,8 @@ export class ReasoningComponent {
     this.reasoningService.saveCase({
       case_number: this.caseNumber || undefined,
       outcome: this.caseOutcome || undefined,
+      verdict_type: this.selectedVerdict || undefined,
+      sanction: this.selectedSanction || undefined,
       facts: this.facts
     }).subscribe({
       next: (data: { case_number: string }) => {
@@ -501,6 +569,35 @@ export class ReasoningComponent {
       error: (err: unknown) => {
         this.saveMessage = 'Greska pri snimanju slucaja.';
         this.saving = false;
+        console.error(err);
+      }
+    });
+  }
+
+  generateVerdict() {
+    if (!this.response) {
+      return;
+    }
+    this.generating = true;
+    this.generationMessage = '';
+
+    this.reasoningService.generateVerdict({
+      facts: this.facts,
+      reasoning: this.response,
+      case_number: this.caseNumber || undefined,
+      court_name: this.courtName || undefined,
+      judges: this.judgeName ? [this.judgeName] : undefined,
+      selected_verdict: this.selectedVerdict || undefined,
+      selected_sanction: this.selectedSanction || undefined
+    }).subscribe({
+      next: (data: VerdictGenerationResponse) => {
+        this.generationMessage = `Presuda generisana (${data.case_number}).`;
+        this.generating = false;
+        this.router.navigate(['/verdicts', data.case_id]);
+      },
+      error: (err: unknown) => {
+        this.generationMessage = 'Greska pri generisanju presude.';
+        this.generating = false;
         console.error(err);
       }
     });

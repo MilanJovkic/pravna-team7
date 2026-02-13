@@ -36,22 +36,23 @@ class VerdictAnnotator:
     def __init__(self, api_token: Optional[str] = None, model: str = "gpt-5-nano", provider: str = "openai"):
         load_dotenv()
         self.provider = provider.lower()
+        self.offline = False
 
         if self.provider == "openrouter":
             self.api_token = api_token or os.getenv("OPENROUTER_API_KEY")
             self.api_url = "https://openrouter.ai/api/v1/chat/completions"
             if not self.api_token:
-                raise ValueError("OpenRouter API key nije pronađen.")
+                self.offline = True
         elif self.provider == "openai":
             self.api_token = api_token or os.getenv("OPENAI_API_KEY")
             self.api_url = "https://api.openai.com/v1/responses"
             if not self.api_token:
-                raise ValueError("OpenAI API key nije pronađen.")
+                self.offline = True
         else:
             self.api_token = api_token or os.getenv("GITHUB_TOKEN")
             self.api_url = "https://models.inference.ai.azure.com/chat/completions"
             if not self.api_token:
-                raise ValueError("GitHub token nije pronađen.")
+                self.offline = True
 
         self.model = model
         self.max_retries = 3
@@ -137,6 +138,8 @@ Vrati SAMO validan JSON bez dodatnog teksta!"""
         retry_count: int = 0
     ) -> Optional[VerdictAnnotation]:
         """Anotira jednu presudu."""
+        if self.offline:
+            return None
         self._wait_for_rate_limit()
         prompt = self._create_annotation_prompt(verdict_text, case_number)
 

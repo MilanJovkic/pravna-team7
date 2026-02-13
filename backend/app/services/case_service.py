@@ -17,7 +17,14 @@ from backend.app.services.cbr_normalization import (
 class CaseService:
     """Service for persisting new cases in the CBR database."""
 
-    def insert_case(self, facts: CaseFacts, outcome: str | None, case_number: str | None) -> dict:
+    def insert_case(
+        self,
+        facts: CaseFacts,
+        outcome: str | None,
+        case_number: str | None,
+        verdict_type: str | None,
+        sanction: str | None,
+    ) -> dict:
         case_number = case_number or self._generate_case_number()
         config = self._db_config()
 
@@ -43,8 +50,9 @@ class CaseService:
             INSERT INTO cases (
                 case_number, injury_type, location, weapon, weapon_used,
                 severe_consequence, death_result, negligence, provocation,
-                fight_participation, fight_consequence, left_without_help, outcome
-            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                fight_participation, fight_consequence, left_without_help,
+                outcome, verdict_type, sanction
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             RETURNING id, case_number
         """
 
@@ -64,6 +72,8 @@ class CaseService:
                 normalized.fight_consequence,
                 normalized.left_without_help,
                 outcome,
+                verdict_type,
+                sanction,
             ),
         )
 
@@ -80,9 +90,9 @@ class CaseService:
 
     def _db_config(self) -> dict:
         return {
-            "host": os.getenv("DB_HOST", "127.0.0.1"),
-            "port": int(os.getenv("DB_PORT", "5432")),
-            "database": os.getenv("DB_NAME", "pravna_cbr"),
-            "user": os.getenv("DB_USER", "pravna_user"),
-            "password": os.getenv("DB_PASSWORD", "pravna_pass"),
+            "host": os.getenv("DB_HOST") or os.getenv("POSTGRES_HOST", "127.0.0.1"),
+            "port": int(os.getenv("DB_PORT") or os.getenv("POSTGRES_PORT", "5432")),
+            "database": os.getenv("DB_NAME") or os.getenv("POSTGRES_DB", "pravna_cbr"),
+            "user": os.getenv("DB_USER") or os.getenv("POSTGRES_USER", "pravna_user"),
+            "password": os.getenv("DB_PASSWORD") or os.getenv("POSTGRES_PASSWORD", "pravna_pass"),
         }

@@ -57,6 +57,23 @@ class VerdictDetail(VerdictMetadata):
     full_text: Optional[str] = None
 
 
+class VerdictOverrideUpdate(BaseModel):
+    """Overrides for verdict metadata and extracted facts."""
+    summary: Optional[str] = None
+    legal_issues: Optional[List[str]] = None
+    applied_laws: Optional[List[str]] = None
+    applied_articles: Optional[List[str]] = None
+    decision: Optional[str] = None
+    outcome: Optional[str] = None
+    legal_concepts: Optional[List[str]] = None
+    legal_reasoning: Optional[str] = None
+    court_name: Optional[str] = None
+    date: Optional[str] = None
+    judges: Optional[List[str]] = None
+    parties: Optional[Dict[str, List[str]]] = None
+    factual_state: Optional[Dict[str, List[str]]] = None
+
+
 class VerdictList(BaseModel):
     """Model for list of verdicts."""
     total: int
@@ -132,10 +149,32 @@ class ReasoningResponse(BaseModel):
     suggested_sanction: Optional[str] = None
 
 
+class VerdictGenerationRequest(BaseModel):
+    """Request model for generating a new verdict."""
+    facts: CaseFacts
+    reasoning: ReasoningResponse
+    case_number: Optional[str] = None
+    court_name: Optional[str] = None
+    date: Optional[str] = None
+    judges: List[str] = Field(default_factory=list)
+    selected_verdict: Optional[str] = None
+    selected_sanction: Optional[str] = None
+
+
+class VerdictGenerationResponse(BaseModel):
+    """Response model for generated verdict."""
+    case_id: str
+    case_number: str
+    xml_file: str
+    verdict_text: str
+
+
 class NewCaseRequest(BaseModel):
     """Request model for inserting a new case."""
     case_number: Optional[str] = None
     outcome: Optional[str] = None
+    verdict_type: Optional[str] = None
+    sanction: Optional[str] = None
     facts: CaseFacts
 
 

@@ -4,6 +4,7 @@ from pathlib import Path
 import os
 import psycopg2
 from psycopg2.extras import execute_values
+from dotenv import load_dotenv
 
 
 ASCII_MAP = {
@@ -143,15 +144,16 @@ def import_to_database(xml_dir: Path, db_config: dict):
 
 
 def main():
+    load_dotenv()
     root = Path(__file__).resolve().parent
     xml_dir = root / "data" / "verdicts_xml"
     
     db_config = {
-        "host": os.getenv("DB_HOST", "localhost"),
-        "port": int(os.getenv("DB_PORT", "5432")),
-        "database": os.getenv("DB_NAME", "pravna_cbr"),
-        "user": os.getenv("DB_USER", "pravna_user"),
-        "password": os.getenv("DB_PASSWORD", "pravna_pass"),
+        "host": os.getenv("DB_HOST") or os.getenv("POSTGRES_HOST", "localhost"),
+        "port": int(os.getenv("DB_PORT") or os.getenv("POSTGRES_PORT", "5432")),
+        "database": os.getenv("DB_NAME") or os.getenv("POSTGRES_DB", "pravna_cbr"),
+        "user": os.getenv("DB_USER") or os.getenv("POSTGRES_USER", "pravna_user"),
+        "password": os.getenv("DB_PASSWORD") or os.getenv("POSTGRES_PASSWORD", "pravna_pass"),
     }
     
     import_to_database(xml_dir, db_config)

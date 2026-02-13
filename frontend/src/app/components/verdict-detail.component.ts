@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { VerdictService } from '../services/verdict.service';
 import { LawService } from '../services/law.service';
-import { VerdictDetail } from '../models/models';
+import { VerdictDetail, VerdictOverrideUpdate } from '../models/models';
 
 @Component({
   selector: 'app-verdict-detail',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, FormsModule],
   template: `
     <div class="container">
       <button class="back-btn" (click)="goBack()">← Nazad</button>
@@ -19,6 +20,75 @@ import { VerdictDetail } from '../models/models';
           <span class="outcome-badge" *ngIf="verdict.outcome" [class]="'outcome-' + verdict.outcome?.toLowerCase()">
             {{ verdict.outcome }}
           </span>
+        </div>
+
+        <div class="edit-toolbar">
+          <button class="secondary-btn" (click)="toggleEdit()">
+            {{ editMode ? 'Zatvori izmenu' : 'Uredi podatke' }}
+          </button>
+        </div>
+
+        <div class="edit-panel" *ngIf="editMode">
+          <h3>Rucne ispravke</h3>
+          <div class="edit-grid">
+            <label>
+              Rezime
+              <textarea [(ngModel)]="editSummary" rows="3"></textarea>
+            </label>
+            <label>
+              Pravna pitanja (odvoji zarezom)
+              <input type="text" [(ngModel)]="editLegalIssues" />
+            </label>
+            <label>
+              Primenjeni zakoni (odvoji zarezom)
+              <input type="text" [(ngModel)]="editAppliedLaws" />
+            </label>
+            <label>
+              Primenjeni clanci (odvoji zarezom)
+              <input type="text" [(ngModel)]="editAppliedArticles" />
+            </label>
+            <label>
+              Pravno obrazlozenje
+              <textarea [(ngModel)]="editLegalReasoning" rows="4"></textarea>
+            </label>
+            <label>
+              Odluka
+              <textarea [(ngModel)]="editDecision" rows="3"></textarea>
+            </label>
+            <label>
+              Ishod
+              <input type="text" [(ngModel)]="editOutcome" />
+            </label>
+            <label>
+              Pravni koncepti (odvoji zarezom)
+              <input type="text" [(ngModel)]="editLegalConcepts" />
+            </label>
+            <label>
+              Sud
+              <input type="text" [(ngModel)]="editCourtName" />
+            </label>
+            <label>
+              Datum (YYYY-MM-DD)
+              <input type="text" [(ngModel)]="editDate" />
+            </label>
+            <label>
+              Sudije (odvoji zarezom)
+              <input type="text" [(ngModel)]="editJudges" />
+            </label>
+            <label>
+              Ucesnici (JSON)
+              <textarea [(ngModel)]="editParties" rows="4"></textarea>
+            </label>
+            <label>
+              Cinjenicno stanje (JSON)
+              <textarea [(ngModel)]="editFactualState" rows="4"></textarea>
+            </label>
+          </div>
+          <div class="edit-actions">
+            <button class="secondary-btn" (click)="saveOverrides()" [disabled]="editLoading">Sacuvaj izmene</button>
+            <button class="ghost-btn" (click)="resetOverrides()" [disabled]="editLoading">Ponisti promene</button>
+          </div>
+          <div class="navigation-error" *ngIf="editError">{{ editError }}</div>
         </div>
         
         <div class="info-section">
@@ -319,6 +389,82 @@ import { VerdictDetail } from '../models/models';
       color: #7f8c8d;
       font-size: 14px;
     }
+
+    .edit-toolbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+
+    .edit-panel {
+      border: 1px solid #ececec;
+      border-radius: 12px;
+      padding: 18px;
+      background: #fbfaf7;
+      margin-bottom: 24px;
+    }
+
+    .edit-panel h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .edit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    .edit-grid label {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #3a4c55;
+    }
+
+    .edit-grid input,
+    .edit-grid textarea {
+      border: 1px solid #d7dde3;
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 13px;
+      font-family: inherit;
+      background: #ffffff;
+    }
+
+    .edit-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .secondary-btn {
+      background: #ecf0f1;
+      color: #2c3e50;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .secondary-btn:hover {
+      background: #dfe6e9;
+    }
+
+    .ghost-btn {
+      background: transparent;
+      border: 1px solid #d7dde3;
+      color: #2c3e50;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+    }
     
     .loading, .error {
       text-align: center;
@@ -337,6 +483,22 @@ export class VerdictDetailComponent implements OnInit {
   navigationError = '';
   objectKeys = Object.keys;
   appliedArticleLinks: Array<{ number: string; source: string }> = [];
+  editMode = false;
+  editLoading = false;
+  editError = '';
+  editSummary = '';
+  editLegalIssues = '';
+  editAppliedLaws = '';
+  editAppliedArticles = '';
+  editDecision = '';
+  editOutcome = '';
+  editLegalConcepts = '';
+  editLegalReasoning = '';
+  editCourtName = '';
+  editDate = '';
+  editJudges = '';
+  editParties = '';
+  editFactualState = '';
 
   constructor(
     private route: ActivatedRoute,
@@ -374,6 +536,9 @@ export class VerdictDetailComponent implements OnInit {
           data.applied_articles || []
         );
         this.loading = false;
+        if (this.editMode) {
+          this.populateEditFields(data);
+        }
       },
       error: (err) => {
         this.error = 'Greška pri učitavanju presude';
@@ -381,6 +546,106 @@ export class VerdictDetailComponent implements OnInit {
         console.error(err);
       }
     });
+  }
+
+  toggleEdit() {
+    this.editMode = !this.editMode;
+    this.editError = '';
+    if (this.editMode && this.verdict) {
+      this.populateEditFields(this.verdict);
+    }
+  }
+
+  populateEditFields(verdict: VerdictDetail) {
+    this.editSummary = verdict.summary || '';
+    this.editLegalIssues = (verdict.legal_issues || []).join(', ');
+    this.editAppliedLaws = (verdict.applied_laws || []).join(', ');
+    this.editAppliedArticles = (verdict.applied_articles || []).join(', ');
+    this.editDecision = verdict.decision || '';
+    this.editOutcome = verdict.outcome || '';
+    this.editLegalConcepts = (verdict.legal_concepts || []).join(', ');
+    this.editLegalReasoning = verdict.legal_reasoning || '';
+    this.editCourtName = verdict.court_name || '';
+    this.editDate = verdict.date || '';
+    this.editJudges = (verdict.judges || []).join(', ');
+    this.editParties = JSON.stringify(verdict.parties || {}, null, 2);
+    this.editFactualState = JSON.stringify(verdict.factual_state || {}, null, 2);
+  }
+
+  resetOverrides() {
+    if (this.verdict) {
+      this.populateEditFields(this.verdict);
+    }
+    this.editError = '';
+  }
+
+  saveOverrides() {
+    if (!this.verdict) {
+      return;
+    }
+    this.editLoading = true;
+    this.editError = '';
+
+    const partiesResult = this.parseJsonField(this.editParties, 'Ucesnici');
+    const factualStateResult = this.parseJsonField(this.editFactualState, 'Cinjenicno stanje');
+    if (partiesResult.error || factualStateResult.error) {
+      this.editError = partiesResult.error || factualStateResult.error || '';
+      this.editLoading = false;
+      return;
+    }
+
+    const payload: VerdictOverrideUpdate = {
+      summary: this.emptyToNull(this.editSummary),
+      legal_issues: this.parseCsv(this.editLegalIssues),
+      applied_laws: this.parseCsv(this.editAppliedLaws),
+      applied_articles: this.parseCsv(this.editAppliedArticles),
+      decision: this.emptyToNull(this.editDecision),
+      outcome: this.emptyToNull(this.editOutcome),
+      legal_concepts: this.parseCsv(this.editLegalConcepts),
+      legal_reasoning: this.emptyToNull(this.editLegalReasoning),
+      court_name: this.emptyToNull(this.editCourtName),
+      date: this.emptyToNull(this.editDate),
+      judges: this.parseCsv(this.editJudges),
+      parties: partiesResult.value,
+      factual_state: factualStateResult.value,
+    };
+
+    this.verdictService.updateOverrides(this.verdict.case_id, payload).subscribe({
+      next: () => {
+        this.editLoading = false;
+        this.loadVerdict(this.verdict?.case_id || '');
+      },
+      error: (err) => {
+        this.editLoading = false;
+        this.editError = 'Greska pri cuvanju izmena.';
+        console.error(err);
+      }
+    });
+  }
+
+  parseCsv(value: string): string[] | null {
+    const trimmed = (value || '').trim();
+    if (!trimmed) {
+      return null;
+    }
+    return trimmed.split(',').map((item) => item.trim()).filter(Boolean);
+  }
+
+  emptyToNull(value: string): string | null {
+    const trimmed = (value || '').trim();
+    return trimmed ? trimmed : null;
+  }
+
+  parseJsonField(value: string, label: string): { value: Record<string, string[]> | null; error: string | null } {
+    const trimmed = (value || '').trim();
+    if (!trimmed) {
+      return { value: null, error: null };
+    }
+    try {
+      return { value: JSON.parse(trimmed), error: null };
+    } catch (err) {
+      return { value: null, error: `${label} mora biti validan JSON.` };
+    }
   }
 
   goBack() {

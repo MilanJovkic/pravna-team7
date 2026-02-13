@@ -1,7 +1,11 @@
 """FastAPI application for legal document annotation system."""
+from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.app.api import laws, verdicts, reasoning, cases
+from backend.app.api import verdict_generation
+
+load_dotenv()
 
 app = FastAPI(
     title="Legal Annotation API",
@@ -23,6 +27,7 @@ app.include_router(laws.router, prefix="/api/laws", tags=["Laws"])
 app.include_router(verdicts.router, prefix="/api/verdicts", tags=["Verdicts"])
 app.include_router(reasoning.router, prefix="/api/reasoning", tags=["Reasoning"])
 app.include_router(cases.router, prefix="/api/cases", tags=["Cases"])
+app.include_router(verdict_generation.router, prefix="/api/verdict-generation", tags=["Verdict Generation"])
 
 
 @app.get("/")

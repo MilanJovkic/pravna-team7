@@ -58,6 +58,13 @@ class CbrService:
         self._append_arg(args, "fight_consequence", normalize_fight_consequence(facts.fight_consequence))
         self._append_arg(args, "left_without_help", self._bool_str(facts.left_without_help))
 
+        env = os.environ.copy()
+        env.setdefault("DB_HOST", os.getenv("POSTGRES_HOST", "127.0.0.1"))
+        env.setdefault("DB_PORT", os.getenv("POSTGRES_PORT", "5432"))
+        env.setdefault("DB_NAME", os.getenv("POSTGRES_DB", "pravna_cbr"))
+        env.setdefault("DB_USER", os.getenv("POSTGRES_USER", "pravna_user"))
+        env.setdefault("DB_PASSWORD", os.getenv("POSTGRES_PASSWORD", "pravna_pass"))
+
         try:
             result = subprocess.run(
                 args,
@@ -68,6 +75,7 @@ class CbrService:
                 encoding="utf-8",
                 errors="replace",
                 timeout=60,
+                env=env,
             )
         except subprocess.CalledProcessError as exc:
             stdout = (exc.stdout or "").strip()
@@ -189,11 +197,11 @@ class CbrService:
 
     def _db_config(self) -> dict:
         return {
-            "host": os.getenv("DB_HOST", "127.0.0.1"),
-            "port": int(os.getenv("DB_PORT", "5432")),
-            "database": os.getenv("DB_NAME", "pravna_cbr"),
-            "user": os.getenv("DB_USER", "pravna_user"),
-            "password": os.getenv("DB_PASSWORD", "pravna_pass"),
+            "host": os.getenv("DB_HOST") or os.getenv("POSTGRES_HOST", "127.0.0.1"),
+            "port": int(os.getenv("DB_PORT") or os.getenv("POSTGRES_PORT", "5432")),
+            "database": os.getenv("DB_NAME") or os.getenv("POSTGRES_DB", "pravna_cbr"),
+            "user": os.getenv("DB_USER") or os.getenv("POSTGRES_USER", "pravna_user"),
+            "password": os.getenv("DB_PASSWORD") or os.getenv("POSTGRES_PASSWORD", "pravna_pass"),
         }
 
     def _append_arg(self, args: list[str], key: str, value: str | None) -> None:

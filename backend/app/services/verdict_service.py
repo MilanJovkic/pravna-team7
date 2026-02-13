@@ -13,47 +13,94 @@ class VerdictService:
     def __init__(self):
         self.xml_dir = Path(__file__).parent.parent.parent.parent / "data" / "verdicts_xml"
         self.annotations_file = self.xml_dir / "verdicts_annotations.json"
+        self.overrides_file = self.xml_dir / "verdicts_overrides.json"
         self._verdicts = None
         self._annotations = None
+        self._annotations_mtime = None
+        self._overrides = None
+        self._overrides_mtime = None
 
     def _load_verdicts(self):
         """Load all verdict XML files."""
-        if self._verdicts is None:
+        if not self.xml_dir.exists():
             self._verdicts = {}
-            
-            if not self.xml_dir.exists():
+            return self._verdicts
+
+        xml_files = list(self.xml_dir.glob("*.xml"))
+        file_stems = {file.stem for file in xml_files}
+        if self._verdicts is not None and len(self._verdicts) == len(xml_files):
+            if file_stems.issubset(self._verdicts.keys()):
                 return self._verdicts
 
-            for xml_file in self.xml_dir.glob("*.xml"):
-                try:
-                    tree = ET.parse(xml_file)
-                    root = tree.getroot()
-                    
-                    judgment = root.find(".//{http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17}judgment")
-                    if judgment is None:
-                        judgment = root.find(".//judgment")
-                    
-                    if judgment is not None:
-                        case_id = judgment.get("name", xml_file.stem)
-                        self._verdicts[case_id] = {
-                            "file": str(xml_file),
-                            "tree": tree,
-                            "root": root
-                        }
-                except Exception as e:
-                    print(f"Error loading {xml_file}: {e}")
+        self._verdicts = {}
+        for xml_file in xml_files:
+            try:
+                tree = ET.parse(xml_file)
+                root = tree.getroot()
+                
+                judgment = root.find(".//{http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17}judgment")
+                if judgment is None:
+                    judgment = root.find(".//judgment")
+                
+                if judgment is not None:
+                    case_id = judgment.get("name", xml_file.stem)
+                    self._verdicts[case_id] = {
+                        "file": str(xml_file),
+                        "tree": tree,
+                        "root": root
+                    }
+            except Exception as e:
+                print(f"Error loading {xml_file}: {e}")
 
         return self._verdicts
 
     def _load_annotations(self):
         """Load verdict annotations."""
-        if self._annotations is None:
-            if self.annotations_file.exists():
+        if self.annotations_file.exists():
+            mtime = self.annotations_file.stat().st_mtime
+            if self._annotations is None or self._annotations_mtime != mtime:
                 with open(self.annotations_file, "r", encoding="utf-8") as f:
                     self._annotations = json.load(f)
-            else:
-                self._annotations = {}
+                self._annotations_mtime = mtime
+        else:
+            self._annotations = {}
+            self._annotations_mtime = None
         return self._annotations
+
+    def _load_overrides(self):
+        """Load manual overrides for verdicts."""
+        if self.overrides_file.exists():
+            mtime = self.overrides_file.stat().st_mtime
+            if self._overrides is None or self._overrides_mtime != mtime:
+                with open(self.overrides_file, "r", encoding="utf-8") as f:
+                    self._overrides = json.load(f)
+                self._overrides_mtime = mtime
+        else:
+            self._overrides = {}
+            self._overrides_mtime = None
+        return self._overrides
+
+    def get_overrides(self, case_id: str) -> dict:
+        """Return manual overrides for a verdict if present."""
+        overrides = self._load_overrides()
+        return overrides.get(case_id, {})
+
+    def update_overrides(self, case_id: str, payload: dict) -> dict:
+        """Persist manual overrides for a verdict."""
+        overrides = self._load_overrides()
+        existing = overrides.get(case_id, {})
+        for key, value in payload.items():
+            if value is None:
+                existing.pop(key, None)
+            else:
+                existing[key] = value
+        overrides[case_id] = existing
+        self.overrides_file.parent.mkdir(parents=True, exist_ok=True)
+        with open(self.overrides_file, "w", encoding="utf-8") as f:
+            json.dump(overrides, f, ensure_ascii=False, indent=2)
+        self._overrides = overrides
+        self._overrides_mtime = self.overrides_file.stat().st_mtime
+        return existing
 
     def get_all_verdicts(self):
         """Get list of all verdicts."""
@@ -71,6 +118,7 @@ class VerdictService:
         """Get specific verdict details."""
         verdicts = self._load_verdicts()
         annotations = self._load_annotations()
+        overrides = self._load_overrides()
         
         if case_id not in verdicts:
             return None
@@ -84,6 +132,10 @@ class VerdictService:
             "precedent_value": annotation.get("precedent_value"),
             "confidence": annotation.get("confidence")
         })
+
+        override = overrides.get(case_id, {})
+        if override:
+            metadata = self._apply_override(metadata, override)
         
         return metadata
 
@@ -91,6 +143,7 @@ class VerdictService:
         """Extract metadata from verdict XML."""
         verdicts = self._load_verdicts()
         annotations = self._load_annotations()
+        overrides = self._load_overrides()
         
         if case_id not in verdicts:
             return None
@@ -125,8 +178,39 @@ class VerdictService:
             "factual_state": self._extract_factual_state(root, annotation),
             "full_text": xml_full_text
         }
+
+        override = overrides.get(case_id, {})
+        if override:
+            metadata = self._apply_override(metadata, override)
         
         return metadata
+
+    def _apply_override(self, metadata: dict, override: dict) -> dict:
+        """Apply manual overrides on top of extracted metadata."""
+        merged = dict(metadata)
+
+        for key in (
+            "summary",
+            "legal_issues",
+            "applied_laws",
+            "applied_articles",
+            "decision",
+            "outcome",
+            "legal_concepts",
+            "legal_reasoning",
+            "court_name",
+            "date",
+            "judges",
+        ):
+            if key in override:
+                merged[key] = override.get(key)
+
+        if "parties" in override:
+            merged["parties"] = override.get("parties") or {}
+        if "factual_state" in override:
+            merged["factual_state"] = override.get("factual_state") or {}
+
+        return merged
 
     def _extract_participants(self, root):
         """Extract participants by role from XML."""

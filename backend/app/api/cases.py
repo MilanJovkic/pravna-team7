@@ -17,6 +17,8 @@ async def create_case(payload: NewCaseRequest):
             facts=payload.facts,
             outcome=payload.outcome,
             case_number=payload.case_number,
+            verdict_type=payload.verdict_type,
+            sanction=payload.sanction,
         )
         return NewCaseResponse(**result)
     except Exception as e:

@@ -14,7 +14,9 @@ CREATE TABLE IF NOT EXISTS cases (
     fight_participation BOOLEAN,
     fight_consequence VARCHAR(50),
     left_without_help BOOLEAN,
-    outcome VARCHAR(50)
+    outcome VARCHAR(50),
+    verdict_type VARCHAR(50),
+    sanction VARCHAR(200)
 );
 
 CREATE INDEX idx_case_number ON cases(case_number);

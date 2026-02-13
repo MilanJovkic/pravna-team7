@@ -1,13 +1,11 @@
-version: '3.8'
-
 services:
   postgres:
     image: postgres:15-alpine
     container_name: pravna-postgres
     environment:
-      POSTGRES_DB: pravna_cbr
-      POSTGRES_USER: pravna_user
-      POSTGRES_PASSWORD: pravna_pass
+      POSTGRES_DB: ${POSTGRES_DB:-pravna_cbr}
+      POSTGRES_USER: ${POSTGRES_USER:-pravna_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pravna_pass}
     ports:
       - "5433:5432"
     volumes:

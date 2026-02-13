@@ -42,6 +42,22 @@ export interface VerdictDetail extends VerdictMetadata {
   full_text?: string;
 }
 
+export interface VerdictOverrideUpdate {
+  summary?: string | null;
+  legal_issues?: string[] | null;
+  applied_laws?: string[] | null;
+  applied_articles?: string[] | null;
+  decision?: string | null;
+  outcome?: string | null;
+  legal_concepts?: string[] | null;
+  legal_reasoning?: string | null;
+  court_name?: string | null;
+  date?: string | null;
+  judges?: string[] | null;
+  parties?: Record<string, string[]> | null;
+  factual_state?: Record<string, string[]> | null;
+}
+
 export interface CaseFacts {
   defendant?: string;
   injury_type?: string;
@@ -92,9 +108,29 @@ export interface ReasoningResponse {
   suggested_sanction?: string;
 }
 
+export interface VerdictGenerationRequest {
+  facts: CaseFacts;
+  reasoning: ReasoningResponse;
+  case_number?: string;
+  court_name?: string;
+  date?: string;
+  judges?: string[];
+  selected_verdict?: string;
+  selected_sanction?: string;
+}
+
+export interface VerdictGenerationResponse {
+  case_id: string;
+  case_number: string;
+  xml_file: string;
+  verdict_text: string;
+}
+
 export interface NewCaseRequest {
   case_number?: string;
   outcome?: string;
+  verdict_type?: string;
+  sanction?: string;
   facts: CaseFacts;
 }
 

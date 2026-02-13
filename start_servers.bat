@@ -10,6 +10,12 @@ set DB_NAME=pravna_cbr
 set DB_USER=pravna_user
 set DB_PASSWORD=pravna_pass
 
+set POSTGRES_HOST=%DB_HOST%
+set POSTGRES_PORT=%DB_PORT%
+set POSTGRES_DB=%DB_NAME%
+set POSTGRES_USER=%DB_USER%
+set POSTGRES_PASSWORD=%DB_PASSWORD%
+
 echo Starting PostgreSQL with Docker Compose...
 docker compose up -d
 

@@ -104,10 +104,22 @@ print("  Status: PASS ✓")
 # ============================================================================
 print_section("Task 9: Verdict Generation")
 
-print(f"\n✓ Suggested verdict generated")
-print(f"  Verdict: {res['suggested_verdict']}")
-print(f"  Sanction: {res['suggested_sanction']}")
-assert res['suggested_verdict'] is not None, "No verdict generated!"
+verdict_payload = {
+    'facts': test_case,
+    'reasoning': res,
+}
+
+r_gen = requests.post(f'{BASE_URL}/verdict-generation/', json=verdict_payload, timeout=60)
+r_gen.raise_for_status()
+generated = r_gen.json()
+
+print(f"\n✓ Verdict generated and exported")
+print(f"  Case ID: {generated['case_id']}")
+print(f"  Case Number: {generated['case_number']}")
+print(f"  XML File: {generated['xml_file']}")
+assert generated['case_id'], "No case_id returned!"
+assert generated['xml_file'], "No XML file path returned!"
+assert generated['verdict_text'], "No verdict text returned!"
 print("  Status: PASS ✓")
 
 # ============================================================================

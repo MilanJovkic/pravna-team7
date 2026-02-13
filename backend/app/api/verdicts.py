@@ -1,7 +1,7 @@
 """API endpoints for verdict documents."""
 from fastapi import APIRouter, HTTPException, Query
 from typing import Optional
-from backend.app.models.schemas import VerdictList, VerdictDetail, SearchResponse
+from backend.app.models.schemas import VerdictList, VerdictDetail, SearchResponse, VerdictOverrideUpdate
 from backend.app.services.verdict_service import VerdictService
 
 router = APIRouter()
@@ -28,6 +28,27 @@ async def get_verdict(case_id: str):
         return verdict
     except HTTPException:
         raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.get("/{case_id}/overrides")
+async def get_verdict_overrides(case_id: str):
+    """Get manual overrides for a verdict."""
+    try:
+        overrides = verdict_service.get_overrides(case_id)
+        return {"case_id": case_id, "overrides": overrides}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.put("/{case_id}/overrides")
+async def update_verdict_overrides(case_id: str, payload: VerdictOverrideUpdate):
+    """Update manual overrides for a verdict."""
+    try:
+        data = payload.dict(exclude_unset=True)
+        overrides = verdict_service.update_overrides(case_id, data)
+        return {"case_id": case_id, "overrides": overrides}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 

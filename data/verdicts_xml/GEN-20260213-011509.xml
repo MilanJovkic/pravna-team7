@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="GEN-20260213-011509">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/GEN-20260213-011509/!main"/>
+                    <FRBRuri value="/akn/me/judgment/GEN-20260213-011509"/>
+                    <FRBRdate date="2026-02-13" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/GEN-20260213-011509/sr@2026-02-13/!main"/>
+                    <FRBRuri value="/akn/me/judgment/GEN-20260213-011509/sr@2026-02-13"/>
+                    <FRBRdate date="2026-02-13"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/GEN-20260213-011509/sr@2026-02-13/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/GEN-20260213-011509/sr@2026-02-13/!main.akn"/>
+                    <FRBRdate date="2026-02-13"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni sud u Podgorici"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Sudija"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Jelena R."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>GEN-20260213-011509</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>Osnovni sud u Podgorici</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2026-02-13">2026-02-13</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Sudija</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljena Jelena R. proglašena je krivom za teško tjelesno povređivanje i izrečena joj je kazna zatvora od jedne godine. Delovala je svesno i namerno prilikom povređivanja oštećenog.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>teško tjelesno povređivanje</p>
+                    <p>namera u krivičnom delu</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Okrivljena je prilikom napada koristila tupi predmet, izazivajući teške posledice po zdravlje oštećenog.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усвојено">
+                    <p>Okrivljena se proglašava krivom.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>Jelena R.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teska tjelesna povreda</fact>
+                <fact key="location">Niksic</fact>
+                <fact key="weapon">tup predmet</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="death_result">ne</fact>
+                <fact key="negligence">ne</fact>
+                <fact key="provocation">ne</fact>
+                <fact key="fight_participation">ne</fact>
+                <fact key="fight_consequence">none</fact>
+                <fact key="left_without_help">da</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>Osnovni sud u Podgorici  
+Broj predmeta: GEN-20260213-011509  
+Datum: 2026-02-13  
+
+U IME CRNE GORE  
+
+P R E S U D U  
+
+Okrivljeni: Jelena R.  
+
+Izreka: Okrivljena Jelena R. je kriva za teško tjelesno povređivanje, u smislu člana 151. Krivičnog zakonika Crne Gore.  
+
+Sankcija: Okrivljenoj se izriče kazna zatvora u trajanju od jedne godine.  
+
+Obrazloženje: Okrivljena Jelena R. je, dana 10.01.2026. godine, u Nikšiću, upotrebom tupog predmeta, teško tjelesno povredila oštećenog, ostavljajući ga bez pomoći. Ova radnja je izazvala teške posledice po zdravlje oštećenog, ali nije došlo do smrtnog ishoda. Okrivljena je postupila sa namerom da izazove povredu, a sve okolnosti ukazuju na to da je delovala svesno i voljno.  
+
+Pravna pouka: Protiv ove presude može se izjaviti žalba Apelacionom sudu Crne Gore u roku od 15 dana od dana prijema presude.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

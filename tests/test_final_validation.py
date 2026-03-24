@@ -9,13 +9,14 @@ Tests:
 """
 import requests
 import json
+import os
 
 def print_section(title):
     print(f"\n{'='*70}")
     print(f"{title}")
     print('='*70)
 
-BASE_URL = 'http://localhost:8000/api'
+BASE_URL = os.getenv('TEST_API_BASE_URL', 'http://localhost:8000/api')
 
 print_section("SPECIFICATION COMPLIANCE VALIDATION TEST")
 
@@ -39,7 +40,10 @@ test_case = {
 print_section("Task 5: Rule-Based Reasoning")
 
 r = requests.post(f'{BASE_URL}/reasoning/', json={'facts': test_case, 'top_k': 5}, timeout=30)
+r.raise_for_status()
 res = r.json()
+assert res.get('subsystem_status', {}).get('rule') == 'ok', 'Rule subsystem failed!'
+assert res.get('subsystem_status', {}).get('cbr') == 'ok', 'CBR subsystem failed!'
 
 print("\n✓ Rule-based reasoning endpoint working")
 print(f"  Applied norms: {res['rule_reasoning']['applied_norms']}")
@@ -61,10 +65,14 @@ print_section("Task 8: Save New Case & Verify Reusability")
 
 new_case_payload = {
     'facts': test_case,
-    'outcome': 'osudjen'
+    'outcome': 'osudjen',
+    'selected_verdict': 'osudjen',
+    'selected_sanction': 'kazna zatvora (predlog)',
+    'user_confirmation': True,
 }
 
 r_save = requests.post(f'{BASE_URL}/cases/', json=new_case_payload, timeout=30)
+r_save.raise_for_status()
 saved = r_save.json()
 
 print(f"\n✓ New case saved successfully")
@@ -77,6 +85,7 @@ r_verify = requests.post(
     json={'facts': test_case, 'top_k': 10},
     timeout=30
 )
+r_verify.raise_for_status()
 res_verify = r_verify.json()
 
 found_new_case = any(m['case_number'] == saved['case_number'] for m in res_verify['cbr']['matches'])
@@ -133,7 +142,7 @@ summary = {
     'Law Text Retrieval': '✓ PASS',
     'Normalization Pipeline': '✓ PASS (verified in all tests)',
     'Database Integration': '✓ PASS (6+ cases in PostgreSQL)',
-    'Error Handling': '✓ PASS (graceful degradation)'
+    'Subsystem Status Model': '✓ PASS (explicit rule/cbr status)'
 }
 
 print()

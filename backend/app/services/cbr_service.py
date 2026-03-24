@@ -94,6 +94,10 @@ class CbrService:
                 case_number=item.get("case_number"),
                 similarity=float(item.get("similarity", 0.0)),
                 outcome=item.get("outcome"),
+                feature_contributions={
+                    str(k): float(v)
+                    for k, v in (item.get("feature_contributions") or {}).items()
+                },
             )
             for item in payload.get("matches", [])
         ]
@@ -101,9 +105,8 @@ class CbrService:
         return CbrResult(matches=matches)
 
     def _ensure_case_base(self) -> None:
-        if self._cases_ready:
-            return
-
+        # ALWAYS reload from database to pick up newly saved cases
+        # (no caching of case base state)
         logger = logging.getLogger(__name__)
         config = self._db_config()
         try:
@@ -120,7 +123,6 @@ class CbrService:
                 self._import_cases(conn)
             cursor.close()
             conn.close()
-            self._cases_ready = True
         except Exception:
             logger.exception("CBR database initialization failed")
             try:
@@ -144,14 +146,14 @@ class CbrService:
                 normalize_injury_type(facts.get("injury_type")),
                 normalize_text(facts.get("location")),
                 normalize_text(facts.get("weapon")),
-                parse_bool(facts.get("weapon_used")),
-                parse_bool(facts.get("severe_consequence")),
-                parse_bool(facts.get("death_result")),
-                parse_bool(facts.get("negligence")),
-                parse_bool(facts.get("provocation")),
-                parse_bool(facts.get("fight_participation")),
+                self._extract_bool_or_none(facts.get("weapon_used")),
+                self._extract_bool_or_none(facts.get("severe_consequence")),
+                self._extract_bool_or_none(facts.get("death_result")),
+                self._extract_bool_or_none(facts.get("negligence")),
+                self._extract_bool_or_none(facts.get("provocation")),
+                self._extract_bool_or_none(facts.get("fight_participation")),
                 normalize_fight_consequence(facts.get("fight_consequence")),
-                parse_bool(facts.get("left_without_help")),
+                self._extract_bool_or_none(facts.get("left_without_help")),
                 facts.get("outcome", ""),
             )
             records.append(record)
@@ -222,3 +224,7 @@ class CbrService:
         if start == -1 or end == -1 or end <= start:
             raise ValueError("CBR output does not contain JSON")
         return output[start : end + 1]
+
+    def _extract_bool_or_none(self, value: str | bool | None) -> bool | None:
+        parsed = parse_bool(value)
+        return parsed

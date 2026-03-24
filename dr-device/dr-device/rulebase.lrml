@@ -36,9 +36,9 @@
 							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:weapon"/>
+							<ruleml:Rel iri="lc:weapon_used"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">metalni kljuc</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">true</ruleml:Data>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
@@ -61,9 +61,9 @@
 							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:weapon"/>
+							<ruleml:Rel iri="lc:severe_consequence"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">staklena flasa</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">true</ruleml:Data>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
@@ -86,9 +86,9 @@
 							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:location"/>
+							<ruleml:Rel iri="lc:death_result"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">Podgorica</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">true</ruleml:Data>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
@@ -111,9 +111,9 @@
 							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:location"/>
+							<ruleml:Rel iri="lc:negligence"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">Skadar</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">true</ruleml:Data>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
@@ -156,9 +156,9 @@
 							<ruleml:Data xsi:type="xs:string">laka tjelesna povreda</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:weapon"/>
+							<ruleml:Rel iri="lc:weapon_used"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">metalni kljuc</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">true</ruleml:Data>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
@@ -181,9 +181,9 @@
 							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:location"/>
+							<ruleml:Rel iri="lc:provocation"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">Danilovgrad</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">true</ruleml:Data>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
@@ -206,9 +206,9 @@
 							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:location"/>
+							<ruleml:Rel iri="lc:fight_participation"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">Podgorici Kv</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">true</ruleml:Data>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>
@@ -228,12 +228,12 @@
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:injury_type"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">teška tjelesna povreda</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:location"/>
+							<ruleml:Rel iri="lc:left_without_help"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">Sto</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">true</ruleml:Data>
 						</ruleml:Atom>
 					</ruleml:And>
 				</ruleml:if>

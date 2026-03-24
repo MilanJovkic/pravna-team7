@@ -1,0 +1,178 @@
+{
+  "protocol_version": "1.0.0",
+  "description": "Finalni evaluacioni protokol za zakljucan skup od 5 presuda.",
+  "base_url_env": "TEST_API_BASE_URL",
+  "defaults": {
+    "base_url": "http://127.0.0.1:8000/api",
+    "top_k": 5,
+    "stability_runs": 3,
+    "minimum_top_similarity": 0.55,
+    "request_timeout_seconds": 45
+  },
+  "thresholds": {
+    "per_case_min_total": 20,
+    "overall_min_average": 21,
+    "critical_criteria": [
+      "pravna_tacnost",
+      "logicka_konzistentnost",
+      "objasnjenje_zakljucka"
+    ],
+    "critical_min_score": 4
+  },
+  "red_flags": [
+    {
+      "id": "contradiction_in_explanation",
+      "description": "Kontradikcija u obrazlozenju (npr. predlog odluke bez osnova u pravilima/clanovima)."
+    },
+    {
+      "id": "nonexistent_facts_reference",
+      "description": "Pozivanje na nepostojece cinjenice (npr. CBR bez smislenog poklapanja i bez identiteta slucaja)."
+    },
+    {
+      "id": "generic_or_useless_answer",
+      "description": "Genericki odgovor bez konkretnih normi, clanova i slicnih slucajeva."
+    }
+  ],
+  "fixed_verdicts": [
+    {
+      "case_id": "Одлуке",
+      "source_xml": "data/verdicts_xml/Одлуке.xml",
+      "source_sha256": "d94214a011fefaaab3f8ff61350a652dae6eb2577a13561463e233ea4f0f2db6",
+      "case_number": "K.br. 781/18",
+      "facts": {
+        "defendant": "Eval Case 1",
+        "injury_type": "teska tjelesna povreda",
+        "location": "Podgorica",
+        "weapon": null,
+        "weapon_used": false,
+        "severe_consequence": true,
+        "death_result": false,
+        "negligence": false,
+        "provocation": false,
+        "fight_participation": false,
+        "fight_consequence": "none",
+        "left_without_help": false
+      },
+      "expected": {
+        "applied_articles_any_of": [
+          "151",
+          "226",
+          "229",
+          "52"
+        ]
+      }
+    },
+    {
+      "case_id": "Одлуке1",
+      "source_xml": "data/verdicts_xml/Одлуке1.xml",
+      "source_sha256": "3f231ef85c81815e697064b56c73ea49a47c1f5f0a5766549b197f2847929b70",
+      "case_number": "K.br. 809/18",
+      "facts": {
+        "defendant": "Eval Case 2",
+        "injury_type": "teska tjelesna povreda",
+        "location": "Podgorica",
+        "weapon": null,
+        "weapon_used": false,
+        "severe_consequence": true,
+        "death_result": false,
+        "negligence": false,
+        "provocation": false,
+        "fight_participation": true,
+        "fight_consequence": "death_or_serious_injury",
+        "left_without_help": false
+      },
+      "expected": {
+        "applied_articles_any_of": [
+          "153",
+          "399",
+          "226",
+          "300"
+        ]
+      }
+    },
+    {
+      "case_id": "Одлуке2",
+      "source_xml": "data/verdicts_xml/Одлуке2.xml",
+      "source_sha256": "9e786bde904f41d0eb512ed78238b6328925e26952b57996d7e1a893f6d00196",
+      "case_number": "K.br. 27/24",
+      "facts": {
+        "defendant": "Eval Case 3",
+        "injury_type": "teska tjelesna povreda",
+        "location": "Podgorica",
+        "weapon": "metalni kljuc",
+        "weapon_used": true,
+        "severe_consequence": true,
+        "death_result": false,
+        "negligence": false,
+        "provocation": false,
+        "fight_participation": false,
+        "fight_consequence": "none",
+        "left_without_help": false
+      },
+      "expected": {
+        "applied_articles_any_of": [
+          "151",
+          "226",
+          "239",
+          "41"
+        ]
+      }
+    },
+    {
+      "case_id": "Одлуке3",
+      "source_xml": "data/verdicts_xml/Одлуке3.xml",
+      "source_sha256": "62f801b480a55f947ab799b1dd24f61b7c0d32c1925a0efb0822d39758f8a355",
+      "case_number": "K.br. 617/13",
+      "facts": {
+        "defendant": "Eval Case 4",
+        "injury_type": "teska tjelesna povreda",
+        "location": "Podgorica",
+        "weapon": "staklena flasa",
+        "weapon_used": true,
+        "severe_consequence": true,
+        "death_result": false,
+        "negligence": false,
+        "provocation": false,
+        "fight_participation": false,
+        "fight_consequence": "none",
+        "left_without_help": false
+      },
+      "expected": {
+        "applied_articles_any_of": [
+          "151",
+          "226",
+          "399",
+          "32"
+        ]
+      }
+    },
+    {
+      "case_id": "Одлуке4",
+      "source_xml": "data/verdicts_xml/Одлуке4.xml",
+      "source_sha256": "b9a1723f8a43edacbced27eae9b4dfe9d6408c85f3f0a83b9492d2579db3aed7",
+      "case_number": "K.br. 46/19",
+      "facts": {
+        "defendant": "Eval Case 5",
+        "injury_type": "laka tjelesna povreda",
+        "location": "Podgorica",
+        "weapon": "metalni kljuc",
+        "weapon_used": true,
+        "severe_consequence": false,
+        "death_result": false,
+        "negligence": false,
+        "provocation": false,
+        "fight_participation": false,
+        "fight_consequence": "none",
+        "left_without_help": false
+      },
+      "expected": {
+        "applied_articles_any_of": [
+          "152",
+          "226",
+          "227",
+          "239"
+        ]
+      }
+    }
+  ]
+}

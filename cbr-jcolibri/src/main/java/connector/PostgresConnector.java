@@ -33,7 +33,7 @@ public class PostgresConnector implements Connector {
             Class.forName("org.postgresql.Driver");
             Connection conn = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
             Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM cases ORDER BY id");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM cases ORDER BY id DESC");
 
             while (rs.next()) {
                 CBRCase cbrCase = new CBRCase();
@@ -44,14 +44,14 @@ public class PostgresConnector implements Connector {
                 caseDescription.setInjuryType(rs.getString("injury_type"));
                 caseDescription.setLocation(rs.getString("location"));
                 caseDescription.setWeapon(rs.getString("weapon"));
-                caseDescription.setWeaponUsed(String.valueOf(rs.getBoolean("weapon_used")));
-                caseDescription.setSevereConsequence(String.valueOf(rs.getBoolean("severe_consequence")));
-                caseDescription.setDeathResult(String.valueOf(rs.getBoolean("death_result")));
-                caseDescription.setNegligence(String.valueOf(rs.getBoolean("negligence")));
-                caseDescription.setProvocation(String.valueOf(rs.getBoolean("provocation")));
-                caseDescription.setFightParticipation(String.valueOf(rs.getBoolean("fight_participation")));
+                caseDescription.setWeaponUsed(boolToString((Boolean) rs.getObject("weapon_used")));
+                caseDescription.setSevereConsequence(boolToString((Boolean) rs.getObject("severe_consequence")));
+                caseDescription.setDeathResult(boolToString((Boolean) rs.getObject("death_result")));
+                caseDescription.setNegligence(boolToString((Boolean) rs.getObject("negligence")));
+                caseDescription.setProvocation(boolToString((Boolean) rs.getObject("provocation")));
+                caseDescription.setFightParticipation(boolToString((Boolean) rs.getObject("fight_participation")));
                 caseDescription.setFightConsequence(rs.getString("fight_consequence"));
-                caseDescription.setLeftWithoutHelp(String.valueOf(rs.getBoolean("left_without_help")));
+                caseDescription.setLeftWithoutHelp(boolToString((Boolean) rs.getObject("left_without_help")));
                 caseDescription.setOutcome(rs.getString("outcome"));
 
                 cbrCase.setDescription(caseDescription);
@@ -75,6 +75,13 @@ public class PostgresConnector implements Connector {
             return fallback;
         }
         return value;
+    }
+
+    private static String boolToString(Boolean value) {
+        if (value == null) {
+            return "unknown";
+        }
+        return value.booleanValue() ? "true" : "false";
     }
 
     @Override

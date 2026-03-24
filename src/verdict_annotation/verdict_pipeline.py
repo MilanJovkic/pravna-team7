@@ -7,6 +7,7 @@ from typing import Dict, Optional
 from .txt_extractor import TextExtractor
 from .verdict_parser import VerdictParser, VerdictMetadata
 from .verdict_annotator import VerdictAnnotator, VerdictAnnotation
+from .extraction_quality import assess_annotation_quality, DEFAULT_CONFIDENCE_THRESHOLD
 from .verdict_exporter import VerdictAkomaExporter
 
 
@@ -31,6 +32,7 @@ class VerdictAnnotationPipeline:
         self.limit = limit
         self.overrides_file = overrides_file
         self.enable_llm = enable_llm
+        self.confidence_threshold = DEFAULT_CONFIDENCE_THRESHOLD
 
         self.text_extractor = TextExtractor()
         self.parser = VerdictParser()
@@ -77,6 +79,7 @@ class VerdictAnnotationPipeline:
             self._merge_llm_metadata(verdicts, annotations)
             self._apply_overrides(verdicts, annotations)
             self._normalize_annotation_fields(verdicts, annotations)
+            self._apply_quality_flags(annotations)
 
             print("\n[FAZA 4/4] Generisanje Akoma Ntoso XML fajlova...")
             self._export_results(verdicts, annotations)
@@ -373,6 +376,17 @@ class VerdictAnnotationPipeline:
                 continue
             normalized.append(mapping.get(key, concept))
         return list(dict.fromkeys(normalized))
+
+    def _apply_quality_flags(self, annotations: Dict[str, VerdictAnnotation]) -> None:
+        """Set needs_review flag for weak or incomplete extraction outputs."""
+        for annotation in annotations.values():
+            needs_review, reasons = assess_annotation_quality(
+                annotation,
+                confidence_threshold=self.confidence_threshold,
+            )
+            annotation.needs_review = needs_review
+            annotation.review_reason = ",".join(reasons) if reasons else None
+            annotation.extraction_method = "hybrid_regex_llm"
 
     def _apply_overrides(
         self,

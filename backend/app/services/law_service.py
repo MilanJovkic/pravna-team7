@@ -9,6 +9,7 @@ from xml.etree import ElementTree as ET
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
 from src.akoma_annotation.parser import LegalTextParser
+from src.akoma_annotation.references import parse_reference_href
 
 
 class LawService:
@@ -70,10 +71,16 @@ class LawService:
                     for ref in article.findall(".//{http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17}ref"):
                         href = ref.get("href", "")
                         text = ref.text or ""
+                        parsed_ref = parse_reference_href(href)
                         
                         ref_data = {
                             "href": href,
-                            "text": text
+                            "text": text,
+                            "normalized_href": parsed_ref["normalized_href"],
+                            "reference_kind": parsed_ref["kind"],
+                            "target_article": parsed_ref["article_number"],
+                            "target_paragraph": parsed_ref["paragraph_number"],
+                            "target_point": parsed_ref["point_number"],
                         }
                         references.append(ref_data)
                     

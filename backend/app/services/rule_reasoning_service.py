@@ -6,6 +6,7 @@ import subprocess
 import xml.etree.ElementTree as ET
 
 from backend.app.models.schemas import CaseFacts, RuleReasoningResult
+from backend.app.services.rule_artifact_validator import validate_rule_artifacts
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -30,10 +31,15 @@ ASCII_MAP = {
 class RuleReasoningService:
     """Service that runs dr-device reasoning on provided facts."""
 
-    def run(self, facts: CaseFacts) -> RuleReasoningResult:
+    def run(self, facts: CaseFacts, strict_mode: bool = True) -> RuleReasoningResult:
+        artifact_errors = validate_rule_artifacts(DR_DEVICE_DIR)
+        if artifact_errors:
+            message = "; ".join(artifact_errors)
+            raise ValueError(f"Rule artifact validation failed: {message}")
+
         self._write_facts(facts)
         self._run_dr_device()
-        return self._parse_export(facts)
+        return self._parse_export(facts, strict_mode)
 
     def _normalize(self, value: str) -> str:
         for src, dst in ASCII_MAP.items():
@@ -95,9 +101,9 @@ class RuleReasoningService:
             timeout=60,
         )
 
-    def _parse_export(self, facts: CaseFacts) -> RuleReasoningResult:
+    def _parse_export(self, facts: CaseFacts, strict_mode: bool) -> RuleReasoningResult:
         if not EXPORT_PATH.exists():
-            return RuleReasoningResult()
+            return RuleReasoningResult(strict_mode=strict_mode, status="no_export")
 
         export_ns = "http://startrek.csd.auth.gr/dr-device/export/export.rdf#"
         defeasible_ns = "http://lpis.csd.auth.gr/systems/dr-device/defeasible.rdfs#"
@@ -106,7 +112,7 @@ class RuleReasoningService:
         tree = ET.parse(EXPORT_PATH)
         root = tree.getroot()
 
-        requested_defendant = (facts.defendant or "").strip()
+        requested_defendant = self._normalize((facts.defendant or "").strip())
         norms = []
         proofs = []
 
@@ -128,12 +134,30 @@ class RuleReasoningService:
             if proof_elem is not None and proof_elem.text:
                 proofs.append(proof_elem.text.strip())
 
-        if not norms:
-            fallback = self._fallback_from_facts(facts)
-            if fallback:
-                return RuleReasoningResult(applied_norms=fallback, proofs=[])
+        return self._finalize_result(norms, proofs, facts, strict_mode)
 
-        return RuleReasoningResult(applied_norms=norms, proofs=proofs)
+    def _finalize_result(
+        self,
+        norms: list[str],
+        proofs: list[str],
+        facts: CaseFacts,
+        strict_mode: bool,
+    ) -> RuleReasoningResult:
+        if norms:
+            return RuleReasoningResult(
+                applied_norms=norms,
+                proofs=proofs,
+                strict_mode=strict_mode,
+                status="ok",
+            )
+
+        _ = facts
+        return RuleReasoningResult(
+            applied_norms=[],
+            proofs=[],
+            strict_mode=strict_mode,
+            status="no_proof",
+        )
 
     def _escape(self, value: str) -> str:
         return (
@@ -149,12 +173,3 @@ class RuleReasoningService:
             return None
         return "true" if value else "false"
 
-    def _fallback_from_facts(self, facts: CaseFacts) -> list[str]:
-        if not facts.injury_type:
-            return []
-        normalized = self._normalize(facts.injury_type.strip().lower())
-        if "teska" in normalized:
-            return ["crime_art151_1"]
-        if "laka" in normalized:
-            return ["crime_art152_1"]
-        return []

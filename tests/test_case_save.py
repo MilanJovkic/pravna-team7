@@ -2,6 +2,7 @@
 """Test case saving and CBR reuse."""
 import requests
 import json
+import os
 
 # Test Task 8: Save new case and verify it appears in CBR queries
 
@@ -24,16 +25,22 @@ new_case = {
         'fight_consequence': 'none',
         'left_without_help': False
     },
-    'outcome': 'osudjen'
+    'outcome': 'osudjen',
+    'selected_verdict': 'osudjen',
+    'selected_sanction': 'kazna zatvora (predlog)',
+    'user_confirmation': True,
 }
+
+BASE_URL = os.getenv('TEST_API_BASE_URL', 'http://localhost:8000/api')
 
 # Step 1: Save the case
 print("\n1. Saving new case...")
 r1 = requests.post(
-    'http://localhost:8000/api/cases/',
+    f'{BASE_URL}/cases/',
     json=new_case,
     timeout=30
 )
+r1.raise_for_status()
 saved = r1.json()
 print(f"   ID: {saved.get('id')}")
 print(f"   Case Number: {saved.get('case_number')}")
@@ -56,10 +63,11 @@ facts = {
 }
 
 r2 = requests.post(
-    'http://localhost:8000/api/reasoning/',
+    f'{BASE_URL}/reasoning/',
     json={'facts': facts, 'top_k': 5},
     timeout=30
 )
+r2.raise_for_status()
 result = r2.json()
 print(f"   Applied norms: {result['rule_reasoning']['applied_norms']}")
 print(f"   CBR Matches found: {len(result['cbr']['matches'])}")
@@ -76,10 +84,7 @@ for match in result['cbr']['matches']:
         break
 
 if not found:
-    print("   Note: New case may not appear yet (depends on similarity threshold)")
-    print(f"   Top matches:")
-    for match in result['cbr']['matches'][:3]:
-        print(f"     - {match['case_number']}: {match['similarity']:.2%}")
+    raise AssertionError("Saved case was not returned in CBR matches.")
 
 print("\n" + "="*60)
 print("Task 8 Status: WORKING ✓")

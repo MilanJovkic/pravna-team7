@@ -1,11 +1,26 @@
 """Test script to verify automatic database insertion during XML export."""
 import sys
-sys.path.insert(0, 'src')
+from pathlib import Path
+
+# Add workspace root to path for module resolution
+workspace_root = Path.cwd()
+if workspace_root.name != 'pravna-team7':
+    workspace_root = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(workspace_root))
 
 from src.verdict_annotation.verdict_parser import VerdictMetadata
 from src.verdict_annotation.verdict_annotator import VerdictAnnotation
 from src.verdict_annotation.verdict_exporter import VerdictAkomaExporter
 import psycopg2
+import os
+
+try:
+    from dotenv import load_dotenv
+except Exception:
+    load_dotenv = None
+
+if load_dotenv:
+    load_dotenv()
 
 # Create test case
 test_metadata = VerdictMetadata(
@@ -59,11 +74,11 @@ print(f"✓ XML sacuvan: {output_file}")
 # Verify database insertion
 print("\n🔍 Proveravam unos u bazu...")
 conn = psycopg2.connect(
-    host="localhost",
-    port=5432,
-    database="pravna_cbr",
-    user="pravna_user",
-    password="pravna_pass"
+    host=os.getenv("DB_HOST") or os.getenv("POSTGRES_HOST", "127.0.0.1"),
+    port=int(os.getenv("DB_PORT") or os.getenv("POSTGRES_PORT", "5433")),
+    database=os.getenv("DB_NAME") or os.getenv("POSTGRES_DB", "pravna_cbr"),
+    user=os.getenv("DB_USER") or os.getenv("POSTGRES_USER", "pravna_user"),
+    password=os.getenv("DB_PASSWORD") or os.getenv("POSTGRES_PASSWORD", "pravna_pass")
 )
 cursor = conn.cursor()
 cursor.execute("SELECT * FROM cases WHERE case_number = %s", ("TEST-001",))

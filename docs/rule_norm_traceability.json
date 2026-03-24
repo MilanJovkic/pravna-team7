@@ -1,0 +1,77 @@
+{
+  "version": "2026-03-24",
+  "source_law": "Krivični zakonik Crne Gore",
+  "notes": "Mapa norma->rule id->dokaz iz teksta zakona za rule-based reasoning (min 10 pravila).",
+  "mappings": [
+    {
+      "norm": "crime_art151_1",
+      "rule_id": "rule1",
+      "law_article": "151",
+      "law_paragraph": "1",
+      "evidence_summary": "Teska tjelesna povreda predstavlja osnovnu kvalifikaciju iz clana 151."
+    },
+    {
+      "norm": "crime_art151_2",
+      "rule_id": "rule2",
+      "law_article": "151",
+      "law_paragraph": "2",
+      "evidence_summary": "Upotreba sredstva (weapon_used=true) pojacava kvalifikaciju dela."
+    },
+    {
+      "norm": "crime_art151_3",
+      "rule_id": "rule3",
+      "law_article": "151",
+      "law_paragraph": "3",
+      "evidence_summary": "Teske posledice (severe_consequence=true) mapiraju na tezi oblik iz clana 151."
+    },
+    {
+      "norm": "crime_art151_4",
+      "rule_id": "rule4",
+      "law_article": "151",
+      "law_paragraph": "4",
+      "evidence_summary": "Smrtni ishod (death_result=true) predstavlja tezu pravnu posledicu."
+    },
+    {
+      "norm": "crime_art151_5",
+      "rule_id": "rule5",
+      "law_article": "151",
+      "law_paragraph": "5",
+      "evidence_summary": "Nehat (negligence=true) se posebno vrednuje kroz normu iz clana 151."
+    },
+    {
+      "norm": "crime_art152_1",
+      "rule_id": "rule6",
+      "law_article": "152",
+      "law_paragraph": "1",
+      "evidence_summary": "Laka tjelesna povreda mapira na osnovnu normu clana 152."
+    },
+    {
+      "norm": "crime_art152_2",
+      "rule_id": "rule7",
+      "law_article": "152",
+      "law_paragraph": "2",
+      "evidence_summary": "Laka povreda uz upotrebu sredstva (weapon_used=true) vodi ka tezem stavu clana 152."
+    },
+    {
+      "norm": "crime_art153",
+      "rule_id": "rule8",
+      "law_article": "153",
+      "law_paragraph": "1",
+      "evidence_summary": "Provokacija (provocation=true) modeluje normu privilegovanog oblika iz clana 153."
+    },
+    {
+      "norm": "crime_art154",
+      "rule_id": "rule9",
+      "law_article": "154",
+      "law_paragraph": "1",
+      "evidence_summary": "Ucesce u tuci (fight_participation=true) mapira na normu clana 154."
+    },
+    {
+      "norm": "crime_art155_1",
+      "rule_id": "rule10",
+      "law_article": "155",
+      "law_paragraph": "1",
+      "evidence_summary": "Napustanje bez pomoci (left_without_help=true) mapira na clan 155 stav 1."
+    }
+  ]
+}

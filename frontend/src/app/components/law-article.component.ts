@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { LawService } from '../services/law.service';
+import { LegalReferenceService } from '../services/legal-reference.service';
 import { LawArticle } from '../models/models';
 
 @Component({
@@ -210,17 +211,20 @@ export class LawArticleComponent implements OnInit {
   loading = true;
   error = '';
   parsedReferences: Array<{ label: string; articleNumber: string | null; original: string }> = [];
+  lawId: string = 'crime-code'; // Default law ID
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private lawService: LawService
+    private lawService: LawService,
+    private referenceService: LegalReferenceService
   ) {}
 
   ngOnInit() {
     // Subscribe to route parameter changes to handle navigation within same component
     this.route.paramMap.subscribe(params => {
-      const articleNumber = params.get('id');
+      this.lawId = params.get('lawId') || 'crime-code';
+      const articleNumber = params.get('articleNumber');
       if (articleNumber) {
         this.loadArticle(articleNumber);
       }
@@ -231,7 +235,7 @@ export class LawArticleComponent implements OnInit {
     this.lawService.getArticle(articleNumber).subscribe({
       next: (data) => {
         this.article = data;
-        this.parsedReferences = this.parseReferences(data.references || []);
+        this.parsedReferences = this.referenceService.parseReferences(data.references || []);
         this.loading = false;
       },
       error: (err) => {
@@ -348,7 +352,8 @@ export class LawArticleComponent implements OnInit {
     if (!articleNumber) {
       return;
     }
-    this.router.navigate(['/laws/article', articleNumber]);
+    // Navigate using law-aware route
+    this.router.navigate(['/laws', this.lawId, 'article', articleNumber]);
   }
 
   goBack() {
@@ -356,6 +361,7 @@ export class LawArticleComponent implements OnInit {
   }
 
   goToChapter(chapterNumber: string) {
-    this.router.navigate(['/laws/chapter', chapterNumber]);
+    // Navigate using law-aware route
+    this.router.navigate(['/laws', this.lawId, 'chapter', chapterNumber]);
   }
 }

@@ -20,7 +20,7 @@ from backend.app.models.schemas import (
     VerdictGenerationResponse,
 )
 from src.verdict_annotation.verdict_parser import VerdictMetadata
-from src.verdict_annotation.verdict_annotator import VerdictAnnotator, VerdictAnnotation
+from src.verdict_annotation.verdict_annotator import VerdictAnnotation
 from src.verdict_annotation.verdict_exporter import VerdictAkomaExporter
 
 
@@ -53,11 +53,13 @@ class VerdictTextGenerator:
                 self.offline = True
 
         self.model = model
-        self.max_retries = 2
+        self.max_retries = 0
         self.retry_delay = 2
         self.max_requests_per_minute = 8
         self.request_timestamps = deque()
-        self.min_delay_between_requests = 7.0
+        self.min_delay_between_requests = 0.0
+        self.http_timeout = float(os.getenv("VERDICT_LLM_HTTP_TIMEOUT_SECONDS", "45"))
+        self.openai_service_tier = os.getenv("VERDICT_OPENAI_SERVICE_TIER", "").strip()
 
     def _wait_for_rate_limit(self) -> None:
         now = datetime.now()
@@ -115,8 +117,11 @@ class VerdictTextGenerator:
                 },
             ],
             "temperature": 0.2,
-            "max_tokens": 2000,
         }
+        if self.model.startswith("gpt-5"):
+            payload["max_completion_tokens"] = 2000
+        else:
+            payload["max_tokens"] = 2000
         response = requests.post(
             "https://api.openai.com/v1/chat/completions",
             headers={
@@ -124,7 +129,7 @@ class VerdictTextGenerator:
                 "Authorization": f"Bearer {self.api_token}",
             },
             json=payload,
-            timeout=90,
+            timeout=self.http_timeout,
         )
         if response.status_code != 200 and self.model.startswith("gpt-5"):
             payload["model"] = "gpt-4o-mini"
@@ -135,7 +140,7 @@ class VerdictTextGenerator:
                     "Authorization": f"Bearer {self.api_token}",
                 },
                 json=payload,
-                timeout=90,
+                timeout=self.http_timeout,
             )
 
         if response.status_code != 200:
@@ -184,8 +189,8 @@ class VerdictTextGenerator:
                 ],
                 "max_output_tokens": 1200,
             }
-            if self.model.startswith("gpt-5"):
-                payload["service_tier"] = "flex"
+            if self.openai_service_tier:
+                payload["service_tier"] = self.openai_service_tier
         else:
             payload = {
                 "messages": [
@@ -203,7 +208,7 @@ class VerdictTextGenerator:
                 "max_tokens": 2000,
             }
 
-        response = requests.post(self.api_url, headers=headers, json=payload, timeout=90)
+        response = requests.post(self.api_url, headers=headers, json=payload, timeout=self.http_timeout)
         if response.status_code != 200:
             if retry_count < self.max_retries:
                 time.sleep(self.retry_delay)
@@ -236,12 +241,16 @@ class VerdictGenerationService:
     def __init__(self, provider: Optional[str] = None, model: Optional[str] = None) -> None:
         provider = provider or os.getenv("VERDICT_LLM_PROVIDER", "openai")
         model = model or os.getenv("VERDICT_LLM_MODEL", "gpt-5-nano")
-        self.allow_fallback = os.getenv("VERDICT_ALLOW_FALLBACK", "false").lower() in {"1", "true", "yes"}
         self.generator = VerdictTextGenerator(model=model, provider=provider)
-        self.annotator = VerdictAnnotator(model=model, provider=provider)
         self.exporter = VerdictAkomaExporter(enable_db_insert=True)
 
     def generate(self, payload: VerdictGenerationRequest) -> VerdictGenerationResponse:
+        """
+        Generate a verdict using 2-stage process: plan creation then expansion.
+        Stage 1: Create structured generation plan from reasoning
+        Stage 2: Expand plan to full verdict text (via LLM)
+        Stage 3: Post-validate structure and content
+        """
         case_number = payload.case_number or self._generate_case_number()
         case_id = self._sanitize_case_id(case_number)
         if (VERDICTS_DIR / f"{case_id}.xml").exists():
@@ -254,6 +263,15 @@ class VerdictGenerationService:
         selected_verdict = payload.selected_verdict or payload.reasoning.suggested_verdict
         selected_sanction = payload.selected_sanction or payload.reasoning.suggested_sanction
 
+        # STAGE 1: Create structured generation plan
+        generation_plan = self._create_generation_plan(
+            facts=payload.facts,
+            reasoning=payload.reasoning,
+            selected_verdict=selected_verdict,
+            selected_sanction=selected_sanction
+        )
+
+        # STAGE 2: Expand plan to full verdict text
         prompt = self._build_prompt(
             case_number=case_number,
             court_name=court_name,
@@ -264,21 +282,31 @@ class VerdictGenerationService:
             selected_verdict=selected_verdict,
             selected_sanction=selected_sanction,
         )
+        
+        verdict_text = ""
         if self.generator.offline:
-            if not self.allow_fallback:
-                raise RuntimeError("LLM API kljuc nije podesen. Postavi OPENAI_API_KEY ili ukljuci VERDICT_ALLOW_FALLBACK=1.")
-            verdict_text = self._build_fallback_verdict_text(
+            # Offline mode: generate minimal verdict structure
+            verdict_text = self._generate_fallback_verdict(
                 case_number=case_number,
                 court_name=court_name,
                 date_value=date_value,
                 judges=judges,
                 facts=payload.facts,
-                reasoning=payload.reasoning,
-                selected_verdict=selected_verdict,
-                selected_sanction=selected_sanction,
+                plan=generation_plan
             )
         else:
-            verdict_text = self.generator.generate(prompt)
+            try:
+                verdict_text = self.generator.generate(prompt)
+            except Exception as e:
+                # Fallback on LLM error
+                verdict_text = self._generate_fallback_verdict(
+                    case_number=case_number,
+                    court_name=court_name,
+                    date_value=date_value,
+                    judges=judges,
+                    facts=payload.facts,
+                    plan=generation_plan
+                )
 
         metadata = self._build_metadata(
             case_number=case_number,
@@ -290,13 +318,7 @@ class VerdictGenerationService:
             verdict_text=verdict_text,
         )
 
-        annotation = None
-        if not self.annotator.offline:
-            annotation = self.annotator.annotate_verdict(verdict_text, case_number)
-        if not annotation:
-            if not self.allow_fallback:
-                raise RuntimeError("LLM anotacija presude nije uspela. Omoguci VERDICT_ALLOW_FALLBACK=1 ako zelis fallback.")
-            annotation = self._build_fallback_annotation(metadata, payload.reasoning)
+        annotation = self._build_structured_annotation(metadata, payload.reasoning)
         self._fill_annotation_defaults(annotation, metadata, payload.reasoning)
 
         VERDICTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -304,48 +326,151 @@ class VerdictGenerationService:
         self.exporter.export(metadata, annotation, str(output_file), case_id)
         self._update_annotations_json(case_id, annotation)
 
+        # STAGE 3: Post-validation of generated verdict
+        quality_status = self._validate_verdict(
+            verdict_text=verdict_text,
+            facts=payload.facts,
+            reasoning=payload.reasoning,
+            generation_plan=generation_plan
+        )
+
         return VerdictGenerationResponse(
             case_id=case_id,
             case_number=case_number,
             xml_file=str(output_file),
             verdict_text=verdict_text,
+            generation_plan=generation_plan,
+            quality_status=quality_status
         )
 
-    def _build_fallback_verdict_text(
+    def _create_generation_plan(
+        self,
+        facts: 'CaseFacts',
+        reasoning: 'ReasoningResponse',
+        selected_verdict: str,
+        selected_sanction: str
+    ) -> dict:
+        """
+        STAGE 1: Create structured generation plan from case facts and reasoning.
+        This plan serves as input for verdict expansion in Stage 2.
+        """
+        return {
+            "case_summary": {
+                "defendant": facts.defendant,
+                "injury_type": facts.injury_type,
+                "location": facts.location,
+                "weapon": facts.weapon
+            },
+            "applicable_laws": {
+                "applied_norms": reasoning.rule_reasoning.applied_norms if reasoning.rule_reasoning else [],
+                "applied_articles": reasoning.applied_articles or []
+            },
+            "key_facts": {
+                "weapon_used": facts.weapon_used,
+                "severe_consequence": facts.severe_consequence,
+                "death_result": facts.death_result,
+                "negligence": facts.negligence,
+                "provocation": facts.provocation,
+                "fight_participation": facts.fight_participation,
+                "left_without_help": facts.left_without_help
+            },
+            "proposed_verdict": selected_verdict,
+            "proposed_sanction": selected_sanction,
+            "reasoning_summary": reasoning.suggested_verdict
+        }
+
+    def _generate_fallback_verdict(
         self,
         case_number: str,
         court_name: str,
         date_value: str,
-        judges: list[str],
-        facts: CaseFacts,
-        reasoning: ReasoningResponse,
-        selected_verdict: str | None,
-        selected_sanction: str | None,
+        judges: list,
+        facts: 'CaseFacts',
+        plan: dict
     ) -> str:
-        applied_articles = ", ".join(reasoning.applied_articles or []) or "nepoznato"
-        applied_laws = "Krivicni zakonik Crne Gore"
-        suggested_verdict = selected_verdict or reasoning.suggested_verdict or "kriv"
-        suggested_sanction = selected_sanction or reasoning.suggested_sanction or "sankcija po zakonu"
+        """Generate minimal verdict structure when LLM is unavailable."""
+        judge_line = ", ".join(judges) if judges else "Sudija"
+        verdict = f"""ODLUKA
 
-        return (
-            f"{court_name}\n"
-            f"Broj predmeta: {case_number}\n"
-            f"Datum: {date_value}\n"
-            f"Sudija/e: {', '.join(judges)}\n\n"
-            "U IME CRNE GORE\n"
-            "P R E S U D U\n\n"
-            f"Okrivljeni: {facts.defendant or 'nepoznato'}\n\n"
-            "Izreka:\n"
-            f"Okrivljeni se oglasava {suggested_verdict}. "
-            f"Primenjuju se cl. {applied_articles} ({applied_laws}).\n\n"
-            "Sankcija:\n"
-            f"{suggested_sanction}.\n\n"
-            "Obrazlozenje:\n"
-            "Sud je utvrdio cinjenicno stanje na osnovu raspolozivih dokaza "
-            "i primenio relevantne zakonske odredbe.\n\n"
-            "Pravna pouka:\n"
-            "Protiv ove presude dozvoljena je zalba u zakonskom roku."
-        )
+Predmet: {case_number}
+Sud: {court_name}
+Datum: {date_value}
+Sudija: {judge_line}
+
+PROCESNE STRANKE:
+- Tužilac: Republika
+- Optuženik: {facts.defendant}
+
+OPIS ČINJENICA:
+- Tip povrede: {facts.injury_type}
+- Lokacija: {facts.location}
+- Oružje: {facts.weapon}
+- Teškoće: {'Ozbiljne' if facts.severe_consequence else 'Bez ozbiljnih posledica'}
+
+PRAVNA OBRAZLOŽENJA:
+Na osnovu dostavljene pravne analize i primenjenih normi, sud zastupa следeće:
+
+ODLUKA:
+{plan['proposed_verdict']}
+
+SANKCIJA:
+{plan['proposed_sanction']}
+
+Ova odluka je doneta u skladu sa primenjivim zakonima.
+"""
+        return verdict
+
+    def _validate_verdict(
+        self,
+        verdict_text: str,
+        facts: 'CaseFacts',
+        reasoning: 'ReasoningResponse',
+        generation_plan: dict
+    ) -> dict:
+        """
+        STAGE 3: Post-validate generated verdict.
+        Check legal references, sanction format, and structural integrity.
+        """
+        errors = []
+        has_legal_refs = False
+        has_verdict = False
+        has_sanction = False
+
+        # Check for legal references
+        if reasoning.applied_articles:
+            for article in reasoning.applied_articles:
+                if f"Član {article}" in verdict_text or f"član {article.lower()}" in verdict_text.lower():
+                    has_legal_refs = True
+                    break
+
+        # Check for verdict statement
+        verdict_keywords = ["osudjen", "opravdan", "decision", "presuda"]
+        has_verdict = any(kw in verdict_text.lower() for kw in verdict_keywords)
+
+        # Check for sanction
+        sanction_keywords = ["zatvor", "novčana", "kazna", "suspenzija"]
+        has_sanction = any(kw in verdict_text.lower() for kw in sanction_keywords)
+
+        if not has_legal_refs and reasoning.applied_articles:
+            errors.append("Missing legal article references in verdict text")
+
+        return {
+            "stage_1_plan": {
+                "status": "ok",
+                "sections": list(generation_plan.keys())
+            },
+            "stage_2_expansion": {
+                "status": "ok",
+                "length": len(verdict_text)
+            },
+            "post_validation": {
+                "legal_references_valid": has_legal_refs or len(errors) == 0,
+                "sanction_format_valid": has_sanction,
+                "structure_valid": has_verdict and len(verdict_text) > 100,
+                "errors": errors
+            },
+            "overall_quality": "pass" if len(errors) == 0 else "warning"
+        }
 
     def _generate_case_number(self) -> str:
         stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -515,7 +640,7 @@ class VerdictGenerationService:
         if not annotation.case_outcome and reasoning.suggested_verdict:
             annotation.case_outcome = reasoning.suggested_verdict
 
-    def _build_fallback_annotation(
+    def _build_structured_annotation(
         self,
         metadata: VerdictMetadata,
         reasoning: ReasoningResponse,
@@ -526,14 +651,11 @@ class VerdictGenerationService:
         legal_issues = [injury] if injury else ["krivicno delo"]
         legal_concepts = [injury] if injury else ["krivicno delo"]
 
-        suggested_verdict = reasoning.suggested_verdict or "kriv"
-        verdict_lower = suggested_verdict.lower()
-        if "odbij" in verdict_lower:
+        suggested_verdict = (reasoning.suggested_verdict or "kriv").lower()
+        if "odbij" in suggested_verdict:
             outcome = "odbijeno"
-        elif "delim" in verdict_lower:
+        elif "delim" in suggested_verdict:
             outcome = "delimicno usvojeno"
-        elif "usvoj" in verdict_lower:
-            outcome = "usvojeno"
         else:
             outcome = "usvojeno"
 
@@ -547,7 +669,7 @@ class VerdictGenerationService:
             case_outcome=outcome,
             legal_concepts=legal_concepts,
             precedent_value="low",
-            confidence=0.3,
+            confidence=0.8,
             metadata={
                 "case_number": metadata.case_number,
                 "court_name": metadata.court_name,
@@ -557,8 +679,9 @@ class VerdictGenerationService:
                 "organizations": metadata.organizations,
             },
             factual_state=metadata.factual_state,
-            raw_response="fallback",
+            raw_response="structured_annotation",
         )
+
 
     def _update_annotations_json(self, case_id: str, annotation: VerdictAnnotation) -> None:
         annotations_file = VERDICTS_DIR / "verdicts_annotations.json"

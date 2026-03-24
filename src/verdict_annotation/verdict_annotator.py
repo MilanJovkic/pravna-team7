@@ -25,6 +25,9 @@ class VerdictAnnotation:
     legal_concepts: List[str]  # Pravni koncepti
     precedent_value: Optional[str] = None  # Značaj kao presedana
     confidence: Optional[float] = None
+    needs_review: bool = False
+    review_reason: Optional[str] = None
+    extraction_method: str = "hybrid_regex_llm"
     metadata: Optional[Dict[str, Any]] = None
     factual_state: Optional[Dict[str, List[str]]] = None
     raw_response: Optional[str] = None
@@ -46,6 +49,7 @@ class VerdictAnnotator:
         elif self.provider == "openai":
             self.api_token = api_token or os.getenv("OPENAI_API_KEY")
             self.api_url = "https://api.openai.com/v1/responses"
+            self.openai_chat_url = "https://api.openai.com/v1/chat/completions"
             if not self.api_token:
                 self.offline = True
         else:
@@ -60,6 +64,8 @@ class VerdictAnnotator:
         self.max_requests_per_minute = 10
         self.request_timestamps = deque()
         self.min_delay_between_requests = 6.0
+        self.http_timeout = float(os.getenv("VERDICT_ANNOTATION_HTTP_TIMEOUT_SECONDS", "15"))
+        self.openai_service_tier = os.getenv("VERDICT_OPENAI_SERVICE_TIER", "").strip()
 
     def _wait_for_rate_limit(self):
         now = datetime.now()
@@ -86,50 +92,13 @@ class VerdictAnnotator:
         self.request_timestamps.append(datetime.now())
 
     def _create_annotation_prompt(self, verdict_text: str, case_number: str) -> str:
-        return f"""Ti si ekspert za pravnu informatiku. Analiziraj sudsku presudu i vrati semantičku anotaciju.
-
-    Odgovor mora biti KRATAK i KOMPAKTAN (bez objašnjenja, bez dodatnog teksta, bez navodnika oko celog JSON-a). Ograniči liste na najviše 3 stavke.
-
-PRESUDA {case_number}:
-{verdict_text[:3000]}
-
-Vrati SAMO JSON u sledećem formatu:
-
-{{
-    "verdict_summary": "<kratak rezime presude (2-3 rečenice)>",
-    "legal_issues": ["<pravno pitanje 1>", "<pravno pitanje 2>"],
-    "applied_laws": ["<Krivični zakonik>", "<Zakon o ...>"],
-    "applied_articles": ["Član 143", "Član 144"],
-    "legal_reasoning": "<obrazloženje suda (kratak izvod)>",
-    "decision": "<odluka suda (npr. 'Optuženi se oglašava krivim')>",
-    "case_outcome": "<усвојено|одбијено|делимично усвојено>",
-    "legal_concepts": ["murder", "self_defense", "mitigating_circumstances"],
-    "precedent_value": "<low|medium|high>",
-    "confidence": <0.0-1.0>,
-    "metadata": {{
-        "case_number": "<broj predmeta ili null>",
-        "court_name": "<naziv suda ili null>",
-        "date": "<YYYY-MM-DD ili null>",
-        "judges": ["<sudija 1>", "<sudija 2>"],
-        "parties": {{
-            "defendant": ["<okrivljeni>"],
-            "victim": ["<oštećeni>"],
-            "witness": ["<svedok>"]
-        }},
-        "organizations": ["<organizacija 1>"]
-    }},
-    "factual_state": {{
-        "injury_type": ["<npr. teska tjelesna povreda>"],
-        "weapon": ["<npr. metalni kljuc>"],
-        "location": ["<npr. Podgorica>"],
-        "amount": ["<npr. 0.5 g>"],
-        "substance_amount": ["<npr. 0.5 g marihuana>"],
-        "speed": ["<npr. 120 km/h>"],
-        "alcohol_level": ["<npr. 1.2 promila>"]
-    }}
-}}
-
-Vrati SAMO validan JSON bez dodatnog teksta!"""
+        return (
+            "Analiziraj presudu i vrati iskljucivo validan JSON bez markdowna. "
+            "Drzi polja kratkim i listama do 3 stavke. "
+            "Obavezna polja: verdict_summary, legal_issues, applied_laws, applied_articles, "
+            "legal_reasoning, decision, case_outcome, legal_concepts, precedent_value, confidence, metadata, factual_state.\n\n"
+            f"PRESUDA {case_number}:\n{verdict_text[:2200]}"
+        )
 
     def annotate_verdict(
         self,
@@ -154,30 +123,25 @@ Vrati SAMO validan JSON bez dodatnog teksta!"""
         if self.provider == "openai":
             payload = {
                 "model": self.model,
-                "input": [
+                "messages": [
                     {
                         "role": "system",
-                        "content": [
-                            {
-                                "type": "input_text",
-                                "text": "Ti si ekspert za analizu sudskih presuda. Vraćaš ISKLJUČIVO validne JSON odgovore."
-                            }
-                        ]
+                        "content": "Ti si ekspert za analizu sudskih presuda. Vrati samo validan JSON objekat bez dodatnog teksta."
                     },
                     {
                         "role": "user",
-                        "content": [
-                            {
-                                "type": "input_text",
-                                "text": prompt
-                            }
-                        ]
+                        "content": prompt
                     }
                 ],
-                "max_output_tokens": 800
+                "temperature": 0.1,
+                "response_format": {"type": "json_object"},
             }
             if self.model.startswith("gpt-5"):
-                payload["service_tier"] = "flex"
+                payload["max_completion_tokens"] = 1400
+            else:
+                payload["max_tokens"] = 1400
+            if self.openai_service_tier:
+                payload["service_tier"] = self.openai_service_tier
         else:
             payload = {
                 "messages": [
@@ -196,7 +160,8 @@ Vrati SAMO validan JSON bez dodatnog teksta!"""
             }
 
         try:
-            response = requests.post(self.api_url, headers=headers, json=payload, timeout=60)
+            request_url = self.openai_chat_url if self.provider == "openai" else self.api_url
+            response = requests.post(request_url, headers=headers, json=payload, timeout=self.http_timeout)
 
             if response.status_code != 200:
                 print(f"⚠ LLM API error {response.status_code}: {response.text}")
@@ -206,30 +171,8 @@ Vrati SAMO validan JSON bez dodatnog teksta!"""
                 return None
 
             result = response.json()
-            if self.provider == "openai" and result.get("status") == "incomplete":
-                reason = (result.get("incomplete_details") or {}).get("reason")
-                if reason == "max_output_tokens" and retry_count < self.max_retries:
-                    print("⚠ OpenAI odgovor predugačak. Pokušavam sa manjim modelom (gpt-4o-mini)...")
-                    original_model = self.model
-                    if self.model == "gpt-5-nano":
-                        self.model = "gpt-4o-mini"
-                    try:
-                        time.sleep(self.retry_delay)
-                        return self.annotate_verdict(verdict_text, case_number, retry_count + 1)
-                    finally:
-                        self.model = original_model
             if self.provider == "openai":
-                raw_content = ""
-                for output_item in result.get("output", []):
-                    for content_item in output_item.get("content", []):
-                        text_value = content_item.get("text") or content_item.get("output_text")
-                        if text_value:
-                            raw_content = text_value.strip()
-                            break
-                    if raw_content:
-                        break
-                if not raw_content:
-                    raw_content = (result.get("output_text") or "").strip()
+                raw_content = (result.get("choices") or [{}])[0].get("message", {}).get("content", "").strip()
                 if not raw_content:
                     print(f"⚠ Prazan OpenAI odgovor: {json.dumps(result)[:400]}...")
             else:
@@ -278,6 +221,16 @@ Vrati SAMO validan JSON bez dodatnog teksta!"""
         return text
 
     def _validate_and_build_annotation(self, data: Dict[str, Any], raw_response: str) -> VerdictAnnotation:
+        confidence_raw = data.get("confidence")
+        confidence = None
+        if isinstance(confidence_raw, (int, float)):
+            confidence = float(confidence_raw)
+        elif isinstance(confidence_raw, str):
+            try:
+                confidence = float(confidence_raw.strip())
+            except ValueError:
+                confidence = None
+
         return VerdictAnnotation(
             verdict_summary=data.get("verdict_summary", ""),
             legal_issues=data.get("legal_issues", []),
@@ -288,7 +241,7 @@ Vrati SAMO validan JSON bez dodatnog teksta!"""
             case_outcome=data.get("case_outcome", "unknown"),
             legal_concepts=data.get("legal_concepts", []),
             precedent_value=data.get("precedent_value"),
-            confidence=data.get("confidence"),
+            confidence=confidence,
             metadata=data.get("metadata") or {},
             factual_state=data.get("factual_state") or {},
             raw_response=raw_response

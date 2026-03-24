@@ -15,6 +15,7 @@ except ImportError:
 
 from .verdict_parser import VerdictMetadata
 from .verdict_annotator import VerdictAnnotation
+from .outcome_normalizer import normalize_outcome
 
 
 class VerdictAkomaExporter:
@@ -247,7 +248,7 @@ class VerdictAkomaExporter:
             
             # Add outcome as attribute
             if annotation.case_outcome:
-                decision_block.set("outcome", annotation.case_outcome)
+                decision_block.set("outcome", normalize_outcome(annotation.case_outcome))
 
         # Parties and organizations (metadata)
         if metadata.parties or metadata.organizations:

@@ -14,7 +14,7 @@
 
 ([rule2] of defeasible-rule
    (rule-name rule2)
-   (original-rule "rule2 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:weapon \"metalni kljuc\" ) ) => ( crime_art151_2 ( defendant ?Defendant ) )")
+   (original-rule "rule2 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:weapon_used \"true\" ) ) => ( crime_art151_2 ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class crime_art151_2)
    (negated no)
@@ -28,7 +28,7 @@
 
 ([rule3] of defeasible-rule
    (rule-name rule3)
-   (original-rule "rule3 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:weapon \"staklena flasa\" ) ) => ( crime_art151_3 ( defendant ?Defendant ) )")
+   (original-rule "rule3 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:severe_consequence \"true\" ) ) => ( crime_art151_3 ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class crime_art151_3)
    (negated no)
@@ -42,7 +42,7 @@
 
 ([rule4] of defeasible-rule
    (rule-name rule4)
-   (original-rule "rule4 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:location \"Podgorica\" ) ) => ( crime_art151_4 ( defendant ?Defendant ) )")
+   (original-rule "rule4 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:death_result \"true\" ) ) => ( crime_art151_4 ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class crime_art151_4)
    (negated no)
@@ -56,7 +56,7 @@
 
 ([rule5] of defeasible-rule
    (rule-name rule5)
-   (original-rule "rule5 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:location \"Skadar\" ) ) => ( crime_art151_5 ( defendant ?Defendant ) )")
+   (original-rule "rule5 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:negligence \"true\" ) ) => ( crime_art151_5 ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class crime_art151_5)
    (negated no)
@@ -84,7 +84,7 @@
 
 ([rule7] of defeasible-rule
    (rule-name rule7)
-   (original-rule "rule7 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"laka tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:weapon \"metalni kljuc\" ) ) => ( crime_art152_2 ( defendant ?Defendant ) )")
+   (original-rule "rule7 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"laka tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:weapon_used \"true\" ) ) => ( crime_art152_2 ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class crime_art152_2)
    (negated no)
@@ -98,7 +98,7 @@
 
 ([rule8] of defeasible-rule
    (rule-name rule8)
-   (original-rule "rule8 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:location \"Danilovgrad\" ) ) => ( crime_art153 ( defendant ?Defendant ) )")
+   (original-rule "rule8 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:provocation \"true\" ) ) => ( crime_art153 ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class crime_art153)
    (negated no)
@@ -112,7 +112,7 @@
 
 ([rule9] of defeasible-rule
    (rule-name rule9)
-   (original-rule "rule9 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:location \"Podgorici Kv\" ) ) => ( crime_art154 ( defendant ?Defendant ) )")
+   (original-rule "rule9 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:fight_participation \"true\" ) ) => ( crime_art154 ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class crime_art154)
    (negated no)
@@ -126,7 +126,7 @@
 
 ([rule10] of defeasible-rule
    (rule-name rule10)
-   (original-rule "rule10 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:location \"Sto\" ) ) => ( crime_art155_1 ( defendant ?Defendant ) )")
+   (original-rule "rule10 ( lc:case ( lc:defendant ?Defendant ) ( lc:injury_type \"teska tjelesna povreda\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:left_without_help \"true\" ) ) => ( crime_art155_1 ( defendant ?Defendant ) )")
    (condition-classes)
    (conclusion-class crime_art155_1)
    (negated no)

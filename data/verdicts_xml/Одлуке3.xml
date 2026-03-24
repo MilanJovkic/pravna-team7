@@ -1,127 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <judgment name="Одлуке3">
-        <meta>
-            <identification source="#court">
-                <FRBRWork>
-                    <FRBRthis value="/akn/me/judgment/Одлуке3/!main"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке3"/>
-                    <FRBRdate date="2015-09-10" name="judgment"/>
-                    <FRBRauthor href="#court"/>
-                    <FRBRcountry value="me"/>
-                </FRBRWork>
-                <FRBRExpression>
-                    <FRBRthis value="/akn/me/judgment/Одлуке3/sr@2015-09-10/!main"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке3/sr@2015-09-10"/>
-                    <FRBRdate date="2015-09-10"/>
-                    <FRBRauthor href="#court"/>
-                    <FRBRlanguage language="sr"/>
-                </FRBRExpression>
-                <FRBRManifestation>
-                    <FRBRthis value="/akn/me/judgment/Одлуке3/sr@2015-09-10/!main.xml"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке3/sr@2015-09-10/!main.akn"/>
-                    <FRBRdate date="2026-02-09"/>
-                    <FRBRauthor href="#court"/>
-                    <FRBRformat value="xml"/>
-                </FRBRManifestation>
-            </identification>
-            <references source="#court">
-                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni Sud u Podgorici"/>
-                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Đuković Goranu"/>
-                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Đuković Goran"/>
-                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="B. M."/>
-                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="L. B."/>
-                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="adv"/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore" showAs="Zakonik o krivičnom postupku Crne Gore"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
-            </references>
-            <classification source="#court">
-                <keyword value="criminal_case" showAs="Krivična stvar"/>
-            </classification>
-        </meta>
-        <judgmentBody>
-            <header>
-                <block name="caseNumber">
-                    <docNumber>K.br. 617/13</docNumber>
-                </block>
-                <block name="court">
-                    <docTitle>Osnovni Sud u Podgorici</docTitle>
-                </block>
-                <block name="date">
-                    <docDate date="2015-09-10">2015-09-10</docDate>
-                </block>
-                <block name="judges">
-                    <judge>Đuković Goranu</judge>
-                    <judge>Đuković Goran</judge>
-                </block>
-            </header>
-            <introduction>
-                <block name="summary">
-                    <p>Okrivljeni B. M. je osuđen za tešku tjelesnu povredu L. B. nakon međusobne svađe, nanijevši mu ozbiljne povrede. Presuda uključuje kaznu zatvora od 5 mjeseci.</p>
-                </block>
-                <block name="legalIssues">
-                    <p>priznavanje krivice</p>
-                    <p>teška tjelesna povreda</p>
-                </block>
-            </introduction>
-            <background>
-                <block name="appliedLaws">
-                    <ref href="#law_1">Zakonik o krivičnom postupku Crne Gore</ref>
-                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
-                </block>
-                <block name="appliedArticles">
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_46">Član 46</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_19">Član 19</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_399">Član 399</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_300">Član 300</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_45">Član 45</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_303">Član 303</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_3">Član 3</ref>
-                </block>
-            </background>
-            <motivation>
-                <block name="reasoning">
-                    <p>Sud je utvrdio da je okrivljeni u vrijeme i na način opisan u presudi izvršio krivično djelo teška tjelesna povreda.</p>
-                </block>
-            </motivation>
-            <decision>
-                <block name="verdict" outcome="усвојено">
-                    <p>Optuženi se oglašava krivim</p>
-                </block>
-            </decision>
-            <participants>
-                <block name="defendants">
-                    <person>B. M.</person>
-                </block>
-                <block name="victims">
-                    <person>L. B.</person>
-                    <person>adv</person>
-                </block>
-            </participants>
-            <facts>
-                <fact key="injury_type">teška tjelesna povreda</fact>
-                <fact key="location">Podgorica</fact>
-                <fact key="location">Podgorici Kv</fact>
-                <fact key="weapon">staklena flaša</fact>
-                <fact key="weapon_used">true</fact>
-                <fact key="severe_consequence">true</fact>
-                <fact key="death_result">false</fact>
-                <fact key="negligence">false</fact>
-                <fact key="provocation">false</fact>
-                <fact key="fight_participation">false</fact>
-                <fact key="fight_consequence">none</fact>
-                <fact key="weapon_shown">false</fact>
-                <fact key="caused_danger">false</fact>
-                <fact key="left_without_help">false</fact>
-            </facts>
-            <conclusions>
-                <block name="fullText">
-                    <p>Osnovni Sud u Podgorici
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
+    <ns0:judgment name="Одлуке3">
+        <ns0:meta>
+            <ns0:identification source="#court">
+                <ns0:FRBRWork>
+                    <ns0:FRBRthis value="/akn/me/judgment/Одлуке3/!main" />
+                    <ns0:FRBRuri value="/akn/me/judgment/Одлуке3" />
+                    <ns0:FRBRdate date="2015-09-10" name="judgment" />
+                    <ns0:FRBRauthor href="#court" />
+                    <ns0:FRBRcountry value="me" />
+                </ns0:FRBRWork>
+                <ns0:FRBRExpression>
+                    <ns0:FRBRthis value="/akn/me/judgment/Одлуке3/sr@2015-09-10/!main" />
+                    <ns0:FRBRuri value="/akn/me/judgment/Одлуке3/sr@2015-09-10" />
+                    <ns0:FRBRdate date="2015-09-10" />
+                    <ns0:FRBRauthor href="#court" />
+                    <ns0:FRBRlanguage language="sr" />
+                </ns0:FRBRExpression>
+                <ns0:FRBRManifestation>
+                    <ns0:FRBRthis value="/akn/me/judgment/Одлуке3/sr@2015-09-10/!main.xml" />
+                    <ns0:FRBRuri value="/akn/me/judgment/Одлуке3/sr@2015-09-10/!main.akn" />
+                    <ns0:FRBRdate date="2026-02-09" />
+                    <ns0:FRBRauthor href="#court" />
+                    <ns0:FRBRformat value="xml" />
+                </ns0:FRBRManifestation>
+            </ns0:identification>
+            <ns0:references source="#court">
+                <ns0:TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni Sud u Podgorici" />
+                <ns0:TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Đuković Goranu" />
+                <ns0:TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Đuković Goran" />
+                <ns0:TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="B. M." />
+                <ns0:TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="L. B." />
+                <ns0:TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="adv" />
+                <ns0:TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore" showAs="Zakonik o krivičnom postupku Crne Gore" />
+                <ns0:TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore" />
+            </ns0:references>
+            <ns0:classification source="#court">
+                <ns0:keyword value="criminal_case" showAs="Krivična stvar" />
+            </ns0:classification>
+        </ns0:meta>
+        <ns0:judgmentBody>
+            <ns0:header>
+                <ns0:block name="caseNumber">
+                    <ns0:docNumber>K.br. 617/13</ns0:docNumber>
+                </ns0:block>
+                <ns0:block name="court">
+                    <ns0:docTitle>Osnovni Sud u Podgorici</ns0:docTitle>
+                </ns0:block>
+                <ns0:block name="date">
+                    <ns0:docDate date="2015-09-10">2015-09-10</ns0:docDate>
+                </ns0:block>
+                <ns0:block name="judges">
+                    <ns0:judge>Đuković Goranu</ns0:judge>
+                    <ns0:judge>Đuković Goran</ns0:judge>
+                </ns0:block>
+            </ns0:header>
+            <ns0:introduction>
+                <ns0:block name="summary">
+                    <ns0:p>Okrivljeni B. M. je osuđen za tešku tjelesnu povredu L. B. nakon međusobne svađe, nanijevši mu ozbiljne povrede. Presuda uključuje kaznu zatvora od 5 mjeseci.</ns0:p>
+                </ns0:block>
+                <ns0:block name="legalIssues">
+                    <ns0:p>priznavanje krivice</ns0:p>
+                    <ns0:p>teška tjelesna povreda</ns0:p>
+                </ns0:block>
+            </ns0:introduction>
+            <ns0:background>
+                <ns0:block name="appliedLaws">
+                    <ns0:ref href="#law_1">Zakonik o krivičnom postupku Crne Gore</ns0:ref>
+                    <ns0:ref href="#law_2">Krivični zakonik Crne Gore</ns0:ref>
+                </ns0:block>
+                <ns0:block name="appliedArticles">
+                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_151">Član 151</ns0:ref>
+                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_46">Član 46</ns0:ref>
+                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_19">Član 19</ns0:ref>
+                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_226">Član 226</ns0:ref>
+                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_399">Član 399</ns0:ref>
+                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_32">Član 32</ns0:ref>
+                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_4">Član 4</ns0:ref>
+                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_229">Član 229</ns0:ref>
+                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_300">Član 300</ns0:ref>
+                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_45">Član 45</ns0:ref>
+                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_303">Član 303</ns0:ref>
+                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_3">Član 3</ns0:ref>
+                </ns0:block>
+            </ns0:background>
+            <ns0:motivation>
+                <ns0:block name="reasoning">
+                    <ns0:p>Sud je utvrdio da je okrivljeni u vrijeme i na način opisan u presudi izvršio krivično djelo teška tjelesna povreda.</ns0:p>
+                </ns0:block>
+            </ns0:motivation>
+            <ns0:decision>
+                <ns0:block name="verdict" outcome="usvojeno">
+                    <ns0:p>Optuženi se oglašava krivim</ns0:p>
+                </ns0:block>
+            </ns0:decision>
+            <ns0:participants>
+                <ns0:block name="defendants">
+                    <ns0:person>B. M.</ns0:person>
+                </ns0:block>
+                <ns0:block name="victims">
+                    <ns0:person>L. B.</ns0:person>
+                    <ns0:person>adv</ns0:person>
+                </ns0:block>
+            </ns0:participants>
+            <ns0:facts>
+                <ns0:fact key="injury_type">teška tjelesna povreda</ns0:fact>
+                <ns0:fact key="location">Podgorica</ns0:fact>
+                <ns0:fact key="location">Podgorici Kv</ns0:fact>
+                <ns0:fact key="weapon">staklena flaša</ns0:fact>
+                <ns0:fact key="weapon_used">true</ns0:fact>
+                <ns0:fact key="severe_consequence">true</ns0:fact>
+                <ns0:fact key="death_result">false</ns0:fact>
+                <ns0:fact key="negligence">false</ns0:fact>
+                <ns0:fact key="provocation">false</ns0:fact>
+                <ns0:fact key="fight_participation">false</ns0:fact>
+                <ns0:fact key="fight_consequence">none</ns0:fact>
+                <ns0:fact key="weapon_shown">false</ns0:fact>
+                <ns0:fact key="caused_danger">false</ns0:fact>
+                <ns0:fact key="left_without_help">false</ns0:fact>
+            </ns0:facts>
+            <ns0:conclusions>
+                <ns0:block name="fullText">
+                    <ns0:p>Osnovni Sud u Podgorici
 K 617/2013
 10. Септембар 2015
 
@@ -280,9 +280,9 @@ DN-a: Po primjerak presude dostaviti:
 
 Postupljeno dana _____________________
 
-Namještenik suda _____________________</p>
-                </block>
-            </conclusions>
-        </judgmentBody>
-    </judgment>
+Namještenik suda _____________________</ns0:p>
+                </ns0:block>
+            </ns0:conclusions>
+        </ns0:judgmentBody>
+    </ns0:judgment>
 </ns0:akomaNtoso>

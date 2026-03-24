@@ -1,0 +1,17 @@
+{
+  "GEN-20260212-232214": {
+    "date": "2026-02-12",
+    "injury_type": ["teška tjelesna povreda"],
+    "location": ["Mostar"]
+  },
+  "GEN-20260213-011318": {
+    "date": "2026-02-13",
+    "injury_type": ["teška tjelesna povreda"],
+    "location": ["Mostar"]
+  },
+  "GEN-20260213-011408": {
+    "date": "2026-02-13",
+    "injury_type": ["teška tjelesna povreda"],
+    "location": ["Podgorica"]
+  }
+}

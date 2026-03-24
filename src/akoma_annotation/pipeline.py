@@ -5,6 +5,7 @@ from typing import Dict, List, Optional
 
 from .annotator import LLMAnnotator, SemanticAnnotation
 from .exporter import AkomaExporter
+from .law_xml_validator import validate_law_xml
 from .parser import LegalArticle, LegalChapter, LegalTextParser
 
 
@@ -293,6 +294,11 @@ class AnnotationPipeline:
         self.exporter.export(chapters, annotations, self.output_xml)
         if annotations:
             self.exporter.export_annotations_json(annotations, self.output_json)
+
+        validation_errors = validate_law_xml(self.output_xml)
+        if validation_errors:
+            formatted = "\n".join(f"- {err}" for err in validation_errors)
+            raise ValueError(f"Law XML validation failed:\n{formatted}")
 
     def _print_statistics(self, chapters: List[LegalChapter], annotations: Dict[str, SemanticAnnotation]) -> None:
         print("\n" + "=" * 70)

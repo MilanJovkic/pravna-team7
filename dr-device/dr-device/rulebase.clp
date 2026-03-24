@@ -27,7 +27,7 @@
 		(
 		 lc:defendant ?Defendant)
 		(
-		 lc:weapon "metalni kljuc")
+		 lc:weapon_used "true")
 	)
   =>
 	(crime_art151_2
@@ -47,7 +47,7 @@
 		(
 		 lc:defendant ?Defendant)
 		(
-		 lc:weapon "staklena flasa")
+		 lc:severe_consequence "true")
 	)
   =>
 	(crime_art151_3
@@ -67,7 +67,7 @@
 		(
 		 lc:defendant ?Defendant)
 		(
-		 lc:location "Podgorica")
+		 lc:death_result "true")
 	)
   =>
 	(crime_art151_4
@@ -87,7 +87,7 @@
 		(
 		 lc:defendant ?Defendant)
 		(
-		 lc:location "Skadar")
+		 lc:negligence "true")
 	)
   =>
 	(crime_art151_5
@@ -121,7 +121,7 @@
 		(
 		 lc:defendant ?Defendant)
 		(
-		 lc:weapon "metalni kljuc")
+		 lc:weapon_used "true")
 	)
   =>
 	(crime_art152_2
@@ -141,7 +141,7 @@
 		(
 		 lc:defendant ?Defendant)
 		(
-		 lc:location "Danilovgrad")
+		 lc:provocation "true")
 	)
   =>
 	(crime_art153
@@ -161,7 +161,7 @@
 		(
 		 lc:defendant ?Defendant)
 		(
-		 lc:location "Podgorici Kv")
+		 lc:fight_participation "true")
 	)
   =>
 	(crime_art154
@@ -181,7 +181,7 @@
 		(
 		 lc:defendant ?Defendant)
 		(
-		 lc:location "Sto")
+		 lc:left_without_help "true")
 	)
   =>
 	(crime_art155_1

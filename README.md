@@ -113,6 +113,38 @@ pravna-team7/
 - Model i slicnosti: `cbr-jcolibri/src/main/java/`
 - Opis: `CBR.md`
 
+## Finalni evaluacioni protokol (5 zakljucanih presuda)
+
+- Zakljucani skup: `data/verdicts_xml/Одлуке.xml`, `data/verdicts_xml/Одлуке1.xml`, `data/verdicts_xml/Одлуке2.xml`, `data/verdicts_xml/Одлуке3.xml`, `data/verdicts_xml/Одлуке4.xml`
+- Protokol i pragovi: `tests/data/final_eval_protocol.json`
+- Evaluator: `scripts/evaluate_final_protocol.py`
+- Izvestaj: `output/final_eval_report.json` i `output/final_eval_report.md`
+
+Kriterijumi skoringa (0-5 po kriterijumu):
+- pravna tacnost
+- logicka konzistentnost
+- korisnost za korisnika
+- pokrivenost kljucnih cinjenica
+- objasnjenje zakljucka
+
+Automatski red flags (trenutni FAIL po slucaju):
+- kontradikcija u obrazlozenju
+- pozivanje na nepostojece cinjenice
+- genericki/nekoristan odgovor bez konkretnog rezonovanja
+
+Jedan komandni korak za CI validaciju:
+
+```bash
+python scripts/run_ci_validation.py
+```
+
+Ovaj korak:
+- podize API server
+- pokrece proverene unit/governance testove
+- pokrece API smoke test
+- pokrece finalnu evaluaciju 5 zakljucanih presuda
+- generise PASS/FAIL izvestaj sa detaljima problema
+
 ## Napomene
 
 - Oba sistema koriste isti `.env` (GitHub ili OpenRouter token)

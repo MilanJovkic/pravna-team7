@@ -141,7 +141,9 @@ import { VerdictDetail, VerdictOverrideUpdate } from '../models/models';
         
         <div class="section" *ngIf="verdict.legal_reasoning">
           <h3>Pravno obrazloženje</h3>
-          <div class="reasoning-text" [innerHTML]="formatTextWithLinks(verdict.legal_reasoning)"></div>
+          <div class="reasoning-text" 
+               [innerHTML]="formatTextWithLinks(verdict.legal_reasoning)"
+               (click)="onReasoningTextClick($event)"></div>
         </div>
         
         <div class="section" *ngIf="verdict.decision">
@@ -512,20 +514,9 @@ export class VerdictDetailComponent implements OnInit {
     if (caseId) {
       this.loadVerdict(caseId);
     }
-
-    // Handle clicks on article links in content
-    setTimeout(() => {
-      document.addEventListener('click', (e: Event) => {
-        const target = e.target as HTMLElement;
-        if (target.tagName === 'A' && target.hasAttribute('data-article')) {
-          e.preventDefault();
-          const articleNumber = target.getAttribute('data-article');
-          if (articleNumber) {
-            this.openArticle(articleNumber);
-          }
-        }
-      });
-    }, 0);
+    // Note: Global DOM event listeners have been removed.
+    // Click handling for article links is now done via the (click) handler
+    // on the reasoning-text element with the onReasoningTextClick method.
   }
 
   loadVerdict(caseId: string) {
@@ -703,7 +694,24 @@ export class VerdictDetailComponent implements OnInit {
 
   openArticle(articleNumber: string) {
     this.navigationError = '';
-    this.router.navigate(['/laws/article', articleNumber]);
+    // Navigate to law-aware route (default lawId is 'crime-code')
+    this.router.navigate(['/laws', 'crime-code', 'article', articleNumber]);
+  }
+
+  /**
+   * Handle clicks within the legal reasoning text element.
+   * Checks if clicked element is a link with data-article attribute and navigates to it.
+   * This replaces the former global document.addEventListener('click') pattern.
+   */
+  onReasoningTextClick(event: Event): void {
+    const target = event.target as HTMLElement;
+    if (target.tagName === 'A' && target.hasAttribute('data-article')) {
+      event.preventDefault();
+      const articleNumber = target.getAttribute('data-article');
+      if (articleNumber) {
+        this.openArticle(articleNumber);
+      }
+    }
   }
 
   formatTextWithLinks(text: string): string {

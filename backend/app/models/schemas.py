@@ -44,6 +44,8 @@ class VerdictMetadata(BaseModel):
     applied_articles: List[str] = Field(default_factory=list)
     decision: Optional[str] = None
     outcome: Optional[str] = None
+    extraction_confidence: Optional[float] = None
+    needs_review: bool = False
     legal_concepts: List[str] = Field(default_factory=list)
     parties: Dict[str, List[str]] = Field(default_factory=dict)
     factual_state: Dict[str, List[str]] = Field(default_factory=dict)
@@ -112,12 +114,15 @@ class ReasoningRequest(BaseModel):
     """Request model for rule and case-based reasoning."""
     facts: CaseFacts
     top_k: int = 5
+    strict_mode: bool = True
 
 
 class RuleReasoningResult(BaseModel):
     """Result model for rule-based reasoning."""
     applied_norms: List[str] = Field(default_factory=list)
     proofs: List[str] = Field(default_factory=list)
+    strict_mode: bool = True
+    status: str = "ok"
 
 
 class CbrMatch(BaseModel):
@@ -125,6 +130,7 @@ class CbrMatch(BaseModel):
     case_number: Optional[str] = None
     similarity: float
     outcome: Optional[str] = None
+    feature_contributions: Dict[str, float] = Field(default_factory=dict)
 
 
 class CbrResult(BaseModel):
@@ -143,6 +149,7 @@ class ReasoningResponse(BaseModel):
     """Combined reasoning response."""
     rule_reasoning: RuleReasoningResult
     cbr: CbrResult
+    subsystem_status: Dict[str, str] = Field(default_factory=dict)
     applied_articles: List[str] = Field(default_factory=list)
     applied_law_texts: List[AppliedLawText] = Field(default_factory=list)
     suggested_verdict: Optional[str] = None
@@ -162,11 +169,18 @@ class VerdictGenerationRequest(BaseModel):
 
 
 class VerdictGenerationResponse(BaseModel):
-    """Response model for generated verdict."""
+    """Response model for generated verdict with quality status."""
     case_id: str
     case_number: str
     xml_file: str
     verdict_text: str
+    quality_status: Dict[str, Any] = Field(default_factory=dict)
+    generation_plan: Optional[Dict[str, Any]] = None
+    
+    class Config:
+        json_encoders = {
+            dict: lambda v: v or {}
+        }
 
 
 class NewCaseRequest(BaseModel):
@@ -175,6 +189,9 @@ class NewCaseRequest(BaseModel):
     outcome: Optional[str] = None
     verdict_type: Optional[str] = None
     sanction: Optional[str] = None
+    selected_verdict: Optional[str] = None
+    selected_sanction: Optional[str] = None
+    user_confirmation: bool = False
     facts: CaseFacts
 
 
@@ -182,3 +199,5 @@ class NewCaseResponse(BaseModel):
     """Response model for inserting a new case."""
     id: int
     case_number: str
+    reused_existing: bool = False
+    version: int = 1

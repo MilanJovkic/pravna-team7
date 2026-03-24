@@ -1,8 +1,11 @@
 """Service for loading and processing verdict documents."""
 import json
+from datetime import datetime, UTC
 from pathlib import Path
 from typing import List, Optional
 from xml.etree import ElementTree as ET
+
+from src.verdict_annotation.outcome_normalizer import normalize_outcome
 
 
 class VerdictService:
@@ -14,11 +17,14 @@ class VerdictService:
         self.xml_dir = Path(__file__).parent.parent.parent.parent / "data" / "verdicts_xml"
         self.annotations_file = self.xml_dir / "verdicts_annotations.json"
         self.overrides_file = self.xml_dir / "verdicts_overrides.json"
+        self.overrides_audit_file = self.xml_dir / "verdicts_overrides_audit.json"
         self._verdicts = None
         self._annotations = None
         self._annotations_mtime = None
         self._overrides = None
         self._overrides_mtime = None
+        self._overrides_audit = None
+        self._overrides_audit_mtime = None
 
     def _load_verdicts(self):
         """Load all verdict XML files."""
@@ -80,6 +86,19 @@ class VerdictService:
             self._overrides_mtime = None
         return self._overrides
 
+    def _load_overrides_audit(self):
+        """Load manual override audit history."""
+        if self.overrides_audit_file.exists():
+            mtime = self.overrides_audit_file.stat().st_mtime
+            if self._overrides_audit is None or self._overrides_audit_mtime != mtime:
+                with open(self.overrides_audit_file, "r", encoding="utf-8") as f:
+                    self._overrides_audit = json.load(f)
+                self._overrides_audit_mtime = mtime
+        else:
+            self._overrides_audit = {}
+            self._overrides_audit_mtime = None
+        return self._overrides_audit
+
     def get_overrides(self, case_id: str) -> dict:
         """Return manual overrides for a verdict if present."""
         overrides = self._load_overrides()
@@ -89,18 +108,56 @@ class VerdictService:
         """Persist manual overrides for a verdict."""
         overrides = self._load_overrides()
         existing = overrides.get(case_id, {})
+        changes = []
         for key, value in payload.items():
+            old_value = existing.get(key)
             if value is None:
                 existing.pop(key, None)
             else:
-                existing[key] = value
+                if key == "outcome":
+                    existing[key] = normalize_outcome(value)
+                else:
+                    existing[key] = value
+
+            new_value = existing.get(key)
+            if old_value != new_value:
+                changes.append(
+                    {
+                        "field": key,
+                        "old_value": old_value,
+                        "new_value": new_value,
+                    }
+                )
         overrides[case_id] = existing
         self.overrides_file.parent.mkdir(parents=True, exist_ok=True)
         with open(self.overrides_file, "w", encoding="utf-8") as f:
             json.dump(overrides, f, ensure_ascii=False, indent=2)
         self._overrides = overrides
         self._overrides_mtime = self.overrides_file.stat().st_mtime
+
+        if changes:
+            audit = self._load_overrides_audit()
+            audit.setdefault(case_id, [])
+            timestamp = datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+            for change in changes:
+                audit[case_id].append(
+                    {
+                        "timestamp": timestamp,
+                        "source": "api_override",
+                        **change,
+                    }
+                )
+            with open(self.overrides_audit_file, "w", encoding="utf-8") as f:
+                json.dump(audit, f, ensure_ascii=False, indent=2)
+            self._overrides_audit = audit
+            self._overrides_audit_mtime = self.overrides_audit_file.stat().st_mtime
+
         return existing
+
+    def get_override_history(self, case_id: str) -> list[dict]:
+        """Return audit trail entries for a verdict override history."""
+        audit = self._load_overrides_audit()
+        return audit.get(case_id, [])
 
     def get_all_verdicts(self):
         """Get list of all verdicts."""
@@ -159,7 +216,7 @@ class VerdictService:
         xml_decision = self._find_text(root, ".//block[@name='verdict']/p")
         xml_outcome = self._find_attr(root, ".//block[@name='verdict']", "outcome")
         xml_full_text = self._find_text(root, ".//block[@name='fullText']/p")
-        fallback_summary = (xml_full_text[:300] + "...") if xml_full_text and len(xml_full_text) > 300 else xml_full_text
+        text_summary = (xml_full_text[:300] + "...") if xml_full_text and len(xml_full_text) > 300 else xml_full_text
         
         metadata = {
             "case_id": case_id,
@@ -167,12 +224,14 @@ class VerdictService:
             "court_name": self._find_text(root, ".//docTitle"),
             "date": self._find_attr(root, ".//docDate", "date") or self._find_text(root, ".//docDate"),
             "judges": self._find_all_text(root, ".//judge"),
-            "summary": annotation.get("verdict_summary") or xml_summary or fallback_summary,
+            "summary": annotation.get("verdict_summary") or xml_summary or text_summary,
             "legal_issues": annotation.get("legal_issues") or xml_legal_issues,
             "applied_laws": annotation.get("applied_laws") or xml_applied_laws,
             "applied_articles": annotation.get("applied_articles") or xml_applied_articles,
             "decision": annotation.get("decision") or xml_decision,
-            "outcome": annotation.get("case_outcome") or xml_outcome,
+            "outcome": normalize_outcome(annotation.get("case_outcome") or xml_outcome),
+            "extraction_confidence": annotation.get("confidence"),
+            "needs_review": bool(annotation.get("needs_review", False)),
             "legal_concepts": annotation.get("legal_concepts", []),
             "parties": self._extract_participants(root),
             "factual_state": self._extract_factual_state(root, annotation),
@@ -235,7 +294,7 @@ class VerdictService:
         return participants
 
     def _extract_factual_state(self, root, annotation: dict):
-        """Extract factual state from XML or fallback to annotations."""
+        """Extract factual state from XML or annotations when XML facts are absent."""
         facts = {}
 
         fact_elems = root.findall(".//facts/fact", self.AKOMA_NS)
@@ -342,7 +401,7 @@ class VerdictService:
                 # Apply filter if specified
                 if filter_by:
                     if filter_by == "outcome":
-                        if verdict.get("outcome") == query:
+                        if verdict.get("outcome") == normalize_outcome(query):
                             results.append(verdict)
                     elif filter_by == "law":
                         laws = verdict.get("applied_laws", [])

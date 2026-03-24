@@ -53,6 +53,16 @@ async def update_verdict_overrides(case_id: str, payload: VerdictOverrideUpdate)
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@router.get("/{case_id}/overrides/history")
+async def get_verdict_override_history(case_id: str):
+    """Get audit trail for manual override changes."""
+    try:
+        history = verdict_service.get_override_history(case_id)
+        return {"case_id": case_id, "history": history}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @router.get("/search/", response_model=SearchResponse)
 async def search_verdicts(
     q: str = Query(..., min_length=2),

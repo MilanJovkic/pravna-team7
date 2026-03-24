@@ -1,0 +1,323 @@
+{
+  "version": "2026-03-24",
+  "scope_note": "Task 2 verdict count is intentionally constrained to minimum 5 in the current phase due to token budget.",
+  "tasks": [
+    {
+      "task": 1,
+      "title": "Akoma Ntoso representation of selected law",
+      "acceptance_criteria": [
+        "Law XML file exists and can be loaded by backend services.",
+        "Law structure contains chapters, articles, and references.",
+        "API exposes law browsing endpoints used by frontend."
+      ],
+      "modules": [
+        "src/akoma_annotation/parser.py",
+        "src/akoma_annotation/annotator.py",
+        "src/akoma_annotation/exporter.py",
+        "backend/app/services/law_service.py"
+      ],
+      "endpoint_bindings": [
+        {
+          "endpoint": "GET /api/laws/chapters",
+          "implementation": "backend/app/api/laws.py"
+        },
+        {
+          "endpoint": "GET /api/laws/articles/{article_number}",
+          "implementation": "backend/app/api/laws.py"
+        }
+      ],
+      "tests": [
+        "tests/api_smoke.py"
+      ],
+      "artifacts": [
+        {
+          "path": "output/annotated_law.xml",
+          "type": "file"
+        },
+        {
+          "path": "data/zakon.txt",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "task": 2,
+      "title": "Akoma Ntoso representation of verdicts",
+      "acceptance_criteria": [
+        "At least 5 verdict XML files exist in current phase scope.",
+        "Verdict listing and detail endpoints return structured metadata.",
+        "Verdict XML artifacts are loadable in app workflows."
+      ],
+      "modules": [
+        "src/verdict_annotation/verdict_parser.py",
+        "src/verdict_annotation/verdict_annotator.py",
+        "src/verdict_annotation/verdict_exporter.py",
+        "backend/app/services/verdict_service.py"
+      ],
+      "endpoint_bindings": [
+        {
+          "endpoint": "GET /api/verdicts",
+          "implementation": "backend/app/api/verdicts.py"
+        },
+        {
+          "endpoint": "GET /api/verdicts/{case_id}",
+          "implementation": "backend/app/api/verdicts.py"
+        }
+      ],
+      "tests": [
+        "tests/api_smoke.py"
+      ],
+      "artifacts": [
+        {
+          "path": "data/verdicts_xml",
+          "type": "dir"
+        },
+        {
+          "path": "data/verdicts_xml/verdicts_annotations.json",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "task": 3,
+      "title": "LegalRuleML modeling of legal norms",
+      "acceptance_criteria": [
+        "LegalRuleML source exists and is versioned.",
+        "Rulebase can be transformed to executable rule artifacts.",
+        "Rules map to legal domain facts used in reasoning."
+      ],
+      "modules": [
+        "dr-device/dr-device/rulebase.lrml",
+        "dr-device/dr-device/rulebase.ruleml",
+        "backend/app/services/rule_reasoning_service.py"
+      ],
+      "endpoint_bindings": [
+        {
+          "endpoint": "POST /api/reasoning/",
+          "implementation": "backend/app/api/reasoning.py"
+        }
+      ],
+      "tests": [
+        "tests/test_final_validation.py"
+      ],
+      "artifacts": [
+        {
+          "path": "dr-device/dr-device/rulebase.lrml",
+          "type": "file"
+        },
+        {
+          "path": "dr-device/dr-device/rulebase.ruleml",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "task": 4,
+      "title": "NLP extraction and manual correction",
+      "acceptance_criteria": [
+        "Automated extraction pipeline exists for metadata and facts.",
+        "System supports manual override for extracted verdict fields.",
+        "Extraction outputs are persisted as structured annotations."
+      ],
+      "modules": [
+        "src/verdict_annotation/verdict_annotator.py",
+        "src/verdict_annotation/verdict_pipeline.py",
+        "backend/app/api/verdicts.py"
+      ],
+      "endpoint_bindings": [
+        {
+          "endpoint": "POST /api/verdicts/{case_id}/overrides",
+          "implementation": "backend/app/api/verdicts.py"
+        }
+      ],
+      "tests": [
+        "tests/api_smoke.py"
+      ],
+      "artifacts": [
+        {
+          "path": "data/verdicts_xml/verdicts_annotations.json",
+          "type": "file"
+        },
+        {
+          "path": "data/verdicts_xml/verdicts_overrides.json",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "task": 5,
+      "title": "Rule-based reasoning with dr-device",
+      "acceptance_criteria": [
+        "Rule reasoning executes through dr-device integration.",
+        "At least 10 rules are modeled in executable rulebase.",
+        "Reasoning response includes applied norms or explicit fallback status."
+      ],
+      "modules": [
+        "backend/app/services/rule_reasoning_service.py",
+        "dr-device/dr-device/rulebase.clp",
+        "dr-device/dr-device/rulebase.ruleml"
+      ],
+      "endpoint_bindings": [
+        {
+          "endpoint": "POST /api/reasoning/",
+          "implementation": "backend/app/api/reasoning.py"
+        }
+      ],
+      "tests": [
+        "tests/test_final_validation.py"
+      ],
+      "artifacts": [
+        {
+          "path": "dr-device/dr-device/rulebase.clp",
+          "type": "file"
+        },
+        {
+          "path": "dr-device/dr-device/proof.ruleml",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "task": 6,
+      "title": "CBR case base and similarity functions",
+      "acceptance_criteria": [
+        "Case model uses at least 7 key facts.",
+        "jColibri application computes similarity over case attributes.",
+        "CBR matches are exposed in combined reasoning response."
+      ],
+      "modules": [
+        "cbr-jcolibri/src/main/java/model/CaseDescription.java",
+        "cbr-jcolibri/src/main/java/similarity/TabularSimilarity.java",
+        "backend/app/services/cbr_service.py"
+      ],
+      "endpoint_bindings": [
+        {
+          "endpoint": "POST /api/reasoning/",
+          "implementation": "backend/app/api/reasoning.py"
+        }
+      ],
+      "tests": [
+        "tests/test_cbr.py",
+        "tests/test_final_validation.py"
+      ],
+      "artifacts": [
+        {
+          "path": "cbr-jcolibri/pom.xml",
+          "type": "file"
+        },
+        {
+          "path": "sql/schema.sql",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "task": 7,
+      "title": "Law and verdict browsing with reference navigation",
+      "acceptance_criteria": [
+        "Frontend can browse law and verdict text with metadata.",
+        "Reference links can be resolved through backend law endpoints.",
+        "Akoma XML is hidden from end users in UI workflows."
+      ],
+      "modules": [
+        "frontend/src",
+        "backend/app/api/laws.py",
+        "backend/app/api/verdicts.py"
+      ],
+      "endpoint_bindings": [
+        {
+          "endpoint": "GET /api/laws/articles/{article_number}",
+          "implementation": "backend/app/api/laws.py"
+        },
+        {
+          "endpoint": "GET /api/verdicts/{case_id}",
+          "implementation": "backend/app/api/verdicts.py"
+        }
+      ],
+      "tests": [
+        "tests/api_smoke.py"
+      ],
+      "artifacts": [
+        {
+          "path": "frontend/angular.json",
+          "type": "file"
+        },
+        {
+          "path": "data/verdicts_xml",
+          "type": "dir"
+        }
+      ]
+    },
+    {
+      "task": 8,
+      "title": "Combined reasoning and case persistence",
+      "acceptance_criteria": [
+        "User can submit facts and receive rule + CBR suggestions.",
+        "User-selected outcome can be persisted as a new case.",
+        "Persisted case is reused in subsequent CBR runs."
+      ],
+      "modules": [
+        "backend/app/api/reasoning.py",
+        "backend/app/api/cases.py",
+        "backend/app/services/case_service.py"
+      ],
+      "endpoint_bindings": [
+        {
+          "endpoint": "POST /api/reasoning/",
+          "implementation": "backend/app/api/reasoning.py"
+        },
+        {
+          "endpoint": "POST /api/cases/",
+          "implementation": "backend/app/api/cases.py"
+        }
+      ],
+      "tests": [
+        "tests/test_case_save.py",
+        "tests/test_final_validation.py"
+      ],
+      "artifacts": [
+        {
+          "path": "sql/schema.sql",
+          "type": "file"
+        },
+        {
+          "path": "backend/app/models",
+          "type": "dir"
+        }
+      ]
+    },
+    {
+      "task": 9,
+      "title": "Generation of new verdict",
+      "acceptance_criteria": [
+        "Verdict generation endpoint returns generated text and XML metadata.",
+        "Generated verdict is persisted as Akoma-like XML artifact.",
+        "Generation uses reasoning context as part of prompt construction."
+      ],
+      "modules": [
+        "backend/app/api/verdict_generation.py",
+        "backend/app/services/verdict_generation_service.py",
+        "src/verdict_annotation/verdict_exporter.py"
+      ],
+      "endpoint_bindings": [
+        {
+          "endpoint": "POST /api/verdict-generation/",
+          "implementation": "backend/app/api/verdict_generation.py"
+        }
+      ],
+      "tests": [
+        "tests/test_final_validation.py"
+      ],
+      "artifacts": [
+        {
+          "path": "data/verdicts_xml",
+          "type": "dir"
+        },
+        {
+          "path": "backend/app/services/verdict_generation_service.py",
+          "type": "file"
+        }
+      ]
+    }
+  ]
+}

@@ -70,8 +70,8 @@
                      <Var>Defendant</Var>
                   </slot>
                   <slot>
-                     <Ind uri="lc:weapon"/>
-                     <Data xsi:type="xs:string">metalni kljuc</Data>
+                     <Ind uri="lc:weapon_used"/>
+                     <Data xsi:type="xs:string">true</Data>
                   </slot>
                </Atom>
             </And>
@@ -116,8 +116,8 @@
                      <Var>Defendant</Var>
                   </slot>
                   <slot>
-                     <Ind uri="lc:weapon"/>
-                     <Data xsi:type="xs:string">staklena flasa</Data>
+                     <Ind uri="lc:severe_consequence"/>
+                     <Data xsi:type="xs:string">true</Data>
                   </slot>
                </Atom>
             </And>
@@ -162,8 +162,8 @@
                      <Var>Defendant</Var>
                   </slot>
                   <slot>
-                     <Ind uri="lc:location"/>
-                     <Data xsi:type="xs:string">Podgorica</Data>
+                     <Ind uri="lc:death_result"/>
+                     <Data xsi:type="xs:string">true</Data>
                   </slot>
                </Atom>
             </And>
@@ -208,8 +208,8 @@
                      <Var>Defendant</Var>
                   </slot>
                   <slot>
-                     <Ind uri="lc:location"/>
-                     <Data xsi:type="xs:string">Skadar</Data>
+                     <Ind uri="lc:negligence"/>
+                     <Data xsi:type="xs:string">true</Data>
                   </slot>
                </Atom>
             </And>
@@ -287,8 +287,8 @@
                      <Var>Defendant</Var>
                   </slot>
                   <slot>
-                     <Ind uri="lc:weapon"/>
-                     <Data xsi:type="xs:string">metalni ključ</Data>
+                     <Ind uri="lc:weapon_used"/>
+                     <Data xsi:type="xs:string">true</Data>
                   </slot>
                </Atom>
             </And>
@@ -333,8 +333,8 @@
                      <Var>Defendant</Var>
                   </slot>
                   <slot>
-                     <Ind uri="lc:location"/>
-                     <Data xsi:type="xs:string">Danilovgrad</Data>
+                     <Ind uri="lc:provocation"/>
+                     <Data xsi:type="xs:string">true</Data>
                   </slot>
                </Atom>
             </And>
@@ -379,8 +379,8 @@
                      <Var>Defendant</Var>
                   </slot>
                   <slot>
-                     <Ind uri="lc:location"/>
-                     <Data xsi:type="xs:string">Podgorici Kv</Data>
+                     <Ind uri="lc:fight_participation"/>
+                     <Data xsi:type="xs:string">true</Data>
                   </slot>
                </Atom>
             </And>
@@ -425,8 +425,8 @@
                      <Var>Defendant</Var>
                   </slot>
                   <slot>
-                     <Ind uri="lc:location"/>
-                     <Data xsi:type="xs:string">Sto</Data>
+                     <Ind uri="lc:left_without_help"/>
+                     <Data xsi:type="xs:string">true</Data>
                   </slot>
                </Atom>
             </And>

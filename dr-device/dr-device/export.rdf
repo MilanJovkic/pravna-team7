@@ -107,9 +107,33 @@
 </rdf:Property>
 
 <export:crime_art151_1 rdf:about='&export;crime_art151_11'>
-     <export:defendant>Jovan S.</export:defendant>
+     <export:defendant>Ana K.</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
 </export:crime_art151_1>
+
+<export:crime_art151_2 rdf:about='&export;crime_art151_21'>
+     <export:defendant>Ana K.</export:defendant>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
+</export:crime_art151_2>
+
+<export:crime_art151_3 rdf:about='&export;crime_art151_31'>
+     <export:defendant>Ana K.</export:defendant>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
+</export:crime_art151_3>
+
+<export:crime_art153 rdf:about='&export;crime_art1531'>
+     <export:defendant>Ana K.</export:defendant>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
+</export:crime_art153>
+
+<export:crime_art154 rdf:about='&export;crime_art1541'>
+     <export:defendant>Ana K.</export:defendant>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
+</export:crime_art154>
 
 </rdf:RDF>

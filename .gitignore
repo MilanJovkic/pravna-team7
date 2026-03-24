@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Environment
+.env
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Output fajlovi (veliki)
+*_annotated.xml
+*_annotations.json
+*_graph.ttl
+*_graph.jsonld
+*_graph.cypher
+*.csv
+
+# Test output (zadrži test fajlove za primere)
+# test_output*.xml
+# test_output*.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary
+tmp/
+temp/

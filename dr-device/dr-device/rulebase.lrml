@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:ruleml="http://ruleml.org/spec"
+				 xmlns:lc="http://ftn.uns.ac.rs/legal-case#"
+                 xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ xsd-compact/lrml-compact.xsd">
+	<lrml:Statements>
+		<lrml:PrescriptiveStatement key="ps1">
+			<ruleml:Rule key=":rule1" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:injury_type"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>crime_art151_1</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="ps2">
+			<ruleml:Rule key=":rule2" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:injury_type"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:weapon"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">metalni kljuc</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>crime_art151_2</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="ps3">
+			<ruleml:Rule key=":rule3" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:injury_type"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:weapon"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">staklena flasa</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>crime_art151_3</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="ps4">
+			<ruleml:Rule key=":rule4" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:injury_type"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:location"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">Podgorica</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>crime_art151_4</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="ps5">
+			<ruleml:Rule key=":rule5" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:injury_type"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:location"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">Skadar</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>crime_art151_5</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="ps6">
+			<ruleml:Rule key=":rule6" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:injury_type"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">laka tjelesna povreda</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>crime_art152_1</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="ps7">
+			<ruleml:Rule key=":rule7" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:injury_type"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">laka tjelesna povreda</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:weapon"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">metalni kljuc</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>crime_art152_2</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="ps8">
+			<ruleml:Rule key=":rule8" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:injury_type"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:location"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">Danilovgrad</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>crime_art153</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="ps9">
+			<ruleml:Rule key=":rule9" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:injury_type"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">teska tjelesna povreda</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:location"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">Podgorici Kv</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>crime_art154</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+		<lrml:PrescriptiveStatement key="ps10">
+			<ruleml:Rule key=":rule10" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:injury_type"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">teška tjelesna povreda</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:location"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">Sto</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>crime_art155_1</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+	</lrml:Statements>
+</lrml:LegalRuleML>

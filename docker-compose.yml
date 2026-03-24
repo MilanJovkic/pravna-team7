@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: pravna-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-pravna_cbr}
+      POSTGRES_USER: ${POSTGRES_USER:-pravna_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-pravna_pass}
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pravna_user -d pravna_cbr"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:

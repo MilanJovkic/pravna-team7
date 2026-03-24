@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RuleML xmlns="http://www.ruleml.org/0.91/xsd"
+         xmlns:lc="http://ftn.uns.ac.rs/legal-case#"
+         xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/"
+         xmlns:ruleml="http://ruleml.org/spec"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         proof="proof.ruleml"
+         rdf_export="export.rdf"
+         rdf_export_classes="crime_art151_1 crime_art151_2 crime_art151_3 crime_art151_4 crime_art151_5 crime_art152_1 crime_art152_2 crime_art153 crime_art154 crime_art155_1"
+         rdf_import="&#34;facts.rdf&#34;">
+   <Assert>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule1">rule1</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:injury_type"/>
+                     <Data xsi:type="xs:string">teska tjelesna povreda</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>crime_art151_1</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule2">rule2</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:injury_type"/>
+                     <Data xsi:type="xs:string">teska tjelesna povreda</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:weapon"/>
+                     <Data xsi:type="xs:string">metalni kljuc</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>crime_art151_2</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule3">rule3</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:injury_type"/>
+                     <Data xsi:type="xs:string">teska tjelesna povreda</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:weapon"/>
+                     <Data xsi:type="xs:string">staklena flasa</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>crime_art151_3</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule4">rule4</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:injury_type"/>
+                     <Data xsi:type="xs:string">teska tjelesna povreda</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:location"/>
+                     <Data xsi:type="xs:string">Podgorica</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>crime_art151_4</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule5">rule5</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:injury_type"/>
+                     <Data xsi:type="xs:string">teska tjelesna povreda</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:location"/>
+                     <Data xsi:type="xs:string">Skadar</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>crime_art151_5</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule6">rule6</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:injury_type"/>
+                     <Data xsi:type="xs:string">laka tjelesna povreda</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>crime_art152_1</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule7">rule7</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:injury_type"/>
+                     <Data xsi:type="xs:string">laka tjelesna povreda</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:weapon"/>
+                     <Data xsi:type="xs:string">metalni ključ</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>crime_art152_2</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule8">rule8</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:injury_type"/>
+                     <Data xsi:type="xs:string">teska tjelesna povreda</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:location"/>
+                     <Data xsi:type="xs:string">Danilovgrad</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>crime_art153</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule9">rule9</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:injury_type"/>
+                     <Data xsi:type="xs:string">teska tjelesna povreda</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:location"/>
+                     <Data xsi:type="xs:string">Podgorici Kv</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>crime_art154</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+      <Implies ruletype="defeasiblerule">
+         <oid>
+            <Ind uri="rule10">rule10</Ind>
+         </oid>
+         <body>
+            <And>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:injury_type"/>
+                     <Data xsi:type="xs:string">teska tjelesna povreda</Data>
+                  </slot>
+               </Atom>
+               <Atom>
+                  <op>
+                     <Rel uri="lc:case"/>
+                  </op>
+                  <slot>
+                     <Ind uri="lc:defendant"/>
+                     <Var>Defendant</Var>
+                  </slot>
+                  <slot>
+                     <Ind uri="lc:location"/>
+                     <Data xsi:type="xs:string">Sto</Data>
+                  </slot>
+               </Atom>
+            </And>
+         </body>
+         <head>
+            <Atom>
+               <op>
+                  <Rel>crime_art155_1</Rel>
+               </op>
+               <slot>
+                  <Ind uri="defendant"/>
+                  <Var>Defendant</Var>
+               </slot>
+            </Atom>
+         </head>
+      </Implies>
+   </Assert>
+</RuleML>

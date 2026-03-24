@@ -1,0 +1,5 @@
+model\CaseDescription.class
+connector\PostgresConnector.class
+connector\CsvConnector.class
+similarity\TabularSimilarity.class
+cbr\CbrApplication.class

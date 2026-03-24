@@ -1,0 +1,5 @@
+(import-rdf )
+(import-rdf-files facts.rdf)
+(load-compiled-dr-device rulebase.clp)
+(go-dr-device)
+(dr-device_export_rdf rulebase.ruleml export.rdf proof.ruleml crime_art151_1 crime_art151_2 crime_art151_3 crime_art151_4 crime_art151_5 crime_art152_1 crime_art152_2 crime_art153 crime_art154 crime_art155_1)

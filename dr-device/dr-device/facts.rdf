@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+        xmlns:lc="http://ftn.uns.ac.rs/legal-case#">
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#defendant">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#injury_type">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#location">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#weapon">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#weapon_used">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#severe_consequence">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#death_result">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#negligence">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#provocation">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#fight_participation">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#fight_consequence">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#left_without_help">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+
+    <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case01">
+        <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <lc:defendant>Jovan S.</lc:defendant>
+        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:location>Mostar</lc:location>
+        <lc:weapon>opasan predmet</lc:weapon>
+        <lc:weapon_used>true</lc:weapon_used>
+        <lc:severe_consequence>true</lc:severe_consequence>
+        <lc:death_result>false</lc:death_result>
+        <lc:negligence>false</lc:negligence>
+        <lc:provocation>false</lc:provocation>
+        <lc:fight_participation>false</lc:fight_participation>
+        <lc:fight_consequence>none</lc:fight_consequence>
+        <lc:left_without_help>false</lc:left_without_help>
+    </lc:case>
+</rdf:RDF>

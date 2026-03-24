@@ -48,7 +48,11 @@ async def run_reasoning(request: ReasoningRequest):
     applied_articles = explain_service.map_norms_to_articles(rule_result.applied_norms)
     applied_texts = explain_service.get_applied_law_texts(applied_articles)
     suggested_verdict = explain_service.suggest_verdict(rule_result.applied_norms, cbr_result)
-    suggested_sanction = explain_service.suggest_sanction(applied_articles)
+    suggested_sanction = explain_service.suggest_sanction(
+        applied_articles,
+        facts=request.facts,
+        verdict=suggested_verdict,
+    )
 
     return ReasoningResponse(
         rule_reasoning=rule_result,

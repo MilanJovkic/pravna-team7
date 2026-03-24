@@ -5,8 +5,9 @@ import json
 import re
 from pathlib import Path
 
-from backend.app.models.schemas import CbrResult
+from backend.app.models.schemas import CaseFacts, CbrResult
 from backend.app.services.law_service import LawService
+from src.verdict_annotation.outcome_normalizer import normalize_outcome
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -50,15 +51,44 @@ class ReasoningExplainService:
     def suggest_verdict(self, norms: list[str], cbr: CbrResult | None) -> str | None:
         if cbr and cbr.matches:
             top = cbr.matches[0]
-            if top.outcome:
-                return top.outcome
+            if top.outcome and (top.similarity or 0.0) >= 0.75:
+                return normalize_outcome(top.outcome)
         if norms:
-            return "osudjen"
-        return "odbijeno"
+            return normalize_outcome("osudjen")
+        return normalize_outcome("odbijeno")
 
-    def suggest_sanction(self, article_numbers: list[str]) -> str | None:
+    def suggest_sanction(
+        self,
+        article_numbers: list[str],
+        facts: CaseFacts | None = None,
+        verdict: str | None = None,
+    ) -> str | None:
+        normalized_verdict = normalize_outcome(verdict)
+        if normalized_verdict in {"odbijeno", "nepoznato"}:
+            return "bez sankcije"
+
         if not article_numbers:
             return "bez sankcije"
+
+        article_set = {str(item).strip() for item in article_numbers if str(item).strip()}
+        has_151 = "151" in article_set
+        has_152 = "152" in article_set
+
+        if facts and facts.death_result:
+            return "kazna zatvora 3 do 12 godina (predlog)"
+
+        if facts and facts.severe_consequence and facts.weapon_used:
+            return "kazna zatvora 1 do 8 godina (predlog)"
+
+        if has_151 or (facts and facts.severe_consequence):
+            return "kazna zatvora 6 meseci do 5 godina (predlog)"
+
+        if has_152 or (facts and facts.injury_type and "laka" in facts.injury_type.lower()):
+            return "novcana kazna ili zatvor do 1 godine (predlog)"
+
+        if facts and facts.negligence:
+            return "uslovna osuda ili novcana kazna (predlog)"
+
         return "kazna zatvora (predlog)"
 
     def _load_mapping(self) -> dict:

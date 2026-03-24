@@ -262,7 +262,10 @@ class VerdictService:
             "judges",
         ):
             if key in override:
-                merged[key] = override.get(key)
+                if key == "outcome":
+                    merged[key] = normalize_outcome(override.get(key))
+                else:
+                    merged[key] = override.get(key)
 
         if "parties" in override:
             merged["parties"] = override.get("parties") or {}

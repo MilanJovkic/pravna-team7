@@ -10,12 +10,13 @@
     "request_timeout_seconds": 45
   },
   "thresholds": {
-    "per_case_min_total": 20,
-    "overall_min_average": 21,
+    "per_case_min_total": 24,
+    "overall_min_average": 25,
     "critical_criteria": [
       "pravna_tacnost",
       "logicka_konzistentnost",
-      "objasnjenje_zakljucka"
+      "objasnjenje_zakljucka",
+      "proporcionalnost_sankcije"
     ],
     "critical_min_score": 4
   },

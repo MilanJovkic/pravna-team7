@@ -18,6 +18,7 @@ from backend.app.services.cbr_normalization import (
     normalize_text,
     parse_bool,
 )
+from src.verdict_annotation.outcome_normalizer import normalize_outcome
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -93,7 +94,7 @@ class CbrService:
             CbrMatch(
                 case_number=item.get("case_number"),
                 similarity=float(item.get("similarity", 0.0)),
-                outcome=item.get("outcome"),
+                outcome=normalize_outcome(item.get("outcome")),
                 feature_contributions={
                     str(k): float(v)
                     for k, v in (item.get("feature_contributions") or {}).items()
@@ -154,7 +155,7 @@ class CbrService:
                 self._extract_bool_or_none(facts.get("fight_participation")),
                 normalize_fight_consequence(facts.get("fight_consequence")),
                 self._extract_bool_or_none(facts.get("left_without_help")),
-                facts.get("outcome", ""),
+                normalize_outcome(facts.get("outcome")),
             )
             records.append(record)
 

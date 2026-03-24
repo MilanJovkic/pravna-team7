@@ -127,7 +127,7 @@ class ProtocolEvaluator:
                 "red_flags": ["generic_or_useless_answer"],
                 "criteria": [],
                 "total_score": 0,
-                "max_score": 25,
+                "max_score": 30,
                 "stability": "unstable",
             }
 
@@ -137,6 +137,7 @@ class ProtocolEvaluator:
         red_flags = self._detect_red_flags(response)
         criteria = self._score_case(response, case)
         total = sum(item.score for item in criteria)
+        max_score = len(criteria) * 5
 
         thresholds = self.protocol["thresholds"]
         critical = set(thresholds["critical_criteria"])
@@ -172,7 +173,7 @@ class ProtocolEvaluator:
             "red_flags": red_flags,
             "criteria": [item.__dict__ for item in criteria],
             "total_score": total,
-            "max_score": 25,
+            "max_score": max_score,
             "stability": "stable" if stable else "unstable",
             "stability_fingerprints": fingerprints,
             "critical_failures": critical_failures,
@@ -285,8 +286,16 @@ class ProtocolEvaluator:
             flags.append("contradiction_in_explanation")
 
         top_match = cbr_matches[0] if cbr_matches else {}
-        if not top_match.get("case_number") or float(top_match.get("similarity") or 0.0) < self.min_similarity:
+        top_similarity = float(top_match.get("similarity") or 0.0)
+        if not top_match.get("case_number") or top_similarity < self.min_similarity:
             flags.append("nonexistent_facts_reference")
+
+        verdict = (response.get("suggested_verdict") or "").strip().lower()
+        sanction = (response.get("suggested_sanction") or "").strip().lower()
+        if verdict in {"usvojeno", "osudjen"} and top_similarity < 0.65:
+            flags.append("contradiction_in_explanation")
+        if verdict in {"usvojeno", "osudjen"} and sanction == "kazna zatvora (predlog)":
+            flags.append("generic_or_useless_answer")
 
         empty_explanation = not applied_norms and not law_texts and not cbr_matches
         empty_advice = not (response.get("suggested_verdict") or response.get("suggested_sanction"))
@@ -369,13 +378,63 @@ class ProtocolEvaluator:
             explanation += 1
             explanation_notes.append("eksplicitne primenjene norme")
 
+        sanction_score, sanction_notes = self._score_sanction_proportionality(
+            facts=case["facts"],
+            verdict=response.get("suggested_verdict"),
+            sanction=response.get("suggested_sanction"),
+            applied_articles=applied_articles,
+        )
+
         return [
             CriterionScore("pravna_tacnost", min(5, legal), "; ".join(legal_notes) or "n/a"),
             CriterionScore("logicka_konzistentnost", min(5, consistency), "; ".join(consistency_notes)),
             CriterionScore("korisnost_za_korisnika", min(5, usefulness), "; ".join(usefulness_notes) or "n/a"),
             CriterionScore("pokrivenost_kljucnih_cinjenica", key_fact_score, key_fact_notes),
             CriterionScore("objasnjenje_zakljucka", min(5, explanation), "; ".join(explanation_notes) or "n/a"),
+            CriterionScore("proporcionalnost_sankcije", sanction_score, sanction_notes),
         ]
+
+    def _score_sanction_proportionality(
+        self,
+        facts: dict[str, Any],
+        verdict: str | None,
+        sanction: str | None,
+        applied_articles: list[str],
+    ) -> tuple[int, str]:
+        verdict_value = (verdict or "").strip().lower()
+        sanction_value = (sanction or "").strip().lower()
+        has_positive_verdict = verdict_value in {"usvojeno", "osudjen"}
+
+        if not has_positive_verdict:
+            if sanction_value == "bez sankcije":
+                return 5, "odbijajuci ishod prati odsustvo sankcije"
+            if not sanction_value:
+                return 4, "odbijajuci ishod bez eksplicitne sankcije"
+            return 1, "odbijajuci ishod sa potencijalno neadekvatnom sankcijom"
+
+        if not sanction_value or sanction_value == "bez sankcije":
+            return 0, "pozitivan ishod bez adekvatne sankcije"
+
+        score = 1
+        notes: list[str] = ["pozitivan ishod ima sankciju"]
+
+        if re.search(r"\d", sanction_value):
+            score += 2
+            notes.append("sankcija sadrzi raspon/kvantifikaciju")
+
+        if facts.get("death_result") and any(term in sanction_value for term in ("3 do 12", "5 do", "10")):
+            score += 2
+            notes.append("uskladjeno sa smrtnom posledicom")
+        elif facts.get("severe_consequence") and any(term in sanction_value for term in ("1 do 8", "6 meseci", "5 godina")):
+            score += 2
+            notes.append("uskladjeno sa tezim posledicama")
+        elif any("152" in str(item) for item in applied_articles) and any(
+            term in sanction_value for term in ("novcana", "do 1 godine")
+        ):
+            score += 2
+            notes.append("uskladjeno sa laksom povredom")
+
+        return min(5, score), "; ".join(notes)
 
     def _score_key_fact_coverage(self, facts: dict[str, Any], top_match: dict[str, Any]) -> tuple[int, str]:
         contributions = top_match.get("feature_contributions") or {}
@@ -463,13 +522,14 @@ class ProtocolEvaluator:
 
     def _to_markdown(self, report: dict[str, Any]) -> str:
         summary = report["summary"]
+        max_score = report["cases"][0]["max_score"] if report.get("cases") else 25
         lines = [
             "# Finalni evaluacioni izvestaj (5 zakljucanih presuda)",
             "",
             f"- Status: **{summary['status']}**",
             f"- Base URL: {report['base_url']}",
             f"- Protokol: {report['protocol_version']}",
-            f"- Prosecna ocena: {summary['overall_average']} / 25",
+            f"- Prosecna ocena: {summary['overall_average']} / {max_score}",
             f"- Prag proseka: {summary['overall_min_average']}",
             "",
             "## Tehnicke provere",
@@ -502,11 +562,12 @@ class ProtocolEvaluator:
 
     def _print_console_summary(self, report: dict[str, Any]) -> None:
         summary = report["summary"]
+        max_score = report["cases"][0]["max_score"] if report.get("cases") else 25
         print("\n" + "=" * 78)
         print("FINAL EVALUATION PROTOCOL")
         print("=" * 78)
         print(f"STATUS: {summary['status']}")
-        print(f"AVERAGE SCORE: {summary['overall_average']} / 25")
+        print(f"AVERAGE SCORE: {summary['overall_average']} / {max_score}")
         print(f"CASE FAILURES: {summary['case_failures']}")
         print(f"TECH FAILURES: {len(summary['technical_failures'])}")
         print(f"REPORT JSON: {REPORT_JSON}")

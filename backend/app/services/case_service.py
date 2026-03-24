@@ -12,6 +12,7 @@ from backend.app.services.cbr_normalization import (
     normalize_injury_type,
     normalize_text,
 )
+from src.verdict_annotation.outcome_normalizer import normalize_outcome
 
 
 class CaseService:
@@ -26,6 +27,7 @@ class CaseService:
         sanction: str | None,
     ) -> dict:
         config = self._db_config()
+        canonical_outcome = normalize_outcome(outcome)
 
         normalized = CaseFacts(
             defendant=facts.defendant,
@@ -48,7 +50,7 @@ class CaseService:
         existing = self._find_existing_case(
             cursor=cursor,
             facts=normalized,
-            outcome=outcome,
+            outcome=canonical_outcome,
             verdict_type=verdict_type,
             sanction=sanction,
         )
@@ -96,7 +98,7 @@ class CaseService:
                 normalized.fight_participation,
                 normalized.fight_consequence,
                 normalized.left_without_help,
-                outcome,
+                canonical_outcome,
                 verdict_type,
                 sanction,
             ),

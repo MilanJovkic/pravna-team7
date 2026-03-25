@@ -46,12 +46,21 @@ async def run_reasoning(request: ReasoningRequest):
         raise HTTPException(status_code=500, detail=f"rule_error={rule_error}; cbr_error={cbr_error}")
 
     applied_articles = explain_service.map_norms_to_articles(rule_result.applied_norms)
-    applied_texts = explain_service.get_applied_law_texts(applied_articles)
+    applied_texts = explain_service.get_applied_law_texts(
+        applied_articles,
+        norms=rule_result.applied_norms,
+    )
     suggested_verdict = explain_service.suggest_verdict(rule_result.applied_norms, cbr_result)
     suggested_sanction = explain_service.suggest_sanction(
         applied_articles,
         facts=request.facts,
         verdict=suggested_verdict,
+    )
+    reasoning_confidence = explain_service.build_confidence_report(
+        norms=rule_result.applied_norms,
+        cbr=cbr_result,
+        suggested_verdict=suggested_verdict,
+        subsystem_status=subsystem_status,
     )
 
     return ReasoningResponse(
@@ -62,4 +71,5 @@ async def run_reasoning(request: ReasoningRequest):
         applied_law_texts=applied_texts,
         suggested_verdict=suggested_verdict,
         suggested_sanction=suggested_sanction,
+        reasoning_confidence=reasoning_confidence,
     )

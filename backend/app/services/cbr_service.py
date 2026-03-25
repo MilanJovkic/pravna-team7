@@ -31,6 +31,9 @@ JAR_PATH = CBR_DIR / "target" / "pravna-cbr-0.0.1-SNAPSHOT.jar"
 class CbrService:
     """Service that executes jColibri and parses JSON output."""
 
+    def __init__(self) -> None:
+        self._case_number_index: dict[str, str] | None = None
+
     def query(self, facts: CaseFacts, top_k: int) -> CbrResult:
         self._ensure_case_base()
         if not JAR_PATH.exists():
@@ -86,6 +89,7 @@ class CbrService:
         matches = [
             CbrMatch(
                 case_number=item.get("case_number"),
+                verdict_case_id=self._resolve_verdict_case_id(item.get("case_number")),
                 similarity=float(item.get("similarity", 0.0)),
                 outcome=normalize_outcome(item.get("outcome")),
                 feature_contributions={
@@ -214,3 +218,35 @@ class CbrService:
     def _extract_bool_or_none(self, value: str | bool | None) -> bool | None:
         parsed = parse_bool(value)
         return parsed
+
+    def _resolve_verdict_case_id(self, case_number: str | None) -> str | None:
+        if not case_number:
+            return None
+        index = self._load_case_number_index()
+        return index.get(case_number.strip().lower())
+
+    def _load_case_number_index(self) -> dict[str, str]:
+        if self._case_number_index is not None:
+            return self._case_number_index
+
+        index: dict[str, str] = {}
+        xml_dir = ROOT / "data" / "verdicts_xml"
+        if not xml_dir.exists():
+            self._case_number_index = index
+            return index
+
+        for xml_file in sorted(xml_dir.glob("*.xml")):
+            try:
+                tree = ET.parse(xml_file)
+                root = tree.getroot()
+                case_number_elem = root.find(".//{*}docNumber")
+                if case_number_elem is None or not case_number_elem.text:
+                    continue
+                case_number = case_number_elem.text.strip()
+                if case_number:
+                    index[case_number.lower()] = xml_file.stem
+            except Exception:
+                continue
+
+        self._case_number_index = index
+        return index

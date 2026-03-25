@@ -1,6 +1,7 @@
 """FastAPI application for legal document annotation system."""
 from dotenv import load_dotenv
 from fastapi import FastAPI
+from fastapi import Response
 from fastapi.middleware.cors import CORSMiddleware
 from backend.app.api import laws, verdicts, reasoning, cases
 from backend.app.api import verdict_generation
@@ -47,3 +48,9 @@ async def root():
 async def health_check():
     """Health check endpoint."""
     return {"status": "healthy"}
+
+
+@app.get("/favicon.ico", include_in_schema=False)
+async def favicon() -> Response:
+    """Return empty favicon response to avoid 404 noise in browser console."""
+    return Response(status_code=204)

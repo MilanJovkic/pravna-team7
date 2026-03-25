@@ -128,6 +128,7 @@ class RuleReasoningResult(BaseModel):
 class CbrMatch(BaseModel):
     """Single CBR match result."""
     case_number: Optional[str] = None
+    verdict_case_id: Optional[str] = None
     similarity: float
     outcome: Optional[str] = None
     feature_contributions: Dict[str, float] = Field(default_factory=dict)
@@ -145,6 +146,17 @@ class AppliedLawText(BaseModel):
     content: Optional[str] = None
 
 
+class ReasoningConfidence(BaseModel):
+    """Transparent confidence metadata for hybrid decision support."""
+    decision_basis: str = "unknown"
+    final_confidence: float = 0.0
+    rule_signal: str = "unavailable"
+    cbr_signal: str = "unavailable"
+    cbr_confidence: float = 0.0
+    cbr_top_similarity: float = 0.0
+    conflict: bool = False
+
+
 class ReasoningResponse(BaseModel):
     """Combined reasoning response."""
     rule_reasoning: RuleReasoningResult
@@ -154,6 +166,7 @@ class ReasoningResponse(BaseModel):
     applied_law_texts: List[AppliedLawText] = Field(default_factory=list)
     suggested_verdict: Optional[str] = None
     suggested_sanction: Optional[str] = None
+    reasoning_confidence: ReasoningConfidence = Field(default_factory=ReasoningConfidence)
 
 
 class VerdictGenerationRequest(BaseModel):

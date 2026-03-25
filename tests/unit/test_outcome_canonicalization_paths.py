@@ -9,13 +9,13 @@ from backend.app.services.verdict_service import VerdictService
 
 
 class TestOutcomeCanonicalizationPaths(unittest.TestCase):
-    def test_reasoning_suggest_verdict_normalizes_cyrillic_cbr_outcome(self):
+    def test_reasoning_suggest_verdict_normalizes_cyrillic_cbr_outcome_to_criminal_form(self):
         service = ReasoningExplainService()
         cbr = CbrResult(matches=[CbrMatch(similarity=0.9, outcome="усвојено")])
 
         suggested = service.suggest_verdict(norms=[], cbr=cbr)
 
-        self.assertEqual("usvojeno", suggested)
+        self.assertEqual("osudjen", suggested)
 
     def test_cbr_query_normalizes_match_outcome(self):
         service = CbrService()

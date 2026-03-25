@@ -22,6 +22,7 @@ from backend.app.models.schemas import (
 from src.verdict_annotation.verdict_parser import VerdictMetadata
 from src.verdict_annotation.verdict_annotator import VerdictAnnotation
 from src.verdict_annotation.verdict_exporter import VerdictAkomaExporter
+from src.verdict_annotation.outcome_normalizer import normalize_outcome
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -603,7 +604,8 @@ Ova odluka je doneta u skladu sa primenjivim zakonima.
         reasoning: ReasoningResponse,
         verdict_text: str,
     ) -> VerdictMetadata:
-        applied_articles = [f"Clan {art}" for art in (reasoning.applied_articles or [])]
+        resolved_articles = self._resolve_applied_articles(facts, reasoning)
+        applied_articles = [f"Clan {art}" for art in resolved_articles]
         legal_refs = []
         if applied_articles:
             legal_refs.append("Krivicni zakonik Crne Gore")
@@ -624,6 +626,21 @@ Ova odluka je doneta u skladu sa primenjivim zakonima.
             factual_state=self._facts_to_factual_state(facts),
             raw_text=verdict_text,
         )
+
+    def _resolve_applied_articles(self, facts: CaseFacts, reasoning: ReasoningResponse) -> list[str]:
+        provided = [str(item).strip() for item in (reasoning.applied_articles or []) if str(item).strip()]
+        if provided:
+            return provided
+
+        inferred: list[str] = []
+        if facts.severe_consequence or facts.death_result or (facts.injury_type and "teska" in facts.injury_type.lower()):
+            inferred.append("151")
+        if facts.fight_participation or (facts.fight_consequence and "smrt" in facts.fight_consequence.lower()):
+            inferred.append("153")
+        if facts.left_without_help:
+            inferred.append("155")
+
+        return inferred
 
     def _fill_annotation_defaults(
         self,
@@ -651,13 +668,22 @@ Ova odluka je doneta u skladu sa primenjivim zakonima.
         legal_issues = [injury] if injury else ["krivicno delo"]
         legal_concepts = [injury] if injury else ["krivicno delo"]
 
-        suggested_verdict = (reasoning.suggested_verdict or "kriv").lower()
-        if "odbij" in suggested_verdict:
+        normalized_verdict = normalize_outcome(reasoning.suggested_verdict)
+        if normalized_verdict == "odbijeno":
             outcome = "odbijeno"
-        elif "delim" in suggested_verdict:
-            outcome = "delimicno usvojeno"
-        else:
+            decision = "Optužba se odbija usled nedostatka dovoljno pouzdanih elemenata za osudu."
+        elif normalized_verdict == "oslobodjen":
+            outcome = "oslobodjen"
+            decision = "Okrivljeni se oslobađa od optužbe."
+        elif normalized_verdict == "usvojeno":
             outcome = "usvojeno"
+            decision = "Predlog se usvaja i izriče se odgovarajuća sankcija."
+        elif "delim" in (reasoning.suggested_verdict or "").lower():
+            outcome = "delimicno usvojeno"
+            decision = "Predlog se delimično usvaja, uz blažu kvalifikaciju i sankciju."
+        else:
+            outcome = "osudjen"
+            decision = "Okrivljeni se oglašava krivim i izriče se sankcija u skladu sa zakonom."
 
         return VerdictAnnotation(
             verdict_summary="Presuda doneta na osnovu utvrdjenih cinjenica i primenjenih normi.",
@@ -665,7 +691,7 @@ Ova odluka je doneta u skladu sa primenjivim zakonima.
             applied_laws=metadata.legal_references or ["Krivicni zakonik Crne Gore"],
             applied_articles=metadata.article_references or [],
             legal_reasoning="Sud je primenio relevantne zakonske odredbe na utvrdjeno cinjenicno stanje.",
-            decision="Okrivljeni se oglasava krivim i izrice se sankcija.",
+            decision=decision,
             case_outcome=outcome,
             legal_concepts=legal_concepts,
             precedent_value="low",

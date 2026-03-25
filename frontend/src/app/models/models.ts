@@ -80,6 +80,7 @@ export interface RuleReasoningResult {
 
 export interface CbrMatch {
   case_number?: string;
+  verdict_case_id?: string;
   similarity: number;
   outcome?: string;
 }
@@ -94,6 +95,16 @@ export interface AppliedLawText {
   content?: string;
 }
 
+export interface ReasoningConfidence {
+  decision_basis: string;
+  final_confidence: number;
+  rule_signal: string;
+  cbr_signal: string;
+  cbr_confidence: number;
+  cbr_top_similarity: number;
+  conflict: boolean;
+}
+
 export interface ReasoningRequest {
   facts: CaseFacts;
   top_k: number;
@@ -102,10 +113,12 @@ export interface ReasoningRequest {
 export interface ReasoningResponse {
   rule_reasoning: RuleReasoningResult;
   cbr: CbrResult;
+  subsystem_status?: Record<string, string>;
   applied_articles: string[];
   applied_law_texts: AppliedLawText[];
   suggested_verdict?: string;
   suggested_sanction?: string;
+  reasoning_confidence?: ReasoningConfidence;
 }
 
 export interface VerdictGenerationRequest {
@@ -131,6 +144,9 @@ export interface NewCaseRequest {
   outcome?: string;
   verdict_type?: string;
   sanction?: string;
+  selected_verdict?: string;
+  selected_sanction?: string;
+  user_confirmation?: boolean;
   facts: CaseFacts;
 }
 

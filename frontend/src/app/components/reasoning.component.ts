@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { HttpErrorResponse } from '@angular/common/http';
 import { ReasoningService } from '../services/reasoning.service';
-import { CaseFacts, ReasoningResponse, VerdictGenerationResponse } from '../models/models';
+import { CaseFacts, CbrMatch, ReasoningResponse, VerdictDetail, VerdictGenerationResponse } from '../models/models';
 import { Router } from '@angular/router';
+import { VerdictService } from '../services/verdict.service';
 
 @Component({
   selector: 'app-reasoning',
@@ -15,7 +17,7 @@ import { Router } from '@angular/router';
         <div>
           <p class="eyebrow">Rasudjivanje</p>
           <h2>Unos slucaja i predlog presude</h2>
-          <p class="subtitle">Popuni cinjenice, pokreni rasudjivanje po pravilima i po slucajevima, pa sacuvaj novi slucaj.</p>
+          <p class="subtitle">Popuni činjenice, pokreni rasuđivanje po pravilima i po slučajevima, pa sačuvaj novi slučaj.</p>
         </div>
       </header>
 
@@ -126,7 +128,19 @@ import { Router } from '@angular/router';
               <div *ngIf="response.rule_reasoning.applied_norms.length > 0" class="norms">
                 <span *ngFor="let norm of response.rule_reasoning.applied_norms" class="norm-chip">{{ norm }}</span>
               </div>
-              <div *ngIf="response.rule_reasoning.applied_norms.length === 0" class="empty">Nema pronadjenih normi.</div>
+              <div *ngIf="response.rule_reasoning.applied_norms.length === 0" class="empty">Nema pronađenih normi.</div>
+            </div>
+
+            <div class="result-block" *ngIf="response.rule_reasoning.applied_norms.length > 0">
+              <h4>Norma → Član/Stav</h4>
+              <div class="trace-grid">
+                <div class="trace-head">Norma</div>
+                <div class="trace-head">Mapiranje</div>
+                <ng-container *ngFor="let row of normTraceRows(response.rule_reasoning.applied_norms)">
+                  <div class="trace-cell norm">{{ row.norm }}</div>
+                  <div class="trace-cell map">{{ row.target }}</div>
+                </ng-container>
+              </div>
             </div>
 
             <div class="result-block">
@@ -134,11 +148,11 @@ import { Router } from '@angular/router';
               <div class="suggestion-grid">
                 <div>
                   <span class="label">Predlog presude</span>
-                  <div class="value">{{ response.suggested_verdict || 'N/A' }}</div>
+                  <div class="value">{{ response.suggested_verdict || 'Nije dostupno' }}</div>
                 </div>
                 <div>
                   <span class="label">Predlog sankcije</span>
-                  <div class="value">{{ response.suggested_sanction || 'N/A' }}</div>
+                  <div class="value">{{ response.suggested_sanction || 'Nije dostupno' }}</div>
                 </div>
               </div>
               <div class="selection-grid">
@@ -149,7 +163,6 @@ import { Router } from '@angular/router';
                     <option value="osudjen">Osudjen</option>
                     <option value="oslobodjen">Oslobodjen</option>
                     <option value="odbijeno">Odbijeno</option>
-                    <option value="delimicno usvojeno">Delimicno usvojeno</option>
                   </select>
                 </label>
                 <label>
@@ -157,6 +170,37 @@ import { Router } from '@angular/router';
                   <input type="text" name="selectedSanction" [(ngModel)]="selectedSanction" placeholder="Kazna zatvora / novcana kazna" />
                 </label>
               </div>
+            </div>
+
+            <div class="result-block" *ngIf="response.reasoning_confidence as rc">
+              <h4>Pouzdanost odluke</h4>
+              <div class="confidence-grid">
+                <div>
+                  <span class="label">Osnov odluke</span>
+                  <div class="value">{{ confidenceLabel(rc.decision_basis) }}</div>
+                </div>
+                <div>
+                  <span class="label">Ukupna pouzdanost</span>
+                  <div class="value">{{ confidencePercent(rc.final_confidence) }}</div>
+                </div>
+                <div>
+                  <span class="label">Signal pravila</span>
+                  <div class="value">{{ confidenceLabel(rc.rule_signal) }}</div>
+                </div>
+                <div>
+                  <span class="label">Signal sličnosti</span>
+                  <div class="value">{{ confidenceLabel(rc.cbr_signal) }}</div>
+                </div>
+                <div>
+                  <span class="label">CBR konsenzus</span>
+                  <div class="value">{{ confidencePercent(rc.cbr_confidence) }}</div>
+                </div>
+                <div>
+                  <span class="label">Najveća sličnost</span>
+                  <div class="value">{{ confidencePercent(rc.cbr_top_similarity) }}</div>
+                </div>
+              </div>
+              <div class="empty" *ngIf="rc.conflict">Konflikt signala: pravila i slični slučajevi ukazuju na različite ishode.</div>
             </div>
 
             <div class="result-block">
@@ -171,17 +215,21 @@ import { Router } from '@angular/router';
             </div>
 
             <div class="result-block">
-              <h4>Slicni slucajevi (CBR)</h4>
+              <h4>Slični slučajevi (CBR)</h4>
               <div *ngIf="response.cbr.matches.length > 0" class="matches">
                 <div *ngFor="let match of response.cbr.matches" class="match-row">
-                  <div>
+                  <div class="match-info">
                     <strong>{{ match.case_number || 'Nepoznato' }}</strong>
                     <span class="outcome" *ngIf="match.outcome">{{ match.outcome }}</span>
                   </div>
-                  <div class="similarity">{{ similarityPercent(match.similarity) }}</div>
+                  <div class="match-actions">
+                    <div class="similarity">{{ similarityPercent(match.similarity) }}</div>
+                    <button type="button" class="match-open" (click)="openFullVerdict(match)">Prikaži cijelu presudu</button>
+                  </div>
                 </div>
               </div>
-              <div *ngIf="response.cbr.matches.length === 0" class="empty">Nema slicnih slucajeva.</div>
+              <div *ngIf="response.cbr.matches.length === 0" class="empty">Nema sličnih slučajeva.</div>
+              <div *ngIf="matchMessage" class="save-message">{{ matchMessage }}</div>
             </div>
 
           <div class="result-block">
@@ -225,6 +273,29 @@ import { Router } from '@angular/router';
             <button class="secondary" (click)="generateVerdict()" [disabled]="generating || !response">Generisi presudu</button>
             <div *ngIf="generationMessage" class="save-message">{{ generationMessage }}</div>
           </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="verdict-modal-backdrop" *ngIf="verdictDialogOpen" (click)="closeVerdictDialog()">
+        <section class="verdict-modal" role="dialog" aria-modal="true" aria-label="Cijela presuda" tabindex="-1" (click)="$event.stopPropagation()" (keydown)="onDialogKeydown($event)">
+          <header class="verdict-modal-header">
+            <h4>{{ verdictDialog?.case_number || verdictDialog?.case_id || 'Cijela presuda' }}</h4>
+            <div class="modal-actions">
+              <button type="button" class="copy-button" (click)="copyVerdictCaseNumber()" [disabled]="!verdictDialog?.case_number">Kopiraj broj</button>
+              <button type="button" class="close-button" (click)="closeVerdictDialog()">Zatvori</button>
+            </div>
+          </header>
+
+          <div *ngIf="verdictDialogLoading" class="loading">Učitavanje presude...</div>
+          <div *ngIf="!verdictDialogLoading && verdictDialogError" class="error">{{ verdictDialogError }}</div>
+
+          <div *ngIf="!verdictDialogLoading && verdictDialog" class="verdict-modal-content">
+            <div class="meta-row"><strong>Sud:</strong> {{ verdictDialog.court_name || 'Nepoznato' }}</div>
+            <div class="meta-row" *ngIf="verdictDialog.date"><strong>Datum:</strong> {{ verdictDialog.date }}</div>
+            <div class="meta-row" *ngIf="verdictDialog.outcome"><strong>Ishod:</strong> {{ verdictDialog.outcome }}</div>
+            <div class="meta-row" *ngIf="copyMessage">{{ copyMessage }}</div>
+            <pre class="full-text">{{ verdictDialog.full_text || 'Puni tekst presude nije dostupan.' }}</pre>
           </div>
         </section>
       </div>
@@ -397,6 +468,51 @@ import { Router } from '@angular/router';
       margin-top: 12px;
     }
 
+    .confidence-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      background: #f7faf8;
+      border-radius: 12px;
+      border: 1px solid #dbe6e0;
+      padding: 12px 14px;
+    }
+
+    .trace-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      border: 1px solid #dce6eb;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .trace-head {
+      background: #edf4f7;
+      padding: 8px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #2f4953;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .trace-cell {
+      padding: 8px 10px;
+      border-top: 1px solid #edf2f5;
+      font-size: 13px;
+    }
+
+    .trace-cell.norm {
+      color: #35505a;
+      background: #ffffff;
+    }
+
+    .trace-cell.map {
+      color: #1f6a5c;
+      background: #fbfdfc;
+      font-weight: 600;
+    }
+
     .suggestion-grid .label {
       display: block;
       font-size: 12px;
@@ -446,6 +562,32 @@ import { Router } from '@angular/router';
       background: #f6f7f9;
     }
 
+    .match-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .match-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .match-open {
+      background: #2f6d62;
+      color: #ffffff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
     .outcome {
       margin-left: 8px;
       font-size: 12px;
@@ -481,6 +623,96 @@ import { Router } from '@angular/router';
       margin-top: 10px;
       font-weight: 600;
       color: #2f6d62;
+    }
+
+    .verdict-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 33, 39, 0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      z-index: 1100;
+    }
+
+    .verdict-modal {
+      width: min(920px, 100%);
+      max-height: 90vh;
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid #d8e1e6;
+      box-shadow: 0 20px 40px rgba(18, 28, 34, 0.25);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .verdict-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+      border-bottom: 1px solid #e2e7ea;
+      background: #f7faf8;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .verdict-modal-header h4 {
+      margin: 0;
+      font-size: 16px;
+      color: #21353d;
+    }
+
+    .close-button {
+      background: #e8edf0;
+      color: #21353d;
+      border: none;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .copy-button {
+      background: #d9efe9;
+      color: #174d42;
+      border: none;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .verdict-modal-content {
+      padding: 14px 16px 16px;
+      overflow: auto;
+    }
+
+    .meta-row {
+      margin-bottom: 6px;
+      color: #334a53;
+      font-size: 14px;
+    }
+
+    .full-text {
+      margin-top: 12px;
+      background: #fbfcfd;
+      border: 1px solid #e4eaee;
+      border-radius: 10px;
+      padding: 12px;
+      white-space: pre-wrap;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #2a4049;
     }
 
     @media (max-width: 900px) {
@@ -520,14 +752,26 @@ export class ReasoningComponent {
   judgeName = '';
   generating = false;
   generationMessage = '';
+  matchMessage = '';
+  verdictDialogOpen = false;
+  verdictDialogLoading = false;
+  verdictDialogError = '';
+  verdictDialog: VerdictDetail | null = null;
+  copyMessage = '';
+  private verdictIdByCaseNumber: Record<string, string> = {};
 
-  constructor(private reasoningService: ReasoningService, private router: Router) {}
+  constructor(
+    private reasoningService: ReasoningService,
+    private verdictService: VerdictService,
+    private router: Router
+  ) {}
 
   runReasoning() {
     this.loading = true;
     this.error = '';
     this.saveMessage = '';
     this.generationMessage = '';
+    this.matchMessage = '';
 
     this.reasoningService.runReasoning({ facts: this.facts, top_k: this.topK }).subscribe({
       next: (data: ReasoningResponse) => {
@@ -541,6 +785,7 @@ export class ReasoningComponent {
         if (!this.caseOutcome && data.suggested_verdict) {
           this.caseOutcome = data.suggested_verdict;
         }
+        this.loadVerdictIndex();
         this.loading = false;
       },
       error: (err: unknown) => {
@@ -555,19 +800,32 @@ export class ReasoningComponent {
     this.saving = true;
     this.saveMessage = '';
 
+    const selectedVerdict = this.selectedVerdict || this.response?.suggested_verdict || this.caseOutcome || undefined;
+    const selectedSanction = this.selectedSanction || this.response?.suggested_sanction || undefined;
+
+    if (!selectedVerdict || !selectedSanction) {
+      this.saveMessage = 'Prije snimanja morate eksplicitno izabrati presudu i sankciju.';
+      this.saving = false;
+      return;
+    }
+
     this.reasoningService.saveCase({
       case_number: this.caseNumber || undefined,
       outcome: this.caseOutcome || undefined,
-      verdict_type: this.selectedVerdict || undefined,
-      sanction: this.selectedSanction || undefined,
+      verdict_type: selectedVerdict,
+      sanction: selectedSanction,
+      selected_verdict: selectedVerdict,
+      selected_sanction: selectedSanction,
+      user_confirmation: true,
       facts: this.facts
     }).subscribe({
       next: (data: { case_number: string }) => {
-        this.saveMessage = `Sacuvan slucaj ${data.case_number}`;
+        this.saveMessage = `Sačuvan slučaj ${data.case_number}`;
         this.saving = false;
       },
       error: (err: unknown) => {
-        this.saveMessage = 'Greska pri snimanju slucaja.';
+        const detail = err instanceof HttpErrorResponse ? err.error?.detail : undefined;
+        this.saveMessage = detail ? `Greška pri snimanju slučaja: ${detail}` : 'Greška pri snimanju slučaja.';
         this.saving = false;
         console.error(err);
       }
@@ -603,7 +861,151 @@ export class ReasoningComponent {
     });
   }
 
+  openFullVerdict(match: CbrMatch): void {
+    this.matchMessage = '';
+
+    const directCaseId = (match.verdict_case_id || '').trim();
+    if (directCaseId) {
+      this.openVerdictDialog(directCaseId);
+      return;
+    }
+
+    const caseNumber = (match.case_number || '').trim().toLowerCase();
+    const resolvedCaseId = this.verdictIdByCaseNumber[caseNumber];
+    if (resolvedCaseId) {
+      this.openVerdictDialog(resolvedCaseId);
+      return;
+    }
+
+    this.matchMessage = 'Cijela presuda za izabrani slučaj trenutno nije dostupna u korpusu XML presuda.';
+  }
+
+  closeVerdictDialog(): void {
+    this.verdictDialogOpen = false;
+    this.verdictDialogLoading = false;
+    this.verdictDialogError = '';
+    this.verdictDialog = null;
+    this.copyMessage = '';
+  }
+
+  private openVerdictDialog(caseId: string): void {
+    this.verdictDialogOpen = true;
+    this.verdictDialogLoading = true;
+    this.verdictDialogError = '';
+    this.verdictDialog = null;
+    this.copyMessage = '';
+
+    this.verdictService.getVerdict(caseId).subscribe({
+      next: (data) => {
+        this.verdictDialog = data;
+        this.verdictDialogLoading = false;
+      },
+      error: () => {
+        this.verdictDialogError = 'Neuspjelo učitavanje pune presude.';
+        this.verdictDialogLoading = false;
+      }
+    });
+  }
+
+  async copyVerdictCaseNumber(): Promise<void> {
+    const value = this.verdictDialog?.case_number || '';
+    if (!value) {
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(value);
+      this.copyMessage = 'Broj predmeta je kopiran.';
+    } catch {
+      this.copyMessage = 'Kopiranje nije uspjelo.';
+    }
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscape(): void {
+    if (this.verdictDialogOpen) {
+      this.closeVerdictDialog();
+    }
+  }
+
+  onDialogKeydown(event: KeyboardEvent): void {
+    if (event.key !== 'Tab') {
+      return;
+    }
+    const root = event.currentTarget as HTMLElement | null;
+    if (!root) {
+      return;
+    }
+    const focusable = Array.from(
+      root.querySelectorAll<HTMLElement>('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+    ).filter((el) => !el.hasAttribute('disabled'));
+    if (focusable.length === 0) {
+      event.preventDefault();
+      return;
+    }
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    const active = document.activeElement as HTMLElement | null;
+
+    if (event.shiftKey && active === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && active === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
+
+  normTraceRows(norms: string[]): Array<{ norm: string; target: string }> {
+    return norms.map((norm) => {
+      const match = String(norm || '').match(/^crime_art(\d+[a-z]?)(?:_(\d+))?$/i);
+      if (!match) {
+        return { norm, target: 'N/A' };
+      }
+      const article = match[1];
+      const paragraph = match[2];
+      return {
+        norm,
+        target: paragraph ? `Član ${article}, stav (${paragraph})` : `Član ${article}`,
+      };
+    });
+  }
+
+  private loadVerdictIndex(): void {
+    this.verdictService.getVerdicts().subscribe({
+      next: (payload) => {
+        const index: Record<string, string> = {};
+        for (const verdict of payload.verdicts || []) {
+          if (verdict.case_number && verdict.case_id) {
+            index[verdict.case_number.trim().toLowerCase()] = verdict.case_id;
+          }
+        }
+        this.verdictIdByCaseNumber = index;
+      },
+      error: () => {
+        this.verdictIdByCaseNumber = {};
+      }
+    });
+  }
+
   similarityPercent(value: number): string {
     return `${Math.round(value * 100)}%`;
+  }
+
+  confidencePercent(value: number): string {
+    return `${Math.round((value || 0) * 100)}%`;
+  }
+
+  confidenceLabel(value: string): string {
+    const labels: Record<string, string> = {
+      hybrid_consensus: 'Hibridni konsenzus',
+      hybrid_conflict_resolution: 'Hibridno razrešenje konflikta',
+      rule_only: 'Samo pravila',
+      cbr_only: 'Samo slični slučajevi',
+      supports_conviction: 'Podržava osudu',
+      supports_rejection: 'Podržava odbijanje',
+      unavailable: 'Nedostupno',
+      unknown: 'Nepoznato',
+    };
+    return labels[value] || value;
   }
 }

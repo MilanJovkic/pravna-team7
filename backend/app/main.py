@@ -1,11 +1,14 @@
 """FastAPI application for legal document annotation system."""
+from pathlib import Path
+
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.app.api import laws, verdicts, reasoning, cases
 from backend.app.api import verdict_generation
 
-load_dotenv()
+ROOT = Path(__file__).resolve().parents[2]
+load_dotenv(ROOT / ".env", override=True)
 
 app = FastAPI(
     title="Legal Annotation API",

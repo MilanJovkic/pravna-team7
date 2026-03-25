@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="GEN-20260213-155125">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/GEN-20260213-155125/!main"/>
+                    <FRBRuri value="/akn/me/judgment/GEN-20260213-155125"/>
+                    <FRBRdate date="2026-02-13" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/GEN-20260213-155125/sr@2026-02-13/!main"/>
+                    <FRBRuri value="/akn/me/judgment/GEN-20260213-155125/sr@2026-02-13"/>
+                    <FRBRdate date="2026-02-13"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/GEN-20260213-155125/sr@2026-02-13/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/GEN-20260213-155125/sr@2026-02-13/!main.akn"/>
+                    <FRBRdate date="2026-02-13"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni sud u Podgorici"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="M. J."/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="M. M."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>GEN-20260213-155125</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>Osnovni sud u Podgorici</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2026-02-13">2026-02-13</docDate>
+                </block>
+                <block name="judges">
+                    <judge>M. J.</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni M. M. je proglašen krivim za teško tjelesno povređivanje koje je izazvalo smrt oštećenog N. N. uz upotrebu flaše kao oružja. Izrečena mu je kazna zatvora od četiri godine.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>teško tjelesno povređivanje</p>
+                    <p>smrtni ishod</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="/akn/me/act/2024/!main">Krivični zakonik</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Okrivljeni je, delujući s namerom, upotrebio flašu, što je rezultiralo smrtnim ishodom. Provokacija nije umanjila njegovu odgovornost.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усвојено">
+                    <p>Optuženi se oglašava krivim</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>M. M.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teska tjelesna povreda</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="weapon">flasom</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="death_result">da</fact>
+                <fact key="provocation">da</fact>
+                <fact key="fight_participation">ne</fact>
+                <fact key="fight_consequence">none</fact>
+                <fact key="left_without_help">da</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>Osnovni sud u Podgorici  
+Broj predmeta: GEN-20260213-155125  
+Datum: 2026-02-13  
+
+U IME CRNE GORE  
+
+P R E S U D U  
+
+Okrivljeni M. M. je optužen da je 15. januara 2026. godine u Podgorici, upotrebom flaše, teško tjelesno povrijedio oštećenog N. N., pri čemu je došlo do teških povreda koje su izazvale smrtni ishod. Okrivljeni je, nakon provokacije, upotrebio predmet kao oružje, ostavljajući oštećenog bez pomoći.
+
+Izreka: Okrivljeni M. M. je kriv za krivično delo iz člana 151 Krivičnog zakonika Crne Gore.
+
+Sankcija: Okrivljenom M. M. se izriče kazna zatvora u trajanju od četiri godine.
+
+Obrazloženje: Okrivljeni je, delujući s namerom da povredi oštećenog, upotrebio flašu kao oružje, što je rezultiralo teškim povredama i smrtnim ishodom. Sud je uzeo u obzir sve okolnosti slučaja, uključujući provokaciju koja je prethodila napadu, ali je smatrao da to ne može umanjiti odgovornost okrivljenog za počinjeno delo.
+
+Pravna pouka: Ova presuda može se pobijati žalbom u roku od 15 dana od dana prijema.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

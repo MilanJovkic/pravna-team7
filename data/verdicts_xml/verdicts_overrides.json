@@ -23,5 +23,67 @@
     "metadata": {},
     "factual_state": {},
     "annotation": {}
+  },
+  "GEN-20260213-155125": {
+    "summary": "Okrivljeni M. M. je proglašen krivim za teško tjelesno povređivanje koje je izazvalo smrt oštećenog N. N. uz upotrebu flaše kao oružja. Izrečena mu je kazna zatvora od dve godine.",
+    "legal_issues": [
+      "teško tjelesno povređivanje",
+      "smrtni ishod"
+    ],
+    "applied_laws": [
+      "Krivični zakonik"
+    ],
+    "applied_articles": [
+      "Član 151"
+    ],
+    "decision": "Optuženi se oglašava krivim",
+    "outcome": "усвојено",
+    "legal_concepts": [
+      "murder",
+      "mitigating_circumstances"
+    ],
+    "legal_reasoning": "Okrivljeni je, delujući s namerom, upotrebio flašu, što je rezultiralo smrtnim ishodom. Provokacija nije umanjila njegovu odgovornost.",
+    "court_name": "Osnovni sud u Podgorici",
+    "date": "2026-02-13",
+    "judges": [
+      "M. J."
+    ],
+    "parties": {
+      "defendant": [
+        "M. M."
+      ]
+    },
+    "factual_state": {
+      "injury_type": [
+        "teska tjelesna povreda"
+      ],
+      "location": [
+        "Podgorica"
+      ],
+      "weapon": [
+        "flasom"
+      ],
+      "weapon_used": [
+        "da"
+      ],
+      "severe_consequence": [
+        "da"
+      ],
+      "death_result": [
+        "da"
+      ],
+      "provocation": [
+        "da"
+      ],
+      "fight_participation": [
+        "ne"
+      ],
+      "fight_consequence": [
+        "none"
+      ],
+      "left_without_help": [
+        "da"
+      ]
+    }
   }
 }

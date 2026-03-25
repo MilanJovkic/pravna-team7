@@ -9,6 +9,7 @@ import json
 import os
 import time
 from collections import deque
+import logging
 
 import requests
 from dotenv import load_dotenv
@@ -26,13 +27,14 @@ from src.verdict_annotation.verdict_exporter import VerdictAkomaExporter
 
 ROOT = Path(__file__).resolve().parents[3]
 VERDICTS_DIR = ROOT / "data" / "verdicts_xml"
+logger = logging.getLogger(__name__)
 
 
 class VerdictTextGenerator:
     """LLM-based generator for verdict texts."""
 
     def __init__(self, api_token: Optional[str] = None, model: str = "gpt-5-nano", provider: str = "openai"):
-        load_dotenv()
+        load_dotenv(ROOT / ".env", override=True)
         self.provider = provider.lower()
         self.offline = False
 
@@ -43,7 +45,7 @@ class VerdictTextGenerator:
                 self.offline = True
         elif self.provider == "openai":
             self.api_token = api_token or os.getenv("OPENAI_API_KEY")
-            self.api_url = "https://api.openai.com/v1/responses"
+            self.api_url = "https://api.openai.com/v1/chat/completions"
             if not self.api_token:
                 self.offline = True
         else:
@@ -139,6 +141,7 @@ class VerdictTextGenerator:
             )
 
         if response.status_code != 200:
+            logger.error("LLM chat completions failed: %s %s", response.status_code, response.text)
             raise RuntimeError(f"LLM API error {response.status_code}: {response.text}")
 
         result = response.json()
@@ -161,31 +164,20 @@ class VerdictTextGenerator:
 
         if self.provider == "openai":
             payload = {
-                "model": self.model,
-                "input": [
+                "model": self.model if not self.model.startswith("gpt-5") else "gpt-4o-mini",
+                "messages": [
                     {
                         "role": "system",
-                        "content": [
-                            {
-                                "type": "input_text",
-                                "text": "Pises sudske presude. Vracas samo tekst presude, bez dodatnog teksta.",
-                            }
-                        ],
+                        "content": "Pises sudske presude. Vracas samo tekst presude, bez dodatnog teksta.",
                     },
                     {
                         "role": "user",
-                        "content": [
-                            {
-                                "type": "input_text",
-                                "text": prompt,
-                            }
-                        ],
+                        "content": prompt,
                     },
                 ],
-                "max_output_tokens": 1200,
+                "temperature": 0.2,
+                "max_tokens": 2000,
             }
-            if self.model.startswith("gpt-5"):
-                payload["service_tier"] = "flex"
         else:
             payload = {
                 "messages": [
@@ -205,23 +197,17 @@ class VerdictTextGenerator:
 
         response = requests.post(self.api_url, headers=headers, json=payload, timeout=90)
         if response.status_code != 200:
+            logger.error("LLM request failed: %s %s", response.status_code, response.text)
             if retry_count < self.max_retries:
                 time.sleep(self.retry_delay)
                 return self.generate(prompt, retry_count + 1)
             raise RuntimeError(f"LLM API error {response.status_code}: {response.text}")
 
         result = response.json()
-        if self.provider == "openai":
-            text = self._extract_openai_text(result)
-            if not text:
-                try:
-                    text = self._generate_via_chat_completions(prompt)
-                except Exception:
-                    text = ""
-        else:
-            text = result["choices"][0]["message"]["content"].strip()
+        text = result.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
 
         if not text:
+            logger.error("LLM returned empty text. Provider=%s, Model=%s", self.provider, self.model)
             if retry_count < self.max_retries:
                 time.sleep(self.retry_delay)
                 return self.generate(prompt, retry_count + 1)

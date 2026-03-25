@@ -44,5 +44,55 @@
 </defeasible_attackers_blocked>
 </Defeasible_Proof>
 </Defeasibly_Proved>
+<Defeasibly_Proved>
+<oid>
+<Ind uri='&proof-export;proof2'>proof2</Ind>
+</oid>
+<Literal>
+<RDF_resource uri='&export;crime_art151_41'/>
+</Literal>
+<Defeasible_Proof>
+<supportive_rule>
+<rule_ref rule='rule4'/>
+</supportive_rule>
+<defeasible_body_grounds>
+<Definitely_Proved>
+<Literal>
+<RDF_resource uri='&lc;case01'/>
+</Literal>
+<Definite_Proof>
+<strict_clause>
+<Fact>
+<RDF_resource uri='&lc;case01'/>
+</Fact>
+</strict_clause>
+</Definite_Proof>
+</Definitely_Proved>
+<Definitely_Proved>
+<Literal>
+<RDF_resource uri='&lc;case01'/>
+</Literal>
+<Definite_Proof>
+<strict_clause>
+<Fact>
+<RDF_resource uri='&lc;case01'/>
+</Fact>
+</strict_clause>
+</Definite_Proof>
+</Definitely_Proved>
+</defeasible_body_grounds>
+<not_strongly_attacked/>
+<defeasible_attackers_blocked>
+<Blocked>
+<Blocked_Defeasible_rule>
+<rule_ref rule='nil'/>
+<Attacked_by_not_Inferior>
+<rule_ref rule='rule4'/>
+</Attacked_by_not_Inferior>
+</Blocked_Defeasible_rule>
+</Blocked>
+</defeasible_attackers_blocked>
+</Defeasible_Proof>
+</Defeasibly_Proved>
 </Grounds>
 </RuleML>

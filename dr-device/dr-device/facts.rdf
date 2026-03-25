@@ -55,12 +55,12 @@
     <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case01">
         <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
         <lc:defendant>Eval Save Probe</lc:defendant>
-        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:injury_type>laka tjelesna povreda</lc:injury_type>
         <lc:location>Podgorica</lc:location>
         <lc:weapon_used>false</lc:weapon_used>
-        <lc:severe_consequence>true</lc:severe_consequence>
+        <lc:severe_consequence>false</lc:severe_consequence>
         <lc:death_result>false</lc:death_result>
-        <lc:negligence>false</lc:negligence>
+        <lc:negligence>true</lc:negligence>
         <lc:provocation>false</lc:provocation>
         <lc:fight_participation>false</lc:fight_participation>
         <lc:fight_consequence>none</lc:fight_consequence>

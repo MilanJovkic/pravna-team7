@@ -18,11 +18,14 @@ BASE_URL = os.getenv("TEST_API_BASE_URL", "http://127.0.0.1:8000/api")
 HEALTH_URL = BASE_URL.replace("/api", "") + "/health"
 
 
-def run_step(name: str, command: list[str], env: dict[str, str]) -> bool:
+def run_step(name: str, command: list[str], env: dict[str, str], extra_env: dict[str, str] | None = None) -> bool:
     print("\n" + "-" * 78)
     print(f"STEP: {name}")
     print("-" * 78)
-    result = subprocess.run(command, cwd=str(ROOT), env=env)
+    step_env = env.copy()
+    if extra_env:
+        step_env.update(extra_env)
+    result = subprocess.run(command, cwd=str(ROOT), env=step_env)
     if result.returncode != 0:
         print(f"[FAIL] {name} (exit={result.returncode})")
         return False
@@ -84,13 +87,31 @@ def main() -> int:
                     "tests.unit.test_rule_norm_traceability",
                     "-v",
                 ],
+                None,
             ),
-            ("API smoke", [PYTHON, "tests/api_smoke.py"]),
-            ("Final protocol evaluation (5 locked verdicts)", [PYTHON, "scripts/evaluate_final_protocol.py"]),
+            ("API smoke", [PYTHON, "tests/api_smoke.py"], None),
+            (
+                "Final protocol evaluation (5 locked verdicts)",
+                [PYTHON, "scripts/evaluate_final_protocol.py"],
+                {
+                    "EVAL_PROTOCOL_PATH": str(ROOT / "tests" / "data" / "final_eval_protocol.json"),
+                    "EVAL_REPORT_JSON": str(ROOT / "output" / "final_eval_report.json"),
+                    "EVAL_REPORT_MD": str(ROOT / "output" / "final_eval_report.md"),
+                },
+            ),
+            (
+                "Adversarial protocol evaluation (5 hard cases)",
+                [PYTHON, "scripts/evaluate_final_protocol.py"],
+                {
+                    "EVAL_PROTOCOL_PATH": str(ROOT / "tests" / "data" / "final_eval_adversarial_protocol.json"),
+                    "EVAL_REPORT_JSON": str(ROOT / "output" / "final_eval_adversarial_report.json"),
+                    "EVAL_REPORT_MD": str(ROOT / "output" / "final_eval_adversarial_report.md"),
+                },
+            ),
         ]
 
-        for name, command in steps:
-            if not run_step(name, command, env):
+        for name, command, extra_env in steps:
+            if not run_step(name, command, env, extra_env=extra_env):
                 return 1
 
         print("\nAll CI validation steps passed.")

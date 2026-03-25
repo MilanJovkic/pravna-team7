@@ -17,10 +17,10 @@ import requests
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROTOCOL_PATH = ROOT / "tests" / "data" / "final_eval_protocol.json"
 OUTPUT_DIR = ROOT / "output"
-REPORT_JSON = OUTPUT_DIR / "final_eval_report.json"
-REPORT_MD = OUTPUT_DIR / "final_eval_report.md"
+DEFAULT_PROTOCOL_PATH = ROOT / "tests" / "data" / "final_eval_protocol.json"
+DEFAULT_REPORT_JSON = OUTPUT_DIR / "final_eval_report.json"
+DEFAULT_REPORT_MD = OUTPUT_DIR / "final_eval_report.md"
 
 
 @dataclass
@@ -31,9 +31,11 @@ class CriterionScore:
 
 
 class ProtocolEvaluator:
-    def __init__(self, protocol: dict[str, Any]) -> None:
+    def __init__(self, protocol: dict[str, Any], report_json: Path, report_md: Path) -> None:
         defaults = protocol["defaults"]
         self.protocol = protocol
+        self.report_json = report_json
+        self.report_md = report_md
         self.base_url = os.getenv(protocol.get("base_url_env", "TEST_API_BASE_URL"), defaults["base_url"]).rstrip("/")
         self.top_k = int(defaults["top_k"])
         self.stability_runs = int(defaults["stability_runs"])
@@ -67,8 +69,8 @@ class ProtocolEvaluator:
         }
 
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-        REPORT_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-        REPORT_MD.write_text(self._to_markdown(report), encoding="utf-8")
+        self.report_json.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+        self.report_md.write_text(self._to_markdown(report), encoding="utf-8")
 
         self._print_console_summary(report)
         return 0 if overall["status"] == "PASS" else 1
@@ -570,8 +572,8 @@ class ProtocolEvaluator:
         print(f"AVERAGE SCORE: {summary['overall_average']} / {max_score}")
         print(f"CASE FAILURES: {summary['case_failures']}")
         print(f"TECH FAILURES: {len(summary['technical_failures'])}")
-        print(f"REPORT JSON: {REPORT_JSON}")
-        print(f"REPORT MD:   {REPORT_MD}")
+        print(f"REPORT JSON: {self.report_json}")
+        print(f"REPORT MD:   {self.report_md}")
 
         if summary["status"] != "PASS":
             print("\nREASONS:")
@@ -581,12 +583,19 @@ class ProtocolEvaluator:
 
 
 def main() -> int:
-    if not PROTOCOL_PATH.exists():
-        print(f"Missing protocol file: {PROTOCOL_PATH}")
+    protocol_path = Path(os.getenv("EVAL_PROTOCOL_PATH", str(DEFAULT_PROTOCOL_PATH)))
+    report_json = Path(os.getenv("EVAL_REPORT_JSON", str(DEFAULT_REPORT_JSON)))
+    report_md = Path(os.getenv("EVAL_REPORT_MD", str(DEFAULT_REPORT_MD)))
+
+    if not protocol_path.exists():
+        print(f"Missing protocol file: {protocol_path}")
         return 2
 
-    protocol = json.loads(PROTOCOL_PATH.read_text(encoding="utf-8"))
-    evaluator = ProtocolEvaluator(protocol)
+    report_json.parent.mkdir(parents=True, exist_ok=True)
+    report_md.parent.mkdir(parents=True, exist_ok=True)
+
+    protocol = json.loads(protocol_path.read_text(encoding="utf-8"))
+    evaluator = ProtocolEvaluator(protocol, report_json=report_json, report_md=report_md)
     return evaluator.run()
 
 

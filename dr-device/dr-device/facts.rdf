@@ -54,16 +54,17 @@
 
     <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case01">
         <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
-        <lc:defendant>Eval Save Probe</lc:defendant>
-        <lc:injury_type>laka tjelesna povreda</lc:injury_type>
-        <lc:location>Podgorica</lc:location>
-        <lc:weapon_used>false</lc:weapon_used>
-        <lc:severe_consequence>false</lc:severe_consequence>
-        <lc:death_result>false</lc:death_result>
+        <lc:defendant>boki</lc:defendant>
+        <lc:injury_type>teske tjelesna</lc:injury_type>
+        <lc:location>derventa</lc:location>
+        <lc:weapon>buzdovan</lc:weapon>
+        <lc:weapon_used>true</lc:weapon_used>
+        <lc:severe_consequence>true</lc:severe_consequence>
+        <lc:death_result>true</lc:death_result>
         <lc:negligence>true</lc:negligence>
-        <lc:provocation>false</lc:provocation>
+        <lc:provocation>true</lc:provocation>
         <lc:fight_participation>false</lc:fight_participation>
-        <lc:fight_consequence>none</lc:fight_consequence>
-        <lc:left_without_help>false</lc:left_without_help>
+        <lc:fight_consequence>umro</lc:fight_consequence>
+        <lc:left_without_help>true</lc:left_without_help>
     </lc:case>
 </rdf:RDF>

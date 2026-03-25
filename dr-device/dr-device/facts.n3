@@ -36,14 +36,15 @@
 <http://ftn.uns.ac.rs/legal-case#left_without_help> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#defendant> "Eval Save Probe" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#injury_type> "laka tjelesna povreda" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#location> "Podgorica" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#weapon_used> "false" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#severe_consequence> "false" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#death_result> "false" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#defendant> "boki" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#injury_type> "teske tjelesna" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#location> "derventa" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#weapon> "buzdovan" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#weapon_used> "true" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#severe_consequence> "true" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#death_result> "true" .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#negligence> "true" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#provocation> "false" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#provocation> "true" .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#fight_participation> "false" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#fight_consequence> "none" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#left_without_help> "false" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#fight_consequence> "umro" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#left_without_help> "true" .

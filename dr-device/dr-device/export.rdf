@@ -106,10 +106,4 @@
      <rdfs:domain rdf:resource='&export;crime_art155_1'/>
 </rdf:Property>
 
-<export:crime_art152_1 rdf:about='&export;crime_art152_11'>
-     <export:defendant>Eval Save Probe</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
-</export:crime_art152_1>
-
 </rdf:RDF>

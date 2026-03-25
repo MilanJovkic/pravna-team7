@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 from datetime import datetime
-import os
 
 import psycopg2
 
@@ -12,6 +11,7 @@ from backend.app.services.cbr_normalization import (
     normalize_injury_type,
     normalize_text,
 )
+from backend.app.services.db_config import get_db_config
 from src.verdict_annotation.outcome_normalizer import normalize_outcome
 
 
@@ -26,7 +26,7 @@ class CaseService:
         verdict_type: str | None,
         sanction: str | None,
     ) -> dict:
-        config = self._db_config()
+        config = get_db_config()
         canonical_outcome = normalize_outcome(outcome)
 
         normalized = CaseFacts(
@@ -44,70 +44,65 @@ class CaseService:
             left_without_help=facts.left_without_help,
         )
 
-        conn = psycopg2.connect(**config)
-        cursor = conn.cursor()
+        with psycopg2.connect(**config) as conn:
+            with conn.cursor() as cursor:
+                existing = self._find_existing_case(
+                    cursor=cursor,
+                    facts=normalized,
+                    outcome=canonical_outcome,
+                    verdict_type=verdict_type,
+                    sanction=sanction,
+                )
+                if existing:
+                    existing_id, existing_case_number = existing
+                    return {
+                        "id": existing_id,
+                        "case_number": existing_case_number,
+                        "reused_existing": True,
+                        "version": self._extract_version(existing_case_number),
+                    }
 
-        existing = self._find_existing_case(
-            cursor=cursor,
-            facts=normalized,
-            outcome=canonical_outcome,
-            verdict_type=verdict_type,
-            sanction=sanction,
-        )
-        if existing:
-            existing_id, existing_case_number = existing
-            cursor.close()
-            conn.close()
-            return {
-                "id": existing_id,
-                "case_number": existing_case_number,
-                "reused_existing": True,
-                "version": self._extract_version(existing_case_number),
-            }
+                version = self._next_version(cursor=cursor, facts=normalized)
+                if case_number:
+                    case_number = case_number.strip()
+                if not case_number:
+                    case_number = self._generate_case_number(version=version)
+                elif version > 1 and "-v" not in case_number.lower():
+                    case_number = f"{case_number}-v{version}"
 
-        version = self._next_version(cursor=cursor, facts=normalized)
-        if case_number:
-            case_number = case_number.strip()
-        if not case_number:
-            case_number = self._generate_case_number(version=version)
-        elif version > 1 and "-v" not in case_number.lower():
-            case_number = f"{case_number}-v{version}"
+                insert_query = """
+                    INSERT INTO cases (
+                        case_number, injury_type, location, weapon, weapon_used,
+                        severe_consequence, death_result, negligence, provocation,
+                        fight_participation, fight_consequence, left_without_help,
+                        outcome, verdict_type, sanction
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    RETURNING id, case_number
+                """
 
-        insert_query = """
-            INSERT INTO cases (
-                case_number, injury_type, location, weapon, weapon_used,
-                severe_consequence, death_result, negligence, provocation,
-                fight_participation, fight_consequence, left_without_help,
-                outcome, verdict_type, sanction
-            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-            RETURNING id, case_number
-        """
+                cursor.execute(
+                    insert_query,
+                    (
+                        case_number,
+                        normalized.injury_type,
+                        normalized.location,
+                        normalized.weapon,
+                        normalized.weapon_used,
+                        normalized.severe_consequence,
+                        normalized.death_result,
+                        normalized.negligence,
+                        normalized.provocation,
+                        normalized.fight_participation,
+                        normalized.fight_consequence,
+                        normalized.left_without_help,
+                        canonical_outcome,
+                        verdict_type,
+                        sanction,
+                    ),
+                )
 
-        cursor.execute(
-            insert_query,
-            (
-                case_number,
-                normalized.injury_type,
-                normalized.location,
-                normalized.weapon,
-                normalized.weapon_used,
-                normalized.severe_consequence,
-                normalized.death_result,
-                normalized.negligence,
-                normalized.provocation,
-                normalized.fight_participation,
-                normalized.fight_consequence,
-                normalized.left_without_help,
-                canonical_outcome,
-                verdict_type,
-                sanction,
-            ),
-        )
-
-        new_id, new_case_number = cursor.fetchone()
-        conn.commit()
-        cursor.close()
-        conn.close()
+                new_id, new_case_number = cursor.fetchone()
+            conn.commit()
 
         return {
             "id": new_id,
@@ -221,11 +216,3 @@ class CaseService:
             return int(suffix)
         return 1
 
-    def _db_config(self) -> dict:
-        return {
-            "host": os.getenv("DB_HOST") or os.getenv("POSTGRES_HOST", "127.0.0.1"),
-            "port": int(os.getenv("DB_PORT") or os.getenv("POSTGRES_PORT", "5432")),
-            "database": os.getenv("DB_NAME") or os.getenv("POSTGRES_DB", "pravna_cbr"),
-            "user": os.getenv("DB_USER") or os.getenv("POSTGRES_USER", "pravna_user"),
-            "password": os.getenv("DB_PASSWORD") or os.getenv("POSTGRES_PASSWORD", "pravna_pass"),
-        }

@@ -22,6 +22,10 @@ DEFAULT_PROTOCOL_PATH = ROOT / "tests" / "data" / "final_eval_protocol.json"
 DEFAULT_REPORT_JSON = OUTPUT_DIR / "final_eval_report.json"
 DEFAULT_REPORT_MD = OUTPUT_DIR / "final_eval_report.md"
 
+FLAG_CONTRADICTION = "contradiction_in_explanation"
+FLAG_NONEXISTENT_FACTS = "nonexistent_facts_reference"
+FLAG_GENERIC = "generic_or_useless_answer"
+
 
 @dataclass
 class CriterionScore:
@@ -121,17 +125,7 @@ class ProtocolEvaluator:
                 errors.append(f"run {run_idx + 1}: {exc}")
 
         if errors:
-            return {
-                "case_id": case_id,
-                "case_number": case["case_number"],
-                "status": "FAIL",
-                "errors": errors,
-                "red_flags": ["generic_or_useless_answer"],
-                "criteria": [],
-                "total_score": 0,
-                "max_score": 30,
-                "stability": "unstable",
-            }
+            return self._case_error_result(case_id=case_id, case_number=case["case_number"], errors=errors)
 
         stable, fingerprints = self._check_stability(responses)
         response = responses[0]
@@ -285,26 +279,42 @@ class ProtocolEvaluator:
             and not applied_norms
             and not applied_articles
         ):
-            flags.append("contradiction_in_explanation")
+            flags.append(FLAG_CONTRADICTION)
 
         top_match = cbr_matches[0] if cbr_matches else {}
         top_similarity = float(top_match.get("similarity") or 0.0)
         if not top_match.get("case_number") or top_similarity < self.min_similarity:
-            flags.append("nonexistent_facts_reference")
+            flags.append(FLAG_NONEXISTENT_FACTS)
 
         verdict = (response.get("suggested_verdict") or "").strip().lower()
         sanction = (response.get("suggested_sanction") or "").strip().lower()
-        if verdict in {"usvojeno", "osudjen"} and top_similarity < 0.65:
-            flags.append("contradiction_in_explanation")
-        if verdict in {"usvojeno", "osudjen"} and sanction == "kazna zatvora (predlog)":
-            flags.append("generic_or_useless_answer")
+        if self._is_positive_verdict(verdict) and top_similarity < 0.65:
+            flags.append(FLAG_CONTRADICTION)
+        if self._is_positive_verdict(verdict) and sanction == "kazna zatvora (predlog)":
+            flags.append(FLAG_GENERIC)
 
         empty_explanation = not applied_norms and not law_texts and not cbr_matches
         empty_advice = not (response.get("suggested_verdict") or response.get("suggested_sanction"))
         if empty_explanation or empty_advice:
-            flags.append("generic_or_useless_answer")
+            flags.append(FLAG_GENERIC)
 
         return sorted(set(flags))
+
+    def _is_positive_verdict(self, verdict_value: str) -> bool:
+        return verdict_value in {"usvojeno", "osudjen"}
+
+    def _case_error_result(self, case_id: str, case_number: str, errors: list[str]) -> dict[str, Any]:
+        return {
+            "case_id": case_id,
+            "case_number": case_number,
+            "status": "FAIL",
+            "errors": errors,
+            "red_flags": [FLAG_GENERIC],
+            "criteria": [],
+            "total_score": 0,
+            "max_score": 30,
+            "stability": "unstable",
+        }
 
     def _score_case(self, response: dict[str, Any], case: dict[str, Any]) -> list[CriterionScore]:
         rule = response.get("rule_reasoning", {})

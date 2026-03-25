@@ -16,22 +16,20 @@ from backend.app.services.cbr_normalization import (
     normalize_fight_consequence,
     normalize_injury_type,
     normalize_text,
+    bool_to_text,
     parse_bool,
 )
+from backend.app.services.db_config import get_db_config
 from src.verdict_annotation.outcome_normalizer import normalize_outcome
 
 
 ROOT = Path(__file__).resolve().parents[3]
 CBR_DIR = ROOT / "cbr-jcolibri"
 JAR_PATH = CBR_DIR / "target" / "pravna-cbr-0.0.1-SNAPSHOT.jar"
-CP_PATH = CBR_DIR / "cp.txt"
 
 
 class CbrService:
     """Service that executes jColibri and parses JSON output."""
-
-    def __init__(self) -> None:
-        self._cases_ready = False
 
     def query(self, facts: CaseFacts, top_k: int) -> CbrResult:
         self._ensure_case_base()
@@ -59,12 +57,7 @@ class CbrService:
         self._append_arg(args, "fight_consequence", normalize_fight_consequence(facts.fight_consequence))
         self._append_arg(args, "left_without_help", self._bool_str(facts.left_without_help))
 
-        env = os.environ.copy()
-        env.setdefault("DB_HOST", os.getenv("POSTGRES_HOST", "127.0.0.1"))
-        env.setdefault("DB_PORT", os.getenv("POSTGRES_PORT", "5432"))
-        env.setdefault("DB_NAME", os.getenv("POSTGRES_DB", "pravna_cbr"))
-        env.setdefault("DB_USER", os.getenv("POSTGRES_USER", "pravna_user"))
-        env.setdefault("DB_PASSWORD", os.getenv("POSTGRES_PASSWORD", "pravna_pass"))
+        env = self._cbr_env()
 
         try:
             result = subprocess.run(
@@ -109,27 +102,16 @@ class CbrService:
         # ALWAYS reload from database to pick up newly saved cases
         # (no caching of case base state)
         logger = logging.getLogger(__name__)
-        config = self._db_config()
+        config = get_db_config()
         try:
-            conn = psycopg2.connect(**config)
-        except Exception:
-            logger.exception("CBR database connection failed")
-            return
-
-        try:
-            cursor = conn.cursor()
-            cursor.execute("SELECT COUNT(*) FROM cases")
-            count = cursor.fetchone()[0]
-            if count == 0:
-                self._import_cases(conn)
-            cursor.close()
-            conn.close()
+            with psycopg2.connect(**config) as conn:
+                with conn.cursor() as cursor:
+                    cursor.execute("SELECT COUNT(*) FROM cases")
+                    count = cursor.fetchone()[0]
+                    if count == 0:
+                        self._import_cases(conn)
         except Exception:
             logger.exception("CBR database initialization failed")
-            try:
-                conn.close()
-            except Exception:
-                pass
 
     def _import_cases(self, conn) -> None:
         xml_dir = ROOT / "data" / "verdicts_xml"
@@ -162,18 +144,17 @@ class CbrService:
         if not records:
             return
 
-        cursor = conn.cursor()
-        cursor.execute("TRUNCATE TABLE cases RESTART IDENTITY CASCADE")
-        insert_query = """
-            INSERT INTO cases (
-                case_number, injury_type, location, weapon, weapon_used,
-                severe_consequence, death_result, negligence, provocation,
-                fight_participation, fight_consequence, left_without_help, outcome
-            ) VALUES %s
-        """
-        execute_values(cursor, insert_query, records)
+        with conn.cursor() as cursor:
+            cursor.execute("TRUNCATE TABLE cases RESTART IDENTITY CASCADE")
+            insert_query = """
+                INSERT INTO cases (
+                    case_number, injury_type, location, weapon, weapon_used,
+                    severe_consequence, death_result, negligence, provocation,
+                    fight_participation, fight_consequence, left_without_help, outcome
+                ) VALUES %s
+            """
+            execute_values(cursor, insert_query, records)
         conn.commit()
-        cursor.close()
 
     def _extract_facts(self, xml_path: Path) -> dict:
         tree = ET.parse(xml_path)
@@ -198,14 +179,20 @@ class CbrService:
 
         return facts
 
-    def _db_config(self) -> dict:
-        return {
-            "host": os.getenv("DB_HOST") or os.getenv("POSTGRES_HOST", "127.0.0.1"),
-            "port": int(os.getenv("DB_PORT") or os.getenv("POSTGRES_PORT", "5432")),
-            "database": os.getenv("DB_NAME") or os.getenv("POSTGRES_DB", "pravna_cbr"),
-            "user": os.getenv("DB_USER") or os.getenv("POSTGRES_USER", "pravna_user"),
-            "password": os.getenv("DB_PASSWORD") or os.getenv("POSTGRES_PASSWORD", "pravna_pass"),
+    def _cbr_env(self) -> dict:
+        config = get_db_config()
+        env = {
+            "DB_HOST": str(config["host"]),
+            "DB_PORT": str(config["port"]),
+            "DB_NAME": str(config["database"]),
+            "DB_USER": str(config["user"]),
+            "DB_PASSWORD": str(config["password"]),
+            "JAVA_TOOL_OPTIONS": "-Xms64m -Xmx256m",
         }
+        result = os.environ.copy()
+        for key, value in env.items():
+            result.setdefault(key, value)
+        return result
 
     def _append_arg(self, args: list[str], key: str, value: str | None) -> None:
         if value is None:
@@ -215,9 +202,7 @@ class CbrService:
         args.append(f"{key}={value}")
 
     def _bool_str(self, value: bool | None) -> str | None:
-        if value is None:
-            return None
-        return "true" if value else "false"
+        return bool_to_text(value)
 
     def _extract_json(self, output: str) -> str:
         start = output.find("{")

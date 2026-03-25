@@ -6,6 +6,7 @@ import subprocess
 import xml.etree.ElementTree as ET
 
 from backend.app.models.schemas import CaseFacts, RuleReasoningResult
+from backend.app.services.cbr_normalization import bool_to_text, normalize_ascii
 from backend.app.services.rule_artifact_validator import validate_rule_artifacts
 
 
@@ -13,20 +14,6 @@ ROOT = Path(__file__).resolve().parents[3]
 DR_DEVICE_DIR = ROOT / "dr-device" / "dr-device"
 FACTS_PATH = DR_DEVICE_DIR / "facts.rdf"
 EXPORT_PATH = DR_DEVICE_DIR / "export.rdf"
-
-ASCII_MAP = {
-    "č": "c",
-    "ć": "c",
-    "š": "s",
-    "ž": "z",
-    "đ": "dj",
-    "Č": "C",
-    "Ć": "C",
-    "Š": "S",
-    "Ž": "Z",
-    "Đ": "Dj",
-}
-
 
 class RuleReasoningService:
     """Service that runs dr-device reasoning on provided facts."""
@@ -42,9 +29,8 @@ class RuleReasoningService:
         return self._parse_export(facts, strict_mode)
 
     def _normalize(self, value: str) -> str:
-        for src, dst in ASCII_MAP.items():
-            value = value.replace(src, dst)
-        return value
+        normalized = normalize_ascii(value)
+        return normalized or ""
 
     def _write_facts(self, facts: CaseFacts) -> None:
         defendant = (facts.defendant or "Unknown").strip()
@@ -151,7 +137,7 @@ class RuleReasoningService:
                 status="ok",
             )
 
-        _ = facts
+        _ = facts  # kept for signature compatibility with existing tests/callers
         return RuleReasoningResult(
             applied_norms=[],
             proofs=[],
@@ -169,7 +155,5 @@ class RuleReasoningService:
         )
 
     def _bool_value(self, value: bool | None) -> str | None:
-        if value is None:
-            return None
-        return "true" if value else "false"
+        return bool_to_text(value)
 

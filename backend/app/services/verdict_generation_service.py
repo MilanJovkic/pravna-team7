@@ -6,12 +6,10 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 import json
-import os
 import time
 from collections import deque
 
 import requests
-from dotenv import load_dotenv
 
 from backend.app.models.schemas import (
     CaseFacts,
@@ -23,6 +21,7 @@ from src.verdict_annotation.verdict_parser import VerdictMetadata
 from src.verdict_annotation.verdict_annotator import VerdictAnnotation
 from src.verdict_annotation.verdict_exporter import VerdictAkomaExporter
 from src.verdict_annotation.outcome_normalizer import normalize_outcome
+from src.config.llm_config import get_llm_config, is_gpt5_model
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -32,35 +31,22 @@ VERDICTS_DIR = ROOT / "data" / "verdicts_xml"
 class VerdictTextGenerator:
     """LLM-based generator for verdict texts."""
 
-    def __init__(self, api_token: Optional[str] = None, model: str = "gpt-5-nano", provider: str = "openai"):
-        load_dotenv()
-        self.provider = provider.lower()
-        self.offline = False
-
-        if self.provider == "openrouter":
-            self.api_token = api_token or os.getenv("OPENROUTER_API_KEY")
-            self.api_url = "https://openrouter.ai/api/v1/chat/completions"
-            if not self.api_token:
-                self.offline = True
-        elif self.provider == "openai":
-            self.api_token = api_token or os.getenv("OPENAI_API_KEY")
-            self.api_url = "https://api.openai.com/v1/responses"
-            if not self.api_token:
-                self.offline = True
-        else:
-            self.api_token = api_token or os.getenv("GITHUB_TOKEN")
-            self.api_url = "https://models.inference.ai.azure.com/chat/completions"
-            if not self.api_token:
-                self.offline = True
-
-        self.model = model
+    def __init__(self, api_token: Optional[str] = None, model: Optional[str] = None, provider: Optional[str] = None):
+        # Use centralized config
+        config = get_llm_config(model=model, provider=provider, api_token=api_token)
+        
+        self.provider = config.provider
+        self.api_token = config.api_token
+        self.api_url = config.api_url
+        self.offline = config.is_offline
+        self.model = config.model
         self.max_retries = 0
-        self.retry_delay = 2
+        self.retry_delay = config.retry_delay
         self.max_requests_per_minute = 8
         self.request_timestamps = deque()
         self.min_delay_between_requests = 0.0
-        self.http_timeout = float(os.getenv("VERDICT_LLM_HTTP_TIMEOUT_SECONDS", "45"))
-        self.openai_service_tier = os.getenv("VERDICT_OPENAI_SERVICE_TIER", "").strip()
+        self.http_timeout = config.http_timeout
+        self.openai_service_tier = config.openai_service_tier
 
     def _wait_for_rate_limit(self) -> None:
         now = datetime.now()
@@ -83,74 +69,6 @@ class VerdictTextGenerator:
 
         self.request_timestamps.append(datetime.now())
 
-    def _extract_openai_text(self, result: dict) -> str:
-        raw_content = ""
-        for output_item in result.get("output", []):
-            for content_item in output_item.get("content", []):
-                text_value = content_item.get("text") or content_item.get("output_text")
-                if text_value:
-                    raw_content = text_value.strip()
-                    break
-            if raw_content:
-                break
-        if not raw_content:
-            raw_content = (result.get("output_text") or "").strip()
-        if not raw_content:
-            choices = result.get("choices") or []
-            if choices:
-                message = choices[0].get("message") or {}
-                content = message.get("content") or choices[0].get("text")
-                if content:
-                    raw_content = str(content).strip()
-        return raw_content
-
-    def _generate_via_chat_completions(self, prompt: str) -> str:
-        payload = {
-            "model": self.model,
-            "messages": [
-                {
-                    "role": "system",
-                    "content": "Pises sudske presude. Vracas samo tekst presude, bez dodatnog teksta.",
-                },
-                {
-                    "role": "user",
-                    "content": prompt,
-                },
-            ],
-            "temperature": 0.2,
-        }
-        if self.model.startswith("gpt-5"):
-            payload["max_completion_tokens"] = 2000
-        else:
-            payload["max_tokens"] = 2000
-        response = requests.post(
-            "https://api.openai.com/v1/chat/completions",
-            headers={
-                "Content-Type": "application/json",
-                "Authorization": f"Bearer {self.api_token}",
-            },
-            json=payload,
-            timeout=self.http_timeout,
-        )
-        if response.status_code != 200 and self.model.startswith("gpt-5"):
-            payload["model"] = "gpt-4o-mini"
-            response = requests.post(
-                "https://api.openai.com/v1/chat/completions",
-                headers={
-                    "Content-Type": "application/json",
-                    "Authorization": f"Bearer {self.api_token}",
-                },
-                json=payload,
-                timeout=self.http_timeout,
-            )
-
-        if response.status_code != 200:
-            raise RuntimeError(f"LLM API error {response.status_code}: {response.text}")
-
-        result = response.json()
-        text = (result.get("choices") or [{}])[0].get("message", {}).get("content", "")
-        return text.strip()
-
     def generate(self, prompt: str, retry_count: int = 0) -> str:
         """Generates verdict text from a prompt."""
         if self.offline:
@@ -168,28 +86,22 @@ class VerdictTextGenerator:
         if self.provider == "openai":
             payload = {
                 "model": self.model,
-                "input": [
+                "messages": [
                     {
                         "role": "system",
-                        "content": [
-                            {
-                                "type": "input_text",
-                                "text": "Pises sudske presude. Vracas samo tekst presude, bez dodatnog teksta.",
-                            }
-                        ],
+                        "content": "Pises sudske presude. Vracas samo tekst presude, bez dodatnog teksta.",
                     },
                     {
                         "role": "user",
-                        "content": [
-                            {
-                                "type": "input_text",
-                                "text": prompt,
-                            }
-                        ],
+                        "content": prompt,
                     },
                 ],
-                "max_output_tokens": 1200,
+                "temperature": 0.2,
             }
+            if is_gpt5_model(self.model):
+                payload["max_completion_tokens"] = 1200
+            else:
+                payload["max_tokens"] = 1200
             if self.openai_service_tier:
                 payload["service_tier"] = self.openai_service_tier
         else:
@@ -217,15 +129,8 @@ class VerdictTextGenerator:
             raise RuntimeError(f"LLM API error {response.status_code}: {response.text}")
 
         result = response.json()
-        if self.provider == "openai":
-            text = self._extract_openai_text(result)
-            if not text:
-                try:
-                    text = self._generate_via_chat_completions(prompt)
-                except Exception:
-                    text = ""
-        else:
-            text = result["choices"][0]["message"]["content"].strip()
+        # All providers now use Chat Completions format
+        text = (result.get("choices") or [{}])[0].get("message", {}).get("content", "").strip()
 
         if not text:
             if retry_count < self.max_retries:
@@ -240,8 +145,7 @@ class VerdictGenerationService:
     """Creates a verdict text, annotates it, and exports Akoma Ntoso XML."""
 
     def __init__(self, provider: Optional[str] = None, model: Optional[str] = None) -> None:
-        provider = provider or os.getenv("VERDICT_LLM_PROVIDER", "openai")
-        model = model or os.getenv("VERDICT_LLM_MODEL", "gpt-5-nano")
+        # Use centralized config - no need for manual env lookups
         self.generator = VerdictTextGenerator(model=model, provider=provider)
         self.exporter = VerdictAkomaExporter(enable_db_insert=True)
 

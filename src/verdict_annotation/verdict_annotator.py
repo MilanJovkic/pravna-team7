@@ -1,6 +1,5 @@
 """LLM-based semantic annotation for court verdicts."""
 import json
-import os
 import time
 from collections import deque
 from dataclasses import dataclass
@@ -8,7 +7,8 @@ from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional
 
 import requests
-from dotenv import load_dotenv
+
+from src.config.llm_config import get_llm_config, DEFAULT_MODEL, is_gpt5_model
 
 
 @dataclass
@@ -36,36 +36,23 @@ class VerdictAnnotation:
 class VerdictAnnotator:
     """Annotates court verdicts using LLM."""
 
-    def __init__(self, api_token: Optional[str] = None, model: str = "gpt-5-nano", provider: str = "openai"):
-        load_dotenv()
-        self.provider = provider.lower()
-        self.offline = False
-
-        if self.provider == "openrouter":
-            self.api_token = api_token or os.getenv("OPENROUTER_API_KEY")
-            self.api_url = "https://openrouter.ai/api/v1/chat/completions"
-            if not self.api_token:
-                self.offline = True
-        elif self.provider == "openai":
-            self.api_token = api_token or os.getenv("OPENAI_API_KEY")
-            self.api_url = "https://api.openai.com/v1/responses"
-            self.openai_chat_url = "https://api.openai.com/v1/chat/completions"
-            if not self.api_token:
-                self.offline = True
-        else:
-            self.api_token = api_token or os.getenv("GITHUB_TOKEN")
-            self.api_url = "https://models.inference.ai.azure.com/chat/completions"
-            if not self.api_token:
-                self.offline = True
-
-        self.model = model
-        self.max_retries = 3
-        self.retry_delay = 2
-        self.max_requests_per_minute = 10
+    def __init__(self, api_token: Optional[str] = None, model: Optional[str] = None, provider: Optional[str] = None):
+        # Use centralized config
+        config = get_llm_config(model=model, provider=provider, api_token=api_token)
+        
+        self.provider = config.provider
+        self.api_token = config.api_token
+        self.api_url = config.api_url
+        self.openai_chat_url = "https://api.openai.com/v1/chat/completions"
+        self.offline = config.is_offline
+        self.model = config.model
+        self.max_retries = config.max_retries
+        self.retry_delay = config.retry_delay
+        self.max_requests_per_minute = config.max_requests_per_minute
         self.request_timestamps = deque()
-        self.min_delay_between_requests = 6.0
-        self.http_timeout = float(os.getenv("VERDICT_ANNOTATION_HTTP_TIMEOUT_SECONDS", "15"))
-        self.openai_service_tier = os.getenv("VERDICT_OPENAI_SERVICE_TIER", "").strip()
+        self.min_delay_between_requests = config.min_delay_between_requests
+        self.http_timeout = config.http_timeout
+        self.openai_service_tier = config.openai_service_tier
 
     def _wait_for_rate_limit(self):
         now = datetime.now()
@@ -136,7 +123,7 @@ class VerdictAnnotator:
                 "temperature": 0.1,
                 "response_format": {"type": "json_object"},
             }
-            if self.model.startswith("gpt-5"):
+            if is_gpt5_model(self.model):
                 payload["max_completion_tokens"] = 1400
             else:
                 payload["max_tokens"] = 1400
@@ -164,7 +151,7 @@ class VerdictAnnotator:
             response = requests.post(request_url, headers=headers, json=payload, timeout=self.http_timeout)
 
             if response.status_code != 200:
-                print(f"⚠ LLM API error {response.status_code}: {response.text}")
+                print(f"[!] LLM API error {response.status_code}: {response.text[:200]}")
                 if retry_count < self.max_retries:
                     time.sleep(self.retry_delay)
                     return self.annotate_verdict(verdict_text, case_number, retry_count + 1)
@@ -174,13 +161,14 @@ class VerdictAnnotator:
             if self.provider == "openai":
                 raw_content = (result.get("choices") or [{}])[0].get("message", {}).get("content", "").strip()
                 if not raw_content:
-                    print(f"⚠ Prazan OpenAI odgovor: {json.dumps(result)[:400]}...")
+                    print(f"[!] Prazan OpenAI odgovor: {json.dumps(result)[:400]}...")
             else:
                 raw_content = result['choices'][0]['message']['content'].strip()
             json_content = self._extract_json(raw_content)
 
             if not json_content:
-                print(f"⚠ Nevalidan JSON odgovor za {case_number}")
+                safe_case = case_number.encode('ascii', 'replace').decode('ascii') if case_number else 'unknown'
+                print(f"[!] Nevalidan JSON odgovor za {safe_case}")
                 if raw_content:
                     print(f"  Raw: {raw_content[:200]}...")
                 if retry_count < self.max_retries:
@@ -193,7 +181,8 @@ class VerdictAnnotator:
             return annotation
 
         except Exception as e:
-            print(f"⚠ Greška pri anotaciji {case_number}: {e}")
+            safe_case = case_number.encode('ascii', 'replace').decode('ascii') if case_number else 'unknown'
+            print(f"[!] Greska pri anotaciji {safe_case}: {e}")
             if retry_count < self.max_retries:
                 time.sleep(self.retry_delay)
                 return self.annotate_verdict(verdict_text, case_number, retry_count + 1)
@@ -264,12 +253,13 @@ class VerdictAnnotator:
         print(f"  Procenjeno vreme: {total * self.min_delay_between_requests / 60:.1f} minuta\n")
 
         for idx, (case_number, verdict_text) in enumerate(verdicts.items(), 1):
-            print(f"[{idx}/{total}] Anotiram: {case_number}")
+            safe_case = case_number.encode('ascii', 'replace').decode('ascii')
+            print(f"[{idx}/{total}] Anotiram: {safe_case}")
             annotation = self.annotate_verdict(verdict_text, case_number)
             if annotation:
                 annotations[case_number] = annotation
-                print(f"  ✓ Uspešno: {len(annotation.legal_issues)} pravnih pitanja")
+                print(f"  [OK] Uspesno: {len(annotation.legal_issues)} pravnih pitanja")
             else:
-                print(f"  ✗ Neuspešno")
+                print(f"  [X] Neuspesno")
 
         return annotations

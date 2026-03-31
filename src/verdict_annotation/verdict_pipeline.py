@@ -2,13 +2,26 @@
 from pathlib import Path
 import json
 import re
+import sys
+import io
+import os
 from typing import Dict, Optional
+
+# Fix Windows console encoding for Cyrillic/Latin characters
+# Only wrap if not already wrapped and stdout is a TTY
+if sys.platform == 'win32' and hasattr(sys.stdout, 'buffer') and not isinstance(sys.stdout, io.TextIOWrapper):
+    try:
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
+    except Exception:
+        pass
 
 from .txt_extractor import TextExtractor
 from .verdict_parser import VerdictParser, VerdictMetadata
 from .verdict_annotator import VerdictAnnotator, VerdictAnnotation
 from .extraction_quality import assess_annotation_quality, DEFAULT_CONFIDENCE_THRESHOLD
 from .verdict_exporter import VerdictAkomaExporter
+from src.config.llm_config import DEFAULT_MODEL
 
 
 class VerdictAnnotationPipeline:
@@ -20,8 +33,8 @@ class VerdictAnnotationPipeline:
         output_xml_dir: str,
         output_json: Optional[str] = None,
         api_token: Optional[str] = None,
-        model: str = "gpt-5-nano",
-        provider: str = "openai",
+        model: Optional[str] = None,
+        provider: Optional[str] = None,
         limit: Optional[int] = None,
         overrides_file: Optional[str] = None,
         enable_llm: bool = True
@@ -33,6 +46,8 @@ class VerdictAnnotationPipeline:
         self.overrides_file = overrides_file
         self.enable_llm = enable_llm
         self.confidence_threshold = DEFAULT_CONFIDENCE_THRESHOLD
+        # Use passed model or centralized default
+        display_model = model or DEFAULT_MODEL
 
         self.text_extractor = TextExtractor()
         self.parser = VerdictParser()
@@ -46,8 +61,8 @@ class VerdictAnnotationPipeline:
         print("=" * 70)
         print(f"TXT folder:  {txt_folder}")
         print(f"XML output:  {output_xml_dir}")
-        print(f"Provider:    {provider if self.enable_llm else 'disabled'}")
-        print(f"Model:       {model if self.enable_llm else 'n/a'}")
+        print(f"Provider:    {provider or 'openai' if self.enable_llm else 'disabled'}")
+        print(f"Model:       {display_model if self.enable_llm else 'n/a'}")
         if limit:
             print(f"Limit:       {limit} presuda (test mode)")
         print("=" * 70)
@@ -55,25 +70,25 @@ class VerdictAnnotationPipeline:
     def run(self) -> bool:
         """Executes the full verdict annotation pipeline."""
         try:
-            print("\n[FAZA 1/4] Učitavanje teksta iz TXT fajlova...")
+            print("\n[FAZA 1/4] Ucitavanje teksta iz TXT fajlova...")
             texts = self._extract_texts()
 
             if not texts:
-                print("✗ Greška: Nema ekstraktovanih tekstova.")
+                print("[X] Greska: Nema ekstraktovanih tekstova.")
                 return False
 
             print("\n[FAZA 2/4] Parsiranje strukture presuda...")
             verdicts = self._parse_verdicts(texts)
 
             if not verdicts:
-                print("✗ Greška: Nijedna presuda nije parsovana.")
+                print("[X] Greska: Nijedna presuda nije parsovana.")
                 return False
 
             if self.enable_llm:
-                print("\n[FAZA 3/4] LLM semantička anotacija presuda...")
+                print("\n[FAZA 3/4] LLM semanticka anotacija presuda...")
                 annotations = self._annotate_verdicts(verdicts)
             else:
-                print("\n[FAZA 3/4] LLM semantička anotacija presuda... (preskočeno)")
+                print("\n[FAZA 3/4] LLM semanticka anotacija presuda... (preskoceno)")
                 annotations = {}
 
             self._merge_llm_metadata(verdicts, annotations)
@@ -87,16 +102,16 @@ class VerdictAnnotationPipeline:
             self._print_statistics(verdicts, annotations)
 
             print("\n" + "=" * 70)
-            print("✓ PIPELINE ZAVRŠEN USPEŠNO")
+            print("[OK] PIPELINE ZAVRSEN USPESNO")
             print("=" * 70)
             return True
 
         except KeyboardInterrupt:
-            print("\n\n⚠ Pipeline prekinut (Ctrl+C)")
+            print("\n\n[!] Pipeline prekinut (Ctrl+C)")
             return False
 
         except Exception as exc:
-            print(f"\n✗ KRITIČNA GREŠKA: {exc}")
+            print(f"\n[X] KRITICNA GRESKA: {exc}")
             import traceback
             traceback.print_exc()
             return False
@@ -109,9 +124,9 @@ class VerdictAnnotationPipeline:
         if self.limit:
             items = list(texts.items())[:self.limit]
             texts = dict(items)
-            print(f"\n  → Procesiraće se {len(texts)} presuda (limit primenjen)")
+            print(f"\n  -> Procesira se {len(texts)} presuda (limit primenjen)")
         
-        print(f"\n  ✓ Učitano {len(texts)} tekstova")
+        print(f"\n  [OK] Ucitano {len(texts)} tekstova")
         return texts
 
     def _parse_verdicts(self, texts: Dict[str, str]) -> Dict[str, VerdictMetadata]:
@@ -119,7 +134,7 @@ class VerdictAnnotationPipeline:
         verdicts = self.parser.parse_batch(texts)
         
         success_count = sum(1 for v in verdicts.values() if v.case_number)
-        print(f"\n  ✓ Parsovano {success_count}/{len(verdicts)} presuda")
+        print(f"\n  [OK] Parsovano {success_count}/{len(verdicts)} presuda")
         return verdicts
 
     def _annotate_verdicts(self, verdicts: Dict[str, VerdictMetadata]) -> Dict[str, VerdictAnnotation]:
@@ -136,7 +151,7 @@ class VerdictAnnotationPipeline:
         
         if texts_for_annotation:
             success_rate = len(annotations) / len(texts_for_annotation) * 100
-            print(f"\n  ✓ Anotirano: {len(annotations)}/{len(texts_for_annotation)} ({success_rate:.1f}% uspešnosti)")
+            print(f"\n  [OK] Anotirano: {len(annotations)}/{len(texts_for_annotation)} ({success_rate:.1f}% uspesnosti)")
         
         return annotations
 
@@ -405,7 +420,7 @@ class VerdictAnnotationPipeline:
             with open(overrides_path, "r", encoding="utf-8") as f:
                 overrides = json.load(f)
         except Exception as exc:
-            print(f"⚠ Ne mogu da učitam overrides: {exc}")
+            print(f"[!] Ne mogu da ucitam overrides: {exc}")
             return
 
         for case_id, override in overrides.items():
@@ -447,7 +462,7 @@ class VerdictAnnotationPipeline:
     ) -> None:
         """Phase 4: Export to Akoma Ntoso XML and JSON."""
         xml_files = self.exporter.export_batch(verdicts, annotations, str(self.output_xml_dir))
-        print(f"\n  ✓ Generirano {len(xml_files)} XML fajlova")
+        print(f"\n  [OK] Generirano {len(xml_files)} XML fajlova")
         
         if annotations:
             self.exporter.export_annotations_json(annotations, self.output_json)
@@ -477,7 +492,7 @@ class VerdictAnnotationPipeline:
         print(f"  - Ukupno referenci:       {total_article_refs}")
 
         if not annotations:
-            print("\nNema semantičkih anotacija.")
+            print("\nNema semantickih anotacija.")
             print("=" * 70)
             return
 
@@ -492,17 +507,19 @@ class VerdictAnnotationPipeline:
             for law in ann.applied_laws:
                 applied_laws_count[law] = applied_laws_count.get(law, 0) + 1
 
-        print(f"\nSemantička anotacija:")
+        print(f"\nSemanticka anotacija:")
         print(f"  - Anotirano presuda:      {len(annotations)}")
         print("\nIshodi predmeta:")
         for outcome, count in sorted(outcomes.items(), key=lambda x: -x[1]):
-            print(f"  - {outcome}: {count}")
+            safe_outcome = outcome.encode('ascii', 'replace').decode('ascii')
+            print(f"  - {safe_outcome}: {count}")
 
         print(f"\nUkupno pravnih koncepata: {len(all_concepts)}")
         
         if applied_laws_count:
-            print("\nNajčešće primenjeni zakoni:")
+            print("\nNajcesce primenjeni zakoni:")
             for law, count in sorted(applied_laws_count.items(), key=lambda x: -x[1])[:5]:
-                print(f"  - {law}: {count}x")
+                safe_law = law.encode('ascii', 'replace').decode('ascii')
+                print(f"  - {safe_law}: {count}x")
 
         print("=" * 70)

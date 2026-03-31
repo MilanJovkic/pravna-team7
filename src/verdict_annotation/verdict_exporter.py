@@ -11,7 +11,7 @@ try:
     POSTGRES_AVAILABLE = True
 except ImportError:
     POSTGRES_AVAILABLE = False
-    print("⚠️  psycopg2 nije instaliran - upis u bazu podataka je onemogućen")
+    print("[!] psycopg2 nije instaliran - upis u bazu podataka je onemogucen")
 
 from .verdict_parser import VerdictMetadata
 from .verdict_annotator import VerdictAnnotation
@@ -335,10 +335,11 @@ class VerdictAkomaExporter:
         if self.enable_db_insert:
             try:
                 factual_state = verdict_metadata.factual_state or (annotation.factual_state if annotation else {})
-                outcome = annotation.case_outcome if annotation else "непознато"
+                outcome = annotation.case_outcome if annotation else "nepoznato"
                 self._insert_case_to_db(case_id, factual_state, outcome)
             except Exception as e:
-                print(f"  ⚠️  Nije uspeo upis u bazu za {case_id}: {e}")
+                safe_case_id = case_id.encode('ascii', 'replace').decode('ascii')
+                print(f"  [!] Nije uspeo upis u bazu za {safe_case_id}: {str(e)[:50]}")
 
     def export_batch(
         self,
@@ -367,7 +368,9 @@ class VerdictAkomaExporter:
         print(f"\nGeneriram {total} XML fajlova...")
 
         for idx, (case_id, metadata) in enumerate(verdicts.items(), 1):
-            print(f"[{idx}/{total}] Eksportujem: {case_id}")
+            # Use ASCII-safe representation for console output
+            safe_case_id = case_id.encode('ascii', 'replace').decode('ascii')
+            print(f"[{idx}/{total}] Eksportujem: {safe_case_id}")
             
             # Safe filename
             safe_filename = case_id.replace("/", "_").replace("\\", "_").replace(":", "_")
@@ -378,9 +381,9 @@ class VerdictAkomaExporter:
             try:
                 self.export(metadata, annotation, str(output_file), case_id)
                 generated_files.append(str(output_file))
-                print(f"  ✓ {output_file.name}")
+                print(f"  [OK] {output_file.name.encode('ascii', 'replace').decode('ascii')}")
             except Exception as e:
-                print(f"  ✗ Greška: {e}")
+                print(f"  [X] Greska: {str(e)[:50]}")
 
         return generated_files
 
@@ -397,7 +400,7 @@ class VerdictAkomaExporter:
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(json_data, f, indent=2, ensure_ascii=False)
 
-        print(f"✓ Anotacije presuda eksportovane u JSON: {output_file}")
+        print(f"[OK] Anotacije presuda eksportovane u JSON: {output_file}")
         return output_file
 
     def _extract_fact_value(self, factual_state: Dict[str, list], key: str, default: str = "ne") -> str:

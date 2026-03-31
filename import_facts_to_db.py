@@ -122,9 +122,11 @@ def import_to_database(xml_dir: Path, db_config: dict):
                 facts.get("outcome", "")
             )
             records.append(record)
-            print(f"✓ Processed: {xml_file.name}")
+            safe_name = xml_file.name.encode('ascii', 'replace').decode('ascii')
+            print(f"[OK] Processed: {safe_name}")
         except Exception as e:
-            print(f"✗ Error processing {xml_file.name}: {e}")
+            safe_name = xml_file.name.encode('ascii', 'replace').decode('ascii')
+            print(f"[X] Error processing {safe_name}: {e}")
     
     # Bulk insert
     insert_query = """
@@ -140,7 +142,7 @@ def import_to_database(xml_dir: Path, db_config: dict):
     cursor.close()
     conn.close()
     
-    print(f"\n✓ Imported {len(records)} cases into PostgreSQL")
+    print(f"\n[OK] Imported {len(records)} cases into PostgreSQL")
 
 
 def main():

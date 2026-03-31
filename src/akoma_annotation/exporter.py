@@ -450,7 +450,7 @@ class AkomaExporter:
         with open(output_file, "wb") as f:
             f.write(pretty_xml)
 
-        print(f"✓ XML eksportovan u: {output_file}")
+        print(f"[OK] XML eksportovan u: {output_file}")
 
     def export_annotations_json(self, annotations: Dict[str, SemanticAnnotation], output_file: str) -> str:
         import json
@@ -464,5 +464,5 @@ class AkomaExporter:
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(json_data, f, indent=2, ensure_ascii=False)
 
-        print(f"✓ Anotacije eksportovane u JSON: {output_file}")
+        print(f"[OK] Anotacije eksportovane u JSON: {output_file}")
         return output_file

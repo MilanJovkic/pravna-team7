@@ -9,7 +9,7 @@ import os
 import re
 import sys
 from dataclasses import dataclass
-from datetime import datetime, UTC
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -51,7 +51,7 @@ class ProtocolEvaluator:
         self.technical_checks: dict[str, dict[str, Any]] = {}
 
     def run(self) -> int:
-        started = datetime.now(UTC)
+        started = datetime.now(timezone.utc)
         self._verify_locked_dataset()
         self._run_technical_preflight()
 
@@ -64,7 +64,7 @@ class ProtocolEvaluator:
         report = {
             "protocol_version": self.protocol["protocol_version"],
             "started_at": started.isoformat().replace("+00:00", "Z"),
-            "finished_at": datetime.now(UTC).isoformat().replace("+00:00", "Z"),
+            "finished_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
             "base_url": self.base_url,
             "technical_checks": self.technical_checks,
             "global_failures": self.global_failures,

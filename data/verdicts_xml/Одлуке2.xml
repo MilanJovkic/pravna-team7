@@ -1,125 +1,91 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
-    <ns0:judgment name="Одлуке2">
-        <ns0:meta>
-            <ns0:identification source="#court">
-                <ns0:FRBRWork>
-                    <ns0:FRBRthis value="/akn/me/judgment/Одлуке2/!main" />
-                    <ns0:FRBRuri value="/akn/me/judgment/Одлуке2" />
-                    <ns0:FRBRdate date="2024-03-19" name="judgment" />
-                    <ns0:FRBRauthor href="#court" />
-                    <ns0:FRBRcountry value="me" />
-                </ns0:FRBRWork>
-                <ns0:FRBRExpression>
-                    <ns0:FRBRthis value="/akn/me/judgment/Одлуке2/sr@2024-03-19/!main" />
-                    <ns0:FRBRuri value="/akn/me/judgment/Одлуке2/sr@2024-03-19" />
-                    <ns0:FRBRdate date="2024-03-19" />
-                    <ns0:FRBRauthor href="#court" />
-                    <ns0:FRBRlanguage language="sr" />
-                </ns0:FRBRExpression>
-                <ns0:FRBRManifestation>
-                    <ns0:FRBRthis value="/akn/me/judgment/Одлуке2/sr@2024-03-19/!main.xml" />
-                    <ns0:FRBRuri value="/akn/me/judgment/Одлуке2/sr@2024-03-19/!main.akn" />
-                    <ns0:FRBRdate date="2026-02-09" />
-                    <ns0:FRBRauthor href="#court" />
-                    <ns0:FRBRformat value="xml" />
-                </ns0:FRBRManifestation>
-            </ns0:identification>
-            <ns0:references source="#court">
-                <ns0:TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni Sud u Podgorici" />
-                <ns0:TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Đuković Goranu" />
-                <ns0:TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Goran Đuković" />
-                <ns0:TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Đuković Goran" />
-                <ns0:TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="K. B." />
-                <ns0:TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="advokatu" />
-                <ns0:TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="K. N." />
-                <ns0:TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="N. K." />
-                <ns0:TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku" />
-                <ns0:TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore" />
-            </ns0:references>
-            <ns0:classification source="#court">
-                <ns0:keyword value="criminal_case" showAs="Krivična stvar" />
-            </ns0:classification>
-        </ns0:meta>
-        <ns0:judgmentBody>
-            <ns0:header>
-                <ns0:block name="caseNumber">
-                    <ns0:docNumber>K.br. 27/24</ns0:docNumber>
-                </ns0:block>
-                <ns0:block name="court">
-                    <ns0:docTitle>Osnovni Sud u Podgorici</ns0:docTitle>
-                </ns0:block>
-                <ns0:block name="date">
-                    <ns0:docDate date="2024-03-19">2024-03-19</ns0:docDate>
-                </ns0:block>
-                <ns0:block name="judges">
-                    <ns0:judge>Đuković Goranu</ns0:judge>
-                    <ns0:judge>Goran Đuković</ns0:judge>
-                    <ns0:judge>Đuković Goran</ns0:judge>
-                </ns0:block>
-            </ns0:header>
-            <ns0:introduction>
-                <ns0:block name="summary">
-                    <ns0:p>Okrivljeni K. B. je proglašen krivim za tešku tjelesnu povredu oštećenog K. N. zbog fizičkog napada metalnim ključem. Sud mu je izrekao kaznu rada u javnom interesu od 120 časova.</ns0:p>
-                </ns0:block>
-                <ns0:block name="legalIssues">
-                    <ns0:p>teška tjelesna povreda</ns0:p>
-                    <ns0:p>priznanje krivice</ns0:p>
-                </ns0:block>
-            </ns0:introduction>
-            <ns0:background>
-                <ns0:block name="appliedLaws">
-                    <ns0:ref href="#law_1">Zakonik o krivičnom postupku</ns0:ref>
-                    <ns0:ref href="#law_2">Krivični zakonik Crne Gore</ns0:ref>
-                </ns0:block>
-                <ns0:block name="appliedArticles">
-                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_151">Član 151</ns0:ref>
-                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ns0:ref>
-                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ns0:ref>
-                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ns0:ref>
-                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_239">Član 239</ns0:ref>
-                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_41">Član 41</ns0:ref>
-                    <ns0:ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ns0:ref>
-                </ns0:block>
-            </ns0:background>
-            <ns0:motivation>
-                <ns0:block name="reasoning">
-                    <ns0:p>Sud je utvrdio da je okrivljeni bio svestan zabranjenosti svog dela i imao nameru da ga izvrši.</ns0:p>
-                </ns0:block>
-            </ns0:motivation>
-            <ns0:decision>
-                <ns0:block name="verdict" outcome="usvojeno">
-                    <ns0:p>Optuženi se oglašava krivim</ns0:p>
-                </ns0:block>
-            </ns0:decision>
-            <ns0:participants>
-                <ns0:block name="defendants">
-                    <ns0:person>K. B.</ns0:person>
-                </ns0:block>
-                <ns0:block name="victims">
-                    <ns0:person>advokatu</ns0:person>
-                    <ns0:person>K. N.</ns0:person>
-                    <ns0:person>N. K.</ns0:person>
-                </ns0:block>
-            </ns0:participants>
-            <ns0:facts>
-                <ns0:fact key="injury_type">teška tjelesna povreda</ns0:fact>
-                <ns0:fact key="location">Podgorica</ns0:fact>
-                <ns0:fact key="weapon">metalni ključ</ns0:fact>
-                <ns0:fact key="weapon_used">true</ns0:fact>
-                <ns0:fact key="severe_consequence">true</ns0:fact>
-                <ns0:fact key="death_result">false</ns0:fact>
-                <ns0:fact key="negligence">false</ns0:fact>
-                <ns0:fact key="provocation">false</ns0:fact>
-                <ns0:fact key="fight_participation">false</ns0:fact>
-                <ns0:fact key="fight_consequence">none</ns0:fact>
-                <ns0:fact key="weapon_shown">false</ns0:fact>
-                <ns0:fact key="caused_danger">false</ns0:fact>
-                <ns0:fact key="left_without_help">false</ns0:fact>
-            </ns0:facts>
-            <ns0:conclusions>
-                <ns0:block name="fullText">
-                    <ns0:p>Osnovni Sud u Podgorici
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке2">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке2/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке2"/>
+                    <FRBRdate date="2024-03-19" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке2/sr@2024-03-19/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке2/sr@2024-03-19"/>
+                    <FRBRdate date="2024-03-19"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке2/sr@2024-03-19/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке2/sr@2024-03-19/!main.akn"/>
+                    <FRBRdate date="2026-03-31"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni Sud u Podgorici"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Goran Đuković"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Đuković Goranu"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="K. B."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="K. N."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="advokatu"/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="N. K."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 27/24</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>Osnovni Sud u Podgorici</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2024-03-19">2024-03-19</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Goran Đuković</judge>
+                    <judge>Đuković Goranu</judge>
+                </block>
+            </header>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_41">Član 41</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                </block>
+            </background>
+            <participants>
+                <block name="defendants">
+                    <person>K. B.</person>
+                </block>
+                <block name="victims">
+                    <person>K. N.</person>
+                    <person>advokatu</person>
+                    <person>N. K.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="location">Podgorica</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>Osnovni Sud u Podgorici
 K 27/2024
 20. Март 2024
 
@@ -411,9 +377,9 @@ DN-a: Po primjerak rješenja dostaviti:
 
 Postupljeno dana: _________________
 
-Namještenik suda: _________________</ns0:p>
-                </ns0:block>
-            </ns0:conclusions>
-        </ns0:judgmentBody>
-    </ns0:judgment>
+Namještenik suda: _________________</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
 </ns0:akomaNtoso>

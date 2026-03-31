@@ -1,6 +1,6 @@
 """Service for loading and processing verdict documents."""
 import json
-from datetime import datetime, UTC
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import List, Optional
 from xml.etree import ElementTree as ET
@@ -138,7 +138,7 @@ class VerdictService:
         if changes:
             audit = self._load_overrides_audit()
             audit.setdefault(case_id, [])
-            timestamp = datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+            timestamp = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
             for change in changes:
                 audit[case_id].append(
                     {

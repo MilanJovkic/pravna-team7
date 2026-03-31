@@ -371,20 +371,22 @@ class VerdictParser:
         print(f"\nParsiram {total} presuda...")
         
         for idx, (filename, text) in enumerate(texts.items(), 1):
-            print(f"[{idx}/{total}] Parsiram: {filename}")
+            # Use safe ASCII representation for filenames with non-ASCII chars
+            safe_filename = filename.encode('ascii', 'replace').decode('ascii')
+            print(f"[{idx}/{total}] Parsiram: {safe_filename}")
             
             try:
                 metadata = self.parse(text, filename)
                 results[filename] = metadata
                 
-                print(f"  ✓ Broj predmeta: {metadata.case_number or 'N/A'}")
-                print(f"  ✓ Sud: {metadata.court_name or 'N/A'}")
-                print(f"  ✓ Datum: {metadata.date or 'N/A'}")
-                print(f"  ✓ Reference na članke: {len(metadata.article_references)}")
+                print(f"  [OK] Broj predmeta: {metadata.case_number or 'N/A'}")
+                print(f"  [OK] Sud: {(metadata.court_name or 'N/A').encode('ascii', 'replace').decode('ascii')}")
+                print(f"  [OK] Datum: {metadata.date or 'N/A'}")
+                print(f"  [OK] Reference na clanke: {len(metadata.article_references)}")
             
             except Exception as e:
-                print(f"  ✗ Greška: {e}")
-                # Kreiraj prazan metadata sa sirović tekstom
+                print(f"  [X] Greska: {str(e).encode('ascii', 'replace').decode('ascii')}")
+                # Kreiraj prazan metadata sa sirovic tekstom
                 results[filename] = VerdictMetadata(raw_text=text, case_number=filename)
         
         return results

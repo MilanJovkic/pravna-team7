@@ -54,17 +54,16 @@
 
     <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case01">
         <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
-        <lc:defendant>boki</lc:defendant>
+        <lc:defendant>P. K</lc:defendant>
         <lc:injury_type>laka tjelesna povreda</lc:injury_type>
         <lc:location>Podgorica</lc:location>
-        <lc:weapon>jastuk</lc:weapon>
-        <lc:weapon_used>true</lc:weapon_used>
+        <lc:weapon_used>false</lc:weapon_used>
         <lc:severe_consequence>false</lc:severe_consequence>
         <lc:death_result>false</lc:death_result>
         <lc:negligence>false</lc:negligence>
-        <lc:provocation>true</lc:provocation>
+        <lc:provocation>false</lc:provocation>
         <lc:fight_participation>false</lc:fight_participation>
         <lc:fight_consequence>none</lc:fight_consequence>
-        <lc:left_without_help>true</lc:left_without_help>
+        <lc:left_without_help>false</lc:left_without_help>
     </lc:case>
 </rdf:RDF>

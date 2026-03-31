@@ -107,15 +107,9 @@
 </rdf:Property>
 
 <export:crime_art152_1 rdf:about='&export;crime_art152_11'>
-     <export:defendant>boki</export:defendant>
+     <export:defendant>P. K</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
 </export:crime_art152_1>
-
-<export:crime_art152_2 rdf:about='&export;crime_art152_21'>
-     <export:defendant>boki</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
-</export:crime_art152_2>
 
 </rdf:RDF>

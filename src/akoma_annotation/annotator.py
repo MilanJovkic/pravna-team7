@@ -1,5 +1,4 @@
 """Module for LLM-powered semantic annotations of legal text."""
-import os
 import json
 import time
 from collections import deque
@@ -8,7 +7,8 @@ from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
 
 import requests
-from dotenv import load_dotenv
+
+from src.config.llm_config import get_llm_config, DEFAULT_MODEL, is_gpt5_model
 
 
 @dataclass
@@ -29,32 +29,29 @@ class SemanticAnnotation:
 class LLMAnnotator:
     """Annotates legal articles using GitHub Models, OpenRouter, or OpenAI."""
 
-    def __init__(self, api_token: Optional[str] = None, model: str = "gpt-5-nano", provider: str = "openai"):
-        load_dotenv()
-        self.provider = provider.lower()
-
-        if self.provider == "openrouter":
-            self.api_token = api_token or os.getenv("OPENROUTER_API_KEY")
-            self.api_url = "https://openrouter.ai/api/v1/chat/completions"
-            if not self.api_token:
+    def __init__(self, api_token: Optional[str] = None, model: Optional[str] = None, provider: Optional[str] = None):
+        # Use centralized config
+        config = get_llm_config(model=model, provider=provider, api_token=api_token)
+        
+        self.provider = config.provider
+        self.api_token = config.api_token
+        self.api_url = config.api_url
+        
+        if not self.api_token:
+            provider_name = config.provider.upper()
+            if config.provider == "openrouter":
                 raise ValueError("OpenRouter API key nije pronađen. Postavi OPENROUTER_API_KEY u .env fajlu.")
-        elif self.provider == "openai":
-            self.api_token = api_token or os.getenv("OPENAI_API_KEY")
-            self.api_url = "https://api.openai.com/v1/responses"
-            if not self.api_token:
+            elif config.provider == "openai":
                 raise ValueError("OpenAI API key nije pronađen. Postavi OPENAI_API_KEY u .env fajlu.")
-        else:
-            self.api_token = api_token or os.getenv("GITHUB_TOKEN")
-            self.api_url = "https://models.inference.ai.azure.com/chat/completions"
-            if not self.api_token:
+            else:
                 raise ValueError("GitHub token nije pronađen. Postavi GITHUB_TOKEN u .env fajlu.")
 
-        self.model = model
-        self.max_retries = 3
-        self.retry_delay = 2
-        self.max_requests_per_minute = 10
+        self.model = config.model
+        self.max_retries = config.max_retries
+        self.retry_delay = config.retry_delay
+        self.max_requests_per_minute = config.max_requests_per_minute
         self.request_timestamps = deque()
-        self.min_delay_between_requests = 6.0
+        self.min_delay_between_requests = config.min_delay_between_requests
 
     def _wait_for_rate_limit(self):
         now = datetime.now()
@@ -124,30 +121,23 @@ Vrati SAMO validan JSON bez dodatnog teksta."""
         if self.provider == "openai":
             payload = {
                 "model": self.model,
-                "input": [
+                "messages": [
                     {
                         "role": "system",
-                        "content": [
-                            {
-                                "type": "input_text",
-                                "text": "Ti si ekspert za semantičku anotaciju pravnih tekstova. Vraćaš ISKLJUČIVO validne JSON odgovore."
-                            }
-                        ]
+                        "content": "Ti si ekspert za semantičku anotaciju pravnih tekstova. Vraćaš ISKLJUČIVO validne JSON odgovore."
                     },
                     {
                         "role": "user",
-                        "content": [
-                            {
-                                "type": "input_text",
-                                "text": prompt
-                            }
-                        ]
+                        "content": prompt
                     }
                 ],
-                "max_output_tokens": 800
+                "temperature": 0.1,
+                "response_format": {"type": "json_object"},
             }
-            if self.model.startswith("gpt-5"):
-                payload["service_tier"] = "flex"
+            if is_gpt5_model(self.model):
+                payload["max_completion_tokens"] = 800
+            else:
+                payload["max_tokens"] = 800
         else:
             payload = {
                 "messages": [
@@ -169,7 +159,7 @@ Vrati SAMO validan JSON bez dodatnog teksta."""
             response = requests.post(self.api_url, headers=headers, json=payload, timeout=60)
 
             if response.status_code != 200:
-                print(f"⚠ LLM API error {response.status_code}: {response.text}")
+                print(f"[!] LLM API error {response.status_code}: {response.text[:200]}")
                 if retry_count < self.max_retries:
                     print(f"  Retry {retry_count + 1}/{self.max_retries}...")
                     time.sleep(self.retry_delay)
@@ -177,38 +167,17 @@ Vrati SAMO validan JSON bez dodatnog teksta."""
                 return None
 
             result = response.json()
-            if self.provider == "openai" and result.get("status") == "incomplete":
-                reason = (result.get("incomplete_details") or {}).get("reason")
-                if reason == "max_output_tokens" and retry_count < self.max_retries:
-                    print("⚠ OpenAI odgovor predugačak. Pokušavam sa manjim modelom (gpt-4o-mini)...")
-                    original_model = self.model
-                    if self.model == "gpt-5-nano":
-                        self.model = "gpt-4o-mini"
-                    try:
-                        time.sleep(self.retry_delay)
-                        return self.annotate_article(article_text, article_number, retry_count + 1)
-                    finally:
-                        self.model = original_model
+            # Extract content from Chat Completions API response
             if self.provider == "openai":
-                raw_content = ""
-                for output_item in result.get("output", []):
-                    for content_item in output_item.get("content", []):
-                        text_value = content_item.get("text") or content_item.get("output_text")
-                        if text_value:
-                            raw_content = text_value.strip()
-                            break
-                    if raw_content:
-                        break
+                raw_content = (result.get("choices") or [{}])[0].get("message", {}).get("content", "").strip()
                 if not raw_content:
-                    raw_content = (result.get("output_text") or "").strip()
-                if not raw_content:
-                    print(f"⚠ Prazan OpenAI odgovor: {json.dumps(result)[:400]}...")
+                    print(f"[!] Prazan OpenAI odgovor: {json.dumps(result)[:400]}...")
             else:
                 raw_content = result['choices'][0]['message']['content'].strip()
             json_content = self._extract_json(raw_content)
 
             if not json_content:
-                print(f"⚠ Nevalidan JSON odgovor za Član {article_number}")
+                print(f"[!] Nevalidan JSON odgovor za Clan {article_number}")
                 if raw_content:
                     print(f"  Raw: {raw_content[:200]}...")
                 if retry_count < self.max_retries:
@@ -222,14 +191,14 @@ Vrati SAMO validan JSON bez dodatnog teksta."""
             return annotation
 
         except requests.exceptions.Timeout:
-            print(f"⚠ Timeout za Član {article_number}")
+            print(f"[!] Timeout za Clan {article_number}")
             if retry_count < self.max_retries:
                 time.sleep(self.retry_delay)
                 return self.annotate_article(article_text, article_number, retry_count + 1)
             return None
 
         except Exception as e:
-            print(f"⚠ Greška pri anotaciji Člana {article_number}: {e}")
+            print(f"[!] Greska pri anotaciji Clana {article_number}: {e}")
             if retry_count < self.max_retries:
                 time.sleep(self.retry_delay)
                 return self.annotate_article(article_text, article_number, retry_count + 1)
@@ -285,12 +254,12 @@ Vrati SAMO validan JSON bez dodatnog teksta."""
         print(f"  Procenjeno vreme: {total * self.min_delay_between_requests / 60:.1f} minuta\n")
 
         for idx, (article_num, article_text) in enumerate(articles, 1):
-            print(f"[{idx}/{total}] Anotiram Član {article_num}...")
+            print(f"[{idx}/{total}] Anotiram Clan {article_num}...")
             annotation = self.annotate_article(article_text, article_num)
             if annotation:
                 annotations[article_num] = annotation
-                print(f"  ✓ Uspešno: {annotation.norm_type}, {len(annotation.legal_concepts)} koncepata")
+                print(f"  [OK] Uspesno: {annotation.norm_type}, {len(annotation.legal_concepts)} koncepata")
             else:
-                print(f"  ✗ Neuspešno")
+                print(f"  [X] Neuspesno")
 
         return annotations

@@ -1,11 +1,20 @@
 """Service for loading and processing verdict documents."""
-import json
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import List, Optional
-from xml.etree import ElementTree as ET
 
-from src.verdict_annotation.outcome_normalizer import normalize_outcome
+from backend.app.infrastructure.persistence.filesystem.override_repository_fs import (
+    FileSystemOverrideRepository,
+)
+from backend.app.infrastructure.persistence.filesystem.verdict_repository_fs import (
+    FileSystemVerdictRepository,
+)
+from backend.app.ports.outbound.override_repository import (
+    OptimisticLockConflictError,
+    OverrideRepository,
+)
+from backend.app.ports.outbound.verdict_repository import VerdictRepository
+from backend.app.domain.shared.outcome_normalization import normalize_outcome
 
 
 class VerdictService:
@@ -13,90 +22,47 @@ class VerdictService:
 
     AKOMA_NS = {"akn": "http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"}
 
-    def __init__(self):
+    def __init__(
+        self,
+        override_repository: OverrideRepository | None = None,
+        verdict_repository: VerdictRepository | None = None,
+    ):
         self.xml_dir = Path(__file__).parent.parent.parent.parent / "data" / "verdicts_xml"
         self.annotations_file = self.xml_dir / "verdicts_annotations.json"
-        self.overrides_file = self.xml_dir / "verdicts_overrides.json"
-        self.overrides_audit_file = self.xml_dir / "verdicts_overrides_audit.json"
+        self._verdict_repository = verdict_repository or FileSystemVerdictRepository()
+        self._override_repository = override_repository or FileSystemOverrideRepository()
+        self.overrides_file = self._override_repository.overrides_file_path
+        self.overrides_audit_file = self._override_repository.audit_file_path
         self._verdicts = None
         self._annotations = None
-        self._annotations_mtime = None
         self._overrides = None
-        self._overrides_mtime = None
+        self._overrides_revision = "missing"
         self._overrides_audit = None
-        self._overrides_audit_mtime = None
+        self._overrides_audit_revision = "missing"
 
     def _load_verdicts(self):
         """Load all verdict XML files."""
-        if not self.xml_dir.exists():
-            self._verdicts = {}
-            return self._verdicts
-
-        xml_files = list(self.xml_dir.glob("*.xml"))
-        file_stems = {file.stem for file in xml_files}
-        if self._verdicts is not None and len(self._verdicts) == len(xml_files):
-            if file_stems.issubset(self._verdicts.keys()):
-                return self._verdicts
-
-        self._verdicts = {}
-        for xml_file in xml_files:
-            try:
-                tree = ET.parse(xml_file)
-                root = tree.getroot()
-                
-                judgment = root.find(".//{http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17}judgment")
-                if judgment is None:
-                    judgment = root.find(".//judgment")
-                
-                if judgment is not None:
-                    case_id = judgment.get("name", xml_file.stem)
-                    self._verdicts[case_id] = {
-                        "file": str(xml_file),
-                        "tree": tree,
-                        "root": root
-                    }
-            except Exception as e:
-                print(f"Error loading {xml_file}: {e}")
+        if self._verdicts is None:
+            self._verdicts = self._verdict_repository.load_verdict_documents()
 
         return self._verdicts
 
     def _load_annotations(self):
         """Load verdict annotations."""
-        if self.annotations_file.exists():
-            mtime = self.annotations_file.stat().st_mtime
-            if self._annotations is None or self._annotations_mtime != mtime:
-                with open(self.annotations_file, "r", encoding="utf-8") as f:
-                    self._annotations = json.load(f)
-                self._annotations_mtime = mtime
-        else:
-            self._annotations = {}
-            self._annotations_mtime = None
+        if self._annotations is None:
+            self._annotations = self._verdict_repository.load_annotations()
         return self._annotations
 
     def _load_overrides(self):
         """Load manual overrides for verdicts."""
-        if self.overrides_file.exists():
-            mtime = self.overrides_file.stat().st_mtime
-            if self._overrides is None or self._overrides_mtime != mtime:
-                with open(self.overrides_file, "r", encoding="utf-8") as f:
-                    self._overrides = json.load(f)
-                self._overrides_mtime = mtime
-        else:
-            self._overrides = {}
-            self._overrides_mtime = None
+        if self._overrides is None:
+            self._overrides, self._overrides_revision = self._override_repository.load_overrides()
         return self._overrides
 
     def _load_overrides_audit(self):
         """Load manual override audit history."""
-        if self.overrides_audit_file.exists():
-            mtime = self.overrides_audit_file.stat().st_mtime
-            if self._overrides_audit is None or self._overrides_audit_mtime != mtime:
-                with open(self.overrides_audit_file, "r", encoding="utf-8") as f:
-                    self._overrides_audit = json.load(f)
-                self._overrides_audit_mtime = mtime
-        else:
-            self._overrides_audit = {}
-            self._overrides_audit_mtime = None
+        if self._overrides_audit is None:
+            self._overrides_audit, self._overrides_audit_revision = self._override_repository.load_audit()
         return self._overrides_audit
 
     def get_overrides(self, case_id: str) -> dict:
@@ -129,11 +95,15 @@ class VerdictService:
                     }
                 )
         overrides[case_id] = existing
-        self.overrides_file.parent.mkdir(parents=True, exist_ok=True)
-        with open(self.overrides_file, "w", encoding="utf-8") as f:
-            json.dump(overrides, f, ensure_ascii=False, indent=2)
+        try:
+            self._overrides_revision = self._override_repository.save_overrides(
+                overrides,
+                expected_revision=self._overrides_revision,
+            )
+        except OptimisticLockConflictError:
+            self._overrides, self._overrides_revision = self._override_repository.load_overrides()
+            raise
         self._overrides = overrides
-        self._overrides_mtime = self.overrides_file.stat().st_mtime
 
         if changes:
             audit = self._load_overrides_audit()
@@ -147,10 +117,15 @@ class VerdictService:
                         **change,
                     }
                 )
-            with open(self.overrides_audit_file, "w", encoding="utf-8") as f:
-                json.dump(audit, f, ensure_ascii=False, indent=2)
+            try:
+                self._overrides_audit_revision = self._override_repository.save_audit(
+                    audit,
+                    expected_revision=self._overrides_audit_revision,
+                )
+            except OptimisticLockConflictError:
+                self._overrides_audit, self._overrides_audit_revision = self._override_repository.load_audit()
+                raise
             self._overrides_audit = audit
-            self._overrides_audit_mtime = self.overrides_audit_file.stat().st_mtime
 
         return existing
 
@@ -161,12 +136,17 @@ class VerdictService:
 
     def get_all_verdicts(self):
         """Get list of all verdicts."""
-        verdicts = self._load_verdicts()
         annotations = self._load_annotations()
+        overrides = self._load_overrides()
         
         result = []
-        for case_id in verdicts.keys():
-            metadata = self._extract_metadata(case_id)
+        for case_id, root in self._iter_verdict_roots():
+            metadata = self._build_metadata_from_root(
+                case_id=case_id,
+                root=root,
+                annotation=annotations.get(case_id, {}),
+                override=overrides.get(case_id, {}),
+            )
             result.append(metadata)
         
         return result
@@ -206,18 +186,38 @@ class VerdictService:
             return None
         
         root = verdicts[case_id]["root"]
-        annotation = annotations.get(case_id, {})
+        return self._build_metadata_from_root(
+            case_id=case_id,
+            root=root,
+            annotation=annotations.get(case_id, {}),
+            override=overrides.get(case_id, {}),
+        )
 
+    def _iter_verdict_roots(self):
+        """Iterate verdict XML roots lazily when repository supports streaming."""
+        iter_documents = getattr(self._verdict_repository, "iter_verdict_documents", None)
+        if callable(iter_documents):
+            for case_id, document in iter_documents():
+                root = document.get("root")
+                if root is not None:
+                    yield case_id, root
+            return
+
+        for case_id, document in self._load_verdicts().items():
+            root = document.get("root")
+            if root is not None:
+                yield case_id, root
+
+    def _build_metadata_from_root(self, case_id: str, root, annotation: dict, override: dict) -> dict:
         xml_summary = self._find_text(root, ".//block[@name='summary']/p")
         xml_legal_issues = self._find_all_text(root, ".//block[@name='legalIssues']/p")
         xml_applied_laws = self._find_all_text(root, ".//block[@name='appliedLaws']/ref")
         xml_applied_articles = self._find_all_text(root, ".//block[@name='appliedArticles']/ref")
-        xml_legal_reasoning = self._find_text(root, ".//block[@name='reasoning']/p")
         xml_decision = self._find_text(root, ".//block[@name='verdict']/p")
         xml_outcome = self._find_attr(root, ".//block[@name='verdict']", "outcome")
         xml_full_text = self._find_text(root, ".//block[@name='fullText']/p")
         text_summary = (xml_full_text[:300] + "...") if xml_full_text and len(xml_full_text) > 300 else xml_full_text
-        
+
         metadata = {
             "case_id": case_id,
             "case_number": self._find_text(root, ".//docNumber"),
@@ -235,13 +235,11 @@ class VerdictService:
             "legal_concepts": annotation.get("legal_concepts", []),
             "parties": self._extract_participants(root),
             "factual_state": self._extract_factual_state(root, annotation),
-            "full_text": xml_full_text
+            "full_text": xml_full_text,
         }
 
-        override = overrides.get(case_id, {})
         if override:
             metadata = self._apply_override(metadata, override)
-        
         return metadata
 
     def _apply_override(self, metadata: dict, override: dict) -> dict:
@@ -384,12 +382,19 @@ class VerdictService:
 
     def search_verdicts(self, query: str, filter_by: Optional[str] = None):
         """Search verdicts by query."""
-        all_verdicts = self.get_all_verdicts()
         results = []
-        
+        annotations = self._load_annotations()
+        overrides = self._load_overrides()
+
         query_lower = query.lower()
-        
-        for verdict in all_verdicts:
+
+        for case_id, root in self._iter_verdict_roots():
+            verdict = self._build_metadata_from_root(
+                case_id=case_id,
+                root=root,
+                annotation=annotations.get(case_id, {}),
+                override=overrides.get(case_id, {}),
+            )
             # Search in various fields
             searchable = [
                 verdict.get("case_number", ""),

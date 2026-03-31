@@ -7,7 +7,7 @@ from pathlib import Path
 
 from backend.app.models.schemas import CbrResult, ReasoningConfidence
 from backend.app.services.law_service import LawService
-from src.verdict_annotation.outcome_normalizer import normalize_outcome
+from backend.app.domain.shared.outcome_normalization import normalize_outcome
 
 
 ROOT = Path(__file__).resolve().parents[3]

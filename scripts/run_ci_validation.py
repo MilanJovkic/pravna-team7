@@ -85,6 +85,7 @@ def main() -> int:
                     "tests.unit.test_rule_artifact_validator",
                     "tests.unit.test_rule_reasoning_strict_mode",
                     "tests.unit.test_rule_norm_traceability",
+                    "tests.unit.test_architecture_boundaries",
                     "-v",
                 ],
                 None,

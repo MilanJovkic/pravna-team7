@@ -3,21 +3,28 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi import Response
 from fastapi.middleware.cors import CORSMiddleware
+
+from backend.app.bootstrap.error_handling import configure_error_handling
+from backend.app.bootstrap.logging import configure_logging
+from backend.app.bootstrap.settings import get_settings
 from backend.app.api import laws, verdicts, reasoning, cases
 from backend.app.api import verdict_generation
 
 load_dotenv()
+settings = get_settings()
+configure_logging(settings.log_level)
 
 app = FastAPI(
-    title="Legal Annotation API",
-    description="API za pristup anotiranim zakonima i sudskim presudama",
-    version="1.0.0"
+    title=settings.app_name,
+    description=settings.app_description,
+    version=settings.app_version,
 )
+configure_error_handling(app)
 
 # CORS middleware za Angular frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:4200"],  # Angular dev server
+    allow_origins=settings.cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -35,8 +42,8 @@ app.include_router(verdict_generation.router, prefix="/api/verdict-generation", 
 async def root():
     """Root endpoint."""
     return {
-        "message": "Legal Annotation API",
-        "version": "1.0.0",
+        "message": settings.app_name,
+        "version": settings.app_version,
         "endpoints": {
             "laws": "/api/laws",
             "verdicts": "/api/verdicts"

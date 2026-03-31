@@ -3,9 +3,11 @@ from __future__ import annotations
 
 import unittest
 from unittest.mock import patch
+from unittest.mock import Mock
 
 from fastapi.testclient import TestClient
 
+from backend.app.api import cases, reasoning
 from backend.app.main import app
 
 
@@ -14,6 +16,9 @@ class TestCasesApiContract(unittest.TestCase):
 
     def setUp(self) -> None:
         self.client = TestClient(app)
+
+    def tearDown(self) -> None:
+        app.dependency_overrides.clear()
 
     def test_create_case_requires_selected_fields(self) -> None:
         payload = {
@@ -43,14 +48,15 @@ class TestCasesApiContract(unittest.TestCase):
             "user_confirmation": True,
         }
 
-        with patch("backend.app.api.cases.case_service.insert_case") as insert_mock:
-            insert_mock.return_value = {
-                "id": 1,
-                "case_number": "USER-TEST-1",
-                "reused_existing": False,
-                "version": 1,
-            }
-            response = self.client.post("/api/cases/", json=payload)
+        mocked_case_service = Mock()
+        mocked_case_service.insert_case.return_value = {
+            "id": 1,
+            "case_number": "USER-TEST-1",
+            "reused_existing": False,
+            "version": 1,
+        }
+        app.dependency_overrides[cases.get_case_service] = lambda: mocked_case_service
+        response = self.client.post("/api/cases/", json=payload)
 
         self.assertEqual(200, response.status_code)
         body = response.json()
@@ -75,6 +81,9 @@ class TestReasoningApiResilience(unittest.TestCase):
     def setUp(self) -> None:
         self.client = TestClient(app)
 
+    def tearDown(self) -> None:
+        app.dependency_overrides.clear()
+
     def test_reasoning_returns_http_500_when_both_subsystems_fail(self) -> None:
         payload = {
             "facts": {
@@ -89,9 +98,13 @@ class TestReasoningApiResilience(unittest.TestCase):
             "strict_mode": True,
         }
 
-        with patch("backend.app.api.reasoning.rule_service.run", side_effect=RuntimeError("rule failed")):
-            with patch("backend.app.api.reasoning.cbr_service.query", side_effect=RuntimeError("cbr failed")):
-                response = self.client.post("/api/reasoning/", json=payload)
+        mocked_rule_service = Mock()
+        mocked_rule_service.run.side_effect = RuntimeError("rule failed")
+        mocked_cbr_service = Mock()
+        mocked_cbr_service.query.side_effect = RuntimeError("cbr failed")
+        app.dependency_overrides[reasoning.get_rule_reasoning_service] = lambda: mocked_rule_service
+        app.dependency_overrides[reasoning.get_cbr_service] = lambda: mocked_cbr_service
+        response = self.client.post("/api/reasoning/", json=payload)
 
         self.assertEqual(500, response.status_code)
         self.assertIn("rule_error=", response.json().get("detail", ""))

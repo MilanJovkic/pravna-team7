@@ -17,7 +17,7 @@ import { VerdictDetail, VerdictOverrideUpdate } from '../models/models';
       <div *ngIf="verdict" class="verdict-detail">
         <div class="verdict-header">
           <h2>{{ verdict.case_number || verdict.case_id }}</h2>
-          <span class="outcome-badge" *ngIf="verdict.outcome" [class]="'outcome-' + verdict.outcome?.toLowerCase()">
+          <span class="outcome-badge" *ngIf="verdict.outcome" [class]="'outcome-' + verdict.outcome.toLowerCase()">
             {{ verdict.outcome }}
           </span>
         </div>

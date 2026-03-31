@@ -27,7 +27,7 @@ import { VerdictMetadata } from '../models/models';
             <div class="applied-laws" *ngIf="verdict.applied_laws && verdict.applied_laws.length > 0">
               <strong>Zakoni:</strong> {{ verdict.applied_laws.join(', ') }}
             </div>
-            <span class="outcome-badge" *ngIf="verdict.outcome" [class]="'outcome-' + verdict.outcome?.toLowerCase()">
+            <span class="outcome-badge" *ngIf="verdict.outcome" [class]="'outcome-' + verdict.outcome.toLowerCase()">
               {{ verdict.outcome }}
             </span>
           </div>

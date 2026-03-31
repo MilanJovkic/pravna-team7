@@ -1,6 +1,6 @@
 import unittest
 
-from src.akoma_annotation.references import (
+from backend.app.domain.law.references import (
     canonical_article_href,
     canonical_paragraph_href,
     parse_reference_href,

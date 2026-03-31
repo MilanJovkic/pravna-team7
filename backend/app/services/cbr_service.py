@@ -20,7 +20,7 @@ from backend.app.services.cbr_normalization import (
     parse_bool,
 )
 from backend.app.services.db_config import get_db_config
-from src.verdict_annotation.outcome_normalizer import normalize_outcome
+from backend.app.domain.shared.outcome_normalization import normalize_outcome
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -33,6 +33,10 @@ class CbrService:
 
     def __init__(self) -> None:
         self._case_number_index: dict[str, str] | None = None
+
+    def sync_case_base(self) -> None:
+        """Initialize/synchronize case base records before retrieval flows."""
+        self._ensure_case_base()
 
     def query(self, facts: CaseFacts, top_k: int) -> CbrResult:
         self._ensure_case_base()

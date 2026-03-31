@@ -1,26 +1,9 @@
 """Parser for structuring court verdict text."""
 import re
-from dataclasses import dataclass, field
 from datetime import datetime
 from typing import List, Optional
 
-
-@dataclass
-class VerdictMetadata:
-    """Metadata extracted from court verdict."""
-    
-    case_number: Optional[str] = None
-    court_name: Optional[str] = None
-    date: Optional[str] = None
-    judges: List[str] = field(default_factory=list)
-    parties: dict[str, List[str]] = field(default_factory=dict)  # {"plaintiff": [...], "defendant": [...]}
-    organizations: List[str] = field(default_factory=list)
-    legal_references: List[str] = field(default_factory=list)  # Reference ka zakonima
-    article_references: List[str] = field(default_factory=list)  # Reference ka članovima
-    verdict_type: Optional[str] = None  # presuda, rješenje, zaključak
-    factual_state: dict[str, List[str]] = field(default_factory=dict)
-    raw_text: str = ""
-
+from backend.app.domain.verdict.entities import VerdictMetadata
 
 class VerdictParser:
     """Parses court verdict text and extracts structured metadata."""

@@ -31,8 +31,8 @@ class Law(BaseModel):
     total_articles: int
 
 
-class VerdictMetadata(BaseModel):
-    """Model for verdict metadata."""
+class VerdictMetadataDTO(BaseModel):
+    """DTO model for verdict metadata."""
     case_id: str
     case_number: Optional[str] = None
     court_name: Optional[str] = None
@@ -51,8 +51,8 @@ class VerdictMetadata(BaseModel):
     factual_state: Dict[str, List[str]] = Field(default_factory=dict)
 
 
-class VerdictDetail(VerdictMetadata):
-    """Extended verdict model with full content."""
+class VerdictDetailDTO(VerdictMetadataDTO):
+    """Extended DTO model with full content."""
     legal_reasoning: Optional[str] = None
     precedent_value: Optional[str] = None
     confidence: Optional[float] = None
@@ -79,7 +79,7 @@ class VerdictOverrideUpdate(BaseModel):
 class VerdictList(BaseModel):
     """Model for list of verdicts."""
     total: int
-    verdicts: List[VerdictMetadata]
+    verdicts: List[VerdictMetadataDTO]
 
 
 class SearchRequest(BaseModel):
@@ -91,7 +91,12 @@ class SearchRequest(BaseModel):
 class SearchResponse(BaseModel):
     """Model for search response."""
     total_results: int
-    results: List[VerdictMetadata]
+    results: List[VerdictMetadataDTO]
+
+
+# Compatibility aliases during phase-2 migration.
+VerdictMetadata = VerdictMetadataDTO
+VerdictDetail = VerdictDetailDTO
 
 
 class CaseFacts(BaseModel):

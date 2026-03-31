@@ -4,6 +4,7 @@ from __future__ import annotations
 from pathlib import Path
 import subprocess
 import xml.etree.ElementTree as ET
+import re
 
 from backend.app.models.schemas import CaseFacts, RuleReasoningResult
 from backend.app.services.cbr_normalization import bool_to_text, normalize_ascii
@@ -14,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[3]
 DR_DEVICE_DIR = ROOT / "dr-device" / "dr-device"
 FACTS_PATH = DR_DEVICE_DIR / "facts.rdf"
 EXPORT_PATH = DR_DEVICE_DIR / "export.rdf"
+RULEBASE_PATH = DR_DEVICE_DIR / "rulebase.clp"
 
 class RuleReasoningService:
     """Service that runs dr-device reasoning on provided facts."""
@@ -24,6 +26,7 @@ class RuleReasoningService:
             message = "; ".join(artifact_errors)
             raise ValueError(f"Rule artifact validation failed: {message}")
 
+        self._sync_export_norms()
         self._write_facts(facts)
         self._run_dr_device()
         return self._parse_export(facts, strict_mode)
@@ -34,7 +37,7 @@ class RuleReasoningService:
 
     def _write_facts(self, facts: CaseFacts) -> None:
         defendant = (facts.defendant or "Unknown").strip()
-        values = {
+        values: dict[str, str | list[str] | None] = {
             "defendant": self._normalize(defendant),
             "injury_type": self._normalize(facts.injury_type.strip()) if facts.injury_type else None,
             "location": self._normalize(facts.location.strip()) if facts.location else None,
@@ -47,6 +50,35 @@ class RuleReasoningService:
             "fight_participation": self._bool_value(facts.fight_participation),
             "fight_consequence": self._normalize(facts.fight_consequence.strip()) if facts.fight_consequence else None,
             "left_without_help": self._bool_value(facts.left_without_help),
+            "victim_status": self._normalized_list(facts.victim_status),
+            "victim_health_state": self._normalize_optional_text(facts.victim_health_state),
+            "victim_accountability": self._normalize_optional_text(facts.victim_accountability),
+            "victim_previously_abused": self._bool_value(facts.victim_previously_abused),
+            "victim_count": self._normalize_optional_text(facts.victim_count),
+            "victim_explicit_request": self._normalize_optional_text(facts.victim_explicit_request),
+            "victim_subordination": self._bool_value(facts.victim_subordination),
+            "life_consequence_type": self._normalize_optional_text(facts.life_consequence_type),
+            "injury_severity_level": self._normalize_optional_text(facts.injury_severity_level),
+            "severe_injury_specific_consequences": self._normalized_list(facts.severe_injury_specific_consequences),
+            "danger_to_third_parties": self._bool_value(facts.danger_to_third_parties),
+            "suicide_outcome": self._normalize_optional_text(facts.suicide_outcome),
+            "abortion_outcomes": self._normalized_list(facts.abortion_outcomes),
+            "execution_manner": self._normalized_list(facts.execution_manner),
+            "offender_motive": self._normalized_list(facts.offender_motive),
+            "provocation_types": self._normalized_list(facts.provocation_types),
+            "injury_means_type": self._normalize_optional_text(facts.injury_means_type),
+            "victim_consent": self._normalize_optional_text(facts.victim_consent),
+            "sterilization_goal": self._normalize_optional_text(facts.sterilization_goal),
+            "guilt_form": self._normalize_optional_text(facts.guilt_form),
+            "offender_psych_state": self._normalize_optional_text(facts.offender_psych_state),
+            "death_attributed_to_negligence": self._normalize_optional_text(facts.death_attributed_to_negligence),
+            "danger_caused_by_offender": self._bool_value(facts.danger_caused_by_offender),
+            "offender_victim_relationship": self._normalize_optional_text(facts.offender_victim_relationship),
+            "help_provision_ability": self._normalize_optional_text(facts.help_provision_ability),
+            "failure_to_help_consequence": self._normalize_optional_text(facts.failure_to_help_consequence),
+            "duty_connection": self._normalize_optional_text(facts.duty_connection),
+            "special_action_types": self._normalized_list(facts.special_action_types),
+            "inhuman_treatment": self._bool_value(facts.inhuman_treatment),
         }
 
         lines = []
@@ -67,6 +99,12 @@ class RuleReasoningService:
         lines.append("    <lc:case rdf:about=\"http://ftn.uns.ac.rs/legal-case#case01\">")
         lines.append("        <rdf:type rdf:resource=\"http://ftn.uns.ac.rs/legal-case#case\" />")
         for key, value in values.items():
+            if isinstance(value, list):
+                for item in value:
+                    if item in (None, ""):
+                        continue
+                    lines.append(f"        <lc:{key}>{self._escape(str(item))}</lc:{key}>")
+                continue
             if value in (None, ""):
                 continue
             lines.append(f"        <lc:{key}>{self._escape(str(value))}</lc:{key}>")
@@ -129,6 +167,7 @@ class RuleReasoningService:
         facts: CaseFacts,
         strict_mode: bool,
     ) -> RuleReasoningResult:
+        norms = self._resolve_norm_conflicts(norms)
         if norms:
             return RuleReasoningResult(
                 applied_norms=norms,
@@ -156,4 +195,130 @@ class RuleReasoningService:
 
     def _bool_value(self, value: bool | None) -> str | None:
         return bool_to_text(value)
+
+    def _normalize_optional_text(self, value: str | None) -> str | None:
+        if not value:
+            return None
+        return self._normalize(value.strip())
+
+    def _normalized_list(self, values: list[str] | None) -> list[str]:
+        if not values:
+            return []
+        normalized: list[str] = []
+        for value in values:
+            text = self._normalize_optional_text(value)
+            if text:
+                normalized.append(text)
+        return normalized
+
+    def _resolve_norm_conflicts(self, norms: list[str]) -> list[str]:
+        if not norms:
+            return []
+
+        priorities = {
+            "crime_art147": 120,
+            "crime_art146": 115,
+            "crime_art145": 110,
+            "crime_art144": 105,
+            "crime_art148": 100,
+            "crime_art143": 90,
+            "crime_art151_4": 120,
+            "crime_art151_3": 115,
+            "crime_art151_2": 110,
+            "crime_art151_5": 105,
+            "crime_art151_1": 90,
+            "crime_art152_2": 110,
+            "crime_art152_1": 90,
+            "crime_art157": 120,
+            "crime_art156": 110,
+            "crime_art155_1": 90,
+            "crime_art149_5": 110,
+            "crime_art149_2": 105,
+            "crime_art149_1": 100,
+        }
+        families = {
+            "homicide": {
+                "crime_art143",
+                "crime_art144",
+                "crime_art145",
+                "crime_art146",
+                "crime_art147",
+                "crime_art148",
+            },
+            "severe_injury": {
+                "crime_art151_1",
+                "crime_art151_2",
+                "crime_art151_3",
+                "crime_art151_4",
+                "crime_art151_5",
+            },
+            "light_injury": {"crime_art152_1", "crime_art152_2"},
+            "abandonment": {"crime_art155_1", "crime_art156", "crime_art157"},
+            "suicide_related": {"crime_art149_1", "crime_art149_2", "crime_art149_5"},
+        }
+
+        family_by_norm = {
+            norm: family_name
+            for family_name, norm_set in families.items()
+            for norm in norm_set
+        }
+
+        seen: set[str] = set()
+        for norm in norms:
+            if norm not in seen:
+                seen.add(norm)
+
+        winners: dict[str, tuple[str, int]] = {}
+        passthrough: list[str] = []
+
+        for norm in seen:
+            family = family_by_norm.get(norm)
+            score = priorities.get(norm, 50)
+            if not family:
+                passthrough.append(norm)
+                continue
+            current = winners.get(family)
+            if current is None or score > current[1] or (score == current[1] and norm < current[0]):
+                winners[family] = (norm, score)
+
+        merged = passthrough + [value[0] for value in winners.values()]
+
+        def sort_key(norm: str) -> tuple[int, str]:
+            match = re.search(r"crime_art(\d+)", norm)
+            article_num = int(match.group(1)) if match else 10_000
+            return (article_num, norm)
+
+        return sorted(merged, key=sort_key)
+
+    def _sync_export_norms(self) -> None:
+        if not RULEBASE_PATH.exists():
+            return
+
+        text = RULEBASE_PATH.read_text(encoding="utf-8")
+        block_pattern = re.compile(
+            r"\(defeasiblerule\s+rule\d+\s*(.*?)\n\)\s*(?=\n\(defeasiblerule|\Z)",
+            re.S,
+        )
+        then_pattern = re.compile(r"=>\s*\((crime_art[0-9a-zA-Z_]+)")
+
+        norms: set[str] = set()
+        for block in block_pattern.findall(text):
+            match = then_pattern.search(block)
+            if match:
+                norms.add(match.group(1))
+
+        if not norms:
+            return
+
+        sorted_norms = sorted(norms, key=lambda item: (int(re.search(r"crime_art(\d+)", item).group(1)), item))
+        export_line = "\t\t(export-rdf export.rdf  " + " ".join(sorted_norms) + ")"
+        updated = re.sub(
+            r"^\s*\(export-rdf\s+export\.rdf\s+.*?\)\s*$",
+            export_line,
+            text,
+            count=1,
+            flags=re.M,
+        )
+        if updated != text:
+            RULEBASE_PATH.write_text(updated, encoding="utf-8")
 

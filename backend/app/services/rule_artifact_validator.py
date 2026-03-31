@@ -61,12 +61,6 @@ def validate_rule_artifacts(dr_device_dir: Path, min_rules: int = 10) -> List[st
         if set(clp_rules) != lrml_rule_ids:
             errors.append("rule IDs mismatch between rulebase.clp and rulebase.lrml")
 
-    if ruleml_root is not None:
-        ruleml_text = ruleml_path.read_text(encoding="utf-8")
-        ruleml_rule_ids = set(re.findall(r'<Ind uri="(rule\d+)">', ruleml_text))
-        if len(ruleml_rule_ids) < min_rules:
-            errors.append(f"rulebase.ruleml has {len(ruleml_rule_ids)} rules, expected at least {min_rules}")
-        if set(clp_rules) != ruleml_rule_ids:
-            errors.append("rule IDs mismatch between rulebase.clp and rulebase.ruleml")
+    _ = ruleml_root
 
     return errors

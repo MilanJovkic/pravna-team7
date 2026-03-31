@@ -39,7 +39,8 @@ class ReasoningPolicy:
 
         if subsystem_status and subsystem_status.get("rule") == "error":
             rule_signal = "unavailable"
-            final_confidence = 0.4
+            decision_basis = "manual_review"
+            final_confidence = 0.2
 
         return ReasoningConfidence(
             decision_basis=decision_basis,
@@ -58,6 +59,8 @@ class ReasoningPolicy:
         verdict: str | None = None,
     ) -> str | None:
         normalized_verdict = normalize_outcome(verdict)
+        if verdict == "manual_review":
+            return "manualna procjena sankcije"
         if normalized_verdict in {"odbijeno", "oslobodjen", "nepoznato"}:
             return "bez sankcije"
 

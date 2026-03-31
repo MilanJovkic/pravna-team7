@@ -32,20 +32,16 @@ class CaseService:
     ) -> dict:
         canonical_outcome = normalize_outcome(outcome)
 
-        normalized = CaseFacts(
-            defendant=facts.defendant,
-            injury_type=normalize_injury_type(facts.injury_type),
-            location=normalize_text(facts.location),
-            weapon=normalize_text(facts.weapon),
-            weapon_used=facts.weapon_used,
-            severe_consequence=facts.severe_consequence,
-            death_result=facts.death_result,
-            negligence=facts.negligence,
-            provocation=facts.provocation,
-            fight_participation=facts.fight_participation,
-            fight_consequence=normalize_fight_consequence(facts.fight_consequence),
-            left_without_help=facts.left_without_help,
+        payload = facts.model_dump()
+        payload.update(
+            {
+                "injury_type": normalize_injury_type(facts.injury_type),
+                "location": normalize_text(facts.location),
+                "weapon": normalize_text(facts.weapon),
+                "fight_consequence": normalize_fight_consequence(facts.fight_consequence),
+            }
         )
+        normalized = CaseFacts(**payload)
 
         existing = self._repository.find_existing_case(
             facts=normalized,

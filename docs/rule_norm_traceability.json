@@ -1,77 +1,245 @@
 {
-  "version": "2026-03-24",
+  "version": "2026-03-31",
   "source_law": "Krivični zakonik Crne Gore",
-  "notes": "Mapa norma->rule id->dokaz iz teksta zakona za rule-based reasoning (min 10 pravila).",
+  "notes": "Automatski osvezena mapa norma->rule id iz prosirene CLP rulebase.",
   "mappings": [
     {
       "norm": "crime_art151_1",
       "rule_id": "rule1",
       "law_article": "151",
       "law_paragraph": "1",
-      "evidence_summary": "Teska tjelesna povreda predstavlja osnovnu kvalifikaciju iz clana 151."
+      "evidence_summary": "Pravilo rule1 mapira ulazne cinjenice na normu crime_art151_1."
     },
     {
       "norm": "crime_art151_2",
       "rule_id": "rule2",
       "law_article": "151",
       "law_paragraph": "2",
-      "evidence_summary": "Upotreba sredstva (weapon_used=true) pojacava kvalifikaciju dela."
+      "evidence_summary": "Pravilo rule2 mapira ulazne cinjenice na normu crime_art151_2."
     },
     {
       "norm": "crime_art151_3",
       "rule_id": "rule3",
       "law_article": "151",
       "law_paragraph": "3",
-      "evidence_summary": "Teske posledice (severe_consequence=true) mapiraju na tezi oblik iz clana 151."
+      "evidence_summary": "Pravilo rule3 mapira ulazne cinjenice na normu crime_art151_3."
     },
     {
       "norm": "crime_art151_4",
       "rule_id": "rule4",
       "law_article": "151",
       "law_paragraph": "4",
-      "evidence_summary": "Smrtni ishod (death_result=true) predstavlja tezu pravnu posledicu."
+      "evidence_summary": "Pravilo rule4 mapira ulazne cinjenice na normu crime_art151_4."
     },
     {
       "norm": "crime_art151_5",
       "rule_id": "rule5",
       "law_article": "151",
       "law_paragraph": "5",
-      "evidence_summary": "Nehat (negligence=true) se posebno vrednuje kroz normu iz clana 151."
+      "evidence_summary": "Pravilo rule5 mapira ulazne cinjenice na normu crime_art151_5."
     },
     {
       "norm": "crime_art152_1",
       "rule_id": "rule6",
       "law_article": "152",
       "law_paragraph": "1",
-      "evidence_summary": "Laka tjelesna povreda mapira na osnovnu normu clana 152."
+      "evidence_summary": "Pravilo rule6 mapira ulazne cinjenice na normu crime_art152_1."
     },
     {
       "norm": "crime_art152_2",
       "rule_id": "rule7",
       "law_article": "152",
       "law_paragraph": "2",
-      "evidence_summary": "Laka povreda uz upotrebu sredstva (weapon_used=true) vodi ka tezem stavu clana 152."
+      "evidence_summary": "Pravilo rule7 mapira ulazne cinjenice na normu crime_art152_2."
     },
     {
       "norm": "crime_art153",
       "rule_id": "rule8",
       "law_article": "153",
       "law_paragraph": "1",
-      "evidence_summary": "Provokacija (provocation=true) modeluje normu privilegovanog oblika iz clana 153."
+      "evidence_summary": "Pravilo rule8 mapira ulazne cinjenice na normu crime_art153."
     },
     {
       "norm": "crime_art154",
       "rule_id": "rule9",
       "law_article": "154",
       "law_paragraph": "1",
-      "evidence_summary": "Ucesce u tuci (fight_participation=true) mapira na normu clana 154."
+      "evidence_summary": "Pravilo rule9 mapira ulazne cinjenice na normu crime_art154."
     },
     {
       "norm": "crime_art155_1",
       "rule_id": "rule10",
       "law_article": "155",
       "law_paragraph": "1",
-      "evidence_summary": "Napustanje bez pomoci (left_without_help=true) mapira na clan 155 stav 1."
+      "evidence_summary": "Pravilo rule10 mapira ulazne cinjenice na normu crime_art155_1."
+    },
+    {
+      "norm": "crime_art143",
+      "rule_id": "rule11",
+      "law_article": "143",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule11 mapira ulazne cinjenice na normu crime_art143."
+    },
+    {
+      "norm": "crime_art143",
+      "rule_id": "rule12",
+      "law_article": "143",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule12 mapira ulazne cinjenice na normu crime_art143."
+    },
+    {
+      "norm": "crime_art144",
+      "rule_id": "rule13",
+      "law_article": "144",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule13 mapira ulazne cinjenice na normu crime_art144."
+    },
+    {
+      "norm": "crime_art144",
+      "rule_id": "rule14",
+      "law_article": "144",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule14 mapira ulazne cinjenice na normu crime_art144."
+    },
+    {
+      "norm": "crime_art144",
+      "rule_id": "rule15",
+      "law_article": "144",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule15 mapira ulazne cinjenice na normu crime_art144."
+    },
+    {
+      "norm": "crime_art144",
+      "rule_id": "rule16",
+      "law_article": "144",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule16 mapira ulazne cinjenice na normu crime_art144."
+    },
+    {
+      "norm": "crime_art145",
+      "rule_id": "rule17",
+      "law_article": "145",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule17 mapira ulazne cinjenice na normu crime_art145."
+    },
+    {
+      "norm": "crime_art145",
+      "rule_id": "rule18",
+      "law_article": "145",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule18 mapira ulazne cinjenice na normu crime_art145."
+    },
+    {
+      "norm": "crime_art146",
+      "rule_id": "rule19",
+      "law_article": "146",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule19 mapira ulazne cinjenice na normu crime_art146."
+    },
+    {
+      "norm": "crime_art147",
+      "rule_id": "rule20",
+      "law_article": "147",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule20 mapira ulazne cinjenice na normu crime_art147."
+    },
+    {
+      "norm": "crime_art148",
+      "rule_id": "rule21",
+      "law_article": "148",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule21 mapira ulazne cinjenice na normu crime_art148."
+    },
+    {
+      "norm": "crime_art149_1",
+      "rule_id": "rule22",
+      "law_article": "149",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule22 mapira ulazne cinjenice na normu crime_art149_1."
+    },
+    {
+      "norm": "crime_art149_2",
+      "rule_id": "rule23",
+      "law_article": "149",
+      "law_paragraph": "2",
+      "evidence_summary": "Pravilo rule23 mapira ulazne cinjenice na normu crime_art149_2."
+    },
+    {
+      "norm": "crime_art149_5",
+      "rule_id": "rule24",
+      "law_article": "149",
+      "law_paragraph": "5",
+      "evidence_summary": "Pravilo rule24 mapira ulazne cinjenice na normu crime_art149_5."
+    },
+    {
+      "norm": "crime_art150",
+      "rule_id": "rule25",
+      "law_article": "150",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule25 mapira ulazne cinjenice na normu crime_art150."
+    },
+    {
+      "norm": "crime_art151a",
+      "rule_id": "rule26",
+      "law_article": "151a",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule26 mapira ulazne cinjenice na normu crime_art151a."
+    },
+    {
+      "norm": "crime_art151b",
+      "rule_id": "rule27",
+      "law_article": "151b",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule27 mapira ulazne cinjenice na normu crime_art151b."
+    },
+    {
+      "norm": "crime_art151b",
+      "rule_id": "rule28",
+      "law_article": "151b",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule28 mapira ulazne cinjenice na normu crime_art151b."
+    },
+    {
+      "norm": "crime_art156",
+      "rule_id": "rule29",
+      "law_article": "156",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule29 mapira ulazne cinjenice na normu crime_art156."
+    },
+    {
+      "norm": "crime_art156",
+      "rule_id": "rule30",
+      "law_article": "156",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule30 mapira ulazne cinjenice na normu crime_art156."
+    },
+    {
+      "norm": "crime_art157",
+      "rule_id": "rule31",
+      "law_article": "157",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule31 mapira ulazne cinjenice na normu crime_art157."
+    },
+    {
+      "norm": "crime_art150",
+      "rule_id": "rule32",
+      "law_article": "150",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule32 mapira ulazne cinjenice na normu crime_art150."
+    },
+    {
+      "norm": "crime_art152_2",
+      "rule_id": "rule33",
+      "law_article": "152",
+      "law_paragraph": "2",
+      "evidence_summary": "Pravilo rule33 mapira ulazne cinjenice na normu crime_art152_2."
+    },
+    {
+      "norm": "crime_art155_1",
+      "rule_id": "rule34",
+      "law_article": "155",
+      "law_paragraph": "1",
+      "evidence_summary": "Pravilo rule34 mapira ulazne cinjenice na normu crime_art155_1."
     }
   ]
 }

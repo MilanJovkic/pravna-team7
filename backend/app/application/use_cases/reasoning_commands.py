@@ -69,12 +69,15 @@ class RunHybridReasoningUseCase:
                 applied_articles,
                 norms=rule_result.applied_norms,
             )
-            suggested_verdict = self._decision_selector.decide(
-                rule_result.applied_norms,
-                cbr_result,
-                rule_available=subsystem_status.get("rule") != "error",
-                cbr_available=subsystem_status.get("cbr") != "error",
-            )
+            if subsystem_status.get("rule") == "error":
+                suggested_verdict = "manual_review"
+            else:
+                suggested_verdict = self._decision_selector.decide(
+                    rule_result.applied_norms,
+                    cbr_result,
+                    rule_available=subsystem_status.get("rule") != "error",
+                    cbr_available=subsystem_status.get("cbr") != "error",
+                )
             suggested_sanction = self._reasoning_policy.suggest_sanction(
                 applied_articles,
                 facts=request.facts,

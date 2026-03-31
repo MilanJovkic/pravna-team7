@@ -114,6 +114,47 @@ class CaseFacts(BaseModel):
     fight_consequence: Optional[str] = None
     left_without_help: Optional[bool] = None
 
+    # Group 1: victim data
+    victim_status: List[str] = Field(default_factory=list)
+    victim_health_state: Optional[str] = None
+    victim_accountability: Optional[str] = None
+    victim_previously_abused: Optional[bool] = None
+    victim_count: Optional[str] = None
+    victim_explicit_request: Optional[str] = None
+    victim_subordination: Optional[bool] = None
+
+    # Group 2: result/consequence
+    life_consequence_type: Optional[str] = None
+    injury_severity_level: Optional[str] = None
+    severe_injury_specific_consequences: List[str] = Field(default_factory=list)
+    danger_to_third_parties: Optional[bool] = None
+    suicide_outcome: Optional[str] = None
+    abortion_outcomes: List[str] = Field(default_factory=list)
+
+    # Group 3: execution method and motive
+    execution_manner: List[str] = Field(default_factory=list)
+    offender_motive: List[str] = Field(default_factory=list)
+    provocation_types: List[str] = Field(default_factory=list)
+    injury_means_type: Optional[str] = None
+    victim_consent: Optional[str] = None
+    sterilization_goal: Optional[str] = None
+
+    # Group 4: subjective relation (guilt)
+    guilt_form: Optional[str] = None
+    offender_psych_state: Optional[str] = None
+    death_attributed_to_negligence: Optional[str] = None
+
+    # Group 5: abandonment / failure to provide help
+    danger_caused_by_offender: Optional[bool] = None
+    offender_victim_relationship: Optional[str] = None
+    help_provision_ability: Optional[str] = None
+    failure_to_help_consequence: Optional[str] = None
+
+    # Group 6: service context and special acts
+    duty_connection: Optional[str] = None
+    special_action_types: List[str] = Field(default_factory=list)
+    inhuman_treatment: Optional[bool] = None
+
 
 class ReasoningRequest(BaseModel):
     """Request model for rule and case-based reasoning."""

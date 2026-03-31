@@ -35,7 +35,7 @@ class TestReasoningPolicy(unittest.TestCase):
     def setUp(self) -> None:
         self.policy = ReasoningPolicy()
 
-    def test_confidence_report_keeps_rule_only_basis_when_rule_fails(self) -> None:
+    def test_confidence_report_uses_manual_review_when_rule_fails(self) -> None:
         cbr = CbrResult(matches=[CbrMatch(case_number="K-1", similarity=0.8, outcome="osudjen")])
         report = self.policy.build_confidence_report(
             norms=[],
@@ -43,7 +43,11 @@ class TestReasoningPolicy(unittest.TestCase):
             suggested_verdict="osudjen",
             subsystem_status={"rule": "error", "cbr": "ok"},
         )
-        self.assertEqual("rule_only", report.decision_basis)
+        self.assertEqual("manual_review", report.decision_basis)
+
+    def test_sanction_manual_review(self) -> None:
+        sanction = self.policy.suggest_sanction(article_numbers=["151"], facts=None, verdict="manual_review")
+        self.assertEqual("manualna procjena sankcije", sanction)
 
     def test_sanction_returns_none_for_rejection(self) -> None:
         sanction = self.policy.suggest_sanction(article_numbers=["151"], facts=None, verdict="odbijeno")

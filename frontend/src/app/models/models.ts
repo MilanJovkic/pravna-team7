@@ -71,6 +71,47 @@ export interface CaseFacts {
   fight_participation?: boolean | null;
   fight_consequence?: string;
   left_without_help?: boolean | null;
+
+  // Group 1: victim data
+  victim_status?: string[];
+  victim_health_state?: string;
+  victim_accountability?: string;
+  victim_previously_abused?: boolean | null;
+  victim_count?: string;
+  victim_explicit_request?: string;
+  victim_subordination?: boolean | null;
+
+  // Group 2: result/consequence
+  life_consequence_type?: string;
+  injury_severity_level?: string;
+  severe_injury_specific_consequences?: string[];
+  danger_to_third_parties?: boolean | null;
+  suicide_outcome?: string;
+  abortion_outcomes?: string[];
+
+  // Group 3: execution method and motive
+  execution_manner?: string[];
+  offender_motive?: string[];
+  provocation_types?: string[];
+  injury_means_type?: string;
+  victim_consent?: string;
+  sterilization_goal?: string;
+
+  // Group 4: subjective relation (guilt)
+  guilt_form?: string;
+  offender_psych_state?: string;
+  death_attributed_to_negligence?: string;
+
+  // Group 5: abandonment / failure to provide help
+  danger_caused_by_offender?: boolean | null;
+  offender_victim_relationship?: string;
+  help_provision_ability?: string;
+  failure_to_help_consequence?: string;
+
+  // Group 6: service context and special acts
+  duty_connection?: string;
+  special_action_types?: string[];
+  inhuman_treatment?: boolean | null;
 }
 
 export interface RuleReasoningResult {

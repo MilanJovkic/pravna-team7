@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке8">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке8/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке8"/>
+                    <FRBRdate date="2023-09-28" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке8/sr@2023-09-28/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке8/sr@2023-09-28"/>
+                    <FRBRdate date="2023-09-28"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке8/sr@2023-09-28/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке8/sr@2023-09-28/!main.akn"/>
+                    <FRBRdate date="2026-03-31"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni sud u Podgorici"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Ilija Radulović"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="M. B."/>
+                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="Crne Gore"/>
+                <TLCPerson eId="defendant_3" href="/akn/me/ontology/person/defendant" showAs="N. D."/>
+                <TLCPerson eId="defendant_4" href="/akn/me/ontology/person/defendant" showAs="B. L."/>
+                <TLCPerson eId="defendant_5" href="/akn/me/ontology/person/defendant" showAs="B. M."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="maloljetni"/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="B. L."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 403/23</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>Osnovni sud u Podgorici</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2023-09-28">2023-09-28</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Ilija Radulović</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni su krivi za učešće u tuči.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Učešće u tuči</p>
+                    <p>Nanijeta teška tjelesna povreda</p>
+                    <p>Zabranjeno ponašanje</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_13">Član 13</ref>
+                    <ref href="/akn/me/act/2024/!main#art_3">Član 3</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_53">Član 53</ref>
+                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/2024/!main#art_54">Član 54</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
+                    <ref href="/akn/me/act/2024/!main#art_458">Član 458</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_5">Član 5</ref>
+                    <ref href="/akn/me/act/2024/!main#art_15">Član 15</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Okrivljeni su svjesno učestvovali u tuči koja je rezultirala teškom tjelesnom povredom.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="nepoznato">
+                    <p>Presuda o krivici</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>M. B.</person>
+                    <person>Crne Gore</person>
+                    <person>N. D.</person>
+                    <person>B. L.</person>
+                    <person>B. M.</person>
+                </block>
+                <block name="victims">
+                    <person>maloljetni</person>
+                    <person>B. L.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Osnovnom</fact>
+                <fact key="location">Zato</fact>
+                <fact key="location">Hercegova</fact>
+                <fact key="location">Hercegovačkoj</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K. br. 403/23
+ 
+ 
+ 
+ 
+ 
+U IME CRNE GORE
+ 
+Osnovni sud u Podgorici, sudija Ilija Radulovi ć , uz u č e šć e zapisni č arke Nata š e Paunovi ć , u krivi č nom
+postupku protiv okrivljenih M. B., N. D. i M. Ć . zbog krivi č nog djela u č estvovanje u tu č i iz č lana 153 Krivi č nog
+zakonika Crne Gore, nakon javnog glavnog pretresa odr ž anog dana 28.09.2023. godine, u prisustvu savjetnika
+na radu u Osnovnom dr ž avnom tu ž ila š tvu Podgorica – Milo š a Ljumovi ć a, okrivljenih M. B., N. D. i M. Ć ., dana
+02.10.2023. godine, izrekao je i javno objavio
+ 
+ 
+P R E S U D U
+ 
+Okrivljeni:
+1. M. B., JMB xxxxxxxxxxxxx, od oca Ž . i majke D., ro đ ene N., ro đ en xx.xx.20xx. godine u P., sa prebivali š tem u
+P., ulica B. B. broj xx, dr ž avljanin Crne Gore, č iji jezik je crnogorski, privatnik, neo ž enjen, bez djece, pismen, sa
+zavr š enom srednjom š kolom, lo š eg imovnog stanja, ranije neosu đ ivan, protiv kojeg se ne vodi postupak za
+drugo krivi č no djelo,
+2. N. D., JMB xxxxxxxxxxxxx, zvani D., od oca D. i majke A., ro đ ene G., ro đ en xx.xx.20xx. godine u Podgorici, sa
+prebivali š tem u mjestu ro đ enja, ulica R. broj x, dr ž avljanin Crne Gore, č iji jezik je crnogorski, MMA borac,
+neož enjen, bez djece, pismen, sa zavr š enom srednjom š kolom, lo š eg imovnog stanja, ranije neosu đ ivan,
+protiv kojeg se ne vodi postupak za drugo krivi č no djelo,
+3. M. Ć ., JMB xxxxxxxxxxxx, zvani Ć ., od oca Lj. i majke R., ro đ ene T., ro đ en xx.xx.20xx. godine u N., sa
+prebivali š tem u Š ., selo D. bb, dr ž avljanin Crne Gore, razumije crnogorski jezik, a njegov jezik je srpski, kuvar,
+neož enjen, bez djece, pismen, sa zavr š enom srednjom š kolom, lo š eg imovnog stanja, ranije neosu đ ivan,
+protiv kojeg se ne vodi postupak za drugo krivi č no djeloOsnovni Sud u Podgorici
+K 403/2023
+02. Oktobar 2023
+K r i v i s u
+ 
+Zato š to su:
+Dana 26. novembra 2022. godine, oko 23.00 č asa, u ugostiteljskom objektu &quot;Promaja&quot; u Hercegova č koj ulici,
+u Podgorici, svjesni svog djela č ije su izvr š enje htjeli, znaju ć i da je isto zabranjeno, u č estvovali u tu č i u kojoj je
+drugom nanijeta te š ka tjelesna povreda, na na č in š to je nakon kra ć e verbalne rasprave do š lo do tu č e izme đ u
+okrivljenih B. M. i D. N., sa jedne strane, i okrivljenog Ć . M., te maloljetnih D. F. i L. M., i maloljetnog o š te ć enog
+L. B., sa druge strane, kada su me đ usobno razmjenjivali udarce, kojom prilikom je o š te ć eni maloljetni L. B.
+zadobio te š ku tjelesnu povredu u vidu krvnih podliva ispod desnog oka i ve ž nja č e desnog oka, pra ć eni
+prelomom desnog gornjovili č no-jagodi č nog masiva i prelomom desne nosne kosti sa pomjeranjem ko š tanih
+ulomaka,
+- čime su izvr š ili krivi č no djelo u č estvovanje u tu č i iz č lana 153 Krivi č nog zakonika Crne Gore,
+Pa im sud za navedeno krivi č no djelo primjenom č l.3, č l. 4 st. 2, č l. 5, č l. 13, č l. 15, č l. 42 st. 1, č l. 52 st. 2, č l. 53 i
+čl. 54 Krivi č nog zakonika Crne Gore i č l. 226, č l. 229, č l. 239 i č l. 374 Zakonika o krivi č nom postupku, izri č e
+USLOVNU OSUDU
+ 
+Kojom im utvr đ uje kazne zatvora u trajanju od po 6 ( š est) mjeseci i istovremeno odre đ uje da se one ne ć e
+izvrš iti, ako okrivljeni u roku od 2 (dvije) godine po pravosna ž nosti presude ne u č ine novo krivi č no djelo.
+ 
+Ošte ć eni B. L. se upu ć uje da imovinskopravni zahtjev mo ž e ostvarivati u parni č nom postupku.
+ 
+Obavezuju se okrivljeni da u korist Bud ž eta Crne Gore, na ž iro ra č un 832-21-37, na ime tro š kova krivi č nog
+postupka solidarno plate iznos od 66,00 eura, kao i da plate iznose od po 30,00 eura na ime sudskog pau š ala,
+sve prednje u roku od 15 dana po pravosna ž nosti presude, pod prijetnjom prinudnog izvr š enja.
+ 
+O b r a z l o ž  e nj e
+ 
+Optu ž nim predlogom Osnovnog dr ž avnog tu ž ila š tva Podgorica Kt. br. 662/23 od 28.06.2023. godine
+okrivljenima M. B., N. D. i M. Ć . je stavljeno na teret izvr š enje krivi č nog djela u č estvovanje u tu č i iz č lana 153
+Krivi č nog zakonika Crne Gore. Zastupnik optu ž be u zavr š noj rije č i ostao pri podnijetom optu ž nom predlogu,
+predlo ž iv š i sudu da okrivljene oglasi krivima i da ih osudi po zakonu.
+Okrivljeni M. B. je u svojoj odbrani u izvi đ aju naveo da je kriti č ne ve č eri zajedno sa svojim drugovima bio u
+lokalu „Promaja&quot; koji se nalazi u Hercegovačkoj ulici, a u kojem je bila i jedna grupa momaka koji su spojili
+dva stola i koji su u jednom momentu počeli da lome boce. Na njihovo ponašanje su opominjali i gazdu
+lokala, koji ih je opomenuo, međutim oni su nastavili da bacaju boce u pravcu gdje se on nalazio. Tada mu je
+jedan od ovih momaka prišao i unio mu se u facu, a zatim ga je i udario otpozadi, u kojem momentu je izbila
+masovna tuča i svi su međusobno zadavali udarce jedni drugima. Sjeća se da su ih gazda i konobari
+razdvajali, a bilo je tu još ljudi i u jednom momentu su ovi momci izašli iz lokala i prestala je tuča. Sjeća se da
+je sa njim u tuči učestvovao i N. D.. Na glavnom pretresu je u potpunosti priznajući izvršenje krivičnog djela
+pojasnio da kada je pri š ao da upozori ove momke na njihovo pona š anje i da im ka ž e da vi š e ne lome fla š e,
+tada je do š lo do guranja i tada dolazi do masovne tu č e gdje su svi jedni drugima zadavali udarce i on je isto
+učestvovao aktivno u toj tu č i.
+U zavr š noj rije č i, okrivljeni M. B. je naveo da mu je iskreno ž ao š to je do š lo do ovog dogadjaja, bio je splet
+takvih okolnosti, a naglasio je da vodi uredan ž ivot i nikad nije imao problema sa zakonom, pa je zamolio da
+bude š to bla ž e ka ž njen.
+Okrivljeni N. D. je u svojoj odbrani u izvi đ aju i na glavnom pretresu, u potpunosti priznaju ć i izvr š enje
+krivi č nog djela koje mu se stavlja na teret, naveo da je ta č no da je kriti č ne ve č eri oko 23,00h bio zajedno sa
+drugom M. B. i jo š  nekim momcima u lokalu &quot;Promaja&quot; koji se nalazi u Hercegova č koj ulici. Tu su kao gosti bili
+i jedna grupa momaka koji su popili dosta alkohola i neprimjereno se pona š ali, a lomili su i fla š e. Oni su se
+žalili gazdi lokala zbog takvog pona š anja tih momaka, a u jednom trenutku im je pri š ao okrivljeni M. B. kako
+bi ih zamolio da prestanu sa takvim pona š anjem, kada mu je neko sa strane zadao udarac i tada zapo č inje
+masovna tu č a i svi se me đ usobno tuku i razmjenjuju udarce. Ne zna kome je zadavao udarce, a sve udarce
+zadavao je rukama.
+Okrivljeni N. D. je u zavr š noj rije č i naveo da je sportista i da ne ž eli da se tu č e na ulici, a iskreno se kaje zbog
+učinjenog i ovakvo ne š to mu se nikad vi š e ne ć e ponoviti, pa je zamolio sud da bude š to bla ž e ka ž njen.
+Okrivljeni M. Ć . je u svojoj odbrani u izvi đ aju i na glavnom pretresu, u potpunosti priznaju ć i izvr š enje
+krivi č nog djela koje mu se stavlja na teret, naveo da je kriti č ne ve č eri bio zajedno sa O. Ć ., D. Ć ., A. L., B. L. i F.
+D., u lokalu &quot;Promaja&quot; koji se nalazi u Hercegova č koj ulici. Konzumirali su alkohol i bila je dobra atmosfera, a
+u jednom momentu je M. L. bacio dvije fla š e na pod. Za sto preko puta su sjedjeli neki momci koji su ih nakon
+toga gledali, a jedan od njih je pri š ao njegovom drugu F. D. i odgurnuo ga, nakon č ega je nastala tu č a u kojoj
+je i on u č estvovao. Zadavao je udarce rukama i nogama koliko je mogao, a i njemu su zadavali udarce, a sve je
+to trajalo minut - dva. Tu č a je prestala kada su ovi momci vidjeli da je B. L. povrije đ en, a tada su iza š li iz
+lokala. Pojasnio je da je ovo sve bilo u malom prostoru, bio je mrak, svi su se tukli, a nije se znalo ko koga
+udara.
+Okrivljeni M. Ć . je u zavr š noj rije č i naveo da je miran i kulturan momak koji se zaista trudi da ž ivi u skladu sa
+zakonom i ovo mu je bilo prvi put u ž ivotu da sebi dozvoli ne š to ovako da u č ini i nikada mu se ne š to sli č no
+neće ponoviti. Bile su specifine okolnosti i op š ta tu č a, pa je zamolio sud da ga š to bla ž e kazni.
+Uzimaju ć i u obzir potpuna i jasna priznanja okrivljenih, koja u toku postupka nijesu dovedena u sumnju i
+cijene ć i ih kao dokaze, sud primjenom č l. 458 st. 2 Zakonika o krivi č nom postupku nije izvodio druge dokaze,
+osim izvoda iz registra kaznenih evidencija Ministarstva pravde Crne Gore KE 1485/2023 od 28.09.2023.
+godine, KE 1486/2023 od 28.09.2023. godine i KE 1487/2023 od 28.09.2023. godine na ime okrivljenih, od kojih
+zavisi izbor i visina kazne. Na taj na č in je tokom postupka nesumnjivo utvr đ eno da su okrivljeni dana 26.
+novembra 2022. godine, oko 23.00 časa, u ugostiteljskom objektu &quot;Promaja&quot; u Hercegovačkoj ulici, u
+Podgorici, učestvovali u tuči u kojoj je drugom nanijeta teška tjelesna povreda, na način što je nakon kraće
+verbalne rasprave došlo do tuče između okrivljenih M. B. i N. D., sa jedne strane, i okrivljenog M. Ć., te
+maloljetnih F. D. i M. L., i maloljetnog oštećenog B. L., sa druge strane, kada su međusobno razmjenjivali
+udarce, kojom prilikom je oštećeni maloljetni B. L. zadobio tešku tjelesnu povredu u vidu krvnih podliva
+ispod desnog oka i vežnjače desnog oka, praćeni prelomom desnog gornjovilično-jagodičnog masiva i
+prelomom desne nosne kosti sa pomjeranjem koštanih ulomaka.
+Cijene ć i subjektivni odnos okrivljenih prema djelu, a imaju ć i u vidu njihove odbrane u kojima su naveli da su
+nakon kra ć e verbalne rasprave uzeli u č e šć e u tu č i, na na č in š to su me đ usobno razmjenjivali udarce, i pored
+toga š to su znali i bili svjesni da je ovakvo pona š anje nedozvoljeno, ali su isto nesumnjivo htjeli. Time je u
+njihovim radnjama pored objektivnih ostvaren i subjektivni element bi ć a krivi č nog djela učestvovanje u tu č i
+iz člana 153 Krivi č nog zakonika Crne Gore.
+Prilikom odlu č ivanja o krivi č noj sankciji, sud je u smislu č l. 42 st. 1 Krivi č nog zakonika Crne Gore cijenio sve
+okolnosti koje uti č u na njen izbor i visinu, pa je od olak š avaju ć ih okolnosti na strani okrivljenih cijenio njihov
+raniji ž ivot i s tim u vezi neosu đ ivanost, koja je utvr đ ena iz izvoda iz registra kaznenih evidencija Ministarstva
+pravde Crne Gore KE 1485/2023 od 28.09.2023. godine, KE 1486/2023 od 28.09.2023. godine i KE 1487/2023
+od 28.09.2023. godine na ime okrivljenih. Osim toga, sud je cijenio i njihove li č ne prilike odnosno č injenicu da
+su lo š eg imovnog stanja, te na strani sva tri okrivljena njihovo dr ž anje poslije u č injenog krivi č nog djela
+izraž eno kroz prihvatanje odgovornosti i s tim u vezi jasno  i potpuno priznanje izvr š enja krivi č nog djela i na
+glavnom pretresu zaista iskreno izjavljeno kajanje zbog u č injenog. Cijene ć i sve naprijed navedene
+olak š avaju ć e okolnosti, a u odustvu ote ž avaju ć ih, sud je okrivljenima, shodno č l. 53 i č l. 54 Krivi č nog
+zakonika Crne Gore izrekao uslovne osude, kao u izreci presude, nalaze ć i da prema okrivljenima nije nu ž no
+primjeniti kaznu radi krivi č nopravne za š tite, jer se mo ž e o č ekivati da ć e se i upozorenjem uz prijetnju kaznom
+zatvora u trajanju od 6 mjeseci i vremenom provjeravanja u periodu od dvije godine, na okrivljene u dovoljnoj
+mjeri uticati da ubudu ć e ne vr š e krivi č na djela. Time ć e se uspje š no ostvariti svrha uslovne osude iz č l. 52 st. 2
+Krivi č nog zakonika Crne Gore u okviru op š te svrhe propisivanja i izricanja krivi č nih sankcija iz č l. 4 st. 2
+Krivi č nog zakonika Crne Gore.
+Sud je, shodno č lanu 239 st. 2 Zakonika o krivi č nom postupku uputio o š te ć enog Bo ž a Laketi ć a da
+imovinskopravni zahtjev u cjelini mo ž e ostvarivati u parni č nom postupku, jer č injenice utvr đ ene u krivi č nom
+postupku ne pru ž aju pouzdan osnov ni za potpuno ni za djelimi č no presu đ enje, a njihovo utvr đ ivanje bi
+vodilo znatnom odugovla č enju postupka.
+Kako su okrivljeni ogla š eni krivima, sud ih je, shodno č l. 226 i č l. 229 Zakonika o krivi č nom postupku,
+obavezao da u korist Bud ž eta Crne Gore, na ž iro ra č un 832-21-37, na ime tro š kova krivi č no postupka, a koji se
+odnose na ime medicinskog vje š ta č enja solidarno plate iznos od 66,00 eura, kao i da plate iznose od po 30,00
+eura na ime sudskog pau š ala, koji su odre đ eni prema trajanju i slo ž enosti postupka i imovnom stanju
+okrivljenih.
+Na osnovu iznijetih razloga, primjenom č l. 374 Zakonika o krivi č nom postupku, odlu č eno je kao u izreci
+presude.
+ 
+OSNOVNI SUD U PODGORICI
+Dana 02.10.2023. godine
+ 
+ZAPISNI Č ARKA S U D I J A
+Nata š a Paunovi ć , s.r. Ilija Radulovi ć , s.r.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

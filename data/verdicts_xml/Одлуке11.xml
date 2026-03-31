@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке11">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке11/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке11"/>
+                    <FRBRdate date="2019-12-24" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке11/sr@2019-12-24/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке11/sr@2019-12-24"/>
+                    <FRBRdate date="2019-12-24"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке11/sr@2019-12-24/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке11/sr@2019-12-24/!main.akn"/>
+                    <FRBRdate date="2026-03-31"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni sud u Podgorici"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="RadeĆ"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="M.D."/>
+                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="J.O."/>
+                <TLCPerson eId="defendant_3" href="/akn/me/ontology/person/defendant" showAs="A.P."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 701/18</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>Osnovni sud u Podgorici</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2019-12-24">2019-12-24</docDate>
+                </block>
+                <block name="judges">
+                    <judge>RadeĆ</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni su krivi za tjelesne povrede.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Laka tjelesna povreda</p>
+                    <p>Teška tjelesna povreda</p>
+                    <p>Samoodbrana</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_53">Član 53</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_54">Član 54</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Okrivljeni su svjesno izvršili djela koja su zabranjena zakonom.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="nepoznato">
+                    <p>Krivi su.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>M.D.</person>
+                    <person>J.O.</person>
+                    <person>A.P.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="location">Podgorica</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K. br. 701/18
+ 
+ 
+U IME CRNE GORE
+ 
+Osnovni sud u Podgorici, sudija Rade Ć etkovi ć , uz u č e šć e zapisni č arke Edine Kraje, u krivi č nom postupku
+protiv okrivljenih M.D. zbog krivi č nog djela laka tjelesna povreda iz č l. 152 st. 2 u vezi st. 1 Krivi č nog zakonika
+Crne Gore i A.P. zbog krivi č nog djela te š ka tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne Gore,
+nakon javnog glavnog pretresa odr ž anog 24.12.2019. godine, u prisustvu dr ž avnog tu ž ioca V.R., okrivljenog
+A.P., njegovog branioca adv. M.Š. i okrivljenog M.D., dana 25.12.2019. godine izrekao je i objavio,
+ 
+ 
+P R E S U D U
+ 
+ 
+Okrivljeni:
+1. M.D., JMB ..., sa nadimkom M., od oca T. i majke Z., ro đ ene K., ro đ en ... godine u B.P., sa prebivali š tem u P. –
+M. bb, dr ž avljanin Crne Gore, razumije crnogorski jezik, govori srpskim jezikom, o ž enjen, otac jednog djeteta,
+pismen, zavr š io srednju š kolu, penzioner, srednjeg imovnog stanja, neosu đ ivan, protiv kojeg se ne vodi
+postupak za drugo krivi č no djelo,
+ 
+2. A.P., JMB ..., od oca S. i majke Z., ro đ ene P., ro đ en 13.05.1984. godine u B.P., sa prebivali š tem u P., P. ulica
+br. .., dr ž avljanin Crne Gore, razumije crnogorski jezik, a koji je i njegov jezik, razveden, otac dvoje djece,
+pismen, zavr š io osnovnu š kolu, fizi č ki radnik, lo š eg imovnog stanja, neosu đ ivan, protiv kojeg se ne vodi
+postupak za drugo krivi č no djelo,
+ 
+Krivi suOsnovni Sud u Podgorici
+K 701/2018
+25. Decembar 2019
+ 
+Što su:
+Dana 5. avgusta 2018. godine, poslije pono ć i, u P., u Ulici V.V., svjesni svog djela č ije su izvr š enje htjeli i svjesni
+da je njihovo djelo zabranjeno, okrivljeni P. drugog te š ko tjelesno  povrijedio, a okrivljeni D. drugog lako
+tjelesno povrijedio sredstavom podobnim da tijelo te š ko povrijedi i zdravlje te š ko naru š i, na na č in š to je
+okrivljeni P., u kafani &quot;J.O.N.&quot;, pesnicom udario okrivljenog D. u predjelu lica i nanio mu prelom nosnih kostiju
+sa pomjeranjem prelomljenih ko š tanih odlomaka, vodoravnom oguljotinom ko ž e, otokom i krvarenjem iz
+nosa, a okrivljeni D. ispred kafane, okrivljeog P., pajserom du ž ine metar, debljine centimetar, udario u glavu i
+lijevu stranu grudnog ko š a, i nanio mu nagnje č no - razdernu ranu u lijevoj polovini tjemenog predjela i
+oguljotinu ko ž e u predjelu lijevog pazuha,
+ 
+- čime je okrivljeni A.P. u č inio krivi č no djelo te š ka tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne
+Gore, a okrivljeni M.D. krivi č no djelo laka tjelesna povreda iz č l. 152 st. 2 u vezi st. 1 Krivi č nog zakonika Crne
+Gore.
+ 
+Pa im sud za navedeno krivi č no djelo primjenom  č l. 4 st. 2, č l. 42 st. 1, č l. 52 st. 2, č l. 53 i č l. 54 Krivi č nog
+zakonika Crne Gore i č l. 226, č l. 229 i č l. 374 Zakonika o krivi č nom postupku, izri č e
+ 
+ 
+USLOVNU OSUDU
+ 
+ 
+Kojom okrivljenom A.P. utvr đ uje kaznu zatvora u trajanju od 6 ( š est) mjeseci i istovremeno odre đ uje da se
+ona ne ć e izvr š iti, ako okrivljeni u roku od 2 (dvije) godine po pravosna ž nosti presude ne u č ini novo krivi č no
+djelo.
+ 
+Okrivljenom M.D. utvr đ uje kaznu zatvora u trajanju od 30 (trideset) dana i istovremeno odre đ uje da se ona
+neće izvr š iti, ako okrivljeni u roku od 1 (jedne) godine po pravosna ž nosti presude ne u č ini novo krivi č no
+djelo.
+           
+Obavezuju se optu ž eni da na ime tro š kova krivi č nog postupka solidarno isplate iznos od 104,50 €, kao i na
+ime pau š ala kao dijela tro š kova krivi č nog postupka iznos od po 50 €, a sve u roku od 15 dana po
+pravosna ž nosti presude, pod prijetnjom izvr š enja.
+ 
+Pisano izra đ ena presuda ne sadr ž i obrazlo ž enje, shodno č lanu 458 stav 7 Zakonika o krivi č nom postupku.
+ 
+OSNOVNI SUD U PODGORICI
+Dana, 25.12.2019. godine
+ 
+ZAPISNI Č ARKA S U D I J A
+Edina Kraja,s.r. Rade Ć etkovi ć ,s.r.
+ 
+ 
+ 
+ 
+ 
+ 
+PRAVNA POUKA:
+Stranke su se odrekle prava na ž albu i nisu zahtjevale dostavljenje presude.
+ 
+ 
+ZTO. Edina Kraja</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

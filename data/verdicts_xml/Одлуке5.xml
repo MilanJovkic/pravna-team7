@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке5">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке5/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке5"/>
+                    <FRBRdate date="2013-11-21" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке5/sr@2013-11-21/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке5/sr@2013-11-21"/>
+                    <FRBRdate date="2013-11-21"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке5/sr@2013-11-21/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке5/sr@2013-11-21/!main.akn"/>
+                    <FRBRdate date="2026-03-31"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Larisi Mijuš"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Vukaš"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Crne Gore"/>
+                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="A.O."/>
+                <TLCPerson eId="defendant_3" href="/akn/me/ontology/person/defendant" showAs="P.P."/>
+                <TLCPerson eId="defendant_4" href="/akn/me/ontology/person/defendant" showAs="O.A."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 945/13</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2013-11-21">2013-11-21</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Larisi Mijuš</judge>
+                    <judge>Vukaš</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni P.P. je kriv za tešku i lakšu tjelesnu povredu.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Teška tjelesna povreda</p>
+                    <p>Laka tjelesna povreda</p>
+                    <p>Samoodbrana</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/2024/!main#art_3">Član 3</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/2024/!main#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Okrivljeni je svjesno i namjerno izvršio krivična djela, koristeći metalne kliješta kao oružje.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="nepoznato">
+                    <p>Presuda o krivici</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>Crne Gore</person>
+                    <person>A.O.</person>
+                    <person>P.P.</person>
+                    <person>O.A.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="location">Matije Gupca</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Republici
+Srbiji</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K.br.945/13
+ 
+ 
+ 
+U IME CRNE GORE
+ 
+OSNOVNI SUD U PODGORICI, kao prvostepeni, krivi č ni, po sudiji Larisi Miju š kovi ć  - Stamatovi ć , uz u č e šć e
+Valentine Vuka š inovi ć , kao zapisni č ara, u krivi č nom postupku protiv okrivljenog P.P., iz Podgorice, zbog
+krivi č nog djela te š ka tjelesna povreda iz č lana 151 st.1 Krivi č nog zakonika Crne Gore u sticaju sa krivi č nim
+djelom laka tjelesna povreda iz č l. 152 st. 2 u vezi st. 1 Krivi č nog zakonika Crne Gore, odlu č uju ć i o optu ž nom
+predlogu ODT-a Podgorica Kt.br 1442/13 od 21.11.2013. godine kojeg je na glavnom pretresu zastupao Mili ć
+Siniš a, savjetnik na radu kod ODT-a Podgorica, nakon glavnog i javnog pretresa, odr ž anog dana 14.11.2014
+godine u prisustvu zastupnika optu ž be i o š te ć enih, te odsustvu okrivljenog, donio je, i istog dana javno
+objavio,
+ 
+P R E S U D U
+ 
+Okrivljeni:
+ 
+P.P., od oca Dj. i majke Z., rodjene H., rodjen 24.06.1956 godine u A. - R. S., sa prebivali š tem u P., K. R. **
+(podstanar kod Š. S.), drž avljanin R. S., zavr š io srednju š kolu za mesara, po zanimanju mesar, zaposlen u
+mesari &quot; Š. C.&quot;, udovac, bez djece, srednjeg imovnog stanja,
+ 
+K r i v j e
+ 
+Zato š to je:
+ Osnovni Sud u Podgorici
+K 945/2013
+14. Novembar 2014
+Dana 20. juna 2013 godine, oko 22,00 č asa, u ulici Matije Gupca br.8, u dvori š tu porodi č ne ku ć e o š te ć enih,
+svjestan svojih djela č ija je izvr š enja htio i znaju ć i da su njegove radnje zabranjene, te š ko tjelesno povrijedio
+ošte ć enog O.S., a sredstvom podobnim da tijelo te š ko povrijedi ili zdravlje te š ko naru š i, lako tjelesno
+povrijedio o š te ć enog O.A., na na č in š to je, nakon prepirke metalnim klije š tima udario o š te ć enog O.A. u
+predjelu glave - tjemena, nanose ć i mu laku tjelesnu povredu u vidu nagnje č enja u predjelu tjemena, nakon
+čega je o š te ć eni O.S. stao izmedju njih dvojice, kako bi ih razdvojio, a okrivljeni ga tada metalnim klije š tima
+udario u predjelu glave - vrata, da bi ga odmah zatim odgurnuo, usljed č ega je o š te ć eni O.S. pao na betonsku
+podlogu i tom prilikom zadobio te š ku tjelesnu povredu u vidu preloma vrata desne butne kosti, otoka u
+potilja č nom predjelu i oguljotine u predjelu vrata,
+ 
+- čime je izvr š io krivi č no djelo te š ka tjelesna povreda iz č l. 151 st.1 Krivi č nog zakonika Crne Gore u sticaju sa
+krivi č nim djelom laka tjelesna povreda iz č l. 152 st. 2 u vezi st. 1 Krivi č nog zakonika Crne Gore,
+ 
+Pa mu Sud primjenom citiranih zakonskih propisa, te č l. 3, 4, 5, 13, 15, 32, 36, 42, 48 st. 1 Krivi č nog zakonika
+Crne Gore najprije utvrdjuje:
+ 
+- za krivi č no djelo te š ka tjelesna povreda iz č lana 151 st.1 Krivi č nog zakonika Crne Gore kaznu zatvora u
+trajanju od 6 ( š est) mjeseci,
+ 
+- za krivi č no djelo laka tjelesna povreda iz č l. 152 st. 2 u vezi st. 1 Krivi č nog zakonika Crne Gore kaznu zatvora
+u trajanju od 3 (tri) mjeseca,
+ 
+A zatim primjenom č l. 48 st.2, te č l. 52, 53 i 54 Krivi č nog zakonika Crne Gore, te č l. 226, 227, 229 i 374 Zakonika
+o krivi č nom postupku i z r i č  e
+USLOVNU OSUDU
+ 
+Kojom mu utvrdjuje jedinstvenu kaznu zatvora u trajanju od 8 (osam) mjeseci i istovremeno odredjuje da se
+ista ne ć e izvr š iti ako okrivljeni u roku od 2 (dvije) godine po pravnosna ž nosti presude ne izvr š i novo krivi č no
+djelo.
+ 
+Obavezuje se okrivljeni da na ime tro š kova krivi č nog postupka uplati na ra č un bud ž etskih sredstava Crne
+Gore iznos od 104,50 € (stotinu č etirieurapedesetcenti), kao i iznos od 50,00 € (pedeseteura) na ime sudskog
+pauš ala, sve prednje u roku od 15 (petnaest) dana po pravnosna ž nosti presude pod prijetnjom prinudne
+naplate.
+ 
+O b r a z l o ž  e n j e
+ 
+Optu ž nim predlogom ODT-a Podgorica Kt.br. 1442/13 od 21.11.2013. godine, kojeg je na glavnom pretresu
+zastupao Mili ć  Sini š a, savjetnik na radu kod ODT-a, okrivljenom P.P. je stavljeno na teret da je izvr š io krivi č no
+djelo te š ka tjelesna povreda iz č lana 151 st.1 Krivi č nog zakonika Crne Gore u sticaju sa krivi č nim djelom laka
+tjelesna povreda iz č l. 152 st. 2 u vezi st. 1 Krivi č nog zakonika Crne Gore, č injeni č no bli ž e opisanih izrekom
+ove presude.
+ 
+Zastupnik optu ž be je do kraja glavnog pretresa ostao pri podnijetom optu ž nom predlogu, i u zavr š noj rije č i
+naveo da smatra da je provedenim dokazima utvrdjeno da je okrivljeni po č inio krivi č na djela stavljena mu na
+teret, te predlo ž io Sudu da okrivljenog oglasi krivim i osudi po zakonu.
+ 
+Okrivljeni P.P. je u odbrani, kako u prethodnom postupku, tako i na glavnom pretresu izjavio da porodicu
+Orahovac poznaje posljednjih 13 godina, u kom periodu im je posudjivao novac koji su mu oni vra ć ali kada su
+bili u mogu ć nosti. Dalje je naveo da je dana 20.06.2013 godine u ve č ernjim č asovima svojim vozilom &quot;Opel
+kadet&quot; do š ao ispred dvori š ta ku ć e O. na Koniku, parkirao se na ulici, van dvori š ta, na oko 200 metara od
+njihove ku ć e, a razlog njegovog dolaska kod O. te ve č eri bilo je obe ć anje k ć erke S.O. da ć e mu vratiti 150
+eura, koje joj je posudio 2010 godine. Istakao je da nije izlazio iz vozila, ve ć  je otvorio prednja, lijeva vrata, i
+izvadio svoje noge van vozila, te poslao poruku Orahov č evoj k ć erki, u smislu da je dugo č eka i ho ć e li skoro
+izać i da mu vrati novac. Dok je on nju č ekao sa kapije ku ć e iza š ao je A.O., sin S.O. i drsko ga pitao š ta č eka tu i
+zašto je do š ao, a zatim je rukom uzeo vrata njegovog vozila i nekoliko puta ga istim udario po nogama.
+Okrivljeni je izjavio da je on, da bi se branio, tada sa desno g sjedi š ta uzeo klije š ta i pojurio za A.O., koji je
+pobjegao u dvori š te svoje ku ć e i zatvorio kapiju, dok je on ostao ispred. Dodao je i to da za vrijeme dok se
+nalazio sa spoljne strane kapije u jednom trenutku je iza š ao iz ku ć e i S. Orahovac i uputio se u pravcu mjesta
+gdje je stajao njegov sin, a zatim je A.O. otvorio vrata kapije i povukao ga za desnu ruku u kojoj je dr ž ao
+klije š ta, a zatim ga sna ž no svojom desnom rukom odgurnuo od sebe sa svoje desne strane, tako da je usljed
+tog njegovog guranja on tijelom naletio na O.S., koji se u tim trenucima na š ao iza njega. Pojasnio je da je bio
+ledjima okrenut O.S.u i od snage guranja njegovog sina, tijelom je naletio na O.S., koji ga je obuhvatio
+obijema rukama oko pasa i tada su istovremeno pali na beton, jedan preko drugog i to tako š to je on bio na
+gornjoj strani, a O.S. ispod njega, pa su u tom polo ž aju pali na betonsku podlogu. Dalje je naveo da, ukoliko je
+imao tjelesnu povredu, O.S.u je ona nastala vjerovatno od tog pada i istakao da ga on ni jedan put nije udario
+direktno, ni u kuk, ni u drugi dio tijela. Izjavio je da, po š to su zajedno pali na na č in kako je to naprijed opisao
+priš ao mu je sin O.S., uzeo mu iz ruke klije š ta, i koliko se sje ć a, dva puta ga udario u podlakticu desne ruke
+koju je bio podigao da za š titi glavu. Na kraju je istakao da je neta č no da je fizi č ki nasrtao na S.O., te ako ima
+isti kakvu povredu, ona mu je, kako pretpostavlja nastala od pada i dodao da takodje nije ta č no da je tom
+prilikom udario sina O.S. klije š tima, niti bilo č im, jer mu je bilo poznato da je nekih dva mjeseca prije
+dogadjaja imao operaciju glave.
+Zavr š ne rije č i okrivljenog su izostale, obzirom da je Sud zaklju č io glavni pretes u odsustvu uredno
+obavije š tenog okrivljenog, koji je ranije bio saslu š an, tako da njegovo prisustvo nije bilo nu ž no, a sve shodno
+članu 457 ZKP-a.
+ 
+Sud je u dokaznom postupku: saslu š ao svjedoke - o š te ć ene O.S. i O.A., pro č itoa medicinsku dokumentaciju
+na ime o š te ć enih O.S. i O.A., pro č itao nalaz i mi š ljenje stalnog sudskog vje š taka medicinske struke Radojevi ć
+Nemanje od 18.11.2013 godine i istog neposredno saslu š ao na glavnom pretresu. Kako je zastupnik optu ž be
+odustao od pribavljanja i provodjenja dokaza izvoda iz KE za okrivljenog, obzirom da je isti rodjen u Republici
+Srbiji, i pribavljanje istog bi vodilo odugovla č enju postupka, a pri utvrdjenom č injeni č nom stanju u ovom
+postupku, Sud nije ni pribavljao, ni provodio navedeni dokaz.
+ 
+Sud je nakon ocjene navoda optu ž be, odbrane okrivljenog, te ostalih provedenih dokaza, kako pojedina č no,
+tako i u njihovoj ukupnosti, utvrdio da je okrivljeni u č inio krivi č na djela stavljena mu na teret na na č in u
+vrijeme i na mjestu kako je to predstavljeno izrekom presude, sa kojih razloga ga je oglasio krivim i izrekao
+mu sankciju kao u izreci presude.
+ 
+U svjedo č kom iskazu i u prethodnom postupku i na glavnom pretresu, svjedok o š te ć eni O.S. je naveo da se
+sjeć a da je sporni dogadjaj bio u ljetnjem periodu, odnosno 20.06.2013 godine, negdje oko 22,00 - 22,30
+časova, i tada je ve ć  bio legao da spava, kada je za č uo vikanje njegove supruge koja je sjedjela u dvori š tu
+ispred ku ć e. Onako, u donjem ve š u, ustao je iz kreveta i uputio se u dio dvori š ta iza ku ć e, gdje je vidio kako
+jedan č ovjek, kojeg zna samo po nadimku ili imenu P. ili P., nasr ć e na njegovog sina O.A.. Oš te ć eni je dalje
+naveo da zna da je taj č ovjek mesar kod Š. na Starom Aerodromu i da mu je poznato da on nije sa ovih
+prostora, ve ć  je negdje iz Srbije, i dodao da je isti, kada je on iza š ao i vidio ga, u ruci dr ž ao ve ć a tzv. &quot;konjska&quot;
+klije š ta sa du ž im metalnim ru č kama. Pojasnio je da je taj č ovjek, dr ž e ć i pomenuta klije š ta tjerao njegovog
+sina, odnosno i š ao za njim, pa je on, kako bi za š titio sina, stao izmedju njih dvojice, a ovaj č ovjek je uspio da
+ga zahvati jedan put klije š tima u predjelu lijeve strane glave, a po š to je istovremeno i tijelom nasrnuo na
+njega, tr č e ć i oborio ga je na tlo. Svjedok - o š te ć eni je istakao da je podloga na koju je pao prostor u
+neposrednoj blizini č esme u njegovom dvori š tu i taj dio je izbetoniran, pa on pretpostavlja da je desnim
+kukom udario u beton, kada je i te ž e povrijedjen, š to mu je konstatovano medicinskom dokumentacijom,
+odnosno otpusnom listom Klini č kog centra Crne Gore. Dodao je i to da je ovaj č ovjek P., nakon š to ga je
+odgurnuo na tlo pao preko njega i jo š  uvijek ne ispu š taju ć i klije š ta iz svoje ruke, a zatim ga jo š  jedan put
+zaka č io klije š tima u predjelu glave. O š te ć eni O.S. je na kraju istakao da sa njegove strane aposolutno nikakav
+povod nije dao tom č ovjeku za bilo kakav napad, niti zna razlog, a ono č ega se sje ć a jeste da je isti bio u
+alkoholisanom stanju, a on je samo ž elio da za š titi sina, koji je prethodno imao operaciju na mozgu.
+Pridru ž io se krivi č nom gonjenju protiv okrivljenog i tra ž io naknadu š tete koju nije mogao precizirati.
+ 
+Svjedok - o š te ć eni O.A. je u svjedo č enjima, i u prethodnom postupku, i na glavnom pretresu, izjavio da zna
+čovjeka koji ga je napao kriti č ne ve č eri, ali samo po nadimku ili imenu P., i poznato mu je da je zaposlen u
+mesari &quot; Š ahovi ć &quot; na Starom Aerodromu i da je porijeklom sa podru č ja Srbije. U periodu koji je prethodio
+spornom dogadjaju, P. je po č eo sa telefonskim pozivima i porukama, kako je njegova sestra njemu navodno
+duž na neke pare, a koje poruke su postale jasno prijete ć e i uvrijedljive. O š te ć eni O.A. je naveo da je tog
+20.06.2013 godine u vremenu izmedju 16,00 i 22,00 sata, dok je bio ku ć i, sa P. broja njemu stiglo vi š e poruka
+vulgarne sadr ž ine koje se odnose na njegovu sestru,majku, ž enu i k ć erku koja je tada bila stara tri mjeseca.
+Dodao je da ga je tada P. pitao telefonom gdje je da bi do š ao i ubio, pa kada mu je on objasnio da je ku ć i,
+poslije nekoliko trenutaka P. se pojavio na kapiji njegove ku ć e. Svjedok - o š te ć eni O.A. je dalje izjavio da je on
+bio u okviru svog dvori š ta, a P. je u vidno alkoholisanom stanju, dr ž e ć i neka ve ć a klije š ta u ku ć i, sa istima
+ušao u njegovo dvori š te, zamahnuo tim klije š tima u predjelu njegove glave, i uspio da ga djelimi č no zaka č i po
+lijevoj strani glave, dok je udarac ubla ž ilo njegovo lijevo rame. Obzirom da je prethodno imao te š ku operaciju
+na glavi, dozvao je majku koja je bila u ku ć i u tom trenutku, a zatim je u dvori š te iza š ao njegov otac S., a P. je
+onda nasrnuo na njegovog oca i to na prostoru u njihovom dvori š tu, bli ž e jednoj smokvi i č esmi, a koji dio
+dvori š ta je izbetoniran. Istakao je da je vidio kako P. rukama hvata njegovog oca za tijelo, a zatim svojim
+tijelom ga odguruje i obara na podlogu, od kojeg pada je njegov otac zadobio prelom kuka od č ega se i danas
+liječ i. Dodao je i to da posjeduje medicinsku dokumentaciju o povredama koje je predmetne ve č eri zadobio
+od P..
+Pridru ž io se krivi č nom gonjenju protiv okrivljenog i tra ž io naknadu š tete č iji iznos nije mogao precizirati.
+ 
+Iz medicinske dokumentacije za O.A. i O.S., te nalaza i mi š ljenja stalnog sudskog vje š taka medicinske struke
+dr. Nemanje Radojevi ć a od 18.112013 godine, proizilazi da su predmetnom prilikom od strane ljekara
+specijalista KC CG u Podgorici kod O.S. dijagnostikovane povrede u vidu preloma vrata desne butne kosti,
+koja povreda je posljedica dejstva tupine mehani č ke sile i nastala je usljed pada i udara o tvrdu podlogu i
+koja se u vrijeme nano š enja kvalifikuje kao te š ka tjelesna povreda; otok u potilja č nom predjelu koja povreda
+je posljedica dejstva tupine mehani č ke sile i mogla je nastati usljed jednokratnog direktnog dejstva aktivno
+zamahnutog mehani č kog orudja - udarca, ali i usljed pada i udara o tvrdu podlogu, i koja povreda se u
+vrijeme nano š enja kvalifikuje kao laka tjelesna povreda. Oguljotina u predjelu vrata, koja je posljedica
+dejstva tupine mehani č ke sile i mogla je nastati usljed jednokratnog direktnog dejstva aktivno zamahnutog
+mehani č kog orudja - udarca, a u vrijeme nano š enja se kvalifikuje kao laka tjelesna povreda. U kona č nom, po
+nala ž enju vje š taka, sve zadobijene povrede O.S. zbirno se kvalifikuju kao te š ka tjelesna povreda. Dalje
+proizilazi da su kod O.A. dijagnostikovane sljede ć e povrede u vidu nagnje č enja u tjemenom predjelu, a koja
+povreda je posljedica dejstva tupine mehani č ke sile i mogla je nastati usljed jednokratnog direktnog dejstva
+aktivno zamahnutog mehani č kog orudja - udarca, koja povreda se u vrijeme nano š enja kvalifikuje kao laka
+tjelesna povreda.
+ 
+Poja š njavaju ć i nalaz i mi š ljenje na glavnom pretresu, stalni sudski vje š tak medicinske struke dr. Radojevi ć
+Nemanja, je u svemu ostao pri istom, dodaju ć i da je povreda u vidu nagnje č enja u tjemenom predjelu kod
+O.A. posljedica udarca mogu ć e i klije š tima, i ista nije mogla nastati usljed pada i udara o tvrdu i neravnu
+podlogu. Dalje je dodao da imaju ć i u vidu izjavu O.S., te izvje š taj ljekara HMP od 21.06.2013 godine, gdje je
+navedena dijagnoza koja u prevodu sa latinskog jezika zna č i oguljotina lijeve bo č ne strane vrata, to postoji
+mogu ć nost da zbog anatomske bliskosti predjela tijela navedenog u medicinskoj dokumentaciji i lai č kog
+poimanja o š te ć enog u vezi sa lokalizacijom, mogu ć e je da se radi o istom predjelu, te samim tim opisana
+povreda u medicinskoj dokumentaciji mogu ć e je nastala kao posljedica dejstva sile u vidu udarca klije š tima.
+ 
+Dakle, iz svih provedenih dokaza, posebno iz svjedo č kih iskaza o š te ć enih O.S. i njegovog sina O.A., koji su
+saglasni, kako medjusobno, tako i sa ostalim dokazima provedenim u ovom postupku, Ovaj sud je na š ao da
+ne stoje navodi odbrane okrivljenog, koji je opisao predmetni dogadjaj navode ć i da je on do š ao ispred ku ć e
+O. da namiri dug iz 2010 godine od k ć erke O.S., da nije izlazio iz vozila, ve ć  sjedio u istom nekih 200m daleko
+od kapije, kada je iza š ao O.A., drsko ga pitao š ta č eka tu i za š to je do š ao, a zatim vratima njegovog vozila
+nekoliko puta ga udario po nogama, a on je tada, da bi se odbranio, uzeo klije š ta sa desnog sjedi š ta, pojurio
+za O.A., koji je pobjegao u dvori š te svoje ku ć e i zatvorio kapiju, dok je on ostao ispred, pa da bi onda u
+jednom trenutku iz ku ć e iza š ao i O.S., uputio se ka njemu, a A. je onda otvorio vrata kapije i porukao ga za
+desnu ruku u kojoj je dr ž ao klije š ta, a zatim ga sna ž no svojom desno m rukom odgurnuo od sebe od kojeg
+guranja je on tijelom naletio na O.S., koji je bio iza njega i koji ga je tada obijema rukama obujmio oko pasa,
+kada su istovremeno pali na beton jedan preko drugog, da bi mu tada pri š ao A., uzeo mu iz ruke klije š ta i
+istim ga udario. Ovakvi navodi odbrane okrivljenog, koji tokom cijelog postupka tvrdi da ni jedan udarac nije
+zadao ni o š te ć enom O.S., ni o š te ć enom O.A., kao i opisivanje cjelokupne situacije, su u svemu opovrgnuti
+najprije iskazima o š te ć enih, a potom i medicinskom dokumentacijom na njihovo ime, kao i nalazom i
+mišljenjem vje š taka medicinske struke. Naime, o š te ć eni O.A. i u prethodnom postupku i na glavnom pretresu
+je ustvrdio da je nakon š to je slao poruke vulgarne sadr ž ine njemu na telefon, okrivljeni do š ao ispred njegove
+kuće, u alkoholisanom stanju, dr ž e ć i u ruci neka ve ć a klije š ta, a potom u š ao u njegovo dvori š te, zamahnuo u
+pravcu njegove glave tim klije š tima i uspio ga djelimi č no zaka č iti klije š tima po lijevoj strani glave, da bi tada
+na njegovo dozivanje iza š ao njegov otac S. iz ku ć e, gdje je odmah okrivljeni nasrnuo na S. i to na prostoru
+njihovog dvori š ta, koji je izbetoniran, uhvatio ga rukama za tijelo, a zatim ga odgurnuo rukama i oborio na
+podlogu. Sa druge strane o š te ć eni O.S., gotovo na identi č an na č in opisuje dogadjaj u dijelu gdje je on
+prisustvovao istom, navode ć i da je predmetne no ć i ve ć  legao da spava kada je za č uo vikanje supruge, da bi
+se onda odmah uputio u dio dvori š ta iza ku ć e, gdje je i vidio okrivljenog koji nasr ć e na njegovog sina A., i koji
+je u rukama dr ž ao ve ć a tzv. konjska klije š ta sa du ž im metalnim ru č kama. Kako bi sprije č io to on je stao
+izmedju njih dvojice da za š titi sina, jer mu je sin imao ozbiljnu operaciju glave neposredno prije tog
+dogadjaja, a okrivljeni je uspio da ga zahvati klije š tima u predjelu lijeve strane glave, a potom je i tijelom
+nasrnuo na njega i oborio ga na tlo, ta č nije na izbetonirani dio u blizini č esme u njegovom dvori š tu. O.S. je
+dodao i ito da je i okrivljeni tada pao na njega, jo š  uvijek ne ispu š taju ć i klije š ta iz svoje ruke, i opet ga zaka č io
+istima u predjelu glave. Ovakve svjedo č ke iskaze o š te ć enih, sud je u potpunosti prihvatio, cijene ć i ih kao
+istinite, jasne, te u svemu saglasne medicinskoj dokumentaciji, nalazu i mi š ljenju stalnog sudskog vje š taka
+medicinske struke dr . Radojevi ć  Nemanje, koji je analiziraju ć i predmetnu dokumentaciju ustvrdio da su kod
+O.S. dijagnostikovane povrede u vidu preloma vrata desne butne kosti, koja povreda je posljedica dejstva
+tupine mehani č ke sile i nastala je usljed pada i udara o tvrdu podlogu i koja se u vrijeme nano š enja
+kvalifikuje kao te š ka tjelesna povreda; otok u potilja č nom predjelu koja povreda je posljedica dejstva tupine
+mehani č ke sile i mogla je nastati usljed jednokratnog direktnog dejstva aktivno zamahnutog mehani č kog
+orudja - udarca, ali i usljed pada i udara o tvrdu podlogu, i koja povreda se u vrijeme nano š enja kvalifikuje
+kao laka tjelesna povreda; oguljotina u predjelu vrata, koja je posljedica dejstva tupine mehani č ke sile i
+mogla je nastati usljed jednokratnog direktnog dejstva aktivno zamahnutog mehani č kog orudja - udarca, a u
+vrijeme nano š enja se kvalifikuje kao laka tjelesna povreda; dok su kod O.A. dijagnostikovane sljede ć e
+povrede u vidu nagnje č enja u tjemenom predjelu, a koja povreda je posljedica dejstva tupine mehani č ke sile
+i mogla je nastati usljed jednokratnog direktnog dejstva aktivno zamahnutog mehani č kog orudja -
+udarca.Stalni sudski vje š tak medicinske struke dr. Radojevi ć  Nemanja, je u poja š njenju na glavnom pretresu,
+ostaju ć i pri osnovnom nalazu i mi š ljenju dodao i to da je povreda u vidu nagnje č enja u tjemenom predjelu
+kod O.A. posljedica udarca mogu ć e i klije š tima, i ista nije mogla nastati usljed pada i udara o tvrdu i neravnu
+podlogu; te dalje da imaju ć i u vidu izjavu O.S., te izvje š taj ljekara HMP od 21.06.2013 godine, gdje je
+navedena dijagnoza koja u prevodu sa latinskog jezika zna č i oguljotina lijeve bo č ne strane vrata, to postoji
+mogu ć nost da zbog anatomske bliskosti predjela tijela navedenog u medicinskoj dokumentaciji i lai č kog
+poimanja o š te ć enog u vezi sa lokalizacijom, mogu ć e je da se radi o istom predjelu, te samim tim opisana
+povreda u medicinskoj dokumentaciji mogu ć e je nastala kao posljedica dejstva sile u vidu udarca klije š tima.
+Ovakav nalaz i mi š ljenje vje š taka medicinske struke uz njegov kona č an stav da se povrede dijagnostikovane
+kod o š te ć enog O.S. zbirno u vrijeme nano š enja kvalifikuju kao te š ka tjelesna povreda, a povreda O.A.
+kvalifikuje kao laka tjelesna povreda u vrijeme njenog nano š enja, uz, po nala ž enju Ovog suda, u svemu
+detaljno obrazlo ž en i mehanizam nastanka istih, Sud je u potpunosti prihvatio, cijene ć i ga kao stru č an,
+precizan, jasan, te u svemu zasnovan na pravilima medicinske struke i nauke.
+ 
+Dakle, svim naprijed navedenim, a provedenim u ovom dokaznom postupku, u potpunosti je obesmi š eljena
+odbrana okrivljenog P.P., pa je Sud sa tog razloga, navode njegove odbrane cijenio jedino i isklju č ivo
+srač unate i upravljene na izbjegavanje krivice, po č ev š i od na č ina opisivanja nastanka sporne situacije, te u
+kona č nom i do obja š njavanja nastanka predmetnih povreda kod o š te ć enih.
+ 
+Po nala ž enju Ovog suda, u svim radnjama naprijed utvrdjenim, a preduzetim od strane okrivljenog, ostvarena
+su sva bitna obilje ž ja bi ć a krivi č nih djela te š ka tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne Gore u
+sticaju sa krivi č nim djelom laka tjelesna povreda iz č l. 152 st. 2 u vezi st. 1 Krivi č nog zakonika Crne Gore, u
+odnosu na koja je isti postupao sa direktnim umi š ljajem kao oblikom krivice, obzirom da je bio svjestan
+svojih djela i htio njihovo izvr š enje.
+Kvalifikatorno obilje ž je bi ć a krivi č nog djela laka tjelesna povreda iz č l. 152 st. 2 u vezi st. 1 Krivi č nog zakonika
+Crne Gore o č itava se u č injenici da je okrivljeni upotrijebio sredstvo podobno da tijelo te š ko povrijedi ili
+zdravlje te š ko naru š i, u odnosu na o š te ć enog O.A. metalna klije š ta, koja se prema nepodijeljenom stanovi š tu
+sudske prakse smatraju podobnim orudjem da se tijelo te š ko povrijedi ili zdravlje te š ko naru š i.
+ 
+Prilikom odlu č ivanja o vrsti i visine krivi č ne sankcije Sud je cijenio sve okolnosti iz č l. 42 Krivi č nog zakonika
+koje su od uticaja da kazna bude ve ć a ili manja, pa je u odsustvu ote ž avaju ć ih okolnosti od olak š avaju ć ih
+okolnosti na strani okrivljenog cijenio njegove li č ne prilike to da je udovac, bez djece (po sopstvenom
+kazivanju izgubio je suprugu i sina u saobra ć ajnoj nezgodi), a imaju ć i uz navedeno u vidu i stepen krivice
+okrivljenog, Sud je, primjenom č l. 48 st. 1 Krivi č nog zakonika Crne Gore, najprije okrivljenom za krivi č no djelo
+teška tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne Gore utvrdio kaznu zatvora u trajanju od 6
+mjeseci, a za krivi č no djelo laka tjelesna povreda iz č l. 152 st. 2 u vezi st. 1 Krivi č nog zakonika Crne Gore
+kaznu zatvora u trajanju od 3 mjeseca, a zatim, primjenom č l. 48 st. 2 Krivi č nog zakonika Crne Gore, istom
+utvrdio jedinstvenu kaznu zatvora u trajanju od osam mjeseci, a zatim, nalaze ć i da radi krivi č no - pravne
+zaštite prema okrivljenom nije nu ž no primijeniti kaznu, ve ć  da ć e se samim upozorenjem uz prijetnju kaznom
+kao u izreci presude i rokom provjeravanja od 2 ( dvije ) godine na okrivljenog u dovoljnoj mjeri uticati da
+ubudu ć e ne vr š i krivi č na djela, č ime ć e u potpunosti biti ostvarena svrha izricanja uslovne osude iz č l. 52
+Krivi č nog zakonika, a u okviru op š te svrhe izricanja krivi č nih sankcija iz č l. 4 st. 2 Krivi č nog zakonika.
+ 
+Odluka o tro š kovima krivi č nog postupka donijeta je shodno č lanu 226, 227 i 229 ZKP-a, a isti se u ukupnom
+iznosu od 104,50 eura odnose na izradu osnovog nalaza i mi š ljenja vje š taka medicinske struke u iznosu od
+60,50 eura i neposrednog izja š njenja ovog vje š taka na glavnom pretresu u iznosu od 44,00 eura, kao i iznos
+od 50,00 eura na ime sudskog pau š ala koji iznos je odmjeren shodno slo ž enosti, trajanju postupka i
+imovinskim prilikama okrivljenog.
+ 
+Sud je o š te ć ene O.S. i O.A., radi ostvarivanja postavljenog, a ne preciziranog od š tetnog zahtjeva, zbog
+nemogu ć nosti utvrdjivanja istih u ovom postupku, a u smislu č l. 239 ZKP-a uputio na redovnu gradjansku
+parnicu.
+ 
+Na osnovu izlo ž enog, a shodno č lanu 374 Zakonika o krivi č nom postupku odlu č eno je kao u izreci presude.
+ 
+OSNOVNI SUD U PODGORICI
+Dana, 14.11.2014 godine
+ 
+ZAPISNI Č ARSUDIJA
+Vuka š inovi ć  Valentina Larisa Miju š kovi ć  Stamatovi ć
+ 
+DN-a
+Primjerak presude dostaviti:
+- ODT-u Podgorica
+- Okrivljenom
+- ošte ć enima nakon pravnosna ž nosti
+S u d i j a,
+___________________
+Postupljeno dana______________
+Namje š tenik__________________</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

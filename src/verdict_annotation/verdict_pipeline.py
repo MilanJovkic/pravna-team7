@@ -176,9 +176,23 @@ class VerdictAnnotationPipeline:
                 metadata.organizations = list({*metadata.organizations, *llm_orgs})
 
             if annotation.factual_state:
-                metadata.factual_state = self._merge_dict_lists(
-                    metadata.factual_state, annotation.factual_state
-                )
+                # Ensure factual_state is a dict, not string
+                fs = annotation.factual_state
+                if isinstance(fs, dict):
+                    metadata.factual_state = self._merge_dict_lists(
+                        metadata.factual_state, fs
+                    )
+                elif isinstance(fs, str):
+                    # If it's a string, try to parse it or skip
+                    import json
+                    try:
+                        parsed = json.loads(fs)
+                        if isinstance(parsed, dict):
+                            metadata.factual_state = self._merge_dict_lists(
+                                metadata.factual_state, parsed
+                            )
+                    except (json.JSONDecodeError, TypeError):
+                        pass  # Skip invalid factual_state
 
     def _merge_dict_lists(
         self,
@@ -273,13 +287,30 @@ class VerdictAnnotationPipeline:
             if annotation.factual_state:
                 annotation.factual_state = self._normalize_factual_state(annotation.factual_state)
 
-    def _normalize_factual_state(self, factual_state: Dict[str, list[str]]) -> Dict[str, list[str]]:
+    def _normalize_factual_state(self, factual_state) -> Dict[str, list[str]]:
         if not factual_state:
+            return {}
+        
+        # Handle case where factual_state is a string
+        if isinstance(factual_state, str):
+            import json
+            try:
+                factual_state = json.loads(factual_state)
+            except (json.JSONDecodeError, TypeError):
+                return {}
+        
+        if not isinstance(factual_state, dict):
             return {}
 
         normalized: Dict[str, list[str]] = {}
         for key, values in factual_state.items():
             cleaned_values: list[str] = []
+            # Handle case where values is not a list
+            if isinstance(values, str):
+                values = [values]
+            elif not isinstance(values, (list, tuple)):
+                values = [str(values)] if values else []
+            
             for value in values or []:
                 v = str(value).strip()
                 if not v:

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке7">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке7/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке7"/>
+                    <FRBRdate date="2020-09-11" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке7/sr@2020-09-11/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке7/sr@2020-09-11"/>
+                    <FRBRdate date="2020-09-11"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке7/sr@2020-09-11/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке7/sr@2020-09-11/!main.akn"/>
+                    <FRBRdate date="2026-03-31"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Goran Đuković"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Đuković"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Đ. Ž."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 668/19</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2020-09-11">2020-09-11</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Goran Đuković</judge>
+                    <judge>Đuković</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni Đ. Ž. osuđen za tešku tjelesnu povredu i nedozvoljeno držanje oružja.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Teška tjelesna povreda</p>
+                    <p>Nedozvoljeno držanje oružja</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/2024/!main#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_33">Član 33</ref>
+                    <ref href="/akn/me/act/2024/!main#art_3">Član 3</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/2024/!main#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_36">Član 36</ref>
+                    <ref href="/akn/me/act/2024/!main#art_5">Član 5</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Okrivljeni je svjesno izvršio krivična djela, koristeći oružje na javnom mjestu.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="nepoznato">
+                    <p>Osuda</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>Đ. Ž.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Bulevaru Ivana Crnojevi</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K.br. 668/19
+ 
+U IME CRNE GORE
+ 
+OSNOVNI SUD U PODGORICI, po sudiji Đukovi ć Goranu, uz učešć e namje š tenika suda Radevi ć Sanje kao
+zapisni č ara, u krivi č nom predmetu protiv okrivljenog Đ. Ž., koga brani advokat B. Z., zbog krivi č nog djela
+teška te š ka tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne Gore u sticaju sa krivi č nim djelom
+nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403 st. 1 Krivi č nog zakonika Crne Gore, nakon
+pravosna ž nosti rješ enja o usvajanju sporazuma o priznanju krivice, dana 11.09.2020. godine, donio je
+ 
+P R E S U D U
+ 
+Okrivljeni:
+ 
+Đ. Ž., sa JMBG: xxxxxxxxxxxxx, od oca M. i majke R., rođene V., rođen xx.xx.19xx. godine u Podgorici, sa
+prebivali š tem u mjestu rodjenja, ul. G. S. O. br. xx, državljanin Crne Gore, zavr š io srednju školu, nezaposlen,
+oženjen, otac dvoje djece, srednjeg imovnog stanja, osudjivan,
+ 
+K r i v j e
+ 
+Zato š to je:
+ 
+Dana 21.04.2015. godine, oko 19,00 č asova, u Bulevaru Ivana Crnojevi ć a, u Podgorici, svjestan svojih djela,
+čija je izvr š enja htio i znaju ć i da su ista zabranjena, te š ko tjelesno  povrijedio o š te ć enog Đ. B., na na č in š to je
+dok se o š te ć eni nalazio kao voza č  u vozilu zaustavljen na semaforu, otvorio vrata voza č a, a zatim iz pi š tolja
+nepoznate marke kalibra 7,65 mm, koji je suprotno č l. 4 st. 3 ta č . 1, č l. 5 st. 2, č l. 33 i č l. 36 st. 2 Zakona o
+oruž ju, bez izdatog oru ž nog lista nosio i upotrijebio na javnom mjestu i u pravcu nogu o š te ć enog ispalio dva
+projektila, nanose ć i mu te š ku tjelesnu povredu u vidu strijelne rane prostreline lijeve butine, strijelno
+okrznu ć e u predjelu zadnje strane srednje tre ć ine desne potkoljenice u strijelnu ranu prostrelinu lijeve
+butine,Osnovni Sud u Podgorici
+K 668/2019
+11. Septembar 2020
+ 
+- čime je izvr š io krivi č no djelo te š ka tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne Gore u sticaju sa
+krivi č nim djelom nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403 st. 1 Krivi č nog zakonika Crne
+Gore.
+ 
+ 
+Pa sud okrivljenom primjenom č l. 48 st. 1 Krivi č nog zakonika Crne Gore za svako krivi č no djelo prethodno
+utvrdjuje kaznu zatvora i to:
+ 
+- za krivi č no djelo te š ka tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne Gore kaznu zatvora u trajanju
+od 7 (sedam) mjeseci,
+ 
+- za krivi č no djelo nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403 st. 1 Krivi č nog zakonika Crne
+Gore kaznu zatvora u trajanju od 3 (tri) mjeseca,
+ 
+pa sud okrivljenog primjenom citiranih zakonskih propisa te č l. 3, 4, 5, 13, 15, 32, 42, 48 st. 2 ta č . 2 Krivi č nog
+zakonika Crne Gore, te č l. 226, 229, 239 i 374 Zakonika o krivi č nom postupku,
+OSU Đ UJE
+ 
+Na jedinstvenu kaznu zatvora u trajanju od 9 (devet) mjeseci.
+ 
+Ošte ć eni Đ. B. radi ostvarenja imovinskopravnog zahtjeva upu ć uje se na parni č ni postupak.
+ 
+Obavezuje se okrivljeni da ovom sudu na ime tro š kova krivi č nog postupka uplati nov č ani iznos od 82,50 eura
+kao i 30,00 eura na ime pau š ala, sve u roku od 15 dana po pravosna ž nosti presude.
+ 
+O b r a z l o ž  e nj e
+Optu ž nim predlogom Osnovnog državnog tužila š tva Podgorica Kt. br. 1330/19 od 31. oktobra 2019. godine
+okrivljenom Đ. Ž. stavljeno je na teret krivi č no djelo tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne
+Gore u sticaju sa krivi č nim djelom nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403 st. 1 Krivi č nog
+zakonika Crne Gore.
+ 
+Utvr đ uju ć i da li postoji dovoljno dokaza o krivici okrivljenog za predmetna krivi č na djela, na ročiš tu za
+razmatranje sporazuma o priznanju krivice, državni tužilac Snež ana Šiševi ć podnijela je sudu dokaze koje je
+prikupila u prethodnom postupku.
+ 
+Iz sadr ž ine prikupljenih dokaza na koje okrivljeni i njegov branilac nijesu imali primjedbi, sud je zaklju č io da
+je državni tužilac pruž io dovoljno dokaza o krivici okrivljenog Đ. Ž. i da je okrivljeni u vrijeme i na nač in
+opisan u izreci ove presude, učinio krivi č no djelo tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne Gore
+u sticaju sa krivi č nim djelom nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403 st. 1 Krivi č nog
+zakonika Crne Gore, a nakon što je okrivljeni u svemu prihvatio sporazum o priznanju krivice.
+ 
+Odlu č uju ć i o vrsti i visini krivi č ne sankcije iz sporazuma o priznanju krivice zaklju č enog izme đ u stranaka, sud
+je cijenio sve okolnosti iz čl. 42 Krivi č nog zakonika Crne Gore, pa je kao otež avaju ć u okolnost cijenio raniju
+osudjivanost okrivljenog, koju je utvrdio iz citiranog izvoda iz Kaznene evidencije, dok je kao olak š avaju ć u
+okolnost cijenio porodi č ne prilike okrivljenog, da je oženjen i otac dvoje djece, pa je okrivljenog za krivi č no
+djelo te š ka tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne Gore osudio na kaznu zatvora u trajanju
+od 7 (sedam) mjeseci, a za krivi č no djelo nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403 st. 1
+Krivi č nog zakonika Crne Gore na kaznu zatvora u trajanju od 3 (tri) mjeseca, nalaze ć i da se ovakvom
+jedinstvenom kaznom zatvora ima ostvariti svrha kažnjavanja iz č l. 32 st. 2 Krivi č nog zakonika Crne Gore u
+okviru op š te svrhe potpisivanja i izricanja krivi č nih sankcija iz č l. 4 st. 2 Krivi č nog zakonika Crne Gore.
+ 
+Odluka o imovinskopravnom zahtjevu zasnovana je na odredbi čl. 239 st. 2 ZKP-a.
+ 
+Odluka o troš kovima postupka i pauš alu, kao u izreci presude, donijeta je na osnovu čl. 226 st. 3 i 229 st. 1
+Zakonika o krivi č nom postupku.
+ 
+ 
+OSNOVNI SUD U PODGORICI
+Dana, 11.09.2020. godine
+SUDIJA
+Goran Đukovi ć, s.r.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

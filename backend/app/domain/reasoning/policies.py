@@ -30,13 +30,6 @@ class ReasoningPolicy:
 
         decision_basis = "rule_only"
         final_confidence = 0.7 if norms else 0.6
-        if cbr_signal != "unavailable":
-            if conflict:
-                decision_basis = "hybrid_conflict_resolution"
-                final_confidence = max(0.55, min(0.88, 0.55 + (cbr_confidence * 0.25)))
-            else:
-                decision_basis = "hybrid_consensus"
-                final_confidence = max(0.65, min(0.95, 0.65 + (cbr_confidence * 0.30)))
 
         if subsystem_status and subsystem_status.get("cbr") == "error":
             cbr_signal = "unavailable"
@@ -46,9 +39,7 @@ class ReasoningPolicy:
 
         if subsystem_status and subsystem_status.get("rule") == "error":
             rule_signal = "unavailable"
-            if cbr_signal != "unavailable":
-                decision_basis = "cbr_only"
-                final_confidence = max(0.55, min(0.9, cbr_confidence))
+            final_confidence = 0.4
 
         return ReasoningConfidence(
             decision_basis=decision_basis,

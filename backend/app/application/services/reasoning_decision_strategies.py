@@ -60,7 +60,11 @@ class CbrOnlyDecisionStrategy:
 
 
 class VerdictDecisionStrategySelector:
-    """Selects strategy for consensus/conflict/rule-only/cbr-only decisions."""
+    """Selects verdict suggestion strategy.
+
+    Verdict suggestion is rule-based only. CBR is retained exclusively for
+    returning similar cases and confidence metadata.
+    """
 
     def __init__(self) -> None:
         self._rule_only = RuleOnlyDecisionStrategy()
@@ -75,23 +79,15 @@ class VerdictDecisionStrategySelector:
         rule_available: bool = True,
         cbr_available: bool = True,
     ) -> str:
+        _ = (cbr, rule_available, cbr_available)
         rule_verdict = normalize_outcome("osudjen" if norms else "odbijeno")
-        cbr_verdict, cbr_confidence = _cbr_consensus(cbr)
-
-        context = DecisionContext(
-            rule_verdict=rule_verdict,
-            cbr_verdict=cbr_verdict,
-            cbr_confidence=cbr_confidence,
+        return self._rule_only.decide(
+            DecisionContext(
+                rule_verdict=rule_verdict,
+                cbr_verdict=None,
+                cbr_confidence=0.0,
+            )
         )
-
-        if not rule_available and cbr_available:
-            return self._cbr_only.decide(context)
-        if not cbr_verdict:
-            return self._rule_only.decide(context)
-
-        if _is_positive(rule_verdict) == _is_positive(cbr_verdict):
-            return self._consensus.decide(context)
-        return self._conflict.decide(context)
 
 
 def _cbr_consensus(cbr: CbrResult | None) -> tuple[str | None, float]:

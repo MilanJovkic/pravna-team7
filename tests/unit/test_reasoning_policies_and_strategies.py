@@ -9,7 +9,7 @@ from backend.app.models.schemas import CbrMatch, CbrResult
 
 
 class TestReasoningDecisionStrategies(unittest.TestCase):
-    """Validate strategy selection for rule-only, consensus, and conflict flows."""
+    """Validate rule-only verdict decision behavior."""
 
     def setUp(self) -> None:
         self.selector = VerdictDecisionStrategySelector()
@@ -23,10 +23,10 @@ class TestReasoningDecisionStrategies(unittest.TestCase):
         verdict = self.selector.decide(norms=["crime_art151_1"], cbr=cbr)
         self.assertEqual("osudjen", verdict)
 
-    def test_hybrid_conflict_resolution_can_reject(self) -> None:
+    def test_conflicting_cbr_does_not_override_rule_verdict(self) -> None:
         cbr = CbrResult(matches=[CbrMatch(case_number="K-1", similarity=0.95, outcome="odbijeno")])
         verdict = self.selector.decide(norms=["crime_art151_1"], cbr=cbr)
-        self.assertEqual("odbijeno", verdict)
+        self.assertEqual("osudjen", verdict)
 
 
 class TestReasoningPolicy(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestReasoningPolicy(unittest.TestCase):
     def setUp(self) -> None:
         self.policy = ReasoningPolicy()
 
-    def test_confidence_report_marks_cbr_only_when_rule_fails(self) -> None:
+    def test_confidence_report_keeps_rule_only_basis_when_rule_fails(self) -> None:
         cbr = CbrResult(matches=[CbrMatch(case_number="K-1", similarity=0.8, outcome="osudjen")])
         report = self.policy.build_confidence_report(
             norms=[],
@@ -43,7 +43,7 @@ class TestReasoningPolicy(unittest.TestCase):
             suggested_verdict="osudjen",
             subsystem_status={"rule": "error", "cbr": "ok"},
         )
-        self.assertEqual("cbr_only", report.decision_basis)
+        self.assertEqual("rule_only", report.decision_basis)
 
     def test_sanction_returns_none_for_rejection(self) -> None:
         sanction = self.policy.suggest_sanction(article_numbers=["151"], facts=None, verdict="odbijeno")

@@ -5,6 +5,7 @@ from starlette.concurrency import run_in_threadpool
 from backend.app.bootstrap.dependencies import provide_cbr_engine, provide_rule_engine
 from backend.app.bootstrap.error_handling import map_exception_to_http
 from backend.app.application.services.reasoning_decision_strategies import VerdictDecisionStrategySelector
+from backend.app.application.services.reasoning_input_validator import ReasoningInputValidator
 from backend.app.application.use_cases.reasoning_commands import RunHybridReasoningUseCase
 from backend.app.domain.reasoning.policies import ReasoningPolicy
 from backend.app.models.schemas import ReasoningRequest, ReasoningResponse
@@ -41,12 +42,18 @@ def get_reasoning_policy() -> ReasoningPolicy:
     return ReasoningPolicy()
 
 
+def get_reasoning_input_validator() -> ReasoningInputValidator:
+    """Provide pre-reasoning validator dependency."""
+    return ReasoningInputValidator()
+
+
 def get_run_hybrid_reasoning_use_case(
     rule_engine: RuleEngine = Depends(get_rule_reasoning_service),
     cbr_engine: CbrEngine = Depends(get_cbr_service),
     explain_service: ReasoningExplainService = Depends(get_reasoning_explain_service),
     decision_selector: VerdictDecisionStrategySelector = Depends(get_reasoning_decision_selector),
     reasoning_policy: ReasoningPolicy = Depends(get_reasoning_policy),
+    input_validator: ReasoningInputValidator = Depends(get_reasoning_input_validator),
 ) -> RunHybridReasoningUseCase:
     return RunHybridReasoningUseCase(
         rule_engine=rule_engine,
@@ -54,6 +61,7 @@ def get_run_hybrid_reasoning_use_case(
         explain_service=explain_service,
         decision_selector=decision_selector,
         reasoning_policy=reasoning_policy,
+        input_validator=input_validator,
     )
 
 

@@ -1409,4 +1409,5 @@ export class ReasoningComponent {
       left_without_help: leftWithoutHelp,
     };
   }
+
 }

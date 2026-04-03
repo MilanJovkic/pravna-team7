@@ -5,6 +5,7 @@ import unittest
 from dataclasses import dataclass
 
 from backend.app.application.services.reasoning_decision_strategies import VerdictDecisionStrategySelector
+from backend.app.application.services.reasoning_input_validator import ReasoningInputValidator
 from backend.app.application.use_cases.reasoning_commands import RunHybridReasoningUseCase
 from backend.app.domain.reasoning.policies import ReasoningPolicy
 from backend.app.models.schemas import CbrMatch, CbrResult, CaseFacts, ReasoningRequest, RuleReasoningResult
@@ -248,6 +249,7 @@ class TestReasoningEdgeCaseSimulation(unittest.TestCase):
             explain_service=FakeExplainService(),
             decision_selector=VerdictDecisionStrategySelector(),
             reasoning_policy=ReasoningPolicy(),
+            input_validator=ReasoningInputValidator(),
         )
 
     def test_edge_case_simulation_matrix(self) -> None:

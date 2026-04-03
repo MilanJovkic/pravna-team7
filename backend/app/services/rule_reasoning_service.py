@@ -9,6 +9,10 @@ import re
 from backend.app.models.schemas import CaseFacts, RuleReasoningResult
 from backend.app.services.cbr_normalization import bool_to_text, normalize_ascii
 from backend.app.services.rule_artifact_validator import validate_rule_artifacts
+from backend.app.domain.rulebase_generation.rule_reasoning_adapter import (
+    create_adapter_singleton,
+    DynamicPriorityInferencer,
+)
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -20,7 +24,21 @@ RULEBASE_PATH = DR_DEVICE_DIR / "rulebase.clp"
 class RuleReasoningService:
     """Service that runs dr-device reasoning on provided facts."""
 
+    def __init__(self) -> None:
+        self._adapter = None
+        self._priority_inferencer = None
+        try:
+            self._adapter = create_adapter_singleton()
+            self._priority_inferencer = DynamicPriorityInferencer(self._adapter)
+        except Exception:
+            self._adapter = None
+            self._priority_inferencer = None
+
     def run(self, facts: CaseFacts, strict_mode: bool = True) -> RuleReasoningResult:
+        if self._adapter is not None:
+            # Keep CLP in sync with generator while relying on adapter cache.
+            self._adapter.regenerate()
+
         artifact_errors = validate_rule_artifacts(DR_DEVICE_DIR)
         if artifact_errors:
             message = "; ".join(artifact_errors)
@@ -176,6 +194,15 @@ class RuleReasoningService:
                 status="ok",
             )
 
+        fallback_norms = self._infer_legal_fallback_norms(facts)
+        if fallback_norms:
+            return RuleReasoningResult(
+                applied_norms=fallback_norms,
+                proofs=proofs,
+                strict_mode=strict_mode,
+                status="ok",
+            )
+
         _ = facts  # kept for signature compatibility with existing tests/callers
         return RuleReasoningResult(
             applied_norms=[],
@@ -183,6 +210,11 @@ class RuleReasoningService:
             strict_mode=strict_mode,
             status="no_proof",
         )
+
+    def _infer_legal_fallback_norms(self, facts: CaseFacts) -> list[str]:
+        if facts.life_consequence_type == "smrt_nastupila" or facts.death_result is True:
+            return ["crime_art143"]
+        return []
 
     def _escape(self, value: str) -> str:
         return (
@@ -215,47 +247,13 @@ class RuleReasoningService:
         if not norms:
             return []
 
-        priorities = {
-            "crime_art147": 120,
-            "crime_art146": 115,
-            "crime_art145": 110,
-            "crime_art144": 105,
-            "crime_art148": 100,
-            "crime_art143": 90,
-            "crime_art151_4": 120,
-            "crime_art151_3": 115,
-            "crime_art151_2": 110,
-            "crime_art151_5": 105,
-            "crime_art151_1": 90,
-            "crime_art152_2": 110,
-            "crime_art152_1": 90,
-            "crime_art157": 120,
-            "crime_art156": 110,
-            "crime_art155_1": 90,
-            "crime_art149_5": 110,
-            "crime_art149_2": 105,
-            "crime_art149_1": 100,
-        }
-        families = {
-            "homicide": {
-                "crime_art143",
-                "crime_art144",
-                "crime_art145",
-                "crime_art146",
-                "crime_art147",
-                "crime_art148",
-            },
-            "severe_injury": {
-                "crime_art151_1",
-                "crime_art151_2",
-                "crime_art151_3",
-                "crime_art151_4",
-                "crime_art151_5",
-            },
-            "light_injury": {"crime_art152_1", "crime_art152_2"},
-            "abandonment": {"crime_art155_1", "crime_art156", "crime_art157"},
-            "suicide_related": {"crime_art149_1", "crime_art149_2", "crime_art149_5"},
-        }
+        priorities: dict[str, int] = {}
+        families: dict[str, set[str]] = {}
+
+        if self._priority_inferencer is not None:
+            priorities = self._priority_inferencer.get_all_priorities()
+        if self._adapter is not None:
+            families = self._adapter.get_dynamic_families()
 
         family_by_norm = {
             norm: family_name

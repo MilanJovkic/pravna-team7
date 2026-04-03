@@ -232,10 +232,4 @@
      <rdfs:domain rdf:resource='&export;crime_art157'/>
 </rdf:Property>
 
-<export:crime_art151a rdf:about='&export;crime_art151a1'>
-     <export:defendant>Unknown</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
-</export:crime_art151a>
-
 </rdf:RDF>

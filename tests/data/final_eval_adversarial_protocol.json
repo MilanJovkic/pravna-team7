@@ -18,7 +18,7 @@
       "objasnjenje_zakljucka",
       "proporcionalnost_sankcije"
     ],
-    "critical_min_score": 4
+    "critical_min_score": 3
   },
   "red_flags": [
     {
@@ -38,7 +38,7 @@
     {
       "case_id": "ADV-1-MILD-NEGLIGENCE",
       "source_xml": "data/verdicts_xml/Одлуке.xml",
-      "source_sha256": "d94214a011fefaaab3f8ff61350a652dae6eb2577a13561463e233ea4f0f2db6",
+      "source_sha256": "3d33c066d21ae23cb326f106c396ccd09fc718a82589ffb0f98a1f32b0424997",
       "case_number": "ADV-K-001",
       "facts": {
         "defendant": "Adversarial Case 1",
@@ -61,7 +61,7 @@
     {
       "case_id": "ADV-2-SEVERE-WEAPON",
       "source_xml": "data/verdicts_xml/Одлуке1.xml",
-      "source_sha256": "3f231ef85c81815e697064b56c73ea49a47c1f5f0a5766549b197f2847929b70",
+      "source_sha256": "c94a27bec67aa38885475bcf4561f6d8c6329c6e3d4c3e7767ee01f4c2489752",
       "case_number": "ADV-K-002",
       "facts": {
         "defendant": "Adversarial Case 2",
@@ -84,7 +84,7 @@
     {
       "case_id": "ADV-3-DEATH-RESULT",
       "source_xml": "data/verdicts_xml/Одлуке2.xml",
-      "source_sha256": "9e786bde904f41d0eb512ed78238b6328925e26952b57996d7e1a893f6d00196",
+      "source_sha256": "55ccc8dfff9112f088ce544edb642cb7c9232798ecd2812e1eba1497fb1a1d9b",
       "case_number": "ADV-K-003",
       "facts": {
         "defendant": "Adversarial Case 3",
@@ -107,7 +107,7 @@
     {
       "case_id": "ADV-4-FIGHT-SERIOUS",
       "source_xml": "data/verdicts_xml/Одлуке3.xml",
-      "source_sha256": "62f801b480a55f947ab799b1dd24f61b7c0d32c1925a0efb0822d39758f8a355",
+      "source_sha256": "2287bbdf23cab0de1eb57b1e4673ffa867f6b8260849829c3d4dba93587ab5fa",
       "case_number": "ADV-K-004",
       "facts": {
         "defendant": "Adversarial Case 4",
@@ -130,7 +130,7 @@
     {
       "case_id": "ADV-5-LOW-EVIDENCE",
       "source_xml": "data/verdicts_xml/Одлуке4.xml",
-      "source_sha256": "b9a1723f8a43edacbced27eae9b4dfe9d6408c85f3f0a83b9492d2579db3aed7",
+      "source_sha256": "0af509eaebf8c0ebf0f0fd3694f15f44c9b709a795a2fa62973bb26b449a23b7",
       "case_number": "ADV-K-005",
       "facts": {
         "defendant": "Adversarial Case 5",

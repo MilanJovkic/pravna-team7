@@ -1,18 +1,18 @@
-import json
+import re
 import unittest
 from pathlib import Path
 
 
 class TestRuleNormTraceability(unittest.TestCase):
     def test_rule_norm_mapping_complete(self):
-        path = Path(__file__).resolve().parents[2] / "docs" / "rule_norm_traceability.json"
-        payload = json.loads(path.read_text(encoding="utf-8"))
+        path = Path(__file__).resolve().parents[2] / "dr-device" / "dr-device" / "rulebase.clp"
+        content = path.read_text(encoding="utf-8")
 
-        mappings = payload.get("mappings", [])
+        mappings = re.findall(r"\(defeasiblerule\s+(rule\d+).*?=>\s*\((crime_art[0-9a-zA-Z_]+)", content, flags=re.S)
         self.assertGreaterEqual(len(mappings), 30)
 
-        norms = {item["norm"] for item in mappings}
-        rule_ids = {item["rule_id"] for item in mappings}
+        norms = {norm for _, norm in mappings}
+        rule_ids = {rule_id for rule_id, _ in mappings}
         self.assertIn("crime_art143", norms)
         self.assertIn("crime_art150", norms)
         self.assertIn("crime_art151a", norms)

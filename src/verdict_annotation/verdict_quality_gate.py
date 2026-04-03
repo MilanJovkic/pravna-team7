@@ -57,13 +57,16 @@ def validate_verdict_file(xml_path: Path) -> List[str]:
         errors.append("missing fullText")
 
     verdict_block = root.find(".//akn:block[@name='verdict']", AKN_NS)
-    if verdict_block is None:
-        errors.append("missing verdict block")
-    else:
+    decision_block = root.find(".//akn:block[@name='decision']", AKN_NS)
+    if verdict_block is not None:
         outcome = verdict_block.get("outcome", "")
         if not outcome:
             errors.append("missing verdict outcome")
         elif outcome != normalize_outcome(outcome):
+            errors.append(f"non-canonical outcome value: {outcome}")
+    elif decision_block is not None:
+        outcome = decision_block.get("outcome", "")
+        if outcome and outcome != normalize_outcome(outcome):
             errors.append(f"non-canonical outcome value: {outcome}")
 
     if errors:

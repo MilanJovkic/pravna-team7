@@ -155,6 +155,101 @@ class CaseFacts(BaseModel):
     special_action_types: List[str] = Field(default_factory=list)
     inhuman_treatment: Optional[bool] = None
 
+    def material_fact_count(self) -> int:
+        """Count non-empty facts that are relevant for reasoning."""
+        values: list[Any] = [
+            self.defendant,
+            self.injury_type,
+            self.location,
+            self.weapon,
+            self.weapon_used,
+            self.severe_consequence,
+            self.death_result,
+            self.negligence,
+            self.provocation,
+            self.fight_participation,
+            self.fight_consequence,
+            self.left_without_help,
+            self.victim_health_state,
+            self.victim_accountability,
+            self.victim_previously_abused,
+            self.victim_count,
+            self.victim_explicit_request,
+            self.victim_subordination,
+            self.life_consequence_type,
+            self.injury_severity_level,
+            self.danger_to_third_parties,
+            self.suicide_outcome,
+            self.injury_means_type,
+            self.victim_consent,
+            self.sterilization_goal,
+            self.guilt_form,
+            self.offender_psych_state,
+            self.death_attributed_to_negligence,
+            self.danger_caused_by_offender,
+            self.offender_victim_relationship,
+            self.help_provision_ability,
+            self.failure_to_help_consequence,
+            self.duty_connection,
+            self.inhuman_treatment,
+        ]
+
+        count = 0
+        for value in values:
+            if value is None:
+                continue
+            if isinstance(value, str) and not value.strip():
+                continue
+            count += 1
+
+        list_fields = [
+            self.victim_status,
+            self.severe_injury_specific_consequences,
+            self.abortion_outcomes,
+            self.execution_manner,
+            self.offender_motive,
+            self.provocation_types,
+            self.special_action_types,
+        ]
+        for entries in list_fields:
+            count += len([item for item in entries if str(item).strip()])
+
+        return count
+
+    def validation_issues(self, strict_mode: bool = True) -> List[str]:
+        """Return only physically impossible combinations.
+
+        The validator intentionally avoids legal-interpretation restrictions and
+        keeps judicial input freedom intact.
+        """
+        _ = strict_mode
+        issues: List[str] = []
+
+        if (self.life_consequence_type == "smrt_nastupila" or self.death_result is True) and self._explicit_no_injury_declared():
+            issues.append(
+                "Fizički apsurd: označen je smrtni ishod uz eksplicitnu tvrdnju da nema nikakve povrede."
+            )
+
+        return issues
+
+    def _explicit_no_injury_declared(self) -> bool:
+        no_injury_markers = {
+            "nema",
+            "nema povrede",
+            "nema_povrede",
+            "bez povrede",
+            "bez_povrede",
+            "nema nikakve povrede",
+            "nema_nikakve_povrede",
+            "none",
+            "no_injury",
+        }
+
+        injury_type = (self.injury_type or "").strip().lower()
+        injury_level = (self.injury_severity_level or "").strip().lower()
+
+        return injury_type in no_injury_markers or injury_level in no_injury_markers
+
 
 class ReasoningRequest(BaseModel):
     """Request model for rule and case-based reasoning."""

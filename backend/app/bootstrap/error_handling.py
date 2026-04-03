@@ -40,7 +40,7 @@ def map_exception_to_http(exc: Exception) -> HTTPException:
     if isinstance(exc, HTTPException):
         return exc
     if isinstance(exc, ValidationError):
-        return HTTPException(status_code=400, detail=str(exc))
+        return HTTPException(status_code=422, detail=str(exc))
     if isinstance(exc, (ExternalServiceError, InfrastructureError, DomainError)):
         # Keep legacy API behavior: infrastructure/external failures are surfaced as 500.
         return HTTPException(status_code=500, detail=str(exc))

@@ -11,7 +11,7 @@ from backend.app.main import app
 
 def test_map_exception_to_http_validation_error() -> None:
     exc = map_exception_to_http(ValidationError("bad input"))
-    assert exc.status_code == 400
+    assert exc.status_code == 422
     assert exc.detail == "bad input"
 
 
@@ -46,9 +46,9 @@ def test_error_envelope_contains_correlation_id() -> None:
     correlation_id = "test-corr-123"
     response = client.post("/api/cases/", json=payload, headers={"X-Correlation-ID": correlation_id})
 
-    assert response.status_code == 400
+    assert response.status_code == 422
     body = response.json()
-    assert body["status_code"] == 400
+    assert body["status_code"] == 422
     assert "detail" in body
     assert body["correlation_id"] == correlation_id
     assert response.headers.get("X-Correlation-ID") == correlation_id

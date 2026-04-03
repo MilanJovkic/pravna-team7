@@ -32,7 +32,7 @@ class TestCasesApiContract(unittest.TestCase):
         }
 
         response = self.client.post("/api/cases/", json=payload)
-        self.assertEqual(400, response.status_code)
+        self.assertEqual(422, response.status_code)
         self.assertIn("selected_verdict", response.json().get("detail", ""))
 
     def test_create_case_accepts_explicit_selected_fields(self) -> None:
@@ -71,7 +71,7 @@ class TestCasesApiContract(unittest.TestCase):
         }
 
         response = self.client.post("/api/cases/", json=payload)
-        self.assertEqual(400, response.status_code)
+        self.assertEqual(422, response.status_code)
         self.assertIn("explicit user confirmation", response.json().get("detail", ""))
 
 

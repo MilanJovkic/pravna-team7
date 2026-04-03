@@ -4,8 +4,10 @@ from __future__ import annotations
 import unittest
 
 from backend.app.application.services.reasoning_decision_strategies import VerdictDecisionStrategySelector
+from backend.app.application.services.reasoning_input_validator import ReasoningInputValidator
 from backend.app.domain.reasoning.policies import ReasoningPolicy
-from backend.app.models.schemas import CbrMatch, CbrResult
+from backend.app.domain.shared.errors import ValidationError
+from backend.app.models.schemas import CbrMatch, CbrResult, CaseFacts, ReasoningRequest
 
 
 class TestReasoningDecisionStrategies(unittest.TestCase):
@@ -52,6 +54,42 @@ class TestReasoningPolicy(unittest.TestCase):
     def test_sanction_returns_none_for_rejection(self) -> None:
         sanction = self.policy.suggest_sanction(article_numbers=["151"], facts=None, verdict="odbijeno")
         self.assertEqual("bez sankcije", sanction)
+
+    def test_sanction_is_derived_from_applied_norm(self) -> None:
+        facts = CaseFacts(death_result=True, injury_severity_level="teska")
+        sanction = self.policy.suggest_sanction(
+            article_numbers=["151"],
+            facts=facts,
+            norms=["crime_art151_3"],
+            verdict="osudjen",
+        )
+        self.assertEqual("kazna zatvora 2 do 12 godina (predlog)", sanction)
+
+
+class TestReasoningInputValidator(unittest.TestCase):
+    def setUp(self) -> None:
+        self.validator = ReasoningInputValidator()
+
+    def test_sparse_facts_are_allowed(self) -> None:
+        request = ReasoningRequest(facts=CaseFacts(), top_k=5, strict_mode=True)
+        self.validator.validate(request)
+
+    def test_non_physical_legal_tension_is_allowed(self) -> None:
+        request = ReasoningRequest(
+            facts=CaseFacts(life_consequence_type="smrt_nastupila", injury_severity_level="laka"),
+            top_k=5,
+            strict_mode=True,
+        )
+        self.validator.validate(request)
+
+    def test_physical_absurdity_is_rejected(self) -> None:
+        request = ReasoningRequest(
+            facts=CaseFacts(life_consequence_type="smrt_nastupila", injury_type="nema povrede"),
+            top_k=5,
+            strict_mode=True,
+        )
+        with self.assertRaises(ValidationError):
+            self.validator.validate(request)
 
 
 if __name__ == "__main__":

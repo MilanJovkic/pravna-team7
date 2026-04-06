@@ -190,9 +190,9 @@
 
     <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case01">
         <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
-        <lc:defendant>Unknown</lc:defendant>
+        <lc:defendant>M. M.</lc:defendant>
         <lc:injury_type>teska tjelesna povreda</lc:injury_type>
-        <lc:weapon>oruzje</lc:weapon>
+        <lc:weapon>opasno_orudje</lc:weapon>
         <lc:weapon_used>true</lc:weapon_used>
         <lc:severe_consequence>true</lc:severe_consequence>
         <lc:death_result>false</lc:death_result>
@@ -200,10 +200,10 @@
         <lc:provocation>false</lc:provocation>
         <lc:fight_participation>true</lc:fight_participation>
         <lc:fight_consequence>teska_povreda</lc:fight_consequence>
-        <lc:victim_health_state>tesko_zdravstveno_stanje</lc:victim_health_state>
-        <lc:life_consequence_type>tjelesna_povreda</lc:life_consequence_type>
-        <lc:injury_severity_level>teska</lc:injury_severity_level>
+        <lc:severe_injury_specific_consequences>opasnost_po_zivot</lc:severe_injury_specific_consequences>
+        <lc:danger_to_third_parties>false</lc:danger_to_third_parties>
         <lc:injury_means_type>opasno_orudje</lc:injury_means_type>
-        <lc:high_intensity_distress>true</lc:high_intensity_distress>
+        <lc:guilt_form>umisljaj_direktni</lc:guilt_form>
+        <lc:high_intensity_distress>false</lc:high_intensity_distress>
     </lc:case>
 </rdf:RDF>

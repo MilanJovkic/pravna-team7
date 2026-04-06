@@ -6,6 +6,7 @@ import subprocess
 import xml.etree.ElementTree as ET
 import re
 import os
+import logging
 
 from backend.app.models.schemas import CaseFacts, RuleReasoningResult
 from backend.app.services.cbr_normalization import bool_to_text, normalize_ascii
@@ -30,6 +31,7 @@ class RuleReasoningService:
     """Service that runs dr-device reasoning on provided facts."""
 
     def __init__(self) -> None:
+        self._logger = logging.getLogger(__name__)
         self._adapter = None
         self._priority_inferencer = None
         fallback_value = os.getenv("RULE_FALLBACK_ENABLE", "0").strip().lower()
@@ -279,46 +281,19 @@ class RuleReasoningService:
         if not norms:
             return []
 
-        priorities: dict[str, int] = {}
-        families: dict[str, set[str]] = {}
+        self._logger.info("[Reasoning][Conflict] Raw proven norms before conflict resolution: %s", norms)
 
-        if self._priority_inferencer is not None:
-            priorities = self._priority_inferencer.get_all_priorities()
-        if self._adapter is not None:
-            families = self._adapter.get_dynamic_families()
-
-        family_by_norm = {
-            norm: family_name
-            for family_name, norm_set in families.items()
-            for norm in norm_set
-        }
-
-        seen: set[str] = set()
-        for norm in norms:
-            if norm not in seen:
-                seen.add(norm)
-
-        winners: dict[str, tuple[str, int]] = {}
-        passthrough: list[str] = []
-
-        for norm in seen:
-            family = family_by_norm.get(norm)
-            score = priorities.get(norm, 50)
-            if not family:
-                passthrough.append(norm)
-                continue
-            current = winners.get(family)
-            if current is None or score > current[1] or (score == current[1] and norm < current[0]):
-                winners[family] = (norm, score)
-
-        merged = passthrough + [value[0] for value in winners.values()]
+        # Return all proven norms. Only deduplicate while preserving stable output ordering.
+        merged = list(dict.fromkeys(norms))
 
         def sort_key(norm: str) -> tuple[int, str]:
             match = re.search(r"crime_art(\d+)", norm)
             article_num = int(match.group(1)) if match else 10_000
             return (article_num, norm)
 
-        return sorted(merged, key=sort_key)
+        resolved = sorted(merged, key=sort_key)
+        self._logger.info("[Reasoning][Conflict] Final norms after conflict resolution: %s", resolved)
+        return resolved
 
     def _sync_export_norms(self) -> None:
         if not RULEBASE_PATH.exists():

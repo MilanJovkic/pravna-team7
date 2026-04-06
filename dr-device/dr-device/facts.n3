@@ -138,9 +138,9 @@
 <http://ftn.uns.ac.rs/legal-case#inhuman_treatment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ftn.uns.ac.rs/legal-case#case> .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#defendant> "Unknown" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#defendant> "M. M." .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#injury_type> "teska tjelesna povreda" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#weapon> "oruzje" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#weapon> "opasno_orudje" .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#weapon_used> "true" .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#severe_consequence> "true" .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#death_result> "false" .
@@ -148,8 +148,8 @@
 <http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#provocation> "false" .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#fight_participation> "true" .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#fight_consequence> "teska_povreda" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#victim_health_state> "tesko_zdravstveno_stanje" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#life_consequence_type> "tjelesna_povreda" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#injury_severity_level> "teska" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#severe_injury_specific_consequences> "opasnost_po_zivot" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#danger_to_third_parties> "false" .
 <http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#injury_means_type> "opasno_orudje" .
-<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#high_intensity_distress> "true" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#guilt_form> "umisljaj_direktni" .
+<http://ftn.uns.ac.rs/legal-case#case01> <http://ftn.uns.ac.rs/legal-case#high_intensity_distress> "false" .

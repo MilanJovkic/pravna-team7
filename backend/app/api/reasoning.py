@@ -1,4 +1,6 @@
 """API endpoints for combined reasoning."""
+import logging
+
 from fastapi import APIRouter, Depends
 from starlette.concurrency import run_in_threadpool
 
@@ -15,6 +17,7 @@ from backend.app.services.reasoning_explain_service import ReasoningExplainServi
 
 
 router = APIRouter()
+logger = logging.getLogger(__name__)
 
 
 def get_rule_reasoning_service() -> RuleEngine:
@@ -72,6 +75,30 @@ async def run_reasoning(
 ):
     """Run rule-based and case-based reasoning for provided facts."""
     try:
+        facts_payload = request.facts.model_dump(mode="python")
+        logger.info("[Reasoning][Backend] Request facts: %s", facts_payload)
+        logger.info(
+            "[Reasoning][Backend] Focus 153/154: defendant=%s fight_participation=%s injury_type=%s weapon_used=%s injury_means_type=%s death_result=%s",
+            request.facts.defendant,
+            request.facts.fight_participation,
+            request.facts.injury_type,
+            request.facts.weapon_used,
+            request.facts.injury_means_type,
+            request.facts.death_result,
+        )
+        print("[Reasoning][Backend] Request facts:", facts_payload, flush=True)
+        print(
+            "[Reasoning][Backend] Focus 153/154:",
+            {
+                "defendant": request.facts.defendant,
+                "fight_participation": request.facts.fight_participation,
+                "injury_type": request.facts.injury_type,
+                "weapon_used": request.facts.weapon_used,
+                "injury_means_type": request.facts.injury_means_type,
+                "death_result": request.facts.death_result,
+            },
+            flush=True,
+        )
         return await run_in_threadpool(use_case.execute, request)
     except Exception as exc:
         raise map_exception_to_http(exc)

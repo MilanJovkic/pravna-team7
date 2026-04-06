@@ -137,14 +137,20 @@ class CaseFacts(BaseModel):
     provocation_types: List[str] = Field(default_factory=list)
     injury_means_type: Optional[str] = None
     victim_consent: Optional[str] = None
+    guardian_consent: Optional[str] = None
+    abortion_action_mode: Optional[str] = None
     sterilization_goal: Optional[str] = None
 
     # Group 4: subjective relation (guilt)
     guilt_form: Optional[str] = None
     offender_psych_state: Optional[str] = None
+    high_intensity_distress: Optional[bool] = None
+    offender_is_mother: Optional[bool] = None
     death_attributed_to_negligence: Optional[str] = None
 
     # Group 5: abandonment / failure to provide help
+    danger_to_life: Optional[bool] = None
+    danger_to_health: Optional[bool] = None
     danger_caused_by_offender: Optional[bool] = None
     offender_victim_relationship: Optional[str] = None
     help_provision_ability: Optional[str] = None
@@ -182,10 +188,16 @@ class CaseFacts(BaseModel):
             self.suicide_outcome,
             self.injury_means_type,
             self.victim_consent,
+            self.guardian_consent,
+            self.abortion_action_mode,
             self.sterilization_goal,
             self.guilt_form,
             self.offender_psych_state,
+            self.high_intensity_distress,
+            self.offender_is_mother,
             self.death_attributed_to_negligence,
+            self.danger_to_life,
+            self.danger_to_health,
             self.danger_caused_by_offender,
             self.offender_victim_relationship,
             self.help_provision_ability,

@@ -148,6 +148,9 @@ class RunHybridReasoningUseCase:
             facts.failure_to_help_consequence,
             facts.duty_connection,
             facts.inhuman_treatment,
+            facts.high_intensity_distress,
+            facts.danger_to_life,
+            facts.danger_to_health,
         ]
         list_values = [
             facts.victim_status,

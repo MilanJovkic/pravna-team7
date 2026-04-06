@@ -28,11 +28,16 @@
   ],
   "samoubistvo": [
     "crime_art149_1",
+    "crime_art149_3",
+    "crime_art149_4",
     "crime_art149_5",
     "crime_art149_2"
   ],
   "pobacaj": [
-    "crime_art150"
+    "crime_art150",
+    "crime_art150_1",
+    "crime_art150_2",
+    "crime_art150_3"
   ],
   "uncategorized": [
     "crime_art151a",

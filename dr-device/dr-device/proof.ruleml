@@ -4,7 +4,7 @@
      <!ENTITY proof-export "http://startrek.csd.auth.gr/dr-device/proof/proof.ruleml#">
 ]>
 
-<RuleML rdf_import='"facts.rdf"' rdf_export='export.rdf' rdf_export_classes="crime_art143 crime_art144 crime_art145 crime_art146 crime_art147 crime_art148 crime_art149_1 crime_art149_2 crime_art149_5 crime_art150 crime_art151_1 crime_art151_2 crime_art151_3 crime_art151_4 crime_art151_5 crime_art151a crime_art151b crime_art152_1 crime_art152_2 crime_art153 crime_art154 crime_art155_1 crime_art156 crime_art157" rulebase='rulebase.ruleml' xmlns="http://www.ruleml.org/0.91/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.ruleml.org/0.91/xsd http://lpis.csd.auth.gr/systems/dr-device/dr-device-0.81.xsd">
+<RuleML rdf_import='"facts.rdf"' rdf_export='export.rdf' rdf_export_classes="crime_art143 crime_art144 crime_art145 crime_art146 crime_art147 crime_art148 crime_art149_1 crime_art149_2 crime_art149_3 crime_art149_4 crime_art149_5 crime_art150_1 crime_art150_2 crime_art150_3 crime_art151_1 crime_art151_2 crime_art151_3 crime_art151_4 crime_art151_5 crime_art151a crime_art151b crime_art152_1 crime_art152_2 crime_art152_3 crime_art153 crime_art154 crime_art155_1 crime_art155_2 crime_art155_3 crime_art156 crime_art156_2 crime_art156_3 crime_art157 crime_art157_2 crime_art157_3" rulebase='rulebase.ruleml' xmlns="http://www.ruleml.org/0.91/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.ruleml.org/0.91/xsd http://lpis.csd.auth.gr/systems/dr-device/dr-device-0.81.xsd">
 <Grounds>
 <Defeasibly_Proved>
 <oid>
@@ -15,7 +15,7 @@
 </Literal>
 <Defeasible_Proof>
 <supportive_rule>
-<rule_ref rule='rule1'/>
+<rule_ref rule='rule41'/>
 </supportive_rule>
 <defeasible_body_grounds>
 <Definitely_Proved>
@@ -37,7 +37,7 @@
 <Blocked_Defeasible_rule>
 <rule_ref rule='nil'/>
 <Attacked_by_not_Inferior>
-<rule_ref rule='rule1'/>
+<rule_ref rule='rule41'/>
 </Attacked_by_not_Inferior>
 </Blocked_Defeasible_rule>
 </Blocked>
@@ -49,11 +49,11 @@
 <Ind uri='&proof-export;proof2'>proof2</Ind>
 </oid>
 <Literal>
-<RDF_resource uri='&export;crime_art151_41'/>
+<RDF_resource uri='&export;crime_art1531'/>
 </Literal>
 <Defeasible_Proof>
 <supportive_rule>
-<rule_ref rule='rule4'/>
+<rule_ref rule='rule55'/>
 </supportive_rule>
 <defeasible_body_grounds>
 <Definitely_Proved>
@@ -87,10 +87,52 @@
 <Blocked_Defeasible_rule>
 <rule_ref rule='nil'/>
 <Attacked_by_not_Inferior>
-<rule_ref rule='rule4'/>
+<rule_ref rule='rule55'/>
 </Attacked_by_not_Inferior>
 </Blocked_Defeasible_rule>
 </Blocked>
+</defeasible_attackers_blocked>
+</Defeasible_Proof>
+</Defeasibly_Proved>
+<Defeasibly_Proved>
+<oid>
+<Ind uri='&proof-export;proof3'>proof3</Ind>
+</oid>
+<Literal>
+<RDF_resource uri='&export;crime_art1541'/>
+</Literal>
+<Defeasible_Proof>
+<supportive_rule>
+<rule_ref rule='rule57'/>
+</supportive_rule>
+<defeasible_body_grounds>
+<Definitely_Proved>
+<Literal>
+<RDF_resource uri='&lc;case01'/>
+</Literal>
+<Definite_Proof>
+<strict_clause>
+<Fact>
+<RDF_resource uri='&lc;case01'/>
+</Fact>
+</strict_clause>
+</Definite_Proof>
+</Definitely_Proved>
+<Definitely_Proved>
+<Literal>
+<RDF_resource uri='&lc;case01'/>
+</Literal>
+<Definite_Proof>
+<strict_clause>
+<Fact>
+<RDF_resource uri='&lc;case01'/>
+</Fact>
+</strict_clause>
+</Definite_Proof>
+</Definitely_Proved>
+</defeasible_body_grounds>
+<not_strongly_attacked/>
+<defeasible_attackers_blocked>
 </defeasible_attackers_blocked>
 </Defeasible_Proof>
 </Defeasibly_Proved>

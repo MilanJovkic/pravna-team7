@@ -24,6 +24,7 @@ from __future__ import annotations
 
 from pathlib import Path
 import json
+import os
 from typing import Optional
 
 from backend.app.domain.rulebase_generation.rulebase_generator import (
@@ -63,8 +64,48 @@ class RulebaseAdaptationService:
         self._cached_result = None
         self._law_file_mtime = None
 
-        # Generiši na startu
-        self.regenerate()
+        # U manual mode-u ucitaj cache fajlove i ne diraj rulebase.clp.
+        if self.auto_regenerate:
+            self.regenerate()
+        else:
+            self._load_cached_files()
+
+    def _load_cached_files(self) -> None:
+        priorities_file = self.cache_dir / "priorities.json"
+        families_file = self.cache_dir / "families.json"
+        facts_file = self.cache_dir / "required_facts.json"
+
+        priorities: dict[str, int] = {}
+        families: dict[str, set[str]] = {}
+        required_facts: set[str] = set()
+
+        if priorities_file.exists():
+            try:
+                priorities = json.loads(priorities_file.read_text(encoding="utf-8"))
+            except Exception:
+                priorities = {}
+
+        if families_file.exists():
+            try:
+                data = json.loads(families_file.read_text(encoding="utf-8"))
+                families = {key: set(value) for key, value in data.items()}
+            except Exception:
+                families = {}
+
+        if facts_file.exists():
+            try:
+                required_facts = set(json.loads(facts_file.read_text(encoding="utf-8")))
+            except Exception:
+                required_facts = set()
+
+        self._cached_result = {
+            "rulebase_clp": "",
+            "rules": [],
+            "priorities": priorities,
+            "families": families,
+            "required_facts": required_facts,
+            "articles": [],
+        }
 
     def regenerate(self) -> dict:
         """
@@ -114,7 +155,10 @@ class RulebaseAdaptationService:
         ZA ZAMENU rule_reasoning_service.py linija 218-232
         """
         if self._cached_result is None:
-            self.regenerate()
+            if self.auto_regenerate:
+                self.regenerate()
+            else:
+                self._load_cached_files()
 
         return self._cached_result["priorities"]
 
@@ -122,7 +166,10 @@ class RulebaseAdaptationService:
         """
 Učitaj family mapiranje iz generiše datoteke (umesto hardkoda!)."""
         if self._cached_result is None:
-            self.regenerate()
+            if self.auto_regenerate:
+                self.regenerate()
+            else:
+                self._load_cached_files()
 
         return self._cached_result["families"]
 
@@ -133,7 +180,10 @@ Učitaj family mapiranje iz generiše datoteke (umesto hardkoda!)."""
         ZA SINHRONIZACIJU sa CaseFacts + Frontend forme
         """
         if self._cached_result is None:
-            self.regenerate()
+            if self.auto_regenerate:
+                self.regenerate()
+            else:
+                self._load_cached_files()
 
         return self._cached_result["required_facts"]
 
@@ -248,10 +298,12 @@ def create_adapter_singleton() -> RulebaseAdaptationService:
     global _RULEBASE_ADAPTER
 
     if "_RULEBASE_ADAPTER" not in globals():
+        auto_regen_value = os.getenv("RULEBASE_AUTOREGENERATE", "0").strip().lower()
+        auto_regenerate = auto_regen_value in {"1", "true", "yes", "on"}
         _RULEBASE_ADAPTER = RulebaseAdaptationService(
             law_xml_path=Path("output/annotated_law.xml"),
             cache_dir=Path("dr-device/dr-device"),
-            auto_regenerate=True,
+            auto_regenerate=auto_regenerate,
         )
 
     return _RULEBASE_ADAPTER

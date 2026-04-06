@@ -95,14 +95,20 @@ export interface CaseFacts {
   provocation_types?: string[];
   injury_means_type?: string;
   victim_consent?: string;
+  guardian_consent?: string;
+  abortion_action_mode?: string;
   sterilization_goal?: string;
 
   // Group 4: subjective relation (guilt)
   guilt_form?: string;
   offender_psych_state?: string;
+  high_intensity_distress?: boolean | null;
+  offender_is_mother?: boolean | null;
   death_attributed_to_negligence?: string;
 
   // Group 5: abandonment / failure to provide help
+  danger_to_life?: boolean | null;
+  danger_to_health?: boolean | null;
   danger_caused_by_offender?: boolean | null;
   offender_victim_relationship?: string;
   help_provision_ability?: string;

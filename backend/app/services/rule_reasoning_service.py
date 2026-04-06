@@ -9,6 +9,10 @@ import os
 
 from backend.app.models.schemas import CaseFacts, RuleReasoningResult
 from backend.app.services.cbr_normalization import bool_to_text, normalize_ascii
+from backend.app.services.rule_input_normalization import (
+    normalize_rule_fact_list,
+    normalize_rule_fact_value,
+)
 from backend.app.services.rule_artifact_validator import validate_rule_artifacts
 from backend.app.domain.rulebase_generation.rule_reasoning_adapter import (
     create_adapter_singleton,
@@ -38,7 +42,7 @@ class RuleReasoningService:
             self._priority_inferencer = None
 
     def run(self, facts: CaseFacts, strict_mode: bool = True) -> RuleReasoningResult:
-        if self._adapter is not None:
+        if self._adapter is not None and getattr(self._adapter, "auto_regenerate", False):
             # Keep CLP in sync with generator while relying on adapter cache.
             self._adapter.regenerate()
 
@@ -58,6 +62,9 @@ class RuleReasoningService:
 
     def _write_facts(self, facts: CaseFacts) -> None:
         defendant = (facts.defendant or "Unknown").strip()
+        high_intensity_distress = facts.high_intensity_distress
+        if high_intensity_distress is None:
+            high_intensity_distress = self._normalize_optional_text(facts.offender_psych_state) == "jaka_razdrazenost_na_mah"
         values: dict[str, str | list[str] | None] = {
             "defendant": self._normalize(defendant),
             "injury_type": self._normalize(facts.injury_type.strip()) if facts.injury_type else None,
@@ -89,11 +96,16 @@ class RuleReasoningService:
             "provocation_types": self._normalized_list(facts.provocation_types),
             "injury_means_type": self._normalize_optional_text(facts.injury_means_type),
             "victim_consent": self._normalize_optional_text(facts.victim_consent),
+            "guardian_consent": self._normalize_optional_text(facts.guardian_consent),
+            "abortion_action_mode": self._normalize_optional_text(facts.abortion_action_mode),
             "sterilization_goal": self._normalize_optional_text(facts.sterilization_goal),
             "guilt_form": self._normalize_optional_text(facts.guilt_form),
             "offender_psych_state": self._normalize_optional_text(facts.offender_psych_state),
+            "high_intensity_distress": self._bool_value(high_intensity_distress),
+            "offender_is_mother": self._bool_value(facts.offender_is_mother),
             "death_attributed_to_negligence": self._normalize_optional_text(facts.death_attributed_to_negligence),
-            "danger_caused_by_offender": self._bool_value(facts.danger_caused_by_offender),
+            "danger_to_life": self._bool_value(facts.danger_to_life),
+            "danger_to_health": self._bool_value(facts.danger_to_health),
             "offender_victim_relationship": self._normalize_optional_text(facts.offender_victim_relationship),
             "help_provision_ability": self._normalize_optional_text(facts.help_provision_ability),
             "failure_to_help_consequence": self._normalize_optional_text(facts.failure_to_help_consequence),
@@ -101,6 +113,15 @@ class RuleReasoningService:
             "special_action_types": self._normalized_list(facts.special_action_types),
             "inhuman_treatment": self._bool_value(facts.inhuman_treatment),
         }
+
+        # Normalize all non-boolean textual facts to canonical rule vocabulary.
+        for key, value in list(values.items()):
+            if key == "defendant":
+                continue
+            if isinstance(value, list):
+                values[key] = normalize_rule_fact_list(key, value)
+            elif isinstance(value, str):
+                values[key] = normalize_rule_fact_value(key, value)
 
         lines = []
         lines.append("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>")

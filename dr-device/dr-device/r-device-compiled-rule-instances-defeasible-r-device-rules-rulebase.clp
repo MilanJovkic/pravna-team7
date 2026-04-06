@@ -1,37 +1,37 @@
 ([rule73b-defeasibly-dot] of derived-attribute-rule
    (pos-name rule73b-defeasibly-dot-gen1407)
-   (depends-on declare crime_art144 lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule73b] ) ) ) ?gen1309 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule73b $? ) ) ( test ( eq ( class ?gen1309 ) crime_art144 ) ) ( not ( and ?gen1316 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1315 & : ( >= ?gen1315 1 ) ) ) ?gen1318 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen1317 & : ( >= ?gen1317 1 ) ) ) ?gen1320 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1319 & : ( >= ?gen1319 1 ) ) ) ?gen1309 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen1311 & : ( not ( member$ rule73b $?gen1311 ) ) ) ) ) ) => ?gen1309 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule73b] ) ) ) ?gen1309 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule73b $? ) ) ( test ( eq ( class ?gen1309 ) crime_art144_1 ) ) ( not ( and ?gen1316 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1315 & : ( >= ?gen1315 1 ) ) ) ?gen1318 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen1317 & : ( >= ?gen1317 1 ) ) ) ?gen1320 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1319 & : ( >= ?gen1319 1 ) ) ) ?gen1309 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen1311 & : ( not ( member$ rule73b $?gen1311 ) ) ) ) ) ) => ?gen1309 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule73b-defeasibly] of derived-attribute-rule
    (pos-name rule73b-defeasibly-gen1409)
-   (depends-on declare lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule73b] ) ) ) ?gen1316 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1315 & : ( >= ?gen1315 1 ) ) ) ?gen1318 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen1317 & : ( >= ?gen1317 1 ) ) ) ?gen1320 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1319 & : ( >= ?gen1319 1 ) ) ) ?gen1309 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen1311 & : ( not ( member$ rule73b $?gen1311 ) ) ) ) ( test ( eq ( class ?gen1309 ) crime_art144 ) ) => ?gen1309 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule73b ?gen1316 ?gen1318 ?gen1320 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule73b] ) ) ) ?gen1316 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1315 & : ( >= ?gen1315 1 ) ) ) ?gen1318 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen1317 & : ( >= ?gen1317 1 ) ) ) ?gen1320 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1319 & : ( >= ?gen1319 1 ) ) ) ?gen1309 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen1311 & : ( not ( member$ rule73b $?gen1311 ) ) ) ) ( test ( eq ( class ?gen1309 ) crime_art144_1 ) ) => ?gen1309 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule73b ?gen1316 ?gen1318 ?gen1320 ) )"))
 
 ([rule73b-overruled-dot] of derived-attribute-rule
    (pos-name rule73b-overruled-dot-gen1411)
-   (depends-on declare crime_art144 lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule73b] ) ) ) ?gen1309 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen1312 ) ( negative-overruled $?gen1313 & : ( subseq-pos ( create$ rule73b-overruled $?gen1312 $$$ $?gen1313 ) ) ) ) ( test ( eq ( class ?gen1309 ) crime_art144 ) ) ( not ( and ?gen1316 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1315 & : ( >= ?gen1315 1 ) ) ) ?gen1318 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen1317 & : ( >= ?gen1317 1 ) ) ) ?gen1320 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1319 & : ( >= ?gen1319 1 ) ) ) ?gen1309 <- ( crime_art144 ( positive-defeated $?gen1311 & : ( not ( member$ rule73b $?gen1311 ) ) ) ) ) ) => ( calc ( bind $?gen1314 ( delete-member$ $?gen1313 ( create$ rule73b-overruled $?gen1312 ) ) ) ) ?gen1309 <- ( crime_art144 ( negative-overruled $?gen1314 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule73b] ) ) ) ?gen1309 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen1312 ) ( negative-overruled $?gen1313 & : ( subseq-pos ( create$ rule73b-overruled $?gen1312 $$$ $?gen1313 ) ) ) ) ( test ( eq ( class ?gen1309 ) crime_art144_1 ) ) ( not ( and ?gen1316 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1315 & : ( >= ?gen1315 1 ) ) ) ?gen1318 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen1317 & : ( >= ?gen1317 1 ) ) ) ?gen1320 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1319 & : ( >= ?gen1319 1 ) ) ) ?gen1309 <- ( crime_art144_1 ( positive-defeated $?gen1311 & : ( not ( member$ rule73b $?gen1311 ) ) ) ) ) ) => ( calc ( bind $?gen1314 ( delete-member$ $?gen1313 ( create$ rule73b-overruled $?gen1312 ) ) ) ) ?gen1309 <- ( crime_art144_1 ( negative-overruled $?gen1314 ) )"))
 
 ([rule73b-overruled] of derived-attribute-rule
    (pos-name rule73b-overruled-gen1413)
-   (depends-on declare lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule73b] ) ) ) ?gen1316 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1315 & : ( >= ?gen1315 1 ) ) ) ?gen1318 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen1317 & : ( >= ?gen1317 1 ) ) ) ?gen1320 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1319 & : ( >= ?gen1319 1 ) ) ) ?gen1309 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen1312 ) ( negative-overruled $?gen1313 & : ( not ( subseq-pos ( create$ rule73b-overruled $?gen1312 $$$ $?gen1313 ) ) ) ) ( positive-defeated $?gen1311 & : ( not ( member$ rule73b $?gen1311 ) ) ) ) ( test ( eq ( class ?gen1309 ) crime_art144 ) ) => ( calc ( bind $?gen1314 ( create$ rule73b-overruled $?gen1312 $?gen1313 ) ) ) ?gen1309 <- ( crime_art144 ( negative-overruled $?gen1314 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule73b] ) ) ) ?gen1316 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1315 & : ( >= ?gen1315 1 ) ) ) ?gen1318 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen1317 & : ( >= ?gen1317 1 ) ) ) ?gen1320 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1319 & : ( >= ?gen1319 1 ) ) ) ?gen1309 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen1312 ) ( negative-overruled $?gen1313 & : ( not ( subseq-pos ( create$ rule73b-overruled $?gen1312 $$$ $?gen1313 ) ) ) ) ( positive-defeated $?gen1311 & : ( not ( member$ rule73b $?gen1311 ) ) ) ) ( test ( eq ( class ?gen1309 ) crime_art144_1 ) ) => ( calc ( bind $?gen1314 ( create$ rule73b-overruled $?gen1312 $?gen1313 ) ) ) ?gen1309 <- ( crime_art144_1 ( negative-overruled $?gen1314 ) )"))
 
 ([rule73b-support] of derived-attribute-rule
    (pos-name rule73b-support-gen1415)
-   (depends-on declare lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule73b] ) ) ) ?gen1306 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ?gen1307 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ?gen1308 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ?gen1309 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen1311 & : ( not ( subseq-pos ( create$ rule73b ?gen1306 ?gen1307 ?gen1308 $$$ $?gen1311 ) ) ) ) ) ( test ( eq ( class ?gen1309 ) crime_art144 ) ) => ( calc ( bind $?gen1314 ( create$ rule73b ?gen1306 ?gen1307 ?gen1308 $?gen1311 ) ) ) ?gen1309 <- ( crime_art144 ( positive-support $?gen1314 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule73b] ) ) ) ?gen1306 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ?gen1307 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ?gen1308 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ?gen1309 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen1311 & : ( not ( subseq-pos ( create$ rule73b ?gen1306 ?gen1307 ?gen1308 $$$ $?gen1311 ) ) ) ) ) ( test ( eq ( class ?gen1309 ) crime_art144_1 ) ) => ( calc ( bind $?gen1314 ( create$ rule73b ?gen1306 ?gen1307 ?gen1308 $?gen1311 ) ) ) ?gen1309 <- ( crime_art144_1 ( positive-support $?gen1314 ) )"))
 
 ([rule73-defeasibly-dot] of derived-attribute-rule
    (pos-name rule73-defeasibly-dot-gen1417)
@@ -70,38 +70,38 @@
 
 ([rule72b-defeasibly-dot] of derived-attribute-rule
    (pos-name rule72b-defeasibly-dot-gen1427)
-   (depends-on declare crime_art144 lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule72b] ) ) ) ?gen1279 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule72b $? ) ) ( test ( eq ( class ?gen1279 ) crime_art144 ) ) ( not ( and ?gen1286 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1285 & : ( >= ?gen1285 1 ) ) ) ?gen1288 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen1287 & : ( >= ?gen1287 1 ) ) ) ?gen1290 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1289 & : ( >= ?gen1289 1 ) ) ) ?gen1279 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen1281 & : ( not ( member$ rule72b $?gen1281 ) ) ) ) ) ) => ?gen1279 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule72b] ) ) ) ?gen1279 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule72b $? ) ) ( test ( eq ( class ?gen1279 ) crime_art144_1 ) ) ( not ( and ?gen1286 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1285 & : ( >= ?gen1285 1 ) ) ) ?gen1288 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen1287 & : ( >= ?gen1287 1 ) ) ) ?gen1290 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1289 & : ( >= ?gen1289 1 ) ) ) ?gen1279 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen1281 & : ( not ( member$ rule72b $?gen1281 ) ) ) ) ) ) => ?gen1279 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule72b-defeasibly] of derived-attribute-rule
    (pos-name rule72b-defeasibly-gen1429)
-   (depends-on declare lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule72b] ) ) ) ?gen1286 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1285 & : ( >= ?gen1285 1 ) ) ) ?gen1288 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen1287 & : ( >= ?gen1287 1 ) ) ) ?gen1290 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1289 & : ( >= ?gen1289 1 ) ) ) ?gen1279 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen1281 & : ( not ( member$ rule72b $?gen1281 ) ) ) ) ( test ( eq ( class ?gen1279 ) crime_art144 ) ) => ?gen1279 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule72b ?gen1286 ?gen1288 ?gen1290 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule72b] ) ) ) ?gen1286 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1285 & : ( >= ?gen1285 1 ) ) ) ?gen1288 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen1287 & : ( >= ?gen1287 1 ) ) ) ?gen1290 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1289 & : ( >= ?gen1289 1 ) ) ) ?gen1279 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen1281 & : ( not ( member$ rule72b $?gen1281 ) ) ) ) ( test ( eq ( class ?gen1279 ) crime_art144_1 ) ) => ?gen1279 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule72b ?gen1286 ?gen1288 ?gen1290 ) )"))
 
 ([rule72b-overruled-dot] of derived-attribute-rule
    (pos-name rule72b-overruled-dot-gen1431)
-   (depends-on declare crime_art144 lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule72b] ) ) ) ?gen1279 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen1282 ) ( negative-overruled $?gen1283 & : ( subseq-pos ( create$ rule72b-overruled $?gen1282 $$$ $?gen1283 ) ) ) ) ( test ( eq ( class ?gen1279 ) crime_art144 ) ) ( not ( and ?gen1286 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1285 & : ( >= ?gen1285 1 ) ) ) ?gen1288 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen1287 & : ( >= ?gen1287 1 ) ) ) ?gen1290 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1289 & : ( >= ?gen1289 1 ) ) ) ?gen1279 <- ( crime_art144 ( positive-defeated $?gen1281 & : ( not ( member$ rule72b $?gen1281 ) ) ) ) ) ) => ( calc ( bind $?gen1284 ( delete-member$ $?gen1283 ( create$ rule72b-overruled $?gen1282 ) ) ) ) ?gen1279 <- ( crime_art144 ( negative-overruled $?gen1284 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule72b] ) ) ) ?gen1279 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen1282 ) ( negative-overruled $?gen1283 & : ( subseq-pos ( create$ rule72b-overruled $?gen1282 $$$ $?gen1283 ) ) ) ) ( test ( eq ( class ?gen1279 ) crime_art144_1 ) ) ( not ( and ?gen1286 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1285 & : ( >= ?gen1285 1 ) ) ) ?gen1288 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen1287 & : ( >= ?gen1287 1 ) ) ) ?gen1290 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1289 & : ( >= ?gen1289 1 ) ) ) ?gen1279 <- ( crime_art144_1 ( positive-defeated $?gen1281 & : ( not ( member$ rule72b $?gen1281 ) ) ) ) ) ) => ( calc ( bind $?gen1284 ( delete-member$ $?gen1283 ( create$ rule72b-overruled $?gen1282 ) ) ) ) ?gen1279 <- ( crime_art144_1 ( negative-overruled $?gen1284 ) )"))
 
 ([rule72b-overruled] of derived-attribute-rule
    (pos-name rule72b-overruled-gen1433)
-   (depends-on declare lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule72b] ) ) ) ?gen1286 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1285 & : ( >= ?gen1285 1 ) ) ) ?gen1288 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen1287 & : ( >= ?gen1287 1 ) ) ) ?gen1290 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1289 & : ( >= ?gen1289 1 ) ) ) ?gen1279 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen1282 ) ( negative-overruled $?gen1283 & : ( not ( subseq-pos ( create$ rule72b-overruled $?gen1282 $$$ $?gen1283 ) ) ) ) ( positive-defeated $?gen1281 & : ( not ( member$ rule72b $?gen1281 ) ) ) ) ( test ( eq ( class ?gen1279 ) crime_art144 ) ) => ( calc ( bind $?gen1284 ( create$ rule72b-overruled $?gen1282 $?gen1283 ) ) ) ?gen1279 <- ( crime_art144 ( negative-overruled $?gen1284 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule72b] ) ) ) ?gen1286 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ( positive ?gen1285 & : ( >= ?gen1285 1 ) ) ) ?gen1288 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen1287 & : ( >= ?gen1287 1 ) ) ) ?gen1290 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen1289 & : ( >= ?gen1289 1 ) ) ) ?gen1279 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen1282 ) ( negative-overruled $?gen1283 & : ( not ( subseq-pos ( create$ rule72b-overruled $?gen1282 $$$ $?gen1283 ) ) ) ) ( positive-defeated $?gen1281 & : ( not ( member$ rule72b $?gen1281 ) ) ) ) ( test ( eq ( class ?gen1279 ) crime_art144_1 ) ) => ( calc ( bind $?gen1284 ( create$ rule72b-overruled $?gen1282 $?gen1283 ) ) ) ?gen1279 <- ( crime_art144_1 ( negative-overruled $?gen1284 ) )"))
 
 ([rule72b-support] of derived-attribute-rule
    (pos-name rule72b-support-gen1435)
-   (depends-on declare lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule72b] ) ) ) ?gen1276 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ?gen1277 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ?gen1278 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ?gen1279 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen1281 & : ( not ( subseq-pos ( create$ rule72b ?gen1276 ?gen1277 ?gen1278 $$$ $?gen1281 ) ) ) ) ) ( test ( eq ( class ?gen1279 ) crime_art144 ) ) => ( calc ( bind $?gen1284 ( create$ rule72b ?gen1276 ?gen1277 ?gen1278 $?gen1281 ) ) ) ?gen1279 <- ( crime_art144 ( positive-support $?gen1284 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule72b] ) ) ) ?gen1276 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ?gen1277 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ?gen1278 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ?gen1279 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen1281 & : ( not ( subseq-pos ( create$ rule72b ?gen1276 ?gen1277 ?gen1278 $$$ $?gen1281 ) ) ) ) ) ( test ( eq ( class ?gen1279 ) crime_art144_1 ) ) => ( calc ( bind $?gen1284 ( create$ rule72b ?gen1276 ?gen1277 ?gen1278 $?gen1281 ) ) ) ?gen1279 <- ( crime_art144_1 ( positive-support $?gen1284 ) )"))
 
 ([rule72-defeasibly-dot] of derived-attribute-rule
    (pos-name rule72-defeasibly-dot-gen1437)
@@ -1785,38 +1785,38 @@
 
 ([rule31b-defeasibly-dot] of derived-attribute-rule
    (pos-name rule31b-defeasibly-dot-gen1917)
-   (depends-on declare crime_art144 lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule31b] ) ) ) ?gen544 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule31b $? ) ) ( test ( eq ( class ?gen544 ) crime_art144 ) ) ( not ( and ?gen551 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen550 & : ( >= ?gen550 1 ) ) ) ?gen553 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen552 & : ( >= ?gen552 1 ) ) ) ?gen555 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen554 & : ( >= ?gen554 1 ) ) ) ?gen544 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen546 & : ( not ( member$ rule31b $?gen546 ) ) ) ) ) ) => ?gen544 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule31b] ) ) ) ?gen544 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule31b $? ) ) ( test ( eq ( class ?gen544 ) crime_art144_1 ) ) ( not ( and ?gen551 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen550 & : ( >= ?gen550 1 ) ) ) ?gen553 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen552 & : ( >= ?gen552 1 ) ) ) ?gen555 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen554 & : ( >= ?gen554 1 ) ) ) ?gen544 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen546 & : ( not ( member$ rule31b $?gen546 ) ) ) ) ) ) => ?gen544 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule31b-defeasibly] of derived-attribute-rule
    (pos-name rule31b-defeasibly-gen1919)
-   (depends-on declare lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule31b] ) ) ) ?gen551 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen550 & : ( >= ?gen550 1 ) ) ) ?gen553 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen552 & : ( >= ?gen552 1 ) ) ) ?gen555 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen554 & : ( >= ?gen554 1 ) ) ) ?gen544 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen546 & : ( not ( member$ rule31b $?gen546 ) ) ) ) ( test ( eq ( class ?gen544 ) crime_art144 ) ) => ?gen544 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule31b ?gen551 ?gen553 ?gen555 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule31b] ) ) ) ?gen551 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen550 & : ( >= ?gen550 1 ) ) ) ?gen553 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen552 & : ( >= ?gen552 1 ) ) ) ?gen555 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen554 & : ( >= ?gen554 1 ) ) ) ?gen544 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen546 & : ( not ( member$ rule31b $?gen546 ) ) ) ) ( test ( eq ( class ?gen544 ) crime_art144_1 ) ) => ?gen544 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule31b ?gen551 ?gen553 ?gen555 ) )"))
 
 ([rule31b-overruled-dot] of derived-attribute-rule
    (pos-name rule31b-overruled-dot-gen1921)
-   (depends-on declare crime_art144 lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule31b] ) ) ) ?gen544 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen547 ) ( negative-overruled $?gen548 & : ( subseq-pos ( create$ rule31b-overruled $?gen547 $$$ $?gen548 ) ) ) ) ( test ( eq ( class ?gen544 ) crime_art144 ) ) ( not ( and ?gen551 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen550 & : ( >= ?gen550 1 ) ) ) ?gen553 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen552 & : ( >= ?gen552 1 ) ) ) ?gen555 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen554 & : ( >= ?gen554 1 ) ) ) ?gen544 <- ( crime_art144 ( positive-defeated $?gen546 & : ( not ( member$ rule31b $?gen546 ) ) ) ) ) ) => ( calc ( bind $?gen549 ( delete-member$ $?gen548 ( create$ rule31b-overruled $?gen547 ) ) ) ) ?gen544 <- ( crime_art144 ( negative-overruled $?gen549 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule31b] ) ) ) ?gen544 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen547 ) ( negative-overruled $?gen548 & : ( subseq-pos ( create$ rule31b-overruled $?gen547 $$$ $?gen548 ) ) ) ) ( test ( eq ( class ?gen544 ) crime_art144_1 ) ) ( not ( and ?gen551 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen550 & : ( >= ?gen550 1 ) ) ) ?gen553 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen552 & : ( >= ?gen552 1 ) ) ) ?gen555 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen554 & : ( >= ?gen554 1 ) ) ) ?gen544 <- ( crime_art144_1 ( positive-defeated $?gen546 & : ( not ( member$ rule31b $?gen546 ) ) ) ) ) ) => ( calc ( bind $?gen549 ( delete-member$ $?gen548 ( create$ rule31b-overruled $?gen547 ) ) ) ) ?gen544 <- ( crime_art144_1 ( negative-overruled $?gen549 ) )"))
 
 ([rule31b-overruled] of derived-attribute-rule
    (pos-name rule31b-overruled-gen1923)
-   (depends-on declare lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule31b] ) ) ) ?gen551 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen550 & : ( >= ?gen550 1 ) ) ) ?gen553 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen552 & : ( >= ?gen552 1 ) ) ) ?gen555 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen554 & : ( >= ?gen554 1 ) ) ) ?gen544 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen547 ) ( negative-overruled $?gen548 & : ( not ( subseq-pos ( create$ rule31b-overruled $?gen547 $$$ $?gen548 ) ) ) ) ( positive-defeated $?gen546 & : ( not ( member$ rule31b $?gen546 ) ) ) ) ( test ( eq ( class ?gen544 ) crime_art144 ) ) => ( calc ( bind $?gen549 ( create$ rule31b-overruled $?gen547 $?gen548 ) ) ) ?gen544 <- ( crime_art144 ( negative-overruled $?gen549 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule31b] ) ) ) ?gen551 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen550 & : ( >= ?gen550 1 ) ) ) ?gen553 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ( positive ?gen552 & : ( >= ?gen552 1 ) ) ) ?gen555 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen554 & : ( >= ?gen554 1 ) ) ) ?gen544 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen547 ) ( negative-overruled $?gen548 & : ( not ( subseq-pos ( create$ rule31b-overruled $?gen547 $$$ $?gen548 ) ) ) ) ( positive-defeated $?gen546 & : ( not ( member$ rule31b $?gen546 ) ) ) ) ( test ( eq ( class ?gen544 ) crime_art144_1 ) ) => ( calc ( bind $?gen549 ( create$ rule31b-overruled $?gen547 $?gen548 ) ) ) ?gen544 <- ( crime_art144_1 ( negative-overruled $?gen549 ) )"))
 
 ([rule31b-support] of derived-attribute-rule
    (pos-name rule31b-support-gen1925)
-   (depends-on declare lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule31b] ) ) ) ?gen541 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ?gen542 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ?gen543 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ?gen544 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen546 & : ( not ( subseq-pos ( create$ rule31b ?gen541 ?gen542 ?gen543 $$$ $?gen546 ) ) ) ) ) ( test ( eq ( class ?gen544 ) crime_art144 ) ) => ( calc ( bind $?gen549 ( create$ rule31b ?gen541 ?gen542 ?gen543 $?gen546 ) ) ) ?gen544 <- ( crime_art144 ( positive-support $?gen549 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule31b] ) ) ) ?gen541 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ?gen542 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ?gen543 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ?gen544 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen546 & : ( not ( subseq-pos ( create$ rule31b ?gen541 ?gen542 ?gen543 $$$ $?gen546 ) ) ) ) ) ( test ( eq ( class ?gen544 ) crime_art144_1 ) ) => ( calc ( bind $?gen549 ( create$ rule31b ?gen541 ?gen542 ?gen543 $?gen546 ) ) ) ?gen544 <- ( crime_art144_1 ( positive-support $?gen549 ) )"))
 
 ([rule31-defeasibly-dot] of derived-attribute-rule
    (pos-name rule31-defeasibly-dot-gen1927)
@@ -1855,38 +1855,38 @@
 
 ([rule30b-defeasibly-dot] of derived-attribute-rule
    (pos-name rule30b-defeasibly-dot-gen1937)
-   (depends-on declare crime_art144 lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule30b] ) ) ) ?gen514 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule30b $? ) ) ( test ( eq ( class ?gen514 ) crime_art144 ) ) ( not ( and ?gen521 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen520 & : ( >= ?gen520 1 ) ) ) ?gen523 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen522 & : ( >= ?gen522 1 ) ) ) ?gen525 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen524 & : ( >= ?gen524 1 ) ) ) ?gen514 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen516 & : ( not ( member$ rule30b $?gen516 ) ) ) ) ) ) => ?gen514 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule30b] ) ) ) ?gen514 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule30b $? ) ) ( test ( eq ( class ?gen514 ) crime_art144_1 ) ) ( not ( and ?gen521 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen520 & : ( >= ?gen520 1 ) ) ) ?gen523 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen522 & : ( >= ?gen522 1 ) ) ) ?gen525 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen524 & : ( >= ?gen524 1 ) ) ) ?gen514 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen516 & : ( not ( member$ rule30b $?gen516 ) ) ) ) ) ) => ?gen514 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule30b-defeasibly] of derived-attribute-rule
    (pos-name rule30b-defeasibly-gen1939)
-   (depends-on declare lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule30b] ) ) ) ?gen521 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen520 & : ( >= ?gen520 1 ) ) ) ?gen523 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen522 & : ( >= ?gen522 1 ) ) ) ?gen525 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen524 & : ( >= ?gen524 1 ) ) ) ?gen514 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen516 & : ( not ( member$ rule30b $?gen516 ) ) ) ) ( test ( eq ( class ?gen514 ) crime_art144 ) ) => ?gen514 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule30b ?gen521 ?gen523 ?gen525 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule30b] ) ) ) ?gen521 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen520 & : ( >= ?gen520 1 ) ) ) ?gen523 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen522 & : ( >= ?gen522 1 ) ) ) ?gen525 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen524 & : ( >= ?gen524 1 ) ) ) ?gen514 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen516 & : ( not ( member$ rule30b $?gen516 ) ) ) ) ( test ( eq ( class ?gen514 ) crime_art144_1 ) ) => ?gen514 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule30b ?gen521 ?gen523 ?gen525 ) )"))
 
 ([rule30b-overruled-dot] of derived-attribute-rule
    (pos-name rule30b-overruled-dot-gen1941)
-   (depends-on declare crime_art144 lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule30b] ) ) ) ?gen514 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen517 ) ( negative-overruled $?gen518 & : ( subseq-pos ( create$ rule30b-overruled $?gen517 $$$ $?gen518 ) ) ) ) ( test ( eq ( class ?gen514 ) crime_art144 ) ) ( not ( and ?gen521 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen520 & : ( >= ?gen520 1 ) ) ) ?gen523 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen522 & : ( >= ?gen522 1 ) ) ) ?gen525 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen524 & : ( >= ?gen524 1 ) ) ) ?gen514 <- ( crime_art144 ( positive-defeated $?gen516 & : ( not ( member$ rule30b $?gen516 ) ) ) ) ) ) => ( calc ( bind $?gen519 ( delete-member$ $?gen518 ( create$ rule30b-overruled $?gen517 ) ) ) ) ?gen514 <- ( crime_art144 ( negative-overruled $?gen519 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule30b] ) ) ) ?gen514 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen517 ) ( negative-overruled $?gen518 & : ( subseq-pos ( create$ rule30b-overruled $?gen517 $$$ $?gen518 ) ) ) ) ( test ( eq ( class ?gen514 ) crime_art144_1 ) ) ( not ( and ?gen521 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen520 & : ( >= ?gen520 1 ) ) ) ?gen523 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen522 & : ( >= ?gen522 1 ) ) ) ?gen525 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen524 & : ( >= ?gen524 1 ) ) ) ?gen514 <- ( crime_art144_1 ( positive-defeated $?gen516 & : ( not ( member$ rule30b $?gen516 ) ) ) ) ) ) => ( calc ( bind $?gen519 ( delete-member$ $?gen518 ( create$ rule30b-overruled $?gen517 ) ) ) ) ?gen514 <- ( crime_art144_1 ( negative-overruled $?gen519 ) )"))
 
 ([rule30b-overruled] of derived-attribute-rule
    (pos-name rule30b-overruled-gen1943)
-   (depends-on declare lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule30b] ) ) ) ?gen521 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen520 & : ( >= ?gen520 1 ) ) ) ?gen523 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen522 & : ( >= ?gen522 1 ) ) ) ?gen525 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen524 & : ( >= ?gen524 1 ) ) ) ?gen514 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen517 ) ( negative-overruled $?gen518 & : ( not ( subseq-pos ( create$ rule30b-overruled $?gen517 $$$ $?gen518 ) ) ) ) ( positive-defeated $?gen516 & : ( not ( member$ rule30b $?gen516 ) ) ) ) ( test ( eq ( class ?gen514 ) crime_art144 ) ) => ( calc ( bind $?gen519 ( create$ rule30b-overruled $?gen517 $?gen518 ) ) ) ?gen514 <- ( crime_art144 ( negative-overruled $?gen519 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule30b] ) ) ) ?gen521 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ( positive ?gen520 & : ( >= ?gen520 1 ) ) ) ?gen523 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen522 & : ( >= ?gen522 1 ) ) ) ?gen525 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ( positive ?gen524 & : ( >= ?gen524 1 ) ) ) ?gen514 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen517 ) ( negative-overruled $?gen518 & : ( not ( subseq-pos ( create$ rule30b-overruled $?gen517 $$$ $?gen518 ) ) ) ) ( positive-defeated $?gen516 & : ( not ( member$ rule30b $?gen516 ) ) ) ) ( test ( eq ( class ?gen514 ) crime_art144_1 ) ) => ( calc ( bind $?gen519 ( create$ rule30b-overruled $?gen517 $?gen518 ) ) ) ?gen514 <- ( crime_art144_1 ( negative-overruled $?gen519 ) )"))
 
 ([rule30b-support] of derived-attribute-rule
    (pos-name rule30b-support-gen1945)
-   (depends-on declare lc:case lc:case or crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule30b] ) ) ) ?gen511 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ?gen512 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ?gen513 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ?gen514 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen516 & : ( not ( subseq-pos ( create$ rule30b ?gen511 ?gen512 ?gen513 $$$ $?gen516 ) ) ) ) ) ( test ( eq ( class ?gen514 ) crime_art144 ) ) => ( calc ( bind $?gen519 ( create$ rule30b ?gen511 ?gen512 ?gen513 $?gen516 ) ) ) ?gen514 <- ( crime_art144 ( positive-support $?gen519 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule30b] ) ) ) ?gen511 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ?gen512 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ?gen513 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ?gen514 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen516 & : ( not ( subseq-pos ( create$ rule30b ?gen511 ?gen512 ?gen513 $$$ $?gen516 ) ) ) ) ) ( test ( eq ( class ?gen514 ) crime_art144_1 ) ) => ( calc ( bind $?gen519 ( create$ rule30b ?gen511 ?gen512 ?gen513 $?gen516 ) ) ) ?gen514 <- ( crime_art144_1 ( positive-support $?gen519 ) )"))
 
 ([rule30-defeasibly-dot] of derived-attribute-rule
    (pos-name rule30-defeasibly-dot-gen1947)
@@ -2415,528 +2415,528 @@
 
 ([rule16-defeasibly-dot] of derived-attribute-rule
    (pos-name rule16-defeasibly-dot-gen2097)
-   (depends-on declare crime_art144 lc:case lc:case or lc:case lc:case and crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case or lc:case lc:case and crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule16] ) ) ) ?gen214 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule16 $? ) ) ( test ( eq ( class ?gen214 ) crime_art144 ) ) ( not ( and ?gen221 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen220 & : ( >= ?gen220 1 ) ) ) ?gen223 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ( positive ?gen222 & : ( >= ?gen222 1 ) ) ) ?gen225 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ( positive ?gen224 & : ( >= ?gen224 1 ) ) ) ?gen227 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ( negative ?gen226 & : ( >= ?gen226 1 ) ) ) ?gen229 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ( negative ?gen228 & : ( >= ?gen228 1 ) ) ) ?gen231 <- ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ( negative ?gen230 & : ( >= ?gen230 1 ) ) ) ?gen214 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen216 & : ( not ( member$ rule16 $?gen216 ) ) ) ) ) ) => ?gen214 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule16] ) ) ) ?gen214 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule16 $? ) ) ( test ( eq ( class ?gen214 ) crime_art144_1 ) ) ( not ( and ?gen221 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen220 & : ( >= ?gen220 1 ) ) ) ?gen223 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ( positive ?gen222 & : ( >= ?gen222 1 ) ) ) ?gen225 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ( positive ?gen224 & : ( >= ?gen224 1 ) ) ) ?gen227 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ( negative ?gen226 & : ( >= ?gen226 1 ) ) ) ?gen229 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ( negative ?gen228 & : ( >= ?gen228 1 ) ) ) ?gen231 <- ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ( negative ?gen230 & : ( >= ?gen230 1 ) ) ) ?gen214 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen216 & : ( not ( member$ rule16 $?gen216 ) ) ) ) ) ) => ?gen214 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule16-defeasibly] of derived-attribute-rule
    (pos-name rule16-defeasibly-gen2099)
-   (depends-on declare lc:case lc:case or lc:case lc:case and crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or lc:case lc:case and crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule16] ) ) ) ?gen221 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen220 & : ( >= ?gen220 1 ) ) ) ?gen223 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ( positive ?gen222 & : ( >= ?gen222 1 ) ) ) ?gen225 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ( positive ?gen224 & : ( >= ?gen224 1 ) ) ) ?gen227 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ( negative ?gen226 & : ( >= ?gen226 1 ) ) ) ?gen229 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ( negative ?gen228 & : ( >= ?gen228 1 ) ) ) ?gen231 <- ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ( negative ?gen230 & : ( >= ?gen230 1 ) ) ) ?gen214 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen216 & : ( not ( member$ rule16 $?gen216 ) ) ) ) ( test ( eq ( class ?gen214 ) crime_art144 ) ) => ?gen214 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule16 ?gen221 ?gen223 ?gen225 ?gen227 ?gen229 ?gen231 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule16] ) ) ) ?gen221 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen220 & : ( >= ?gen220 1 ) ) ) ?gen223 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ( positive ?gen222 & : ( >= ?gen222 1 ) ) ) ?gen225 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ( positive ?gen224 & : ( >= ?gen224 1 ) ) ) ?gen227 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ( negative ?gen226 & : ( >= ?gen226 1 ) ) ) ?gen229 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ( negative ?gen228 & : ( >= ?gen228 1 ) ) ) ?gen231 <- ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ( negative ?gen230 & : ( >= ?gen230 1 ) ) ) ?gen214 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen216 & : ( not ( member$ rule16 $?gen216 ) ) ) ) ( test ( eq ( class ?gen214 ) crime_art144_1 ) ) => ?gen214 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule16 ?gen221 ?gen223 ?gen225 ?gen227 ?gen229 ?gen231 ) )"))
 
 ([rule16-overruled-dot] of derived-attribute-rule
    (pos-name rule16-overruled-dot-gen2101)
-   (depends-on declare crime_art144 lc:case lc:case or lc:case lc:case and crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case or lc:case lc:case and crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule16] ) ) ) ?gen214 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen217 ) ( negative-overruled $?gen218 & : ( subseq-pos ( create$ rule16-overruled $?gen217 $$$ $?gen218 ) ) ) ) ( test ( eq ( class ?gen214 ) crime_art144 ) ) ( not ( and ?gen221 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen220 & : ( >= ?gen220 1 ) ) ) ?gen223 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ( positive ?gen222 & : ( >= ?gen222 1 ) ) ) ?gen225 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ( positive ?gen224 & : ( >= ?gen224 1 ) ) ) ?gen227 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ( negative ?gen226 & : ( >= ?gen226 1 ) ) ) ?gen229 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ( negative ?gen228 & : ( >= ?gen228 1 ) ) ) ?gen231 <- ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ( negative ?gen230 & : ( >= ?gen230 1 ) ) ) ?gen214 <- ( crime_art144 ( positive-defeated $?gen216 & : ( not ( member$ rule16 $?gen216 ) ) ) ) ) ) => ( calc ( bind $?gen219 ( delete-member$ $?gen218 ( create$ rule16-overruled $?gen217 ) ) ) ) ?gen214 <- ( crime_art144 ( negative-overruled $?gen219 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule16] ) ) ) ?gen214 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen217 ) ( negative-overruled $?gen218 & : ( subseq-pos ( create$ rule16-overruled $?gen217 $$$ $?gen218 ) ) ) ) ( test ( eq ( class ?gen214 ) crime_art144_1 ) ) ( not ( and ?gen221 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen220 & : ( >= ?gen220 1 ) ) ) ?gen223 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ( positive ?gen222 & : ( >= ?gen222 1 ) ) ) ?gen225 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ( positive ?gen224 & : ( >= ?gen224 1 ) ) ) ?gen227 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ( negative ?gen226 & : ( >= ?gen226 1 ) ) ) ?gen229 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ( negative ?gen228 & : ( >= ?gen228 1 ) ) ) ?gen231 <- ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ( negative ?gen230 & : ( >= ?gen230 1 ) ) ) ?gen214 <- ( crime_art144_1 ( positive-defeated $?gen216 & : ( not ( member$ rule16 $?gen216 ) ) ) ) ) ) => ( calc ( bind $?gen219 ( delete-member$ $?gen218 ( create$ rule16-overruled $?gen217 ) ) ) ) ?gen214 <- ( crime_art144_1 ( negative-overruled $?gen219 ) )"))
 
 ([rule16-overruled] of derived-attribute-rule
    (pos-name rule16-overruled-gen2103)
-   (depends-on declare lc:case lc:case or lc:case lc:case and crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or lc:case lc:case and crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule16] ) ) ) ?gen221 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen220 & : ( >= ?gen220 1 ) ) ) ?gen223 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ( positive ?gen222 & : ( >= ?gen222 1 ) ) ) ?gen225 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ( positive ?gen224 & : ( >= ?gen224 1 ) ) ) ?gen227 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ( negative ?gen226 & : ( >= ?gen226 1 ) ) ) ?gen229 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ( negative ?gen228 & : ( >= ?gen228 1 ) ) ) ?gen231 <- ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ( negative ?gen230 & : ( >= ?gen230 1 ) ) ) ?gen214 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen217 ) ( negative-overruled $?gen218 & : ( not ( subseq-pos ( create$ rule16-overruled $?gen217 $$$ $?gen218 ) ) ) ) ( positive-defeated $?gen216 & : ( not ( member$ rule16 $?gen216 ) ) ) ) ( test ( eq ( class ?gen214 ) crime_art144 ) ) => ( calc ( bind $?gen219 ( create$ rule16-overruled $?gen217 $?gen218 ) ) ) ?gen214 <- ( crime_art144 ( negative-overruled $?gen219 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule16] ) ) ) ?gen221 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen220 & : ( >= ?gen220 1 ) ) ) ?gen223 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ( positive ?gen222 & : ( >= ?gen222 1 ) ) ) ?gen225 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ( positive ?gen224 & : ( >= ?gen224 1 ) ) ) ?gen227 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ( negative ?gen226 & : ( >= ?gen226 1 ) ) ) ?gen229 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ( negative ?gen228 & : ( >= ?gen228 1 ) ) ) ?gen231 <- ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ( negative ?gen230 & : ( >= ?gen230 1 ) ) ) ?gen214 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen217 ) ( negative-overruled $?gen218 & : ( not ( subseq-pos ( create$ rule16-overruled $?gen217 $$$ $?gen218 ) ) ) ) ( positive-defeated $?gen216 & : ( not ( member$ rule16 $?gen216 ) ) ) ) ( test ( eq ( class ?gen214 ) crime_art144_1 ) ) => ( calc ( bind $?gen219 ( create$ rule16-overruled $?gen217 $?gen218 ) ) ) ?gen214 <- ( crime_art144_1 ( negative-overruled $?gen219 ) )"))
 
 ([rule16-support] of derived-attribute-rule
    (pos-name rule16-support-gen2105)
-   (depends-on declare lc:case lc:case or lc:case lc:case and crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case or lc:case lc:case and crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule16] ) ) ) ?gen208 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen209 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ) ?gen210 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ) ?gen211 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ) ?gen212 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ) ?gen213 <- ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ) ?gen214 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen216 & : ( not ( subseq-pos ( create$ rule16 ?gen208 ?gen209 ?gen210 ?gen211 ?gen212 ?gen213 $$$ $?gen216 ) ) ) ) ) ( test ( eq ( class ?gen214 ) crime_art144 ) ) => ( calc ( bind $?gen219 ( create$ rule16 ?gen208 ?gen209 ?gen210 ?gen211 ?gen212 ?gen213 $?gen216 ) ) ) ?gen214 <- ( crime_art144 ( positive-support $?gen219 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule16] ) ) ) ?gen208 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen209 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ) ?gen210 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ) ?gen211 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ) ?gen212 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ) ?gen213 <- ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ) ?gen214 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen216 & : ( not ( subseq-pos ( create$ rule16 ?gen208 ?gen209 ?gen210 ?gen211 ?gen212 ?gen213 $$$ $?gen216 ) ) ) ) ) ( test ( eq ( class ?gen214 ) crime_art144_1 ) ) => ( calc ( bind $?gen219 ( create$ rule16 ?gen208 ?gen209 ?gen210 ?gen211 ?gen212 ?gen213 $?gen216 ) ) ) ?gen214 <- ( crime_art144_1 ( positive-support $?gen219 ) )"))
 
 ([rule15-defeasibly-dot] of derived-attribute-rule
    (pos-name rule15-defeasibly-dot-gen2107)
-   (depends-on declare crime_art144 lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule15] ) ) ) ?gen196 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule15 $? ) ) ( test ( eq ( class ?gen196 ) crime_art144 ) ) ( not ( and ?gen203 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen202 & : ( >= ?gen202 1 ) ) ) ?gen205 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ( positive ?gen204 & : ( >= ?gen204 1 ) ) ) ?gen207 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ( positive ?gen206 & : ( >= ?gen206 1 ) ) ) ?gen196 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen198 & : ( not ( member$ rule15 $?gen198 ) ) ) ) ) ) => ?gen196 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule15] ) ) ) ?gen196 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule15 $? ) ) ( test ( eq ( class ?gen196 ) crime_art144_1 ) ) ( not ( and ?gen203 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen202 & : ( >= ?gen202 1 ) ) ) ?gen205 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ( positive ?gen204 & : ( >= ?gen204 1 ) ) ) ?gen207 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ( positive ?gen206 & : ( >= ?gen206 1 ) ) ) ?gen196 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen198 & : ( not ( member$ rule15 $?gen198 ) ) ) ) ) ) => ?gen196 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule15-defeasibly] of derived-attribute-rule
    (pos-name rule15-defeasibly-gen2109)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule15] ) ) ) ?gen203 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen202 & : ( >= ?gen202 1 ) ) ) ?gen205 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ( positive ?gen204 & : ( >= ?gen204 1 ) ) ) ?gen207 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ( positive ?gen206 & : ( >= ?gen206 1 ) ) ) ?gen196 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen198 & : ( not ( member$ rule15 $?gen198 ) ) ) ) ( test ( eq ( class ?gen196 ) crime_art144 ) ) => ?gen196 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule15 ?gen203 ?gen205 ?gen207 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule15] ) ) ) ?gen203 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen202 & : ( >= ?gen202 1 ) ) ) ?gen205 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ( positive ?gen204 & : ( >= ?gen204 1 ) ) ) ?gen207 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ( positive ?gen206 & : ( >= ?gen206 1 ) ) ) ?gen196 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen198 & : ( not ( member$ rule15 $?gen198 ) ) ) ) ( test ( eq ( class ?gen196 ) crime_art144_1 ) ) => ?gen196 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule15 ?gen203 ?gen205 ?gen207 ) )"))
 
 ([rule15-overruled-dot] of derived-attribute-rule
    (pos-name rule15-overruled-dot-gen2111)
-   (depends-on declare crime_art144 lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule15] ) ) ) ?gen196 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen199 ) ( negative-overruled $?gen200 & : ( subseq-pos ( create$ rule15-overruled $?gen199 $$$ $?gen200 ) ) ) ) ( test ( eq ( class ?gen196 ) crime_art144 ) ) ( not ( and ?gen203 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen202 & : ( >= ?gen202 1 ) ) ) ?gen205 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ( positive ?gen204 & : ( >= ?gen204 1 ) ) ) ?gen207 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ( positive ?gen206 & : ( >= ?gen206 1 ) ) ) ?gen196 <- ( crime_art144 ( positive-defeated $?gen198 & : ( not ( member$ rule15 $?gen198 ) ) ) ) ) ) => ( calc ( bind $?gen201 ( delete-member$ $?gen200 ( create$ rule15-overruled $?gen199 ) ) ) ) ?gen196 <- ( crime_art144 ( negative-overruled $?gen201 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule15] ) ) ) ?gen196 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen199 ) ( negative-overruled $?gen200 & : ( subseq-pos ( create$ rule15-overruled $?gen199 $$$ $?gen200 ) ) ) ) ( test ( eq ( class ?gen196 ) crime_art144_1 ) ) ( not ( and ?gen203 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen202 & : ( >= ?gen202 1 ) ) ) ?gen205 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ( positive ?gen204 & : ( >= ?gen204 1 ) ) ) ?gen207 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ( positive ?gen206 & : ( >= ?gen206 1 ) ) ) ?gen196 <- ( crime_art144_1 ( positive-defeated $?gen198 & : ( not ( member$ rule15 $?gen198 ) ) ) ) ) ) => ( calc ( bind $?gen201 ( delete-member$ $?gen200 ( create$ rule15-overruled $?gen199 ) ) ) ) ?gen196 <- ( crime_art144_1 ( negative-overruled $?gen201 ) )"))
 
 ([rule15-overruled] of derived-attribute-rule
    (pos-name rule15-overruled-gen2113)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule15] ) ) ) ?gen203 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen202 & : ( >= ?gen202 1 ) ) ) ?gen205 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ( positive ?gen204 & : ( >= ?gen204 1 ) ) ) ?gen207 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ( positive ?gen206 & : ( >= ?gen206 1 ) ) ) ?gen196 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen199 ) ( negative-overruled $?gen200 & : ( not ( subseq-pos ( create$ rule15-overruled $?gen199 $$$ $?gen200 ) ) ) ) ( positive-defeated $?gen198 & : ( not ( member$ rule15 $?gen198 ) ) ) ) ( test ( eq ( class ?gen196 ) crime_art144 ) ) => ( calc ( bind $?gen201 ( create$ rule15-overruled $?gen199 $?gen200 ) ) ) ?gen196 <- ( crime_art144 ( negative-overruled $?gen201 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule15] ) ) ) ?gen203 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen202 & : ( >= ?gen202 1 ) ) ) ?gen205 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ( positive ?gen204 & : ( >= ?gen204 1 ) ) ) ?gen207 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ( positive ?gen206 & : ( >= ?gen206 1 ) ) ) ?gen196 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen199 ) ( negative-overruled $?gen200 & : ( not ( subseq-pos ( create$ rule15-overruled $?gen199 $$$ $?gen200 ) ) ) ) ( positive-defeated $?gen198 & : ( not ( member$ rule15 $?gen198 ) ) ) ) ( test ( eq ( class ?gen196 ) crime_art144_1 ) ) => ( calc ( bind $?gen201 ( create$ rule15-overruled $?gen199 $?gen200 ) ) ) ?gen196 <- ( crime_art144_1 ( negative-overruled $?gen201 ) )"))
 
 ([rule15-support] of derived-attribute-rule
    (pos-name rule15-support-gen2115)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule15] ) ) ) ?gen193 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen194 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ) ?gen195 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ) ?gen196 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen198 & : ( not ( subseq-pos ( create$ rule15 ?gen193 ?gen194 ?gen195 $$$ $?gen198 ) ) ) ) ) ( test ( eq ( class ?gen196 ) crime_art144 ) ) => ( calc ( bind $?gen201 ( create$ rule15 ?gen193 ?gen194 ?gen195 $?gen198 ) ) ) ?gen196 <- ( crime_art144 ( positive-support $?gen201 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule15] ) ) ) ?gen193 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen194 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ) ?gen195 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ) ?gen196 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen198 & : ( not ( subseq-pos ( create$ rule15 ?gen193 ?gen194 ?gen195 $$$ $?gen198 ) ) ) ) ) ( test ( eq ( class ?gen196 ) crime_art144_1 ) ) => ( calc ( bind $?gen201 ( create$ rule15 ?gen193 ?gen194 ?gen195 $?gen198 ) ) ) ?gen196 <- ( crime_art144_1 ( positive-support $?gen201 ) )"))
 
 ([rule14-defeasibly-dot] of derived-attribute-rule
    (pos-name rule14-defeasibly-dot-gen2117)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule14] ) ) ) ?gen183 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule14 $? ) ) ( test ( eq ( class ?gen183 ) crime_art144 ) ) ( not ( and ?gen190 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen189 & : ( >= ?gen189 1 ) ) ) ?gen192 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ( positive ?gen191 & : ( >= ?gen191 1 ) ) ) ?gen183 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen185 & : ( not ( member$ rule14 $?gen185 ) ) ) ) ) ) => ?gen183 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule14] ) ) ) ?gen183 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule14 $? ) ) ( test ( eq ( class ?gen183 ) crime_art144_1 ) ) ( not ( and ?gen190 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen189 & : ( >= ?gen189 1 ) ) ) ?gen192 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ( positive ?gen191 & : ( >= ?gen191 1 ) ) ) ?gen183 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen185 & : ( not ( member$ rule14 $?gen185 ) ) ) ) ) ) => ?gen183 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule14-defeasibly] of derived-attribute-rule
    (pos-name rule14-defeasibly-gen2119)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule14] ) ) ) ?gen190 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen189 & : ( >= ?gen189 1 ) ) ) ?gen192 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ( positive ?gen191 & : ( >= ?gen191 1 ) ) ) ?gen183 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen185 & : ( not ( member$ rule14 $?gen185 ) ) ) ) ( test ( eq ( class ?gen183 ) crime_art144 ) ) => ?gen183 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule14 ?gen190 ?gen192 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule14] ) ) ) ?gen190 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen189 & : ( >= ?gen189 1 ) ) ) ?gen192 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ( positive ?gen191 & : ( >= ?gen191 1 ) ) ) ?gen183 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen185 & : ( not ( member$ rule14 $?gen185 ) ) ) ) ( test ( eq ( class ?gen183 ) crime_art144_1 ) ) => ?gen183 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule14 ?gen190 ?gen192 ) )"))
 
 ([rule14-overruled-dot] of derived-attribute-rule
    (pos-name rule14-overruled-dot-gen2121)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule14] ) ) ) ?gen183 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen186 ) ( negative-overruled $?gen187 & : ( subseq-pos ( create$ rule14-overruled $?gen186 $$$ $?gen187 ) ) ) ) ( test ( eq ( class ?gen183 ) crime_art144 ) ) ( not ( and ?gen190 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen189 & : ( >= ?gen189 1 ) ) ) ?gen192 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ( positive ?gen191 & : ( >= ?gen191 1 ) ) ) ?gen183 <- ( crime_art144 ( positive-defeated $?gen185 & : ( not ( member$ rule14 $?gen185 ) ) ) ) ) ) => ( calc ( bind $?gen188 ( delete-member$ $?gen187 ( create$ rule14-overruled $?gen186 ) ) ) ) ?gen183 <- ( crime_art144 ( negative-overruled $?gen188 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule14] ) ) ) ?gen183 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen186 ) ( negative-overruled $?gen187 & : ( subseq-pos ( create$ rule14-overruled $?gen186 $$$ $?gen187 ) ) ) ) ( test ( eq ( class ?gen183 ) crime_art144_1 ) ) ( not ( and ?gen190 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen189 & : ( >= ?gen189 1 ) ) ) ?gen192 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ( positive ?gen191 & : ( >= ?gen191 1 ) ) ) ?gen183 <- ( crime_art144_1 ( positive-defeated $?gen185 & : ( not ( member$ rule14 $?gen185 ) ) ) ) ) ) => ( calc ( bind $?gen188 ( delete-member$ $?gen187 ( create$ rule14-overruled $?gen186 ) ) ) ) ?gen183 <- ( crime_art144_1 ( negative-overruled $?gen188 ) )"))
 
 ([rule14-overruled] of derived-attribute-rule
    (pos-name rule14-overruled-gen2123)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule14] ) ) ) ?gen190 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen189 & : ( >= ?gen189 1 ) ) ) ?gen192 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ( positive ?gen191 & : ( >= ?gen191 1 ) ) ) ?gen183 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen186 ) ( negative-overruled $?gen187 & : ( not ( subseq-pos ( create$ rule14-overruled $?gen186 $$$ $?gen187 ) ) ) ) ( positive-defeated $?gen185 & : ( not ( member$ rule14 $?gen185 ) ) ) ) ( test ( eq ( class ?gen183 ) crime_art144 ) ) => ( calc ( bind $?gen188 ( create$ rule14-overruled $?gen186 $?gen187 ) ) ) ?gen183 <- ( crime_art144 ( negative-overruled $?gen188 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule14] ) ) ) ?gen190 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen189 & : ( >= ?gen189 1 ) ) ) ?gen192 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ( positive ?gen191 & : ( >= ?gen191 1 ) ) ) ?gen183 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen186 ) ( negative-overruled $?gen187 & : ( not ( subseq-pos ( create$ rule14-overruled $?gen186 $$$ $?gen187 ) ) ) ) ( positive-defeated $?gen185 & : ( not ( member$ rule14 $?gen185 ) ) ) ) ( test ( eq ( class ?gen183 ) crime_art144_1 ) ) => ( calc ( bind $?gen188 ( create$ rule14-overruled $?gen186 $?gen187 ) ) ) ?gen183 <- ( crime_art144_1 ( negative-overruled $?gen188 ) )"))
 
 ([rule14-support] of derived-attribute-rule
    (pos-name rule14-support-gen2125)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule14] ) ) ) ?gen181 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen182 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ) ?gen183 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen185 & : ( not ( subseq-pos ( create$ rule14 ?gen181 ?gen182 $$$ $?gen185 ) ) ) ) ) ( test ( eq ( class ?gen183 ) crime_art144 ) ) => ( calc ( bind $?gen188 ( create$ rule14 ?gen181 ?gen182 $?gen185 ) ) ) ?gen183 <- ( crime_art144 ( positive-support $?gen188 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule14] ) ) ) ?gen181 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen182 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ) ?gen183 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen185 & : ( not ( subseq-pos ( create$ rule14 ?gen181 ?gen182 $$$ $?gen185 ) ) ) ) ) ( test ( eq ( class ?gen183 ) crime_art144_1 ) ) => ( calc ( bind $?gen188 ( create$ rule14 ?gen181 ?gen182 $?gen185 ) ) ) ?gen183 <- ( crime_art144_1 ( positive-support $?gen188 ) )"))
 
 ([rule13-defeasibly-dot] of derived-attribute-rule
    (pos-name rule13-defeasibly-dot-gen2127)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule13] ) ) ) ?gen171 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule13 $? ) ) ( test ( eq ( class ?gen171 ) crime_art144 ) ) ( not ( and ?gen178 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen177 & : ( >= ?gen177 1 ) ) ) ?gen180 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen179 & : ( >= ?gen179 1 ) ) ) ?gen171 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen173 & : ( not ( member$ rule13 $?gen173 ) ) ) ) ) ) => ?gen171 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule13] ) ) ) ?gen171 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule13 $? ) ) ( test ( eq ( class ?gen171 ) crime_art144_1 ) ) ( not ( and ?gen178 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen177 & : ( >= ?gen177 1 ) ) ) ?gen180 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen179 & : ( >= ?gen179 1 ) ) ) ?gen171 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen173 & : ( not ( member$ rule13 $?gen173 ) ) ) ) ) ) => ?gen171 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule13-defeasibly] of derived-attribute-rule
    (pos-name rule13-defeasibly-gen2129)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule13] ) ) ) ?gen178 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen177 & : ( >= ?gen177 1 ) ) ) ?gen180 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen179 & : ( >= ?gen179 1 ) ) ) ?gen171 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen173 & : ( not ( member$ rule13 $?gen173 ) ) ) ) ( test ( eq ( class ?gen171 ) crime_art144 ) ) => ?gen171 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule13 ?gen178 ?gen180 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule13] ) ) ) ?gen178 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen177 & : ( >= ?gen177 1 ) ) ) ?gen180 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen179 & : ( >= ?gen179 1 ) ) ) ?gen171 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen173 & : ( not ( member$ rule13 $?gen173 ) ) ) ) ( test ( eq ( class ?gen171 ) crime_art144_1 ) ) => ?gen171 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule13 ?gen178 ?gen180 ) )"))
 
 ([rule13-overruled-dot] of derived-attribute-rule
    (pos-name rule13-overruled-dot-gen2131)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule13] ) ) ) ?gen171 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen174 ) ( negative-overruled $?gen175 & : ( subseq-pos ( create$ rule13-overruled $?gen174 $$$ $?gen175 ) ) ) ) ( test ( eq ( class ?gen171 ) crime_art144 ) ) ( not ( and ?gen178 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen177 & : ( >= ?gen177 1 ) ) ) ?gen180 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen179 & : ( >= ?gen179 1 ) ) ) ?gen171 <- ( crime_art144 ( positive-defeated $?gen173 & : ( not ( member$ rule13 $?gen173 ) ) ) ) ) ) => ( calc ( bind $?gen176 ( delete-member$ $?gen175 ( create$ rule13-overruled $?gen174 ) ) ) ) ?gen171 <- ( crime_art144 ( negative-overruled $?gen176 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule13] ) ) ) ?gen171 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen174 ) ( negative-overruled $?gen175 & : ( subseq-pos ( create$ rule13-overruled $?gen174 $$$ $?gen175 ) ) ) ) ( test ( eq ( class ?gen171 ) crime_art144_1 ) ) ( not ( and ?gen178 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen177 & : ( >= ?gen177 1 ) ) ) ?gen180 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen179 & : ( >= ?gen179 1 ) ) ) ?gen171 <- ( crime_art144_1 ( positive-defeated $?gen173 & : ( not ( member$ rule13 $?gen173 ) ) ) ) ) ) => ( calc ( bind $?gen176 ( delete-member$ $?gen175 ( create$ rule13-overruled $?gen174 ) ) ) ) ?gen171 <- ( crime_art144_1 ( negative-overruled $?gen176 ) )"))
 
 ([rule13-overruled] of derived-attribute-rule
    (pos-name rule13-overruled-gen2133)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule13] ) ) ) ?gen178 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen177 & : ( >= ?gen177 1 ) ) ) ?gen180 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen179 & : ( >= ?gen179 1 ) ) ) ?gen171 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen174 ) ( negative-overruled $?gen175 & : ( not ( subseq-pos ( create$ rule13-overruled $?gen174 $$$ $?gen175 ) ) ) ) ( positive-defeated $?gen173 & : ( not ( member$ rule13 $?gen173 ) ) ) ) ( test ( eq ( class ?gen171 ) crime_art144 ) ) => ( calc ( bind $?gen176 ( create$ rule13-overruled $?gen174 $?gen175 ) ) ) ?gen171 <- ( crime_art144 ( negative-overruled $?gen176 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule13] ) ) ) ?gen178 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen177 & : ( >= ?gen177 1 ) ) ) ?gen180 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ( positive ?gen179 & : ( >= ?gen179 1 ) ) ) ?gen171 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen174 ) ( negative-overruled $?gen175 & : ( not ( subseq-pos ( create$ rule13-overruled $?gen174 $$$ $?gen175 ) ) ) ) ( positive-defeated $?gen173 & : ( not ( member$ rule13 $?gen173 ) ) ) ) ( test ( eq ( class ?gen171 ) crime_art144_1 ) ) => ( calc ( bind $?gen176 ( create$ rule13-overruled $?gen174 $?gen175 ) ) ) ?gen171 <- ( crime_art144_1 ( negative-overruled $?gen176 ) )"))
 
 ([rule13-support] of derived-attribute-rule
    (pos-name rule13-support-gen2135)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule13] ) ) ) ?gen169 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen170 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ?gen171 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen173 & : ( not ( subseq-pos ( create$ rule13 ?gen169 ?gen170 $$$ $?gen173 ) ) ) ) ) ( test ( eq ( class ?gen171 ) crime_art144 ) ) => ( calc ( bind $?gen176 ( create$ rule13 ?gen169 ?gen170 $?gen173 ) ) ) ?gen171 <- ( crime_art144 ( positive-support $?gen176 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule13] ) ) ) ?gen169 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen170 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ?gen171 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen173 & : ( not ( subseq-pos ( create$ rule13 ?gen169 ?gen170 $$$ $?gen173 ) ) ) ) ) ( test ( eq ( class ?gen171 ) crime_art144_1 ) ) => ( calc ( bind $?gen176 ( create$ rule13 ?gen169 ?gen170 $?gen173 ) ) ) ?gen171 <- ( crime_art144_1 ( positive-support $?gen176 ) )"))
 
 ([rule12-defeasibly-dot] of derived-attribute-rule
    (pos-name rule12-defeasibly-dot-gen2137)
-   (depends-on declare crime_art144 lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule12] ) ) ) ?gen157 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule12 $? ) ) ( test ( eq ( class ?gen157 ) crime_art144 ) ) ( not ( and ?gen164 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen163 & : ( >= ?gen163 1 ) ) ) ?gen166 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ( positive ?gen165 & : ( >= ?gen165 1 ) ) ) ?gen168 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen167 & : ( >= ?gen167 1 ) ) ) ?gen157 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen159 & : ( not ( member$ rule12 $?gen159 ) ) ) ) ) ) => ?gen157 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule12] ) ) ) ?gen157 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule12 $? ) ) ( test ( eq ( class ?gen157 ) crime_art144_1 ) ) ( not ( and ?gen164 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen163 & : ( >= ?gen163 1 ) ) ) ?gen166 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ( positive ?gen165 & : ( >= ?gen165 1 ) ) ) ?gen168 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen167 & : ( >= ?gen167 1 ) ) ) ?gen157 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen159 & : ( not ( member$ rule12 $?gen159 ) ) ) ) ) ) => ?gen157 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule12-defeasibly] of derived-attribute-rule
    (pos-name rule12-defeasibly-gen2139)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule12] ) ) ) ?gen164 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen163 & : ( >= ?gen163 1 ) ) ) ?gen166 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ( positive ?gen165 & : ( >= ?gen165 1 ) ) ) ?gen168 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen167 & : ( >= ?gen167 1 ) ) ) ?gen157 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen159 & : ( not ( member$ rule12 $?gen159 ) ) ) ) ( test ( eq ( class ?gen157 ) crime_art144 ) ) => ?gen157 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule12 ?gen164 ?gen166 ?gen168 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule12] ) ) ) ?gen164 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen163 & : ( >= ?gen163 1 ) ) ) ?gen166 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ( positive ?gen165 & : ( >= ?gen165 1 ) ) ) ?gen168 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen167 & : ( >= ?gen167 1 ) ) ) ?gen157 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen159 & : ( not ( member$ rule12 $?gen159 ) ) ) ) ( test ( eq ( class ?gen157 ) crime_art144_1 ) ) => ?gen157 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule12 ?gen164 ?gen166 ?gen168 ) )"))
 
 ([rule12-overruled-dot] of derived-attribute-rule
    (pos-name rule12-overruled-dot-gen2141)
-   (depends-on declare crime_art144 lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule12] ) ) ) ?gen157 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen160 ) ( negative-overruled $?gen161 & : ( subseq-pos ( create$ rule12-overruled $?gen160 $$$ $?gen161 ) ) ) ) ( test ( eq ( class ?gen157 ) crime_art144 ) ) ( not ( and ?gen164 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen163 & : ( >= ?gen163 1 ) ) ) ?gen166 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ( positive ?gen165 & : ( >= ?gen165 1 ) ) ) ?gen168 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen167 & : ( >= ?gen167 1 ) ) ) ?gen157 <- ( crime_art144 ( positive-defeated $?gen159 & : ( not ( member$ rule12 $?gen159 ) ) ) ) ) ) => ( calc ( bind $?gen162 ( delete-member$ $?gen161 ( create$ rule12-overruled $?gen160 ) ) ) ) ?gen157 <- ( crime_art144 ( negative-overruled $?gen162 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule12] ) ) ) ?gen157 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen160 ) ( negative-overruled $?gen161 & : ( subseq-pos ( create$ rule12-overruled $?gen160 $$$ $?gen161 ) ) ) ) ( test ( eq ( class ?gen157 ) crime_art144_1 ) ) ( not ( and ?gen164 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen163 & : ( >= ?gen163 1 ) ) ) ?gen166 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ( positive ?gen165 & : ( >= ?gen165 1 ) ) ) ?gen168 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen167 & : ( >= ?gen167 1 ) ) ) ?gen157 <- ( crime_art144_1 ( positive-defeated $?gen159 & : ( not ( member$ rule12 $?gen159 ) ) ) ) ) ) => ( calc ( bind $?gen162 ( delete-member$ $?gen161 ( create$ rule12-overruled $?gen160 ) ) ) ) ?gen157 <- ( crime_art144_1 ( negative-overruled $?gen162 ) )"))
 
 ([rule12-overruled] of derived-attribute-rule
    (pos-name rule12-overruled-gen2143)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule12] ) ) ) ?gen164 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen163 & : ( >= ?gen163 1 ) ) ) ?gen166 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ( positive ?gen165 & : ( >= ?gen165 1 ) ) ) ?gen168 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen167 & : ( >= ?gen167 1 ) ) ) ?gen157 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen160 ) ( negative-overruled $?gen161 & : ( not ( subseq-pos ( create$ rule12-overruled $?gen160 $$$ $?gen161 ) ) ) ) ( positive-defeated $?gen159 & : ( not ( member$ rule12 $?gen159 ) ) ) ) ( test ( eq ( class ?gen157 ) crime_art144 ) ) => ( calc ( bind $?gen162 ( create$ rule12-overruled $?gen160 $?gen161 ) ) ) ?gen157 <- ( crime_art144 ( negative-overruled $?gen162 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule12] ) ) ) ?gen164 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen163 & : ( >= ?gen163 1 ) ) ) ?gen166 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ( positive ?gen165 & : ( >= ?gen165 1 ) ) ) ?gen168 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen167 & : ( >= ?gen167 1 ) ) ) ?gen157 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen160 ) ( negative-overruled $?gen161 & : ( not ( subseq-pos ( create$ rule12-overruled $?gen160 $$$ $?gen161 ) ) ) ) ( positive-defeated $?gen159 & : ( not ( member$ rule12 $?gen159 ) ) ) ) ( test ( eq ( class ?gen157 ) crime_art144_1 ) ) => ( calc ( bind $?gen162 ( create$ rule12-overruled $?gen160 $?gen161 ) ) ) ?gen157 <- ( crime_art144_1 ( negative-overruled $?gen162 ) )"))
 
 ([rule12-support] of derived-attribute-rule
    (pos-name rule12-support-gen2145)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule12] ) ) ) ?gen154 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen155 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ) ?gen156 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) ?gen157 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen159 & : ( not ( subseq-pos ( create$ rule12 ?gen154 ?gen155 ?gen156 $$$ $?gen159 ) ) ) ) ) ( test ( eq ( class ?gen157 ) crime_art144 ) ) => ( calc ( bind $?gen162 ( create$ rule12 ?gen154 ?gen155 ?gen156 $?gen159 ) ) ) ?gen157 <- ( crime_art144 ( positive-support $?gen162 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule12] ) ) ) ?gen154 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen155 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ) ?gen156 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) ?gen157 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen159 & : ( not ( subseq-pos ( create$ rule12 ?gen154 ?gen155 ?gen156 $$$ $?gen159 ) ) ) ) ) ( test ( eq ( class ?gen157 ) crime_art144_1 ) ) => ( calc ( bind $?gen162 ( create$ rule12 ?gen154 ?gen155 ?gen156 $?gen159 ) ) ) ?gen157 <- ( crime_art144_1 ( positive-support $?gen162 ) )"))
 
 ([rule11-defeasibly-dot] of derived-attribute-rule
    (pos-name rule11-defeasibly-dot-gen2147)
-   (depends-on declare crime_art144 lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule11] ) ) ) ?gen142 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule11 $? ) ) ( test ( eq ( class ?gen142 ) crime_art144 ) ) ( not ( and ?gen149 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen148 & : ( >= ?gen148 1 ) ) ) ?gen151 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ( positive ?gen150 & : ( >= ?gen150 1 ) ) ) ?gen153 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen152 & : ( >= ?gen152 1 ) ) ) ?gen142 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen144 & : ( not ( member$ rule11 $?gen144 ) ) ) ) ) ) => ?gen142 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule11] ) ) ) ?gen142 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule11 $? ) ) ( test ( eq ( class ?gen142 ) crime_art144_1 ) ) ( not ( and ?gen149 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen148 & : ( >= ?gen148 1 ) ) ) ?gen151 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ( positive ?gen150 & : ( >= ?gen150 1 ) ) ) ?gen153 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen152 & : ( >= ?gen152 1 ) ) ) ?gen142 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen144 & : ( not ( member$ rule11 $?gen144 ) ) ) ) ) ) => ?gen142 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule11-defeasibly] of derived-attribute-rule
    (pos-name rule11-defeasibly-gen2149)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule11] ) ) ) ?gen149 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen148 & : ( >= ?gen148 1 ) ) ) ?gen151 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ( positive ?gen150 & : ( >= ?gen150 1 ) ) ) ?gen153 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen152 & : ( >= ?gen152 1 ) ) ) ?gen142 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen144 & : ( not ( member$ rule11 $?gen144 ) ) ) ) ( test ( eq ( class ?gen142 ) crime_art144 ) ) => ?gen142 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule11 ?gen149 ?gen151 ?gen153 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule11] ) ) ) ?gen149 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen148 & : ( >= ?gen148 1 ) ) ) ?gen151 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ( positive ?gen150 & : ( >= ?gen150 1 ) ) ) ?gen153 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen152 & : ( >= ?gen152 1 ) ) ) ?gen142 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen144 & : ( not ( member$ rule11 $?gen144 ) ) ) ) ( test ( eq ( class ?gen142 ) crime_art144_1 ) ) => ?gen142 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule11 ?gen149 ?gen151 ?gen153 ) )"))
 
 ([rule11-overruled-dot] of derived-attribute-rule
    (pos-name rule11-overruled-dot-gen2151)
-   (depends-on declare crime_art144 lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule11] ) ) ) ?gen142 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen145 ) ( negative-overruled $?gen146 & : ( subseq-pos ( create$ rule11-overruled $?gen145 $$$ $?gen146 ) ) ) ) ( test ( eq ( class ?gen142 ) crime_art144 ) ) ( not ( and ?gen149 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen148 & : ( >= ?gen148 1 ) ) ) ?gen151 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ( positive ?gen150 & : ( >= ?gen150 1 ) ) ) ?gen153 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen152 & : ( >= ?gen152 1 ) ) ) ?gen142 <- ( crime_art144 ( positive-defeated $?gen144 & : ( not ( member$ rule11 $?gen144 ) ) ) ) ) ) => ( calc ( bind $?gen147 ( delete-member$ $?gen146 ( create$ rule11-overruled $?gen145 ) ) ) ) ?gen142 <- ( crime_art144 ( negative-overruled $?gen147 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule11] ) ) ) ?gen142 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen145 ) ( negative-overruled $?gen146 & : ( subseq-pos ( create$ rule11-overruled $?gen145 $$$ $?gen146 ) ) ) ) ( test ( eq ( class ?gen142 ) crime_art144_1 ) ) ( not ( and ?gen149 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen148 & : ( >= ?gen148 1 ) ) ) ?gen151 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ( positive ?gen150 & : ( >= ?gen150 1 ) ) ) ?gen153 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen152 & : ( >= ?gen152 1 ) ) ) ?gen142 <- ( crime_art144_1 ( positive-defeated $?gen144 & : ( not ( member$ rule11 $?gen144 ) ) ) ) ) ) => ( calc ( bind $?gen147 ( delete-member$ $?gen146 ( create$ rule11-overruled $?gen145 ) ) ) ) ?gen142 <- ( crime_art144_1 ( negative-overruled $?gen147 ) )"))
 
 ([rule11-overruled] of derived-attribute-rule
    (pos-name rule11-overruled-gen2153)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule11] ) ) ) ?gen149 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen148 & : ( >= ?gen148 1 ) ) ) ?gen151 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ( positive ?gen150 & : ( >= ?gen150 1 ) ) ) ?gen153 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen152 & : ( >= ?gen152 1 ) ) ) ?gen142 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen145 ) ( negative-overruled $?gen146 & : ( not ( subseq-pos ( create$ rule11-overruled $?gen145 $$$ $?gen146 ) ) ) ) ( positive-defeated $?gen144 & : ( not ( member$ rule11 $?gen144 ) ) ) ) ( test ( eq ( class ?gen142 ) crime_art144 ) ) => ( calc ( bind $?gen147 ( create$ rule11-overruled $?gen145 $?gen146 ) ) ) ?gen142 <- ( crime_art144 ( negative-overruled $?gen147 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule11] ) ) ) ?gen149 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen148 & : ( >= ?gen148 1 ) ) ) ?gen151 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ( positive ?gen150 & : ( >= ?gen150 1 ) ) ) ?gen153 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ( positive ?gen152 & : ( >= ?gen152 1 ) ) ) ?gen142 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen145 ) ( negative-overruled $?gen146 & : ( not ( subseq-pos ( create$ rule11-overruled $?gen145 $$$ $?gen146 ) ) ) ) ( positive-defeated $?gen144 & : ( not ( member$ rule11 $?gen144 ) ) ) ) ( test ( eq ( class ?gen142 ) crime_art144_1 ) ) => ( calc ( bind $?gen147 ( create$ rule11-overruled $?gen145 $?gen146 ) ) ) ?gen142 <- ( crime_art144_1 ( negative-overruled $?gen147 ) )"))
 
 ([rule11-support] of derived-attribute-rule
    (pos-name rule11-support-gen2155)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule11] ) ) ) ?gen139 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen140 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ) ?gen141 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) ?gen142 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen144 & : ( not ( subseq-pos ( create$ rule11 ?gen139 ?gen140 ?gen141 $$$ $?gen144 ) ) ) ) ) ( test ( eq ( class ?gen142 ) crime_art144 ) ) => ( calc ( bind $?gen147 ( create$ rule11 ?gen139 ?gen140 ?gen141 $?gen144 ) ) ) ?gen142 <- ( crime_art144 ( positive-support $?gen147 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule11] ) ) ) ?gen139 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen140 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ) ?gen141 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) ?gen142 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen144 & : ( not ( subseq-pos ( create$ rule11 ?gen139 ?gen140 ?gen141 $$$ $?gen144 ) ) ) ) ) ( test ( eq ( class ?gen142 ) crime_art144_1 ) ) => ( calc ( bind $?gen147 ( create$ rule11 ?gen139 ?gen140 ?gen141 $?gen144 ) ) ) ?gen142 <- ( crime_art144_1 ( positive-support $?gen147 ) )"))
 
 ([rule10-defeasibly-dot] of derived-attribute-rule
    (pos-name rule10-defeasibly-dot-gen2157)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule10] ) ) ) ?gen129 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule10 $? ) ) ( test ( eq ( class ?gen129 ) crime_art144 ) ) ( not ( and ?gen136 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen135 & : ( >= ?gen135 1 ) ) ) ?gen138 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ( positive ?gen137 & : ( >= ?gen137 1 ) ) ) ?gen129 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen131 & : ( not ( member$ rule10 $?gen131 ) ) ) ) ) ) => ?gen129 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule10] ) ) ) ?gen129 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule10 $? ) ) ( test ( eq ( class ?gen129 ) crime_art144_1 ) ) ( not ( and ?gen136 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen135 & : ( >= ?gen135 1 ) ) ) ?gen138 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ( positive ?gen137 & : ( >= ?gen137 1 ) ) ) ?gen129 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen131 & : ( not ( member$ rule10 $?gen131 ) ) ) ) ) ) => ?gen129 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule10-defeasibly] of derived-attribute-rule
    (pos-name rule10-defeasibly-gen2159)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule10] ) ) ) ?gen136 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen135 & : ( >= ?gen135 1 ) ) ) ?gen138 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ( positive ?gen137 & : ( >= ?gen137 1 ) ) ) ?gen129 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen131 & : ( not ( member$ rule10 $?gen131 ) ) ) ) ( test ( eq ( class ?gen129 ) crime_art144 ) ) => ?gen129 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule10 ?gen136 ?gen138 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule10] ) ) ) ?gen136 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen135 & : ( >= ?gen135 1 ) ) ) ?gen138 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ( positive ?gen137 & : ( >= ?gen137 1 ) ) ) ?gen129 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen131 & : ( not ( member$ rule10 $?gen131 ) ) ) ) ( test ( eq ( class ?gen129 ) crime_art144_1 ) ) => ?gen129 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule10 ?gen136 ?gen138 ) )"))
 
 ([rule10-overruled-dot] of derived-attribute-rule
    (pos-name rule10-overruled-dot-gen2161)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule10] ) ) ) ?gen129 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen132 ) ( negative-overruled $?gen133 & : ( subseq-pos ( create$ rule10-overruled $?gen132 $$$ $?gen133 ) ) ) ) ( test ( eq ( class ?gen129 ) crime_art144 ) ) ( not ( and ?gen136 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen135 & : ( >= ?gen135 1 ) ) ) ?gen138 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ( positive ?gen137 & : ( >= ?gen137 1 ) ) ) ?gen129 <- ( crime_art144 ( positive-defeated $?gen131 & : ( not ( member$ rule10 $?gen131 ) ) ) ) ) ) => ( calc ( bind $?gen134 ( delete-member$ $?gen133 ( create$ rule10-overruled $?gen132 ) ) ) ) ?gen129 <- ( crime_art144 ( negative-overruled $?gen134 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule10] ) ) ) ?gen129 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen132 ) ( negative-overruled $?gen133 & : ( subseq-pos ( create$ rule10-overruled $?gen132 $$$ $?gen133 ) ) ) ) ( test ( eq ( class ?gen129 ) crime_art144_1 ) ) ( not ( and ?gen136 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen135 & : ( >= ?gen135 1 ) ) ) ?gen138 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ( positive ?gen137 & : ( >= ?gen137 1 ) ) ) ?gen129 <- ( crime_art144_1 ( positive-defeated $?gen131 & : ( not ( member$ rule10 $?gen131 ) ) ) ) ) ) => ( calc ( bind $?gen134 ( delete-member$ $?gen133 ( create$ rule10-overruled $?gen132 ) ) ) ) ?gen129 <- ( crime_art144_1 ( negative-overruled $?gen134 ) )"))
 
 ([rule10-overruled] of derived-attribute-rule
    (pos-name rule10-overruled-gen2163)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule10] ) ) ) ?gen136 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen135 & : ( >= ?gen135 1 ) ) ) ?gen138 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ( positive ?gen137 & : ( >= ?gen137 1 ) ) ) ?gen129 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen132 ) ( negative-overruled $?gen133 & : ( not ( subseq-pos ( create$ rule10-overruled $?gen132 $$$ $?gen133 ) ) ) ) ( positive-defeated $?gen131 & : ( not ( member$ rule10 $?gen131 ) ) ) ) ( test ( eq ( class ?gen129 ) crime_art144 ) ) => ( calc ( bind $?gen134 ( create$ rule10-overruled $?gen132 $?gen133 ) ) ) ?gen129 <- ( crime_art144 ( negative-overruled $?gen134 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule10] ) ) ) ?gen136 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen135 & : ( >= ?gen135 1 ) ) ) ?gen138 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ( positive ?gen137 & : ( >= ?gen137 1 ) ) ) ?gen129 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen132 ) ( negative-overruled $?gen133 & : ( not ( subseq-pos ( create$ rule10-overruled $?gen132 $$$ $?gen133 ) ) ) ) ( positive-defeated $?gen131 & : ( not ( member$ rule10 $?gen131 ) ) ) ) ( test ( eq ( class ?gen129 ) crime_art144_1 ) ) => ( calc ( bind $?gen134 ( create$ rule10-overruled $?gen132 $?gen133 ) ) ) ?gen129 <- ( crime_art144_1 ( negative-overruled $?gen134 ) )"))
 
 ([rule10-support] of derived-attribute-rule
    (pos-name rule10-support-gen2165)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule10] ) ) ) ?gen127 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen128 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ) ?gen129 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen131 & : ( not ( subseq-pos ( create$ rule10 ?gen127 ?gen128 $$$ $?gen131 ) ) ) ) ) ( test ( eq ( class ?gen129 ) crime_art144 ) ) => ( calc ( bind $?gen134 ( create$ rule10 ?gen127 ?gen128 $?gen131 ) ) ) ?gen129 <- ( crime_art144 ( positive-support $?gen134 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule10] ) ) ) ?gen127 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen128 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ) ?gen129 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen131 & : ( not ( subseq-pos ( create$ rule10 ?gen127 ?gen128 $$$ $?gen131 ) ) ) ) ) ( test ( eq ( class ?gen129 ) crime_art144_1 ) ) => ( calc ( bind $?gen134 ( create$ rule10 ?gen127 ?gen128 $?gen131 ) ) ) ?gen129 <- ( crime_art144_1 ( positive-support $?gen134 ) )"))
 
 ([rule9b-defeasibly-dot] of derived-attribute-rule
    (pos-name rule9b-defeasibly-dot-gen2167)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule9b] ) ) ) ?gen117 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule9b $? ) ) ( test ( eq ( class ?gen117 ) crime_art144 ) ) ( not ( and ?gen124 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen123 & : ( >= ?gen123 1 ) ) ) ?gen126 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ( positive ?gen125 & : ( >= ?gen125 1 ) ) ) ?gen117 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen119 & : ( not ( member$ rule9b $?gen119 ) ) ) ) ) ) => ?gen117 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule9b] ) ) ) ?gen117 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule9b $? ) ) ( test ( eq ( class ?gen117 ) crime_art144_1 ) ) ( not ( and ?gen124 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen123 & : ( >= ?gen123 1 ) ) ) ?gen126 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ( positive ?gen125 & : ( >= ?gen125 1 ) ) ) ?gen117 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen119 & : ( not ( member$ rule9b $?gen119 ) ) ) ) ) ) => ?gen117 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule9b-defeasibly] of derived-attribute-rule
    (pos-name rule9b-defeasibly-gen2169)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule9b] ) ) ) ?gen124 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen123 & : ( >= ?gen123 1 ) ) ) ?gen126 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ( positive ?gen125 & : ( >= ?gen125 1 ) ) ) ?gen117 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen119 & : ( not ( member$ rule9b $?gen119 ) ) ) ) ( test ( eq ( class ?gen117 ) crime_art144 ) ) => ?gen117 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule9b ?gen124 ?gen126 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule9b] ) ) ) ?gen124 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen123 & : ( >= ?gen123 1 ) ) ) ?gen126 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ( positive ?gen125 & : ( >= ?gen125 1 ) ) ) ?gen117 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen119 & : ( not ( member$ rule9b $?gen119 ) ) ) ) ( test ( eq ( class ?gen117 ) crime_art144_1 ) ) => ?gen117 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule9b ?gen124 ?gen126 ) )"))
 
 ([rule9b-overruled-dot] of derived-attribute-rule
    (pos-name rule9b-overruled-dot-gen2171)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule9b] ) ) ) ?gen117 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen120 ) ( negative-overruled $?gen121 & : ( subseq-pos ( create$ rule9b-overruled $?gen120 $$$ $?gen121 ) ) ) ) ( test ( eq ( class ?gen117 ) crime_art144 ) ) ( not ( and ?gen124 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen123 & : ( >= ?gen123 1 ) ) ) ?gen126 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ( positive ?gen125 & : ( >= ?gen125 1 ) ) ) ?gen117 <- ( crime_art144 ( positive-defeated $?gen119 & : ( not ( member$ rule9b $?gen119 ) ) ) ) ) ) => ( calc ( bind $?gen122 ( delete-member$ $?gen121 ( create$ rule9b-overruled $?gen120 ) ) ) ) ?gen117 <- ( crime_art144 ( negative-overruled $?gen122 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule9b] ) ) ) ?gen117 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen120 ) ( negative-overruled $?gen121 & : ( subseq-pos ( create$ rule9b-overruled $?gen120 $$$ $?gen121 ) ) ) ) ( test ( eq ( class ?gen117 ) crime_art144_1 ) ) ( not ( and ?gen124 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen123 & : ( >= ?gen123 1 ) ) ) ?gen126 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ( positive ?gen125 & : ( >= ?gen125 1 ) ) ) ?gen117 <- ( crime_art144_1 ( positive-defeated $?gen119 & : ( not ( member$ rule9b $?gen119 ) ) ) ) ) ) => ( calc ( bind $?gen122 ( delete-member$ $?gen121 ( create$ rule9b-overruled $?gen120 ) ) ) ) ?gen117 <- ( crime_art144_1 ( negative-overruled $?gen122 ) )"))
 
 ([rule9b-overruled] of derived-attribute-rule
    (pos-name rule9b-overruled-gen2173)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule9b] ) ) ) ?gen124 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen123 & : ( >= ?gen123 1 ) ) ) ?gen126 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ( positive ?gen125 & : ( >= ?gen125 1 ) ) ) ?gen117 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen120 ) ( negative-overruled $?gen121 & : ( not ( subseq-pos ( create$ rule9b-overruled $?gen120 $$$ $?gen121 ) ) ) ) ( positive-defeated $?gen119 & : ( not ( member$ rule9b $?gen119 ) ) ) ) ( test ( eq ( class ?gen117 ) crime_art144 ) ) => ( calc ( bind $?gen122 ( create$ rule9b-overruled $?gen120 $?gen121 ) ) ) ?gen117 <- ( crime_art144 ( negative-overruled $?gen122 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule9b] ) ) ) ?gen124 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen123 & : ( >= ?gen123 1 ) ) ) ?gen126 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ( positive ?gen125 & : ( >= ?gen125 1 ) ) ) ?gen117 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen120 ) ( negative-overruled $?gen121 & : ( not ( subseq-pos ( create$ rule9b-overruled $?gen120 $$$ $?gen121 ) ) ) ) ( positive-defeated $?gen119 & : ( not ( member$ rule9b $?gen119 ) ) ) ) ( test ( eq ( class ?gen117 ) crime_art144_1 ) ) => ( calc ( bind $?gen122 ( create$ rule9b-overruled $?gen120 $?gen121 ) ) ) ?gen117 <- ( crime_art144_1 ( negative-overruled $?gen122 ) )"))
 
 ([rule9b-support] of derived-attribute-rule
    (pos-name rule9b-support-gen2175)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule9b] ) ) ) ?gen115 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen116 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ) ?gen117 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen119 & : ( not ( subseq-pos ( create$ rule9b ?gen115 ?gen116 $$$ $?gen119 ) ) ) ) ) ( test ( eq ( class ?gen117 ) crime_art144 ) ) => ( calc ( bind $?gen122 ( create$ rule9b ?gen115 ?gen116 $?gen119 ) ) ) ?gen117 <- ( crime_art144 ( positive-support $?gen122 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule9b] ) ) ) ?gen115 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen116 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ) ?gen117 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen119 & : ( not ( subseq-pos ( create$ rule9b ?gen115 ?gen116 $$$ $?gen119 ) ) ) ) ) ( test ( eq ( class ?gen117 ) crime_art144_1 ) ) => ( calc ( bind $?gen122 ( create$ rule9b ?gen115 ?gen116 $?gen119 ) ) ) ?gen117 <- ( crime_art144_1 ( positive-support $?gen122 ) )"))
 
 ([rule9-defeasibly-dot] of derived-attribute-rule
    (pos-name rule9-defeasibly-dot-gen2177)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule9] ) ) ) ?gen105 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule9 $? ) ) ( test ( eq ( class ?gen105 ) crime_art144 ) ) ( not ( and ?gen112 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen111 & : ( >= ?gen111 1 ) ) ) ?gen114 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ( positive ?gen113 & : ( >= ?gen113 1 ) ) ) ?gen105 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen107 & : ( not ( member$ rule9 $?gen107 ) ) ) ) ) ) => ?gen105 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule9] ) ) ) ?gen105 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule9 $? ) ) ( test ( eq ( class ?gen105 ) crime_art144_1 ) ) ( not ( and ?gen112 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen111 & : ( >= ?gen111 1 ) ) ) ?gen114 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ( positive ?gen113 & : ( >= ?gen113 1 ) ) ) ?gen105 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen107 & : ( not ( member$ rule9 $?gen107 ) ) ) ) ) ) => ?gen105 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule9-defeasibly] of derived-attribute-rule
    (pos-name rule9-defeasibly-gen2179)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule9] ) ) ) ?gen112 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen111 & : ( >= ?gen111 1 ) ) ) ?gen114 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ( positive ?gen113 & : ( >= ?gen113 1 ) ) ) ?gen105 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen107 & : ( not ( member$ rule9 $?gen107 ) ) ) ) ( test ( eq ( class ?gen105 ) crime_art144 ) ) => ?gen105 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule9 ?gen112 ?gen114 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule9] ) ) ) ?gen112 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen111 & : ( >= ?gen111 1 ) ) ) ?gen114 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ( positive ?gen113 & : ( >= ?gen113 1 ) ) ) ?gen105 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen107 & : ( not ( member$ rule9 $?gen107 ) ) ) ) ( test ( eq ( class ?gen105 ) crime_art144_1 ) ) => ?gen105 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule9 ?gen112 ?gen114 ) )"))
 
 ([rule9-overruled-dot] of derived-attribute-rule
    (pos-name rule9-overruled-dot-gen2181)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule9] ) ) ) ?gen105 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen108 ) ( negative-overruled $?gen109 & : ( subseq-pos ( create$ rule9-overruled $?gen108 $$$ $?gen109 ) ) ) ) ( test ( eq ( class ?gen105 ) crime_art144 ) ) ( not ( and ?gen112 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen111 & : ( >= ?gen111 1 ) ) ) ?gen114 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ( positive ?gen113 & : ( >= ?gen113 1 ) ) ) ?gen105 <- ( crime_art144 ( positive-defeated $?gen107 & : ( not ( member$ rule9 $?gen107 ) ) ) ) ) ) => ( calc ( bind $?gen110 ( delete-member$ $?gen109 ( create$ rule9-overruled $?gen108 ) ) ) ) ?gen105 <- ( crime_art144 ( negative-overruled $?gen110 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule9] ) ) ) ?gen105 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen108 ) ( negative-overruled $?gen109 & : ( subseq-pos ( create$ rule9-overruled $?gen108 $$$ $?gen109 ) ) ) ) ( test ( eq ( class ?gen105 ) crime_art144_1 ) ) ( not ( and ?gen112 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen111 & : ( >= ?gen111 1 ) ) ) ?gen114 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ( positive ?gen113 & : ( >= ?gen113 1 ) ) ) ?gen105 <- ( crime_art144_1 ( positive-defeated $?gen107 & : ( not ( member$ rule9 $?gen107 ) ) ) ) ) ) => ( calc ( bind $?gen110 ( delete-member$ $?gen109 ( create$ rule9-overruled $?gen108 ) ) ) ) ?gen105 <- ( crime_art144_1 ( negative-overruled $?gen110 ) )"))
 
 ([rule9-overruled] of derived-attribute-rule
    (pos-name rule9-overruled-gen2183)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule9] ) ) ) ?gen112 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen111 & : ( >= ?gen111 1 ) ) ) ?gen114 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ( positive ?gen113 & : ( >= ?gen113 1 ) ) ) ?gen105 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen108 ) ( negative-overruled $?gen109 & : ( not ( subseq-pos ( create$ rule9-overruled $?gen108 $$$ $?gen109 ) ) ) ) ( positive-defeated $?gen107 & : ( not ( member$ rule9 $?gen107 ) ) ) ) ( test ( eq ( class ?gen105 ) crime_art144 ) ) => ( calc ( bind $?gen110 ( create$ rule9-overruled $?gen108 $?gen109 ) ) ) ?gen105 <- ( crime_art144 ( negative-overruled $?gen110 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule9] ) ) ) ?gen112 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen111 & : ( >= ?gen111 1 ) ) ) ?gen114 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ( positive ?gen113 & : ( >= ?gen113 1 ) ) ) ?gen105 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen108 ) ( negative-overruled $?gen109 & : ( not ( subseq-pos ( create$ rule9-overruled $?gen108 $$$ $?gen109 ) ) ) ) ( positive-defeated $?gen107 & : ( not ( member$ rule9 $?gen107 ) ) ) ) ( test ( eq ( class ?gen105 ) crime_art144_1 ) ) => ( calc ( bind $?gen110 ( create$ rule9-overruled $?gen108 $?gen109 ) ) ) ?gen105 <- ( crime_art144_1 ( negative-overruled $?gen110 ) )"))
 
 ([rule9-support] of derived-attribute-rule
    (pos-name rule9-support-gen2185)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule9] ) ) ) ?gen103 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen104 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ) ?gen105 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen107 & : ( not ( subseq-pos ( create$ rule9 ?gen103 ?gen104 $$$ $?gen107 ) ) ) ) ) ( test ( eq ( class ?gen105 ) crime_art144 ) ) => ( calc ( bind $?gen110 ( create$ rule9 ?gen103 ?gen104 $?gen107 ) ) ) ?gen105 <- ( crime_art144 ( positive-support $?gen110 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule9] ) ) ) ?gen103 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen104 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ) ?gen105 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen107 & : ( not ( subseq-pos ( create$ rule9 ?gen103 ?gen104 $$$ $?gen107 ) ) ) ) ) ( test ( eq ( class ?gen105 ) crime_art144_1 ) ) => ( calc ( bind $?gen110 ( create$ rule9 ?gen103 ?gen104 $?gen107 ) ) ) ?gen105 <- ( crime_art144_1 ( positive-support $?gen110 ) )"))
 
 ([rule8-defeasibly-dot] of derived-attribute-rule
    (pos-name rule8-defeasibly-dot-gen2187)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule8] ) ) ) ?gen93 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule8 $? ) ) ( test ( eq ( class ?gen93 ) crime_art144 ) ) ( not ( and ?gen100 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen99 & : ( >= ?gen99 1 ) ) ) ?gen102 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ( positive ?gen101 & : ( >= ?gen101 1 ) ) ) ?gen93 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen95 & : ( not ( member$ rule8 $?gen95 ) ) ) ) ) ) => ?gen93 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule8] ) ) ) ?gen93 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule8 $? ) ) ( test ( eq ( class ?gen93 ) crime_art144_1 ) ) ( not ( and ?gen100 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen99 & : ( >= ?gen99 1 ) ) ) ?gen102 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ( positive ?gen101 & : ( >= ?gen101 1 ) ) ) ?gen93 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen95 & : ( not ( member$ rule8 $?gen95 ) ) ) ) ) ) => ?gen93 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule8-defeasibly] of derived-attribute-rule
    (pos-name rule8-defeasibly-gen2189)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule8] ) ) ) ?gen100 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen99 & : ( >= ?gen99 1 ) ) ) ?gen102 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ( positive ?gen101 & : ( >= ?gen101 1 ) ) ) ?gen93 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen95 & : ( not ( member$ rule8 $?gen95 ) ) ) ) ( test ( eq ( class ?gen93 ) crime_art144 ) ) => ?gen93 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule8 ?gen100 ?gen102 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule8] ) ) ) ?gen100 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen99 & : ( >= ?gen99 1 ) ) ) ?gen102 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ( positive ?gen101 & : ( >= ?gen101 1 ) ) ) ?gen93 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen95 & : ( not ( member$ rule8 $?gen95 ) ) ) ) ( test ( eq ( class ?gen93 ) crime_art144_1 ) ) => ?gen93 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule8 ?gen100 ?gen102 ) )"))
 
 ([rule8-overruled-dot] of derived-attribute-rule
    (pos-name rule8-overruled-dot-gen2191)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule8] ) ) ) ?gen93 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen96 ) ( negative-overruled $?gen97 & : ( subseq-pos ( create$ rule8-overruled $?gen96 $$$ $?gen97 ) ) ) ) ( test ( eq ( class ?gen93 ) crime_art144 ) ) ( not ( and ?gen100 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen99 & : ( >= ?gen99 1 ) ) ) ?gen102 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ( positive ?gen101 & : ( >= ?gen101 1 ) ) ) ?gen93 <- ( crime_art144 ( positive-defeated $?gen95 & : ( not ( member$ rule8 $?gen95 ) ) ) ) ) ) => ( calc ( bind $?gen98 ( delete-member$ $?gen97 ( create$ rule8-overruled $?gen96 ) ) ) ) ?gen93 <- ( crime_art144 ( negative-overruled $?gen98 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule8] ) ) ) ?gen93 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen96 ) ( negative-overruled $?gen97 & : ( subseq-pos ( create$ rule8-overruled $?gen96 $$$ $?gen97 ) ) ) ) ( test ( eq ( class ?gen93 ) crime_art144_1 ) ) ( not ( and ?gen100 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen99 & : ( >= ?gen99 1 ) ) ) ?gen102 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ( positive ?gen101 & : ( >= ?gen101 1 ) ) ) ?gen93 <- ( crime_art144_1 ( positive-defeated $?gen95 & : ( not ( member$ rule8 $?gen95 ) ) ) ) ) ) => ( calc ( bind $?gen98 ( delete-member$ $?gen97 ( create$ rule8-overruled $?gen96 ) ) ) ) ?gen93 <- ( crime_art144_1 ( negative-overruled $?gen98 ) )"))
 
 ([rule8-overruled] of derived-attribute-rule
    (pos-name rule8-overruled-gen2193)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule8] ) ) ) ?gen100 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen99 & : ( >= ?gen99 1 ) ) ) ?gen102 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ( positive ?gen101 & : ( >= ?gen101 1 ) ) ) ?gen93 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen96 ) ( negative-overruled $?gen97 & : ( not ( subseq-pos ( create$ rule8-overruled $?gen96 $$$ $?gen97 ) ) ) ) ( positive-defeated $?gen95 & : ( not ( member$ rule8 $?gen95 ) ) ) ) ( test ( eq ( class ?gen93 ) crime_art144 ) ) => ( calc ( bind $?gen98 ( create$ rule8-overruled $?gen96 $?gen97 ) ) ) ?gen93 <- ( crime_art144 ( negative-overruled $?gen98 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule8] ) ) ) ?gen100 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen99 & : ( >= ?gen99 1 ) ) ) ?gen102 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ( positive ?gen101 & : ( >= ?gen101 1 ) ) ) ?gen93 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen96 ) ( negative-overruled $?gen97 & : ( not ( subseq-pos ( create$ rule8-overruled $?gen96 $$$ $?gen97 ) ) ) ) ( positive-defeated $?gen95 & : ( not ( member$ rule8 $?gen95 ) ) ) ) ( test ( eq ( class ?gen93 ) crime_art144_1 ) ) => ( calc ( bind $?gen98 ( create$ rule8-overruled $?gen96 $?gen97 ) ) ) ?gen93 <- ( crime_art144_1 ( negative-overruled $?gen98 ) )"))
 
 ([rule8-support] of derived-attribute-rule
    (pos-name rule8-support-gen2195)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule8] ) ) ) ?gen91 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen92 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ) ?gen93 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen95 & : ( not ( subseq-pos ( create$ rule8 ?gen91 ?gen92 $$$ $?gen95 ) ) ) ) ) ( test ( eq ( class ?gen93 ) crime_art144 ) ) => ( calc ( bind $?gen98 ( create$ rule8 ?gen91 ?gen92 $?gen95 ) ) ) ?gen93 <- ( crime_art144 ( positive-support $?gen98 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule8] ) ) ) ?gen91 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen92 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ) ?gen93 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen95 & : ( not ( subseq-pos ( create$ rule8 ?gen91 ?gen92 $$$ $?gen95 ) ) ) ) ) ( test ( eq ( class ?gen93 ) crime_art144_1 ) ) => ( calc ( bind $?gen98 ( create$ rule8 ?gen91 ?gen92 $?gen95 ) ) ) ?gen93 <- ( crime_art144_1 ( positive-support $?gen98 ) )"))
 
 ([rule7b-defeasibly-dot] of derived-attribute-rule
    (pos-name rule7b-defeasibly-dot-gen2197)
-   (depends-on declare crime_art144 lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule7b] ) ) ) ?gen79 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule7b $? ) ) ( test ( eq ( class ?gen79 ) crime_art144 ) ) ( not ( and ?gen86 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen85 & : ( >= ?gen85 1 ) ) ) ?gen88 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ( positive ?gen87 & : ( >= ?gen87 1 ) ) ) ?gen90 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen89 & : ( >= ?gen89 1 ) ) ) ?gen79 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen81 & : ( not ( member$ rule7b $?gen81 ) ) ) ) ) ) => ?gen79 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule7b] ) ) ) ?gen79 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule7b $? ) ) ( test ( eq ( class ?gen79 ) crime_art144_1 ) ) ( not ( and ?gen86 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen85 & : ( >= ?gen85 1 ) ) ) ?gen88 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ( positive ?gen87 & : ( >= ?gen87 1 ) ) ) ?gen90 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen89 & : ( >= ?gen89 1 ) ) ) ?gen79 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen81 & : ( not ( member$ rule7b $?gen81 ) ) ) ) ) ) => ?gen79 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule7b-defeasibly] of derived-attribute-rule
    (pos-name rule7b-defeasibly-gen2199)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule7b] ) ) ) ?gen86 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen85 & : ( >= ?gen85 1 ) ) ) ?gen88 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ( positive ?gen87 & : ( >= ?gen87 1 ) ) ) ?gen90 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen89 & : ( >= ?gen89 1 ) ) ) ?gen79 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen81 & : ( not ( member$ rule7b $?gen81 ) ) ) ) ( test ( eq ( class ?gen79 ) crime_art144 ) ) => ?gen79 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule7b ?gen86 ?gen88 ?gen90 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule7b] ) ) ) ?gen86 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen85 & : ( >= ?gen85 1 ) ) ) ?gen88 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ( positive ?gen87 & : ( >= ?gen87 1 ) ) ) ?gen90 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen89 & : ( >= ?gen89 1 ) ) ) ?gen79 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen81 & : ( not ( member$ rule7b $?gen81 ) ) ) ) ( test ( eq ( class ?gen79 ) crime_art144_1 ) ) => ?gen79 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule7b ?gen86 ?gen88 ?gen90 ) )"))
 
 ([rule7b-overruled-dot] of derived-attribute-rule
    (pos-name rule7b-overruled-dot-gen2201)
-   (depends-on declare crime_art144 lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule7b] ) ) ) ?gen79 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen82 ) ( negative-overruled $?gen83 & : ( subseq-pos ( create$ rule7b-overruled $?gen82 $$$ $?gen83 ) ) ) ) ( test ( eq ( class ?gen79 ) crime_art144 ) ) ( not ( and ?gen86 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen85 & : ( >= ?gen85 1 ) ) ) ?gen88 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ( positive ?gen87 & : ( >= ?gen87 1 ) ) ) ?gen90 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen89 & : ( >= ?gen89 1 ) ) ) ?gen79 <- ( crime_art144 ( positive-defeated $?gen81 & : ( not ( member$ rule7b $?gen81 ) ) ) ) ) ) => ( calc ( bind $?gen84 ( delete-member$ $?gen83 ( create$ rule7b-overruled $?gen82 ) ) ) ) ?gen79 <- ( crime_art144 ( negative-overruled $?gen84 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule7b] ) ) ) ?gen79 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen82 ) ( negative-overruled $?gen83 & : ( subseq-pos ( create$ rule7b-overruled $?gen82 $$$ $?gen83 ) ) ) ) ( test ( eq ( class ?gen79 ) crime_art144_1 ) ) ( not ( and ?gen86 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen85 & : ( >= ?gen85 1 ) ) ) ?gen88 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ( positive ?gen87 & : ( >= ?gen87 1 ) ) ) ?gen90 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen89 & : ( >= ?gen89 1 ) ) ) ?gen79 <- ( crime_art144_1 ( positive-defeated $?gen81 & : ( not ( member$ rule7b $?gen81 ) ) ) ) ) ) => ( calc ( bind $?gen84 ( delete-member$ $?gen83 ( create$ rule7b-overruled $?gen82 ) ) ) ) ?gen79 <- ( crime_art144_1 ( negative-overruled $?gen84 ) )"))
 
 ([rule7b-overruled] of derived-attribute-rule
    (pos-name rule7b-overruled-gen2203)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule7b] ) ) ) ?gen86 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen85 & : ( >= ?gen85 1 ) ) ) ?gen88 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ( positive ?gen87 & : ( >= ?gen87 1 ) ) ) ?gen90 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen89 & : ( >= ?gen89 1 ) ) ) ?gen79 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen82 ) ( negative-overruled $?gen83 & : ( not ( subseq-pos ( create$ rule7b-overruled $?gen82 $$$ $?gen83 ) ) ) ) ( positive-defeated $?gen81 & : ( not ( member$ rule7b $?gen81 ) ) ) ) ( test ( eq ( class ?gen79 ) crime_art144 ) ) => ( calc ( bind $?gen84 ( create$ rule7b-overruled $?gen82 $?gen83 ) ) ) ?gen79 <- ( crime_art144 ( negative-overruled $?gen84 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule7b] ) ) ) ?gen86 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen85 & : ( >= ?gen85 1 ) ) ) ?gen88 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ( positive ?gen87 & : ( >= ?gen87 1 ) ) ) ?gen90 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen89 & : ( >= ?gen89 1 ) ) ) ?gen79 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen82 ) ( negative-overruled $?gen83 & : ( not ( subseq-pos ( create$ rule7b-overruled $?gen82 $$$ $?gen83 ) ) ) ) ( positive-defeated $?gen81 & : ( not ( member$ rule7b $?gen81 ) ) ) ) ( test ( eq ( class ?gen79 ) crime_art144_1 ) ) => ( calc ( bind $?gen84 ( create$ rule7b-overruled $?gen82 $?gen83 ) ) ) ?gen79 <- ( crime_art144_1 ( negative-overruled $?gen84 ) )"))
 
 ([rule7b-support] of derived-attribute-rule
    (pos-name rule7b-support-gen2205)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule7b] ) ) ) ?gen76 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen77 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ?gen78 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) ?gen79 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen81 & : ( not ( subseq-pos ( create$ rule7b ?gen76 ?gen77 ?gen78 $$$ $?gen81 ) ) ) ) ) ( test ( eq ( class ?gen79 ) crime_art144 ) ) => ( calc ( bind $?gen84 ( create$ rule7b ?gen76 ?gen77 ?gen78 $?gen81 ) ) ) ?gen79 <- ( crime_art144 ( positive-support $?gen84 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule7b] ) ) ) ?gen76 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen77 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ?gen78 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) ?gen79 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen81 & : ( not ( subseq-pos ( create$ rule7b ?gen76 ?gen77 ?gen78 $$$ $?gen81 ) ) ) ) ) ( test ( eq ( class ?gen79 ) crime_art144_1 ) ) => ( calc ( bind $?gen84 ( create$ rule7b ?gen76 ?gen77 ?gen78 $?gen81 ) ) ) ?gen79 <- ( crime_art144_1 ( positive-support $?gen84 ) )"))
 
 ([rule7-defeasibly-dot] of derived-attribute-rule
    (pos-name rule7-defeasibly-dot-gen2207)
-   (depends-on declare crime_art144 lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule7] ) ) ) ?gen64 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule7 $? ) ) ( test ( eq ( class ?gen64 ) crime_art144 ) ) ( not ( and ?gen71 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen70 & : ( >= ?gen70 1 ) ) ) ?gen73 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ( positive ?gen72 & : ( >= ?gen72 1 ) ) ) ?gen75 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen74 & : ( >= ?gen74 1 ) ) ) ?gen64 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen66 & : ( not ( member$ rule7 $?gen66 ) ) ) ) ) ) => ?gen64 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule7] ) ) ) ?gen64 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule7 $? ) ) ( test ( eq ( class ?gen64 ) crime_art144_1 ) ) ( not ( and ?gen71 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen70 & : ( >= ?gen70 1 ) ) ) ?gen73 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ( positive ?gen72 & : ( >= ?gen72 1 ) ) ) ?gen75 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen74 & : ( >= ?gen74 1 ) ) ) ?gen64 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen66 & : ( not ( member$ rule7 $?gen66 ) ) ) ) ) ) => ?gen64 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule7-defeasibly] of derived-attribute-rule
    (pos-name rule7-defeasibly-gen2209)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule7] ) ) ) ?gen71 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen70 & : ( >= ?gen70 1 ) ) ) ?gen73 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ( positive ?gen72 & : ( >= ?gen72 1 ) ) ) ?gen75 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen74 & : ( >= ?gen74 1 ) ) ) ?gen64 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen66 & : ( not ( member$ rule7 $?gen66 ) ) ) ) ( test ( eq ( class ?gen64 ) crime_art144 ) ) => ?gen64 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule7 ?gen71 ?gen73 ?gen75 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule7] ) ) ) ?gen71 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen70 & : ( >= ?gen70 1 ) ) ) ?gen73 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ( positive ?gen72 & : ( >= ?gen72 1 ) ) ) ?gen75 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen74 & : ( >= ?gen74 1 ) ) ) ?gen64 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen66 & : ( not ( member$ rule7 $?gen66 ) ) ) ) ( test ( eq ( class ?gen64 ) crime_art144_1 ) ) => ?gen64 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule7 ?gen71 ?gen73 ?gen75 ) )"))
 
 ([rule7-overruled-dot] of derived-attribute-rule
    (pos-name rule7-overruled-dot-gen2211)
-   (depends-on declare crime_art144 lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule7] ) ) ) ?gen64 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen67 ) ( negative-overruled $?gen68 & : ( subseq-pos ( create$ rule7-overruled $?gen67 $$$ $?gen68 ) ) ) ) ( test ( eq ( class ?gen64 ) crime_art144 ) ) ( not ( and ?gen71 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen70 & : ( >= ?gen70 1 ) ) ) ?gen73 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ( positive ?gen72 & : ( >= ?gen72 1 ) ) ) ?gen75 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen74 & : ( >= ?gen74 1 ) ) ) ?gen64 <- ( crime_art144 ( positive-defeated $?gen66 & : ( not ( member$ rule7 $?gen66 ) ) ) ) ) ) => ( calc ( bind $?gen69 ( delete-member$ $?gen68 ( create$ rule7-overruled $?gen67 ) ) ) ) ?gen64 <- ( crime_art144 ( negative-overruled $?gen69 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule7] ) ) ) ?gen64 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen67 ) ( negative-overruled $?gen68 & : ( subseq-pos ( create$ rule7-overruled $?gen67 $$$ $?gen68 ) ) ) ) ( test ( eq ( class ?gen64 ) crime_art144_1 ) ) ( not ( and ?gen71 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen70 & : ( >= ?gen70 1 ) ) ) ?gen73 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ( positive ?gen72 & : ( >= ?gen72 1 ) ) ) ?gen75 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen74 & : ( >= ?gen74 1 ) ) ) ?gen64 <- ( crime_art144_1 ( positive-defeated $?gen66 & : ( not ( member$ rule7 $?gen66 ) ) ) ) ) ) => ( calc ( bind $?gen69 ( delete-member$ $?gen68 ( create$ rule7-overruled $?gen67 ) ) ) ) ?gen64 <- ( crime_art144_1 ( negative-overruled $?gen69 ) )"))
 
 ([rule7-overruled] of derived-attribute-rule
    (pos-name rule7-overruled-gen2213)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule7] ) ) ) ?gen71 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen70 & : ( >= ?gen70 1 ) ) ) ?gen73 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ( positive ?gen72 & : ( >= ?gen72 1 ) ) ) ?gen75 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen74 & : ( >= ?gen74 1 ) ) ) ?gen64 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen67 ) ( negative-overruled $?gen68 & : ( not ( subseq-pos ( create$ rule7-overruled $?gen67 $$$ $?gen68 ) ) ) ) ( positive-defeated $?gen66 & : ( not ( member$ rule7 $?gen66 ) ) ) ) ( test ( eq ( class ?gen64 ) crime_art144 ) ) => ( calc ( bind $?gen69 ( create$ rule7-overruled $?gen67 $?gen68 ) ) ) ?gen64 <- ( crime_art144 ( negative-overruled $?gen69 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule7] ) ) ) ?gen71 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen70 & : ( >= ?gen70 1 ) ) ) ?gen73 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ( positive ?gen72 & : ( >= ?gen72 1 ) ) ) ?gen75 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ( positive ?gen74 & : ( >= ?gen74 1 ) ) ) ?gen64 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen67 ) ( negative-overruled $?gen68 & : ( not ( subseq-pos ( create$ rule7-overruled $?gen67 $$$ $?gen68 ) ) ) ) ( positive-defeated $?gen66 & : ( not ( member$ rule7 $?gen66 ) ) ) ) ( test ( eq ( class ?gen64 ) crime_art144_1 ) ) => ( calc ( bind $?gen69 ( create$ rule7-overruled $?gen67 $?gen68 ) ) ) ?gen64 <- ( crime_art144_1 ( negative-overruled $?gen69 ) )"))
 
 ([rule7-support] of derived-attribute-rule
    (pos-name rule7-support-gen2215)
-   (depends-on declare lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule7] ) ) ) ?gen61 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen62 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ?gen63 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) ?gen64 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen66 & : ( not ( subseq-pos ( create$ rule7 ?gen61 ?gen62 ?gen63 $$$ $?gen66 ) ) ) ) ) ( test ( eq ( class ?gen64 ) crime_art144 ) ) => ( calc ( bind $?gen69 ( create$ rule7 ?gen61 ?gen62 ?gen63 $?gen66 ) ) ) ?gen64 <- ( crime_art144 ( positive-support $?gen69 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule7] ) ) ) ?gen61 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen62 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ?gen63 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) ?gen64 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen66 & : ( not ( subseq-pos ( create$ rule7 ?gen61 ?gen62 ?gen63 $$$ $?gen66 ) ) ) ) ) ( test ( eq ( class ?gen64 ) crime_art144_1 ) ) => ( calc ( bind $?gen69 ( create$ rule7 ?gen61 ?gen62 ?gen63 $?gen66 ) ) ) ?gen64 <- ( crime_art144_1 ( positive-support $?gen69 ) )"))
 
 ([rule6-defeasibly-dot] of derived-attribute-rule
    (pos-name rule6-defeasibly-dot-gen2217)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule6] ) ) ) ?gen51 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule6 $? ) ) ( test ( eq ( class ?gen51 ) crime_art144 ) ) ( not ( and ?gen58 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen57 & : ( >= ?gen57 1 ) ) ) ?gen60 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ( positive ?gen59 & : ( >= ?gen59 1 ) ) ) ?gen51 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen53 & : ( not ( member$ rule6 $?gen53 ) ) ) ) ) ) => ?gen51 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule6] ) ) ) ?gen51 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule6 $? ) ) ( test ( eq ( class ?gen51 ) crime_art144_1 ) ) ( not ( and ?gen58 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen57 & : ( >= ?gen57 1 ) ) ) ?gen60 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ( positive ?gen59 & : ( >= ?gen59 1 ) ) ) ?gen51 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen53 & : ( not ( member$ rule6 $?gen53 ) ) ) ) ) ) => ?gen51 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule6-defeasibly] of derived-attribute-rule
    (pos-name rule6-defeasibly-gen2219)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule6] ) ) ) ?gen58 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen57 & : ( >= ?gen57 1 ) ) ) ?gen60 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ( positive ?gen59 & : ( >= ?gen59 1 ) ) ) ?gen51 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen53 & : ( not ( member$ rule6 $?gen53 ) ) ) ) ( test ( eq ( class ?gen51 ) crime_art144 ) ) => ?gen51 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule6 ?gen58 ?gen60 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule6] ) ) ) ?gen58 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen57 & : ( >= ?gen57 1 ) ) ) ?gen60 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ( positive ?gen59 & : ( >= ?gen59 1 ) ) ) ?gen51 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen53 & : ( not ( member$ rule6 $?gen53 ) ) ) ) ( test ( eq ( class ?gen51 ) crime_art144_1 ) ) => ?gen51 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule6 ?gen58 ?gen60 ) )"))
 
 ([rule6-overruled-dot] of derived-attribute-rule
    (pos-name rule6-overruled-dot-gen2221)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule6] ) ) ) ?gen51 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen54 ) ( negative-overruled $?gen55 & : ( subseq-pos ( create$ rule6-overruled $?gen54 $$$ $?gen55 ) ) ) ) ( test ( eq ( class ?gen51 ) crime_art144 ) ) ( not ( and ?gen58 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen57 & : ( >= ?gen57 1 ) ) ) ?gen60 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ( positive ?gen59 & : ( >= ?gen59 1 ) ) ) ?gen51 <- ( crime_art144 ( positive-defeated $?gen53 & : ( not ( member$ rule6 $?gen53 ) ) ) ) ) ) => ( calc ( bind $?gen56 ( delete-member$ $?gen55 ( create$ rule6-overruled $?gen54 ) ) ) ) ?gen51 <- ( crime_art144 ( negative-overruled $?gen56 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule6] ) ) ) ?gen51 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen54 ) ( negative-overruled $?gen55 & : ( subseq-pos ( create$ rule6-overruled $?gen54 $$$ $?gen55 ) ) ) ) ( test ( eq ( class ?gen51 ) crime_art144_1 ) ) ( not ( and ?gen58 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen57 & : ( >= ?gen57 1 ) ) ) ?gen60 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ( positive ?gen59 & : ( >= ?gen59 1 ) ) ) ?gen51 <- ( crime_art144_1 ( positive-defeated $?gen53 & : ( not ( member$ rule6 $?gen53 ) ) ) ) ) ) => ( calc ( bind $?gen56 ( delete-member$ $?gen55 ( create$ rule6-overruled $?gen54 ) ) ) ) ?gen51 <- ( crime_art144_1 ( negative-overruled $?gen56 ) )"))
 
 ([rule6-overruled] of derived-attribute-rule
    (pos-name rule6-overruled-gen2223)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule6] ) ) ) ?gen58 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen57 & : ( >= ?gen57 1 ) ) ) ?gen60 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ( positive ?gen59 & : ( >= ?gen59 1 ) ) ) ?gen51 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen54 ) ( negative-overruled $?gen55 & : ( not ( subseq-pos ( create$ rule6-overruled $?gen54 $$$ $?gen55 ) ) ) ) ( positive-defeated $?gen53 & : ( not ( member$ rule6 $?gen53 ) ) ) ) ( test ( eq ( class ?gen51 ) crime_art144 ) ) => ( calc ( bind $?gen56 ( create$ rule6-overruled $?gen54 $?gen55 ) ) ) ?gen51 <- ( crime_art144 ( negative-overruled $?gen56 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule6] ) ) ) ?gen58 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen57 & : ( >= ?gen57 1 ) ) ) ?gen60 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ( positive ?gen59 & : ( >= ?gen59 1 ) ) ) ?gen51 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen54 ) ( negative-overruled $?gen55 & : ( not ( subseq-pos ( create$ rule6-overruled $?gen54 $$$ $?gen55 ) ) ) ) ( positive-defeated $?gen53 & : ( not ( member$ rule6 $?gen53 ) ) ) ) ( test ( eq ( class ?gen51 ) crime_art144_1 ) ) => ( calc ( bind $?gen56 ( create$ rule6-overruled $?gen54 $?gen55 ) ) ) ?gen51 <- ( crime_art144_1 ( negative-overruled $?gen56 ) )"))
 
 ([rule6-support] of derived-attribute-rule
    (pos-name rule6-support-gen2225)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule6] ) ) ) ?gen49 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen50 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ) ?gen51 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen53 & : ( not ( subseq-pos ( create$ rule6 ?gen49 ?gen50 $$$ $?gen53 ) ) ) ) ) ( test ( eq ( class ?gen51 ) crime_art144 ) ) => ( calc ( bind $?gen56 ( create$ rule6 ?gen49 ?gen50 $?gen53 ) ) ) ?gen51 <- ( crime_art144 ( positive-support $?gen56 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule6] ) ) ) ?gen49 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen50 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ) ?gen51 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen53 & : ( not ( subseq-pos ( create$ rule6 ?gen49 ?gen50 $$$ $?gen53 ) ) ) ) ) ( test ( eq ( class ?gen51 ) crime_art144_1 ) ) => ( calc ( bind $?gen56 ( create$ rule6 ?gen49 ?gen50 $?gen53 ) ) ) ?gen51 <- ( crime_art144_1 ( positive-support $?gen56 ) )"))
 
 ([rule5-defeasibly-dot] of derived-attribute-rule
    (pos-name rule5-defeasibly-dot-gen2227)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule5] ) ) ) ?gen39 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule5 $? ) ) ( test ( eq ( class ?gen39 ) crime_art144 ) ) ( not ( and ?gen46 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen45 & : ( >= ?gen45 1 ) ) ) ?gen48 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ( positive ?gen47 & : ( >= ?gen47 1 ) ) ) ?gen39 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen41 & : ( not ( member$ rule5 $?gen41 ) ) ) ) ) ) => ?gen39 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule5] ) ) ) ?gen39 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule5 $? ) ) ( test ( eq ( class ?gen39 ) crime_art144_1 ) ) ( not ( and ?gen46 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen45 & : ( >= ?gen45 1 ) ) ) ?gen48 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ( positive ?gen47 & : ( >= ?gen47 1 ) ) ) ?gen39 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen41 & : ( not ( member$ rule5 $?gen41 ) ) ) ) ) ) => ?gen39 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule5-defeasibly] of derived-attribute-rule
    (pos-name rule5-defeasibly-gen2229)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule5] ) ) ) ?gen46 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen45 & : ( >= ?gen45 1 ) ) ) ?gen48 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ( positive ?gen47 & : ( >= ?gen47 1 ) ) ) ?gen39 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen41 & : ( not ( member$ rule5 $?gen41 ) ) ) ) ( test ( eq ( class ?gen39 ) crime_art144 ) ) => ?gen39 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule5 ?gen46 ?gen48 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule5] ) ) ) ?gen46 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen45 & : ( >= ?gen45 1 ) ) ) ?gen48 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ( positive ?gen47 & : ( >= ?gen47 1 ) ) ) ?gen39 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen41 & : ( not ( member$ rule5 $?gen41 ) ) ) ) ( test ( eq ( class ?gen39 ) crime_art144_1 ) ) => ?gen39 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule5 ?gen46 ?gen48 ) )"))
 
 ([rule5-overruled-dot] of derived-attribute-rule
    (pos-name rule5-overruled-dot-gen2231)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule5] ) ) ) ?gen39 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen42 ) ( negative-overruled $?gen43 & : ( subseq-pos ( create$ rule5-overruled $?gen42 $$$ $?gen43 ) ) ) ) ( test ( eq ( class ?gen39 ) crime_art144 ) ) ( not ( and ?gen46 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen45 & : ( >= ?gen45 1 ) ) ) ?gen48 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ( positive ?gen47 & : ( >= ?gen47 1 ) ) ) ?gen39 <- ( crime_art144 ( positive-defeated $?gen41 & : ( not ( member$ rule5 $?gen41 ) ) ) ) ) ) => ( calc ( bind $?gen44 ( delete-member$ $?gen43 ( create$ rule5-overruled $?gen42 ) ) ) ) ?gen39 <- ( crime_art144 ( negative-overruled $?gen44 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule5] ) ) ) ?gen39 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen42 ) ( negative-overruled $?gen43 & : ( subseq-pos ( create$ rule5-overruled $?gen42 $$$ $?gen43 ) ) ) ) ( test ( eq ( class ?gen39 ) crime_art144_1 ) ) ( not ( and ?gen46 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen45 & : ( >= ?gen45 1 ) ) ) ?gen48 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ( positive ?gen47 & : ( >= ?gen47 1 ) ) ) ?gen39 <- ( crime_art144_1 ( positive-defeated $?gen41 & : ( not ( member$ rule5 $?gen41 ) ) ) ) ) ) => ( calc ( bind $?gen44 ( delete-member$ $?gen43 ( create$ rule5-overruled $?gen42 ) ) ) ) ?gen39 <- ( crime_art144_1 ( negative-overruled $?gen44 ) )"))
 
 ([rule5-overruled] of derived-attribute-rule
    (pos-name rule5-overruled-gen2233)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule5] ) ) ) ?gen46 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen45 & : ( >= ?gen45 1 ) ) ) ?gen48 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ( positive ?gen47 & : ( >= ?gen47 1 ) ) ) ?gen39 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen42 ) ( negative-overruled $?gen43 & : ( not ( subseq-pos ( create$ rule5-overruled $?gen42 $$$ $?gen43 ) ) ) ) ( positive-defeated $?gen41 & : ( not ( member$ rule5 $?gen41 ) ) ) ) ( test ( eq ( class ?gen39 ) crime_art144 ) ) => ( calc ( bind $?gen44 ( create$ rule5-overruled $?gen42 $?gen43 ) ) ) ?gen39 <- ( crime_art144 ( negative-overruled $?gen44 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule5] ) ) ) ?gen46 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen45 & : ( >= ?gen45 1 ) ) ) ?gen48 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ( positive ?gen47 & : ( >= ?gen47 1 ) ) ) ?gen39 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen42 ) ( negative-overruled $?gen43 & : ( not ( subseq-pos ( create$ rule5-overruled $?gen42 $$$ $?gen43 ) ) ) ) ( positive-defeated $?gen41 & : ( not ( member$ rule5 $?gen41 ) ) ) ) ( test ( eq ( class ?gen39 ) crime_art144_1 ) ) => ( calc ( bind $?gen44 ( create$ rule5-overruled $?gen42 $?gen43 ) ) ) ?gen39 <- ( crime_art144_1 ( negative-overruled $?gen44 ) )"))
 
 ([rule5-support] of derived-attribute-rule
    (pos-name rule5-support-gen2235)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule5] ) ) ) ?gen37 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen38 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ) ?gen39 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen41 & : ( not ( subseq-pos ( create$ rule5 ?gen37 ?gen38 $$$ $?gen41 ) ) ) ) ) ( test ( eq ( class ?gen39 ) crime_art144 ) ) => ( calc ( bind $?gen44 ( create$ rule5 ?gen37 ?gen38 $?gen41 ) ) ) ?gen39 <- ( crime_art144 ( positive-support $?gen44 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule5] ) ) ) ?gen37 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen38 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ) ?gen39 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen41 & : ( not ( subseq-pos ( create$ rule5 ?gen37 ?gen38 $$$ $?gen41 ) ) ) ) ) ( test ( eq ( class ?gen39 ) crime_art144_1 ) ) => ( calc ( bind $?gen44 ( create$ rule5 ?gen37 ?gen38 $?gen41 ) ) ) ?gen39 <- ( crime_art144_1 ( positive-support $?gen44 ) )"))
 
 ([rule4-defeasibly-dot] of derived-attribute-rule
    (pos-name rule4-defeasibly-dot-gen2237)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule4] ) ) ) ?gen27 <- ( crime_art144 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule4 $? ) ) ( test ( eq ( class ?gen27 ) crime_art144 ) ) ( not ( and ?gen34 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen33 & : ( >= ?gen33 1 ) ) ) ?gen36 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ( positive ?gen35 & : ( >= ?gen35 1 ) ) ) ?gen27 <- ( crime_art144 ( negative ~ 2 ) ( positive-overruled $?gen29 & : ( not ( member$ rule4 $?gen29 ) ) ) ) ) ) => ?gen27 <- ( crime_art144 ( positive 0 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -1 [rule4] ) ) ) ?gen27 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 1 ) ( positive-derivator rule4 $? ) ) ( test ( eq ( class ?gen27 ) crime_art144_1 ) ) ( not ( and ?gen34 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen33 & : ( >= ?gen33 1 ) ) ) ?gen36 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ( positive ?gen35 & : ( >= ?gen35 1 ) ) ) ?gen27 <- ( crime_art144_1 ( negative ~ 2 ) ( positive-overruled $?gen29 & : ( not ( member$ rule4 $?gen29 ) ) ) ) ) ) => ?gen27 <- ( crime_art144_1 ( positive 0 ) )"))
 
 ([rule4-defeasibly] of derived-attribute-rule
    (pos-name rule4-defeasibly-gen2239)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule4] ) ) ) ?gen34 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen33 & : ( >= ?gen33 1 ) ) ) ?gen36 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ( positive ?gen35 & : ( >= ?gen35 1 ) ) ) ?gen27 <- ( crime_art144 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen29 & : ( not ( member$ rule4 $?gen29 ) ) ) ) ( test ( eq ( class ?gen27 ) crime_art144 ) ) => ?gen27 <- ( crime_art144 ( positive 1 ) ( positive-derivator rule4 ?gen34 ?gen36 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 1 [rule4] ) ) ) ?gen34 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen33 & : ( >= ?gen33 1 ) ) ) ?gen36 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ( positive ?gen35 & : ( >= ?gen35 1 ) ) ) ?gen27 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive 0 ) ( negative ~ 2 ) ( positive-overruled $?gen29 & : ( not ( member$ rule4 $?gen29 ) ) ) ) ( test ( eq ( class ?gen27 ) crime_art144_1 ) ) => ?gen27 <- ( crime_art144_1 ( positive 1 ) ( positive-derivator rule4 ?gen34 ?gen36 ) )"))
 
 ([rule4-overruled-dot] of derived-attribute-rule
    (pos-name rule4-overruled-dot-gen2241)
-   (depends-on declare crime_art144 lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare crime_art144_1 lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule4] ) ) ) ?gen27 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen30 ) ( negative-overruled $?gen31 & : ( subseq-pos ( create$ rule4-overruled $?gen30 $$$ $?gen31 ) ) ) ) ( test ( eq ( class ?gen27 ) crime_art144 ) ) ( not ( and ?gen34 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen33 & : ( >= ?gen33 1 ) ) ) ?gen36 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ( positive ?gen35 & : ( >= ?gen35 1 ) ) ) ?gen27 <- ( crime_art144 ( positive-defeated $?gen29 & : ( not ( member$ rule4 $?gen29 ) ) ) ) ) ) => ( calc ( bind $?gen32 ( delete-member$ $?gen31 ( create$ rule4-overruled $?gen30 ) ) ) ) ?gen27 <- ( crime_art144 ( negative-overruled $?gen32 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority -2 [rule4] ) ) ) ?gen27 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen30 ) ( negative-overruled $?gen31 & : ( subseq-pos ( create$ rule4-overruled $?gen30 $$$ $?gen31 ) ) ) ) ( test ( eq ( class ?gen27 ) crime_art144_1 ) ) ( not ( and ?gen34 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen33 & : ( >= ?gen33 1 ) ) ) ?gen36 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ( positive ?gen35 & : ( >= ?gen35 1 ) ) ) ?gen27 <- ( crime_art144_1 ( positive-defeated $?gen29 & : ( not ( member$ rule4 $?gen29 ) ) ) ) ) ) => ( calc ( bind $?gen32 ( delete-member$ $?gen31 ( create$ rule4-overruled $?gen30 ) ) ) ) ?gen27 <- ( crime_art144_1 ( negative-overruled $?gen32 ) )"))
 
 ([rule4-overruled] of derived-attribute-rule
    (pos-name rule4-overruled-gen2243)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule4] ) ) ) ?gen34 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen33 & : ( >= ?gen33 1 ) ) ) ?gen36 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ( positive ?gen35 & : ( >= ?gen35 1 ) ) ) ?gen27 <- ( crime_art144 ( defendant ?Defendant ) ( negative-support $?gen30 ) ( negative-overruled $?gen31 & : ( not ( subseq-pos ( create$ rule4-overruled $?gen30 $$$ $?gen31 ) ) ) ) ( positive-defeated $?gen29 & : ( not ( member$ rule4 $?gen29 ) ) ) ) ( test ( eq ( class ?gen27 ) crime_art144 ) ) => ( calc ( bind $?gen32 ( create$ rule4-overruled $?gen30 $?gen31 ) ) ) ?gen27 <- ( crime_art144 ( negative-overruled $?gen32 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 2 [rule4] ) ) ) ?gen34 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ( positive ?gen33 & : ( >= ?gen33 1 ) ) ) ?gen36 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ( positive ?gen35 & : ( >= ?gen35 1 ) ) ) ?gen27 <- ( crime_art144_1 ( defendant ?Defendant ) ( negative-support $?gen30 ) ( negative-overruled $?gen31 & : ( not ( subseq-pos ( create$ rule4-overruled $?gen30 $$$ $?gen31 ) ) ) ) ( positive-defeated $?gen29 & : ( not ( member$ rule4 $?gen29 ) ) ) ) ( test ( eq ( class ?gen27 ) crime_art144_1 ) ) => ( calc ( bind $?gen32 ( create$ rule4-overruled $?gen30 $?gen31 ) ) ) ?gen27 <- ( crime_art144_1 ( negative-overruled $?gen32 ) )"))
 
 ([rule4-support] of derived-attribute-rule
    (pos-name rule4-support-gen2245)
-   (depends-on declare lc:case lc:case crime_art144)
-   (implies crime_art144)
+   (depends-on declare lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
    (del-name nil)
-   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule4] ) ) ) ?gen25 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen26 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ) ?gen27 <- ( crime_art144 ( defendant ?Defendant ) ( positive-support $?gen29 & : ( not ( subseq-pos ( create$ rule4 ?gen25 ?gen26 $$$ $?gen29 ) ) ) ) ) ( test ( eq ( class ?gen27 ) crime_art144 ) ) => ( calc ( bind $?gen32 ( create$ rule4 ?gen25 ?gen26 $?gen29 ) ) ) ?gen27 <- ( crime_art144 ( positive-support $?gen32 ) )"))
+   (derived-attribute-rule "( declare ( priority ( calc-defeasible-priority 5 [rule4] ) ) ) ?gen25 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen26 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ) ?gen27 <- ( crime_art144_1 ( defendant ?Defendant ) ( positive-support $?gen29 & : ( not ( subseq-pos ( create$ rule4 ?gen25 ?gen26 $$$ $?gen29 ) ) ) ) ) ( test ( eq ( class ?gen27 ) crime_art144_1 ) ) => ( calc ( bind $?gen32 ( create$ rule4 ?gen25 ?gen26 $?gen29 ) ) ) ?gen27 <- ( crime_art144_1 ( positive-support $?gen32 ) )"))
 
 ([rule2-defeasibly-dot] of derived-attribute-rule
    (pos-name rule2-defeasibly-dot-gen2247)
@@ -3010,11 +3010,11 @@
 
 ([rule73b-deductive] of ntm-deductive-rule
    (pos-name rule73b-deductive-gen1406)
-   (depends-on lc:case lc:case or crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen1306 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ?gen1307 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ?gen1308 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule73b-deductive-gen1406 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen1306 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ( object ( name ?gen1307 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ( object ( name ?gen1308 ) ( is-a or ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen1306 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ?gen1307 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ?gen1308 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule73b-deductive-gen1406 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen1306 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ( object ( name ?gen1307 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ( object ( name ?gen1308 ) ( is-a or ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule73-deductive] of ntm-deductive-rule
    (pos-name rule73-deductive-gen1405)
@@ -3026,11 +3026,11 @@
 
 ([rule72b-deductive] of ntm-deductive-rule
    (pos-name rule72b-deductive-gen1404)
-   (depends-on lc:case lc:case or crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen1276 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ?gen1277 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ?gen1278 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule72b-deductive-gen1404 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen1276 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ( object ( name ?gen1277 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ( object ( name ?gen1278 ) ( is-a or ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen1276 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ?gen1277 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ?gen1278 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule72b-deductive-gen1404 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen1276 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ( object ( name ?gen1277 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ( object ( name ?gen1278 ) ( is-a or ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule72-deductive] of ntm-deductive-rule
    (pos-name rule72-deductive-gen1403)
@@ -3418,11 +3418,11 @@
 
 ([rule31b-deductive] of ntm-deductive-rule
    (pos-name rule31b-deductive-gen1355)
-   (depends-on lc:case lc:case or crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen541 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ?gen542 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ?gen543 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule31b-deductive-gen1355 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen541 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ( object ( name ?gen542 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ( object ( name ?gen543 ) ( is-a or ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen541 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ?gen542 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ?gen543 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule31b-deductive-gen1355 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen541 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ( object ( name ?gen542 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ( object ( name ?gen543 ) ( is-a or ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule31-deductive] of ntm-deductive-rule
    (pos-name rule31-deductive-gen1354)
@@ -3434,11 +3434,11 @@
 
 ([rule30b-deductive] of ntm-deductive-rule
    (pos-name rule30b-deductive-gen1353)
-   (depends-on lc:case lc:case or crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen511 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ?gen512 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ?gen513 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule30b-deductive-gen1353 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen511 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ( object ( name ?gen512 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ( object ( name ?gen513 ) ( is-a or ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case or crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen511 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ?gen512 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ?gen513 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule30b-deductive-gen1353 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen511 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ( object ( name ?gen512 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ( object ( name ?gen513 ) ( is-a or ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule30-deductive] of ntm-deductive-rule
    (pos-name rule30-deductive-gen1352)
@@ -3562,123 +3562,123 @@
 
 ([rule16-deductive] of ntm-deductive-rule
    (pos-name rule16-deductive-gen1337)
-   (depends-on lc:case lc:case or lc:case lc:case and crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen208 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen209 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ) ?gen210 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ) ?gen211 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ) ?gen212 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ) ?gen213 <- ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule16-deductive-gen1337 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen208 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen209 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ) ( object ( name ?gen210 ) ( is-a or ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ) ( object ( name ?gen211 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ) ( object ( name ?gen212 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ) ( object ( name ?gen213 ) ( is-a and ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case or lc:case lc:case and crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen208 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen209 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ) ?gen210 <- ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ) ?gen211 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ) ?gen212 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ) ?gen213 <- ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule16-deductive-gen1337 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen208 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen209 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ) ( object ( name ?gen210 ) ( is-a or ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ) ( object ( name ?gen211 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ) ( object ( name ?gen212 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ) ( object ( name ?gen213 ) ( is-a and ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule15-deductive] of ntm-deductive-rule
    (pos-name rule15-deductive-gen1336)
-   (depends-on lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen193 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen194 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ) ?gen195 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule15-deductive-gen1336 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen193 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen194 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ) ( object ( name ?gen195 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen193 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen194 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ) ?gen195 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule15-deductive-gen1336 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen193 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen194 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ) ( object ( name ?gen195 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule14-deductive] of ntm-deductive-rule
    (pos-name rule14-deductive-gen1335)
-   (depends-on lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen181 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen182 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule14-deductive-gen1335 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen181 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen182 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen181 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen182 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule14-deductive-gen1335 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen181 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen182 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule13-deductive] of ntm-deductive-rule
    (pos-name rule13-deductive-gen1334)
-   (depends-on lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen169 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen170 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule13-deductive-gen1334 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen169 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen170 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen169 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen170 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule13-deductive-gen1334 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen169 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen170 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule12-deductive] of ntm-deductive-rule
    (pos-name rule12-deductive-gen1333)
-   (depends-on lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen154 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen155 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ) ?gen156 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule12-deductive-gen1333 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen154 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen155 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ) ( object ( name ?gen156 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen154 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen155 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ) ?gen156 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule12-deductive-gen1333 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen154 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen155 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ) ( object ( name ?gen156 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule11-deductive] of ntm-deductive-rule
    (pos-name rule11-deductive-gen1332)
-   (depends-on lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen139 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen140 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ) ?gen141 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule11-deductive-gen1332 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen139 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen140 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ) ( object ( name ?gen141 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen139 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen140 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ) ?gen141 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule11-deductive-gen1332 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen139 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen140 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ) ( object ( name ?gen141 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule10-deductive] of ntm-deductive-rule
    (pos-name rule10-deductive-gen1331)
-   (depends-on lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen127 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen128 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule10-deductive-gen1331 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen127 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen128 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen127 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen128 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule10-deductive-gen1331 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen127 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen128 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule9b-deductive] of ntm-deductive-rule
    (pos-name rule9b-deductive-gen1330)
-   (depends-on lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen115 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen116 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule9b-deductive-gen1330 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen115 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen116 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen115 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen116 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule9b-deductive-gen1330 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen115 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen116 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule9-deductive] of ntm-deductive-rule
    (pos-name rule9-deductive-gen1329)
-   (depends-on lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen103 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen104 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule9-deductive-gen1329 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen103 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen104 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen103 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen104 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule9-deductive-gen1329 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen103 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen104 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule8-deductive] of ntm-deductive-rule
    (pos-name rule8-deductive-gen1328)
-   (depends-on lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen91 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen92 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule8-deductive-gen1328 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen91 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen92 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen91 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen92 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule8-deductive-gen1328 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen91 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen92 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule7b-deductive] of ntm-deductive-rule
    (pos-name rule7b-deductive-gen1327)
-   (depends-on lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen76 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen77 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ?gen78 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule7b-deductive-gen1327 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen76 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen77 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ( object ( name ?gen78 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen76 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen77 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ?gen78 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule7b-deductive-gen1327 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen76 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen77 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ( object ( name ?gen78 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule7-deductive] of ntm-deductive-rule
    (pos-name rule7-deductive-gen1326)
-   (depends-on lc:case lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen61 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen62 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ?gen63 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule7-deductive-gen1326 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen61 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen62 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( object ( name ?gen63 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen61 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen62 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ?gen63 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule7-deductive-gen1326 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen61 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen62 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( object ( name ?gen63 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule6-deductive] of ntm-deductive-rule
    (pos-name rule6-deductive-gen1325)
-   (depends-on lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen49 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen50 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule6-deductive-gen1325 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen49 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen50 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen49 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen50 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule6-deductive-gen1325 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen49 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen50 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule5-deductive] of ntm-deductive-rule
    (pos-name rule5-deductive-gen1324)
-   (depends-on lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen37 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen38 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule5-deductive-gen1324 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen37 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen38 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen37 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen38 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule5-deductive-gen1324 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen37 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen38 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule4-deductive] of ntm-deductive-rule
    (pos-name rule4-deductive-gen1323)
-   (depends-on lc:case lc:case crime_art144)
-   (implies crime_art144)
-   (deductive-rule "?gen25 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen26 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ) ( not ( crime_art144 ( defendant ?Defendant ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
-   (production-rule "( defrule rule4-deductive-gen1323 ( declare ( salience ( calc-salience crime_art144 ) ) ) ( run-deductive-rules ) ( object ( name ?gen25 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen26 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ) ( not ( object ( is-a crime_art144 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144 ?Defendant ) ) ) ( make-instance ?oid of crime_art144 ( defendant ?Defendant ) ) )")
-   (derived-class crime_art144))
+   (depends-on lc:case lc:case crime_art144_1)
+   (implies crime_art144_1)
+   (deductive-rule "?gen25 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ?gen26 <- ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ) ( not ( crime_art144_1 ( defendant ?Defendant ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
+   (production-rule "( defrule rule4-deductive-gen1323 ( declare ( salience ( calc-salience crime_art144_1 ) ) ) ( run-deductive-rules ) ( object ( name ?gen25 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( object ( name ?gen26 ) ( is-a lc:case ) ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ) ( not ( object ( is-a crime_art144_1 ) ( defendant ?Defendant ) ) ) ( test ( not ( instance-existp ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ) ) => ( bind ?oid ( symbol-to-instance-name ( sym-cat crime_art144_1 ?Defendant ) ) ) ( make-instance ?oid of crime_art144_1 ( defendant ?Defendant ) ) )")
+   (derived-class crime_art144_1))
 
 ([rule2-deductive] of ntm-deductive-rule
    (pos-name rule2-deductive-gen1322)

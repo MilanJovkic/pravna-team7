@@ -1,5 +1,5 @@
-(import-rdf "facts.rdf")
-		(export-rdf export.rdf  crime_art143 crime_art144 crime_art145 crime_art146 crime_art147 crime_art148 crime_art149_1 crime_art149_2 crime_art149_3 crime_art149_4 crime_art149_5 crime_art150_1 crime_art150_2 crime_art150_3 crime_art151_1 crime_art151_2 crime_art151_3 crime_art151_4 crime_art151_5 crime_art151a crime_art151b crime_art152_1 crime_art152_2 crime_art152_3 crime_art153 crime_art154 crime_art155_1 crime_art155_2 crime_art155_3 crime_art156 crime_art156_2 crime_art156_3 crime_art157 crime_art157_2 crime_art157_3)
+﻿(import-rdf "facts.rdf")
+		(export-rdf export.rdf  crime_art143 crime_art144_1 crime_art145 crime_art146 crime_art147 crime_art148 crime_art149_1 crime_art149_2 crime_art149_3 crime_art149_4 crime_art149_5 crime_art150_1 crime_art150_2 crime_art150_3 crime_art151_1 crime_art151_2 crime_art151_3 crime_art151_4 crime_art151_5 crime_art151a crime_art151b crime_art152_1 crime_art152_2 crime_art152_3 crime_art153 crime_art154 crime_art155_1 crime_art155_2 crime_art155_3 crime_art156 crime_art156_2 crime_art156_3 crime_art157 crime_art157_2 crime_art157_3)
 (export-proof proof.ruleml)
 
 (defeasiblerule rule1
@@ -56,7 +56,7 @@
  lc:execution_manner "svirep")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -76,7 +76,7 @@
  lc:execution_manner "podmukao")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -96,7 +96,7 @@
  lc:execution_manner "bezobzirno_nasilnicko_ponasanje")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -122,7 +122,7 @@
  lc:danger_to_third_parties "true")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -148,7 +148,7 @@
  lc:danger_to_third_parties "true")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -168,7 +168,7 @@
  lc:offender_motive "koristoljublje")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -188,7 +188,7 @@
  lc:offender_motive "izvrsenje_ili_prikrivanje_drugog_krivicnog_djela")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -208,7 +208,7 @@
  lc:offender_motive "niske_pobude")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -228,7 +228,7 @@
  lc:offender_motive "bezobzirna_osveta")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -254,7 +254,7 @@
  lc:duty_connection "u_vrsenju_sluzbene_duznosti")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -280,7 +280,7 @@
  lc:duty_connection "u_vrsenju_sluzbene_duznosti")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -300,7 +300,7 @@
  lc:victim_status "dijete")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -320,7 +320,7 @@
  lc:victim_status "bremenita_zena")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -346,7 +346,7 @@
  lc:victim_previously_abused "true")
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -388,7 +388,7 @@
   (lc:case (lc:defendant ?Defendant) (lc:offender_motive "samilost"))
 ))
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -860,7 +860,7 @@
   (lc:case (lc:defendant ?Defendant) (lc:suicide_outcome "pokusano"))
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -908,7 +908,7 @@
   (lc:case (lc:defendant ?Defendant) (lc:suicide_outcome "pokusano"))
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -2092,7 +2092,7 @@
   (lc:case (lc:defendant ?Defendant) (lc:suicide_outcome "pokusano"))
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
@@ -2140,10 +2140,11 @@
   (lc:case (lc:defendant ?Defendant) (lc:suicide_outcome "pokusano"))
 )
   =>
-(crime_art144
+(crime_art144_1
 (
  defendant ?Defendant)
 )
 )
+
 
 

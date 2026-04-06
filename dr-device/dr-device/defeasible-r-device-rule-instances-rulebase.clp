@@ -28,9 +28,9 @@
 
 ([rule4] of defeasible-rule
    (rule-name rule4)
-   (original-rule "rule4 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule4 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"svirep\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule4-deductive)
@@ -42,9 +42,9 @@
 
 ([rule5] of defeasible-rule
    (rule-name rule5)
-   (original-rule "rule5 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule5 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"podmukao\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule5-deductive)
@@ -56,9 +56,9 @@
 
 ([rule6] of defeasible-rule
    (rule-name rule6)
-   (original-rule "rule6 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule6 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"bezobzirno_nasilnicko_ponasanje\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule6-deductive)
@@ -70,9 +70,9 @@
 
 ([rule7] of defeasible-rule
    (rule-name rule7)
-   (original-rule "rule7 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule7 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule7-deductive)
@@ -84,9 +84,9 @@
 
 ([rule7b] of defeasible-rule
    (rule-name rule7b)
-   (original-rule "rule7b ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule7b ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:danger_to_third_parties \"true\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule7b-deductive)
@@ -98,9 +98,9 @@
 
 ([rule8] of defeasible-rule
    (rule-name rule8)
-   (original-rule "rule8 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule8 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"koristoljublje\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule8-deductive)
@@ -112,9 +112,9 @@
 
 ([rule9] of defeasible-rule
    (rule-name rule9)
-   (original-rule "rule9 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule9 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"izvrsenje_ili_prikrivanje_drugog_krivicnog_djela\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule9-deductive)
@@ -126,9 +126,9 @@
 
 ([rule9b] of defeasible-rule
    (rule-name rule9b)
-   (original-rule "rule9b ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule9b ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"niske_pobude\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule9b-deductive)
@@ -140,9 +140,9 @@
 
 ([rule10] of defeasible-rule
    (rule-name rule10)
-   (original-rule "rule10 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule10 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"bezobzirna_osveta\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule10-deductive)
@@ -154,9 +154,9 @@
 
 ([rule11] of defeasible-rule
    (rule-name rule11)
-   (original-rule "rule11 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule11 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"sluzbeno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule11-deductive)
@@ -168,9 +168,9 @@
 
 ([rule12] of defeasible-rule
    (rule-name rule12)
-   (original-rule "rule12 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule12 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"vojno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:duty_connection \"u_vrsenju_sluzbene_duznosti\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule12-deductive)
@@ -182,9 +182,9 @@
 
 ([rule13] of defeasible-rule
    (rule-name rule13)
-   (original-rule "rule13 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule13 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule13-deductive)
@@ -196,9 +196,9 @@
 
 ([rule14] of defeasible-rule
    (rule-name rule14)
-   (original-rule "rule14 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule14 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"bremenita_zena\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule14-deductive)
@@ -210,9 +210,9 @@
 
 ([rule15] of defeasible-rule
    (rule-name rule15)
-   (original-rule "rule15 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule15 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"clan_porodice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_previously_abused \"true\" ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule15-deductive)
@@ -224,9 +224,9 @@
 
 ([rule16] of defeasible-rule
    (rule-name rule16)
-   (original-rule "rule16 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ) ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ) ( not ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ) ) ( not ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ) ) ( not ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule16 ( lc:case ( lc:defendant ?Defendant ) ( lc:life_consequence_type \"smrt_nastupila\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_count \"vise\" ) ) ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_direktni\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:guilt_form \"umisljaj_eventualni\" ) ) ) ( not ( lc:case ( lc:defendant ?Defendant ) ( lc:execution_manner \"na_mah\" ) ) ) ( not ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_psych_state \"porodjajni_poremecaj\" ) ) ) ( not ( and ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"punoljetno_lice\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_health_state \"tesko_zdravstveno_stanje\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_explicit_request \"da\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:offender_motive \"samilost\" ) ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule16-deductive)
@@ -448,9 +448,9 @@
 
 ([rule30b] of defeasible-rule
    (rule-name rule30b)
-   (original-rule "rule30b ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule30b ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule30b-deductive)
@@ -476,9 +476,9 @@
 
 ([rule31b] of defeasible-rule
    (rule-name rule31b)
-   (original-rule "rule31b ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule31b ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"navodjenje_na_samoubistvo\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule31b-deductive)
@@ -1162,9 +1162,9 @@
 
 ([rule72b] of defeasible-rule
    (rule-name rule72b)
-   (original-rule "rule72b ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule72b ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_status \"dijete\" ) ) ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule72b-deductive)
@@ -1190,9 +1190,9 @@
 
 ([rule73b] of defeasible-rule
    (rule-name rule73b)
-   (original-rule "rule73b ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) => ( crime_art144 ( defendant ?Defendant ) )")
+   (original-rule "rule73b ( lc:case ( lc:defendant ?Defendant ) ( lc:special_action_types \"pomaganje_u_samoubistvu\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:victim_accountability \"neuracunljivo\" ) ) ( or ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"izvrseno\" ) ) ( lc:case ( lc:defendant ?Defendant ) ( lc:suicide_outcome \"pokusano\" ) ) ) => ( crime_art144_1 ( defendant ?Defendant ) )")
    (condition-classes)
-   (conclusion-class crime_art144)
+   (conclusion-class crime_art144_1)
    (negated no)
    (superior)
    (deductive-rule rule73b-deductive)

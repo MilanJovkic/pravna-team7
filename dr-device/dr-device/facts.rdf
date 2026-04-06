@@ -195,13 +195,18 @@
         <lc:weapon>opasno_orudje</lc:weapon>
         <lc:weapon_used>true</lc:weapon_used>
         <lc:severe_consequence>true</lc:severe_consequence>
-        <lc:death_result>false</lc:death_result>
+        <lc:death_result>true</lc:death_result>
         <lc:negligence>false</lc:negligence>
         <lc:provocation>false</lc:provocation>
         <lc:fight_participation>true</lc:fight_participation>
-        <lc:fight_consequence>teska_povreda</lc:fight_consequence>
+        <lc:fight_consequence>smrt</lc:fight_consequence>
+        <lc:victim_count>jedna</lc:victim_count>
+        <lc:life_consequence_type>smrt_nastupila</lc:life_consequence_type>
         <lc:severe_injury_specific_consequences>opasnost_po_zivot</lc:severe_injury_specific_consequences>
+        <lc:severe_injury_specific_consequences>unistenje_dijela_tijela</lc:severe_injury_specific_consequences>
         <lc:danger_to_third_parties>false</lc:danger_to_third_parties>
+        <lc:execution_manner>svirep</lc:execution_manner>
+        <lc:execution_manner>podmukao</lc:execution_manner>
         <lc:injury_means_type>opasno_orudje</lc:injury_means_type>
         <lc:guilt_form>umisljaj_direktni</lc:guilt_form>
         <lc:high_intensity_distress>false</lc:high_intensity_distress>

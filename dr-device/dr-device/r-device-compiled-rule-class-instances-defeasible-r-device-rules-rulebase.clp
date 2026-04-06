@@ -24,7 +24,7 @@
    (stratum 1)
    (deductive-rules [rule2-deductive-gen1322] [rule1-deductive-gen1321]))
 
-([crime_art144-derived-class] of derived-class-inst
+([crime_art144_1-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
    (aliases rdfs:seeAlso rdfs:isDefinedBy)
    (positive 0)
@@ -44,7 +44,7 @@
    (rdf:type [rdfs:Class])
    (rdf:value)
    (rdfs:comment)
-   (rdfs:label crime_art144)
+   (rdfs:label crime_art144_1)
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)

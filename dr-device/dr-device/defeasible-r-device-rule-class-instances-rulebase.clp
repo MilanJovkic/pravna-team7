@@ -25,7 +25,7 @@
    (rules [rule2] [rule1])
    (defeasible-stratum 0))
 
-([crime_art144] of defeasible-class
+([crime_art144_1] of defeasible-class
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class rules defeasible-logic-rule)
    (aliases rdfs:seeAlso rdfs:isDefinedBy)
    (positive 0)
@@ -45,10 +45,10 @@
    (rdf:type [rdfs:Class])
    (rdf:value)
    (rdfs:comment)
-   (rdfs:label crime_art144)
+   (rdfs:label crime_art144_1)
    (rdfs:seeAlso)
    (rdfs:subClassOf [defeasible-class])
-   (class-name crime_art144)
+   (class-name crime_art144_1)
    (rules [rule73b] [rule72b] [rule31b] [rule30b] [rule16] [rule15] [rule14] [rule13] [rule12] [rule11] [rule10] [rule9b] [rule9] [rule8] [rule7b] [rule7] [rule6] [rule5] [rule4])
    (defeasible-stratum 0))
 

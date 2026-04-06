@@ -1,5 +1,5 @@
 ( defclass crime_art143 ( is-a DERIVED-CLASS ) ( slot defendant ( type STRING ) ) )
-( defclass crime_art144 ( is-a DERIVED-CLASS ) ( slot defendant ( type STRING ) ) )
+( defclass crime_art144_1 ( is-a DERIVED-CLASS ) ( slot defendant ( type STRING ) ) )
 ( defclass crime_art145 ( is-a DERIVED-CLASS ) ( slot defendant ( type STRING ) ) )
 ( defclass crime_art146 ( is-a DERIVED-CLASS ) ( slot defendant ( type STRING ) ) )
 ( defclass crime_art147 ( is-a DERIVED-CLASS ) ( slot defendant ( type STRING ) ) )

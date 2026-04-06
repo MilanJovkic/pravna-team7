@@ -170,16 +170,12 @@
 
     <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case01">
         <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
-        <lc:defendant>Unknown</lc:defendant>
-        <lc:weapon_used>false</lc:weapon_used>
+        <lc:defendant>DEATH_WITHOUT_SEVERE</lc:defendant>
+        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
         <lc:severe_consequence>false</lc:severe_consequence>
         <lc:death_result>true</lc:death_result>
         <lc:negligence>false</lc:negligence>
         <lc:provocation>false</lc:provocation>
         <lc:fight_participation>false</lc:fight_participation>
-        <lc:fight_consequence>smrt</lc:fight_consequence>
-        <lc:life_consequence_type>smrt_nastupila</lc:life_consequence_type>
-        <lc:danger_to_third_parties>false</lc:danger_to_third_parties>
-        <lc:suicide_outcome>nije_primjenljivo</lc:suicide_outcome>
     </lc:case>
 </rdf:RDF>

@@ -5,6 +5,7 @@ from pathlib import Path
 import subprocess
 import xml.etree.ElementTree as ET
 import re
+import os
 
 from backend.app.models.schemas import CaseFacts, RuleReasoningResult
 from backend.app.services.cbr_normalization import bool_to_text, normalize_ascii
@@ -27,6 +28,8 @@ class RuleReasoningService:
     def __init__(self) -> None:
         self._adapter = None
         self._priority_inferencer = None
+        fallback_value = os.getenv("RULE_FALLBACK_ENABLE", "0").strip().lower()
+        self._fallback_enabled = fallback_value in {"1", "true", "yes", "on"}
         try:
             self._adapter = create_adapter_singleton()
             self._priority_inferencer = DynamicPriorityInferencer(self._adapter)
@@ -194,14 +197,15 @@ class RuleReasoningService:
                 status="ok",
             )
 
-        fallback_norms = self._infer_legal_fallback_norms(facts)
-        if fallback_norms:
-            return RuleReasoningResult(
-                applied_norms=fallback_norms,
-                proofs=proofs,
-                strict_mode=strict_mode,
-                status="ok",
-            )
+        if self._should_apply_fallback(strict_mode):
+            fallback_norms = self._infer_legal_fallback_norms(facts)
+            if fallback_norms:
+                return RuleReasoningResult(
+                    applied_norms=fallback_norms,
+                    proofs=proofs,
+                    strict_mode=strict_mode,
+                    status="ok",
+                )
 
         _ = facts  # kept for signature compatibility with existing tests/callers
         return RuleReasoningResult(
@@ -212,9 +216,16 @@ class RuleReasoningService:
         )
 
     def _infer_legal_fallback_norms(self, facts: CaseFacts) -> list[str]:
-        if facts.life_consequence_type == "smrt_nastupila" or facts.death_result is True:
+        # Guard fallback with explicit life-consequence declaration.
+        if facts.life_consequence_type == "smrt_nastupila":
             return ["crime_art143"]
         return []
+
+    def _should_apply_fallback(self, strict_mode: bool) -> bool:
+        # Strict mode forbids fallback usage.
+        if strict_mode:
+            return False
+        return self._fallback_enabled
 
     def _escape(self, value: str) -> str:
         return (

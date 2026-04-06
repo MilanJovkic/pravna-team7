@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import os
+import socket
 import subprocess
 import sys
 import time
@@ -14,8 +15,26 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 PYTHON = sys.executable
-BASE_URL = os.getenv("TEST_API_BASE_URL", "http://127.0.0.1:8000/api")
-HEALTH_URL = BASE_URL.replace("/api", "") + "/health"
+
+
+def _find_available_port(preferred_port: int) -> int:
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+        sock.bind(("127.0.0.1", preferred_port))
+        return preferred_port
+
+
+def _reserve_ephemeral_port() -> int:
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+        sock.bind(("127.0.0.1", 0))
+        return int(sock.getsockname()[1])
+
+
+def choose_validation_port() -> int:
+    preferred = int(os.getenv("TEST_API_PORT", "8000"))
+    try:
+        return _find_available_port(preferred)
+    except OSError:
+        return _reserve_ephemeral_port()
 
 
 def run_step(name: str, command: list[str], env: dict[str, str], extra_env: dict[str, str] | None = None) -> bool:
@@ -33,11 +52,11 @@ def run_step(name: str, command: list[str], env: dict[str, str], extra_env: dict
     return True
 
 
-def wait_for_health(timeout_seconds: int = 60) -> bool:
+def wait_for_health(health_url: str, timeout_seconds: int = 60) -> bool:
     started = time.time()
     while time.time() - started < timeout_seconds:
         try:
-            response = requests.get(HEALTH_URL, timeout=3)
+            response = requests.get(health_url, timeout=3)
             if response.status_code == 200 and response.json().get("status") == "healthy":
                 return True
         except Exception:
@@ -47,9 +66,13 @@ def wait_for_health(timeout_seconds: int = 60) -> bool:
 
 
 def main() -> int:
+    port = choose_validation_port()
+    base_url = os.getenv("TEST_API_BASE_URL", f"http://127.0.0.1:{port}/api")
+    health_url = base_url.replace("/api", "") + "/health"
+
     env = os.environ.copy()
     env.setdefault("PYTHONUNBUFFERED", "1")
-    env.setdefault("TEST_API_BASE_URL", BASE_URL)
+    env["TEST_API_BASE_URL"] = base_url
 
     api_cmd = [
         PYTHON,
@@ -59,15 +82,15 @@ def main() -> int:
         "--host",
         "127.0.0.1",
         "--port",
-        "8000",
+        str(port),
     ]
 
-    print("Starting API server for CI validation...")
+    print(f"Starting API server for CI validation on port {port}...")
     server = subprocess.Popen(api_cmd, cwd=str(ROOT), env=env)
 
     try:
-        if not wait_for_health():
-            print(f"[FAIL] API did not become healthy at {HEALTH_URL}")
+        if not wait_for_health(health_url=health_url):
+            print(f"[FAIL] API did not become healthy at {health_url}")
             return 2
 
         steps = [

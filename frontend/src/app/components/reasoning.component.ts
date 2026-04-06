@@ -1343,10 +1343,9 @@ export class ReasoningComponent {
       this.facts.injury_severity_level === 'teska' ||
       (this.facts.severe_injury_specific_consequences?.length || 0) > 0;
 
-    const deathResult =
-      this.facts.life_consequence_type === 'smrt_nastupila' ||
-      this.facts.suicide_outcome === 'izvrseno' ||
-      this.isChecked(this.facts.abortion_outcomes, 'smrt_zene');
+    // death_result must reflect only explicit life-consequence declaration.
+    // Other specialized outcomes (e.g. suicide/abortion) are kept in their own fields.
+    const deathResult = this.facts.life_consequence_type === 'smrt_nastupila';
 
     const weaponUsed =
       this.facts.injury_means_type === 'oruzje' ||

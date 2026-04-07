@@ -22,7 +22,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule2-deductive-gen1322] [rule1-deductive-gen1321]))
+   (deductive-rules [rule2-deductive-gen1343] [rule1-deductive-gen1342]))
 
 ([crime_art144_1-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -48,7 +48,189 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule73b-deductive-gen1406] [rule72b-deductive-gen1404] [rule31b-deductive-gen1355] [rule30b-deductive-gen1353] [rule16-deductive-gen1337] [rule15-deductive-gen1336] [rule14-deductive-gen1335] [rule13-deductive-gen1334] [rule12-deductive-gen1333] [rule11-deductive-gen1332] [rule10-deductive-gen1331] [rule9b-deductive-gen1330] [rule9-deductive-gen1329] [rule8-deductive-gen1328] [rule7b-deductive-gen1327] [rule7-deductive-gen1326] [rule6-deductive-gen1325] [rule5-deductive-gen1324] [rule4-deductive-gen1323]))
+   (deductive-rules [rule5-deductive-gen1345] [rule4-deductive-gen1344]))
+
+([crime_art144_2-derived-class] of derived-class-inst
+   (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
+   (aliases rdfs:seeAlso rdfs:isDefinedBy)
+   (positive 0)
+   (negative 0)
+   (positive-derivator)
+   (negative-derivator)
+   (positive-support)
+   (negative-support)
+   (positive-overruled)
+   (negative-overruled)
+   (positive-defeated)
+   (negative-defeated)
+   (proof nil)
+   (uri nil)
+   (source rdf)
+   (rdfs:isDefinedBy)
+   (rdf:type [rdfs:Class])
+   (rdf:value)
+   (rdfs:comment)
+   (rdfs:label crime_art144_2)
+   (rdfs:seeAlso)
+   (rdfs:subClassOf [derived-class-inst])
+   (stratum 1)
+   (deductive-rules [rule6-deductive-gen1346]))
+
+([crime_art144_3-derived-class] of derived-class-inst
+   (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
+   (aliases rdfs:seeAlso rdfs:isDefinedBy)
+   (positive 0)
+   (negative 0)
+   (positive-derivator)
+   (negative-derivator)
+   (positive-support)
+   (negative-support)
+   (positive-overruled)
+   (negative-overruled)
+   (positive-defeated)
+   (negative-defeated)
+   (proof nil)
+   (uri nil)
+   (source rdf)
+   (rdfs:isDefinedBy)
+   (rdf:type [rdfs:Class])
+   (rdf:value)
+   (rdfs:comment)
+   (rdfs:label crime_art144_3)
+   (rdfs:seeAlso)
+   (rdfs:subClassOf [derived-class-inst])
+   (stratum 1)
+   (deductive-rules [rule7b-deductive-gen1348] [rule7-deductive-gen1347]))
+
+([crime_art144_4-derived-class] of derived-class-inst
+   (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
+   (aliases rdfs:seeAlso rdfs:isDefinedBy)
+   (positive 0)
+   (negative 0)
+   (positive-derivator)
+   (negative-derivator)
+   (positive-support)
+   (negative-support)
+   (positive-overruled)
+   (negative-overruled)
+   (positive-defeated)
+   (negative-defeated)
+   (proof nil)
+   (uri nil)
+   (source rdf)
+   (rdfs:isDefinedBy)
+   (rdf:type [rdfs:Class])
+   (rdf:value)
+   (rdfs:comment)
+   (rdfs:label crime_art144_4)
+   (rdfs:seeAlso)
+   (rdfs:subClassOf [derived-class-inst])
+   (stratum 1)
+   (deductive-rules [rule10-deductive-gen1352] [rule9b-deductive-gen1351] [rule9-deductive-gen1350] [rule8-deductive-gen1349]))
+
+([crime_art144_5-derived-class] of derived-class-inst
+   (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
+   (aliases rdfs:seeAlso rdfs:isDefinedBy)
+   (positive 0)
+   (negative 0)
+   (positive-derivator)
+   (negative-derivator)
+   (positive-support)
+   (negative-support)
+   (positive-overruled)
+   (negative-overruled)
+   (positive-defeated)
+   (negative-defeated)
+   (proof nil)
+   (uri nil)
+   (source rdf)
+   (rdfs:isDefinedBy)
+   (rdf:type [rdfs:Class])
+   (rdf:value)
+   (rdfs:comment)
+   (rdfs:label crime_art144_5)
+   (rdfs:seeAlso)
+   (rdfs:subClassOf [derived-class-inst])
+   (stratum 1)
+   (deductive-rules [rule12-deductive-gen1354] [rule11-deductive-gen1353]))
+
+([crime_art144_6-derived-class] of derived-class-inst
+   (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
+   (aliases rdfs:seeAlso rdfs:isDefinedBy)
+   (positive 0)
+   (negative 0)
+   (positive-derivator)
+   (negative-derivator)
+   (positive-support)
+   (negative-support)
+   (positive-overruled)
+   (negative-overruled)
+   (positive-defeated)
+   (negative-defeated)
+   (proof nil)
+   (uri nil)
+   (source rdf)
+   (rdfs:isDefinedBy)
+   (rdf:type [rdfs:Class])
+   (rdf:value)
+   (rdfs:comment)
+   (rdfs:label crime_art144_6)
+   (rdfs:seeAlso)
+   (rdfs:subClassOf [derived-class-inst])
+   (stratum 1)
+   (deductive-rules [rule14-deductive-gen1356] [rule13-deductive-gen1355]))
+
+([crime_art144_7-derived-class] of derived-class-inst
+   (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
+   (aliases rdfs:seeAlso rdfs:isDefinedBy)
+   (positive 0)
+   (negative 0)
+   (positive-derivator)
+   (negative-derivator)
+   (positive-support)
+   (negative-support)
+   (positive-overruled)
+   (negative-overruled)
+   (positive-defeated)
+   (negative-defeated)
+   (proof nil)
+   (uri nil)
+   (source rdf)
+   (rdfs:isDefinedBy)
+   (rdf:type [rdfs:Class])
+   (rdf:value)
+   (rdfs:comment)
+   (rdfs:label crime_art144_7)
+   (rdfs:seeAlso)
+   (rdfs:subClassOf [derived-class-inst])
+   (stratum 1)
+   (deductive-rules [rule15-deductive-gen1357]))
+
+([crime_art144_8-derived-class] of derived-class-inst
+   (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
+   (aliases rdfs:seeAlso rdfs:isDefinedBy)
+   (positive 0)
+   (negative 0)
+   (positive-derivator)
+   (negative-derivator)
+   (positive-support)
+   (negative-support)
+   (positive-overruled)
+   (negative-overruled)
+   (positive-defeated)
+   (negative-defeated)
+   (proof nil)
+   (uri nil)
+   (source rdf)
+   (rdfs:isDefinedBy)
+   (rdf:type [rdfs:Class])
+   (rdf:value)
+   (rdfs:comment)
+   (rdfs:label crime_art144_8)
+   (rdfs:seeAlso)
+   (rdfs:subClassOf [derived-class-inst])
+   (stratum 1)
+   (deductive-rules [rule16-deductive-gen1358]))
 
 ([crime_art145-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -74,7 +256,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule18b-deductive-gen1340] [rule18-deductive-gen1339] [rule17-deductive-gen1338]))
+   (deductive-rules [rule18b-deductive-gen1361] [rule18-deductive-gen1360] [rule17-deductive-gen1359]))
 
 ([crime_art146-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -100,7 +282,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule19-deductive-gen1341]))
+   (deductive-rules [rule19-deductive-gen1362]))
 
 ([crime_art147-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -126,7 +308,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule21-deductive-gen1342]))
+   (deductive-rules [rule21-deductive-gen1363]))
 
 ([crime_art148-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -152,7 +334,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule22-deductive-gen1343]))
+   (deductive-rules [rule22-deductive-gen1364]))
 
 ([crime_art149_1-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -178,7 +360,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule71-deductive-gen1402] [rule70-deductive-gen1401] [rule25-deductive-gen1345] [rule24-deductive-gen1344]))
+   (deductive-rules [rule71-deductive-gen1423] [rule70-deductive-gen1422] [rule25-deductive-gen1366] [rule24-deductive-gen1365]))
 
 ([crime_art149_2-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -204,7 +386,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule27-deductive-gen1347] [rule26-deductive-gen1346]))
+   (deductive-rules [rule27-deductive-gen1368] [rule26-deductive-gen1367]))
 
 ([crime_art149_3-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -230,7 +412,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule29-deductive-gen1351] [rule28b-deductive-gen1350] [rule28-deductive-gen1349] [rule29b-deductive-gen1348]))
+   (deductive-rules [rule29-deductive-gen1372] [rule28b-deductive-gen1371] [rule28-deductive-gen1370] [rule29b-deductive-gen1369]))
 
 ([crime_art149_4-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -256,7 +438,33 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule73-deductive-gen1405] [rule72-deductive-gen1403] [rule31-deductive-gen1354] [rule30-deductive-gen1352]))
+   (deductive-rules [rule73-deductive-gen1426] [rule72-deductive-gen1424] [rule31-deductive-gen1375] [rule30-deductive-gen1373]))
+
+([crime_art144-derived-class] of derived-class-inst
+   (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
+   (aliases rdfs:seeAlso rdfs:isDefinedBy)
+   (positive 0)
+   (negative 0)
+   (positive-derivator)
+   (negative-derivator)
+   (positive-support)
+   (negative-support)
+   (positive-overruled)
+   (negative-overruled)
+   (positive-defeated)
+   (negative-defeated)
+   (proof nil)
+   (uri nil)
+   (source rdf)
+   (rdfs:isDefinedBy)
+   (rdf:type [rdfs:Class])
+   (rdf:value)
+   (rdfs:comment)
+   (rdfs:label crime_art144)
+   (rdfs:seeAlso)
+   (rdfs:subClassOf [derived-class-inst])
+   (stratum 1)
+   (deductive-rules [rule73b-deductive-gen1427] [rule72b-deductive-gen1425] [rule31b-deductive-gen1376] [rule30b-deductive-gen1374]))
 
 ([crime_art149_5-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -282,7 +490,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule33-deductive-gen1357] [rule32-deductive-gen1356]))
+   (deductive-rules [rule33-deductive-gen1378] [rule32-deductive-gen1377]))
 
 ([crime_art150_1-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -308,7 +516,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule34b-deductive-gen1359] [rule34-deductive-gen1358]))
+   (deductive-rules [rule34b-deductive-gen1380] [rule34-deductive-gen1379]))
 
 ([crime_art150_2-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -334,7 +542,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule37-deductive-gen1361] [rule36b-deductive-gen1360]))
+   (deductive-rules [rule37-deductive-gen1382] [rule36b-deductive-gen1381]))
 
 ([crime_art150_3-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -360,7 +568,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule40b-deductive-gen1364] [rule39b-deductive-gen1363] [rule38b-deductive-gen1362]))
+   (deductive-rules [rule40b-deductive-gen1385] [rule39b-deductive-gen1384] [rule38b-deductive-gen1383]))
 
 ([crime_art151_1-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -386,7 +594,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule41-deductive-gen1365]))
+   (deductive-rules [rule41-deductive-gen1386]))
 
 ([crime_art151_2-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -412,7 +620,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule43f-deductive-gen1371] [rule43e-deductive-gen1370] [rule43d-deductive-gen1369] [rule43c-deductive-gen1368] [rule43b-deductive-gen1367] [rule43-deductive-gen1366]))
+   (deductive-rules [rule43f-deductive-gen1392] [rule43e-deductive-gen1391] [rule43d-deductive-gen1390] [rule43c-deductive-gen1389] [rule43b-deductive-gen1388] [rule43-deductive-gen1387]))
 
 ([crime_art151_3-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -438,7 +646,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule44-deductive-gen1372]))
+   (deductive-rules [rule44-deductive-gen1393]))
 
 ([crime_art151_4-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -464,7 +672,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule45-deductive-gen1373]))
+   (deductive-rules [rule45-deductive-gen1394]))
 
 ([crime_art151_5-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -490,7 +698,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule46b-deductive-gen1375] [rule46-deductive-gen1374]))
+   (deductive-rules [rule46b-deductive-gen1396] [rule46-deductive-gen1395]))
 
 ([crime_art151a-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -516,7 +724,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule47-deductive-gen1376]))
+   (deductive-rules [rule47-deductive-gen1397]))
 
 ([crime_art151b-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -542,7 +750,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule49-deductive-gen1378] [rule48-deductive-gen1377]))
+   (deductive-rules [rule49-deductive-gen1399] [rule48-deductive-gen1398]))
 
 ([crime_art152_1-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -568,7 +776,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule50-deductive-gen1379]))
+   (deductive-rules [rule50-deductive-gen1400]))
 
 ([crime_art152_2-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -594,7 +802,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule53-deductive-gen1382] [rule52-deductive-gen1381] [rule51-deductive-gen1380]))
+   (deductive-rules [rule53-deductive-gen1403] [rule52-deductive-gen1402] [rule51-deductive-gen1401]))
 
 ([crime_art152_3-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -620,7 +828,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule53b-deductive-gen1383]))
+   (deductive-rules [rule53b-deductive-gen1404]))
 
 ([crime_art153-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -646,7 +854,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule55-deductive-gen1385] [rule54-deductive-gen1384]))
+   (deductive-rules [rule55-deductive-gen1406] [rule54-deductive-gen1405]))
 
 ([crime_art154-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -672,7 +880,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule57b-deductive-gen1388] [rule57-deductive-gen1387] [rule56-deductive-gen1386]))
+   (deductive-rules [rule57b-deductive-gen1409] [rule57-deductive-gen1408] [rule56-deductive-gen1407]))
 
 ([crime_art155_1-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -698,7 +906,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule58-deductive-gen1389]))
+   (deductive-rules [rule58-deductive-gen1410]))
 
 ([crime_art155_2-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -724,7 +932,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule59-deductive-gen1390]))
+   (deductive-rules [rule59-deductive-gen1411]))
 
 ([crime_art155_3-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -750,7 +958,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule60-deductive-gen1391]))
+   (deductive-rules [rule60-deductive-gen1412]))
 
 ([crime_art156-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -776,7 +984,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule62-deductive-gen1393] [rule61-deductive-gen1392]))
+   (deductive-rules [rule62-deductive-gen1414] [rule61-deductive-gen1413]))
 
 ([crime_art156_2-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -802,7 +1010,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule64-deductive-gen1395] [rule63-deductive-gen1394]))
+   (deductive-rules [rule64-deductive-gen1416] [rule63-deductive-gen1415]))
 
 ([crime_art156_3-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -828,7 +1036,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule66-deductive-gen1397] [rule65-deductive-gen1396]))
+   (deductive-rules [rule66-deductive-gen1418] [rule65-deductive-gen1417]))
 
 ([crime_art157-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -854,7 +1062,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule67-deductive-gen1398]))
+   (deductive-rules [rule67-deductive-gen1419]))
 
 ([crime_art157_2-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -880,7 +1088,7 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule68-deductive-gen1399]))
+   (deductive-rules [rule68-deductive-gen1420]))
 
 ([crime_art157_3-derived-class] of derived-class-inst
    (class-refs rdfs:isDefinedBy rdfs:Resource rdf:type rdfs:Class rdfs:seeAlso rdfs:Resource rdfs:subClassOf rdfs:Class deductive-rules r-device-rule)
@@ -906,5 +1114,5 @@
    (rdfs:seeAlso)
    (rdfs:subClassOf [derived-class-inst])
    (stratum 1)
-   (deductive-rules [rule69-deductive-gen1400]))
+   (deductive-rules [rule69-deductive-gen1421]))
 

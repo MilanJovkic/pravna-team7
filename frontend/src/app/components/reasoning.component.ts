@@ -1495,6 +1495,14 @@ export class ReasoningComponent {
       }
       const article = match[1];
       const paragraph = match[2];
+
+      if (article === '144') {
+        return {
+          norm,
+          target: paragraph ? `Član 144, tačka ${paragraph}` : 'Član 144',
+        };
+      }
+
       return {
         norm,
         target: paragraph ? `Član ${article}, stav (${paragraph})` : `Član ${article}`,

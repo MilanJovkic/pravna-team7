@@ -20,8 +20,48 @@
      <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
 </rdfs:Class>
 
+<rdfs:Class rdf:about='&export;crime_art144'>
+     <rdfs:label rdf:resource='crime_art144'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
 <rdfs:Class rdf:about='&export;crime_art144_1'>
      <rdfs:label rdf:resource='crime_art144_1'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;crime_art144_2'>
+     <rdfs:label rdf:resource='crime_art144_2'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;crime_art144_3'>
+     <rdfs:label rdf:resource='crime_art144_3'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;crime_art144_4'>
+     <rdfs:label rdf:resource='crime_art144_4'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;crime_art144_5'>
+     <rdfs:label rdf:resource='crime_art144_5'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;crime_art144_6'>
+     <rdfs:label rdf:resource='crime_art144_6'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;crime_art144_7'>
+     <rdfs:label rdf:resource='crime_art144_7'/>
+     <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about='&export;crime_art144_8'>
+     <rdfs:label rdf:resource='crime_art144_8'/>
      <rdfs:subClassOf rdf:resource='&defeasible;DefeasibleObject'/>
 </rdfs:Class>
 
@@ -196,7 +236,39 @@
 </rdf:Property>
 
 <rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;crime_art144'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
      <rdfs:domain rdf:resource='&export;crime_art144_1'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;crime_art144_2'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;crime_art144_3'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;crime_art144_4'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;crime_art144_5'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;crime_art144_6'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;crime_art144_7'/>
+</rdf:Property>
+
+<rdf:Property rdf:about='&export;defendant'>
+     <rdfs:domain rdf:resource='&export;crime_art144_8'/>
 </rdf:Property>
 
 <rdf:Property rdf:about='&export;defendant'>
@@ -337,28 +409,28 @@
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
 </export:crime_art143>
 
-<export:crime_art151_1 rdf:about='&export;crime_art151_11'>
+<export:crime_art150_2 rdf:about='&export;crime_art150_21'>
      <export:defendant>M. M.</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
+</export:crime_art150_2>
+
+<export:crime_art151_1 rdf:about='&export;crime_art151_11'>
+     <export:defendant>M. M.</export:defendant>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
 </export:crime_art151_1>
+
+<export:crime_art151_2 rdf:about='&export;crime_art151_21'>
+     <export:defendant>M. M.</export:defendant>
+     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
+</export:crime_art151_2>
 
 <export:crime_art151_3 rdf:about='&export;crime_art151_31'>
      <export:defendant>M. M.</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
-</export:crime_art151_3>
-
-<export:crime_art153 rdf:about='&export;crime_art1531'>
-     <export:defendant>M. M.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
-</export:crime_art153>
-
-<export:crime_art154 rdf:about='&export;crime_art1541'>
-     <export:defendant>M. M.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
-</export:crime_art154>
+</export:crime_art151_3>
 
 </rdf:RDF>

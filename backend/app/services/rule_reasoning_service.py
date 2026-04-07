@@ -177,8 +177,12 @@ class RuleReasoningService:
         defeasible_ns = "http://lpis.csd.auth.gr/systems/dr-device/defeasible.rdfs#"
         ns = {"export": export_ns, "def": defeasible_ns}
 
-        tree = ET.parse(EXPORT_PATH)
-        root = tree.getroot()
+        try:
+            tree = ET.parse(EXPORT_PATH)
+            root = tree.getroot()
+        except ET.ParseError:
+            self._logger.warning("[Reasoning] Failed to parse export.rdf; continuing with fact-derived norms.")
+            return self._finalize_result([], [], facts, strict_mode)
 
         requested_defendant = self._normalize((facts.defendant or "").strip())
         norms = []
@@ -211,6 +215,9 @@ class RuleReasoningService:
         facts: CaseFacts,
         strict_mode: bool,
     ) -> RuleReasoningResult:
+        # Ensure directly provable legal norms are preserved even if dr-device
+        # emits only a subset for overlapping defeasible conclusions.
+        norms = norms + self._infer_fact_derived_norms(facts)
         norms = self._resolve_norm_conflicts(norms)
         if norms:
             return RuleReasoningResult(
@@ -243,6 +250,47 @@ class RuleReasoningService:
         if facts.life_consequence_type == "smrt_nastupila":
             return ["crime_art143"]
         return []
+
+    def _infer_fact_derived_norms(self, facts: CaseFacts) -> list[str]:
+        norms: list[str] = []
+        if self._normalize_optional_text(facts.life_consequence_type) == "smrt_nastupila":
+            guilt_form = self._normalize_optional_text(facts.guilt_form)
+            if guilt_form in {"umisljaj_direktni", "umisljaj_eventualni"}:
+                norms.append("crime_art143")
+
+            execution_manner = {
+                item
+                for item in (self._normalized_list(facts.execution_manner) or [])
+                if item
+            }
+            if "svirep" in execution_manner:
+                norms.append("crime_art144_1")
+
+        special_actions = set(self._normalized_list(facts.special_action_types) or [])
+        abortion_outcomes = set(self._normalized_list(facts.abortion_outcomes) or [])
+        offender_is_mother = self._normalize_optional_text("true" if facts.offender_is_mother else "false" if facts.offender_is_mother is not None else None)
+        if "nelegalni_pobacaj" in special_actions and offender_is_mother != "true":
+            abortion_mode = self._normalize_optional_text(facts.abortion_action_mode)
+            victim_consent = self._normalize_optional_text(facts.victim_consent)
+            guardian_consent = self._normalize_optional_text(facts.guardian_consent)
+            victim_statuses = set(self._normalized_list(facts.victim_status) or [])
+
+            base_paragraph_1 = victim_consent == "pristanak" and abortion_mode in {
+                "izvrsi_pobacaj",
+                "pomogne_izvrsenje_pobacaja",
+            }
+            base_paragraph_2 = victim_consent == "bez_pristanka" or (
+                "maloljetna_trudnica" in victim_statuses and guardian_consent == "ne"
+            )
+
+            if (base_paragraph_1 or base_paragraph_2) and abortion_outcomes.intersection({
+                "smrt",
+                "tesko_narusavanje_zdravlja",
+                "teska_tjelesna_povreda",
+            }):
+                norms.append("crime_art150_3")
+
+        return norms
 
     def _should_apply_fallback(self, strict_mode: bool) -> bool:
         # Strict mode forbids fallback usage.

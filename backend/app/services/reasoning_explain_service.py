@@ -210,6 +210,7 @@ class ReasoningExplainService:
 
     def _norm_paragraph_map(self, norms: list[str]) -> dict[str, set[str]]:
         mapping: dict[str, set[str]] = {}
+        full_article_refs: set[str] = set()
         for norm in norms:
             value = str(norm or "").strip().lower()
             match = re.match(r"crime_art(\d+[a-z]?)(?:_(\d+))?$", value)
@@ -217,23 +218,29 @@ class ReasoningExplainService:
                 continue
             article = match.group(1)
             paragraph = match.group(2)
+
+            if article in full_article_refs:
+                continue
+
             if paragraph:
                 mapping.setdefault(article, set()).add(paragraph)
             else:
-                mapping.setdefault(article, set())
+                full_article_refs.add(article)
+                mapping[article] = set()
         return mapping
 
     def _filter_article_content(self, content: str, selected_paragraphs: set[str]) -> str:
         if not content or not selected_paragraphs:
             return content
 
-        matches = list(re.finditer(r"\((\d+)\)", content))
+        # Support both paragraph markers: "(1)" and "1)".
+        matches = list(re.finditer(r"(?m)^\s*(?:\((\d+)\)|(\d+)\))", content))
         if not matches:
             return content
 
         slices: list[str] = []
         for i, match in enumerate(matches):
-            paragraph_no = match.group(1)
+            paragraph_no = match.group(1) or match.group(2)
             start = match.start()
             end = matches[i + 1].start() if i + 1 < len(matches) else len(content)
             if paragraph_no in selected_paragraphs:
@@ -243,4 +250,9 @@ class ReasoningExplainService:
 
         if not slices:
             return content
+
+        # Keep introductory sentence before enumerated items when present.
+        preface = content[: matches[0].start()].strip()
+        if preface:
+            return preface + "\n\n" + "\n\n".join(slices)
         return "\n\n".join(slices)

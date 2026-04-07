@@ -17,33 +17,33 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
       <header class="hero">
         <div>
           <p class="eyebrow">Rasudjivanje</p>
-          <h2>Unos slucaja i predlog presude</h2>
+          <h2>Unos slučaja i predlog presude</h2>
           <p class="subtitle">Popuni opis činjenica kroz napredne pravne atribute, pokreni rasuđivanje i sačuvaj novi slučaj.</p>
         </div>
       </header>
 
       <div class="content-grid">
         <section class="card form-card">
-          <h3>Opis cinjenica</h3>
+          <h3>Opis činjenica</h3>
           <form (ngSubmit)="runReasoning()" (change)="onFactsChanged()" #form="ngForm">
             <div class="advanced-facts">
               <h4>Napredni pravni atributi</h4>
               <div class="facts-layout">
                 <section class="fact-group">
-                  <h5>Grupa 1: Osnovni podaci o uciniocu</h5>
+                  <h5>Grupa 1: Osnovni podaci o učiniocu</h5>
                   <div class="field-grid">
                     <label>
-                      Defendant (ime/ID)
+                      Okrivljeni (ime/ID)
                       <input type="text" name="defendant" [(ngModel)]="facts.defendant" placeholder="Ime ili identifikator okrivljenog" />
                     </label>
                   </div>
                 </section>
 
                 <section class="fact-group">
-                  <h5>Grupa 2: Ishod po zivot zrtve</h5>
+                  <h5>Grupa 2: Ishod po život žrtve</h5>
                   <div class="field-grid">
                     <label>
-                      life_consequence_type
+                      Ishod po život žrtve
                       <select name="life_consequence_type" [(ngModel)]="facts.life_consequence_type">
                         <option value="">Nije nastupila smrt / nije odabrano</option>
                         <option value="smrt_nastupila">smrt_nastupila</option>
@@ -56,11 +56,11 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                   <h5>Grupa 3: Oblik krivice</h5>
                   <div class="field-grid">
                     <label>
-                      guilt_form
+                      Oblik krivice
                       <select name="guilt_form" [(ngModel)]="facts.guilt_form">
                         <option value="">Nije odabrano</option>
-                        <option value="umisljaj_direktni">umisljaj_direktni</option>
-                        <option value="umisljaj_eventualni">umisljaj_eventualni</option>
+                        <option value="umisljaj_direktni">umisljaj direktni</option>
+                        <option value="umisljaj_eventualni">umisljaj eventualni</option>
                         <option value="nehat">nehat</option>
                       </select>
                     </label>
@@ -68,26 +68,26 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                 </section>
 
                 <section class="fact-group">
-                  <h5>Grupa 4: Nacin izvrsenja</h5>
+                  <h5>Grupa 4: Način izvršenja</h5>
                   <div class="field-grid">
                     <div class="checkbox-group full-width">
-                      <span>execution_manner</span>
+                      <span>Način izvršenja</span>
                       <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.execution_manner, 'svirep')" (change)="toggleMulti('execution_manner', 'svirep', $event)" />svirep</label>
                       <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.execution_manner, 'podmukao')" (change)="toggleMulti('execution_manner', 'podmukao', $event)" />podmukao</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.execution_manner, 'bezobzirno_nasilnicko_ponasanje')" (change)="toggleMulti('execution_manner', 'bezobzirno_nasilnicko_ponasanje', $event)" />bezobzirno_nasilnicko_ponasanje</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.execution_manner, 'na_mah')" (change)="toggleMulti('execution_manner', 'na_mah', $event)" />na_mah</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.execution_manner, 'bezobzirno_nasilnicko_ponasanje')" (change)="toggleMulti('execution_manner', 'bezobzirno_nasilnicko_ponasanje', $event)" />bezobzirno nasilničko ponašanje</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.execution_manner, 'na_mah')" (change)="toggleMulti('execution_manner', 'na_mah', $event)" />na mah</label>
                     </div>
 
                     <div class="checkbox-group full-width" *ngIf="isNaMahContext()">
-                      <span>provocation_types</span>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.provocation_types, 'napad_od_ubijenog')" (change)="toggleMulti('provocation_types', 'napad_od_ubijenog', $event)" />napad_od_ubijenog</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.provocation_types, 'zlostavljanje_od_ubijenog')" (change)="toggleMulti('provocation_types', 'zlostavljanje_od_ubijenog', $event)" />zlostavljanje_od_ubijenog</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.provocation_types, 'tesko_vrijedjanje_od_ubijenog')" (change)="toggleMulti('provocation_types', 'tesko_vrijedjanje_od_ubijenog', $event)" />tesko_vrijedjanje_od_ubijenog</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.provocation_types, 'bez_krivice_ucinioca')" (change)="toggleMulti('provocation_types', 'bez_krivice_ucinioca', $event)" />bez_krivice_ucinioca</label>
+                      <span>Vrste provokacija</span>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.provocation_types, 'napad_od_ubijenog')" (change)="toggleMulti('provocation_types', 'napad_od_ubijenog', $event)" />napad od ubijenog</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.provocation_types, 'zlostavljanje_od_ubijenog')" (change)="toggleMulti('provocation_types', 'zlostavljanje_od_ubijenog', $event)" />zlostavljanje od ubijenog</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.provocation_types, 'tesko_vrijedjanje_od_ubijenog')" (change)="toggleMulti('provocation_types', 'tesko_vrijedjanje_od_ubijenog', $event)" />teško vrijeđanje od ubijenog</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.provocation_types, 'bez_krivice_ucinioca')" (change)="toggleMulti('provocation_types', 'bez_krivice_ucinioca', $event)" />bez krivice učinioca</label>
                     </div>
 
                     <label *ngIf="isNaMahContext()">
-                      high_intensity_distress
+                      Visoki intenzitet stresa
                       <select name="high_intensity_distress" [(ngModel)]="facts.high_intensity_distress">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -98,44 +98,44 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                 </section>
 
                 <section class="fact-group">
-                  <h5>Grupa 5: Motiv ucinioca</h5>
+                  <h5>Grupa 5: Motiv učinioca</h5>
                   <div class="field-grid">
                     <div class="checkbox-group full-width">
-                      <span>offender_motive</span>
+                      <span>Motiv učinioca</span>
                       <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.offender_motive, 'koristoljublje')" (change)="toggleMulti('offender_motive', 'koristoljublje', $event)" />koristoljublje</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.offender_motive, 'izvrsenje_ili_prikrivanje_drugog_krivicnog_djela')" (change)="toggleMulti('offender_motive', 'izvrsenje_ili_prikrivanje_drugog_krivicnog_djela', $event)" />izvrsenje_ili_prikrivanje_drugog_krivicnog_djela</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.offender_motive, 'niske_pobude')" (change)="toggleMulti('offender_motive', 'niske_pobude', $event)" />niske_pobude</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.offender_motive, 'bezobzirna_osveta')" (change)="toggleMulti('offender_motive', 'bezobzirna_osveta', $event)" />bezobzirna_osveta</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.offender_motive, 'izvrsenje_ili_prikrivanje_drugog_krivicnog_djela')" (change)="toggleMulti('offender_motive', 'izvrsenje_ili_prikrivanje_drugog_krivicnog_djela', $event)" />izvršenje ili prikrivanje drugog krivičnog djela</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.offender_motive, 'niske_pobude')" (change)="toggleMulti('offender_motive', 'niske_pobude', $event)" />niske pobude</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.offender_motive, 'bezobzirna_osveta')" (change)="toggleMulti('offender_motive', 'bezobzirna_osveta', $event)" />bezobzirna osveta</label>
                       <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.offender_motive, 'samilost')" (change)="toggleMulti('offender_motive', 'samilost', $event)" />samilost</label>
                     </div>
                   </div>
                 </section>
 
                 <section class="fact-group">
-                  <h5>Grupa 6: Status i karakteristike zrtve</h5>
+                  <h5>Grupa 6: Status i karakteristike žrtve</h5>
                   <div class="field-grid">
                     <div class="checkbox-group full-width">
-                      <span>victim_status</span>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'sluzbeno_lice')" (change)="toggleMulti('victim_status', 'sluzbeno_lice', $event)" />sluzbeno_lice</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'vojno_lice')" (change)="toggleMulti('victim_status', 'vojno_lice', $event)" />vojno_lice</label>
+                      <span>Status i karakteristike žrtve</span>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'sluzbeno_lice')" (change)="toggleMulti('victim_status', 'sluzbeno_lice', $event)" />službeno lice</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'vojno_lice')" (change)="toggleMulti('victim_status', 'vojno_lice', $event)" />vojno lice</label>
                       <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'dijete')" (change)="toggleMulti('victim_status', 'dijete', $event)" />dijete</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'bremenita_zena')" (change)="toggleMulti('victim_status', 'bremenita_zena', $event)" />bremenita_zena</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'clan_porodice')" (change)="toggleMulti('victim_status', 'clan_porodice', $event)" />clan_porodice</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'punoljetno_lice')" (change)="toggleMulti('victim_status', 'punoljetno_lice', $event)" />punoljetno_lice</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'bremenita_zena')" (change)="toggleMulti('victim_status', 'bremenita_zena', $event)" />bremenita žena</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'clan_porodice')" (change)="toggleMulti('victim_status', 'clan_porodice', $event)" />član porodice</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'punoljetno_lice')" (change)="toggleMulti('victim_status', 'punoljetno_lice', $event)" />punoljetno lice</label>
                       <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'maloljetnik')" (change)="toggleMulti('victim_status', 'maloljetnik', $event)" />maloljetnik</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'maloljetna_trudnica')" (change)="toggleMulti('victim_status', 'maloljetna_trudnica', $event)" />maloljetna_trudnica</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.victim_status, 'maloljetna_trudnica')" (change)="toggleMulti('victim_status', 'maloljetna_trudnica', $event)" />maloljetna trudnica</label>
                     </div>
 
                     <label *ngIf="hasOfficialVictimStatus()">
-                      duty_connection
+                      Veza sa dužnošću
                       <select name="duty_connection" [(ngModel)]="facts.duty_connection">
                         <option value="">Nije odabrano</option>
-                        <option value="u_vrsenju_sluzbene_duznosti">u_vrsenju_sluzbene_duznosti</option>
+                        <option value="u_vrsenju_sluzbene_duznosti">u vršenju službene dužnosti</option>
                       </select>
                     </label>
 
                     <label *ngIf="hasVictimStatus('clan_porodice')">
-                      victim_previously_abused
+                      Žrtva prethodno zlostavljana
                       <select name="victim_previously_abused" [(ngModel)]="facts.victim_previously_abused">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -144,15 +144,15 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="hasVictimStatus('punoljetno_lice')">
-                      victim_health_state
+                      Zdravstveno stanje žrtve
                       <select name="victim_health_state" [(ngModel)]="facts.victim_health_state">
                         <option value="">Nije odabrano</option>
-                        <option value="tesko_zdravstveno_stanje">tesko_zdravstveno_stanje</option>
+                        <option value="tesko_zdravstveno_stanje">teško zdravstveno stanje</option>
                       </select>
                     </label>
 
                     <label *ngIf="hasVictimStatus('punoljetno_lice')">
-                      victim_explicit_request
+                      Eksplicitni zahtjev žrtve
                       <select name="victim_explicit_request" [(ngModel)]="facts.victim_explicit_request">
                         <option value="">Nije odabrano</option>
                         <option value="da">da</option>
@@ -161,7 +161,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="hasVictimStatus('maloljetna_trudnica')">
-                      guardian_consent
+                      Saglasnost staratelja
                       <select name="guardian_consent" [(ngModel)]="facts.guardian_consent">
                         <option value="">Nije odabrano</option>
                         <option value="da">da</option>
@@ -170,7 +170,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="hasVictimStatus('maloljetna_trudnica') || isIllegalAbortionContext()">
-                      victim_consent
+                      Saglasnost žrtve
                       <select name="victim_consent" [(ngModel)]="facts.victim_consent">
                         <option value="">Nije odabrano</option>
                         <option value="pristanak">pristanak</option>
@@ -184,7 +184,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                   <h5>Grupa 7: Broj zrtava</h5>
                   <div class="field-grid">
                     <label>
-                      victim_count
+                      Broj žrtava
                       <select name="victim_count" [(ngModel)]="facts.victim_count">
                         <option value="">Nije odabrano</option>
                         <option value="jedna">jedna</option>
@@ -198,7 +198,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                   <h5>Grupa 8: Opasnost po treca lica</h5>
                   <div class="field-grid">
                     <label>
-                      danger_to_third_parties
+                      Opasnost po treća lica
                       <select name="danger_to_third_parties" [(ngModel)]="facts.danger_to_third_parties">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -209,75 +209,75 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                 </section>
 
                 <section class="fact-group">
-                  <h5>Grupa 9: Posebne radnje ucinioca</h5>
+                  <h5>Grupa 9: Posebne radnje učinioca</h5>
                   <div class="field-grid">
                     <div class="checkbox-group full-width">
-                      <span>special_action_types</span>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.special_action_types, 'navodjenje_na_samoubistvo')" (change)="toggleMulti('special_action_types', 'navodjenje_na_samoubistvo', $event)" />navodjenje_na_samoubistvo</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.special_action_types, 'pomaganje_u_samoubistvu')" (change)="toggleMulti('special_action_types', 'pomaganje_u_samoubistvu', $event)" />pomaganje_u_samoubistvu</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.special_action_types, 'nelegalni_pobacaj')" (change)="toggleMulti('special_action_types', 'nelegalni_pobacaj', $event)" />nelegalni_pobacaj</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.special_action_types, 'sakacenje_zenskih_genitalija')" (change)="toggleMulti('special_action_types', 'sakacenje_zenskih_genitalija', $event)" />sakacenje_zenskih_genitalija</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.special_action_types, 'prisilna_sterilizacija')" (change)="toggleMulti('special_action_types', 'prisilna_sterilizacija', $event)" />prisilna_sterilizacija</label>
+                      <span>Posebne radnje učinioca</span>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.special_action_types, 'navodjenje_na_samoubistvo')" (change)="toggleMulti('special_action_types', 'navodjenje_na_samoubistvo', $event)" />navođenje na samoubistvo</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.special_action_types, 'pomaganje_u_samoubistvu')" (change)="toggleMulti('special_action_types', 'pomaganje_u_samoubistvu', $event)" />pomoć u samoubistvu</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.special_action_types, 'nelegalni_pobacaj')" (change)="toggleMulti('special_action_types', 'nelegalni_pobacaj', $event)" />nelegalni pobačaj</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.special_action_types, 'sakacenje_zenskih_genitalija')" (change)="toggleMulti('special_action_types', 'sakacenje_zenskih_genitalija', $event)" />sakaćenje ženskih genitalija</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.special_action_types, 'prisilna_sterilizacija')" (change)="toggleMulti('special_action_types', 'prisilna_sterilizacija', $event)" />prisilna sterilizacija</label>
                     </div>
 
                     <label *ngIf="isSuicideActionContext()">
-                      suicide_outcome
+                      Ishod samoubistva
                       <select name="suicide_outcome" [(ngModel)]="facts.suicide_outcome">
                         <option value="">Nije odabrano</option>
-                        <option value="izvrseno">izvrseno</option>
-                        <option value="pokusano">pokusano</option>
+                        <option value="izvrseno">izvršeno</option>
+                        <option value="pokusano">pokušano</option>
                       </select>
                     </label>
 
                     <label *ngIf="isSuicideActionContext()">
-                      victim_accountability
+                      Odgovornost žrtve
                       <select name="victim_accountability" [(ngModel)]="facts.victim_accountability">
                         <option value="">uracunljivo (implicitno)</option>
                         <option value="neuracunljivo">neuracunljivo</option>
-                        <option value="bitno_smanjena_uracunljivost">bitno_smanjena_uracunljivost</option>
+                        <option value="bitno_smanjena_uracunljivost">bitno smanjena uračunljivost</option>
                       </select>
                     </label>
 
                     <label *ngIf="isIllegalAbortionContext()">
-                      abortion_action_mode
+                      Način radnje pobačaja
                       <select name="abortion_action_mode" [(ngModel)]="facts.abortion_action_mode">
                         <option value="">Nije odabrano</option>
-                        <option value="izvrsi_pobacaj">izvrsi_pobacaj</option>
-                        <option value="pomogne_izvrsenje_pobacaja">pomogne_izvrsenje_pobacaja</option>
+                        <option value="izvrsi_pobacaj">izvrši pobačaj</option>
+                        <option value="pomogne_izvrsenje_pobacaja">pomogne izvršenje pobačaja</option>
                       </select>
                     </label>
 
                     <div class="checkbox-group full-width" *ngIf="isIllegalAbortionContext()">
-                      <span>abortion_outcomes</span>
+                      <span>Ishodi pobačaja</span>
                       <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.abortion_outcomes, 'smrt')" (change)="toggleMulti('abortion_outcomes', 'smrt', $event)" />smrt</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.abortion_outcomes, 'tesko_narusavanje_zdravlja')" (change)="toggleMulti('abortion_outcomes', 'tesko_narusavanje_zdravlja', $event)" />tesko_narusavanje_zdravlja</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.abortion_outcomes, 'teska_tjelesna_povreda')" (change)="toggleMulti('abortion_outcomes', 'teska_tjelesna_povreda', $event)" />teska_tjelesna_povreda</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.abortion_outcomes, 'pobacaj_izvrsen')" (change)="toggleMulti('abortion_outcomes', 'pobacaj_izvrsen', $event)" />pobacaj_izvrsen</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.abortion_outcomes, 'tesko_narusavanje_zdravlja')" (change)="toggleMulti('abortion_outcomes', 'tesko_narusavanje_zdravlja', $event)" />teško narušavanje zdravlja</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.abortion_outcomes, 'teska_tjelesna_povreda')" (change)="toggleMulti('abortion_outcomes', 'teska_tjelesna_povreda', $event)" />teška tjelesna povreda</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.abortion_outcomes, 'pobacaj_izvrsen')" (change)="toggleMulti('abortion_outcomes', 'pobacaj_izvrsen', $event)" />pobačaj izvršen</label>
                     </div>
 
                     <label *ngIf="isForcedSterilizationContext()">
-                      sterilization_goal
+                      Cilj sterilizacije
                       <select name="sterilization_goal" [(ngModel)]="facts.sterilization_goal">
                         <option value="">Nije odabrano</option>
-                        <option value="onemogucavanje_reprodukcije">onemogucavanje_reprodukcije</option>
+                        <option value="onemogucavanje_reprodukcije">onemogućavanje reprodukcije</option>
                       </select>
                     </label>
                   </div>
                 </section>
 
                 <section class="fact-group">
-                  <h5>Grupa 10: Psihicko stanje ucinioca</h5>
+                  <h5>Grupa 10: Psihičko stanje učinioca</h5>
                   <div class="field-grid">
                     <label>
-                      offender_psych_state
+                      Psihičko stanje učinioca
                       <select name="offender_psych_state" [(ngModel)]="facts.offender_psych_state">
                         <option value="">Nije odabrano</option>
-                        <option value="porodjajni_poremecaj">porodjajni_poremecaj</option>
+                        <option value="porodjajni_poremecaj">porođajni poremećaj</option>
                       </select>
                     </label>
 
                     <label *ngIf="facts.offender_psych_state === 'porodjajni_poremecaj'">
-                      offender_is_mother
+                      Učinilac je majka
                       <select name="offender_is_mother" [(ngModel)]="facts.offender_is_mother">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -291,26 +291,26 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                   <h5>Grupa 11: Tjelesne povrede</h5>
                   <div class="field-grid">
                     <label>
-                      injury_type
+                      Vrsta povrede
                       <select name="injury_type" [(ngModel)]="facts.injury_type">
                         <option value="">Nije odabrano</option>
-                        <option value="teska tjelesna povreda">teska tjelesna povreda</option>
+                        <option value="teska tjelesna povreda">teška tjelesna povreda</option>
                         <option value="laka tjelesna povreda">laka tjelesna povreda</option>
                       </select>
                     </label>
 
                     <div class="checkbox-group full-width" *ngIf="isHeavyInjuryContext()">
-                      <span>severe_injury_specific_consequences</span>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.severe_injury_specific_consequences, 'opasnost_po_zivot')" (change)="toggleMulti('severe_injury_specific_consequences', 'opasnost_po_zivot', $event)" />opasnost_po_zivot</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.severe_injury_specific_consequences, 'unistenje_dijela_tijela')" (change)="toggleMulti('severe_injury_specific_consequences', 'unistenje_dijela_tijela', $event)" />unistenje_dijela_tijela</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.severe_injury_specific_consequences, 'trajno_ostecenje_organa')" (change)="toggleMulti('severe_injury_specific_consequences', 'trajno_ostecenje_organa', $event)" />trajno_ostecenje_organa</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.severe_injury_specific_consequences, 'trajna_nesposobnost_za_rad')" (change)="toggleMulti('severe_injury_specific_consequences', 'trajna_nesposobnost_za_rad', $event)" />trajna_nesposobnost_za_rad</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.severe_injury_specific_consequences, 'trajno_naruseno_zdravlje')" (change)="toggleMulti('severe_injury_specific_consequences', 'trajno_naruseno_zdravlje', $event)" />trajno_naruseno_zdravlje</label>
-                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.severe_injury_specific_consequences, 'unakazenost')" (change)="toggleMulti('severe_injury_specific_consequences', 'unakazenost', $event)" />unakazenost</label>
+                      <span>Specifične posljedice teške povrede</span>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.severe_injury_specific_consequences, 'opasnost_po_zivot')" (change)="toggleMulti('severe_injury_specific_consequences', 'opasnost_po_zivot', $event)" />opasnost po život</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.severe_injury_specific_consequences, 'unistenje_dijela_tijela')" (change)="toggleMulti('severe_injury_specific_consequences', 'unistenje_dijela_tijela', $event)" />uništenje dijela tijela</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.severe_injury_specific_consequences, 'trajno_ostecenje_organa')" (change)="toggleMulti('severe_injury_specific_consequences', 'trajno_ostecenje_organa', $event)" />trajno oštećenje organa</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.severe_injury_specific_consequences, 'trajna_nesposobnost_za_rad')" (change)="toggleMulti('severe_injury_specific_consequences', 'trajna_nesposobnost_za_rad', $event)" />trajna nesposobnost za rad</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.severe_injury_specific_consequences, 'trajno_naruseno_zdravlje')" (change)="toggleMulti('severe_injury_specific_consequences', 'trajno_naruseno_zdravlje', $event)" />trajno narušeno zdravlje</label>
+                      <label class="checkbox-line"><input type="checkbox" [checked]="isChecked(facts.severe_injury_specific_consequences, 'unakazenost')" (change)="toggleMulti('severe_injury_specific_consequences', 'unakazenost', $event)" />unakaženost</label>
                     </div>
 
                     <label *ngIf="isHeavyInjuryContext()">
-                      death_result
+                      Rezultat smrti
                       <select name="death_result" [(ngModel)]="facts.death_result">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -319,7 +319,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="isHeavyInjuryContext()">
-                      negligence
+                      Nemarnost
                       <select name="negligence" [(ngModel)]="facts.negligence">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -328,7 +328,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="isLightInjuryContext()">
-                      weapon_used
+                      Korišteno oružje
                       <select name="weapon_used" [(ngModel)]="facts.weapon_used">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -337,16 +337,16 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="isLightInjuryContext() || facts.fight_participation === true">
-                      injury_means_type
+                      Vrsta sredstva povrede
                       <select name="injury_means_type" [(ngModel)]="facts.injury_means_type">
                         <option value="">Nije odabrano</option>
-                        <option value="opasno_orudje">opasno_orudje</option>
-                        <option value="sredstvo_podobno_za_tesku_povredu">sredstvo_podobno_za_tesku_povredu</option>
+                        <option value="opasno_orudje">opasno oruđe</option>
+                        <option value="sredstvo_podobno_za_tesku_povredu">sredstvo podobno za tešku povredu</option>
                       </select>
                     </label>
 
                     <label *ngIf="isLightInjuryContext()">
-                      provocation
+                      Provokacija
                       <select name="provocation" [(ngModel)]="facts.provocation">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -357,10 +357,10 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                 </section>
 
                 <section class="fact-group">
-                  <h5>Grupa 12: Tuca i svadja</h5>
+                  <h5>Grupa 12: Tuča i svađa</h5>
                   <div class="field-grid">
                     <label>
-                      fight_participation
+                      Učešće u tuči
                       <select name="fight_participation" [(ngModel)]="facts.fight_participation">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -369,7 +369,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="facts.fight_participation === true && !isLightInjuryContext()">
-                      weapon_used
+                      Korišteno oružje
                       <select name="weapon_used_fight" [(ngModel)]="facts.weapon_used">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -378,21 +378,21 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="facts.fight_participation === true && !isLightInjuryContext()">
-                      injury_means_type
+                      Vrsta sredstva povrede
                       <select name="injury_means_type_fight" [(ngModel)]="facts.injury_means_type">
                         <option value="">Nije odabrano</option>
-                        <option value="opasno_orudje">opasno_orudje</option>
-                        <option value="sredstvo_podobno_za_tesku_povredu">sredstvo_podobno_za_tesku_povredu</option>
+                        <option value="opasno_orudje">opasno oruđe</option>
+                        <option value="sredstvo_podobno_za_tesku_povredu">sredstvo podobno za tešku povredu</option>
                       </select>
                     </label>
                   </div>
                 </section>
 
                 <section class="fact-group">
-                  <h5>Grupa 13: Ostavljanje bez pomoci</h5>
+                  <h5>Grupa 13: Ostavljanje bez pomoći</h5>
                   <div class="field-grid">
                     <label>
-                      left_without_help
+                      Ostavljanje bez pomoći
                       <select name="left_without_help" [(ngModel)]="facts.left_without_help">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -401,17 +401,17 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="facts.left_without_help === true">
-                      offender_victim_relationship
+                      Odnos učinioca i žrtve
                       <select name="offender_victim_relationship" [(ngModel)]="facts.offender_victim_relationship">
                         <option value="">Nije odabrano</option>
-                        <option value="povjereno_nemocno_lice">povjereno_nemocno_lice</option>
-                        <option value="duznost_staranja">duznost_staranja</option>
+                        <option value="povjereno_nemocno_lice">povjereno nemoćno lice</option>
+                        <option value="duznost_staranja">dužnost staranja</option>
                         <option value="prolaznik">prolaznik</option>
                       </select>
                     </label>
 
                     <label *ngIf="facts.left_without_help === true">
-                      danger_caused_by_offender
+                      Opasnost prouzrokovana od učinioca
                       <select name="danger_caused_by_offender" [(ngModel)]="facts.danger_caused_by_offender">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -420,7 +420,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="facts.left_without_help === true && facts.danger_caused_by_offender === true">
-                      danger_to_life
+                      Opasnost po život
                       <select name="danger_to_life" [(ngModel)]="facts.danger_to_life">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -429,7 +429,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="facts.left_without_help === true && facts.danger_caused_by_offender === true">
-                      danger_to_health
+                      Opasnost po zdravlje
                       <select name="danger_to_health" [(ngModel)]="facts.danger_to_health">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -438,19 +438,19 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="facts.left_without_help === true && facts.offender_victim_relationship === 'prolaznik'">
-                      help_provision_ability
+                      Mogućnost pružanja pomoći
                       <select name="help_provision_ability" [(ngModel)]="facts.help_provision_ability">
                         <option value="">Nije odabrano</option>
-                        <option value="mogao_bez_opasnosti">mogao_bez_opasnosti</option>
+                        <option value="mogao_bez_opasnosti">mogao bez opasnosti</option>
                       </select>
                     </label>
 
                     <label *ngIf="facts.left_without_help === true && facts.offender_victim_relationship === 'prolaznik'">
-                      failure_to_help_consequence
+                      Posljedica neukazivanja pomoći
                       <select name="failure_to_help_consequence" [(ngModel)]="facts.failure_to_help_consequence">
                         <option value="">Nije odabrano</option>
-                        <option value="tesko_narusavanje_zdravlja">tesko_narusavanje_zdravlja</option>
-                        <option value="teska_tjelesna_povreda">teska_tjelesna_povreda</option>
+                        <option value="tesko_narusavanje_zdravlja">teško narušavanje zdravlja</option>
+                        <option value="teska_tjelesna_povreda">teška tjelesna povreda</option>
                         <option value="smrt">smrt</option>
                       </select>
                     </label>
@@ -458,10 +458,10 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                 </section>
 
                 <section class="fact-group">
-                  <h5>Grupa 14: Necovjecno postupanje</h5>
+                  <h5>Grupa 14: Nečovječno postupanje</h5>
                   <div class="field-grid">
                     <label>
-                      inhuman_treatment
+                      Nečovječno postupanje
                       <select name="inhuman_treatment" [(ngModel)]="facts.inhuman_treatment">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -470,7 +470,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="facts.inhuman_treatment === true">
-                      victim_subordination
+                      Podređenost žrtve
                       <select name="victim_subordination" [(ngModel)]="facts.victim_subordination">
                         <option [ngValue]="null">Nije odabrano</option>
                         <option [ngValue]="true">da</option>
@@ -479,7 +479,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
 
                     <label *ngIf="facts.inhuman_treatment === true">
-                      death_attributed_to_negligence
+                      Smrt pripisana nemarnosti
                       <select name="death_attributed_to_negligence" [(ngModel)]="facts.death_attributed_to_negligence">
                         <option value="">Nije odabrano</option>
                         <option value="da">da</option>
@@ -493,7 +493,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
 
             <div class="actions">
               <label class="topk">
-                Top K
+                Broj rezultata
                 <input type="number" name="top_k" [(ngModel)]="topK" min="1" max="10" />
               </label>
               <button type="submit" [disabled]="loading || !form.valid">Pokreni rasudjivanje</button>
@@ -507,7 +507,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
           <h3>Rezultati</h3>
 
           <div *ngIf="loading" class="loading">Obrada u toku...</div>
-          <div *ngIf="!loading && !response" class="empty">Nema rezultata. Unesi cinjenice i pokreni obradu.</div>
+          <div *ngIf="!loading && !response" class="empty">Nema rezultata. Unesi činjenice i pokreni obradu.</div>
 
           <div *ngIf="response" class="results">
             <div class="result-block">
@@ -620,7 +620,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
             </div>
 
           <div class="result-block">
-            <h4>Snimi novi slucaj</h4>
+            <h4>Snimi novi slučaj</h4>
             <div class="save-grid">
               <label>
                 Broj predmeta (opciono)
@@ -634,19 +634,19 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
               <div class="save-grid">
                 <label>
                   Vrsta presude
-                  <input type="text" [(ngModel)]="selectedVerdict" name="selectedVerdictInput" placeholder="osudjen / oslobodjen" />
+                  <input type="text" [(ngModel)]="selectedVerdict" name="selectedVerdictInput" placeholder="osuđen / oslobođen" />
                 </label>
                 <label>
                   Sankcija
                   <input type="text" [(ngModel)]="selectedSanction" name="selectedSanctionInput" placeholder="npr. kazna zatvora 6 mjeseci" />
                 </label>
               </div>
-            <button class="secondary" (click)="saveCase()" [disabled]="saving">Sacuvaj slucaj</button>
+            <button class="secondary" (click)="saveCase()" [disabled]="saving">Sačuvaj slučaj</button>
             <div *ngIf="saveMessage" class="save-message">{{ saveMessage }}</div>
           </div>
 
           <div class="result-block">
-            <h4>Generisi sudsku presudu (Task 9)</h4>
+            <h4>Generiši sudsku presudu (Task 9)</h4>
             <div class="save-grid">
               <label>
                 Sud (opciono)
@@ -1278,6 +1278,9 @@ export class ReasoningComponent {
   ) {}
 
   runReasoning() {
+    // Scroll to top of page
+    window.scrollTo(0, 0);
+    
     this.loading = true;
     this.error = '';
     this.saveMessage = '';

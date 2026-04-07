@@ -190,28 +190,13 @@
 
     <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case01">
         <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
-        <lc:defendant>M. M.</lc:defendant>
-        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:defendant>Unknown</lc:defendant>
         <lc:weapon_used>false</lc:weapon_used>
-        <lc:severe_consequence>true</lc:severe_consequence>
-        <lc:death_result>true</lc:death_result>
+        <lc:severe_consequence>false</lc:severe_consequence>
+        <lc:death_result>false</lc:death_result>
         <lc:negligence>false</lc:negligence>
         <lc:provocation>false</lc:provocation>
-        <lc:fight_consequence>smrt</lc:fight_consequence>
-        <lc:victim_status>dijete</lc:victim_status>
-        <lc:victim_status>bremenita_zena</lc:victim_status>
-        <lc:victim_status>maloljetna_trudnica</lc:victim_status>
-        <lc:victim_count>vise</lc:victim_count>
-        <lc:life_consequence_type>smrt_nastupila</lc:life_consequence_type>
-        <lc:severe_injury_specific_consequences>opasnost_po_zivot</lc:severe_injury_specific_consequences>
-        <lc:danger_to_third_parties>false</lc:danger_to_third_parties>
-        <lc:abortion_outcomes>pobacaj_izvrsen</lc:abortion_outcomes>
-        <lc:abortion_outcomes>smrt</lc:abortion_outcomes>
-        <lc:victim_consent>bez_pristanka</lc:victim_consent>
-        <lc:guardian_consent>ne</lc:guardian_consent>
-        <lc:abortion_action_mode>pomogne_izvrsenje_pobacaja</lc:abortion_action_mode>
-        <lc:guilt_form>umisljaj_direktni</lc:guilt_form>
+        <lc:fight_consequence>none</lc:fight_consequence>
         <lc:high_intensity_distress>false</lc:high_intensity_distress>
-        <lc:special_action_types>nelegalni_pobacaj</lc:special_action_types>
     </lc:case>
 </rdf:RDF>

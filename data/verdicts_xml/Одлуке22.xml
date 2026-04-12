@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке22">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке22/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке22"/>
+                    <FRBRdate date="2018-03-16" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке22/sr@2018-03-16/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке22/sr@2018-03-16"/>
+                    <FRBRdate date="2018-03-16"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке22/sr@2018-03-16/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке22/sr@2018-03-16/!main.akn"/>
+                    <FRBRdate date="2026-04-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Vesna Moš"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Vesni Moš"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Vesna Moštrokol"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="H.I."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 29/18</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>VIŠI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2018-03-16">2018-03-16</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Vesna Moš</judge>
+                    <judge>Vesni Moš</judge>
+                    <judge>Vesna Moštrokol</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Optuženi H.I. je priznao krivicu za pokušaj teškog ubistva i nedozvoljeno držanje oružja. Presuda je doneta na osnovu sporazuma o priznanju krivice.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>pokušaj ubistva</p>
+                    <p>nedozvoljeno držanje oružja</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_144">Član 144</ref>
+                    <ref href="/akn/me/act/2024/!main#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/2024/!main#art_375">Član 375</ref>
+                    <ref href="/akn/me/act/2024/!main#art_348">Član 348</ref>
+                    <ref href="/akn/me/act/2024/!main#art_162">Član 162</ref>
+                    <ref href="/akn/me/act/2024/!main#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/2024/!main#art_303">Član 303</ref>
+                    <ref href="/akn/me/act/2024/!main#art_5">Član 5</ref>
+                    <ref href="/akn/me/act/2024/!main#art_339">Član 339</ref>
+                    <ref href="/akn/me/act/2024/!main#art_37">Član 37</ref>
+                    <ref href="/akn/me/act/2024/!main#art_75">Član 75</ref>
+                    <ref href="/akn/me/act/2024/!main#art_33">Član 33</ref>
+                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_407">Član 407</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Optuženi je imao prethodne presude i priznanje krivice olakšava odluku.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усвојено">
+                    <p>Optuženi se oglašava krivim</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>H.I.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="weapon">pistolj</fact>
+                <fact key="weapon">oružje</fact>
+                <fact key="location">Podgorici Kt</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Ulcinj</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>U IME CRNE GORE
+ 
+K.br. 29/18
+ 
+ 
+VIŠI SUD U PODGORICI, kao prvostepeni krivi č ni po sudiji Vesni Mo š trokol, kao predsjedniku vije ć a, uz u č e šć e
+namje š tenika Anke Rakovi ć , kao zapisni č ara, u predmetu protiv optu ž enog H.I. iz U., koga brani H. G., advokat
+iz Podgorice, zbog krivi č nog djela te š ko ubistvo u poku š aju iz č lana 144 ta č .3 u vezi č l. 20 Krivi č nog zakonika
+Crne Gore u sticaju sa krivi č nim djelom nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č lana 403 st.1
+Krivi č nog zakonika Crne Gore, po optu ž nici Vi š eg dr ž avnog tu ž ioca u Podgorici Kt.br. 2/18 od 16.03.2018.
+godine, koju je na ro č i š tu povodom odlu č ivanja o sporazumu o priznanju krivice zastupala Tanja Č olan
+Dereti ć  Dr ž avni tu ž ilac u VDT-a u Podgorici, nakon done š enog rje š enja o usvajanju sporazuma o priznanju
+krivice, dana 26.06.2018. godine, donio je
+ 
+ 
+P R E S U D U
+ 
+Optu ž eni:
+ 
+H.I., JMB ..., od oca Lj. i majke N., rodjene I., rodjen .... godine u U., gdje je i nastanjen U. – Z. b.b, dr ž avljanin
+Crne Gore, o ž enjen, otac troje maloljetne djece, zavr š io osnovnu š kolu, po zanimanju taksista, nezaposlen,
+lošeg imovnog stanja, osudjivan presudama Osnovnog suda Ulcinj K.br. 173/03 od 16.03.2006. godine zbog
+krivi č nog djela laka tjelesna povreda iz č l. 37 st. 2 u vezi st.1 KZ RCG, na dva mjeseca zatvora uslovno na jednu
+godinu i K.br. 406/07 od 16.10.2009. godine zbog krivi č nog djela nasilni č ko pona š anje iz č l. 399 i protivprano
+lišenje slobode iz č l. 162 st.1 KZ CG, na osam mjeseci zatvora uslovno na dvije godine; presudom Vi š eg suda u
+Podgorici K.br.128/12 od 09.12.2013. godine, zbog krivi č nog zbog krivi č nog djela neovla šć ena proizvodnja,
+držanje i stavljanje u promet opojnih droga iz č l. 300 st.2 u vezi st.1 KZ-a na kaznu zatvora u trajanju od dvije
+godine, presudama Osnovnog suda u Ulcinj K.br.90/11 od 11.08.2011. godine zbog krivi č nog djela
+neovla šć eno organizovanje igara na sre ć u iz č l.407. st.1 KZ-a na kaznu ztavora u trajanju od 30 dana uslovno
+na jednu godinu, K.br. 205/10 od 31.05.2011.godine zbog krivi č nog djela te š ko djelo protiv bezbjednosti
+javnog saobr ć aja iz č l. 348 st.1 u vezi č l.339 st.1 KZ-a na tri mjeseca zatvora i K.br.84/16 od 09.01.2017. godineViši Sud u Podgorici
+K 29/2018
+26. Jun 2018
+zbog krivi č nog djela spre č avanje slu ž benog lica u vr š enju slu ž bene du ž nosti iz č l. 375 st.1 KZ-a na rad u
+javnom interesu u trajanju od 150 sati na tri mjeseca, u pritvoru od .... godine od 20,00 č asova
+ 
+KRIV JE
+Zato š to je:
+ 
+Dana .... godine, oko 18,50 č asova u U., na B. T., sa umi š ljajem poku š ao da li š i ž ivota o š te ć enog P.E. i pri tome
+sa umi š ljajem doveo u opasnost ž ivot jo š  nekog lica, o š te ć enog P.J., svjestan svoga djela č ije je izvr š enje htio,
+na na č in š to je, dok su o š te ć eni P. bili u vozilu „VW T.“ reg. oznaka ..., kojim je upravljao o š te ć eni P.E., dok se
+ošte ć eni P.J. nalazio na mjestu suvoza č a, ispalio jedan hitac iz pi š tolja „Crvena Zastava TT“, kalibra 7,62 mm,
+serijskog broja 160507 u pravcu o š te ć enog P.E. i pri tom projektilom pogodio u prednje lijevo staklo vozila,
+koje staklo je pored sjedi š ta voza č a, nakon č ega je ispaljeni projektil nastavio kretanje kroz unutra š njost
+vozila i pogodio vjetrobransko staklo na oko 50 cm od lijeve ivice i oko 15 cm od donje ivice stakla, koji
+projektil se potom zario u gumenu zaptivku izmedju stakla i metalnog dijela karoserije sa unutra š nje strane
+vjetrobranskog stakla, na koji na č in je optu ž eni doveo u opasnost ž ivot o š te ć enog P.J., koji je bio u
+neposrednoj blizini, na mjestu suvoza č a u vozilu, a potom poku š ao u pravcu o š te ć enog P.E. da ispali jo š  jedan
+hitac, u č emu je sprije č en od strane majke o š te ć enih P. H., koja je djelovala na njegovu ruku, podi ž u ć i mu istu,
+usljed č ega je jedan projektil ispalio u vazduh, a koje projektile je ispalio iz oru ž ja koje je neovla šć eno dr ž ao i
+nosio, kao i municiju , i to pi š tolja „Crvena Zastava TT“, kalibra 7,62 mm, serijskog broja 160507 i municiju tri
+metka kalibra 7,62 mm, koji je suprotno odredbama č l. 5 i č l. 33 st. 1 Zakona o oru ž ju neovla šć eno dr ž ao i
+nosio na javnom mjestu, bez izdate odgovaraju ć e isprave o oru ž ju, iako je bio svjestan da postupa
+neovla šć eno i protivpravno, pa je to i htio
+ 
+- čime je izvr š io krivi č no djelo te š ko ubistvo u poku š aju iz č lana 144 ta č . 3 u vezi č l. 20 Krivi č nog zakonika Crne
+Gore u sticaju sa krivi č nim djelom nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č lana 403 st.1.
+Krivi č nog zakonika Crne Gore.
+ 
+Pa mu sud primjenom citiranih zakonskih odredbi, te odredbi č l. 4 st. 2, 5, 13, 15, 32, 36 i 42, a u odnosu na
+krivi č no djelo te š ko ubistvo u poku š aju iz č l. 144 ta č . 3 u vezi č l. 20 Krivi č nog zakonika Crne Gore i primjenom
+odredbi č l. 45 i 46, te primjenom odredbi č l. 48 st. 1 Krivi č nog zakonika Crne Gore, prethodno u t v r d j u j e:
+ 
+-za krivi č no djelo te š ko ubistvo u poku š aju iz č lana 144 ta č . 3 u vezi č l. 20 Krivi č nog zakonika Crne Gore kaznu
+zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci,
+ 
+-za krivi č no djelo nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č lana 403 st.1. Krivi č nog zakonika
+Crne Gore kaznu zatvora u trajanju od 3 (tri) mjeseca.
+ 
+Pa ga sud primjenom citiranih zakonskih odredbi, te odredbi č l. 48 st. 2 ta č . 2 i 51 Krivi č nog zakonika Crne
+Gore, te odredbi č l. 226, 229, 303 i 374 Zakonika o krivi č nom postupku.
+ 
+O S U Đ  U J E
+ 
+Na jedinstvenu kaznu zatvora u trajanju od 2 (dvije) godine i 7 (sedam) mjeseci, u koju kaznu mu se
+urač unava vrijeme provedeno u pritvoru, po č ev od .... godine od 20,00 č asova, pa nadalje.
+ 
+Na osnovu č l. 75.Krivi č nog zakonika Crne Gore, optu ž enom se i z r i č  e
+ 
+MJERA BEZBJEDNOSTI
+ODUZIMANJE PREDMETA
+ 
+ODUZIMA SE pištolj „Crvena Zastava TT“, kalibra 7,62 mm, serijskog broja 160507 i tri metka kalibra 7,62 mm.
+ 
+OBAVEZUJE SE optu ž eni da na ime tro š kova krivi č nog postupka uplati nov č ano iznos od 388,21 €
+(tristaosmdesetosam eura i dvadesetjedan cent), a na ime pau š ala iznos od 100,00 (sto) eura, na ra č un
+Vrhovnog dr ž avnog tu ž ila š tva Crne Gore, broj 832-1187-31, koji se vodi kod Societe Generale Group AD
+Podgorica, sve u roku od 15 dana popravosna ž nosti presude pod prijetnjom prinudnog izvr š enja.
+ 
+ 
+O b r a z l o ž  e nj e
+ 
+Optu ž nicom Vi š eg Dr ž avnog tu ž ila š tva u Podgorici Kt.br. 2/18 od 16.03.2018. godine, optu ž enom H.I.u
+stavljeno je na teret izvr š enje krivi č nog djela te š ko ubistvo u poku š aju iz č lana 144 ta č . 3 u vezi č l. 20
+Krivi č nog zakonika Crne Gore u sticaju sa krivi č nim djelom nedozvoljeno dr ž anje oru ž ja i eksplozivnih
+materija iz č lana 403 st.1. Krivi č nog zakonika Crne Gore (KZ CG)
+ 
+Dana 25.06.2018. godine, zastupnik optu ž be je dostavio sudu sporazum o priznanju krivice, zapisnik o
+pregovaranju i zapisnik o priznanju krivice optu ž enog.
+ 
+Na ro č i š tu za razmatranje sporazuma, odr ž anom dana 26.06.2018. godine, zastupnik optu ž be je izjavio da su
+branilac i optu ž eni predlo ž ili da se zaklju č i sporazum o priznanju krivice, š to je od strane VDT-a prihva ć eno,
+nakon č ega se pristupilo pregovaranju, o č emu je sa č injen zapisnik o pregovaranju, zapisnik o saslu š anju
+optu ž enog i njegovo priznanje krivice, kao i sporazum o priznanju krivice, a š to je dostavljeno sudu, iz č ije
+sadr ž ine proizilazi da su zastupnik optu ž be i optu ž eni saglasni da Vi š i sud u Podgorici optu ž enog H.I., za
+krivi č no djelo te š ko ubistvo u poku š aju iz č l. 144 ta č . 3 u vezi č l. 20 Krivi č nog zakonika Crne Gore u sticaju sa
+krivi č nim djelom nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403 st.1 Krivi č nog zakonika Crne
+Gore, stavljenog mu na teret optu ž nicom VDT u Podgorici Kt.br. 2/18 od 16.03.2018. godine, izrekne i to za
+krivi č no djelo te š ko ubistvo u poku š aju iz č l. 144 ta č . 3 u vezi č l. 20 Krivi č nog zakonika Crne Gore kaznu
+zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci a za krivi č no djelo nedozvoljeno dr ž anje oru ž ja i
+eksplozivnih materija iz č l. 403 st.1. Krivi č nog zakonika Crne Gore kaznu zatvora u trajanju od 3 (tri) mjeseca,
+te da mu se izrekne jedinstvena kazna zatvora u trajanju od 2 godine i 7 mjeseci, u koju kaznu ć e mu se
+urač unati vrijeme provedeno u pritvoru od .... godine od 20,00 č asova, pa nadalje, i da optu ž eni, na ime
+troš kova krivi č nog postupka koji iznose 388,21 € i pau š ala koji iznosi 100,00 eura, VDT-u Podgorici uplati
+navedene iznose u roku od 15 dana po pravosna ž nosti presude, pod prijetnjom prinudnog izvr š enja.
+ 
+Optu ž eni i njegov branilac su izjavili da pomenuti sporazum jeste njihov sporazum i da od istog nijesu
+odustali.
+ 
+Iz sadr ž ine dokaza koji se nalaze u spisima predmeta i koji su predlo ž eni optu ž nicom: iskaza svjedoka –
+ošte ć enih P.E. i P.J., iskaza svjedoka P. H., P. Š ., A. D., H. R., zapisnika o uvidjaju Uprave policije OB Ulcinj Ku.br.
+5/18 od .... godine, dvije potvrde o privremeno oduzetim predmetima Uprave policije OB Ulcinj Ku.br.5/18 od
+.... godine, izvje š taja o kriminalisti č ko tehni č kom pregledu lica mjesta Uprave policije OB Ulcinj Ku.br.5/18,
+zapisnika o pretresanju pokretnih stvari Uprave policije OB Ulcinj Ku.br.5/18 od 12.01.2018. godine, slu ž bene
+zabilje š ke Uprave policije OB Ulcinj Ku.br. 5/18 od 09.01.2018. godine i 12.01.2018. godine, izvje š taja o
+balisti č kom vje š ta č enju broj 390-1/18 od 05.02.2018. godine, izvje š taja o vje š ta č enju barutnih č estica broj
+392/18 od 15.02.2018. godine, izvje š taja o vje š ta č enju prisustva GSR č estica broj 391/18 od 12.02.2018.
+godine, izvje š taja o balisti č koj analizi broj 733-1/18 od 22.02.2018. godine, izvje š taja o trasolo š kom
+vješ ta č enju broj 591/18 od 20.02.2018. godine, dvije potvrde o vra ć anju predmeta Uprave policije OB Ulcinj
+Ku.br.5/18 od 19.02.2018. godine, slu ž bene zabilje š ke o tehni č kom pregledu i uzorkovanju tragova za
+putni č ko motorno vozilo broj 244-18-2-593/2 od 16.02.2018. godine, skice lica mjesta, fotoelaborata Uprave
+policije OB Ulcinj od .... godine i fotodokumentacije Forenzi č kog centra broj 244-18-2-593/2 od 16.02.2018.
+godine i izvoda iz kaznene evidencije MInistarstva pravde broj 05/2-72-4283/18 od 12.04.2018. godine, sud
+zaklju č uje da je dr ž avni tu ž ilac pru ž io dovoljno dokaza o krivici optu ž enog H.I., kojim dokazima je potvr đ eno
+njegovo priznanje, te da je optu ž eni izvr š io krivi č no djelo te š ko ubistvo u poku š aju iz č l. 144 ta č . 3 u vezi č l. 20
+Krivi č nog zakonika Crne Gore u sticaju sa krivi č nim djelom nedozvoljeno dr ž anje oru ž ja i eksplozivnih
+materija iz č l. 403 st.1. Krivi č nog zakonika Crne Gore, na na č in, u vrijeme i na mjestu kako je to opisano
+izrekom ove presude, a nakon š to je u svemu prihvatio sporazum o priznanju krivice.
+ 
+Odlu č uju ć i o visini kazne za optu ž enog iz sporazuma o priznanju krivice zaklju č enog izme đ u stranaka, sud je
+našao da je predlog stranaka u vezi sa kaznom prihvatljiv. Naime, i pored ote ž avaju ć ih okolnosti koje stoje na
+strani optu ž enog, a koje se ogledaju u tome da je ranije vi š e puta osudjivan, izmedju ostalog i za krivi č na
+djela protiv ž ivota i tijela i sa elementima nasilja, kako to proizilazi iz izvoda iz kaznene evidencije, sud smatra
+da je poseban zna č aj trebalo dati olak š avaju ć im okolnostima koje stoje na strani optu ž enog, a to su potpuno
+i jasno priznanje optu ž enog, koje je doprinijelo br ž em i efikasnijem okon č anju krivi č nog postupka i koji je
+prihvatio svoju krivicu i izrazio ž aljenje i kajanje, njegove li č ne prilike koje se ogledaju u tome da se radi o
+porodi č nom č ovjeku koji je o ž enjen i otac troje maloljene djece, koje je po zakonu du ž an da izdr ž ava, da je
+lošeg imovnog stanja i nezaposlen, da je nakon izvr š enja krivi č nog djela sa o š te ć enima uspostavljen korektan
+odnos, š to je bio i razlog da se o š te ć eni ne pridru ž uju krivi č nom gonjenju i ne postavljaju imovinsko- pravni
+zahtjev, da kriti č nom prilikom ni jedan od o š te ć enih nije zadobio tjelesne povrede, te da je djelo ostalo u
+poku š aju u kojem slu č aju zakon predvidja da se u č inilac mo ž e bla ž e kazniti, a koje okolnosti sud smatra
+naro č ito olak š avaju ć im da bi se za krivi č no djelo te š ko ubistvo u poku š aju iz č l. 144 ta č . 3 u vezi č l. 20 KZ CG
+izrekla kazna zatvora ispod zakonskog minimuma, a za krivi č no djelo nedozvoljeno dr ž anje oru ž ja i
+eksplozivnih materija iz č l. 403 st.1. Krivi č nog zakonika Crne Gore kazna zatvora u granicama propisanim
+zakonom, posebno imaju ć i u vidu svrhu instituta sporazuma o priznanju krivice koji je optu ž eni zaklju č io, pa
+je po ocjeni suda jedinstvena kazna zatvora u trajanju od 2 (dvije) godine i 7 (sedam) mjeseci, srazmjerna
+stepenu krivice optu ž enog i te ž ini po č injenih krivi č nih djela, i predstavlja onu mjeru koja je neophodno
+potrebna za postizanje svrhe ka ž njavanja iz č l. 32 KZ CG, u odnosu na op š tu svrhu izricanja krivi č nih sankcija
+iz čl. 4 st.2 KZ-a CG, odnosno da ć e sa istom uticati na optu ž eno, ali i na druge, da ubudu ć e ne vr š e krivi č na
+djela.
+ 
+U izre č enu kaznu zatvora, optu ž enom ć e se ura č unati vrijeme provedeno u pritvoru od .... godine od 20,00
+časova pa nadalje, shodno odredbi č lana 51 KZ-a CG.
+ 
+Shodno č lanu 75 KZCG sud je od optu ž enog oduzeo pi š tolj „Crvena Zastava TT“, kalibra 7,62 mm, serijskog
+broja 160507 i tri metka kalibra 7,62 mm, jer se radi o predmetima koji su upotrijebljeni za izvr š enje krivi č nih
+djela, na koji na č in se otklanjaju uslovi koji su od uticaja da optu ž eni ubudu ć e vr š i krivi č na djela, a sve u
+okviru op š te svrhe krivi č nih sankcija i svrhe same mjere bezbjednosti propisane č lanom 66 Krivi č nog
+zakonika Crne Gore.
+ 
+Kako je optu ž eni ogla š en krivim, sud ga shodno č l. 226. i 229. Zakonika o krivi č nom postupku, obavezuje i na
+plać anje tro š kova krivi č nog postupka u iznosu od 388,21 € i pau š ala iznos od 100,00 eura, koje je du ž an
+uplatiti na ra č un Vrhovnog dr ž avnog tu ž ila š tva Crne Gore, na broj ž iro ra č una 832-1187-31, koji se vodi kod
+Societe Generale Group AD Podgorica, sve u roku od 15 dana po pravosna ž nosti presude pod prijetnjom
+prinudnog izvr š enja, a sve u skladu sa sporazumom o priznanju krivice koji je zaklju č en izme đ u stranaka.
+ 
+Sa izlo ž enog, a shodno odredbi č l. 303 st.1 i 2 i 374 Zakonika o krivi č nom postupku, odlu č eno je kao u izreci
+presude.
+ 
+VIŠI SUD U PODGORICI
+Dana, 26.06.2018. godine
+ 
+PREDSJEDNIK VIJE Ć A - SUDIJA
+Vesna Mo š trokol s.r.
+ 
+ 
+PRAVNA POUKA:
+Protiv ove presude ž alba nije dozvoljena.
+ 
+Za ta č nost otpravka ovjerava
+Anka Rakovi ć
+___________________</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

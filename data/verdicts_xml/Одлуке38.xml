@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке38">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке38/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке38"/>
+                    <FRBRdate date="2020-03-05" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке38/sr@2020-03-05/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке38/sr@2020-03-05"/>
+                    <FRBRdate date="2020-03-05"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке38/sr@2020-03-05/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке38/sr@2020-03-05/!main.akn"/>
+                    <FRBRdate date="2026-04-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U BIJELOM"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Radomir Kljajević"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="M.D."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="S.J."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 42/20</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U BIJELOM</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2020-03-05">2020-03-05</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Radomir Kljajević</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni M.D. je osuđen za nehatno lišenje života oštećenog S.J. tokom lova. Sud je utvrdio da je okrivljeni svestan mogućnosti da može izazvati smrt, ali je olako smatrao da do toga neće doći.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>nehatan ubistvo</p>
+                    <p>odgovornost za krivično delo</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_148">Član 148</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_2">Član 2</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_75">Član 75</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Okrivljeni nije preuzeo dovoljne mere opreza tokom lova, što je dovelo do tragičnih posledica.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усvojено">
+                    <p>Optuženi se oglašava krivim</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>M.D.</person>
+                </block>
+                <block name="victims">
+                    <person>S.J.</person>
+                </block>
+                <block name="witnesses">
+                    <person>J. N.</person>
+                    <person>P. N.</person>
+                    <person>B. N.</person>
+                    <person>S.D.</person>
+                    <person>V. D.</person>
+                    <person>B.S.</person>
+                    <person>P. M.</person>
+                    <person>D. N.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="alcohol_level">0,778 promila</fact>
+                <fact key="location">Poljane</fact>
+                <fact key="location">Bandera</fact>
+                <fact key="location">Galica</fact>
+                <fact key="location">Bijelom Polju</fact>
+                <fact key="location">Osnovnom</fact>
+                <fact key="location">Bijelom Polju Tanje Ni</fact>
+                <fact key="location">Bijelom
+Polju Tanje Ni</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Podgoricu</fact>
+                <fact key="location">Vrane</fact>
+                <fact key="location">Jabu</fact>
+                <fact key="location">B.P.</fact>
+                <fact key="injury_type">fatal injury</fact>
+                <fact key="weapon">hunting rifle</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K. br. 42/20
+ 
+ 
+U IME CRNE GORE
+OSNOVNI SUD U BIJELOM POLjU, sudija Radomir Kljajevi ć , uz u č e šć e samostalnog referenta zapisni č ara
+Draginje Bo š kovi ć , u krivi č nom predmetu protiv okrivljenog M.D. iz B.P., zbog krivi č nog djela nehatno li š enje
+života iz č l.148 Krivi č nog zakonika Crne Gore, rje š avaju ć i po optu ž nom predlogu Osnovnog dr ž avnog
+tužila š tva u Bijelom Polju, KT. br. 58/20 od 05.03. 2020. godine, nakon odr ž anog glavnog i javnog pretresa, u
+prisustvu dr ž avne tu ž iteljke u Osnovnom dr ž avnom tu ž ila š tvu u Bijelom Polju Tanje Ni š avi ć , okrivljenog M.D.
+i predstavnika o š te ć ene porodice sada pok.S.J., oca Ž .J., dana 10.09. 2020. godine je donio, a dana
+11.09.2020.godine, javno objavio,
+ 
+ 
+P R E S U D U
+ 
+ 
+Okrivljeni M.D. (JMB ..........), od oca M. i majke D., ro đ ene J., ro đ en ......... godine u B. P., sa prebivali š tem u B.
+P., dr ž avljanin Crne Gore, pismen, zavr š io SSS, o ž enjen, otac dvoje djece, radnika, srednjeg imovnog stanja,
+neosu đ ivan, nalazio se u pritvoru od 08.12.2019.godine do 06.03.2020.godine.
+ 
+ 
+K R I V J E
+ 
+ 
+Zato š to je:
+ 
+-Dana 08.12.2019.godine, oko 14:00 h, u š umi u mjestu G., Op š tina B.P., svjestan da svojom radnjom mo ž e
+izvrš iti krivi č no djelo, ali je olako dr ž ao da do toga ne ć e do ć i, iz nehata li š io ž ivota o š te ć enog S.J., na na č inOsnovni Sud u Bijelom Polju
+K 42/2020
+10. Septembar 2020
+što ga je prilikm lova divlja č i, iz lova č ke pu š ke marke "F…..", kalibra ….mm, fabri č kog broja ……., sa
+udaljenosti od oko 20m, ispalio jedan projektil u pravcu gustog rastinja i visoke paprati koje se pomjeralo
+zbog č ega je bio u uvjerenju da se iza istog nalazi divlja svinja, a da se sa dovoljnom pa ž njom nije uvjerio u to,
+iako se u lovu nalazio zajedno sa o š te ć enim, koji projektil je pogodio o š te ć enog koji se nalazio u rastinju u
+momentu kada je bio u povijenom polo ž aju, glavom i trupom savijenim nadolje, kojom prilikom mu je nanio
+teške tjelesne povrede opasne po ž ivot u vidu strijelne rane - ustreline glave, č iji je smjer kanala odozgo
+strmo nadolje s lijeva u desno, od naprijed unazad, strijelne rane ustreline grudnog ko š a, č iji je smjer kanala
+odozgo strmo nadolje s desna ulijevo od naprijed unazad, strijelnu ranu - prostrelinu desne butine č iji je
+smjer kanala odozgo nadolje s lijeva udesno od naprijed unazad i dva strijelna okrznu ć a u predjelu desne
+pazu š ne jame, usled kojih povreda je kod o š te ć enog nastupila smrt,
+ 
+-čime je izvr š io krivi č no djelo nehatno li š enje ž ivota iz č l. 148 Krivi č nog zakonika Crne Gore,
+ 
+-pa ga sud, primjenom citiranih zakonskih propisa, te č l. 2, 4, 5, 13, 15, 32 i 36, 42 Krivi č nog zakonika Crne
+Gore (KZ CG) i č l. 226, 229 i 374 Zakonika o krivi č nom postupku Crne Gore (ZKP CG),
+ 
+ 
+O S U Đ  U J E
+ 
+Na kaznu zatvora od 6 ( š est) mjeseci, u koju kaznu mu se ima ura č unati vrijeme provedeno u pritvoru, od 08.
+12. 2019. godine do 06. 03. 2020. godine.
+ 
+Shodno č l. 75 st. 2 Krivi č nog zakonika, okrivljenom se izri č e mjera bezbjednosti trajnog oduzimanja
+predmeta i to: lova č ke pu š ke marke "F….", kalibra … mm, fabri č kog broja ……..
+ 
+Okrivljeni se obavezuje da ovom sudu na ime pau š ala plati iznos od 50,00€, kao i da na ime ostalih tro š kova
+postupka plati iznos od 2.605,00 €, koje iznose ć e uplatiti na ra č un Bud ž eta Crne Gore broj: 832-151-35, u roku
+od 15 dana, po pravosna ž nosti presude, pod prijetnjom prinudnog izvr š enja, s tim š to je dokaz o uplati,
+duž an dostaviti krivi č noj pisarnici ovog suda.
+ 
+O b r a z l o ž  e nj e
+ 
+ 
+Optu ž nim predlogom Osnovnog dr ž avnog tu ž ila š tva u Bijelom Polju, Kt. br. 58/20 od 05. 03. 2020. godine,
+okriljenom M.u D.u, stavljeno je na teret izvr š enje krivi č nog djela nehatno li š enje ž ivota iz č l.148 Krivi č nog
+zakonika Crne Gore.
+ 
+Glavni pretres je odr ž an i zaklju č en u prisustvu dr ž avne tu ž iteljke u Osnovnom dr ž avnom tu ž ila š tvu u Bijelom
+Polju Tanje Ni š avi ć , okrivljenog M.D. i predstavnika o š te ć ene porodice sada pok.S.J., oca Ž .J..
+ 
+Državna tu ž iteljka u zavr š noj rije č i je izjavila, da ostaje u svemu pri podnijetom optu ž nom predlogu protiv
+okrivljenog D.M.. Naime, odbrana okrivljenog predstavlja priznanje izvr š enja krivi č nog djela, a da je izvr š io
+predmetno krivi č no djelo nesporno proizilazi iz svih izvedenih dokaza, tj. iskaza saslu š anih svjedoka,
+izvrš enih vje š ta č enja, te pisanih dokaza. Kako su se u njegovim radnjama stekli svi elementi bi ć a krivi č nog
+djela za koje je optu ž en, to je predlo ž ila sudu da okrivljenog oglasi krivim i da ga osudi na kaznu po zakonu.
+Tako đ e, predlo ž ila je i da se na osnovu č l. 75 st. 1 Krivi č nog zakonika Crne Gore, okrivljenom izrekne mjera
+bezbjednosti oduzimanje predmeta,tj. pu š ke koja je kori šć ena prilikom izvr š enja krivi č nog djela.
+ 
+Predstavnik o š te ć ene porodice sada pok. J.S. - otac Ž .J. u zavr š noj rije č i je izjavio da se u svoje ime i u ime
+porodice ne pridru ž uje krivi č nom gonjenju protiv okrivljenog i da ne postavlja imovinsko-pravni zahtjev.
+ 
+Okrivljeni M.D. u svojoj odbrani datoj tokom istra ž nog postupka u bitnom je naveo, da ž ivi u naselju Lipnica u
+svojoj porodi č noj ku ć i sa suprugom i dvoje maloljetno djece, koja imaju 11 i 8 godine, te da je zaposlen kao
+sekuriti u “Centurion NK Tim” iz N.i da radi na obezbjedjenju “Prve banke” u B. P.. J.S. poznaje vi š e od 20
+godina. U kumovskim su vezama, ta č nije njegov brat je krstio J.S.. Sa J.S. se dru ž i i on je do prije 2 godine
+živio u B.P., a potom je odselio u P. Č esto je dolazio u B.P. jer ima ku ć u u Lj., kao i imanje i ku ć u u selu O.. Kada
+se vide u B. P., popiju pi ć e, a uglavnom nedeljom idu u lov kada je lovna sezona. Lovna sezona po č inje u prvoj
+nedjelji oktobra i traje do februara. Od kako se znaju idu u lov s tim š to su sa njima i š li i njegov brat M., zatim
+brat od tetke M. i M., sve u zavisnosti od toga ko je kada S., a de š avalo se da u lov idu samo S. i on. Posjeduje
+lova č ku pu š ku dvocijevku, marke “L. F.”, sa č maricu, italijanske proizvodnje. Posjeduje oru ž ni list za ovu pu š ku
+a i č lan je lova č kog dru š tva, organizacije B.P. i kao njihov č lan posjeduje dozvolu za lov i no š enje oru ž ja. J. S.
+je takodje posjedovao lova č ku pu š ku, ali nije mu poznato da li je imao oru ž ni list, a zna da je imao č lansku
+kartu kao č lan lova č kog dru š tva u kojem je i on č lan.
+U subotu popodne, tj. dana 07.12.2019.godine, telefonom se č uo sa J.S. koji je bio u Podgorici i dogovorili su
+se da u nedelju idu u lov. U subotu uve č e ponovo su se č uli kada je S. do š ao u B.P. i dogovorili su se o
+detaljima odlaska u lov. U nedelju 08.12.2019.godine, ustao je oko 05,30 č asova, spremio se da ide u lov i od
+kuće je krenuo u 06,00 č asova. Obukao je duksericu, jaknu crne boje, pantalone crne boje i ponio je ranac u
+kojem se nalazila pu š ka rasklopljena, redenik sa 25 metaka i britvica. Poveo je sa sobom lova č kog kera. Uzeo
+je vozilo svog brata marke “.Audi” i istim se odvezao do ku ć e S. u O., koji je kom š ija J.S. i tu je ostavio vozilo.
+Zatim je uzeo ranac, izveo iz kola kera koga je vodio na povocu i pje š ke krenuo do mjesta gdje treba da se
+nadje sa J.S., takodje u O., gdje su se prethodno dogovorili. Dok je i š ao ka tom mjestu nai š ao je na dva lovca
+sa kerovima, koje lovce ne poznaje i do š ao je na mjesto gdje se nalazio S., koji je takodje sa sobom poveo
+svog kera. Tu su se pozdravili i on ga je pitao da li je uz put vidio konje koji su mu se pustili iz livade i on mu je
+rekao da je malo povi š e vidio tri konja, pa je on oti š ao da ih uhvati a njemu je rekao da podje putem prema J.
+i da pusti kerove. To je bilo negdje oko 07,00 č asova. Posle izvjesno g vremena č uli su se telefonom i S. ga je
+pitao da li se č uju kerovi, a on mu je odgovorio da se ne č uju. Nakon toga S. mu je rekao da se vrati do mjesta
+gdje su se na š li i da odatle krenu put C.. S. je u medjuvremenu konje uhvatio i svezao ih. J. S. je na sebi imao
+pantalone maslinasto zelene i sive boje i jaknu tamniju, ali ne zna koje boje. S. je imao kapu na glavi od jakne
+a on je imao ka č ket. J. S. je dr ž ao kapu na glavi a ponekad je i skidao sa glave. Oni su se, zatim, od tog mjesta
+uputili u pravcu C. i to kosom i na tom pravcu kao i u tom krugu nijesu ni š ta zapazili a kerovi su bili tu pored
+njih jer su se u me đ uvremenu vratili. Kako ni š ta nijesu vidjeli odlu č ili su da se vrate na mjesto gdje su se prvi
+put po dogovoru na š li i da zavr š e lov. Odatle su poveli dva konja, dok je tre ć eg ve ć  bio odveo kom š ija koji je
+vlasnik konja. Konje koji su S.ovo vlasni š tvo poveli su njegovoj ku ć i u O.. U toj ku ć i ž ivi N.B. koga je J. S.
+anga ž ovao da mu č uva stoku i da ž ivi u ku ć i. U ku ć i se nalazio i S.B. iz LJ.. Tu su doru č kovali, popili kafu i po
+nekoliko rakija i zadr ž ali su se oko sat vremena, nakon č ega su imali namjeru da se vrate ku ć i. U
+medjuvremenu do š ao je u ku ć u jedan njihov kom š ija kojeg ne poznaje. Po š to mu je poznato da u lov idu Š . od
+kojih, poznaje J. i D., pozvao je Š . J. da ga pita da li su u lovu iako jesu gdje, a poznato mu je da oni uglavnom
+idu u lov prema G. i L.. J. mu je rekao da nijesu na š li nikakav trag i da je Š . D. oti š ao prema J. jer im je re č eno
+da tu ima neki trag od divlje svinje. Posle izvjesno g vremena dok su jo š  sjedjeli ku ć i S. je pozvao D. da ga pita
+ima li kakav trag i Š . D. mu je rekao da se č uje pas i da bi trebalo da se tu negdje nalazi divlja svinja. Tu su
+odlu č ili da ne idu ku ć i ve ć  da ponovo krenu put J.. S.B. ih je njegovim vozilom prebacio do mjesta gdje je
+njegovo vozilo ostalo u O. kod S.ovog kom š ije S. i odatle su se uputili u pravcu gdje je Š . D. rekao da se č uju
+kerovi. Do š li su do jedne raskrsnice i on je ostao na toj raskrsnici na “ č ekalici” za slu č aj da kerovi pokrenu
+divlju svinju u njegovom pravcu da bi je ubio, a S. je nastavio dalje putem prema mjestu kako mu je Š . D.
+objasnio gdje se č uju kerovi. Nije č uo kerove jer je bio prili č no udaljen od tog mjesta gdje su se oni nalazili.
+Zatim se sa J.S. č uo telefonom i S. mu je rekao da se pomjeri sa tog mjesta i da krene kuda je on oti š ao i da
+sačeka u jednoj dolini. Tu se zadr ž ao izvjesno vrijeme, s tim da nije mogao ta č no da odredi koliko, ali ni š ta
+nije č uo. Odatle se spustio na neki put i nai š ao na jednu raskrsnicu. Po š to nije znao kojim putem odatle da
+krene, pozvao je S.a koji mu je objasnio da krene putem desno. Krenuo je tim putem i spustio se do
+dalekovoda i tu je niska š uma u vidu rastinja i paprati, s tim š to je kako se spu š tao sa njegove lijeve strane to
+rastinje bilo gusto, dok je sa desne strane bilo redje. Put kojim se spu š tao je prili č no strm. Odatle se spustio,
+odnosno od mjesta gdje je dalekovod jo š  oko 100 m i to uskim putem – š umskim i tu je stao. Tada je sa
+njegove desne strane č uo kera kako laje i po njegovoj procjeni je bio udaljen oko 15-20 m od njega. Kera nije
+vidio ali po lave ž u je ocijenio da se kre ć e stranom. Vratio se prema dalekovodu i dolaskom do dalekovoda
+stao je. Č uo je kera da laje i to sa iste strane puta gdje ga je prethodno č uo. Tada je sa druge strane puta vidio
+kako se pomjera gusto rastinje na udaljenosti oko 20-tak metara od njega i zapazio je da se ne š to tamno-crno
+pomjerilo. Mislio je da je to vepar –divlja svinja, podigao je pu š ku, usmerio u tom pravcu i ispalio metak.
+Rastinje je stalo nije se pomjeralo. Izvadio je metak iz druge cijevi a iz ispaljene cijevi je ispao patron i ostao je
+na tom mjestu. Po š ao je kroz to š iblje prema mjestu gdje je ispalio metak i tada je vidio S.a da le ž i, kao da je
+pao na desnu stranu, odnosno desnu bo č nu stranu. Bacio je pu š ku, pri š ao do njega, zvao ga, drmao ga ali on
+nije davao znake ž ivota. Vidio mu je krv na zadnjem dijelu glave koja se slivala na kapu. Uzeo je svoj telefon i
+pozvao je de ž urnu slu ž bu Uprave policije. Posle toga pozvao je Š . J. i njegovog brata M.a. Posle nekog
+vremena do š li su Š . D. i J.. Jo š  je neko dolazio ali ne zna ko jer je bio u š oku. Tako đ e, zna da su i medicinski
+radnici do š li. Ž ao mu je š to se ovo desilo i da mo ž e vratiti vrijeme sve bi promijenio. Bili su u tako dobrim
+odnosima, kao bra ć a. Telefonom su se č uli svakodnevno ili svaki drugi dan. Konkretne prilike nije bio
+organizovan lov, ve ć  su njih dvojica sami odlu č ili i po š li u lov u nedelju 08.12.2019.godine. Municiju za
+lova č ku pu š ku je koristio originalnu, š to zna č i da je nije pravio. Koristio je municiju tj.brener koju je stavio u
+jednu cijev, a u drugu cijev je stavio patron sa krupnijom sa č mom koja je namijenjena za lov na divlje svinje.
+Brener je takva municija koja se sastoji od lova č kog patrona u koji je umjesto sa č me smje š teno jedno lova č ko
+zrno tupo za š iljeno, ili dva zrna okruglog oblika. Ne zna koji je brener stavio u cijev sa jednim ili dva zrna, niti
+zna koji metak je ispalio, ali misli da je ispalio metak sa sa č mom.
+ 
+Na glavnom pretresu priznao je izvr š enje krivi č nog djela i krivicu za isto i ponovio odbranu datu u istra ž nom
+postupku, s tim š to je dodao da se kaje zbog ovog nesre ć nog slu č aja koji se desio i da mo ž e najradije bi
+zamijenio uloge, tj. najradije bi da je on izgubio ž ivot, umjesto svog kuma sa kojim je bio i vi š e od toga, ta č nije
+bio mu je kao brat. Jo š  jednom je pojasnio da nije namjerno u č inio ovo krivi č no djelo, da se radi o velikoj
+nesre ć i sa kojom nije lako ž ivjeti. Ž ao mu je i o š te ć ene porodice i sve bi u č inio da mo ž e promijeniti ovo š to se
+desilo.
+ 
+Radi utvr đ ivanja odlu č nih č injenica i krivice okrivljenog, sud je u dokaznom postupku, na glavnom pretresu,
+izveo dokaze: saslu š ao predstavnike o š te ć ene porodice sada pok. J.S. – oca J.S. i suprugu J. N. proč itao
+iskaze svjedoka Š . D.; Š . J.; Š .D.; D.N.; P.N.; P.M.; B.N.; B.S. i V. D.; proč itao izve š taj o balisti č kom vje š ta č enju
+Forenzi č kog centra u D.vgradu, broj 4791/19 od 24. 01. 2020. godine; pro č itao izvje š taj o balisti č kom
+vješ ta č enju prisustva barutnih č estica, broj 4792/19 od 29. 01. 2020. godine; pro č itao izvje š taj o balisti č kom
+vješ ta č enju prisustva GSR č estica, broj 4794/19, od 28. 01. 2020. godine; proč itao izvje š taj o balisti č kom
+vješ ta č enju broj 4790/19, od 27. 01. 2020. godine kao i dopunu izvje š taja od 02. marta 2020. godine;
+proč itao izvje š taj Forenzi č kog centra o trasolo š kom vje š ta č enju, broj 4793/19 od 31. 01. 2020. godine;
+proč itao obdukcioni zapisnik sa nalazom i mi š ljenjem vje š taka specijaliste sudske medine dr N.R., pro č itao
+nalaz i mi š ljenje istog vje š taka; pro č itao nalaz i mi š ljenje vje š taka za telekomunikacije S. Š .; proč itao zapisnik
+o uvi đ aju sa č injen od strane dr ž avnog tu ž ioca u Vi š em dr ž avnom tu ž ila š tvu, Ktr. br. 531/19 od 08. 12. 2019.
+godine; pro č itao potvrdu Uprave policije - CB B.P., o privremenom oduzimanju stvari od D.M., broj 240/2019 -
+5593, od 08. 12. 2019. godine.
+ 
+Predstavnik o š te ć ene porodice sada pok. J.S., otac J. Ž ., u svom iskazu datom u istra ž nom postupku  naveo je
+da ž ivi u Podgorici od 2000. godine sa svojom porodicom i to sa sinovima J. V. i S.om i k ć erkom D., a nakon
+što su se sinovi o ž enili i sa snahama i njihovom djecom. Povremeno je dolazio u B.P. i u O. i to mo ž da 2-3 puta
+godi š nje. Ina č e do 2000. godine sa porodicom je ž ivio u B. P., naselje Lj. i u selu O., a bio je zaposlen u
+preduze ć u “Radnik” u B. P.. Njegov sin J. S. je kum bratu D.M.. Ina č e njegov sin S. je vi š e vremena provodio u
+B. P., ta č nije najprije je dvije godine i radio u B. P.a posle toga se sa familijom presilio u Podgoricu i zaposlio u
+preduze ć e “Ledo” gdje je radio 2-3 godine a zatim kupio kamion i samostalno je radio kao autoprevoznik.
+Volio je B.P. i volio je selo O. tako da je č esto dolazio u selo. Dok je bio u B. P. bavio se lovom a S. se takodje
+bavio lovom zbog č ega je dolazio u B.P., a imao je i dru š tvo iz B.P. sa kojim je i i š ao u lov.
+ 
+Dana 07.12.2019. godine njegov sin S. je negdje oko 14,00 h do š ao autom ku ć i a sa njim je bio i njegov sin N..
+Sjutra dan je š egao drva na njegovoj parceli i po š to mu se motorna testera istupila zbog nekog ž eljeza u
+drvetu rekao je unuku da potra ž i “limu” da nao š tri š egu, pa kako on limu nije na š ao rekao mu je da pozove
+S.a i da pita gdje je. On ga je pozvao u 13,05 h, ali mu se S. nije javio i nakon toga pozvao ga je jo š  dva puta.
+Nakon sat vremena od prvog poziva pozvao ga je mladji sin telefonom i rekao “izgleda da je S. ranjen”. Oni su
+krenuli za B.P. i tek kad su bili uz Mora č u javljeno im je da S. nije ž iv. Kasnije je saznao da je on odmah
+preminuo na licu mjesta. Do š li su na Slijepa č  Most gdje se nalazio komandir policije i rekao im da ne idu dalje
+i da ć e za 10-15 minuta nai ć i terensko vozilo u kojem je otpremljen S. na obdukciju u Podgoricu. Njegov sin
+nije koristio alkohol osim kada je sa dru š tvom tada popije po neku č a š icu rakije. S. je bio miran, vesele naravi,
+stalno nasmijan i nikada nije pravio neke probleme. Njemu je č ovjek koji se nalazi na njihovom imanju i koji
+čuva stoku rekao da su tog dana njegov sin i D.M. bili u lovu i do š li ku ć i i tu su doru č kovali i popili kafu i da je
+neko zvao telefonom S.a ili D.M. i rekao im da izadju jer idu divlje svinje i da ih presretnu. Rekao mu je da su
+nakon tog razgovora njih dvojica odmah oti š li.
+Na glavnom pretresu ponovio je odbranu koju je dao u istrazi i dodao da se kao predstavnik o š te ć ene
+porodice, ne pridru ž uje krivi č nom gonjenju protiv okrivljenog i da ne postavlja imovinsko-pravni zahtjev.
+ 
+Svjedok J. N. je u svom iskazu datom u istra ž nom postupku navela je da se 1997. godine udala za J.S., sa
+kojim ima troje djece koja su sada starosti 21,19 i 14 godina. Ž ivjeli su u B. P. u Lj. do 2010. godine, kada su se
+preselili u Podgoricu gdje ž ive u porodi č noj ku ć i. Njen suprug J. S. je posjedovao kamion i radio je kao
+autoprevoznik. Poznaje D.M. odavno i misli da ga je upoznala nakon mo ž da godinu dana od njene udaje za
+S.a. Od 2014. godine su u kumovskim odnosima sa bratom D.M., D. M.om, koji je krstio S.a i njihovu djecu.
+Dok su ž ivjeli u B. P. njen suprug se dru ž io sa D.M.om i M.om. I š li su jedni kod drugih ku ć i, a to dru ž enje se
+nastavilo i nakon njihovog preseljanja u Podgoricu. Njen suprug je č esto i š ao u B.P. i u selo O., dok je ona i š la
+redje zbog posla. Kada je u Podgorici zna da su se č ujali telefonom jer č uje kada njen suprug ka ž e “gdje si
+kume”, a nije pitala za detalje tih razgovora. D.M. i M.a je oslovljavao sa kume i bili su u dobrim odnosima.
+Njen suprug je i š ao u lov svake godine kada je lovna sezona i kroz pri č u nakon dolaska iz lova saznala bi da je
+u lovu bio sa kumovima a bilo je i jo š  dru š tva sa kim su i š li u lov. Njen suprug nije koristio alkohol obzirom da
+je voza č  i da ne smije da bude pod dejstvom alkohola Jedino kada se nadje sa dru š tvom popio bi ali ni tada
+nije pretjerano konzumirao alkohol. Suprug je č esto dolazio u B.P., naro č ito u zadnje vrijeme kada je kupio
+neku stoku na imanju u O.. Č ula je da je kontaktirao sa kumovima ali je bila u velikim obavezama tako da
+nikada nijesam obra ć ala pa ž nju sa kim i š ta je pri č ao. Ponavila je da je njen suprug volio da ide u B.P. i kad
+god je imao vremena i š ao je i imao je to dru š tvo u B. P. š to je njima poznato i de š avalo se da nekad iznenada
+ode u B.P. ,a da prethodno ne ka ž e, odnosno samo da ka ž e nekome od uku ć ana. Tako se desilo i zadnji put
+kad je po š ao u B.P. rekao je najmladjem sinu da ide, a ona je bila na poslu. Š to se ti č e dogadjaja u kojem je
+njen suprug izgubio ž ivot njoj ni š ta nije poznato jer nije bila prisutna. Nije bio nikada u sukobu sa D.M.om niti
+njegovim bratom i bili su u dobrim odnosima i dru ž ili su se.
+Svjedok Š . D. u svom iskazu datom u istra ž nom postupku u bitnom je naveo da ž ivi u naselju M. sa suprugom i
+četvoro djece. Poznaje D.M. i sada pokojnog J.S., s tim š to D.M. poznaje du ž e vremena jer su njegov brat J. i M.
+brat M. koga zovu “ Ć elo” kumovi s tim š to ne zna ko je koga od njih vjen č ao. Č e šć e je vidjao D.M., a J.S. ne š to
+manje jer je on ž ivio u Podgorici. Jo š  od malih nogu i š ao je u lov . U lov je i š ao sa bra ć om, sa stricem, nekad i
+sa dru š tvom i i š ao je u vrijeme kada je dozvoljen lov, a to je od oktobra do kraja februara, subotom i
+nedeljom. Sa D.M.om i S.om J.em nikada nije i š ao u lov tako š to bi se prethodno dogovorili, a de š avalo se da
+se nadju u lovi š tu.
+ 
+Dana 07. 12. 2019. godine, nave č e, dogovorili su se njih š estorica i to njegov njegov brat Š . J., D.P. iz R., D. N.,
+S.D., V. D. i on da sjutradan, po š to je lovni dan idu u lov. Dana 08.12.2019. godine oko 06,30 h po š ao je sa
+S.D.m njegovim vozilom marke “Golf” i u to vozilo pored opreme za lov smestili su i tri kera. Drugim vozilom
+su po š li N. D. i D. V. i to od njegove ku ć e i misli da su i oni u vozilo smjestili tri kera i tre ć im vozilom je u lov
+poš ao njegov brat Š . J. i u vozilo smjestio jednog ili dva kera, s tim š to je trebalo da se nadje sa D.P. i da sa
+njim njegovim vozilom ide u lov. S. i on su oti š li putem ka C.. V. i D. su oti š li put grada i onda da nastave prema
+G., gdje ć e prije Gran č areva skrenuti u selo koje se zove “S.”. J. sa D. je oti š ao takodje prema G. ali u mjesto
+Skoč igorina. Kada su do š li do C. ostavili su vozilo i S. i on su oti š li pravcem koji dijeli J. i O. u mjestu koje se
+zove “Bandera”. Tu su na š li trag od divlje svinje. Kerove su vodili na povocu. Kerovi nisu reagovali na taj trag
+tako da nisu bili sigurni da li se radi o svje ž em tragu pa su nastavili dalje vode ć i kerove. Nastavili su dalje,
+proš li ku ć u J.F. i sreli se sa bra ć om P. koji su ve ć  bili pustili svoje kerove u lovi š te. S. i on su do š li u G. ta č nije
+izmedju mjesta Č . i G.. Spustili su se na asfalt i D. V. ili N. D., nije siguran koji od njih dvojice su do š li za njih po
+njihovom pozivu i odatle su oti š li u Č . ka skretanju u mjesto S.. Tu su se njih š estorica skupili i doru č kovali. Ne
+zna ta č no koliko je bilo tada sati, pretpostavlja negdje oko 11,00 h. Dok su se nalazili na tom mjestu nekog od
+njih je pozvao Ž .K. koji ž ivi u naselju M. i koji je takodje bio u lovu, pa je rekao da ispod Ž . imaju tragovi od
+divljih svinja i pitao ih da li ć e oti ć i tamo da proprate te tragove.Tada su V. i D. krenuli prema tom mjestu ispod
+Ž., a on i S. se vratili na onaj isti trag koji su prethodno vidjeli kod “bandere”, a Š . J. i D.P. su ostali na tom
+mjestu i č ekali su kako su se dogovorili, njihov poziv u vezi pronalaska tragova. S. i on su se nalazili na vrhu
+mjesta O. kada ga je pozvao njegov brat Š . J. i rekao mu da ga je zvao J. S. i da mu je rekao da je na š ao trag od
+svinje uz O.. Š . J.u je rekao da je to onaj isti trag koji su on i S. prethodno na š li kod “Bandere”. Vratili su se
+prema “Banderi”, pustili su jednog kera s tim š to su se S. i on razdvojili, pa je S. oti š ao putem koji vodi ka
+mjestu P. i poveo dva kera, a on je iza š ao kod “Bandere” i pustio kera da prati taj trag. Kad se nalazio kod
+“Bandere” i ve ć  pustio kera pozvao ga je J. S. i pitao ga je li fre š ak trag. On mu rekao da jeste i da je ker oti š ao
+da prati trag. Pitao ga je da li mogu da izadju on i D.M. da stanu na č eke, a to je mjesto gdje se po procjeni njih
+lovaca o č ekuje da mo ž e da naidje divlja svinja koju tjeraju kerovi. On je i š ao kosom vra ć aju ć i se prema ku ć i
+J.F. da se nadje sa S.em a pomo ć u pratilica – č ipova koji se ugradjuju u ogrlicu za pra ć enje kerova, pa je ta
+pratilica bila stavljena na njegovog kera i tako je znao da je njegov ker oti š ao put Ljubovi đ e a mjesto se zove
+“R.” i “G.”. Do š ao je kod S.a i vozilom u kojem je on stavio dva kera su po š li putem ka mjestu P. i do š li na put
+povrh š kole gdje su se zaustavili. Na pratilici koju je imao pokazivalo mu je da ker stoji, a kada ker stoji to po
+njihovim procjenama zna č i da je prona š ao svinju. Tada je ker bio od njih udaljen oko 700-800 m vazdu š ne
+linije preko nekog brda tako da nisu mogli da č uju lave ž . S. je ostao kod vozila a on je po š ao prema mjestu
+gdje mu je pokazivano da se nalazi ker. Kada se spustio do nekog potoka pozvao ga je njegov brat Š . J. i rekao
+mu da ga je zvao J. S. i kazao mu da č uje kera i da je siguran da je na š ao svinju. Nastavio je kretanje uz neku
+stranu i tada ga je pozvao J. S. i rekao mu isti š to i njegovom bratu i pitao ga da li da pridje da pokrene svinju.
+J. S. mu je reako da se nalazi negdje povrh njegovog kera i da mo ž e do ć i do njega za nekih 10-15 minuta.
+Rekao je S.u da ne prilazi i da on i M.D. ostanu i da pokriju “sutragu”, a š to zna č i da je to č eka odatle je svinja
+doš la. Rekao mu je da ć e pustiti kerove koji ć e istjerati divlju svinju. Pozvao je S.a i rekao mu da dovede dva
+kera koja su bila u autu i on je po š ao prema njemu, a u medjuvremenu je njega pozvao V. ili D., po š to su bili
+zajedno i pitao ga da oni dodju asfaltom do mjesta G. i da odatle puste svoje kerove. Rekao im je da dodju i da
+puste kerove i da oni pokriju č eke koje vode ka Ljubovi đ i. Zatim je obavijestio S.a da ć e V. i D. pustiti kerove,
+pa se S. vratio u P. na č eku i nije pu š tao kerove. Zna sigurno da su bila pu š tena č etiri kera, a nije mu poznato
+da li su D.M. i J. S. pustili kerove niti uop š te da li su ih i poveli u lov. Kerovi su potjerali svinju koja je bje ž ala u
+pravcu Ljubovi đ e ka asfaltu. Nai š la je na D. N. koji je bio na č eki i misli da je D. č etiri puta pucao na nju i ubio
+je. Spustio se do mjesta gdje je ubijena svinja i tu se pored D.a nalazio i V.. Napomenuo je da su u ovo vrijeme
+P.i bili na č eki ka mjestu J.. Pozvao je P.e i J.S. i saop š tio im da je divlja svinja ubijena i da mogu da napuste
+čeke i da dodju kod njih. Dodao je i da su ostala tri kera na ogrlici imali č ipove koje je mogao i ako se nije
+radilo o njegovim kerovima da prati. Njegov ker je napustio mjesto gdje su se nalazili odnosno gdje je svinja
+ubijena i oti š ao prema š iblju gdje je svinja le ž ala i gdje je prona š ao i po č eo da laje. To mjesto je bilo udaljeno
+od njih oko 200 m uzbrdo. D. je oti š ao i kasnije mu je rekao da je poku š ao da uhvati njegovog kera, ali da nije
+uspio. Ker je i dalje lajao i kretao se po tom š iblju ali on nije mogao da ispratim kretanje D.a, jer se na tom
+mjestu nalazi dalekovod ispod koga je rastinje visine preko 2 m i veoma je gusto jer list sa tog rastinja nije
+otpao. Ne zna koliko je vremena pro š lo mo ž da 10-15 minuta, on se nalazio kod ove ubijene svinje, kada je
+čuo pucanj koji je dolazio od mjesta gdje se č uo lave ž  kera i to malo u desno po njegovoj procjeni. Posle par
+minuta P. M. ga je pozvao i rekao mu da č uje neko kukanje i da se desila nesre ć a tj. da je neko nekog ubio ili
+povrijedio. Dva kera je ostavio dolje vezana kod mjesta gdje je ubijena svinja i krenuo je u pravcu odakle je
+čuo pucanj i do š ao do neke š tale i zvao P.a da mu objasni gdje se to desilo. P. je str č ao do njega kod te š tale i
+oba su krenuli uz taj put i istr č ali nekih 200 m. Sa njegove desne strane puta gledano iz pravca odakle je
+dolazio nalazilo se gusto š iblje odakle je č uo glas koji govori “ovdje sam D.”. Nije mogao pro ć i direktno kroz to
+šiblje pravo do tog mjesta nego je morao da se vrati nazad i nekako je pri š ao do tog mjesta. Tu se nalazio D.M.
+koji je kle č ao i naslonio se na S.a i kukao je i zapomagao. Ne š to mu je M. rekao ali on od š oka nije mogao da
+se sjeti š ta je kazao. Vidio je M.u pu š ku iznad S.ove glave koja je bila preklopljena i prazna a S.ova pu š ka se
+nalazila ispod njegovih nogu. Na tom mjestu je sa njim do š ao P. M.. Tog dana on nije komunicirao sa D.M.om,
+već je samo komunicirao sa J.S., kako je to naveo. Po telefonskom pozivu koji je njemu uputio P. misli da se
+ovaj dogadjaj desio negdje oko 14, 00 h.
+ 
+Svjedok Š . J. u svom iskazu u datom u istra ž nom postupku u bitnom je naveo da su dana 08.12.2019. godine
+oko 6,30 h po š li u lov sa troje vozila i to njegov brat Š . D. sa D. S.em po š ao je put C., on i P.D. prema
+Skocigorini, a N. D., V. D. i njegov brat Š .B. su oti š li ka mjestu zvanom “S.”. Ponijeli su telefone radi
+medjusobne komunikacije i u tim predjelima kuda su i š li je bio dobar signal mobilnih mre ž a. Poveli su, koliko
+se sje ć a oko deset lova č kih keradi. Š estoro keradi je imalo ogrlice sa č ipom radi pra ć enja a troje nije i to
+njegovo i P.D.. Nosili su pu š ke rasklopljene do lovi š ta i radenike sa mecima. Negdje izmedju 10,00 h-11,00 h
+sastali su se u mjestu Č ., gdje su doru č kovali. On do tada nije vidio ni jedan trag, dok je njegov brat D. rekao
+da je vidio jedan trag kuda je pro š ao, ali nije siguran da li je sino ć ni ili se radi o sve ž em tragu divlje svinje. Dok
+su se jo š  uvijek nalazili zajedno u mjestu Č ., njegov brat D. je insistirao da se vrati na trag koji je prethodno
+vidio a koji trag se nalazi vi š e ku ć e J.S. na mjestu zvanom “Bandera”. D. i S. su oti š li prema tom mjestu, poveli
+su tri kera i nakon desetak minuta ga je pozvao J. S. i rekao mu da je prilikom hvatanja konja vidio svje ž  trag.
+On mu je rekao da je D. po š ao prema tom tragu i da ć e pustiti kerove. Tada mu je J. S. rekao da su on i D.M.
+već tog jutra bili u lovu i da su se vratili ku ć i u O. kod S.a. On je tek tada saznao da su J. S. i D.M. takodje tog
+dana odnosno tog jutra bili u lovu. J. S.u je rekao da ć e mu njegov brat D. javiti ako je svje ž  trag i da ć e ga on o
+tome obavijestiti. Nakon toga D. ga je obavijestio da se radi o svje ž em tragu, pa je pozvao J.S. da izadju i da
+pokriju “sutragu” a to je mjesto kuda je ostao trag od divlje svinje. On i P. su vozilom oti š li iznad mjesta P. i
+postavili se na č eke a D. V., B. Š . i N. D. su vozilom do š li putem B.P.-T.. do mjesta P. odakle se ker č uo, da bi i
+oni pustili njihove kerove. Kad su se svi postavili na č eke posle dvadesetak minuta pozvao ga je J. S. i rekao
+mu da č uje lave ž  kera na udaljenosti oko 150 m od njega i pitao ga da li da pridje do njega i da poku š a da
+odstrijeli divlju svinju. Rekao mu je da ne polazi dok se ne puste svi kerovi. Nakon desetak minuta pozvao ga
+je N. D. i njegov brat D. i rekli su mu da je N. D. ubio divlju svinju i da sidje na asfalt gdje ć e oni izvu ć i divlju
+svinju.On i P.D. su do š li do njih odnosno do D. S.a i njegovog brata B.a na asfalt . Posle desetak minuta č uo se
+pucanj koji je dolazio od mjesta gdje je divlja svinja ubijena. Nije č uo prije toga lave ž  kera a njegov brat D. mu
+je rekao da je on č uo lave ž  kera, obzirom da se D. nalazio tada bli ž e tom mjestu. Sa mjesta gdje se nalazio na
+asfaltnom putu te š ko da je mogao č uti lave ž  kera zbog konfiguracije terena. Nakon par minuta pozvao ga je
+D.M. i uz pla č  i kukanje rekao mu je da je li š io ž ivota S.a. Oti š ao je ka mjestu gdje je č uo pucanj i to najprije
+vozilom a posle jednim dijelom pje š ke i sreo je na putu jednog od dvojice P.a koji mu je rekao gdje se nalaze
+M. i S.. Jedva se provukao do tog mjesta zbog gustog š iblja i tamo je zatekao njegovog brata D. i M.D. kako
+sjedi pored glave J.S.. M.D. je ustao i zagrlio ga i dok je kukao ne š to mu je govorio ali on nije razumio š ta. Vidio
+je da su posle do š li D. S. i drugi P. a do š la je i policija.
+ 
+Svjedok S.D. u svom iskazu datom u istra ž nom postupku u bitnom je naveo da se dana 07.12.2019.godine,
+uveč e č uo sa Š . D.om i da su se dogovorili da ć e da idu u lov u nedelju 08.12.2019.godine. Dana
+08.12.2019.godine, oko 06,30 č asova su po š li od ku ć e Š . D. i to on i D. su po š li zajedno prema C., a u drugo
+vozilu je bio D. V. koji je i upravljao tim vozilom i u gradu je trebao da se nadje sa D.em da i on podje u lov i to
+prema mjestu zv.”S.”. Š . J. je po š ao svojim vozilom i gore su ga zatekli u dru š tvu sa P. D.. U lovu je bio i B. Š . ali
+ne zna sa kim je bio i sa kim je oti š ao. On i D. Š . su se sreli sa Š . J.om i P. D. u mjestu Poljane, koje se nalaze u
+blizini O. i Jabu č ke kose. Dok su D. i on i š li prema mjestu Poljane u mjestu Bandera su uo č ili trag divlje svinje.
+Kerove su vodili sa sobom na povocu. Medjutim kerovi nijesu reagovali na taj trag, tako da ih nijesu pustili.
+Inač e poznaje teren jer je i ranije i š ao u lov ali ne zna nazive tih mjesta. Od mjesta Poljane on i D. Š . su si š li do
+asfalta, a posle njih su do š li na to mjesto V. ili D. da ih povedu na mjesto gdje ć e doru č kovati, a to je mjesto Č ..
+U tom mjestu su se na š li on, Š . D., D. N., V. D., P.D. i Š . J., a da li je bio B. Š. sa njima nije mogao da se sjeti .
+Nakon š to su doru č kovali D. i on su se uputili prema mjestu gdje su prethodno vidjeli trag. D. je pustio kera a
+on je i dalje dr ž ao dva kera i nije ih pu š tao. Pratilicom su pratili pu š tenog kera i kretali su se vozilom ali kad bi
+im se izgubio signal D. bi i š ao pje š ke da uhvati signal na pratilicu. D. i on su vozilom si š li u P. i odatle su slu š ali
+lave ž  kera koga je D. pustio i koji se nalazio naspram njih na jednoj kosi i bio je dosta udaljen od njih. Ker je
+preš ao kosu i oti š ao iza brda, tako da ga nijesu mogli pratiti pa je D. oti š ao ka njemu a on je ostao gdje su se i
+razdvojili u P.. On je č itavo vrijeme stajao na tom mjestu- č eki. Dva kera koja je dr ž ao stavio je u auto. Posle
+izvjesnog vremena pozvao ga je telefonom Š . D. i rekao mu da podje ka mjestu gdje je oti š ao ker i da povede
+kerove kako bi ih pustio. Nakon zavr š enog razgovora sa Š . D.om č uo se telefonom sa V.em i D.em i oni su mu
+rekli da ć e oni po ć i na to mjesto i pustiti kerove a da on i dalje ostane na mjestu gdje se nalazi. Sa mjesta gdje
+se nalazio nikoga nije mogao da vidi jedino su kontaktirali telefonima i bio je dosta udaljen od mjesta gdje se
+nalazio ker Š . D. i gdje prilaze V. i D.. Nakon 15-20 minuta č uo je dva pucnja, zatim jedan pa opet dva pucnja.
+Razmak izmedju 2 i jednog pucnja po njegovoj procjeni bio je10-15 sekundi. D. V. ga je pozvao i rekao mu da
+je D. N. ubio divlju svinju i da mo ž e da se makne sa č eke i da sidje na mjesto koje se zove G.. On je vozilom
+sišao dolje na regionalni put B.P.-P. i zna da je tu zatekao Š . J.. Dok su se nalazili na tom putu a nakon 15
+minuta od pucnjeva koje je prethodno opisao č uo je jedan pucanj. Tada je komentarisao sa J.om o tome da li
+ima jo š  divljih svinja. J. mu je rekao da ih nema vi š e i da je bila samo jedna. Nakon minut od tog njihovog
+razgovora D.M. je pozvao Š . J. i rekao mu “kume ja ubih S.”, i tada mu je J. rekao da pozove hitnu pomo ć .
+Pozvao je hitnu pomo ć  i javila mu se B.D. kojoj je saop š tio da ne zna š ta se ta č no desilo i da se č uo pucanj i da
+je neko povrijedjen, a da li je stradao ili nije da ne zna. Nakon toga J. je svojim vozilom oti š ao na mjesto gdje
+se to desilo a on je ostao da č eka Hitnu pomo ć  i iza š ao je sa hitnom na mjesto dogadjaja. Kad su do š li na lice
+mjesta zatekao je D.M. kako č u č i pored S.a dr ž i se za glavu i govori “kuku kume š ta uradi i plakao je”. Mjesto
+gdje se nalazio J. S. i D.M. je sa dosta š iblja koje je visoko. Doktor je pri š ao i konstatovao smrt kod J.S.. Nije
+komunicirao niti se vidio kriti č nog dana sa D.M.om i J.S..
+ 
+Svjedok D. N. u svom iskazu datom u istra ž nom postupku u bitnom je naveo da su dana 08.12.2019.godine,
+oko 06,30 č asova po š li u lov i to, D. V. i on su sa vozilom se uputili prema mjestu zv.S., dok su ostali oti š li na
+druge dvije strane i to prema Sko č igorini i C.. D. V. i on su u vozilo smjestili tri ili č etiri kera i opremu koja je
+potrebna za lov a to su pu š ke koje su se nalazile u futrolama i municija. Kad su do š li u mjestu S. ostavili su
+vozilo kod š kole i krenuli su da tra ž e tragove od divljih svinja. Po š li su prema U. i kako nijesu nai š li na bilo
+kakav trag vratili su se do vozila i odatle se spustili do Č .. Do š li su D. Š ., J. Š ., D. S. i D.P. i tu su doru č kovali.
+Misli da je bilo oko 11,00 č asova kada su se skupili i doru č kovali. Nakon š to su doru č kovali, V. D. je pozvao Ž .K.
+koji takodje ide u lov, i rekao mu da je na š ao neke tragove u Vrane š koj dolini i da podju do njega. V. D. i on su
+vozilom krenuli put njega a D. Š . i ostali su se vratili na neki trag koji je D. Š . prethodno vidio. V. D. i on su do š li
+do trafostanice u T. gdje su stali i č ekali da ih Ž .K. obavijesti gdje ć e njegov ker da ode. Nakon pola sata D. Š .
+ga je pozvao i rekao mu da je njegov ker na š ao svinju. O tome su obavijestili Ž .K., a zatim su on i D. V. po š li
+vozilom put P. gdje im je D. Š . rekao da je ker prona š ao svinju. Kad su do š li do Etno S. V., stali su na asfaltni
+put, odnosno regionalni put B.P.- P., iza š li iz vozila da č uju da li i gdje se č uje ker. Na udaljenosti od 350 m, a
+koju udaljenost se utvrdjuje pomo ć u pratilice – gps, su utvrdili gdje se nalazi ker i na kojoj lokaciji a to je u
+šumi prema P.. Si š li su sa asfaltnog puta i vozilom su do š li do neke ku ć e gdje su ostavili vozilo a odatle su
+priš li na oko l0 m do mjesta gdje se č uje i gdje se nalazi ker koga su prethodno locirali. Pustili su njihova č etiri
+kera koji su takodje imali na ogrlici gps. Njihovi kerovi su po š li prema keru koji je lajao i nakon 4-5 minuta
+svinja se pokrenula i š la je prema njemu, i kad je bila na udaljenosti oko 50 m od njega on je pucao u svinju i
+to jednom a ona je i dalje i š la prema njemu pa je ispalio jo š  tri metka u njenom pravcu koji su je pogodili.
+Posle su do š li D. V. i D. Š ., na mjesto gdje se on nalazio. Nakon 15 – 20 minuta č uo je pucanj i pitali su se ko
+puca i da li ima jo š  svinja. Ubrzo telefonom je M.D. pozvao Š . J. i rekao mu da je pogodio kuma. D. Š . je otr č ao
+prema tom mjestu koje je bilo udaljeno oko 300 m od njih. Zatim je oti š ao Š . J. vozilom a on nije mogao da
+ide. On i D. V. su svezali kerove i č ekali. Rekao mu je D. Š . da je J. S. poginuo i da ć e do ć i policija. Nakon š to je
+ubio divlju svinju kerovi su do š li do njih, me đ utim i dalje se č uo lave ž  jednog kera i to u š umi na mjestu
+odakle je do š la divlja svinja koju su istjerali kerovi. Lave ž  kera koji se č uo je trajao nekoliko minuta ta č nije 2-3
+minuta pa se odmah č uo pucanj. Poznaje D.M. poznavao je i J.S. i prije 2-3 godine su bili zajedno u lovu.
+ 
+Svjedok P. M. u svom iskazu datom u istra ž nom postupku u bitnom je naveo da se lovom bavi 3-4 godine i da
+ima odobrenje izdato od CB B.P., te da je i č lan lova č kog dru š tva B.P.. Dana 08.12.2019.godine, oko 06,00
+časova, njegov brat N. i on su krenuli u lov. Po š to je bio lovni dan pretpostavili su da ć e biti jo š  lovaca u lovu.
+Ponijeli su pu š ke, poveli č etiri kera koje su vodili na lance i kad su iza š li na neko brdo pustili su ih. Od ku ć e su
+poš li prema selu O. i na raskrsnici J. i O. sreli su D.M. koga je poznavao izvidjenja. Pozdravili su se i D.M. im je
+rekao da je po š ao da obidje teren i da vidi ima li tragova od divlja č i. Kod njega su bila dva kera i to jedan
+puš ten a jednog je dr ž ao na povocu. Njihovi kerovi nijesu imali ogrlice i nijesu imali opremu za pra ć enje
+kerova. Nastavili su prema brdu a M. je po š ao putem odakle su oni do š li. Kad su brat i on do š li na to brdo
+pustili su kerove. Zatim su se spustili malo ni ž e i tu su č ekali kerove. Tada je nai š ao Š . D. sa S.D.m, i š li su
+pješ ke i vodili su koliko je mogao da se sjeti tri kera. Pozdravili su se i D. je rekao da ako nadju trag od svinje
+da ć e ga zvati. D. Š . i S.D. su oti š li prema selu O.. Kada su do š li njihovi kerovi oko 10,30 – 11,00 č asova brat i on
+su oti š li ku ć i. Nakon jednog sata od njihovog dolaska ku ć i pozvao ga je Š . D. i rekao mu je da su na š li divlju
+svinju i da podju i da naprave č eke. Po š li su u pravcu š ume R., ali po š to Š . D. nije mogao ta č no da mu objasni
+gdje se nalazi, rekao mu je da pozove J.S. da mu on objasni gdje je to mjesto. Dva puta je zvao telefonom J.S.,
+koga je poznavao jer mu je bio kom š ija i po š to ž ive u selu do S. imao je njegov broj telefona, ali mu se J. S.
+nije javljao. Po š to mu se J. S. nije javljao, nastavio je naprijed a brat je malo ostao iza njega i č uo lave ž  kera.
+Tu su stali i napravili su č eku. Ina č e tom prilikom nijesu vodili njihove kerove. Nakon 5-6 minuta č uli su kera
+kako je zalajao ja č e od uobi č ajenog lajanja, š to za njih lovce zna č i da je divlja č  pokrenuta. Tada je č uo č etiri
+pucnja iz lova č ke pu š ke, s tim š to nije ba š  siguran u broj hitaca. Nakon nekoliko minuta Š . D. ga je pozvao i
+rekao mu da je divlja svinja ubijena. Brat se iza njega nalazio nekih 150 m, pa ga je pozvao da dodje do njega
+jer nije imao kod sebe telefon i on je do š ao i krenuli su puti ć em ispod dalekovoda i kad su pro š li oko 300 –
+400 m po njegovoj procjeni č uli su da ker opet laje i oni su jo š  malo i š li kad su č uli jo š  jedan pucanj iz pu š ke.
+Nagla š ava da je ker č itavo vrijeme lajao pa i u vrijeme kad se č uo ovaj pucanj iz pu š ke. Za trenutak su zastali,
+pa su jo š  malo i š li i on je č uo galamu, kao vrisku a kako su se pribli ž avali tom mjestu č uo je kukanje od strane
+jednog lica. Potr č ali su N. i on i kad su se pribli ž ili mjestu odakle se č uje kukanje, nije mogao da vidi ni š ta jer
+je sa njegove lijeve strane odakle je do š ao i gdje se č ulo kukanje veliko š iblje i č e č ari. Koliko se sje ć a dok je jo š
+bio na tom puti ć u pitao se š ta je bilo, a neko mu je odgovorio “D.e zovi hitnu”. Bacio je pu š ku i pozvao je
+jedan broj misle ć i da je hitna ali mu se javila vatrogasna, a drugi put je uspio da pozove hitnu i rekao im je da
+se dogodila nesre ć a u lovu i poku š ao je da im objasni gdje se nalaze. Kad je zavr š io poziv po š ao je ka mjestu
+odakle se i dalje č ulo kukanje. Prolazio je kroz š iblje, rukama ga razgr ć u ć i i nakon nekih 15-tak m od tog
+putić a vidio je D.M. u č u č e ć em stavu kako dr ž i S.a. D.M. je samo pitao da li daje znake ž ivota a on mu je rekao
+“ne”. Njegov brat je za njim do š ao kroz to š iblje a kada mu je D.M. rekao da S. nije ž iv iza š ao je ponovo na taj
+putić  i pozvao Š . D. i rekao mu š ta se desilo. D. je krenuo prema njima ali mu ja nekoliko puta obja š njavao
+mjesto gdje se to desilo i gdje se nalaze, govore ć i mu da je to povrh neke ku ć e. Kad je D. do š ao on je ponovo
+sa njim kroz to ž bunje u š ao kod D.M. i J.S. a posle su do š li jo š  Š . J., S.D. i V. D.. Do š la je hitna pomo ć , a zatim i
+policija. D.M. zna izvidjenja, a ne poznaje ga li č no i par puta su se sreli u lovu.
+ 
+Svjedok P. N. u svom iskazu datom u istra ž nom postupku u bitnom je naveo da se lovom bavi ve ć  dvije godine
+i da ima odobrenje izdato od CB B.P., za dr ž anje lova č ke pu š ke. Dana 08.12.2019.godine, njegov brat P. M. i on
+su oko 06,00 č asova, po š li u lov i krenuli prema mjestu O.. I š li su pje š ke i poveli su č etiri kera, s tim š to su
+jednog kera vodili na povocu a tri kera- š tenad su bila pu š tena jo š  od ku ć e. Kerovi nijesu imali ogrlice tako da
+nijesu ni imali uredjaj za pra ć enje. Kada su do š li na raskrsnicu vi š e ku ć e J.S. sreli su lovca D.M. koga je prvi
+put vidio, pozdravili su se i pitali jedni druge da li ima š ta u š umi. D.M. je jednog kera vodio a drugi je bio
+puš ten. D.M. je krenuo putem kojim su oni do š li, a oni su nastavili put Modrog Dola koji se nalazi vi š e P. a
+izmedju P. i O.. Na raskrsnici Modrog Dola – P. i O. sreli su Š . D. i Š .D.. Oni su vodili tri kera na povocu.
+Pozdravili su se izdaleka samo "zdravo za zdravo". Oni su oti š li put P. a njegov brat i on su ostali na raskrsnici i
+čekali njihove kerove, a kada su do š li kerovi oti š li su ku ć i. Misli da su do š li ku ć i prije 12 sati, legao je da spava
+a brat je bio na spratu ku ć e. Negdje oko 13,00 č asova, brat ga je probudio i rekao mu da ga je zvao Š . D. i
+kazao mu da su na š li svinju i pozvao ih da odu tamo. D. Š . je rekao njegovom bratu da se nalaze u mjestu G., a
+oni da ostanu u J. u š umi R. i tu da č ekaju. Ovog puta nijesu vodili kerove. Dok su č ekali č ula se pu š ka č etiri
+puta, a nakon 3-4 minuta Š . D. je zvao njegovog brata i rekao mu da je ubijena svinja i da je gotovo i pozvao ih
+da dodju tamo. Dok su i š li prema njima i kako su se spu š tali niz neko brdo prema dalekovodu č uo se lajanje
+kera ili tzv. š tektanje a to se de š ava kada ker osjeti trag divlja č i. Dok je ker lajao- š tektao č uli su jedan pucanj iz
+puš ke. Dok su se spu š tali niz brdo č uli su kukanje. Kad su č uli kukanje i vriskanje potr č ali su dolje i nai š li su na
+veliko š iblje. Lice koje je kukalo obratilo im se, jer ih nije vidjelo a pomislio je da je Š . D. pa je rekao “D.e zovi
+hitnu”. Oni to lice jo š  uvijek nijesu vidjeli. Tada je njegov brat pozivao par brojeva smatraju ć i da zove hitnu.
+Nakon toga su brat i on provla č e ć i se nekako kroz to š iblje do š li do mjesta gdje je to lice kukalo i tada su
+vidjeli D.M. kako sjedi i dr ž i za glavu J.S. i pla č e i kuka a S. je le ž ao i okrenut na desni bok. Niko osim njih nije
+bio tu kod D.M. i S.J., pa je njegov brat pozvao Š . D. i rekao mu da dodje i da je ubijen J. S.. Njegov brat je
+odatle iza š ao iz š iblja i po š ao niz put da sretne Š . D.. Nakon njega i on je iza š ao na put. Prvo je do š ao Š . D., za
+njim Š . J., do š ao je S. i V.. Nije poznavao J.S. niti ga je tog dana vidio prije nego š to je li š en ž ivota.
+ 
+Svjedok B.S. u svom iskazu datom u istra ž nom postupku u bitnom je naveo da ga je dana 07.12.2019.godine,
+izmedju 16 i 16,30 č asova, pozvao telefonom J. S. i rekao mu da je po š ao iz Podgorice i da se nalazi izmedju
+M. i K. i da dodje u kafanu koja se zove “ Ć elo”, a koja se nalazi se u naselju Rijeka u blizini LJ., a koja je u
+vlasni š tvu D. M.a koji je brat D.M.. Pošao je u tu kafanu, a J. S. je do š ao 5 – 10 minuta posle njega. Tu su popili
+po 3-4 piva i sjedjeli u kafani do 19,30 č asova. U medjuvremenu J. S. se č uo sa D.M.om i pitao ga “kume ho ć e š
+li ujutru iza ć i kod mene u O. da pustimo kerove, da tra ž e č etiri zeca”. Njemu je S. rekao da je prethodno kad je
+dolazio vidio u O. č etiri zeca. Posle tog njihovog razgovora S. mu je rekao da ć e D.M. iza ć i kod J.S. u O. da idu
+u lov. Tada mu je S. rekao da i on izadje u O. sjutradan, da se malo dru ž e. Dana 08.12.2019.godine, negdje oko
+06,00 č asova spremio se da ide u O. i iza š ao je na ulicu, i dok je bio na ulici nai š ao je D.M. i pitao ga “kume
+hoć e š  li ti gore” a on mu je rekao da mu je oti š lo š tene i da ne mo ž e po ć i dok ga ne nadje i uhvati, pa ć e posle
+doć i. Nije uhvatio š tene a nije imao ni pu š ku i ne posjeduje je, me đ utim odlu č io je da po dogovoru ode u O.
+radi dru ž enja. Oti š ao je svojim vozilom marke “Golf II” i dok je i š ao prema selu O., č uo se sa J.S. i on mu je
+rekao da dodje do krivine, odakle se skre ć e prema njegovoj ku ć i i da stane na tu krivinu i slu š a ho ć e li se č uti
+lave ž  kerova i ako ih č uje da im javi gdje se nalaze. Kad je do š ao na tu krivinu, pozvao je J.S. i on mu je rekao
+da je po š ao vode ć i kera prema J.K.. Slede ć i put su se č uli oko 09,00 č asova kada mu je rekao da je magla, da
+ne mora vi š e da stoji na raskrsnici i da ide ku ć i kod N. da pije kafu. Vozilom je oti š ao do ku ć e J.S.. U š ao u ku ć u
+gdje je N. stavio kafu, koju je popio. Po listi poziva u svom telefonu zna da je u 09,35 č asova, pozvao J.S. jer je
+doš ao njegov ker ku ć i, pa mu je N. rekao da ga pozove i pita ho ć e li ga svezati. J. S. mu je rekao da ga sve ž u i
+da on i D.M. idu prema ku ć i. Nakon 5 minuta po njegovoj procjeni oni su do š li u ku ć u i N. im je skuvao kafu.
+D.M. je iz svog ranca izvadio hranu koju je ponio i tu su doru č kovali. Dok su mezili-doru č kovali popili su po 2-3
+rakije. Dok su sjedjeli u ku ć i i pri č ali oko 11,15 č asova J. S. je pozvao Š . D. i rekao mu da je vidio trag od divlje
+svinje u mjestu kod J., ta č nije kod D. i da pusti svog kera. Nakon 5-6 minuta Š . D. je pozvao J.S. i rekao mu da
+je pustio kera i da podju D.M. i J. S. prema J.K.. Iz ku ć e su iza š li oko pola dvanaest i on ih je njegovim vozilom
+povezao do ku ć e S., tu je ostavio vozilo i njih trojica su po š li prema J.K.. D.M. je poveo svog kera i kad su iza š li
+iz njegovog vozila odmah ga je pustio a J. S. tada nije vodio kera. Od mjesta gdje je ostavio vozilo pre š li su
+jedno 300-400 m, da bi mu J. S. rekao da ostane tu a on i D.M. su se uputili prema selu J.. Nosili su pu š ke.
+Sjedio je na mjestu gdje je ostao i oko 13,51 č asova J. S. ga je pozvao i rekao mu da je udaljen oko 50 m od
+mjesta gdje ker laje i da je svinja tu, a da ne ć e da prilazi da bi Š . pustili mladu š tenad da se “izme č e” na svinju,
+a što zna č i da se kale i pripremaju za lov. U 13,56 č asova ga je J. S. nazvao i rekao mu da je svinja ubijena i da
+ja ne č eka vi š e, ve ć  da ide, i da njemu treba 2 sata da od nekih potoka dodje do njega, te da ć e da ide u P.
+prema ku ć i D.Z. jer mu je tako lak š e da dodje ku ć i. Dok je to govorio osjetio je da je zadihan i da se kre ć e.
+Pitao ga je da li treba da dodje i da ih uzme, a on mu je rekao da ć e do ć i J. Š . za njih. Pustio se do svog vozila i
+tada ga je pozvao Š . J. i rekao mu “ubi ga M.”, na š ta mu je on rekao “znam rekao mi je S.”a on je rekao
+“dobro,dobro” i prekinuo vezu. U tom momenatu pomislio je da mu Š . J. govori u vezi ubijene svinje. Osjetio
+je da ne š to nije u redu i kako mu se Š . J. ponovo nije javljao a ni J. S., pozvao je Š .D. i on mu je rekao da je M.
+ubio S.a. J. S. i D.M. su se dobro slagali bili su kao bra ć a i uvijek su bili zajedno kada S. dodje iz Podgorice, a i
+on je uvijek bio sa njima i oslovljavali su se medjusobno sa kume, jer je D.M. njemu kr š teni kum a J. S. mu je
+kao brat. I š li su zajedno u lov s tim š to on nikada nije nosio pu š ku.
+ 
+Svjedok B. N. u svom iskazu datom u istra ž nom postupku u bitnom je naveo da ž ivi u selu Djapanov Grob
+zajedno sa svojim bratom. Godinu dana je radio u B. ta č nije cijepao drva i proljetos je do š ao ku ć i. Prije dva –
+tri mjeseca je bio u dru š tvu sa J.S., sa kojim je ina č e bio u dobrim odnosima i dru ž ili su se i tada mu je J. S.
+koji ž ivi u Podgorici, predlo ž io da zajedno rade poljoprivredne poslove, ta č nije da se bave sto č arstvom. Tada
+su se dogovorili da kupe stoku i da je dr ž e kod njega na njegovom imanju, a on da ž ivi u njegovoj ku ć i u O. u
+kojoj ne ž ivi niko i u koju samo povremeno dolazi J. S. kao i ostali č lanovi njegove u ž e i š ire porodice. Zajedno
+su kupili 21 ovcu, dva konja, tri svinje a naknadno je od svog novca za svoje potrebe kupio jednu kravu i tele.
+J. S. je iz Podgorice, do š ao u O. u subotu uve č e, ta č nije 07.12.2019.godine uve č e. Sjedjeli su jedan sat,
+večerao je i oti š ao je na sprat ku ć e da spava. Dok su sjedjeli rekao mu je da ć e ujutru da ustane rano i da
+popiju kafu, da ć e posle da ide u lov sa D.M.om koji ć e ga č ekati na Kosu Jabu č ku. Sjutradan
+08.12.2019.godine, S. je ustao, popili su kafu i po jednu č a š icu rakije, uzeo je kera koga je vodio na povodcu i
+otiš ao. U 09,00 sati, do š ao je B.S. kod njega ku ć i vozilom marke “Golf” i rekao mu da se č uo sa J.S. koji mu je
+rekao da dodje kod njega da pije sa njim kafu jer je kod njega toplo. Napomenuo je da je prethodno ve č e
+rekao S.u da mu nema konja i da ujutru kad podje u lov pogleda da li ih negdje ima. Nakon nekih pola sata ili
+40 minuta od dolaska S.a B. u ku ć u on je iza š ao da pusti stoku i pogledao je u pravcu brijega gdje je vidio da
+idu D.M. i J. S. koji je vodio dva konja, a njegov ker je do š ao ku ć i 15-tak minuta prije i on je tada kada je do š ao
+ker rekao S.B. da pozove S.a i da ga pita š ta ć e sa kerom. On ga je pozvao i S. mu je rekao da ga sve ž u. D.M. i J.
+S. su u š li u ku ć u , on im je skuvao kafu, stavio meze a M.D. je izvadio iz ranca hranu koju je ponio i tu su njih
+četvorica doru č kovali. Kada su do š li u ku ć u nijesu pominjali ni š ta u vezi lova. Dok su pili kafu njih č etvorica su
+popili po jednu rakiju i za vrijeme doru č ka vi š e niko nije pio rakiju jer je sklonio bocu i č a š ice sa stola. Nakon
+doru č ka iza š ao je napolje da obidje stoku a M., S. i S. su ostali u ku ć u. Posle izvjesnog vremena sva trojica su
+izaš li iz ku ć e, a on je i dalje bio kod stoke i pitao ih gdje ć e, a oni su mu odgovorili da idu ponovo u lov, i da ih
+je D. Š . zvao i rekao im da je primijetio troje krmadi u okolini J.. Sjeli su u vozilo S.a B. i oti š li su pored ku ć e S.
+gdje su ostavili kola i oti š li, ali ne zna kuda su i da li su zajedno ili pojedina č no oti š li jer sa mjesta gdje se
+nalazio nije mogao dalje ni š ta da vidi. Ubrzo je u š ao u ku ć u, pogledao na sat i vidio da je 11,30 č asova, š to
+znač i da su oni oti š li ne š to prije ovog vremena. U 14,30 č asova zvao ga je Č .J. iz Đ .G. i pitao ga da li zna š ta o
+S.u, on rekao da ne zna, na š ta mu je on kazao da je izgleda ranjen. Č itavo ljeto je boravio u S.ovoj ku ć i, č ak i
+prije nego š to su se dogovorili da zajedno kupe stoku. Vidjao je D.M. da je dolazio kod J.S. a dolazio je i M.
+brat. Poznato mu je da su kumovi. Dobro su se slagali i bili su kao bra ć a. U vezi dogadjaja, odnosno kako je S.
+nastradao njemu nije poznato jer nije i š ao na to mjest. I dalje ž ivim u njegovoj ku ć i u O. i č uva stoku.
+ 
+Svjedok V. D. u svom iskazu datom u istra ž nom postupku u bitnom je naveo da se dana 07.12.2019.godine
+uveč e dogovorio sa D.om Š .em, D. S.em, J.om Š ., N. D.em da slede ć eg dana, tj. 08.12.2019.godine idu u lov,
+jer je tog dana bio lovni dan. Dana 08.12.2019.godine oko 06,00 č asova sa svojim vozilom je po š ao na
+autobusku stanicu gdje ga je č ekao N. D. koji je takodje po š ao svojim vozilom i krenuli su u pravcu mjesta koje
+se zove S.. Poveli su kerove i to on jednog a N. D. dva i sva tri kera su imala ogrlice sa gps. U mjestu S. na š li su
+na trag od divlje svinje Pustili su kerove koji su pratili trag ali nijesu na š li svinju, nakon č ega su se vozilima
+vratili na po č etak mjesta S., gdje su se sastali sa Š . D.om, Š . J.om, D. P. i S.D.m. Mjesto gdje su se sastali je Č . i
+tu su doru č kovali. Dok su bili zajedno na tom mjestu, njega je pozvao telefonom K. Ž . iz Toma š eva i rekao mu
+da se u mjestu Galica nalaze tragovi od divljih svinja i da dodje. Tada su N. D. i on njegovim vozilom po š li za T..
+i to seoskim putem GG.-T.. i do š li u Č okrlije kod trafostanice. D. Š . je sa D. S.em po š ao prema mjestu J. da
+isprati trag za koji ga je obavijestio J. S.. Š . J. i D.P. su ostali da bi kasnije oti š li kod mjesta gdje je S. J.
+obavijestio da ima trag od divlje svinje i da tu prave “ č ek”. Kod trafostanice su se zadr ž ali oko 20-tak minuta
+kada ga je pozvao Ž .K. i rekao mu da i dalje č ekaju tu dok on ne javi za tragove na Galici. Ubrzo potom ga je
+pozvao Š . D. i rekao mu da je pustio svog kera i da ker ide put “Etno S. V.”. Kako su on i N. D. imali kod njih
+pratilicu odmah su uhvatili signal D.ovog kera i vidjeli gdje se nalazi i kuda ide. On je obavijestio K. Ž . da je
+D.ov ker ve ć  na š ao divlju svinju i da ne ć e dolaziti na Galicu, nakon č ega su vozilom po š li put Etno S.. Vozilo su
+ostavili kod ku ć e M.M. i odatle su po š li pje š ke i poveli tri kera na povocu. Kada su pri š li mjestu gdje se nalazio
+ker D. Š .a pustili su svoje kerove. Č im su kerovi pri š li i zalajali, divlja svinja se pokrenula i krenula put njega i
+D.N. i D. N. je ubio divlju svinju. N. je ispalio 4 ili 5 metaka u pravcu divlje svinje. Ubrzo je kod njih do š ao Š . D.
+oni su se nalazili kod divlje svinje. Š . D. je pozvao ostale i rekao im da se maknu sa č eka i da dodju kod njih.
+Kerovi su se nalazili kod divlje svinje da bi nakon 10-tak minuta ker D. Š .a se izdvojio po č eo da laje i krenuo
+prema š iblju , tj.mjestu gdje je le ž ala divlja svinja gdje je ubijena. Ne zna koliko vremena je pro š lo č uli su da je
+ispaljen metak iz pu š ke i po njegovoj procjeni djelovalo je da je ispaljen viso č ije od mjesta gdje je le ž ala divlja
+svinja. Ubrzo nakon ispaljenog tog metka , zazvonio je telefon Š . D.u a ne zna ko ga je zvao i po zavr š enom
+razgovoru Š . D. im je rekao da “neko , nekog ubi” i odmah je potr č ao ka mjestu odakle se č uo metak iz pu š ke.
+Pozvao je Š . D. i pitao ga š ta je a on mu je rekao da je M. ubio S.a. Posle toga su on i ostali koji su bili sa njim
+poš li ka mjestu gdje se to dogodilo. Dok je prilazio tom mjestu bilo je š iblje, prolazio je kroz š iblje, ali
+dolaskom do mjesta gdje je ubijen S. bilo je gusto š iblje i nije bilo lako pri ć i tom mjestu. Poznaje i to iz lova
+D.M. i J.S. i svake godine vi đ ali su se u lovu, jer love u istim terenima. Kada se desi ulov tada je praksa da svi
+lovci sjednu , pojedu ne š to, popiju, dru ž e se i na osnovu tog dru ž enja on je zapazio da je odnos izmedju D.M. i
+J.S. bio dobar i da su bili kao bra ć a.
+ 
+Iz zapisnika o uvi đ aju sa č injenog od strane dr ž avnog tu ž ioca u Vi š em dr ž avnom tu ž ila š tvu, Ktr. br. 531/19 od
+08. 12. 2019. godine proizilazi da je uvi đ aj sproveden u mjestu zv. G., u selu T.., op š tina B.P.. Lice mjesta gdje
+se nalazi tijelo je sa desne strane i ispod nivoa puta. Mjesto gdje je zate č eno be ž ivotno tijelo S.J. je gusta
+šuma, koja se sastoji od mladih stabala hrasta, breze i jasike, č iji su pre č nici debline 3-4 cm i visine 3-5 metra,
+izme đ u kojih je sitnije rastinje i visoka paprat, a tlo je prekriveno suvom travom i opalim li šć em. Na stablima
+hrasta u znatnoj mjeri stojalo je li šć e koje je bilo suvo. Tijelo J.S. je zate č eno na desnom boku i desnoj strani
+lica prema zemlji, sa ispru ž enom desnom rukom č itavom du ž inom polo ž enoj po zemlji, prstiju savijenim,
+skoro u pesnicu, dok se lijeva ruka nalazila iza le đ a, ispru ž ena pored tijela. Na tijelu je bila perjana jakna
+bordo boje sa kapulja č om, otkop č ana, ispod koje je teget plava dukserica sa š traftom u predjelu grudi
+svijetlije plave boje, oko struka se nalazila ko ž na fi š eklija braon boje sa patronima od lova č ke pu š ke,
+pantalone su bile maskirne a na nogama su gumene č izme. U predjelu tjemena glave i č ela vidljiva je krv, kao
+i na zemlji ispod glave.Iznad glave je zate č ena otvorena lova č ka pu š ka, marke „L.F.“, model 1868, kalibra .....
+GA x3, fab. Broja ......., cijevi horizontalno postavljenih, bez patrona u njoj. Kundak pu š ke je je od lijevog kuka
+udaljen 1,10 metara, a usta cijevi od lijevog kuka su udalje 1,60 metra. Ispod nogu pok. J.S. nalazila se
+lova č ka pu š ka marke „Crvena zastava“, bez vidljivog fabri č kog broja, sa dvije polo ž ene vodoravne cijevi, pri
+čemu je kundak pu š ke bli ž i putu, a usta cijevi dalje i okrenuta od puta. Kundak je od lijevog kuka udaljen 1,10
+metara, a usta cijevi od lijevog kuka o,70 metara. Iznad tijela, prema putu, na udaljenosti od 1,30 metra, od
+lijevog kuka, 1,40 metra od glave nalazi se ka č ket plave boje. Na udaljenosti 15,60 metara od glave pok. J.S. i
+udaljenosti od 16,30 metara od pete lijeve noge, na putu iznad nivoa mjesta je prona đ eno tijelo prona đ ena je
+čaura lova č kog patrona na č ijem plasti č nom dijelu je crvenom bojom ispisano jedno ispod drugog „SINOXID“,
+a ispod „SpSG“, ...., 7,....., dok su na dnu č aure oznake „12 RWS/GECO 12 ROTWEIL". Č aura se nalazi na putu,
+na udaljenosti od 6,70 metra od ta č ke na putu gdje je dalekovodno u ž e- ž ica i to ono koje je najbli ž e
+magistralnom putu B.P.- P. presijeca put, kao i na udaljenosti od 16,60 metara od po č etka luka prve krivine na
+putu gledano u pravcu istog magistralnog puta. Lice D.M., koji prisustvuje uvi đ aju, mjesto gdje se č aura nalazi
+je pokazao kao mjesto na kome se nalazio prilikom ispaljenja metka od koga poti č e prona đ ena č aura.
+Predmeti koji su obilje ž eni i fiksirani kao tragovi lica mjesta su izuzeti od strane kri.tehni č ara UP policije CB
+B.P. i isti ć e biti predmet vje š ta č enja. Tako đ e od strane krim tehni č ara UP policije lice mjesta je fotografisano i
+sačinjena je skica lica mjesta koji ć e bidi sastavni dio zapisnika.
+ 
+Iz fotodokumentacije sa skicom lica mjesta, sa č injenim od strane UP CB - B.P., broj 588/19 od
+08.12.2019.godine proizilazi da je skica lista mjesta u potpunosti u skladu sa zapisnikom u uvi đ aju i
+fotodokumentacijom. Fotodokumentaciom su vizuelno prikazani: prilazak licu mjesta, odnosno le š u J.S.,
+polo ž aj i izgled le š a, izgled i polo ž aj gornjeg dijela le š a, izgled i polo ž aj glave, izgled i polo ž aj nogu kao i
+mjesto prona đ ene pu š ke „Crvena zastava“, polo ž aj pu š ke vlasni š tvo M.D., izgled glave pokojnika, nakon
+pomjeranja le š a, mjesto od le š a do traga br.5- patrona na lokalnom putu, pravac od ispaljenog patrona ka
+mjestu gdje se nalazio J., izgled patrona, mjesto od patrona do po č etka krivine- pomo ć na stajna ta č ka,
+mjesto od patrona do mjesta gdje se uspravno nalazi ž ica od elektri č nog voda bli ž a licu mjesta- pomo ć na
+stajna ta č ka, drvo sa lijeve strane gledaju ć i ka krivini- pomo ć na stajna ta č ka, izgled pu š ke „Crvena zastava“,
+izgled pu š ke „franchi“, izuzeti redenik sa 16 patrona sa pojasa S.J., ispaljeni patron, i izgled garderobe pok.
+S.J. i to jakne, plave dukserice sa o š te ć enjima na njoj, plave majice kratkih rukava sa o š te ć enjima, te
+maskirne pantalone sa o š te ć enjima.
+Iz potvrde Uprave policije - CB B.P., o privremenom oduzimanju stvari, broj 240/2019 - 5593, proizilazi da su
+dana 08. 12. 2019. godine od M.D. oduzeti i to: platneni redenik sa 24 kom metaka (6 komada oznake Fiocki
+....., 6 komada oznake RWS/GECO 12 Rotwell, 7 komada oznake Bachieri&amp;Pelagri 12, 1 komad oznake
+Cheddite 12, 1 komad oznake Nobel 12 sport, 3 komada oznake Sellier 12 Bellot), lova č ki no ž , sa plasti č nim
+rukohvatom oznake „Bear Gryll“, dozvola za lov br..... za 2019/2020 godinu, lovna karta broj 0.......za lovnu
+2019/2020 godinu, č lanska karta lova č ke organizacije B.P., oru ž ni list br........., mobilni telefon marke
+„samsung galaxy“ i mobilni telefon marke „samsung“, model c5212.
+ 
+Iz izve š taja o balisti č kom vje š ta č enju Forenzi č kog centra u D.vgradu, sa č injenim od balisti č ara M. M.a, broj
+4791/19 od 24. 01. 2020. godine proizilazi da se na odjevnim predmetima ne mo ž e decidno utvrditi povr š ina
+dejstva sa č menog snopa, koliko sa č menih zrna je pogodilo o š te ć enog i koliko je njihovo me đ usobno
+rastojanje. Iz tih razloga se ne mo ž e utvrditi daljina pucanja.
+Iz izvje š taja o balisti č kom vje š ta č enju prisustva barutnih č estica, broj 4792/19, od 29. 01. 2020. godine
+proizilazi da nakon izvr š enih ispitivanja na dostavljenoj jakni sa kapulja č om vlasni š tvo J.S., dokazano
+prisustvo barutnih č estica u rasporedu i koncetraciji kao š to je prikazano na slici, dok na ostaloj dostavljenoj
+garderobi vlasni š tvo pok. J.S. nije dokazano prisustvo barutnih č estica.
+ 
+Iz izvje š taja o balisti č kom vje š ta č enju prisustva GSR č estica, broj 4794/19, od 28. 01. 2020. godine proizilazi da
+ne prisustvo karakteristi č nih GSR č estica na š akama D.M. i J.S., ukazuje da se ne mo ž e pretpostaviti
+mogu ć nost da su isti bili povezani sa procesom opaljenja iz vatrenog oru ž ja.
+Iz izvje š taja o balisti č kom vje š ta č enju broj 4790/19, od 27. 01. 2020. godine proizilazi da su dostavljene
+lova č ke pu š ke funkcionalne. Iz dostavljene pu š ke „L.F.i“ je pucano nakon č ega cijevi nijesu o č i šć ene. Cijevi
+dostavlene lova č ke pu š ke „Crvena zastava“ su slabo o č i šć ene. Dostavljena č aura je ispaljena iz lova č ke pu š ke
+marke „Franchi“. Dostavljena sa č mena zrna odgovaraju sa č menom punjenju koje se nalazilo u spornoj č auri.
+Komparacijom č aura ispaljenih iz dostavljenog oru ž ja sa č aurama iz zbirke po NN po č iniocima, koje
+posjeduju u FC nijesu na đ ene podudarne karakteristike.
+ 
+Iz dopune nalaza i mi š ljenja, od 02. marta 2020. godine, proizilazi da je pregledom dostavljenog lova č kog
+metka sa istim karakteristikama kao š to je ispisano na spornoj č auri utvr đ eno da sa č meno punjenje ima 12
+kuglica, č ija je ukupna masa oko 30 grama, a pojedina č no sa č meno zrno je mase oko 2,5o g.
+ 
+Iz izvje š taja Forenzi č kog centra o trasolo š kom vje š ta č enju, broj 4793/19 od 31. 01. 2020. godine proizilazi da
+mehani č ka o š te ć enja koja su konstatovana na garderobi J.S., osim isklju č enih, koja su posljedica no š enja i
+kačenja o o š tri predmet, su karakteristi č na za o š te ć enja koja nastaju dejstvom manjeg metalnog predmeta
+koje je posjedovalo ve ć u kineti č ku energiju. Ista su mogla nastati prolaskom metalnih kuglica ispaljenih iz
+patrona lova č ke pu š ke.
+Iz obdukcionog zapisnika sa nalazom i mi š ljenje vje š taka specijaliste za sudsku medicinu dr N.R., broj S br.
+237/2019 od 22. 12. 2019. godine, proizilazi da je smrt kod pok.S.J. nastupila nasilno, usled razorenja mozga,
+duž  kanala strijelne rane, ustreline glave i krvarenja iz rascjepa desnog plu ć nog krila i raskidanih krvnih
+sudova du ž  kanala strijelne rane, ustreline grudnog ko š a i prostreline desne butine - koje su sve nane š ene
+projektilima ispaljenim iz ru č nog vatrenog oru ž ja - lova č ke pu š ke iz daljine. Rana u lijevoj polovini tjemenog
+predjela ulazna je rana, ustreline glave koja se kanalom nastavlja, lome ć i lijevu tjemenu kost, razara tkivo
+velikog i malog mozga i zavr š ava prelomom u predjelu desne polovine srednje lobanjske jame, gdje je
+ustanovljen metalni sivkasti projektil (dramlija). Smjer kanala rane je odozgo, strmo nadolje, slijeva udesno,
+od naprijed unazad. Rana u desnom potklju č nom predjelu, ulazna je rana ustreline grudnog ko š a, koja se
+kanalom nastavlja ka grudnoj duplji, kroz drugi me đ urebarni prostor sa desne strane, razara tkivo desnog
+pluć nog krila, desnu kupolu pre č age, jetru i meka tkiva desne polovine za trbu š nog predjela, gdje je
+potko ž no u desnoj polovini slabinskog predjela ustanovljen metalni sivkasti projektil (dramlija). Smjer kanala
+rane je odozgo, strmo nadolje, sdesna ulijevo od naprijed unazad. Rana u predjelu srednje tre ć ine prednje
+strane desne butine, ulazna je rana, prostreline desne butine, koja se kanalom nastavlja kroz meka tkiva
+desne butine i zavr š ava izlaznom ranom u predjelu granice donje i srednje tre ć ine spolja š ne strane desne
+butine, te je u d ž epu pantalona ustanovljen metalni sivkasti projektil (dramlija), smjer kanala rane je odozgo
+nadolje, slijeva udesno od naprijed unazad. U predjelu spolja š njeg i unutra š njeg zida desne pazu š ne jame
+(gornje tre ć ine desne nadlaktice i desne bo č ne strane grudnog ko š a). Na oko 142 cm iznad ravni tabana, ko ž a
+je na dva mjesta u istom nivou olu č asto li š ena natko ž ice, ogoljela ko ž ica suva, č vrsta, mrko crvenkasta, a koje
+povrede predstavljaju strijelna okrznu ć a nastala tangencijalnim dejstvom projektila ispaljenim iz ru č nog
+vatrenog oru ž ja - lova č ke pu š ke iz daljine. Smjer strijelnih okrznu ć a je od naprijed unazad, odozgo lako
+nadolje u popre č noj ravni. Povrede u vidu krvnih modrikastih podliva u promjeru oko 3x3 cm u predjelu
+srednje tre č ine prednje strane lijeve potkoljenice su posledica dejstva tupine mehani č ke sile i isti je mogao
+nastati usled pada i udara u tvrdu podlogu. U vrijeme umiranja postojalo je stanje alkoholisanosti - pripito
+stanje u koncentraciji od 0,778 promila alkohola.
+ 
+Iz nalaza i mi š ljenja vje š taka specijaliste sudske medicine dr N.R., od 26. 02. 2020. godine proizilazi da je J. S.
+u predmetnom doga đ aju zadobio 5 strijelnih rana i to: strijelnu- ustrelinu glave, č iji je smjer kanala odozgo
+strmo nadolje, slijeva udesno, strijelnuj ranu, ustrelinu grudnog ko š a č iji je smjer kanala odozgo strmo
+nadolje, sdesna ulijevo od naprijed unazad, i strijelnu ranu - prostrelinu desne butine, č iji je smjer kanala
+odozgo nadolje, slijeva udesno od naprijed unazad. Dva strijelna okrznu ć a u predjelu desne pazu š ne jame č iji
+je smjer od naprijed unazad, odozgo lako nadolje u popre č noj ravni.
+ 
+Imaju ć i u vidu smjerove kanala rana, njihovu lokalizaciju na tijelu i me đ usobni polo ž aj, nesumnjivo je S. J.
+bio prednjom stranom svoga tijela okrenut ustima cijevi vatrenog oru ž ja, u povijenom polo ž aju, glavnom i
+trupom savijenim nadolje. Taj polo ž aj u trenutku zadobijanja povreda mo ž e odgovarati nekom od
+uobi č ajenih polo ž aja u kojim se mo ž e na ć i osoba u lovu - š unjaju ć i se, sakrivaju ć i se i sli č no. U takvom
+polo ž aju tijela, ulazne rane svih strijelnih rana i strijelna okrznu ć a mogu da se rasporede u krugu pre č nika
+oko 20 cm, č ime se mo ž e odrediti daljina pucanja balisti č kim vje š ta č enjem. Izgled terena na licu mjesta
+prikazan na fotografijama govori u prilog ote ž ane vidljivosti zbog visokog rastinja i gustine š ume. Izgled
+ulaznih rana strijelnih rana i ostala vje š ta č enja nesumnjivo govore u prilog da se radi o ispaljivanju projektila
+iz daljine, tako da se prisustvo barutnih č estica na garderobi pok.S.J. ne mo ž e dovesti u vezu sa prenosom tih
+čestica putem neposrednog opaljivanja projektila.
+ 
+Iz nalaza i mi š ljenja vje š taka za telekomunikacije S.Š., od 31. 12. 2019. godine proizilazi da je pregledom
+listinga ustanovila koji su brojevi za IMEI358358102500000 i radi se o broju telefona 069-..........,
+IMEI358359102500000 i radi se o broju telefona 068-.......... Me đ usobne komunikacije putem razgovora i SMS
+poruka brojeva 068-........, 068-.......... i 069-....... sa brojevima 069-....... i 068-...... za period od
+01.12.2019.godine do 09.12.2019.godine, prikazani su u obra đ enim listinzima i to:
+međ usobnih komunikacija broja 068-....... sa brojevima 069-...... i 068-......., bilo je pedesetijedna od toga sa
+brojem 069-......., tridesetpet, š est puta je 069-...... pozivao 069-......., dok je 069-....... pozivao 068-.......,
+dvadesetdevetputa, a sa brojem 068-...... bilo je š esnaest, petnaest puta je 068-...... pozivao 068-........ dok je
+068-....... pozivao 068-...... jednom. Me đ usobnih komunikacija broja 068-...... sa brojevima 069-........ i 068-......,
+bilo je dvadesetjedna, sve su bile izme đ u brojeva 068-....... i 069-......., trinaest puta je 068-....... pozivao
+069-........, dok je 069-......, pozivao 068-........ osam puta.Me đ usobnih komunikacija izme đ u 068-....... i
+068-........, nije bilo.Me đ usobnih komunikacija broja 069-......... sa brojevima 069-........ i 068-........, nije bilo, a
+tako đ e broj 069-......., 08.12.2019.godine, nije imao komunikacija na listingu i zadnje su bile
+07.12.2019.godine.
+Iz izvoda iz registra kaznenih evidencija Ministarstva pravde CG - Osno vnog suda u Bijelom Polju, broj KE
+95/2020 od 10. marta 2020. godine, na ime okrivljenog M.D. proizilazi da je isti neosu đ ivan.
+ 
+Imaju ć i u vidu sadr ž inu izvedenih dokaza, sud nalazi da je na nesumnjiv na č in utvr đ eno da je okrivljeni
+M.D. dana, 08.12.2019.godine, oko 14:00 h, u š umi u mjestu G., Op š tina B.P., svjestan da svojom radnjom
+mož e izvr š iti krivi č no djelo, ali je olako dr ž ao da do toga ne ć e do ć i, iz nehata li š io ž ivota o š te ć enog S.J., na
+nač in š to ga je prilikm lova divlja č i, iz lova č ke pu š ke marke "Franchi", kalibra …mm, fabri č kog broja ……, sa
+udaljenosti od oko 20 m, ispalio jedan projektil u pravcu gustog rastinja i visoke paprati koje se pomjeralo
+zbog č ega je bio u uvjerenju da se iza istog nalazi divlja svinja, a da se sa dovoljnom pa ž njom nije uvjerio u to,
+iako se u lovu nalazio zajednjo sa o š te ć enim, koji projektil je pogodio o š te ć enog koji se nalazio u rastinju u
+momentu kada je bio u povijenom polo ž aju, glavom i trupom savijenim nadolje, kojom prilikom mu je nanio
+teške tjelesne povrede opasne po ž ivot u vidu strijelne rane - ustreline glave, č iji je smjer kanala odozgo
+strmo nadolje s lijeva u desno, od naprijed unazad, strijelne rane ustreline grudnog ko š a, č iji je smjer kanala
+odozgo strmo nadolje s desna ulijevo od naprijed unazad, strijelnu ranu - prostrelinu desne butine č iji je
+smjer kanala odozgo nadolje s lijeva udesno od naprijed unazad i dva strijelna okrznu ć a u predjelu desne
+pazu š ne jame, usled kojih povreda je kod o š te ć enog nastupila smrt, kojim radnjama je ostvario sva bitna
+obilje ž ja krivi č nog djela nehatno li š enje ž ivota iz č l.148 KZ.
+ 
+Nesporno je da je dana 08.12.2019.godine, vi š e lica po š lo u lov, pri č emu su se u jednoj grupi nalazili D. Š ., J.
+Š., B. Š ., Predrag D., N. D., D. S. i D. V., u drugoj grupi su bili M.D., sada pok.S. J. i B.S., koji im se naknadno
+priklju č io, koji nije imao pu š ku, ve ć  je sa njima po š ao isklju č ivo radi dru ž enja, te bra ć a N. P. i M. P., koji su
+tako đ e toga jutra krenuli u lov. Dalje je nesporno da su okrivljeni M.D. i sada pok.S. J. odlu č ili bili da zavr š e
+lov i nakon toga po š li u ku ć u pok.J.a u selu O., gdje su doru č kovali, popili kafu i po nekoliko rakija i zadr ž ali se
+oko sat vremena, nakon č ega su imali namjeru da se vrate ku ć ama u B.P.. Po š to je okrivljenom bilo poznato
+da u lov idu Š ., pozvao je Š . J. da ga pita da li su lovu i ako jesu gdje, jer poznato mu je da oni u lov idu
+uglavnom prema G. i L.. Poslije izvjesnog vremena i pok.S. je pozvao D. da ga pita ima li kakav trag i Š . D. mu
+je rekao da se č uje pas i da bi trebalo da je tu negdje i divlja svinja. Nakon toga su odlu č ili da ne idu ku ć i, ve ć
+da ponovo krenu u lov. Dalje je nesporno i da su bra ć a P. M. i N. zavr š ili lov prije 12:00 h, a da ih je oko 13:00 h
+pozvao D. Š . i kazao da je prona đ ena divlja svinja i pozvao ih da odu tamo. Tom prilikom D. Š . mu je rekao da
+se oni nalaze u mjestu G., a da oni ostanu u Jabu č nu, u š umi Rekovina i tu da č ekaju. Dakle, iako nijesu
+prethodno navedeni organizovano i zajedno krenuli u lov, ve ć  su bili u posebnim grupama, nakon š to je
+prona đ en trag od divlje svinje preko mobilnih telefona su se organizovali i svi su krenuli u lov na istom
+terenu. Sve ovo prethodno proizilazi, kako iz odbrane okrivljenog M.D. tako i iz svjedo č kih iskaza Š . D., Š . J.,
+Š.D., D.N., P.N., P.M., B.N., B.S. i V. D..
+ 
+Dalje je nesporno da je kriti č nog dana do š lo do upotrebe vatrenog oru ž ja od strane okrivljenog M.D., koji je
+bio u posjedu funkcionalne lova č ke pu š ke, marke "F….", kalibra … mm, fabri č kog br.………, č ije je
+oduzimanje konstatovano potvrdom UP policije CB B.Polje o privremenom oduzimanju predmeta, dok je
+ispravnost oru ž ja ustanovljena balisti č kim vje š ta č enjem broj 4790/19, od 27. 01. 2020. godine. Da je okrivljeni
+zaista upotrijebio to oru ž je, proizilazi iz jasnog, potpunog i nedvosmilenog priznanja okrivljenog M.D., koje je
+potvr đ eno kako iskazima prethodno navedenih svjedoka, tako i materijalnim dokazima, prije svih
+trasolo š kim vje š ta č enjem i vje š ta č enjem prisustva barutnih č estica iz kojih proizilazi da je na jakni sa
+kapulja č om vlasni š tvo S.J. dokazano prisustvo barutnih č estica, te da su mehani č ka o š te ć enja koja su
+konstatovana na garderobi S.J. karakteristi č na za o š te ć enja koja nastaju dejstvom manjeg metalnog
+predmeta koje je posjedovao ve ć u kineti č nu energiju i ista su mogla nastati prolaskom metalnih kuglica
+ispaljenih iz patrona lova č ke pu š ke. Dakle, nesporno je da je okrivljeni kriti č ne prilike upotrijebio lova č ku
+puš ku i pored č injenice da na njegovim š akama nijesu prona đ ene karakteristi č ne GSR č estice, a š to je
+utvrđ eno vje š ta č enjem "prisustva GSR č estica". Tako đ e, nesporno je i da je iz vatrenog oru ž ja pogo đ en S. J.,
+obzirom da, shodno rezultatima balisti č kih vje š ta č enja, jasno  proizilazi da o š te ć enja na odje ć i pok.S.a
+odgovaraju dejstvu projektila iz vatrenog oru ž ja, te da je od zadobijenih povreda S. J. preminuo. Sve
+prethodno navedeno u skladu je sa konstatacijama Zapisnika o uvi đ aju Ktr.br.531/19 od 08.12.2019.godine,
+te sa sadr ž inom skice lica mjesta i fotodokumentacijom, a povrede koje je zadobio S. J. kriti č ne prilike i koje
+su dovele do smrtog ishoda, sud je utvrdio na osno vu nalaza i mi š ljenja vje š taka sudske medicine dr N.R. i
+obdukcionog zapisnika istog vje š taka. Za ukazati je da je sud sva prethodno navedena vje š ta č enja, prihvatio
+u potpunosti kao stru č na i objektivna, data u svemu po pravilima nauke i struke.
+ 
+Okrivljeni M.D. je po sopstvenom priznanju vidio da se sa druge strane puta pomjera gusto rastinje na
+udaljenosti oko 20-tak metara od njega i zapazio je da se ne š to tamno crno pomjerilo. Kako je mislio da je to
+vepar - divlja svinja, podigao je pu š ku, uperio u tom pravcu i ispalio metak. Me đ utim, okrivljeni je kao lovac
+sa dugogodi š njim iskustvom, š to i sam ne spori, morao znati da kada se lov vr š i nedeljom u vrijeme lovne
+sezone ne postoji obaveza prethodnog prijavljivanja, š to zna č i da se lovci toga dana neorganizovano i
+samostalno kre ć u, jer nije unaprijed precizirano - organizovano u kome ć e reonu koja grupa lovaca da lovi. Pri
+tom, okrivljeni ne spori da je toga jutra sreo dva lovca sa pu š kama i kerovima koji su mu bili nepoznati.
+Okrivljenom je bilo poznato i da se u njegovoj blizini nalazi pok. J. S., obzirom da mu je sam pok.S. u
+telefonskom razgovoru rekao da se pomjeri sa mjesta na kojem je bio na " č ekalici" i krene u pravcu u kojem
+je on oti š ao, a nakon toga kada je bio na raskrsnici, pok.S. mu objasnio da krene desno. Nadalje, okrivljenom
+je bilo poznato i da se na tom terenu nalazi grupa lovaca u kojoj su bili bra ć a Š . i ostali, sa kojim su se č uli
+mobilnim telefonom i organizovali lov na divlju svinju. Ovo jasno zna č i da je okrivljeni bio du ž an i mogao je
+biti svjestan da postoji mogu ć nost da je vegetacijom zaklonjena, ne divlja ž ivotinja, ve ć  neko od lovaca sa
+čijim kretanjem nije bio prethodno upoznat, odnosno  da se u rastinju nalazi upravo pokojni S. J. koji ga je
+usmjeravao i govorio mu kuda da ide, budu ć i da okrivljeni nije bio, niti je mogao biti apsolutno siguran da
+drugih lovaca na tom lokalitetu nema. Na poja č an oprez okrivljenog su upu ć ivala i njegova li č na svojstva, jer
+kako je ve ć  re č eno, isti je dugogodi š nji lovac i u lov ide od kako se zna sa pok.S.om J.em, a to je du ž e od 20
+godina. Tako đ e, na poja č an oprez okrivljenog su morale upu ć ivati i karakteristike samog lovnog dana,
+obzirom da je bila nedjelja i da je lovna sezona bila u toku. Nadalje, okrivljeni nakon š to je vidio da se
+pomjera rastinje i nakon š to je zapazio da se ne š to tamno crno pomjerilo nije se povla č io nazad, kako bi
+pove ć ao distancu izme đ u sebe i toga š to č uje odnosno vidi u grmlju, odnosno ukoliko je mislio da se nalazi
+na bezbjednoj udaljenosti nije nani š anio i č ekao, č ime bi omogu ć io da se najprije uvjeri š ta ć e to iz rastinja
+izać i, š to sve ukazuje na zaklju č ak da isti nije pokazivao adekvatnu pa ž nju primjerenu svojim li č nim
+okolnostima i okolnostima situacije.
+ 
+Kako je o č igledno da okrivljeni nije bio svjestan da svojom radnjom mo ž e po č initi krivi č no djelo iako je, kako
+je ve ć  navedeno, obzirom na svoja li č na svojstva i okolnosti situacije bio du ž an i mogao biti svjestan te
+mogu ć nosti, to je jasno da je djelovao sa nehatom.
+ 
+ Sud je cijenio i ostale izvedene dokaze pa je na š ao da su bez zna č aja za rje š avanje ove pravne stvari.
+ Prilikom odlu č ivanja o kazni, sud je okrivljenom u smislu č l.42 KZ CG kao olak š avaju ć e okolnosti cijenio
+njegovu porodi č nost – isti je o ž enjen i otac dvoje djece, ispoljeno kajanje i priznanje izvr š enja krivi č nog djela,
+činjenicu da se o š te ć ena porodica nije pridru ž ila krivi č nom gonjenju, te njegovu raniju neosu đ ivanost
+utvrđ enu iz izvoda iz kaznene evidencije dok ote ž avaju ć ih okolnosti nije na š ao, pa je u kona č nom istoga
+osudio na kaznu zatvora u trajanju od 6 ( š est) mjeseci, kojom ć e se kaznom ostvariti svrha ka ž njavanja iz č l.32
+KZ CG u okviru op š te svrhe propisivanja i izricanja krivi č nih sankcija iz č l.4 st.2 KZ.
+ Sud je shodno č l.75 st.2 KZ CG okrivljenom izrekao mjeru bezbjednosti oduzimanja predmeta - lova č ke
+puš ke marke "F…", kalibra ….mm, fabri č kog broja ……., budu ć i da se radilo o predmetu koji je upotrijebljen
+za izvr š enje krivi č nog djela.
+ Sud je okrivljenog shodno č l.229 i č l.229 ZKP-a obavezao na pla ć anje tro š kova krivi č nog postupka u iznosu
+od 2.605,00 eura, od č ega je iznos od 566,50 €, ispla ć en vje š taku sudske medicine dr N.R., iznos od 99,00 €
+vješ taku za telekomunikacije S. Š ., a iznos od 1.890,00 € braniocu okrivljenog po slu ž benoj du ž nosti, advokatu
+K.D. iz B.P.. Okrivljeni je obavezan i na pla ć anje pau š ala u iznosu od 50,00 eura, koji iznos je srazmjeran
+slož enosti i trajanju krivi č nog postupka kao i imovnom stanju okrivljenog.
+ Iz iznijetih razloga a na osnovu č l. 374 ZKP-a odlu č eno je kao u izreci presude.
+OSNOVNI SUD U BIJELOM POLjU
+Dana 10. 09. 2020. godine,
+ 
+ZAPISNI Č AR, S U D I J A,
+Draginja Bo š kovi ć  s.r. Radomir Kljajevi ć , s.r.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

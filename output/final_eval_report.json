@@ -1,0 +1,303 @@
+{
+  "protocol_version": "1.0.0",
+  "started_at": "2026-04-06T14:22:20.691929Z",
+  "finished_at": "2026-04-06T14:23:40.350297Z",
+  "base_url": "http://127.0.0.1:58338/api",
+  "technical_checks": {
+    "api_health": {
+      "status": "PASS",
+      "details": "GET http://127.0.0.1:58338/health => 200"
+    },
+    "case_save_and_reuse": {
+      "status": "PASS",
+      "details": "Saved case CI-EVAL-PROBE confirmed in CBR matches"
+    }
+  },
+  "global_failures": [],
+  "cases": [
+    {
+      "case_id": "Одлуке",
+      "case_number": "K.br. 781/18",
+      "status": "PASS",
+      "red_flags": [],
+      "criteria": [
+        {
+          "name": "pravna_tacnost",
+          "score": 5,
+          "rationale": "rule=ok; norme prisutne; clanovi prisutni; poklapanje sa ocekivanim clancima"
+        },
+        {
+          "name": "logicka_konzistentnost",
+          "score": 5,
+          "rationale": "nema detektovanih kontradikcija"
+        },
+        {
+          "name": "korisnost_za_korisnika",
+          "score": 5,
+          "rationale": "ima predlog vrste presude; ima predlog sankcije; vraceni slicni slucajevi; doprinos atributa dostupan"
+        },
+        {
+          "name": "pokrivenost_kljucnih_cinjenica",
+          "score": 5,
+          "rationale": "pokriveno 6/6 kljucnih cinjenica"
+        },
+        {
+          "name": "objasnjenje_zakljucka",
+          "score": 5,
+          "rationale": "tekstovi primenjenih clanova; sadrzaj clanova nije prazan; dr-device proofs prisutni; eksplicitne primenjene norme"
+        },
+        {
+          "name": "proporcionalnost_sankcije",
+          "score": 3,
+          "rationale": "pozitivan ishod ima sankciju; sankcija sadrzi raspon/kvantifikaciju"
+        }
+      ],
+      "total_score": 28,
+      "max_score": 30,
+      "stability": "stable",
+      "stability_fingerprints": [
+        "{\"articles\": [\"151\"], \"norms\": [\"crime_art151_3\"], \"sanction\": \"kazna zatvora 2 do 12 godina (predlog)\", \"top\": [{\"case\": \"CI-EVAL-PROBE-v2\", \"sim\": 0.92}, {\"case\": \"CI-EVAL-PROBE\", \"sim\": 0.92}, {\"case\": \"GEN-20260213-011408\", \"sim\": 0.82}], \"verdict\": \"osudjen\"}",
+        "{\"articles\": [\"151\"], \"norms\": [\"crime_art151_3\"], \"sanction\": \"kazna zatvora 2 do 12 godina (predlog)\", \"top\": [{\"case\": \"CI-EVAL-PROBE-v2\", \"sim\": 0.92}, {\"case\": \"CI-EVAL-PROBE\", \"sim\": 0.92}, {\"case\": \"GEN-20260213-011408\", \"sim\": 0.82}], \"verdict\": \"osudjen\"}",
+        "{\"articles\": [\"151\"], \"norms\": [\"crime_art151_3\"], \"sanction\": \"kazna zatvora 2 do 12 godina (predlog)\", \"top\": [{\"case\": \"CI-EVAL-PROBE-v2\", \"sim\": 0.92}, {\"case\": \"CI-EVAL-PROBE\", \"sim\": 0.92}, {\"case\": \"GEN-20260213-011408\", \"sim\": 0.82}], \"verdict\": \"osudjen\"}"
+      ],
+      "critical_failures": [],
+      "subsystem_status": {
+        "rule": "ok",
+        "cbr": "ok"
+      },
+      "top_match": {
+        "case_number": "CI-EVAL-PROBE-v2",
+        "similarity": 0.92
+      }
+    },
+    {
+      "case_id": "Одлуке1",
+      "case_number": "K.br. 809/18",
+      "status": "PASS",
+      "red_flags": [],
+      "criteria": [
+        {
+          "name": "pravna_tacnost",
+          "score": 4,
+          "rationale": "rule=ok; norme prisutne; clanovi prisutni"
+        },
+        {
+          "name": "logicka_konzistentnost",
+          "score": 5,
+          "rationale": "nema detektovanih kontradikcija"
+        },
+        {
+          "name": "korisnost_za_korisnika",
+          "score": 5,
+          "rationale": "ima predlog vrste presude; ima predlog sankcije; vraceni slicni slucajevi; doprinos atributa dostupan"
+        },
+        {
+          "name": "pokrivenost_kljucnih_cinjenica",
+          "score": 5,
+          "rationale": "pokriveno 6/6 kljucnih cinjenica"
+        },
+        {
+          "name": "objasnjenje_zakljucka",
+          "score": 5,
+          "rationale": "tekstovi primenjenih clanova; sadrzaj clanova nije prazan; dr-device proofs prisutni; eksplicitne primenjene norme"
+        },
+        {
+          "name": "proporcionalnost_sankcije",
+          "score": 3,
+          "rationale": "pozitivan ishod ima sankciju; sankcija sadrzi raspon/kvantifikaciju"
+        }
+      ],
+      "total_score": 27,
+      "max_score": 30,
+      "stability": "stable",
+      "stability_fingerprints": [
+        "{\"articles\": [\"151\", \"154\"], \"norms\": [\"crime_art151_3\", \"crime_art154\"], \"sanction\": \"kazna zatvora 2 do 12 godina (predlog)\", \"top\": [{\"case\": \"CI-EVAL-PROBE-v2\", \"sim\": 0.825}, {\"case\": \"CI-EVAL-PROBE\", \"sim\": 0.825}, {\"case\": \"GEN-20260213-011408\", \"sim\": 0.725}], \"verdict\": \"osudjen\"}",
+        "{\"articles\": [\"151\", \"154\"], \"norms\": [\"crime_art151_3\", \"crime_art154\"], \"sanction\": \"kazna zatvora 2 do 12 godina (predlog)\", \"top\": [{\"case\": \"CI-EVAL-PROBE-v2\", \"sim\": 0.825}, {\"case\": \"CI-EVAL-PROBE\", \"sim\": 0.825}, {\"case\": \"GEN-20260213-011408\", \"sim\": 0.725}], \"verdict\": \"osudjen\"}",
+        "{\"articles\": [\"151\", \"154\"], \"norms\": [\"crime_art151_3\", \"crime_art154\"], \"sanction\": \"kazna zatvora 2 do 12 godina (predlog)\", \"top\": [{\"case\": \"CI-EVAL-PROBE-v2\", \"sim\": 0.825}, {\"case\": \"CI-EVAL-PROBE\", \"sim\": 0.825}, {\"case\": \"GEN-20260213-011408\", \"sim\": 0.725}], \"verdict\": \"osudjen\"}"
+      ],
+      "critical_failures": [],
+      "subsystem_status": {
+        "rule": "ok",
+        "cbr": "ok"
+      },
+      "top_match": {
+        "case_number": "CI-EVAL-PROBE-v2",
+        "similarity": 0.825
+      }
+    },
+    {
+      "case_id": "Одлуке2",
+      "case_number": "K.br. 27/24",
+      "status": "PASS",
+      "red_flags": [],
+      "criteria": [
+        {
+          "name": "pravna_tacnost",
+          "score": 5,
+          "rationale": "rule=ok; norme prisutne; clanovi prisutni; poklapanje sa ocekivanim clancima"
+        },
+        {
+          "name": "logicka_konzistentnost",
+          "score": 5,
+          "rationale": "nema detektovanih kontradikcija"
+        },
+        {
+          "name": "korisnost_za_korisnika",
+          "score": 5,
+          "rationale": "ima predlog vrste presude; ima predlog sankcije; vraceni slicni slucajevi; doprinos atributa dostupan"
+        },
+        {
+          "name": "pokrivenost_kljucnih_cinjenica",
+          "score": 5,
+          "rationale": "pokriveno 7/7 kljucnih cinjenica"
+        },
+        {
+          "name": "objasnjenje_zakljucka",
+          "score": 5,
+          "rationale": "tekstovi primenjenih clanova; sadrzaj clanova nije prazan; dr-device proofs prisutni; eksplicitne primenjene norme"
+        },
+        {
+          "name": "proporcionalnost_sankcije",
+          "score": 3,
+          "rationale": "pozitivan ishod ima sankciju; sankcija sadrzi raspon/kvantifikaciju"
+        }
+      ],
+      "total_score": 28,
+      "max_score": 30,
+      "stability": "stable",
+      "stability_fingerprints": [
+        "{\"articles\": [\"151\"], \"norms\": [\"crime_art151_3\"], \"sanction\": \"kazna zatvora 2 do 12 godina (predlog)\", \"top\": [{\"case\": \"GEN-20260213-011408\", \"sim\": 0.92}, {\"case\": \"GEN-20260402-184827\", \"sim\": 0.8325}, {\"case\": \"GEN-20260402-184727\", \"sim\": 0.8325}], \"verdict\": \"osudjen\"}",
+        "{\"articles\": [\"151\"], \"norms\": [\"crime_art151_3\"], \"sanction\": \"kazna zatvora 2 do 12 godina (predlog)\", \"top\": [{\"case\": \"GEN-20260213-011408\", \"sim\": 0.92}, {\"case\": \"GEN-20260402-184827\", \"sim\": 0.8325}, {\"case\": \"GEN-20260402-184727\", \"sim\": 0.8325}], \"verdict\": \"osudjen\"}",
+        "{\"articles\": [\"151\"], \"norms\": [\"crime_art151_3\"], \"sanction\": \"kazna zatvora 2 do 12 godina (predlog)\", \"top\": [{\"case\": \"GEN-20260213-011408\", \"sim\": 0.92}, {\"case\": \"GEN-20260402-184827\", \"sim\": 0.8325}, {\"case\": \"GEN-20260402-184727\", \"sim\": 0.8325}], \"verdict\": \"osudjen\"}"
+      ],
+      "critical_failures": [],
+      "subsystem_status": {
+        "rule": "ok",
+        "cbr": "ok"
+      },
+      "top_match": {
+        "case_number": "GEN-20260213-011408",
+        "similarity": 0.92
+      }
+    },
+    {
+      "case_id": "Одлуке3",
+      "case_number": "K.br. 617/13",
+      "status": "PASS",
+      "red_flags": [],
+      "criteria": [
+        {
+          "name": "pravna_tacnost",
+          "score": 5,
+          "rationale": "rule=ok; norme prisutne; clanovi prisutni; poklapanje sa ocekivanim clancima"
+        },
+        {
+          "name": "logicka_konzistentnost",
+          "score": 5,
+          "rationale": "nema detektovanih kontradikcija"
+        },
+        {
+          "name": "korisnost_za_korisnika",
+          "score": 5,
+          "rationale": "ima predlog vrste presude; ima predlog sankcije; vraceni slicni slucajevi; doprinos atributa dostupan"
+        },
+        {
+          "name": "pokrivenost_kljucnih_cinjenica",
+          "score": 5,
+          "rationale": "pokriveno 7/7 kljucnih cinjenica"
+        },
+        {
+          "name": "objasnjenje_zakljucka",
+          "score": 5,
+          "rationale": "tekstovi primenjenih clanova; sadrzaj clanova nije prazan; dr-device proofs prisutni; eksplicitne primenjene norme"
+        },
+        {
+          "name": "proporcionalnost_sankcije",
+          "score": 3,
+          "rationale": "pozitivan ishod ima sankciju; sankcija sadrzi raspon/kvantifikaciju"
+        }
+      ],
+      "total_score": 28,
+      "max_score": 30,
+      "stability": "stable",
+      "stability_fingerprints": [
+        "{\"articles\": [\"151\"], \"norms\": [\"crime_art151_3\"], \"sanction\": \"kazna zatvora 2 do 12 godina (predlog)\", \"top\": [{\"case\": \"GEN-20260213-011408\", \"sim\": 0.92}, {\"case\": \"GEN-20260324-211534\", \"sim\": 0.8363}, {\"case\": \"GEN-20260324-182723\", \"sim\": 0.8363}], \"verdict\": \"osudjen\"}",
+        "{\"articles\": [\"151\"], \"norms\": [\"crime_art151_3\"], \"sanction\": \"kazna zatvora 2 do 12 godina (predlog)\", \"top\": [{\"case\": \"GEN-20260213-011408\", \"sim\": 0.92}, {\"case\": \"GEN-20260324-211534\", \"sim\": 0.8363}, {\"case\": \"GEN-20260324-182723\", \"sim\": 0.8363}], \"verdict\": \"osudjen\"}",
+        "{\"articles\": [\"151\"], \"norms\": [\"crime_art151_3\"], \"sanction\": \"kazna zatvora 2 do 12 godina (predlog)\", \"top\": [{\"case\": \"GEN-20260213-011408\", \"sim\": 0.92}, {\"case\": \"GEN-20260324-211534\", \"sim\": 0.8363}, {\"case\": \"GEN-20260324-182723\", \"sim\": 0.8363}], \"verdict\": \"osudjen\"}"
+      ],
+      "critical_failures": [],
+      "subsystem_status": {
+        "rule": "ok",
+        "cbr": "ok"
+      },
+      "top_match": {
+        "case_number": "GEN-20260213-011408",
+        "similarity": 0.92
+      }
+    },
+    {
+      "case_id": "Одлуке4",
+      "case_number": "K.br. 46/19",
+      "status": "PASS",
+      "red_flags": [],
+      "criteria": [
+        {
+          "name": "pravna_tacnost",
+          "score": 5,
+          "rationale": "rule=ok; norme prisutne; clanovi prisutni; poklapanje sa ocekivanim clancima"
+        },
+        {
+          "name": "logicka_konzistentnost",
+          "score": 5,
+          "rationale": "nema detektovanih kontradikcija"
+        },
+        {
+          "name": "korisnost_za_korisnika",
+          "score": 5,
+          "rationale": "ima predlog vrste presude; ima predlog sankcije; vraceni slicni slucajevi; doprinos atributa dostupan"
+        },
+        {
+          "name": "pokrivenost_kljucnih_cinjenica",
+          "score": 5,
+          "rationale": "pokriveno 7/7 kljucnih cinjenica"
+        },
+        {
+          "name": "objasnjenje_zakljucka",
+          "score": 5,
+          "rationale": "tekstovi primenjenih clanova; sadrzaj clanova nije prazan; dr-device proofs prisutni; eksplicitne primenjene norme"
+        },
+        {
+          "name": "proporcionalnost_sankcije",
+          "score": 3,
+          "rationale": "pozitivan ishod ima sankciju; sankcija sadrzi raspon/kvantifikaciju"
+        }
+      ],
+      "total_score": 28,
+      "max_score": 30,
+      "stability": "stable",
+      "stability_fingerprints": [
+        "{\"articles\": [\"152\"], \"norms\": [\"crime_art152_2\"], \"sanction\": \"kazna zatvora do 3 godine (predlog)\", \"top\": [{\"case\": \"K.br. 46/19\", \"sim\": 0.86}, {\"case\": \"K.br. 701/18\", \"sim\": 0.86}, {\"case\": \"K.br. 408/21\", \"sim\": 0.83}], \"verdict\": \"osudjen\"}",
+        "{\"articles\": [\"152\"], \"norms\": [\"crime_art152_2\"], \"sanction\": \"kazna zatvora do 3 godine (predlog)\", \"top\": [{\"case\": \"K.br. 46/19\", \"sim\": 0.86}, {\"case\": \"K.br. 701/18\", \"sim\": 0.86}, {\"case\": \"K.br. 408/21\", \"sim\": 0.83}], \"verdict\": \"osudjen\"}",
+        "{\"articles\": [\"152\"], \"norms\": [\"crime_art152_2\"], \"sanction\": \"kazna zatvora do 3 godine (predlog)\", \"top\": [{\"case\": \"K.br. 46/19\", \"sim\": 0.86}, {\"case\": \"K.br. 701/18\", \"sim\": 0.86}, {\"case\": \"K.br. 408/21\", \"sim\": 0.83}], \"verdict\": \"osudjen\"}"
+      ],
+      "critical_failures": [],
+      "subsystem_status": {
+        "rule": "ok",
+        "cbr": "ok"
+      },
+      "top_match": {
+        "case_number": "K.br. 46/19",
+        "similarity": 0.86
+      }
+    }
+  ],
+  "summary": {
+    "status": "PASS",
+    "case_failures": 0,
+    "per_case_min_total": 24,
+    "overall_min_average": 25.0,
+    "overall_average": 27.8,
+    "technical_failures": [],
+    "reasons": []
+  }
+}

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке45">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке45/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке45"/>
+                    <FRBRdate date="2018-12-12" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке45/sr@2018-12-12/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке45/sr@2018-12-12"/>
+                    <FRBRdate date="2018-12-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке45/sr@2018-12-12/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке45/sr@2018-12-12/!main.akn"/>
+                    <FRBRdate date="2026-04-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U NIK"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Đuričković Igor"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="A.S."/>
+                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="Elektrodistribucija Nik"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="K.A."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="CEDIS DOO"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 332/2018</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U NIK</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2018-12-12">2018-12-12</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Đuričković Igor</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni A.S. je proglašen krivim za ugrožavanje opasnim oružjem. Odluka suda doneta je nakon javnog glavnog pretresa.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>ugrožavanje opasnim oružjem</p>
+                    <p>krivično delo iz člana 154 KZ CG</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_154">Član 154</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da je okrivljeni svestan izvršenja krivičnog dela i da je upotrebio opasno oružje tokom svađe.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="usvojeno">
+                    <p>Optuženi se oglašava krivim</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>A.S.</person>
+                    <person>Elektrodistribucija Nik</person>
+                </block>
+                <block name="victims">
+                    <person>K.A.</person>
+                </block>
+                <block name="organizations">
+                    <organization>CEDIS DOO</organization>
+                </block>
+            </participants>
+            <facts>
+                <fact key="location">Ljuba Nenadovi</fact>
+                <fact key="location">Nik</fact>
+                <fact key="location">Sin</fact>
+                <fact key="location">Istoku</fact>
+                <fact key="location">Nikš</fact>
+                <fact key="location">Sinđ</fact>
+                <fact key="location">Nikšić</fact>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="weapon">motka</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>CRNA GORA
+OSNOVNI SUD U NIK Š I Ć U
+K.br.332/2018
+Dana 12.12.2018.godine
+ 
+U IME CRNE GORE
+ 
+ 
+OSNOVNI SUD U NIK Š I Ć U, kao prvostepeni krivi č ni, sudija pojedinac Đ uri č kovi ć  Igor, uz sudjelovanje
+sudijskog pripravnika Pejovi ć  Vasilise i namje š tenika Papovi ć  Budimirke kao zapisni č ara, rje š avaju ć i u
+krivi č nom predmetu okrivljenog A.. S.. iz Nik š i ć a, zbog krivi č nog djela ugro ž avanje opasnim oru đ em pri tu č i i
+svađ i iz č lana 154 KZ CG, postupaju ć i po optu ž nom predlogu Osno vnog dr ž avnog tu ž ila š tva u Nik š i ć u
+Kt.br.486/16 od 19.11.2018.godine, nakon javnog glavnog pretresa odr ž anog dana 12.12.2018.godine, u
+prisustvu dr ž avnog tu ž ioca u ODT-u u Nik š i ć u Sin đ i ć  Vanje i okrivljenog, donio je i istog dana javno objavio
+ 
+P R E S U D U
+ 
+Okrivljeni:
+A.. S.., JMBG .., od oca B.. i majke S.. rođ ene M.., rođ en ...godine u Istoku-Kosovo, sa prebivali š tem u
+Nikš i ć u-.., drž avljanin Kosova, sa zavr š ena č etiri razreda osnovne š kole, nezaposlen, o ž enjen, otac č etvoro
+djece, srednjeg imovnog stanja, ranije neosu đ ivan,
+ 
+K r i v j e
+ 
+Što se:
+Dana 27.08.2018.godine, u Nik š i ć u, u š alter sali preduze ć a CEDIS DOO-Elektrodistribucija Nik š i ć , koja se
+nalazi u ulici Ljuba Nenadovi ć a, svjestan djela č ije je izvr š enje htio, prilikom sva đ e do koje je do š lo izme đ uOsnovni Sud u Nik š i ć u
+K 332/2018
+12. Decembar 2018
+ošte ć enog K.. A.. i A.. .. maš io motke du ž ine oko 1 metar, obima oko 5 cm, kao sredstva podobnog da tijelo
+teško povrijedi ili zdravlje te š ko naru š i, kojom je vi š e puta zamahnuo u pravcu o š te ć enog K.. A..,
+-čime je izvr š io krivi č no djelo ugro ž avanje opasnim oru đ em pri tu č i i sva đ i iz č lana 154 Krivi č nog zakonika
+Crne Gore,
+ 
+-pa sud okrivljenom zbog izvr š enja navedenog krivi č nog djela primjenom citiranih zakonskih odredbi,
+odredbi iz č lana 4 stav 2, č lana 42, č lana 52, 53 i 54 KZ CG i odredbi č lana 226, 229 i 374 ZKP-a, i z r i č  e
+ 
+ 
+ 
+ 
+USLOVNU OSUDU
+ 
+Sa kojom okrivljenom utvr đ uje kaznu zatvora u trajanju od 30 (slovima:trideset) dana i istovremeno odre đ uje
+da se navedena kazna zatvora ne ć e izvr š iti ukoliko okrivljeni u roku od jedne godine od dana pravosna ž nosti
+ove presude ne u č ini novo krivi č no djelo.
+ 
+Obavezuje se okrivljeni da na ime pau š ala kao dijela tro š kova krivi č nog postupka plati nov č ani iznos od 30,00
+eura u roku od 15 dana od dana pravosna ž nosti presude, pod prijetnjom prinudnog izvr š enja, na ž iro ra č un
+Osnovnog suda u Nik š i ć u broj 832-152-32 i da sudu dostavi dokaz o izvr š enoj uplati.
+ 
+O b r a z l o ž  e nj e
+ 
+Osnovno dr ž avno tu ž ila š tvo u Nik š i ć u svojim optu ž nim predlogom Kt.br.486/18 od 19.11.2018.godine,
+stavilo je na teret okrivljenom A.. S.. izvrš enje krivi č nog djela ugro ž avanje opasnim oru đ em pri tu č i i sva đ i iz
+člana 154 KZ CG, koje krivi č no djelo je č injeni č no opisano u izreci presude. Dr ž avni tu ž ilac u ODT-u u Nik š i ć u
+Sinđ i ć  Vanja, koja je zastupala optu ž ni akt na glavnom pretresu, u svojoj zavr š noj rije č i, ostaju ć i pri navodima
+podnijetog optu ž nog akta, predlo ž ila je sudu da okrivljenog oglasi krivim zbog izvr š enja krivi č nog djela koje
+mu je stavljeno na teret optu ž bom i osudi po zakonu.
+Okrivljeni A.. S.. na glavnom pretresu je priznao izvr š enje krivi č nog djela koje mu je stavljeno na teret
+optu ž bom i u tom pravcu objasnio da je kriti č nog dana svojim putni č kim motornim vozilom marke Golf 4,
+bijele boje, svoju majku A.. S.., dovezao do zgrade Elektrodistribucije Nik š i ć , jer je njegova majka namjeravala
+da u objektu tog preduze ć a plati ra č un za utro š enu elektri č nu energiju, da je to svoje vozilo parkirao ispred te
+zgrade, a njegova majka u š la u š alter salu tog preduze ć a i odmah zatim uo č io o š te ć enog K..A.., sa kojim su on
+i članovi njegove porodice od ranije u sukobu, koji je tr č e ć i pri š ao ulaznim vratima te š alter sale, u š ao u istu i
+zatvorio vrata, a on je tada uzeo jednu drvenu motku du ž ine oko 1 m, pre č nika do 8cm, koju je imao u vozilu i
+izaš ao iz svog vozila i u š ao u tu š alter salu i po č eo da udara o š te ć enog K..A.. stisnutim pesnicama, a o š te ć eni
+K..je na to reagovao tako š to mu je uzvra ć ao udaraju ć i ga tako đ e stisnutim pesnicama. Istakao je i da je u toj
+situaciji, dok je trajala ta razmjena udaraca izme đ u njega i o š te ć enog, o š te ć eni Kerellaj nekoliko puta
+stisnutim pesnicama u predjelu le đ a udario njegovu majku, a da on o š te ć enog Kerellaj Admira nije udarao sa
+tom drvenom motkom, a da je mogu ć e da je sa istom zamahnuo nekolika puta ka o š te ć enom i da se taj fizi č ki
+obra č un zavr š io tako š to je su intervenisali slu ž benici obezbje đ enja, koji su ih razdvojili. Istakao je i da prije
+kritič nog doga đ aja nije imao nikakvu komunikaciju sa o š te ć enim K..A.., već  da je iz vozila iza š ao u trenutku
+kada je o š te ć eni K..A.. pritr č ao ulaznim vratima š alter sale u zgradi Elektrodistribucije, odnosno  kada je
+procijenio da ć e, zbog sva đ e u kojoj se nalaze njihove porodice, o š te ć eni napasti njegovu majku koja se
+nalazila u toj š alter sali, š to se i dogodilo.
+U svojoj zavr š noj rije č i okrivljeni je, ostaju ć i pri svemu š to je rekao pred sudom i predlo ž io sudu da mu
+izrekne najbla ž u mogu ć u krivi č nu sankciju.
+ 
+Sud je na glavnom pretresu u dokaznom postupku izvr š io uvid u CD sa video zapisom, koji je sa č injen
+kamerom sistema video nadzora instaliranog u objektu Elektrodistribucije Nik š i ć  dana 27.08.2018.godine, na
+saglasan predlog stranaka pro č itao iskaz o š te ć enog .., dat u prethodnom postupku i pro č itao izvod iz registra
+kaznenih evidencija Ministarstva pravde CG za okrivljenog, dok je sud odustao od saslu š anja u svojstvu
+svjedoka .., jer je kazivanjem okrivljenog i provedenim dokazima do izvjesno sti utvr đ ena svaka č injenica koja
+je neophodna za presu đ enje ove krivi č no-pravne stvari.
+ 
+Analiziraju ć i provedene dokaze pojedina č no i u njihovoj me đ usobnoj povezanosti, dovode ć i ih u vezu sa
+navodima optu ž be i priznanjem okrivljenog na glavnom pretresu, sud je na nesumnjiv na č in utvrdio da je
+okrivljeni .. izvrš io krivi č no djelo koje mu je stavljeno na teret optu ž bom, pa je zbog izvr š enja istog sud
+okrivljenog oglasio krivim i krivi č no-pravno odgovornim iz sljede ć ih razloga:
+ 
+Priznanje okrivljenog dato na glavnom pretresu sud je cijenio kao potpuno, jasno  i istinito, jer je isto
+potvr đ eno svim provedenim dokazima.
+ 
+Uvidom u CD sa video zapisom, koji je sa č injen kamerom video nadzora instaliranog u objektu
+Elektrodistribucije Nik š i ć  dana 27.08.2018.godine, za vrijeme trajanja doga đ aja koji je predmet ovoga
+postupka, a koji video zapis je izuzet po naredbi sudije za istragu ovoga suda Kri.br.190/18 od
+31.08.2018.godine, sud je utvrdio da je na istom prikazano mla đ e mu š ko lice, u plavim teksas farmericama,
+majici i jakni tamne boje, za koje se u toku postupka utvrdilo da je o š te ć eni .., kako kriti č nog dana, u 11:52:19
+časova, po vremenu zabilje ž enom na tom video zapisu, ulazi š alter salu Elektrodistribucije Nik š i ć , u kojoj se u
+tom trenutku ve ć  nalazila jedna srednjovje č na ž ena crne kose, obu č ena u crnu odje ć u, a za koju se u toku
+postupka utvrdilo da je majka okrivljenog .., da po ulasku u tu salu o š te ć eni .. pomalo u ž urbano zatvara vrata,
+dok se .. u tom trenutku nalazi iza njega, koja mu potom prilazi i otvorenim dlanom kre ć e ka njemu, udaraju ć i
+ga u predjelu lijeve strane lica, u kojem trenutku, u 11:52:26 č asova u š alter salu ulazi mla đ e mu š ko lice,
+obuč eno u teksas farmerice i tamnu majicu kratkih rukava, sa bijelim ka č ketom na glavi, a za koje se u toku
+postupka utvrdilo da se radi o okrivljenom .., koje, dr ž e ć i palicu du ž ine od oko 80cm do 1m u rukama, istom
+više puta zamahuje u pravcu o š te ć enog .., kojom palicom imenovanog o š te ć enog tom prilikom udara po
+glavi, dok se o š te ć eni brani od takvih napada, nakon č ega dolazi do razmjene udaraca i guranja, uslijed kojih
+ošte ć eni .. obara na pod okrivljenog. Iako u tom trenutku radnik obezbje đ enja Elektrodistribucije i majka
+okrivljenoj .. poku š avaju da razdvoje okrivljenog i o š te ć enog, okrivljeni .. uspijeva da o š te ć enog Kerellaj-a
+uhvati u grif i u tom polo ž aju ostaju nekih 8 sekundi, sve dok radnik obezbje đ enja ne uspijeva da okrivljenog
+.. izvede iz š alter sale, u kojoj ostaju o š te ć eni .. i majka okrivljenog, koja o š te ć enog gura tijelom i rukama, a
+koja potom, na insistiranje prisutnog radnika obezbje đ enja, tako đ e napu š ta objekat.
+ 
+Ošte ć eni K.. A.. u svom svjedo č kom iskazu u bitnom je naveo da je kriti č nog dana 27.08.2018.godine, u
+prijepodnevnim č asovima, prolazio ispred zgrade Elektrodistribucije Nik š i ć , da je bio sa svojim maloljetnim
+sinom i da je, prolaze ć i pored te zgrade, vidio okrivljenog .., sa kojim je u negovoru, a kako je u međ uvremenu
+tuda nai š ao i jedan njegov drug, on je podigao ruku i istom se javio i nakon toga vidio da je okrivljeni .. izaš ao
+iz putni č kog motornog vozila marke Golf 4, bijele boje i potr č ao u njegovom pravcu, da mu je dok mu se
+pribli ž avao okrivljeni psovao majku i da je vidio da okrivljeni u ruci dr ž i ne š to nalik na bejzbol palicu kafene
+boje, pa je on, kada je bio blizu zgrade Elektrodistribucije, odmah u š ao u tu zgradu kako bi se za š titio i
+izbjegao da ga okrivljeni .. napadne i nekom od slu ž benika tog preduze ć a rekao da pozove policiju, jer je
+napadnut. Dalje je objasnio da je u zgradi Elektrodistribucije Nik š i ć  tom prilikom bila majka okrivljenog ..,
+koja ga je, kad je vidjela da okrivljeni tr č i za njim, o š amarila, iako on sa njom prethodno nije imao nikakvu
+komunikaciju, a da mu je zatim pri š ao okrivljeni .. i uhvatio ga za jaknu i tom prilikom istu iscijepao i uhvatio
+ga rukama oko vrata, u zahvat koji se naziva u grif, potom uspio da ga udari palicom po le đ ima i oborio ga na
+pod ispred š altera, nakon č ega su pritr č ali radnici obezbje đ enja preduze ć a Elektrodistribucija Nik š i ć  i
+okrivljenog .. sprije č ili da ga udara, nakon č ega su okrivljeni i njegova majka pobjegli iz te prostorije. Izjavio je
+da se, iako ga je okrivljeni .. kriti č nom prilikom udario palicom po le đ ima, on nije javljao ljekaru i da za svo
+vrijeme de š avanja predmetnog doga đ aja on sa okrivljenim .. i sa majkom imenovanog okrivljenog nije imao
+bilo kakvu komunikaciju i da nije ta č no da je on kriti č nom prilikom u prostorijama zgrade Elektrodistribucije
+na bilo koji na č in fizi č ki napao majku okrivljenog .., niti se sa istom sva đ ao i zavrnuo joj ruku, ve ć  da je ona
+njega prva o š amarila.
+ 
+Na osnovu provedenih dokaza, prevashodno iskaza o š te ć enog .., koji iskaz je sud cijenio kao istinit jer je isti
+potvr đ en snimkom sa č injenim kamerom sistema video nadzora instaliranog u objektu Elektrodistribucije
+Nikš i ć , te priznanja okrivljenog .., sud je na nesumnjiv na č in utvrdio da se okrivljeni .. dana
+27.08.2018.godine, u Nik š i ć u, u š alter sali preduze ć a CEDIS DOO Elektrodistribucija Nik š i ć , koja se nalazi u
+ulici Ljuba Nenadovi ć a, svjestan djela č ije je izvr š enje htio, prilikom sva đ e do koje je do š lo izme đ u o š te ć enog
+.. i .., ma š io drvene motke du ž ine oko 1 metar, obima 5 cm, kao sredstva podobnog da tijelo te š ko povrijedi ili
+zdravlje te š ko naru š i, kojom je vi š e puta zamahnuo u pravcu o š te ć enog .., kojim radnjama je okrivljeni izvr š io
+krivi č no djelo ugro ž avanje opasnim oru đ em pri tu č i i sva đ i iz č lana 154 Krivi č nog zakonika Crne Gore na
+nač in, u vrijeme i na mjestu kako je to predstavljeno u izreci presude.
+ 
+Cijene ć i subjektivni odnos okrivljenog prema izvr š enom krivi č nom djelu sud je utvrdio da je okrivljeni
+prilikom izvr š enja radnji predmetnog krivi č nog djela postupao sa direktnim umi š ljajem, jer iz utvr đ enog
+činjeni č nog stanja proizilazi da je okrivljeni preduzimaju ć i radnje bli ž e opisane u izreci presude bio svjestan
+da na taj na č in, dakle za vrijeme trajanja sva đ e izme đ u o š te ć enog .., uzimaju ć i u ruke motku du ž ine oko 1
+metar, obima oko 5 cm, kao sredstva podobnog da te š ko povrijede tijelo o š te ć enog ili te š ko naru š i njegovo
+zdravlje, ugro ž ava o š te ć enog na na č in š to stvara objektivnu opasnost od naru š avanja njegovog fizi č kog
+integriteta i zdravlja, odakle nedvosmisleno proizilazi da je okrivljeni preduzimaju ć i radnje bli ž e opisane u
+izreci presude bio svjestan da na taj na č in č ini predmetno krivi č no djelo i htio njegovo izvr š enje.
+Prilikom dono š enja odluke o krivi č noj sankciji okrivljenom sud je u smislu č lana 42 stav 1 KZ CG kao
+olak š avaju ć e okolnosti na strani okrivljenog naš ao priznanje izvr š enja krivi č nog djela koje mu je stavljeno na
+teret optu ž bom, porodi č ne prilike- č injenicu da je okrivljeni o ž enjen i otac četvoro djece i raniju
+neosu đ ivanost okrivljenog, utvrđ enu uvidom u izvod iz registra kazenih evidencija Ministarstva pravde CG za
+okrivljenog, dok ote ž avaju ć ih okolnosti na strani okrivljenog po ocjeni suda nije bilo. Imaju ć i u vidu
+navedene olak š avaju ć e okolnosti sud je na š ao da se radi o osobito olak š avaju ć im okolnostima i da prema
+okrivljenom u cilju ostvarivanja krivi č no pravne za š tite dru š tvenih vrijednosti prema okrivljenom nije nu ž no
+primjeniti kaznu, pa je sud okrivljenom na osnovu č lana 53 i 54 KZ CG izrekao uslovnu osudu, sa kojom je
+okrivljenom utvrdio kaznu zatvora u trajanju od 30 dana i istovremeno odredio da se navedena kazna ne ć e
+izvrš iti ukoliko okrivljeni u roku od jedne godine od dana pravosna ž nosti presude ne u č ini novo krivi č no
+djelo, smatraju ć i da ć e se i sa prijetnjom izvr š enja utvrdjene kazne zatvora, uz proveru pona š anja okrivljenog
+u roku od jedne godine, na istog u dovoljnoj mjeri uticati da ne č ini nova krivi č na djela i da ć e se na taj na č in u
+ovom konkretnom slu č aju ostvariti svrha izricanja uslovnih osuda iz č lana 52 KZ CG, u okviru op š te svrhe
+izricanja krivi č nih sankcija iz č lana 4 stav 2 KZ CG.
+ 
+Odluku o tro š kovima krivi č nog postupka sud je donio na osnovu č lana 226 i 229 ZKP-a i istom okrivljenog
+obavezao da na ime pau š ala kao dijela tro š kova krivi č nog postupka plati iznos od 30,00 eura, koji je iznos
+odre đ en imaju ć i u vidu slo ž enost predmeta, trajanje postupka i imovne prilike okrivljenog.
+ 
+Na osnovu svega izlo ž enog, primjenom odredbi č lana 374 ZKP-a odlu č eno je kao u izreci presude.
+ 
+OSNOVNI SUD U NIK Š I Ć U, dana 12.12.2018.godine
+ 
+Zapisni č ar S U D I J A
+Papovi ć Budimirka s.r. Đuri č kovi ć Igor s.r.
+ 
+Za tačnost otpravki tvrdi i ovjerava: Služ benik suda
+ 
+PRAVNA POUKA: Protiv ove presude dozvoljena je žalba u roku od 8 dana od dana prijema iste preko
+ovog Suda Višem sudu Podgorica</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

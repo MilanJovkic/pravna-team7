@@ -1,6 +1,10 @@
 """Test script to verify automatic database insertion during XML export."""
 import sys
-sys.path.insert(0, 'src')
+import os
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 
 from src.verdict_annotation.verdict_parser import VerdictMetadata
 from src.verdict_annotation.verdict_annotator import VerdictAnnotation
@@ -60,7 +64,7 @@ print(f"✓ XML sacuvan: {output_file}")
 print("\n🔍 Proveravam unos u bazu...")
 conn = psycopg2.connect(
     host="localhost",
-    port=5432,
+    port=int(os.getenv("POSTGRES_PORT", "5433")),
     database="pravna_cbr",
     user="pravna_user",
     password="pravna_pass"

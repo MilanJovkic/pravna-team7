@@ -31,6 +31,7 @@ class CbrService:
 
     def __init__(self) -> None:
         self._cases_ready = False
+        self._xml_snapshot: tuple[int, float] | None = None
 
     def query(self, facts: CaseFacts, top_k: int) -> CbrResult:
         self._ensure_case_base()
@@ -101,32 +102,33 @@ class CbrService:
         return CbrResult(matches=matches)
 
     def _ensure_case_base(self) -> None:
-        if self._cases_ready:
-            return
-
         logger = logging.getLogger(__name__)
         config = self._db_config()
-        try:
-            conn = psycopg2.connect(**config)
-        except Exception:
-            logger.exception("CBR database connection failed")
+        xml_snapshot = self._build_xml_snapshot()
+
+        if self._cases_ready and self._xml_snapshot == xml_snapshot:
             return
 
         try:
-            cursor = conn.cursor()
-            cursor.execute("SELECT COUNT(*) FROM cases")
-            count = cursor.fetchone()[0]
-            if count == 0:
+            conn = psycopg2.connect(**config)
+        except Exception as exc:
+            logger.exception("CBR database connection failed")
+            raise RuntimeError("CBR database connection failed") from exc
+
+        try:
+            count = self._count_db_corpus_cases(conn)
+            if count == 0 or self._xml_snapshot != xml_snapshot:
                 self._import_cases(conn)
-            cursor.close()
             conn.close()
             self._cases_ready = True
-        except Exception:
+            self._xml_snapshot = xml_snapshot
+        except Exception as exc:
             logger.exception("CBR database initialization failed")
             try:
                 conn.close()
             except Exception:
                 pass
+            raise RuntimeError("CBR database initialization failed") from exc
 
     def _import_cases(self, conn) -> None:
         xml_dir = ROOT / "data" / "verdicts_xml"
@@ -160,7 +162,8 @@ class CbrService:
             return
 
         cursor = conn.cursor()
-        cursor.execute("TRUNCATE TABLE cases RESTART IDENTITY CASCADE")
+        # Keep user-entered cases (USER-*) while refreshing corpus-derived entries.
+        cursor.execute("DELETE FROM cases WHERE case_number IS NULL OR case_number NOT LIKE 'USER-%'")
         insert_query = """
             INSERT INTO cases (
                 case_number, injury_type, location, weapon, weapon_used,
@@ -171,6 +174,27 @@ class CbrService:
         execute_values(cursor, insert_query, records)
         conn.commit()
         cursor.close()
+
+    def _build_xml_snapshot(self) -> tuple[int, float]:
+        """Build a cheap snapshot of verdict XML corpus for change detection."""
+        xml_dir = ROOT / "data" / "verdicts_xml"
+        if not xml_dir.exists():
+            return (0, 0.0)
+
+        files = sorted(xml_dir.glob("*.xml"))
+        if not files:
+            return (0, 0.0)
+
+        latest_mtime = max(file.stat().st_mtime for file in files)
+        return (len(files), latest_mtime)
+
+    def _count_db_corpus_cases(self, conn) -> int:
+        """Count only corpus-derived cases, excluding user-added USER-* entries."""
+        cursor = conn.cursor()
+        cursor.execute("SELECT COUNT(*) FROM cases WHERE case_number IS NULL OR case_number NOT LIKE 'USER-%'")
+        count = int(cursor.fetchone()[0])
+        cursor.close()
+        return count
 
     def _extract_facts(self, xml_path: Path) -> dict:
         tree = ET.parse(xml_path)

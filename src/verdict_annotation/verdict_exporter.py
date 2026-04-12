@@ -36,6 +36,33 @@ class VerdictAkomaExporter:
             "password": os.getenv("POSTGRES_PASSWORD", "pravna_pass")
         }
 
+    def _clean_text(self, value: Optional[object]) -> Optional[str]:
+        if value is None:
+            return None
+        cleaned = str(value).strip()
+        if not cleaned or cleaned.lower() in {"none", "null"}:
+            return None
+        return cleaned
+
+    def _clean_text_list(self, values: Optional[list[object]]) -> list[str]:
+        cleaned_values: list[str] = []
+        for value in values or []:
+            cleaned = self._clean_text(value)
+            if cleaned and cleaned not in cleaned_values:
+                cleaned_values.append(cleaned)
+        return cleaned_values
+
+    def _clean_parties(self, parties: Optional[dict[str, list[object]]]) -> dict[str, list[str]]:
+        if not parties:
+            return {}
+
+        cleaned_parties: dict[str, list[str]] = {}
+        for role, values in parties.items():
+            cleaned_values = self._clean_text_list(values)
+            if cleaned_values:
+                cleaned_parties[role] = cleaned_values
+        return cleaned_parties
+
     def export(
         self,
         verdict_metadata: VerdictMetadata,
@@ -66,7 +93,7 @@ class VerdictAkomaExporter:
         judgment = SubElement(root, "judgment", name=case_id)
 
         applied_laws = annotation.applied_laws if annotation and annotation.applied_laws else verdict_metadata.legal_references
-        applied_laws = [self._normalize_law_name(law) for law in (applied_laws or [])]
+        applied_laws = [self._normalize_law_name(law) for law in self._clean_text_list(applied_laws)]
         law_ref_map = self._build_meta(judgment, verdict_metadata, case_id, applied_laws)
         self._build_judgment_body(judgment, verdict_metadata, annotation, law_ref_map)
 
@@ -111,15 +138,17 @@ class VerdictAkomaExporter:
         # References (court, judges, parties, laws)
         references = SubElement(meta, "references", source="#court")
         
-        if metadata.court_name:
+        court_name = self._clean_text(metadata.court_name)
+        if court_name:
             SubElement(
                 references, "TLCOrganization",
                 eId="court",
                 href=f"/akn/{self.country_code}/ontology/organization/court",
-                showAs=metadata.court_name
+                showAs=court_name
             )
         
-        for idx, judge in enumerate(metadata.judges, 1):
+        judges = self._clean_text_list(metadata.judges)
+        for idx, judge in enumerate(judges, 1):
             SubElement(
                 references, "TLCPerson",
                 eId=f"judge_{idx}",
@@ -127,7 +156,9 @@ class VerdictAkomaExporter:
                 showAs=judge
             )
 
-        for idx, defendant in enumerate(metadata.parties.get("defendant", []), 1):
+        parties = self._clean_parties(metadata.parties)
+
+        for idx, defendant in enumerate(parties.get("defendant", []), 1):
             SubElement(
                 references, "TLCPerson",
                 eId=f"defendant_{idx}",
@@ -135,7 +166,7 @@ class VerdictAkomaExporter:
                 showAs=defendant
             )
 
-        for idx, victim in enumerate(metadata.parties.get("victim", []), 1):
+        for idx, victim in enumerate(parties.get("victim", []), 1):
             SubElement(
                 references, "TLCPerson",
                 eId=f"victim_{idx}",
@@ -143,7 +174,8 @@ class VerdictAkomaExporter:
                 showAs=victim
             )
 
-        for idx, org in enumerate(metadata.organizations, 1):
+        organizations = self._clean_text_list(metadata.organizations)
+        for idx, org in enumerate(organizations, 1):
             SubElement(
                 references, "TLCOrganization",
                 eId=f"org_{idx}",
@@ -214,6 +246,8 @@ class VerdictAkomaExporter:
         # Background (applied laws and articles)
         applied_laws = annotation.applied_laws if annotation and annotation.applied_laws else metadata.legal_references
         applied_articles = annotation.applied_articles if annotation and annotation.applied_articles else metadata.article_references
+        applied_laws = self._clean_text_list(applied_laws)
+        applied_articles = self._clean_text_list(applied_articles)
         if applied_laws or applied_articles:
             background = SubElement(body, "background")
             
@@ -234,43 +268,45 @@ class VerdictAkomaExporter:
                     ).text = article
 
         # Motivation (legal reasoning)
-        if annotation and annotation.legal_reasoning:
+        if annotation and self._clean_text(annotation.legal_reasoning):
             motivation = SubElement(body, "motivation")
             reasoning_block = SubElement(motivation, "block", name="reasoning")
-            SubElement(reasoning_block, "p").text = annotation.legal_reasoning
+            SubElement(reasoning_block, "p").text = self._clean_text(annotation.legal_reasoning)
 
         # Decision (verdict outcome)
-        if annotation and annotation.decision:
+        if annotation and self._clean_text(annotation.decision):
             decision = SubElement(body, "decision")
             decision_block = SubElement(decision, "block", name="verdict")
-            SubElement(decision_block, "p").text = annotation.decision
+            SubElement(decision_block, "p").text = self._clean_text(annotation.decision)
             
             # Add outcome as attribute
-            if annotation.case_outcome:
-                decision_block.set("outcome", annotation.case_outcome)
+            if self._clean_text(annotation.case_outcome):
+                decision_block.set("outcome", self._clean_text(annotation.case_outcome))
 
         # Parties and organizations (metadata)
-        if metadata.parties or metadata.organizations:
+        parties = self._clean_parties(metadata.parties)
+        organizations = self._clean_text_list(metadata.organizations)
+        if parties or organizations:
             participants = SubElement(body, "participants")
-            if metadata.parties.get("defendant"):
+            if parties.get("defendant"):
                 def_block = SubElement(participants, "block", name="defendants")
-                for defendant in metadata.parties["defendant"]:
+                for defendant in parties["defendant"]:
                     SubElement(def_block, "person").text = defendant
-            if metadata.parties.get("victim"):
+            if parties.get("victim"):
                 vic_block = SubElement(participants, "block", name="victims")
-                for victim in metadata.parties["victim"]:
+                for victim in parties["victim"]:
                     SubElement(vic_block, "person").text = victim
-            if metadata.parties.get("witness"):
+            if parties.get("witness"):
                 wit_block = SubElement(participants, "block", name="witnesses")
-                for witness in metadata.parties["witness"]:
+                for witness in parties["witness"]:
                     SubElement(wit_block, "person").text = witness
-            if metadata.parties.get("clerk"):
+            if parties.get("clerk"):
                 clerk_block = SubElement(participants, "block", name="clerks")
-                for clerk in metadata.parties["clerk"]:
+                for clerk in parties["clerk"]:
                     SubElement(clerk_block, "person").text = clerk
-            if metadata.organizations:
+            if organizations:
                 org_block = SubElement(participants, "block", name="organizations")
-                for org in metadata.organizations:
+                for org in organizations:
                     SubElement(org_block, "organization").text = org
 
         # Factual state (regex + LLM)
@@ -278,14 +314,14 @@ class VerdictAkomaExporter:
         if factual_state:
             facts_elem = SubElement(body, "facts")
             for key, values in factual_state.items():
-                for value in values:
+                for value in self._clean_text_list(values):
                     SubElement(facts_elem, "fact", key=key).text = value
 
         # Conclusions (full text for UI rendering)
-        if metadata.raw_text:
+        if self._clean_text(metadata.raw_text):
             conclusions = SubElement(body, "conclusions")
             text_block = SubElement(conclusions, "block", name="fullText")
-            SubElement(text_block, "p").text = metadata.raw_text
+            SubElement(text_block, "p").text = self._clean_text(metadata.raw_text)
 
     def _law_href(self, law_name: str) -> str:
         name_lower = law_name.lower()
@@ -332,12 +368,9 @@ class VerdictAkomaExporter:
         
         # After saving XML, also save to database
         if self.enable_db_insert:
-            try:
-                factual_state = verdict_metadata.factual_state or (annotation.factual_state if annotation else {})
-                outcome = annotation.case_outcome if annotation else "непознато"
-                self._insert_case_to_db(case_id, factual_state, outcome)
-            except Exception as e:
-                print(f"  ⚠️  Nije uspeo upis u bazu za {case_id}: {e}")
+            factual_state = verdict_metadata.factual_state or (annotation.factual_state if annotation else {})
+            outcome = annotation.case_outcome if annotation else "непознато"
+            self._insert_case_to_db(case_id, factual_state, outcome)
 
     def export_batch(
         self,
@@ -365,6 +398,9 @@ class VerdictAkomaExporter:
 
         print(f"\nGeneriram {total} XML fajlova...")
 
+        if self.enable_db_insert:
+            self._sync_cases_table_to_active_case_ids(list(verdicts.keys()))
+
         for idx, (case_id, metadata) in enumerate(verdicts.items(), 1):
             print(f"[{idx}/{total}] Eksportujem: {case_id}")
             
@@ -380,6 +416,7 @@ class VerdictAkomaExporter:
                 print(f"  ✓ {output_file.name}")
             except Exception as e:
                 print(f"  ✗ Greška: {e}")
+                raise
 
         return generated_files
 
@@ -437,9 +474,17 @@ class VerdictAkomaExporter:
             conn = psycopg2.connect(**self.db_params)
             cursor = conn.cursor()
             
-            # Check if case already exists
-            cursor.execute("SELECT id FROM cases WHERE case_number = %s", (case_number,))
-            existing = cursor.fetchone()
+            # Keep exactly one row per case_number even if older runs created duplicates.
+            cursor.execute("SELECT id FROM cases WHERE case_number = %s ORDER BY id ASC", (case_number,))
+            existing_rows = cursor.fetchall()
+            existing = existing_rows[0] if existing_rows else None
+            duplicate_ids = [row[0] for row in existing_rows[1:]]
+
+            if duplicate_ids:
+                cursor.execute(
+                    f"DELETE FROM cases WHERE id IN ({','.join(['%s'] * len(duplicate_ids))})",
+                    duplicate_ids,
+                )
             
             if existing:
                 # Update existing case
@@ -475,6 +520,7 @@ class VerdictAkomaExporter:
                 ))
             else:
                 # Insert new case
+                cursor.execute("DELETE FROM cases WHERE case_number = %s", (case_number,))
                 cursor.execute("""
                     INSERT INTO cases (
                         case_number, injury_type, location, weapon, weapon_used,
@@ -503,3 +549,43 @@ class VerdictAkomaExporter:
             
         except Exception as e:
             raise Exception(f"Database insert failed: {e}")
+
+    def _sync_cases_table_to_active_case_ids(self, active_case_ids: list[str]) -> None:
+        """Trim the cases table to the active corpus before upserts run."""
+        if not POSTGRES_AVAILABLE:
+            return
+
+        active_ids = [case_id for case_id in active_case_ids if case_id]
+        if not active_ids:
+            return
+
+        try:
+            conn = psycopg2.connect(**self.db_params)
+            cursor = conn.cursor()
+
+            cursor.execute("SELECT id, case_number FROM cases")
+            rows = cursor.fetchall()
+
+            seen_case_numbers: set[str] = set()
+            stale_ids: list[int] = []
+
+            for row_id, case_number in rows:
+                if case_number not in active_ids:
+                    stale_ids.append(row_id)
+                    continue
+
+                if case_number in seen_case_numbers:
+                    stale_ids.append(row_id)
+                    continue
+
+                seen_case_numbers.add(case_number)
+
+            if stale_ids:
+                placeholders = ",".join(["%s"] * len(stale_ids))
+                cursor.execute(f"DELETE FROM cases WHERE id IN ({placeholders})", stale_ids)
+
+            conn.commit()
+            cursor.close()
+            conn.close()
+        except Exception as exc:
+            raise Exception(f"Database corpus sync failed: {exc}")

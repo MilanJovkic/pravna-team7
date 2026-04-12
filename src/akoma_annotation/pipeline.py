@@ -17,21 +17,28 @@ class AnnotationPipeline:
         output_xml: str,
         output_json: Optional[str] = None,
         api_token: Optional[str] = None,
-        model: str = "gpt-5-nano",
+        model: str = "gpt-4o-mini",
         provider: str = "openai",
         article_limit: Optional[int] = None,
-        enable_llm: bool = True
+        enable_llm: bool = True,
+        strict_mode: bool = True,
     ):
         self.input_file = input_file
         self.output_xml = output_xml
         self.output_json = output_json or output_xml.replace('.xml', '_annotations.json')
         self.article_limit = article_limit
         self.enable_llm = enable_llm
+        self.strict_mode = strict_mode
 
         self.parser = LegalTextParser()
         self.annotator = None
         if self.enable_llm:
-            self.annotator = LLMAnnotator(api_token=api_token, model=model, provider=provider)
+            self.annotator = LLMAnnotator(
+                api_token=api_token,
+                model=model,
+                provider=provider,
+                strict_mode=self.strict_mode,
+            )
         self.exporter = AkomaExporter()
 
         print("=" * 70)
@@ -41,6 +48,7 @@ class AnnotationPipeline:
         print(f"Output:   {output_xml}")
         print(f"Provider: {provider if self.enable_llm else 'disabled'}")
         print(f"Model:    {model if self.enable_llm else 'n/a'}")
+        print(f"Strict:   {'enabled' if self.strict_mode else 'disabled'}")
         if article_limit:
             print(f"Limit:    {article_limit} članaka (test mode)")
         print("=" * 70)

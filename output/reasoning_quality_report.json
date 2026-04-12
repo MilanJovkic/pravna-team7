@@ -1,0 +1,893 @@
+{
+  "generated_at": "2026-04-06T13:45:00.326944+00:00",
+  "summary": {
+    "total": 50,
+    "passed": 50,
+    "failed": 0,
+    "pass_rate": 100.0,
+    "by_category": {
+      "positive": {
+        "total": 8,
+        "passed": 8,
+        "failed": 0
+      },
+      "negative": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0
+      },
+      "edge": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0
+      },
+      "random": {
+        "total": 30,
+        "passed": 30,
+        "failed": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "name": "POS-EXPLICIT-DEATH-01",
+      "category": "positive",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art143"
+      ],
+      "applied_articles": [
+        "143"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 5 godina do 15 godina (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "POS-EXPLICIT-DEATH-02",
+      "category": "positive",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art144"
+      ],
+      "applied_articles": [
+        "144"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "long-term imprisonment",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "POS-SEVERE-INJURY-01",
+      "category": "positive",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art151_3"
+      ],
+      "applied_articles": [
+        "151"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 2 do 12 godina (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "POS-LIGHT-INJURY-01",
+      "category": "positive",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art152_1"
+      ],
+      "applied_articles": [
+        "152"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "novcana kazna ili zatvor do 1 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "POS-FIGHT-01",
+      "category": "positive",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art154"
+      ],
+      "applied_articles": [
+        "154"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora do 6 meseci (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "POS-ABANDON-01",
+      "category": "positive",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art151_1",
+        "crime_art155_1"
+      ],
+      "applied_articles": [
+        "151",
+        "155"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 6 meseci do 5 godina (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "NEG-NO-DEATH-SPARSE-01",
+      "category": "negative",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "odbijeno",
+      "suggested_sanction": "bez sankcije",
+      "rule_status": "no_proof",
+      "detail": ""
+    },
+    {
+      "name": "NEG-NO-DEATH-LIGHT-01",
+      "category": "negative",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art152_1"
+      ],
+      "applied_articles": [
+        "152"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "novcana kazna ili zatvor do 1 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "NEG-NO-DEATH-SUICIDE-FLAG-01",
+      "category": "negative",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "odbijeno",
+      "suggested_sanction": "bez sankcije",
+      "rule_status": "no_proof",
+      "detail": ""
+    },
+    {
+      "name": "NEG-ATTEMPT-ONLY-01",
+      "category": "negative",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "odbijeno",
+      "suggested_sanction": "bez sankcije",
+      "rule_status": "no_proof",
+      "detail": ""
+    },
+    {
+      "name": "EDGE-PHYSICAL-ABSURD-01",
+      "category": "edge",
+      "expected_status": 422,
+      "status": 422,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "",
+      "suggested_sanction": "",
+      "rule_status": "",
+      "detail": "Fizički apsurd: označen je smrtni ishod uz eksplicitnu tvrdnju da nema nikakve povrede."
+    },
+    {
+      "name": "EDGE-PHYSICAL-ABSURD-02",
+      "category": "edge",
+      "expected_status": 422,
+      "status": 422,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "",
+      "suggested_sanction": "",
+      "rule_status": "",
+      "detail": "Fizički apsurd: označen je smrtni ishod uz eksplicitnu tvrdnju da nema nikakve povrede."
+    },
+    {
+      "name": "EDGE-NONPHYSICAL-TENSION-01",
+      "category": "edge",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art143"
+      ],
+      "applied_articles": [
+        "143"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 5 godina do 15 godina (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "EDGE-BOOLEAN-MIX-01",
+      "category": "edge",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "odbijeno",
+      "suggested_sanction": "bez sankcije",
+      "rule_status": "no_proof",
+      "detail": ""
+    },
+    {
+      "name": "EDGE-BOOLEAN-MIX-02",
+      "category": "edge",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art154"
+      ],
+      "applied_articles": [
+        "154"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora do 6 meseci (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "POS-SUICIDE-LAW-SHAPE-01",
+      "category": "positive",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art149_1"
+      ],
+      "applied_articles": [
+        "149"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 1 godina do 5 godina (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "POS-ABORTION-LAW-SHAPE-01",
+      "category": "positive",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art150"
+      ],
+      "applied_articles": [
+        "150"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 3 meseca do 3 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "NEG-NO-DEATH-WEAPON-ONLY-01",
+      "category": "negative",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "odbijeno",
+      "suggested_sanction": "bez sankcije",
+      "rule_status": "no_proof",
+      "detail": ""
+    },
+    {
+      "name": "NEG-NO-DEATH-PROVOCATION-ONLY-01",
+      "category": "negative",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "odbijeno",
+      "suggested_sanction": "bez sankcije",
+      "rule_status": "no_proof",
+      "detail": ""
+    },
+    {
+      "name": "EDGE-DEATH-RESULT-TRUE-WITHOUT-LIFE-CONSEQUENCE-01",
+      "category": "edge",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art151_4"
+      ],
+      "applied_articles": [
+        "151"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora do 3 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-000",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art150",
+        "crime_art152_1"
+      ],
+      "applied_articles": [
+        "150",
+        "152"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 3 meseca do 3 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-001",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art150",
+        "crime_art152_2"
+      ],
+      "applied_articles": [
+        "150",
+        "152"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 3 meseca do 3 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-002",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art150",
+        "crime_art154"
+      ],
+      "applied_articles": [
+        "150",
+        "154"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 3 meseca do 3 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-003",
+      "category": "random",
+      "expected_status": 422,
+      "status": 422,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "",
+      "suggested_sanction": "",
+      "rule_status": "",
+      "detail": "Fizički apsurd: označen je smrtni ishod uz eksplicitnu tvrdnju da nema nikakve povrede."
+    },
+    {
+      "name": "RANDOM-004",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art150",
+        "crime_art152_1"
+      ],
+      "applied_articles": [
+        "150",
+        "152"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 3 meseca do 3 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-005",
+      "category": "random",
+      "expected_status": 422,
+      "status": 422,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "",
+      "suggested_sanction": "",
+      "rule_status": "",
+      "detail": "Fizički apsurd: označen je smrtni ishod uz eksplicitnu tvrdnju da nema nikakve povrede."
+    },
+    {
+      "name": "RANDOM-006",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art148",
+        "crime_art152_2",
+        "crime_art154"
+      ],
+      "applied_articles": [
+        "148",
+        "152",
+        "154"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 6 meseci do 5 godina (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-007",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art150",
+        "crime_art152_1",
+        "crime_art154"
+      ],
+      "applied_articles": [
+        "150",
+        "152",
+        "154"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 3 meseca do 3 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-008",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art154"
+      ],
+      "applied_articles": [
+        "154"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora do 6 meseci (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-009",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art154"
+      ],
+      "applied_articles": [
+        "154"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora do 6 meseci (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-010",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art151_4",
+        "crime_art153"
+      ],
+      "applied_articles": [
+        "151",
+        "153"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 3 meseca do 3 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-011",
+      "category": "random",
+      "expected_status": 422,
+      "status": 422,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "",
+      "suggested_sanction": "",
+      "rule_status": "",
+      "detail": "Fizički apsurd: označen je smrtni ishod uz eksplicitnu tvrdnju da nema nikakve povrede."
+    },
+    {
+      "name": "RANDOM-012",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art154"
+      ],
+      "applied_articles": [
+        "154"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora do 6 meseci (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-013",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art150",
+        "crime_art151_4"
+      ],
+      "applied_articles": [
+        "150",
+        "151"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 3 meseca do 3 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-014",
+      "category": "random",
+      "expected_status": 422,
+      "status": 422,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "",
+      "suggested_sanction": "",
+      "rule_status": "",
+      "detail": "Fizički apsurd: označen je smrtni ishod uz eksplicitnu tvrdnju da nema nikakve povrede."
+    },
+    {
+      "name": "RANDOM-015",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art152_1"
+      ],
+      "applied_articles": [
+        "152"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "novcana kazna ili zatvor do 1 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-016",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art154"
+      ],
+      "applied_articles": [
+        "154"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora do 6 meseci (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-017",
+      "category": "random",
+      "expected_status": 422,
+      "status": 422,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "",
+      "suggested_sanction": "",
+      "rule_status": "",
+      "detail": "Fizički apsurd: označen je smrtni ishod uz eksplicitnu tvrdnju da nema nikakve povrede."
+    },
+    {
+      "name": "RANDOM-018",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "odbijeno",
+      "suggested_sanction": "bez sankcije",
+      "rule_status": "no_proof",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-019",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art150"
+      ],
+      "applied_articles": [
+        "150"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 3 meseca do 3 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-020",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art150"
+      ],
+      "applied_articles": [
+        "150"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 3 meseca do 3 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-021",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art143",
+        "crime_art150",
+        "crime_art152_1"
+      ],
+      "applied_articles": [
+        "143",
+        "150",
+        "152"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 5 godina do 15 godina (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-022",
+      "category": "random",
+      "expected_status": 422,
+      "status": 422,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "",
+      "suggested_sanction": "",
+      "rule_status": "",
+      "detail": "Fizički apsurd: označen je smrtni ishod uz eksplicitnu tvrdnju da nema nikakve povrede."
+    },
+    {
+      "name": "RANDOM-023",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art151_1",
+        "crime_art153"
+      ],
+      "applied_articles": [
+        "151",
+        "153"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 6 meseci do 5 godina (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-024",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art150",
+        "crime_art152_1"
+      ],
+      "applied_articles": [
+        "150",
+        "152"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 3 meseca do 3 godine (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-025",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art152_1",
+        "crime_art154"
+      ],
+      "applied_articles": [
+        "152",
+        "154"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora do 6 meseci (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-026",
+      "category": "random",
+      "expected_status": 422,
+      "status": 422,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "",
+      "suggested_sanction": "",
+      "rule_status": "",
+      "detail": "Fizički apsurd: označen je smrtni ishod uz eksplicitnu tvrdnju da nema nikakve povrede."
+    },
+    {
+      "name": "RANDOM-027",
+      "category": "random",
+      "expected_status": 422,
+      "status": 422,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "",
+      "suggested_sanction": "",
+      "rule_status": "",
+      "detail": "Fizički apsurd: označen je smrtni ishod uz eksplicitnu tvrdnju da nema nikakve povrede."
+    },
+    {
+      "name": "RANDOM-028",
+      "category": "random",
+      "expected_status": 200,
+      "status": 200,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [
+        "crime_art151_5"
+      ],
+      "applied_articles": [
+        "151"
+      ],
+      "suggested_verdict": "osudjen",
+      "suggested_sanction": "kazna zatvora 6 meseci do 5 godina (predlog)",
+      "rule_status": "ok",
+      "detail": ""
+    },
+    {
+      "name": "RANDOM-029",
+      "category": "random",
+      "expected_status": 422,
+      "status": 422,
+      "passed": true,
+      "notes": "OK",
+      "applied_norms": [],
+      "applied_articles": [],
+      "suggested_verdict": "",
+      "suggested_sanction": "",
+      "rule_status": "",
+      "detail": "Fizički apsurd: označen je smrtni ishod uz eksplicitnu tvrdnju da nema nikakve povrede."
+    }
+  ]
+}

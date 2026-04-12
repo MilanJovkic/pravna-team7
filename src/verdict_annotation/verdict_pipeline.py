@@ -13,17 +13,45 @@ from .verdict_exporter import VerdictAkomaExporter
 class VerdictAnnotationPipeline:
     """Orchestrates TXT loading, parsing, annotation, and XML export for verdicts."""
 
+    def _clean_text_value(self, value: Optional[object]) -> Optional[str]:
+        if value is None:
+            return None
+        cleaned = str(value).strip()
+        if not cleaned or cleaned.lower() in {"none", "null"}:
+            return None
+        return cleaned
+
+    def _clean_text_list(self, values: Optional[list[object]]) -> list[str]:
+        cleaned_values: list[str] = []
+        for value in values or []:
+            cleaned = self._clean_text_value(value)
+            if cleaned and cleaned not in cleaned_values:
+                cleaned_values.append(cleaned)
+        return cleaned_values
+
+    def _clean_parties(self, parties: Optional[dict[str, list[object]]]) -> dict[str, list[str]]:
+        if not parties:
+            return {}
+
+        cleaned_parties: dict[str, list[str]] = {}
+        for role, values in parties.items():
+            cleaned_values = self._clean_text_list(values)
+            if cleaned_values:
+                cleaned_parties[role] = cleaned_values
+        return cleaned_parties
+
     def __init__(
         self,
         txt_folder: str,
         output_xml_dir: str,
         output_json: Optional[str] = None,
         api_token: Optional[str] = None,
-        model: str = "gpt-5-nano",
+        model: str = "gpt-4o-mini",
         provider: str = "openai",
         limit: Optional[int] = None,
         overrides_file: Optional[str] = None,
-        enable_llm: bool = True
+        enable_llm: bool = True,
+        strict_mode: bool = True,
     ):
         self.txt_folder = Path(txt_folder)
         self.output_xml_dir = Path(output_xml_dir)
@@ -31,12 +59,18 @@ class VerdictAnnotationPipeline:
         self.limit = limit
         self.overrides_file = overrides_file
         self.enable_llm = enable_llm
+        self.strict_mode = strict_mode
 
         self.text_extractor = TextExtractor()
         self.parser = VerdictParser()
         self.annotator = None
         if self.enable_llm:
-            self.annotator = VerdictAnnotator(api_token=api_token, model=model, provider=provider)
+            self.annotator = VerdictAnnotator(
+                api_token=api_token,
+                model=model,
+                provider=provider,
+                strict_mode=self.strict_mode,
+            )
         self.exporter = VerdictAkomaExporter()
 
         print("=" * 70)
@@ -46,6 +80,7 @@ class VerdictAnnotationPipeline:
         print(f"XML output:  {output_xml_dir}")
         print(f"Provider:    {provider if self.enable_llm else 'disabled'}")
         print(f"Model:       {model if self.enable_llm else 'n/a'}")
+        print(f"Strict mode: {'enabled' if self.strict_mode else 'disabled'}")
         if limit:
             print(f"Limit:       {limit} presuda (test mode)")
         print("=" * 70)
@@ -246,7 +281,7 @@ class VerdictAnnotationPipeline:
             )
             annotation.applied_laws = [
                 self._normalize_law_name(law)
-                for law in (annotation.applied_laws or [])
+                for law in self._clean_text_list(annotation.applied_laws)
             ]
             if verdicts.get(case_id) and verdicts.get(case_id).legal_references:
                 annotation.applied_laws = list({
@@ -257,13 +292,14 @@ class VerdictAnnotationPipeline:
 
             metadata = verdicts.get(case_id)
             if metadata:
+                current_metadata = annotation.metadata or {}
                 annotation.metadata = {
-                    "case_number": metadata.case_number or (annotation.metadata or {}).get("case_number"),
-                    "court_name": metadata.court_name or (annotation.metadata or {}).get("court_name"),
-                    "date": metadata.date or (annotation.metadata or {}).get("date"),
-                    "judges": metadata.judges or (annotation.metadata or {}).get("judges", []),
-                    "parties": metadata.parties or (annotation.metadata or {}).get("parties", {}),
-                    "organizations": metadata.organizations or (annotation.metadata or {}).get("organizations", [])
+                    "case_number": self._clean_text_value(metadata.case_number) or self._clean_text_value(current_metadata.get("case_number")),
+                    "court_name": self._clean_text_value(metadata.court_name) or self._clean_text_value(current_metadata.get("court_name")),
+                    "date": self._clean_text_value(metadata.date) or self._clean_text_value(current_metadata.get("date")),
+                    "judges": self._clean_text_list(metadata.judges) or self._clean_text_list(current_metadata.get("judges")),
+                    "parties": self._clean_parties(metadata.parties) or self._clean_parties(current_metadata.get("parties")),
+                    "organizations": self._clean_text_list(metadata.organizations) or self._clean_text_list(current_metadata.get("organizations"))
                 }
                 metadata.factual_state = self._normalize_factual_state(metadata.factual_state)
 

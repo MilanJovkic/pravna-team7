@@ -1,5 +1,6 @@
 """Service for loading and processing verdict documents."""
 import json
+import math
 from pathlib import Path
 from typing import List, Optional
 from xml.etree import ElementTree as ET
@@ -111,8 +112,36 @@ class VerdictService:
         for case_id in verdicts.keys():
             metadata = self._extract_metadata(case_id)
             result.append(metadata)
-        
-        return result
+
+        return self._sort_verdicts(result)
+
+    def get_verdicts_paginated(self, page: int = 1, page_size: int = 20) -> dict:
+        """Return paginated verdict metadata for scalable list rendering."""
+        all_verdicts = self.get_all_verdicts()
+        total = len(all_verdicts)
+        total_pages = max(1, math.ceil(total / page_size))
+        current_page = min(max(1, page), total_pages)
+
+        start_idx = (current_page - 1) * page_size
+        end_idx = start_idx + page_size
+        items = all_verdicts[start_idx:end_idx]
+
+        return {
+            "total": total,
+            "page": current_page,
+            "page_size": page_size,
+            "total_pages": total_pages,
+            "verdicts": items,
+        }
+
+    def _sort_verdicts(self, verdicts: list[dict]) -> list[dict]:
+        """Sort verdicts by date descending, then case number for stable pagination."""
+        def key(item: dict) -> tuple:
+            date_value = (item.get("date") or "").strip()
+            case_number = (item.get("case_number") or item.get("case_id") or "").strip()
+            return (date_value, case_number)
+
+        return sorted(verdicts, key=key, reverse=True)
 
     def get_verdict(self, case_id: str):
         """Get specific verdict details."""
@@ -159,7 +188,6 @@ class VerdictService:
         xml_decision = self._find_text(root, ".//block[@name='verdict']/p")
         xml_outcome = self._find_attr(root, ".//block[@name='verdict']", "outcome")
         xml_full_text = self._find_text(root, ".//block[@name='fullText']/p")
-        fallback_summary = (xml_full_text[:300] + "...") if xml_full_text and len(xml_full_text) > 300 else xml_full_text
         
         metadata = {
             "case_id": case_id,
@@ -167,7 +195,7 @@ class VerdictService:
             "court_name": self._find_text(root, ".//docTitle"),
             "date": self._find_attr(root, ".//docDate", "date") or self._find_text(root, ".//docDate"),
             "judges": self._find_all_text(root, ".//judge"),
-            "summary": annotation.get("verdict_summary") or xml_summary or fallback_summary,
+            "summary": annotation.get("verdict_summary") or xml_summary,
             "legal_issues": annotation.get("legal_issues") or xml_legal_issues,
             "applied_laws": annotation.get("applied_laws") or xml_applied_laws,
             "applied_articles": annotation.get("applied_articles") or xml_applied_articles,
@@ -235,7 +263,7 @@ class VerdictService:
         return participants
 
     def _extract_factual_state(self, root, annotation: dict):
-        """Extract factual state from XML or fallback to annotations."""
+        """Extract factual state strictly from XML facts block."""
         facts = {}
 
         fact_elems = root.findall(".//facts/fact", self.AKOMA_NS)
@@ -252,9 +280,6 @@ class VerdictService:
             facts.setdefault(key, [])
             if value not in facts[key]:
                 facts[key].append(value)
-
-        if not facts:
-            return annotation.get("factual_state") or {}
 
         return facts
 

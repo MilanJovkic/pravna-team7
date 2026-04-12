@@ -9,11 +9,13 @@ verdict_service = VerdictService()
 
 
 @router.get("/", response_model=VerdictList)
-async def get_verdicts():
-    """Get all verdicts."""
+async def get_verdicts(
+    page: int = Query(1, ge=1),
+    page_size: int = Query(20, ge=1, le=100),
+):
+    """Get verdicts with pagination."""
     try:
-        verdicts = verdict_service.get_all_verdicts()
-        return {"total": len(verdicts), "verdicts": verdicts}
+        return verdict_service.get_verdicts_paginated(page=page, page_size=page_size)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 

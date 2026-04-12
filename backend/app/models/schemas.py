@@ -77,6 +77,9 @@ class VerdictOverrideUpdate(BaseModel):
 class VerdictList(BaseModel):
     """Model for list of verdicts."""
     total: int
+    page: int = 1
+    page_size: int = 20
+    total_pages: int = 1
     verdicts: List[VerdictMetadata]
 
 

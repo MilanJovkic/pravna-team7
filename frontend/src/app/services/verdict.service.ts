@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { VerdictMetadata, VerdictDetail, VerdictOverrideUpdate } from '../models/models';
+import { VerdictMetadata, VerdictDetail, VerdictListResponse, VerdictOverrideUpdate } from '../models/models';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +11,8 @@ export class VerdictService {
 
   constructor(private http: HttpClient) {}
 
-  getVerdicts(): Observable<{ total: number, verdicts: VerdictMetadata[] }> {
-    return this.http.get<{ total: number, verdicts: VerdictMetadata[] }>(this.apiUrl);
+  getVerdicts(page: number = 1, pageSize: number = 20): Observable<VerdictListResponse> {
+    return this.http.get<VerdictListResponse>(`${this.apiUrl}?page=${page}&page_size=${pageSize}`);
   }
 
   getVerdict(caseId: string): Observable<VerdictDetail> {

@@ -52,7 +52,7 @@ def main() -> None:
     parser.add_argument(
         "--model",
         type=str,
-        default="gpt-5-nano",
+        default="gpt-4o-mini",
         help="Naziv LLM modela"
     )
 
@@ -100,7 +100,8 @@ def main() -> None:
         provider=args.provider,
         limit=args.limit,
         overrides_file=args.overrides,
-        enable_llm=not args.no_llm
+        enable_llm=not args.no_llm,
+        strict_mode=True,
     )
 
     success = pipeline.run()

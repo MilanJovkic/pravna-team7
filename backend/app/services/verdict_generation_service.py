@@ -31,7 +31,7 @@ VERDICTS_DIR = ROOT / "data" / "verdicts_xml"
 class VerdictTextGenerator:
     """LLM-based generator for verdict texts."""
 
-    def __init__(self, api_token: Optional[str] = None, model: str = "gpt-5-nano", provider: str = "openai"):
+    def __init__(self, api_token: Optional[str] = None, model: str = "gpt-4o-mini", provider: str = "openai"):
         load_dotenv()
         self.provider = provider.lower()
         self.offline = False
@@ -126,17 +126,6 @@ class VerdictTextGenerator:
             json=payload,
             timeout=90,
         )
-        if response.status_code != 200 and self.model.startswith("gpt-5"):
-            payload["model"] = "gpt-4o-mini"
-            response = requests.post(
-                "https://api.openai.com/v1/chat/completions",
-                headers={
-                    "Content-Type": "application/json",
-                    "Authorization": f"Bearer {self.api_token}",
-                },
-                json=payload,
-                timeout=90,
-            )
 
         if response.status_code != 200:
             raise RuntimeError(f"LLM API error {response.status_code}: {response.text}")
@@ -235,8 +224,7 @@ class VerdictGenerationService:
 
     def __init__(self, provider: Optional[str] = None, model: Optional[str] = None) -> None:
         provider = provider or os.getenv("VERDICT_LLM_PROVIDER", "openai")
-        model = model or os.getenv("VERDICT_LLM_MODEL", "gpt-5-nano")
-        self.allow_fallback = os.getenv("VERDICT_ALLOW_FALLBACK", "false").lower() in {"1", "true", "yes"}
+        model = model or os.getenv("VERDICT_LLM_MODEL", "gpt-4o-mini")
         self.generator = VerdictTextGenerator(model=model, provider=provider)
         self.annotator = VerdictAnnotator(model=model, provider=provider)
         self.exporter = VerdictAkomaExporter(enable_db_insert=True)
@@ -265,20 +253,8 @@ class VerdictGenerationService:
             selected_sanction=selected_sanction,
         )
         if self.generator.offline:
-            if not self.allow_fallback:
-                raise RuntimeError("LLM API kljuc nije podesen. Postavi OPENAI_API_KEY ili ukljuci VERDICT_ALLOW_FALLBACK=1.")
-            verdict_text = self._build_fallback_verdict_text(
-                case_number=case_number,
-                court_name=court_name,
-                date_value=date_value,
-                judges=judges,
-                facts=payload.facts,
-                reasoning=payload.reasoning,
-                selected_verdict=selected_verdict,
-                selected_sanction=selected_sanction,
-            )
-        else:
-            verdict_text = self.generator.generate(prompt)
+            raise RuntimeError("LLM API kljuc nije podesen. Postavi OPENAI_API_KEY ili izaberi aktivan provajder.")
+        verdict_text = self.generator.generate(prompt)
 
         metadata = self._build_metadata(
             case_number=case_number,
@@ -294,9 +270,7 @@ class VerdictGenerationService:
         if not self.annotator.offline:
             annotation = self.annotator.annotate_verdict(verdict_text, case_number)
         if not annotation:
-            if not self.allow_fallback:
-                raise RuntimeError("LLM anotacija presude nije uspela. Omoguci VERDICT_ALLOW_FALLBACK=1 ako zelis fallback.")
-            annotation = self._build_fallback_annotation(metadata, payload.reasoning)
+            raise RuntimeError("LLM anotacija presude nije uspela. Presuda nije generisana bez validne anotacije.")
         self._fill_annotation_defaults(annotation, metadata, payload.reasoning)
 
         VERDICTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -309,42 +283,6 @@ class VerdictGenerationService:
             case_number=case_number,
             xml_file=str(output_file),
             verdict_text=verdict_text,
-        )
-
-    def _build_fallback_verdict_text(
-        self,
-        case_number: str,
-        court_name: str,
-        date_value: str,
-        judges: list[str],
-        facts: CaseFacts,
-        reasoning: ReasoningResponse,
-        selected_verdict: str | None,
-        selected_sanction: str | None,
-    ) -> str:
-        applied_articles = ", ".join(reasoning.applied_articles or []) or "nepoznato"
-        applied_laws = "Krivicni zakonik Crne Gore"
-        suggested_verdict = selected_verdict or reasoning.suggested_verdict or "kriv"
-        suggested_sanction = selected_sanction or reasoning.suggested_sanction or "sankcija po zakonu"
-
-        return (
-            f"{court_name}\n"
-            f"Broj predmeta: {case_number}\n"
-            f"Datum: {date_value}\n"
-            f"Sudija/e: {', '.join(judges)}\n\n"
-            "U IME CRNE GORE\n"
-            "P R E S U D U\n\n"
-            f"Okrivljeni: {facts.defendant or 'nepoznato'}\n\n"
-            "Izreka:\n"
-            f"Okrivljeni se oglasava {suggested_verdict}. "
-            f"Primenjuju se cl. {applied_articles} ({applied_laws}).\n\n"
-            "Sankcija:\n"
-            f"{suggested_sanction}.\n\n"
-            "Obrazlozenje:\n"
-            "Sud je utvrdio cinjenicno stanje na osnovu raspolozivih dokaza "
-            "i primenio relevantne zakonske odredbe.\n\n"
-            "Pravna pouka:\n"
-            "Protiv ove presude dozvoljena je zalba u zakonskom roku."
         )
 
     def _generate_case_number(self) -> str:
@@ -514,51 +452,6 @@ class VerdictGenerationService:
             annotation.factual_state = metadata.factual_state or {}
         if not annotation.case_outcome and reasoning.suggested_verdict:
             annotation.case_outcome = reasoning.suggested_verdict
-
-    def _build_fallback_annotation(
-        self,
-        metadata: VerdictMetadata,
-        reasoning: ReasoningResponse,
-    ) -> VerdictAnnotation:
-        injury = None
-        if metadata.factual_state.get("injury_type"):
-            injury = metadata.factual_state["injury_type"][0]
-        legal_issues = [injury] if injury else ["krivicno delo"]
-        legal_concepts = [injury] if injury else ["krivicno delo"]
-
-        suggested_verdict = reasoning.suggested_verdict or "kriv"
-        verdict_lower = suggested_verdict.lower()
-        if "odbij" in verdict_lower:
-            outcome = "odbijeno"
-        elif "delim" in verdict_lower:
-            outcome = "delimicno usvojeno"
-        elif "usvoj" in verdict_lower:
-            outcome = "usvojeno"
-        else:
-            outcome = "usvojeno"
-
-        return VerdictAnnotation(
-            verdict_summary="Presuda doneta na osnovu utvrdjenih cinjenica i primenjenih normi.",
-            legal_issues=legal_issues,
-            applied_laws=metadata.legal_references or ["Krivicni zakonik Crne Gore"],
-            applied_articles=metadata.article_references or [],
-            legal_reasoning="Sud je primenio relevantne zakonske odredbe na utvrdjeno cinjenicno stanje.",
-            decision="Okrivljeni se oglasava krivim i izrice se sankcija.",
-            case_outcome=outcome,
-            legal_concepts=legal_concepts,
-            precedent_value="low",
-            confidence=0.3,
-            metadata={
-                "case_number": metadata.case_number,
-                "court_name": metadata.court_name,
-                "date": metadata.date,
-                "judges": metadata.judges,
-                "parties": metadata.parties,
-                "organizations": metadata.organizations,
-            },
-            factual_state=metadata.factual_state,
-            raw_response="fallback",
-        )
 
     def _update_annotations_json(self, case_id: str, annotation: VerdictAnnotation) -> None:
         annotations_file = VERDICTS_DIR / "verdicts_annotations.json"

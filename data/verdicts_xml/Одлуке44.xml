@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке44">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке44/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке44"/>
+                    <FRBRdate date="2022-01-21" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке44/sr@2022-01-21/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке44/sr@2022-01-21"/>
+                    <FRBRdate date="2022-01-21"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке44/sr@2022-01-21/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке44/sr@2022-01-21/!main.akn"/>
+                    <FRBRdate date="2026-04-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni sud"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="mr. V.B."/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="M.N."/>
+                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="M.O."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="M.K."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="M.J."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="M.L."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="M.Č."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>Одлуке44</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>Osnovni sud</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2022-01-21">2022-01-21</docDate>
+                </block>
+                <block name="judges">
+                    <judge>mr. V.B.</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni M.N. je oglašen krivim za ugrožavanje opasnim oružjem pri tuči i svađi. Incident se desio ispred stambene zgrade, gde je koristio tesarsku sjekiru.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>ugrožavanje opasnim oružjem</p>
+                    <p>tuča i svađa</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_154">Član 154</ref>
+                    <ref href="/akn/me/act/2024/!main#art_10">Član 10</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_54">Član 54</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_3">Član 3</ref>
+                    <ref href="/akn/me/act/2024/!main#art_7">Član 7</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da je okrivljeni, svestan postupka, koristio sredstvo koje može da nanese teške povrede.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усвојено">
+                    <p>Optuženi se oglašava krivim</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>M.N.</person>
+                    <person>M.O.</person>
+                </block>
+                <block name="victims">
+                    <person>M.K.</person>
+                    <person>M.J.</person>
+                    <person>M.L.</person>
+                    <person>M.Č.</person>
+                </block>
+                <block name="witnesses">
+                    <person>Ž.M.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="location">Kotoru</fact>
+                <fact key="location">B.</fact>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="weapon">tesarska sjekira</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>Posl. br. K. 15/22/22
+ 
+U IME CRNE GORE
+ 
+Osnovni sud u K., kao nadležni prvostepeni krivi č ni sud, po sudiji mr. V.B., uz u č e šć e zapisni č ara I.P., u
+krivi č nim predmetu protiv okrivljenog M.N., zbog krivi č nog djela ugro ž avanje opasnim oru đ em pri tu č i i sva đ i
+iz člana 154 KZCG, koji se vodi po optu ž nom predlogu ODT-a K. Kt. Br.776/21 od 21.01.2022. g., u prisustvu
+državne tu ž iteljke ODT-a K.J.Č., okrivljenog M.N.i branioca okrivljenog adv. P.B., dana 07.12.2022. g.donio i
+objavio slede ć u:
+ 
+P R E S U D U
+ 
+Okrivljeni M.N., JMBG 0…, od oca D. i majke V., rođ ene K., rođ en 01.03.1958. godine, u C., stalno nastanjen u
+B., ulica V. broj 15, drž avljanin CG I A., voza č, oženjen, otac dvoje djece, sa zavr š enom SSS, lošeg imovnog
+stanja, osu đ ivan, protiv kojeg se ne vodi krivi č ni postupak za drugo krivi č no djelo,
+ 
+ 
+Kriv je
+Što je
+ 
+Dana 21.12.2021. godine, oko 10,00 č asova, ispred stambene zgrade u ulici V.u B., pri sva đ i sa o š te ć enim M.Č
+M.J., M.K.I mal. M.L., ma š io se sredstva podobnog da tijelo te š ko povrijedi ili zdravlje te š ko naru š i, na na č in
+što je prvo po č eo da psuje I vrije đ a M.Č., a potom iz stana uzeo tesarsku sjekiru sa kojom se vratio I ispred
+zgrade zamahivao u pravcu o š te ć enih, psuju ć i ih svo vrijeme, da bi u momentu kada je primjetio dolazakOsnovni Sud u Kotoru
+K 15/2022
+07. Decembar 2022
+policije, sjekiru vratio u zgradu I predao kom š iji Ž.M.od kojeg je sjekira oduzeta, pri č emu je bio svjestan svog
+djela i njegove zabranjenosti, a č ije je izvr š enje htio
+ 
+- čime je izvr š io krivi č no djelo ugro ž avanje opasnim oru đ em pri tu č i i sva đ i iz č lana 154 KZCG
+ 
+- pa sud okrivljenog na osnovu naprijed navedene krivi č nopravne odredbe, te odredi
+čl.4,5,13,15,32,33,39,42,45,46 i 51 KZCG i odredbi č l. 226, 229, 368 i 374 ZKP-a
+ 
+O S U Đ  U J E
+ 
+Na nov č anu kaznu u iznosu od 700,00 eura, koju ć e okrivljeni platiti u roku od 90 dana od dana
+pravosna ž nosti presude, a koja ć e se u slu č aju nenaplativosti zamjeniti na na č in š to ć e se za svakih zapo č etih
+25,00 eura nov č ane kazne odrediti jedan dan zatvora.
+ 
+Obavezuje se okrivljeni da na ime tro š kova krivi č nog postupka uplati iznos od 50,00 eura i po osnovu sudskog
+pauš ala iznos od 50,00 eura, a sve na ž iro ra č un broj 832-16-52, u roku od 30 dana od dana pravosna ž nosti
+presude sa pozivom na broj K. 15/22/22.
+ 
+Ošte ć eni M.Č., M.J. i M.K. se sa postavljenim imovinsko pravnim zahtjevima upu ć uju na parni č ni postupak.
+ 
+Obrazlo ž enje
+ 
+Osnovno dr ž avno tu ž ila š tvo u K.je ovom sudu podnijelo optu ž ni predlog Kt. Br. 776/2 od 21.01.2022. godine
+protiv okrivljenog M.N., zbog krivi č nog djela ugro ž avanje opasnim oru đ em pri tu č i i sva đ i iz č lana 154 KZCG.
+ 
+Okrivljeni M.N.je u svojoj odbrani naveo u svemu kao na zapisniku pred ODT K. od 14.01.2022. g. pojasniv š i da
+je zajedno sa svojom k ć erkom do š ao u B., te da ž ive u odvojenim stanovima u istoj zgradi. Prilikom dolaska
+kćerka je zamolila kom š iju F.da svoje auto parkira ispred njegovog dvori š ta, te ga je iste ve č eri obavjestila da
+da je saznala da je neko podigao brisa č e na njenom vozilu. Sutradan sre ć e P., sestri ć a od M.Č., te ga je pitao
+da li ima neka saznanja vezano za brisa č e, na š to mu je P. odgovorio “ Š to ti to meni govori š ?”, nakon toga
+sreć e I M.Č. kojeg tako đ e pita za brisa č e, a on mu potvr đ uje da ih je on podigao. Nakon toga M.Č. poziva
+nekog telefonom i ubrzo se pojavila njegova porodica, tada je si š la i njegova k ć erka koju je ž ena M.Č. udarila
+šakom u predijelu glave. Dalje navodi da su se nakon toga svi zaletjeli prema njima I da je za č uo svoju k ć erku
+kako zapoma ž e jer je biju, tada iz stana uzima te š njicu-malu sjekiricu i istr č ava napolje kako bi ih upla š io
+istom, nakon toga je stigla policija i svi su oti š li u stanicu da daju izjave.Ukrajnjem navodi da se ne osje ć a
+krivim, te da je to uradio u nu ž noj odbrani.
+ 
+U dokaznom postupku koji je sproveden u cilju utvr đ ivanja č injeni č nog stanja i krivice okrivljenog, sud je
+proveo slede ć e dokaze: iskaz M.Č. od 21.01.2022. g., iskaz M. J.od 21.01.2022. godine,skaz M.K. od 21.01.2022.
+g, slu ž bena zabilje š ka UPCB B. br. 17/22-215/21-5/1324 od 21.12.2021. g, potvrda o privremeno oduzetim
+stvarima UPCB B.17/2-215/21-11796 od 21.12.2021. g, izvod iz kaznene evidencije na ime okrivljenog,
+neposredno je saslu š ao O. M., uvid u spise Ppm 1/2022, i CD snimak.
+ 
+Ošte ć eni M.Č.je u svom iskazu pred ODT K. dana 21.01.2022. godine u bitnom naveo da je dana 21.12.2021. g.
+oko 10,00 č asova izlazio iz zgrade u kojoj ž ivi do svog vozila, jer je č akao porodicu da do đ u pa da zajedno
+pođ u na groblje, tada ga je sa balkona kom š ija M.N.pitao da li je on podigao brisa č e na vozilu njegove k ć erke,
+na š to je on odgovorio da jeste, jer je parkirala na njegovo mjesto jer on ima saglasno st od kom š ije F.. Nakon
+toga M.mu upu ć uje vi š e uvreda i prijetnji, a potom su si š le supruga i k ć erka te je do š lo do rasprave izme đ u
+njih i M.Dalje navodi da nikom nije prijetio ni on ni njegova porodica, te kada je u š ao u svoje vozilo M. je
+priš ao, te nastavio da vrije đ a i udara po vozilu. Dalje navodi da je u jednom trenutku M. otiš ao do zgrade i
+vratio se nose ć i u ruci tesarsku sjekiru, kojom je zamahivao i prijetio svima pojedina č no, ubrzo nakon toga je
+doš la policija, a M.je uš ao u zgradu i ostavio sjekiru. U krajnjem navodi da se pridru ž uje krivi č nom gonjenju
+osimnji č enog i postavlja imovinskopravni zahtjev.
+ 
+Ošte ć ena M. J.je u svom iskazu pred ODT K.dana 21.01.2022. godine u bitnom navela da je dana 21.12.2021.
+godine oko 10,00 č asova u svom stanu spremala sa sinovima da odu na groblje, dok je njen suprug Č. već
+izaš ao, tada je za č ula buku i sa balkona svog stana vidjela kom š iju M. kakostoji pored auta u kojem je njen
+suprug i svo vrijeme vi č e i udara po vozilu, nakon č ega je istr č ala ispred zgrade sa sinovima. Po dolasku
+ispred zgrade obratila se N.u namjeri da sazna o č emu se radi, ali je njegova k ć erka po č ela da je vrije đ a te je
+nakon š to je pljunula u njenom pravcu zamahnula i nogom u namjeri da je udari. Nakon toga M.N. odlazi u
+svoj stan i ubrzo se vra ć a sa sjekirom kojom je svima prijetio dr ž e ć i je podignutu u ruci. Ubrzo je stigla
+policija, a N. je odnio sjekiru u stan. U krajnjem navodi da se pridru ž uje krivi č nom gonjenju osimnji č enog i
+postavlja imovinskopravni zahtjev.
+ 
+Ošte ć ena M. K. je u svom iskazu pred ODT K.dana 21.01.2022. godine u bitnom navela da je dana 21.12.2021.
+godine oko 10,00 č asova da je sa svojom majkom D.M.doš la kod svog brata od tetke P.M. kako bi zajedno
+otiš li na groblje u C., Predrag zatim dobija poziv od J.M. koja mu je rekla da neko ho ć e da bije njenog oca Č.,
+pa su se odmah uputili prema zgradi.Po dolasku primje ć uje o č evu suprugu J. koja se raspravljal sa k ć erkom
+kom š ije N., zatim N.odlazi u svoj stan dok je njegova k ć erka ostala na stepenicama I dozivala oca iako joj niko
+nije prilazio. Nakon toga N. izlazi iz zgrade dr ž e ć i sjekiru u ruci i vrie đ aju ć i je po č eo mahati istom u na š em
+pravcu. Tada je P. povukao u stranu kako je N. ne bi povrijedio sjekirom, u međ uvremenu je do š la policija, a
+prethodno je N. ušao u zgradu i ostavio sjekiru. U krajnjem navodi da se pridru ž uje krivi č nom gonjenju
+osimnji č enog i postavlja imovinskopravni zahtjev.
+ 
+Iz služ bene zabilje š ke UPCB B. br. 17/22-215/21-5/1324 od 21.12.2021. godine utvr đ eno je da je ista sa č injena
+u vezi dovo đ enja N. M. I O.M., zbog prijave za prijetnje i fizi č ki napad. U daljem je navedeno da je dana
+21.12.2021. godine oko 09,15 č asova su od strane de ž urne slu ž be upu ć eni u ulicu V. jer je prijavljeno da neko
+lice gra đ anima prijeti sjekirom. Na licu mjesta zatekli su Č.M.,J.M.,K.M. i P.M., svi iz B., koji prijavljuju da su ih
+napale kom š ije N. i O.M., kao i da im je N. prijetio sjekirom. Ispred ulaza zgrade broj 15 u istoj ulici zatekli su N.
+I O. koji izjavljuju da je do š lo do sva đ e sa kom š ijama I da su oni napadnuti, tom prilikom u hodniku zgrade
+zatič u i M.Ž. koji im je predao manju sjekiru, a koji je prona š ao kod kom š ije M.. Nakon toga M. su smje š teni u
+služ beno vozilo I privedeni u CB B., bez upotrebe sredstava prinude.
+ 
+Iz potvrde o privremeno oduzetim stvarima UPCB B.17/2-215/21-11796 od 21.12.2021.g.utvrđ eno je da su od
+M.Ž. privremeno oduzeti predmeti i to: tesarska sjekira sa drvenom dr š kom-rukohvatom sa plavim kanapom
+oko dr š ke i plavim tragovima na dr š ci sjekire.
+ 
+Iz izvoda iz kaznene evidencije za okrivljenog N.M. utvr đ eno je da je isti ranije osu đ ivan presudom K. 201/86
+za krivi č no djelo iz č lana 185 stav 3 KZ CG na uslovnu osudu u trajanju od jedne godine, uz prijetnj kaznom
+zatvora u trajanju od tri mjeseca.
+ 
+Iz neposrednog saslusanja svjedoka O.M.proizilazi da je predmetnog dana oko 8 č asova č ula galamu I kroz
+prozor svog stana vodjela svog oca i Č. kako se sva đ aju. Si š la je ispred zgrade I vidjela Č. ženu kako je potr č ala
+ka njenom ocu te su ih okru ž ili I njen otac je u š ao u zgradu, a u tom momentu Č. supruga je udara pesnicom
+te je ona uzvikuju ć i pozvala oca. Nakon toga je I Č. sin udario nogom u stomak, te njen otac vidjev š i tom
+uzima iz zgrade teslicu kako bi ih odmakao od nje. Na pitanje ODT-a izjavljuje da je vo đ en postupak protiv
+M.j., te da je I ona bila okrivljena i obje su ka ž njene. Na pitanje branioca ista izjavljuje da se osjetila ugro ž eno.
+ 
+Uvidom u CD snimak nesporno je utvr đ eno da je okrivljeni imao u ruci tesarsku sjekiru sa kojom se vratio i
+ispred zgrade zamahivao u pravcu o š te ć enih.
+ 
+Iz spisa suda za prekr š aje u B.posl.Br.PPm 1/22022 utvr đ eno je da je vo đ en prekr š ajni postupak protiv
+okrivljenih M.O. zbog prekr š aja iz č l. 10 st.2 i č l. 7 st.2 Zakona o javnom redu i miru i M.J. zbog prekr š aja iz č l.
+10 st.2 Zakona o javnom redu, te su iste ka ž njene nov č anom kaznom i to M.O. sa 600, eura i M.J. sa 350,00
+eura
+ 
+Na osnovi rezultata cjelokupnog dokaznog postupka, cijene ć i sve provedene dokaze pojedina č no i u
+uzajamnoj povezanosti, dovode ć i ih u vezu sa navodima optu ž be i odbranom okrivljenog, sud je na
+nesumnjiv na č in utvrdio da je okrivljeni M.N. poč inio krivi č no djelo ugro ž avanje opasnim oru đ em pri tu č i i
+svađ i iz č lana 154 KZCG. Naime, navodi odbrane su opovrgnuti uvidom u CD snimak, iz kojeg je utvr đ eno da
+je okrvljeni dr ž ao u ruci tesarski sjekiru sa kojom je zamahivao prema o š te ć enim. Tako đ e je i iz služ bene
+zabilje š ke UPCB B.br. 17/22-215/21-5/1324 od 21.12.2021. godine utvr đ eno da je okrviljeni imao sjekiru, koju
+im je i predao, a š to nisu sporili ni o š te ć eni u svojim iskazima da je okrivljeni kriti č ne prilike imao sjekiru,
+čijim iskazima je sud poklonio punu vjeru i pa ž nju, jer su me đ usobno podudarni a i potrijepljeni materijalnim
+dokazima.
+ 
+Cijene ć i sve provedene dokaze pojedina č no i u uzajamnoj povezanosti shodno č lanu 370. stav 3. Zakonika o
+krivi č nom postupku, sud je utvrdio č injeni č no stanje kao u izreci presude. Krivi č no pravno ocjenjuju ć i ovako
+utvrđ eno č injeni č no stanje, sud je na š ao da je okrivljeni u č inio krivi č no djelo ugro ž avanje opasnim oru đ em
+pri tu č i i sva đ i iz č lana 154 KZCG. Sud je na š ao da je okrivljeni M.N. postupao sa direktnim umi š ljajem, da je
+isti bio svjestan zna č aja svog djela, jer je njegova svjest obuhvatala saznanje da time š to se kriti č ne prilike
+tokom sva đ e maš io teslice-male sjekire, oru ž ja podobnog da tijelo te š ko povrijedi ili zdravlje te š ko naru š i,
+čime su se njegovim radnjama ostvarili svi bitni elementi bi ć a krivi č nog djela ugro ž avanje opasnim oru đ em
+pri tu č i i sva đ i iz č lana 154 KZCG pa ga je sud oglasio krivim za isto.
+ 
+Prilikom, odluke o vrsti i visini krivi č ne sankcije kod okrivljenog sud je u smislu č l. 42 KZCG, cijenio sve
+okolnosti koje uti č u da kazna bude manja ili ve ć a, dakle sve olak š avaju ć e i ote ž avaju ć e okolnosti, pa je kao
+olak š avaju ć e okolnosti na strani okrivljenog, sud cijenio da je isti rehabilitovan za ranije izvr š eno krivi č no
+djelo, te se smatra neosu đ ivanim, dok ote ž avaju ć ih okolnosti na strani okrivljenog nije bilo. Sud je na š ao da
+će u konkretnom slu č aju nov č ana kazna na okrivljenog dovoljno uticati da ubudu ć e ne vr š i krivi č na djela, pa
+mu je izrekao nov č anu kaznu u visini od 700,00 eura. Sud smatra da je izre č ena krivi č na sankcija adekvatna
+težini u č injenog krivi č nog djela i okolnostima pod kojima je u č injeno, te da ć e se njome u dovoljnoj mjeri
+uticati na okrivljenog da ubudu ć e ne vr š i kako ovakva tako ni druga krivi č na djela.
+ 
+S obzirom na navedeno, sud je primjenom naprijed navedene krivi č no pravne odredbe, te odredbi č l. 3, 5, 13,
+15, 32, 42, 52, 53 I č l. 54 KZCG , te č l. 226, 227 st. 2, 229, 368 I 347 Zakona o krivi č nom postupku, rje š io kao u
+izreci.
+ 
+Okrivljeni je obavezan da isplati tro š kove vo đ enja krivi č nog postupka-sudskog pau š ala koji je odre đ en
+shodno imovinskom stanju istog te du ž ini i trajanju postupka i to u iznosu od 50,00 eura i po osnovu sudskog
+pauš ala iznos od 50,00 eura, a sve na ž iro ra č un broj 832-16-52, u roku od 30 dana od dana pravosna ž nosti
+presude sa pozivom na broj K. 15/22/22.
+ 
+Na prednjim razlozima sud je zasnovao svoju odluku.
+ 
+OSNOVNI SUD U K.
+Dana 07.12.2022. godine
+ 
+ 
+Zapisni č ar SUDIJA
+I.P. mr V. B.
+ 
+ 
+PRAVNA POUKA: Protiv ove presude dozvoljena je ž alba V. sudu u P., u roku od 8 dana od dana prijema, a
+preko ovog suda.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

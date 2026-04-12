@@ -128,11 +128,6 @@ class RuleReasoningService:
             if proof_elem is not None and proof_elem.text:
                 proofs.append(proof_elem.text.strip())
 
-        if not norms:
-            fallback = self._fallback_from_facts(facts)
-            if fallback:
-                return RuleReasoningResult(applied_norms=fallback, proofs=[])
-
         return RuleReasoningResult(applied_norms=norms, proofs=proofs)
 
     def _escape(self, value: str) -> str:
@@ -149,12 +144,3 @@ class RuleReasoningService:
             return None
         return "true" if value else "false"
 
-    def _fallback_from_facts(self, facts: CaseFacts) -> list[str]:
-        if not facts.injury_type:
-            return []
-        normalized = self._normalize(facts.injury_type.strip().lower())
-        if "teska" in normalized:
-            return ["crime_art151_1"]
-        if "laka" in normalized:
-            return ["crime_art152_1"]
-        return []

@@ -1,0 +1,1005 @@
+{
+  "rulebase_clp": "(import-rdf \"facts.rdf\")\n\t\t(export-rdf export.rdf  crime_art151_1 crime_art151_2 crime_art151_3 crime_art151_4 crime_art151_5 crime_art152_1 crime_art152_2 crime_art153 crime_art154 crime_art155_1 crime_art143 crime_art144 crime_art145 crime_art146 crime_art147 crime_art148 crime_art149_1 crime_art149_2 crime_art149_5 crime_art150 crime_art151a crime_art151b crime_art156 crime_art157)\n\t\t(export-proof proof.ruleml)\n\n(defeasiblerule rule1\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:injury_type \"teska tjelesna povreda\")\n\t)\n  =>\n\t(crime_art151_1\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule2\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:injury_type \"teska tjelesna povreda\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:weapon_used \"true\")\n\t)\n  =>\n\t(crime_art151_2\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule3\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:injury_type \"teska tjelesna povreda\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:severe_consequence \"true\")\n\t)\n  =>\n\t(crime_art151_3\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule4\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:injury_type \"teska tjelesna povreda\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:death_result \"true\")\n\t)\n  =>\n\t(crime_art151_4\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule5\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:injury_type \"teska tjelesna povreda\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:negligence \"true\")\n\t)\n  =>\n\t(crime_art151_5\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule6\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:injury_type \"laka tjelesna povreda\")\n\t)\n  =>\n\t(crime_art152_1\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule7\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:injury_type \"laka tjelesna povreda\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:weapon_used \"true\")\n\t)\n  =>\n\t(crime_art152_2\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule8\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:injury_type \"teska tjelesna povreda\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:provocation \"true\")\n\t)\n  =>\n\t(crime_art153\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule9\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:fight_participation \"true\")\n\t)\n  =>\n\t(crime_art154\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule10\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:left_without_help \"true\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:injury_type \"teska tjelesna povreda\")\n\t)\n  =>\n\t(crime_art155_1\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule11\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:life_consequence_type \"smrt_nastupila\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:guilt_form \"umisljaj_direktni\")\n\t)\n  =>\n\t(crime_art143\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule12\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:life_consequence_type \"smrt_nastupila\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:guilt_form \"umisljaj_eventualni\")\n\t)\n  =>\n\t(crime_art143\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule13\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:life_consequence_type \"smrt_nastupila\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:victim_status \"dijete\")\n\t)\n  =>\n\t(crime_art144\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule14\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:life_consequence_type \"smrt_nastupila\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:victim_status \"bremenita_zena\")\n\t)\n  =>\n\t(crime_art144\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule15\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:life_consequence_type \"smrt_nastupila\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:danger_to_third_parties \"true\")\n\t)\n  =>\n\t(crime_art144\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule16\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:life_consequence_type \"smrt_nastupila\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:victim_count \"vise\")\n\t)\n  =>\n\t(crime_art144\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule17\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:life_consequence_type \"smrt_nastupila\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:execution_manner \"na_mah\")\n\t)\n  =>\n\t(crime_art145\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule18\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:life_consequence_type \"smrt_nastupila\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:offender_psych_state \"jaka_razdrazenost_na_mah\")\n\t)\n  =>\n\t(crime_art145\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule19\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:life_consequence_type \"smrt_nastupila\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:offender_psych_state \"porodjajni_poremecaj\")\n\t)\n  =>\n\t(crime_art146\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule20\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:life_consequence_type \"smrt_nastupila\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:victim_explicit_request \"da\")\n\t)\n  =>\n\t(crime_art147\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule21\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:life_consequence_type \"smrt_nastupila\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:guilt_form \"nehat\")\n\t)\n  =>\n\t(crime_art148\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule22\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:suicide_outcome \"izvrseno\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:special_action_types \"navodjenje_na_samoubistvo\")\n\t)\n  =>\n\t(crime_art149_1\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule23\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:suicide_outcome \"izvrseno\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:special_action_types \"pomaganje_u_samoubistvu\")\n\t)\n  =>\n\t(crime_art149_2\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule24\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:suicide_outcome \"pokusano\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:inhuman_treatment \"true\")\n\t)\n  =>\n\t(crime_art149_5\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule25\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:special_action_types \"nelegalni_pobacaj\")\n\t)\n  =>\n\t(crime_art150\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule26\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:special_action_types \"sakacenje_zenskih_genitalija\")\n\t)\n  =>\n\t(crime_art151a\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule27\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:special_action_types \"prisilna_sterilizacija\")\n\t)\n  =>\n\t(crime_art151b\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule28\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:sterilization_goal \"onemogucavanje_reprodukcije\")\n\t)\n  =>\n\t(crime_art151b\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule29\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:left_without_help \"true\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:offender_victim_relationship \"povjereno_nemocno_lice\")\n\t)\n  =>\n\t(crime_art156\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule30\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:left_without_help \"true\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:offender_victim_relationship \"duznost_staranja\")\n\t)\n  =>\n\t(crime_art156\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule31\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:left_without_help \"true\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:offender_victim_relationship \"prolaznik\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:help_provision_ability \"mogao_bez_opasnosti\")\n\t)\n  =>\n\t(crime_art157\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule32\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:abortion_outcomes \"pobacaj_izvrsen\")\n\t)\n  =>\n\t(crime_art150\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule33\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:injury_means_type \"opasno_orudje\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:injury_severity_level \"laka\")\n\t)\n  =>\n\t(crime_art152_2\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule34\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:danger_caused_by_offender \"true\")\n\t)\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t\t(\n\t\t lc:left_without_help \"true\")\n\t)\n  =>\n\t(crime_art155_1\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n",
+  "rules": [
+    {
+      "rule_id": "rule1",
+      "norm_id": "crime_art151_1",
+      "conditions": [
+        [
+          "injury_type",
+          "teska tjelesna povreda"
+        ]
+      ],
+      "consequence": "crime_art151_1",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule2",
+      "norm_id": "crime_art151_2",
+      "conditions": [
+        [
+          "injury_type",
+          "teska tjelesna povreda"
+        ],
+        [
+          "weapon_used",
+          "true"
+        ]
+      ],
+      "consequence": "crime_art151_2",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule3",
+      "norm_id": "crime_art151_3",
+      "conditions": [
+        [
+          "injury_type",
+          "teska tjelesna povreda"
+        ],
+        [
+          "severe_consequence",
+          "true"
+        ]
+      ],
+      "consequence": "crime_art151_3",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule4",
+      "norm_id": "crime_art151_4",
+      "conditions": [
+        [
+          "injury_type",
+          "teska tjelesna povreda"
+        ],
+        [
+          "death_result",
+          "true"
+        ]
+      ],
+      "consequence": "crime_art151_4",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule5",
+      "norm_id": "crime_art151_5",
+      "conditions": [
+        [
+          "injury_type",
+          "teska tjelesna povreda"
+        ],
+        [
+          "negligence",
+          "true"
+        ]
+      ],
+      "consequence": "crime_art151_5",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule6",
+      "norm_id": "crime_art152_1",
+      "conditions": [
+        [
+          "injury_type",
+          "laka tjelesna povreda"
+        ]
+      ],
+      "consequence": "crime_art152_1",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule7",
+      "norm_id": "crime_art152_2",
+      "conditions": [
+        [
+          "injury_type",
+          "laka tjelesna povreda"
+        ],
+        [
+          "weapon_used",
+          "true"
+        ]
+      ],
+      "consequence": "crime_art152_2",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule8",
+      "norm_id": "crime_art153",
+      "conditions": [
+        [
+          "injury_type",
+          "teska tjelesna povreda"
+        ],
+        [
+          "provocation",
+          "true"
+        ]
+      ],
+      "consequence": "crime_art153",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule9",
+      "norm_id": "crime_art154",
+      "conditions": [
+        [
+          "fight_participation",
+          "true"
+        ]
+      ],
+      "consequence": "crime_art154",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule10",
+      "norm_id": "crime_art155_1",
+      "conditions": [
+        [
+          "left_without_help",
+          "true"
+        ],
+        [
+          "injury_type",
+          "teska tjelesna povreda"
+        ]
+      ],
+      "consequence": "crime_art155_1",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule11",
+      "norm_id": "crime_art143",
+      "conditions": [
+        [
+          "life_consequence_type",
+          "smrt_nastupila"
+        ],
+        [
+          "guilt_form",
+          "umisljaj_direktni"
+        ]
+      ],
+      "consequence": "crime_art143",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule12",
+      "norm_id": "crime_art143",
+      "conditions": [
+        [
+          "life_consequence_type",
+          "smrt_nastupila"
+        ],
+        [
+          "guilt_form",
+          "umisljaj_eventualni"
+        ]
+      ],
+      "consequence": "crime_art143",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule13",
+      "norm_id": "crime_art144",
+      "conditions": [
+        [
+          "life_consequence_type",
+          "smrt_nastupila"
+        ],
+        [
+          "victim_status",
+          "dijete"
+        ]
+      ],
+      "consequence": "crime_art144",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule14",
+      "norm_id": "crime_art144",
+      "conditions": [
+        [
+          "life_consequence_type",
+          "smrt_nastupila"
+        ],
+        [
+          "victim_status",
+          "bremenita_zena"
+        ]
+      ],
+      "consequence": "crime_art144",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule15",
+      "norm_id": "crime_art144",
+      "conditions": [
+        [
+          "life_consequence_type",
+          "smrt_nastupila"
+        ],
+        [
+          "danger_to_third_parties",
+          "true"
+        ]
+      ],
+      "consequence": "crime_art144",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule16",
+      "norm_id": "crime_art144",
+      "conditions": [
+        [
+          "life_consequence_type",
+          "smrt_nastupila"
+        ],
+        [
+          "victim_count",
+          "vise"
+        ]
+      ],
+      "consequence": "crime_art144",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule17",
+      "norm_id": "crime_art145",
+      "conditions": [
+        [
+          "life_consequence_type",
+          "smrt_nastupila"
+        ],
+        [
+          "execution_manner",
+          "na_mah"
+        ]
+      ],
+      "consequence": "crime_art145",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule18",
+      "norm_id": "crime_art145",
+      "conditions": [
+        [
+          "life_consequence_type",
+          "smrt_nastupila"
+        ],
+        [
+          "offender_psych_state",
+          "jaka_razdrazenost_na_mah"
+        ]
+      ],
+      "consequence": "crime_art145",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule19",
+      "norm_id": "crime_art146",
+      "conditions": [
+        [
+          "life_consequence_type",
+          "smrt_nastupila"
+        ],
+        [
+          "offender_psych_state",
+          "porodjajni_poremecaj"
+        ]
+      ],
+      "consequence": "crime_art146",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule20",
+      "norm_id": "crime_art147",
+      "conditions": [
+        [
+          "life_consequence_type",
+          "smrt_nastupila"
+        ],
+        [
+          "victim_explicit_request",
+          "da"
+        ]
+      ],
+      "consequence": "crime_art147",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule21",
+      "norm_id": "crime_art148",
+      "conditions": [
+        [
+          "life_consequence_type",
+          "smrt_nastupila"
+        ],
+        [
+          "guilt_form",
+          "nehat"
+        ]
+      ],
+      "consequence": "crime_art148",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule22",
+      "norm_id": "crime_art149_1",
+      "conditions": [
+        [
+          "suicide_outcome",
+          "izvrseno"
+        ],
+        [
+          "special_action_types",
+          "navodjenje_na_samoubistvo"
+        ]
+      ],
+      "consequence": "crime_art149_1",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule23",
+      "norm_id": "crime_art149_2",
+      "conditions": [
+        [
+          "suicide_outcome",
+          "izvrseno"
+        ],
+        [
+          "special_action_types",
+          "pomaganje_u_samoubistvu"
+        ]
+      ],
+      "consequence": "crime_art149_2",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule24",
+      "norm_id": "crime_art149_5",
+      "conditions": [
+        [
+          "suicide_outcome",
+          "pokusano"
+        ],
+        [
+          "inhuman_treatment",
+          "true"
+        ]
+      ],
+      "consequence": "crime_art149_5",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule25",
+      "norm_id": "crime_art150",
+      "conditions": [
+        [
+          "special_action_types",
+          "nelegalni_pobacaj"
+        ]
+      ],
+      "consequence": "crime_art150",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule26",
+      "norm_id": "crime_art151a",
+      "conditions": [
+        [
+          "special_action_types",
+          "sakacenje_zenskih_genitalija"
+        ]
+      ],
+      "consequence": "crime_art151a",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule27",
+      "norm_id": "crime_art151b",
+      "conditions": [
+        [
+          "special_action_types",
+          "prisilna_sterilizacija"
+        ]
+      ],
+      "consequence": "crime_art151b",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule28",
+      "norm_id": "crime_art151b",
+      "conditions": [
+        [
+          "sterilization_goal",
+          "onemogucavanje_reprodukcije"
+        ]
+      ],
+      "consequence": "crime_art151b",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule29",
+      "norm_id": "crime_art156",
+      "conditions": [
+        [
+          "left_without_help",
+          "true"
+        ],
+        [
+          "offender_victim_relationship",
+          "povjereno_nemocno_lice"
+        ]
+      ],
+      "consequence": "crime_art156",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule30",
+      "norm_id": "crime_art156",
+      "conditions": [
+        [
+          "left_without_help",
+          "true"
+        ],
+        [
+          "offender_victim_relationship",
+          "duznost_staranja"
+        ]
+      ],
+      "consequence": "crime_art156",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule31",
+      "norm_id": "crime_art157",
+      "conditions": [
+        [
+          "left_without_help",
+          "true"
+        ],
+        [
+          "offender_victim_relationship",
+          "prolaznik"
+        ],
+        [
+          "help_provision_ability",
+          "mogao_bez_opasnosti"
+        ]
+      ],
+      "consequence": "crime_art157",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule32",
+      "norm_id": "crime_art150",
+      "conditions": [
+        [
+          "abortion_outcomes",
+          "pobacaj_izvrsen"
+        ]
+      ],
+      "consequence": "crime_art150",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule33",
+      "norm_id": "crime_art152_2",
+      "conditions": [
+        [
+          "injury_means_type",
+          "opasno_orudje"
+        ],
+        [
+          "injury_severity_level",
+          "laka"
+        ]
+      ],
+      "consequence": "crime_art152_2",
+      "priority": 100
+    },
+    {
+      "rule_id": "rule34",
+      "norm_id": "crime_art155_1",
+      "conditions": [
+        [
+          "danger_caused_by_offender",
+          "true"
+        ],
+        [
+          "left_without_help",
+          "true"
+        ]
+      ],
+      "consequence": "crime_art155_1",
+      "priority": 100
+    }
+  ],
+  "priorities": {
+    "crime_art151_1": 90,
+    "crime_art151_2": 92,
+    "crime_art151_3": 93,
+    "crime_art151_4": 95,
+    "crime_art151_5": 97,
+    "crime_art152_1": 74,
+    "crime_art152_2": 76,
+    "crime_art153": 50,
+    "crime_art154": 50,
+    "crime_art155_1": 61,
+    "crime_art143": 120,
+    "crime_art144": 108,
+    "crime_art145": 103,
+    "crime_art146": 89,
+    "crime_art147": 84,
+    "crime_art148": 79,
+    "crime_art149_1": 50,
+    "crime_art149_2": 51,
+    "crime_art149_5": 56,
+    "crime_art150": 53,
+    "crime_art151a": 100,
+    "crime_art151b": 90,
+    "crime_art156": 64,
+    "crime_art157": 64
+  },
+  "families": {
+    "teska tjelesna povreda": [
+      "crime_art151_4",
+      "crime_art151_2",
+      "crime_art151_5",
+      "crime_art151_3",
+      "crime_art151_1"
+    ],
+    "laka tjelesna povreda": [
+      "crime_art152_2",
+      "crime_art152_1"
+    ],
+    "ucesce u tuci": [
+      "crime_art154",
+      "crime_art153"
+    ],
+    "nepruzanje pomoci": [
+      "crime_art156",
+      "crime_art155_1"
+    ],
+    "ubistvo": [
+      "crime_art144",
+      "crime_art145",
+      "crime_art143",
+      "crime_art148",
+      "crime_art147",
+      "crime_art146"
+    ],
+    "samoubistvo": [
+      "crime_art149_1",
+      "crime_art149_5",
+      "crime_art149_2"
+    ],
+    "pobacaj": [
+      "crime_art150"
+    ],
+    "uncategorized": [
+      "crime_art151b",
+      "crime_art151a",
+      "crime_art157"
+    ]
+  },
+  "required_facts": [
+    "severe_consequence",
+    "sterilization_goal",
+    "victim_explicit_request",
+    "special_action_types",
+    "fight_participation",
+    "negligence",
+    "execution_manner",
+    "help_provision_ability",
+    "offender_psych_state",
+    "danger_to_third_parties",
+    "abortion_outcomes",
+    "injury_severity_level",
+    "injury_type",
+    "victim_count",
+    "offender_victim_relationship",
+    "life_consequence_type",
+    "inhuman_treatment",
+    "danger_caused_by_offender",
+    "victim_status",
+    "injury_means_type",
+    "provocation",
+    "left_without_help",
+    "suicide_outcome",
+    "death_result",
+    "weapon_used",
+    "guilt_form"
+  ],
+  "articles": [
+    {
+      "article_number": "143",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 5 years - 15 years",
+      "concepts": [
+        "ubistvo"
+      ],
+      "triggers": [],
+      "severity_level": 99
+    },
+    {
+      "article_number": "144",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: at least 10 years (long-term imprisonment)",
+      "concepts": [
+        "ubistvo"
+      ],
+      "triggers": [],
+      "severity_level": 92
+    },
+    {
+      "article_number": "145",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 1 years - 8 years",
+      "concepts": [
+        "ubistvo"
+      ],
+      "triggers": [],
+      "severity_level": 89
+    },
+    {
+      "article_number": "146",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 6 months - 5 years",
+      "concepts": [
+        "ubistvo"
+      ],
+      "triggers": [],
+      "severity_level": 80
+    },
+    {
+      "article_number": "147",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 6 months - 5 years",
+      "concepts": [
+        "ubistvo"
+      ],
+      "triggers": [],
+      "severity_level": 77
+    },
+    {
+      "article_number": "148",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 6 months - 5 years",
+      "concepts": [
+        "ubistvo"
+      ],
+      "triggers": [],
+      "severity_level": 74
+    },
+    {
+      "article_number": "149",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 1 years - 5 years",
+      "concepts": [
+        "samoubistvo"
+      ],
+      "triggers": [],
+      "severity_level": 56
+    },
+    {
+      "article_number": "149",
+      "paragraph_number": "2",
+      "title": "",
+      "sanction": "prison: 1 years - 5 years",
+      "concepts": [
+        "samoubistvo"
+      ],
+      "triggers": [],
+      "severity_level": 57
+    },
+    {
+      "article_number": "149",
+      "paragraph_number": "3",
+      "title": "",
+      "sanction": "prison: 1 years - 5 years",
+      "concepts": [
+        "samoubistvo"
+      ],
+      "triggers": [],
+      "severity_level": 58
+    },
+    {
+      "article_number": "149",
+      "paragraph_number": "4",
+      "title": "",
+      "sanction": "prison: 1 years - 5 years",
+      "concepts": [
+        "samoubistvo"
+      ],
+      "triggers": [],
+      "severity_level": 59
+    },
+    {
+      "article_number": "149",
+      "paragraph_number": "5",
+      "title": "",
+      "sanction": "prison: 1 years - 5 years",
+      "concepts": [
+        "samoubistvo"
+      ],
+      "triggers": [],
+      "severity_level": 60
+    },
+    {
+      "article_number": "150",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 3 months - 3 years",
+      "concepts": [
+        "pobacaj"
+      ],
+      "triggers": [],
+      "severity_level": 56
+    },
+    {
+      "article_number": "150",
+      "paragraph_number": "2",
+      "title": "",
+      "sanction": "prison: 3 months - 3 years",
+      "concepts": [
+        "pobacaj"
+      ],
+      "triggers": [],
+      "severity_level": 57
+    },
+    {
+      "article_number": "150",
+      "paragraph_number": "3",
+      "title": "",
+      "sanction": "prison: 3 months - 3 years",
+      "concepts": [
+        "pobacaj"
+      ],
+      "triggers": [],
+      "severity_level": 58
+    },
+    {
+      "article_number": "151",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 6 months - 5 years",
+      "concepts": [
+        "teska tjelesna povreda"
+      ],
+      "triggers": [],
+      "severity_level": 81
+    },
+    {
+      "article_number": "151",
+      "paragraph_number": "2",
+      "title": "",
+      "sanction": "prison: 6 months - 5 years",
+      "concepts": [
+        "teska tjelesna povreda"
+      ],
+      "triggers": [],
+      "severity_level": 82
+    },
+    {
+      "article_number": "151",
+      "paragraph_number": "3",
+      "title": "",
+      "sanction": "prison: 6 months - 5 years",
+      "concepts": [
+        "teska tjelesna povreda"
+      ],
+      "triggers": [],
+      "severity_level": 83
+    },
+    {
+      "article_number": "151",
+      "paragraph_number": "4",
+      "title": "",
+      "sanction": "prison: 6 months - 5 years",
+      "concepts": [
+        "teska tjelesna povreda"
+      ],
+      "triggers": [],
+      "severity_level": 84
+    },
+    {
+      "article_number": "151",
+      "paragraph_number": "5",
+      "title": "",
+      "sanction": "prison: 6 months - 5 years",
+      "concepts": [
+        "teska tjelesna povreda"
+      ],
+      "triggers": [],
+      "severity_level": 85
+    },
+    {
+      "article_number": "151a",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 1 years - 8 years",
+      "concepts": [],
+      "triggers": [],
+      "severity_level": 87
+    },
+    {
+      "article_number": "151b",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 3 months - 5 years",
+      "concepts": [],
+      "triggers": [],
+      "severity_level": 81
+    },
+    {
+      "article_number": "152",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "both: up to 1 years (fine or prison)",
+      "concepts": [
+        "laka tjelesna povreda"
+      ],
+      "triggers": [],
+      "severity_level": 71
+    },
+    {
+      "article_number": "152",
+      "paragraph_number": "2",
+      "title": "",
+      "sanction": "both: up to 1 years (fine or prison)",
+      "concepts": [
+        "laka tjelesna povreda"
+      ],
+      "triggers": [],
+      "severity_level": 72
+    },
+    {
+      "article_number": "152",
+      "paragraph_number": "3",
+      "title": "",
+      "sanction": "both: up to 1 years (fine or prison)",
+      "concepts": [
+        "laka tjelesna povreda"
+      ],
+      "triggers": [],
+      "severity_level": 73
+    },
+    {
+      "article_number": "152",
+      "paragraph_number": "4",
+      "title": "",
+      "sanction": "both: up to 1 years (fine or prison)",
+      "concepts": [
+        "laka tjelesna povreda"
+      ],
+      "triggers": [],
+      "severity_level": 74
+    },
+    {
+      "article_number": "153",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 3 months - 3 years",
+      "concepts": [
+        "ucesce u tuci"
+      ],
+      "triggers": [],
+      "severity_level": 56
+    },
+    {
+      "article_number": "154",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "both: up to 6 months (fine or prison)",
+      "concepts": [
+        "ucesce u tuci"
+      ],
+      "triggers": [],
+      "severity_level": 56
+    },
+    {
+      "article_number": "155",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 3 months - 3 years",
+      "concepts": [
+        "nepruzanje pomoci"
+      ],
+      "triggers": [],
+      "severity_level": 63
+    },
+    {
+      "article_number": "155",
+      "paragraph_number": "2",
+      "title": "",
+      "sanction": "prison: 3 months - 3 years",
+      "concepts": [
+        "nepruzanje pomoci"
+      ],
+      "triggers": [],
+      "severity_level": 64
+    },
+    {
+      "article_number": "155",
+      "paragraph_number": "3",
+      "title": "",
+      "sanction": "prison: 3 months - 3 years",
+      "concepts": [
+        "nepruzanje pomoci"
+      ],
+      "triggers": [],
+      "severity_level": 65
+    },
+    {
+      "article_number": "156",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "prison: 3 months - 3 years",
+      "concepts": [
+        "nepruzanje pomoci"
+      ],
+      "triggers": [],
+      "severity_level": 63
+    },
+    {
+      "article_number": "156",
+      "paragraph_number": "2",
+      "title": "",
+      "sanction": "prison: 3 months - 3 years",
+      "concepts": [
+        "nepruzanje pomoci"
+      ],
+      "triggers": [],
+      "severity_level": 64
+    },
+    {
+      "article_number": "156",
+      "paragraph_number": "3",
+      "title": "",
+      "sanction": "prison: 3 months - 3 years",
+      "concepts": [
+        "nepruzanje pomoci"
+      ],
+      "triggers": [],
+      "severity_level": 65
+    },
+    {
+      "article_number": "157",
+      "paragraph_number": "1",
+      "title": "",
+      "sanction": "both: up to 1 years (fine or prison)",
+      "concepts": [],
+      "triggers": [],
+      "severity_level": 63
+    },
+    {
+      "article_number": "157",
+      "paragraph_number": "2",
+      "title": "",
+      "sanction": "both: up to 1 years (fine or prison)",
+      "concepts": [],
+      "triggers": [],
+      "severity_level": 64
+    },
+    {
+      "article_number": "157",
+      "paragraph_number": "3",
+      "title": "",
+      "sanction": "both: up to 1 years (fine or prison)",
+      "concepts": [],
+      "triggers": [],
+      "severity_level": 65
+    }
+  ]
+}

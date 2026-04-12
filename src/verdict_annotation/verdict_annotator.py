@@ -33,26 +33,32 @@ class VerdictAnnotation:
 class VerdictAnnotator:
     """Annotates court verdicts using LLM."""
 
-    def __init__(self, api_token: Optional[str] = None, model: str = "gpt-5-nano", provider: str = "openai"):
+    def __init__(
+        self,
+        api_token: Optional[str] = None,
+        model: str = "gpt-4o-mini",
+        provider: str = "openai",
+        strict_mode: bool = True,
+    ):
         load_dotenv()
         self.provider = provider.lower()
-        self.offline = False
+        self.strict_mode = strict_mode
 
         if self.provider == "openrouter":
             self.api_token = api_token or os.getenv("OPENROUTER_API_KEY")
             self.api_url = "https://openrouter.ai/api/v1/chat/completions"
             if not self.api_token:
-                self.offline = True
+                raise ValueError("OpenRouter API key nije pronađen. Postavi OPENROUTER_API_KEY u .env fajlu.")
         elif self.provider == "openai":
             self.api_token = api_token or os.getenv("OPENAI_API_KEY")
             self.api_url = "https://api.openai.com/v1/responses"
             if not self.api_token:
-                self.offline = True
+                raise ValueError("OpenAI API key nije pronađen. Postavi OPENAI_API_KEY u .env fajlu.")
         else:
             self.api_token = api_token or os.getenv("GITHUB_TOKEN")
             self.api_url = "https://models.inference.ai.azure.com/chat/completions"
             if not self.api_token:
-                self.offline = True
+                raise ValueError("GitHub token nije pronađen. Postavi GITHUB_TOKEN u .env fajlu.")
 
         self.model = model
         self.max_retries = 3
@@ -91,7 +97,7 @@ class VerdictAnnotator:
     Odgovor mora biti KRATAK i KOMPAKTAN (bez objašnjenja, bez dodatnog teksta, bez navodnika oko celog JSON-a). Ograniči liste na najviše 3 stavke.
 
 PRESUDA {case_number}:
-{verdict_text[:3000]}
+{verdict_text[:1800]}
 
 Vrati SAMO JSON u sledećem formatu:
 
@@ -138,8 +144,6 @@ Vrati SAMO validan JSON bez dodatnog teksta!"""
         retry_count: int = 0
     ) -> Optional[VerdictAnnotation]:
         """Anotira jednu presudu."""
-        if self.offline:
-            return None
         self._wait_for_rate_limit()
         prompt = self._create_annotation_prompt(verdict_text, case_number)
 
@@ -174,7 +178,7 @@ Vrati SAMO validan JSON bez dodatnog teksta!"""
                         ]
                     }
                 ],
-                "max_output_tokens": 800
+                "max_output_tokens": 1800
             }
             if self.model.startswith("gpt-5"):
                 payload["service_tier"] = "flex"
@@ -209,15 +213,9 @@ Vrati SAMO validan JSON bez dodatnog teksta!"""
             if self.provider == "openai" and result.get("status") == "incomplete":
                 reason = (result.get("incomplete_details") or {}).get("reason")
                 if reason == "max_output_tokens" and retry_count < self.max_retries:
-                    print("⚠ OpenAI odgovor predugačak. Pokušavam sa manjim modelom (gpt-4o-mini)...")
-                    original_model = self.model
-                    if self.model == "gpt-5-nano":
-                        self.model = "gpt-4o-mini"
-                    try:
-                        time.sleep(self.retry_delay)
-                        return self.annotate_verdict(verdict_text, case_number, retry_count + 1)
-                    finally:
-                        self.model = original_model
+                    print("⚠ OpenAI odgovor predugačak. Retry sa istim modelom u strict režimu...")
+                    time.sleep(self.retry_delay)
+                    return self.annotate_verdict(verdict_text, case_number, retry_count + 1)
             if self.provider == "openai":
                 raw_content = ""
                 for output_item in result.get("output", []):
@@ -318,5 +316,10 @@ Vrati SAMO validan JSON bez dodatnog teksta!"""
                 print(f"  ✓ Uspešno: {len(annotation.legal_issues)} pravnih pitanja")
             else:
                 print(f"  ✗ Neuspešno")
+
+        if self.strict_mode and len(annotations) != total:
+            raise RuntimeError(
+                f"Strict LLM mode: anotirano {len(annotations)}/{total}. Pipeline se prekida zbog neuspelih LLM anotacija."
+            )
 
         return annotations

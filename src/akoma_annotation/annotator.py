@@ -29,9 +29,16 @@ class SemanticAnnotation:
 class LLMAnnotator:
     """Annotates legal articles using GitHub Models, OpenRouter, or OpenAI."""
 
-    def __init__(self, api_token: Optional[str] = None, model: str = "gpt-5-nano", provider: str = "openai"):
+    def __init__(
+        self,
+        api_token: Optional[str] = None,
+        model: str = "gpt-4o-mini",
+        provider: str = "openai",
+        strict_mode: bool = True,
+    ):
         load_dotenv()
         self.provider = provider.lower()
+        self.strict_mode = strict_mode
 
         if self.provider == "openrouter":
             self.api_token = api_token or os.getenv("OPENROUTER_API_KEY")
@@ -144,7 +151,7 @@ Vrati SAMO validan JSON bez dodatnog teksta."""
                         ]
                     }
                 ],
-                "max_output_tokens": 800
+                "max_output_tokens": 1800
             }
             if self.model.startswith("gpt-5"):
                 payload["service_tier"] = "flex"
@@ -180,15 +187,9 @@ Vrati SAMO validan JSON bez dodatnog teksta."""
             if self.provider == "openai" and result.get("status") == "incomplete":
                 reason = (result.get("incomplete_details") or {}).get("reason")
                 if reason == "max_output_tokens" and retry_count < self.max_retries:
-                    print("⚠ OpenAI odgovor predugačak. Pokušavam sa manjim modelom (gpt-4o-mini)...")
-                    original_model = self.model
-                    if self.model == "gpt-5-nano":
-                        self.model = "gpt-4o-mini"
-                    try:
-                        time.sleep(self.retry_delay)
-                        return self.annotate_article(article_text, article_number, retry_count + 1)
-                    finally:
-                        self.model = original_model
+                    print("⚠ OpenAI odgovor predugačak. Retry sa istim modelom u strict režimu...")
+                    time.sleep(self.retry_delay)
+                    return self.annotate_article(article_text, article_number, retry_count + 1)
             if self.provider == "openai":
                 raw_content = ""
                 for output_item in result.get("output", []):
@@ -292,5 +293,10 @@ Vrati SAMO validan JSON bez dodatnog teksta."""
                 print(f"  ✓ Uspešno: {annotation.norm_type}, {len(annotation.legal_concepts)} koncepata")
             else:
                 print(f"  ✗ Neuspešno")
+
+        if self.strict_mode and len(annotations) != total:
+            raise RuntimeError(
+                f"Strict LLM mode: anotirano {len(annotations)}/{total}. Pipeline se prekida zbog neuspelih LLM anotacija."
+            )
 
         return annotations

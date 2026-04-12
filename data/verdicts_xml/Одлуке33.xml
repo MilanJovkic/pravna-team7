@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке33">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке33/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке33"/>
+                    <FRBRdate date="2016-05-24" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке33/sr@2016-05-24/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке33/sr@2016-05-24"/>
+                    <FRBRdate date="2016-05-24"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке33/sr@2016-05-24/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке33/sr@2016-05-24/!main.akn"/>
+                    <FRBRdate date="2026-04-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U RO"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Milosav Zekić"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Osnovnog suda"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="S. B."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="novorođenče"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 67/16</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U RO</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2016-05-24">2016-05-24</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Milosav Zekić</judge>
+                    <judge>Osnovnog suda</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljena S. B. je proglašena krivom za ubistvo svog novorođenčeta tokom porođaja. Sud je utvrdio da je delovala svesno i da nije pružila potrebnu medicinsku pomoć.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>ubistvo djeteta pri porođaju</p>
+                    <p>nepružanje medicinske pomoći</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_146">Član 146</ref>
+                    <ref href="/akn/me/act/2024/!main#art_410">Član 410</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_370">Član 370</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da je okrivljena svojim delovanjem izazvala smrt novorođenčeta usled neodlaska u zdravstvenu ustanovu i nepružanja pomoći.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усвојено">
+                    <p>Optužena se oglašava krivom</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>S. B.</person>
+                </block>
+                <block name="victims">
+                    <person>novorođenče</person>
+                </block>
+                <block name="witnesses">
+                    <person>S. B.</person>
+                    <person>R. Đ.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="location">Berane</fact>
+                <fact key="location">Dom</fact>
+                <fact key="location">Ibar</fact>
+                <fact key="location">Beranama</fact>
+                <fact key="location">Bijelom Polju</fact>
+                <fact key="location">Ibarac, Rožaje</fact>
+                <fact key="injury_type">smrt</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>OSNOVNI SUD U RO Ž AJAMA
+K.br.67/16
+ 
+ 
+ 
+ 
+U IME CRNE GORE
+ 
+Sudija Osnovnog suda u Ro ž ajama Milosav Zeki ć , uz u č e šć e zapisni č ara Aide Luboder, rje š avaju ć i po
+optu ž nom predlogu Osnovnog dr ž avnog tu ž ila š tva iz Ro ž aja Kt.br. 38/16 od 24.05.2016.g. podnijet protiv
+okrivljene S. B. iz Ro ž aja, zbog krivi č nih djela ubistvo djeteta pri poro đ aju iz č l. 146. Krivi č nog zakonika Crne
+Gore i povreda le š a iz č l. 410. Krivi č nog zakonika Crne Gore, nakon odr ž anog glavnog i javnog pretresa dana
+17.06.2016.g., u prisustvu Dr ž avnog tu ž ioca Armina Selmanovi ć a, okrivljene i njenog branioca adv.H. N.,
+donio je i dana 20.06.2016. javno objavio
+ 
+ 
+P R E S U D U
+ 
+ 
+Okrivljena S. B., JMB ., od oca P. i majke S. rođ ene F., rođ . 04.10.1992.godine, u Ro ž ajama, gdje i ž ivi - naselje
+Ibarac – ul. Ibar č anska bb, dr ž avljanka Crne Gore, razumije crnogorski jezik koji je i njen jezik, neudata,
+pismena, student, siroma š nog imovnog stanja, neosu đ ivana.
+ Osnovni Sud u Ro ž ajama
+K 67/2016
+20. Jun 2016
+ 
+K R I V A J E
+ 
+ 
+Što je:
+ 
+dana 06.03.2016.godine, oko 05,00 č asova, u porodi č noj ku ć i u naselju Ibarac – ul. Ibar č anska bb, Op š tina
+Rož aje, u ura č unljivom stanju, svjesna da mo ž e u č initi djelo pa je na to pristala, kao majka, li š ila ž ivota svoje
+dijete za vrijeme poro đ aja, dok kod nje traje poreme ć aj izazvan poro đ ajem, na na č in š to nakon dobijenih
+trudova i zapo č etog poro đ aja nije po š la u zdravstvenu ustanovu, ve ć  je poro đ aj izvela sama u ku ć i, gdje nije
+podvezala pup č anu vrpcu novoro đ en č etu, usljed č ega je zbog nepodvezivanja pup č ane vrpce i nepru ž anja
+pomo ć i i ljekarske njege nastupila smrt kod djeteta,
+ 
+-čime je izvr š ila krivi č no djelo ubistvo djeteta pri poro đ aju iz č l. 146. Krivi č nog zakonika Crne Gore.
+ 
+dana 08.03.2016.godine, oko 06,15 č asova, u naselju Ibarac, Op š tina Ro ž aje, u ura č unljivom stanju, svjesna
+svog djela č ije je izvr š enje htjela, iako je znala da je njeno djelo zabranjeno, sakrila le š  svog mrtvog djeteta, na
+nač in š to je le š  mrtvog novoro đ en č eta stavila u ž ensku torbu koju je zatim zajedno sa le š om bacila u nabujalu
+Ibarč ansku rijeku, tako da se le š  nije mogao prona ć i,
+ 
+-čime je izvr š ila krivi č no djelo povreda le š a iz č l. 410. Krivi č nog zakonika Crne Gore.
+ 
+pa joj sud primenom pomenutih zakonskih propisa i č l. 4, 13,14, 15, 32, 36, 42 i 48 Krivi č nog zakonika Crne
+Gore utvr đ uje:
+ 
+-za krivi č no djelo ubistvo djeteta pri poro đ aju iz č l. 146. Krivi č nog zakonika Crne Gore, kaznu zatvora u
+trajanju od š est mjeseci,
+ 
+- za krivi č no djelo povreda le š a iz č l. 410. Krivi č nog zakonika Crne Gore,
+kaznu zatvora u trajanju od dva mjeseca,
+ 
+pa je sud primenom pomenutih zakonskih propisa i č l. 374. Zakonika o krivi č nom postupku
+ 
+ 
+O S U Đ  U J E
+ 
+ 
+Na jedinstvenu KAZNU ZATVORA u trajanju od 7 (sedam) mjeseci u koju kaznu joj se ima ura č unati vrijeme
+zadr ž avanja od 09.03.2016.g. do 11.03.2016.g.
+ 
+Da plati na ime tro š kova krivi č nog postupka iznos od 482,00 eura i na ime pau š ala iznos od 30,00 eura, u
+korist bud ž eta Crne Gore, u roku od 15 dana po pravosna ž nosti presude.
+ 
+O b r a z l o ž  e nj e
+ 
+Osnovno dr ž avno tu ž ila š tvo iz Ro ž aja, podnijelo je ovome sudu optu ž ni predlog Kt.br. 38/16 od 24.05.2016.g.
+protiv okrivljene S. B. iz Ro ž aja, zbog krivi č nih djela ubistvo djeteta pri poro đ aju iz č l. 146. Krivi č nog zakonika
+Crne Gore (KZ CG) i povreda le š a iz č l. 410. KZ CG.
+ 
+Na glavnom pretresu Dr ž avni tu ž ilac Armin Selmanovi ć  je ostao pri podnijetom optu ž nom predlogu, te je
+predlo ž io da sud okrivljenu oglasi krivim zbog krivi č nih djela koja su joj optu ž bom stavljena na teret i utvrdi
+pojedina č ne kazne i to: za krivi č no djelo iz č l. 146 KZ CG kaznu zatvora u trajanju od 6 mjeseci i za krivi č no
+djelo iz č l. 410 KZ CG kaznu zatvora u trajanju od 3 mjeseca, te da je osudi na jedinstvenu kaznu zatvora u
+trajanju od 8 mjeseci.
+ 
+Branilac okrivljene adv. H. N. je u zavr š noj rije č i predlo ž io da sud njegovu branjenicu oslobodi od optu ž be, jer
+u postupku nije dokazano da je izvr š ila krivi č na djela koja su joj optu ž bom stavljena na teret.
+ 
+Okrivljena nije priznala izvr š enje djela i svoju krivicu.
+ 
+Pred ODT-om na zapisniku Kt. br. 38/16 od 09.03.2016.g. u svojoj odbrani je istakla da se marta mjeseca
+2015.g. po č ela zabavljati sa I. M. i sa istim je imala seksualne odnose. U jednom momentu primijetila je da joj
+je po č eo rasti stomak, a po š to joj je izostajala i menstruacija, po š la je u Berane kod doktorke S. B., da vidi da li
+je gravidna i da abortira ukoliko bude trudna. Doktorka joj je, nakon pregleda, kazala da je u č etvrtom
+mjesecu trudno ć e i da nije dozvoljen abortus, pa je odlu č ila da odr ž i trudno ć u i da nakon poro đ aja dijete da
+u Dom. Sakrivala je trudno ć u od svojih roditelja, tako š to je nosila š iroku garderobu.Po č etkom februara
+2016.g. ponovo je po š la na pregled kod doktorke koja joj je rekla da joj je termin za poro đ aj oko 01.03.2016.g.
+Toga dana javila se kod doktorke R. Đ. koja ju je pregledala ginekolo š ki ultrazvu č no, uradila je TCG i uzela
+briseve i kazala joj da je beba zdrava sa svim vitalnim funkcijama i da se radi o normalnoj trudno ć i. Tako đ e joj
+je kazala da do đ e 04.03.2016.g. i donese rezultate briseva kao i u slu č aju bolova. Dana 04.03.2016.g. po š la je
+kod iste doktorke koja je uradila iste nalaze i rekla joj da se javi kada dobije bolove. Dana 05.03.2016.g. oko
+22,30 h dobila je ja č e bolove, pa je kazala majci da je boli stomak jer ima neku bakteriju i ide u sobu da spava.
+Dobijala je bolove na pola sata i imala konstantan nagon da mokri, pa je č esto odlazila u kupatilo. Slede ć eg
+dana tj. 06.03.2016.g. tj. oko 04,15 h dok je bila u toaletu primjetila je da joj beba izlazi, pa je po š la u sobu,
+postavila ć ebe na svoj krevet i naprezala se. Oko 05,00 h beba je iza š la, ali nije proplakala. Nije joj presekla
+pupč anu vrpcu. Na internetu je pro č itala da ponovo mora da se napre ž e da bi iza š la posteljica, pa je tako i
+postupila. Kada je posteljica iza š la po č ela je da krvari,pa joj je do š lo te š ko i pala je u nesvijest. Misli da je prije
+nego š to je izgubila svijest, dijete dohvatila za ruke i podigla ga. Oko 06,00 h se probudila i vidjela bebu pored
+sebe. Bila je krvava, modra i nije disala. Misli da se radilo o mu š kom djetetu. Uzela je vla ž ne maramice i
+obrisala ga. U sobi je na š la jedno staro ć ebe bijele boje u koje je zamotala bebu i posteljicu stavila je ispod
+svog kreveta, a drugo krvavo ć ebe i posteljinu je ostavila zamotanu na krevetu. Oko 09,00 h u sobu je u š la
+njena majka, koja je na krevetu primijetila krvavu posteljinu, pa joj je kazala da je u toku no ć i dobila izliv krvi ,
+pa je ona uzela posteljinu da je opere, a tepih je o č istila sa gornje strane. Majka nije primijetila bebu ispod
+kreveta, niti joj je ona kazala da se porodila. Toga dana i sjutradan je le ž ala u sobu i razmi š ljala š ta da radi sa
+bebom. Dana 08.03.2016.g. odlu č ila je da dijete iznese iz ku ć e i baci u Ibar č ansku rijeku. Oko 05,45 h je iza š la
+iz ku ć e sa bebom i kada je do š la u blizini ku ć e H. K. oko 06,15 h vidjela je da je rijeka jaka i brza i tu je bacila
+dijete i posteljicu umotanu u ć ebe, nakon č ega je odlu č ila da po đ e u Berane i ispri č a doktorki da se porodila,
+a ranije je razmi š ljala i da ponese bebu ali se bojala da je neko neprimijeti jer nije imala korpa za dijete, pa je
+smatrala da je pravo rje š enje da je baci u rijeku, š to je i u č inila. Kada je ispri č ala doktorki da se porodila, da
+nije presjekla pup č anu vrpcu i da je sahranila dijete, jer joj nije kazala da ga je bacila u rijeku, ona joj je
+odgovorila da je beba najvjerovatnije zbog nepresjecana pup č ane vrpce umrla i da mora da obavijesti
+policiju. Predlo ž ila joj je da ostane u bolnicu na dalje lije č enje, š to je ona odbila i potpisala izjavu.
+ 
+Pred ODT-om na zapisniku Kt. br. 38/16 od 11.03.2016.g. okrivljena je istakla kao na zapisniku od
+09.03.2016.g., s tom razlikom š to je navela da dijete nije sakrila tj. stavila u bijelo ć ebe, ve ć  ga je stavila u
+plavu ž ensku torbu i u ovoj torbi ga je dr ž ala ispod kreveta zajedno sa posteljicom, a zatim ga je zajedno sa
+torbom bacila u Ibar č ansku rijeku.
+ 
+Na glavnom pretresu okrivljena je u bitnom ponovila iskaz dat pred ODT-om od 11.03. 2016.g., s tom razlikom
+što je navela da je koristila internet na telefonu dok se pora đ ala, a ne nakon poro đ aja i tada je ukucala " š ta
+da radi u slu č aju bebine smrti" i pro č itala da ni š ta ne treba da dira ukoliko je dijete mrtvo i da ne treba da mu
+se sje č e pup č ana vrpca, tako da djetetu nije presjekla pup č anu vrpcu. Da se veoma lako porodila, tako da nije
+ni jeknula. Objasnila je da je dijete stavila u ž ensku torbu teget-plave boje, a zatim je odlu č ila da ga ponese u
+Berane i kada je prolazila pored rijeke nesvjesno je odlu č ila da ga baci u rijeku, nakon č ega je po š la za Berane
+i ispri č ala doktorki da se porodila dana 05.03.2016.g. jer je permutovala datum i da je dijete sahranila. Istakla
+je da je istina ovo š to je kazala na pretresu, a prilikom saslu š anja pred ODT-om je bila upla š ena i nije mogla
+da se sjeti da li je dijete stavila u ć ebe ili u torbu. Predlo ž ila je da je sud oslobodi od optu ž be jer nije izvr š ila
+djela koja su joj stavljena na teret.
+ 
+Po ovoj krivi č nopravnoj stvari sud je izveo dokaze, saslu š ao svjedoke R. Đ., S. B. i vje š taka medicinske struke
+dr. N. R. i pro č itao pisani nalaz i mi š ljenje ovog vje š taka od 12.04.2016.g., pro č itao zapisnik o uvi đ aju
+Osnovnog dr ž avnog tu ž ila š tva u Ro ž ajama, Ktr. br. 50/16 od 08.03.2016.godine, izvje š taji ljekara specijaliste
+JZU Op š te bolnice Berane br. 3516 od 01.03.2016.godine, br. 3933 od 08.03.2016.godine, mikrobiolo š ki nalaz
+od 02.03.2016.godine, analizu krvi od 08.03.2016.godine, izvje š taj Komisije ginekologa JZU Op š te bolnice
+Berane br. 999 od 10.03.2016.godine, nalaz i mi š ljenje vje š taka medicinske struke dr H. K., dat pred ODT-om,
+na zapisniku Ktr. br. 50/16 od 09.03.2016.godine, izvje š taj o DNK vje š ta č enju Forenzi č kog centra Danilovgrad
+br. 1362/16 od 04.05.2016.godine, izvr š io uvid u skicu lica mjesta br. 02-221-1007 od 08.03.2016.godine,
+fotodokumentaciju br. 30/16 od 08.03.2016.godine i SL/16 od 11.03.2016.godine Uprave policije – OB Ro ž aje i
+fotodokumentaciju Forenzi č kog cetra Danilovgrad br. 1362/16, i uvid izvod iz kaznene evidencije na ime
+okrivljene.
+ 
+Cijene ć i odbranu okrivljene i sve izvedene dokaze, kako pojedina č no, tako i u me đ usobnoj vezi, u smislu č l.
+370. st. 3. Zakonika o krivi č nom postupku (ZKP), sud je nesumnjivo utvrdio da je okrivljena izvr š ila krivi č na
+djela koja su joj optu ž bom stavljena na teret i da je zato kriva i krivi č nopravno odgovorna.
+ 
+Naime, svjedok R. Đ. je izjavila da je zaposlena u Op š toj bolnici u Beranama kao ljekar ginekolog. Dana
+01.03.2015.g. obavila je ginekolo š ki i ultrazvu č ni pregled sa CTG zapisom, pacijentkinje S. B. iz Ro ž aja.
+Prilikom pregleda je utvrdila da se radi o urednoj trudno ć i, š to je konstatovala u izvje š taju br. 3516.
+Pacijentkinju je savjetovala da za tri dana do đ e na ponovnu CTG kontrolu i da donese nalaz briseva. Dana
+04.03.2016.g. pacijentkinja je donijela nalaz briseva, a tada joj je ura đ en i CTG koji je bio uredan. Pacijentkinju
+je savjetovala da se u slu č aju bolova javi u bolnicu u Ro ž aje ili Berane, a ako ne dobije bolove da se javi
+07.03.2016.g. kod nje na pregled. Dana 08.03.2016.g. pacijentkinja je do š la na ginekolo š ko odjeljenje i
+saop š tila joj da se porodila ku ć i 05.03.2016.g. u 14,30 h, da je posteljica iza š la sa djetetom koje nije zaplakalo,
+niti mu je ona podvezala i presjekla pup č anik, te ga je istog dana u 10,00 h sahranila. Mijenjala je izjave u
+pogledu datuma i vremena poro đ aja i bila je pogubljena. Ginekolo š kim pregledom je utvrdila da je me đ ica
+intaktna, da u predjelu ulaza u vaginu ima oguljotine koje ne krvare, koje su po svojoj boji i izgledu
+odgovarale datumu poro đ aja, kako je pacijentkinja navela. O tom pregledu je sa č inila izvje š taj i predlo ž ila
+pacijentkinji bolni č ko lije č enje š to je ona odbila uz potpis na izvje š taju. Istakla je da smatra da se u
+konkretnom slu č aju radilo o urednoj trudno ć i i zdravom plodu koji je mogao da nastavi normalan ž ivot
+nakon poro đ aja, te da nepodvezivanje pup č anika dovodi do krvarenja i smrti bebe. Iskaz ovog svjedoka sud
+je prihvatio kao jasan i objektivan, jer je ista veoma ubjedljivo predstavila doga đ aj onako kako se desio, a
+dovode ć i isti u vezu sa ostalim izvedenim dokazima i iskazom okrivljene u dijelu u kojem je sud iste prihvatio,
+zaista nema sumnje u druga č ije č injeni č no stanje od onog koje je utvr đ eno u postupku. Nema uticaja na
+druga č iji zaklju č ak to š to je okrivljena istoj saop š tila da se porodila dan prije nego š to se zaista porodila, jer je
+i okrivljena na pretresu saop š tila da je permutovala datum i pogre š no saop š tila datum poro đ aja.
+ 
+Svjedok S. B. je izjavila, da nije znala da je njena ć erka S. B. trudna. Zadnja dva mjeseca primjetila je
+promjene kod nje, te kada bi je pitala da li je trudna ona bi po č ela da pla č e i klela joj se da nije, govore ć i da je
+sklona gojenju i da ima hormonski poreme ć aj, da boluje od neke bakterije od koje joj se uve ć ava stomak i
+izostaje menstruacija, te da zbog toga ide kod doktora. Sje ć a se da je S. bila kod doktora 01.03.2016.g. i kada
+se vratila kazala joj je da mora za tri dana da ide na kontrolu zbog ove bakterije. Dana 04.03.2016.g. ponovo je
+otiš la na kontrolu, nakon č ega je sjedela ku ć i i nije izlazila nigdje. Dana 06.03.2016.g. oko 09,00 h u kupatilu-
+WC š olji je primjetila krv, pa je u š la kod S. u sobu i vidjela krvavo ć ebe, č ar š av i du š ek na krevetu na kojem je
+ona le ž ala. Rekla joj je da je dobila izliv, pa je uzela ove stvari i oprala ih, a zatim o č istila tepih na kojem je bilo
+nekoliko kapi krvi sa gornje strane. Ispod kreveta nije primjetila ni š ta. Slede ć eg dana S. nije ustajala i izlazila
+iz sobe, a dana 08.03.2016.g. je iza š la, dok je ona spavala i oko 06,30 h po š la za Berane. Kada se je vratila u
+popodnevnim č asovima u pratnji policije rekla joj je da je bila trudna, da je rodila dijete i bacila ga, jer je
+dijete mrtvo ro đ eno i nije mu presjekla pup č anu vrpcu. Tada je saznala i da je dijete bacila u rijeku - potok
+ispod njihove ku ć e. Iskaz ovog svjedoka sud je prihvatio u dijelu u kojem je saglasan sa utvr đ enim
+činjeni č nim stanjem. Me đ utim njen iskaz u dijelu u kojem navodi da je okrivljena rodila mrtvo dijete, sud nije
+prihvatio jer je isti neobjektivan i nelogi č an, kod č injenice da nije prisustvovala poro đ aju, pa je usmjeren ka
+tome da pomogne okrivljenoj da izbjegne krivi č nopravnu odgovornost.
+ 
+Iz nalaza i mi š ljenja vje š taka medicinske struke dr. N. R.-specijaliste sudske medicine vidi se, da je prema
+podacima koje je dala S. B. i medicinske dokumentacije na š ao da se ista samostalno porodila prirodnim
+putem u ku ć nim uslovima, nakon uredno kontrolisane nekomplikovane jednoplodne trudno ć e. Le š
+novoro đ en č eta nije prona đ en. Podaci iz medicinske dokumentacije govore u prilog da se radilo o urednoj
+trudno ć i koja se po pravilu zavr š ava prirodnim poro đ ajem i ro đ enjem ž ivog i zdravog djeteta. Dakle, ovi
+podaci govore u prilog da je plod bio done š en i da je najvjerovatnije bio sposoban za vanmateri č ni ž ivot.
+Međ utim i normalna trudno ć a mo ž e se zavr š iti ra đ anjem mrtvog djeteta š to je rijetka medicinska okolnost,
+tako da je sudsko medicinski mogu ć e, i ako je manje vjerovatno da je S. B. rodila i mrtvoro đ eni plod. Gubitak
+svijesti porodilje je sasvim mogu ć  prilikom poro đ aja zbog intezivnih bolova, iscrpljenosti i prirodno povi š ene
+hormonske aktivnosti, a i gubitka krvi. Me đ utim mi š ljenja je da kod porodilje S. nije postojao toliko zna č ajan
+gubitak krvi, da je zbog toga izgubila svijest,, jer se ona iz takvog stanja ne bi mogla spontano probuditi i bez
+medicinske pomo ć i pre ž ivjeti te ukoliko je do š lo do gubitka svijesti isti je mogao biti samo u vezi sa jakim
+poro đ ajnim bolovima i iscrpljeno šć u. Kod ž ene koja se prvi put pora đ a, poro đ aj je uvijek te ž i nego kod
+slede ć ih poro đ aja i isti je bolan. Sa medicinskog aspekta veoma je te š ko povjerovati da se poro đ aj u ku ć nim
+uslovima porodilje koja se prvi put pora đ a odvija lagano, bez problema i da nije pra ć en jakim bolovima, a sve
+to bez prisustva druge osobe. Ukoliko je zaista to bilo tako, onda nije za o č ekivati da do đ e do gubitka svijesti
+nakon poro đ aja, jer upravo elementi te š kog poro đ aja dovode do gubitka svijesti porodilje a ne lakog
+poro đ aja. Ukoliko je dijete ro đ eno ž ivo moglo je do ć i do smrti ploda zbog okolnosti da mu nije presje č ena
+pupč ana vrpca. Nalaz i mi š ljenje ovog vje š taka sud je ocijenio kao objektivan, uvjerljiv i stru č an, a dovode ć i
+isti u vezu sa navodima iz medicinske dokumentacije i ostalim izvedenim dokazima i iskazom okrivljene u
+dijelu u kojem je sud iste prihvatio, nesumnjivo proizilazi da je okrivljena za vrijeme poro đ aja, dok je trajao
+poreme ć aj izazvan poro đ ajem, nije podvezala pup č anu vrpcu djetetu koje je rodila i nije mu pru ž ila pomo ć ,
+usled č ega je kod istog nastupila smrt.
+Iz nalaza i mi š ljenja vje š taka medicinske struke dr H. K.-neuropsihijatra, vidi se, da je nakon uvida u
+medicinsku dokumentaciju i razgovora sa S. B. naš ao da je ista redovno zavr š ila osnovnu i srednju š kolu, da je
+pri kraju studija prava, te da nije imala zdravstvenih problema u psihomotornom razvoju. Okrivljena je
+redovno brinula o svojoj trudno ć i, javljala se na kontrole kod ginekologa i u tom periodu nije imala
+poreme ć aj du š evnog stanja. Sam č in poro đ aja doveo je do odre đ enih bla ž ih psihosomatskih tegoba š to je
+dovelo do smanjene ura č unjljivosti lak š eg stepena zbog straha da se to ne sazna, svjesna da ć e odgovarati za
+svoje radnje. Bacanje djeteta nakon poro đ aja je smi š ljena radnja, kao posledica ne ž eljenog poro đ aja. Nalaz i
+mišljenje ovog vje š taka sud je prihvatio kao objektivan i stru č an, a dovode ć i isti u vezu sa ostalim izvedenim
+dokazima zaista se zaklju č uje da je okrivljena imala bla ž i poreme ć aj izazvan poro đ ajem kao posledica
+neželjene trudno ć e, ali je ista mogla da shvati zna č aj svog djela i da upravlja svojim postupcima. Nalaz i
+mišljenje ovog vje š taka sud je ocijenio kao jasan, objektivan i stru č an, a dovode ć i isti u vezu sa ostalim
+izvedenim dokazima, nesumnjivo proizilazi da je okrivljena u konkretnom slu č aju mogla da shvati zna č aj
+svjih djela i upravlja svojim postupcima, te da je postupala u ura č unljivom stanju.
+ 
+Iz zapisnika o uvi đ aju ODT-a u Ro ž ajama, Ktr. br. 50/16 od 08.03.2016.g. vidi se da je, uvi đ aj izvr š en dana
+08.03.2016.g. u porodi č noj ku ć i u kojoj se porodila okrivljenai i da su u spava ć oj sobi prona đ eni tragovi
+crvene te č nosti nalik na krv na tepihu i laminatnom podu koji su izuzeti radi vje š ta č enja, kao i č ar š af, ć ebe i
+tepih, te da je izvr š en pregled Ibar č anske rijeke gdje je kako navodi okrivljena bacila bebu, ali ista nije
+prona đ ena, dok se iz fotodokumentacije i skice lica mjesta vidi da je fotografisana i skicirana soba kao i
+Ibarč anska rijeka na mjestu na kojem je okrivljena navodno bacila bebu. Ove dokaze sud je ocijenio kao
+jasne, odre đ ene i ni č im nedovedene u sumnju.
+ 
+ 
+Iz izvje š taja ljekara specijaliste JZU Op š te bolnice Berane br. 3516 od 01.03.2016.godine, se vidi, da se S. B.
+javila na pregled dana 01.03.2016.g. u JZU Op š ta bolnica Berane kod dr. R. Đ. spec.gin. i aku š erstva, te da je
+izvrš en pregled i konstatovano je da je normalna trudno ć a, dok se iz izvje š taja ljekara specijaliste br. 3933 od
+08.03.2016.godine vidi se da se ista javila kod istog ginekologa dana 08.03.2016.g. i izjavila da se porodila
+sama ku ć i, da dijete nije proplakalo, da nije podvezala i presjekla pup č anik i da je sahranila dijete zajedno sa
+posteljicom, da je ginekolo š ki me đ ica intaktna, a u predjelu introizusa su vidljive oguljotine koje ne krvare, te
+je potrebno medicinsko posmatranje i pra ć enje zbog sumnje u neke bolesti ili stanja, š to pacijentkinja odbija,
+što je konstatovano i u izvje š taju Komisije ginekologa JZU Op š te bolnice Berane br. 999 od 10.03.2016.godine,
+a iz mikrobiolo š kog nalaza od 02.03.2016.godine se vidi da kulturom nijesu izolovane patogene bakterije, a
+izolovane su gljivice roda kandida, dok se iz analize krvi od 08.03.2016.godine,vide rezultati uzete analize krvi
+okrivljene. Ove dokaze sud je ocijenio kao jasne, odre đ ene i potkrijepljene iskazom svjedoke R. Đ., a nalaze
+oslonca i u ostalim izvedenim dokazima i iskazom okrivljene, u dijelu u kojem je sud iste prihvatio.
+ 
+Iz izvje š taja o DNK vje š ta č enju Forenzi č kog centra Danilovgrad br. 1362/16 od 04.05.2016.godine vidi se da je
+na uzetim uzorcima sa tepiha i drvenog patosa ispod tepiha, sa ć ebeta, č ar š afa i u unutra š njem dijelu ž enske
+torbe dokazano prisustvo u krvi kod S. B. kao glavnog donora. Ovaj dokaz sud je prihvatio kao jasan, odre đ en
+i potkrijepljen ostalim izvedenim dokazima i iskazom okrivljene, u dijelu u kojem je sud iste prihvatio.
+ 
+Iz izvoda iz kaznene evidencije na ime okrivljene vidi se da ista nije evidentirana u kaznenoj evidenciji. Ovaj
+dokaz sud je ocijenio kao jasan, odre đ en i ni č im nedoveden u sumnju.
+ 
+Sud je cijenio iskaz okrivljene pa je isti prihvatio u dijelu u kojem ne spori odlu č ne č injenice. Naime,
+okrivljena ne spori da je imala normalnu trudno ć u, da je i š la na redovne ginekolo š ke preglede i da joj je
+doktorka kazala da se javi u zdravstvenu ustanovu kada dobije bolove, radi poro đ aja. Ne spori da se nakon
+dobijenih trudova nije javila u zdravstvenu ustanovu, ve ć  je dana 06.03.2015.g. oko 05,00 h poro đ aj izvela
+sama u svojoj porodi č noj ku ć i u naselju Ibarac, Op š tina Ro ž aje i nakon poro đ aja nije podvezala pup č anu
+vrpcu novoro đ en č etu, niti mu je pru ž ila pomo ć . Tako đ e, ne spori da je sakrila le š  svog mrtvog djeteta -
+novoro đ en č eta, tako š to ga je stavila u ž ensku torbu koju je dana 08.03.2016.g. zajedno sa le š om bacila u
+nabujalu Ibar č ansku rijeku, tako da se isti nije mogao prona ć i. Iskaz okrivljene u ovom dijelu, sud je ocijenio
+kao jasan, objektivan i potkrijepljen dokazima izvedenim u postupku u dijelu u kojem je sud iste prihvatio.
+ 
+Međ utim, okrivljena se brani da nije li š ila ž ivota svoje dijete, ve ć  je isto ro đ eno mrtvo. Brani se da je imala lak
+poro đ aj, da je rodila dijete koje nije proplakalo, a nakon š to je iza š la posteljica po č ela je da krvari pa joj je
+doš lo te š ko, te da je pala u nesvijest i probudila se nakon sat vremena, kada je vidjela dijete da je modro i ne
+diše, pa ga je obrisala i zavila u ć ebe, odnosno stavila u torbu koju je ostavila ispod kreveta. Iskaz okrivljene u
+ovom dijelu, sud je ocijenio kao neobjektivan, neuvjerljiv i usmjeren ka izbjegavanju krivi č nopravne
+odgovornosti, tim prije š to se iz nalaza i mi š ljenja vje š taka medicinske struke nesumnjivo utvr đ uje da su
+elementi te š kog poro đ aja razlozi za gubljenje svijesti a ne elementi lakog poro đ aja kako to navodi okrivljena,
+te da je ista zaista izgubila svijest na na č in kako ona to predstavlja malo je vjerovatno da bi se nakon toga
+samostalno probudila i bez hitne ljekarske pomo ć i pre ž ivjela, a kamoli da je nakon bu đ enja mogla aktivno
+djelovati. Imaju ć i to u vidu kao i č injenicu da je okrivljena imala urednu trudno ć u, da je znala da nakon
+dobijanja trudova treba da po đ e u zdravstvenu ustanovu, radi poro đ aja, š to nije u č inila, ve ć  je poro đ aj izvela
+sama ku ć i, gdje nije podvezala pup č anu vrpcu novoro đ en č etu nakon poro đ aja, ukazuje na to da je dijete
+rođeno ž ivo, te da je usled nepodvezivanja pup č ane vrpce i ne pru ž anja pomo ć i i ljekarske njege umrlo tj. da
+ga je okrivljena na taj na č in li š ila ž ivota, dok je trajao poreme ć aj izazvan poro đ ajem, nakon č ega ga je sakrila,
+tako š to ga je stavila u ž ensku torbu i bacila u rijeku.
+ 
+U konkretnom slu č aju okrivljena je postupila u ura č unljivom stanju, jer je mogla da shvati zna č aj svog djela i
+upravlja svojim postupcima. Postupala je i sa eventualnim umi š ljajem u odnosu na krivi č no djelo ubistvo
+djeteta pri poro đ aju, jer je bila svjesna da mo ž e li š iti ž ivota svoje dijete za vrijeme poro đ aja na opisani na č in,
+pa je na to pristala. Tako đ e postupala je sa direktnim umi š ljajem u odnosu na krivi č no djelo povreda le š a, jer
+je bila svjesna da je sakrila le š  svog djeteta, tako š to ga na opisani na č in bacila u nabujalu Ibar č ansku rijeku i
+to je htjela, a bila je svjesna i da su njena djela zabranjena.
+ 
+Dakle u postupku je utvr đ eno da je okrivljena dana 06.03.2016.godine, oko 05,00 č asova, u porodi č noj ku ć i u
+naselju Ibarac – ul. Ibar č anska bb, Op š tina Ro ž aje, u ura č unljivom stanju, svjesna da mo ž e u č initi djelo pa je
+na to pristala, kao majka, li š ila ž ivota svoje dijete za vrijeme poro đ aja, dok kod nje traje poreme ć aj izazvan
+poro đ ajem, na na č in š to nakon dobijenih trudova i zapo č etog poro đ aja nije po š la u zdravstvenu ustanovu,
+već je poro đ aj izvela sama u ku ć i, gdje nije podvezala pup č anu vrpcu novoro đ en č etu, usljed č ega je zbog
+nepodvezivanja pup č ane vrpce i nepru ž anja pomo ć i i ljekarske njege nastupila smrt kod djeteta i dana
+08.03.2016.godine, oko 06,15 č asova, u naselju Ibarac, Op š tina Ro ž aje, u ura č unljivom stanju, svjesna svog
+djela č ije je izvr š enje htjela, iako je znala da je njeno djelo zabranjeno, sakrila le š  svog mrtvog djeteta, na
+nač in š to je le š  mrtvog novoro đ en č eta stavila u ž ensku torbu koju je zatim zajedno sa le š om bacila u nabujalu
+Ibarč ansku rijeku, tako da se le š  nije mogao prona ć i,
+ 
+Pravnom ocjenom utvr đ enog č injeni č nog stanja, sud je na š ao da su u radnjama okrivljene sadr ž ani svi bitni
+elementi krivi č nog djela povreda le š a iz č l. 410. KZ CG i krivi č nog djela ubistvo djeteta pri poro đ aju iz č l. 146.
+KZ CG.
+ 
+Sa navedenih razloga sud nije prihvatio tezu odbrane branioca okrivljene da u postupku nije dokazano da je
+njegova branjenica izvr š ila krivi č na djela koja su joj optu ž bom stavljena na teret.
+ 
+Za izvr š ena krivi č na djela sud je okrivljenu oglasio krivom i utvrdio joj pojedina č ne kazne i to: za krivi č no
+djelo ubistvo djeteta pri poro đ aju iz č l. 146. KZ CG, kaznu zatvora u trajanju od š est mjeseci i za krivi č no djelo
+povreda le š a iz č l. 410. KZ CG kaznu zatvora u trajanju od dva mjeseca i osudio je na jedinstvenu kaznu
+zatvora u trajanju od 7 mjeseci u koju kaznu joj je na osnovu č l. 51 KZ CG ura č unato vrijeme zadr ž avanja od
+09.03.2016.g. do 11.03.2016.g.
+ 
+Prilikom odlu č ivanja o izboru vrste i visine kazne, sud je imao u vidu sve okolnosti koje uti č u da kazna bude
+veća ili manja iz č l. 42. KZ CG, pa je okrivljenoj od olak š avaju ć ih okolnosti cijenio siroma š no imovno stanje i
+raniju neosudjivanost, dok ote ž avaju ć ih okolnosti nije bilo.
+ 
+Cijene ć i navedene okolnosti, kao i okolnosti pod kojima je djelo izvr š eno i dr ž anje okrivljene nakon izvr š enog
+djela i stepen povrede za š ti ć enog dobra, sud je na š ao da je imalo mjesta izricanju ovakve vrste i visine kazne,
+ubije đ en da je izre č ena jedinstvena kazna zatvora u nazna č enom trajanju srazmjerna te ž ini izvr š enih
+krivi č nih djela i stepenu krivice okrivljene i da ć e se sa istom ostvariti svrha ka ž njavanja iz č l. 32. KZ CG u
+okviru op š te svrhe krivi č nih sankcija iz č l. 4. istog zakona.
+ 
+Na osnovu č l. 229. u vezi č l. 226. st. 2. ta č . 1 i 7 st. 4. ZKP,sud je obavezao okrivljenu da plati na ime tro š kova
+krivi č nog postupka iznos od 482,00 eura,u korist bud ž eta Crne Gore, koji tro š kovi se odnose na ime tro š kova
+za vje š ta č enje i za branioca anga ž ovanog po slu ž benoj du ž nosti, dok je okrivljeni bio zadr ž an.
+ 
+Na osnovu č l. 229. u vezi č l. 226. st. 2. ta č . 9. i st. 3. ZKP, sud je obavezao okrivljenu da plati na ime pau š ala
+iznos od 30,00 eura, u korist bud ž eta Crne Gore, a ovo imaju ć i u vidu trajanje i slo ž enost krivi č nog postupka
+kao i imovno stanje okrivljene.
+ 
+Sa izlo ž enog odlu č eno je kao u dispozitivu ove presude.
+ 
+ 
+OSNOVNI SUD U RO Ž AJAMA, dana 20.06.2016.g.
+ 
+ 
+ 
+Zapisni č ar,S U D I J A,
+Aida Luboder s.r.Milosav Zeki ć  s.r.
+ 
+ 
+PRAVNA POUKA: Protiv ove presude mo ž e se izjaviti ž alba u roku od 8 dana od dana prijema iste i to Vi š em
+sudu u Bijelom Polju, a preko ovog suda.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

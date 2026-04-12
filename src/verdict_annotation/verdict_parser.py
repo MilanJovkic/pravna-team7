@@ -132,11 +132,15 @@ class VerdictParser:
         # Ekstraktuj broj predmeta
         case_match = self.case_number_pattern.search(text)
         if case_match:
-            metadata.case_number = case_match.group(1).strip()
+            metadata.case_number = self._clean_case_number(case_match.group(1).strip())
         else:
             inline_match = self.case_number_inline_pattern.search(text)
             if inline_match:
-                metadata.case_number = f"K.br. {inline_match.group(1).replace(' ', '')}"
+                inline_value = f"K.br. {inline_match.group(1).replace(' ', '')}"
+                metadata.case_number = self._clean_case_number(inline_value)
+
+        if not metadata.case_number and filename:
+            metadata.case_number = filename
         
         # Ekstraktuj sud
         court_match = self.court_pattern.search(text)
@@ -354,6 +358,30 @@ class VerdictParser:
             if name_match:
                 defendants.append(name_match.group(1).strip())
         return [d for d in defendants if len(d) >= 3]
+
+    def _clean_case_number(self, value: str | None) -> Optional[str]:
+        if not value:
+            return None
+
+        candidate = " ".join(value.replace("\u00a0", " ").split())
+        lowered = candidate.lower()
+        if lowered in {"n/a", "na", "none"}:
+            return None
+
+        # Reject obvious OCR noise that does not resemble a case identifier.
+        if len(candidate) < 4:
+            return None
+        if not re.search(r"\d", candidate):
+            return None
+        if re.fullmatch(r"[\.\-/]+", candidate):
+            return None
+
+        # Remove leading/trailing punctuation while preserving internal separators.
+        candidate = candidate.strip(" .,-_\t")
+        if not candidate or len(candidate) < 4:
+            return None
+
+        return candidate
 
     def parse_batch(self, texts: dict[str, str]) -> dict[str, VerdictMetadata]:
         """

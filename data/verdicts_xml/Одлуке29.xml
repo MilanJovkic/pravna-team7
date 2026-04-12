@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке29">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке29/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке29"/>
+                    <FRBRdate date="2013-04-01" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке29/sr@2013-04-01/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке29/sr@2013-04-01"/>
+                    <FRBRdate date="2013-04-01"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке29/sr@2013-04-01/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке29/sr@2013-04-01/!main.akn"/>
+                    <FRBRdate date="2026-04-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Viši sud u Podgorici"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Ranke Vuković"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Vesna Pean"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Ranko Vuković"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Ć. P."/>
+                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="Lj. R."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 44/2013</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>Viši sud u Podgorici</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2013-04-01">2013-04-01</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Ranke Vuković</judge>
+                    <judge>Vesna Pean</judge>
+                    <judge>Ranko Vuković</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Optuženi Lj. R. i Ć. P. su optuženi za pokušaj ubistva. Nakon razmatranja dokaza, sud je donio presudu.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>pokušaj ubistva</p>
+                    <p>pravo na odbranu</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_14">Član 14</ref>
+                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/2024/!main#art_49">Član 49</ref>
+                    <ref href="/akn/me/act/2024/!main#art_147">Član 147</ref>
+                    <ref href="/akn/me/act/2024/!main#art_244">Član 244</ref>
+                    <ref href="/akn/me/act/2024/!main#art_146">Član 146</ref>
+                    <ref href="/akn/me/act/2024/!main#art_2">Član 2</ref>
+                    <ref href="/akn/me/act/2024/!main#art_246">Član 246</ref>
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/2024/!main#art_373">Član 373</ref>
+                    <ref href="/akn/me/act/2024/!main#art_145">Član 145</ref>
+                    <ref href="/akn/me/act/2024/!main#art_69">Član 69</ref>
+                    <ref href="/akn/me/act/2024/!main#art_240">Član 240</ref>
+                    <ref href="/akn/me/act/2024/!main#art_190">Član 190</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_23">Član 23</ref>
+                    <ref href="/akn/me/act/2024/!main#art_75">Član 75</ref>
+                    <ref href="/akn/me/act/2024/!main#art_144">Član 144</ref>
+                    <ref href="/akn/me/act/2024/!main#art_245">Član 245</ref>
+                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/2024/!main#art_242">Član 242</ref>
+                    <ref href="/akn/me/act/2024/!main#art_67">Član 67</ref>
+                    <ref href="/akn/me/act/2024/!main#art_256">Član 256</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_149">Član 149</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je ocijenio sve prezentovane dokaze i okolnosti predmeta.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усвојено">
+                    <p>Optuženi se oglašavaju krivim.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>Ć. P.</person>
+                    <person>Lj. R.</person>
+                </block>
+                <block name="witnesses">
+                    <person>je takodje tvrdio da mu je poznato da je</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Nik</fact>
+                <fact key="location">Podgorici Ki</fact>
+                <fact key="location">Podgorici Kv</fact>
+                <fact key="location">Danilovgrad</fact>
+                <fact key="location">Nikš</fact>
+                <fact key="location">Kotoru</fact>
+                <fact key="location">Baru</fact>
+                <fact key="location">Što</fact>
+                <fact key="location">Zavodu</fact>
+                <fact key="location">Specijalnoj</fact>
+                <fact key="location">Podgorici Kt</fact>
+                <fact key="location">Psihijatrijsku</fact>
+                <fact key="location">Dobroti</fact>
+                <fact key="location">Psihijatrijskoj</fact>
+                <fact key="location">Ziks</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K.br.44/2013
+ 
+ 
+U IME CRNE GORE
+ 
+ 
+Viši sud u Podgorici, kao prvostepeni krivi č ni, u vije ć u sastavljenom od sudije Vesne Pean, kao predsjednika
+vijeć a i sudija Ranke Vukovi ć  i Dragoja Jovi ć a, kao č lanova vije ć a, uz u č e šć e Bojane Rakovi ć , kao zapisni č ara,
+u krivi č nom predmetu protiv optu ž enih Lj..R.., kojeg brani adv. Slavomir Bo ž ovi ć  iz Nik š i ć a i Ć.. P.., kojeg brani
+adv. Dragan Mitri ć  iz Nik š i ć a, zbog krivi č nog djela ubistvo u poku š aju iz č l.143. u vezi č l.20 i č l. 23 stav 2
+Krivi č nog zakonika, odlu č uju ć i po optu ž nici VDT-a Podgorica Kt.br. 133/12 od 01.04.2013. godine, nakon
+održ anog glavnog i javnog pretresa dana 03.12.2014.godine u prisustvu zastupnika optu ž be-zamjenika VDT-a
+Podgorica Milo š a Š o š ki ć a, optu ž enih i njihovih branilaca, nakon tajnog vije ć anja i glasanja, donio je i javno
+objavio, dana 11.12.2014. godine,
+ 
+ 
+P R E S U D U
+ 
+Optu ž eni:
+ 
+1. LJ.. R.., JMBG .., od oca .. i majke .., rođ ene .., rođ en .., sa prebivali š tem u ... .. .., drž avljanin Crne Gore,
+nezaposlen, o ž enjen, otac dvoje djece, pismen, zavr š io srednju ekonomsku š kolu, lo š eg imovnog stanja,
+osuđ ivan presudom Osnovnog suda u Nik š i ć u K.br.133/01 od 23.02.2002. godine zbog krivi č nog djela iz č l.
+144 st.1 KZ RCG na kaznu zatvora od 60 dana; presudom Vi š eg suda u Podgorici K.br. 80/2001 zbog krivi č nog
+djela iz č l. 147 stav 1 KZ RCG na kaznu zatvora u trajanju od 1 godine i 6 mjeseci; presudom Vi š eg suda u
+Podgorici Ki.br. 8/98 od 18.12.2002. godine zbog krivi č nog djela iz č l. 146 stav 1 KZ RCG na kaznu zatvora u
+trajanju od 1 godine; presudom Osnovnog suda u Nik š i ć u K.br.217/02 od 15.03.2003. godine zbog krivi č nog
+djela iz č l. 190 stav 1 KZ RCG na kaznu zatvora u trajanju od 45 dana; presudom Osnovnog suda u Nik š i ć u
+K.br.93/03 od 01.05.2003. godine zbog krivi č nog djela iz č l. 145 stav 1 KZ RCG na kaznu zatvora u trajanju od 1Viši Sud u Podgorici
+K 44/2013
+11. Decembar 2014
+godine; presudom Osnovnog suda u Nik š i ć u K.br.162/03 od 12.06.2003. godine zbog krivi č nog djela iz č l.144
+st.1 KZ RCG na kaznu zatvora u trajanju od 3 mjeseca; presudom Osnovnog suda u Nik š i ć u K.br.195/2002 od
+21.03.2006. godine zbog krivi č nog djela iz č l. 145 stav 1 KZ RCG na kaznu zatvora u trajanju od 5 mjeseci;
+presudom Vi š eg suda u Podgorici Kv.br.428/03 od 10.10.2003. godine zbog krivi č nog djela iz č l. 147 stav 1 i č l.
+146 stav 1 KZ RCG na kaznu zatvora u trajanju od 2 godine u 5 mjeseci; presudom Osnovnog suda u Nik š i ć u
+K.br.363/01 od 04.11.2004. godine zbog krivi č nog djela iz č l. 145 stav 1 i č l. 149 stav 1 KZ RCG na kaznu zatvora
+u trajanju od 14 mjeseci; presudom Vi š eg suda u Podgorici K ž .br. 881/03 od 01.12.2004. godine zbog krivi č nog
+djela iz č l.144 stav 1 KZ RCG na kaznu zatvora u trajanju od 3 mjeseca; presudom Osnovnog suda u Nik š i ć u
+K.br.92/2002 od 12.01.2006. godine zbog krivi č nog djela iz č l.144 stav 1 KZ RCG na kaznu zatvora u trajanju od
+60 dana; presudom Vi š eg suda u Podgorici Kv.br. 172/05 od 02.03.2006. godine zbog krivi č nog djela iz č l. 145
+stav 1 KZ RCG u produ ž enom trajanju, č l. 145 stav 1, č l. 147 stav 1, č l. 146 stav 1, č l. 145 stav 1 i č l. 144 stav 1 KZ
+RCG na kaznu zatvora u trajanju od 4 godine i 11 mjeseci; presudom Vi š eg suda u Podgorici K.br.31/2007 od
+15.05.2008. godine zbog krivi č nog djela iz č l. 245 stav 1 KZ SRJ na kaznu zatvora u trajanju od 2 godine;
+presudom Osnovnog suda u Nik š i ć u K.br. 3/09 od 26.03.2009. godine zbog krivi č nog djela iz č l. 240 stav 1
+tačka 2 u vezi č l. 20 KZ na kaznu zatvora u trajanju od 8 mjeseci; presudom Osnovnog suda u Nik š i ć u
+K.br.886/08 od 20.03.2009. godine zbog krivi č nog djela iz č l. 240 stav 1 ta č ka u vezi č l. 49 KZ na kaznu zatvora
+u trajanju od 7 mjeseci; presudom Osnovnog suda u Danilovgradu K.br.74/06 od 05.09.2011. godine zbog
+krivi č nog djela iz č l. 151 stav 1 u vezi č l. 23 stav 2 KZ na kaznu zatvora u trajanju od 7 mjeseci.
+ 
+2. Ć.... JMBG .., od oca .. i majke .., rođ ene .. rođ en ... godine u .., sa prebivali š tem u .., drž avljanin Crne Gore,
+nezaposlen, razveden, pismen, zavr š io srednju ma š insku š kolu, lo š eg imovnog stanja, otac jednog
+maloljetnog djeteta, osu đ ivan presudom Osnovnog suda u Nik š i ć u K.br. 81/03 od 29.09. 2003. godine zbog
+krivi č nog djela iz č l. 149 stav 1 KZ RCG na kaznu zatvora u trajanju od 30 dana; presudom Osnovnog suda u
+Nikš i ć u K.br. 218/04 od 15.11.2004. godine zbog krivi č nog djela iz č l. 246 stav 1 KZ RCG na kaznu zatvora u
+trajanju od 30 dana; presudom Osnovnog suda u Nik š i ć u K.br. 246/04 od 02.02.2006. godine zbog krivi č nog
+djela iz č l. 256 stav 1 KZ CG na nov č anu kaznu u iznosu od 600,00 eura; presudom Osnovnog suda u Nik š i ć u
+Kv.br. 37/06 od 10.06.2006. godine zamjena nov č ane kazne zatvorom u trajanju od 15 dana; presudom
+Osnovnog suda u Nik š i ć u K.br. 273/06 od 12.05.2006. godine zbog krivi č nog djela iz č l. 246 stav 1 KZ CG na
+kaznu zatvora u trajanju od 30 dana; presudom Osnovnog suda u Nik š i ć u K.br. 474/06 od 17.10. 2006. godine
+zbog krivi č nog djela iz č l. 246 stav 1 KZ RCG na kaznu zatvora u trajanju od 60 dana; presudom Osnovnog
+suda u Nik š i ć u Kv.br. 399/06 od 13.11.2006. godine zbog krivi č nog djela iz č l. 240 stav 1 ta č ka 1 u vezi č l. 20 i
+čl. 240 stav 1 i č l. 246 stav 1 KZ RCG na kaznu zatvora u trajanju od 10 mjeseci; presudom Osnovnog suda u
+Nikš i ć u K.br. 709/05 od 05.07.2006. godine zbog krivi č nog djela iz č l. 240 stav 1 ta č ka 1 u vezi č l. 20 KZ na
+kaznu zatvora u trajanju od 6 mjeseci; presudom Osnovnog suda u Nik š i ć u K.br. 622/06 od 31.12.2007. godine
+zbog krivi č nog djela iz č l. 246 stav 1 KZ RCG na kaznu zatvora u trajanju od 60 dana; presudom Osnovnog
+suda u Kotoru K.br.394/07 od 19.03.2009. godine zbog krivi č nog djela iz č l. 239 stav 1 u vezi č l. 49 KZ na kaznu
+zatvora u trajanju od 2 mjeseca; presudom Osnovnog suda u Baru K.br.431/07 od 21.10.2008. godine zbog
+krivi č nog djela iz č l. 239 stav 1 u vezi č l. 49 KZ na kaznu zatvora u trajanju od 60 dana; presudom Osnovnog
+suda u Nik š i ć u K.br.89/08 od 14.08.2008. godine zbog krivi č nog djela iz č l. 239 stav 1 KZ na kaznu zatvora u
+trajanju od 5 mjeseci; presudom Osnovnog suda u Nik š i ć u K.br.546/08 od 08.12.2008. godine zbog krivi č nog
+djela iz č l. 246 stav 1 u vezi č l. 49 KZ na kaznu zatvora u trajanju od 60 dana; presudom Osnovnog suda u
+Nikš i ć u K.br.551/07 od 16.04.2009. godine zbog krivi č nog djela iz č l. 246 stav 1 u vezi stava 2, u vezi č l. 49 KZ
+na kaznu zatvora u trajanju od 4 mjeseca; presudom Osnovnog suda u Nik š i ć u K.br.747/08 od 06.02.2009.
+godine zbog krivi č nog djela iz č l. 239 u vezi č l. 49 KZ na kaznu zatvora u trajanju od 6 mjeseci; presudom
+Osnovnog suda u Nik š i ć u K.br. 831/08 od 11.02.2009. godine zbog krivi č nog djela iz č l. 239 stav 1 KZ na kaznu
+zatvora u trajanju od 3 mjeseca; presudom Osnovnog suda u Nik š i ć u K.br. 642/08 od 08.12.2008. godine zbog
+krivi č nog djela iz č l. 239 KZ na kaznu zatvora u trajanju od 3 mjeseca; presudom Osno vnog suda u Nik š i ć u
+K.br. 666/08 od 05.08.2009. godine zbog krivi č nog djela iz č l. 244 stav 1 u vezi č l. 49 KZ na kaznu zatvora u
+trajanju od 3 mjeseca; presudom Osnovnog suda u Nik š i ć u K.br. 871/08 od 02.04.2009. godine zbog krivi č nog
+djela iz č l. 246 stav 1 KZ na kaznu zatvora u trajanju od 60 dana; presudom Osnovnog suda u Nik š i ć u K.br.
+169/07 od 25.10.2008. godine zbog krivi č nog djela iz č l. 240 stav 1 ta č ka 1 KZ na kaznu zatvora u trajanju od 7
+mjeseci; presudom Osnovnog suda u Nik š i ć u K.br. 447/08 zbog krivi č nog djela iz č l. 246 stav 2 u vezi stava 1 u
+vezi č l. 49 KZ na kaznu zatvora u trajanju od 3 mjeseca; presudom Osnovnog suda u Nik š i ć u K.br. 762/08 od
+03.03.2009. godine zbog krivi č nog djela iz č l. 246 stav 1 u vezi stava 2 KZ na kaznu zatvora u trajanju od 85
+dana; presudom Osnovnog suda u Nik š i ć u K.br. 513/05 od 25.09.2005. godine zbog krivi č nog djela iz č l. 240
+stav 1 KZ na kaznu zatvora u trajanju od 6 mjeseci; presudom Osnovnog suda u Nik š i ć u K.br. 329/09 od
+12.03.2010. godine zbog krivi č nog djela iz č l. 239 stav 1 KZ RCG na kaznu zatvora u trajanju od 5 mjeseci;
+presudom Osnovnog suda u Nik š i ć u Kv.br. 213/09 od 29.01.2010. godine zbog krivi č nog djela iz č l. 244 stav 1
+u vezi č l. 49 KZ i č l. 239 stav 1 u vezi č l. 49 KZ i č l. 239 stav 1 u vezi č l. 49 KZ na kaznu zatvora u trajanju od 3
+godine i 3 mjeseca; presudom Osnovnog suda u Podgorici K.br. 09/958 od 13.10.2010. godine zbog krivi č nog
+djela iz č l. 244 stav 3 u vezi stava 1 u vezi č l. 20 KZ na kaznu zatvora u trajanju od 1 godine; presudom
+Osnovnog suda u Podgorici K.br. 10/1047 od 03.06.2011. godine zbog krivi č nog djela iz č l. 244 stav 3 u vezi
+stava 1 u vezi č l. 20 KZ na kaznu zatvora u trajanju od 1 godine; presudom Osnovnog suda u Podgorici K.br.
+29/11 od 28.09.2011. godine zbog krivi č nog djela iz č l. 242 stav 1 u vezi č l. 20 i 23 KZ na kaznu zatvora u
+trajanju od 1 godine.
+ 
+K r i v i s u
+ 
+Što su :
+ 
+Dana 10.11.2012. godine, oko 14,35 č asova u Zavodu za izvr š enje krivi č nih sankcija - KPD Podgorica, na “ F “
+odjeljenju, na hodniku odjeljenja, po prethodnom dogovoru, sa umi š ljajem poku š ali da li š e ž ivota o š te ć enog
+M.. I.., na na č in š to su sa č ekali o š te ć enog M.. na hodniku dok se vra ć ao iz kupatila, kojom prilikom su mu
+obojica pri š li i fizi č ki napali, tako š to je okrivljeni Lj.. zamahnuo prema o š te ć enom improvizovanim o š trim
+predmetom – š ilom, i ubo ga u predjelu stomaka, te ga istim š ilom ogrebao u predjelu desne nadlaktice, od
+čega je o š te ć eni pao na pod, a okrivljeni Ć.. neutvr đ enim sredstvom, podobnim da tijelo te š ko povrijedi ili
+zdravlje te š ko naru š i, koji je prethodno uvukao u č arapu, č etiri puta poku š ao da udari po glavi i tijelu
+ošte ć enog, dok ga je okrivljeni Lj.. udario jo š  dva put nogama u predjelu tijela, a sve do trenutka kada su ih
+služ benici ZIKS-a sprije č ili u daljem napadu i dovr š enju krivi č nog djela, iako su bili svjesni da ga na taj na č in
+mogu li š iti ž ivota, pa su to i htjeli, kojom prilikom su o š te ć enom M.. nanijeli lake tjelesne povrede u vidu
+ubodne rane lijevog pup č anog predjela i oguljotinu desne nadlaktice,
+ 
+- čime su izvr š ili krivi č no djelo ubistvo u poku š aju iz č l.143 u vezi č l.20 i č l. 23 stav 2 Krivi č nog zakonika.
+ 
+Pa sud optu ž ene Lj.. R.. i Ć.. P.. primjenom citiranih zakonskih odredbi i odredbi č l. 2, 4, 5, 14 stav 2, 15, 32, 33,
+36, 42, 45, 46 Krivi č nog zakonika, te č l. 374 Zakonika o krivi č nom postupku CG
+ 
+O S U Đ  U J E
+ 
+NA KAZNU ZATVORA U TRAJANJU OD PO 3 (TRI) GODINE, koju ć e izdr ž ati po pravosna ž nosti presude.
+ 
+ 
+Na osnovu č l. 67 u vezi č l. 69 KZ prema optu ž enom Lje š kovi ć  Rado š u se izri č e
+ 
+MJERA BEZBJEDNOSTI
+ 
+Obavezno psihijatrijsko lije č enje i č uvanje u zdravstvenoj ustanovi koje ć e se izvr š avati u Specijalnoj bolnici
+za psihijatriju Dobrota – Kotor, a koju ć e sud obustaviti kada utvrdi da je prestala potreba za lije č enjem i
+čuvanjem u č inioca u zdravstvenoj ustanovi, i vrijeme provedeno u zdravstvenoj ustanovi ura č unava se u
+vrijeme trajanje izre č ene kazne.
+ 
+Na osnovu č l. 75 Krivi č nog zakonika, prema optu ž enom Lj.. R.. izrič e se:
+ 
+MJERA BEZBJEDNOSTI
+ 
+Oduzimanja predmeta i to improvizovanog metalnog š ila kao predmeta izvr š enja krivi č nog djela.
+ 
+Duž ni su optu ž eni da solidarno na ime tro š kova krivi č nog postupka plate nov č ani iznos od 1.204,50 eura, a
+koji tro š kovi se odnose na tro š kove vje š taka i vje š ta č enja, dok je optu ž eni Ć.. P..duž an da na ime tro š kova
+branioca po slu ž benoj du ž nosti Tripkovi ć  Pavla uplati i nov č ani iznos od 317, 50 eura, a sve u roku od 15 dana
+po pravosna ž nosti presude, pod prijetnjom prinudne naplate, a u korist Bud ž eta Crne Gore, dok ć e se o
+ostalim tro š kovima odlu č iti posebnim rje š enjem.
+ 
+ 
+O b r a z l o ž  e nj e
+ 
+ 
+Optu ž nicom Vi š eg dr ž avnog tu ž ioca u Podgorici Kt.br. 133/12 od 01.04.2013. godine stavljeno je na teret
+optu ž enima Lj.. R.. i Ć.. P.. da su kao saizvr š ioci izvr š ili krivi č no djelo ubistvo u poku š aju iz č l.143 u vezi č l.20 i
+čl. 23 stav 2 Krivi č nog zakonika, pri kojoj optu ž nici je njen zastupnik ostao do kraja glavnog pretresa
+smatraju ć i da je provedenim dokaznim postupkom nesumnjivo utvrdjeno da su u č inili krivi č no djelo
+stavljeno im na teret i predla ž u ć i da sud okrivljene oglasi krivim i osudi po zakonu.
+ 
+Optu ž eni Lj.. R.. u prethodnom postupku nije iznosio odbranu navode ć i da nije zdravstveno sposoban, dok je
+u navodima svoje odbrane na glavnom pretresu naveo da zapravo ne pori č e da je napravio to š to je
+navedeno o š te ć enom M.. I.., ali je istakao da se tog doga đ aja ne sje ć a, jer je tada bio u veoma lo š em
+psihi č kom stanju, č uo je neke glasove, bio je u strahu, te je nakon tog doga đ aja i upu ć en u Psihijatrijsku
+bolnicu u Dobroti. Naveo je da se od psihi č ke bolesti lije č i od 2008 godine i tada je tako đ e bio lije č en u
+Dobroti, a od tada je vi š e puta i š ao na lije č enje u istu bolnicu. Dodao je da je nakon ovog doga đ aja imao jo š
+jedan slu č aj u kojem je napao drugog zatvorenika i za to krivi č no djelo je ve ć  osu đ en, i dobio je mjeru
+psihijatrijskog lije č enja u bolnici, a presudu je izrekao Osno vni sud u Danilovgradu, kao i da je i danas pod
+terapijom, koju uzima redovno. Posebno je odgovorio da se ne sje ć a da je te prilike imao u rukama
+improvozovano š ilo, niti se mogao sjetiti bilo kakvog predmeta, niti detalja o izgledu tog sredstva, ukoliko ga
+je koristio te prilike. Nije se mogao sjetiti ni da li je tu bio ba š  Ć.. P..., odnosno bilo je prisutno zatvorenika, ali
+nije znao ko su oni.
+ 
+Branilac optu ž enog Lj.. R.. je u zavr š noj rije č i naveo da slijede ć i odbranu optu ž enog i dovode ć i je u vezu sa
+provedenim dokazima, posebno nalazom i mi š ljenjem Komisije vje š taka, predlo ž io je da sud izrekne mjeru
+obaveznog lije č enja u psihijatrijskoj ustanovi, kako stoji u predlogu Komisije vje š taka. U zavr š noj rije č i
+optu ž eni Lj.. je prihvatio zavr š nu rije č  svog branioca i nije imao ni š ta posebno da doda.
+ 
+Optu ž eni Ć.. P.. se, kako u prethodnom postupku, tako i na glavnom pretresu, izjasnio da ne ć e iznositi
+odbranu, niti odgovarati na pitanja zastupnika tu ž be, branilaca i suda.
+ 
+Branilac optu ž enog Ć.. P.. je u zavr š noj rije č i istakao da dokazi provedeni tokom postupka ne ukazuju na
+činjeni č no stanje kako je to zastupnik optu ž be predstavio u optu ž nici, a koje č injeni č no stanje je o č igledno
+zasnovano na iskazu o š te ć enog M..I.., iako su kao dokazi provedeni i video zapisi predmetnog doga đ aja,
+smatraju ć i da proizilazi da optu ž eni kriti č ne prilike nisu poku š ali sa umi š ljajem da o š te ć enog li š e ž ivota, ve ć
+da se u njihovim radnjama sti č u svi bitni elementi krivi č nog djela iz č l.152 st.2 u vezi st.1 KZ-a, pa je u
+kona č nom predlo ž io da sud shodno č l. 373 ta č .2 ZKP-a optu ž enog Ć.. P.. oslobodi od optu ž be. Optu ž eni Ć.. je
+prihvatio zavr š nu rije č  svog branioca, i dodao da on i Lj.. nijesu u č inili krivi č no djelo koje im je stavljeno na
+teret, odnosno nijesu htjeli da li š e ž ivota M.., a ta č no je da je š ilo, koje je imao Lj.., bilo zamotano i virilo svega
+1cm iz njegove ruke, tako da smatra da su u č inili drugo krivi č no djelo, nano š enje tjelesnih povreda, i za to
+prihvata krivicu.
+ 
+Sud je u dokaznom postupku na glavnom pretresu proveo slede ć e dokaze: neposredno saslu š ao u svojstvu
+svjedoka Ć..Ž.., B.. Ž.. i V.. D.., a na saglasan predlog stranaka pro č itan je iskaz o š te ć enog M.. I.., dat na
+zapisnik pred VDT Podgorica od 18.12.2012. godine i na zapisnik o glavnom pretresu od 12.02.2014. godine, te
+proč itao zapisnik o uvi đ aju Uprave policije PJ Podgorica Ispostava Danilovgrad Ku.br.133/12 od 27.11.2012.
+godine, slu ž benu zabilje š ku Zavoda za izvr š enje krivi č nih sankcija – KPD Podgorica od 14.11.2012. godine,
+proč itao slu ž benu zabilje š ku Uprave policije Ispostava Danilovgrad 21-03 broj 240/12-6443 od 14.11.2012.
+godine, pro č itao izvje š taj ljekara specijaliste JZU Klini č ki centar Crne Gore – Urgentni centar broj protokola
+21667, pro č itao nalaz komisije vje š taka od 03.03.2014. godine, koji se odnosi na vje š ta č enje optu ž enih Lj.. R.. i
+Ć.. P..i neposredno saslu š ao predstavnika komisije vje š taka neuropsihijatra dr Stanka Mili ć a na glavnom
+pretresu od 02.04.2014. godine, pro č itao nalaz i mi š ljenje sudskog vje š taka prof dr Š o ć  Miodraga Ktr.br.
+957/12 od 16.11.2012. godine, dopunu nalaza i mi š ljenja vje š taka prof. Dr Š o ć  Miodraga Kt.br 133/12 od
+25.02.2013. godine, zapisnik o saslu š anju sudskog vje š taka prof.dr Š o ć  Miodraga Kt.br. 133/12 od 01.03.2013.
+godine i neposredno saslu š ao istog na glavnom pretresu od 14.05.2014. godine, pro č itao nalaz i mi š ljenje
+sudskog vje š taka prof.dr Č uki ć  Dragane Kti.br. 123/12 od 21.03.2013. godine i istu neposredno saslu š ao na
+glavnom pretresu od 14.05.2014. godine, izvr š io uvid u DVD nadzornih kamera ZIKS-a sa č injen dana
+10.11.2012. godine, izvr š io uvid u fotodokumentaciju UP Ispostava Danilovgrad br. 21-03-240/12-494 od
+10.11.2012. godine, i izvr š io se neposredni uvid u predmetno š ilo koje se nalazi u spisima predmeta i pro č itao
+izvod iz kaznene evidencije UP PJ Nik š i ć  br. 2741 od 24.12.2012. godine na ime optu ž enih.
+ 
+Saslu š an u svojstvu svjedoka, o š te ć eni M.. I.. je naveo da nakon š to se vratio sa treninga, po š ao je u kupatilo
+da se okupa. Izlaskom iz kupatila, kre ć u ć i se hodnikom u pravcu svoje sobe vidio je u blizini Ć.. i Lj.., ali je
+potpuno opu š teno i normalno nastavio kretanje, ni š ta ne predosje ć aju ć i. Tom prilikom na njemu je bio donji
+dio trenerke, papu č e na nogama, sa pe š kirom preko le đ a i ni š ta drugo od odjevnih predmeta nije imao na
+sebi u gornjem dijelu, osim tog pe š kira. Prilaze ć i sobi, misli da je č ak njih dvojicu pro š ao, u tom momentu, Lj..
+mu je zadao udarac nekim improvizovanim š ilom u predjelu stomaka. Taj udarac mu je zadao, koliko se
+mogao sjetiti, sa strane, odnosno dok se nalazio sa njegove desne strane. Kako je imao na sebi papu č e,
+sreć om se okliznuo i pao tako da ga je Lj.. sa ovim š ilom samo djelimi č no zahvatio u stomak, te da nije pao,
+nanio bi mu te ž u povredu, bio je ubije đ en da bi mu to š ilo zabio do kraja u stomak. Kada je pao, tada su
+uslijedili napadi Ć.., tako š to ga je poku š ao udariti u glavu staklenom bocom od higijenskog parfema (stika)
+koji je stavio u č arapu, a on je instinktivno i spretno eskivirao taj udarac i č uo je kada je ta boca od parfema
+pukla o pod i razbila se. Naveo je da je ruke stavio iznad glave da bi se za š titio dok je le ž ao dolje na podu, a da
+je Ć.. nastavio da ga udara š akama i nogama po grudima i tijelu, a nakon toga Lj.. je opet onim istim š ilom
+poku š ao da ga ubode u predjelu glave i vrata, a kako je on rukama podignutim iznad glave za š titio glavu i
+vrat, to ga je tim š ilom zaka č io po desnom mi š i ć u, odnosno bicepsu desne ruke kojom prilikom mu je nanio
+ogrebotinu. Zvao je u pomo ć  cimera D.., jer je vidio da ne mo ž e da se odbrani, poku š avao je da ustane ali nije
+mogao, jer kada on krene da se ustane, optu ž eni mu zadaju udarce nogama i on zbog toga nije mogao da
+ustane, a i imao je klizave papu č e jer se vra ć ao ispod tu š a. U tom trenutku pojavili su se i slu ž benici ZIKS-a i
+samo brza njihova intervencija spasila ga je da ga ne ubiju. Tada su slu ž benici ZIKS-a izveli optu ž ene iz
+hodnika, a on je ostao na mjesto doga đ aja i uspio da se digne na noge. Naveo je da sa Lj.. i Ć.. nikad nije imao
+loše odnose, č ak naprotiv imali su korektne odnose. Dodao je da smatra da je njih neko nagovorio da ga
+napadnu, da su narkomani i ubjedjen je da su i tada bili u š mrkani. Od strane slu ž benika ZIKS-a bio je
+sproveden u KC CG, gdje su mu ukazali pomo ć . Nije se pridru ž io krivi č nom gonjenju, niti postavljao
+imovinskopravni zahtjev.
+ 
+Na glavnom pretresu ostao je pri ranije datom iskazu s tim š to je dodao da je on zapravo kasnije č uo da je Ć..
+imao stik u č arapi i da ga je sa tim stikom htio udariti, ali ga kriti č nom prilikom ni jednom nije udario, te da je
+čitav dogadjaj trajao veoma kratko, par sekundi, jer su se odmah umije š ali i stra ž ari.
+ 
+Saslu š an u svojstvu svjedoka Ć.. Ž.. je naveo da radi kao namje š tenik u ZIKS-u, da je kriti č ne prilike bio na
+poslu, da je sjedio u kancelariji i vidio kako se o š te ć eni M.. vrać a prema svojoj sobi, a odmah potom je č uo
+neku gu ž vu i vidio je da je M..napadnut. Vidio je da su Lj.. i Ć.. napali M.. prepoznao ih je i odmah je potr č ao,
+uhvatio Ć.. da bi ga odmakao od M... Sve skupa je to trajalo 10-20 sekundi. Nakon kriti č nog doga đ aja
+zaklju č ali su ostale osu đ enike, a Ć.. i Lj.. su odveli kod š efa da daju izjavu. O š te ć enog M.. su zatvorili u njegovu
+sobu, a nije tada vidio da je isti povrije đ en.
+ 
+Saslu š an u svojstvu svjedoka B.. Ž.. je naveo da se kriti č nom prilikom nalazio u svojoj kancelariji sa jo š  jednim
+ili dvojicom kolega, a ta kancelarija je nekih 2-3 metra od mjesta doga đ aja, te je zapravo č uo neku gu ž vu i
+odmah su on i kolege istr č ali da ih razdvoje, tako da č itav taj doga đ aj nije trajao 5-6 sekundi. Kada su pri š li
+vidio je Lj.. i .Ć.. kao i M..koji je bio u nekom č u č e ć em polo ž aju, a u blizini je bio i osu đ enik V..D... Nakon ovog
+doga đ aja pregledao je video snimak sa nadzorne kamere i sa č inio slu ž benu zabilje š ku povodom ovog
+dogadjanja.
+ 
+Svjedok V.. D.. je u svom iskazu naveo da mu je poznato da je M.. bio zaklju č an u samicu jedan izvjestan
+period, dok su ostali imali mogu ć nost da borave u dnevnom boravku, jer su im sobe bile otklju č ane, a kada je
+M.. puš ten iz samice, potpuno se promijenio, htio je da se za sve pita, a ne zna za š to su mu ba š  smetali Lj.. i
+Ć.., jer je njih i fizi č ki i psihi č ki maltretirao, nisu mogli ni iz sobe da iza đ u od njega. Vidio je kako se M..
+poni ž avaju ć e ophodio, naro č ito prema Ć.., a č ak i ispred slu ž benika ZIKS-a. Š to se ti č e konkretnog slu č aja
+naveo je da se sa tu š iranja vra ć ao prema svojoj sobi i u š ao u nju, a M..je iš ao iza njega nekih 10 m, kada je
+začuo da je zakukao i zazvao njega, zbog č ega je odmah iza š ao iz sobe. Kada je iza š ao iz sobe vidio je M.. gdje
+leži, Lj.. je bio dalje od njega nekih 2 m, a sa desne strane je bio Ć... Sko č io je na Ć.., i zna da su pali na pod, a
+utoliko su stigli slu ž benici ZIKS-a. Dodao je da je i sam imao probleme sa M.., dok je bio na slu ž enju kazne
+zatvora. Posebno je odgovorio da tada na licu mjesta nije vidio da su Lj.. ili Ć.. imali ne š to u rukama, niti da
+M..ima neku povredu.
+ 
+Iz slu ž bene zabilje š ke Zavoda za izvr š enje krivi č nih sankcija – KPD Podgorica od 14.11.2012. godine proizilazi
+da je ista sa č injena u prostorijama “F” paviljona povodom pronalaska bode ž a koji je kori šć en u tu č i osu đ enih
+lica dana 10.11.2012. godine i to Lj.. R.. i Ć..P.. sa jedne i M.. I.. sa druge strane, kada je osu đ eno lice Lj.. R..
+koristio improvizovani bode ž  sa kojim je nanio tjelesne povrede osu đ enom M.. I... Bode ž  je napravljen od ž ice
+sa dž ogera koji su osu đ ena lica koristila za č i šć enje sobe. Du ž ina bode ž a je oko 15 cm koji je na jednom kraju
+bio savijen u obliku ru č ke koja je bila umotana u par č e krpe. Odmah nakon tu č e izvr š ili su pretres sobe i u
+kanti za sme ć e koja se nalazila u WC-u sobe broj 2, prona š li su bode ž  koji je osu đ eni Lj..R.. koristio u tu č i.
+Prilikom vr š enja uvi đ aja bode ž  je predat tehni č aru za uvi đ aj Ispostave Danilovgrad.
+ 
+Iz slu ž bene zabilje š ke Uprave policije Ispostava Danilovgrad 21-03 broj 240/12-6443 od 14.11.2012. godine
+proizilazi da je ista sa č injena dana 14.11.2012. godine u slu ž benim prostorijama EKP Ispostave Danilovgrad, a
+u vezi povre đ ivanja osu đ enika I.. M.. u prostorija ZIKS-a Spu ž . Izvr š enim uvi đ ajem na licu mjesta
+konstatovano je da je dana 10.11.2012. godine oko 13,20 č asova u prostorijama “ F” odjeljenja, u dijelu za
+izdrž avanje kazne, napadnut osu đ enik I.. M..i to od strane osu đ enika R.. Lj.. i P.. Ć..na na č in š to su imenovani
+presreli M..na hodniku ovog odjeljenja pri povratku iz kupatila, i tom prilikom istog napali bez povoda, da bi u
+jednom momentu osu đ enik Lj.. R..iz dž epa izvukao o š tri predmet ( š ilo koje je napravljeno od metalne ž ice) i
+istim zadao udarac M.. u predjelu trbuha, da bi ga potom bacili na pod hodnika i zatvorenim pesnicama
+nastavili da udaraju nanose ć i mu tom prilikom lake tjelesne povrede u vidu rasjekotina na trbuhu i desnoj
+ruci, š to je konstatovano od strane ljekara UB KC CG u Podgorici. Slu ž benicima EKP Ispostave Danilovgrad
+služ benici obezbje đ enja navedenog odjeljenja su predali improvizovani metalni predmet – š ilo, kojim je
+osuđ enik Lj.. R.. nanio povrede M.. I.., a koji su isti prethodno izuzeli iz kante za odpatke koja se nalazi u
+sanitarnoj prostoriji sobe broj 2, u kojoj je Lj.. odbacio navedeni predmet nakon izvr š enog napada, i koji se
+nalazio u slu ž benim prostorijama koje koriste slu ž benici obezbje đ enja ovog odjeljenja. Naprijed navedeno
+proizilazi i iz zapisnika o uvi đ aju Uprave policije PJ Podgorica Ispostava Danilovgrad Ku.br.133/12 od
+27.11.2012. godine koji je izvr š en 10.11.2012.godine u 15,30 h, a u kojem je jo š  konstatovano da lice mjesta
+predstavlja zajedni č ki hodnik "F" odjeljenja ZIKS-a, koje je zatvorenog tipa, a koji hodnik osudjenici
+nesmetano koriste tokom č itavog dana..
+ 
+Iz izvje š taja ljekara specijaliste JZU Klini č ki centar Crne Gore – Urgentni centar broj protokola 21667 proizilazi
+da je M.. I.. pregledan dana 10.11.2012. godine u 15,52 č asova, da je primljen zbog bolova u desnom ramenu,
+lijevoj preponi, ubodne rane u predjelu lijevog hemiabdomena. Nakon pregleda ljekar je postavio dijagnozu
+na latinskom jeziku i dao terapiju.
+Iz nalaza i mi š ljenja sudskog vje š taka prof dr Š o ć  Miodraga Ktr.br. 957/12 od 16.11.2012. godine, proizilazi da
+je M.. I.. u predmetnom doga đ aju zadobio slede ć e povrede: ubodnu ranu lijevog pup č anog predjela i
+oguljotinu desne nadlaktice. Navedene povrede posljedica su najmanje dvostrukog dejstva š iljka
+zamahnutog mehani č kog oru đ a (mogu ć e i opisana ž ica), na odgovaraju ć e predjele tijela. Navedene povrede
+pojedina č no i u svom zbiru predstavljaju laku tjelesnu povredu. Vje š tak je naveo da nije mogu ć e ta č no
+opredijeliti polo ž aj M..I.. i osobe koja nanosi povrede, u vrijeme njihovog nano š enja opisanom predmetnom-
+metalnom ž icom. Naime, osoba je mogla biti sa prednje strane tijela, licem u lice, ali i pri ć i sa le đ a M.. i zadati
+udarce. Intezitet sile koja nanosi oguljotinu je laki, a intezitet sile koja proizvodi ubodnu ranu je jaki.
+Opisanom metalnom ž icom mo ž e se nanijeti osobito te š ka tjelesna povreda. Skoro se mo ž e isklju č iti
+mogu ć nost proboja u unutra š njost grudne i trbu š ne duplje, te posljedi č no o š te ć enje pripadaju ć ih organa, ali
+sasvim je izvjesno da opisanim predmetom mo ž e biti uni š ten va ž an dio tijela ili va ž an organ ( npr.oko ), pa se
+time proizvesti unaka ž enost, a i ž ivot o š te ć enog je mogao biti u direktnoj opasnosti. U dopuni nalaza i
+mišljenja istog vje š taka od 25.02.2013. godine je navedeno da ž ivot M.. I.. nije bio ni u direktnoj, niti u
+apstraktnoj opasnosti, u vrijeme odigravanja predmetnog doga đ aja.
+ 
+Medjutim, na zapisniku pred VDT-om dana 01.03.2013. godine, vje š tak je nakon uvida u spise predmeta VDT
+Podgorica, svog nalaza i mi š ljenja i dopune istog naveo da se ne mo ž e isklju č iti mogu ć nost da je predmetom
+koji je upotrijebljen u izvr š enju djela, u vidu metalne savijene i dijelom bijelim flasterom umotane (kao ru č ka)
+sive, č vrste ž ice, pre č nika oko 3mm, gdje je jedan kraj tup, a drugi lako zao š tren, bilo mogu ć e izvr š iti proboj
+istog u unutra š njost grudne duplje, odnosno ne mo ž e se isklju č iti mogu ć nost posljedi č nog o š te ć enja dijela
+pluć a, odnosno posljedi č nog nakupljanja vazduha i/ili krvi u odgovaraju ć u polovinu grudne duplje, š to je sve
+moglo direktno ugroziti ž ivot o š te ć enog M..I...
+ 
+Na glavnom pretresu odr ž anom dana 14.05.2014. godine, vje š tak je posebno odgovorio da se prethodno
+upoznao i sa ekspertizom koleginice dr. Č uki ć , te da i on i ona misle da je š iljatim dijelom predo č enog
+predmeta-savijene ž ice, bilo mogu ć e prodrijeti unutar trbu š ne duplje, ali do toga nije do š lo, te su se i jedno i
+drugo izjasnili da se radi i pojedina č no i u zbiru o lakim tjelesnim povredama, te da stoga smatra da izmedju
+njihovih nalaza nema razlike. Takodje je naveo da ne znaju kako je savijena predmetna ž ica dr ž ana u ruci i ne
+znaju da li je za š iljeni vrh virio mimo š ake jedan ili vi š e cm, ali je ovakva vrsta predmetnog orudja podobna da
+se sa istim mo ž e zadati udarac č iji bi vrh imao mogu ć nost da udje u trbu š nu duplju, a to da je vrh
+predmetnog orudja mogao u ć i u trbu š nu duplju mo ž e zavisiti od vi š e elemenata: ja č ine inteziteta
+zamahnutog udarca, ugla pod kojim vrh orudja ulazi u trbu š nu duplju, debljine potko ž nog mekog tkiva,
+mogu ć e debljine odje ć e preko ko ž e, du ž ine same ž ice koja prodire u trbu š nu duplju. U koliko ovi elementi
+nisu ispunjeni onda je mogu ć nost da se ovakvim elementom prodire u trbu š nu duplju sve manje. S obzirom
+na izgled predmeta, koji predstavlja savijenu ž icu sa improvizovanom dr š kom, koji se nalazi u spisima
+predmeta, vje š tak je bio mi š ljenja da je sa istim bilo te š ko prodrijeti u trbu š nu duplju.
+ 
+Iz nalaza i mi š ljenja sudskog vje š taka prof.dr Č uki ć  Dragane Kti.br. 123/12 od 21.03.2013. godine proizilazi da
+je M.. I.. u predmetnom doga đ aju zadobio slede ć e povrede: ubodnu ranu u predjelu pupka sa lijeve strane
+trbuha; oguljotinu u predjelu desne nadlaktice, promjera 10x1cm; nagnje č enje u predjelu desnog ramena.
+Navedene povrede u vrijeme nano š enja pojedina č no i zbirno kvalifikuju se kao laka tjelena povreda.
+Navedene povrede nastale su dvokratnim djelovanjem š iljka mehani č kog oru đ a, najvjerovatnije
+predmetnom š icom, na predio trbuha i desne nadlaktice, te jednokratnim djelovanjem tupinom mehani č kog
+oruđ a ( pesnica, stopalo ) u predio desnog ramena. U konkretnom slu č aju, povrede u predjelu trbuha i desne
+nadlaktice, nanesene predmetnim “ improvizovanim š ilom “ – ni konkretno ni apstraktno nisu ugro ž avale
+život M.. I... Međ utim, “improvizovano š ilo“, kojim su nanesene povrede u predjelu trbuha i desne nadlaktice,
+jeste sredstvo podobno da tijelo te š ko povrijedi i da ugrozi ž ivot povrije đ enog, jer se istim sigurno mogu
+nanijeti povrede koje apstraktno i konkretno ugro ž avaju ž ivot (ubod u trbuh sa prodorom u trbu š nu duplju;
+ubod u grudni ko š  sa prodorom u grudnu duplju i povredom plu ć a; povreda arterije ruke, noge) kao i da
+uniš ti va ž an organ (ubod u oko npr.). U konkretnom slu č aju nije do š lo do apstraktne niti do konkretne
+ugro ž enosti ž ivota M.. I.. zbog, mogu ć e, slabije sile prilikom udarca, izbjegavanja djelovanja sile od strane
+ošte ć enog, nepodobne lokalizacije nano š enja povreda i sl.
+ 
+Na glavnom pretresu odr ž anom dana 14.05.2014. godine, vje š tak je navela da je prethodno upoznata sa
+vješ ta č enjima prof.dr Š o ć a, prisustvovala je i njegovom izja š njenju na glavnom pretresu i po njenom
+mišljenju njihovi nalazi su u cjelosti saglasni. Posebno je odgovorila da predmetno mehani č ko orudje jeste
+podobno za nano š enje te š ke tjelesne povrede, ili naro č ito te š ke povrede, pa samim tim i prodorom u trbuh.
+U konkretnom slu č aju, u medicinskoj dokumentaciji naveden je samo otvor ubodne rane, a ne i smjer njenog
+kanala i zbog toga se ne mo ž e pouzdano zaklju č iti da li je sila djelovala upravno ili horizontalno, ali je vrh
+predmetne ž ice prodro u meko tkivo prednjeg trbu š nog zida, pa je kanal ove ubodne rane u mekom tkivu
+mož da imao tangencijalni smjer, jer na ko ž i nije bilo oguljotine, kao na desnoj nadlaktici, koja bi ukazivala na
+okrznu ć e vrhom predmetne ž ice. S druge strane oguljotina u predjelu desne nadlaktice promjera 10x1 cm
+nastala je upravo vrhom navedenog predmeta, odnosno  u skladu sa okolnostima dogadjaja sa predmetnim
+improvizovanim š ilom. Takodje je smatrala da bi udarci po glavi "staklenim stikom stavljeni u č arapu"
+najvjerovatnije ostavili povrede na nekosmatim djelovima u vidu krvnog podliva, oguljotine, nagnje č ine,
+eventualno rane razderine u koliko se radio o npr. č eonom predjelu, ve ć oj te ž ini stika i jakom zamahu, a u
+koliko bi udarci bili u kosmatom dijelu glave mogu ć e je da se povrede ne bi mogle vidjeti tokom pregleda.
+Posebno je objasnila da je u medicinskoj dokumentaciji na ime M.. I.., na latinskom jeziku navedena povreda
+nagnje č ena u predjelu desnog ramena, da je pacijentu radjeno rentgenolo š ko snimanje desnog ramena gdje
+nisu ustanovljeni prelomi, ali se isti ž alio na bol u predjelu desno g ramena, koji elementi su uticali da navede
+postojanje i ove povrede. Kako ljekar koji je pregledao M.. nije opisao nagnje č inu u predjelu desnog ramena,
+a ista predstavlja spreg oguljotine i krvnog podliva, to je u konkretnom slu č aju prihvatila mi š ljenje kolege dr
+Šoć a da povrede u vidu nagnje č ine u predjelu desnog ramena nije bilo.
+ 
+Iz nalaza Komisije vje š taka od 03.03.2014. godine, koji se odnosi na psihijatrijsko vje š ta č enje optu ž enih Lj.. R..
+i Ć.. P.. proizilazi da je Lj.. R.. osoba ispod prosje č nih intelektualnih sposobnosti, ispoljava simptome
+nespecifikovane psihoze. Primarno se radi o emocionalno nestabilnom poreme ć aju li č nosti sa epizodi č nim
+psihoti č nim vladanjem koji se prema pravnoj terminologiji svrstava u drugi te ž i du š evni poreme ć aj. Krivi č no
+djelo je psihopatolo š ki motivisano nesistematizovanim sumanutim idejama i slu š nim halucinacijama koje
+nemaju direktan uticaj na izvr š enje krivi č nog djela. Iz medicinske dokumentacije je proizilazilo da je Lj.. R.. u
+Psihijatrijskoj bolnici u Kotoru prvi put lije č en od 14.08. do 07.11.2008.godine, kada je naveo da je prethodno
+dva puta lije č en i na psihijatrijskom odjeljenju Bolnice u Nik š i ć u, u Psihijatrijskoj bolnici u Kotoru je lije č en i
+od 15.08. do 24.08.2012.godine, kao i od 10.05. do 26.06.2013.godine, kao i na hiru š koj klinici KC Podgorica,
+od 03.08. do 05.08.2011.godine, zbog poku š aja samoubistva, te posjeduje i druge izvje š taje ljekara
+specijalista, kao i zdrastveni karton u ambulanti KPD Spu ž . Vje š taci su potom utvrdili da su sposobnost
+shvatanja zna č aja djela, kao i mogu ć nost upravljanja svojim postupcima, u vrijeme izvr š enja krivi č nog djela,
+kod okrivljenog bili bitno smanjeni. Mi š ljenja su da postoji ozbiljna dru š tvena opasnost od ponavljanja
+krivi č nog djela ukoliko se okrivljeni ne bi lije č io. Iz tog razloga smatraju da ima indikacija za primjenu mjere
+bezbjednosti obaveznog psihijatrijskog lije č enja u psihijatrijskoj ustanovi ili penalnoj ustanovi kod nadle ž nog
+psihijatra, a shodno stavu suda. Š to se ti č e Ć.. P.., rije č  je osobi ispod prosje č nih intelektualnih sposobnosti,
+ne ispoljava simptome trajnog du š evnog oboljenja. Prisutne su karakterolo š ke promjene sa simptomima
+emocionalno nestabilnog poreme ć aja li č nosti koja se prema pravnoj terminologiji svrstava u drugi te ž i
+duš evni poreme ć aj. Od medicinske dokumentacije posjeduje zdrastveni karton ambulante KPD Spu ž , gdje je
+prvi put bio na pregledu kod psihijatra 23.02.2011. godine, kao i u pratnji policije Ziks-a na pregledu kod
+psihijatra u KC Podgorica dana 15.04.2013.godine. Pod pretpostavkom da je u č inio krivi č no djelo koje mu je
+stavljeno na teret vje š taci su bili mi š ljenja da su sposobnost shvatanja zna č aja djela, kao i mogu ć nost
+upravljanja svojim postupcima, u vrijeme izvr š enja krivi č nog djela, kod okrivljenog bili smanjeni, ali ne bitno.
+Mišljenja su da postoji ozbiljna dru š tvena opasnost od ponavljanja krivi č nog djela ukoliko se okrivljeni ne bi
+liječ io zbog emocionalno nestabilnog poreme ć aja li č nosti sa povremenim agresivnim pona š anjem, te
+upotrebom psihoaktivnih supstanci. Iz toga razloga smatraju da ima indikacija za primjenu mjera
+bezbijednosti psihijatrijskog lije č enja u penalnoj ustanovi kod nadle ž nog psihijatra ili drugoj zdravstvenoj
+ustanovi, a shodno stavu suda. Predstavnik komisije vje š taka neuropsihijatar prof. dr Stanko Mili ć  je dodao
+da je lije č enje optu ž enog Lj.. već  provedeno u psihijatrijskog bolnici Dobrota Kotor u postdeliktnom periodu
+tokom 2012 i 2013 godine i nakon lije č enja do š lo je do stabilizacije psihi č kih problema. Ina č e je dodao da se
+kod okrivljenog Lj.. zahtijeva stalna kontrola i lije č enje od strane psihijatra.
+ 
+Navedenim nalazima i mi š ljenjima sud je poklonio punu vjeru jer su isti jasni, objektivni i stru č ni, saglasni
+pravilima nauke i struke.
+ 
+Uvidom u DVD nadzornih kamera ZIKS-a (kamere 2 i kamere 5) od dana 10.11.2012. godine vidjelo se da se u
+2:37:27 h (nije bilo sporno da se radilo o poslijepodnevnim satima), otvaraju vrata sobe iz koje prvo izlazi Ć..
+P.. i staje naspram vrata, na drugu stranu hodnika, dok na vratima te sobe ostaje Lj.. R... U 2:37:31 nailazi
+ošte ć eni M.. iduć i hodnikom, te kada se nalazi ta č no izmedju njih dvojice, Lj.. ga prvo napada rukama, s tim
+što se ne vidi da li ima ne š to u ruci (na kameri 2 zbog daljine i re š etki koje se nalaze izmedju hodnika, te
+odsjaja svjetla, a na kameri 5 zbog ugla snimanja), nakon č ega se M.. savio, a potom i pada na pod, Lj.. ga
+jednom udara nogom, dok Ć.. tada jednom zamahuje desnom rukom u kojoj se vidi da ne š to ima, odnosno to
+liči na č arapu u kojoj se nalazi neki te ž i predmet, jer prilikom zamahivanja, č arapa se poprili č no raste ž e,
+očigledno zbog te ž ine predmeta koji se nalazi u njoj, a potom se vidi da zamahuje jo š  tri puta, a Lj.. u
+medjuvremenu M.., koji je na podu, udara nogom jo š  dva puta. U toliko u 2:37:37 h dolaze slu ž benici Ziks-a i
+spre č avaju dalji napad, uvode Lj.. i Ć.. u razli č ite sobe, dok M..ostaje sjede ć i na podu hodnika. Kasnije kada se
+ustao vidi se da se M.. povremeno dr ž i za stomak i da pokazuje i povredu na nadlaktici. Optu ž eni i njihovi
+branioci nisu imali dodatnih izja š njenja ni prigovora, nakon odgledanog DVD-a.
+ 
+Uvidom u fotodokumentaciju UP Ispostava Danilovgrad br. 21-03-240/12-494 od 10.11.2012. godine utvr đ uje
+se op š ti izgled hodnika “ F” odjeljenja u kojem su nanesene povrede o š te ć enom M.. I.., kao i bli ž i izgled sobe i
+korpe za odpatke u kojoj je prona đ en ru č no pravljeni metalni predmet. Takodje je sud izv š io uvid u predmet,
+koji se nalazi u spisima predmeta, a predstavlja č vrstu ž icu sive boje, na jednom kraju savijenu i zamotanu
+prvo nekom pvc kesom, a potom oblijepljenu bijelom flaster trakom (napravljeno kao dr š ka), dok je drugi
+kraj ž ice savijen.
+ 
+Iz izvoda iz kaznene evidencije UP PJ Nik š i ć  od 24.12.2012. godine na ime optu ž enih proizilazi da su ranije
+osuđ ivani i to Lj.. R.., viš e puta zbog krivi č nih djela protiv imovine i jednom zbog krivi č nog djela te š ke tjelesne
+povrede, a Ć..P.. je takodje vi š e puta osudjivan zbog krivi č nih djela protiv imovine.
+ 
+Cijene ć i naprijed provedene dokaze, kako pojedina č no tako i u njihovoj me đ usobnoj vezi, te navode optu ž be
+i odbrane, ovaj sud je na š ao da su optu ž eni kao saizvr š ioci izvr š ili krivi č no djelo ubistvo u poku š aju iz č l. 143 u
+vezi č l. 20 i 23 Krivi č nog zakonika, u vrijeme, mjesto i na na č in bli ž e opisan izrekom presude, s tim š to je sud
+precizirao vrijeme izvr š enja krivi č nog djela, imaju ć i u vidu vrijeme prikazano na DVD snimku nadzorne
+kamere, pa je navedeno kao vrijeme izvr š enja djela "oko 14,35 č asova", umjesto "oko 14,50 č asova", jer je u to
+vrijeme kriti č ni dogadjaj bio zavr š en, a precizirano je i ime Zavoda u kojem se kriti č ni dogadjaj dogodio, te je
+umjesto rije č i "izdr ž avanje" navedena rije č  "izvr š enje", te iza rije č i "sankcija", dodato i "-KPD Podgorica", pa je
+tako preciziran ta č an naziv i mjesto ZIKS-a, u kojem se dogadjaj dogodio. Takodje je u č injeni č nom opisu sud
+izvrš io preciziranje radnji izvr š enja djela odnosno isti upodobio kriti č nom dogadjaju, imaju ć i u vidu
+provedene dokaze posebno odgledani DVD snimak nadzorne kamere, preciziraju ć i radnje optu ž enih Lj.. i Ć.. u
+izvrš enju predmetnog krivi č nog djela, š to nije uticalo na pravnu kvalifikaciju.
+ 
+Dakle, u postupku je nesporno utvr đ eno da su optu ž eni Lj.. i Ć.. dana 10.11.2012. godine, oko 14,35 č asova u
+Zavodu za izvr š enje krivi č nih sankcija - KPD Podgorica, na “ F “ odjeljenju, na hodniku odjeljenja, po
+prethodnom dogovoru, sa umi š ljajem poku š ali da li š e ž ivota o š te ć enog M.. I.., na na č in š to su sa č ekali
+ošte ć enog M.. na hodniku dok se vra ć ao iz kupatila, kojom prilikom su mu obojica pri š li i fizi č ki napali, tako
+što je okrivljeni Lj.. zamahnuo prema o š te ć enom improvizovanim o š trim predmetom – š ilom, i ubo ga u
+predjelu stomaka, te ga istim š ilom ogrebao u predjelu desne nadlaktice, od č ega je o š te ć eni pao na pod, a
+okrivljeni Ć.. neutvr đ enim sredstvom, podobnim da tijelo te š ko povrijedi ili zdravlje te š ko naru š i, koji je
+prethodno uvukao u č arapu, č etiri puta poku š ao da udari po glavi i tijelu o š te ć enog, dok ga je okrivljeni Lj..
+udario jo š  dva put nogama u predjelu tijela, a sve do trenutka kada su ih slu ž benici ZIKS-a sprije č ili u daljem
+napadu i dovr š enju krivi č nog djela, iako su bili svjesni da ga na taj na č in mogu li š iti ž ivota, pa su to i htjeli,
+kojom prilikom su o š te ć enom Mi.. nanijeli lake tjelesne povrede u vidu ubodne rane lijevog pup č anog
+predjela i oguljotinu desne nadlaktice.
+ 
+Utvrdjeno č injeni č no stanje nesporno je proizilazilo iz provedenih dokaza i to prvenstveno iz izkaza
+ošte ć enog M.. I.. koji je sudu potvrdio da je prolazio hodnikom, te nai š ao na Lj.. i Ć.., za koje misli da ih je č ak
+bio i pro š ao, koji ga tada napadaju i to mu je Lj.. nekim improvizovanim š ilom zadao udarac u predjelu
+stomaka i to dok mu se nalazio sa desne strane, a potvrdio je da ga je Lj.. sa tim istim š ilom zaka č io i po
+bicepsu desne ruke i nanio mu ogrebotinu, kao i da ga je optu ž eni Ć.., kada je pao, poku š ao udariti staklenom
+bocom od higijenskog parfema-stika, koji je stavio u č arapu, medjutim nije ga udario, jer je eskivirao udarac,
+a čuo je da je ta boca pukla o pod i razbila se. Na glavnom pretresu je posebno objasnio da je on naknadno
+čuo da je u toj č arapi bio stakleni stik, dakle, da ga nije vidio. O š te ć eni je tvrdio da ga je zapravo samo brza
+intervencija slu ž benika Ziks-a spasila, jer kada je dobio prvi udarac improvizovanim š ilom u stomak, od
+strane optu ž enog Lj.., okliznuo se, pa ga je š ilo samo djelimi č no zahvatilo, jer da bi u suprotnom, Lj.. mu to
+šilo do kraja zabio u stomak. Bitni navodi o š te ć enog potvrdjeni su i uvidom u snimak DVD-a sa nadzorne
+kamere iz kojeg se sud uvjerio da se o š te ć eni kretao hodnikom, da je na sebi imao donji dio trenerke, papu č e
+na nogama, te je bio bez majice, a samo je imao pe š kir preba č en preko ramena, kada je napadnut prvo od
+strane Lj.., te se vidi da ga ovaj udara rukom, s tim š to se na kamerama ne vidi da li ima ne š to u ruci, nakon
+toga se vidi da se o š te ć eni M.. prvo savio, a potom i pao na pod, nakon č ega ga udara i nogom, a u tom
+momentu se vidi i da Ć.. zamahuje desnom rukom, u kojoj se nalazi č arapa, a u toj č arapi neki o č igledno te ž i
+predmet, jer se prilikom zamahivanja č arape (ukupno č etiri puta) vidi da se ona iste ž e, a ne vidi se da li je
+uspio da udari o š te ć enog M..(medjutim u tom pravcu sud je prihvatio iskaz o š te ć enog koji je potvrdio da je
+tačno da nije udaren ni jednom), kao i da ga Lj.. udara jo š  dva put nogom. Na snimcima se jasno ne vidi kada
+je oš te ć eni M.. zadobio povrede sa ovim improvizovanim š ilom, koje je Lj.. imao u ruci, ni ubodnu ranu u
+predjelu trbuha, ni ogrebotinu u predjelu desne nadlaktice, a koje su nesporno konstatovane medicinskom
+dokumentacijom, te nalazima i mi š ljenjem vje š taka medicinske struke iz kojih je proizilazilo da su te povrede
+nastale dvostrukim dejstvom zamahnutog š iljka. Ina č e, nije sporno da je č itav napad trajao veoma kratko
+vrijeme, 5-6 sekundi, a sprije č en je upravo brzom reakcijom slu ž benika Ziks-a. Saslu š ani svjedoci Ć.. Ž.. i B..
+Ž.., služ benici ZIKS-a, su potvrdili da č im su č uli gu ž vu, pri š li su da razdvoje Lj.. i Ć.., koji su predhodno napali
+ošte ć enog M.., dok je svjedok V.. D.. potvrdio da kada je iza š ao iz sobe vidio je o š t.M..gdje le ž i, Lj.. je tada bio
+od Mi..na nekih 2m, a sa desne strane da mu se nalazio Ć.., a u toliko su stigli i slu ž benici ZIKS-a. Ovaj svjedok
+je takodje tvrdio da mu je poznato da je o š te ć eni M.. fizič ki i psihi č ki maltretirao optu ž ene Lj.. i Ć.., da nisu
+mogli ni iz sobe da izadju od njega, da je vidio kako se M.. poni ž avaju ć e ophodio, naro č ito prema Ć.., čak i
+ispred slu ž benika Ziks-a.
+ 
+Sa iskazom o š te ć enog i svjedoka u saglasnosti su i ostali provedeni materijalni dokazi i to: zapisnik o uvi đ aju
+Uprave policije PJ Podgorica Ispostava Danilovgrad Ku.br.133/12 od 27.11.2012. godine, slu ž bena zabilje š ka
+Zavoda za izvr š enje krivi č nih sankcija – KPD Podgorica od 14.11.2012. godine, slu ž bena zabilje š ku Uprave
+policije Ispostava Danilovgrad 21-03 broj 240/12-6443 od 14.11.2012. godine, te fotodokumentacije UP
+Ispostava Danilovgrad od 10.11.2012.godine, iz kojih je sud utvrdio mjesto izvr š enja djela u č esnike kriti č nog
+dogadjaja, te bli ž i izgled mjesta dogadja, kao i mjesta gdje je pronadjen predmet kori šć en u izvr š enju
+krivi č nog djela.
+ 
+Vrstu, te ž inu i mehanizam nastanka tjelesnih povreda kod o š t. M.. I..Sud je utvrdio iz stru č nog i objektivnog
+nalaza i mi š ljenja vje š taka medicinske struke i prof. dr Dragane Č uki ć  i prof. dr Š o ć  Miodraga i njihovih
+usagla š enih stavova na glavnom pretresu, iz kojih se sud uvjerio da je o š te ć eni M.. u ovom dogadjaju zadobio
+ubodnu ranu lijevog pup č anog predjela i oguljotinu desne nadlaktice, koje povrede su posledica dvokratnog
+djelovanja š iljka zamahnutog mehani č kog orudja (mogu ć e i najvjerovatnije predmetnom ž icom), na predio
+trbuha i desne nadlaktice. Oba vje š taka su bila saglasna da je š iljatim dijelom improvizovanog predmeta, koji
+je upotrebljen u izvr š enju krivi č nog djela bilo mogu ć e prodrijeti unutar trbu š ne duplje, ali da to toga nije
+doš lo. Takodje su vje š taci naveli da je predmetno sredstvo moglo nanijeti povrede koje apstraktno i
+konkretno ugo ž avaju ž ivot kao š to je ubod u trbuh sa prodorom u trbu š nu duplju; ubod u grudni ko š  sa
+prodorom u grudnu duplju i povredom plu ć a, odnosno posljedni č nog nakupljanja vazduha i/ili krvi, povredu
+arterije ruke, noge, š to je sve moglo direktno ugroziti ž ivot o š te ć enog. Medjutim, vje š taci su obja š njavali da bi
+doš lo do prodora trbu š ne duplje to zavisi od ja č ine inteziteta zamahnutog udarca, ugla pod kojim vrh ulazi u
+trbu š nu duplju eventualno izbjegavanje djelovanja sile od strane o š te ć enog, debljine potko ž nog mekog
+tkiva, debljine odje ć e preko ko ž e ( š to ovdje nije mogao biti slu č aj, jer o š te ć eni nije bio obu č en u gornjem
+dijelu tijela), du ž ine same ž ice. Vje š tak prof. dr Š o ć  se posebno izjasnio da intezitet sile koja nanosi oguljotinu
+je lak, a intezitet sile koja proizvodi ubodnu ranu je jak, dok je vje š tak prof. dr Č uki ć  objasnila da je u
+medicinskoj dokumentaciji za o š te ć enog naveden samo otvor ubodne rane, a ne i smjer njenog kanala i zbog
+toga se ne mo ž e pouzdano zaklju č iti da li je sila djelovala upravno ili horizontalno, ali je vrh predmetne ž ice
+prodro u meko tkivo prednjeg trbu š nog zida. Takodje je vje š tak prof. dr Š o ć  naveo da bi, s obzirom na izgled
+predmeta, koji predstavlja savijenu ž icu sa improvizovanom dr š kom, sa istim bilo te š ko prodrijeti u trbu š nu
+duplju, ali je naveo i da se ne zna kako je savijena predmetna ž ica dr ž ana u ruci i da se ne zna da li je za š iljeni
+vrh virio mimo š ake 1 ili vi š e cm. Kako su vje š taci medicinske struke na glavnom pretresu u bitnom usaglasili
+svoje nalaze i mi š ljenje i na š li da je predmetnim š iljatim dijelom savijene ž ice, kojom su o š te ć enom nanijete
+navedene i opisane povrede, a radilo se o lakim tjelesnim povredama, bilo mogu ć e prodrijeti unutar trbu š nje
+duplje, pa je tako ž ivot o š t ć enog mogao biti u direktnoj opasnosti. Inač e, usmena izja š njenja ovih vje š taka, te
+njihove pisane nalaze i mi š ljenja, sud je prihvatio, i iste cijenio kao jasne i objektivne, zasnovane na pravilima
+struke i nauke. Sud je tako zaklju č io da nesporno proizilazi da je predmetno improvizovano š ilo, koje je
+koristio optu ž eni Lj.. prilikom napada na o š te ć enog i nanio mu opisane povrede, sredstvo podobno da se
+ošte ć eni li š i ž ivota.
+Inač e, u svojoj odbrani na glavnom pretresu Lj.. R.. je istakao da se kriti č nog dogadjaja ne sje ć a, jer je tada
+bio u lo š em psihi č kom stanju, i da zapravo ne pori č e da je napravio to š to je navedeno o š te ć enom M.. I.., ali
+se nije sje ć ao da je te prilike u rukama imao improvizovano š ilo niti kakav drugi predmet, niti detalja o
+izgledu tog sredstva, niti da li je tu bio i optu ž eni Ć ... S druge strane optu ž eni Ć.. se i u prethodnom postupku i
+na glavnom pretresu branio ć utanjem, a tek u zavr š noj rije č i je posebno dodao da on i Lj..nisu imali umi š ljaj
+da M.. liše ž ivota, i tada je potvrdio da je Lj.. imao š ilo, koje je bilo zamotano i navodno virilo svega 1cm iz
+njegove ruke. Ovi navodi optu ž enog Ć.. sud nije mogao prihvatiti, jer je to o č igledno smi š ljeno kako bi ubla ž io
+svoju krivicu. Sud nije mogao prihvatiti stav njegove odbrane da se radilo o nekom drugom krivi č nom djelu
+(lake tjelesne povrede iz č l.152 st.2 u vezi st.1 KZ), jer se, nakon neposrednog uvida u improvizovano š ilo koje
+je optu ž eni Lj..koristio kriti č ne prilike, sud mogao uvjeriti da se radilo o napravljenom orudju od veoma č vrste
+žice (u slu ž benoj zabilje š ci sa č injenoj od strane Ziks-a- KPD Podgorica je proizilazilo da ista poti č e od
+džogera, koji su osudjena lica koristila za č i šć enje sobe), koja je na jednom kraju bila savijena i oblijepljena
+flasterom (napravljena kao dr š ka), dok je i drugi dio ž ice bio savijen, a koje je bilo podobno da se o š te ć eni li š i
+života, jer je moglo da se istim prodre u trbu š nu duplju. I na fotoelaboratu sa mjesta pronalaska, vidi se da je
+žica savijena, medjutim, nije se moglo pouzdano utvrditi kolika je bila du ž ina te ž ice odnosno da li je ona
+virila samo jedan cm ili vi š e, u vrijeme kori šć enja improvizovanog š ila od strane Lj.., kao i da li je eventualno
+nakon kori šć enja naknadno savijena i ba č ena u kantu, gdje je pronadjena, ali je nesporno da je do š lo do
+uboda o š te ć enog u trbuh, kao vitalni dio tijela.
+ 
+Iz provedenih dokaza sud se uvjerio da su optu ž eni Lj.. I Ć.. imali prethodni dogovor kada ć e, gdje i kako
+napasti o š te ć enog M.., zbog č ega su ga i sa č ekali kada je prolazio hodnikom, sa ve ć  pripremljenim sredstvima
+za napad i to je optu ž eni Lj.. imao improvizovano š ilo, sredstvo koje je bilo podobno da o š te ć enog li š i ž ivota,
+dok je optu ž eni Ć... u čarapu stavio neutvrdjeno sredstvo podobno da tijelo te š ko povrijedi ili zdravlje te š ko
+naru š i. Sud nije prihvatio stav optu ž be da je optu ž eni Ć.. u čarapu stavio staklenu bo č icu parfema-stika, jer na
+to provedeni dokazi nisu sa sigurno šć u ukazivali, obzirom da ta č arapa sa stikom nije pronadjena, nakon
+kritič nog dogadjaja, a o š te ć eni M..je sudu objasnio da je on naknadno č uo da se radilo o staklenom stiku, š to
+znač i da ga nije vidio, mada je naveo da je č uo da se to š to je bilo u č arapi slomilo. Da se nije moglo raditi o
+staklenom stiku, sud nije mogao biti uvjeren i iz razloga š to osudjena lica u svojim li č nim stvarima ne smiju da
+posjeduju predmet, a pogotovo stakleni, koji bi mogao da poslu ž i da se istim nanesu povrede sebi ili drugom,
+zbog č ega je iz č injeni č nog opisa izostavljeno da je optu ž eni Ć.. napao o š te ć enog M.. sa staklenim stikom
+kojeg je uvukao u č arapu, ali se zato radilo o nekom drugom (neutvrdjenom) sredstvu koje je bilo podobno da
+tijelo te š ko povrijedi ili zdravlje te š ko naru š i. Dakle, sud je uvjeren da je optu ž eni Ć.. u čarapu stavio neki
+drugi predmet ve ć e te ž ine, obzirom da se na snimku kamere broj 5 vidi da se, prilikom zamahivanja radi
+udaranja, č arapa iste ž e i to prili č no, tako da je nesporno da se radilo o nekom sredstvu koje je bilo podobno
+da tijelo te š ko povrijedi ili zdravlje te š ko naru š i. Za sud je nesumnjivo utvrdjeno da je kod optu ž enih
+postojala svijest i volja da zajedni č ki izvr š e ovo krivi č no djelo odnosno da li š e ž ivota o š te ć enog M.., pogotovo
+cijene ć i i navode svjedoka V.. koji je tvrdio da je o š te ć eni M.. psihi č ki i fizi č ki maltretirao optu ž ene Lj.. i Ć..,
+naro č ito Ć.., pa se u tome ogleda i motiv optu ž enih, koji su imali prilikom napada na o š te ć enog. Č injenica je
+da je optu ž eni Ć.. preduzimao radnje koje su omogu ć avale i doprinosile izvr š enju krivi č nog djela od strane
+optu ž enog Lj.., pogotovo š to je on znao da Lj.. u rukama ima improvizovani o š tri predmet, koji je koristio u
+napadu na o š te ć enog, š to ukazuje da je optu ž eni Ć.. htio ovo djelo kao zajedni č ko, pa prema tome i kao
+svoje, tako da njegove preduzete radnje č ine prirodnu i logi č nu cjelinu sa radnjama koje je preduzeo optu ž eni
+Lj.., a sve u namjeri li š enja ž ivota o š te ć enog.
+ 
+Imajući u vidu naprijed navedeno sud je utvrdio da su se u radnjama optu ž enih ostvarila, kako objektivna,
+tako i subjektivna obilje ž ja krivi č nog djela ubistvo u poku š aju iz č l. 143 u vezi č l. 20 i č l.23 Krivi č nog zakonika.
+Cijene ć i psihi č ki odnos u č inilaca prema izvr š enom krivi č nom djelu sud je utvrdio da su isti postupali sa
+direktnim umi š ljajem, jer su bili svjesni I htjeli da optu ž eni Lj.. ubadanjem o š trim š ilom u predjelu vitalnog
+dijela tijela (u trbuh pored pupka), o š te ć enog li š e ž ivota. Iz okolnosti konkretnog slu č aja nesumnjivo
+proizilazi da se izostanak te posledice ne mo ž e pripisati volji i htjenju optu ž enih, ve ć  sticaju drugih okolnosti,
+prije svega blagovremenoj reakciji slu ž benika Ziks-a, koji su ih sprije č ili u daljem napadu i dovr š enju
+krivi č nog djela, kao i reakcijom o š te ć enog, koji je tvrdio da se prilikom uboda u stomak od strane Lj..
+okliznuo, a da je udarce Ć.. eskivirao, š to ukazuje na to da su optu ž eni bili svjesni svih elemenata bi ć a
+predmetnog krivi č nog djela i htjeli su njegovo izvr š enje.
+Pri ocjeni stanja svijesti optu ž enog Lj.., u vrijeme izvr š enja krivi č nog djela, sud je imao u vidu nalaz i mi š ljenje
+Komisije vje š taka o izvr š enom sudsko psihijatrijskom vje š ta č enju optu ž enog, koji su utvrdili da je sposobnost
+shvatanja zna č aja djela i upravljanja svojim postupcima, kod optu ž enog Lj.., bili bitno smanjeni. Takodje su
+vješ taci bili mi š ljenja da postoji obziljna dru š tvena opasnost od ponavljanja krivi č nog djela ukoliko se
+okrivljeni ne bi lije č io, navode ć i da je optu ž eni i ranije lije č en u psihijatrijskoj bolnici u Dobroti, da je nakon
+liječ enja do š lo do stabilizacije psihi č kih problema koje optu ž eni ima, navode ć i da kod optu ž enog Lj..
+zahtijeva stalna kontrola i lije č enje od strane psihijatra. Zbog navedenog smatrali su da ima indikacija za
+primjenu mjere bezbjednosti obaveznog psihijatrijskog lije č enja u psihijatrijskoj ustanovi ili penalnoj
+ustanovi kod nadle ž nog psihijatra. Imaju ć i to u vidu sud je mi š ljenje vje š taka prihvatio i odlu č io da
+optu ž enom Lj.. R.., pored izre č ene kazne zatvora, shodno č l.67 u vezi č l.69 KZ-a izrekne mjeru bezbjednosti
+obaveznog psihijatrijskog lije č enja i č uvanja u zdrastvenoj ustanovi, koja ć e se izvr š avati u Specijalnoj bolnici
+za psihijatriju Dobrota-Kotor, koju ć e sud obustaviti kada utvrdi da je prestala potreba za lije č enjem i
+čuvanjem u č inioca u zdrastvenoj ustanovi, i vrijeme provedeno u zdrastvenoj ustanovi ura č unava se u
+vrijeme trajanja izre č ene kazne.
+ 
+U odnosu na optu ž enog Ć.. vješ taci su utvrdili da, je sposobnost shvatanja zna č aja djela, kao i mogu ć nost
+upravljanja svojim postupcima u vrijeme izvr š enja kriv č nog djela bili smanjeni, ali ne bitno, navode ć i da kod
+njega postoji ozbiljna dru š tvena opasnost od ponavljanja krivi č nog djela ukoliko se ne bi lije č io zbog
+emocinalno nestabilnog poreme ć aja li č nosti sa povremenim agresivnim pona š anjem te upotrebom
+psihoaktivnih supstanci, smatraju ć i da ima indikacija za primjenu mjere bezbjednosti psihijatrijskog lije č enja
+u penalnoj ustanovi kod nadle ž nog psihijatra ili drugoj zdrastvenoj ustanovi. Medjutim sud se u odnosu na
+ovog optu ž enog nije odlu č io na izricanje mjere bezbjednosti, iz razloga š to je iz nalaza proizilazilo da
+optu ž eni Ć.. ranije nije bio lije č en u nekoj zdrastvenoj ustanovi, ve ć  posjeduje samo medicinsku
+dokumentaciju odnosno zdrastveni karton u KPD-Spu ž , te je bio dva puta na ljekarskom pregledu kod
+psihijatra dok je izdr ž avao ranije kazne zatvora, pa je sud bio mi š ljenja da ć e i za vrijeme trajanja izdr ž avanja
+izreč ene kazne, po pravosna ž nosti, optu ž eni imati mogu ć nost da se sam obrati nadle ž nom psihijatru u Ziks-
+u, radi eventualne terapije zbog zdrastvenih problema.
+ 
+Prilikom izbora vrste i visine krivi č ne sankcije, sud je cijenio sve okolnosti iz č l. 42. Krivi č nog zakonika koje su
+od uticaja da kazna bude manja ili ve ć a, pa je od olak š avaju ć ih okolnosti na strani optu ž enog Lj.. cijenio
+njegove li č ne i porodi č ne prilike, da je otac dvoje mal. djece, lo š eg imovnog stanja, nezaposlen, č injenicu da
+se oš te ć eni nije pridru ž io krivi č nom gonjenju niti postavio imovinskopravni zahtjev, da je djelo ostalo u
+poku š aju, a da se za poku š aj krivi č nog djela shodno č l. 20 st.3 KZ-a u č inilac mo ž e bla ž e kazniti, te naro č ito da
+su sposobnosti shvatanja zna č aja djela i sposobnost upravljanja postupcima kod optu ž enog u vrijeme
+izvš enja krivi č nog djela bile bitno smanjene, usled č ega zakon propisuje mogu ć nost bla ž eg ka ž njavanja,
+shodno č l.14 st.2 KZ-a, dok je na strani ote ž avaju ć ih okolnosti cijenio njegovu raniju vi š estruku osu đ ivanost,
+jednom i zbog krivi č nog djela protiv ž ivota i tijela ( te š ke tjelesne povrede), a š to je sud utvrdio iz izvoda iz
+kaznene evidencije na ime optu ž enog. Takodje su na strani optu ž enog Ć .. kao olak š avaju ć e okolnosti
+cijenjene da je lo š eg materijalnog stanja, nezaposlen, razveden, otac jednog mal. djeteta, takodje č injenicu
+da se o š te ć eni nije pridru ž io krivi č nom gonjenju niti postavio imovinskopravni zahtjev, da je u vrijeme
+izvrš enja djela bio smanjeno ura č unljiv, ali ne bitno, i da je djelo ostalo u poku š aju, a da se za poku š aj
+krivi č nog djela shodno č l. 20 st.3 KZ-a u č inilac mo ž e bla ž e kazniti, dok je na strani ote ž avaju ć ih okolnosti
+cijenio njegovu raniju vi š estruku osu đ ivanost, a š to je sud utvrdio iz izvoda iz kaznene evidencije na ime
+optu ž enog. Cijene ć i utvrdjene olak š avaju ć e okolnosti na strani optu ž enih kao naro č ito olak š avaju ć e, sud
+nalazi da ć e se u konkretnom slu č aju i sa ubla ž enom kaznom posti ć i svrha ka ž njavanja, pa je primjenom
+odredaba iz č l.45. i 46. Krivi č nog zakonika, optu ž ene osudio na kaznu zatvora u trajanju od po 3 (tri) godine,
+sa uvjerenjem da je odmjerena kazna zatvora neophodna i dovoljna za ostvarenje svrhe ka ž njavanja, kako sa
+gledi š ta generalne, tako i sa gledi š ta specijalne prevencije, te da ć e uticati na optu ž ene da ubudu ć e ne vr š i
+krivi č na djela, č ime ć e u potpunosti biti ostvarena svrha kažnjavanja iz čl.32.Krivičnog zakonika, a u okviru
+opšte svrhe izricanja krivičnih sankcija iz čl.4.st.2. Krivičnog zakonika.
+ 
+Na osnovu č l.75. Krivi č nog zakonika sud je prema optu ž enom Lj.. R.. izrekao mjeru bezbjednosti oduzimanja
+predmeta i to improvizovanog metalnog šila kao predmeta izvršenja krivičnog djela, sa ciljem da se otklone
+stanja i uslovi koji mogu biti od uticaja da u č inilac ubudu ć e opet vr š i krivi č na djela.
+ 
+Sud je shodno čl. 226 i 229 ZKP-a obavezao optužene da solidarno na ime troškova krivičnog postupka plate
+novćani iznos od 1.204,50 eura, a koji troškovi se odnose na troš kove anga ž ovanih vješ taka i vještačenja, dok
+je optuženi Ć.. P..dužan da na ime troškova branioca po službenoj dužnosti Tripković Pavla uplati i novčani
+iznos od 317, 50 eura, a sve u roku do 15 dana po pravosnažnosti presude, pod prijetnjom prinudne naplate,
+a u korist Budžeta Crne Gore, dok će o ostalim troškovima odlučiti posebnim rješenjem.
+ 
+Na osnovu svega naprijed navedenog, a u smislu citiranih zakonskih odredbi, odlu č eno je kao u izreci
+presude.
+ 
+ 
+ 
+ 
+VIŠI SUD U PODGORICI
+Dana 11.12.2014.godine
+ 
+ 
+ZAPISNI Č AR, PREDSJEDNIK VIJE Ć A -SUDIJA,
+Bojana Rakovi ć  Vesna Pean
+ 
+ 
+ 
+ 
+DN-a:
+-VDT Podgorica
+-optu ž enima
+-braniocima
+-a/a
+ 
+ 
+Postupljeno dana _________2015 godine</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

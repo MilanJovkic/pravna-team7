@@ -42,6 +42,14 @@ export interface VerdictDetail extends VerdictMetadata {
   full_text?: string;
 }
 
+export interface VerdictListResponse {
+  total: number;
+  page: number;
+  page_size: number;
+  total_pages: number;
+  verdicts: VerdictMetadata[];
+}
+
 export interface VerdictOverrideUpdate {
   summary?: string | null;
   legal_issues?: string[] | null;

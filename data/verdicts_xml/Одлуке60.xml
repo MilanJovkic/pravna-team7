@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке60">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке60/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке60"/>
+                    <FRBRdate date="2021-08-23" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке60/sr@2021-08-23/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке60/sr@2021-08-23"/>
+                    <FRBRdate date="2021-08-23"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке60/sr@2021-08-23/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке60/sr@2021-08-23/!main.akn"/>
+                    <FRBRdate date="2026-04-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U KOTORU"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Momirka Tešić"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Momirki Teš"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="A. V."/>
+                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="D.P."/>
+                <TLCPerson eId="defendant_3" href="/akn/me/ontology/person/defendant" showAs="R.L."/>
+                <TLCPerson eId="defendant_4" href="/akn/me/ontology/person/defendant" showAs="D.N."/>
+                <TLCPerson eId="defendant_5" href="/akn/me/ontology/person/defendant" showAs="I. D."/>
+                <TLCPerson eId="defendant_6" href="/akn/me/ontology/person/defendant" showAs="R. L."/>
+                <TLCPerson eId="defendant_7" href="/akn/me/ontology/person/defendant" showAs="Crne Gore"/>
+                <TLCPerson eId="defendant_8" href="/akn/me/ontology/person/defendant" showAs="I.D."/>
+                <TLCPerson eId="defendant_9" href="/akn/me/ontology/person/defendant" showAs="Đ.K."/>
+                <TLCPerson eId="defendant_10" href="/akn/me/ontology/person/defendant" showAs="M.S."/>
+                <TLCPerson eId="defendant_11" href="/akn/me/ontology/person/defendant" showAs="A.V."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>Одлуке60</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U KOTORU</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2021-08-23">2021-08-23</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Momirka Tešić</judge>
+                    <judge>Momirki Teš</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Sud je donio presudu protiv okrivljenih zbog učešća u tuči, uzimajući u obzir njihove ranije biografije i prisutnost advokata. Optuženi su ispitani, ali nisu bili prisutni na ročištu.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>učestvovanje u tuči</p>
+                    <p>uticaj ranijeg ponašanja</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/2024/!main#art_368">Član 368</ref>
+                    <ref href="/akn/me/act/2024/!main#art_3">Član 3</ref>
+                    <ref href="/akn/me/act/2024/!main#art_457">Član 457</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je uzeo u obzir osobine okrivljenih i njihove biografije prilikom donošenja odluke.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="usvojeno">
+                    <p>Okrivljeni se oglašavaju krivim.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>A. V.</person>
+                    <person>D.P.</person>
+                    <person>R.L.</person>
+                    <person>D.N.</person>
+                    <person>I. D.</person>
+                    <person>R. L.</person>
+                    <person>Crne Gore</person>
+                    <person>I.D.</person>
+                    <person>Đ.K.</person>
+                    <person>M.S.</person>
+                    <person>A.V.</person>
+                </block>
+                <block name="witnesses">
+                    <person>ošte</person>
+                    <person>K.B.</person>
+                    <person>D.P.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">kamen</fact>
+                <fact key="amount">8.2021 g</fact>
+                <fact key="amount">02.2022 g</fact>
+                <fact key="amount">30 G</fact>
+                <fact key="amount">13 G</fact>
+                <fact key="amount">08.2021 g</fact>
+                <fact key="amount">07.2021 g</fact>
+                <fact key="location">Kotoru</fact>
+                <fact key="location">Holadiji</fact>
+                <fact key="location">Hitnoj</fact>
+                <fact key="location">Holandiji</fact>
+                <fact key="location">Podgorica</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>U IME CRNE GORE
+Posl. br. K. 259/21/21
+ 
+OSNOVNI SUD U KOTORU, kao nadle ž ni prvostepeni krivi č ni sud, po sudiji Momirki Te š i ć , uz u č e šć e
+zapisni č ara Jelene Markovi ć , u krivi č nom predmetu protiv okrivljenih M.S., D.N., I.D., Đ .K. i R.L. zbog krivi č nog
+djela u č estvovanje u tu č i iz č l. 153 Krivi č nog zakonika Crne Gore, koji se vodi po optu ž nom predlogu ODT K.
+Kt. broj 503/21 od 23.8.2021 g., nakon odr ž anog glavnog i javnog pretresa dana 7.02.2022 g., u prisustvu
+savjetnika iz ODT K. K.B. i branioca okrivljenog I. D., adv. D.P., a u odsustvu okrivljenih M.S., D. N., I.D., Đ . K. i
+R.L., koji su prethodno ispitani, i kojima se poziv nije mogao uru č iti na adresama iz spisa predmeta, č ije
+prisustvo nije nu ž no,
+shodno odredbi č l.457. ZKP-a, donio je i javno objavio sljede ć u:
+ 
+P R E S U D U
+ 
+Okrivljeni:
+1. M.S., od oca S.i majke J., ro đ ene Mi., ro đ en 11.10.2001 godine u H., sa prebivali š tem u H.i, R., S.4,
+državljanin H. i C. G., student, neo ž enjen, bez djece, dobrog imovnog stanja, ranije neosu đ ivan, protiv kojeg
+se ne vodi postupak za neko drugo krivi č no djelo,
+ 
+2. D.N., od majke H., ro đ ene H., ro đ en 19.07.2001 godine u H.sa prebivali š tem u H., R., L. eiu 35, dr ž avljanin
+M., po zanimanju ba š tovan, neo ž enjen, bez djece, sa zavr š enom SSS, srednjeg imovnog stanja, protiv kojeg se
+ne vodi postupak za neko drugo krivi č no djelo,
+ 
+3. I.D., JMBG . od oca N. i majke V.ro đ ene S., ro đ en 13.10.2001 godine u Ć .i, sa prebivali š tem u Ć ., selo S. bb,
+državljanin R.S., student, neo ž enjen, bez djece, sa zavr š enom SSS, srednjeg imovnog stanja, ranije
+neosu đ ivan, protiv kojeg se ne vodi postupak za neko drugo krivi č no djelo,
+ Osnovni Sud u Kotoru
+K 259/2021
+07. Februar 2022
+4. Đ . K., JMBG., od oca D.i majke M., ro đ ene K., ro đ en 10.02.1999 godine u D., sa prebivali š tem u B., R., P. 30G,
+državljanin R. S., po zanimanju konobar, neo ž enjen, bez djece, sa zavr š enom SSS, srednjeg imovnog stanja,
+protiv kojeg se ne vodi postupak za neko drugo krivi č no djelo,
+ 
+5. RA.L., JMBG . od oca R. i majke I., ro đ ene T., ro đ en 11.02.1999 godine u M., sa prebivali š tem u B., R. 17.
+O.13G, dr ž avljanin R.S., student, neo ž enjen, bez djece, pismen, sa zavr š enom SSS, srednjeg imovnog stanja,
+ranije neosu đ ivan, protiv kojeg se ne vodi postupak za neko drugo krivi č no djelo,
+ 
+Krivi su
+ 
+Što su dana 31.07.2021. godine, oko 01:30 č asova, u B., u Ulici S.obala, u blizini lokala „La Bocca“, u č estvovali
+u tuč i u kojoj je o š te ć eni A. V. zadobio ta š ku tjelesnu povredu, na na č in š to su se nakon kra ć e verbalne
+rasprave potukli, i to sa jedne strane okrivljeni M.S., I.D. i D. N., a sa druge okrivljeni Đ . K., R. L. i o š te ć eni A.V.,
+usljed kojih me đ usobno zadatih udaraca je o š te ć eni A. V. zadobio te š ku tjelesnu povredu, i to potres mozga,
+kao i krvni podliv oko desnog oka, nagnje č enje u desnoj polovini č eonog predjela i nagnje č enje u desnom
+jagodi č nom predjelu, pri č emu su bili svjesni svoga djela i njegove zabranjenosti, a č ije izvr š enje su htjeli,
+ 
+- čime su u č inili krivi č no djelo u č estvovanje u tu č i iz č lana 153 Krivi č nog zakonika Crne Gore.
+ 
+Pa sud okrivljenima na osnovu naprijed navedenih krivi č no-pravnih odredbi, te odredbi č l. 3., 5., 8., 13., 15.,
+36., 42., 52., 53. i 54. Krivi č nog zakonika, te č l. 368. i 374. Zakonika o krivi č nom postupku izri č e
+ 
+USLOVNU OSUDU
+Kojom im utvr đ uje kazne zatvora u trajanju od po 3 ( tri ) mjeseca i istovremeno odre đ uje da se kazna ne ć e
+izvrš iti ukoliko okrivljeni za vrijeme od jedne godine od dana pravosna ž nosti presude ne u č ine novo krivi č no
+djelo.
+ 
+Duž ni su okrivljeni na ime sudskog pau š ala platiti iznos od po 50,00 eura, i na ime tro š kova krivi č nog
+postupka solidarno iznos od 60,50 eura, u roku od mjesec dana od dana pravosna ž nosti presude, na ž iro
+račun br. 832-16-52, u korist bud ž eta Crne Gore, a dokaz o uplati dostaviti ovom sudu s pozivom na broj K.
+259/21/21.
+ 
+Ošte ć eni V. A.se sa imovinsko pravnim zahtjevom upu ć uje na parnicu.
+ 
+O b r a z l o ž  e nj e
+ 
+ODT K.je aktom Kt. broj 503/21 od 23.8.2021 g. stavilo na teret okrivljenima M.S., D. N., I. D., Đ . K. i R. L.
+krivi č nog djela u č estvovanje u tu č i iz č l. 153 Krivi č nog zakonika Crne Gore.
+ 
+Okrivljeni M.S. je na zapisnik pred ODT K. dana 2.08.2021 godine, izjavio da priznaje da je u č estvovao u
+doga đ aju koji se desio u no ć i izme đ u 30./31.07.2021. godine, u B.i. Te ve č eri je bio zajedno sa bratom V.,
+drugom D. I. i N. u jednom lokalu gdje su se malo zabavljali, a nakon toga su krenuli š etali š tem u pravcu „Tre
+cane“. Zna da je V. ostao da se javi nekim djevojkama, a oni su produ ž ili š etali š tem u pravcu „Tre cane“. Htio je
+da se na đ e sa nekom curom. U jednom trenutku kada su bili u blizini „La bocca“, vidio je da su neki momci
+nešto dobacili i da su krenuli prema njima da se fizi č ki obra č unaju. Vidio je da je do š lo do tu č e na dvije
+strane. Njegov drug D.I.je u jednom trenutku bio na zemlji i vidio je da su dvojica momka na njemu. Naveo je
+da sigurno nije nikoga te š ko povrijedio, mogu ć e da je nekome zadao neki udaraca kako bi branio drugove.
+Sam je isto povrije đ en u ovom doga đ aju, jer je i njega neko udario. Njegov drug N. je tako đ e povrije đ en i zna
+da je bio u krvi sav. Ne bi prepoznao lica sa kojima je imao sukob, jer je bio mrak, a i oni su ih bili pro š li kada
+su ih oni sa le đ a napali. Bio je pod dejstvom alkohola, ali nije bio totalno pijan. Priznaje da je u č estvovao u
+ovoj tu č i, mada smatra da su on i njegovi drugovi napadnuti i da su se branili. Svakako mu je ž ao š to je do š lo
+do ovoga i smatra da je sve to nepotrebno i prihvata dio odgovornosti za sve to. Njegov brat V. nije bio
+prisutan kada je do š lo do tu č e.
+ 
+Okrivljeni D.N. je na zapisnik pred ODT K. dana 2.08.2021 godine, je naveo da priznaje da je u č estvovao u
+doga đ aju koji se dogodio u no ć i izme đ u 30./31.07.2021. godine, u B.. Te ve č eri je bio sa prijateljem M. S., kao i
+D.I., koji je S. prijatelj. I š li su u neku diskoteku u B.. Kada su iza š li iz diskoteke krenuli su š etali š tem i u jednom
+trenutku su ih napali neki nepoznati momci. Mo ž da je razlog bio š to je on tamnoput ili njegova specifi č na
+frizura, jer ima du ž u kosu, koju kupi u rep ili ne š to drugo, ne zna. Jedan od tih momaka ga je udario. Poku š ao
+je da istom uzvrati i rekao istom da se zaustavi, nakon č ega se vi š e ni č ega ne sje ć a, a zna da je krvario. S. mu
+je rekao da odma idu i da se udalje sa lica mjesta, jer se S. boji oca, pa da ne bi imao problem sa njim. On i
+S.su nakon ovoga oti š li na neku drugu lokaciju u C. G., ali ne zna ta č no gdje, jer ne poznaje Crnu Goru. Svo
+vrijeme od tada je sanirao povrede sam. Č ekali su da se malo „smire strasti“ i situacija i kako bi S. otac
+prihvatio ovu situaciju i kako S. ne bi imao ve ć ih problema sa njim. Radio je sve kako mu je rekao S., jer ne
+poznaje Crnu Goru. Jedino vezano za D. I. mo ž e da ka ž e da je istog u jednom trenutku, kada je nastala tu č a,
+vidio na zemlji i neko lice da sjedi na njemu. S. brat V. nije bio sa njima kad se ovo desilo, ta č nije istog nije
+vidio.
+ 
+Okrivljeni I. D. je na zapisnik pred ODT K. dana 1.08.2021 godine, izjavio da priznaje krivi č no djelo koje mu se
+stavlja na teret i da je ta č no da je u č estvovao u tu č i koja se desila u no ć i 30./31.07.2021. godine, u B.. Te ve č eri
+je bio sa drugovima M. V., M. S.i njihovim drugom N.. Naime, njemu je drug M. V. i sa njim se poznaje ve ć  par
+godina i dru ž i kada on do đ e u B., obzirom da ž ivi u Holadiji, a preko njega je upoznao njegovog brata S. i
+njihovog druga N.. Bili su u lokalu Ambijent do 01:00 č asa, nakon č ega su krenuli š etali š tem prema Tre Canne.
+Kada su do š li do lokala La Bocca, jedna grupa momaka koja se tu nalazila je po č ela da ih provocira, tj. po č eli
+su ne š to da im dobacuju i krenuli su prema njima da se fizi č ki obra č unavaju. Odmah je do š lo do sukoba i do
+uzajamnog razmjenjivanja udaraca. Po č eli su da se guraju i da se rvaju. Zna da ga je prvo napao jedan
+momak, a nakon toga je pri š ao i drugi, kada su ga oborili na zemlju i udarao su ga. Jedan od njih je sjedio na
+njemui i on je istog dr ž ao da ga ne bi udarao, a drugi ga je udarao, odnosno š utirao nogama. Taj š to je sjedio
+na njemu je u jednom trenutku uzeo kamen i rekao mu „Sad ć u da ti razbijem glavu sa njim“, kada je istog
+nogama gurno da ga ne bi udario. Kada je uspio da se izvu č e, vidio je da taj momak le ž i na zemlji. Nakon toga
+su drugovi od tog momka, koji je bio na zemlji, i jo š  neki ljudi, poku š avali da istom pomognu. Razmjenjivao je
+udarce sa licima sa kojima su do š li u sukob, tj. bilo je to vi š e neko guranje. Nije vidio da li su njegovi drugovi
+nekoga udarali i da li je neko udarao njih, jer je bio mrak i svi su se razi š li na razli č ite strane. Oti š ao je da tra ž i
+telefon koji je u toku tu č e izgubio. Nakon toga je brzo do š la policija i hitna. Sjeo je na jednom zidi ć u, jer je bio
+umoran i od alkohola i od udaraca. U jednom trenutku se pojavio V. i istom je rekao da mu potra ž i telefon, jer
+ga jeizgubio. Ne zna gdje su u tom trenutku bili S i N.. Zadobio je lake tjelesne povrede u tu č i, koje su mi
+konstatovane u Hitnoj u B.. Prepoznao je jednog od momaka koji su tog dana bili u tu ž ila š tvu da daju izjavu,
+da je u č estvovao u doga đ aju, a ne zna ta č no kako se zove. On jedini nije imao otok na glavi. Ž ao mu je š to je
+doš lo do ovoga, naro č ito š to je neko lice te ž e povrije đ eno.
+ 
+Okrivljeni Đ K.. je na zapisnik pred ODT K. dana 1.08.2021 g., izjavio da priznaje da je u č estvovao u doga đ aju
+koji se desio u no ć i izme đ u 30./31.07.2021. godine, u B., tj. priznaje krivi č no djelo koje mu se stavlja na teret.
+U tom doga đ aju je zadobio manje povrede, ali je mnogo vi š e povrije đ en njegov drug V.A.. Dana 30.07.2021
+godine, negdje oko 22:00 č asa, sa drugovima L.R. i V.A., a svi su iz B., iza š ao je u grad i po š li su u lokal Teatro,
+koji se nalazi u B.. Tu su popili po 2-3 piva, a nakon pono ć i su napustili lokal. I š li su š etali š tem pje š ke, sa
+namjerom da idu na smje š taj. Kako su se kretali, nai š li su na neke djevojke sa kojima su usputno
+porazgovarali. One su ih pitale odakle su i oni su im rekli da smo iz B.. U tom trenutku, a to se de š ava kod
+restorana La Bocca, pri š lo im je nekih, po njegovoj procjeni, 5-6 nepoznatih momaka koji su po č eli da
+uzvikuju „Jeste li vi iz Srbije“ i odmah su krenuli fizi č ki da se obra č unavaju sa njima, bez ikakvog povoda.
+Njega je jedan od tih momaka udario i zadao mu nekoliko udaraca u predjelu lica. Njegovog druga V. su bacili
+na pod i bukvalno ga svi udarali. Uzvra ć ao je udarce ovim momcima, jer se branio. Bila je nastala op š ta tu č a i
+oni su udarali njih, a i oni su se branili od istih i udarali ih. U jednom trenutku je vidio da je V. na zemlji i da je
+bukvalno bez svijesti, a ta lica su istog i dalje udarala. On i Luka su poku š avali da V. pomognu a isti je bio u
+nesvjesnom stanju. Jedan nepoznati momak je V.izvukao jezik da se ne bi ugu š io. Jedan od momaka koji su
+ih napali je momak za kojeg sam kasnije saznao da je I.D., a vidio je istog u tu ž ila š tvu da č eka da da izjavu.
+Zapamtio je da je jedno lice koje ih je napalo bilo tamne puti, o š i š an sa strane, sa pokupljenom du ž om
+kosom. Dok je jedan od momaka koji ih je napao bio viso č iji i mr š av, i misli da je imao specifi č nu frizuru,
+kasnije su im rekli da ova dva lica borave u Holandiji. Ž ao mi je š to je do š lo do ovoga, a on i njegovi drugovi
+ničim nijesu isprovocirali ove ljude, a najvi š e mu je ž ao š to je njegov drug povrije đ en.
+ 
+Okrivljeni R. L. je na zapisnik pred ODT K.dana 1.08.2021 godine, je izjavio da priznaje da je u č estvovao u
+doga đ aju koji se desio u no ć i izme đ u 30./31.07.2021. godine, u B.. U tom doga đ aju je zadobio manje povrede,
+ali je mnogo vi š e povrije đ en njegov drug V.A.. Dana 30.07.2021 godine, negdje oko 22:00 č asa, sa drugovima
+K. Đ . i V. A., a svi su iz B., iza š ao je u grad i po š li su u lokal Teatro, koji se nalazi u B.. Tu su popili po 2-3 piva, a
+nakon pono ć i su napustili lokal, i kada su se kretali š etali š tem, stali su pored neke klupe, gdje su ih pozvale
+neke nepoznate djevojke da im se pridru ž e. Tu su sa njima malo porazgovarali. Htio je sa njima da razmijeni
+kontakt i one su u jednom trenutku rekle „Pa vi ste iz B.mi volimo B.“, u kojem trenutku im je pri š lo vi š e
+nepoznatih lica koji su odmah nastupili agresivno i po č eli da govore „Nije vam ovo S., nije vam ovo B.“.
+Dvojica od tih momaka su krenuli prema njemu i po č eli da ga udaraju pesnicama. Zadali su mu vi š e udaraca
+u predjelu glave i tijela. Branio se koliko je mogao i uzvra ć ao im udarce. U jednom trenutku se okrenuo prema
+šetali š noj stazi i vidio da na obli ž oj poljani, koja se nalazi pored š etali š ne staze, le ž i nepomi č en njegov drug V.
+A.. Odmah je potr č ao prema njemu, a lica koja su njemu udarala su po š li za njim. Iako je Viktor bio na zemlji i
+bukvalno bez svijestil ova lica su nastavljala da ga udaraju nogama i rukama. On i Kristijan su poku š avali da
+ga za š tite koliko je to bilo mogu ć e. Jedan od tih momaka je u jednom trenutku rekao „Stanite, dosta je“, kada
+su svi stali sa tu č om, kada isti nogom V. zadaje udarac u predjelu glave. Tada je V. bukvalno krenuo da se gu š i.
+Pomislio je da je sa V. gotovo. Ova lica su se nakon toga razbje ž ala, a ubrzo je do š la policija i hitna pomo ć . Š to
+se tič e lica koja su ih udarala, mo ž e da ka ž e da je jedan od njih I. D. tj. kasnije je saznao da se tako zove i da je
+isti tako đ e iz S., a dva druga lica su bila neobi č nijeg izgleda, tamnijeg tena, pri č emu je jedno lice bilo sa
+specifi č nom frizurom, srednje gra đ e. Kasnije su saznali da su ta lica iz inostranstva. Jeste zadavao udarce
+ovim licima, ali da bi branio sebe i drugove, a nije ni č im prvi izazavo ovaj sukob. Ž ao mu je š to je do š lo do
+ovoga, prije svega š to je njegov drug te ž e povrije đ en. Osim ovih lica koje je naveo, bilo jo š  lica koja su
+učestvovala u ovom doga đ aju i koja su ih napala.
+U dokaznom postupku koji je proveden u cilju utvr đ enja č injeni č nog stanja i krivice okrivljenih, sud je proveo
+slede ć e dokaze: na saglasnost stranaka pro č itana je izjava svjedoka – o š te ć enog A.V. sa zapisnika pred ODT K.
+od 01.08.2021 godine, izvr š en je uvid u izvje š taj ljekara specijaliste Specijalne bolnice R., broj protokola
+3265/2021 od 31.07.2021 g., na ime V.A.o; fotodokumentaciju Uprave policije CB Budva broj 349/21 od
+31.07.2021 g.; uvjerenje Mupa PU J. od 23.09.2021 godine na ime i. D. i potvrdu fakulteta za pravne i poslovne
+studije u N. S. br.579/21 od 23.09.2021 godine i na saglasnost stranaka č ita se nalaz i mi š ljenje sudskog
+vješ taka medicinske struke dr N.R. od 11.08.2021 godine.
+ 
+Svjedok o š te ć eni V.A.je izjavio da je dana 30.07.2021 godine, bio sa drugovima iz B. L. R. i K. Đ . u klub Teatro, u
+B.i. Tu su se zadr ž ali do 01:00 č asa, kada su krenuli š etali š em prema lokalu La Bocca. Kod navedenog lokala,
+tačnije na zidi ć u pored istog su sjedjele neke djevojke sa kojima su stali da porazgovaraju. U toku razgovora,
+te djevojke su rekle “A, vi ste iz B., ba š  nam je drago”, kada je nai š la grupa momaka, po njegovj procjeni, bilo
+ih je 5-6, koji su odmah krenuli ka njima agresivno, govore ć i “Nije vam ovo B., ovo je Crne Gore”. Njemu je
+odmah pri š ao jedan momak deblje konstitucije, kojeg je prepoznao da u tu ž ila š tvu i da č eka da da izjavu, a
+napala su ga i druga lica, koja ne bi mogao da prepozna. Poku š ao je da se odbrani i da se za š titi. Me đ utim, u
+jednom trenutku je izgubio svijest i ni č ega se vi š e ne sje ć a. Kasnije su mu drugovi rekli da su ga ti momci
+udarali dok je bio na zemlji, ali se toga ne sje ć a. Misli da nije od prvog udarca odmah pao, nego da su mu ta
+lica zadala vi š e udaraca, nakon č ega je izgubio svijest i pao. Ne mo ž e ta č no da ka ž e od kog udarca i od kog
+lica je zadobio te š ku povredu, ali zna da ga je vi š e njih napadalo i udaralo rukama, a po kazivanju njegovih
+drugova i nogama u predjelu glave i tijela. Pridru ž io se krivi č nom gonjenju samo protiv lica koja su napala
+njega i njegove drugove i prema istima postavlja imovinskopravni zahtjev.
+Uvidom u izvje š taj ljekara specijaliste Specijalne bolnice R., broj protokola 3265/2021 od 31.07.2021 godine,
+na ime V.A., utvr đ eno je da se isti tog dana javio na pregled u ovoj zdravstvenoj ustanovi, kojom prilikom su
+mu konstatovane povrede i odre đ ena terapija.
+ 
+Uvidom u fotodokumentaciju Uprave policije CB B. broj 349/21 od 31.07.2021 godine, prikazan je V. A. i
+povrede istog.
+ 
+Uvidom u uvjerenje Mupa PU J. od 23.09.2021 godine na ime i. D., utvr đ eno je da isti nije ranije osu đ ivan.
+ 
+Uvidom u potvrdu Fakulteta za pravne i poslovne studije u No.S. br.579/21 od 23.09.2021 godine, utvr đ eno je
+da je I. D. 2020/21 upisao prvu godinu osnovnih akademskih studija.
+ 
+Na osnovu nalaza i mi š ljenja vje š taka medicinske struke dr N.R.od 11.08.2021 godine, utvr đ eno je da je dana
+31.07.2021 godine od strane ljekara hitne medicinske pomo ć i u B. i Specijalne bolnice u R., pregledan A.V.,
+kod kojeg su dijagnostikovane slede ć e tjelesne povrede: a) krvni podliv oko desnog oka, b) nagnje č enje u
+desnoj polovini č eonog predjela, c) nagnje č enje u desnom jagodi č nom predjelu i d) potres mozga, koje
+povrede su posledica dejstva tupine mehani č ke sile i iste su nastale usled trokratnog ditektnog dejstva
+aktivno zamahnutog mehani č kog oru đ a - tri udarca, mogu ć e pesnicom, ili za to nekim drugim pogodnim
+oruđ em i u vrijeme nano š enja zadobijene povrede zbirno se kvalifikuju kao te š ka tjelesna povreda ( a
+pojedina č no: povreda pod "d" kao te š ka, a ostale povrede kao lake tjelesne povrede).
+ 
+Cijene ć i sve provedene dokaze pojedina č no i u uzajamnoj povezanosti shodno č lanu 370 stav 3 Zkp-a, a u
+odnosu na odbrane okrivljenih, sud je utvrdio č injeni č no stanje bli ž e navedeno u izreci presude. Krivi č no
+pravno ocjenjuju ć i ovako utvr đ eno č injeni č no stanje sud je na š ao da su okrivljeni izvr š ili krivi č no djelo
+učestvovanja u tu č i iz č l. 153. Krivi č nog zakonika Crne Gore.
+ 
+Ovakvo č injeni č no stanje sud je utvrdio na osnovu pisano provedenih dokaza i to medicinske dokumentacije
+na ime o š te ć enog A.V. i nalaza i mi š ljenja vje š taka medicinske struke dr N. R. od 11.8.2021 godine, a koje
+dokaze je sud prihvatio.
+ 
+U konkretnom slu č aju nesporno je da je svjedok o š te ć eni A.V.dana 31.07.2021 godine, oko 1:30 č asova, u B.u
+Ulici Slovenska obala, u blizini lokala „La Bocca“, u tu č i u kojoj su u č estvovali okrivljeni zadobio ta š ku
+tjelesnu povredu, i to potres mozga, kao i krvni podliv oko desnog oka, nagnje č enje u desnoj polovini č eonog
+predjela i nagnje č enje u desnom jagodi č nom predjelu, a što je utvr đ eno na osnovu medicinske
+dokumentacije na njegovo ime i nalaza i mi š ljenja vje š taka medicinske struke dr N.R. od 11.8.2021 godine,
+koje dokaze je sud prihvatio.
+ 
+Svjedok o š te ć eni A.V.je u svom iskazu u bitnom naveo da je kriti č ne prilike bio sa drugovima iz Beograda L. R.
+i K.Đ . u klub Teatro, u B., gdje su se zadr ž ali do 01:00 č asa, kada su krenuli š etali š em prema lokalu La Bocca.
+Kod navedenog lokala, ta č nije na zidi ć u pored istog su sjedjele neke djevojke sa kojima su stali da
+porazgovaraju i u toku razgovora, te djevojke su rekle “A, vi ste iz B., ba š  nam je drago”, kada je nai š la grupa
+momaka, po njegovj procjeni, bilo ih je 5-6, koji su odmah krenuli ka njima agresivno, govore ć i “Nije vam ovo
+B., ovo je Crne Gore”, pa mu je odmah pri š ao jedan momak deblje konstitucije, a napala su ga i druga lica, pa
+je poku š ao da se odbrani i da se za š titi, i u jednom trenutku je izgubio svijest i ni č ega se vi š e ne sje ć a. Kasnije
+su mu drugovi rekli da su ga ti momci udarali dok je bio na zemlji, ali se ni toga ne sje ć a. Nije se mogao ta č no
+izjasniti od kog udarca i od kog lica je zadobio te š ku povredu, ali zna da ga je vi š e njih napadalo i udaralo
+rukama, a po kazivanju njegovih drugova i nogama u predjelu glave i tijela. Navodi iskaza svjedoka o š te ć enog
+A. V., osim š to su potkrijepljeni i medicinskom dokumetacijom na njegovo ime, potkrijepljeni su i nalazom i
+mišljenjem vje š taka medicinske struke dr N. R., a na osnovu kojeg nalaza i mi š ljenja je utvr đ eno da je isti
+kritič ne prilike zadobio povrede bli ž e pobrojane u izreci presude, a koje povrede predstavljaju u vrijeme
+nano š enja, skupno procjenjeno, te š ku tjelesnu povredu, koje povrede su posledica dejstva tupine mehani č ke
+sile i iste su nastale usled trokratnog ditektnog dejstva aktivno zamahnutog mehani č kog oru đ a - tri udarca,
+mogu ć e pesnicom, ili za to nekim drugim pogodnim oru đ em.
+ 
+Sud je cijenio i navode odbrana okrivljenih, koji nijesu negirali da su u č estvovali u tu č i u kojoj je svjedok
+ošte ć eni A. V., zadobio te š ku tjelesni odbranu. Me đ utim sud je mi š ljenja da su okrivljeni M.S., D. N. i I.D., sa
+jedne strane, i okrivljeni Đ . K.i R. L. sa druge strane, kroz navode svoje odbrane ž eljeli da uvjere sud da oni
+nijesu zapo č eli sukob-tu č u, ve ć  ovi drugi, odnosno  krivicu prebaciju na druge, ali imaju ć u u vidu č injenicu da
+je u predmetnom doga đ aju o š te ć eni zadobio te š ku tjelesnu povredu te da su svi okrivljeni u č estovovali u
+istoj, to sud njihove odbrane u dijelu u kojem opisuju po č etak doga đ aja, nije prihvatio, jer je mi š ljenja da su
+iste usmjerena na izbjegavanje krivice.
+ 
+Iz svega navedenog, sud je utvrdio da je kriti č ne prilike do š lo do tu č e u kojoj je o š te ć eni A. V., zadobio te š ku
+tjelesnu povredu, pa obzirom da su svih pet okrivljenih aktivno u č estvovala u tu č i, a kojom prilikom je usled
+međ usobno zadatih udaraca o š te ć eni zadobio te š ku tjelesnu povredu, bli ž e navedenu u izreci presude, to je
+u konkertnom slu č aju njihova svijest obuhvatala i svijest o mogu ć nosti nastupanja te š ke tjelesne povrede
+kod o š te ć enog, pa su izvr š enje ovog djela i htjeli. Imaju ć i u vidu sve naprijed navedeno sud smatra da su se u
+radnjama okrivljenih bli ž e opisanim u izreci presude, ostvarili svi bitni elementi krivi č nog djela u č estvovanje
+u tuč i iz č lana 153 Krivi č nog zakonika Crne Gore, pa ih je sud oglasio krivim za isto.
+ 
+Prilikom odluke o vrsti i visini krivi č ne sankcije koju okrivljenima treba izre ć i sud je po š ao od toga da je za
+krivi č no djelo u č estvovanje u tu č i iz č lana 153 KZ CG propisana kazna zatvora u trajanju od tri mjeseca do tri
+godine. U smislu č lana 42 KZ CG, sud je na strani okrivljenih kao olak š avaju ć e okolnosti cijenio njihovu
+mladost, te da su okrivljeni M., I. i R. studenti, da okrivljeni Ili ć  nije ranije osu đ ivan, dok ote ž avaju ć ih
+okolnosti na strani okrivljenih nije bilo. Imaju ć i naprijed navedeno u vidu, sud je okrivljenima izrekao uslovne
+osude, kojim im je utvrdio kazne zatvore u trajanju od po 3 (tri) mjeseca i istovremeno odredio da se iste ne ć e
+izvrš iti ukoliko okrivljeni za vrijeme od 1 (jedne) godine od dana pravosna ž nosti presude ne u č ine novo
+krivi č no djelo. Sud smatra da su se stekli uslovi za izricanje uslovnih osuda, te da ć e se istima dovoljno uticati
+na okrivljene da ubudu ć e ne č ine ovakva i sli č na krivi č na djela, tj. da ć e se ostavriti ciljevi specijalne
+prevencije.
+ 
+Na osnovu naprijed navedenih krivi č nopravnih odredbi, te odredbi č lana 3, 5, 8, 13, 15, 36, 42, 52, 53 i 54 Kz-a
+i čl. 368 i 374 Zkp-a, sud je odlu č io kao u izreci presude.
+ 
+Sud je obavezao okrivljene da na ime sudskog pau š ala uplate iznos od po 50,00 eura, i na ime tro š kova
+krivi č nog postupka solidarno iznos od 60,50 eura ( koji tro š kovi se odnose na vje š ta č enje po vje š taku
+medicinske struke ) u roku od mjesec dana od dana pravosna ž nosti presude, na ž iro ra č un br. 832-16-52, u
+korist bud ž eta Crne Gore, a dokaz o uplati dostaviti ovom sudu s pozivom na broj K. 259/21/21.
+ 
+Sud je o š te ć enog A. V. sa imovinsko pravnim zahtjevom uputio na parnicu, shodno odredbi č lana 236. stav 3.
+ZKP-a.
+ 
+Na naprijed navedenim razlozima, sud je zasnovao svoju odluku.
+ 
+OSNOVNI SUD U KOTORU
+Dana, 7.02.2022 godine
+Zapisni č ar, Sudija,
+Jelena Markovi ć  Momirka Te š i ć
+ 
+PRAVNA POUKA: Protiv ove presude ima se pravo ž albe u roku od 8 dana od dana prijema iste Vi š em sudu u
+Podgorici, a preko ovog suda.
+ 
+DNA: ODT, okrivljenima, braniocu adv.D.P., o š te ć enom nakon pravosna ž nosti.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

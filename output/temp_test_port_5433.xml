@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="TEST-PORT-5433">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/TEST-PORT-5433/!main"/>
+                    <FRBRuri value="/akn/me/judgment/TEST-PORT-5433"/>
+                    <FRBRdate date="2026-02-12" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/TEST-PORT-5433/sr@2026-02-12/!main"/>
+                    <FRBRuri value="/akn/me/judgment/TEST-PORT-5433/sr@2026-02-12"/>
+                    <FRBRdate date="2026-02-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/TEST-PORT-5433/sr@2026-02-12/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/TEST-PORT-5433/sr@2026-02-12/!main.akn"/>
+                    <FRBRdate date="2026-04-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Основни суд Подгорица"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Тест Судија"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Тест Оптужени"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/кривични-законик" showAs="Кривични законик"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>TEST-PORT-5433</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>Основни суд Подгорица</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2026-02-12">2026-02-12</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Тест Судија</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Тест резиме</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Тешка телесна повреда</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Кривични законик</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/кривични-законик#art_152">Члан 152</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Тест образложење</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усвојено">
+                    <p>Тест одлука</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>Тест Оптужени</person>
+                </block>
+                <block name="clerks">
+                    <person>Тест Записничар</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teska tjelesna povreda</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="weapon">noz</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="death_result">ne</fact>
+                <fact key="negligence">ne</fact>
+                <fact key="provocation">ne</fact>
+                <fact key="fight_participation">ne</fact>
+                <fact key="left_without_help">ne</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>Тест текст пресуде...</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

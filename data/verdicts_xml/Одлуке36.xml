@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке36">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке36/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке36"/>
+                    <FRBRdate date="2015-01-12" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке36/sr@2015-01-12/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке36/sr@2015-01-12"/>
+                    <FRBRdate date="2015-01-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке36/sr@2015-01-12/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке36/sr@2015-01-12/!main.akn"/>
+                    <FRBRdate date="2026-04-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U NIK"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Perović Ivan"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Ćuzović Plane"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="R* R*"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="K* M*a"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 01/15</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U NIK</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2015-01-12">2015-01-12</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Perović Ivan</judge>
+                    <judge>Ćuzović Plane</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni R* R* je proglašen krivim za nehatno lišenje života K* M*a tokom lova, zbog nepažnje prilikom rukovanja oružjem.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>nehatno lišenje života</p>
+                    <p>responsibility during hunting</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_148">Član 148</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_36">Član 36</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_75">Član 75</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Okrivljeni nije bio svestan potencijalnog rizika tokom lova, a njegovo delovanje se smatralo nehajno usled dugogodišnjeg iskustva u lovu.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усвојено">
+                    <p>Optuženi se oglašava krivim</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>R* R*</person>
+                </block>
+                <block name="victims">
+                    <person>K* M*a</person>
+                </block>
+                <block name="witnesses">
+                    <person>MAG</person>
+                    <person>VU</person>
+                    <person>LJE</person>
+                    <person>NIK</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="weapon">kamen</fact>
+                <fact key="weapon">lovni karabin</fact>
+                <fact key="location">Javljen</fact>
+                <fact key="location">Nik</fact>
+                <fact key="location">Goliju</fact>
+                <fact key="location">Nikšić</fact>
+                <fact key="injury_type">ustrelna rana</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K.br. 01/15
+U I M E C R N E G O R E
+ 
+OSNOVNI SUD U NIK Š I Ć U, sudija Perovi ć  Ivan, uz sudjelovanje Ć uzovi ć  Plane kao zapisni č ara, u krivi č nom
+predmetu okrivljenog R* R* zbog krivi č nog djela nehatno li š enje ž ivota iz č l.148 KZ, po optu ž nom predlogu
+ODT-a Nik š i ć  Kt.br.657/14 od 12.01.2015.g., nakon dovr š enog glavnog javnog pretresa dana 01.06.2015.g. u
+prisustvu zamjenika ODT-a Lukovac Sofije, punomo ć nika o š te ć ene porodice K* – K* D*a i okrivljenog R* R*,
+donio je i istoga dana javno objavio
+P R E S U D U
+ 
+Okrivljeni:
+R* R* od oca V* i majke Vi*e rođ .K*ć, ro đ en 01.*.g. u Nik š i ć u, nastanjen u mjestu ro đ enja – ul.B*a br.5,
+državljanin Crne Gore, auto limar, o ž enjen – otac dvoje djece, zavr š io osnovnu š kolu, srednjeg imovnog
+stanja, ranije neosu đ ivan
+ 
+Kriv je
+Što je:
+Dana 02.11.2014 godine u Nik š i ć u, na planini Golija , na uzvi š enju Đ ed , za vrijeme lova, nesvjestan da svojom
+radnjom mo ž e u č initi djelo , iako je prema okolnostima pod kojim je preduzeo radnju s obzirom da se radilo o
+lovnom danu kada se lovci samostalno i neorganizovano kre ć u kroz lovi š te i prema svojim li č nim svojstvima s
+obzirom da je lovac dugi niz godina bio du ž an i mogao biti svjestan te mogu ć nosti , li š io ž ivota K* M*a , na
+nač in š to je za vrijeme lova , iz lova č kog karabina marke ʼʼ CZʼʼ, kalibra 8x57mm, fabri č ki broj 88488 sa
+optič kim ni š anom marke ʼʼ Walterʼʼ 3-9 x40 ispalio jedan projektil u pravcu mjesta odakle mu se u č inilo da je
+čuo kretanje divlja č i, pri č emu je dio projektila u predjelu stomaka pogodio o š te ć enog K* M*a i nanio mu
+povrede u vidu ustrelne rane u predjelu jetre , debelog crijeva i trupa č etvrtog slabinskog pr š ljena od kojih
+povreda je na licu mjesta nastupila smrt imenovanog,
+čime je u č inio krivi č no djelo nehatno li š enje ž ivota iz č l.148 Krivi č nog zakonika.
+ Osnovni Sud u Nik š i ć u
+K 1/2015
+01. Jun 2015
+Sud okrivljenog R* R* primjenom č l.4 st.2, č l.32, č l.36 i č l.42 Krivi č nog zakonika i č l.374 Zakonika o krivi č nom
+postupku
+OSU Đ UJE
+ 
+Na kaznu zatvora u trajanju od 1 /jedne/ godine i 5 /pet/ mjeseci, koju kaznu je du ž an izdr ž ati po
+pravosna ž nosti presude.
+ 
+Sud shodno č l.75 Krivi č nog zakonika okrivljenom R* R* izrič e mjeru bezbjednosti oduzimanja predmeta –
+lova č ke pu š ke marke ʼʼ *, kalibra *mm, fabri č ki broj 88488 sa opti č kim ni š anom marke ʼʼ W*ʼʼ 3-9 x40, budu ć i
+da se radilo o predmetu koji je upotrijebljen za izvr š enje krivi č nog djela.
+ 
+Duž an je okrivljeni na ime tro š kova krivi č nog postupka uplatiti na ž iro ra č un ovoga suda broj 832-152-32
+iznos od 488,50 eura, u roku od 15 dana po pravosna ž nosti presude pod prijetnjom prinudnog izvr š enja.
+O b r a z l o ž  e nj e
+ 
+ODT iz Nik š i ć a optu ž nim predlogom Kt.br.657/14 stavio je na teret okrivljenom R* R* izvrš enje krivi č nog djela
+nehatno li š enje ž ivota iz č l.148 KZ, pa je zamjenik ODT-a Lukovac Sofija koja je zastupala optu ž bu na glavnom
+pretresu, ostala u zavr š noj rije č i pri optu ž nom aktu, uz predlaganje sudu da okrivljenog oglasi krivim i osudi
+po zakonu, uz izricanje mjere bezbjednosti oduzimanja predmeta.
+ 
+Okrivljeni R* R* naveo je u svojoj odbrani da se trideset godina bavi lovom i nikada nije mislio da ć e mu se
+ovako ne š to desiti. Š tavi š e, drugovima je govorio pazite se, pazite se. U zadnjih pet godina nije i š ao u lov ni
+pet puta a pauzirao je dvije godine a nije ni imao volje ni vremena za lov. Prije dva mjeseca od kriti č nog
+doga đ aja opet je po č eo da lovi i produ ž io je dozvolu. Kriti č noga dana krenuo je u lov oko 05,00 č asova ujutro
+(mož da je bilo 10 - 15 minuta do pet), a na lovnom mjestu su bili za sat i ne š to. Sam je i š ao a kasnije je nai š ao
+M* Vuk*ć B*i rekao mu da idu njegovim vozilom, pa su zatim M*m vozilom oti š li gore a i pridru ž ili su im se jo š
+neki V*i (trojica) sa “ladom”. Ovaj lov se odnosio na visoku divlja č  - oni samo love divlje svinje a ovi njegovi su
+imali kerove. U Goliji je ranije lovio ali ne na kriti č nom mjestu ve ć  na drugom mjestu (daljem) i to prije 10 – 15
+godina jer ne voli rastinje, dr č , ve ć  voli visoku š umu – gdje su borovi , jele i sli č no. Do sada je ubio 20 – tak
+divljih svinja. To je bio sun č an i lijep dan. On se odvojio od drugih lica nakon š to su par stotinjak metara i š li
+putem. Putem telefona su komunicirali jedan sa drugim pa je tako njega zvao M* a on mu je rekao da ne pri č a
+jer č uje da ne š to ide, ne š to je i š lo ispred njega - sigurno divlja svinja a tamo ina č e ima č udo ž irova, pa mu je
+M* rekao “dobro, dobro” a on mu je kazao da je lijevo. Ina č e, on li č no uvijek ide na same vrhove a ni na kraj
+pameti mu nije bilo da ć e ovaj momak tu do ć i a on tako đ e nije ni znao da je bilo ko osim njihove grupe do š ao.
+Dakle, bio je na jednom vrhu - na kriti č nom mjestu ima vi š e vrhova i kada je sjeo na stijenu č uo je pse kako
+laju. Krenuo je sa stijene da se spu š ti dolje a onda se vratio za par metara i č uo je da ne š to tr č i. Ne š to je
+proš lo, ne zna š ta, pa je on malo pritr č ao misle ć i da jo š  ne š to ima. Vidio je kako se granje pomjerilo a to je bila
+mala udolina, granje je bilo viso č ije i on je mislio da je neka zvijer. Kriti č nom prilikom je č uo tr č anje i nije
+vidio K*a - č uo je tr č anje kroz š umu, kroz li šć e, kako onaj ko tr č i ide i stane i vidio je da se granje pomjera pa je
+kazao “ svinja 100%” i onda je imao neki predosje ć aj ali ni š ta nije video. Tu je bila mala glavi č ica a K* je bio sa
+druge strane glavi č ice a kada ka ž e glavi č ica misli na kao mali brijeg – kamenjar i š umu. Njegov snajper optika
+više je za daljinu, nije za blizu. Njegova je gre š ka š to je ga đ ao snajperom jer da je ga đ ao bez njega, mo ž da bi
+vidio ali snajper vam primakne i u momentu to je granje i č ovjek ne mo ž e da vidi š ta je to. Kako je tako opalio
+- ni danas mu nije jasno. Nikada u ž ivotu nije vidio K* M*a, zapravo mo ž da ga je vidio negdje u lova č kom
+domu ali sumnja da je ikada sa njim popri č ao. Ova lica koja su bila sa K*em do š la su skroz okolo brda kuda on
+nikada vozilom nije pro š ao. Č lan je lova č ke organizacije dr. Zo*Ke*r a subotom je lov na š teto č ine i moraju se
+prijaviti grupe koje idu kao i to gdje idu a nedeljom takvog prijavljivanja nije bilo. Tako đ e je naveo da je
+kritič nom prilikom pratio tragove divlja č i kao š to je uvijek radio u lovu. Č uo je pse ispod da ne š to veliko jure i
+oni su se u jednom momentu bili zaustavili. U jednom momentu je č uo da se iza njega pomjera granje, vidio
+je vrhove granja. Razdaljina od njega do toga granja bila je desetak metara. On je bio zategao š teker na pu š ci
+čekaju ć i da se iz granja ne š to pojavi. Sunce je bilo okrenuto prema njemu a imao je na glavi dvije kape -
+pletenu kapu i š e š ir preko nje, zapravo š e š ir mu je bio u d ž epu, nije mu bio na glavi. Mislio je da to ne š to iza đ e
+iz granja ali ipak nije č ekao jer mu se vi š e puta dogodilo prilikom ranijih u č estvovanja u lovu da mu zbog toga
+čekanja zvijer pobjegne. Po njegovom mi š ljenju kao lovca sa iskustvom, i da je sa č ekao (pod pretpostavkom
+da je zaista zvijer bila iza toga granja) da zvijer iza đ e na č istinu i da je tek tada pucao mogao bi se odbraniti od
+nje. Pola sata prije ovoga č uo je kretanje divlje svinje na mo ž da desetak metara od njega a kasnije su
+prona đ eni svje ž i tragovi divlje svinje i sje ć a se da ga je V* M*pozvao pa mu je on kazao preko radio veze da ga
+ne zove jer se zvijer tu nalazi. Ni š an pu š ke koju je nosio je je bio vi š e za daljinu odnosno  za distancu od 150
+metara pa navi š e to jest imao je mali vidokrug pa kada bi objekat koji je posmatran kroz taj ni š an bio blizu,
+vidjela bi se samo tamna slika odnosno ono š to se posmatra u blizini sa toga ni š ana ne mo ž e se brzo
+primjetiti. On je konkretnom prilikom prije opaljenja kroz ni š an vidio samo neko crnilo. Ovaj doga đ aj se desio
+u nedelju a iako toga dana lovci nijesu u obavezi da se prijavljuju kada idu u lov, on nije konkretnom prilikom
+mogao razmi š ljati o tome a ina č e je pazio kao malo ko. Nakon ovog doga đ aja nije stupao u kontakt sa
+ošte ć enom porodicom osim š to je ocu pokojnika prije prethodnog su đ enja pri š ao na hodniku ali ovaj nije
+htio da komunicira sa njime.
+ 
+Okrivljeni je u zavr š noj rije č i ostao pri iznijetoj odbrani, isti č u ć i da se kaje zbog u č injenog.
+ 
+Sud je u dokaznom postupku saslu š ao predstavnika o š te ć ene porodice K* – K* D*a i svjedoke Z* N*a, Z* Ž*a,
+Pe* Mi*a, Vu* M*, R* A*, Vu*M*a, Lj* Ž* i Mag*Voji*a, saslu š ao sudskog vje š taka balisti č ara ing.Mi* M* i sudskog
+vješ taka medicinske struke dr Š* Mi*, na saglasan predlog stranaka pro č itao iskaz svjedoka Ni*ć Ra*a dat
+pred VDT-om Podgorica od 02.12.2014.g., pro č itao zapisnik o uvi đ aju ODT Nik š i ć  Ktr.br.280/14 od
+02.11.2014.g., slu ž benu zabilje š ku UP CB Nik š i ć  Ku.br. 461 od 02.11.2014.g., potvrdu UP CB Nik š i ć  o
+privremeno oduzetim predmetima od R* R* od 02.11.2014.g., izvr š io uvid u fotodokumentaciju UP CB Nik š i ć
+broj 828/2014 od 02.11.2014 i u skicu lica mjesta, izvr š io uvid u oru ž ne listove i lovne dozvole K* M*a i R* R*,
+na saglasan predlog stranaka pro č itao nalaz i mi š ljenje sudskog vje š taka specijaliste za sudsku medicinu
+dr.Š*ć Mi*a o izvr š enom obdukcionom pregledu i uzroku smrti pok. K* M*a br. 233/2014 i izvr š io uvid u
+fotodokumentaciju sa č injenu povodom obdukcije, pro č itao izvje š taj Forenzi č kog centra Danilovgrad – Grupe
+za balisti č ka ispitivanja br. 3245/14, izvje š taj Forenzi č kog centra Danilovgrad – Grupe za mehanoskopska
+ispitivanja br. 3247-1/14, izvje š taj Forenzi č kog centra Danilovgrad – Grupe za hemijska ispitivanja daljine
+pucanja i utvr đ ivanje GSR č estica br. 3246/14, izvje š taj Forenzi č kog centra Danilovgrad – Grupe za hemijska
+ispitivanja daljine pucanja i utvr đ ivanje GSR č estica br. 3246( 1)/14, izvje š taj Forenzi č kog centra Danilovgrad –
+Grupe za hemijska ispitivanja daljine pucanja i utvr đ ivanje GSR č estica br. 3249/14, izvje š taj Forenzi č kog
+centra Danilovgrad – Grupe za hemijska ispitivanja daljine pucanja i utvr đ ivanje GSR č estica br. 3248/14 i
+proč itao izvod iz kaznene evidencije za okrivljenog.
+ 
+Predstavnik o š te ć ene porodice K* – K* D* naveo je u svom iskazu da se pridru ž uje krivi č nom gonjenju protiv
+okrivljenog a naknadu š tete ć e zahtijevati u parni č nom postupku.
+ 
+Svjedok Z* NO* naveo je u svom iskazu da je kriti č noga dana oko 4-4,30 č asova krenuo u lov sa svojim
+bratom i sada pokojnim K* M*om, prema planini Golija. K*a su sa psima ostavili na mjestu gdje je ovaj rekao a
+lično se sa bratom uputio sasvim na drugu stranu planine sa svojim psima. Zajedni č ki dogovor je bio da sa tih
+mjesta puste pse i krenuo je prema vrhu kako bi napravili kao neki obru č  i satjerali divlja č  na jedno mjesto, da
+bi im bilo lak š e da ne š to ulove. Oko 08 – 8,15 č asova č uo je pucanj a na svojoj radio stanici č uo je kako njegov
+brat Ž*o doziva K*a budu ć i da se pucanj č uo upravo iz dijela gdje se otprilike K* nalazio. Njegov brat nije
+mogao da dobije K*a motorolom pa je tra ž io od njega da ga sam pozove, š to je on poku š ao zovu ć i istoga
+motorolom a brat je tako đ e poku š ao da zovne na mobilni telefon K*a da bi njemu zatim kazao kako mu se K*
+javio na telefon i rekao ne š to u smislu da je ranjen - tako ga je njegov brat razumio. Odmah je krenuo prema
+vozilu a brat mu je rekao da ide na mjesto gdje su ostavili K*a vozilom dok je sam valjda pje š ke krenuo da ga
+traž i. Vozilom je do š ao na mjesto gdje su K*a ostavili ali nikoga tamo nije zatekao pa se vratio do mjesta gdje
+je čuo pucanj a zatim je krenuo pje š ke put vrha planine i uz put je sreo lovca Lje š kovi ć a koji je rekao da je bio
+prethodno u grupi sa lovcem P*em te da su pozvani za pomo ć . Tako đ e je uz put sreo svoga brata pa su
+zajedno oti š li na lice mjesta gdje su zatekli Pe*a, nekog momka po nadimku Ž* i pokojnog K* M*a. Na tom
+mjestu nije vidio niti pu š ke niti pse a P* je kazao da je izgleda pucao neki R* R* te da je isti obavijestio i
+policiju i hitnu pomo ć . Tako đ e im je prenijeto da je od strane policije re č eno da se i oru ž je i R* sklone od tijela
+pokojnog K*a te da se tu sa č eka policija. Poznato mu je da K* M* nije od ranije poznavao R* R* a misli da nije
+poznavao ni ova druga lica. Li č no se bavi lovom odavno i zadnjih pet š est godina i š ao je u lov sa K*em
+zajedno. Subota je dan kada se moraju prijaviti i grupa i teren gdje ć e da se ide u lov a nedjelja je lovni dan i
+svako ide kako ho ć e i gdje ho ć e u lov pri č emu se ne mora nikome prethodno prijavljivati. Oni su znali da na
+planini ima i drugih lovaca osim njih ali nijesu znali gdje se koji lovac nalazi. K* je bio po njegovom mi š ljenju
+iskusan lovac koji je sa njim uvijek i š ao u lov na divlje svinje i ne zna kako se sve ovo moglo desiti a ina č e tu
+gdje se sve ovo desilo visoka je cerovina, nema ž bunja i prosto je to bio neki baksuz.
+ 
+Svjedok Z* Ž* naveo je u svom iskazu da je kriti č noga dana oko 04,30 č asova krenuo u lov sa bratom N*kom i
+K* M*om na planinu Golija – na planinu Đ ed. U podno ž je planine su do š li oko 06,00 č asova i tu su K*a ostavili
+sa kerovima na jednoj strani a on i brat su vozilom krenuli na drugu stranu planine sa svojim kerovima kako bi
+napravili obru č  za divlja č . On i brat su se razdvojili a putem motorole č uo se sa K*em koji ga je pozvao i rekao
+mu da se sreo sa jednim lovcem, a tako đ e ga je obavijestio o polo ž aju tih lovaca kao i o tome da se R* A*o
+nalazi u toj grupi. Pozvao je R* A* i rekao mu gdje se on i njegov brat nalaze pa su se dogovorili da jedni
+drugima javljaju ako kerovi na đ u š to od divlja č i. I dalje se kretao kroz š umu kada je č uo neko zvi ž dukanje a
+poš to su kerovi iz straha zalajali krenuo je za njima misle ć i da su se prepali od divlja č i. Na jedno 50 tak metara
+od njega vidio je K* M*a koji ga je dozivao da krene prema njemu ali mu je on rekao da ne ć e nego da ide kuda
+su se dogovorili i da zavede pse na drugu stranu, pa da se na kraju sastanu otprilike na mjestu gdje je on
+ostavio brata to jest u blizini vozila. Razi š li su se i nakon desetak minuta č uo je ne č ije pse za koje je pomislio
+da su od K*a, pa je krenuo da se vra ć a unazad kako bi pokrio taj dio terena i da divlja č  ne bi pro š la. Pozvao je
+brata koji mu je rekao da su to psi nekih drugih lovaca pa se vratio nazad i č uo jedan pucanj. Sa č ekao je par
+trenutaka, zatim pozvao motorolom K* M*a koji mu se nije javljao a zatim je pozvao svoga brata i rekao mu da
+zovne K*a ali ga ni ovaj nije mogao dobiti pa je rekao da ga zovne mobilnim telefonom. Pozvao je M*a na
+mobilni telefon a ovaj mu je rekao ne š to nerazgovjetno pa je on shvatio da je ovaj nekoga ranio. Odmah je
+krenuo u pravcu vrha brda misle ć i da se ovaj tamo nalazi ali mu je M* kazao u razgovoru da je gore u nekim
+kršima. Pozvao je svoga brata kome je rekao da vozilom krene na mjesto gdje su prethodno M*a ostavili jer je
+valjda M* nekoga ranio. Li č no je krenuo prema vrhu planine, lutao je i tra ž io M*a a u me đ uvremenu je zvao R*
+Ac* da ga pita gdje su oni i jesu li č uli š to jer je izgleda M* nekoga ranio a ovaj mu je odgovorio da i oni tra ž e te
+da ne znaju gdje se nalaze. Ponovo je pozvao motorolom K*a ali mu se javio R* R* koji mu je rekao – po ž uri,
+gdje ste, ranio sam ti druga i tek je tada shvatio da je M* ranjen pa je ponovo poku š avao da ih na đ e i pitao je
+gdje se nalaze ali ovaj nije znao da mu objasni. Ponovo je pozvao A* koji mu je rekao da oni i dalje tra ž e
+mjesto gdje se sve ovo desilo a on je č ak pitao Aca ko je ta avetinja koja ne zna da objasni gdje se nalaze a
+čovjek umire. Nakon sat vremena ili manje do š ao je na lice mjesta gdje je zatekao P* Milovana, lovca po
+nadimku Ž*o i tijelo K* M*a a dok je tra ž io to mjesto sreo se sa svojim bratom i jednim lovcem Lje š*m a dobio
+je poziv i od P*a koji mu je kazao da mu nema š to da tr č i jer mu je drug preminuo. Na licu mjesta je zatekao
+redenik i odlomljeno par č e kundaka pu š ke K*a kao i njegove kerove. Lovac je ve ć  15 godina a od 2008.g. č lan
+je lova č kog udru ž enja. M* je bio tako đ e iskusni lovac a mjesto doga đ aja je takvo da je tu visoka cerovina dok
+nema ž bunja, a ima kamenja ali niskog . Nije od ranije poznavao R* R* a zna da ga nije poznavao ni K* M* jer
+mu je M* bio kao brat. Lice mjesta je zapravo malo uzvi š enje na kome je kao mala zaravan i mala udolina. U
+razgovoru preko motorole M* mu je kazao da se sreo sa lovcem iz grupe A*a R*a i da je taj lovac nai š ao na
+trgove divlje svinje i da ć e i on i ć i u tom pravcu.
+ 
+Svjedok P* MI* naveo je u svom iskazu da je kriti č nog dana oko 04,30 č asova sa Lj*ć Ža* krenuo u lov prema
+mjestu Vi* do odnosno gore iznad pa su stigli oko 06,00 č asova, pustili kerove i krenuli u lov. Oko 08,00 č asova
+Lješ kovi ć u je zazvonio telefon i isti mu je rekao da ga zove Vu*ić M*o jer je Ma*a pozvao R* R* i rekao mu da je
+ranio nekog momka. U toku razgovora M* je rekao Lje* da pretpostavlja da se radi o nekom Z*u jer je
+prethodno Ma* sreo pokojnog K*a koji mu je kazao da je do š ao u lov sa bra ć om Z*. Ina č e, oni lovci se izme đ u
+sebe skoro svi znaju - ne dru ž e se ne š to ali se znaju. Prije ovog telefonskog poziva č uo je na planini neku viku
+koja mu je li č ila na neko dozivanje sa vrha planine Mali đ ed i to nijesu bile neke razgovijetne rije č i pa ih ne
+mož e ni opisati. Dao je Ž* svoju pu š ku da nosi u vozilo i da vozilom do đ e do puta gdje se najbli ž e mo ž e pri ć i
+mjestu gdje se ovo desilo a li č no je krenuo prema vrhu planine Mali đ ed gdje se prema Ma*u doga đ aj desio.
+Trčao je i pozvao Ma* koji mu je rekao da je on stigao na lice mjesta ali da je momak preminuo te da se ne radi
+o Z*u već  o nekom momku ri đ e kose pa je on odmah znao da je to K* M* kojeg je znao kao lovca iz vi đ enja -
+isti je uvijek i š ao u lov sa Z*ima. Za jedno 20 – 35 minuta on je do š ao na lice mjesta gdje je zatekao Vu* Ma*a,
+Vu*ević  Ž u*a, R* R* i tijelo K* M*a. Tu nije bilo pu š aka a zatekao je 4 – 5 kerova od č ega su dva tri pripadala
+Z*ima a ostatak valjda pokojniku. Dok se kretao prema tom mjestu pozvao je i policiju. Koliko je njemu
+poznato Vuk* Ma* i lovci u njegovom dru š tvu nijesu poznavali niti K*a niti bra ć u Z*e osim R* Al* koji je
+poznavao Z* Že*a. Njemu je re č ano da su pu š ke R*a i K*a ponijeli R* Ale*r i neki momak St* jer je R* R* bio u
+šoku pa ih je bilo strah da ć e ne š to sebi napraviti. On je R* R* zatekao kako sjedi sa glavom u š akama i kuka “
+šta napravih, š ta ć e mi ž ivot “. Li č no je č lan lova č kog udru ž enja dr. Zoran Kesler i sve ove lovce poznaje iz
+viđenja. Nedjelja je lovni dan i u planini uvijek ima puno lovaca koji nijesu du ž ni da bilo koga obavijeste da
+idu u lov tako da kada krene u lov, on ne zna koliko je drugih lovaca u planini i koje su njihove pozicije a
+nedjeljom je dozvoljen lov na svu divlja č  koja nije pod zabranom - na zeca, lisicu, vuka, divlju svinju. Li č no se
+nije prethodno č uo sa bra ć om Z* i nije znao da ć e toga dana oni i ć i u lov.
+ 
+Svjedok LJE* Ž* naveo je u svom iskazu da je kriti č noga dana bila nedelja pa su on i P* Milovan zajedno po š li
+u lov i to u planinu Goliju prema mjestu Vi š nji ć a do sa svojim kerovima. Prethodne no ć i č uo se i sa V*ić Ma*
+koji mu je kazao da ć e i on i ć i u lov pa su se dogovorili da se č uju sjutradan u toku lova. On i Mil* su stigli
+njegovim vozilom oko 06,00 č asova, pustili kerove i krenuli lagano u lov a mo ž da poslije sat do dva sjeli su da
+se odmore na jednu glavnicu i njemu je tada zazvonio telefon – zvao ga je Vuk* M*o i rekao mu da je izgleda
+Pižon ranio nekog momka iz Ž upe, a on je pomislio da je rije č  o nekom Z*u. M*n je odmah sko č io i rekao mu
+da uzme auto i krene do najbli ž eg mjesta gdje bi se mogao snijeti ranjeni mladi ć  dok je sam pje š ke krenuo
+uza stranu do mjesta gdje mu je M*o opisao da se to otprilike desilo. M* mu je zapravo kazao da krenu desno
+preko planine i da ć e sigurno č uti viku. Vozilom je krenuo do jednog makadamskog puta dokle je vozilo
+moglo da ide pa je iza š ao iz istog a tu je zatim vozilom do š ao i Z* N* koji je tako đ e č uo da se ne š to desilo pa
+su njih dvojica zajedno krenuli prema vrhu planine a sreli su i brata Z*a – č ini mu se da se zove Ž*o koji je
+skupa sa njima krenuo prema mjestu gdje se sve ovo desilo. U me đ uvremenu ga je pozvao P* i rekao mu da
+nemaju zbog č ega tr č ati jer je izgleda momak preminuo. Po dolasku na lice mjesta zatekli su pokojnog K*a, P*
+Mi*a i Ž* V*a a on nije vidio nikakvo oru ž je. Sjeli su u č ekali policiju koju je ve ć  neko prethodno obavijestio.
+Lično nije poznavao K* M*a dok je R* R* poznavao iz lova a ne zna jesu li se njih dvojica poznavali. Sa R* Al*
+nije se sretao toga jutra tokom lova niti je znao ko je u lovu i sa kim.
+ 
+Svjedok VU* MA* naveo je u svom iskazu da je kriti č noga dana po š ao u lov sa R* Aleks* i Sta*vić St*om na
+planinu Golija – mjesto Đ ed a dok su se kretali sreli su pored puta R* R* i M*ć Vo*a. Prije polaska u lov njega je
+R* R* pitao gdje ć e loviti a nakon š to mu je on pomenuo vrh Đ ed ovaj je odgovorio da on ne ć e tamo i ć i ali
+kako su na putu sreli R* i V*va oni su krenuli sa njima. Dan ranije li č no se bio dogovorio i sa drugim
+prijateljima da idu u lov tako da su kriti č noga dana bile tri grupe – u jednoj su bili on, Ale*i * u drugoj su bili
+Vu*ić * Dr*v i Mi* a u tre ć oj su bili P* i L* Ž*o, pri č emu su prve dvije grupe krenule sa istog mjesta a tre ć a je
+vozilom produ ž ila u namjeri da u lov krene sa druge strane planine. Odmah su se razdvojili – sa Ale*m je
+poš ao St*a koji i nije imao oru ž je a li č no je krenuo prema vrhu i nakon jedno sat vremena pje š a č enja sreo je
+K* M*a sa kojim je stajao i pri č ao 15 – 20 minuta o tome ko je iza š ao u lov i gdje se ko otprilike nalazi odnosno
+odakle su krenuli. Oni su se sreli prakti č no negdje blizu vrha a zatim su se razdvojili a K* je krenuo dolje sa
+lijeve strane – kontra od mjesta gdje ć e se sve ovo kasnije de š avati pa njemu prosto nije jasno kada se K*
+vratio i za koje vrijeme jer se poslije sve brzo desilo. Prije nego š to se sreo sa K*em, bio je u telefonskoj
+komunikaciji sa R* R*m kome je rekao da je vidio tragove divlje svinje a ovaj mu je odgovorio da je i sam vidio
+da je divlja svinja protr č ala. Nije pro š lo dugo od rastanka sa K*em mo ž da pola sata kada ga je pozvao R* R* i
+rekao mu da je ranio č ovjeka, da je pozvao hitnu pomo ć  i policiju i da se nada da ć e sti ć i helikopter da š to
+prije ovog momka vodi u bolnicu. Li č no nije č uo nikakav pucanj ali je č uo zapomaganje i viku R*a pa se
+prema tom glasu i kretao a u me đ uvremenu je drugim licima prenio da je izgleda R* nekoga ranio. 15 – 20
+minuta kasnije stigao je na mjesto doga đ aja gdje je zatekao K*a kako le ž i - isti nije bio vi š e u ž ivotu, dok je R*
+R* vikao, zapomagao, udarao se rukama o glavu i prosto nije htio da prihvati č injenicu da je ovaj momak
+preminuo. Par sekundi prije njega na lice mjesta su do š li R* Al*ar i Sta*ić St*ca a li č no je zatekao na dva tri
+metra od tijela K*a polomljeni karabin R* R* a tako đ e je tu bila i pu š ka K*a. Uzeo je pu š ke da ne bi R* R* sebi
+nešto napravio i dao ih Sta* S*i da ih odnese pored vozila dok policija je do đ e, pa su ubrzo do š li i drugi lovci a
+zatim i policija. Ina č e,njemu je K* dok su razgovarali kazao da je do š ao u lov sa bra ć om Z* i dok su stajali isti
+je sa svoje motorole pozvao jednog od bra ć e Z*a kome je kazao ko je sve do š ao sa njim u lov i odakle su
+krenuli. Li č no je u lov oti š ao sa psima pa kada su on i drugovi krenuli da love, pse su prethodno pu š tili a K* je
+kada ga je sreo imao na povocu dva psa, koje nije vidio kada je kasnije do š ao na lice mjesta. Koliko je njemu
+poznato R* R* nije poznavao K* M*a od ranije. On sam je č lan lova č kog udru ž enja dr.Zoran Kesler. Subotom
+su se uvijek organizovale grupe za lov, morale su da se najave i moralo je biti minimum deset lovaca u grupi
+sa grupovo đ om ali se to od ove godine ne radi. Nedjelja je uvijek bila slobodna da svako ide u lov kad i gdje
+hoć e bez obaveze prethodnog najavljivanja i bez obaveze da lovac mora imati na sebi ne š to fluoroscentno da
+bi bio prepoznatljiv. Č esto se desi kada ide sa dru š tvom u lov, da ne zna ima li tu jo š  drugih lovaca pa se č ak u
+toku lova sretnu i sa drugim lovcima. Koliko se mo ž e sjetiti K* je bio obu č en u maskirnu odje ć u tamno zelene
+boje a R* je imao na sebi crnu jaknu koja je sa unutra š njosti imala neku fluoroscentnu narand ž astu boju.
+ 
+Svjedok R* AL* naveo je u svom iskazu da je kriti č noga dana oko 05,00 č asova sa Vu*Ma*m i S*kovi ć  Ste*m
+krenuo u lov na planinu Đ ed – Goliju. Prethodne no ć i č uo se sa M*m telefonom i dogovorio oko lova a Ma*mu
+je pomenuo i R* R* koji ga je zvao i kazao da ne ć e sa njima i ć i u lov. U odlasku su susreli vozilo R* R* koji je bio
+sa Ma*ć * pri č emu su ih isti pitali ima li u vozilu mjesta za njih dvojicu pa su ih oni primili i svi su zajedno po š li
+do jednog mjesta u podno ž ju planine dokle se moglo i ć i kolima. On i St*a su ostali u podno ž ju da zavode pse
+a ostali su krenuli prema vrhu i to svako na svoju stranu. Oko 07,00 do 07,30 č asova njega je mobilnim
+telefonom pozvao Z* Željko i obavijestio ga da je i sam u lovu i da su na istom terenu. Oko 08 do 8,15 č asova
+telefonom ga je pozvao Vu* Ma*o i rekao mu da tr č i prema vrhu jer je R* izgleda nekog momka gore ranio, pa
+su on i St*a krenuli prema vrhu a kada su č uli povike kretali su se u tom pravcu i do š li su do mjesta gdje je
+zate č en R* R* koji je kukao, udarao se š akama u glavu a tu je bilo i tijelo nepomi č no tijelo povrije đ enog
+momka. Do š ao je i V*ić Ma* koji mu je kazao da je obavijestio policiju i hitnu pomo ć  ali da mu je od policije
+ukazano da oru ž je skloni i da se gore ni š ta ne dira i ne pomjera. St* je uzeo pu š ke pri č emu je R*va bila
+slomljena i krenuo je prema vozilu a on je sam krenuo za St* nakon desetak minuta kako bi do č ekao policiju i
+hitnu pomo ć , dok su gore ostali V*ić M* i R* R* a kako je naknadno č uo brzo su do š li i drugi lovci – bra ć a Z*i i
+ostali jer su u stvari svi bili u blizini i svi su do š li č im su č uli š ta se desilo.
+ 
+Svjedok NIK* RA*R naveo je u svom iskazu da je predsjednik Upravnog odbora lova č kog dru š tva dr Zoran
+Kesler u Nik š i ć u koje broji 530 č lanova. R* R* i K* M* su bili redovni č lanovi toga udru ž enja i bile su im izdate
+dozvole. Nedeljom i dr ž avnim praznicima lovni su dani, š to zna č i da lovci sami mogu da idu u lov gdje ho ć e
+bez prethodnog najavljivanja i obavje š tavanja a nedelja je lovni dan za svu divlja č  izuzev za onu koja je
+zakonom za š ti ć ena a jedino ako se izvode neke akcije – poput hajke na š teto č ine za to je potrebno imati
+odobrenje Ministarstva poljoprivrede kome se to prethodno najavljuje. Dakle, nedjeljom kada se ide u lov
+lovci sami biraju teren za lov, mogu da koriste kerove i sami se dogovaraju o mjestu gdje ć e loviti. U njihovoj
+lova č koj organizaciji postoji pravilnik o pona š anju u lovu ali u istom nema ni š ta š to obavezuje lovca da mora
+nositi kao znak raspoznavanja i uo č avanja fluoroscentni prsluk a kada se ide u lov nedeljom i dr ž avnim
+praznicima to su velike povr š ine i lovci izme đ u sebe ne moraju znati gdje se koji nalazi tako da lovci idu na
+suprotne strane odnosno udaljavaju se jedni od drugih kada se eventualno č uju.
+ 
+Svjedok VU*Ć MI* naveo je u svom iskazu da je kriti č noga dana u 05,50 č asova sa ocem i stricem krenuo u
+planinu Goliju kako bi potra ž ili kerove koje su prethodnoga dana izgubili. Istog jutra č uo se sa ro đ akom
+Vu*Mar* koji je u lov po š ao sa Sta* Ste*m i R* Alek*m pa ga je M*o obavijestio da ga je zvao R* R* / njega zovu
+Pižon / da ć e on i Magov č evi ć  Vojo i ć i sa njima u lov. Tokom puta je sreo R*a i Ma*a , pro š ao ih je svojim
+vozilom i zaustavio se u podno ž ju planine Đ ed. Otac i stric su ostali dolje kod vozila a on je krenuo malo u
+planinu da poku š a na ć i kerove. U 08,15 č asova zazvonio mu je telefon – zvao ga je Vu*ić Ma*o i rekao mu da je
+Pižon ranio nekog momka pa on poku š ava da ga dobije ali neuspje š no. Tra ž io je od M*a broj R*a i zvao istoga
+ali mu je telefon bio zauzet. M*o ga je ponovo pozvao i rekao mu da ide desnom stranom brda a da ć e on i ć i
+lijevom pa da poku š aju na ć i mjesto kriti č noga doga đ aja. Pu š ku je ostavio kod oca i krenuo uz desnu stranu
+brda prema vrhu tra ž e ć i gdje su R* i ranjeni momak a u novom telefonskom razgovoru M* mu je kazao da je
+našao kriti č no mjesto te da ć e vikati pa ć e ga on č uti i tako na ć i to mjesto. Č uo je Ma* glas prema kome se
+kretao pa ga je M* sreo i rekao mu da je momak preminuo. Tu je bilo tijelo pokojnog K* M*a a zatekao je i R*
+R* koji je kukao udarao se u glavu vi č u ć i “ š to me sna š lo“ a vidio je i dio od kundaka i redenik sa mecima. Po
+instrukciji policije M* je R* R* spustio do vozila a prethodno je pu š ke dao R* Al*u i S* St*ci da ih spuste do
+vozila. Poslije 15 – tak minuta stigao je P* M*n a pola sata kasnije Lje*ć Ža*o i dvojica Z*a. Lič no se lovom bavi
+11 -12 godina, R* R* poznaje od ranije a K* M*a nije poznavao. Toga dana on sa ocem i stricem nije i š ao u lov
+već je poku š avao da na đ e svoje kerove. Ina č e subotom je ranije bilo da se mora prijaviti grupa za lov dok je
+nedjelja slobodan dan – lovci idu sami prema svom naho đ enju u lov a ne moraju prethodno nikome da se
+javljaju niti da prijave lov. Subota je dan za lov na š teto č ine a nedjeljom se lovi sva divlja č.
+ 
+Svjedok MAG* VOJ* naveo je u svom iskazu da je kriti č noga dana zajedno sa R* R*m oti š ao u Goliju njegovim
+vozilom koje se zaustavilo kod mjesta Presjeka pa je zatim njih u vozilo primio Vu*ić Ma*o i to je sve š to on zna
+budu ć i da je druge okolnosti vezano za slu č aj saznao iz kazivanja tre ć ih lica.
+ 
+Iz ZAPISNIKA o uvi đ aju ODT Nik š i ć  Ktr. br.280/14 od 02.11.2014.g. i skice lica mjesta proizilazi da su prije
+dolaska slu ž benih lica na lice mjesta doga đ aja na proplanku ispod planine Đ ed do kog se dolazi
+makadamskim putem koji se sa desne strane odvaja od asfaltnog puta Nik š i ć  - Golija u mjestu Javljen,
+zate č ena lica Vu* M*o, Ma*vić V*i Stan*ć Ste* a na travnatoj podlozi blizu istih zate č eni su polomljena pu š ka “
+crvena zastava “ kal.8x57mm, fabri č ki broj 88488 sa o š te ć enim opti č kim ni š anom marke “ valter “ i
+poluautomatska pu š ka marke “ bajkal “ kalibra 12x76mm fabri č ki broj 1115348047 sa o š te ć enom drvenom
+oblogom a na istoj pu š ci i patron crvene boje kalibra 12 x 76mm “vin č ester”; da precizno rastojanje od tog
+mjesta do lica mjesta kriti č nog doga đ aja nije mogu ć e izraziti jer ne postoje definisani put niti š umska staza;
+da je na licu mjesta u blizini manje stijene, na 2,20m od iste zate č eno tijelo bez ž ivota K* M*a u le ž e ć em
+polo ž aju na le đ ima, glavom okrenuto u pravcu sjevera, nogama u pravcu juga i lijevom stranom tijela
+okrenuto ka stijeni; da je tijelo prekriveno crnom jaknom na č ijoj unutra š njosti je uo č eno tkivo a u d ž epu je
+prona đ ena Motorola crne boje sa antenom na kojoj su uo č eni crveni tragovi; da je nakon izuzimanja crne
+jakne uo č eno da je na tijelu maskirni prsluk koji je bio raskop č an sa ukupno pet patrona kalibara 12 x 76mm
+u gornjim d ž epovima; da je u lijevom d ž epu prsluka na đ en par rukavica i povodac za psa a u unutra š njem
+džepu na đ ena je lovna karta broj 03230 na ime K* M*a, oru ž ni list broj 527743827 za pu š ku marke “bajkal” i
+dozvola za lov broj 0355 za 2014/2015 na ime K* M*a; da je ispod prsluka na tijelu prona đ ena raskop č ana
+maskirna jakna a u gornjem lijevom d ž epu prona đ en je no ž  na rasklapanje; da je na tijelu ispod jakne bio
+gorni dio trenerke tamne boje sa aplikacijama, crna majica kratkih rukava sa aplikacijama, maskirne
+pantalone, crni ko ž ni kai š  i duboke cipele braon boje; da je na tijelu K* M*a u predjelu stomaka po desnoj
+strani uo č ena povreda kao i povreda u predjelu ka ž iprsta desne ruke č iji gornji dio nedostaje a na stomaku i
+srednjem prstu desne š ake uo č eni su tragovi crvene boje nalik na krv; da je na stijeni prona đ en redenik sa
+četiri patrona kalibra 12mm; da je nisko rastinje udaljeno od nogu K* M*a oko 2m a ono vodi do proplanka pri
+čemu je dubine 8,20m i pru ž a se sa obadvije strane gledano od tijela. (za napomenuti je da su skicom lica
+mjesta bili navedeni parametri koliko je bilo udaljeno tijelo K* M*a od mjesta odakle je pucao okrivljeni te sa
+kojih se pozicima ka tom mjestu okrivljeni kretao ali sud date parametre nije uzimao u obzir budu ć i da su isti
+odre đ eni isklju č ivo na osnovu kazivanja okrivljenog slu ž benicima policije koji su vr š ili uvi đ aj tako da se
+suštinski radilo o operativnim radnjama policije uzimanja izjave od okrivljenog na odre đ ene okolnosti š to se
+nikako nije moglo koristiti u krivi č nom postupku pa je tako iz skice lica mjesta pravno validno bilo isklju č ivo
+ono š to je predstavljalo opisivanje ve ć  zate č enog stanja – pozicija le š a te pozicija grmlja kao i pozicija
+zate č enog oru ž ja i redenika).
+ 
+FOTODOKUMENTACIJOM UP CB Nik š i ć  broj 828/14 od 2.11.2014.g. vizuelno su predstavljeni: tijelo pokojnog
+K* M*a po dolasku ekipe za uvi đ aje , izgled nakon pomjeranja jakne, bli ž i izgled povreda u predjelu stomaka i
+desne š ake, bli ž i izgled jakne i tkiva na istoj, polo ž aj metaka i drvene obloge pu š ke u blizini pokojnika, izgled
+radio veze u d ž epu jakne, rastinje iza pokojnika, izgled stijene i drveta u blizini stijene kod tijela pokojnika,
+oruž je zate č eno dolaskom uvi đ ajne ekipe, o š te ć enja na lova č koj pu š ci.
+ 
+POTVRDOM UP CB Nik š i ć  o privremeno oduzimanju predmeta Ku.br.461 od 02.11.2014.g. konstatovano je da
+se od R* R* privremeno oduzimaju: 7 komada municije kalibar 8x57mm ISPPU sa olovnim vrhom, oru ž ni list
+za dr ž anje i no š enje oru ž ja broj 097740542 od 29.05.2014.g. na ime R* R* za lova č ki karabin marke “zastava
+ARMS” model M 70, kal.8mm “mauser”, dozvola za lov broj 0314 za lovnu 2014/2015 izdatu na ime R* R*,
+lovna karta 03190 za lovnu 2014/2015 izdatu na ime R* R*, lovna karta 2152 za lovnu 2011/12 izdatu na ime R*
+R*, dozvola za lov broj 0818 za lovnu 2011/12 izdatu na ime R* R*.
+ 
+Iz DOZVOLE za lov lova č ke organizacije dr. Zoran Kesler broj 0355 proizilazi da je za lovnu 2014/15 godinu
+izdata lovna dozvola K* M*u, a iz ORUŽ NOG LISTA za dr ž anje i no š enje oru ž ja broj 527743827 za istoga
+konstatuje se da je oru ž ni list izdat za oru ž je kategorije “B” lova č ko i sportsko poluautomatsko dugocijevno
+vatreno oru ž je koje zajedno sa magacinom i le ž i š tem mo ž e da primi vise od tri metka.
+ 
+Iz DOZVOLE za lov lova č ke organizacije dr. Zoran Kesler broj 0314 konstatuje se da je ta dozvola izdata R* Ra*
+pri č emu se iz ORUŽ NOG LISTA za dr ž anje i no š enje oru ž ja za isto ustanovljava da se oru ž ni list odnosi na
+repetiraju ć e dugocijevno vatreno oru ž je kategorije “B” koje ne spade u ta č ku 6. te kategorije.
+ 
+IZVJE Š TAJEM Forenzi č kog centra Danilovgrad – Grupe za mehanoskopska ispitivanja br. 3247-1/14 navedeno
+je da je na prednjoj strani maskirnog prsluka K* M*a u predjelu pored desnog d ž epa uo č eno jedno mehani č ko
+ošte ć enje udaljeno od donje ivice prsluka 21cm a od rajsfe š lusa 6cm pri č emu relativna veli č ina toga
+ošte ć enja nepravilnog oblika iznosi 3cm dok na zadnjoj strani prsluka nijesu uo č ena mehani č ka o š te ć enja; da
+je na prednjoj strani maskirne jakne K* M*a ispod desnog grudnog d ž epa uo č eno mehani č ko o š te ć enje
+udaljeno od donje ivice jakne 30 cm a 10 cm od rajsfe š lusa pri č emu relativna veli č ina toga o š te ć enja
+nepravilnog oblika iznosi 3cm a oko o š te ć enja su prona đ ena manja olovna par č ad a sa unutra š nje strane
+uoč eni su tragovi te č nosti tamno braon boje, dok na zadnjoj strani jakne nijesu uo č ena mehani č ka o š te ć enja;
+da je na prednjoj strani majice u predjelu stomaka po desnoj strani uo č eno mehani č ko o š te ć enje 18cm
+udaljeno od donje ivice majce a 17cm od desnog š ava, pri č emu relativna veli č ina nepravilnog oblika iznosi
+3cm a ispod o š te ć enja su uo č eni tragovi osu š ene te č nosti tamno braon boje nalik na krv dok na zadnjoj strani
+majice nijesu uo č ena mehani č ka o š te ć enja; da je na prednjoj strani trenerke u predjelu stomaka po desnoj
+strani uo č eno mehani č ko o š te ć enje udaljeno od donje ivice trenerke 28 cm a 5 cm udaljeno od rajsfe š lusa pri
+čemu je relativna veli č ina o š te ć enja nepravilnog oblika iznosila 3cm a oko navedenog o š te ć enja uo č eni su
+tragovi osu š ene te č nosti tamno braon boje nalik na krv dok na zadnjoj strani trenerke nije bilo mehani č kih
+ošte ć enja; na prednjoj i zadnjoj strani pantalona nijesu uo č ema mehani č ka o š te ć enja osim po zadnjem dijelu
+i to ona koja su nastala kao posledica izno š enosti. Š to se ti č e garderobe R* R* na njegovim farmericama nije
+bilo o š te ć enja osim onih koja su nastala kao posledica izno š enosti, na jakni tako đ e nije bilo mehani č kih
+ošte ć enja a sa unutra š nje strane lijevog prednjeg dijela jakne uo č eni su tragovi osu š ene te č nosti tamno
+braon boje nalik na krv dok je na prednjoj strani majice u predjelu stomaka po desno j strani uo č eno jedno
+mehani č ko o š te ć enje 14 cm udaljeno od donje ivice a 14 cm od desnog š ava. Mehani č ka o š te ć enja na
+garderobi izuzetoj sa K* M*a karakteristi č na su za o š te ć enja koja nastaju dejstvom projektila ispaljenog iz
+vatrenog oru ž ja odnosno dejstvom deformisanog rasprsnu tog zrna lova č ke municije nakon ispaljenja iz
+vatrenog oru ž ja.
+ 
+IZVJE Š TAJEM Forenzi č kog centra Danilovgrad – Grupe za hemijska ispitivanja daljine pucanja i utvr đ ivanje
+GSR č estica br. 3246/14 navedeno je da prisustvo karakteristi č nih GSR č estica na š akama R* R* i R*
+Aleksandra ukazuje da se ne mo ž e isklju č iti mogu ć nost da su isti bili povezani sa procesom opaljenja iz
+vatrenog oru ž ja.
+ 
+IZVJE Š TAJEM Forenzi č kog centra Danilovgrad – Grupe za hemijska ispitivanja daljine pucanja i utvr đ ivanje
+GSR č estica br. 3246( 1)/14 navedeno je da neprisustvo barutnih č estica na š akama K* M*a ne mo ž e da
+pretpostavi mogu ć nost da je isti bio povezan sa procesom opaljenja metka iz vatrenog oru ž ja prije skidanja
+parafinskih rukavica.
+ 
+IZVJE Š TAJEM Forenzi č kog centra Danilovgrad – Grupe za hemijska ispitivanja daljine pucanja i utvr đ ivanje
+GSR č estica br. 3249/14 navedeno je da je na jakni R* R* dokazano prisustvo barutnih č estica na rukavu i
+donjem dijelu jakne.
+ 
+IZVJE Š TAJEM Forenzi č kog centra Danilovgrad – Grupe za hemijska ispitivanja daljine pucanja i utvr đ ivanje
+GSR č estica br. 3248/14 navedeno je da ukoliko su o š te ć enja na maskirnom prsluku, maskirnoj jakni, gornjem
+dijelu trenerke i majici kratkih rukava K* M*a nastala od projektila iz vatrenog oru ž ja sa dugom cijevi, tada su
+usta cijevi bila udaljena na rastojanju ve ć em od 120 cm.
+ 
+IZVJE Š TAJEM Forenzi č kog centra Danilovgrad – Grupe za balisti č ka ispitivanja br. 3245/14 navedeno je da je
+oruž je (lova č ki karabin marke “crvena zastava” kalibar 8x57 JS fabri č ki broj 88488 sa postavljenim opti č kim
+nišanom marke “valther 3-9x40” i lova č ka poluautomatska pu š ka marke “ Baikal “ model MP 153 kalibra
+12x76 , fabri č ki broj 1115348047) funkcionalno dok dio projektila dostavljen na vje š ta č enje mo ž e pripadati
+municiji za karabine.
+ 
+Sudski vje š tak balisti č ar ing.M* MIL* naveo je u svom iskazu da ostaje u cjelosti pri nalazu i mi š ljenju datim u
+izviđ aju a tako đ e isti č e i slede ć e - na vje š ta č enje je bio dostavljen dio projektila č ija masa iznosi 3,09 grama.
+Radi se o olovnom dijelu projektila koji je nastao rasprskavanjem cijelog projektila koji za kalibar lova č ke
+mnicije 8x57 JS iznosi oko 12,7 grama š to zna č i da je cijeli projektil udario u tvrdu prepreku od koje se isti
+rasprsnuo pa je njegov dio č ija je masa 3,09grama u š ao u tijelo pokojnog K*a i on je izva đ en i dostavljen na
+vješ ta č enje. Ina č e, meci koje koristi ovaj lova č ki karabin su izuzetno velike kineti č ke energije - ona iznosi oko
+4000J, š to u potpunosti obezbje đ uje da na odre đ enim rastojanjima koja nijesu ve ć a od 200 do 300 metara
+dođ e do prostrela prilikom pogotka č ovjeka. Tako đ e je naveo da je kada je sagledao vidljiva o š te ć enja na
+puš ci koja je bila u vlasni š tvu pokojnog K*a, ustanovio da je projektil koji ga je pogodio prethodno pogodio
+samu pu š ku i to prvo drveni dio potkundaka a zatim metalnu cijev koja je magacin za municiju. Tada je do š lo
+do rasprskavanja projektila i dio tog projektila je zavr š io u tijelu pokojnog K*a. Što se ti č e pozicije o š te ć enja
+na samoj pu š ci i na desnoj š aci pokojnika, ona u potpunosti odgovaraju tako da je povrije đ eni tom š akom
+držao pu š ku na mjestu na kojem je ista pogo đ ena.
+ 
+NALAZOM i MIŠ LJENJEM sudskog vje š taka medicinske struke dr. Š* Mio*aga o izvr š enom obdukcionom
+pregledu i uzroku smrti pok.K* M*a br. 233/2014 navedeno je da je smrt ubila č kog porijekla – nasilna je i
+nastupila je usled iskrvavljenja iz razorenja jetre, rascjepa debelog crijeva i raskidanih krvnih sudova, sve du ž
+kanala strijelne rane – ustreline nanesene projektilom ispaljenim iz ru č nog vatrenog oru ž ja iz sudsko-
+medicinski posmatrano daljine. Ulazni otvor ustreline kanalom se nastavlja u trbu š nu duplju, razara jetru,
+cijepa vijuge debelog crijeva i zavr š ava u desno j strani trupa č etvrtog slabinskog pr š ljenja gdje je na kraju
+kanala ustanovljen projektil. Smjer kanala rane je sa desna ulijevo odozgo nadolje i od naprijed ka nazad. Na
+mjestu donje tre ć ine drugog prsta desne š ake zjape ć a je rana a uz nju na nadlanoj i unutra š njoj strani gornje
+treć ine tre ć eg prsta iste š ake rana je promjera oko 2 x 3 x 0,3cm sa neravnim i krvlju podlivenim ivicama i
+stranama a navedene rane prstiju desne š ake jesu posledica dejstva projektila ispaljenog iz ru č nog vatrenog
+oruž ja iz sudsko medicinske daljine.
+ 
+Sudski vje š tak medicinske struke dr ŠO* MIO*G naveo je u svom iskazu da ostaje pri nalazu i mi š ljenju iz
+izviđ aja i isti č e da ustrelna rana predstavlja kvalifikovanu osobito te š ku tjelesnu povredu i ona je direktno
+dovela do smrtnog ishoda. Rana koja zahvata prste desne š ake predstavlja isti strijelni kanal š to zna č i da su i
+prsti i rana trbuha nastali od jednog istog projektila. Pretpostavlja da je pokojnik ž ivio oko pola sata nakon
+zadobijanja ustreline.
+ 
+Imaju ć i u vidu sadr ž inu izvedenih dokaza, sud nalazi da je na nesumnjiv na č in utvr đ eno da je okrivljeni R* R*
+dana 02.11.2014 godine u Nik š i ć u, na planini Golija , na uzvi š enju Đ ed , za vrijeme lova, nesvjestan da svojom
+radnjom mo ž e u č initi djelo , iako je prema okolnostima pod kojim je preduzeo radnju s obzirom da se radilo o
+lovnom danu kada se lovci samostalno i neorganizovano kre ć u kroz lovi š te i prema svojim li č nim svojstvima s
+obzirom da je lovac dugi niz godina bio du ž an i mogao biti svjestan te mogu ć nosti , li š io ž ivota K* M*a , na
+nač in š to je za vrijeme lova , iz lova č kog karabina marke ʼʼ CZʼʼ, kalibra 8x57mm, fabri č ki broj 88488 sa
+optič kim ni š anom marke ʼʼ Walterʼʼ 3-9 x40 ispalio jedan projektil u pravcu mjesta odakle mu se u č inilo da je
+čuo kretanje divlja č i, pri č emu je dio projektila u predjelu stomaka pogodio o š te ć enog K* M*a i nanio mu
+povrede u vidu ustrelne rane u predjelu jetre , debelog crijeva i trupa č etvrtog slabinskog pr š ljena od kojih
+povreda je na licu mjesta nastupila smrt imenovanog, kojim radnjama je ostvario sva bitna obilje ž ja krivi č nog
+djela nehatno li š enje ž ivota iz č l.148 KZ.
+ 
+Nesporno je da je dana 02.11.2014.g. vi š e grupa lica po š lo na planinu Goliju pri č emu je ve ć ina i š la radi lova (u
+jednoj grupi su bili Z* N*k, Z* Ž*ljko i K* M*, u drugoj grupi su bili P* M*n i Lje š kovi ć  Ž a*o, u tre ć oj grupi su bili
+V*ć M*o, R* Alek*i Sta*ć St*a) dok su neka lica i š la radi pronala ž enja svojih pasa (Vuk* Mil*Vu*ć Dra*av i Vu*
+Mil*e). Prednje proizilazi iz odbrane okrivljenog R* R* te iz svjedo č kih iskaza Z* N*a, Z* Ž*a, P* Mil*a, V*ević
+M*rka, R* Ale*a, Vu*ić M*a, Lje š*ć Ž*a i Mago* Voji*a. Tako đ e je nesporno da je kriti č noga dana do š lo do
+upotrebe vatrenog oru ž ja od strane okrivljenog R* R* (isti je bio u posjedu funkcionalnog lova č kog karabina
+za koji je imao oru ž ni list č ije je oduzimanje konstatovano potvrdom UP CB Nik š i ć  o privremenom
+oduzimanju predmeta, dok je ispravnost oru ž ja ustanovljena na osnovu balisti č kog vje š ta č enja a da je
+okrivljeni zaista upotrijebio to oru ž je jasno je obzirom da isti to i ne spori a i hemijskim vje š ta č enjima
+ustanovljeno je na njegovim š akama prisustvo GSR č estica, š to zna č i da se nije moglo isklju č iti da je okrivljeni
+povezan sa opaljenjem iz vatrenog oru ž ja a tako đ e su na rukavu i jakni okrivljenog zate č ene barutne č estice
+što sve jedino mo ž e dovoditi do zaklju č ka kako je okrivljeni vatreno oru ž je koje je imao kod sebe kriti č nom
+prilikom zaista i upotrijebio) kao i to da je iz vatrenog oru ž ja pogo đ en K* M* budu ć i da shodno rezultatima
+mehanoskopskog vje š ta č enja, jasno proizilazi da o š te ć enja na odje ć i K*a odgovaraju dejstvu iz projektila
+vatrenog oru ž ja, a od zadobijenih povreda K* M* je preminuo. Sve prethodno navedeno u skladu je sa
+konstatacijama zapisnika o uvi đ aju UP CB Nik š i ć  te sa sadr ž inom skice lica mjesta i fotodokumentacije, a
+povrede koje je zadobio K* kriti č nom prilikom i koje su dovele do smrtnog ishoda sud je ustanovio na osnovu
+nalaza i mi š ljenja sudskog vje š taka medicinske struke dr. Š* Mi*aga kao i iz njegovog izja š njenja na glavnom
+pretresu. Tako đ e je jasno da je projektil ispaljen iz pu š ke okrivljenog najprije pogodio pu š ku K* M*a i njegovu
+šaku pa je tek poslije toga do š lo do poga đ anja trbuha K* M*a – slijede ć i kazivanje sudskog vje š taka
+medicinske struke dr. Š*ć Mi*ga, za ranu prsta desne š ake i za ranu na stomaku isti je strijelni kanal š to zna č i
+da su obje rane poticale od istog projektila, a po sudskom vje š taku balisti č aru ing. Mih*vić Mil*nu u tijelo K*a
+ušao je projektil mase 3,09gr a kako je standardna masa takvog projektila 12,07gr, jasno je da se prije ulaska
+u tijelo projektil rasprsnuo – č ime je logi č no umanjena njegova masa, pri č emu pozicije o š te ć enja na desnoj
+šaci K*a odgovaraju poziciji o š te ć enja na pu š ci. (za napomenuti je da je sud sva citirana vje š ta č enja prihvatio
+kao stru č na i objektivna)
+ 
+Okrivljeni R* R* je po sopstvenom priznanju č uo pomjeranje granja a njegovo upotrebljavanje vatrenog
+oruž ja uslijedilo je jer je mislio da je razlog tog pomjeranja kretanje divlje ž ivotinje – divlje svinje. Me đ utim,
+okrivljeni je kao lovac sa dugogodi š njim iskustvom znao da kada se lov vr š i u nedelju za lovce ne postoji
+obaveza prethodnog prijavljivanja š to zna č i da se lovci toga dana neorganizovano i samostalno kre ć u, jer nije
+unaprijed precizirano – organizovano u kome ć e reonu koja grupa lovaca da lovi. Ovo jasno zna č i da je
+okrivljeni bio du ž an i mogao je biti svjestan da postoji mogu ć nost da je vegetacijom zaklonjena ne divlja
+životinja ve ć  neko od lovaca sa č ijim kretanjem nije bio prethodno upoznat, budu ć i da on nije bio niti je
+mogao biti apsolutno siguran da drugih lovaca na tom mikrolokalitetu nema a tako đ e on po sopstvenom
+priznanju ni š ta konkretno nije vidio ve ć  je samo č uo zvukove iz prostora pokrivenog rastinjem. Na poja č an
+oprez okrivljenog su upu ć ivala njegova li č na svojstva, jer kako je ve ć  re č eno on nije lovac od “ ju č e ” ve ć  ima
+višegodi š nju praksu kao i okolnosti pod kojima se sve de š avalo – karakteristike samog lovnog dana.
+Okrivljeni je istakao da je ni š an lova č kog karabina koji je koristio bio takav da kada kroz njega posmatra neki
+objekat na manjoj distanci, ne mo ž e brzo primijetiti objekat jer se pojavljuje samo tamna slika pa je i to
+upuć ivalo na zaklju č ak da je morao pokazati ve ć u pa ž nju budu ć i da upotrebom odnosno samim kori šć enjem
+takvog ni š ana ne ć e mo ć i jasno da vidi u š ta puca. Nadalje, okrivljeni nakon š to č uje zvukove iz grmlja ne
+povla č i se nazad kako bi skratio distancu izme đ u sebe i toga š to je u grmlju č ime bi omogu ć io da se najprije
+sačeka š ta ć e to iz grmlja iza ć i a i sam ka ž e da je mogao djelovati adekvatno i da je sa č ekao da vidi š ta to iz
+grmlja izlazi š to sve ukazuje na zaklju č ak da isti nije pokazivao adekvatnu pa ž nju primjerenu i svojim li č nim
+okolnostima i okolnostima situacije.
+ 
+Kako je o č igledno da okrivljeni nije bio svjestan da mo ž e svojom radnjom po č initi krivi č no djelo iako je kako
+je ve ć  navedeno - obzirom na svoja li č na svojstva i okolnosti situacije, bio du ž an i mogao biti svjestan te
+mogu ć nosti, to je jasno da je djelovao sa nesvjesnim nehatom.
+ 
+Sud je izmijenio č injeni č ni opis tako š to je umjesto rije č i ,,iz lova č ke pu š ke,, unio rije č i,, iz lova č kog karabina,,
+preciziraju ć i tako samu vrstu oru ž ja, a tako đ e je sud umjesto rije č i,,koji projektil je,, unio rije č i,,pri č emu je
+dio projektila,, budu ć i da je na osnovu izja š njenja vje š taka balisti č ke i medicinske struke na glavnom
+pretresu, jasno postalo da je projektil najprije pogodio š aku i pu š ku sada pok.K*a, rasprsnuo se pa je tako tek
+dio projektila pogodio istog u stomak.
+ 
+Sud je cijenio i ostale izvedene dokaze pa je na š ao da su bez zna č aja za rje š avanje ove pravne stvari.
+ 
+Prilikom odlu č ivanja o kazni, sud je okrivljenom u smislu č l.42 KZ kao olak š avaju ć e okolnosti cijenio njegovu
+porodi č nost – isti je o ž enjen i otac dvoje djece, ispoljeno kajanje, raniju neosu đ ivanost utvr đ enu iz izvoda iz
+kaznene evidencije dok ote ž avaju ć ih okolnosti nije na š ao, pa je u kona č nom istoga osudio na kaznu zatvora u
+trajanju od 1 godine i 5 mjeseci, kojom ć e se kaznom ostvariti svrha ka ž njavanja iz č l.32 KZ u okviru op š te
+svrhe propisivanja i izricanja krivi č nih sankcija iz č l.4 st.2 KZ.
+ 
+Sud je shodno č l.75 KZ okrivljenom izrekao mjeru bezbjednosti oduzimanja predmeta - lova č ke pu š ke marke
+ʼʼ CZʼʼ, kalibra 8x57mm, fabri č ki broj 88488 sa opti č kim ni š anom marke ʼʼ Walterʼʼ 3-9 x40, budu ć i da se radilo
+o predmetu koji je upotrijebljen za izvr š enje krivi č nog djela.
+ 
+Sud je okrivljenog shodno č l.229 i č l.229 ZKP-a obavezao na pla ć anje tro š kova krivi č nog postupka u iznosu
+od 488,50 eura, od č ega se iznos od 379,50 eura odnosi na naknadu sudskom vje š taku dr Š* Mio*u, iznos od
+79,00 eura na naknadu sudskom vje š taku balisti č aru ing.Mi*ović  Milo* a iznos od 30,00 eura na pau š al
+srazmjeran slo ž enosti i trajanju krivi č nog postupka kao i imovnom stanju okrivljenog.
+ 
+Iz iznijetih razloga a na osnovu č l. 374 ZKP-a odlu č eno je kao u izreci presude.
+ 
+OSNOVNI SUD U NIK Š I Ć U, dana 01.06.2015.g.
+ 
+Zapisni č ar, SUDIJA
+Ćuzovi ć  Plana s.r. Perovi ć  Ivan s.r.
+ZA TA Č NOST OTPRAVKA TVRDI:
+radnik suda.
+ 
+PRAVNKA POUKA Protiv ove presude dozvoljena je ž alba u roku 8 dana
+od dana prijema iste preko ovog SUDA VIŠEM
+SUDU PODGORICA</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

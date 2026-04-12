@@ -1,0 +1,346 @@
+{
+  "rulebase_clp": "(import-rdf \"facts.rdf\")\n\t\t(export-rdf export.rdf  crime_art1_test crime_art2_test crime_art3_test crime_art4_test crime_art5_test crime_art6_test crime_art7_test crime_art8_test crime_art9_test)\n\t\t(export-proof proof.ruleml)\n\n(defeasiblerule rule1\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t)\n  =>\n\t(crime_art1_test\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule2\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t)\n  =>\n\t(crime_art2_test\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule3\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t)\n  =>\n\t(crime_art3_test\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule4\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t)\n  =>\n\t(crime_art4_test\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule5\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t)\n  =>\n\t(crime_art5_test\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule6\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t)\n  =>\n\t(crime_art6_test\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule7\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t)\n  =>\n\t(crime_art7_test\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule8\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t)\n  =>\n\t(crime_art8_test\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n\n(defeasiblerule rule9\n\t(lc:case\n\t\t(\n\t\t lc:defendant ?Defendant)\n\t)\n  =>\n\t(crime_art9_test\n\t\t(\n\t\t defendant ?Defendant)\n\t)\n)\n",
+  "rules": [
+    {
+      "rule_id": "rule1",
+      "norm_id": "crime_art1_test",
+      "conditions": [
+        [
+          "defendant",
+          "?Defendant"
+        ]
+      ],
+      "consequence": "crime_art1_test",
+      "priority": 50
+    },
+    {
+      "rule_id": "rule2",
+      "norm_id": "crime_art2_test",
+      "conditions": [
+        [
+          "defendant",
+          "?Defendant"
+        ]
+      ],
+      "consequence": "crime_art2_test",
+      "priority": 50
+    },
+    {
+      "rule_id": "rule3",
+      "norm_id": "crime_art3_test",
+      "conditions": [
+        [
+          "defendant",
+          "?Defendant"
+        ]
+      ],
+      "consequence": "crime_art3_test",
+      "priority": 50
+    },
+    {
+      "rule_id": "rule4",
+      "norm_id": "crime_art4_test",
+      "conditions": [
+        [
+          "defendant",
+          "?Defendant"
+        ]
+      ],
+      "consequence": "crime_art4_test",
+      "priority": 50
+    },
+    {
+      "rule_id": "rule5",
+      "norm_id": "crime_art5_test",
+      "conditions": [
+        [
+          "defendant",
+          "?Defendant"
+        ]
+      ],
+      "consequence": "crime_art5_test",
+      "priority": 50
+    },
+    {
+      "rule_id": "rule6",
+      "norm_id": "crime_art6_test",
+      "conditions": [
+        [
+          "defendant",
+          "?Defendant"
+        ]
+      ],
+      "consequence": "crime_art6_test",
+      "priority": 50
+    },
+    {
+      "rule_id": "rule7",
+      "norm_id": "crime_art7_test",
+      "conditions": [
+        [
+          "defendant",
+          "?Defendant"
+        ]
+      ],
+      "consequence": "crime_art7_test",
+      "priority": 50
+    },
+    {
+      "rule_id": "rule8",
+      "norm_id": "crime_art8_test",
+      "conditions": [
+        [
+          "defendant",
+          "?Defendant"
+        ]
+      ],
+      "consequence": "crime_art8_test",
+      "priority": 50
+    },
+    {
+      "rule_id": "rule9",
+      "norm_id": "crime_art9_test",
+      "conditions": [
+        [
+          "defendant",
+          "?Defendant"
+        ]
+      ],
+      "consequence": "crime_art9_test",
+      "priority": 50
+    }
+  ],
+  "priorities": {
+    "crime_art1_test": 85,
+    "crime_art2_test": 85,
+    "crime_art3_test": 85,
+    "crime_art4_test": 85,
+    "crime_art5_test": 85,
+    "crime_art6_test": 85,
+    "crime_art7_test": 85,
+    "crime_art8_test": 85,
+    "crime_art9_test": 85
+  },
+  "families": {
+    "uncategorized": [
+      "crime_art6_test",
+      "crime_art5_test",
+      "crime_art8_test",
+      "crime_art1_test",
+      "crime_art3_test",
+      "crime_art9_test",
+      "crime_art4_test",
+      "crime_art7_test",
+      "crime_art2_test"
+    ]
+  },
+  "required_facts": [],
+  "articles": [
+    {
+      "article_number": "1_test",
+      "paragraph_number": null,
+      "title": "Predmet i cilj",
+      "sanction": "Sankcija: Upozorenje",
+      "concepts": [
+        "plant_protection",
+        "quarantine"
+      ],
+      "triggers": [],
+      "severity_level": 55
+    },
+    {
+      "article_number": "1_test",
+      "paragraph_number": null,
+      "title": "Predmet i cilj",
+      "sanction": "Sankcija: Upozorenje",
+      "concepts": [
+        "plant_protection",
+        "quarantine"
+      ],
+      "triggers": [],
+      "severity_level": 55
+    },
+    {
+      "article_number": "2_test",
+      "paragraph_number": null,
+      "title": "Klju\u010dne definicije",
+      "sanction": "Sankcija: Nov\u010dana globa od 100,000 dinara",
+      "concepts": [
+        "pest_classification",
+        "control_methods"
+      ],
+      "triggers": [],
+      "severity_level": 65
+    },
+    {
+      "article_number": "2_test",
+      "paragraph_number": null,
+      "title": "Klju\u010dne definicije",
+      "sanction": "Sankcija: Nov\u010dana globa od 100,000 dinara",
+      "concepts": [
+        "pest_classification",
+        "control_methods"
+      ],
+      "triggers": [],
+      "severity_level": 65
+    },
+    {
+      "article_number": "3_test",
+      "paragraph_number": null,
+      "title": "Obaveza prijave zara\u017eene povr\u0161ine",
+      "sanction": "Sankcija: Nov\u010dana globa od 500,000 do 1,000,000 dinara",
+      "concepts": [
+        "reporting_obligation",
+        "detection"
+      ],
+      "triggers": [],
+      "severity_level": 65
+    },
+    {
+      "article_number": "3_test",
+      "paragraph_number": null,
+      "title": "Obaveza prijave zara\u017eene povr\u0161ine",
+      "sanction": "Sankcija: Nov\u010dana globa od 500,000 do 1,000,000 dinara",
+      "concepts": [
+        "reporting_obligation",
+        "detection"
+      ],
+      "triggers": [],
+      "severity_level": 65
+    },
+    {
+      "article_number": "4_test",
+      "paragraph_number": null,
+      "title": "Primena pesticida i za\u0161titnih mera",
+      "sanction": "Sankcija: Nov\u010dana globa od 1,000,000 do 2,000,000 dinara",
+      "concepts": [
+        "pesticide_application",
+        "safety_protocol"
+      ],
+      "triggers": [],
+      "severity_level": 55
+    },
+    {
+      "article_number": "4_test",
+      "paragraph_number": null,
+      "title": "Primena pesticida i za\u0161titnih mera",
+      "sanction": "Sankcija: Nov\u010dana globa od 1,000,000 do 2,000,000 dinara",
+      "concepts": [
+        "pesticide_application",
+        "safety_protocol"
+      ],
+      "triggers": [],
+      "severity_level": 55
+    },
+    {
+      "article_number": "5_test",
+      "paragraph_number": null,
+      "title": "Neizvr\u0161avanje redovnih kontrola",
+      "sanction": "Sankcija: Li\u0161 certifikate na 6 meseci",
+      "concepts": [
+        "inspection_duty",
+        "minor_offense"
+      ],
+      "triggers": [],
+      "severity_level": 55
+    },
+    {
+      "article_number": "5_test",
+      "paragraph_number": null,
+      "title": "Neizvr\u0161avanje redovnih kontrola",
+      "sanction": "Sankcija: Li\u0161 certifikate na 6 meseci",
+      "concepts": [
+        "inspection_duty",
+        "minor_offense"
+      ],
+      "triggers": [],
+      "severity_level": 55
+    },
+    {
+      "article_number": "6_test",
+      "paragraph_number": null,
+      "title": "Neispravna ili nepotpuna dokumentacija",
+      "sanction": "Sankcija: 200,000 do 500,000 dinara",
+      "concepts": [
+        "documentation",
+        "record_keeping"
+      ],
+      "triggers": [],
+      "severity_level": 65
+    },
+    {
+      "article_number": "7_test",
+      "paragraph_number": null,
+      "title": "Namerna sabota\u017ea i prenos bolesti",
+      "sanction": "Sankcija: 3 do 5 godina zatvora",
+      "concepts": [
+        "sabotage",
+        "intent",
+        "severe_damage"
+      ],
+      "triggers": [],
+      "severity_level": 55
+    },
+    {
+      "article_number": "7_test",
+      "paragraph_number": null,
+      "title": "Namerna sabota\u017ea i prenos bolesti",
+      "sanction": "Sankcija: 3 do 5 godina zatvora",
+      "concepts": [
+        "sabotage",
+        "intent",
+        "severe_damage"
+      ],
+      "triggers": [],
+      "severity_level": 55
+    },
+    {
+      "article_number": "8_test",
+      "paragraph_number": null,
+      "title": "Falsifikovanje izve\u0161taja i dokaza",
+      "sanction": "Sankcija: 2 do 4 godine zatvora",
+      "concepts": [
+        "false_report",
+        "document_fraud"
+      ],
+      "triggers": [],
+      "severity_level": 55
+    },
+    {
+      "article_number": "8_test",
+      "paragraph_number": null,
+      "title": "Falsifikovanje izve\u0161taja i dokaza",
+      "sanction": "Sankcija: 2 do 4 godine zatvora",
+      "concepts": [
+        "false_report",
+        "document_fraud"
+      ],
+      "triggers": [],
+      "severity_level": 55
+    },
+    {
+      "article_number": "9_test",
+      "paragraph_number": null,
+      "title": "Protivljenje karantinskim merama",
+      "sanction": "Sankcija: 1 do 3 godine zatvora",
+      "concepts": [
+        "quarantine_violation",
+        "defiance"
+      ],
+      "triggers": [],
+      "severity_level": 55
+    },
+    {
+      "article_number": "9_test",
+      "paragraph_number": null,
+      "title": "Protivljenje karantinskim merama",
+      "sanction": "Sankcija: 1 do 3 godine zatvora",
+      "concepts": [
+        "quarantine_violation",
+        "defiance"
+      ],
+      "triggers": [],
+      "severity_level": 55
+    }
+  ]
+}

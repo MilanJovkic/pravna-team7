@@ -15,7 +15,7 @@ ASCII_MAP = {
 }
 
 
-def normalize_text(value: str | None) -> str | None:
+def normalize_ascii(value: str | None) -> str | None:
     if value is None:
         return None
     text = value.strip()
@@ -23,6 +23,13 @@ def normalize_text(value: str | None) -> str | None:
         return None
     for src, dst in ASCII_MAP.items():
         text = text.replace(src, dst)
+    return text
+
+
+def normalize_text(value: str | None) -> str | None:
+    text = normalize_ascii(value)
+    if text is None:
+        return None
     text = " ".join(text.split())
     return text.lower()
 
@@ -59,3 +66,9 @@ def parse_bool(value: str | bool | None) -> bool | None:
     if text in {"false", "0", "no", "ne", "f", "n"}:
         return False
     return None
+
+
+def bool_to_text(value: bool | None) -> str | None:
+    if value is None:
+        return None
+    return "true" if value else "false"

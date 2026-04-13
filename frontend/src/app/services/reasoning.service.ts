@@ -7,9 +7,9 @@ import { ReasoningRequest, ReasoningResponse, NewCaseRequest, NewCaseResponse, V
   providedIn: 'root'
 })
 export class ReasoningService {
-  private reasoningUrl = 'http://localhost:8000/api/reasoning';
-  private casesUrl = 'http://localhost:8000/api/cases';
-  private verdictGenerationUrl = 'http://localhost:8000/api/verdict-generation';
+  private reasoningUrl = 'http://localhost:8000/api/reasoning/';
+  private casesUrl = 'http://localhost:8000/api/cases/';
+  private verdictGenerationUrl = 'http://localhost:8000/api/verdict-generation/';
 
   constructor(private http: HttpClient) {}
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { LawService } from '../services/law.service';
+import { LegalReferenceService } from '../services/legal-reference.service';
 import { LawChapter, LawArticle } from '../models/models';
 
 @Component({
@@ -231,23 +232,28 @@ export class LawDetailComponent implements OnInit {
   loading = true;
   error = '';
   focusedArticle: string | null = null;
+  lawId: string = 'crime-code'; // Default law ID
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private lawService: LawService
+    private lawService: LawService,
+    private referenceService: LegalReferenceService
   ) {}
 
   ngOnInit() {
-    const chapterNumber = this.route.snapshot.paramMap.get('id');
+    // Get lawId from route parameters (defaults to 'crime-code')
+    this.lawId = this.route.snapshot.paramMap.get('lawId') || 'crime-code';
+    const chapterId = this.route.snapshot.paramMap.get('chapterId');
+    
     this.route.queryParamMap.subscribe((params) => {
       this.focusedArticle = params.get('focus');
       if (this.chapter) {
         this.scrollToFocused();
       }
     });
-    if (chapterNumber) {
-      this.loadChapter(chapterNumber);
+    if (chapterId) {
+      this.loadChapter(chapterId);
     }
   }
 
@@ -312,10 +318,11 @@ export class LawDetailComponent implements OnInit {
   }
 
   getArticleReferences(article: LawArticle): Array<{ label: string; articleNumber: string | null; original: string }> {
-    return this.parseReferences(article.references || []);
+    return this.referenceService.parseReferences(article.references || []);
   }
 
-  parseReferences(references: Array<Record<string, any>>): Array<{ label: string; articleNumber: string | null; original: string }> {
+  // DEPRECATED: Use LegalReferenceService.parseReferences instead
+  private parseReferences(references: Array<Record<string, any>>): Array<{ label: string; articleNumber: string | null; original: string }> {
     const parsed: Array<{ label: string; articleNumber: string | null; original: string }> = [];
     
     console.log('Raw references from backend (chapter view):', references);
@@ -393,7 +400,8 @@ export class LawDetailComponent implements OnInit {
     if (!articleNumber) {
       return;
     }
-    this.router.navigate(['/laws/article', articleNumber]);
+    // Navigate using law-aware route
+    this.router.navigate(['/laws', this.lawId, 'article', articleNumber]);
   }
 
   goBack() {
@@ -401,6 +409,7 @@ export class LawDetailComponent implements OnInit {
   }
 
   openArticle(articleNumber: string) {
-    this.router.navigate(['/laws/article', articleNumber]);
+    // Navigate using law-aware route
+    this.router.navigate(['/laws', this.lawId, 'article', articleNumber]);
   }
 }

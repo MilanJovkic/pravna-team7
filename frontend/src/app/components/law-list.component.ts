@@ -106,6 +106,7 @@ export class LawListComponent implements OnInit {
   }
 
   viewChapter(chapterNumber: string) {
-    this.router.navigate(['/laws/chapter', chapterNumber]);
+    // Navigate to law-aware route (default lawId is 'crime-code' for Krivični zakonik)
+    this.router.navigate(['/laws', 'crime-code', 'chapter', chapterNumber]);
   }
 }

@@ -2,4 +2,6 @@ C:\Users\Milos\PythonProjects\pravna\pravna-team7\cbr-jcolibri\src\main\java\cbr
 C:\Users\Milos\PythonProjects\pravna\pravna-team7\cbr-jcolibri\src\main\java\connector\CsvConnector.java
 C:\Users\Milos\PythonProjects\pravna\pravna-team7\cbr-jcolibri\src\main\java\connector\PostgresConnector.java
 C:\Users\Milos\PythonProjects\pravna\pravna-team7\cbr-jcolibri\src\main\java\model\CaseDescription.java
+C:\Users\Milos\PythonProjects\pravna\pravna-team7\cbr-jcolibri\src\main\java\similarity\SoftTextSimilarity.java
 C:\Users\Milos\PythonProjects\pravna\pravna-team7\cbr-jcolibri\src\main\java\similarity\TabularSimilarity.java
+C:\Users\Milos\PythonProjects\pravna\pravna-team7\cbr-jcolibri\src\main\java\similarity\UnknownAwareBooleanSimilarity.java

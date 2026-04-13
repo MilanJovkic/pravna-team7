@@ -7,6 +7,7 @@ from xml.etree.ElementTree import Element, SubElement, tostring
 
 from .annotator import SemanticAnnotation
 from .parser import LegalArticle, LegalChapter, LegalParagraph, LegalPoint
+from .references import canonical_article_href, canonical_paragraph_href
 
 
 class AkomaExporter:
@@ -175,7 +176,7 @@ class AkomaExporter:
         refs: Set[str] = set(extracted_refs)
 
         for art_num in sorted(refs, key=lambda x: (len(x), x)):
-            ref_elem = SubElement(p_element, "ref", href=f"#art_{art_num}")
+            ref_elem = SubElement(p_element, "ref", href=canonical_article_href(art_num))
             ref_elem.text = f"Član {art_num}"
 
         for para_ref in sorted(extracted_paragraph_refs, key=lambda x: (len(x), x)):
@@ -230,11 +231,11 @@ class AkomaExporter:
         article_refs = {match.group(1) for match in article_pattern.finditer(text)}
 
         paragraph_refs: Set[str] = set()
-        paragraph_pattern = re.compile(r"\b(stava|stavova|st\.)\s+([0-9]+(?:\s*(?:,|i)\s*[0-9]+)*)", re.IGNORECASE)
+        paragraph_pattern = re.compile(r"\b(stav|stava|stavu|stavom|stavova|st\.)\s+([0-9]+(?:\s*(?:,|i)\s*[0-9]+)*)", re.IGNORECASE)
         for match in paragraph_pattern.finditer(text):
             numbers_part = match.group(2)
             for number in re.findall(r"\d+", numbers_part):
-                paragraph_refs.add(f"#art_{article_number}__para_{number}")
+                paragraph_refs.add(canonical_paragraph_href(article_number, number))
 
         return article_refs, paragraph_refs
 
@@ -449,7 +450,7 @@ class AkomaExporter:
         with open(output_file, "wb") as f:
             f.write(pretty_xml)
 
-        print(f"✓ XML eksportovan u: {output_file}")
+        print(f"[OK] XML eksportovan u: {output_file}")
 
     def export_annotations_json(self, annotations: Dict[str, SemanticAnnotation], output_file: str) -> str:
         import json
@@ -463,5 +464,5 @@ class AkomaExporter:
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(json_data, f, indent=2, ensure_ascii=False)
 
-        print(f"✓ Anotacije eksportovane u JSON: {output_file}")
+        print(f"[OK] Anotacije eksportovane u JSON: {output_file}")
         return output_file

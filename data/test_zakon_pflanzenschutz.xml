@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+TEST ZAKON - IZMIŠLJENI ZAKON ZA DOKAZIVANJE FLEKSIBILNOSTI SISTEMA
+=====================================================================
+
+Ovaj zakon je potpuno RAZLIČIT od originalnog zakon.xml:
+- Drugačija struktura (Deo → Poglavlje → Član)
+- Drugačije sankcije (ne liče na prave)
+- Drugačiji koncepti (ne kriminali, ali logika je slična)
+- Potpuno različiti člancvi brojevi i hijerarhija
+
+AKO SISTEM RADI SA OVIM BEZ PROMENE KODA → DOKAZANO JE DA JE
+100% LAW-AGNOSTIC!
+-->
+<akomaNtoso xmlns:lc="http://www.akomantoso.org/2.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://www.akomantoso.org/2.0"
+            xsi:schemaLocation="http://www.akomantoso.org/2.0 akomantoso20.xsd">
+
+  <act name="TestLawAct">
+    <preamble>
+      <p>ZAKON O ZAŠTITI BILJA OD ŠTETOČINA</p>
+      <p id="preamb_1">Predmet: Regulisanje sprečavanja i kontrole štetočina biljaka</p>
+    </preamble>
+
+    <!-- DEO I: OSNOVNA ODREDBA -->
+    <part id="part_1" eId="part_1">
+      <heading>DEO I: OSNOVNA ODREDBA I OBLASTI PRIMENE</heading>
+
+      <!-- Poglavlje 1: Opšte odredbe -->
+      <chapter id="chap_1" eId="chap_1">
+        <heading>Poglavlje 1: Opšte odredbe</heading>
+
+        <!-- Član 1: Predmet i cilj zakona -->
+        <article id="art_1" eId="art_1_test"
+                 data-concepts="plant_protection,quarantine"
+                 data-norm-type="regulation">
+          <num>Član 1</num>
+          <heading>Predmet i cilj</heading>
+          <paragraph id="art_1_p1" eId="art_1_p1">
+            <num>(1)</num>
+            <content>
+              Predmet ovog zakona je uređivanje mera sprečavanja, kontrole 
+              i suzbijanja štetočina biljaka koje mogu da prouzrokuju ekonomsku štetu.
+            </content>
+            <mod>Sankcija: Upozorenje</mod>
+          </paragraph>
+          <paragraph id="art_1_p2" eId="art_1_p2">
+            <num>(2)</num>
+            <content>
+              Cilj je zaštita bilja, posebno žitarica i voćnjaka od opasnih vrsta.
+            </content>
+            <mod>Sankcija: Novčana globa od 50,000 do 100,000 dinara</mod>
+          </paragraph>
+        </article>
+
+        <!-- Član 2: Definicije -->
+        <article id="art_2" eId="art_2_test"
+                 data-concepts="pest_classification,control_methods"
+                 data-norm-type="definition">
+          <num>Član 2</num>
+          <heading>Ključne definicije</heading>
+          <paragraph id="art_2_p1" eId="art_2_p1">
+            <num>(1)</num>
+            <content>
+              "Opasna štetočina" je organizam koji direktno šteti biljama
+              sa rizikom od ekspanzije na celo područje.
+            </content>
+            <mod>Sankcija: Novčana globa od 100,000 dinara</mod>
+          </paragraph>
+          <paragraph id="art_2_p2" eId="art_2_p2">
+            <num>(2)</num>
+            <content>
+              "Karantinska mera" je zabrana kretanja zaražene biljnog materijala.
+            </content>
+            <mod>Sankcija: Novčana globa do 200,000 dinara ili 3 meseca zatvora</mod>
+          </paragraph>
+        </article>
+      </chapter>
+
+      <!-- Poglavlje 2: Obaveze-->
+      <chapter id="chap_2" eId="chap_2">
+        <heading>Poglavlje 2: Obaveze proizvoditelja</heading>
+
+        <!-- Član 3: Prijava zaražene gajilišta -->
+        <article id="art_3" eId="art_3_test"
+                 data-concepts="reporting_obligation,detection"
+                 data-norm-type="duty">
+          <num>Član 3</num>
+          <heading>Obaveza prijave zaražene površine</heading>
+          <paragraph id="art_3_p1" eId="art_3_p1">
+            <num>(1)</num>
+            <content>
+              Svaki proizvoditelj dužan da prijavi, u roku od 24 časa, 
+              bilo koji znak prisustva opasne štetočine nadležnom organu.
+            </content>
+            <mod>Sankcija: Novčana globa od 500,000 do 1,000,000 dinara</mod>
+          </paragraph>
+          <paragraph id="art_3_p2" eId="art_3_p2">
+            <num>(2)</num>
+            <content>
+              Ako je termin propušten, pravna lica se kažnjavaju
+              sa 2 do 4 godine zatvorske kazne.
+            </content>
+            <mod>Sankcija: 2 do 4 godine zatvora</mod>
+          </paragraph>
+        </article>
+
+        <!-- Član 4: Primena pesticide -->
+        <article id="art_4" eId="art_4_test"
+                 data-concepts="pesticide_application,safety_protocol"
+                 data-norm-type="regulation">
+          <num>Član 4</num>
+          <heading>Primena pesticida i zaštitnih mera</heading>
+          <paragraph id="art_4_p1" eId="art_4_p1">
+            <num>(1)</num>
+            <content>
+              Pesticidi se mogu primenjivati samo prema prethodnom odobrenju
+              Ministarstva i uz strogu poštovanje bezbednosnih protokola.
+            </content>
+            <mod>Sankcija: Novčana globa od 1,000,000 do 2,000,000 dinara</mod>
+          </paragraph>
+          <paragraph id="art_4_p2" eId="art_4_p2">
+            <num>(2)</num>
+            <content>
+              Primena neodobrenog pesticida predstavlja posebno teško kršenje
+              i kažnjava se sa 1 do 2 godine zatvora.
+            </content>
+            <mod>Sankcija: 1 do 2 godine zatvora</mod>
+          </paragraph>
+        </article>
+      </chapter>
+    </part>
+
+    <!-- DEO II: KAŽNJAVANJE -->
+    <part id="part_2" eId="part_2">
+      <heading>DEO II: KAŽNJAVAJUĆE ODREDBE</heading>
+
+      <!-- Poglavlje 3: Laka kršenja -->
+      <chapter id="chap_3" eId="chap_3">
+        <heading>Poglavlje 3: Laka kršenja</heading>
+
+        <!-- Član 5: Neizvršavanje redovne kontrole -->
+        <article id="art_5" eId="art_5_test"
+                 data-concepts="inspection_duty,minor_offense"
+                 data-norm-type="penalty">
+          <num>Član 5</num>
+          <heading>Neizvršavanje redovnih kontrola</heading>
+          <paragraph id="art_5_p1" eId="art_5_p1">
+            <num>(1)</num>
+            <content>
+              Fizička lica koja ne izvrše redovne mesečne kontrole
+              liče svoje certifikate.
+            </content>
+            <mod>Sankcija: Liš certifikate na 6 meseci</mod>
+          </paragraph>
+          <paragraph id="art_5_p2" eId="art_5_p2">
+            <num>(2)</num>
+            <content>
+              Ponovno neizvršavanje posle liš dovodi do trajnog liš.
+            </content>
+            <mod>Sankcija: Trajni liš certifikata i novčana globa od 500,000 dinara</mod>
+          </paragraph>
+        </article>
+
+        <!-- Član 6: Neispravna dokumentacija -->
+        <article id="art_6" eId="art_6_test"
+                 data-concepts="documentation,record_keeping"
+                 data-norm-type="penalty">
+          <num>Član 6</num>
+          <heading>Neispravna ili nepotpuna dokumentacija</heading>
+          <paragraph id="art_6_p1" eId="art_6_p1">
+            <num>(1)</num>
+            <content>
+              Nepotpuna dokumentacija o primeni mera
+              kažnjava se sa 200,000 do 500,000 dinara.
+            </content>
+            <mod>Sankcija: 200,000 do 500,000 dinara</mod>
+          </paragraph>
+        </article>
+      </chapter>
+
+      <!-- Poglavlje 4: Teška kršenja -->
+      <chapter id="chap_4" eId="chap_4">
+        <heading>Poglavlje 4: Teška kršenja i sabotaža</heading>
+
+        <!-- Član 7: Namerna sabotaža -->
+        <article id="art_7" eId="art_7_test"
+                 data-concepts="sabotage,intent,severe_damage"
+                 data-norm-type="penalty">
+          <num>Član 7</num>
+          <heading>Namerna sabotaža i prenos bolesti</heading>
+          <paragraph id="art_7_p1" eId="art_7_p1">
+            <num>(1)</num>
+            <content>
+              Svako ko namerno prenese zaraženi biljni materijal
+              sa ciljem da izbaci drug sa konkurencije
+              kažnjava se sa 3 do 5 godina zatvora.
+            </content>
+            <mod>Sankcija: 3 do 5 godina zatvora</mod>
+          </paragraph>
+          <paragraph id="art_7_p2" eId="art_7_p2">
+            <num>(2)</num>
+            <content>
+              Ako je posledica masovna destrukcija usjeva na velikom području,
+              kazna se povećava na 5 do 10 godina.
+            </content>
+            <mod>Sankcija: 5 do 10 godina zatvora i konfiskacija imovine</mod>
+          </paragraph>
+        </article>
+
+        <!-- Član 8: Krivolično pisanje izveštaja -->
+        <article id="art_8" eId="art_8_test"
+                 data-concepts="false_report,document_fraud"
+                 data-norm-type="penalty">
+          <num>Član 8</num>
+          <heading>Falsifikovanje izveštaja i dokaza</heading>
+          <paragraph id="art_8_p1" eId="art_8_p1">
+            <num>(1)</num>
+            <content>
+              Službeno lice koje falsifikuje test rezultate
+              kažnjava se sa 2 do 4 godine zatvora.
+            </content>
+            <mod>Sankcija: 2 do 4 godine zatvora</mod>
+          </paragraph>
+          <paragraph id="art_8_p2" eId="art_8_p2">
+            <num>(2)</num>
+            <content>
+              Ako je falsifikovanje izvršeno sa ciljem da omete
+              zaštitu većeg območja, kazna je do 6 godina.
+            </content>
+            <mod>Sankcija: Do 6 godina zatvora i privremena zabrana obavljanja profesije</mod>
+          </paragraph>
+        </article>
+
+        <!-- Član 9: Protivljenje karantini -->
+        <article id="art_9" eId="art_9_test"
+                 data-concepts="quarantine_violation,defiance"
+                 data-norm-type="penalty">
+          <num>Član 9</num>
+          <heading>Protivljenje karantinskim merama</heading>
+          <paragraph id="art_9_p1" eId="art_9_p1">
+            <num>(1)</num>
+            <content>
+              Svako ko prekrši karantinsku zonu bez dozvole
+              kažnjava se sa 1 do 3 godine zatvora.
+            </content>
+            <mod>Sankcija: 1 do 3 godine zatvora</mod>
+          </paragraph>
+          <paragraph id="art_9_p2" eId="art_9_p2">
+            <num>(2)</num>
+            <content>
+              Ako usled protivljenja dođe do masivnog širenja štetočina,
+              kazna je do 5 godina sa obaveznom konfiskacijom imovine.
+            </content>
+            <mod>Sankcija: Do 5 godina zatvora, konfiskacija, zabrana bivanja na području</mod>
+          </paragraph>
+        </article>
+      </chapter>
+    </part>
+  </act>
+</akomaNtoso>

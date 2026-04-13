@@ -62,13 +62,14 @@ class PDFExtractor:
         print(f"Pronađeno {len(pdf_files)} PDF fajlova...")
         
         for idx, pdf_file in enumerate(pdf_files, 1):
-            print(f"[{idx}/{len(pdf_files)}] Ekstrahujem: {pdf_file.name}")
+            safe_name = pdf_file.name.encode('ascii', 'replace').decode('ascii')
+            print(f"[{idx}/{len(pdf_files)}] Ekstrahujem: {safe_name}")
             try:
                 text = self.extract_text(pdf_file)
                 results[pdf_file.stem] = text
-                print(f"  ✓ Ekstrahovano {len(text)} karaktera")
+                print(f"  [OK] Ekstrahovano {len(text)} karaktera")
             except Exception as e:
-                print(f"  ✗ Greška: {e}")
+                print(f"  [X] Greska: {e}")
                 results[pdf_file.stem] = ""
         
         return results

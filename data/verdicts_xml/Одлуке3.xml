@@ -20,18 +20,20 @@
                 <FRBRManifestation>
                     <FRBRthis value="/akn/me/judgment/Одлуке3/sr@2015-09-10/!main.xml"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке3/sr@2015-09-10/!main.akn"/>
-                    <FRBRdate date="2026-03-31"/>
+                    <FRBRdate date="2026-02-09"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
             <references source="#court">
                 <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni Sud u Podgorici"/>
-                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Đuković Goran"/>
-                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Đuković Goranu"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Đuković Goranu"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Đuković Goran"/>
                 <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="B. M."/>
-                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="adv"/>
-                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="L. B."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="adv"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore" showAs="Zakonik o krivičnom postupku Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -49,34 +51,55 @@
                     <docDate date="2015-09-10">2015-09-10</docDate>
                 </block>
                 <block name="judges">
-                    <judge>Đuković Goran</judge>
                     <judge>Đuković Goranu</judge>
+                    <judge>Đuković Goran</judge>
                 </block>
             </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni B. M. je osuđen za tešku tjelesnu povredu L. B. nakon međusobne svađe, nanijevši mu ozbiljne povrede. Presuda uključuje kaznu zatvora od 5 mjeseci.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>priznavanje krivice</p>
+                    <p>teška tjelesna povreda</p>
+                </block>
+            </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Zakonik o krivičnom postupku Crne Gore</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/2024/!main#art_3">Član 3</ref>
-                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/2024/!main#art_399">Član 399</ref>
-                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
-                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/2024/!main#art_300">Član 300</ref>
-                    <ref href="/akn/me/act/2024/!main#art_46">Član 46</ref>
-                    <ref href="/akn/me/act/2024/!main#art_19">Član 19</ref>
-                    <ref href="/akn/me/act/2024/!main#art_303">Član 303</ref>
-                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_46">Član 46</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_19">Član 19</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_303">Član 303</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_3">Član 3</ref>
                 </block>
             </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da je okrivljeni u vrijeme i na način opisan u presudi izvršio krivično djelo teška tjelesna povreda.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усвојено">
+                    <p>Optuženi se oglašava krivim</p>
+                </block>
+            </decision>
             <participants>
                 <block name="defendants">
                     <person>B. M.</person>
                 </block>
                 <block name="victims">
+                    <person>L. B.</person>
                     <person>adv</person>
                 </block>
             </participants>
@@ -84,6 +107,17 @@
                 <fact key="injury_type">teška tjelesna povreda</fact>
                 <fact key="location">Podgorica</fact>
                 <fact key="location">Podgorici Kv</fact>
+                <fact key="weapon">staklena flaša</fact>
+                <fact key="weapon_used">true</fact>
+                <fact key="severe_consequence">true</fact>
+                <fact key="death_result">false</fact>
+                <fact key="negligence">false</fact>
+                <fact key="provocation">false</fact>
+                <fact key="fight_participation">false</fact>
+                <fact key="fight_consequence">none</fact>
+                <fact key="weapon_shown">false</fact>
+                <fact key="caused_danger">false</fact>
+                <fact key="left_without_help">false</fact>
             </facts>
             <conclusions>
                 <block name="fullText">

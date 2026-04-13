@@ -20,7 +20,7 @@
                 <FRBRManifestation>
                     <FRBRthis value="/akn/me/judgment/Одлуке4/sr@2019-01-24/!main.xml"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке4/sr@2019-01-24/!main.akn"/>
-                    <FRBRdate date="2026-03-31"/>
+                    <FRBRdate date="2026-02-09"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
@@ -28,12 +28,14 @@
             <references source="#court">
                 <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni Sud u Podgorici"/>
                 <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Danijela Rajković Željka Jovović DN"/>
-                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Željki Jovović"/>
-                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Danijela Rajković"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Danijela Rajković"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Željki Jovović"/>
+                <TLCPerson eId="judge_4" href="/akn/me/ontology/person/judge" showAs="Željka Jovović"/>
                 <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="N. R."/>
-                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="S. S."/>
-                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="Senev Sashka"/>
-                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="Senev Sashka"/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="S. S."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -52,36 +54,68 @@
                 </block>
                 <block name="judges">
                     <judge>Danijela Rajković Željka Jovović DN</judge>
-                    <judge>Željki Jovović</judge>
                     <judge>Danijela Rajković</judge>
+                    <judge>Željki Jovović</judge>
+                    <judge>Željka Jovović</judge>
                 </block>
             </header>
+            <introduction>
+                <block name="summary">
+                    <p>Sud je proglasio N. R. krivim za lako tjelesnu povredu koju je nanio S. S. metalnim ključem. Okrivljenom je izrečena uslovna osuda sa kaznom zatvora od tri meseca.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>izvršenje krivičnog dela</p>
+                    <p>priznanje krivice</p>
+                </block>
+            </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
-                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/2024/!main#art_227">Član 227</ref>
-                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
-                    <ref href="/akn/me/act/2024/!main#art_303">Član 303</ref>
-                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_227">Član 227</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_52">Član 52</ref>
                 </block>
             </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je ocijenio da su dokazi o krivici okrivljenog dovoljno utemeljeni, uzimajući u obzir sporazum o priznanju krivice.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="usvojeno">
+                    <p>Optuženi se oglašava krivim</p>
+                </block>
+            </decision>
             <participants>
                 <block name="defendants">
                     <person>N. R.</person>
                 </block>
                 <block name="victims">
-                    <person>S. S.</person>
                     <person>Senev Sashka</person>
+                    <person>S. S.</person>
                 </block>
             </participants>
             <facts>
                 <fact key="injury_type">laka tjelesna povreda</fact>
                 <fact key="location">Podgorica</fact>
+                <fact key="weapon">metalni ključ</fact>
+                <fact key="weapon_used">true</fact>
+                <fact key="severe_consequence">false</fact>
+                <fact key="death_result">false</fact>
+                <fact key="negligence">false</fact>
+                <fact key="provocation">false</fact>
+                <fact key="fight_participation">false</fact>
+                <fact key="fight_consequence">none</fact>
+                <fact key="weapon_shown">false</fact>
+                <fact key="caused_danger">false</fact>
+                <fact key="left_without_help">false</fact>
             </facts>
             <conclusions>
                 <block name="fullText">

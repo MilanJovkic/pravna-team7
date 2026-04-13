@@ -1,103 +1,103 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17">
-    <ns0:judgment name="GEN-20260213-011408">
-        <ns0:meta>
-            <ns0:identification source="#court">
-                <ns0:FRBRWork>
-                    <ns0:FRBRthis value="/akn/me/judgment/GEN-20260213-011408/!main" />
-                    <ns0:FRBRuri value="/akn/me/judgment/GEN-20260213-011408" />
-                    <ns0:FRBRdate date="2026-02-13" name="judgment" />
-                    <ns0:FRBRauthor href="#court" />
-                    <ns0:FRBRcountry value="me" />
-                </ns0:FRBRWork>
-                <ns0:FRBRExpression>
-                    <ns0:FRBRthis value="/akn/me/judgment/GEN-20260213-011408/sr@2026-02-13/!main" />
-                    <ns0:FRBRuri value="/akn/me/judgment/GEN-20260213-011408/sr@2026-02-13" />
-                    <ns0:FRBRdate date="2026-02-13" />
-                    <ns0:FRBRauthor href="#court" />
-                    <ns0:FRBRlanguage language="sr" />
-                </ns0:FRBRExpression>
-                <ns0:FRBRManifestation>
-                    <ns0:FRBRthis value="/akn/me/judgment/GEN-20260213-011408/sr@2026-02-13/!main.xml" />
-                    <ns0:FRBRuri value="/akn/me/judgment/GEN-20260213-011408/sr@2026-02-13/!main.akn" />
-                    <ns0:FRBRdate date="2026-02-13" />
-                    <ns0:FRBRauthor href="#court" />
-                    <ns0:FRBRformat value="xml" />
-                </ns0:FRBRManifestation>
-            </ns0:identification>
-            <ns0:references source="#court">
-                <ns0:TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni sud u Podgorici" />
-                <ns0:TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Sudija" />
-                <ns0:TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Ana M." />
-                <ns0:TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore" />
-            </ns0:references>
-            <ns0:classification source="#court">
-                <ns0:keyword value="criminal_case" showAs="Krivična stvar" />
-            </ns0:classification>
-        </ns0:meta>
-        <ns0:judgmentBody>
-            <ns0:header>
-                <ns0:block name="caseNumber">
-                    <ns0:docNumber>GEN-20260213-011408</ns0:docNumber>
-                </ns0:block>
-                <ns0:block name="court">
-                    <ns0:docTitle>Osnovni sud u Podgorici</ns0:docTitle>
-                </ns0:block>
-                <ns0:block name="date">
-                    <ns0:docDate date="2026-02-13">2026-02-13</ns0:docDate>
-                </ns0:block>
-                <ns0:block name="judges">
-                    <ns0:judge>Sudija</ns0:judge>
-                </ns0:block>
-            </ns0:header>
-            <ns0:introduction>
-                <ns0:block name="summary">
-                    <ns0:p>Okrivljena Ana M. je proglašena krivom za teško tjelesno povređivanje oštećenog nožem. Izrečena joj je kazna zatvora od jedne godine.</ns0:p>
-                </ns0:block>
-                <ns0:block name="legalIssues">
-                    <ns0:p>teško tjelesno povređivanje</ns0:p>
-                    <ns0:p>upotreba oružja</ns0:p>
-                </ns0:block>
-            </ns0:introduction>
-            <ns0:background>
-                <ns0:block name="appliedLaws">
-                    <ns0:ref href="/akn/me/act/2024/!main">Krivični zakonik</ns0:ref>
-                </ns0:block>
-                <ns0:block name="appliedArticles">
-                    <ns0:ref href="/akn/me/act/2024/!main#art_151">Član 151</ns0:ref>
-                </ns0:block>
-            </ns0:background>
-            <ns0:motivation>
-                <ns0:block name="reasoning">
-                    <ns0:p>Okrivljena je namerno upotrebila nož kako bi nanela povredu oštećenom, ispunivši sve elemente krivičnog dela.</ns0:p>
-                </ns0:block>
-            </ns0:motivation>
-            <ns0:decision>
-                <ns0:block name="verdict" outcome="usvojeno">
-                    <ns0:p>Optuženi se oglašava krivim</ns0:p>
-                </ns0:block>
-            </ns0:decision>
-            <ns0:participants>
-                <ns0:block name="defendants">
-                    <ns0:person>Ana M.</ns0:person>
-                </ns0:block>
-            </ns0:participants>
-            <ns0:facts>
-                <ns0:fact key="injury_type">teska tjelesna povreda</ns0:fact>
-                <ns0:fact key="location">Podgorica</ns0:fact>
-                <ns0:fact key="weapon">noz</ns0:fact>
-                <ns0:fact key="weapon_used">da</ns0:fact>
-                <ns0:fact key="severe_consequence">da</ns0:fact>
-                <ns0:fact key="death_result">ne</ns0:fact>
-                <ns0:fact key="negligence">ne</ns0:fact>
-                <ns0:fact key="provocation">ne</ns0:fact>
-                <ns0:fact key="fight_participation">ne</ns0:fact>
-                <ns0:fact key="fight_consequence">none</ns0:fact>
-                <ns0:fact key="left_without_help">ne</ns0:fact>
-            </ns0:facts>
-            <ns0:conclusions>
-                <ns0:block name="fullText">
-                    <ns0:p>Osnovni sud u Podgorici  
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="GEN-20260213-011408">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/GEN-20260213-011408/!main"/>
+                    <FRBRuri value="/akn/me/judgment/GEN-20260213-011408"/>
+                    <FRBRdate date="2026-02-13" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/GEN-20260213-011408/sr@2026-02-13/!main"/>
+                    <FRBRuri value="/akn/me/judgment/GEN-20260213-011408/sr@2026-02-13"/>
+                    <FRBRdate date="2026-02-13"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/GEN-20260213-011408/sr@2026-02-13/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/GEN-20260213-011408/sr@2026-02-13/!main.akn"/>
+                    <FRBRdate date="2026-02-13"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni sud u Podgorici"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Sudija"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Ana M."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>GEN-20260213-011408</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>Osnovni sud u Podgorici</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2026-02-13">2026-02-13</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Sudija</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljena Ana M. je proglašena krivom za teško tjelesno povređivanje oštećenog nožem. Izrečena joj je kazna zatvora od jedne godine.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>teško tjelesno povređivanje</p>
+                    <p>upotreba oružja</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="/akn/me/act/2024/!main">Krivični zakonik</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Okrivljena je namerno upotrebila nož kako bi nanela povredu oštećenom, ispunivši sve elemente krivičnog dela.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усвојено">
+                    <p>Optuženi se oglašava krivim</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>Ana M.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teska tjelesna povreda</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="weapon">noz</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="death_result">ne</fact>
+                <fact key="negligence">ne</fact>
+                <fact key="provocation">ne</fact>
+                <fact key="fight_participation">ne</fact>
+                <fact key="fight_consequence">none</fact>
+                <fact key="left_without_help">ne</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>Osnovni sud u Podgorici  
 Broj predmeta: GEN-20260213-011408  
 Datum: 2026-02-13  
 
@@ -113,9 +113,9 @@ Sankcija: Okrivljenoj se izriče kazna zatvora u trajanju od jedne godine.
 
 Obrazloženje: Okrivljena je, u nameri da nanese povredu, upotrebila nož i teško povredila oštećenog, čime je ispunila sve elemente krivičnog dela iz člana 151. Okrivljena nije delovala u nehatnom stanju, niti je bila izazvana, a posledice njenog dela su ozbiljne, ali nisu dovele do smrti oštećenog.  
 
-Pravna pouka: Protiv ove presude može se izjaviti žalba Apelacionom sudu Crne Gore u roku od 15 dana od dana prijema presude.</ns0:p>
-                </ns0:block>
-            </ns0:conclusions>
-        </ns0:judgmentBody>
-    </ns0:judgment>
+Pravna pouka: Protiv ove presude može se izjaviti žalba Apelacionom sudu Crne Gore u roku od 15 dana od dana prijema presude.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
 </ns0:akomaNtoso>

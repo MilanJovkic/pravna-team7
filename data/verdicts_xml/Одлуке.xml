@@ -20,7 +20,7 @@
                 <FRBRManifestation>
                     <FRBRthis value="/akn/me/judgment/Одлуке/sr@2019-03-27/!main.xml"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке/sr@2019-03-27/!main.akn"/>
-                    <FRBRdate date="2026-03-31"/>
+                    <FRBRdate date="2026-02-09"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
@@ -28,9 +28,11 @@
             <references source="#court">
                 <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni Sud u Podgorici"/>
                 <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Đuković Goranu"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Đuković Goran"/>
                 <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Č. S."/>
                 <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="M. M."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -49,20 +51,41 @@
                 </block>
                 <block name="judges">
                     <judge>Đuković Goranu</judge>
+                    <judge>Đuković Goran</judge>
                 </block>
             </header>
+            <introduction>
+                <block name="summary">
+                    <p>Osnovni sud u Podgorici presudio je protiv Č. S. zbog teške tjelesne povrede M. M. Okrivljeni je dobio uslovnu osudu uz određivanje kazne zatvora od šest meseci uz uslov neizvršenja novog krivičnog dela.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>teška tjelesna povreda</p>
+                    <p>uslovna osuda</p>
+                </block>
+            </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
-                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_52">Član 52</ref>
                 </block>
             </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je na osnovu prikupljenih dokaza utvrdio krivicu okrivljenog i prihvatio sporazum o priznanju krivice.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="усvojено">
+                    <p>Optuženi se oglašava krivim</p>
+                </block>
+            </decision>
             <participants>
                 <block name="defendants">
                     <person>Č. S.</person>
@@ -74,6 +97,16 @@
             <facts>
                 <fact key="injury_type">teška tjelesna povreda</fact>
                 <fact key="location">Podgorica</fact>
+                <fact key="weapon_used">false</fact>
+                <fact key="severe_consequence">true</fact>
+                <fact key="death_result">false</fact>
+                <fact key="negligence">false</fact>
+                <fact key="provocation">false</fact>
+                <fact key="fight_participation">false</fact>
+                <fact key="fight_consequence">none</fact>
+                <fact key="weapon_shown">false</fact>
+                <fact key="caused_danger">false</fact>
+                <fact key="left_without_help">false</fact>
             </facts>
             <conclusions>
                 <block name="fullText">
@@ -114,7 +147,7 @@ Zato što je:
 
  
 
-Dana 13. avgusta 2018. godine oko 03,00 časova, ispred objekta mjesne zajednice &quot;Lj.&quot; u Ulici B. B. u P., svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, teško tjelesno povrijedio oštećenog M. M., na način što je, nakon ranije prepirke sa oštećenim, istog sa obije ruke gurnuo u predjelu grudi, usljed čega je oštećeni M. M. pao na zemlju i zadobio tešku tjelesnu povredu u vidu preloma gornjeg okrajka lijeve butne kosti,
+Dana 13. avgusta 2018. godine oko 03,00 časova, ispred objekta mjesne zajednice "Lj." u Ulici B. B. u P., svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, teško tjelesno povrijedio oštećenog M. M., na način što je, nakon ranije prepirke sa oštećenim, istog sa obije ruke gurnuo u predjelu grudi, usljed čega je oštećeni M. M. pao na zemlju i zadobio tešku tjelesnu povredu u vidu preloma gornjeg okrajka lijeve butne kosti,
 
  
 

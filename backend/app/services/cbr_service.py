@@ -101,6 +101,10 @@ class CbrService:
 
         return CbrResult(matches=matches)
 
+    def sync_case_base(self) -> None:
+        """Explicit adapter hook for pre-query case-base synchronization."""
+        self._ensure_case_base()
+
     def _ensure_case_base(self) -> None:
         logger = logging.getLogger(__name__)
         config = self._db_config()
@@ -137,12 +141,19 @@ class CbrService:
 
         records = []
         for xml_file in sorted(xml_dir.glob("*.xml")):
+            if self._is_generated_source(xml_file):
+                continue
+
             facts = self._extract_facts(xml_file)
             if not facts:
                 continue
 
+            case_number = str(facts.get("case_number") or "").strip()
+            if case_number.lower().startswith("gen"):
+                continue
+
             record = (
-                facts.get("case_number", ""),
+                case_number,
                 normalize_injury_type(facts.get("injury_type")),
                 normalize_text(facts.get("location")),
                 normalize_text(facts.get("weapon")),
@@ -181,12 +192,16 @@ class CbrService:
         if not xml_dir.exists():
             return (0, 0.0)
 
-        files = sorted(xml_dir.glob("*.xml"))
+        files = [path for path in sorted(xml_dir.glob("*.xml")) if not self._is_generated_source(path)]
         if not files:
             return (0, 0.0)
 
         latest_mtime = max(file.stat().st_mtime for file in files)
         return (len(files), latest_mtime)
+
+    def _is_generated_source(self, xml_path: Path) -> bool:
+        stem = xml_path.stem.strip().lower()
+        return stem.startswith("gen")
 
     def _count_db_corpus_cases(self, conn) -> int:
         """Count only corpus-derived cases, excluding user-added USER-* entries."""

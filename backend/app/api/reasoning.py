@@ -1,35 +1,43 @@
 """API endpoints for combined reasoning."""
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends
+from starlette.concurrency import run_in_threadpool
 
+from backend.app.application.services.reasoning_decision_strategies import VerdictDecisionStrategySelector
+from backend.app.application.services.reasoning_input_validator import ReasoningInputValidator
+from backend.app.application.use_cases.reasoning_commands import RunHybridReasoningUseCase
+from backend.app.bootstrap.dependencies import provide_cbr_engine, provide_rule_engine
+from backend.app.bootstrap.error_handling import map_exception_to_http
+from backend.app.domain.reasoning.policies import ReasoningPolicy
 from backend.app.models.schemas import ReasoningRequest, ReasoningResponse
-from backend.app.services.rule_reasoning_service import RuleReasoningService
-from backend.app.services.cbr_service import CbrService
+from backend.app.ports.outbound.cbr_engine import CbrEngine
+from backend.app.ports.outbound.rule_engine import RuleEngine
 from backend.app.services.reasoning_explain_service import ReasoningExplainService
 
 
 router = APIRouter()
-rule_service = RuleReasoningService()
-cbr_service = CbrService()
-explain_service = ReasoningExplainService()
+
+
+def get_reasoning_use_case(
+    rule_engine: RuleEngine = Depends(provide_rule_engine),
+    cbr_engine: CbrEngine = Depends(provide_cbr_engine),
+) -> RunHybridReasoningUseCase:
+    return RunHybridReasoningUseCase(
+        rule_engine=rule_engine,
+        cbr_engine=cbr_engine,
+        explain_service=ReasoningExplainService(),
+        decision_selector=VerdictDecisionStrategySelector(),
+        reasoning_policy=ReasoningPolicy(),
+        input_validator=ReasoningInputValidator(),
+    )
 
 
 @router.post("/", response_model=ReasoningResponse)
-async def run_reasoning(request: ReasoningRequest):
+async def run_reasoning(
+    request: ReasoningRequest,
+    use_case: RunHybridReasoningUseCase = Depends(get_reasoning_use_case),
+):
     """Run rule-based and case-based reasoning for provided facts."""
     try:
-        rule_result = rule_service.run(request.facts)
-        cbr_result = cbr_service.query(request.facts, request.top_k)
-        applied_articles = explain_service.map_norms_to_articles(rule_result.applied_norms)
-        applied_texts = explain_service.get_applied_law_texts(applied_articles)
-        suggested_verdict = explain_service.suggest_verdict(rule_result.applied_norms, cbr_result)
-        suggested_sanction = explain_service.suggest_sanction(applied_articles)
-        return ReasoningResponse(
-            rule_reasoning=rule_result,
-            cbr=cbr_result,
-            applied_articles=applied_articles,
-            applied_law_texts=applied_texts,
-            suggested_verdict=suggested_verdict,
-            suggested_sanction=suggested_sanction,
-        )
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        return await run_in_threadpool(use_case.execute, request)
+    except Exception as exc:
+        raise map_exception_to_http(exc)

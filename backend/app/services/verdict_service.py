@@ -110,10 +110,15 @@ class VerdictService:
         
         result = []
         for case_id in verdicts.keys():
+            if self._is_generated_case(case_id):
+                continue
             metadata = self._extract_metadata(case_id)
             result.append(metadata)
 
         return self._sort_verdicts(result)
+
+    def _is_generated_case(self, case_id: str) -> bool:
+        return str(case_id or "").strip().upper().startswith("GEN")
 
     def get_verdicts_paginated(self, page: int = 1, page_size: int = 20) -> dict:
         """Return paginated verdict metadata for scalable list rendering."""

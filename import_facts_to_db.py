@@ -104,10 +104,16 @@ def import_to_database(xml_dir: Path, db_config: dict):
     
     for xml_file in xml_files:
         try:
+            if xml_file.stem.strip().upper().startswith("GEN"):
+                continue
+
             facts = extract_facts_from_xml(xml_file)
+            case_number = (facts.get("case_number", "") or "").strip()
+            if case_number.upper().startswith("GEN"):
+                continue
             
             record = (
-                facts.get("case_number", ""),
+                case_number,
                 normalize_injury_type(facts.get("injury_type")) or "",
                 normalize_text(facts.get("location")) or "",
                 normalize_text(facts.get("weapon")) or "",
@@ -127,6 +133,13 @@ def import_to_database(xml_dir: Path, db_config: dict):
         except Exception as e:
             safe_name = xml_file.name.encode('ascii', 'replace').decode('ascii')
             print(f"[X] Error processing {safe_name}: {e}")
+
+    if not records:
+        conn.commit()
+        cursor.close()
+        conn.close()
+        print("\n[OK] No non-GEN XML records found for import")
+        return
     
     # Bulk insert
     insert_query = """

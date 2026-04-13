@@ -30,7 +30,8 @@ ASCII_MAP = {
 class RuleReasoningService:
     """Service that runs dr-device reasoning on provided facts."""
 
-    def run(self, facts: CaseFacts) -> RuleReasoningResult:
+    def run(self, facts: CaseFacts, strict_mode: bool = True) -> RuleReasoningResult:
+        _ = strict_mode
         self._write_facts(facts)
         self._run_dr_device()
         return self._parse_export(facts)

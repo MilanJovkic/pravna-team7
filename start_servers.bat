@@ -32,7 +32,7 @@ call .venv\Scripts\activate.bat
 echo ============================================================
 echo Checking verdict synchronization (PDF -^> TXT -^> XML)...
 echo ============================================================
-python sync_verdicts.py --no-llm
+python sync_verdicts.py --cleanup-gen --no-llm
 if errorlevel 1 (
     echo WARNING: Verdict sync had issues. Check output above.
 )

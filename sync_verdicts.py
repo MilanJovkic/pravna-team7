@@ -35,6 +35,19 @@ TXT_FOLDER = PROJECT_ROOT / "data" / "verdicts_txt"
 XML_FOLDER = PROJECT_ROOT / "data" / "verdicts_xml"
 
 
+def cleanup_gen_artifacts(txt_folder: Path, xml_folder: Path) -> int:
+    """Remove generated GEN-* artifacts from TXT/XML corpus folders."""
+    removed = 0
+    for folder, extension in ((txt_folder, ".txt"), (xml_folder, ".xml")):
+        if not folder.exists():
+            continue
+        for path in folder.glob(f"*{extension}"):
+            if path.stem.upper().startswith("GEN"):
+                path.unlink(missing_ok=True)
+                removed += 1
+    return removed
+
+
 def get_verdict_stems(folder: Path, extension: str) -> set[str]:
     """Get set of file stems (names without extension) from a folder."""
     if not folder.exists():
@@ -229,6 +242,7 @@ def sync_all(
     model: str = None,
     force: bool = False,
     no_llm: bool = False,
+    cleanup_gen: bool = False,
     check_only: bool = False
 ) -> bool:
     """
@@ -247,6 +261,10 @@ def sync_all(
     Returns:
         True if all files are synced, False otherwise
     """
+    if cleanup_gen:
+        removed = cleanup_gen_artifacts(txt_folder, xml_folder)
+        print(f"[OK] Uklonjeno GEN artefakata: {removed}")
+
     # Check initial status
     status = check_sync_status(pdf_folder, txt_folder, xml_folder)
     print_status(status)
@@ -303,6 +321,12 @@ def main():
         action="store_true",
         help="Preskoči LLM anotaciju (samo regex)"
     )
+
+    parser.add_argument(
+        "--cleanup-gen",
+        action="store_true",
+        help="Obriši GEN* TXT/XML artefakte prije sinhronizacije"
+    )
     
     parser.add_argument(
         "--provider",
@@ -350,6 +374,7 @@ def main():
         model=args.model,
         force=args.force,
         no_llm=args.no_llm,
+        cleanup_gen=args.cleanup_gen,
         check_only=args.check
     )
     

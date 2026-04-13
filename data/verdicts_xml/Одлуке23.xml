@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке23">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке23/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке23"/>
+                    <FRBRdate date="2008-04-03" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке23/sr@2008-04-03/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке23/sr@2008-04-03"/>
+                    <FRBRdate date="2008-04-03"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке23/sr@2008-04-03/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке23/sr@2008-04-03/!main.akn"/>
+                    <FRBRdate date="2026-04-13"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="porotnika Bogetić"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakon-o-oružju" showAs="Zakon o oružju"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/kz-cg" showAs="KZ CG"/>
+                <TLCLaw eId="law_3" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 259/10</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>VIŠI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2008-04-03">2008-04-03</docDate>
+                </block>
+                <block name="judges">
+                    <judge>porotnika Bogetić</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Optuženi Č.N. kriv za pokušaj ubistva i nedozvoljeno držanje oružja.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Pokušaj ubistva</p>
+                    <p>Nedozvoljeno držanje oružja</p>
+                    <p>Umišljaj</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Zakon o oružju</ref>
+                    <ref href="#law_2">KZ CG</ref>
+                    <ref href="#law_3">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/zakon-o-oružju#art_144">Član 144</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_190">Član 190</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_2">Član 2</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_185">Član 185</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_11">Član 11</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_27">Član 27</ref>
+                    <ref href="/akn/me/act/zakon-o-oružju#art_42">Član 42</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Optuženi je s umišljajem pokušao da liši života oštećenog, koristeći vatreno oružje.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="nepoznato">
+                    <p>Krivica potvrđena.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="witnesses">
+                    <person>M. B.</person>
+                    <person>V. V.</person>
+                    <person>ne vidi</person>
+                    <person>nije</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="weapon">pistolj</fact>
+                <fact key="alcohol_level">1,89 promila</fact>
+                <fact key="alcohol_level">3,06 promila</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Titogradu</fact>
+                <fact key="location">Igalu</fact>
+                <fact key="location">Podgorici Kt</fact>
+                <fact key="location">Igalo</fact>
+                <fact key="location">Uvjerenje Republi</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K.br.  259/10
+U IME NARODA
+VIŠI SUD U PODGORICI, kao prvostepeni krivi č ni, u vije ć u sastavljenom od sudije Branke Bo š kovi ć , kao
+predsjednika vije ć a, sudije Verice Sekuli ć  i sudija porotnika Bogeti ć  Baja, Radulovi ć  Slobodana i Radevi ć
+Radenka, kao č lanova vije ć a, uz u č e šć e Biljane Rako č evi ć  kao zapisni č ara, u krivi č nom predmetu protiv
+optu ž enog Č .N, kojeg u postupku brani N.L., advokat iz N., zbog krivi č nog djela te š ko ubistvo u poku š aju iz
+člana 144 u vezi st.1 ta č ka 3 KZ CG u vezi č l. 20 Krivi č nog zakonika Crne Gore i krivi č nog djela nedozvoljeno
+držanje oru ž ja i eksplozivnih materija iz č l.403 st.1 Krivi č nog zakonika Crne Gore, odlu č uju ć i po optu ž nici
+Višeg Dr ž avnog tu ž ioca Podgorica Kt.br. 296/08 od 03.04.2008. godine, koju je na glavnom pretresu zastupala
+Tatjana Begovi ć , zamjenik Vi š eg dr ž avnog tu ž ioca u Podgorici, nakon odr ž anog glavnog i javnog pretresa
+dana 14.03.2011. godine, u prisustvu zastupnika optu ž be, optu ž enog i njegovog branioca, nakon tajnog
+vijeć anja i glasanja,  dana 17.03.2011. godine, donio je i javno objavio
+P R E S U D U
+Optu ž eni:
+Č.N, rodjen ..... godine u H. N., sa prebivali š tem u mjestu rodjenja Ž .bb, dr ž avljanin Crne Gore, penzioner,
+zavr š io srednju ugostiteljsku š kolu, neo ž enjen, vojsku slu ž io, lo š eg imovnog stanja, ranije osudjivan
+presudom Okru ž nog suda u Titogradu K.br.276/84 od 24.06.1986. godine, zbog krivi č nog djela te š ko djelo
+protiv bezbjednosti javnog saobra ć aja iz č l.190 st.2 u vezi č l.185 st.1  KZ SRCG, na kaznu zatvora u trajanju od
+1 (jedne) godine, bio u pritvoru od 09.12.2008. godine do 12.02.2010. godine,
+K r i v    j e
+Što je:
+I Dana 09.12.2008. godine, u ugostiteljskom objektu „9“, u Igalu – Op š tina H. N., poku š ao li š iti ž ivota
+ošte ć enog B. Č . i pri tome sa umi š ljajem doveo u opasno st ž ivot o š te ć enog P. R.,  na na č in š to je pri prepirci sa
+ošte ć enim B. Č ., ma š io se pi š tolja marke „CZ“ M – 70, kalibar 7,65 mm, fab. br. 77369, repetirao ga i u pravcu
+ošte ć enog B.a, ispalio projektil koji ga je pogodio u predjelu stomaka, nakon č ega ga je o š te ć eni B. uhvatio za
+desni rukav i poku š ao da mu oduzme pi š tolj, za koje vrijeme je optu ž eni Č . ispalio jo š  nekoliko projektila, od
+kojih je jedan pogodio o š te ć enog B. u predjelu lijeve noge, a jedan projektil o š te ć enog P. R., koji se nalazio u
+njihovoj neposrednoj blizini, nanose ć i im tako te š ke tjelesne povrede, i to o š te ć enom B. Č . u vidu ustreline u
+predjelu trbuha i prostreline u predjelu lijevog koljena, a o š te ć enom P. R. u vidu rane prostreline na lijevoj
+strani grudnog ko š a,
+- čime je izvr š io krivi č no djelo –  te š ko ubistvo poku š aju iz č lana 144 st.1 ta č .3 u vezi č lana 20 Krivi č nog
+zakonika CGViši Sud u Podgorici
+K 259/2010
+14. Mart 2011
+II Dana 09.12.2008. godine u Igalu – op š tina Herceg Novi, na javnom mjestu u ugostiteljskom objektu „9“,
+neovla šć eno nosio vatreno oru ž je – pi š tolj marke „CZ“ M-70 kal. 7,65 mm, fabri č kog broja 77369, za č ije
+noš enje shodno č lanu 27. Zakonika o oru ž ju nije imao uredno izdat oru ž ni list, te č ije je no š enje shodno č lanu
+11. Zakona o oru ž ju zabranjeno na javnom mjestu,
+- čime je izvr š io krivi č no djelo – nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č lana 403 stav 1
+Krivi č nog zakonika CG
+Pa sud optu ž enom primjenom č l. 2,4,5,15,32,36,42,45,46 i 48 st. 1 Krivi č nog zakonika, prethodno utvrdjuje, i
+to za:
+- krivi č no djelo te š ko ubistvo poku š aju iz č lana 144 st.1 ta č .3 u vezi č lana 20. Krivi č nog zakonika CG kaznu
+zatvora u trajanju od 2(dvije) godine, a
+- krivi č no djelo nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č lana 403. stav 1. Krivi č nog zakonika CG
+kaznu zatvora u trajanju od 2(dva) mjeseca.
+Za ovim, Sud optu ž enog Č .N, primjenom citiranih zakonskih odredbi, te č lanova 48 st.2 ta č .2, 51, 199 i 364
+Zakonika o krivi č nom postupku Crne Gore
+O S U Đ  U J E
+Na jedinstvenu kaznu zatvora u trajanju 2 (jedne) godine i  1 (jednog) mjeseca, u koju kaznu mu se ura č unava
+vrijeme provedeno u pritvoru po č ev od 09.12.2008. godine do 12.02.2010.godine, tako da ostatak kazne ima
+izdrž ati po pravosna ž nosti presude.
+Na osnovu č lana 75 Krivi č nog zakonika, prema optu ž enom se izri č e
+MJERA BEZBIJEDNOSTI - ODUZIMANJE PREDMETA
+Pa se od optu ž enog trajno oduzima pi š tolj marke „CZ“ M-70 kal. 7,65 mm, fabri č kog broja 7737369.
+Ošte ć eni B. Č . i P.R se radi ostvarivanja imovinskog pravnog zahtjeva upu ć uju na redovnu gra đ ansku parnicu.
+Duž an je optu ž eni Č .N da na ime  tro š kova krivi č nog postupka isplati ovom sudu iznos od 897,50 €, i na ime
+pauš ala iznos od 50,00 €, u roku od 15 dana po pravosna ž nosti presude, pod prijetnjom prinudnog izvr š enja.
+O b r a z l o ž  e n j e
+Optu ž nicom VDT-a u Podgorici Kt.br. 296/08 od 03.04.2009. godine optu ž enom Č .N stavljeno je na teret
+izvrš enje krivi č nog djela  te š ko ubistvo u poku š aju iz č lana 144 st.1 ta č ka 3 KZ CG u vezi č lana 20 Krivi č nog
+zakonika Crne Gore i krivi č nog djela nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l.403 st.1
+Krivi č nog zakonika Crne Gore, pri kojoj optu ž nici je zastupnik optu ž be ostala do kraja glavnog pretresa,
+predla ž u ć i sudu da optu ž enog oglasi krivim i osudi na kaznu po zakonu.
+Optu ž eni Č .N u navodima svoje odbrane negirao je izvr š enje krivi č nog djela te š ko ubistvo u poku š aju iz č lana
+144 st.1 ta č ka 3 KZ CG u vezi č lana 20 Krivi č nog zakonika Crne Gore, dok priznaje izvr š enje krivi č nog djela pod
+tačkom II izreke. Naime, pojasnio je da nije poku š ao da ubije o š te ć ene B. Č . i P.R, da je penzioner, invalid sa
+lošim zdravstvenim stanjem i ugradjenim bajpasom kao i da se kao ugostitelj bavi seoskim turizmom, te da je
+nekoliko dana prije kriti č nog dogadjaja u njegovom objektu gdje je bio gost - B. Č . tra ž io prilikom naplate
+fiskalni ra č un sa kase jer nije bio zadovoljan visinom ra č una ali kako on ne izdaje u svom objektu fiskalni
+račun ve ć  paragon blok do š lo je do nesporazuma izmedju njih dvojice i B. je oti š ao ne plativ š i ra č un. Ina č e
+opš te je poznato po Herceg Novom da se B. bahato pona š a. Kriti č nog dana tj. 09.12.2008. godine krenuo je na
+čestitku rodjenja djeteta svog rodjaka i sa sobom ponio pi š tolj radi proslave, prethodno je svratio do u Igalo u
+kafanu „9“ koju dr ž i njegov prijatelj M. B.i sa kojim se prethodno bio dogovorio da ro š tiljaju ali kako je morao
+na č estitku svratio je da mu ka ž e da to odlo ž e. U kafani je osim gazde M. zatekao neka dva momka koji su
+sjedjeli na drugom dijelu kafane a za š ankom Č . B. kojem je rekao „zdravo“ prilikom ulaska i jo š  jedan
+momak, R. P.  B. se nalazio izmedju njega i P.. Nakon dolaska u kafanu gazda je č astio turu pi ć a, on je popio
+viljamovku a zatim je i on č astio turu poku š avaju ć i da smiri B.a koji ga je prozivao i psovao mu oca i majku
+govore ć i mu da ć e da ga nabije na kurac, vade ć i pare put š anka da mu kao plati dug a zatim ih je povla č io k
+sebi, a sve to je  radio zbog njihovog prethodnog dogadjaja u njegovoj kafani a onda ga je zvao da izadje vani
+da mu plati ono š to mu je ostao du ž an dan ranije. Ovakvo pona š anje prema njemu od strane B.a shvatio je
+kao poziv na fizi č ki obra č un. Odmah nakon toga, a svega 15-20 minuta od dolaska u kafanu B. je krenuo ka
+njemu zbog č ega je on izvukao iz jakne pi š tolj marke „CZ“, kal.7,65 mm koji je imao kod sebe, okrenuo ga put
+dolje i repetirao a za to vrijeme B. je gurnuo na njega P. koji mu se nalazio sa jedne strane dok ga je M. koji je
+sjedio sa druge strane uhvatio preko ruku blokiraju ć i mu i ramena i ruke. On se nalazio u pognutom polo ž aju.
+Poč eli su sa njim da se otimaju za pi š tolj koji je u jednom trenutku onako repetiran bio okrenut put njega, put
+njegovog stomaka i govorili su, „hajde sad pucaj“ ali je on uspio da lijevom rukom okrene usta cijevi od sebe,
+da njih odgurne od sebe i tada je pi š tolj opalio od kojeg prvog opaljenja i on ima povredu na lijevom dlanu.
+Nakon prvog ispaljenog metka ispalio je jo š  nekoliko za koje vrijeme su ga oni dr ž ali za desnu ruku u kojoj mu
+je i bio pi š tolj. Istakao je da ne zna kako je pi š tolj opalio jer on nije povla č io oroz nego su ga oni cimali za ruke
+ali on nije imao namjeru da nikog li š i ž ivota ve ć  samo da upla š i Č .B.a da ga vi š e ne napada odnosno da mu da
+do znanja da mu ovaj vi š e ne prilazi i da se odbrani od istog. Nakon dogadjaja B. i P. su oti š li iz kafane a on je
+pištolj, koji je ina č e nabavio ilegalno jer ž ivi na granici sa Hrvatskom sa starom majkom i dvije stare strine u
+kom š iluku, predao M.u. Po š ao je ku ć i gdje je popio nekoliko pi ć a  nakon š to je od druga č uo da su B. i P.
+povrijedjeni. Dodao je da je B. u vrijeme de š avanja kriti č nog dogadjaja bio i te ž i i ja č i od njega, kao i da ne zna
+koliko je metaka kriti č ne prilike imao u pi š tolju u koji ina č e staje 7 metaka. Kriti č nog dana je pekao rakiju
+koju je i konzumirao, tako da je bio pod dejstvom alkohola.
+U cilju provjeravanja navoda iz optu ž nice i sa njom u vezi navoda odbrane optu ž enog, sud je na glavnom
+pretresu sud je proveo dokaze: saslu š ao svjedoke o š te ć ene B. Č . i P.R; na saglasan predlog stranaka pro č itao
+iskaze svjedoka V. V. i M. BR. iz prethodnog postupka; pro č itao zapisnik o uvidjaju sa č injen od strane Uprave
+policije-Podru č na jedinica Herceg Novi 27-03/1 br.240/08-12328/14 od 10.12.2008. godine, izvje š taj o
+kriminalisti č ko - tehni č kom pregledu lica mjesta Ku.br.333/08 10.12.2008. godine, medicinsku dokumentaciju
+na ime o š te ć enih B. Č . i P.R, te na ime optu ž enog Č .N, izvje š taj o alkoholisanosti KC CG-Odjeljenja za sudsku
+medicinu br.2175 od 16.12.2008. godine na ime okrivljenog Č .N, nalaz i mi š ljenje sudsko medicinskog
+vješ taka Ki.br.270/08 od 26.03.2009. godine kao i izvr š io neposredno saslu š anje vje š taka medicinske struke
+dr.D. Č . na glavnom pretresu;  na saglasan predlog stranaka pro č itao vje š ta č enje Uprave policije –Sektora
+kriminalisti č ke policije –Odsjek za kriminalisti č ko tehni č ka vje š ta č enja br.3146/08, nalaz i mi š ljenje vje š taka
+biohemije R. F. kao i izvr š io neposredno saslu š anje navedenog vje š taka na glavnom pretresu; pro č itao nalaz i
+mišljenje vje š taka trasologa D. K. kao i izvr š io neposredno saslu š anje navedenog vje š taka na glavnom
+pretresu; pro č itao nalaz i mi š ljenje vje š taka hemijske struke I. A. tj. izvje š taj parafinskih rukavica zajedno sa
+uvidom u fotografije koje su sastavni dio nalaza i mi š ljenja kao i izvr š io neposredno saslu š anje navedenog
+vješ taka na glavnom pretresu; pro č itao nalaz i mi š ljenje vje š taka hemijske struke L. I. o daljini pucanja
+zajedno sa uvidom u fotografije koje su sastavni dio nalaza i mi š ljenja kao i izvr š io neposredno saslu š anje
+navedenog vje š taka na glavnom pretresu; pro č itao nalaz i mi š ljenje vje š taka balisti č ara M. M. M.br.19/09 kao i
+izvrš io neposredno saslu š anje navedenog vje š taka na glavnom pretresu; izvr š io uvid u medicinsku
+dokumentaciju na ime optu ž enog Č .N: u Uvjerenje Republi č kog fonda PIO CG Podru č na jedinica Herceg Novi
+br.2052-01-01-3994 od 23.02.2009. godine, u rje š enje Republi č kog fonda PIO CG podru č nog odjeljenja Herceg
+Novi IN br.2052-01-01-3994/6-2  od 22.03.2007. godine, u rje š enje Republi č kog fonda PIO CG podru č nog
+odjeljenja Herceg Novi IN br.2052-01-01-3994/4-1  od 28.02.2005. godine i u privremeno rje š enje Op š tine
+Herceg Novi – Sekretarijat za ekonomski razvoj broj 02-5-335-381/2007-1 od 05.09.2007. godine; izvr š io uvid u
+račun br.059127; pro č itao nalaz i mi š ljenje vje š taka medicinske struke dr. S. M. i dopunu tog nalaza od
+04.01.2011. godine, te neposredno saslu š ao ovog vje š taka na glavnom pretresu; izvr š io uvid u skicu lica
+mjesta i fotodokumentaciju br.333/08 od 09.12.2008. godine; pro č itao izvod iz aznene evidencije za
+okrivljenog Č .N izdat od strane Uprave policije – Podru č ne jedinice Herceg Novi 27 br.03-245/09-128 od
+12.01.2009. godine. Sud odbio predlog branioca optu ž enog  da se u dokaznom postupku u svojstvu svjedoka
+saslu š aju D. D. i K. Z..
+Svjedok - o š te ć eni B. Č . je povodom predmetne krivi č no pravne stvari pojasnio da optu ž enog Č .N poznaje
+odavno i da je u njegovoj kafani koju ima na granici sa Hrvatskom  3-4 dana prije kriti č nog dogadjaja bio sa
+prijateljem i sinom na ve č eri, pa kako je ra č un bio previsok ne š to vi š e od 80€ tra ž io je da mu donesu fiskalni
+račun, jer je i on ugostitelj i smatra da s obzirom da na ono š to su pojeli  i popili ra č un je bio previsok. Te
+večeri Č . je bio vidno pijan i nije htio da mu da fiskalni ra č un jer ga po njegovim rije č ima ranije niko nije tra ž io
+pa je on po š ao ne plativ š i i rekao mu da ć e sa njim razgovarati kad bude trijezan. Istakao je da je i pored toga
+htio da mu plati dug kada ga naredni put bude vidio. Š to se ti č e kriti č ne ve č eri pojasnio je da je tada bio u
+lokalu „9“ u Igalu sa P.Rm koji nije poznavao Č . U lokalu su jo š  bili vlasnik lokala i konobarica kada je do š ao Č .
+U unutra š njosti š anka su bili gazda i konobarica a sa spoljne strane š anka on i P. tako da kada je Č .u š ao nakon
+što su se javili sa dobar dan sjeo je za š ankom tako da se P. nalazio izmedju njih dvojice. Č uo je kako je Č .
+konobarica pitala za neku ž enu koja je ž ivjela kod njega a mo ž da ga je i napustila a on joj je odgovorio da za
+tu ž enu pita njega B.a š to je njemu bilo č udno jer tu ž enu nije ni poznavao. Odmah zatim tra ž io je da mu plati
+račun tj.dug pa je on i izvadio novac u toj namjeri i stavio novac na š ank i rekao mu da ga uzme š to on nije
+htio ve ć  je rekao da mu taj novac donese kad mu on bude rekao tj. kad njemu bude odgovaralo. Po š to je
+trebao da ide na put rekao je Ne đ eljku da uzme novac a ovaj mu je odgovorio „ne, ne, ne ć e š  ti nikud i ć i, ne ć e š
+ti nikud odavde“. Osim tog razgovora i ponovnog tra ž enja fiskalnog ra č una nije vi š e ni š ta sa njim razgovarao,
+nije bilo psovki ve ć  je rekao R. da idu. Sa š anka je uzeo telefon, cigarete i novac koji je nudio Č .na ime duga i
+tada je vidio da on iz unutra š njeg d ž epa vojni č ke jakne koju je imao na sebi desnom rukom vadi pi š tolj koji je
+repetirao  i okrenuo put njega. Tada je i on krenuo put Č .i lijevom rukom krenuo ka njegovoj desnoj ruci u
+kojoj je dr ž ao pi š tolj i u tom trenutku pi š tolj je opalio i pogodio ga u lijevi kuk. Nakon toga povla č i ga za rukav
+prema podu u namjeri da ga onemogu ć i da puca dalje a li u tom potezanju on se otr ž e i puca jo š  jedanput
+kada ga i pogadja u lijevo koljeno sa prednje strane. Pri š ao je i M. B. da mu pomogne da Č . otmu pi š tolj ali
+Č.uspijeva da puca jo š  dva puta koji meci pogadjaju pod lokala od č ega se jedan odbio o pod i pogodio ga u
+predjelu desne potkoljenice sa prednje strane.  Tada se umije š ao i  R. P. da pomogne a on je iza š ao iz lokala i
+poš ao do drugog lokala odakle su ga poveli u bolnicu. Prilikom izlaska iz lokala č uo je Č .kako mu govori
+„ubi ć u te pizdo jedna“. Dok je on bio u lokalu nije vidio da je R. P. pogodjen.
+Na glavnom pretresu pojasnio je da je Č .ispalio prvi metak dok je on bio u stoje ć em polo ž aju okrenut lijevom
+stranom bo č no prema njemu i taj prvi metak ga je pogodio u slabinski lijevi kuk, nakon č ega je on uspio da ga
+uhvati za rukav iznad š ake ruke u kojoj je dr ž ao pi š tolji povukao mu je ruku prema dolje i tada je ovaj ispalio
+još dva metka od kojih ga je jedan pogodio u lijevo koljeno. Za vrijeme „ č upanja“ sa njim i povla č enja njegove
+ruke ka dolje kada ga je pogodio drugi metak u koljeno uspio mu je spustiti ruku na dolje kada je uspio
+ispaliti jo š  dva metka put poda. Dodao je da  se pridru ž uje krivi č nom gonjenju a da ć e  imovinsko pravni
+zahtjev ostvarivati u parni č nom postupku.
+Svjedok - o š te ć eni P.R posvjedo č io je da okrivljenog Č .N ne poznaje i da ga je prvi put vidio kriti č ne prilike u
+lokalu „9“ u Igalu. Istakao je da je tog dana u navedeni lokal do š ao oko 15 č asova da bi popio pi ć e i da je u
+lokalu zatekao B. Č . kojeg zna od ranije, zatim gazdu lokala M.a i njegovu konobaricu kao i dva momka koji su
+otiš li ubrzo. Nakon kra ć eg vremena do š ao je Č .javio se gazdi lokala i stao za š ank sa njegove desne strane
+tako da se on na š ao i sredini jer mu je sa lijeve strane bio B. a sa desne ovaj Č .. Č .je ne š to pri č ao i bilo je lako
+uoč ljivo da je pijan a zatim je po č ela pri č a izmedju njega i B.a vezano za neki ra č un koji mu B. nije platio i
+pominjali su neku ve č eru i 82€, ali kako njega to nije interesovalo i š ao je do ulaznih vrata lokala da provjeri
+auto koje je bilo parkirano ispred i vratio se na isto mjesto. Nakon š to su njih dvojica razgovarali nekih 5
+minuta č uo je B.a kako ka ž e „ š to ć e š  to“ i u tom trenutku po č elo je pucanje. Istakao je da niti je prije ovoga
+vidio pi š tolj niti č uo repetiranje. Ispaljeno je 5 do 6 metaka a kada je ispaljen otprilike tre ć i osjetio je bol u
+predjelu grudi i kao da mu nedostaje vazduh. Vidio je gazdu lokala M.a kako se otima za pi š tolj sa Č . obojici su
+ruke bile na pi š tolju pa je i on pri š ao da pomogne M.u i oteo je Č .pi š tolj nakon č ega je krenuo vani jer je
+osjetio nemo ć  i negdje kod  vrata bacio je pi š tolj. Vidio je da je B. iza š ao napolje ali ne zna kada. Dodao je da
+je zadobio prostrelnu ranu u predjelu grudi i to naprijed pravo malo vi š e po desnoj strani a metak je iza š ao
+ispod desne lopatice.
+Na glavnom pretresu pojasnio je da je ta č no da je vidio kako B. vadi pare ali da ne zna da li ih je stavljao na
+šank i da li je htio da plati. Nije ni č uo da su jedan drugog psovali. Ina č e njega niko nije gurao ni dirao, samo je
+osjetio bol kada je pogodjen. Otimanje pi š tolja je nastalo kada je sve ispucano a oko pi š tolja su se sa Č .
+otimali B. i M.. Dodao je da  se pridru ž uje krivi č nom gonjenju a da ć e  imovinsko pravni zahtjev ostvarivati u
+posebnom postupku.
+Svjedok  V. V. u svom svjedo č kom iskazu istakla je da je obzirom da radi kao konobar u lokalu „9“ u Igalu
+poznavala je Č .N kao stalnog gosta koji je gotovo svakodnevno dolazio u lokal i koji je uvijek bio korektan. B. i
+P. nije poznavala. Kriti č nog dana prvo su u lokal do š li B. i P. koji su sjeli za š ank i naru č ili pi ć e. Nedugo nakon 
+njih u lokal je do š ao i Č .svima rekao dobar dan na š to su mu ovi odgovorili i stao za š ank na na č in š to je P. bio
+izmedju njega i B. Č .je pitao za njenu koleginicu koja tog dana nije radila a onda je rekao da gdje se ona nalazi
+mož da bolje zna B. nakon č ega je izmedju njih dvojice po č ela neka prepirka. Po š to su oni bili sa spoljne
+strane š anka a ona sa unutra š nje č ula je da se prepirka odnosi na neko dugovanje B. prema Č . Prepirka se
+pretvorila u svadju, Č .je uporno tra ž io da mu ovaj plati dug a B. je uporno odbijao da to uradi. B. je vadio dio
+novca da plati Č .ali ovaj je rekao da mu kasnije plati cio iznos i onda je on vratio taj novac kod sebe. Iz
+ovakvog pona š anja B.a shvatila je da on i nema namjeru da plati dug ve ć  da ga zeza. U jednom trenutku B. je
+rekao Č . „Plati ć u ti ra č un kad mi popu š i š  umjesto one kobasice š to sam jeo kod tebe“. Č .na ovu uvredu nije
+reagovao ali je B. nastavio da ga vrijedja pogrdnim rije č ima i Č .je ni š ta ne govore ć i stavio ruku u unutra š nji
+džep jakne odakle je izvadio pi š tolj. Istakla je da je tada do ž ivjela š ok i pobjegla je u ostavu lokala. Ina č e P. se
+uopš te nije uklju č ivao u prepirku izmedju B. i Č .
+Na glavnom pretresu pojasnila je da konflikt izmedju Č .i B. nije dugo trajao, mo ž da svega 10 minuta. U kafi ć u
+su osim Č .i B. bila prisutna jo š  dva momka i njen gazda M..
+Svjedok  M. B. u svom svjedo č kom iskazu kazao je da je on gazda lokala „9“ u Igalu u kojem se desio kriti č ni
+dogadjaj. Okrivljenog Č .kojeg zovu Neko poznaje dobro i on je č esto svra ć ao kod njega u lokal. Č . je takodje
+ugostitelj i on smatra da je po š ten i dobar č ovjek koji nikada u njegovom lokalu nije napravio nikakav
+konflikt. B. takodje poznaje i sa njim je u dobrim odnosima i on rijetko kada svra ć e u njegov lokal, mo ž da je
+svratio svega 2-3 puta. Kada je kriti č nog dana do š ao u svoj lokal tamo je zatekao B. i P. koji su sjedjeli za
+šankom. Bila su jo š  dva momka koji su takodje sjedjeli za š ankom i koji su ubrzo napustili lokal. Ubrzo je
+doš ao i Č .koji se prilikom ulaska svima javio i stao nekako na kraj š anka tako da se P. na š ao izmedju njega i B.
+tj. B. je sjedio na kraj š anka koji je du ž ine oko 2,5m dok je Č .sjedio na drugom kraju na za č elju, a izmedju njih
+je stajao P.. Nakon š to je Č .naru č io pi ć e po č ela je prepirka izmedju njega i B. i u toj prepirci je glavni bio B..
+Koliko je mogao zaklju č iti prepirka je bila u vezi nekog duga koji je B. napravio u kafani Č . Č uo je da je B. vi š e
+puta ponovio da ne ć e platiti dug Č . s tim š to je Č .odgovarao da je to u redu ali da ć e dug ipak platiti kada
+bude imao. Ne zna da li su njih dvojica bili pijani ali ta prepirka je prerasla u svadju  i u jednom trenutku je B.
+rekao Č .„Platit ć u ti dug kad mi popu š i š  kurac onoliko puta koliko sam ja kod tebe pojeo kobasica“. Za svo to
+vrijeme nijesu kre ć ali jedan put drugog osim š to je B. jednom ustajao vadio novac i pru ž ao prema Č .ali on
+smatra da B. nije ni bila stvarna namjera da mu plati dug ve ć  da je to bila provokacija jer je novac pru ž ao Č .
+odmah zatim ga vra ć ao put sebe. Istakao je da je Č .nakon š to mu je B. uputio ove rije č i uvrede iz d ž epa od
+jakne izvadio pi š tolj, repetirao ga a nakon toga je po č ela pucnjava. Po š to je on to do ž ivio dosta te š ko
+prakti č no se š okirao, slede ć e č ega se sje ć a je da vidi Č .i B. na podu kako se otimaju za pi š tolj i tada im je
+priš ao i on  i oteo Č .pi š tolj iz ruke. Vidio je da je Č . ruka krvava i kako je po š ao iza š anka da je opere a pri tom
+je od njega tra ž io da mu vrati pi š tolj š to on nije uradio ve ć  ga je bacio napolje. P. koji se u trenutku sukoba
+našao izmedju B. i Č . nijednom se nije mije š ao u njihovu prepirku. Smatra da su i B. i P. vidjeli pi š tolj u rukama
+Č.i da su po š li ka njemu  prije nego š to je po č eo pucati.
+Na glavnom pretresu pojasnio je da je nakon vadjenja pi š tolja od strane Č .ustao B. a zatim i P. i krenuli su u
+pravcu Č .na na č in š to je P. bio ispred B. Iz pozicije na kojoj je bio istakao je da nije vidio momenat ispaljenja
+hica ali je vidio medjusobno č upanje izmedju njih trojice ali ne zna ko je koga i kako č upao.
+Iz sadr ž ine zapisnika o uvi đ aju sa č injenog od strane UP - PJ Herceg Novi 27-03/1 br.240/08-12328/14 od
+10.12.2008.godine proizilazi da je isti sa č injen povodom prijave o upotrebi vatrenog oru ž ja u ugostiteljskom
+objektu „9“ u Igalu. Tako đ e ovla šć eni slu ž benici policije su kriminalisti č ko tehni č kim pregledom lica mjesta
+prona š li i fiksirali 15 tragova od zna č aja za kriti č ni doga đ aj.
+Iz sadr ž ine izvje š taja o kriminalisti č ko tehni č kom pregledu lica mjesta Ku.br.333/08 od 10.12.2008. godine
+proizilazi da je isti sa č injen povodom krivi č nog djela te š kog ubistava u poku š aju dana 09.12.2008.godine oko
+15,30 č asova u kafi ć u „9“ u Igalu na š tetu B. Č . i P.R kojima je Č .N upotrebom vatrenog oru ž ja pi š tolja marke
+CZ M 70 kal.7,65 mm fab.broja 77369. Pregledom lica mjesta prona đ eni su tragovi na mjestu doga đ aja a lice
+mjesta je fotografisano, skicirano a prona đ eni tragovi izuzeti radi analize. Od ostalih tragova izuzeta je
+garderoba od o š te ć enog B. Č . a tako đ e iz bolnice Kotor dostavljen je i projektil izva đ en iz tijela B. Č . nakkon
+operacije. Od o š te ć enih B. Č . i P.R kao i M. B. i izvr š iocu krivi č nog djela Č .N skinute su parafinske rukavice.
+Iz uvida u skicu lica mjesta proizilazi da je ista sa č injena od strane kriminalisti č kog tehni č ara, povodom
+ubistva u poku š aju na š tetu B. Č . i P.R u kafi ć u „9“  u Igalu, gdje je skiciran unutra š nji dio lokala sa pozicijama
+tj.mjestima gdje su se u lokalu nalazili š ank kao i prevrnuta solica, prevrnuti sto, projektili, pi š toljske č aure,
+mrlje nalik na krv kao i ostali tragovi koji su skicirani radi rasvjetljavanja ove krivi č no pravne stvari.
+U fotodokumentaciji br.333/08 od 09.12.2008. godine koju sa č injava 47 fotografija prikazan je š iri i bli ž i izgled
+lica mjesta sa pronadjenim tragovima u istom kao i fotografije garderobe izuzete od B. Č . i P.R sa o š te ć enjima.
+Iz sadr ž ine nalaza i mi š ljenja vje š taka biohemije R. F. kao i neposrednog izja š njenja navedenog vje š taka na
+glavnom pretresu proizilazi da je ista vje š ta č ila tragove izuzete za vje š ta č enje prilikom vr š enja uvi đ aja pod
+brojevima 2348 i 13 i to tragovi na isje č enim komadi ć ima drveta, isje č eno par č e materijala teget boje, tri
+štapi ć a sa vatom na kojima se nalaze mrlje nepravilnog oblika i veli č ine mrko crvene boje nalik na krv.
+Primjenom metoda neophodnih pri ovakvom vje š ta č enju na tragovima 2,3,3,8 i 13 dobijen je pozitivan
+rezultat na prisustvo krvi kao i pozitivan rezultat neljedske bjelan č evine. Na osnovu navedeno vje š ta č enja
+dala je mi š ljenje da mrlje od krvi na navedenim tragovima poti č u od krvi ljudskog porijekla „A“ krvne grupe.
+Na glavnom pretresu pojasnila je da se ne mo ž e isklju č iti da „A“ krvna grupa pripada samo jednom č ovjeku ili
+svima koji su povrije đ eni, dok RH faktor koji bi mogao da odvoji kome pripada krvna grupa, tj. da li je neko
+„A“ pozitivna ili „A“ negativna krvna grupa, nije ra đ en.
+Iz sadr ž ine nalaza i mi š ljenja vje š taka trasologa D. K. kao i neposrednog izja š njenja navedenog vje š taka na
+glavnom pretresu proizilazi da je navedeni vje š tak vje š ta č io garderobu B. Č . i to: ko ž nu jaknu i somotske
+farmerice  i garderobu P.R i to: crnu ko ž nu jaknu i majcu. Na ko ž noj jakni B. Č . na prednjoj strani prisutna su
+četiri o š te ć enja i to jedno na desnoj strani bez o š te ć enja postave u ramenoj oblasti i tri o š te ć enja na lijevoj
+strani koja se sastoje u o š te ć enju u obliku rupe, kao i jo š  dva o š te ć enja ispod njega kao i na toj strani jakne
+adekvatno o š te ć enja postave. Ovo o š te ć enje je nastalo dejstvom mehani č ke sile i karakterristi č no je za
+projektil ispaljen iz vatrenog oru ž ja sa malog rastojanja. Na le đ nom, dijelu jakne nalazi se o š te ć enje na
+ratojanju od oko 15cm od donje ivice koje je sastavljeno od dvije rupe koja su povezana brisotinom tamno
+sive boje lijevkastog oblika i na ovom mjestu postava nije o š te ć ena. Tako đ e i ovo o š te ć enje nastalo je
+dejstvom mehani č ke sile i karakteristi č no je za projektile ispaljene iz vatrenog oru ž ja. Na somotskim
+farmericama,na prednjoj strani farmerica, nalaze se tri o š te ć enja i to: sa lijeve strane u zoni ispod pojasa koje
+je u vidu razderotine du ž ine 7cm, na lijevoj nogavici relativne veli č ine oko 0,8cm i o š te ć enje na rastojanju od
+36cm od donje ivice i 7cm od lijevog spolja š njeg vertikalnog š ava koje je ovalnog oblika pre č nika oko 0,8cm.
+Mehani č ko o š te ć enja koja se nalaze na somot farmericama nastala su usled prolaska tri projektila. Na
+garderobi P.R crnoj ko ž noj jakni sa prednje lijeve strane na ivici rajfe š lusa postoji ovolno mehani č ko
+ošte ć enje dimenzija 0,6cm koje je nastalo dejstvom mehani č ke sile, najverovatnije projektila ispaljenog iz
+vatrenog oru ž ja, dok se na majci o š te ć enje ovalnog oblika nalazi na prednjoj lijevoj strani u č ijoj se okolini
+uoč avaju mrlje nalik na krv. Tako đ e ovo o š te ć enje je nastalo dejstvom mehani č ke sile najverovatnije
+projektila ispaljenog iz vatrenog oru ž ja. Ova o š te ć enja nastala na crnoj ko ž noj jakni i majci nastala su usled
+prolaska jednog projektila.
+Iz sadr ž ine nalaza i mi š ljenja vje š taka hemijske struke I. A., tj. izvje š taja parafinskih rukavica zajedno sa
+uvidom u fotografije koje su sastavni dio nalaza i mi š ljenja, kao i neposrednog izja š njenja navedenog vje š taka
+na glavnom pretresu proizilazi da je isti vje š ta č io parafinske rukavice izuzete od B. Č . sa dlanova, P.R sa desne
+šake i dlana lijeve š ake, kao i od lica M. B., V. V. i Č .N. Vr š e ć i neophodne analize i ispitivanja na samolepljivim
+folijama skinutih sa š aka pomenutih lica izvr š en je difelimanilski test kojim se utvr đ uje prisustvo nitrata koji
+nastaju sagorijevanjem baruta kod opaljenja metka iz vatrenog oru ž ja i kojim se testom barut posebno
+dokazuje. Nakon izvr š enih tra ž enih ispitivanja kod Č .N i M. B. dokazano je prisustvo barutnih č estica i to kod
+Č.N jedna č estica na dlanu lijeve š ake i jedna č estica na nadlanici lijeve š ake kao i dvije č estice na dlanu
+desne š ake i dvije č estice na nadlanici desne š ake, dok je kod M. B. dokazano prisustvo barutnih č estica i to
+dvije č estice na dlanu lijeve š ake kao i jedna č estica na nadlanici lijeve š ake, dok na dlanu desne š ake i
+nadlanici desne š ake nije bilo barutnih č estica. Prisustvo barutnih č estica na š akama Č .N i M. B. ne isklju č uje
+mogu ć nost da su isti bili povezani sa procesom ispaljenja metka iz vatrenog oru ž ja prije skidanja „parafinskih
+rukavica“. Kod lica V. V., P.R i B. Č . nije dokazano prisustvo barutnih č estica. Na glavnom pretresu vje š tak je
+pojasnio da se barutne č estice nakon opaljenja metka iz vatrenog oru ž ja rasprostiru i deponuju na svim
+predmetima koji se na đ u na rastojanju od oko 90cm, š to zna č i da na ne č ijim š akama barutne č estice mogu da
+se na đ u ukoliko je ta osoba pocala iz vatrenog oru ž ja, bila u blizini osobe koja vr š i opaljenja ili bila u kontaktu
+sa vatrenim oru ž jem iz koga je prethodno pucano. Dodao je da se barutne č estice u velikoj mjeri do
+potpunosti rastvaraju u vodi i da se detaljnim preanjem ruku mogu ukloniti a tako đ e se mogu ukloniti
+mehani č kim putem trenjem š aku o š aku ili š ako o odje ć i. Nakon opaljenja metka barutne č estice se izme đ u
+ostalog deponuju i na samom oru ž ju iz kojeg je vr š eno opaljenje pa bi kontak sa takvim oru ž jem uslovio
+preno š enje barutnih č estica.
+Iz sadr ž ine nalaza i mi š ljenja vje š taka hemijske struke Lj. I. o daljini pucanja zajedno sa uvidom u fotografije
+koji su sastavni dio nalaza i mi š ljenja kao i neposrednog izja š njenja navedenog vje š taka na glavnom pretresu
+proizilazi da je prilikom vje š ta č enja vr š en makroskopski pregled jakne i farmerica B. Č . kao i makroskopski
+pregled jakne i majce P.R. Nakon izvr š enih ispitivanja u okolini o š te ć enja sa prednje strane na lijevoj poli
+jakne B. Č . dokazanoje prisustvo barutnih č estica, dok u okolini drugih o š te ć ena nije dokazano prisustvo
+barutnih č estica. O š te ć enje sa prednje strane na lijevoj poli jakne nastalo je od projektila iz vatrenog oru ž ja sa
+rastojanja usta cijevi od oko 20cm od istog, te kako su, a š to je utvr đ eno trasolo š kim vje š ta č enjem, o š te ć enja
+na ostalim odjevnim predmetima B. Č . i P.R nastala od projektila iz vatrenog oru ž ja tada su usta cijevi bila na
+rastojanju ve ć em od 90cm do istih, jer na odje ć i nije bilo barutnih č estica dok u preostalom dijelu o š te ć enja,
+a koje je nastalo na prednjoj strani lijeve pole jakne B. Č ., nastalo od projektila iz vatrenog oru ž ja sa rastojanja
+usta cijevi od oko 20cm.
+Iz sadr ž ine medicinske dokumentacije na ime o š te ć enih B. Č . i P.R proizilazi da se ista sastoji iz  jedne otpusne
+liste sa epikrizom i č etiri izvje š taja ljekara specijaliste grudnog hirurga u odnosu na o š te ć enog P.R i otpusnog
+pisma i dva izvje š taja ljekara specijaliste urologa i jednog izvje š taja ljekara specijaliste hirurga u odnosu na
+ošte ć enog B. Č ..
+Iz sadr ž ine nalaza i mi š ljenja stalnog sudskog vje š taka medicinske struke dr. D. Č . na glavnom pretresu
+proizilazi Ki.br.270/08 od 26.03.2009. godine kao i iz neposrednog izja š njenja ovog vje š taka utvrdjuje se da je
+ošte ć eni B. Č . u predmetnom dogadjaju zadobio ranu ustrelinu u predjelu trbuha koja je dovela do probijanja
+mokra ć ne be š ike i krvavljenja u zatrbu š nom predjelu, te stranim tijelom u mokra ć noj be š ici, kao i prostrelinu
+u predjelu lijevog koljena. Ustrelina u predjelu trbuha u vrijeme nano š enja kvalifikuje se kao osobito te š ka
+tjelesna povreda jer je ž ivot o š te ć enog B.a bio konkretno ugro ž en. Prostrelina u predjelu lijevog koljena
+kvalifikuje se kao laka tjelesna povreda jer se prema navedenoj medicinskoj dokumentaciji ne vidi da je do š lo
+do o š te ć enja krvnih sudova, ž ivaca, zgloba i sl. Navedene strijelne povrede nastale su nezavisno jedna od
+druge sa dva projektila. Na glavnom pretresu u vezi povreda koje je zadobio o š te ć eni B. Č . vje š tak je pojasnila
+da prilikom zadobijanja povrede u dijelu trbuha u tom trenutku je bio okrenut svojom lijevom bo č nom
+stranom ustima predmetnog vatrenog oru ž ja. Projektil koji se zadr ž ao u mokra ć noj be š ici kretao se s lijeva
+udesno, odozgo prema dolje š to zna č i da su usta predmetnog vatrenog oru ž ja bila iznad i lijevo od ulazne
+rane. Š to se ti č e povrede lijevog koljena pojasnila je da je smjer kanala bio horizontalan s tim š to se ne mo ž e
+izjasniti koje je ulazna a koje izlazna rana. Dok se nije mogla izjasniti na redosled nastanka povreda kod
+ošte ć enog B. Č .. U odnosu na o š te ć enog P.R, vje š tak je u svom nalazu i mi š ljenju na osno vu medicinske
+dokumentacije kao i neposrednim pregledom utvrdila da je isti zadobio ranu prostrelinu na lijevoj strani
+grudnog ko š a sa ulaznom ranom u lijevom grudnja č nom predjelu a izlaznom ranom u desnom lopati č nom
+predjelu sa o š te ć enjem plu ć a te izlivanjem krvi i izlaskom vazduha u desnu  grudnu duplju. Navedena
+povreda u vrijeme nano š enja kvalifikuje se kao osobito te š ka tjelesna povreda jer je ž ivot o š te ć enog P.R bio
+konkretno ugro ž en, s jedne strane zbog gubitka velike koli č ine krvi a s druge strane zbog poreme ć aja disanja.
+Navedena strijelna povreda ima smjer kanala od naprijed do unazad s lijeva udesno odozgo lako nadolje š to
+znač i da su se usta predmetnog vatrenog oru ž ja nalazila lijevo ispred i lako iznad ulazne rane. Na glavnom
+pretresu u vezi povreda koje je zadobio o š te ć eni P.R vje š tak je pojasnila da se ulazna rana nalazila u
+grudnja č inom predjelu, izlazna rana u desnom lopati č nom predjelu na 2 cm ni ž eg nivoa od ulazne, š to zna č i
+da je smjer kanala od naprijed unazad s lijeva udesno  i lako odozgo prema dolje – razlika 2 cm. To zna č i da su
+usta predmetnog vatrenog oru ž ja bila ispred, u lijevo i malo iznad ulazne rane tako da se ovaj kanal
+vjerovatno uklapa u balisti č ke putanje.
+Iz izvje š taja o alkoholisanosti  KC CG – Odjeljenja za sudsku medicinu br.2175 od 16.12.2008. godine na ime
+okrivljenog Č . N. proizilazi da je analiza krvi uzete od okrivljenog izvr š ena nako 90 minuta od nesre ć e po
+metodi Widmark kojom prilikom je nadjeno 1,89 ‰  (pro mille) apsolutnog alkohola. Kod koncentracije od
+1,89 ‰  (pro mille) apsolutnog alkohola u krvi ve ć ina ljudi se nalazi u pijanom stanju. Analizom urina nadjeno
+je 3,06 ‰  (pro mille) apsolutnog alkohola.
+Iz nalaza i mi š ljenja vje š taka medicinske struke dr S. M. kao i usmenog izja š njenja ovog vje š taka na glavnom
+pretresu proizilazi da je isti na osnovu podataka iz sudskog spisa, prilo ž ene medicinske dokumentacije na
+ime optu ž enog kao i izvr š enog psihijatrijskog pregleda optu ž enog dao nalaz da optu ž eni ne boluje od trajnog
+duš evnog oboljenja i da nema simptome osoba zaostalog du š evnog razvoja tako da se mo ž e smatrati psihi č ki
+zdravom osobom. U vrijeme izvr š enja krivi č nog djela okrivljeni se nalazio u stanju privremene du š evne
+poreme ć enosti, u stanju afekta razdra ž ljivosti, srd ž be, bijesa, straha jakog inteziteta kome je doprinijelo
+provokativno pona š anje ž rtve, a kao podspje š uju ć i faktor je bila akutna alkoholna antoksikacija. Sposobnosti
+shvatanja zna č aja djela kao i mogu ć nost upravljanja svojim postupcima u vrijeme izvr š enja krivi č nog djela
+kod okrivljenog bili smanjeni ali ne bitno.
+U dopuni svog nalaza od 04.01.2011. godine, vje š tak neuropsihijatar dr S. M. je pojasnio da je afektivno stanje
+razdra ž enosti jakog intenziteta u kojem se optu ž eni nalazio kriti č nom prilikom, zapravo nastalo kao
+posledica dva faktora, i to provokativnog pona š anja o š te ć enog i stanja alkoholne intoksikacije srednjeg
+stepena – pijano stanje, te da provokativno stanje o š te ć enog, bez stanja alkoholne alkoholne intoksikacije,
+samo po sebi se kod optu ž enog ne bi manifestovalo stanjem afekta razdra ž enosti jakog stepena, ve ć  bi isti u
+toj situaciji, po mi š ljenju vje š taka, tra ž io racionalan izlaz iz konfliktne situacije.
+Iz sadr ž ine nalaza i mi š ljenja vje š taka balisti č ara M. M. M.br.19/09 kao i neposrednog izja š njenja navedenog
+vješ taka na glavnom pretresu proizilazi da je vje š tak  izvr š io vje š ta č enje pi š tolja  „CZ“ Mod.70 kal.7,65 mm
+fab. Broj C-77369 sa tri metka u š ar ž eru  i jednim metkom zaglavljenim u pi š tolju, zatim č etiri komada č aura
+na kojima su utisnute oznake „ ППУ -82  7,65“ sa tri č aure nadjene u prostoriji spornog dogadjaja i jedna
+zaglavljena u pi š tolju kao i projektil i dijelovi projektila. Izvr š enim vje š ta č enjem utvrdjeno je da je pi š tolj
+funkcionalan sa kapacitetom š ar ž era od 8 metaka. Jedan metak je bio u blokiran izmedju š ar ž era i usta cijevi
+jer je č aura od prethodno ispaljenog metka ostala u ustima cijevi. U š ar ž eru su se nalazila jo š  tri metka.
+Analizom brisa cijevi utvrdjeno je da je iz istog pucano nakon č ega cijev nije č i šć ena. Vizuelno kao i na osnovu
+geometrijskih karakteristika utvrdjeno je da sporne č aure i projektili pripadaju pi š toljskoj municiji kalibra
+7,65 mm. Uporedjene su č aure ispaljene iz dostavljenog pi š tolja sa spornim č aurama.Preklopljene su uo č ene
+individualne karakteristike š to zna č i da su sporne č aure ispaljene iz dostavljenog pi š tolja. Takodje na
+dostavljenim projektilima uo č ava se po š est ž ljebova sa smjerom uvijanja u desno. Uporedjeni su nesporni
+projektili ispaljeni iz dostavljenog pi š tolja sa spornim projektilima i utvrdjena je identi č nost uo č enih
+karakteristika š to zna č i da su sporni projektili ispaljeni iz dostavljenog pi š tolja. Istakao je da pi š tolj  „CZ“
+Mod.70 kal.7,65 mm izbaca č aure pod uglom od oko 90˚ u desnu  stranu u odnosu na pravac pucanja i to na
+rastojanje od oko 3-5 m kada se radi o tvrdoj podlozi. Navedeni vje š tak je uporedjuju ć i svoje vje š ta č enje sa
+izvrš enim vje š ta č enjima ostalih sudskih vje š taka anga ž ovanih u ovom predmetu pojasnio da su po
+trasolo š kom pregledu jaknu koju je nosio B. pogodila tri projektila od kojih dva nijesu o š tetila postavu jakne
+što zna č i da su napravila samo okrznu ć a. Putanja projektila koji je napravio okrznu ć e na prednjoj desnoj
+strani jakni je pribli ž no horizontalna dok je putanja projektila koji je napravio okrznu ć e sa zadnje strane
+uzlaznog karaktera u odnosu na anatomski polo ž aj. Farmerice koje je nosio B. su pogodjene sa dva projektila
+od kojih je jedan prethodno pro š ao kroz jaknu. Drugi projektil je napravio dva o š te ć enja na nogavici na
+osnovu kojih se mo ž e konstatovati da je putanja ovog projektila bila prakti č no horizontalna u odnosu na
+anatomski polo ž aj. Ova o š te ć enja na garderobi odgovaraju ranama na tijelu. Kod P. je konstatovana rana
+prostrelina u predjelu grudi. Kako na majici i jakni koje je on nosio ne postoje o š te ć enja na zadnjoj strani
+vješ tak isti č e da je taj projektil izlaskom iz tijela u potpunosti izgubio svoju kineti č ku energiju i ispao na pod.
+Ovaj projektil je prethodno morao napraviti neko od o š te ć enja na jakni B. tj. to je jedan od dva projektila koja
+su napravila okrznu ć a jakne B. Ina č e nekim od navedena č etiri projektila prethodno je izvr š eno
+samoranjavanje kroz š aku Č .N. U odnosu na pi š tolj koji je na licu mjesta nadjen u blokiranom polo ž aju,
+probnim pucanjem je utvrdjeno da je isti ispravan te da se ruka koja je dr ž ala pi š tolj morala pomjerati gore-
+dolje a  mogu ć e da je do blokiranja pi š tolja do š lo usled ometanja njegove navlake stiskanjem rukama iste š to
+znač i da je osoba koja je pucala iz pi š tolja bila ometana i da joj je ruka povla č ena te da je imala kontakta sa
+drugim rukama ali ne mo ž e definisati  koliko ruku je ometalo onoga ko dr ž i pi š tolj u ovom spornom
+dogadjaju. U slobodnom kazivanju na glavnom pretresu vje š tak je jo š  pojasnio da se o š te ć eni B. mogao
+nalaziti u stoje ć em polo ž aju u odnosu na optu ž enog Č . kada je zadobio ustrelnu ranu u predjelu stomaka a
+takodje i prostrelinu u nozi s tim š to je tada noga morala biti pod odredjenim uglom u odnosu na pod.
+Ošte ć eni P. se nalazio u blago pognutom polo ž aju iz razloga š to putanja projektila koji je njega povrijedio
+treba da ima uzlazni karakter da bi se dogadjaj odvijao na na č in kako je to predstavljeno.  
+Sud je izradjene nalaze i data mi š ljenja kao i njihova poja š njenja na glavnom pretresu od strane vje š taka
+biohemije R. F., trasologa D. K. hemijske struke I. A. i Lj. I., balisti č ara M. M., medicinske struke dr. D. Č . i dr. S.
+M. prihvatio kao stru č ne, jasne i objektivne, date u skladu sa pravilima struke kojom raspola ž u a na č ije
+nalaze i data mi š ljenja ni stranke nijesu imale primjedbi, pa im je sud kao takvima poklonio punu vjeru u
+rasvjetljavanju ove krivi č no pravne stvari.
+Iz sadr ž ine medicinske dokumentacije na ime optu ž enog Č .N: Uvjerenja Republi č kog fonda PIO CG Podru č na
+jedinica Herceg Novi br.2052-01-01-3994 od 23.02.2009. godine, proizilazi da je isti po osnovu invalidnosti i
+potpunog gubitka radne sposobnosti od 17.02.2005. godine korisrnik invalidske penzije na teret Republi č kog
+fonda PIO u Podgorici.
+Iz  rje š enja Republi č kog fonda PIO CG podru č nog odjeljenja Herceg Novi IN br.2052-01-01-3994/6-2  od
+22.03.2007. godine, proizilazi da je Č .N invalidu  rada nesposobnom za rad sa potpunim gubitkom radne
+sposobnosti prouzrokovanim bole šć u korisniku invalidske penzije privremeno produ ž eno pravo na punu
+invalidsku penziju, sa zakazanim kontrolnim pregledom za dan 13.03.2010. godine.
+Iz rje š enja Republi č kog fonda PIO CG podru č nog odjeljenja Herceg Novi IN br.2052-01-01-3994/4-1  od
+28.02.2005. godine proizilazi da se Č .N priznaje pravo na invalidsku penziju po osnovu potpunog gubitka
+radne sposobnosti prouzrokovanog bole šć u u mjese č nom iznosu od 45,72€ po č ev od 17.02.2007. godine.
+Iz privremenog rje š enja Op š tine Herceg Novi –Sekretarijat za ekonomski razvoj broj 02-5-335-381/2007-1 od
+05.09.2007. godine proizilazi da je Č .N izdato odobrenje za pru ž anje ugostiteljskih usluga u turisti č kom
+seoskom doma ć instvu  u prostorijama njegovog doma ć instva u selu Ž vinje i to 2 sobe sa po dva le ž aja
+kategorisane sa 1* i ukupno 4 le ž aja kao i da se u seoskom doma ć instvu mogu pripremati i uslu ž ivati topla i
+hladna jela  i pru ž ati usluge degustacije vina ili rakije.
+Iz uvida u ra č un br. 059127 prizilazi da je u pitanju tzv. Paragon blok na kojem je rukom ispisano 8 vrsta hrane
+i pić a za ukupni iznos od 83,40, bez naznake valute.
+Cijene ć i provedene dokaze, pojedina č no i u svojoj me đ usobnoj povezanosti, dovode ć i u vezu sa navodima
+optu ž be i odbranom optu ž enog Č .N, sud je utvrdio da je optu ž eni izvr š io krivi č no djelo te š ko ubistvo u
+poku š aju iz č l.144 st.1 ta č .3 u vezi č l.20 Krivi č nog zakonika i krivi č no djelo nedozvoljeno dr ž anje oru ž ja i
+eksplozivnih materija iz č lana 403 stav 1 Krivi č nog zakonika, u svemu i na č in kako je to č injeni č no opisano u
+izreci ove presude.
+Nakon provedenih dokaza sud je sa sigurno šć u utvrdio da je optu ž eni Č .N dana 09.12.2008. godine u
+ugostiteljskom objektu „9“ u Igalu – Op š tina Herceg Novi pucaju ć i iz pi š tolja “CZ“ M-70 cal.7,65mm,
+fab.br.77369, nanio te š ke tjelesne povrede, i to: o š te ć enom P. R. u uvidu prostreline na lijevoj strani grudnog
+koša. Ove nesporne č injenice sud je utvrdio iz zapisnika o uvi đ aju UP - PJ Herceg Novi 27,1br.240-08-12328-
+14, izvje š taja o kriminalisti č ko tehni č kom pregledu lica mjesta Ku.br.333-08 od 10.12.2008. godine sa
+fotoelaboratima i skicom lica mjesta, nalaza i mi š ljenja vje š taka R. F. i izja š njenja ovog vje š taka sa glavnog
+pretresa, nalaza i mi š ljenja vje š taka hemijske struke I. A. i izja š njenja ovog vje š taka sa glvnog pretresa,
+medicinske dokumentacije na ime o š te ć eih B. Č  i P.R, nalaza i mi š ljenja vje š taka dr D. Č . i izja š njenja ovog
+vješ taka sa glavnog pretresa o povredama koje su zadobili o š te ć eni B. Č . i P.R, te nalaza i mi š ljenja vje š taka M.
+M. M.br.19-09 i izja š njenja navedenog vje š taka sa glavnog pretresa, koje dokaze je sud prihvatio kao
+uvjerljive, me đ usobno saglasne, a nalaze vje š taka i izja š njavanje vje š taka na pretresu¬¬ kao objektivne,
+struč ne i date saglasno pravilima struke i nauke, kojim dokazima su po ocjeni suda potvrdjene nesporne
+predhodno navedene č injenice, a na koje dokaze stranke u postupku nijesu imale primjedbi.
+Optu ž ba optu ž enom Č . N. stavlja na teret da je izvr š io krivi č no djelo te š ko ubistvo u poku š aju iz č lana 144
+stav 1 ta č ka 3 Krivi č nog  zakonika. Ovakav stav zastupnik optu ž be temelji na iskazima saslu š anih svjedoka -
+ošte ć enih B. Č . i P.R, na broju ispaljenih hitaca, nalazu i mi š ljenja vje š taka baisti č ara i izja š njenju ovog
+vješ taka na glavnom pretresu, te na drugim provedenim dokazima. Iskaz svjedoka M. B. i V. V., po ocjeni
+zastupnika optu ž be, ne treba prihvatiti jer su isti o č igledno dati da bi pomogli odbranu optu ž enog jer
+ošte ć eni u konkretnom doga đ aju prema optu ž enom nijesu preduzimali niti jednu radnju kojim bi ugrozili
+optu ž enog.
+Nasuprot stavu zastunika optu ž be, odbrana je stanovi š tva da provednim dokazima nijesu potvr đ eni navodi
+optu ž be da je optu ž eni poku š ao li š iti ž ivota o š te ć enog B. Č , pri tome umi š ljao dovde ć i u opasnost ž ivot
+ošte ć enog R. P.. Stav odbrane je da je optu ž eni izgubio kontrolu nad oru ž jem kada je do š lo do č uanja i
+otimanja, te da je upravo u tom trenutku do š lo do opaljanja iz pi š tolja koje optu ž eni nije ž elio niti htio, i
+kojom prilikom je i sam ranjen a da je optu ž eni izvadio pi š tolj isklju č ivo da bi upozorio o š te ć enog B. da mu ne
+prilazi. Pored nesporno utvr đ enih č injenica u postupku - da je optu ž eni Č .N pucaju ć i iz pi š tolja dana
+09.12.2008. godine, u ugostiteljskom objektu ”9” u Igalu, te š ko tjelesno  povrijedio o š te ć ene P.R i B. Č , ono š to
+odbrana negira jeste stav optu ž be da je optu ž eni Č .poku š ao li š iti ž ivota o š te ć ene, navode ć i da se u
+predmetnom doga đ aju optu ž eni banio.
+Naime, tokom postupka je nesumnjivo utvrdjeno da je dana 09.12.2008. godine, u ugostiteljskom objektu „9“,
+u Igalu – Op š tina Herceg Novi, optu ž eni Č .N, poku š ao li š iti ž ivota o š te ć enog B. Č . i pri tome sa umi š ljajem
+doveo u opasnost ž ivot o š te ć enog P.R, te š kim vrije đ anjem od strane o š te ć enog B. Č ., na na č in š to je pri
+prepirci sa o š te ć enim B. Č ., ma š io se pi š tolja marke „CZ“ M – 70, kalibar 7,65 mm, fab. br. 77369, repetirao ga i
+u pravcu o š te ć enog B.a, ispalio projektil koji ga je pogodio u predjelu stomaka, nakon č ega ga je o š te ć eni B.
+uhvatio za desni rukav i poku š ao da mu oduzme pi š tolj, za koje vrijeme je optu ž eni Č .ispalio jo š  nekoliko
+projektila, od kojih je jedan pogodio o š t ć enog B.a u predjelu lijeve noge, a jedan projektil o š te ć enog P.R, koji
+se nalazio u njihovoj neposrednoj blizini, nanose ć i im tako te š ke tjelesne povrede, i to o š te ć enom B. Č .u u
+vidu ustreline u predjelu trbuha i prostreline u predjelu lijevog koljena, a o š te ć enom P. R. u vidu rane
+prostreline na lijevoj strani grudnog ko š a.
+Dalje, analizom provedenih dokaza sud je utvrdio da je u doga đ aju u lokalu ʼʼ9ʼʼ u Igalu predhodio doga đ aj u
+ugostiteljskom objektu koji dr ž i optu ž eni Č .N, koji se dogodio nekoliko dana prije predmetnog doga đ aja.po
+odbrani optu ž enog Č .i iskazu svjedoka o š te ć enog B., proizilazi da je o š te ć eni B. sjedio sa dru š tvom u
+ugostiteljskom objektu optu ž enog, da je odbio da plati ra č un optu ž enom jer nije bio zadovoljan „visinom“
+računa, te da je oti š ao sa dru š tvom iz ugostiteljskog objekta optu ž enog, ne plativ š i ra č un.  Dalji slijed
+doga đ aja se odvija u lokalu ʼʼ9ʼʼ u Igalu. Naime, optu ž eni Č .dolazi u lokal ʼʼ9ʼʼ, u koji lokal po njegovoj odbrani i
+po iskazima svjedoka M. B. i V. V. č esto dolazi, i u tom lokalu zati č e o š te ć ene B. i P.. Optu ž eni ulazi u lokal,
+prilazi š anku, tako da se desno od njega nalazi o š te ć eni B., s tim š to izme đ u njih nalazi o š te ć eni P.. Po
+riječ ima svih u č esnika i o č ividaca predmetnog dog đ aja, izme đ u o š te ć enog B. i optu ž enog brzo nastaje
+rasprava oko prethodnog doga đ aja u ugostiteljskom objektu optu ž enog, sve oko ra č una koji je o š te ć eni
+odbio da plati optu ž enom. Svjedoci V. V. i M. B., koje iskaze je sud cijenio kao u istinite, jer ovi svjedoci, po
+ocjeni suda, nemaju ni jedan razlog da predmetni doga đ aj predstavljaju druga č ije od onoga š to se stvarno
+dogodilo, saop š tavaju da je u raspravi koja se odvija izme đ u optu ž enog i o š te ć enog B., o š te ć eni B. upu ć ivao
+riječ i uvede prema optu ž enom Č ., pri č emu je svjedok B. vadio novac, pru ž ao ga prema optu ž enom, ali bez
+namjere da mu da taj novac, ve ć  sa o č iglednom namjerom da provocira optu ž enog Č . Svjedok V. V. navodi i to
+da optu ž eni nije odmah reagovao na uvrede, ve ć  da je o š te ć eni uporno nastavljao da ga vrije đ a pogrdnim
+riječ ima, dok svjedok M. saop š tava i to da se optu ž eni i o š te ć eni nijesu primicali jedan drugom, osim š to je
+ošte ć eni B. pru ž ao novac optu ž enom, navodno da mu  plati ra č un. Cijene ć i ovakvo postupanje o š te ć enog
+prema optu ž enom, te imaju ć i u vidu njegove pogrdne rije č i upu ć ene optu ž enom, sud je proveo vje š ta č enje
+po vje š aku neuropsihijatru, koji je u nalazu i mi š ljenju konstatovao da se optu ž eni u vrijeme predmetnog
+dogadjaja nalazio u stanju srd ž be, bijesa,straha jakog inteziteta, koje stanje je je uzrokovano provokativnim
+pona š anjem o š te ć enog, dok je kao podspje š uju ć i faktor bila prisutna akutna alkoholna antoksikacija. U
+dopuni navedenog nalaza i mi š ljenja od 01.04.2011. godine vje š tak je precizirao da je afektivno stanje
+razdra ž enosti jakog intenziteta u kojem se optu ž eni nalazio kriti č nom prilikom, zapravo nastalo kao
+posledica dva faktora, i to provokativnog pona š anja o š te ć enog i stanja alkoholne intoksikacije srednjeg
+stepena – pijano stanje, te da provokativno stanje o š te ć enog, bez stanja alkoholne  intoksikacije, samo po
+sebi se kod optu ž enog ne bi manifestovalo stanjem afekta razdra ž enosti jakog stepena, ve ć  bi isti u toj
+situaciji, po mi š ljenju vje š taka, tra ž io racionalan izlaz iz konfliktne situacije. Na naprijed navedeni na č in, po
+ocjeni suda, isklju č ena je mogu ć nost da je optu ž eni kriti č nom prilikom postupao na mah. Kona č no, vje š tak je
+mišljenja da je sposobnost shvatanja zna č aja djela kao i mogu ć nosti upravljanja postupcima, u vrijeme
+izvrš enja krivi č nog djela kod optu ž enog bila smanjena, ali ne bitno. Navedeni nalaz i mi š ljenje vje š aka
+neuropsihijatra sud je u cjelosti prihvatio kao objektivan, stru č an i dat saglasno pravilima struke i nauke.
+Istina, otu ž eni priznaje da je kriti č nom prilikom pucao iz predmetnog pi š tolja u kojem dogadjaju su od
+ispaljenih projektila o š te ć eni B. i P. zadobili povrede, ali poku š ava da predstavi sudu druga č iji tok kriti č nog
+dogadjaja od onog kako se zapravo zbio, tako š to navodi da je do š ao na lice mjesta, kojom prilikom ga je
+ošte ć eni B. isprovocirao, š to je sve shvatio kao poziv na fizi č ki obra č un, zbog č ega je bio primoran da ispali
+navedene projektile. Takvo svoje pona š anje opravdava č injenicom da je cijelo vrijeme o č ekivao da bude
+napadnut od strane o š te ć enog B., da je pucao isklju č ivo kako bi ovoga upla š io u znak upozorenja da ga
+ubudu ć e ne napada, nemaju ć i pri tom bilo kakvu namjeru da istog li š i ž ivota. Medjutim, u prilog ovakvim
+svojim navodima ne prila ž e nijedan dokaz, a isti nemaju utemeljenja niti u jednom dokazu izvedenom u
+postupku, ve ć  su po ocjeni suda isti nelogi č ni, krajnje neuvjerljivi, za sud neprihvatljivi i nesumnjivo
+unaprijed sra č unati na izbjegavanje krivi č no pravne odgovornosti.
+Nadalje, svjedoci V. i M. saglasno obavje š tavaju da je u jednom momentu, nakon sva đ e, optu ž eni Č .N iz jakne
+izvadio pi š tolj, repetirao ga, te da je tada, a š to je logi č an slijed doga đ aja, iako taj trenutak ni jedan svjedok
+ne vidi, po č ela pucnjava u pravcu o š te ć enog B., kojom prilikom je istog poga đ a u predjelu trbuha, nanose ć i
+mu pri tom osobito te š ku tjelesnu povredu, kako je to kvalifikovao vje š tak medicinske struke. U odnosu na
+polo ž aj o š te ć enog B. u odnosu na usta pi š tolja, vje š tak medicinske struke na glavnom pretresu je pojasnio da
+je u omentu nano š enja te ovrede o š te ć eni B. bio okrenut svojom lijevom bo č nom tranom prema ustima
+vatrenog oru ž ja, koje poja š njenje vje š taka medicinske struke  se poklapa sa polo ž ajem u kojem su se nalazili
+optu ž eni Č .nalazio za š ankom, svojom lijevom bo č nom stranom okrenut prema ustima cijevi pi š tolja.
+Navedeno utvr đ enje suda se i poklapa sa iskazom svjedoka o š te ć enog B. da ga je prvi metak pogodio dok je
+bio u stoje ć em polo ž aju , okrenut lijevom bo č nom stranom prema optu ž enom. Na fotografijama, koje su
+prilog vje š ta č enja po vje š taku hemijske struke I. A., je vidljivo o š te ć enje na jakni o š te ć enog B., u obliku rupe
+sa zagaravljeno šć u oko nje, i to na prednjoj strani lijeve pole jakne. Vje š tak hemijske  struke je u nalazu
+konstatovao da je ovaj projektil, uzimaju ć  u obzir nagaravljenost i prisustvo barutnih č estica, ispaljen sa
+udaljenosti od oko 20 cm od usta cijevi pi š tolja. Navedena konstatacija vje š taka I., i izja š njavanje  vje š tak
+hemijske struke Lj. I. sa glavnog pretresa, potvrdjuju utvrdjenje suda da je optu ž eni izvadio pi š tolj, ispru ž io
+ruku i okrenuo isti prema o š te ć enom B.u, koji se nalazio u njegovoj blizini, i ispalio u istog projektil koji ga je
+pogodio u predjelu stomaka, kako je to predhodno obja š njeno. Sasvim je logi č no i prihvatljivo i da je o š te ć eni
+B. nakon š to je optu ž eni ispalio prvi projektil, a obzirom da se isti nalazio u blizini optu ž enog, ustao i uhvatio
+optu ž enog za ruku, kada poku š ava da otme pi š tolj optu ž enom, i kada dolazi do daljeg ispaljenja projektila,
+kako je to objasino vje š tak balisti č ke struke - da su putanje projektila takve da se mogu ostvariti samo
+pomjeranjem jedne u odnosu na drugu osobu. Sasvim je logi č no i prihvatljivo da je u tom momentu jedan od
+projektila pogodio o š te ć enog P., kako to vje š tak medicinske struke obja š njava, u trenutku kada su usta
+predmetnog vatrenog oru ž ja bila ispred, u lijevo i malo iznad ulazne rane. Naime, svjedok o š te ć eni P.
+obja š njava da je u jednom momentu do š lo do otimanja pi š tolja izmedju o š te ć enog B. i Č ., da je u otimanju
+učestvovao i svjeodok M., te da je samo osjetio bol u predjelu grudi kada je pogodjen. Konstatacija vje š taka
+hemijske struke da na garderobi o š te ć enog P. nije bilo barutnih č estica, koje se prostiru na udaljenosti od 90
+cm od usta cijevi pi š tolja, upu ć uju na zaklju č ak da je isti u momentu kada je pogodjen bio udaljen vi š e od 90
+cm od usta cijevi pi š tolja, odnosno kada je bio udaljen od optu ž enog Č . Svjedok M. takodje obja š njava da je u
+jednom momentu vidio otimanje oko pi š tolja izmedju optu ž enog i o š te ć enog B., da je pri š ao optu ž enom i iz
+njegovih ruku uzeo pi š tolj iz kojeg je ovaj pucao, š to potvrdjuje č injenica da je na rukama ovog svjedoka
+konstatovano prisustvo barutnih č estica, i to dvije barutne č estice na dlanu lijeve š ake i jedna barutna č estica
+na nadlanici lijeve ruke. Po ocjeni suda, povreda koju je o š te ć eni B. zadobio - prostrelina u predjelu lijevog
+koljena sa smjerom kanala koji je horizontalan, te imaju ć i u vidu o š te ć enja na jakni o š te ć enog B., potvrdjuju
+zaklju č ak suda da je do š lo do otimanja oko pi š tolja izmedju optu ž enog i prisutnih svjedoka, jer ispaljeni
+projektili i njihova putanja upu ć uju na zaklju č ak, a kako je to konstatovao i vje š tak balisti č ke struke - da je
+ruka u kojoj je bio pi š tolj bila ometana.
+Na osnovu naprijed provedenih dokaza i iz njih utvrdjenih č injenica, sud nije na š ao nijednu okolnost zbog
+koje bi navodi odbrane  - da je optu ž eni Č . kriti č nom prilikom postupao u nu ž noj odbrani, bili prihvatljivi, a
+imaju ć i u vidu pri tom naprijed utvrdjenu č injenicu da je optu ž eni izvadio pi š tolj, repetirao ga, i pucao u
+pravcu o š te ć enog B., kada mu od ovog nije prijetila nikakva opasnost, odnosno u trenutku kada o š te ć eni B.
+prema optu ž enom nije preduzimao nijednu radnju kojom bi ugrozio tjelesni ili ž ivotni integritet. Sam polo ž aj
+ošte ć enog B.  da ga je prvi projektil pogodio kada je bio okrenut svojom lijevom bo č nom stranom prema
+ustima vatrenog oru ž ja, ukazuje da o š te ć eni nije o č ekivao da ć e optu ž eni upotrijebiti pi š tolj. Nesumnjiv je
+zaklju č ak suda i da o š te ć eni B. nije prilazio optu ž enom, niti je u trenutku kada je optu ž eni po č eo pucati iz
+pištolja na njega, preduzimao neku radnju kojom bi ugrozio ž ivotni ili tjelesni integritet optu ž enog, jer ni
+jedan saslu š ani svjedok nije u svom iskazu naveo da se o š te ć eni B. prije prvog projektila pribli ž avao
+optu ž enom Č . Navedeno do kraja opovrgava odbranu optu ž enog da je pi š tolj "opalio" u trenutku dok se oko
+pištolja "otimao" sa o š te ć enima P. i B. jer da je to tako zaista bilo, na rukama o š te ć enih P. i B. bi bile
+konstatovane barutne č estice, š to nije slu č aj, jer je vje š tak hemijske struke I. A. u nalazu i mi š ljenju
+konstatovao na rukama o š te ć enih P. i B., a imaju ć i u vidu da je skidana parafinska rukavica sa istih, nije bilo
+barutnih č estica, niti nitrata koji nastaju sagorijevanjem baruta kod opaljenja metka.
+Sve navedeno potvrdjuje prethodni zaklju č ak suda da nema elemenata nu ž ne odbrane jer bitni elementi u
+ovom institutu - napad o š te ć enog i istovremenost odbrane sa napadom, nijesu bili ispunjeni. Po ocjeni suda,
+jedino je mogu ć  i logi č an zaklju č ak da je optu ž eni Č .N pucao u o š te ć enog B. Č , svjestan da  usled njegovog
+pucanja mo ž e nastupiti smrt o š te ć enog,  pa je to i htio,a  pri tome sa umi š ljajem dovode ć i u opasnost ž ivot
+ošte ć enog P.R. Naime, optu ž eni je pucaju ć i iz pi š tolja bio svjestan da dovodi u konkretnu opasnost druga lica,
+odnosno da druga lica pucaju ć i iz pi š tolja mo ž e li š iti ž ivota, koja opasnost je i stvarno nastupila za o š te ć enog
+P. jer mu je optu ž eni projektilom iz vatrenog oru ž ja nanio te š ku tjelesnu povredu. Ovo tim prije kada se ima u
+vidu da optu ž eni puca iz pi š tolja u malom prostoru, prostoru kafane, pored š anka, gdje je bio prisutan ve ć i
+broj lica.
+To š to optu ž eni tvrdi tokom postupka da nije imao namjeru da li š i ž ivota o š te ć enog B. Č ., nije od uticaja na
+utvrdjivanje vinosti. Obzirom na radnje koje je optu ž eni preduzeo kriti č nom prilikom, sredstvo - pi š tolj kojim
+je preduzeo radnju izvr š enja predmetnog krivi č nog djela, podobno da se tijelo te š ko povrijedi, broj ispaljenih 
+projektila, kao i sve okolnosti konkretnog dogadjaja, sud nesumljivo zaklju č uje da je optu ž eni preduzimaju ć i
+prethodno opisane radnje bio svjestan da na taj na č in o š te ć enog B. Č . mo ž e li š iti ž ivota, pa je samim tim i htio
+nastupanje posledice u vidu li š enja ž ivota istog, pri č emu je u pogledu vinosti u konkretnom slu č aju postupao
+sa te ž im oblikom - direktnim umi š ljajem. Dakle, kod optu ž enog je postojala svijest o svim obilje ž jima
+krivi č nog djela i htjenje njegovog izvr š enja, š to ga sve č ini krivim. Okolnost š to do smrti o š te ć enog nije do š lo,
+rezultat je spleta sre ć nih okolnosti po o š te ć enog, a ne volje i svijesti optu ž enog.
+Optu ž eni nije sporio da je izvr š io krivi č no djelo nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l.403
+st.1 Krivi č nog zakonika CG, odnosno da je dana 09.12.2008. godine u Igalu - Op š tina Herceg Novi, na javnom
+mjestu u ugostiteljskom objektu "9" neovla šć eno nosio vatreno oru ž je - pi š tolj marke "CZ" M-70 kal.7,65 mm,
+fabri č kog broja 77369 za č ije no š enje shodno č l.27 Zakonika o oru ž ju nije imao uredno izdat oru ž ani list, te
+čije je no š enje shodno č l.11 Zakonika o oru ž ju zabranjeno na no š enje na javnom mjestu.
+Naime, iz provedenih dokaza proizilaze nesporne č injenice da je optu ž eni na javnom mjestu neovla šć eno
+nosio vatreno oru ž je, za koji pi š tolj po sopstvenom priznanju nije imao oru ž ani list, niti je isti nabavio po
+zakonom predvidjenoj proceduri. Optu ž eni je kao odrasla osoba znao i bio je svjestan da je dr ž anje i no š enje
+na javnom mjestu pi š tolja, mimo zakonom predvi đ ene procedure i dozvole nadle ž nog organa zabranjeno i
+kažnjivo, pa je u izvr š enju predmetnog kriv č nog djela postupao sa direktnim umi š ljajem, svjestan
+zabranjenosti takve djelatnosti, sa kojih razloga ga je sud za ovo djelo oglasio krivim i krivi č no pravno
+odgovornim - bio je svjestan djela i htio je njegovo izvr š enje.
+Odlu č uju ć i o kazni za optu ž enog Č .N, za krivi č na djela za koja ga je sud oglasio krivim kao u izreci ove
+presude, sud je cijenio sve okolnosti na strani optu ž enog u  smislu č l.42 Krivi č nog zakonika, koje uti č u da
+kazna bude ve ć a ili manja, pa je od olak š avaju ć ih okolnosti na strani optu ž enog na š ao njegovo lo š e
+zdravstveno stanje, kako je to konstatovao vje š tak medicinske struke, lo š e imovno stanje, te doprinos
+ošte ć enog B. Č , koje sve okolnosti je Sud u svom zbiru cijenio kao naro č ito olak š avaju ć e okolnosti, te na š ao
+mjesta primjeni č l. 45 i 46 Krivi č nog zakonika, a posebno č injenicu da je krivi č no djelo te š ko ubistvo ostalo u
+poku š aju, za koje se u č inilac djela mo ž e i bla ž e kazniti,dok je kao ote ž avaju ć u okolnost uzeo č injenicu da je
+ranije osudjivan, ali ne za istovrsno krivi č no djelo, te ž inu nastale posledice, te č injenicu da su se o š te ć eni
+pridru ž ili njegovom krivi č nom gonjenju, pa je cijene ć i navedene okolnosti uz stepen krivice optu ž enog,
+optu ž enog osudio na jedinstvenu kaznu zatvora u trajanju od 2 (dvije) godine i 1 (jednog) mjeseca, koja
+kazna je po ocjeni suda srazmjerna krivici i krivi č nopravnoj odgovornosti optu ž enog, a kojom kaznom ć e se
+ostvariti svrha izricanja krivi č nih sankcija u smislu č l.4 Krivi č nog zakonika i uticati na optu ž enog, da ubudu ć e
+ne č ini ista ili sli č na krivi č na djela, te ostvariti svrhu ka ž njavanja iz č l.32 Krivi č nog zakonika. Sud je, shodno
+čl.48 Krivi č nog zakonika prethodno optu ž enom Č .N. utvrdio pojedina č ne kazne za izvr š ena krivi č na djela, i
+to: za krivi č no djelo te š ko ubistvo u poku š aju iz č l.144 st.1 ta č .3 u vezi č l.20 Krivi č nog zakonika, kaznu zatvora
+u trajanju od 2 (dvije) godine, a za krivi č no djelo nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l.403
+st.1 Krivi č nog zakonika na kaznu zatvora u trajanju od 2 (dva) mjeseca, a zatim ga osudio na jedinstvenu
+kaznu zatvora u trajanju od 2 (dvije) godine i 1 (jednog) mjeseca.
+Shodno č l.51 Krivi č nog zakonika, u izre č enu kaznu zatvora sud je optu ž enom ura č unao vrijeme koje je
+proveo u pritvoru od 09.12.2008. godine od 19,00 č asova do 12.02.2010. godine.
+Shodno</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

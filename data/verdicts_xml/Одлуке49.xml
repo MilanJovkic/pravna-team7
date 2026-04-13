@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке49">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке49/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке49"/>
+                    <FRBRdate date="2015-02-12" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке49/sr@2015-02-12/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке49/sr@2015-02-12"/>
+                    <FRBRdate date="2015-02-12"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке49/sr@2015-02-12/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке49/sr@2015-02-12/!main.akn"/>
+                    <FRBRdate date="2026-04-13"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U NIK"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="pojedinacĐ"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="C. P."/>
+                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="K.I."/>
+                <TLCPerson eId="defendant_3" href="/akn/me/ontology/person/defendant" showAs="K.K."/>
+                <TLCPerson eId="defendant_4" href="/akn/me/ontology/person/defendant" showAs="K. I."/>
+                <TLCPerson eId="defendant_5" href="/akn/me/ontology/person/defendant" showAs="Koprivica Igor"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/kz-cg" showAs="KZ CG"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 383/2014</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U NIK</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2015-02-12">2015-02-12</docDate>
+                </block>
+                <block name="judges">
+                    <judge>pojedinacĐ</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni K.K. i K.I. su osuđeni za krivična dela ugrožavanje opasnim oružjem i lakša telesna povreda.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Ugrožavanje opasnim oružjem</p>
+                    <p>Lakša telesna povreda</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">KZ CG</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_154">Član 154</ref>
+                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/2024/!main#art_242">Član 242</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da su okrivljeni izvršili dela koja su im stavljena na teret, uzimajući u obzir prethodne presude.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="nepoznato">
+                    <p>Osuda okrivljenih K.K. i K.I.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>C. P.</person>
+                    <person>K.I.</person>
+                    <person>K.K.</person>
+                    <person>K. I.</person>
+                    <person>Koprivica Igor</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="weapon">kamen</fact>
+                <fact key="location">IV Crnogorske</fact>
+                <fact key="location">Peka</fact>
+                <fact key="location">IV
+Crnogorske</fact>
+                <fact key="location">Nik</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Što</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>CRNA GORA
+OSNOVNI SUD U NIK Š I Ć U
+K.br.383/2014
+Dana 12.02.2015. godine
+ 
+U IME CRNE GORE
+ 
+OSNOVNI SUD U NIK Š I Ć U, kao prvostepeni krivi č ni, sudija pojedinac Đ uri č kovi ć  Igor, uz sudjelovanje
+namje š tenika Papovi ć  Budimirke, kao zapisni č ara, rje š avaju ć i u krivi č nom predmetu okrivljenog K.K. iz
+Nikš i ć a, zbog krivi č nog djela ugro ž avanje opasnim orudjem pri tu č i i sva đ i iz č lana 154 KZ CG i okrivljenog K.
+I. iz Nik š i ć a, zbog krivi č nog djela laka tjelesna povreda iz č lana 152 stav 2 u vezi stava 1 KZ CG, postupaju ć i po
+optu ž nom predlogu ODT Nik š i ć  Kt.br.383/14 od 27.10.2014.godine, nakon javnog glavnog pretresa odr ž anog
+dana 09.02.2015.godine, u prisustvu zamjenika ODT-a Djorojevi ć  Dejana, okrivljenih K.K. i K. I. kao i o š te ć enog
+C. P. donio je dana 12.02.2015.godine i javno objavio
+ 
+P R E S U D U
+ 
+ 
+Okrivljeni:
+1. K.K. jmbg: od oca D. i majke S. rođ ene B.rođen .. godine u Nik š i ć u, sa prebivali š tem u Nik š i ć u-ul.Peka
+Pavlovi ć a bb, dr ž avljanin Crne Gore, zavr š io osnovnu š kolu, nezaposlen, neo ž enjen, lo š eg imovnog stanja,
+ranije osu đ ivan presudom Vi š eg suda u Podgorici K.br.354/01 od 22.01.2007.godine, zbog krivi č nog djela iz
+člana 245 stav 1 KZ RCG, na kaznu zatvora u trajanju od 2 godine, presudom Osnovnog suda u Nik š i ć u
+K.br.357/08 od 22.01.2009.godine, zbog krivi č nog djela iz č lana 152 KZ CG, na kaznu zatvora u trajanju od 30
+dana, presudom Vi š eg suda u Podgorici K.br.234/10 od 29.04.2011.godine, zbog krivi č nog djela iz č lana 300
+stav 1 KZ CG, na kaznu zatvora u trajanju od 6 mjeseci, presudom Osno vnog suda u Nik š i ć u K.br.472/09 od
+12.01.2010.godine, zbog krivi č nog djela iz č l.242 st.1 KZ CG, na kaznu zatvora u trajanju od 1 godine i č etiri
+mjeseca, presudom Vi š eg suda u Podgorici K.br.142/12 od 23.04.2013.godine zbog krivi č nog djela iz č lana 300
+stav 1 KZ CG, na kaznu zatvora u trajanju od 3 mjeseca zatvora, presudom Osnovnog suda u Nik š i ć u
+K.br.489/12 od 26.12.2013.godine, zbog krivi č nog djela iz č lana 246 stav 2 KZ CG, uslovnom osudom,Osnovni Sud u Nik š i ć u
+K 432/2014
+12. Februar 2015
+ 
+2. K. I. jmbg: .od oca D. i majke S. rođ ene B.rođen 13.02.1991.godine u Nik š i ć u, sa prebivali š tem u Nik š i ć u–
+ul.Peka Pavlovi ć a bb, dr ž avljanin Crne Gore, zavr š io srednju š kolu, nezaposlen, neo ž enjen, lo š eg imovnog
+stanja, ranije neosu đ ivan;
+ 
+K r i v i s u
+ 
+ 
+Što su:
+ 
+Okrivljeni K.K.
+ 
+Dana 19.07.2014.godine oko 20:00 č asova, u Nik š i ć u u ulici IV Crnogorske, iako je bio svjestan svog djela i htio
+njegovo izvr š enje, pri tu č i i svadji sa o š te ć enim C. Petrom ma š io se drvenog kolca du ž ine oko jedan metar,
+kao sredstva podobnog da tijelo te š ko povrijedi ili zdravlje te š ko naru š i,
+ 
+- čime je izvr š io krivi č no djelo ugro ž avanje opasnim orudjem pri tu č i i svadji iz č lana 154 Krivi č nog zakonika
+Crne Gore,
+ 
+Okrivljeni K.I.
+ 
+Dana 19.07.2014.godine oko 20:00 č asova u Nik š i ć u, u ulici IV Crnogorske, iako je bio svjestan svog djela i htio
+njegovo izvr š enje, fizi č ki napao o š te ć enog C. P. na na č in š to ga je no ž em du ž ine sje č iva oko 30 cm, kao
+sredstvom podobnim da tijelo te š ko povrijedi ili zdravlje te š ko naru š i, ubo vi š e puta u predjelu ruku i tijela,
+kojom prilikom je o š te ć enom C. P. nanio laku tjelesnu povredu u vidu razderne lezije ko ž e u predjelu tre ć eg
+interdigatalnog prostora desne š ake, manje razderne lezije na dlanu desne š ake, dvije manje razderne rane u
+predjelu lijeve polovine grudnog ko š a i grudne kosti i manje razderne rane na desno j nadlaktici,
+ 
+- čime je izvr š io krivi č no djelo laka tjelesna povreda iz č lana 152 stav 2 u vezi stava 1 Krivi č nog zakonika Crne
+Gore,
+- pa sud okrivljene zbog izvr š enja navedenog krivi č nog djela primjenom citiranih zakonskih odredbi, odredbi
+iz člana 4 stav 2, č lana 32, 36, 42 Krivi č nog zakonika Crne Gore, kao i odredbi č lana 226, 229 i 374 Zakonika o
+krivi č nom postupku
+ 
+O S U Đ  U J E
+ 
+Okrivljenog K.K. na kaznu zatvora u trajanju od 60 (slovima: š ezdeset) dana, a okrivljenog Koprivica
+Igora na kaznu zatvora u trajanju od 6 (slovima: š est) mjeseci, koje kazne su okrivljeni du ž ni izdr ž ati nakon
+pravosna ž nosti presude.
+Obavezuju okrivljeni da na ime tro š kova krivi č nog postupka solidarno plate iznos od 44,00 €, a da na ime
+pauš ala kao dijela tro š kova krivi č nog postupka pojedina č no plate iznose od po 50,00 €, sve navedeno u roku
+od 15 dana od dana pravosna ž nosti presude pod prijetnjom prinudnog izvr š enja na ž iro ra č un Osnovnog
+suda u Nik š i ć u broj 832-32-152 i da sudu dostave dokaz o izvr š enoj uplati.
+O b r a z l o ž  e n j e
+ 
+ 
+Osnovno dr ž avno tu ž ila š tvo u Nik š i ć u svojim optu ž nim predlogom Kt.br.383/14 od 27.10.2014.godine,
+stavilo je na teret okrivljenom K.K. izvrš enje krivi č nog djela ugro ž avanje opasnim oru đ em pri tu č i i svadji iz
+člana 154 KZ CG, a okrivljenom Koprivica Igoru izvr š enje krivi č nog djela laka tjelesna povreda iz č lana 152
+stav 2 u vezi stava 1 KZ CG, koja krivi č na djela su č injeni č no opisana u izreci presude. Zamjenik ODT-a
+Đorojevi ć  Dejan, koji je zastupao optu ž ni akt na glavnom pretresu, u svojoj zavr š noj rije č i, ostaju ć i pri
+navodima podnijetog optu ž nog predloga, predlo ž io je sudu da okrivljene oglasi krivim i osudi po zakonu.
+ 
+Okrivljeni K.K. na glavnom pretresu izjasnio se da priznaje izvr š enje krivi č nog djela koje mu je optu ž bom
+stavljeno na teret i u bitnom istakao da je dana 19.07.2014.godine, oko 20 č asova, sjedio na jednoj klupi u
+blizini solitera u ulici Peka P.u dru š tvu sa svojim bratom K. I. i drugovima L. F. i P. B. da su se sjede ć i na toj
+klupi dru ž ili i pili pivo, kada je u jednom momentu do njih do š ao o š te ć eni C. P. koji je bio vidno pijan i koji je
+bez povoda uzeo fla š u piva koju su oni pili i prosuo je, nakon č ega je on o š te ć enog pitao za š to je to u č inio, a
+isti mu prili č no drsko odgovorio i zatim ga udario stisnutom pesnicom u predjelu lica, da bi se zatim on i
+ošte ć eni Cicmil zalijetali jedan put drugoga, kako bi se fizi č ki obra č unali, ali im ostala prisutna lica nijesu
+dozvoljavala da se fiz č ki sukobe i dok je trajala ta situacija on je u jednom momentu uzeo u ruku neki drveni
+kolac koji je na š ao pored klupe na kojoj su sjedjeli i sa istim gadjao o š te ć enog C. P.ali ga nije pogodio, da bi
+nakon toga o š te ć eni C. uzeo taj drveni kolac i sa istim gadjao u njegovom pravcu i gadjao i kamenjem, a zatim
+poč eo da bje ž i sa tog mjesta, kada su on i njegov brat okrivljeni Koprivica Igor pojurili o š te ć enog C. P. i istog
+stigli na ulazu u dvori š te G. S. C. gdje su njih dvojica o š te ć enog pretukli udaraju ć i ga š akama, nogama i i
+staklenim pivskim fla š ama koje su ponijeli sa mjesta od kojeg su po č eli da tr č e za o š te ć enim, u kojoj situaciji
+njegov brat okrivljeni Koprivica Igor kod sebe nije imao nikakav no ž , tako da nije ta č no da je on u tom
+fizič kom sukobu no ž em povrijedio o š te ć enog C. P. Istakao je i da su on i njegov brat nakon par minuta sami
+prestali da udaraju o š te ć enog C. i udaljili se sa tog mjesta, nakon č ega je o š te ć eni ostao da le ž i na tlu i da je
+dok su se on i njegov brat udaljavali sa mjesta doga đ aja vidio da su o š te ć enom C. priš li neki momci koji su mu
+pomogli da ustane.
+ 
+U svojoj zavr š noj rije č i okrivljeni K.K. je, ostaju ć i pri svojoj odbrani, pitanje svoje krivi č no-pravne
+odgovornosti ostavio na ocjenu sudu.
+ 
+Okrivljeni Koprivica Igor u svom izja š njenju na glavnom pretresu negirao je izvr š enje krivi č nog djela koje mu
+je stavljeno na teret optu ž bom i nakon toga iskoristio svoje zakonsko pravo da ne iznosi svoju odbranu i da ne
+odgovara na postavljena pritanja.
+ 
+U svojoj zavr š noj rije č i imenovani okrivljeni je, ostaju ć i pri stavu da ne iznosi svoju odbranu, pitanje svoje
+krivi č no pravne odgovornosti ostavio na ocjenu sudu.
+ 
+Sud je na glavnom pretresu u dokaznom postupku neposredno saslu š ao o š te ć enog C. P. u svojstvu svjedoka,
+proč itao zapisnik o uvidjaju Uprave policije CG CB Nik š i ć  Ku.br.372 od 19.07.2014.godine i izvr š io uvid u
+fotodokumentaciju CB Nik š i ć  broj 598/14 od 19.07.2014.godine, na saglasan predlog stranaka pro č itao nalaz i
+mišljenje stalnog sudskog vje š taka medicinske struke dr Bulatovi ć  Veselina dat u prethodnom postupku i
+proč itao izvode iz registra kaznenih evidencija Ministarstva pravde CG za okrivljene.
+ 
+Analiziraju ć i provedene dokaze pojedina č no i u njihovoj medjusobnoj povezanosti, dovode ć i ih u vezu sa
+navodima optu ž be i odbranom okrivljenog K.K. sud je na nesumnjiv na č in utvrdio da su okrivljeni K.K. i K.
+I.izvrš ili krivi č na djela koja su im stavljena na teret optu ž bom, pa ih je zbog izvr š enja istih oglasio krivim i
+krivi č no pravno odgovornim iz sljede ć ih razloga:
+ 
+U zapisniku o uvidjaju Uprave policije CG CB Nik š i ć  Ku.br.372 od 19.07.2014.godine konstatovano je da su
+služ benici Uprave policije CG CB Nik š i ć , nakon š to je de ž urna slu ž ba CB Nik š i ć  obavije š tena da je do š lo do
+tuče vi š e lica na š etali š tu pored ograde G. S. C., dana 19.07.2014.godine u 20:45 č asova obavili uvi đ aj na
+mjestu doga đ aja-ju ž nom ulazu u dvori š te G. S. C. i pored samog ulaza, na kojem nema kapije, sa desne strane
+ulaza gledano iz pravca š etali š ta ka gimnaziji i na betonskoj stazi koja vodi od ulaza u dvori š te ka zgradi
+gimnazije konstatovali postojanje tragova crvene boje, nalik na tragove krvi, koji su fotografisani od strane
+kriminalisti č kog tehni č ara i da su pregledom š ireg lica mjesta na š etali š tu, pored same betonske staze sa
+desne strane, nekih 15-ak cm na zelenoj povr š ini prona š li drveni kolac za koji se pretpostavlja da je kori šć en
+u tuč i, koji je od strane kriminalisti č kog tehni č ara fotografisan i izuzet sa lica mjesta. Navedene konstatacije
+zapisnika o uvi đ aju potvr đ ene su foto-dokumentacijom Uprave policije CG-CB Nik š i ć  broj 598/14 od
+19.07.2014.godine.
+Ošte ć eni C. P. u svom svjedo č kom iskazu u bitnom je naveo da je dana 19.07.2014.godine, oko 20:00 č asova,
+prolazio ulicom P.P. tačnije pored ugostiteljskog objekta Sportsko-ribolovnog dru š tva Nik š i ć , kojom prilikom
+se javio okrivljenima K.K. i K. I. koje je prije te ve č eri poznavao iz vi đ enja, a koji su se tom prilikom nalazili u
+većem dru š tvu momaka i zatim, dok je prolazio, obratio se okrivljenom K.K. riječ ima: “ Đ e si Kosto, jesi li to
+popio malo?“, jer se imenovani okrivljeni č udno pona š ao, zbog č ega mu je izgledao da je u alkoholisanom
+stanju, na koje njegove rije č i je reagovao brat okrivljenog K.K.-okrivljeni K. I. rekav š i mu: “Za š to mi provocira š
+brata?“, na š ta je on istom rekao: “Ne provociram, samo sam pitao“, da bi se nakon toga obojica okrivljenih
+zaletjeli na njega, a okrivljeni K.K. uzeo u ruku jedan drveni kolac du ž ine oko jedan metar i sa istim se
+zalijetao prema njemu, ali ga nije udario, dok mu je okrivljeni K. I. uputio rije č i: “Sad ć e š  ti vidjeti“ i oti š ao sa
+tog mjesta i za minut-dva se vratio dr ž e ć i u ruci no ž  č ije je sje č ivo bilo duga č ko oko 30 cm i krenuo ka njemu
+podi ž u ć i ruku u kojoj je dr ž ao no ž , na š ta je on reagovao tako š to je okrivljenom K. I. rekao da baci no ž  i da ć e
+taj nesporazum mirno rije š iti, ali se isti nije obazirao na te njegove rije č i, ve ć  je nastavio da zamahuje no ž em u
+njegovom pravcu, i on je, nakon š to je vidio da okrivljeni K. I. ima ozbiljnu namjeru da ga povrijedi tim no ž em,
+krenuo da bje ž i u pravcu G. Stojan C. Dok je bje ž ao šetali š tem prema gimnaziji vidio je da za njim tr č e
+okrivljeni K.K. sa drvenim kolcem u rukama i okrivljeni K. I. sa no ž em u rukama i dok je bje ž ao povremeno se
+okretao da ga okrivljeni Koprivica Igor ne bi ubo no ž em u ledja, da bi ga u jednom trenutku okrivljeni K. I.
+sustigao i krenuo da ga ubode no ž em, a on postavio lijevu ruku da se za š titi, tako da ga je isti zaka č io no ž em
+u predjelu š ake lijeve ruke i nakon toga nastavio da bje ž i i bje ž e ć i na prostoru u blizini ograde dvori š ta
+gimnazije zapeo za neku nisku ogradu i pao, nakon č ega su ga okrivljeni stigli, a okrivljeni K. I. ga tim no ž em
+ubo vi š e puta i to u predjelu mi š ice desne ruke i u predjelu grudi, a takodje mu je tim no ž em nanio rane i u
+predjelu š aka, jer je on neprekidno podizao ruke da bi se za š titio od sje č iva no ž a, i da ga je dok je le ž ao na tlu
+vjerovatno okrivljeni K.K. drvenim kolcem udario vi š e puta po ledjima i udario ga jednom u predjelu glave
+nogom ili tim drvenim kolcem, ali da zbog polo ž aja u kojem se nalazio i č injenice da mu je, po njegovoj
+procjeni, u tom trenutku ž ivot bio ugro ž en od napada K. I. nož em, to nije mogao da opazi na najbolji na č in,
+tako da ne mo ž e da tvrdi da ga je okrivljeni K.K. udarao u toj situaciji. Istakao je da se u jednom momentu
+pojavio neki momak koji je zaustavio dalji napad okrivljenih na njega, nakon č ega su se okrivljeni udaljili sa
+mjesta doga đ aja, a da su na isto ubrzo do š li pripadnici slu ž be Hitne pomo ć i koji su ga prevezli do JZU Op š ta
+bolnica Nik š i ć , gdje mu je ukazana medicinska pomo ć .
+ 
+Odgovaraju ć i na pitanja postavljena na glavnom pretresu o š te ć eni je istakao da se u vrijeme de š avanja
+dogadjaja u blizini ugostiteljskog objekata Sportsko-ribolovnog dru š tva, nakon š to je K.K. uputio rije č i koje je
+naveo u svom iskazu, a okrivljeni Koprivica Igor reagovao na na č in kako je to on opisao u svom iskazu, do š lo
+do me đ usobne prepirke izmedju njega i okrivljenog K.K. koja se mo ž e okarakterisati kao svadja, jer su u toj
+situaciji oni okrivljeni Koprivica jedan drugom upu ć ivali uvrede i psovke i kretali jedan prema drugom, ali su
+im ti momci koji su prethodno bili u dru š tvu sa okrivljenima nijesu dozvoljavali da dodju jedan do drugog i da
+je za vrijeme trajanja te sva đ e okrivljeni K.K. u jednom momentu u ruke uzeo drvenu palicu i sa istom krenuo
+put njega. Istakao je i da je mjesto na kojem su ga okrivljeni stigli od mjesta gdje se desila situacija u kojoj je
+okrivljeni K.K. uzeo u ruke drvenu motku udaljeno, po njegovoj procjeni, od 400 do 500 metara. U svojoj
+zavr š noj rije č i istakao je da se kao o š te ć eni pridru ž uje krivi č nom gonjenju protiv okrivljenog Koprivica Igora,
+a da se ne pridru ž uje krivi č nom gonjenju protiv okrivljenog K.K., kao i da prema okrivljenima ne ispostavlja
+imovinsko pravni zahtjev.
+ 
+Stalni sudski vje š tak medicinske struke dr Bulatovi ć  Veselin u svom nalazu i mi š ljenju, koji je sud cijenio kao
+jasan, stru č an i objektivan, jer je isti dat po pravilima struke i na osnovu vjerodostojne medicinske
+dokumentacije, naveo je da je u izje š taju ljekara specijaliste hitno prijemne slu ž be JZU Op š ta bolnica Nik š i ć ,
+broj protokla 6482 od 19.07.2014.godine, koja medicinska dokumentacija mu je predo č ena prilikom
+vješ ta č enja, navedeno da se toga dana o š te ć eni C. P. javio na pregled zbog povreda zadobijenih od strane
+drugog lica - no ž em, i da su klini č kim pregledom o š te ć enog kod istog konstatovane povrede u vidu razderne
+lezije ko ž e u predjelu III interdigitalnog prostora desne š ake, manja razderna lezija na dlanu desne š ake, dvije
+manje razderne rane u predjelu lijeve polovine grudnog ko š a i grudne kosti i manja razderna rana na desnoj
+nadlaktici, a koje povrede su po mi š ljenu vje š taka po svojoj prirodi lake tjelesne povrede, koje su mogle
+nastati o š tricom mehani č kog orudja kao š to je no ž , lim, staklo i sli č no.
+Na osnovu navedenog iskaza o š te ć enog C. P. koji je sud cijenio kao istinit, jer je o š te ć eni kriti č ni doga đ aj
+opisao jasno i ubjedljivo, kazuju ć i pri tom na istovjetan na č in u prethodnom postupku i na glavnom pretresu
+u prisustvu okrivljenih detaljno opisuju ć i radnje koje su kriti č nom prilikom preduzeli okrivljeni K.K. i K. I.
+dakle navode ć i da je konkretnom prilikom prvo na prostoru ispred Sportsko-ribolvnog dru š tva u ulici IV
+Crnogorske do š lo do me đ usobne prepirke izmedju njega i okrivljenog K.K. koju je okarakterisao kao sva đ u,
+jer su u toj situaciji on i imenovani okrivljeni jedan drugom upu ć ivali uvrede i psovke i kretali jedan prema
+drugom sa namjerom da se fizi č ki obra č unaju, ali im momci koji su prethodno bili u dru š tvu sa okrivljenima
+nijesu dozvoljavali da dodju jedan do drugog, da bi u jednom momentu za vrijeme trajanja te sva đ e okrivljeni
+K.K. u ruke uzeo jednu drvenu palicu-kolac i sa istim krenuo put njega i da je tada okrivljeni Koprivica Igor,
+koji je u ruci dr ž ao jedan no ž  sje č iva du ž ine oko 30 cm, i sa tim no ž em prvo zamahivao u njegovom pravcu, a
+zatim nakon š to je krenuo da bje ž i tr č ao za njim i tr č e ć i za njim ga povrijedio u predjelu š ake lijeve ruke kada
+je on postavio lijevu ruku da se za š titi od uboda no ž em, a zatim ga, nakon š to se u blizini ograde dvori š ta G. S.
+C. sapleo o neku nisku ogradu i pao, okrivljeni K. I. tim no ž em ubo vi š e puta i to u predjelu mi š ice desne ruke i
+u predjelu grudi i nanio rane u predjelu š aka, jer je on neprekidno podizao š ake da bi se za š titio od uboda
+nož em, koje kazivanje o š te ć enog je u dijelu lokalizacije, vrste, te ž ine i mehanizma nastanka povrede kod
+istog, potvr đ eno navedenim nalazom i mi š ljenjem vje š taka medicinske struke dr.Bulatovi ć  Veselina, sud je na
+nesumnjiv na č in utvrdio da je okrivljeni K.K. dana 19.07.2014.godine oko 20:00 č asova, u Nik š i ć u u ulici IV
+Crnogorske, iako je bio svjestan svog djela i htio njegovo izvr š enje, pri tu č i i svadji sa o š te ć enim C. P. maš io se
+drvenog kolca du ž ine oko jedan metar, kao sredstva podobnog da tijelo te š ko povrijedi ili zdravlje te š ko
+naru š i, kojim radnjama je izvr š io krivi č no djelo ugro ž avanje opasnim orudjem pri tu č i i svadji iz č lana 154
+Krivi č nog zakonika Crne Gore na na č in, u vrijeme i na mjestu kako je to predstavljeno u izreci presude i da je
+okrivljeni K. I. dana 19.07.2014.godine oko 20:00 č asova u Nik š i ć u, u ulici IV Crnogorske, iako je bio svjestan
+svog djela i htio njegovo izvr š enje, fizi č ki napao o š te ć enog C.l P.na na č in š to ga je no ž em du ž ine sje č iva oko
+30 cm, kao sredstvom podobnim da tijelo te š ko povrijedi ili zdravlje te š ko naru š i, ubo vi š e puta u predjelu
+ruku i tijela, kojom prilikom je o š te ć enom C. P. nanio laku tjelesnu povredu u vidu razderne lezije ko ž e u
+predjelu tre ć eg interdigatalnog prostora desne š ake, manje razderne lezije na dlanu desne š ake, dvije manje
+razderne rane u predjelu lijeve polovine grudnog ko š a i grudne kosti i manje razderne rane na desnoj
+nadlaktici, čime je izvr š io krivi č no djelo laka tjelesna povreda iz č lana 152 stav 2 u vezi stava 1 Krivi č nog
+zakonika Crne Gore na na č in, u vrijeme i na mjestu kako je to predstavljeno u izreci presude.
+ 
+U tom pravcu sud je cijene ć i odbranu okrivljenog K.K. naš ao da je ista neosnovana i data u pravcu umanjenja
+krivi č no pravne odgovornosti njegovog brata-okrivljenog K. Igora, u dijelu u kojem je imenovani okrivljeni
+naveo da su on i njegov brat okrivljeni K. I. kriti č nom prilikom u blizini dvori š ta G. S. C. pretukli o š te ć enog C.
+P. tako š to su ga udarali š akama i nogama, kao i staklenim pivskim fla š ama koje su ponijeli sa mjesta od kojeg
+su po č eli da tr č e za o š te ć enim, je po ocjeni suda odbrana imenovanog okrivljenog u tom dijelu u potpunosti
+opovrgnuta svjedo č kim iskazom o š te ć enog C. P. kojem dokazu je sud iz ve ć  navedenih razloga poklonio
+povjerenje i na istom zasnovao odluku o krivici okrivljenih u predmetnom postupku.
+ 
+Cijene ć i subjektivni odnos okrivljenog K.K. prema izvr š enom krivi č nom djelu sud je utvrdio da je okrivljeni
+prilikom izvr š enja krivi č nog djela ugro ž avanje opasnim oru đ em pri tu č i i sva đ i iz č lana 154 KZ CG postupao sa
+direktnim umi š ljajem, jer iz utvr đ enog č injeni č nog stanja proizilazi da je imenovani okrivljeni preduzimaju ć i
+radnje bli ž e opisane u izreci presude bio svjestan da se pri tu č i i sva đ i sa o š te ć enim ma š io sredstva podobnog
+da tijelo te š ko povrijedi ili zdravlje te š ko naru š i i time objektivno stvorio opasnost za tjelesni integritet
+ošte ć enog, š to je kod istog stvorilo osje ć aj ugro ž enosti, odnosno da je imenovani okrivljeni preduzimaju ć i
+radnje bli ž e opisane u izreci presude bio svjestan da č ini predmetno krivi č no djelo i htio njegovo izvr š enje.
+ 
+Cijene ć i subjektivni odnos okrivljenog K. I. prema izvr š enom krivi č nom djelu sud je utvrdio da je imenovani
+okrivljeni prilikom izvr š enja krivi č nog djela laka tjelesna povreda iz č lana 152 stav 2 u vezi stava 1 KZ CG
+potupao sa direktnim umi š ljajem, jer iz utvr đ enog č injeni č nog stanja proizilazi da je isti radnje bli ž e opisane
+u izreci presude preduzeo u namjeri da no ž em, kao sredstvom podobnim da tijelo te š ko povrijedi ili zdravlje
+teško naru š i na na č in bli ž e opisan u izreci presude, o š te ć enom C. P. nanese lake tjelesne povrede, odakle
+nedvosmisleno proizilazi da je okrivljeni prilikom izvr š enja predmetnog krivi č nog djela bio svjestan istog i
+htio je njegovo izvr š enje.
+ 
+Prilikom dono š enja odluke o vrsti i visini kazne okrivljenima sud je u smislu č lana 42 KZ CG kao olak š avaju ć e
+okolnosti na strani okrivljenih na š ao njihove lo š e imovne prilike, na strani okrivljenog K.K. i činjenicu da se
+ošte ć eni nije pridru ž io krivi č nom gonjenju protiv njega, a na strani okrivljenog K. I. i njegovu relativnu
+mladost u vrijeme izvr š enja predmetnog krivi č nog djela i raniju neosu đ ivanost utvrdjenu uvidom u izvod iz
+registra kaznene evidencije, dok je kao ote ž avaju ć u okolnost na strani imenovanog okrivljenog sud cijenio
+upornost koju je imenovani okrivljeni ispoljio prilikom izvr š enja predmetnog krivi č nog djela- č injenicu
+utvrđ enu iskazom o š te ć enog C. P. da ga je okrivljeni K. I. u namjeri da ga povrijedi, sa no ž em u ruci jurio od
+400 do 500 metara dok ga nije sustigao i nanio mu povrede, dok je kao ote ž avaju ć u okolnost na strani
+okrivljenog K.K. u sklopu njegove li č nosti, sud cijenio njegovu raniju osu đ ivanost utvrdjenu uvidom u izvod iz
+registra kaznenih evidencije, jer je o č igledno da kazne koje su okrivljenom izricane prilikom ranije
+osuđ ivanosti na istog nijesu uticale da ne č ini nova krivi č na djela. Imaju ć i u vidu navedene okolnosti sud je na
+osnovu č lana 36 KZ CG okrivljenog K.K. osudio na kaznu zatvora u trajanju od 60 dana, a okrivljenog
+Koprivica Igora na kaznu zatvora u trajanju od 6 mjeseci, smatraju ć i da su ovakve kazne primjerene te ž ini
+izvrš enih krivi č nih djela i okrivljenima kao izvr š iocima istih i da ć e se sa ovakvim kaznama na okrivljene u
+dovoljnoj mjeri uticati da ubudu ć e ne vr š e krivi č na djela, te da ć e se na taj na č in u ovom konkretnom slu č aju
+ostvariti svrha ka ž njavanja iz č lana 32 KZ CG, u okviru op š te svrhe izricanja krivi č nih sankcija iz č lana 4 stav 2
+KZ CG.
+ 
+Odluku o tro š kovima krivi č nog postupka sud je donio na osnovu č lana 226 i 229 ZKP-a i istom obavezao
+okrivljene da na ime tro š kova krivi č nog postupka solidarno plate iznos od 44,00 €, koji se odnosi na ime
+nagrade vje š taku medicinske struke dr Bulatovi ć  Veselinu za dati nalaz i mi š ljenje i da na ime pau š ala, kao
+dijela tro š kova krivi č nog postupka, pojedina č no plate iznose od po 50,00 €, koji iznosi su odredjeni imaju ć i u
+vidu slo ž enost predmeta, trajanje postupka i imovne prilike okrivljenih.
+ 
+Na osnovu svega izlo ž enog, primjenom č lana 374 ZKP- a odlu č eno je kao u izreci presude.
+ 
+ 
+OSNOVNI SUD U NIK Š I Ć U, dana 12.02.2015. godine
+ 
+Zapisni č ar S U D I J A
+Papovi ć  Budimirka s.r. Djuri č kovi ć  Igor s.r.
+ 
+Za ta č nost otpravki tvrdi i ovjerava: Slu ž benik suda
+ 
+PRAVNA POUKA: Protiv ove presude dozvoljena je ž alba u roku od 8 dana od dana prijem Iste preko ovog
+suda Vi š em sudu Podgorica</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

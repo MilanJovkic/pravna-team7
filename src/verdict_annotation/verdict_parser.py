@@ -1,5 +1,6 @@
 """Parser for structuring court verdict text."""
 import re
+import unicodedata
 from datetime import datetime
 from typing import List, Optional
 
@@ -166,6 +167,10 @@ class VerdictParser:
             metadata.parties["clerk"] = list({c.strip() for c in normalized_clerk if c.strip()})
 
         metadata.factual_state = self._extract_factual_state(text)
+        metadata.factual_state = self._merge_fact_maps(
+            metadata.factual_state,
+            self._extract_sentencing_facts(text),
+        )
 
         # Ekstraktuj reference na zakone
         laws = set()
@@ -247,7 +252,207 @@ class VerdictParser:
         for loc in self._extract_locations(text):
             self._add_fact(facts, "location", loc)
 
+        self._extract_factual_state_from_compact_text(text, facts)
+
         return facts
+
+    def _extract_factual_state_from_compact_text(self, text: str, facts: dict[str, List[str]]) -> None:
+        """Fallback extraction resilient to OCR text with split characters inside words."""
+        normalized = self._normalize_for_matching(text)
+        compact = normalized.replace(" ", "")
+
+        if any(token in compact for token in ["teskutjelesnupovredu", "teskatjelesnapovreda", "teskutelesnupovredu", "teskatelesnapovreda"]):
+            self._add_fact(facts, "injury_type", "teška tjelesna povreda")
+            self._add_fact(facts, "severe_consequence", "da")
+        if any(token in compact for token in ["lakatjelesnupovredu", "lakatjelesnapovreda", "lakatelesnupovredu", "lakatelesnapovreda"]):
+            self._add_fact(facts, "injury_type", "laka tjelesna povreda")
+
+        if "pistolj" in compact:
+            self._add_fact(facts, "weapon", "pistolj")
+        if "noz" in compact:
+            self._add_fact(facts, "weapon", "nož")
+        if "pusk" in compact:
+            self._add_fact(facts, "weapon", "puška")
+
+        if facts.get("weapon"):
+            self._add_fact(facts, "weapon_used", "da")
+
+        has_attempt_marker = any(token in compact for token in ["upokusaju", "pokusao", "pokusala", "pokusaj"])
+        has_explicit_death_outcome = any(
+            token in compact
+            for token in [
+                "nastupilasmrt",
+                "smrtostecenog",
+                "smrtniishod",
+                "smrtnishod",
+                "preminuo",
+                "preminula",
+                "podlegao",
+                "podlegla",
+                "usledcegajesmrt",
+                "usljedcegajesmrt",
+            ]
+        )
+        if has_explicit_death_outcome or ("lisiozivota" in compact and not has_attempt_marker) or "usmrtio" in compact:
+            self._add_fact(facts, "death_result", "da")
+
+    def _extract_sentencing_facts(self, text: str) -> dict[str, List[str]]:
+        """Extract sentencing-relevant facts used for punishment individualization."""
+        facts: dict[str, List[str]] = {}
+        normalized = self._normalize_for_matching(text)
+        compact = normalized.replace(" ", "")
+
+        if re.search(r"\branije\s+neosudjivan\b|\bneosudjivan\b|\bnije\s+osudjivan\b", normalized):
+            self._add_fact(facts, "previous_convictions", "ne")
+        elif re.search(r"\branije\s+osudjivan\b|\bprethodno\s+osudjivan\b|\bvise\s+puta\s+osudjivan\b", normalized):
+            self._add_fact(facts, "previous_convictions", "da")
+
+        if re.search(r"\bpovratnik\b|\bspecijalni\s+povrat\b", normalized):
+            self._add_fact(facts, "repeat_offender", "da")
+
+        if re.search(r"\bpriznao\s+krivicu\b|\bpriznao\s+izvrsenje\b|\bpriznanje\s+krivice\b", normalized):
+            self._add_fact(facts, "confession", "da")
+
+        if re.search(r"\bkaje\s+se\b|\bpokajao\s+se\b|\biskreno\s+kajanje\b", normalized):
+            self._add_fact(facts, "remorse", "da")
+
+        if re.search(r"\bsporazum\s+o\s+priznanju\s+krivice\b", normalized):
+            self._add_fact(facts, "plea_agreement", "da")
+
+        if re.search(r"\bolaksavajuc\w*\s+okolnost", normalized):
+            self._add_fact(facts, "mitigating_circumstances", "da")
+
+        if re.search(r"\botezavajuc\w*\s+okolnost", normalized):
+            self._add_fact(facts, "aggravating_circumstances", "da")
+
+        if re.search(r"\bizdrzava\s+porodicu\b|\botac\s+\d+\s+djece\b|\bmajka\s+\d+\s+djece\b|\bporodicn\w*\s+prilik", normalized):
+            self._add_fact(facts, "family_circumstances", "da")
+
+        if re.search(r"\blos\w*\s+imovn\w*\s+stanj\w*\b|\blos\w*\s+imovn\w*\s+prilik\w*\b|\bnezaposlen\w*\b", normalized):
+            self._add_fact(facts, "poor_financial_status", "da")
+
+        if re.search(r"\balkoholisan\w*\b|\bpod\s+dejstvom\s+alkohola\b|\balkohola\s+u\s+krvi\b", normalized):
+            self._add_fact(facts, "alcohol_intoxication", "da")
+
+        if re.search(r"\bopojnih\s+droga\b|\bnarkotik\w*\b|\bpsihoaktivn\w*\b", normalized):
+            self._add_fact(facts, "narcotics_influence", "da")
+
+        if re.search(r"\buslovn\w*\s+osud\w*\b|\bnece\s+izvrsiti\s+ukoliko\b", normalized):
+            self._add_fact(facts, "conditional_sentence_requested", "da")
+
+        if (
+            re.search(r"\bu\s+pokusaj\w*\b|\bpokusao\s+da\b|\bpokusala\s+da\b|\bpokusaj\s+ubistva\b", normalized)
+            or any(token in compact for token in ["upokusaju", "pokusaodalisi", "pokusajubistva"])
+        ):
+            self._add_fact(facts, "attempted_offense", "da")
+
+        imposed_months = self._extract_imposed_prison_months(text)
+        if imposed_months is not None:
+            self._add_fact(facts, "imposed_prison_sentence_months", str(imposed_months))
+
+        return facts
+
+    def _merge_fact_maps(
+        self,
+        left: dict[str, List[str]],
+        right: dict[str, List[str]],
+    ) -> dict[str, List[str]]:
+        merged: dict[str, List[str]] = {key: list(values) for key, values in (left or {}).items()}
+        for key, values in (right or {}).items():
+            for value in values:
+                self._add_fact(merged, key, value)
+        return merged
+
+    def _extract_imposed_prison_months(self, text: str) -> Optional[int]:
+        normalized = self._normalize_for_matching(text)
+        patterns = [
+            re.compile(
+                r"kazn(?:u|a)\s+zatvora\s+u\s+trajanju\s+od\s+(.{1,100})",
+                re.IGNORECASE,
+            ),
+            re.compile(
+                r"osudj(?:uje|en)\s+se\s+na\s+kazn(?:u|a)\s+zatvora\s+u\s+trajanju\s+od\s+(.{1,100})",
+                re.IGNORECASE,
+            ),
+        ]
+
+        for pattern in patterns:
+            match = pattern.search(normalized)
+            if not match:
+                continue
+            fragment = match.group(1)
+            stop_markers = [
+                " u koju",
+                " presudom",
+                " zbog",
+                " pa se",
+                " i istovremeno",
+                " ali se",
+                " te se",
+            ]
+            cut_positions = [fragment.find(marker) for marker in stop_markers if fragment.find(marker) >= 0]
+            if cut_positions:
+                fragment = fragment[: min(cut_positions)]
+            years = 0
+            months = 0
+
+            year_match = re.search(r"(\d+|[a-z]+)\s*(?:godina|godine|godinu|god)\b", fragment)
+            if year_match:
+                years = self._parse_number_token(year_match.group(1)) or 0
+
+            month_match = re.search(r"(\d+|[a-z]+)\s*(?:mjeseci|mjeseca|mjesec|meseci|meseca|mesec)\b", fragment)
+            if month_match:
+                months = self._parse_number_token(month_match.group(1)) or 0
+
+            total_months = years * 12 + months
+            if total_months > 0:
+                return total_months
+
+        return None
+
+    def _parse_number_token(self, token: str) -> Optional[int]:
+        value = str(token or "").strip().lower()
+        value = re.sub(r"[^a-z0-9]", "", value)
+        if not value:
+            return None
+        if value.isdigit():
+            return int(value)
+
+        number_words = {
+            "jedan": 1,
+            "jedna": 1,
+            "jedne": 1,
+            "jednog": 1,
+            "dva": 2,
+            "dvije": 2,
+            "dve": 2,
+            "tri": 3,
+            "cetiri": 4,
+            "pet": 5,
+            "sest": 6,
+            "sedam": 7,
+            "osam": 8,
+            "devet": 9,
+            "deset": 10,
+            "jedanaest": 11,
+            "dvanaest": 12,
+            "trinaest": 13,
+            "cetrnaest": 14,
+            "petnaest": 15,
+            "sesnaest": 16,
+            "sedamnaest": 17,
+            "osamnaest": 18,
+            "devetnaest": 19,
+            "dvadeset": 20,
+        }
+        return number_words.get(value)
+
+    def _normalize_for_matching(self, text: str) -> str:
+        lowered = text.lower().replace("\u00a0", " ")
+        normalized = unicodedata.normalize("NFD", lowered)
+        normalized = "".join(ch for ch in normalized if unicodedata.category(ch) != "Mn")
+        normalized = re.sub(r"[^a-z0-9\s]", " ", normalized)
+        return re.sub(r"\s+", " ", normalized).strip()
 
     def _normalize_person_name(self, name: str) -> str:
         cleaned = " ".join(name.replace("\u00a0", " ").split())

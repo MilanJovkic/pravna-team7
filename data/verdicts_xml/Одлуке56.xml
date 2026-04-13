@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке56">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке56/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке56"/>
+                    <FRBRdate date="2011-02-22" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке56/sr@2011-02-22/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке56/sr@2011-02-22"/>
+                    <FRBRdate date="2011-02-22"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке56/sr@2011-02-22/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке56/sr@2011-02-22/!main.akn"/>
+                    <FRBRdate date="2026-04-13"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Vera Popović"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="porotnika Jelke Trtica"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.50/11</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>VIŠI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2011-02-22">2011-02-22</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Vera Popović</judge>
+                    <judge>porotnika Jelke Trtica</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Optuženi K. V. kriv za pokušaj ubistva.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Pokušaj ubistva</p>
+                    <p>Afekt</p>
+                    <p>Samoodbrana</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Optuženi je delovao u stanju afekta, ali je prešao granice nužne odbrane.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="nepoznato">
+                    <p>Krivica potvrđena.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="witnesses">
+                    <person>prepirke izme</person>
+                    <person>K. M.</person>
+                    <person>K. R.</person>
+                    <person>se zbog</person>
+                    <person>K. N.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="weapon">kamen</fact>
+                <fact key="location">Bori</fact>
+                <fact key="location">Podgorici Kt</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Nik</fact>
+                <fact key="location">Plu</fact>
+                <fact key="location">Dom</fact>
+                <fact key="location">Nikš</fact>
+                <fact key="location">Dragovu Luku</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K.50/11
+U IME NARODA
+VIŠI SUD U PODGORICI, kao prvostepeni krivi č ni u vije ć u sastavljenom od sudije Biljane Uskokovi ć  kao
+predsjednika vije ć a, sudije Joveti ć  Vesne i sudija porotnika Jelke Trtica, Nedovi ć  Miomira i Guberini ć  Mileve
+kao č lanova vije ć a, Vere Popovi ć  kao zapisni č ara, u krivi č nom predmetu protiv optu ž enog K. V. zbog krivi č nog
+djela ubistvo u poku š aju  iz č lana 143. u vezi č lana 20. Krivi č nog zakonika, postupaju ć i po optu ž nici Vi š eg
+državnog tu ž ioca u Podgorici Kt-br.223/10 od 22.02.2011. godine, nakon odr ž anog glavnog i javnog pretresa
+dana 20.07.2011. godine u prisustvu zastupnika optu ž be Laki ć  Ljiljane zamjenika VDT-a Podgorica, optu ž enog
+K. V. i njegovog  izabranog branioca adv.B. S., a nakon tajnog vije ć anja i glasanja donio je i dana 22.07.2011.
+godine javno objavio:
+                                                 P R E S U D U
+OPTU Ž ENI K. V., ro đ en ..., dr ž avljanin Crne Gore, sa zavr š enom osnovnom š kolom,  po zanimanju
+poljoprivrednik, o ž enjen, otac sedmoro djece, srednjeg imovnog stanja, neosu đ ivan, ne vodi se postupak za
+neko drugo krivi č no djelo.
+                                             K R I V   J E
+Zato š to je:
+               
+                 Dana 24.10.2010.godine oko 23,40 č asova, u mjestu Bori č je - op š tina Plu ž ine, u dvori š tu ispred svoje
+porodi č ne ku ć e, o š te ć enog K. M.1 poku š ao li š iti ž ivota na mah, doveden bez svoje krivice u stanje jake
+razdra ž ljivosti, na na č in š to je o š te ć eni do š ao kod ku ć e okrivljenog i u trenutku kada mu je okrivljeni otvorio
+vrata iznenada ga, bez razloga, udario pesnicom u lice od kojeg udarca se okrivljeni zateturao, a zatim
+nastavio da ga udara pesnicama po glavi dok se okrivljeni povla č io niz hodnik prema dnevnom boravku, od
+kojih udaraca je pao na pod u dnevnom boravku i dok je bio na podu sjeo mu na grudi i zadao vi š e udaraca
+pesnicom po glavi, te nogom u predjelu le đ a i nogu, a š to je kod okrivljenog izazvalo stanje afekta jake
+razdra ž ljivosti, bijesa i straha, usled č ega nakon š to je napad prestao, ustao se i sa stola uzeo kuhinjski no ž
+duž ine sje č iva 19,5 cm, š irine 3,7 cm, krenuo za o š te ć enim i u dvori š tu iza ku ć e kada ga je sustigao, sje č ivom
+nož a ubo o š te ć enog u predjelu grudi nanose ć i mu laku tjelesnu  povredu u vidu rane ubodine u predjelu
+prednje lijeve strane grudnog ko š a
+- čime je izvr š io krivi č no djelo ubistvo na mah u poku š aju iz č lana 145 Krivi č nog Zakonika u vezi č lana 20.
+Krivi č nog Zakonika
+Pa mu sud primjenom citiranih zakonskih odredbi, č lana 4,55,15,32,33,36,42,45,16,51,52,53. i 54, Krivi č nogViši Sud u Podgorici
+K 50/2011
+22. Jul 2011
+Zakonika i č lana 199, 202. i 364. Zakonika o krivi č nom postupku, izri č e
+                                                     USLOVNU   OSUDU
+kojom mu prethodno utvr đ uje kaznu zatvora u trajanju od 5 (pet) mjeseci i istovremeno odre đ uje da se ova
+kazna ne ć e izvr š iti ukoliko optu ž eni u roku od 1 (jedne) godine od dana pravosna ž nosti presude ne izvr š i
+novo krivi č no djelo
+U slu č aju opoziva uslovne osude optu ž enom K. V. ć e se u kaznu zatvora ura č unati vrijeme koje je proveo u
+pritvoru u od 25.10.2010. do 26.10.2010. godine.
+Na osnovu č lana 75. KZ od optu ž enog K. V. trajno se oduzima kuhinjski no ž  du ž ine sje č iva 19,50 cm, š irine 3,7
+cm, kao sredstvo izvr š enja djela.
+Obavezuje se optu ž eni da na ime tro š kova krivi č nog postupka uplati ovom sudu nov č ani iznos od 961,50
+eura, a na ime sudskog pau š ala nov č ani iznos od 50,00 eura, sve prednje u roku od 15 dana, po
+pravosna ž nosti presude, pod prijetnjom prinudnog izvr š enja, a na ž iro ra č un Vi š eg suda u Podgorici broj 832-
+7113-04.
+O B R A Z L O Ž  E N J E
+Optu ž nicom Vi š eg dr ž avnog tu ž ioca u Podgorici Kt.br.223/10 od 22.02.2011. godine stavljeno je na teret
+optu ž enom K. V. da je izvr š io krivi č no djelo ubistvo u poku š aju  iz č lana 143.  u vezi č lana 20. Krivi č nog
+zakonika. Na glavnom pretresu odr ž anom dana 20.07.2011. godine zastupnik optu ž be je izmijenila dispozitiv
+optu ž nice tako š to je u tre ć em redu  dispozitiva optu ž nice nakon rije č i "o š te ć eni" dodala rije č i "u trenutku
+dok se o š te ć eni nalazio iza ku ć e optu ž enog napu š taju ć i lice mjesta", a u č etvrtom redu  nakon rije č i "3,7 cm"
+dodala rije č i "krenuo za o š te ć enim ". U ostalom dijelu optu ž nica je ostala neizmjnjenjena kao i pravna
+kvalifikacija djela.
+U zavr š noj rije č i zastupnik optu ž be je u bitnom navela da imaju ć i u vidu rezultat dokaznog postupka je
+mišljenja da je potvr đ eno da je optu ž eni K. V. izvr š io krivi č no djelo stavljeno mu na teret optu ž nicom, pa je
+predlo ž ila sudu da optu ž enog oglasi krivim za u č injeno krivi č no djelo i osudi po zakonu.
+U zavr š noj rije č i branilac optu ž enog K. V., adv. B. S. je u bitnom naveo da  nasuprot stavu optu ž be smatra da
+je njegov branjenik kriti č ne prilike postupao u nu ž noj odbrani zbog č ega tra ž i da isti bude oslobo đ en krivi č ne
+odgovornosti.
+U zavr š noj rije č i optu ž eni K. V. je naveo da u potpunosti prihvata zavr š nu rije č  svog branioca i dodao da se ne
+osjeć a krivim za krivi č no djelo koje mu je stavljeno na teret. Bje ž anjem u svoju ku ć u na š ao je spas od
+ošte ć enog.
+Optu ž eni K. V. u svom iskazu datom pred istra ž nim sudijom ovog suda, jednako kao u predkrivi č nom
+postupku u bitnom navodi da je dana 24.10.2010. godine bio na svadbi kod ro đ aka K. Š ., da se tom prilikom
+poveo razgovor oko realizacije svadbe u kojem je u č estvovao i K. P.. Tokom razgovora kazao je K. P. „kako ć e š
+da organizuje š  ovu svadbu, kada ni svojoj ć erki nisi pravio svadbu“, na š ta mu je P. uputio rije č i ,, zabolje me
+kurac ho ć e š  li i ć i ti i tvoji“ na č emu se dalja rasprava me đ u njima zavr š ila. Upozorili su ga da je ovim uvrijedio
+P., zbog č ega mu se obratio pitaju ć i ga da li ga je č ime uvrijedio. P. mu na to nije odgovorio, nakon č ega je
+napustio svadbu. Tri - č etiri sata kasnije primio je prvi poziv od P. sina,o š te ć enog K. M.1, koji mu je rekao da
+će mu platiti š to mu je provocirao oca. U toku tog razgovora, kao i u tri naredna poku š ao je da uvjeri M.1 da ni
+na koji na č in nije uvrijedio njegovog oca. Zadnji put je sa M.1 razgovarao oko 20,00 č asova kada je bio kod
+kuće u selu Bori č je kojom prilikom mu je M.1 uputio nekoliko psovki i prekinuo razgovor.Kako nije o č ekivao
+da se bilo š ta lo š e mo ž e desiti legao je da spava, zajedno sa suprugom i ć erkom.Ne š to nakon 23,00 č asa
+supruga ga je probudila govore ć i mu da neko lupa na vrata.Ustao se, otvorio prozor sobe koja se nalazi na
+spratu da bi vidio ko je ispred ku ć e. Sa prozora je vidio K. M.1 i njegovog strica, K. M.2.Javio im se i č uo M.1 da
+govori ,, silazi vamo pizdo jedna da ti ja no ć as poka ž em“. Si š ao je da im otvori vrata nadaju ć i se da ga ne ć e
+napasti jer se tu nalazio M.2. Me đ utim, kada je otvorio vrata istog trenutka dobio je udarac zatvorenom
+pesnicom u predjelu glave od strane K. M.1, a zatim jo š  dva - tri udarca na isti na č in. Kako se zateturao od ovih
+udaraca tako je po č eo da se povla č i prema dnevnoj sobi, da bi na vratima dnevne sobe od zadobijenih
+udaraca i pao. Kada je pao, M.1 je sjeo na njega i nastvio da ga udara, nakon č ega se umje š ao K. M.2 i makao
+M.1 sa njega. Dok je M.2 podizao M.1, M.1 mu je zadao jo š  nekoliko udaraca nogom u predjelu tijela – noga i
+leđa. U ovom guranju i tu č i prevrnuto je vi š e stvari u dnevnoj sobi, izme đ u ostalog sa komode pored vrata
+pao je televizor. Kada je M.2 odvojio M.1 od njega na udaljenosti od jedan do dva metra, to je iskoristio da bi
+se uspravio. M.2 je pustio M.1, ili mu se on otrgao, pa se M.1 ponovo zaletio prema njemu i u tom trenutku je
+uzeo kuhinjski no ž  koji se nalazio na stolu i u strahu od daljih napada ispru ž io je ruku u pravcu M.1 i mahao
+nož em, a sve u namjeri da ga sprije č i da mu ne pri đ e. I pored toga M.1 je nastavio da se kre ć e ka
+njemu.Vjerovatno ga je ubo dok je mahao no ž em, ali ne zna ni gdje ni kako.Tada ga je M.2 uhvatio i izveo
+ispred ku ć e, č emu se M.1 nije odupirao. Nakon š to su M.1 i M.2 iza š li, iza š ao je do praga svoje ku ć e i č uo kako
+M.1 govori ,, posjekao me je, evo krvarim“. Nakon toga je odbacio no ž  u drvljanik pored ku ć e i u š ao u
+kuću.Tako đ e je naveo da su mu supruga i R., M.2 sin, nakon š to je iza š ao iz pritvora ispri č ali da su ga M.2 i M.1
+traž ili prije nego š to su do š li kod njega ku ć i u jednoj pomo ć noj prostorij, koja se nalazi pedesetak metara od
+njegove ku ć e.
+Optu ž eni K. V. u svom iskazu datom na glavnom pretresu je  ponovio svoj iskaz iz predkrivi č nog i prethodnog
+postupka s tim š to je pojasnio da je svadbu napustio negdje oko 12,30 ili 13,00 č asova, nakon č ega je po š ao
+kod djece u Nik š i ć  gdje se zadr ž ao negdje do 17,00 č asova a zatim je krenuo ku ć i u Plu ž ine u selo Bori č je. M.1
+ga je prvi put telefonom nazvao negdje oko 18,00 č asova i tom prilikom ga pitao za š to je vrije đ ao njegovog
+oca i uputio mu prijetnju da ć e mu otkinuti glavu ko pijevcu i da ć e ga zapamtiti. Nakon š to je zavr š io taj
+razgovor sa M.1, pozvao je M.1 nakon nekih pet minuta i rekao mu da pita svog oca š ta se zaista desilo na
+svadbi, da nije bilo nikakvih sva đ a niti vrije đ anja. I tada mu je M.1 ponovio prijetnje koje mu je u prethodnom
+razgovoru uputio. Na putu prema ku ć i M.1 ga je zvao jo š  jedan put, ali se na taj poziv nije odazvao, da bi ga
+ponovo zvao negdje oko 21,00 č as kada je ve ć  bio ku ć i u selu Bori č je i tada mu rekao da ć e do ć i ku ć i kod
+njega i da ć e ga zapamtiti. Nadalje poja š njava da kada je otvorio vrata ku ć e da ga je M.1 odmah udario
+pesnicom u glavu, od kojeg udarca nije pao, ve ć  se malo zateturao i krenuo da se povla č i unazad. Dok se
+povla č io unazad prema kuhinji, tj. djevnom boravku M.1 ga je udarao pesnicama u predjelu glave i od tih
+udaraca je pao u dnevni boravak. Dok je le ž ao na podu M.1 ga je udarao pesnicama po glavi, "sko č io" i sjeo
+na grudi i nastavio da ga udara pesnicama po glavi. Po š to je M.2 povukao M.1 prema sebi, ustao je i tada se
+M.1 ponovo zaletio prema njemu i udario ga nogom u predjelu grudi i stomaka. Tada je sa stola, na koji se
+oslonio prilikom ustajanja, uzeo no ž  i pro š ao sa druge strane stola. No ž  je dr ž ao u ruci koja je bila ispru ž ena i
+tada nije pravio nikakve pokrete rukom u kojoj je dr ž ao no ž  prema M.1, ali kada je M.1 ponovo krenuo na
+njega, no ž em je mahao horizontalno lijevo - desno ispred sebe da bi tako sprije č io M.1 da mu ne pri đ e i da ga
+ponovo ne napadne. Ne zna kako je M.1 povrijedio no ž em, da li prilikom ovog mahanja. Nakon toga M.1 je sa
+M.2 krenuo da izlazi iz ku ć e, vjerovatno kada je č uo njegovu suprugu i k ć erku da silaze niz stepenice jer je
+kćerka plakala. Po š ao je za njima ali samo do ulaznih vrata ku ć e i u dvori š te nije izlazio. Rekao je M.2 " š ta ovo
+uradi no ć as M.2", na š ta mu je on odgovorio "nijesam ni š ta mogao uraditi". Ne zna kako je do š lo do obaranja
+televizora sa komode, ali zna samo da je M.1 kazao "za š to lomi š  moju muku". Sje ć a se da je, kada su M.1 i M.2
+odlazili, č uo da je M.1 rekao "evo krvarim" u š ta nije povjerovao.Tada je no ž  koji je dr ž ao u ruci bacio ispod
+kuće u dvori š te gdje se nalaze drva, gdje ga je kasnije policija i prona š la.
+U dokaznom postupku sud je proveo dokaze – neposredno saslu š ao svjedoka o š te ć enog K. M.1, svjedoke K.
+M.2, K. R., K. N. i K. M.3, vje š taka medicinske struke B. Dr B. i vje š taka psiihijatra G. Dr Ž ., pro č itao zapisnik o
+uviđ aju UP PJ Nik š i ć  od 25.10.2010.godine, potvrdu o privremenom oduzimanju predmeta UP Ispostave
+Pluž ine broj 23-1808/1 od 25.10.2010. godine, izvje š taj o trasolo š kom vje š ta č enju Forenzi č kog centra
+Danilovgrad broj 4337/10, nalaz i mi š ljenje vje š taka medicinske struke B. dr B. od 10.12.2010. godine, nalaz i
+mišljenje komisije vje š taka neuropsihijatrijske struke od 10.07.2011. godine, izvje š taj iz kaznene evidencije
+UP PJ Nik š i ć  Ispostave Plu ž ine broj 270/10-1808/8 od 25.10.2010. godine za optu ž enog K. V., te izvr š io uvid u
+fotodokumentaciju UP PJ Nik š i ć  broj 847/10 od 25.10.2010. godine i listing telefonskih komunikacija M: tel
+br.20939 od 14.12.2010.g. i Crnogorski Telekom  br.04 -50623 od 21.12.2010.g.
+Svjedok o š te ć eni K. M.1 u svom iskazu datom pred istra ž nim sudijom u bitnom navodi da se kriti č nog dana
+nalazio u selu Bori č je, a da su njegov otac i brat bili na svadbi kod ro đ aka K. Š .. Nakon izvjesnog vemena
+nazvao ga je brat R. i rekao mu da je napustio svadbu sa razloga š to V. vrije đ a svakoga, a naro č ito njihovog
+oca P.  i strica M.2, da je V. njegov ro đ eni brat N. udaljio sa svadbe da ne bi vrije đ ao ljude i do š lo do nekog
+incidenta. Posle nekoliko sati od ovog razgovora krenuo je ku ć i u Nik š i ć . Kada je stigao, otac i brat su mu
+ispri č ali da ih je V. vrije đ ao uputiv š i niz uvreda i psovki posebno njegovom ocu kojem je govorio da ga jebe u
+usta, da mu jebe oca i majku, da ga bude sram š to kada je udavao k ć erku nije pravio svadbu. Zbog toga je
+pozvao V. negdje oko 16,00 č asova sa svog broja 068/603-... . U tom razgovru optu ž eni mu je rekao da je bila
+neka rasprava, ali da to nije ni š ta stra š no, na š ta mu je rekao da to vi š e ne radi jer je sramota. Dva sata nakon
+ovog razgovora pozvao ga je V. i kazao mu „ako ima š  le đ a, do đ i, ne mo ž e š  ti tako, ti mene govno jedno da
+zove š  na telefon, sve ć u vas poklati i pobiti“ i opsovao mu oca i majku. V. ga je jo š  nekoliko puta zvao i
+ponovio iste rije č i. Negdje oko 20,00 č asova, pozvao ga je stric M.2 i rekao mu da mu se u mjestu Š ip č ano, pri
+povratku u selo pokvarilo vozilo. Stric ga je zamolio da do đ e i da ga poveze u selo, š to je  i uradio. Kada je
+doš ao do mjesta na kome se vozilo pokvarilo, zatekao je svoje ro đ ake M.2, R. i M., koji su u š li u njegovo vozilo.
+U trenutku kada su njegovi ro đ aci u š li u vozilo, ponovo ga telefonom poziva V. koji ga ponovo psuje i prijeti
+mu, na š ta mu odgovara ,,dobro,dobro“ i prekida vezu. Kada su stigli u selo vozilo je ostavio ispered ku ć e svog
+strica M.2 i njegovog sina R. i uputio se ka V. ku ć i koja se nalazi u neposrednoj blizini. Za njim je po š ao i njegov
+stric M.2, dok je R. po š ao svojoj ku ć i. Namjera mu je bila da pita V. za š to ga psuje i vrije đ a, š ta mu je skrivio.
+Kada je do š ao do V. ku ć e pokucao je na vrata, nakon č ega se na prozoru gornjeg sprata pojavio V., kojem je
+rekao da otvori vrata. V. je si š ao i kada je otvorio vrata kazao mu ,, š ta ć e š  sad u pi č ku materinu“  i udario ga
+pesnicom u predjelu vilice. Uzvratio mu je udarac od kojeg je V. pao unutar ku ć e. Prilikom guranja i
+razmjenjivanja udaraca, koji su bili na ulaznim vratima i hodniku, nije ulazio u ku ć u.U tu č u se umije š ao stric
+M.2 koji ga je uhvatio za jaknu i izvukao iz ku ć e, pa su pro š li iza V. ku ć e u namjeri da se vrate kod vozila, jer mu
+je sve ukazivalo na to da je rasprava zavr š ena. Tada je č uo da neko tr č i za njima i kada se okrenuo vidio je V.,
+ali nije vidio da i š ta dr ž i u ruci jer je bio mrak, a taj put nije osvijetljen. Samo je vidio da je V. zamahnuo rukom
+prema njemu i osjetio kad ga je ubo ispod lijeve sise. Tek tada je vidio no ž . Kada je optu ž eni i drugi put
+zamahnuo da ga ubode, odgurnuo ga je od sebe i kada je napravio korak unazad udario ga je pesnicom u
+predjelu glave, od kojeg udarca je pao i no ž  mu ispao u travu. Ponovo ga je M.2 povukao za ruku i gurao
+prema mjestu gdje mu je bilo vozilo.Tada mu i govori „vidi striko ubode me no ž em“. Oti š li su do M.2 ku ć e, u š li
+u jednu ljetnju kuhinju koja se nalazi pored ku ć e, gdje je uzeo pe š kir i stavio na ranu. Tamo je bio R. sa bratom
+S. i majkom D. i kada je rekao da ga je V. uboo no ž em, R. je htio da pozove policiju, ali mu nije dao da se ne bi
+širila bruka. Kada je u š ao u vozilo da krene za Nik š i ć  sa njim je po š ao njegov stric M.2.Nakon pre đ enih
+petnaestak kilometara zaustavila ga je policija i povela u Dom zdravlja. Ne zna gdje je policija prona š la no ž ,
+ali je vidio da je no ž  pao na travu.
+Svjedok o š te ć eni K. M.1 u svom iskazu datom na glavnom pretresu ponavlja svoj iskaz dat pred istra ž nim
+sudijom stim š to poja š anjava da je tokom vo ž nje komentarisao  sa ro đ acima poziv koji je imao od strane V. i
+saop š tio im je da ga je V. zvao, da ga je psovao, vrije đ ao i da mu je uputio prijetnje koje je shvatio kao
+ozbiljne, kao i V. pona š anje na svadbi.V. je on prvi nazvao negdje oko 16,00 č asova a nakon toga je njega V.
+zvao tri ili č etiri puta do 20,00 č asova. Kada je V. si š ao i otvorio vrata vidio je da je obu č en u farmerice i neku
+duksericu a na nogama je imao neku obu ć u ali ne zna koju. V. je upalio svijetlo u ku ć i kada je otvorio vrata, ali
+se ne sje ć a da li je bilo upaljeno svjetlo ispred V. ku ć e. Kada je otvorio vrata, V. ga je udario pesnicom u
+predjelu glave - vilice i  taj mu je udarac uzvratio tako š to ga je udario pesnicom u predjelu glave. Od tog
+udarca se V. zateturao i pao unatra š ke u dnevni boravak. U dnevni boravak nije ulazio, prevrtao stvari, mo ž da
+je stao na prag dnevnog boravka i u tom trenutku ga je stric M.2 povukao i izgurao ga vani. Optu ž enog nije
+udarao dok je le ž ao na podu u dnevnom boravku.Kada je iza š ao iz ku ć e optu ž enog zajedno sa M.2, a dok su
+išli prema njegovom vozilu, č uo je da neko ide za njima, okrenuo se i vidio da je to V.. U trenutku kada se
+okrenuo prema V. osjetio je da ga je ne š to "pecnulo" u predjelu ispod lijeve sise i tek kada ga je odgurnuo od
+sebe vidio je da V. u ruci ima no ž , ali isti č e da no ž  prije toga nije vidio, obzirom da je bilo mra č no,
+neosvjetljeno i da je vidio no ž  sigurno ne bi stao, ve ć  bi pobjegao. Nadalje poja š njava da je svoje vozilo
+ostavio na putu prilikom dolaska kod V. i sa istim nije ulazio u dvori š te V. ku ć e. Ne zna razlog za š to je M.2 te
+prilike po š ao sa njim kod V. ali on nije imao namjeru da se sa istim sva đ a niti da se tu č e. Naveo je da povrede
+kod optu ž enog mo ž e objasniti jedino tako da su nastale kada mu je uzvratio udarac na ku ć nim vratima i
+kasnije u dvori š tu kada ga je udario po š to je osjetio da ga je ne š to pecnulo ispod lijeve sise i kada je vidio no ž
+u ruci optu ž enog K. V.. Ponavlja da tokom sukoba ni u jednom trenutku nije sjeo na optu ž enog, niti mu je
+serijski zadavao udarce, kao i da tokom tu č e zajedno nisu padali. Nije se pridru ž io krivi č nom gonjenju
+optu ž enog i nije postavio imovinsko pravni zahtjev.
+Svjedok K. M.2 u svom iskazu datom pred istra ž nim sudijom u bitnom navodi da se kriti č nog dana nalazio na
+svadbi kod svog brata Š . i da je na toj svadbi do š lo do nesuglasica oko toga ko ć e da ide u povode kod
+prijatelja jer V. ne š to nije bilo pravo i rekao je da taj dogovor ne valja. Nije č uo da je V. vrije đ ao i psovao bilo
+koga od svatova, a razgovor izme đ u V. i P. nije mogao č uti jer je bio na drugom kraju prostorije. U jednom
+trenutku V. je sko č io, pa su ga brat N. i Ž . D. smirivali i zaustavljali da ne ide sa svadbe, ali je on oti š ao. Nakon
+svadbe krenuli su on, sin mu R. i ro đ ak M. ku ć i u selo Bori č je sa B.G.. Negdje kod sela Š ip č ano pokvarilo im se
+vozilo. Pozvao je M.1 K., svog bratani ć a, da do đ e po njih da bi ih povezao u njihovo selo. Poslije nekog
+vremena do š ao je M.1 i s njim su krenuli u selo. Kada su sjeli u vozilo, M.1 je imao telefonski poziv, a kada je
+zavr š io razgovor rekao je da ga je zvao V. “da iza đ e u selo”. Tokom vo ž nje je bilo komentara da ne zna š to ga
+zove ali mu ni š ta nije ukazivalo na to da bi moglo do ć i do sva đ e a kamoli do predmetnog doga đ aja. Kada su
+doš li u selo M.1 je vozilo parkirao ispred njegove (svjedokove) ku ć e. Njegov sin R. je oti š ao ku ć i, a M.1 je
+krenuo ka V. ku ć i rekav š i mu da ide da vidi š to ga V. zove. Poku š ao je da ga odgovori da ne ide kod V., ali nije
+uspio da ga zaustavi i po š ao je za njim. Kada su do š li ispred vrata V. ku ć e, M.1 je pozvao V., s tim š to nije vidio
+da li se V. pojavljivao na prozoru, vidio ga je kada je otvorio vrata ku ć e. Č im je V. otvorio vrata po č eli su da se
+tuku. Nije video ko je kome zadao prvi udarac, jer je bio u š oku. Dok su se udarali u š li su u dnevni boravak.
+Vidio je da je V. pao u dnevni boravak, pa je u tom trenutku povukao M.1 i izgurao ga iz dnevnog boravka.
+Nakon toga krenuli su iza V. ku ć e ka vozilu, kada je najednom ponovo po č ela tu č a izme đ u njih. V. je ponovo
+pao na zemlju a on povukao M.1 i izgurao ga ka vozilu. Nije vidio no ž  ni trenutak kada je V. uboo M.1. Posle
+nekih 15 do 20 m hoda M.1 mu je reako “vidi udari me no ž em”, i kako je pogledao vidio je da mu je krvava
+bijela majica. Odatle su M.1 vozilom po š li njegovoj ku ć i i tamo je M.1 zavio ranu, nakon č ega su zajedno
+krenuli ka Plu ž inama. Kada su bili u blizini Plu ž ina nai š la je policija i odvela ih u stanicu policije, pa nakon
+toga M.1 u Dom zdravlja.   
+Svjedok K. M.2 u svom iskazu datom na glavnom pretresu ponavlja svoj iskaz dat pred istra ž nim sudijom, s
+tim š to poja š njava da je tokom vo ž nje od mjesta gdje je M.1 do š ao po njih pa do Bori č ja, M.1 spominjao da ga
+je V. zvao da do đ e kod njega ku ć i ako smije, da ga zove na tu č u, ali nije spominjao da mu je uputio prijetnje.
+Ovo je bio razlog za š to su molili M.1 da ne ide kod V. i č ak im je obe ć ao da ne ć e, me đ utim i pored toga je
+poš ao. Kada su stigli kod V. ku ć e, M.1 je pozvao V. i V. je otvorio vrata ku ć e i č im je ista otvorio nastala je tu č a
+izme đ u njih dvojice, s tim š to nije vidio ko je tu tu č u zapo č eo. tj. ko je koga prvi udario. U toj tu č i su se kretali
+prema dnevnom boravku i na kraju su u š li u dnevni boravak. Nije vidio da je V. povla č io M.1 u namjeri da ga
+uvuč e u ku ć i tj. u dnevni boravak. Bio je š okiran svim ovim, tako da od š oka i š to se nalazio iza M.1 le đ a nije
+mogao da vidi kako razmjenjuju udarce, ko koga udara. Nije vidio da je izme đ u njih bilo ne š to mnogo
+udaraca. Kada je u š ao u dnevni boravak vidio je da V. le ž i na podu dnevnog boravka.M.1 je stajao pored V. i
+vidio je da ga je samo jednom udario nogom ali ne zna gdje. Nije vidio da M.1 sjedi na V. niti ga je podizao s
+njega. Nije vidio da je V. zadavao udarce M.1 u dnevnom boravku, da je pao televizor ili da je ne š to od drugih
+stvari bilo prevrnuto. Odmah je M.1 izveo iz dnevnog boravka. Kada su iza š li iz V. ku ć e, krenuli su prema
+kolima i nije obra ć ao pa ž nju gdje je V., da li ide za njima. Ne sje ć a se kako su se kretali, da li jedan pored
+drugog ili on iza M.1. V. je vidio kada su bili u dvori š tu iza ku ć e.U jednom trenutku je vidio da je V. pao, pa je
+M.1 ponovo povukao i po š li su prema kolima. Sve to se de š avalo ispred njega i nije vidio da je tom prilikom V.
+udario M.1. Napominje da ni u jednom trenutku kod V. nije vidio no ž . M.1 mu nije rekao kako je no ž em
+povrije đ en, samo mu je rekao "vidi udari me V. no ž em". Za č udio se, pa ga je pogledao i vidio da na M.1 majici
+ima krvi. Nije znao kazati u č emu je V. bio obu č en te no ć i, zna da nije imao jaknu, č ini mu se da je imao
+majicu. Na putu prema Plu ž inama nisu zvali policiju.
+Svjedok K. R. u svom iskazu datom pred istra ž nim sudijom u bitnom navodi da je kriti č nog dana bio u Nik š i ć u
+na svadbi k ć erke svog strica Š ., na kojoj su bili P. i R., otac i brat M.1, kao i D., N. i V.. Nastao je nesporazum oko
+toga ko ć e da ide u povode, a najvi š e š to nije odre đ en V., koji je zbog toga galamio na strica Š .. Nije č uo da ga
+je psovao. Kada je V. po č eo da galami, odmah je iza š ao, jer nije mogao da gleda svog strica Š . kako pla č e.
+Vidio je da je V. iza š ao zajedno sa svojim bratom N. i vi š e se nije vra ć ao, dok se N. vratio nakon nekog
+vremena. Poslije svadbe sa ocem M.2 i stricem M.4, oti š ao je ku ć i prema Plu ž inama, a vozio ih je prijatelj G. B..
+Kako se G. pokvarilo vozilo u toku puta, njegov otac M.2 je pozvao M.1 da ih preveze do Plu ž ina.Nakon š to je
+M.1 do š ao, č uo je da pri č a telefonom sa nekim i govori „eto me sad ć u ja iza ć i tamo“. Zatim su u š li u vozilo i
+uputili se prema Plu ž inama. G. B. je ostao kod svog vozila. U vozilu je M.1 ispri č ao da ga je zvao V. i psovao ga.
+Dalje tokom puta izme đ u M.1 i V. nije bilo telefonskih poziva. V.  broj telefona je 067/357-... . Kada su stigli u
+selo, prvo su nai š li na M.4 ku ć u gdje je M.4 iza š ao, a zatim je M.1 produ ž io mo ž da jo š  kilometar i zaustavio se
+ispred V. ku ć e. Iza š ao je iz vozila i krenuo svojoj ku ć i, dok su M.2 i M.1 krenuli prema V. ku ć i. Ne zna š ta se
+dešavalo u V. ku ć i, ali zna da su se njegov otac M.2 i M.1 ubrzo vratili, u š li u jednu pomo ć nu kolibu pored ku ć e,
+da ga je M.1 pitao „ima š  li kakvu krpu, udario me V. no ž em“. Vidio je i krv i ranu jer mu je M.1 pokazao u
+trenutku kada mu je davao pe š kir. Kazao je da ć e da zove policiju, ali mu M.1 nije dao da ne bi kako je rekao
+pucala bruka. Nakon toga njegov otac i M.1 uputili su se ka M.1 vozilu da bi oti š li u Plu ž ine.
+Svjedok K. R. u svom iskazu datom na glavnom pretresu ponavlja svoj iskaz dat pred istra ž nim sudijom, stim
+što poja š njava da mu je M.1 saop š tio da ga je V. zvao da do đ e kod njega ku ć i, da ga je psovao i vrije đ ao i da ga
+je izazivao. Osim ovog ni š ta drugo nije kazao, bar on nije č uo, a nije u detalje ni zapamtio sav razgovor.
+Ubje đ ivali su M.1 da ne ide ku ć i kod V. i on im je zaista tada i obe ć ao da ne ć e i ć i i bili su sigurni da ne ć e po ć i.
+Kada su stigli u selo, vozilom su se zaustavili na ulici nekih 50 metara ni ž e od V. ku ć e. Branili su M.1 da ide V.
+kući, ali ga nijesu fizi č ki spre č avali u tome. M.1 je iza š ao iz vozila, prekora č io ogradu dvori š ta V. ku ć e i
+dvori š tem krenuo ka V. ku ć i. Nije poku š avao da ide za njim, niti ga je mogao sti ć i ali je njegov otac M.2 krenuo
+za M.1, a on po š ao svojoj ku ć i. Po š to se M.1 sa njegovim ocem M.2 vratio od V. ku ć e,  u š ao je u jedan pomo ć ni
+objekat i kazao mu "ima š  li kakvu krpu udario me no ž em", ali mu nije kazao kako ga je udario no ž em, kada i
+gdje. Ni on njega nije pitao o detaljima kako je povrije đ en. Policiju nisu zvali iz razloga š to je M.1 rekao da se
+policija  ne zove da se ne bi pravila bruka jer su oni ro đ aci.
+Svjedok K. N. u svom iskazu datom pred istra ž nim sudijom u bitnom navodi da je kriti č nog dana bio na
+svadbi kod ro đ aka K. Š . koji je udavao k ć erku. Na svadbi je po š ao sa svojim ocem i bratom V., a od M.1
+rodbine bio je njegov otac P. i R.. Nakon vjen č anja, kad su se vratili u Š . ku ć u, vidio je da se njegov brat V. i R.
+čerupaju, ta č nije dr ž e se rukama za jakne pa je zaklju č io da je me đ u njima do š lo do neke sva đ e. Nije č uo š ta
+govore jedan drugome, ali je uhvatio svog brata V. za ruku i poveo ga svojim vozilom u porodi č nu ku ć u u D.
+luku. Nije bio svjedok prepirke izme đ u V. i R., ali je č uo da je razlog bio ko ć e da ide u povode. Negdje oko
+13,30 č asova imao je poziv na mobilni telefon, i u prvi mah je mislio da ga zove R., ali je tek sjutra dan shvatio
+da je to bio M.1 koji ga je pitao za š to su se sva đ ali P. i V., na š a mu je odgovorio,, ma ajde bolan kako se
+svađ aju, evo ga V. ku ć i kod mene, a P. je po š ao kod prijatelja u povode. M.1 mu je na to odgovorio „reci V. da
+ću mu glavu otkinuti“, nakon č ega mu je prekinuo vezu. V. je oko 16,00 č asova po š ao u selo. Nije mu ni š ta
+govorio o telefonskom razgovoru koji je imao sa M.1. Vratio se na svadbu, ali nije zatekao P. i R.. Bila je majka
+M.1 i R. koja mu je kada ga je vidjela rekla „ovog č uda danas nijesam vidjela, ubi ć e ga“.  Mislio je da se to
+odnosi na R., pa joj je odgovorio ,,ma ne ć e bre, V. je po š ao na selo“. Po š ao je ku ć i negdje oko 18,00 č asova a
+za doga đ aj u V. ku ć i saznao je tek sjutra dan. V. supruga mu je ispri č ala da je M.1 do š ao na vrata, da se V.
+spustio dolje i da je ona sa sprata dolje č ula neku tutnjavu, da joj je trebalo vremena da se spusti dolje, jer je
+morala uzeti dijete i obu ć i se.
+Svjedok K. N. u svom iskazu datom na glavnom pretresu odr ž anom dana 18.05.2011. godine ponavlja svoj
+iskaz dat pred istra ž nim sudijom, s tim š to poja š njava da je rije č i izgovorene od strane M.1 i R. majke "ovog
+čuda ili kastiga danas nisam vidjela, ubi ć e ga" je shvatio kao da ć e R. da ubije V. zbog č ega joj je i kazao da
+neće, da je V. po š ao na selo.
+Svjedok K. M.3 u svom iskazu datom pred istra ž nim sudijom u bitnom navodi da je kriti č nog dana  njen
+suprug V. bio na svadbi kod njihovog ro đ aka Š . koji je udavao k ć erku.Ku ć i se vratio oko 21,00 č as. Ubrzo
+nakon š to je do š ao, oti š ao je da spava, a ona je nakon š to je zavr š ila sa poslovima legla oko 23,00 č asa. Kroz
+san je č ula da neko lupa na vrata, pa je probudila V. i rekla mu da nekog ima na vratima. V. je ustao i po š ao
+dolje i č ini joj se da č im je stigao do vrata da je č ula nekakvu tutnjavu sa donjeg sprata, ali nije č ula nikavu
+prič u. Nije mogla odmah da se spusti dolje jer joj je plakalo dijete pa se morala vratiti, a u trenutku kada je
+kona č no si š la vidjela je da V. izlazi iz ku ć e a ko je jo š  vani nije mogla da vidi. Slede ć e š to je vidjela je da su u
+dnevnoj sobi stvari bile poru š ene, televizor i neke stvari oko televizora, te malo ,,poreme ć ene“ stolice oko
+stola. V. se vratio poslije minut-dva.Vidjela je da mu je krv po lijevoj strani lica i govori joj da ć e da pozove
+policiju. Pitala ga je š ta je to bilo, ko je bio i kazao joj je da su to bili M.1 P. i M.2. Nakon toga je pozvao policiju,
+otiš ao u Plu ž ine i vratio se sa policijom.   
+Svjedok K. M.3 u svom iskazu datom na glavnom pretresu ponavlja svoj iskaz dat pred istra ž nim sudijom,
+stim š to poja š njava da kada je si š la sa sprata ku ć e da je vidjela da iz ku ć e izlaze V., M.1 i M.2, da zadnji izlazi
+M.2.Kada se V. vratio u ku ć u posle nekih 1-2 minuta tra ž io je telefon i rekao joj da ć e da zove policiju ali joj
+ništa drugo nije ispri č ao. Isti č e da joj je R. sutradan na njeno pitanje kako su dopustili M.1 da do đ e kod njih
+kući obzirom da su znali zbog č ega dolazi kazao da je M.2 do š ao sa M.1 iz razloga da M.1 ne bi ubio V..
+Iz nalaza i mi š ljenja vje š taka medicinske struke B. Dr B., pri kom nalazu je vje š tak ostao i na glavnom
+pretresu, te medicinske dokumentacije, utvr đ uje se da je o š te ć eni K. M.1 kriti č ne prilike zadobio povredu –
+ranu ubodinu prednje-lijeve strane grudnog ko š a č iji se ulazni otvor nalazio na ko ž i prednje-lijeve strane
+grudnog ko š a a na oko tri popre č na prsta š ake ispod bradavice lijeve sise i sa spolja š nje strane, tzv.dojkine
+linije ove strane grudnog ko š a, koja povreda je laka tjelesna povreda.Navedena povreda je nastala
+djelovanjem zamahnutog, č vrstog, za š iljenog, o š trog predmeta koji odgovara vrhu predmetnog no ž a. Ubodni
+kanal rane ubodine prostirao se kroz ko ž u i meko potko ž no tkivo do dubine od oko 4,5cm do najvi š e 5 cm u
+potko ž nom tkivu zida grudnog ko š a, gdje se ta ubodna rana zavr š avala svojim dnom. Na osnovu naprijed
+navedenog vje š tak je mi š ljenja  da se radi o jednoj povredi, da u momentu nastajanja povrede povrije đ eni je
+prednje-lijevom stranom tijela ta č nije grudnog ko š a bio okrenut ka sili koja je dovela do nastajanja ove
+povrede a smjer i pravac djelovanja sile je bio pribli ž no od naprijed i vi š e sa lijeve strane ka pozadi i ka desno.
+Optu ž eni K. V. je kriti č nom prilikom zadobio povrede i to nagnje č inu glave u podo č nom predjelu sa lijeve
+strane i lijeve arkade, nagnje č inu glave u predjelu iza desnog uha (mastoida), nagnje č inu desnog rebarnog
+luka i nagnje č inu i krvni podliv ko ž e sredi š njeg dijela natkoljenice desne noge, da su iste nastale djelovanjem
+zamahnute tupo tvrde sile, ravne povr š ine, slabijeg intenziteta djelovanja koja je sila djelovala na glavu
+povre đ enog najmanje u dva navrata i to jedan put od naprijed i vi š e sa lijeve strane a drugi put od pozadi i
+više sa desne strane dovode ć i do nagnje č ine ko ž e i o š te ć enja sitnih krvnih sudova ko ž e, te nastanka krvnih
+podliva ko ž e pomenutih predjela glave a iste su mogle nastati djelovanjem zamahnute stisnute š ake. Povreda
+grudnog ko š a u vidu nagnje č ina ko ž e u predjelu prednje strane desnog rebarnog luka nastala je na sli č an
+nač in, odnosno djelovanjem zamahnute tupo-tvrde sile, ravne povr š ine, slabijeg intenziteta djelovanja koja
+je djelovala na tijelo povrije đ enog od naprijed, vi š e sa desne strane i lako odozdo dovode ć i do nagnje č ine
+kože dok su dublje strukture grudnog ko š a ostale nepovrije đ ene. Ova povreda je mogla nastati djelovanjem
+zamahnute stisnute š ake, zamahnute noge i sli č no, a ne mo ž e se sasvim isklju č iti i mogu ć nost nastanka
+ovakve povrede, prilikom pada desnom stranom tijela na kakvu tvrdu i ravnu podlogu. Povreda natkoljenice
+desne noge u vidu nagnje č ine ko ž e nastala je djlovanjem zamahnute tupo-tvrde sile ravne povr š ine slabijeg
+intenziteta djelovanja koja je djelovala na natkoljenicu noge u jednom navratu dok se o preciznijem pravcu i
+smjeru djelovanja sile ne mo ž e govoriti jer nema podataka na kojoj to strani natkoljenice je bila ova povreda
+(prednja, zadnja ili bo č na strana) i ista je mogla nastati djelovanjem zamahnute noge. Na kraju vje š tak je
+mišljenja da sve povrede kod optu ž enog K. V. su nastale kratko vrijeme jedna za drugom i predstavljaju i
+pojedina č no i u svom zbiru laku tjelesnu povredu.
+Na glavnom pretresu vje š tak je pojasnio da sila koja je djelovala prilikom nastajanja povrede kod o š te ć enog
+K. M.1 je djelovala u jednom navratu slabim intezitetom, a ovo jer je do š lo do o š te ć enja samo povr š inskih
+struktura zida lijeve strane grudnog ko š a dok su druge strukture ostale nepovrije đ ene.Vje š tak se nije mogao
+izjasniti da li je sila na tijelo povrije đ enog djelovala odozgo ili odozdo a to sa razloga š to ljekari prilikom opisa
+rane nijesu naveli koje strukture potko ž nog dijela zida lijeve strane grudnog ko š a su bile povrije đ ene.Nadalje,
+vješ tak je naveo da je povreda kod o š te ć enog mogla nastati kako u momentu kada se optu ž eni nalazio u
+ležeć em polo ž aju ali tako okrenut prema o š te ć enom da prilikom nano š enja povrede je predmet kojim se
+povreda nanosi morao biti okrenut ka tijelu o š te ć enog, tako i u momentu kada je optu ž eni dr ž e ć i no ž  u ruci
+mahao no ž em horizontalno lijevo-desno i vrhom no ž a uspio da povrijedi o š te ć enog. Kod optu ž enog K. V.
+konstatovane povrede glave, grudnog ko š a i natkoljenice lijeve noge su nastale djelovanjem mehani č ke sile u
+četiri navrata. Povreda u predjelu desnog rebarnog luka mogla je nastati kako na na č in naveden u pismenom
+nalazu tako i prilikom pritiska tijela optu ž enog od strane o š te ć enog u momentu kada je optu ž eni bio u
+ležeć em polo ž aju prednje desnom stranom rebarnog luka okrenut ka sili koja je dovela do ove povrede pod
+uslovom da je optu ž eni le ž ao na kakvoj tvrdoj podlozi.
+Iz zapisnika o uvi đ aju UP PJ Nik š i ć  od 25.10.2010. godine se utvr đ uje da su ovla šć eni policijski slu ž benici UP
+PJ Nik š i ć  obavije š teni od strane slu ž benika UP Ispostava Plu ž ine da je dana 24.10.2010.godine oko 23,40
+časova do š lo do sva đ e i tu č e izme đ u K. V. i K. M.1, kojom prilikom je  K. V. upotrijebio kuhinjski no ž  sa
+plasti č nim crnim koricama, du ž ine sje č iva 17,5cm i K. M.1 nanio ubodnu ranu u predjelu grudnog ko š a. Lice
+mjesta se nalazi u zaseoku Bori č ko brdo,selo Bori č je, op š tina Plu ž ine, u ku ć i vl.K. D., oca K. V..Ku ć a je
+sagra đ ena od kamena, spratna, veli č ine 12x8m u osno vi. U dnevnom boravku,koji se nalazi sa lijeve strane
+hodnika gledano iz pravca ulaznih vrata, na podu koji je prekriven itisonom se nalazi prevrnut i polomljen
+televizor marke "Samsung", koji je stajao na vitrini, i pored istog  razasuti suveniri, koji su se nalazili na i oko
+televizora. Prilikom detaljnog pregleda u ž eg i š ireg lica mjesta ne uo č avaju se tragovi crvene boje nalik na
+krv.  Od K. M.1 je izuzeta garderoba - platnena jakna, gornji dio trenerke i majica kratkih rukava na kojima su
+vidljivi tragovi crvene boje nalik na krv i tragovi destrukcije, te sa lica mjesta kuhinjski no ž  plasti č nih korica
+crne boje du ž ine sje č iva oko 17,5 cm. Od K. V. i K. M.1 je uzet uzorak krvi radi analize prisustva alkohola u krvi.
+Fotodokumentacijom UP PJ Nik š i ć  broj 847/10 od 25.10.2010. godine prikazan je bli ž i i š iri izgled dnevne
+sobe, o š te ć enih stvari u dnevnom boravku, te mjesto u dvori š tu gdje je prona đ en no ž .
+Iz potvrde o privremenom oduzimanju predmeta UP Ispostave Plu ž ine broj 23-1808/1 od 25.10.2010. godine
+se utvr đ uje da je od optu ž enog K. V. privremeno oduzet kuhinjski no ž  drvenih korica, du ž ine sje č iva oko 20
+cm.
+Iz listinga komunikacija M:Tel br.20939/1 od 14.12.2010.godine i Crnogorski Telekom  br.04 -50623 od
+21.12.2010.g. za brojeve telefona 068603... (vl.o š te ć enog K. M.1), 067221... (vl.svjedoka K.N.) i 067357...
+(vl.optu ž enog K. V.) za dan 24.10.2010.godine proizilazi da je sa broja 068603... pozivan broj 067221...
+(vl.svjedoka K.N.) u 13,35h, broj 067357...(vl.optu ž enog K. V.) u 18,29h, 20,53h, te da je broj 068603... pozivan
+od broja 067357... u 17,48,40h, 17,51,42h, 20,56,00h i 20,56,41h.
+Iz izvje š taja o trasolo š kom vje š ta č enju Forenzi č kog centra Danilovgrad broj 4337/10,vje š taka J. M., se
+utvrđ uje da je navedenom centru na vje š ta č enje dostavljena garderoba izuzeta od o š te ć enog K. M.1 i to 1)
+jakna marke "Nike" veli č ine XXXL be ž  boje, 2) gornji dio trenerke marke "Nike" veli č ine L svijetlo plave boje i 
+3) majica kratkih rukava marke "Zeus" nepoznate veli č ine, bijele boje, te i kuhinjski no ž .Na prednjoj strani
+jakne nalazi se jedno mehani č ko o š te ć enje na 19 cm od donje ivice jakne i 8,5 cm od lijevog š ava prednje i
+zadnje pole č ija je relativna veli č ina 3,2 cm, te u donjem dijelu jakne tragovi te č nosti tamno braon boje nalik
+na krv, dok na zadnjoj strani jakne nijesu uo č ena mehani č ka o š te ć enja. Na gornjem dijelu trenerke, na
+prednjoj strani nalazi se jedno mehani č ko o š te ć enje na 19 cm od donje ivice trenerke i 7,5 cm od lijevog š ava
+prednje i zadnje pole č ija je relativna veli č ina 3 cm, kao i tragovi te č nosti tamno braon boje nakih na krv, dok
+na zadnjoj strani nijesu uo č ena mehani č ka o š te ć enja. Na majici kratkih rukava, na prednjoj strani uo č eno je
+jedno mehani č ko o š te ć enje na 24 cm od donje ivice majice i 10,5 cm od zami š ljenog lijevog š ava prednje i
+zadnje pole č ija je relativna veli č ina 3 cm i tragovi te č nosti tamno braon boje nalik na krv, dok na zadnjoj
+strani nijesu uo č ena mehani č ka o š te ć enja.Ukupna du ž ina dostavljenog kuhinjskog no ž a je 19,5cm, a š irina
+3,7cm.Mehani č ka o š te ć enja na odjevnim predmetima izuzetim od o š te ć enog K. M.1 nastala su uslijed
+prolaska tvrdog i o š trog predmeta sa sje č ivom, nalik na no ž . Opisana o š te ć enja mogla su nastati od
+dostavljenog no ž a.
+Iz nalaza i mi š ljenja komisije vje š taka neuropsihijatrijske struke od 10.07.2011. godine u sastavu
+neuropsihijatra M. Dr S., psihijatra G. Dr Ž . i psihologa S. I. B. se utvr đ uje da su vje š taci na osnovu podataka iz
+sudskog spisa i neposrednog neurolo š ko psihijatrijskog pregleda optu ž enog mi š ljenja da je K. V. osoba
+prosje č nih intelekturalnih sposobnosti, da ne pokazuje simptome trajnog du š evnog oboljenja, niti te ž eg
+duš evnog poreme ć aja i da se radi o du š evno zdravoj osobi odnosno  jednostavnoj strukturi li č nosti. Nadalje
+mišljenja su da se optu ž eni u vrijeme izvr š enja krivi č nog djela nalazio u stanju afekta straha, razdra ž ljivosti,
+bijesa jakog intenziteta koji odgovara stanju privremene du š evne poreme ć enosti ako se ocijene od strane
+suda kao realne č injenice, okolnosti vezane za krivi č no djelo kako se prikazuje od strane optu ž enog, te da bi u
+tim okolnosti sposobnost shvatanja zna č aja djela, kao i mogu ć nost upravljanja svojim postupcima u vrijeme
+izvrš enja krivi č nog djela kod optu ž enog bile bitno smanjene. U slu č aju ako se ocijene od strane suda kao
+realne č injenice, okolnosti vezane za krivi č no djelo kako se prikazuje od strane o š te ć enog mi š ljenja su da u
+tim okolnostima optu ž eni se nije nalazio u stanju afekta straha, razdra ž ljivosti, bijesa jakog intenziteta ve ć  se
+radi o afektu od blagog do srednjeg intenziteta jer nedostaje neposredno prvokativno pona š anje o š te ć enog i
+u tim okolnostima, mi š ljenja su da su sposobnosti okrivljenog da shvati zna č aj krivi č nog djela koje mu se
+stavlja na teret kao i njegova sposobnost da upravlja svojim postupcima u vrijeme izvr š enja krivi č nog djela su
+bile smanjene ali ne bitno.
+U svom izja š njenju na glavnom pretresu predstavnik komisije vje š taka, vje š tak psihijatar dr G. Ž . je ostao kod
+pismenog nalaza i mi š ljenja komisije vje š taka stim š to je pojasnio da optu ž eni ima dobar prag tolerancije na
+frustracije, da nije sklon agresivnom pona š anju, da bazi č no nema sklonost ka impulsivnom  i agresivnom
+pona š anju.
+Iz izvje š taja iz kaznene evidencije  UP PJ Nik š i ć  Ispostave Plu ž ine broj 270/10-1808/8 od 25.10.2010. godine se
+utvrđ uje da optu ž eni K. V. ne prolazi kroz kaznenu evidenciju.
+Cijene ć i sprovedene dokaze pojedina č no, dovode ć i ih u medjusobnu vezu i u vezu sa odbranom optu ž enog, a
+sve u cilju rasvjetljenja ove krivi č nopravne stvari, sud je na š ao da je optu ž eni K. V. izvr š io krivi č no djelo
+ubistvo na mah u poku š aju  iz č lana 145. Krivi č nog zakonika u vezi č lana 20 KZ, č injeni č no opisano u izreci
+presude, a ne krivi č no djelo ubistvo u poku š aju iz č lana 143 u vezi č lana 20 KZ na na č in kako je to
+predstavljeno dispozitivom optu ž nice.
+Naime, iz saglasne sadr ž ine iskaza optu ž enog K. V.,  o š te ć enog K. M.1, svjedoka K. M.2 i materijalnih dokaza-
+zapisnika o uvi đ aju UP PJ Nik š i ć  od 25.10.2010. godine, potvrde o privremenom oduzimanju predmeta UP
+Ispostave Plu ž ine broj 23-1808/1 od 25.10.2010. godine od K. V., nesumnjivo je utvrdjeno da je optu ž eni K. V.
+dana 24.10.2010 godine oko 23,40 č asova u mjestu Bori č je-op š tina Plu ž ine poku š ao da li š i ž ivota o š te ć enog
+K. M.1 na na č in š to je  sje č ivom  kuhinjskog no ž a du ž ine sje č iva 19,5 cm, š irine 3,7 cm ubo o š te ć enog u
+predjelu grudi nanose ć i mu laku tjelesnu povredu u vidu rane ubodine u predjelu prednje lijeve strane
+grudnog ko š a.Medjutim, sporne su okolnosti pod kojima je optu ž eni K. V. izvr š io radnju zadavanja povrede-
+ubodne rane kuhinjskim no ž em o š te ć enom, te precizna lokacija izvr š enja djela, a koje č injenice su od
+odlu č nog zna č aja za ocjenu pravnog karaktera radnje optu ž enog.
+Sud je iz saglasnih iskaza svih saslu š anih svjedoka i navoda odbrane optu ž enog utvrdio da je kriti č nog dana u
+Nikš i ć u na svadbi u ku ć i K. Š . do š lo do kra ć e prepirke izmedju optu ž enog i oca o š te ć enog K. M.1, K. P.. Da bi
+prekinuo dalju svadju K. N. (brat optu ž enog) je izveo optu ž enog iz ku ć e i povezao ga svojim vozilom u
+porodi č nu ku ć u u Dragovu Luku-op š tina Nik š i ć , da bi zatim V. po š ao za selo Bori č je u Plu ž inama, gdje ž ivi.
+Nadalje je nesporno utvrdjeno da je povodom tog dogadja tokom cijelog dana postojala telefonska
+komunikacija izmedju optu ž enog i o š te ć enog o č emu svjedo č i listing telefonskih poziva. O č igledno je da je
+sadr ž ina tih telefonskih razgovora bila verbalni sukob izmedju optu ž enog i o š te ć enog s obzirom da je
+prvenstveno svjedok K. N. jasan i nedvosmislen u svom iskazu isti č u ć i da ga je negdje oko 13,30 č asova
+nazvao o š te ć eni, š to se i potvr đ uje listingom telefonskih komunikacija, i kazao mu "reci V. da ć u mu glavu
+otkinuti." Sud nema razloga da ne vjeruje svjedoku K. N. bez obzira š to je rodjeni brat optu ž enog a ovo s
+razloga š to je poku š avao da smiri situaciju nakon nastale prepirke na svadbi tako š to je udaljio svog brata sa
+svadbe, nije u bilo kakvom konfliktu sa o š te ć enim ili njegovom porodicom, a nakon razgovora sa o š te ć enim
+vratio se na svadbu bez ikakvog straha od eventualnog animoziteta ostalih prema njemu zbog toga š to mu se
+brat posvadjao ili mogu ć e eskalacije novog sukoba.
+Takodje i svjedoci K. M.2 i R. su u svojim izjavama saglasni da razgovor izmedju o š te ć enog i optu ž enog nije
+vodio smirivanju cjelokupne situacije, jer su č uli kad su ulazili u vozilo o š te ć enog da ih vozi iz Plu ž ina u selo
+Bori č je, gdje ž ive, kako razgovara sa optu ž enim i ka ž e mu ,,eto me,sad ć u ja tamo iza ć i", evidentno misle ć i na
+mogu ć u tu č u sa V.. Kada su do š li u selo Bori č je o š te ć eni se odmah uputio ka ku ć i optu ž enog ž ele ć i da sa njim
+rasparavi cjelokupni dogadjaj, a za njim je po š ao i njegov stric K. M.2. Valja ista ć i da je od poslednjeg njihovog
+telefonskog razgovora pa do neposrednog susreta pro š lo vi š e od tri sata.
+Dalji slijed dogadjaja u kojem se odigrala i radnja predmetnog krivi č nog djela sud je utvrdio iz djelova iskaza
+optu ž enog, o š te ć enog i neposrednog svjedoka K. M.2 koji su potvrdjeni materijalnim dokazima - zapisnikom
+o uvidjaju, izvje š tajem o trasolo š kom vje š ta č enju, fotodokumentacijom i nalazom i mi š ljenjem vje š taka
+medicinske struke. Sud je cijenio i navode citiranih lica i u dijelu u kojem su u konfrotaciji sa navedenim
+materijalnim dokazima, pa je na š ao da su njihovi iskazi u tom dijelu neta č ni i izmi š ljeni u cilju pobolj š anja
+krivi č nopravnog polo ž aja okrivljenog, odnosno  izbjegavanja eventualne krivi č nopravne odgovornosti
+ošte ć enog.
+Ocjenom materijalne odbrane optu ž enog K. evidentno je da ona sadr ž i priznanje optu ž enog da je dana
+24.10.2010 godine oko 23.40 č asova ubo kuhinjskim no ž em o š te ć enog K. M.1. Optu ž eni je u navodima svoje
+odbrane objasnio cjelokupni dogadjaj koji se odigrao u njegovoj porodi č noj ku ć i u selu Bori č je-op š tina
+Pluž ine. Istakao je da ga je kriti č nog dana  nakon 23,00 č asa ž ena probudila govore ć i mu da neko lupa na
+vrata. Kada je otvorio vrata dobio je udarac zatvorenom pesnicom u predjelu glave od strane K. M.1, a onda
+još dva - tri udarca na isti na č in. Kako se zateturao od ovih udaraca tako je po č eo da se povla č i prema
+dnevnoj sobi, da bi na vratima dnevne sobe od zadobijenih udaraca pao. Kada je pao, M.1 je sjeo na njega i
+nastavio da ga udara, nakon č ega se umije š ao K. M.2 i makao M.1 sa njega. Dok ga je M.2 podizao, M.1 mu je
+zadao jo š  nekoliko udaraca nogom u predjelu tijela – noga i le đ a. U ovom guranju i tu č i prevrnuto je vi š e
+stvari u dnevnoj sobi, izme đ u ostalog sa komode pored vrata pao je televizor. Sud iznesene navode njegove
+odbrane cijeni kao istinite i logi č ne s obzirom da su u bitnom potvrdjeni iskazom neposrednog svjedoka K.
+M.2, ina č e strica o š te ć enog, koji je tokom cjelokupnog postupka decidan da kada su stigli kod V. ku ć e, M.1 je
+pozvao V. i on je otvorio vrata ku ć e i č im je ista otvorio nastala je tu č a izme đ u njih dvojice. U toj tu č i oni su se
+kretali prema dnevnom boravku i na kraju su u š li u dnevni boravak. Kada je u š ao u dnevni boravak vidio je da
+V. lež i na podu dnevnog boravka a M.1 je stajao pored V. i vidio je da ga je jednom udario nogom.
+Svjedok se zbog š oka nije mogao precizno izjasniti ko je prvi zapo č eo tu č u. Medjutim, sud nema razloga da
+sumnja u istinitost navoda optu ž enog K. V. s obzirom da je isti osoba sa visokim pragom tolerancije na
+frustacije i da nije sklon agresivnom pona š anju, te da bazi č no nema sklonost ka agresivnim i impulsivnim
+nastupima. Imaju ć i u vidu citirane psiholo š ke osobine li č nosti optu ž enog koje su utvrdjene iz nalaza i
+mišljenja tima vje š taka neuropsihijatrijske struke, zatim č injenice da je o š te ć eni do š ao na prag ku ć e u kasnim
+večernjim č asovima da bi se po sopstvenom kazivanju razjasnio sa optu ž enim za sud je nesporno utvrdjeno
+da se cjelokupni dogadjaj na vratima i u dnevnom boravku ku ć e desio onako kako ga je optu ž eni u svojoj
+odbrani opisao. Njihovim saglasnim iskazima sud vjeruje jer su potvrdjeni i materijalnim dokazom
+zapisnikom o uvidjaju i fotodokumentacijom iz kojih dokaza je o č igledno utvrdjeno da se tu č a odvijala i u
+dnevnoj sobi kojom prilikom je prevrnut i polomljen televizor koji se tamo nalazio zajedno sa suvenirima.
+Analizom saglasnih iskaza svjedoka K. M.2 i optu ž enog izvodi se zaklju č ak da je prilikom  tu č e izmedju
+optu ž enog i o š te ć enog, optu ž eni bio u konstantnom defanzivnom polo ž aju. On se povla č io unazad ka
+dnevnoj sobi usled  udaraca koje mu je zadavao o š te ć eni sve do trenutka dok nije pao na pod. Medjutim i
+tada je o š te ć eni nastavio da ga udara pesnicama i nogama po tijelu,sjeo mu na grudi. U tom sukobu o š te ć eni
+je bio fizi č ki neuporedivo ja č i i optu ž enom nanio povrede o kojima se vje š tak medicinske struke izjasnio u
+svom nalazu i mi š ljenju i na glavnom pretresu.
+S toga, u potpunosti su opovrgnuti navodi o š te ć enog K. M.1 da ga je okrivljeni prvi udario, te da tokom tu č e
+nijesu ulazili u dnevni boravak ku ć e optu ž enog. Zato sud njegov iskaz u nazna č enom dijelu cijeni kao
+neistinit i izmi š ljen u strahu od eventualnog pokretanja pitanja njegove krivi č nopravne odgovornosti.
+Medjutim, dalji tok dogadjaja i opis radnje krivi č nog djela  sud utvrdjuje iz sadr ž ine saglasnih iskaza
+neposrednog svjedoka dogadjaja K. M.2 i o š te ć enog K. M.1. Naime, K. M.2 je tokom cjelokupnog postupka
+izrič it u svojim navodima  da nakon š to je izgurao M.1 iz dnevne sobe da su iza š li iz ku ć e i krenuli ka vozilu iza
+V. ku ć e. U tom trenutku ponovo zapo č inje tu č a izmedju optu ž enog i o š te ć enog i on ih ponovo razdvaja.
+Nakon nekih 15 do 20 m hoda M.1 mu je rekao “vidi udari me no ž em”, i kako je pogledao vidio je da mu je
+krvava bijela majica.Ovakav slijed dogadjaja potvrdjuje i o š te ć eni K. M.1 koji ka ž e da ga je svjedok K. M.2
+uhvatio za jaknu, makao sa V., pa su po š li iza V. ku ć e u namjeri da se vrate kod vozila jer je smatrao da je
+njegova rasprava sa okrivljenim zavr š ena. Tada je č uo da neko tr č i za njim,okrenuo se i vidio okrivljenog koji
+je zamahnuo rukom u njegovom pravcu. Osjetio je ubod ispod lijeve sise i tek tada zapazio no ž  koji je
+pronadjen u neposrednoj blizini mjesta gdje je izvr š ena radnja predmetnog krivi č nog djela, o č emu svjedo č i
+fotodokumentacija i zapisnik o uvidjaju.
+Sud je cijenio navode odbrane optu ž enog u kojima isti č e da je u samoodbrani uzeo no ž  u strahu od daljeg
+napada i sa njim mahao da bi onemogu ć io M.1 da mu pridje i ponovo ga napadne dok su bili u ku ć i, te da ga
+je tako povrijedio i da nije i š ao za njima u dvori š te kad  su M.2 i M.1 napustili ku ć u ve ć  samo do ulaznih vrata.
+Medjutim, osim iskazima o š te ć enog i neposrednog svjedoka K. M.2, ovakva odbrana optu ž enog u cjelosti je
+pobijena i navodima svjedo č kog iskaza njegove supruge, svjedokinje K. M.3, koja je objasnila da kada je si š la
+sa sparata da je vidjela da iz ku ć e izlaze V., M.1 i M.2, s tim š to je poslednji iza š ao M.2, da se V. nakon nekih
+minut-dva vratio u ku ć u. Imaju ć i u vidu navedeno sud nalazi da je njegova odbrana u ovom dijelu neistinita i
+srač unata sa ciljem izbjegavanja postojanja protivpravnosti izvr š ene radnje, a samim tim i izbjegavanja
+krivi č no-pravne odgovornosti.
+Imaju ć i u vidu utvrdjeno č injeni č no stanje sud nalazi da su neutemeljeni navodi odbrane da je predmetno
+krivi č no djelo izvr š eno pod okolnostima koje isklju č uju postojanje krivi č nog djela, odnosno u nu ž noj odbrani.
+    
+Nuž na odbrana je ona odbrana koja je neophodno potrebna da bi u č inilac od sebe ili drugog odbio
+istovremeni ili neposredno predstoje ć i protivpravni napad. Da bi se utvrdilo postojanje nu ž ne odbrane sud
+mora da utvrdi da li je postojao napad, u č emu se sastojao napad, kakvog je inteziteta i da li je radnja
+odbrane preduzeta dok je napad trajao. U nu ž noj odbrani se mo ž e postupati samo dok napad traje ili
+neposredno predstoji. Napad traje dok traje opasnost za dobro koje je predmet napada, u konkretnom
+sluč aju tjelesni integritet optu ž enog. Medjutim, nakon š to je o š te ć eni optu ž enom K. nanio tjelesnu povredu,
+isti se udaljio od mjesta napada ( iz dnevne sobe optu ž enog) i zajedno sa svojim stricem K. M.2 krenuo je iza
+kuće ka svom vozilu izra ž avaju ć i namjeru da ide ku ć i. Imaju ć i u vidu takvo njegovo postupanje jasno
+proizilazi da je protivpravni napad prestao. U trenutku kad je napad zavr š en prestalo je i pravo optu ž enog na
+nuž nu odbranu. Prema tome, svaka dalja djelatnost optu ž enog (odlazak za o š te ć enim, napad no ž em ) nakon
+što je o š te ć eni prestao sa napadom i krenuo ka vozilu jeste reakcija na protekli napad iz razloga gnijeva,
+straha ili razdra ž enosti, a nikako se ne mo ž e pravdati nu ž no šć u odbrane.
+Dakle, prema nala ž enju suda, nije ispunjen uslov za postojanje nu ž ne odbrane jer je napad o š te ć enog
+evidentno prestao, a radnja optu ž enog nije odbijanje istovremenog protivpravnog napada, ve ć  naprotiv
+samostalno krivi č no djelo.
+Zato, na osnovu naprijed iznijetog i u vezi s tim ocjenom nalaza i mi š ljenja tima vje š taka neuropsihijatrijske
+struke sud je dokazao postojanje, oblik i stepen krivi č no pravne odgovornosti optu ž enog i pravnu
+kvalifikaciju djela i prepoznao da se  u konkretnom slu č aju radi o takvom postupanju optu ž enog koje ima
+elemente krivi č nog djela ubistvo na mah u poku š aju.
+Naime, za postojanje krivi č nog djela ubistva na mah, pored obilje ž ja krivi č nog djela umi š ljajnog ubistva
+potrebno je da se kumulativno ostvare i drugi konstitutivni elementi  koji se ogledaju u tome da je izvr š enju
+djela prethodio napad, zlostavljanje ili te š ko vrijedjanje od strane o š te ć enog, a koji nijesu skrivljeni od strane
+okrivljenog, da su napad, zlostavljanje ili te š ko vrijedjanje prouzrokovali jaku razdra ž enost  kod optu ž enog
+usled koje je on bez kriti č kog rasudjivanja, u trenutku, odlu č io da izvr š i ubistvo. Iz prethodnog izlaganja za
+sud je nesporno utvrdjeno da je izvr š enju krivi č nog djela prethodio ozbiljan napad o š te ć enog na fizi č ki
+integritet optu ž enog sa utvrdjenim fizi č kim posledicama, a koji nije skrivljen od strane optu ž enog.Sud nalazi
+i utvr đ uje da optu ž eni K. V. nije skrivio protivpravni napad nalaze ć i istovremeno da verbalna razmirica,
+sukob, izme đ u optu ž enog i o š te ć enog ne smije niti mo ž e predstavljati ozbiljan povod a pogotovo objektivan
+razlog za napad koji o š te ć eni K. M.1 preduzima prema optu ž enom. Prema tome, primarni zadatak ovog suda
+jeste da utvrdi da li je  u  trenutku izvr š enja djela optu ž eni na osno vu intelektualnih i voljnih sposobnosti bio
+u stanju da shvati stvarni i pravni zna č aj u č injenog djela, tj. da li je i u kom stepenu bio ura č unljiv.
+Komisija vje š taka je u svom nalazu, nakon neposrednog neurolo š ko psihijatrijskog pregleda optu ž enog,
+mišljenja da je K. V. osoba prosje č nih intelekturalnih sposobnosti, da ne pokazuje simptome trajnog
+duš evnog oboljenja, niti te ž eg du š evnog poreme ć aja i da se radi o du š evno zdravoj osobi odnosno
+jednostavnoj strukturi li č nosti. Na taj na č in je u potpunosti zadovoljen biolo š ki osnov kao jedan od uslova
+urač unljivosti. Takodje, nala ž enje je suda utemeljeno na nalazu vje š taka da je psiholo š ki osnov optu ž enog u
+vrijeme izvr š enja krivi č nog djela bio u granicama bitno smanjene ura č unljivosti s obzirom da je isti bio u
+stanju afekta straha, razdra ž ljivosti, bijesa jakog intenziteta koji odgovara stanju privremene du š evne
+poreme ć enosti.Njegovo opisano psiholo š ko stanje predstavlja motivaciju izvr š enja djela. Dalje, sud nalazi da
+je optu ž eni K. V. u takvo stanje doveden bez svoje krivice, isklju č ivo napadom o š te ć enog. Zna č i, pona š anje
+ošte ć enog koji u kasnim ve č ernjim č asovima dolazi na ku ć ni prag optu ž enog, sa njim zapo č inje tu č u i nanosi
+mu tjelesne povrede objektivno ima karakter napada koji je kod optu ž enog prouzrokovao stanje sna ž nog
+uzbudjenja i razdra ž enosti. Jaka razdra ž enost, kao izvanredno du š evno stanje, prouzrokovala je dalju
+reakciju optu ž enog u vidu zadavanja udarca no ž em o š te ć enom, bez prethodnog kriti č kog razmi š ljanja uz
+povi š en afekat i sni ž enje praga tolerancije, ali nakon prestanka prvobitnog napada.
+Iz utvrdjene č injenice da optu ž eni o š te ć enog opasnim sredstvom - no ž em du ž ine sje č iva 19,50 cm ubada u
+grudni ko š , sud zaklju č uje da je pristao da o š te ć enog li š i ž ivota, jer je op š te poznata č injenica, koju optu ž eni
+kao osoba sa prosje č nim intelektualnim sposobnostima zna, da je grudni ko š  vitalni dio tijela i da se ubodom
+nož a u grudni ko š  mo ž e lice li š iti ž ivota. Zato, kada je optu ž eni tako postupao onda je i pristao na posljedicu
+što zna č i da je postupao sa eventualnim umi š ljajem.
+Sud je cijenio sve ostale provedene dokaze, pa je na š ao da su isti bez zna č aja za druga č ije presudjenje ove
+krivi č no-pravne stvari.
+Kako je krivica optu ž enog pouzdano utvrdjena, te kako nema okolnosti koje bi isklju č ile njegovu krivi č no-
+pravnu odgovornost, to ga je sud oglasio krivim i krivi č no-pravno odgovornim i izrekao mu uslovnu osudu,
+kojom je prethodno utvrdio kaznu zatvora u trajanju od 5 mjeseci i istovremeno odredio da se napred
+navedena kazna ne ć e izvr š iti ukoliko optu ž eni za vrijeme od jedne godine od pravosna ž nosti presude ne
+učini novo krivi č no djelo, pri č emu je sud imao u obzir sve okolnosti uzete u smislu odredbi č l.42 KZ CG.
+Sud je posebno cijenio olak š avaju ć e okolnosti na strani optu ž enog, pa je pri tom uzeo u obzir li č nost
+optu ž enog, raniju neosudjivanost, izra ž eno kajanje, da se radi o porodi č nom č ovjeku, ocu sedmoro djece, da
+je jedini izdr ž avalac svoje porodice, da se o š te ć eni nije pridru ž io krivi č nom gonjenju, da je djelo ostalo u
+poku š aju, da nije davao povoda za napad, da je pona š anje optu ž enog bilo rezultat agresivnog i
+nemotivisanog nasilja od o š te ć enog K. M.1, da je u vrijeme izvr š enja krivi č nog djela bio u stanju bitno
+smanjene ura č unljivosti,a u odsustvu ote ž avaju ć ih okolnosti cijenio navedene kao osobito olak š avaju ć e, pa
+je optu ž enom u smislu č l.45 i 46 KZ, utvrdio kaznu zatvora ispod zakonskog minimuma, i tako ubla ž enu
+kaznu uslovio na osnovu č l.52 i 53 KZ, izrekav š i mu uslovnu osudu, kao u izreci presude, smatraju ć i da ć e se
+ovako utvrdjenom kaznom i izre č enom uslovnom osudom, u okviru op š te svrhe izricanja krivi č nih sankcija iz
+čl.4 st.2 KZ CG posti ć i posebna svrha ka ž njavanja iz č l.32 KZ CG, da optu ž eni u budu ć e ne č ini ovakva i sli č na
+krivi č na djela. 
+U slu č aju opoziva uslovne osude optu ž enom K. V. ć e se u kaznu zatvora ura č unati vrijeme koje je proveo u
+pritvoru od 25.10.2010. do 26.10.2010. godine, shodno č lanu 51 KZ.
+Na osnovu č kana 75. KZ od optu ž enog K. V. trajno se oduzima kuhinjski no ž  du ž ine sje č iva 19,50 cm, š irine 3,7
+cm, kao sredstvo izvr š enja djela.
+Kako je optu ž eni ogla š en krivim i krivi č no pravno odgovornim to ga je sud shodno č lanu 199. i 202. ZKP-a
+obavezao da na ime tro š kova krivi č nog postupka plati ovom sudu nov č ani iznos od 961,50 eura koji se odnosi
+na tro š kove vje š taka i tro š kove svjedoka, a na ime sudskog pau š ala nov č ani iznos od 50,00 eura koji pau š al je
+odmjeren shodno slo ž enosti predmeta, du ž ini trajanja postupka i imovinskim prilikama optu ž eng a sve
+prednje u roku od 15 dana po pravosna ž nosti ove presude pod prijetnjom prinudnog izvr š enja.
+Na osnovu izlo ž enog odlu č eno je kao u izreci presude.
+                                    
+                                    VI Š I SUD U PODGORICI
+                                     dana 22.07.2011.godine
+ZAPISNI Č AR                                                                     PREDSJEDNIK VIJE Ć A-SUDIJA
+Vera Popovi ć                                                                                        Biljana Uskokovi ć
+PRAVNA POUKA:
+Protiv ove presude mo ž e se izjaviti ž alba Apelacionom sudu Crne Gore,  u roku od 15 dana, od dana prijema
+pismenog otpravka presude, a preko  Vi š eg suda u Podgorici.
+Tačnost otpravka tvrdi i ovjerava
+namje š tenik suda Vera Popovi ć
+                                                 ________________</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

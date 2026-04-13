@@ -72,6 +72,21 @@ export interface CaseFacts {
   fight_consequence?: string;
   left_without_help?: boolean | null;
 
+  // Sentencing factors (individualization)
+  previous_convictions?: boolean | null;
+  repeat_offender?: boolean | null;
+  confession?: boolean | null;
+  remorse?: boolean | null;
+  plea_agreement?: boolean | null;
+  aggravating_circumstances?: boolean | null;
+  mitigating_circumstances?: boolean | null;
+  family_circumstances?: boolean | null;
+  poor_financial_status?: boolean | null;
+  alcohol_intoxication?: boolean | null;
+  narcotics_influence?: boolean | null;
+  conditional_sentence_requested?: boolean | null;
+  attempted_offense?: boolean | null;
+
   // Group 1: victim data
   victim_status?: string[];
   victim_health_state?: string;

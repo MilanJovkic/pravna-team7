@@ -488,6 +488,128 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                     </label>
                   </div>
                 </section>
+
+                <section class="fact-group">
+                  <h5>Grupa 15: Individualizacija kazne</h5>
+                  <div class="field-grid">
+                    <label>
+                      Ranije osuđivan
+                      <select name="previous_convictions" [(ngModel)]="facts.previous_convictions">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      Povratnik
+                      <select name="repeat_offender" [(ngModel)]="facts.repeat_offender">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      Priznanje krivice
+                      <select name="confession" [(ngModel)]="facts.confession">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      Iskreno kajanje
+                      <select name="remorse" [(ngModel)]="facts.remorse">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      Sporazum o priznanju krivice
+                      <select name="plea_agreement" [(ngModel)]="facts.plea_agreement">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      Otežavajuće okolnosti
+                      <select name="aggravating_circumstances" [(ngModel)]="facts.aggravating_circumstances">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      Olakšavajuće okolnosti
+                      <select name="mitigating_circumstances" [(ngModel)]="facts.mitigating_circumstances">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      Porodične prilike
+                      <select name="family_circumstances" [(ngModel)]="facts.family_circumstances">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      Loše imovno stanje
+                      <select name="poor_financial_status" [(ngModel)]="facts.poor_financial_status">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      Alkoholisanost učinioca
+                      <select name="alcohol_intoxication" [(ngModel)]="facts.alcohol_intoxication">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      Uticaj narkotika
+                      <select name="narcotics_influence" [(ngModel)]="facts.narcotics_influence">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      Predlog uslovne osude
+                      <select name="conditional_sentence_requested" [(ngModel)]="facts.conditional_sentence_requested">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+
+                    <label>
+                      Delo u pokušaju
+                      <select name="attempted_offense" [(ngModel)]="facts.attempted_offense">
+                        <option [ngValue]="null">Nije odabrano</option>
+                        <option [ngValue]="true">da</option>
+                        <option [ngValue]="false">ne</option>
+                      </select>
+                    </label>
+                  </div>
+                </section>
               </div>
             </div>
 
@@ -1211,6 +1333,19 @@ export class ReasoningComponent {
     weapon_used: null,
     death_result: null,
     negligence: null,
+    previous_convictions: null,
+    repeat_offender: null,
+    confession: null,
+    remorse: null,
+    plea_agreement: null,
+    aggravating_circumstances: null,
+    mitigating_circumstances: null,
+    family_circumstances: null,
+    poor_financial_status: null,
+    alcohol_intoxication: null,
+    narcotics_influence: null,
+    conditional_sentence_requested: null,
+    attempted_offense: null,
     injury_type: '',
     victim_status: [],
     victim_health_state: '',

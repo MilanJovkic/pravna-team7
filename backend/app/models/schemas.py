@@ -114,6 +114,21 @@ class CaseFacts(BaseModel):
     fight_consequence: Optional[str] = None
     left_without_help: Optional[bool] = None
 
+    # Sentencing factors (individualization of punishment)
+    previous_convictions: Optional[bool] = None
+    repeat_offender: Optional[bool] = None
+    confession: Optional[bool] = None
+    remorse: Optional[bool] = None
+    plea_agreement: Optional[bool] = None
+    aggravating_circumstances: Optional[bool] = None
+    mitigating_circumstances: Optional[bool] = None
+    family_circumstances: Optional[bool] = None
+    poor_financial_status: Optional[bool] = None
+    alcohol_intoxication: Optional[bool] = None
+    narcotics_influence: Optional[bool] = None
+    conditional_sentence_requested: Optional[bool] = None
+    attempted_offense: Optional[bool] = None
+
     # Group 1: victim data
     victim_status: List[str] = Field(default_factory=list)
     victim_health_state: Optional[str] = None
@@ -176,6 +191,19 @@ class CaseFacts(BaseModel):
             self.fight_participation,
             self.fight_consequence,
             self.left_without_help,
+            self.previous_convictions,
+            self.repeat_offender,
+            self.confession,
+            self.remorse,
+            self.plea_agreement,
+            self.aggravating_circumstances,
+            self.mitigating_circumstances,
+            self.family_circumstances,
+            self.poor_financial_status,
+            self.alcohol_intoxication,
+            self.narcotics_influence,
+            self.conditional_sentence_requested,
+            self.attempted_offense,
             self.victim_health_state,
             self.victim_accountability,
             self.victim_previously_abused,

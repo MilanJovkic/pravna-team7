@@ -190,13 +190,18 @@
 
     <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case01">
         <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
-        <lc:defendant>Unknown</lc:defendant>
-        <lc:weapon_used>false</lc:weapon_used>
-        <lc:severe_consequence>false</lc:severe_consequence>
+        <lc:defendant>Boki</lc:defendant>
+        <lc:injury_type>teska tjelesna povreda</lc:injury_type>
+        <lc:weapon>sredstvo_podobno_za_tesku_povredu</lc:weapon>
+        <lc:weapon_used>true</lc:weapon_used>
+        <lc:severe_consequence>true</lc:severe_consequence>
         <lc:death_result>false</lc:death_result>
         <lc:negligence>false</lc:negligence>
         <lc:provocation>false</lc:provocation>
-        <lc:fight_consequence>none</lc:fight_consequence>
+        <lc:fight_participation>true</lc:fight_participation>
+        <lc:fight_consequence>teska_povreda</lc:fight_consequence>
+        <lc:injury_means_type>sredstvo_podobno_za_tesku_povredu</lc:injury_means_type>
+        <lc:guilt_form>umisljaj_direktni</lc:guilt_form>
         <lc:high_intensity_distress>false</lc:high_intensity_distress>
     </lc:case>
 </rdf:RDF>

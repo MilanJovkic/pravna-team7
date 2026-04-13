@@ -20,22 +20,17 @@
                 <FRBRManifestation>
                     <FRBRthis value="/akn/me/judgment/Одлуке2/sr@2024-03-19/!main.xml"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке2/sr@2024-03-19/!main.akn"/>
-                    <FRBRdate date="2026-02-09"/>
+                    <FRBRdate date="2026-04-13"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
             <references source="#court">
-                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni Sud u Podgorici"/>
-                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Đuković Goranu"/>
-                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Goran Đuković"/>
-                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Đuković Goran"/>
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="GoranĐ"/>
                 <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="K. B."/>
-                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="advokatu"/>
-                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="K. N."/>
-                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="N. K."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -47,371 +42,237 @@
                     <docNumber>K.br. 27/24</docNumber>
                 </block>
                 <block name="court">
-                    <docTitle>Osnovni Sud u Podgorici</docTitle>
+                    <docTitle>OSNOVNI SUD U PODGORICI</docTitle>
                 </block>
                 <block name="date">
                     <docDate date="2024-03-19">2024-03-19</docDate>
                 </block>
                 <block name="judges">
-                    <judge>Đuković Goranu</judge>
-                    <judge>Goran Đuković</judge>
-                    <judge>Đuković Goran</judge>
+                    <judge>GoranĐ</judge>
                 </block>
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni K. B. je proglašen krivim za tešku tjelesnu povredu oštećenog K. N. zbog fizičkog napada metalnim ključem. Sud mu je izrekao kaznu rada u javnom interesu od 120 časova.</p>
+                    <p>Okrivljeni K. B. kriv za tešku tjelesnu povredu.</p>
                 </block>
                 <block name="legalIssues">
-                    <p>teška tjelesna povreda</p>
-                    <p>priznanje krivice</p>
+                    <p>Teška tjelesna povreda</p>
+                    <p>Priznavanje krivice</p>
+                    <p>Izvršenje kazne</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
-                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakonik o krivičnom postupku</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_239">Član 239</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_41">Član 41</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_41">Član 41</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je okrivljeni bio svestan zabranjenosti svog dela i imao nameru da ga izvrši.</p>
+                    <p>Okrivljeni je svjestan svog djela i njegovih posljedica.</p>
                 </block>
             </motivation>
             <decision>
-                <block name="verdict" outcome="усвојено">
-                    <p>Optuženi se oglašava krivim</p>
+                <block name="verdict" outcome="nepoznato">
+                    <p>Osuđuje se na rad u javnom interesu.</p>
                 </block>
             </decision>
             <participants>
                 <block name="defendants">
                     <person>K. B.</person>
                 </block>
-                <block name="victims">
-                    <person>advokatu</person>
-                    <person>K. N.</person>
-                    <person>N. K.</person>
-                </block>
             </participants>
             <facts>
                 <fact key="injury_type">teška tjelesna povreda</fact>
                 <fact key="location">Podgorica</fact>
-                <fact key="weapon">metalni ključ</fact>
-                <fact key="weapon_used">true</fact>
-                <fact key="severe_consequence">true</fact>
-                <fact key="death_result">false</fact>
-                <fact key="negligence">false</fact>
-                <fact key="provocation">false</fact>
-                <fact key="fight_participation">false</fact>
-                <fact key="fight_consequence">none</fact>
-                <fact key="weapon_shown">false</fact>
-                <fact key="caused_danger">false</fact>
-                <fact key="left_without_help">false</fact>
             </facts>
             <conclusions>
                 <block name="fullText">
-                    <p>Osnovni Sud u Podgorici
-K 27/2024
-20. Март 2024
-
-K.br. 27/24
-
-
+                    <p>K.br. 27/24
  
-
 U IME CRNE GORE
-
  
-
-OSNOVNI SUD U PODGORICI, po sudiji Đuković Goranu, uz učešće namještenika suda Radević Sanje kao zapisničara, u krivičnom predmetu protiv okrivljenog K. B. iz Podgorice, koga brani advokat A. B., zbog krivičnog djela teška tjelesna povreda iz čl. 151 st. 1 Krivičnog zakonika Crne Gore, nakon pravosnažnosti rješenja o usvajanju sporazuma o priznanju krivice, dana 19.03.2024. godine, donio je
-
+OSNOVNI SUD U PODGORICI, po sudiji Đ ukovi ć  Goranu, uz u č e šć e namje š tenika suda Radevi ć  Sanje kao
+zapisni č ara, u krivi č nom predmetu protiv okrivljenog K. B. iz Podgorice, koga brani advokat A. B., zbog
+krivi č nog djela te š ka tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne Gore, nakon pravosna ž nosti
+rješ enja o usvajanju sporazuma o priznanju krivice, dana 19.03.2024. godine, donio je
  
-
 P R E S U D U
-
  
-
 Okrivljeni:
-
  
-
-K. B., sa JMBG: ......, od oca D. i majke Z., rođene P., rođen ..... godine u N., sa prebivalištem u P. - ul. B. M. br. 16, državljanin Crne Gore, oženjen, otac troje djece, pismen, sa završenom visokom školom, po zanimanju proffesor, srednjeg imovnog stanja, neosudjivan
-
+K. B., sa JMBG: ......, od oca D. i majke Z., ro đ ene P., ro đ en ..... godine u N., sa prebivali š tem u P. - ul. B. M. br.
+16, dr ž avljanin Crne Gore, o ž enjen, otac troje djece, pismen, sa zavr š enom visokom š kolom, po zanimanju
+proffesor, srednjeg imovnog stanja, neosudjivan
  
-
 KRIV JE
-
  
-
  
-
-Zato što je:
-
+Zato š to je:
  
-
-Dana 09.05.2022. godine, oko 22,00 h, u P., u ulici M., teško tjelesno povrijedio oštećenog K. N., na način što ga je metalnim ključem za točkove više puta udario u predjelu glave, kojom prilikom mu je nanio tešku tjelesnu povredu u vidu krvnog podliva u lijevoj polovini čeonog predjela i krvnog podliva u predjelu lijeve očne jabučice praćeno prelomom lijevog čeonog sinusa, pri čemu je bio sposoban da shvati značaj svoga djela i upravlja svojim postupcima i bio svjestan zabranjenosti svoga djela i htio njegovo izvršenje,
-
+Dana 09.05.2022. godine, oko 22,00 h, u P., u ulici M., te š ko tjelesno  povrijedio o š te ć enog K. N., na na č in š to
+ga je metalnim klju č em za to č kove vi š e puta udario u predjelu glave, kojom prilikom mu je nanio te š ku
+tjelesnu povredu u vidu krvnog podliva u lijevoj polovini č eonog predjela i krvnog podliva u predjelu lijeve
+očne jabu č ice pra ć eno prelomom lijevog č eonog sinusa, pri č emu je bio sposoban da shvati zna č aj svoga
+djela i upravlja svojim postupcima i bio svjestan zabranjenosti svoga djela i htio njegovo izvr š enje,
+ Osnovni Sud u Podgorici
+K 27/2024
+20. Март  2024
+- čime je izvr š io krivi č no djelo te š ka tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne Gore.
  
-
-- čime je izvršio krivično djelo teška tjelesna povreda iz čl. 151 st. 1 Krivičnog zakonika Crne Gore.
-
  
-
+Pa sud okrivljenog primjenom citiranih zakonskih propisa i č l. 4 st. 2, č l. 32, č l. 41 i č l. 42 Krivi č nog zakonika
+Crne Gore, te č l. 226, 229, 227, 239 i 303 st. 1 Zakonika o krivi č nom postupku
  
-
-Pa sud okrivljenog primjenom citiranih zakonskih propisa i čl. 4 st. 2, čl. 32, čl. 41 i čl. 42 Krivičnog zakonika Crne Gore, te čl. 226, 229, 227, 239 i 303 st. 1 Zakonika o krivičnom postupku
-
+OSU Đ UJE
  
-
-OSUĐUJE
-
+Na kaznu rada u javnom interesu u trajanju od 120 (stotinudvadeset) č asova, koja kazna ć e se izvr š iti za
+vrijeme od 3 (tri) mjeseca, s tim da ne mo ž e biti du ž a od 60 ( š ezdeset) č asova u toku 1 (jednog) mjeseca.
  
-
-Na kaznu rada u javnom interesu u trajanju od 120 (stotinudvadeset) časova, koja kazna će se izvršiti za vrijeme od 3 (tri) mjeseca, s tim da ne može biti duža od 60 (šezdeset) časova u toku 1 (jednog) mjeseca.
-
+Ukoliko okrivljeni ne bude vr š io kaznu rada u javnom interesu, ova kazna ć e se zamijeniti kaznom zatvora,
+tako š to ć e se svakih zapo č etih 60 ( š ezdeset) č asova rada u javnom interesu, zamijeniti kaznom zatvora u
+trajanju od 1 (jednog) mjeseca.
  
-
-Ukoliko okrivljeni ne bude vršio kaznu rada u javnom interesu, ova kazna će se zamijeniti kaznom zatvora, tako što će se svakih započetih 60 (šezdeset) časova rada u javnom interesu, zamijeniti kaznom zatvora u trajanju od 1 (jednog) mjeseca.
-
+Ošte ć eni N. K. radi ostvarenja imovinskopravnog zahtjeva upu ć uje se na parni č ni postupak.
  
-
-Oštećeni N. K. radi ostvarenja imovinskopravnog zahtjeva upućuje se na parnični postupak.
-
  
-
+Obavezuje se okrivljeni da ovom sudu uplati nov č ani iznos 66,00 eura kao i 30,00 eura na ime pau š ala, u roku
+od 15 dana po pravosna ž nosti presude, donijete na osnovu Sporazuma o priznanju krivice.
+O b r a z l o ž  e nj e
+Optu ž nim predlogom Osnovnog dr ž avnog tu ž ila š tva Podgorica Kt. br. ... od ... .. ... godine okrivljenom K. B...,
+stavljeno je na teret krivi č no djelo teška tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne Gore.
  
-
-Obavezuje se okrivljeni da ovom sudu uplati novčani iznos 66,00 eura kao i 30,00 eura na ime paušala, u roku od 15 dana po pravosnažnosti presude, donijete na osnovu Sporazuma o priznanju krivice.
-
-O b r a z l o ž e nj e
-
-
-Optužnim predlogom Osnovnog državnog tužilaštva Podgorica Kt. br. ... od ... .. ... godine okrivljenom K. B..., stavljeno je na teret krivično djelo teška tjelesna povreda iz čl. 151 st. 1 Krivičnog zakonika Crne Gore.
-
+Utvr đ uju ć i da li postoji dovoljno dokaza o krivici okrivljenog za predmetno krivi č no djelo, na ro č i š tu za
+razmatranje sporazuma o priznanju krivice, dr ž avna tu ž iteljka Sla đ ana Š panjevi ć  Volkov, podnijela je sudu
+dokaze koje je prikupila u prethodnom postupku.
  
-
-Utvrđujući da li postoji dovoljno dokaza o krivici okrivljenog za predmetno krivično djelo, na ročištu za razmatranje sporazuma o priznanju krivice, državna tužiteljka Slađana Španjević Volkov, podnijela je sudu dokaze koje je prikupila u prethodnom postupku.
-
+Iz sadr ž ine prikupljenih dokaza na koje okrivljeni i njegov branilac nijesu imali primjedbi, sud je zaklju č io da
+je dr ž avna tu ž iteljka pru ž ila dovoljno dokaza o krivici okrivljenog K. B.i da je okrivljeni u vrijeme i na na č in
+opisan u izreci ove presude, u č inio krivi č no djelo teška tjelesna povreda iz č l. 151 st. 1Krivi č nog zakonika Crne
+Gore, a nakon š to je okrivljeni u svemu prihvatio sporazum o priznanju krivice.
  
-
-Iz sadržine prikupljenih dokaza na koje okrivljeni i njegov branilac nijesu imali primjedbi, sud je zaključio da je državna tužiteljka pružila dovoljno dokaza o krivici okrivljenog K. B.i da je okrivljeni u vrijeme i na način opisan u izreci ove presude, učinio krivično djelo teška tjelesna povreda iz čl. 151 st. 1Krivičnog zakonika Crne Gore, a nakon što je okrivljeni u svemu prihvatio sporazum o priznanju krivice.
-
+Odlu č uju ć i o vrsti i visini krivi č ne sankcije iz sporazuma o priznanju krivice zaklju č enog izme đ u stranaka, sud
+je cijenio sve okolnosti iz č l. 42 Krivi č nog zakonika Crne Gore, pa je u odsustvu ote ž avaju ć ih okolnosti, kao
+olak š avaju ć u cijenio č injenicu da je okrivljeni ranije neosudjivan, a koja č injenica je utvrdjena uvidom u KE,
+pa je okrivljenog osudio na kaznu rada u javnom interesu u trajanju od 120 (stotinudvadeset) č asova, koja
+kazna ć e se izvr š iti za vrijeme od 3 (tri) mjeseca, s tim da ne mo ž e biti du ž a od 60 ( š ezdeset) č asova u toku 1
+(jednog) mjeseca. Ukoliko okrivljeni ne bude vr š io kaznu rada u javnom interesu, ova kazna ć e se zamijeniti
+kaznom zatvora, tako š to ć e se svakih zapo č etih 60 ( š ezdeset) č asova rada u javnom interesu, zamijeniti
+kaznom zatvora u trajanju od 1 (jednog) mjeseca, nalaze ć i da ć e se ovakvom kaznom ostvariti svrha
+kažnjavanja iz č l. 32 st. 2 Krivi č nog zakonika Crne Gore u okviru op š te svrhe propisivanja i izricanja krivi č nih
+sankcija iz č l. 4 st. 2 Krivi č nog zakonika Crne Gore.
  
-
-Odlučujući o vrsti i visini krivične sankcije iz sporazuma o priznanju krivice zaključenog između stranaka, sud je cijenio sve okolnosti iz čl. 42 Krivičnog zakonika Crne Gore, pa je u odsustvu otežavajućih okolnosti, kao olakšavajuću cijenio činjenicu da je okrivljeni ranije neosudjivan, a koja činjenica je utvrdjena uvidom u KE, pa je okrivljenog osudio na kaznu rada u javnom interesu u trajanju od 120 (stotinudvadeset) časova, koja kazna će se izvršiti za vrijeme od 3 (tri) mjeseca, s tim da ne može biti duža od 60 (šezdeset) časova u toku 1 (jednog) mjeseca. Ukoliko okrivljeni ne bude vršio kaznu rada u javnom interesu, ova kazna će se zamijeniti kaznom zatvora, tako što će se svakih započetih 60 (šezdeset) časova rada u javnom interesu, zamijeniti kaznom zatvora u trajanju od 1 (jednog) mjeseca, nalazeći da će se ovakvom kaznom ostvariti svrha kažnjavanja iz čl. 32 st. 2 Krivičnog zakonika Crne Gore u okviru opšte svrhe propisivanja i izricanja krivičnih sankcija iz čl. 4 st. 2 Krivičnog zakonika Crne Gore.
-
+Odluku o imovinskopravnom zahtjevu sud je temeljio na odredbi č l. 239 st. 2 ZKP-a.
  
-
-Odluku o imovinskopravnom zahtjevu sud je temeljio na odredbi čl. 239 st. 2 ZKP-a.
-
  
-
+Odluka o tro š kovima postupka i sudskom pau š alu, kao u izreci presude, donijeta je na osnovu č l. 226, 227 i
+229 Zakonika o krivi č nom postupku.
  
-
-Odluka o troškovima postupka i sudskom paušalu, kao u izreci presude, donijeta je na osnovu čl. 226, 227 i 229 Zakonika o krivičnom postupku.
-
  
-
- 
-
 OSNOVNI SUD U PODGORICI
-
 Dana, 19.03.2024. godine
-
 SUDIJA
-
-Goran Đuković, s.r.
-
+Goran Đ ukovi ć , s.r.
  
-
  
-
  
-
  
-
  
-
  
-
  
-
-PRAVNA POUKA : Protiv ove presude žalba nije dozvoljena.
-
+PRAVNA POUKA : Protiv ove presude ž alba nije dozvoljena.
  
-
  
-
  
-
 Z.T.O.
-
-Sanja Radević
-
+Sanja Radevi ć
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
  
-
-DN-a: Po primjerak rješenja dostaviti:
-
+DN-a: Po primjerak rje š enja dostaviti:
 - ODT Podgorica
-
 - Okrivljenom K. B.
-
 - Braniocu okrivljenog, advokatu A. B.
-
-- Oštećenom K. N.
-
-- Punomoćniku oštećenog advokatu A. N.
-
+- Oš te ć enom K. N.
+- Punomo ć niku o š te ć enog advokatu A. N.
 -a/a
-
 - Sudskoj praksi
-
  
-
 Postupljeno dana: _________________
-
-Namještenik suda: _________________</p>
+Namje š tenik suda: _________________</p>
                 </block>
             </conclusions>
         </judgmentBody>

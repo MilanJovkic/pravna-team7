@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке41">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке41/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке41"/>
+                    <FRBRdate date="2017-06-14" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке41/sr@2017-06-14/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке41/sr@2017-06-14"/>
+                    <FRBRdate date="2017-06-14"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке41/sr@2017-06-14/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке41/sr@2017-06-14/!main.akn"/>
+                    <FRBRdate date="2026-04-13"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Vesne Moš"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Hida Raš"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Crne Gore"/>
+                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="Herceg Novom"/>
+                <TLCPerson eId="defendant_3" href="/akn/me/ontology/person/defendant" showAs="Bijelom Polju"/>
+                <TLCPerson eId="defendant_4" href="/akn/me/ontology/person/defendant" showAs="Okrivljeni Jekni"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 74/17</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>VIŠI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2017-06-14">2017-06-14</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Vesne Moš</judge>
+                    <judge>Hida Raš</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni Jeknić Savo osuđen za pokušaj teškog ubistva.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Pokušaj teškog ubistva</p>
+                    <p>Pravo na odbranu</p>
+                    <p>Prethodne presude</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_144">Član 144</ref>
+                    <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/2024/!main#art_2">Član 2</ref>
+                    <ref href="/akn/me/act/2024/!main#art_208">Član 208</ref>
+                    <ref href="/akn/me/act/2024/!main#art_66">Član 66</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_157">Član 157</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_212">Član 212</ref>
+                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/2024/!main#art_149">Član 149</ref>
+                    <ref href="/akn/me/act/2024/!main#art_220">Član 220</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_36">Član 36</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da su dokazi protiv okrivljenog dovoljni za osudu.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="nepoznato">
+                    <p>Osuda na kaznu zatvora.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>Crne Gore</person>
+                    <person>Herceg Novom</person>
+                    <person>Bijelom Polju</person>
+                    <person>Okrivljeni Jekni</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="amount">1.86 g</fact>
+                <fact key="amount">2.44 g</fact>
+                <fact key="amount">72 kg</fact>
+                <fact key="alcohol_level">1,86 promila</fact>
+                <fact key="location">Ustani</fact>
+                <fact key="location">Podgorici Kt</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Mojkovcu</fact>
+                <fact key="location">Herceg Novom</fact>
+                <fact key="location">Bijelom Polju</fact>
+                <fact key="location">Igalu</fact>
+                <fact key="location">Dobroti</fact>
+                <fact key="location">Specijalnoj</fact>
+                <fact key="location">Istra</fact>
+                <fact key="location">Herceg Novi</fact>
+                <fact key="location">Savo</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K.br. 74/17
+ 
+U IME CRNE GORE
+ 
+VIŠI SUD U PODGORICI, kao prvostepeni krivi č ni, u vije ć u sastavljenom od sudije Vladimira Novovi ć a, kao
+predsjednika vije ć a, i sudija Vesne Mo š trokol i Radomira Ivanovi ć a, kao č lanova vije ć a, uz u č e šć e Hide Ra š i ć ,
+kao zapisni č ara, u krivi č nom predmetu protiv okrivljenog Jekni ć  Sava, kojeg brani Đ ur đ i ć  Janko, advokat iz
+Podgorice, zbog krivi č nog djela te š ko ubistvo u poku š aju iz č l. 144 st.1 ta č .7 u vezi č l. 20 Krivi č nog zakonika
+Crne Gore, odlu č uju ć i po optu ž nici Vi š eg dr ž avnog tu ž ila š tva u Podgorici Kt.br. 58/17 od 14.06.2017. godine,
+koju je na glavnom pretresu zastupala Tanja Č olan Dereti ć , dr ž avna tu ž iteljka u VDT u Podgorici, nakon
+održ anog glavnog i javnog pretresa, dana 24.11.2017. godine, u prisustvu zastupnika optu ž be, okrivljenog,
+branioca okrivljenog adv. Đ ur đ i ć  Janka i o š te ć ene Jekni ć  Romane, donio je dana 28.11.2017. godine, i istog
+dana javno objavio
+ 
+PRESUDU
+ 
+Okrivljeni JEKNI Ć  SAVO JMBG 2701968283028, od oca Branka i majke Milu š e ro đ ene Jovanovi ć , ro đ en
+27.01.1968. godine, u Mojkovcu, sa prebivali š tem u Herceg Novom, Ulica Ustani č ka br. 30, dr ž avljanin Crne
+Gore, pismen, zavr š io Srednju ugostiteljsku š kolu, o ž enjen, otac dvoje djece, nezaposlen, srednjeg imovnog
+stanja, osudjivan presudom Osnovnog suda u Bijelom Polju K.br. 647/90 od 29.10.1991. godine, zbog
+krivi č nog djela la ž no predstavljanje iz č l. 212 st. 2 KZ SRCG na nov č anu kaznu od 8.000,00 dinara, presudom
+Osnovnog suda u Bijelom Polju K.br. 530/92 od 04.03.1993. godine, zbog krivi č nog djela nasilni č ko pona š anje
+iz čl. 208 st. 1 KZ SRCG na kaznu zatvora u trajanju od 45 dana, presudom Vi š eg suda u Bijelom Polju K ž .br.
+432/01 od 22.10.2001. godine zbog krivi č nog djela prevara iz č l. 149 st. 1 KZ RCG, na kaznu zatvora u trajanju
+od 3 mjeseca, presudom Osnovnog suda u Bijelom Polju K.br. 244/05 od 25.02.2008. godine, zbog krivi č nog
+djela nepru ž anje pomo ć i iz č l. 157 st. 1 KZ na 1 godinu zatvora uslovno na 2 (dvije) godine, i presudom
+Osnovnog suda u Herceg Novom K.br. 160/2013 od 27.11.2013. godine zbog krivi č nog djela nasilje u porodici
+ili u porodi č noj zajednici iz č l. 220 st. 1 KZ CG, na kaznu rada u javnom interesu u trajanju od 180 č asova, u
+pritvoru od 17.04.2017. godine do 28.11.2017. godine.
+ 
+KRIV JE
+Što je:
+ Viši Sud u Podgorici
+K 74/2017
+28. Novembar 2017
+Dana 16.04.2017.godine, oko 22,40 č asova, u Herceg Novom, u ku ć i gdje ž ivi, u ul. Ustani č koj br. 30, poku š ao
+da li š i ž ivota svoju suprugu o š te ć enu Jekni ć  Romanu, iako je bio svjestan da je mo ž e li š iti ž ivota, pa je to i
+htio, na na č in š to je nakon š to je do š ao ku ć i, a dok je o š te ć ena le ž ala na krevetu, vi š e puta ulazio u spava ć u
+sobu i izlazio iz iste i rekao o š te ć enoj »vidjet ć e š  ti ko sam ja i vidje ć ete vi ko sam ja«, da bi potom pri š ao
+ošte ć enoj, sjeo na krevet, na kojem je ista le ž ala, zamahnuo desnom rukom u kojoj je dr ž ao vilju š ku i ubo
+ošte ć enu, koja je poku š ala da se izmakne, u predjelu desne strane vrata, kojom prilikom je o š te ć enoj nanio
+laku tjelesnu povredu u vidu č etiri ubodne rane u predjelu desne strane vrata, u č ijoj neposrednoj blizini se
+nalaze veliki krvni sudovi vrata, nakon č ega je o š te ć ena vilju š ku koja joj je ostala ubodena u vratu izvukla.
+ 
+- čime je po č inio krivi č no djelo ubistvo u poku š aju iz č l. 143 u vezi č l. 20 Krivi č nog zakonika Crne Gore.
+ 
+Pa sud okrivljenog Jekni ć  Sava primjenom citiranih zakonskih odredbi, te č l. 2, 4, 5, 13, 15, 32, 36, 42, 45, 46 i
+51 Krivi č nog zakonika Crne Gore i č l. 226, 229 i 374 Zakonika o krivi č nom postupku
+ 
+OSU Đ UJE
+ 
+Na kaznu zatvora u trajanju od 2 (dvije) godine, u koju mu se ura č unava vrijeme provedeno u pritvoru od
+17.04.2017. godine do 28.11.2017. godine.
+ 
+Obavezuje se okrivljeni Jekni ć  Savo da na ime tro š kova krivi č nog postupka uplati bud ž etu Crne Gore iznos od
+845,00 €, kao i da po osnovu sudskog pau š ala plati bud ž etu Crne Gore iznos od 200,00 €, a sve u roku od 15
+dana po pravosna ž nosti presude, dok ć e o ostalim tro š kovima krivi č nog postupka sud odlu č iti naknadno,
+posebnim rje š enjem, po pribavljanju podataka o njihovoj visini.
+ 
+Na osnovu čl.66 i 72 st. 1, 2 i 3 Krivi č nog zakonika Crne Gore okrivljenom Jekni ć  Savu izri č e se mjera
+bezbjednosti obavezno lije č enje alkoholi č ara koja ć e se izvr š avati u ustanovi za izvr š enje kazne zatvora ili u
+odgovaraju ć oj zdravstvenoj ili drugoj specijalizovanoj ustanovi, dok bude postojala potreba za lije č enjem, ali
+ne du ž e od izre č ene kazne zatvora, s tim š to se vrijeme provedeno u ustanovi za lije č enje ura č unava u kaznu
+zatvora.
+ 
+O b r a z l o ž  e nj e
+ 
+Optužnicom Vi š eg dr ž avnog tu ž ila š tva u Podgorici Kt.br.58/17 od 14.06.2017. godine, okrivljenom Jekni ć
+Savu stavljeno je na teret izvr š enje krivi č nog djela teško ubistvo u poku š aju iz č l.144 st.1 ta č .7 u vezi č l. 20
+Krivi č nog zakonika Crne Gore, pri kojoj optu ž nici je njen zastupnik u cjelosti ostao do zavr š etka glavnog
+pretresa, i u svojoj zavr š noj rije č i predlo ž io sudu da okrivljenog oglasi krivim i osudi po zakonu, te da mu
+izrekne i mjeru bezbjednosti obavezno lije č enje alkoholi č ara.
+ 
+Okrivljeni Jekni ć  Savo je u odbrani datoj u prethodnom postupku, na zapisniku o saslu š anju osumnji č enog
+Kt.br.85/17 od 17.04.2017. godine, sač injenom pred ODT u Herceg Novom u bitnom naveo da je dana
+16.04.2017. godine bio sa dru š tvom u kafani kod Mitra Samard ž i ć a u Igalu. Dru ž ili su se i pri č ali, bio je Vaskrs i
+malo je popio, a nakon toga je oko 18,00 č asova oti š ao u lokal kod Bora Krivokapi ć a u Đ enovi ć e. Ku ć i je
+doš ao oko 22,30 č asova i zatekao svoju suprugu o š te ć enu Jekni ć  Romanu i sina Vojina. Vojin je bio u
+njegovom krevetu i gledao je televiziju, dok je Romana bila u njenoj sobi. Pitao je Romanu gdje je njihova
+kćerka Petra i Romana mu je rekla da je ista kod babe na donjem spratu. Dalje je naveo da je pitao Romanu
+zašto njihova k ć erka svako ve č e spava kod babe, a ne kod njih ku ć i, na š ta mu je Romana odgovorila: „ š ta ima
+veze š to spava kod babe, ti do đ e š  i pravi š  problem“. Psovala mu je i majku i oca, sve ž ivo i mrtvo i mo ž e re ć i
+da takve psovke nikada nije č uo u ž ivotu. Ni š ta nije rekao o š te ć enoj Jekni ć  Romani, niti joj je prijetio, a koliko
+je ona njega psovala i vikala mu, č ula je njena majka koja je sa njihovom k ć erkom do š la na vrata, nakon č ega
+je i njegova ta š ta po č ela da ga psuje, iako sa njom ne govori ve ć  du ž e godina, i pozvala je policiju. Tvrdi da
+nije istina da je Romanu ubo vilju š kom, niti je na bilo kakav na č in imao kontakt sa njom. Nije je primijetio i
+nije je vrije đ ao. Kada je do š la policija tra ž io je od njih da uzmu sve vilju š ke iz ku ć e i da utvrde je li je ubo
+vilju š kom ili nije ali oni to nisu u č inili. Prilikom dolaska policije njegov sin je plakao i rekao im je „tata ni š ta
+nije uradio“. Pojasnio je da je i u ranijem periodu imao problema sa suprugom i ta š tom. Ta š ta ga je 15 puta
+prijavljivala i zbog toga je prekr š ajno ka ž njavan, izricane su mu nov č ane kazne, kazna rada u javnom interesu
+i mjera bezbjednosti lije č enja od alkoholizma, zbog č ega je i š ao u du š evnu bolnicu Dobrota. Tako đ e je dva
+puta izdr ž avao kaznu zatvora u ZIKSU-u, jednom 10 dana, a drugi put 20 dana. Naveo je da je njegova
+supruga Jekni ć  Romana konfliktna osoba, kao i njena majka, i to mogu potvrditi i kom š ije koje sa njima ne
+govore, kao i drugi gra đ ani Herceg Novog. U ranijem periodu je htio da ide u podstanare ali Romana nije
+htjela da napu š ta svoju ku ć u. Njegovi problemi su uglavnom vezani za to š to ž ivi u tazbini i zbog tog trpi
+maltretiranje od svoje ta š te i supruge koje ho ć e da ga odvoje od njegove djece. Prije kriti č nog doga đ aja je pio
+crno vino. Po č eo je da pije kasno, mo ž da oko 15,00 č asova i nije puno popio, mo ž da jednu bocu i 2 dl preko
+toga. Nije mu poznato odakle o š te ć enoj poti č u povrede koje su konstatovane u izvje š taju ljekara jedinice
+HMP u Herceg Novom, a istakao je da je mogu ć e da se sama udarila.
+ 
+Okrivljeni Jekni ć  Savo je u odbrani datoj u prethodnom postupku, na zapisniku o saslu š anju osumnji č enog
+Kt.br.58/17 od 11.05.2017. godine, sa č injenom kod VDT u Podgorici u bitnom naveo da sa svojom porodicom,
+tj. suprugom i dvoje maloljetne djece ž ivi u Herceg Novom, u ulici Ustani č koj broj 30, u ku ć i ž enine porodice.
+Zbog toga š to ž ivi u tazbini je konstantno imao problema i nije u dobrim odnosima sa svojom ta š tom
+Laki ć evi ć  Milosavom, koja svaku njegovu radnju prijavljuje policiji, pa joj smeta i kada se kasno tu š ira ili kada
+lupa vratima. Sjetio se da je kriti č nog dana bio Vaskrs, da je bio sa dru š tvom vani, da je malo vi š e popio, te da
+je po dolasku ku ć i sjeo da ve č era. Pored njega se nalazio njegov sin star pet i po godina, supruga o š te ć ena
+Jekni ć  Romana se nalazila u sobi, dok je k ć erka bila kod babe u prizemlju. O š te ć ena Jekni ć  Romana je potom
+izaš la iz sobe, pri š la stolu za kojim je sjedio, po č ela da vi č e na njega, kada je odmahnuo rukama podi ž u ć i ih
+iznad glave u njenom pravcu i govorio joj da ga ostavi. Mogu ć e je da je zaka č io negdje u predjelu glave ili
+tijela. Na ruci je tada imao sat i prsten, koji predmeti su mu ostali u Herceg Novom. Svoju suprugu o š te ć enu
+Jekni ć  Romanu sigurno nije na drugi na č in povrijedio. Naveo je da su o š te ć ena Jekni ć  Romana i on sada u
+dobrim odnosima i da ga ona posje ć uje u pritvoru i tokom posjete mu donosi crte ž e njihove djece. Dalje je
+naveo da je nezaposlen, da radi samo sezonski, a kako se bli ž i sezona molio je da mu ne bude produ ž en
+pritvor, jer jedino tada mo ž e zaraditi novac koji mu je potreban za njihovu djecu. Naveo je da se, ukoliko je
+neophodno, mo ž e iseliti iz ku ć e u kojoj boravi jer u Herceg Novom ima kuma koji ima apartmane i mogao bi
+kod njega da boravi ili da iznajmi sobu. Kriti č ne ve č eri je slu ž benicima Uprave policije rekao da uzmu sve
+vilju š ke koje su imali u ku ć i, ali oni to nisu uradili. Pojasnio je da o š te ć enu Jekni ć  Romanu kriti č nog dana nije
+ubo vilju š kom ili bilo kojim drugim predmetom u bilo koji dio tijela, te da je kriti č nog dana prije nego š to je
+doš ao ku ć i, a ku ć i je do š ao negdje oko 22,30 ili 23,00 č asova, pio crno vino. Istog dana je popio tablete za
+pritisak s obzirom da ima visok krvni pritisak. Ne zna koliko je alkohola popio, a sje ć a se da mu je u stanici
+policije vr š eno alko-testiranje i da je aparat pokazao 1,86 promila. Za pritisak pije „Hemokvin“ i „Hemokvin
++“, kao i „Kardiopirin“. Sud za prekr š aje ga je vi š e puta ka ž njavao zbog prijava koje je podnosila njegova ta š ta,
+pa su mu tako izricane nov č ana kazna, zatvorska kazna, kazna rada u javnom interesu, a izricana mu je i
+mjera lije č enja u psihijatrijskoj ustanovi u Dobroti, Kotor. U no ć i kada se kriti č ni doga đ aj desio nije bilo sva đ e
+izme đ u njega i o š te ć ene Jekni ć  Romane, ve ć  je on ve č erao, a ona je do š la iz sobe i po č ela da vi č e na njega, na
+šta on nije odgovarao, samo joj je rekao ne š to u smislu da ga pusti da ve č era i da ć e kasnije razgovarati. Tada
+je podigao ruke kako je prethodno opisao i mo ž da je zaka č io o š te ć enu Jekni ć  Romanu rukama, odnosno
+predmetima koji su mu bili u rukama, tj. satom ili prstenom. Narukvica na njegovom satu je metalna i mo ž e
+se izvr š iti uvid u istu, te utvrditi da je mo ž da njom povrijedio o š te ć enu Jekni ć  Romanu. Kada je mahao
+rukama prema o š te ć enoj Jekni ć  Romani, pribor za jelo mu nije bio u rukama ve ć  je vjerovatno bio na stolu.
+Ošte ć ena Jekni ć  Romana je bila u svojoj sobi kada je on do š ao ku ć i i odmah je iz sobe po č ela da vi č e na
+njega, a on joj je rekao da ga pusti. Pojasnio je da je kada je do š ao u ku ć u stao u hodnik da skine cipele, a
+ošte ć ena Jekni ć  Romana je iz sobe po č ela da vi č e, nakon č ega je on u š ao u sobu i rekao joj da ga pusti na
+miru i da ide da ve č era. Sjeo je da ve č era i tada je o š te ć ena Jekni ć  Romana iza š la iz sobe i po č ela da vi č e na
+njega i on je tada odmahnuo rukama, a o š te ć ena je potom psuju ć i oti š la iz prostorije u kojoj je on ve č erao.
+Nakon š to je ve č erao, u š ao je u sobu u kojoj je o š te ć ena bila da uzme pid ž amu i tada izme đ u njih nije bilo
+nikakvog kontakta, ni fizi č kog ni verbalnog. O š te ć ena Jekni ć  Romana u vrijeme kada je on u š ao u njenu sobu
+da uzme pid ž amu nije ni bila u istoj, ve ć  u kupatilu ili na terasi. Nedugo zatim su u njihovu ku ć u do š li
+služ benici Uprave policije. Nije znao ko je zvao policiju, pretpostavlja da je to uradila o š te ć ena Jekni ć
+Romana ili njena majka, koja ž ivi u prizemlju ku ć e. Č itavo vrijeme od njegovog dolaska ku ć i kriti č ne ve č eri do
+dolaska policije, u ku ć i su bili samo on, o š te ć ena Jekni ć  Romana i njihov petogodi š nji sin. Dalje je pojasnio da
+se po nalogu Suda za prekr š aje u Herceg Novom i Osno vnog suda u Herceg Novom dva puta lije č io u
+Specijalnoj bolnici u Dobroti od bolesti zavisnosti od alkohola. Lije č enje odre đ eno od strane Osnovnog suda
+bilo je ambulantno i u po č etku je i š ao svake nedjelje godinu dana, a nakon toga svaki mjesec. Kriti č ne ve č eri
+izme đ u njega i o š te ć ene Jekni ć  Romane nije bilo razmjene udaraca, ona je vikala, a on je odmahnuo rukom u
+njenom pravcu i tada je eventualno zaka č io. Nikada ranije nije bilo fizi č kog nasilja sa njegove strane prema
+supruzi.
+ 
+Okrivljeni Jekni ć  Savo je u odbrani datoj na glavnom pretresu u bitnom naveo da je kriti č ne ve č eri oko 22,30
+ili 23,00 č asa do š ao u ku ć u gdje ž ivi sa porodicom, a koja se nalazi u Herceg Novom. Č im je u š ao u hodnik i
+krenuo da skida cipele, njegova supruga koja je bila u spava ć oj sobi je po č ela da vi č e na njega u smislu gdje je
+bio cijeli dan, obzirom da je toga dana bio Vaskrs. Svijetlo u njenoj sobi je bilo isklju č eno i samo je bilo
+upaljeno svijetlo u hodniku. O š te ć enoj Jekni ć  Romani je kazao da se ne raspravljaju vezano za to š to je ona
+pomenula. Prethodno toga dana je konzumirao alkohol ali nije bio skroz pijan ve ć  je bio u nekom pripitom
+stanju, s obzirom da je normalno do š ao vozilom do ku ć e u kojoj ž ivi. Iz hodnika je oti š ao u dnevni boravak
+kako bi ne š to pojeo i sjeo je za sto. Njegova supruga je nastavila da vi č e i da psuje i do š la je do njega. Pojasnio
+je da je njegov sin Vojin bio u dnevnom boravku u momentu kada je on u š ao u ku ć u, a gdje je i ostao, sve dok
+nije zavr š io sa ve č erom. U jednom momentu dok je sjedio za stolom je odmahnuo rukama i nekako istima
+odgurnuo svoju suprugu koja se bila nagla prema njemu tako š to se dlanovima oslonila na sto, a mogu ć e je
+da je u ruci tada dr ž ao vilju š ku. Zatim je njegova supruga oti š la u kupatilo i prilikom izlaska iz dnevne sobe je
+nešto progovorila, odnosno komentarisala. Kada je zavr š io sa ve č erom, Vojina je odveo u spava ć u sobu i
+legao ga u krevet. Nakon toga je krenuo prema kupatilu i ispred kupatila se mimoi š ao sa suprugom jer je ona
+tada iza š la iz kupatila. Kada je zavr š io obaveze u kupatilu, po š ao je u spava ć u sobu gdje je bio Vojin kako bi
+uzeo pid ž amu, kojom prilikom se opet mimoi š ao sa suprugom jer je ona oti š la na terasu. Nikakve povrede
+kod nje nije primijetio. Tek u policiji je saznao da ona ima povrede. Da je imao bilo kakvu namjeru da ubije
+svoju suprugu mogao je to uraditi, jer je do dolaska policije proteklo vi š e od pola sata. Kasnije su u stan do š li
+policijski slu ž benici, to jest njih dvojica, i njega su odveli u prostorije CB Herceg Novi. Tra ž io je od slu ž benika
+policije da uzmu na uvid sve vilju š ke, ali oni to nijesu u č inili, govore ć i da za tim nema potrebe. Kada mu je
+supruga do š la prvi put u posjetu u Istra ž ni zatvor rekla mu je da je i š la kod tu ž ioca u Herceg Novi, nije znao
+zbog č ega, ali da ga nije na š la jer je valjda bio na odmoru. Njega je supruga posjetila u pritvoru jedno 4-5 puta
+i u tim navratima mu je donosila hranu, garderobu i upla ć ivala novac na njegov ra č un za kantinu. Naveo je da
+je lo š eg zdravstvenog stanja, a zbog boravka u pritvoru nije u mogu ć nosti da radi da bi porodici obezbijedio
+prihode. Pred svima se mo ž e zakleti da alkohol vi š e ne ć e da konzumira i da mu je pre č a porodica od toga.
+Nakon š to je upoznat na razli č itosti u odnosu na odbranu datu u prethodnom postupku na zapisniku o
+saslu š anju osumnji č enog Kt.br. 85/2017 od 17.04.2017.godine sa č injenom kod ODT u Herceg Novom, naveo
+je da je na glavnom pretresu zaboravio da ka ž e ono š to je rekao kod tu ž ioca u Herceg Novom, a to je da je te
+večeri ta š ta zajedno sa k ć erkom do š la na terasu od koje postoje vrata za ulazak u hodnik. Vjerovatno je on
+pominjao tu ž iocu u Herceg Novom prilikom izno š enja odbrane da je odmahnuo rukama i nekako odgurnuo
+istima svoju suprugu, a da to nije u š lo u zapisnik. Potvrdio je da su na zapisniku o saslu š anju osumnji č enog
+Kt.br. 85/2017 od 17.04.2017.godine godine sa č injenom kod ODT u Herceg Novom njegovi potpisi. Nakon š to
+je upoznat na razli č itosti u odnosu na odbranu datu u prethodnom postupku na zapisniku o saslu š anju
+okrivljenog Kt.br. 58/2017 od 11.05.2017.godine godine sa č injenom kod VDT u Podgorici, pojasnio je da ne
+isklju č uje mogu ć nost da mu je vilju š ka bila u ruci u momentu kada je odmahnuo rukama i nekako odgurnuo
+istima svoju suprugu. Ne zna zbog č ega je kod tu ž ioca u Podgorici rekao da njemu pribor za jelo nije bio u
+rukama. Od kad je supruga pri š la stolu gdje je ve č erao, pa do momenta kad je zamahnuo rukama i istima je
+odgurnuo, proteklo je mo ž da 1-2 minuta. Dok je ve č erao koristio je i vilju š ku i no ž . Ne isklju č uje mogu ć nost ni
+da mu je u drugoj ruci bio no ž  u momentu kada je odmahnuo rukama i nekako odgurnuo istima svoju
+suprugu. Nakon š to je legao u krevet u dnevnoj sobi, kod njega je do š ao njegov sin Vojin i tra ž io mu da legne
+kod njega i da mu pusti televizor da gleda crtani, š to je i u č inio. Pojasnio je da je sjedio za stolom i ve č erao.
+Njegova supruga o š te ć ena Jekni ć  Romana je do š la i naslonila se dlanovima na sto sa njegove desne strane.
+Tokom ustajanja sa stolice pru ž io je obje ruke u njenom pravcu, vjerovatno negdje u pravcu ramena. Sat i
+prsten su mu bili na lijevoj ruci. De š njak je. Ve č era je bila na stolu kada je do š ao u stan, a osim ve č ere na stolu
+je bio i pribor, to jest vilju š ka, mali no ž  i veliki no ž  za rezanje hljeba. Ni jedna dlaka na glavi mu nije pomislila
+da u č ini ono š to mu se optu ž nicom stavlja na teret.
+ 
+Okrivljeni Jekni ć  Savo je u zavr š noj rije č i kazao da prihvata zavr š nu rije č  svog branioca, te da nikada nije
+pomislio da ubije svoju suprugu, č ak ni u najve ć oj svadji.
+ 
+Branilac okrivljenog Jekni ć  Sava, adv. Đ ur đ i ć  Janko, u zavr š noj rije č i je zastupao tezu da nije dokazano da je
+njegov branjenik po č inio krivi č no djelo stavljeno mu na teret zbog č ega je predlo ž io da ga sud oslobodi od
+optu ž be.
+ 
+Sud je na glavnom pretresu, u dokaznom postupku: saslu š ao svjedokinju – o š te ć enu Jekni ć  Romanu,
+proč itao izvje š taj ljekara jedinice za HMP u Herceg Novom broj protokola 2271 od 16.04.2017.godine, pro č itao
+zapisnik o izvr š enoj kontroli prisustva alkohola u organizmu UP CB Herceg Novi broj 0045074 od 17.04.2017.
+godine, pro č itao medicinsku dokumentaciju JZU Specijalne bolnice za psihijatriju Dobrota Kotor izdatu na
+ime okrivljenog Jekni ć  Sava i to: istoriju bolesti mati č ni broj 11102 sa datumom ispisa iz bolnice od
+15.12.2016. godine, otpusnu listu sa epikrizom broj 11102, terapeutski list, izvje š taj ljekara specijaliste broj
+protokola 3458 od 11.11.2016. godine, istoriju bolesti mati č ni broj 11102 sa datumom ispisa 28.09.2015.
+godine, otpusnu listu sa epikrizom broj 11102 od 28.09.2015.godine i terapeutski list, pro č itao rje š enje
+Podru č nog organa za prekr š aje Herceg Novi PP.br. 1533/14-2 od 14.10.2014.godine, pro č itao rje š enje
+Podru č nog organa za prekr š aje Herceg Novi PO.br. 1780/14-2 od 03.06.2015. godine, pro č itao rje š enje
+Podru č nog organa za prekr š aje Herceg Novi PP.br. 1114/15-2 od 18.09.2015. godine, pro č itao rje š enje Suda za
+prekr š aje Budva – Odjeljenje Herceg Novi PP.br. 1350/15-2 od 09.12.2015.godine, pro č itao rje š enje Podru č nog
+organa za prekr š aje Herceg Novi PP.br. 1540/15-2 od 11.03.2016. godine, pro č itao rje š enje Suda za prekr š aje
+Budva – Odjeljenje Herceg Novi PP.br. 1192/16-2 od 19.09.2016. godine, pro č itao rje š enje Suda za prekr š aje
+Budva – Odjeljenje Herceg Novi PP.br. 1649/16-2 od 22.10.2016. godine, pro č itao presudu Osnovnog suda u
+Herceg Novom K.br. 160/13 od 27.11.2013. godine, pro č itao nalaz i mi š ljenje Komisije vje š taka
+neuropsihijatra prof. dr Stanka Mili ć a, psihijatra dr Ž eljka Golubovi ć a i psihologa Branke Stepanovi ć  Ili ć  Kti.br.
+38/17 od 12.06.2017. godine, saslu š ao vje š take neuropsihijatra prof. dr Stanka Mili ć a i psihijatra dr Ž eljka
+Golubovi ć a, pro č itao nalaz i mi š ljenje vje š taka sudske medicine dr Nemanje Radojevi ć a Kt.br. 85/17 od
+23.04.2017. godine i dopunu nalaza i mi š ljenja ovog vje š taka Ktr. br. 523/17 od 04.05.2017. godine, saslu š ao
+vješ taka sudske medicine dr Nemanju Radojevi ć a i pro č itao izvod iz Kaznene evidencije Ministarstva pravde
+Crne Gore br. 04/2-72-13259/17 od 08.07.2017.godine, izdat na ime okrivljenog Jekni ć  Sava.
+ 
+Svjedokinja - o š te ć ena Jekni ć  Romana je u iskazu datom u prethodnom postupku na zapisniku o saslu š anju
+svjedoka Kti.br. 85/2017 od 18.04.2017. godine, sa č injenom kod ODT u Herceg Novom, u bitnom navela da je
+dana 16.04.2017. godine njen suprug okrivljeni Jekni ć  Savo bio odustan cijeli dan i da se ku ć i vratio oko 22,30
+časova. Bio je u vidno pripitom stanju i po dolasku je odmah po č eo da je provocira i vrije đ a. U tom momentu
+su se u ku ć i nalazili ona i njen sin Vojin, star 5 i po godina. Okrivljeni Jekni ć  Savo je pitao gdje je njihova
+kćerka Petra i ona mu je rekla da spava kod babe na donjem spratu, na š ta je on pitao: »ko je pustio« i govorio
+da ona ne mo ž e da ide dolje i sli č no. Odgovorila mu je da ć e je odmah zvati da do đ e, ako je to problem, na š ta
+joj je okrivljeni Jekni ć  Savo rekao da nema potrebe. Okrivljeni Jekni ć  Savo je potom oti š ao u dnevnu sobu, a
+za njim i njihov sin Vojin, a ona se nalazila u spava ć oj sobi, ta č nije u krevetu gdje je le ž ala. Dalje je navela da
+je okrivljeni Jekni ć  Savo po č eo da joj se obra ć a rije č ima »smeta ti prolje ć e, ti si luda, tvoji su svi ludi« i non
+stop je ulazio i izlazio iz spava ć e sobe. Nije reagovala na ove njegove uvrede ve ć  je i dalje le ž ala na krevetu.
+Okrivljeni je par puta dolazio do kreveta gdje je le ž ala ali bi se smirio i vratio. Govorio je »Vidjet ć e š  ti ko sam
+ja i vidje ć ete vi ko sam ja« i u jednom momentu je sjeo na krevet i vilju š kom koju je dr ž ao u desnoj ruci je ubo
+u predjelu desnog dijela vrata. Misli da je okrivljeni htio ubosti u predjelu grla ali se ona instinktivno
+pomjerila i zato je zaka č io u predjelu vrata. Vilju š ka je ostala u njenom vratu i ona je rukom izvadila, odnosno
+makla, a okrivljeni je i dalje sjedio na krevetu. Ustala je, uzela rakiju i oti š la u kupatilo kako bi isprala ranu, a
+okrivljeni je i š ao za njom i dalje pri č ao ali se nije mogla sjetiti š ta je sve govorio. Zatim se iz kupatila vratila u
+sobu gdje je uzela telefon, ponovo oti š la u kupatilo i pozvala svoju majku Milosavu i rekla joj da pozove
+policiju, ali joj nije rekla š to se desilo jer se pla š ila da okrivljeni Jekni ć  Savo to ne č uje, a nakon toga je sakrila
+telefon. Okrivljeni Jekni ć  Savo je stalno dolazio i pri č ao, a ni u jednom momentu nije pokazivao znake
+kajanja. Nakon toga je do š la policija i kada ih je č ula ona je iza š la, otklju č ala vrata i policajcima rekla da je
+okrivljeni u ku ć i. Prilikom privo đ enja okrivljeni Jekni ć  Savo je i dalje bio nasilan kako prema njoj, tako i
+prema policiji, krenuo je prema njoj u prisustvu policije i jedan od policajaca ga je sprije č io. Okrivljeni Jekni ć
+Savo se tu raspravljao sa policajcima, a poslije su ga isti odveli u stanicu policije. Nakon toga je oti š la u hitnu
+pomo ć  gdje su je pregledali i ukazali joj medicinsku pomo ć , dobila je injekciju, a zatim je po š la u stanicu
+policije radi davanja potrebnih obavje š tenja. Dalje je navela da je u kriti č nom doga đ aju zadobila ubod
+vilju š kom u predjelu vrata i ta povreda se mo ž e vidjeti, a bolio je i mi š i ć  na vratu. Imala je povredu i u predjelu
+leđa ali nije znala od č ega joj je ova povreda, a mogu ć e je da je okrivljeni udario ali nije mogla da tvrdi jer nije
+sigurna. Sa okrivljenim od ranije ima problema i vi š e puta ga je prijavljivala policiji, vi š e puta mu je su đ eno, a
+bio je i na lije č enju od alkohola. Posljednji put ga je njena majka prijavila prije 10 dana zbog maltretiranja
+djece, kojom prilikom je ona bila na putu. Okrivljeni se lije č io od alkoholizma u du š evnoj bolnici u Dobroti
+kod dr Roganovi ć  Marine u jesen 2016. godine, a i prije toga je bio na lije č enju ali se nije mogla sjetiti kada.
+Sva lije č enja su bila po nalogu suda. Prilikom posljednjeg lije č enja, doktorka je predlo ž ila da okrivljeni Jekni ć
+Savo ostane jo š  mjesec dana, ali je okrivljeni to odbio. Okrivljeni je sjedio na krevetu neposredno prije nego
+što je ubo vilju š kom u vrat sa njene desne strane. Nije mu ni š ta uvrijedljivo govorila jer je znala kakav je kad
+popije. Jedino mu je rekla »svi normalni ljudi na dana š nji dan provode vrijeme sa porodicama, a ne sa
+ološ ima i pijancima kao š to su Boro Bo š kovi ć  i Mitar Samard ž i ć «, koji zajedno sa njim piju alkohol. Dok je
+okrivljeni ulazio u sobu nekoliko puta, nije imao ni š ta u ruci koliko je vidjela, a zadnji put kad je do š ao imao je
+u ruci vilju š ku koju je prethodno koristio kada je ne š to jeo ili je mahinalno ponio sa sobom. To je klasi č na
+vilju š ka koju koriste kao pribor za jelo. Ta vilju š ka se i dalje nalazi u njihovoj ku ć i. Kada je okrivljeni ubo
+vilju š kom u vrat, njihov sin Vojin je bio u dnevnoj sobi i nije to vidio ve ć  je do š ao poslije toga ali je mogao č uti
+njihov razgovor. Odnosi okrivljenog sa njenom majkom su lo š i jer je okrivljeni stalno vrije đ a i govori joj ru ž ne
+riječ i. Njihovi k ć erka i sin povremeno spavaju kod babe, posebno kada ona ide na put. U ranijem periodu
+okrivljeni se nije bunio zbog toga, a u zadnje vrijeme mu je to smetalo, posebno od kako ga je njena majka
+prijavila zbog zlostavljanja djece. Rana joj je malo prokrvarila i isprala je rakijom. To nije bilo veliko krvarenje
+već svega nekoliko kapljica krvi. U izvje š taju ljekara za hitnu medicinsku pomo ć  stoji Laki ć evi ć  Romana, a ne
+Jekni ć  Romana, š to je ina č e njeno prezime, jer joj u zdravstvenoj knji ž ici stoji prezime Laki ć evi ć  i to je tako
+ostalo po š to nije izvr š ila izmjenu prezimena kao š to je to u č inila u li č noj karti. Nije se pridru ž ila krivi č nom
+gonjenju i nije postavila imovinskopravni zahtjev prema okrivljenom, samo je tra ž ila da joj ne prilazi niti da
+joj se vi š e na bilo koji na č in obra ć a.
+ 
+Svjedokinja - o š te ć ena Jekni ć  Romana je u iskazu datom na glavnom pretresu u bitnom navela da je dana
+16.04.2017.godine bio Uskrs i njen suprug okrivljeni Jekni ć  Savo je ujutro iza š ao iz ku ć e da pro š eta. Obzirom
+da se pribli ž avao Uskr š nji ru č ak vi š e puta je okrivljenog Jekni ć  Sava zvala na telefon da dodje na ru č ak, kako
+bi ru č ali kao porodica. U tim telefonskim razgovorima on joj je rekao da je u kafani zajedno sa Borom
+Boš kovi ć em, kao i da se nalazi u kafani koju dr ž i jedan Samard ž i ć  koji je njoj neki kum. Ona o Boru Bo š kovi ć u
+ima veoma lo š e mi š ljenje, jer se radi o jednoj »pijanici« koja navla č i druge da piju. U ovim telefonskim
+razgovorima okrivljeni Jekni ć  Savo joj nije rekao da ne ć e do ć i ku ć i, ve ć  da ć e do ć i kada zavr š i dru ž enje u
+kafani. Negdje oko 22-23 č asa okrivljeni Jekni ć  Savo je do š ao ku ć i. Č im je do š ao, ona je »osula paljbu« prema
+njemu. Kazala mu je da je njoj dosta Bo š kovi ć a i njegovog pijan č enja sa Bo š kovi ć em, da je Bo š kovi ć  dosta
+ljudi upropastio, a mo ž da je i opsovala okrivljenog Jekni ć  Sava. U momentu kada je Savo do š ao ku ć i, le ž ala je
+u krevetu u spava ć oj sobi. Dodala je da je Bo š kovi ć  Boro ina č e degradiran zbog pijan č enja. Prije nego š to je
+njen suprug Savo do š ao u ku ć u, ona mu je postavila ve č eru na stolu u dnevnoj sobi, odnosno trpezariji. Po
+ulasku u ku ć u Savo je oti š ao u trpezariju i sjeo za sto da jede. U trpezariji je bio i njihov sin Vojin. Ustala je iz
+kreveta i do š la u trpezariju. Nije se mogla ta č no sjetiti da li ju je tada ili odmah po ulasku u ku ć u Savo pitao
+gdje je Petra, njihova k ć erka, a ona mu je na to odgovorila da je Petra kod babe. Savo i ona su se
+»prepucavali«. Savu je kazala da mora da odlu č i da li ć e da se posveti porodici ili dru ž enju sa ovim pijancima
+u kafani, a on je na to kazao da je ona luda i nenormalna, a da je Boro Bo š kovi ć  jako cijenjen i fin. Objasnila je
+okrivljenom da je Boro Bo š kovi ć  upravo zbog konzumiranja alkohola degradiran u slu ž bi. Zatim se vratila u
+spava ć u sobu, jer nije mogla da slu š a ovakve nebuloze. Sjela je na krevet, a njen suprug Savo je vi š e puta
+navra ć ao do sobe – ulaza u sobu, govore ć i da ne treba tako da pri č a za njegovog prijatelja, misle ć i na Bora.
+Zatim se njen suprug Savo ponovo vratio u trpezariju i pretpostavlja da je sjeo da jede. Kada je Savo kazao da
+je Boro u pravu kada ka ž e da je ona luda i svi njeni, ona je »djipila« iz kreveta i po š la u trpezariju. Rekla je
+Savu kada je do š la u trpezariju da ide da ž ivi sa Borom i da ć e i njega i Bora tu ž iti zbog klevete. Dok je ovo
+govorila, pri š la je Savu koji je sjedio za trpezarijskim stolom. Pri š la mu je sa njegove lijeve strane i sigurno mu
+nije pri š la skr š tenih ruku, a zatim je i Savo ustao podi ž u ć i ruke u vis. Ona i Savo su se zatim malo pogurali.
+Vojin je ne š to tra ž io, nije se mogla sjetiti š ta je tra ž io ali se sje ć a da je Vojin prethodno bio u sobi i da je do š ao
+do trpezarije to da tra ž i. Poslije toga je oti š la u kupatilo i vidjela je ogrebotinu u predjelu desne strane vrata.
+Vidjela je da ima krvi, a zatim je toalet papirom o č istila krv sa predjela desne strane vrata. Bilo je veoma malo
+krvi u tragovima. U medjuvremenu je pozvala majku i kazala joj da Savo opet pravi skandal, i njena majka je
+pozvala policiju. Do dolaska policije su ostali u stanu, a Savo je oti š ao da legne Vojina u krevet u dnevnoj sobi.
+Kada je do š la policija Savo se pomamio, protestuju ć i kod policajaca š to stalno dolaze kod njih. Ina č e, njena
+majka i Savo su u lo š im odnosima, a njena majka č im č uje galamu u njihovoj ku ć i odmah zove policiju. Savo
+je ina č e normalan dok ne popije alkohol, ali č im popije to je sasvim druga li č nost. Nije se pridru ž ila krivi č nom
+gonjenju protiv okrivljenog i nije postavila imovinsko pravni zahtjev. Nakon š to je upoznata na razli č itosti u
+odnosu na iskaz dat u prethodnom postupku na zapisniku o saslu š anju svjedoka Kt.br. 85/2017 od
+18.04.2017.godine sa č injenom kod ODT u Herceg Novom, navela je da je ta č an iskaz koji je dala na glavnom
+pretresu, a razli č itosti objasnila time š to je u prethodnom postupku dala takav iskaz da bi njen suprug Savo
+bio š to stro ž ije ka ž njen zbog nasilja u porodici, odnosno da bi ga poslali da se lije č i. U momentu kada je njen
+suprug Savo podigao ruke imao je sat na lijevoj ruci, po š to ga stalno nosi, prsten ali ne zna na kojoj ruci, a
+nešto joj je »bljesnulo«, pa misli i da je ne š to od pribora za jelo imao tom prilikom u ruci. U tom mahanju
+rukama dok je Savo ustajao sa stolice, osjetila je ne š to u predjelu desne strane vrata, a nakon toga vi š e ni š ta
+nije osjetila vezano za ovaj predio vrata. Tek kada je oti š la u kupatilo vidjela je i da su joj pale š nale sa kose i
+da su ostale na gornjem dijelu odje ć e sa desne strane. Posje ć ivala je okrivljenog Jekni ć  Sava par puta tokom
+trajanja istrage, kada su razgovarali o porodici i on joj je obe ć ao da vi š e ne ć e da pije. Napravili su dogovor da
+ubudu ć e fino ž ive, odnosno da Savo prestane da pije, jer u svemu ovome najvi š e ispa š taju djeca. Ne zna da li
+se pred Osnovnim sudom u Herceg Novom vodi krivi č ni postupak protiv Sava, a u kom su o š te ć ena njihova
+djeca, a i š li su kod tu ž iteljke da daju iskaz vezano za to. Od momenta kada je osjetila ne š to u predjelu desne
+strane vrata pa do dolaska policije proteklo je mo ž da 10 – 15 minuta. Za ovo vrijeme okrivljeni Jekni ć  Savo i
+ona su se mimoilazili u ku ć i, a radi se o manjem stanu. Da je bilo strah za Vojina dovela bi ga kod nje, a ne bi
+ga ostavljala sa Savom. Nije je bilo strah da ć e je u ovih 10-15 minuta Savo fizi č ki napasti, a da je bilo strah,
+izaš la bi iz ku ć e. Prije nego š to je Savo do š ao, ona mu je od pribora za jelo postavila vilju š ku, ka š iku, no ž  i no ž
+za rezanje hljeba, kao i hvataljke za meso i drugu hranu. Ovaj no ž  za rezanje hljeba je bio veli č ine 20 do 30 cm.
+Sigurno je opsovala Sava, ali se nije mogla sjetiti rije č i psovke. Stalno u kosi nosi š nale. Kriti č nom prilikom je
+nosila plasti č ne š nale koje li č e na č e š alj veli č ine 7 – 8 cm. Navela je da je njima kao porodici veoma te š ko bez
+Sava, kako materijalno, tako i fizi č ki. Ne mo ž e da stigne da brine o oboje djece, a glavni finansijski doprinos
+porodici daje Savo. Iz ovih razloga se obra ć ala tu ž ila š tvu da Savu ukine pritvor. Pribor za jelo ka š ika, vilju š ka i
+nož  su bili od metala, a radi se o klasi č nom posudju koje je bilo standardne veli č ine. Nakon doga đ aja, kada se
+vratila ku ć i na podu u trpezariji je na š la ka š iku, vilju š ku i no ž , a na njima nije primijetila tragove krvi. U
+zavr š noj rije č i je predlo ž ila da sud njenog supruga oslobodi od optu ž be.
+ 
+U zapisniku o izvr š enoj kontroli prisustva alkohola u organizmu UP CB Herceg Novi broj 0045074 od
+17.04.2017.godine, na ime Jekni ć  Sava, navedeno je da je njegovo testiranje izvr š eno dana 17.04.2017.
+godine u 00,23 č asova, alkotestom marke tip »Dreger«, fabri č kog broja 0017, te da je Jekni ć  Savo imao 1,86
+g/kg alkohola u organizmu.
+ 
+Iz rje š enja Podru č nog organa za prekr š aje u Herceg Novom PP.br. 1533/14-02 od 14.10.2014. godine, koje je
+postalo pravosna ž no dana 14.10.2014. godine, utvr đ uje se da je okrivljeni Jekni ć  Savo ogla š en krivim zbog
+prekr š aja iz č l.36 st.1 ta č . 1 i 3 i st. 2 Zakona o za š titi od nasilja u porodici, a zato š to je: ”dana 13.10.2014.
+godine, oko 23:15 č asova u ul. Ustani č koj br.30, op š tina Herceg Novi, u porodi č noj ku ć i Laki ć evi ć  Milosave,
+Jekni ć  Savo u vidno alkoholisanom stanju verbalno napao, psovao i nazivao pogrdnim imenima svoju
+suprugu Jekni ć  Romanu, rije č ima: ”Kurvo, majku ti kurvu jebem zovi policiju, jebem ti sve od ro đ enja pa do
+groba oca majku i tako dalje”, a zatim je istu fizi č ki napao hvataju ć i je za desnu nogu i govore ć i: ”slomi ć u ti
+desnu nogu”, nakon č ega Jekni ć  Savo iz kuhinje uzima kuhinjski no ž  du ž ine sje č iva 10 cm i kre ć e u pravcu
+svoje supruge Romane, u č emu ga sprje č ava maloljetna ć erka.”, te da mu je izre č ena kazna zatvora u trajanju
+od 20 dana, kao i za š titne mjere zabrana uznemiravanja i uho đ enja Jekni ć  Romane u trajanju od 60 dana i
+udaljenje iz stana u trajanju od 60 dana.
+ 
+Iz rje š enja Podru č nog organa za prekr š aje u Herceg Novom PP.br. 1780/14-02 od 03.06.2015. godine, koje je
+postalo pravosna ž no dana 03.06.2015. godine, utvr đ uje se da je okrivljeni Jekni ć  Savo ogla š en krivim zbog
+prekr š aja iz č l.36 st.1 ta č .1, 2 i 3 Zakona o za š titi od nasilja u porodici, a zato š to je: ”dana 20.12.2013. godine
+oko 21:20 č asova u ul. Ustani č koj u porodi č noj ku ć i vl. Laki ć evi ć  Milosave, op š tina Herceg Novi, u vidno
+alkoholisanom stanju nakon kra ć e prepirke obratio svojoj supruzi Jekni ć  Romani slede ć im rije č ima: ”Ubić u
+te, odbrobija ć u te, ne ć e š  se mo ć i pogledati na ogledalo! Majka ti je kurva i ti si kurva, tvoji su svi ludi, tvoja
+majka je otrovala tvog oca”, nakon č ega je Romana poku š ala da smiri imenovanog, pri č emu je isti uzeo u
+ruke no ž  du ž ine oko 15 cm, ustao sa stolice i ponovo se obratio svojoj supruzi rije č ima: ”Ubić u te, unakazi ć u
+te”, i “Dana 13.12.2014. godine oko 20,00 č asova u Herceg Novom, u ul. Ustani č ka br.30, u porodi č noj ku ć i
+Laki ć evi ć  Milosave, Jekni ć  Savo je u alkoholisanom stanju, pri koncentraciji 2,44 g/kg, alkohola u organizmu,
+što je utvr đ eno alkometrom marke “Dreger” fab. br.0016, nakon kra ć e verbalne prepirke sa svojom suprugom
+Jekni ć  Romanom, fizi č ki napao na na č in š to je rukom zadao dva udarca u predjelu stomaka, pri tom joj
+uputiv š i rije č i prijete ć e sadr ž ine: “Ako prijavi š  policiji, odrobija ć u vas”, kao i rije č i uvrjedljivog sadr ž aja:
+“Kurvo, luda č o”, š to je kod iste izazvalo osje ć aj ugro ž enosti i uznemirenosti”, te da mu je izre č ena za š titna
+mjera obavezno lije č enje od zavisnosti od alkohola, koja ć e se izvr š avati u Specijalnoj bolnici za psihijatriju
+Kotor dok bude postojala potreba za lije č enjem, ali ne du ž e od jedne godine.
+ 
+Iz rje š enja Podru č nog organa za prekr š aje u Herceg Novom PP.br. 1114/15-02 od 18.09.2015. godine, koje je
+postalo pravosna ž no 18.09.2015. godine, utvr đ uje se da je okrivljeni Jekni ć  Savo ogla š en krivim zbog
+prekr š aja iz č l.36 st.1 ta č . 3 Zakona o za š titi od nasilja u porodici, a zato š to je: ”dana 17.09.2015. godine u
+22:30 č asova u Herceg Novom, u ulici Ustani č koj br.30, u porodi č noj ku ć i Laki ć evi ć  Ljeposave, Jekni ć  Savo je
+poč inio prekr š aj iz Zakona o za š titi nasilja u porodici, na na č in š to se u vidno alkoholisanom stanju obratio
+svojoj supruzi Jekni ć  Romani rije č ima: “Jebem ti majku, majka ti je kurva, treba vas pobiti, na ć era ć e š  me da ti
+nož em iscjepam glavu”, nakon č ega se obratio maloljetnoj k ć erci Jekni ć  Petri sa rije č ima: ”Ako bude š  li č ila na
+majku, ubit ć u te da ne ž ivi š ”, š to je kod Jekni ć  Romane i Jekni ć  Petre izazvalo osje ć aj uznemirenosti i
+ugro ž enosti.”, te da mu je izre č ena kazna zatvora u trajanju od 10 dana, kao i za š titna mjera obavezno
+liječ enje alkoholi č ara od zavisnosti.
+ 
+Iz rje š enja Suda za prekr š aje Budva – Odjeljenje Herceg Novi PP.br. 1350/15-2 od 09.12.2015.godine, koje je
+postalo pravosna ž no dana 09.12.2015. godine, utvr đ uje se da je okrivljeni Jekni ć  Savo ogla š en krivim zbog
+prekr š aja iz č l.36 st.1 ta č . 2 i 3 Zakona o za š titi od nasilja u porodici, a zato š to je: ”dana 20.11.2015. godine
+oko 16:15 č asova u Herceg Novom, u Ustani č koj br.30 u porodi č noj ku ć i Laki ć evi ć  Milosave, Jekni ć  Savo
+poč inio prekr š aj iz Zakona o za š titi nasilja u porodici, na na č in š to je u alkoholisanom stanju, prijetio
+napadom i vrije đ ao svoju suprugu Jekni ć  Romanu sljede ć im rije č ima: ”Ti si luda, malo mi hvali da vas sve
+pobijem i tebe i tvoju majku koja je kurva i luda, tebe treba ubiti a to ć e uraditi neko drugi umjesto mene”, te
+da mu je izre č ena kazna zatvora u trajanju od 30 dana, kao i za š titna mjera obavezno lije č enje alkoholi č ara od
+zavisnosti,
+ 
+Iz rje š enja Podru č nog organa za prekr š aje u Herceg Novom PP.br. 1540/15-02 od 11.03.2016. godine, koje je
+postalo pravosna ž no dana 11.03.2016. godine, utvr đ uje se da je okrivljeni Jekni ć  Savo ogla š en krivim zbog
+prekr š aja iz č l.36 st.1 ta č . 1 i 3 Zakona o za š titi od nasilja u porodici, a zato š to je: ”dana 23.12.2015. godine
+oko 18:00 č asova u Herceg Novom, ulici Ustani č koj br.30, u porodi č noj ku ć i Laki ć evi ć  Ljeposave, Jekni ć  Savo
+prijetio napadom i vrije đ ao svoju suprugu Jekni ć  Romanu i ta š tu Laki ć evi ć  Milosavu, na na č in š to im se
+obratio slede ć im rije č ima: “Otvorite, pobi ć u vas, odrubit ć u vam glavu, zapamti ć ete vi mene, jebat ć u vam
+majku”, te da mu je izre č ena kazna rada u javnom interesu u trajanju od 60 č asova, kao i za š titna mjera
+obavezno lije č enje alkoholi č ara od zavisnosti.
+ 
+Iz rje š enja Suda za prekr š aje Budva – Odjeljenje Herceg Novi PP.br. 1192/16-2 od 19.09.2016. godine, koje je
+postalo pravosna ž no 19.09.2016. godine, utvr đ uje se da je okrivljeni Jekni ć  Savo ogla š en krivim zbog
+prekr š aja iz č l.36 st.1 ta č . 2 i 3 Zakona o za š titi od nasilja u porodici, a zato š to je: ”dana 16.09.2016. godine,
+oko 23:35 č asova u Herceg Novom, u naselju Č ela u ul. Ustani č koj br.30, po č eo da lupa sa spoljne strane vrata
+od ku ć e zahtijevaju ć i da mu supruga Romana Jekni ć  vrata otvori. Supruga Romana nije otvorila ulazna vrata
+suprugu Savu, u tom trenutku se obratila ta š ta Milosava Laki ć evi ć  iz prizemlja ku ć e Jekni ć  Savu slede ć im
+riječ ima: “za š to lupa š ”, na š ta joj je Jekni ć  Savo odgovorio slede ć im rije č ima: “bolesnici, ludaci, treba vas
+odrobijati”, te da mu je izre č ena kazna zatvora u trajanju od 10 dana, kao i za š titne mjere obavezno lije č enje
+alkoholi č ara od zavisnosti i udaljenje iz stana u trajanju od 30 dana.
+ 
+Iz rje š enja Suda za prekr š aje Budva – Odjeljenje Herceg Novi PP.br. 1649/16-2 od 22.10.2016. godine, koje je
+postalo pravosna ž no dana 22.10.2016. godine, utvr đ uje se da je okrivljeni Jekni ć  Savo ogla š en krivim zbog
+prekr š aja iz č l.36 st.1 ta č . 1 i 2 Zakona o za š titi od nasilja u porodici, a zato š to je: ”dana 21.10.2016. godine
+oko 19:30 č asova u Herceg Novom, u porodi č nom stanu, Jekni ć  Savo upotrijebio fizi č ku silu prema svojoj
+supruzi Jekni ć  Romani, na na č in š to je poku š ao da je udari zatvorenom rukom, pri tom prijetio napadom
+pred svojom maloljetnom djecom na na č in š to je uputio Jekni ć  Romani slede ć e rije č i: ”Ubić u vam babajku,
+sve ć u vas pobiti, kad mene nema ne ć e vas biti”, te da mu je izre č ena kazna zatvora u trajanju od 10 dana.
+ 
+Iz presude Osnovnog suda u Herceg Novom K.br.160/2013 od 27.11.2013. godine, koja je postala pravosna ž na
+dana 27.11.2013. godine, utvr đ uje se da je okrivljeni Jekni ć  Savo ogla š en krivim zbog krivi č nog djela nasilje u
+porodici ili u porodi č noj zajednici iz č l.220 st.1 KZ CG, a zato š to je: »dana 07. avgusta 2013. godine u
+večernjim č asovima oko 22,30 sati u Herceg Novom u porodi č nom stanu, primjenom grubog nasilja u
+alkoholisanom stanju, naru š io tjelesni integritet supruge Jekni ć  Romane, tako š to je u toku prepirke sa
+ošte ć enom, koja mu je prigovorila š to kasni sa lijekom za bolesno dijete, istoj upu ć ivao uvrede, kako njoj tako
+i na ra č un cijele njene porodice, da bi u jednom momentu, u prisustvu maloljetne djece, sna ž no udario
+šakom po licu, ramenu, a potom š utnuo u desnu butinu, kojom prilikom je ista zadobila krvne podlive ispod
+lijevog oka, lijeve lopatice i desne butine i razderotinu u nivou gornjeg o č nog kapka, koje povrede
+predstavljaju laku tjelesnu povredu, pri č emu je bio svjestan svog djela i htio njegovo izvr š enje«, te da mu je
+izreč ena kazna rada u javnom interesu u trajanju od 180 č asova i mjera bezbjednosti obavezno lije č enje
+alkoholi č ara.
+ 
+Iz nalaza i mi š ljenja Komisije vje š taka neuropsihijatra prof. dr Stanka Mili ć a, psihijatra dr Ž eljka Golubovi ć a i
+psihologa Branke Stepanovi ć  Ili ć  Kti.br. 38/17 od 12.06.2017.godine, medicinske dokumentacije JZU
+Specijalne bolnice za psihijatriju Dobrota Kotor izdate na ime okrivljenog Jekni ć  Sava i to: istorije bolesti
+mati č ni broj 11102 sa datumom ispisa iz bolnice od 05.12.2016.godine, otpusne liste sa epikrizom broj 11102,
+terapeutskog lista, izvje š taja ljekara specijaliste broj protokola 3458 od 11.11.2016.godine, istorije bolesti
+mati č ni broj 11102 sa datumom ispisa 28.09.2015.godine, otpusne liste sa epikrizom broj 11102 od
+28.09.2015. godine i terapeutskog lista, i saslu š anja neuropsihijatra prof. dr Stanka Mili ć a i psihijatra dr Ž eljka
+Golubovi ć a sa glavnog pretresa, utvr đ uje se je okrivljeni Jekni ć  Savo osoba nisko prosje č nih intelektualnih
+sposobnosti, da ne pokazuje simptome i znake trajne du š evne bolesti ili druge te ž e du š evne poreme ć enosti,
+da ispoljava simptome emocionalno nestabilnog poreme ć aja li č nosti, te da je dugogodi š nje konzumiranje
+alkohola kod njega na nivou toksikomanske zavisnosti o alkoholu. Okrivljeni negira krivi č no djelo na na č in
+kojim se tereti, a isto je psihopatolo š ki motivisano emocionalno nestabilnim poreme ć ajem li č nosti
+okrivljenog i akutnom alkoholnom intoksikacijom na nivou jednostavnog pijanstva. U vrijeme izvr š enja
+krivi č nog djela okrivljeni je bio zavisnik o alkoholu, a nalazio se u stanju alkoholne intoksikacije srednjeg
+stepena (pijano stanje). Radi se o alkoholnoj intoksikaciji alkoholom sa klini č kom slikom jednostavnog
+pijanstva, bez psihopatolo š kih simptoma koji bi upu ć ivali na abnormalnu reakciju na alkohol u vidu
+komplikovanog ili patolo š kog pijanstva. Sposobnost okrivljenog da shvati zna č aj svog djela i mogu ć nost
+upravljanja svojim postupcima u vrijeme izvr š enja krivi č nog djela je bila smanjena ali ne bitno. Usljed
+deterioracije li č nosti na afektivno emocionalnom planu sa epiozodi č nom agresivno šć u uzrokovane dejstvom
+alkohola u ranijem periodu, mi š ljenja su da postoje indikacije za primjenu mjere bezbjednosti obaveznog
+liječ enja alkoholi č ara u odgovaraju ć oj zdravstvenoj ustanovi, jer se radi o zavisniku o alkoholu. U sudskom
+spisu prikazuje se da je okrivljeni i ranije vr š io prekr š ajna i druga eventualno krivi č na djela usljed zavisnosti
+od alkohola, pa imaju ć i u vidu na č in izvr š enja krivi č nog djela i da je isto psihopatolo š ki motivisano akutnom
+intoksikacijom alkohola, to nedvosmisleno upu ć uje na zaklju č ak da postoji ozbiljna dru š tvena opasnost u
+smislu vr š enja nekontrolisanog i agresivnog pona š anja prema okolini u situacijama kada je pod dejstvom
+alkohola, pa kako bi se ta dru š tvena opasnost otklonila, opravdano je da postoji indikacija za primjenu mjere
+bezbjednosti obaveznog lije č enja alkoholi č ara.
+ 
+Sud je cijenio navedeni nalaz i mi š ljenje Komisije vje š taka, pa je isti prihvatio kao jasan, stru č an i objektivan i
+dat prema pravilima struke i nauke, a vje š taci su, izja š njavaju ć i se na glavnom pretresu, odgovorili na sva
+pitanja postavljena od strane suda i stranaka, daju ć i uvjerljiva i stru č na obja š njenja u pogledu zadatka
+vješ ta č enja, a prigovori branioca okrivljenog i okrivljenog da je mi š ljenjem komisije vje š taka povrije đ ena
+pretpostavka nevinosti bili su potpuno neosnovani budu ć i da je u mi š ljenju Komisije vje š taka istican pojam
+krivi č nog djela kojim se okrivljeni tereti, š to svakako ne predstavlja povredu pretpostavke nevinosti.
+ 
+Iz nalaza i mi š ljenja vje š taka sudske medicine dr Nemanje Radojevi ć a Kt.br. 85/17 od 23.04.2017.godine, i
+izvje š taja ljekara jedinice za HMP u Herceg Novom broj protokola 2271 od 16.04.2017.godine, utvr đ uje se da
+je oš te ć ena pregledana dana 16.04.2017. godine u 23,30 č asova u HMP u Herceg Novom, da su prilikom
+pregleda kod nje dijagnostikovane sljede ć e tjelesne povrede: a) č etiri ubodno-rezne rane u predjelu desne
+polovine prednje strane vrata. Navedene povrede su posljedica dejstva vrha i o š trice aktivno zamahnutog
+mehani č kog oru đ a, tipi č no vrhom vilju š ke i tipi č no u jednom aktu. Zamah oru đ em je vjerovatno bio odozgo
+nadolje pri č emu su prvo nastale plitke sjekotine koje su se u donjem dijelu zavr š ile ubodnim ranama. U
+neposrednoj blizini predjela gdje su nastale ove povrede nalaze se veliki krvni sudovi vrata č ijom bi
+eventualnom povredom neposredno bio doveden u opasnost ž ivot; b) dvije oguljotine u desnom slabinskom
+predjelu. Navedene povrede su posljedica dejstva tupine mehani č ke sile i iste su mogle nastati grebanjem
+noktima ili sudarom sa nekom tupo-tvrdom povr š inom. U vrijeme nano š enja, zadobijene povrede se
+pojedina č no i zbirno kvalifikuju kao laka tjelesna povreda.
+ 
+Dana 28.04.2017. godine s po č etkom u 08,45 č asova u prostorijama ODT Kotor vje š tak sudske medicine dr
+Nemanja Radojevi ć  je obavio sudskomedicinski pregled o š te ć ene, nakon č ega je dao dopunu nalaza i
+mišljenja Ktr. br. 523/17 od 04.05.2017.godine. Iz navedene dopune nalaza i mi š ljenja se utvr đ uje da je
+ošte ć ena visoka oko 178 cm, da je te š ka oko 72 kg, da je dobre ko š tano-mi š i ć ne gra đ e i osrednje uhranjena.
+Pregledom je konstatovano: a) č etiri ta č kasta ru ž i č kasta o ž iljka pre č nika po oko 2-3 mm, u predjelu desne
+boč ne strane vrata, na me đ usobnom rastojanju od po oko 5 mm; b) ž u ć kasti krvni podliv u desnom
+slabinskom predjelu pre č nika oko 6 cm, a u sredi š njem dijelu dvije braonkaste oguljotine promjera oko oko
+3x1 cm. Nakon obavljenog sudskomedicinskog pregleda o š te ć ene, konstatovano je da kod nje postoje
+sljede ć e tjelesne povrede: a) č etiri ta č kasta ru ž i č asta o ž iljka u predjelu desne bo č ne strane vrata, koji su
+posljedica č etiri ubodne rane u predjelu desne strane vrata. Imaju ć i u vidu protok vremena, prilikom
+obavljenog sudskomedicinskog pregleda su spolja na ko ž i ostali vidljivi samo o ž iljci od ubodnih djelova
+ubodno-reznih rana. Okolnost da su ostali vidljivi o ž iljci na vratu, kao i iskaz o š te ć ene da je vilju š ka ostala da
+visi sa vrata, govori u prilog da su rane najvjerovatnije zahvatale najmanje punu debljinu ko ž e koja u ovom
+predjelu vrata iznosi oko 4 - 5 mm; b) nagnje č enje ( ž u ć kasti krvni podliv i braonkaste oguljotine) u desnom
+slabinskom predjelu, koji su posljedica dvije oguljotine u desnom slabinskom predjelu. Navedena povreda je
+mogla nastati kao š to je opisano u osnovnom vje š ta č enju od 23.04.2017. godine.
+ 
+Na glavnom pretresu vješ tak sudske medicine dr Nemanja Radojevi ć  je pojasnio da je, imaju ć i u vidu
+procijenjenu dubinu povreda na vratu kao i povredno oru đ e, intenzitet zamaha prilikom zadobijanja ovih
+povreda bio srednje jak. Imaju ć i u vidu da su u medicinskoj dokumentaciji i to u izvje š taju Hitne medicinske
+pomo ć i opisane sve bitne sudsko - medicinske karakteristike ovih povreda, kao i prethodno izja š njenje u vezi
+procijenjene dubine kanala ubodnih rana ove povrede su nastale, kao š to je to i re č eno u osnovnom nalazu –
+dejstvom aktivno zamahnutog mehani č kog oru đ a, dakle na na č in š to su vrhovi vilju š ke bili direktno
+usmjereni ka povrijedjenom dijelu tijela, i to tako š to su zbog obline vrata iste prvo dovele do plitkih
+sjekotina, a potom se na kraju istih zavr š ile ubodnim ranama, dakle isklju č ena je mogu ć nost da je ova
+povreda nastala slu č ajnim mahanjem rukom u kojoj se dr ž ala vilju š ka jer pri tome ne bi postojao ni dovoljan
+intenzitet sile da napravi ovakve povrede u smislu njihove dubine, niti bi smjer kanala ubodnih rana mogao
+zahvatiti ko ž u u cijeloj svojoj debljini. Na opisani na č in mehanizma nastanka koji je dao okrivljeni Jekni ć
+Savo na glavnom pretresu od 08.09.2017. godine, eventualno bi mogle nastati samo povr š ne ogrebotine ili
+pak samo crvenila na ko ž i. U konkretnom slu č aju, u pitanju su rane koje su u svom po č etnom dijelu ve ć  bile u
+vidu sjekotina plitkih, a potom su se nastavljale ubodnim ranama. Imaju ć i u vidu da vrhovi vilju š ke nisu u
+potpunosti zao š treni kao š to je npr. vrh ili sje č ivo no ž a, takodje govori u prilog potrebnom intenzitetu sile da
+nastanu ovakve tjelesne povrede. Ne postoji mogu ć nost da su ove povrede mogle nastati bilo kojom
+dejstvenom povr š inom sata, prstena ili ukosnice u obliku č e š lja du ž ine 7 – 8 cm. Sudsko medicinski se
+teoretski ne mo ž e isklju č iti mogu ć nost da je vilju š ka bila dr ž ana odnosno fiksirana u ruci ili na sli č an na č in, a
+da je o š te ć ena na nju naletjela. Prilikom gradacije intenziteta sile koji dovodi do povrede mo ž e se govoriti o
+malom ili slabom intenzitetu, srednje jakom ili jakom. Sudsko medicinski nije mogu ć e parametrijski se
+izjasniti o intenzitetu sile u smislu broja Njutna, ve ć  se intenzitet sile prilikom zadobijanja udarca procjenjuje
+na osnovu posledice tj. povrede, pri č emu se ima u vidu vrsta povrednog oru đ a, kao i karakteristike tkiva koje
+se nalazi u povrije đ enom predjelu. Imaju ć i u vidu procijenjenu dubinu kanala i izja š njenje da se tom prilikom
+radilo o srednje jakom intenzitetu sile, da je sila bila slabijeg intenziteta ne bi nastale ubodne rane ve ć  samo
+povr š ne povrede ko ž e u vidu eventualnih oguljotina, a da je sila djelovala jakim intenzitetom kanali ubodnih
+rana bi bili dublji odnosno vilju š ka bi cjelokupnom du ž inom š iljaka probila meka tkiva vrata. Prilikom
+sudsko-medicinskog pregleda, povrede su ve ć  bile u fazi o ž iljnih promjena, tako da nije bilo mogu ć e izmjeriti
+dubinu kanala rana, a to je eventualno mogao u č initi doktor pri prvom pregledu, medjutim i naknadno se ta
+dubina mo ž e okvirno procijeniti da je bila najmanje 4 do 5 mm i to iz razloga š to to govori o debljini ko ž e u
+tom predjelu, a samo rane ostavljaju o ž iljke, te podatke koje je o š te ć ena dala da je vilju š ka ostala u vratu
+nakon uboda, i da je ona sama izvadila. Kada se sve to ima u vidu, dubina kanala procijenjena je na najmanje
+4 – 5 mm, kolika je debljina ko ž e u ovom predjelu vrata. Ako bi se uzele u obzir samo medicinske
+karakteristike ovih povreda, a to je podatak iz medicinske dokumentacije da se radilo o ubodnim ranama, te
+podatak koji je vje š tak prikupio pri sudsko-medicinskom pregledu tada bi njegovo izja š njenje bilo identi č no
+prethodnom, iz razloga š to su rane takve vrste mehani č kih povreda koje po svojim definicijama
+podrazumijevaju da je integritet ko ž e u potpunosti naru š en odnosno cijelom debljinom. Okolnost da su
+postojali o ž iljci samo potvrdjuje podatak iz medicinske dokumentacije da se radilo o ranama, a ne o
+povr š nim povredama ko ž e, dok iskaz o š te ć ene u vezi sa zaostajanjem vilju š ke u vratu takodje samo
+potvrdjuje da se radilo o ubodnim ranama koje su zahvatale najmanje punu debljinu ko ž e. Da je vilju š ka bila
+plić e zarivena u vrat odnosno da nije zahvatala punu debljinu ko ž e prvo ne bi do š lo do ubodnih rana, ne bi
+doš lo do kasnijih o ž iljaka i u kona č nom ne bi mogla ostati u vratu. U medicinskoj dokumentaciji su opisane
+»vidljive 4 ta č kasto – crtaste ekskorijacije«, te »vidljive dvije ekskorijacije iznad sjedalnog mi š i ć a desno«, pri
+čemu je ljekar ove druge povrede dijagnostikovao takodje kao rane, š to govori u prilog da kada je i prve
+opisao kao ogrebotine ustvari se mislilo na plitke sjekotine. Su š tinski, ne postoji sudsko medicinska bitna
+razlika izmedju ogrebotina i plitkih sjekotina, jer obije imaju iste sudsko medicinske karakteristike odnosno
+da ne zahvataju punu debljinu ko ž e, a jesu obije crtastog izgleda, i ba š  zbog toga iste nisu ostavile o ž iljke, ve ć
+samo ubode na krajevima ovih crtastih ogrebotina odnosno plitkih sjekotina. Postavljena dijagnoza na
+latinskom jeziku povrede vrata zna č i ubodna rana u predjelu desnog velikog pregiba č a glave. Plitke sjekotine
+u okviru dijagnoze nisu navedene jer se radilo o jednoj istoj povredi, koja se nalazila na istom mjestu, nastala
+je u istom aktu i nije nu ž no medicinski da se zasebno posmatraju, ali su svakako opisane u izvje š taju. Imaju ć i
+u vidu da je povrijedjena samo cijela debljina ko ž e i eventualno neka debljina potko ž nog masnog tkiva, u
+kome se samo nalaze kapilari, mogu ć e je da je ova rana krvarila ta č kasto po principima kapilarnog krvarenja,
+koje krvarenje u okolnosti kada se radi o zdravoj osobi koja ima uredan sistem za zgru š avanje krvi, traje svega
+par minuta, u manjoj koli č ini. Imaju ć i u vidu da je glava veoma pokretan dio tijela, potom da je osobi mogu ć e
+prić i sa prednje, bo č nih ili zadnje strane, mogu ć i su raznorazni medjusobni polo ž aji napada č a i o š te ć enog u
+trenutku zadobijanja povreda. Neki od tipi č nih, ukoliko je vilju š ka dr ž ana u desnoj ruci, bi bili sa desne bo č ne
+ili zadnje strane o š te ć ene, ali su mogu ć i i razno razni drugi polo ž aji imaju ć i u vidu da je glava veoma pokretan
+dio tijela. Izgled opisanih povreda u medicinskoj dokumentaciji, kao i izgled o ž iljaka, a to je da su postojala
+pri sudsko medicinskom pregledu č etiri ta č kasta o ž iljka pre č nika 2 – 3 mm, na medjusobnom rastojanju od
+po oko 5 mm, veoma podsje ć aju na vrhove vilju š ke i odgovaraju u potpunosti dejstvenom principu vilju š ke
+kada se ista koristi kao mehani č ko orudje. Upravo zbog toga, u osnovnom mi š ljenju je istaknuto da su
+povrede nastale »tipi č no vrhom vilju š ke«. Medjutim, svako drugo povredno oru đ e koje ima ovako
+raspore đ ena č etiri š iljka odgovaraju ć e debljine i na odgovaraju ć em medjusobnom rastojanju mo ž e dovesti
+do nastanka ovih tjelesnih povreda. Imaju ć i u vidu da mu nije prezentovano da ru č ni sat i prsten su specifi č ni
+po tome š to imaju krajnje neuobi č ajne povr š ine za ovakve predmete ( č etiri š iljka pre č nika par milimetara na
+rastojanju od oko 5 milimetara), vje š tak je mi š ljenje iznio na osnovu subjektivnog poznavanja uobi č ajnog
+izgleda sata i prstena. Š to se ti č e ukosnice, ista ima na opisanoj du ž ini 7 – 8 cm mnogo vi š e š iljaka, koji su
+plasti č ni, po prirodi krti i isti bi se prije polomili nego zarili u ko ž u. Pri tome, ni broj uboda ne odgovara
+ukosnici. U konkretnom slu č aju, radilo se o ubodnim ranama, koje odgovaraju dejstvenom principu
+jednokratnog uboda vrhom vilju š ke, ali samo iz okolnosti mehanizma nastanka povrede, ovi vrhovi su
+prethodno zagrebali odnosno plitko zasjekli ko ž u i zbog toga je na jednom mjestu navedeno da su pri sudsko
+medicinskom pregledu ostali vidljivi o ž iljci samo od ubodnih djelova ovih ubodno reznih rana. Ina č e, termin
+ubodno rezna rana se uobi č ajeno koristi kada se vr š i ubadanje no ž em, jer no ž  za dejstveni princip ima i vrh i
+sječ ivo. U tom kontekstu se rane kod o š te ć ene ne mogu posmatrati ve ć  u principu samo kao ubodne rane.
+Ukoliko su rane kanalom bile i dublje od minimalno procijenjene na debljinu ko ž e odnosno ukoliko su iste
+zahvatale djelimi č no i mi š i ć  – veliki pregiba č  glave, vrlo vjerovatno je da je povrije đ ivanje pratio i subjektivni
+osjeć aj bola pri pokretu u vratu.
+ 
+Sud je cijenio navedeni nalaz i mi š ljenje vje š taka sudske medicine, dopunu nalaza i mi š ljenja i njegovo
+izjaš njenje sa glavnog pretresa, pa je na š ao da je isti jasno, stru č no i objektivno, te po pravilima struke i
+nauke opisao povrede o š te ć ene, izjasnio se o vrsti i te ž ini svake pojedine povrede i njihovom ukupnom
+dejstvu, č ime su povrede nanijete i na koji na č in, a navod branioca okrivljenog da zaklju č ci vje š taka nijesu bili
+u skladu sa medicinskom dokumentacijom o š te ć ene sud je cijenio kao potpuno neosnovan.
+ 
+Iz izvoda iz Kaznene evidencije Ministarstva pravde Crne Gore br. 04/2-72-13259/17 od 08.07.2017.godine,
+izdatog na ime okrivljenog Jekni ć  Sava, utvr đ uje se da je okrivljeni Jekni ć  Savo osu đ ivan osudjivan
+presudom Osnovnog suda u Bijelom Polju K.br. 647/90 od 29.10.1991. godine, zbog krivi č nog djela la ž no
+predstavljanje iz č l. 212 st. 2 KZ SRCG na nov č anu kaznu od 8.000,00 dinara, presudom Osnovnog suda u
+Bijelom Polju K.br. 530/92 od 04.03.1993. godine, zbog krivi č nog djela nasilni č ko pona š anje iz č l. 208 st. 1 KZ
+SRCG na kaznu zatvora u trajanju od 45 dana, presudom Vi š eg suda u Bijelom Polju K ž .br. 432/01 od
+22.10.2001. godine zbog krivi č nog djela prevara iz č l. 149 st. 1 KZ RCG, na kaznu zatvora u trajanju od 3
+mjeseca, presudom Osnovnog suda u Bijelom Polju K.br. 244/05 od 25.02.2008. godine, zbog krivi č nog djela
+nepru ž anje pomo ć i iz č l. 157 st. 1 KZ na 1 godinu zatvora uslovno na 2 (dvije) godine.
+ 
+Cijene ć i navode optu ž be, odbrane okrivljenog, te sve provedene dokaze, kako pojedina č no, tako i u njihovoj
+medjusobnoj povezanosti, ovaj sud nalazi da je okrivljeni Jekni ć  Savo po č inio krivi č no djelo ubistvo u
+poku š aju iz č l. 143 u vezi č l. 20 Krivi č nog zakonika Crne Gore, a na na č in, mjesto i vrijeme kako je to
+predstavljeno u izreci presude.
+ 
+Naime, okrivljeni Jekni ć  Savo je dana 16.04.2017.godine, oko 22,40 č asova, u Herceg Novom, u ku ć i gdje ž ivi,
+u ul. Ustani č koj br. 30, poku š ao da li š i ž ivota svoju suprugu o š te ć enu Jekni ć  Romanu, iako je bio svjestan da
+je mo ž e li š iti ž ivota, pa je to i htio, na na č in š to je nakon š to je do š ao ku ć i, a dok je o š te ć ena le ž ala na krevetu,
+više puta ulazio u spava ć u sobu i izlazio iz iste i rekao o š te ć enoj »vidjet ć e š  ti ko sam ja i vidje ć ete vi ko sam
+ja«, da bi potom pri š ao o š te ć enoj, sjeo na krevet, na kojem je ista le ž ala, zamahnuo desnom rukom u kojoj je
+držao vilju š ku i ubo o š te ć enu, koja je poku š ala da se izmakne, u predjelu desne strane vrata, kojom prilikom
+je oš te ć enoj nanio laku tjelesnu povredu u vidu č etiri ubodne rane u predjelu desne strane vrata, u č ijoj
+neposrednoj blizini se nalaze veliki krvni sudovi vrata, nakon č ega je o š te ć ena vilju š ku koja joj je ostala
+ubodena u vratu izvukla.
+ 
+Naprijed navedene č injenice sud je utvrdio iz iskaza svjedokinje – o š te ć ene Jekni ć  Romane iz prethodnog
+postupka, nalaza i mi š ljenja vje š taka sudske medicine dr Nemanje Radojevi ć a Kt.br. 85/17 od 23.04.2017.
+godine, dopune nalaza i mi š ljenja ovog vje š taka Ktr. br. 523/17 od 04.05.2017. godine, saslu š anja ovog
+vješ taka sa glavnog pretresa i izvje š taja ljekara jedinice za HMP u Herceg Novom broj protokola 2271 od
+16.04.2017.godine, izdatog na ime o š te ć ene.
+ 
+Sud je cijenio iskaz svjedokinje - o š te ć ene Jekni ć  Romane iz prethodnog postupka, pa je na š ao da se ista u
+tom iskazu istinito, logi č no i uvjerljivo izjasnila o svim č injenicama va ž nim za ovu krivi č nu stvar.
+ 
+Iz iskaza svjedokinje - o š te ć ene Jekni ć  Romane iz prethodnog postupka sud je utvrdio da je dana 16.04.2017.
+godine njen suprug okrivljeni Jekni ć  Savo bio odsutan cijeli dan i da se ku ć i vratio oko 22,30 č asova u vidno
+pripitom stanju, da je ona le ž ala u krevetu u spava ć oj sobi, da je okrivljeni vi š e puta ulazio u spava ć u sobu i
+izlazio iz iste i rekao o š te ć enoj »Vidjet ć e š  ti ko sam ja i vidje ć ete vi ko sam ja«, da je u jednom momentu sjeo
+na krevet i vilju š kom koju je dr ž ao u desnoj ruci je ubo u predjelu desnog dijela vrata, s tim š to je ona
+neposredno prije uboda poku š ala da se izmakne jer je okrivljeni htio ubosti u grlo, da je vilju š ka ostala u
+njenom vratu i da je ona rukom izvadila, da je ustala, uzela rakiju i oti š la u kupatilo gdje je isprala ranu koja je
+malo prokrvarila, da je potom pozvala svoju majku i rekla joj da pozove policiju koja je poslije odre đ enog
+vremena do š la, te da je nakon š to je okrivljeni Jekni ć  Savo odveden u stanicu policije, ona oti š la u hitnu
+pomo ć  gdje su je pregledali i ukazali joj medicinsku pomo ć . Imaju ć i u vidu da iz iskaza svjedokinje-o š te ć ene
+Jekni ć  Romane iz prethodnog postupka proizilazi da je okrivljeni Jekni ć  Savo nije odmah po dolasku ku ć i
+ubo vilju š kom u predjelu desne strane vrata, ve ć  da je to u č inio nakon š to je vi š e puta ulazio u spava ć u sobu i
+izlazio iz iste, te da iz izvje š taja ljekara jedinice za HMP u Herceg Novom proizilazi da je o š te ć ena pregledana u
+toj ustanovi u 23,30 č asova, sud izvodi zaklju č ak da se ubod vilju š kom desio oko 22,40 č asova.
+ 
+Ovaj njen iskaz potvr đ en je materijalnim dokazima i to: izvje š tajem ljekara jedinice za HMP u Herceg Novom
+broj protokola 2271 od 16.04.2017.godine, nalazom i mi š ljenjem vje š taka sudske medicine dr Nemanje
+Radojevi ć a Kt.br. 85/17 od 23.04.2017. godine, dopunom nalaza i mi š ljenja ovog vje š taka Ktr. br. 523/17 od
+04.05.2017. godine, i izja š njenjem ovog vje š taka sa glavnog pretresa, a iz kojih dokaza je utvr đ eno da je
+ošte ć ena Jekni ć  Romana kritič nom prilikom zadobila laku tjelesnu povredu u vidu č etiri ubodne rane u
+predjelu desne strane vrata, koje su posljedica dejstva vrha i o š trice aktivno zamahnutog mehani č kog oru đ a,
+tipič no vrha vilju š ke i tipi č no u jednom aktu, srednje jakim intenzitetom, da je zamah oru đ em vjerovatno bio
+odozgo nadolje, pri č emu su prvo nastale plitke sjekotine koje su se u donjem dijelu zavr š ile ubodnim
+ranama, da se u neposrednoj blizini predjela gdje su nastale ove povrede nalaze veliki krvni sudovi vrata
+čijom bi eventualnom povredom neposredno bio doveden u opasnost ž ivot o š te ć ene, te da su prilikom
+obavljenog sudsko-medicinskog pregleda o š te ć ene konstatovana č etiri ta č kasta ru ž i č kasta o ž iljka pre č nika
+po oko 2-3 mm, u predjelu desne strane vrata, na me đ usobnom rastojanju od po oko 5 mm koji su posljedica
+navedene č etiri ubodne rane.
+ 
+Dakle, iz naprijed navedenih dokaza, utvrdjeno je da je okrivljeni Jekni ć  Savo nakon š to je do š ao ku ć i, a dok
+je oš te ć ena Jekni ć  Romana le ž ala na krevetu, vi š e puta ulazio u spava ć u sobu i izlazio iz iste i rekao o š te ć enoj
+»vidjet ć e š  ti ko sam ja i vidje ć ete vi ko sam ja«, da bi potom pri š ao o š te ć enoj, sjeo na krevet, na kojem je ista
+ležala, zamahnuo desnom rukom u kojoj je dr ž ao vilju š ku i ubo o š te ć enu, koja je poku š ala da se izmakne, u
+predjelu desne strane vrata, kojom prilikom je o š te ć enoj nanio laku tjelesnu povredu u vidu č etiri ubodne
+rane u predjelu desne strane vrata, u č ijoj neposrednoj blizini se nalaze veliki krvni sudovi vrata, nakon č ega
+je oš te ć ena izvukla vilju š ku koja joj je ostala ubodena u vratu.
+ 
+Da se u konkretnom slu č aju radilo o standardnoj - klasi č noj vilju š ci iz pribora za jelo, sud je utvrdio iz iskaza
+ošte ć ene Jekni ć  Romane iz prethodnog postupka. I na glavnom pretresu ova svjedokinja je potvrdila da je u
+trpezariji postojao pribor za jelo i to: ka š ika, vilju š ka i no ž , koji su bili od metala i standardne veli č ine.
+ 
+Ni okrivljeni Jekni ć  Savo u odbranama nije poricao da je bio pod dejstvom alkohola kada je dana 16.04.2017.
+godine oko 22,30 č asova do š ao u ku ć u gdje ž ivi, u ulici Ustani č koj broj 30 u Herceg Novom. Međ utim, o
+važnim č injenicama vezanim za predmetni krivi č ni doga đ aj isti se tri puta razli č ito izja š njavao, pa je tako u
+odbrani datoj u prethodnom postupku na zapisniku o saslu š anju osumnji č enog Kt.br.85/17 od 17.04.2017.
+godine tvrdio da nije o š te ć enu ubo vilju š kom, niti na bilo kakav na č in imao kontakt sa njom, da ne zna
+odakle su o š te ć enoj povrede koje su konstatovane u izvje š taju ljekara jedinice za HMP u Herceg Novom, te da
+je mogu ć e da se sama udarila, dok je u odbrani datoj u prethodnom postupku na zapisniku o saslu š anju
+osumnji č enog Kt.br.58/17 od 11.05.2017. godine naveo da je mogu ć e da je o š te ć enu zaka č io negdje u
+predjelu glave ili tijela, kada je podizao ruke iznad glave, i to satom ili prstenom, koji su mu se nalazili na ruci,
+ali da tada nije imao pribor za jelo u rukama, da bi na glavnom pretresu istakao da je tokom ustajanja sa
+stolice odmahnuo rukama prema o š te ć enoj, vjerovatno u pravcu ramena, i nekako je istima odgurnuo,
+ostavljaju ć i mogu ć nost da je tada u ruci dr ž ao vilju š ku. Obja š njavaju ć i razli č itosti izme đ u prve odbrane iz
+prethodnog postupka i sa glavnog pretresa, naveo je da je vjerovatno i kod tu ž ioca u Herceg Novom prilikom
+izno š enja te prve odbrane pominjao da je odmahnuo rukama i istima nekako odgurnuo svoju suprugu ali da
+to nije u š lo u zapisnik, pritom potvr đ uju ć i da se na tom zapisniku nalaze njegovi potpisi, š to je za sud
+potpuno nelogi č no i neprihvatljivo obja š njenje budu ć i da je u toj prvoj odbrani u prethodnom postupku bio
+decidan da na bilo kakav na č in nije imao kontakt sa o š te ć enom. Za sud je nelogi č no i neprihvatljivo i
+obja š njenje razli č itosti izme đ u druge odbrane iz prethodnog postupka i sa glavnog pretresa kada je okrivljeni
+naveo da ne zna zbog č ega je u odbrani kod tu ž ioca u Podgorici rekao da njemu pribor za jelo, gdje spada i
+vilju š ka, nije bio u rukama, kada je ruke pru ž io prema o š te ć enoj, koju mogu ć nost je ipak na glavnom pretresu
+dozvolio.
+ 
+Sve naprijed navedene odbrane okrivljenog obesna ž ene su iskazom svjedokinje – o š te ć ene Jekni ć  Romane iz
+prethodnog postupka, sudsko-medicinskim vje š ta č enjem i medicinskom dokumentacijom o š te ć ene, iz kojih
+dokaza dovedenih u me đ usobnu vezu je utvr đ eno da je ošte ć ena kritič nom prilikom zadobila laku tjelesnu
+povredu u vidu č etiri ubodne rane u predjelu desne strane vrata, koje su posljedica dejstva vrha i o š trice
+aktivno zamahnutog mehani č kog oru đ a, tipi č no vrha vilju š ke. Nalazom i mi š ljenjem vje š taka sudske
+medicine je isklju č ena mogu ć nost da su ove č etiri ubodne rane u predjelu desne strane vrata mogle nastati
+bilo kojom dejstvenom povr š inom sata, prstena ili ukosnice, čime je dodatno opovrgnuta druga odbrana
+okrivljenog iz prethodnog postupka da je o š te ć enu zaka č io satom ili prstenom i tako je povrijedio. Dalje je
+nalazom i mi š ljenjem vje š taka sudske medicine utvr đ eno i da su č etiri ubodne rane posljedica dejstva vrha i
+oštrica vilju š ke srednje jakim intenzitetom sile, da bi u slu č aju dejstva sile slabijeg intenziteta nastale samo
+povr š ne povrede ko ž e u vidu oguljotina, a ne ubodne rane, da su povrede kod o š te ć ene nastale dejstvom
+aktivno zamahnutog mehani č kog oru đ a, na na č in š to su vrhovi vilju š ke bili direktno usmjereni ka
+povrijedjenom dijelu tijela, i to najvjerovatnije odozgo nadolje, da je isklju č ena mogu ć nost da je ova povreda
+nastala slu č ajnim mahanjem rukom u kojoj se dr ž ala vilju š ka jer pri tome ne bi postojao ni dovoljan
+intenzitet sile da napravi ovakve povrede u smislu njihove dubine, niti bi smjer kanala ubodnih rana mogao
+zahvatiti ko ž u u cijeloj svojoj debljini, č ime je osporena prva odbrana okrivljenog iz prethodnog postupka da
+nije imao fizi č ki kontakt sa o š te ć enom, kao i odbrana okrivljenog sa glavnog pretresa u kojoj navodi da je
+ošte ć enu samo zaka č io vilju š kom koju je mogu ć e dr ž ao u ruci kada je, dok je ustajao sa stolice, pru ž io obje
+ruke u pravcu o š te ć ene prema njenim ramenima i nekako je odgurnuo, a dok je o š te ć ena bila u stoje ć em
+polo ž aju iznad njega sa dlanovima oslonjenim na sto.
+ 
+Zbog svega naprijed izlo ž enog, sud je odbrane okrivljenog Jekni ć  Sava cijenio kao neistinite i sra č unato date
+u cilju izbjegavanja krivice.
+ 
+Sud nije prihvatio ni iskaz svjedokinje - o š te ć ene Jekni ć  Romane sa glavnog pretresa. Naime, ova svjedokinja
+je na glavnom pretresu navela da su se ona i okrivljeni Jekni ć  Savo posva đ ali i zatim pogurali, da ne zna kako
+je zadobila povredu u predjelu desne strane vrata, te da je u prethodnom postupku dala druga č iji iskaz nego
+na glavnom pretresu da bi njen suprug Savo bio š to stro ž ije ka ž njen, odnosno poslat da se lije č i. Ovakav njen
+iskaz je opovrgnut njenim iskazom iz prethodnog postupka, nalazom i mi š ljenjem vje š taka sudske medicine i
+izvje š tajem ljekara jedinice za HMP u Herceg Novom, pa je sud isti cijenio kao neistinit i sra č unato dat u cilju
+pomaganja okrivljenom da izbjegne krivicu ili da se umanji njegova krivica, a za š to je imala motiva i interesa
+budu ć i da se nakon svjedo č enja u prethodnom postupku pomirila sa okrivljenim koji joj je bra č ni drug.
+ 
+Cijene ć i naprijed utvr đ eno č injeni č no stanje, ovaj sud nalazi da su se u radnjama okrivljenog Jekni ć  Sava
+stekli svi bitni elementi bi ć a krivi č nog djela ubistvo u poku š aju iz č l. 143 u vezi č l. 20 Krivi č nog zakonika Crne
+Gore. Okrivljeni je bio svjestan da ubadaju ć i o š te ć enu metalnom vilju š kom, standardne veli č ine, srednje
+jakim intenzitetom u predio desne strane vrata, gdje se u neposrednoj blizini navedene č etiri ubodne rane
+nalaze veliki krvni sudovi vrata, va ž ni organi, č ijom bi eventualnom povredom bio doveden u opasnost ž ivot
+ošte ć ene, istu mo ž e li š iti ž ivota, dok je posljedica krivi č nog djela izostala, ne voljom okrivljenog, ve ć  sticajem
+drugih okolnosti, š to sve zna č i da je okrivljeni pri izvr š enju predmetnog krivi č nog djela postupao sa
+direktnim umi š ljajem tj. bio svjestan svog djela i htio njegovo izvr š enje.
+ 
+Sud nije prihvatio pravnu kvalifikaciju krivi č nog djela iz optu ž nice da je okrivljeni Jekni ć  Savo po č inio
+krivi č no djelo teško ubistvo u poku š aju iz č l.144 st.1 ta č .7 u vezi č l. 20 Krivi č nog zakonika Crne Gore, tj. da je
+okrivljeni poku š ao li š iti ž ivota o š te ć enu Jekni ć  Romanu, č lana svoje porodice – svoju suprugu, koju je
+prethodno zlostavljao.
+ 
+Naime, za postojanje krivi č nog djela teško ubistvo u poku š aju iz č l.144 st.1 ta č .7 u vezi č l.20 KZ CG potrebno
+je da je okrivljeni poku š ao da li š i ž ivota č lana svoje porodice ili porodi č ne zajednice, koji uslov je ispunjen, jer
+je poku š ao li š iti ž ivota svoju suprugu, kao i da je tog č lana porodice prethodno zlostavljao, koji uslov nije
+ispunjen. Ovo iz razloga š to je smisao ove odredbe da je u pitanju ubistvo ili ubistvo u poku š aju u toku
+zlostavljanja ili u kontinuitetu sa zlostavljanjem ili bar neposredno poslije zlostavljanja na istom mjestu i u
+istoj prilici. Ubistvo ili ubistvo u poku š aju izvr š eno poslije nekog ranijeg zlostavljanja, dakle kada postoji
+vremenska distanca izme đ u zlostavljanja i ubistva, ili poku š aja ubistva, ne bi odgovaralo smislu ove
+inkriminacije. U konkretnom slu č aju nije bilo dokaza da je krivi č no djelo za koje je okrivljeni Jekni ć  Savo
+ogla š en krivim u č injeno u toku zlostavljanja ili u kontinuitetu sa zlostavljanjem ili bar neposredno poslije
+zlostavljanja na istom mjestu i u istoj prilici. Osim navedenog, i sam tu ž ilac u č injeni č nom opisu optu ž nice
+navodi vremenski diskontinuitet u eventualnom zlostavljanju o š te ć ene od strane okrivljenog u odnosu na
+kritič ni doga đ aj, jer navodi da je okrivljeni o š te ć enu zlostavljao u periodu od avgusta 2013. do oktobra 2016.
+godine,vr š e ć i fizi č ko i psihi č ko nasilje prema njoj, pa bez obzira na sve navedeno, a imaju ć i u vidu da je ovo
+krivi č no djelo izvr š eno 16.04.2017. godine, to postoji o č igledan vremenski diskontinuitet.
+ 
+Shodno naprijed utvrdjenom č injeni č nom stanju sud je iz izreke presude izostavio kvalifikatorne okolnosti
+koje se odnose na krivi č no djelo teško ubistvo u poku š aju iz č l. 144 st.1 ta č .7 u vezi č l. 20 Krivi č nog zakonika
+Crne Gore, kao i sve ono š to je bespotrebno optere ć ivalo samu izreku presude, izuzev opisa radnji koje se
+odnose na izvr š enje krivi č nog djela ubistvo u poku š aju iz č l. 143 u vezi č l. 20 Krivi č nog zakonika Crne Gore,
+koje je upodobio shodno č injeni č nom utvr đ enju, a č ime nije povrijedjen objektivni identitet optu ž nice.
+ 
+Odlu č uju ć i o kazni za okrivljenog, sud je najprije u smislu č l. 42 Krivi č nog zakonika Crne Gore, cijenio sve
+okolnosti koje uti č u da kazna bude manja ili ve ć a (olak š avaju ć e ili ote ž avaju ć e okolnosti), pa je od
+olak š avaju ć ih okolnosti na strani okrivljenog na š ao da se radi o porodi č nom č ovjeku, ocu dvoje djece, te da
+se oš te ć ena nije pridru ž ila krivi č nom gonjenju, dok je od ote ž avaju ć ih okolnosti na š ao da je okrivljeni
+osudjivan i to: presudom Osnovnog suda u Bijelom Polju K.br. 647/90 od 29.10.1991. godine, zbog krivi č nog
+djela la ž no predstavljanje iz č l. 212 st. 2 KZ SRCG na nov č anu kaznu od 8.000,00 dinara, presudom Osnovnog
+suda u Bijelom Polju K.br. 530/92 od 04.03.1993. godine, zbog krivi č nog djela nasilni č ko pona š anje iz č l. 208
+st. 1 KZ SRCG na kaznu zatvora u trajanju od 45 dana, presudom Vi š eg suda u Bijelom Polju K ž .br. 432/01 od
+22.10.2001. godine zbog krivi č nog djela prevara iz č l. 149 st. 1 KZ RCG, na kaznu zatvora u trajanju od 3
+mjeseca, presudom Osnovnog suda u Bijelom Polju K.br. 244/05 od 25.02.2008. godine, zbog krivi č nog djela
+nepru ž anje pomo ć i iz č l. 157 st. 1 KZ na 1 godinu zatvora uslovno na 2 (dvije) godine, i presudom Osnovnog
+suda u Herceg Novom K.br. 160/2013 od 27.11.2013. godine zbog krivi č nog djela nasilje u porodici ili u
+porodi č noj zajednici iz č l. 220 st. 1 KZ CG, na kaznu rada u javnom interesu u trajanju od 180 č asova. Imaju ć i u
+vidu naprijed navedene olak š avaju ć e i ote ž avaju ć e okolnosti, te č injenicu da je krivi č no djelo ostalo u
+poku š aju, a da se za poku š aj krivi č nog djela u č inilac mo ž e bla ž e kazniti, shodno č l. 20 st. 3 Krivi č nog zakonika
+Crne Gore, sud je okrivljenom ubla ž io kaznu ispod zakonom propisanog minimuma za predmetno krivi č no
+djelo, a primjenom č l. 45 i 46 Krivi č nog zakonika Crne Gore, i istog osudio na kaznu zatvora u trajanju od 2
+(dvije) godine, nalaze ć i da se i ubla ž enom kaznom mo ž e posti ć i svrha ka ž njavanja iz č l. 32 Krivi č nog zakonika
+Crne Gore, i na taj na č in dovoljno uticati na okrivljenog da ubudu ć e ne vr š i ista ili sli č na krivi č na djela, a u
+okviru op š te svrhe propisivanja i izricanja krivi č nih sankcija iz č l. 4 st. 2 Krivi č nog zakonika Crne Gore.
+ 
+Shodno č lanu 51 Krivi č nog zakonika Crne Gore, sud je okrivljenom Jekni ć  Savu u izre č enu kaznu zatvora
+urač unao vrijeme provedeno u pritvoru, od 17.04.2017. godine do 28.11.2017. godine.
+ 
+Osnovom čl.66 i 72 st. 1, 2 i 3 Krivičnog zakonika Crne Gore, ovaj sud je okrivljenom Jekni ć  Savu izrekao mjeru
+bezbjednosti obavezno liječenje alkoholi č ara koja ć e se izvr š avati u ustanovi za izvr š enje kazne zatvora ili u
+odgovaraju ć oj zdravstvenoj ili drugoj specijalizovanoj ustanovi, dok bude postojala potreba za lije č enjem, ali
+ne du ž e od izre č ene kazne zatvora, s tim š to se vrijeme provedeno u ustanovi za lije č enje ura č unava u kaznu
+zatvora. Ovu mjeru bezbjednosti sud je izrekao jer je okrivljeni osoba koja je predmetno krivi č no djelo
+poč inila usljed zavisnosti od upotrebe alkohola i postoji ozbiljna opasnost da ć e usljed ove zavisnosti i dalje
+vršiti krivi č na djela, a š to je utvr đ eno iz nalaza i mi š ljenja Komisije vje š taka neuropsihijatra prof. dr Stanka
+Milić a, psihijatra dr Ž eljka Golubovi ć a i psihologa Branke Stepanovi ć  Ili ć  i medicinske dokumentacije izdate
+na ime okrivljenog.
+ 
+Sud je cijenio i druge provedene dokaze, pa je na š ao da su bez uticaja na odlu č ivanje u ovoj krivi č noj stvari.
+ 
+O tro š kovima krivi č nog postupka odlu č eno je na osnovu č l. 226 i č l. 229 ZKP-a, pa kako je okrivljeni ogla š en
+krivim, obavezan je da na ime tro š kova krivi č nog postupka uplati bud ž etu Crne Gore iznos od 845,00 eura, a
+koji tro š kovi se odnose na nagradu odmjerenu vje š taku sudske medicine dr Nemanji Radojevi ć u u ukupnom
+iznosu od 170,50 € (60,50+55+55), na nagradu odmjerenu vje š taku neuropsihijatru prof. dr Mili ć  Stanku u
+iznosu od 236,50 €, na nagradu odmjerenu vje š taku psihijatru dr Golubovi ć  Ž eljku u iznosu od 236,50 €, na
+nagradu odmjerenu vje š taku psihologu Branki Stepanovi ć  Ili ć  u ukupnom iznosu od 181,50 €, na tro š kove
+prevoza okrivljenog u istrazi u iznosu od 10,00 € i na tro š kove prevoza okrivljenog na glavni pretres od
+10.10.2017. godine u iznosu od 10,00 €, kao i po osnovu sudskog pau š ala iznos od 200,00 €, koji pau š al je
+odre đ en shodno slo ž enosti i trajanju postupka uz ocjenu imovinskih prilika okrivljenog, a sve prednje u roku
+od 15 dana po pravosna ž nosti presude, dok ć e o ostalim tro š kovima krivi č nog postupka sud odlu č iti
+naknadno, posebnim rje š enjem, po pribavljanju podataka o njihovoj visini.
+ 
+ 
+ 
+ 
+ 
+Shodno izlo ž enom, a primjenom č lana 374 ZKP-a, odlu č eno je kao u izreci presude.
+ 
+ 
+ZAPISNI Č AR PREDSJEDNIK VIJEĆA - SUDIJA
+Hida Ra š i ć ,s.r. Vladimir Novovi ć ,s.r.
+ 
+PRAVNA POUKA: Protiv ove presude mo ž e se izjaviti ž alba Apelacionom sudu Crne Gore, u roku od 15 dana od
+dana prijema pismenog otpravka, a preko ovog suda.
+ 
+ 
+Tačnost otpravka tvrdi i
+Ovjerava namje š tenik suda
+_____________________________</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

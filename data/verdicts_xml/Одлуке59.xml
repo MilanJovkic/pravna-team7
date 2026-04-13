@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке59">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке59/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке59"/>
+                    <FRBRdate date="2012-07-04" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке59/sr@2012-07-04/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке59/sr@2012-07-04"/>
+                    <FRBRdate date="2012-07-04"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке59/sr@2012-07-04/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке59/sr@2012-07-04/!main.akn"/>
+                    <FRBRdate date="2026-04-13"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U KOTORU"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Momirki Marović"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakon-o-krivičnom-postupku" showAs="Zakon o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K 273/12/12</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U KOTORU</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2012-07-04">2012-07-04</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Momirki Marović</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Presuda protiv više okrivljenih za teške i lake tjelesne povrede.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Teška tjelesna povreda</p>
+                    <p>Laka tjelesna povreda</p>
+                    <p>Učestvovanje u tuči</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Zakon o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_153">Član 153</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da su okrivljeni izvršili krivična dela na osnovu svedočenja i dokaza.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="nepoznato">
+                    <p>Okrivljeni su proglašeni krivima.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>Crne Gore</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="location">Kotoru</fact>
+                <fact key="location">Što</fact>
+                <fact key="location">Podgorica</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K. 273/12/12
+ 
+U IME CRNE GORE
+ 
+OSNOVNI SUD U KOTORU, kao nadle ž ni prvostepeni krivi č ni sud, po sudiji Momirki Marovi ć  kao sudiji
+pojedincu, uz u č e šć e zapisni č ara Ana-Marije Petkovi ć , u krivi č nom predmetu protiv okrivljenog N P zbog
+krivi č nog djela te š ke tjelesne povrede iz č lana 151 stav 1 Krivi č nog zakonika, okrivljenog S S zbog krivi č nog
+djela lake tjelesne povrede iz č lana 152 stav 2 u vezi stava 1 Krivi č nog zakonika i okrivljenih D D i B D zbog
+krivi č nog djela u č estvovanja u tu č i iz č lana 153 Krivi č nog zakonika, koji se koji se vodi po optu ž nom predlogu
+ODT Kotor Kt. broj 328/12 od 04.07.2012 godine, nakon odr ž anog glavnog i javnog pretresa dana 14.05.2014
+godine, u prisustvu zamjenika ODT Kotor Ž  P, okrivljenog N P i B D, branioca okrivljenog S S kome se sudi u
+odsustvu po slu ž benoj du ž nosti advokata D I, te odsustvu uredno pozvanog okrivljenog D D shodno č lanu 457
+Zkp-a, dana 19.05.2014 godine donio je i javno objavio
+ 
+P R E S U D U
+ 
+1. OKRIVLJENI N P od oca D i majke M, ro đ ene B, ro đ en .... godine u P, stalno nastanjen u B, ulica S broj 4,
+državljanin CG, zaposlen kao menad ž er u restoranu u B, neo ž enjen, pismen, sa zavr š enom SSS, srednjeg
+imovnog stanja, ranije osu đ ivan presudom Osnovnog suda u Kotoru K.170/13/13 od 20.11.2013 godine zbog
+krivi č nog djela nasilni č ko pona š anje iz č lana 399 Krivi č nog zakonika na kaznu zatvora u trajanju od tri
+mjeseca, protiv kojeg se vodi postupak za drugo krivi č no djelo,
+ 
+2. OKRIVLJENI S S od oca G i majke LJ, ro đ ene M, ro đ en .... godine u B, stalno nastanjen u B, ulica P L broj 2,
+državljanin S, radnik, neo ž enjen, bez djece, pismen, sa zavr š enom VSS, srednjeg imovnog stanja, neosu đ ivan,
+protiv kojeg se ne vodi postupak za drugo krivi č no djelo,
+ 
+3. OKRIVLJENI D D od oca D i majke D, ro đ ene A, ro đ en ..... godine u P, stalno nastanjen u P, ulica Ž  Z broj ...,
+državljanin S, radnik, neo ž enjen, bez djece, pismen, sa zavr š enom SSS, srednjeg imovnog stanja, neosu đ ivan,
+protiv kojeg se ne vodi postupak za drugo krivi č no djelo,
+ Osnovni Sud u Kotoru
+K 273/2012
+14. Maj 2014
+4. OKRIVLJENI B D od oca M i majke O ro đ ene M, ro đ en .... godine u N, stalno nastanjen u B, D, ulica P P broj ..
+državljanin CG, radnik, o ž enjen, otac jednog maloljetnog djeteta, sa zavr š enom VSS, neosu đ ivan, protiv kojeg
+se ne vodi postupak za drugo krivi č no djelo,
+ 
+K r i v i s u
+ 
+Što su dana 25.06.2012 godine oko 01,30 č asova u B, u prolazu koji vodi od hotela ,,M" do parkinga koji se
+nalazi kod ,,JAT-a", u č estovali u tu č i u kojoj je o š te ć enom J M iz P nanijeta te š ka tjelesna povreda u vidu
+ujedine desne u š ne š koljke sa gubitkom - odgrizom dijela desne u š ne š koljke, a to sve u tu č i u kojoj su nakon
+verbalne rasprave u č estvovali sa jedne strane okrivljeni N P i B D, a sa druge strane J M, S S i D D, zadaju ć i
+jedni drugima udarce, da bi okrivljeni S S u toku tu č e lako tjelesno povrijedio o š te ć enog B D sredstvom
+podobnim da se tijelo te š ko povrijedi i zdravlje te š ko naru š i, na na č in š to ga je pogodio upaljenom
+navija č kom bakljom koju je okrivljeni S S podigao sa betona a koja je bila odba č ena od strane NN lica u toku
+trajanja tu č e kojom prilikom je o š te ć eni B zadobio laku tjelesnu  povredu u vidu opekotine u desnom
+slabinskom predjelu, pri č emu su bili ura č unljivi, svjesni zna č aja svog djela i njegove zabranjenosti, a č ije
+izvrš enje su htjeli,
+ 
+- čime su okrivljeni N P, D D, B D u č inili krivi č no djelo u č estvovanje u tu č i iz č lana 153 Krivi č nog zakonika Crne
+Gore, a okrivljeni S S krivi č no djelo laka tjelesna povreda iz č lana 152. stav 2. u vezi stava 1. Krivi č nog
+zakonika Crne Gore
+ 
+Pa sud okrivljenog N P na osnovu naprijed navedene krivi č no-pravne odredbe i č lana 3, 5, 8, 13, 15, 32, 33, 39,
+42, 45 i 46 Kz-a CG i č lana 368. i 374. Zkp-a
+ 
+O S U Đ  U J E
+ 
+Na nov č anu kaznu u iznosu od 1000,00 (hiljadu) eura, koju ć e okrivljeni platiti u roku od 90 dana od dana
+pravosna ž nosti presude, a koja ć e se u slu č aju nenaplativosti zamjeniti tako š to ć e se za svakih zapo č etih
+25,00 eura nov č ane kazne odrediti jedan dan zatvora.
+ 
+Okrivljeni N P je du ž an da na ime sudskog pau š ala uplati iznos od 50,00 eura i na ime tro š kova krivi č nog
+postupka iznos od 13,00 eura, u roku od 90 dana od dana pravosna ž nosti presude.
+ 
+Novč anu kaznu, tro š kove krivi č nog postupka i sudski pau š al okrivljeni ć e platiti u datom roku na ž iro ra č un
+broj 832-16-52 u korist bud ž eta C G i dokaz o uplati dostaviti ovom sudu s pozivom na poslovni broj K.
+273/12/12.
+ 
+Sud okrivljenima S S, D D i B D na osnovu naprijed navedene krivi č nopravne odredbe, te odredbi č lana 3, 5, 8,
+13, 15, 32, 33, 36, 42, 52, 53 i 54 KZ CG, te č lana 368. i 374. Zkp-a izri č e
+ 
+USLOVNU OSUDU
+ 
+Kojom im utvr đ uje kazne zatvora u trajanju od po 3 (tri) mjeseca i istovremeno odre đ uje da se kazna ne ć e
+izvrš iti ukoliko okrivljeni za vrijeme od jedne godine, od dana pravosna ž nosti presude ne u č ine novo krivi č no
+djelo.
+Duž ni su okrivljeni S S, D D i B D na ime tro š kova krivi č nog postupka uplatiti iznos od po 13,00 eura i na ime
+sudskog pau š ala uplatiti iznos od po 50,00 eura, u roku od 15 dana od dana pravosna ž nosti presude na ž iro
+račun broj 832-16-52, a u korist bud ž eta Crne Gore i dokaz o uplati dostaviti ovom sudu s pozivom na broj K.
+273/12/12.
+ 
+Ošte ć eni J M se sa imovinsko pravnom zahtjevom upu ć uje na parnicu.
+ 
+O b r a z l o ž  e n j e
+ 
+ODT Kotor aktom Kt. broj 328/12 od 04.07.2012 godine stavilo je na teret N P izvr š enje krivi č nog djela te š ke
+tjelesne povrede iz č lana 151 stav 1 Krivi č nog zakonika, okrivljenom S S izvr š enje krivi č nog djela lake tjelesne
+povrede iz č lana 152 stav 2 u vezi stava 1 Krivi č nog zakonika i okrivljenima D D i B D izvr š enje krivi č nog djela
+učestvovanja u tu č i iz č lana 153 Krivi č nog zakonika.
+ 
+Okrivljeni N P je u svojoj odbrani u prethodnom postupku na zapisnik pred ODT Kotor naveo da je bio u gradu
+sa svojim drugovima D B i S M i po zavr š etku muzike oko 01,30 č asova su krenuli da idu ispred Starog grada i
+ispred hotela „M“ je primjetio grupu od 5 momaka ali prvo nije obratio pa ž nju na njih jer je razgovarao
+telefonom i kada se okrenuo vidio je kako isti fizi č ki napadaju B D. Odmah je pri š ao kako bi ih razdvojio,
+međ utim oni su sko č ili na njega, a dva momka su izvadila navija č ke baklje, upalili ih i krenuli na njih kako bi
+ih izgorjeli. Oni su krenuli da bje ž e, a oni za njima pa je jedan od momaka bakljom izgorio B D i tu su ih sustigli
+i nastavili fizi č ki da ih napadaju i udaraju, a oni su se branili. U jednom momentu jedan od tih momaka ga je
+ubo u stomak ali nije siguran da li no ž em ili š rafcigerom, a o č emu ima izvje š taj ljekara i on se tada morao
+braniti od takvih napada i naravno da je tada zadavao udarce njima, a ne zna je li koga ugrizao, a ne mo ž e se
+ni sjetiti jer mu je jedino bilo na pamet da spasi ž ivu glavu, jer je njih bilo petorica i to sa bakljama a njih samo
+dvojica.
+Okrivljeni N P je u svojoj odbrani na glavnom pretresu naveo da ne priznaje izvr š enje krivi č nog djela, niti
+krivicu za isto. Na glavnom pretresu je prvi put vidio okrivljene S S i D D i ne sje ć a se da je iste uop š te vidio
+kritič ne prilike u B, te da je i sa jednim od njih imao fizi č ki kontakt. Naveo je da se ne sje ć a da je kriti č ne
+prilike bilo ko palio navija č ku baklju, niti da je on sa bilo kim imao fizi č ki obra č un, niti da se branio.
+ 
+Okrivljeni Stani š i ć  Stefan je u svojoj odbrani u prethodnom postupku na zapisnik pred ODT K naveo da su
+imali probu u ,,G T” gdje ina č e radi i sa svojim poznanicima J M, M D i D D je i š ao u pravcu ku ć e i prolazili su
+pored terase hotela ,,M” kada su primjetili njihovog poznanika R N kako sjedi na terasi hotela ,,M” i pri č a na
+skajpu. Tu su mu š aljivo dobacivali u smislu kako ve ć  nekoliko sati pri č a sa svojom djevojkom i krenuli su
+dalje kada se iza njih stvorio neki momak koji im se obratio rije č ima da se maknu odatle i da po ž ure, a drugi
+put im se odmah obratio da se sklone odatle ali oni nisu znali o č emu se radi i nastavili su da idu ka smje š taju
+i kada su skrenuli na kraju terase ,,M” lijevo ka parkingu ,,JAT-a”, taj isti momak se vratio i drsko im se obratio
+u smislu š ta ho ć e i š ta gledaju i zatim su primjetili na tom ć o š ku grupicu od desetak ljudi, da se iz te grupice
+izdvajaju dva ili tri momka i kre ć u u njihovom pravcu i to vrlo agresivno i tada zapo č inje tu č a izme đ u njih s
+tim š to M D stoji po strani, po š to se radi o starijem č ovjeku i ne u č estvuje u tu č i. Me đ u njima je bio i J M i u
+jednom trenutku je vidio da je pala pored njega upaljena baklja a pretpostavlja da je neko od te grupe
+momaka bacio u njegovom pravcu, sagnuo se i istu uzeo i tada č uje da je taj momak koji im se prvi obratio
+uzviknuo ,,Pucat ć u” i primjetio je da u ruci dr ž i neki predmet, prepla š io se, bacio baklju i odmah se okrenuo i
+pobjegao i nije vidio gdje je baklja zavr š ila i svi su se razbje ž ali u raznim pravcima. Siguran je da zadobijenu
+povredu J M nije zadobio u toj gu ž vi jer je to kratko trajalo svega par sekundi, nego kasnije, jer im je ispri č ao
+da su ga kasnije sustigli i pretukli.
+Okrivljeni S S je u svojoj odbrani na glavnom pretresu naveo da ne priznaje izvr š enje krivi č nog djela, niti
+krivicu za isto. Kriti č ne prilike je ugledao baklju pored svojih noga na podu, koja baklja je bila upaljena i koju
+je podigao i nakon š to ju je podigao neko je viknuo ,,Da ć e neko da puca'' i zbog toga je tu baklju odbacio, ali
+ni put koga konkretno i pobjegao. Prvi put je vidio prisutne okrivljene Novakovi ć  Petra i B D, nakon š to su od
+strane UP PJ Budva dovedeni kod tu ž ioca da daju izjave. U stanici policije nije vr š eno prepoznavanje.
+Okrivljeni N P nije momak za kojeg je opisao da je prvi krenuo ka njemu i zapo č eo tu č u kriti č ne prilike.
+Okrivljeni D D je u svojoj odbrani u prethodnom postupku na zapisnik pred ODT Kotor naveo da su imali
+probu u,,G T” gdje ina č e radi i sa svojim poznanicima J M, M D i S S su i š li u pravcu ku ć e i prolazili su pored
+terase hotela ,,M” kada su primjetili njihovog poznanika R N kako sjedi na terasi hotela ,,M” i pri č a na skajpu.
+Tu su mu š aljivo dobacivali u smislu kako ve ć  nekoliko sati pri č a sa svojom djevojkom i on mu je rekao da
+pođ e sa njim ku ć i i krenuli su dalje kada se za č ula neka vika od strane nekog momka iza njih, a kojeg su drugi
+momci smirivali i tada im je pri š ao iz te grupe jedan momak i fino ih je zamolio da po ž ure i da se pomjere
+odatle jer je ovaj njegov drugar pijan. Nastavili su da idu ka smje š taju i kada su skrenuli na kraju terase ,,M”
+lijevo ka parkingu ,,JAT-a”, a ti momci su nastavili svojm putem u pravcu kafea ,,H”, tada je taj isti momak koji
+im se ljubazno obratio prethodno vratio i drsko im se obratio u smislu š to ho ć e i š to gledaju i zatim
+primje ć uju na tom ć o š ku grupicu od desetak ljudi i da se iz te grupice izdvajaju dva ili tri momka i kre ć u u
+njihovom pravcu i to vrlo agresivno i tada zapo č inje tu č a izme đ u njih. Okrivljeni P N u tom momentu nije bio
+međ u tim momcima š to su zapo č eli tu č u sa njima, a taj momak š to je zapo č eo tu č u je poslije pobjegao i ne
+radi se ni o okrivljenom N P, ni o B D. M D je stajao po strani, po š to je stariji č ovjek i nije u č estvovao u tu č i.
+Međ u njima je bio i J M, ali je isti nosio lap top. On nije primjetio da je okrivljeni S S uhvatio baklju i da je gasio
+jer je bila gu ž va, a s obzirom da je bio poklekao i primao udarce. U jednom momentu je za č uo uzvik ,,Pucaj,
+pucaj” i u tom momentu po č inju svi da bje ž e i to u pravcu parkinga. Kada se dovoljno udaljio, okrenuo se i
+vidio stra š nu gu ž vu na kraju te staze kod parkinga i to vi š e momaka kako š utiraju nekoga na zemlji, a kasnije
+mu je J M rekao da su njega š utirali, me đ utim u toj grupi je primjetio i radnike obezbje đ enja a pretpostavlja
+da se radi o radnicima obezbje đ enja hotela ,,A” kako razdvajaju te momke. On je sam po š ao na njihov
+smje š taj i onda ga je J M pozvao telefonom da mu ka ž e kako ide u hitnu pomo ć . Zadavao je udarce u toku
+tuče, ali se samo branio.
+Okrivljeni D D je u svojoj odbrani na glavnom pretresu naveo da je ta č no da je u č estvovao u tu č i, ali da se
+branio, te stoga ne priznaje izvr š enje krivi č nog djela, niti krivicu za isto. Ostao je pri izjavi datoj na zapisnik
+pred ODT Kotor. Prilikom odgovora na pitanja na glavnom pretresu naveo je da se sje ć a N P kao najkrupnijeg
+momka koji je kriti č ne prilike imao bijelu majicu na sebi, te da on na po č etku tu č e uop š te nije u č estvovao u
+istoj, a ne zna za kasnije jer je pobjegao sa lica mjesta. Sje ć a se da je momak koji je u stvari inicirao č itavu
+tuču na sebi imao ljubi č astu majicu i sada ga ne bi mogao prepoznati. Obzirom da je pobjegao sa lica mjesta
+uopš te se ne sje ć a gdje je ostao J M, odnosno da li je isti bje ž ao. Dok su bili u stanici policije u B, a nakon
+doga đ aja, u hodniku su sjedali on, S S, J M i jo š  jedan njegov kolega D M i u jednom momentu je iz kancelarije
+izaš ao inspektor i svima se pojedina č no obratio, tako š to je J M rekao da je o š te ć en, M D da je slobodan,
+njemu da je u č estvovao u tu č i, a S S da ć e odgovarati za krivi č no djelo laka tjelesna povreda. Navodi da dok je
+sjedao da je J M imao zavoj preko uveta i da jeste rekao da mu je neko odgrizao uho, ali da ne zna ko.
+ 
+Okrivljeni B D je u svojoj odbrani u prethodnom postupku na zapisnik pred ODT Kotor naveo da je bio u gradu
+sa svojim drugovima N P i S M i po zavr š etku muzike oko 01,30 č asova su krenuli da idu ispred Starog grada i
+ispred hotela ,,Mogren” je primjetio grupu od 5 momaka koji su stajali dok su oni prolazili i ne š to su se smijali
+i dobacivali, pa se N P njemu obratio pitaju ć i ,,Da li oni to nama dobacuju'', pa je to, te iste momke pitao,a
+jedan je odreagovao i pitao ,, Š to ho ć e š ”, zatim je jedan od momaka za kojeg je kasnije saznao da se zove S S
+odmah izvadio navija č ku baklju, aktivirao je i to je bio signal da sva petorica krenu na njih da se fizi č ki
+obra č unaju, a oni su krenuli da bje ž e, me đ utim S S je njega sustigao i bukvalno ga ubo upaljenom bakljom u
+leđa i ispekao ga, od č ega je on pao na plo č nik a zatim su krenuli da ga udaraju, a on se branio i onda se N P
+vratio kako bi mu pomogao i onda su razmijenjivali udarce, on i N P na jednoj strani a njih trojica protiv njih, a
+nije vidio gdje su ostala dvojica bila i nije vidio ko je ujeo o š te ć enog J M za uho. Njihov drug M S se uop š te nije
+mije š ao u tu č u, ali je sve vidio tako da on mo ž e posvjedo č iti. M je viknuo u jednom momentu kako bi ih
+spasio ,,Pucat ć u” i poslije toga su jedan ili dvojica pobjegli š to ih je spasilo, me đ utim M naravno nije bio
+naoru ž an, ve ć  je tako viknuo kako bi im pomogao. Č itav doga đ aj se de š avao na ć o š ku terase od ,,M” a nije uz
+prolaz koji vodi na parking prema ,,JAT-u”, niti su oni jurili za njima uz taj prolaz i tu oborili na zemlju
+ošte ć enog J M i tukli ga. Zna č i, bili su napadnuti i samo su se branili, pogotovo zbog č injenice da su ih napali
+upaljenom bakljom, a nije siguran da li su bile upaljene č ak dvije baklje kada su krenuli da ih napadaju a
+jedna jeste sigurno.
+Okrivljeni B D je u svojoj odbrani na glavnom pretresu naveo da ne priznaje izvr š enje krivi č nog djela, niti
+krivicu za isto. On se kriti č ne prilike branio, te nije vidio ko ga je bakljom ubo u le đ a i ispekao ga, zbog č ega je
+i pao. Kada je pao, po š to je osje ć ao udarce svuda po tijelu, okrenuo se i branio rukama i nogama, a ne zna
+koliko njih mu je zadavalo udarce dok se branio. Taj napad na njega je trajao svega dvije-tri sekunde. Napad
+na njega je prestao tako š to je č uo kako M vi č e da ć e pucati, nakon č ega su napada č i pobjegli. Okrivljene S S i
+D D je prvi put vidio na pro š lom glavnom pretresu, kada su isti dolazili na poziv suda, a ne sje ć a ih se kao lica
+koja su ga kriti č ne prilike napali. Obzirom da je pao i da se branio, uop š te se ne sje ć a gdje je bio N P i da li je
+isti bio napadnut ili da je u č estvovao u tu č i. Nakon š to je okrivljenom B D ukazano na razlike u odbrani a u
+odnosu na zapisnik pred ODT Kotor kada je izjavio da je kasnije saznao da se ovaj momak koji je izvadio
+navija č ku baklju, aktivirao je i koji ga je ubo u ledja, zbog č ega je i pao, zove ,,Stani š i ć  Stefan", okrivljeni je
+naveo ,,da je prilikom saslu š anja na zapisnik pred ODT Kotor, od zamjenika tu ž ioca saznao da se to lice zove S
+S i zato je na zapisniku pred ODT Kotor nazna č eno, da je to upravo S S". Prilikom saslu š anja pred ODT Kotor,
+sjedali su u pratnji policije svi u hodniku, mada su on i Novakovi ć  Petar bili u jednom dijelu hodnika, a S S i D
+D u drugom. Pred saslu š anje je vidio S S, te sa sigurno šć u ni sada ne mo ž e da tvrdi, da je on to lice koje ga je
+kritič ne prilike ubolo u le đ a upaljenom bakljom. Vjerovatno je u policijskim izvje š tajima stajalo da je S S imao
+kritič ne prilike baklju, te kada mu je to pro č itano kod tu ž ioca, potvrdio je da je to S S.
+Prilikom odgovora na pitanja na glavnom pretresu naveo je da zbog plamena baklje koja je bila iznad njega,
+dok je on le ž ao na podu i dok se okrenuo nije vidio ko mu zadaje udarce, ni da li neko razdvaja napada č e od
+njega. Nije vidio ko je kriti č ne prilike J M zadao, ni nanio povredu. Tu č a je prestala tako š to je č uo da M vi č e da
+će pucati, nakon č ega je nastalo op š te bje ž anje, a policija dolazi u roku od dva minuta, mada se njemu č inilo
+da su na lice mjesta do š li odmah, nakon č ega su njega i Novakovi ć  Petra poveli u stanicu policije. Nije vidio na
+licu mjesta ni prije nego š to je policija do š la a ni kasnije J M. On u stanici policije nije bilo koga prepoznavao a
+po pravillima kako se to vr š i prema Zkp-u. Misli da je prvi put za ime S S č uo kada je saslu š avan na zapisnik
+pred ODT Kotor.
+ 
+U dokaznom postupku koji je sproveden radi utvr đ ivanja č injeni č nog stanja i krivice okrivljenih, sud je proveo
+slede ć e dokaze i to: izvr š io uvid u izvod iz kaznene evidencije za okrivljenog D D policijske uprave P od
+09.07.2012 godine, uvid u izvod iz kaznene evidencije za okrivljenog S S Uprave policije za analitiku Beograd
+od 18.07.2012 godine, uvid u izvod iz kaznene evidencije za okrivljenog B D UP PJ Nik š i ć  od 11.07.2012
+godine, uvid u izvod iz kaznene evidencije za okrivljenog N P UP PJ P od 10.07.2012 godine, na saglasnost
+stranaka pro č itao iskaz svjedoka S M sa zapisnika pred ODT Kotor i sa ranijeg glavnog pretresa, iskaz svjedoka
+K R sa zapisnika pred ODT K od 28.06.2012 godine i sa ranijeg glavnog pretresa, iskaz o š te ć enog J M sa
+zapisnika pred ODT Kotor od 25.06.2012 godine, iskaz svjedoka Š  V sa zapisnika pred ODT Kotor od 28.06.2012
+godine, iskaz svjedoka M D sa zapisnika pred ODT Kotor od 26.6.2012 godine, iskaz svjedoka R N sa zapisnika
+pred ODT Kotor od 26.06.2012 godine, na saglasnost stranaka pro č itao nalaz i mi š ljenje vje š taka medicinske
+struke Dr. K N od 28.06.2012 godine, izvr š io uvid u izvje š taj ljekara jedinice za HMP Doma zdravlja B broj 6019
+od 25.06.2012 godine na ime J M, uvid u izvje š taj ljekara bolnice K na ime J M od 25.06.2012 godine, uvid u
+izvje š taj ljekara Doma zdravlja B od 25.06.2012 godine na ime B D, uvid u izvje š taj Doma zdravlja B od
+25.06.2012 godine na ime N P, uvid u izvje š taj ljekara Op š te bolnice Kotor za J M od 25.06.2012 godine, uvid u
+fotodokumentaciju Uprave policije PJ B broj 271/12 od 25.06.2012 godine i uvid u pravosna ž nu presudu ovog
+suda K. broj 170/13/13.
+Uvidom u izvod iz kaznene evidencije za okrivljenog D D policijske uprave Pan č evo od 09.07.2012 godine
+utvrđ eno je da je da isti ranije nije osu đ ivan.
+ 
+Uvidom u iz kaznene evidencije za okrivljenog S S Uprave policije za analitiku Beograd od 18.07.2012 godine
+utvrđ eno je da isti ranije nije osu đ ivan.
+ 
+Uvidom u izvod iz kaznene evidencije za okrivljenog B D UP PJ N od 11.07.2012 godine utvr đ eno je da isti
+ranije nije osu đ ivan.
+ 
+Uvidom u izvod iz kaznene evidencije za okrivljenog N P UP PJ P od 10.07.2012. godine utvr đ eno je da isti
+ranije nije osu đ ivan.
+ 
+Svjedok S M je naveo da je sa svojim dru š tvom vra ć ao ku ć i iz grada, bilo ih je trojica- č etvorica i kada su
+prolazili pored terase hotela ,,M” neki od momaka kojeg nikada u ž ivotu nije vidio je ne š to dobacio njegovom
+drugu N P, na š ta se on nasmijao i pitao tog momka da li to on njemu ne š to dobacuje, a ovaj mu je
+bezobrazno obrusio i oni su krenuli dalje i bili su ispred tih momaka i kad su do š li na ćošak terase ,,M” prema
+kafić u ,,H”, N P se okrenuo i taj momak je opet ne š to dobacivao a izgledao je kao da je pio alkohol i kad ga je
+N P pitao š ta je bilo, jedan od njih je automatski izvadio iz crne torbe navija č ku baklju koju je odmah aktivirao
+i krenuo u njihovom pravcu, tada su oni krenuli da bje ž e jer su se prepali, znaju ć i koliko je opasna navija č ka
+baklja i da su ljudi ve ć  ginuli od njih, N P se okrenuo i tada je viknuo “U D”, a kada se on okrenuo vidio je B D
+kako se spotakao dok je bje ž ao i da za njim tr č e neki od tih momaka i kako ga je pogodio zapaljenom bakljom
+u predjelu le đ a i u tom trenutku je B D pao na zemlju, a N P je pritr č ao kako bi ga spasio a od dima se ni š ta
+nije vidjelo. On je sam tada zavikao ,,Pi š tolj, pi š tolj”, kako bi poku š ao zapla š iti te momke i stvarno je uspjelo,
+jer su krenuli da bje ž e. Nije ta č no da su oni poslije jurili za tim momcima uz prolaz koji vodi u pravcu parkinga
+kod JAT-a. Da N P nije sko č io da spasi B D, on bi bio mrtav jer su na njega krenuli bakljama.
+U svom iskazu na glavnom pretresu je naveo u svemu kao na zapisnik pred ODT Kotor od 26.06.2012 godine, s
+tim š to je pojasnio da ovaj momak koji je zapalio navija č ku baklju, je bio crn, krupan i visok i kojeg bi sigurno
+mogao sada prepoznati, a to nije ni S S, ni D D. Prvi put je upravo u sudu vidio D i S, a kriti č ne prilike na licu
+mjesta ih nije vidio. Kada je povikao ,,Pi š tolj, pi š tolj", svi su se razbje ž ali, te je on sa nekim od drugova po š ao
+kući, a sad se ne mo ž e sjetiti sa kojim, a prije toga su lice mjesta napustili N P i B D, tako da uop š te ne zna da li
+je policija dolazila na lice mjesta. Tek kada je do š ao ku ć i neko mu je javio da su u policiji privedeni N P i B D,
+zbog č ega je on po š ao u stanicu policije da vidi š to se de š ava.
+ 
+Svjedok K R je naveo je da je zaposlen u ,,S S” i da radi na obezbje đ enju hotela ,,A” a kriti č ne no ć i
+24/25.06.2012 godine je bio raspore đ en na lokaciji 3., koja se nalazi kod bazena hotela. U jednom trenutku ga
+je pozvao kolega Š  da do đ e na lokaciju 2., na kojoj se on nalazio, a koja se nalazi na platou ispred hotela, kada
+je do š ao primjetio je gu ž vu na parkingu kod JAT-a i gdje se č ula vika i galama ve ć e grupe momaka, u tom
+momentu je pri š la jedna ž ena pored njih i rekla da zovu hitnu pomo ć  jer je izbila tu č a i da je momak
+povrije đ en, da le ž i i da mu je povrije đ eno uvo. Pozvao je odmah policiju i ambulantu, a oni nisu prilazili kako
+bi eventualno razdvojili te momke, jer ne smiju da napu š taju svoje pozicije. Dosta ljudi je vidjelo ovu tu č u.
+Sve su posmatrali sa razdaljine od nekih 40-50 metara. Kad je do š la policija oni su se vratili na njihova
+zadu ž enja. Ne zna na kojoj je daljini nalazio od lica mjesta, ali se nalazio ispred recepcije hotela ,,A, tako da
+nije mogao jasno da vidi u č esnike u toj tu č i, niti koga mo ž e da prepozna.
+ 
+Ošte ć eni J M je naveo da se vra ć ao sa svog posla, a radi u ,,Grad teatru” zajedno sa S S, D D i M D i da bilo je
+oko 01,15-01,20 č asova. Kada su prolazili pored terase hotela ,,M” primjetili su njihovog poznanika R N koji je
+sjedio na toj terasi i razgovarao putem skajpa, obratili su mu se š aljivim tonom da prekine razgovor jer je bio
+na skajpu par sati i kada se okrenuo primjetio je tri – č etiri momka i to kako se jedan zalije ć e u njihovom
+pravcu, bio je najkrupniji od njih, jedan ga je dr ž ao kako bi ga sprije č io da se fizi č ki razra č una sa njima, a tre ć i
+momak im je pri š ao i rekao da se sklone odatle jer je momak pijan. Oni su po š li i skrenuli u prolaz lijevo kako
+bi iza š li na parking kod ,,JAT-a”, a on je sam i š ao ispred svih nose ć i lap top u rukama i kada se okrenuo
+primjetio je gu ž vu dolje na š etali š te i to kako ti momci napadaju S S i D D, da M D stoji sa strane, zatim se
+vratio i vidio je kako sijevaju udarci na sve strane i tada je primjetio upaljenu baklju koju je S S bacio od sebe.
+Neko od tih momaka je vikao da ć e pucati i ovi njegovi poznanici su krenuli da bje ž e i on sa njima, ali je zastao
+kako bi podigao lap top i u tom trenutku su ga ti momci sustigli, oborili ga na pod, š utirali ga nogama i to sa
+svih strana tako da pretpostavlja da su ga š utirala tri – č etiri momka, zatim je jedan momak sko č io na njega i
+grizao ga za desno uho, osjetio je jak bol i pomislio da mu je otkinuo dio u š ne š koljke, a zatim je neko od tih
+momaka rekao ,,A P, D ….”. Zna da je S S nosio torbicu preko ramena ali je bila u pitanju mala torbica i baklja
+nije mogla da stane u nju. Dok su ga udarali isto tako su mu lomili lap top. Nije se pridru ž io krivi č nom
+gonjenju, a postavio je imovinsko pravni zahtjev i to samo u pogledu naknade š tete zbog polomljenog lap
+top-a.
+ 
+Svjedok Š  V je naveo da je zaposlen u ,,S S” i da radi na obezbje đ enju hotela ,,A”. Kriti č ne no ć i ….. godine bio
+je raspore đ en na platou ispred hotela i u jednom trenutku je za č uo viku i galamu i tada je primjetio kako
+protr č ava grupa momaka kroz prolaz izme đ u hotela ,,M” i biv š e banke i gdje nastaje velika gu ž va i tu č a ispred
+butika kod parkinga kod ,,JAT-a”. Odmah je pozvao svog kolegu koji je tu no ć  bio u reonu kod bazena hotela
+,,A” i kada je do š ao po š li su bli ž e doga đ aju i sve smo posmatrali sa razdaljine od nekih 40-50 metara. Oni su se
+vukli, č upali, rvali i tu je prisustvovalo dosta ljudi koji su posmatrali taj doga đ aj. Odmah su pozvali policiju i
+onda je pro š la jedna ž ena pored njih iz njihovog pravca i rekla im da pozovu hitnu pomo ć  jer je jedan momak
+povrije đ en, le ž i i krvari, a š to su oni i u č inili. Kad je do š la policija oni su se vratili na svoja zadu ž enja.
+ 
+Svjedok M D je naveo da je sa njegovim poznanicima sa posla sa kojima radi u ,,G T” vra ć ao ku ć i sa probe i
+prolazili su pored terase hotela ,,M” i on je i š ao napred, a iza njega su i š li M J, D D i S S. Na terasi je sjedio
+njihov poznanik R N i on misli da mu je Dejan Draganov ne š to š aljivo dobacio u smislu kako dugo pri č a na
+skajpu, a po š to je on bio ispred primjetio je jednog momka kako je pri š ao njima trojici i rekao im ,,Bje ž ite,
+bjež ite”, š to ga je isprva za č udilo, a iza njih je bilo dosta nekih momaka i bilo je neko kome š anje tako da je on
+pretpostavio da se ti momci koji se nalaze iza, me đ usobno sva đ aju i da je zato taj momak njima pri š ao i rekao
+da bje ž e. Oni su nastavili pored terase ,,M” i odmah skrenuli ulijevo kako bi prolazom do š li do parkinga kod
+,,JAT-a”, a ti momci su nastavili napred u pravcu kafe bara ,,H”. On je opet i š ao ispred i kada se okrenuo,
+primjetio je tog momka koji im je rekao ,,Bje ž ite” kako prilazi ovoj trojici i ne š to im pri č a a da za njim dolazi
+više momaka. Zatim nastaje gu ž va i po č inje tu č a, koja je po č ela na prolazu a zatim prelazi i u pravcu
+restorana ,,Demi ž ana”, a š to je bilo izvan njegovog vidnog polja, jer se nalazi iza ć o š ka prolaza u kojem je ve ć
+bio. Kad se vratio nazad, ta gu ž va je do š la do poslovnice ,,Lutrije CG” i tada je vidio upaljenu baklju, dim i
+gužvu, ali nije mogao da razabere ko koga sve udara, on se udaljavao u pravcu terase ,,M” i u jednom
+momentu č uo uzvike ,,Pucaj, pucaj” i zatim primjetio njegove poznanike, njih trojicu kako bje ž e i skre ć u u
+prolaz koji vodi kod parkinga do JAT-a i da za njima tr č i vi š e momaka. Nije mogao da vidi da li su ikoga sustigli
+do kraja prolaza jer to nije bilo u njegovom vidnom polju, on se vratio kod Rebi ć a i onda je po š ao na smje š taj i
+tamo je vidio D D koji mu je rekao da je J M povrije đ en i to da mu je neko odgrizao uho i da ga mora hitno
+prebaciti u K.
+ 
+Svjedok R N je naveo da je kriti č ne ve č eri sjedio na terasi hotela ,,M” i to za stolom koji se nalazio uz staklo
+lokala i le đ ima je bio okrenut u pravcu koji gleda na restoran ,,D” i kafe baru ,,H”, kao i š ankovima. Na svojem
+lap top-u je razgovarao preko skajpa sa svojom djevojkom i u jednom trenutku je č uo veliku viku i galamu š to
+ga je natjeralo da se okrene i tada je primjetio neke momke kako vi č u i raspravljaju se, a nalazili su se ta č no
+izme đ u poslednjeg š anka i kraja terase ,,M”. Bilo ih je vi š e. Odmah poslije toga su nai š li iz S grada njegove
+kolege, dva D, S i M. Kada su ga vidjeli kako koristi lap top po č eli su da mu dobacuju i da se š ale sa njim, u
+smislu kako dugo razgovara preko skajpa i kako treba da prekine sa razgovorom, a on im je samo odmahnuo
+rukom i nastavio razgovor. Vrlo brzo poslije toga je za č uo veliku galamu i viku iza njega, okrenuo se i primjetio
+neku gu ž vu, vidio je kako neko ga đ e nekoga fla š ama i po š to je sjedio uz staklo ,,M” mogao je vidjeti kako neki
+momci, jure kroz prolaz koji vodi pored terase ,,Mogrena” u pravcu parkinga kod JAT-a. Poslije toga se
+okrenuo i nastavio svoj razgovor, jer mu ni na kraj pameti nije bilo da su u toj jurnjavi u č estvovali i njegovi
+poznanici. Zatim mu prilazi M D vrlo uzbu đ en i prepla š en i govori mu kako ih je neko napao i da su neki
+momci sko č ili na njih i po č eli da ih biju. Rekao je da je bila u pitanju ve ć a grupa momaka. Zatim su zajedno
+poš li da prona đ u svoje kolege i da vide š to se desilo, na smje š taj su prona š li D D koji im je rekao za M povrede
+tj. da mu je neko odgrizao dio uva.
+ 
+Iz nalaza i mi š ljenja vje š taka medicinske struke Dr. K N od ..... godine utvr đ eno je da je o š te ć eni J M kriti č ne
+prilike zadobio ujedinu u predjelu desne u š ne š koljke sa gubitkom-odgrizom dijela desne u š ne š koljke, a š to
+predstavlja u vrijeme nano š enja te š ku tjelesnu povredu nanesenu dejstvom č ovje č ijih zuba. Okrivljeni B D je
+zadobio slede ć e tjelesne povrede: opekotinu ko ž e u desnom slabinskom predjelu i oguljotinu ko ž e u predjelu
+lijevog lakta. Navedene povrede koje je zadobio B D predstavljaju u vrijeme nano š enja procijenjene kako
+pojedina č no, tako i u svom ukupnom djelovanju laku tjelesnu povredu. Opekotina ko ž e u desnom
+slabinskom predjelu nastala je dejstvom baklje, a oguljotina ko ž e u predjelu lijevog lakta nastala je uslijed
+pada B D i njegovog kontakta sa podlogom. Okrivljeni N P je zadobio ogrebotinu (crtastu oguljotinu) ko ž e u
+predjelu ispod lijevog rebarnog luka, a š to predstavlja u vrijeme nano š enja laku tjelesnu  povredu nane š enu
+najvjerovatnije dejstvom nokta.
+ 
+Uvid u izvje š taj ljekara jedinice za HMP Doma zdravlja B .... od ...... godine na ime J M utvr đ eno je da je isti
+primljen u 02:30 č asova, te je nakon pregleda upu ć en kod hirurga u Op š tu bolnicu K.
+ 
+Uvidom u izvje š taj ljekara bolnice Kotor na ime J M od .... godine utvr đ eno je da je isti primljen u 03:00
+časova, te mu je postavljena dijagnoza i odre đ ena terapija.
+ 
+Uvidom u izvje š taj ljekara Doma zdravlja B od .... godine na ime B D utvr đ eno je da je isti primljen u 02:43
+časova, te su mu konstatovane povrede i postavljena dijagnoza.
+ 
+Uvidom u izvje š taj Doma zdravlja B od .... godine na ime N P utvr đ eno je da je isti primljen u 02:41 č asova, te
+su mu konstatovane povrede i postavljena dijagnoza.
+ 
+Uvidom u izvje š taj ljekara Op š te bolnice Kotor za J M od .... godine utvr đ eno je da je istog pregledao
+specijalista otorinolaringolog, koji mu je postavio dijagnozu i odredio terapiju.
+ 
+Uvidom u fotodokumentaciju Uprave policije PJ B broj 271/12 od ..... godine utvr đ en je izgled o š te ć enog J M,
+okrivljenog N P i okrivljenog B D,a nakon predmetnog doga đ aja.
+ 
+Uvidom u pravosna ž nu presudu ovog suda K. broj ... utvr đ eno je da je okrivljeni N P osu đ en zbog izvr š enja
+krivi č nog djela nasilni č kog pona š anja iz č lana 399 KZ CG na kaznu zatvora u trajanju od 3 (tri) mjeseca.
+ 
+Nije bilo predloga za dopunu dokaznog postupka, niti prigovora na izvedene dokaze.
+ 
+Cjene ć i provedene dokaze, pojedina č no i u uzajamnoj povezanosti shodno č lanu 370 stav 3 Zkp-a, kao i u
+odnosu na odbrane okrivljenih, sud je utvrdio č injeni č no stanje navedeno u izreci presude.
+ 
+Činjeni č no stanje sud je utvrdio na osnovu ocjene odbrane okrivljenih, iskaza svjedoka S M, Š  V, M D, R N,
+ošte ć enog J M, te nalaza i mi š ljenja vje š taka medicinske struke dr K N od 28.06.2012 godine.
+ 
+Prije svega, iz odbrana okrivljenih N P, S S, D D i B D (koji je zadobio laku tjelesnu  povredu), te iskaza svjedoka
+S M, Š  V, M D, R N i o š te ć enog J M, sud je utvrdio da je kriti č ne prilike do š lo do op š te tu č e u kojoj su
+učestvovali svi okrivljeni, te o š te ć eni J M, koji je zadobio te š ku tjelesnu povredu bli ž e opisanu u izreci
+presude.
+ 
+Tešku tjelesnu povredu (koju je kriti č ne prilike zadobio o š te ć eni J M) odnosno laku tjelesnu povredu (koju je
+zadobio okrivljeni B D), bli ž e opisane u izreci presude, sud je utvrdio iz nalaza i mi š ljenja vje š taka medicinske
+struke dr. K N od …….  godine, č iju sadr ž inu je sud prihvatio, jer ista nije osporena na bilo koji na č in, a radi se
+o nalazu ura đ enom po pravilima struke.
+ 
+Ono š to se postavilo kao sporno, imaju ć i u vidu navode iz optu ž nog predloga ODT Kotor i odbrane
+okrivljenih, jeste okolnost da li je okrivljeni N P kriti č ne ve č eri prilikom tu č e nanio o š te ć enom J M te š ku
+tjelesnu povredu, ili nije, odnosno da li je okrivljeni S S nanio okrivljenom B D laku tjelesnu povredu, ili nije.
+ 
+S tim u vezi, za razliku od optu ž nog predloga ODT Kotor u kome je navedeno da je okrivljeni N P te š ko
+tjelesno povrijedio o š te ć enog J M, na na č in š to prilikom me đ usobne tu č e sko č io i ugrizao ga za desnu u š nu
+školjku, sud je mi š ljenja da provedenim dokazima nije dokazano da je okrivljeni N P o š te ć enom nanio te š ku
+tjelesnu povredu bli ž e opisanu u izreci presude, pa je u tom dijelu izmjenio č injeni č ni opis djela, na na č in š to
+je okrivljenom stavio na teret da je u č estvovao u tu č i u kojoj je o š te ć enom J M nanijeta te š ka tjelesna
+povreda, kao i pravnu kvalifikaciju djela stavljenog na teret okrivljenom N P sa krivi č nog djela te š ke tjelesne
+povrede iz č lana 151 stav 1 KZ na krivi č no djelo u č estvovanja u tu č i iz č lana 153 Krivi č nog zakonika, a prednje
+iz slede ć ih razloga:
+ 
+Naime, o š te ć eni J M je naveo da su ga kriti č ne prilike š utirala tri- č etiri momka, nakon č ega je jedan momak
+skoč io na njega i grizao ga za desno uho, osjetio je jak bol i pomislio je da mu je otkinuo dio u š ne š koljke, a
+zatim je neko od tih momaka rekao ,,A P, do ć i ć e policija'', dok je sa druge strane okrivljeni N P u svojoj
+odbrani u prethodnom postupku naveo da je zadavao udarce, a da ne P je li koga ugrizao. Dakle, imaju ć i u
+vidu naprijed navedeno, sud smatra da tokom postupka nije nesumnjivo utvr đ eno da je okrivljeni N P izvr š io
+krivi č no djelo te š ke tjelesne povrede na š tetu J M, ovo stoga š to su, prema iskazu samog o š te ć enog, istoga
+udarala 3-4 momka, nakon č ega ga je jedan od njih ,,grizao'' za desno uho, a zatim je neko od tih momaka
+rekao ,,A P, do ć i ć e policija'', pa prema tome sud ne mo ž e sa sigurno šć u da utvrdi da je okrivljeni Novakovi ć
+Petar kriti č ne prilike odgrizao uho o š te ć enom, obzirom da je jedan od ta 3-4 momka rekao ,,A P, dolazi
+policija'', koja izjava ne upu ć uje nedvosmisleno na zaklju č ak da je upravo okrivljeni N P ,,odgrizao'' uho
+ošte ć enom, obzirom da je neki od 3-4 momka navedene rije č i mogao uputili N P i ako isti nije ,,grizao''
+ošte ć enog, ve ć  je samo u č estvovao u tu č i. Kada se uzme u obzir prednje, te č injenica da ni sam o š te ć eni nije
+mogao da prepozna lice koje mu je odgrizlo uvo, a nijedan od svjedoka tako đ e nije vidjeo ko je lice koje je
+ošte ć enom odgrizlo uvo, to je sud smatrao da nema dokaza da je okrivljeni N u č inio krivi č no djelo te š ka
+tjelesna povreda iz č lana 151. stav 1. KZ, jer je mi š ljenja da same rije č i koje je neko uputio kriti č ne prilike i to
+,,A P, dolazi policija'', a u nedostatku drugih dokaza nijesu dovoljnje za dono š enje odluke o krivici istog za
+krivi č no djelo te š ka tjelesna povreda iz č lana 151. stav 1. KZ.
+ 
+Cijene ć i naprijed iznijeto č injeni č no stanje, sud nalazi da tokom postupka nije nesumnjivo utvr đ eno da je
+okrivljeni N P izvr š io krivi č no djelo stavljeno mu na teret, pa je u sumnji o postojanju svih č injenica, koje č ine
+obilje ž je krivi č nog djela, shodno č lanu 3 stav 3 Zakonika o krivi č nom postupku, odlu č io na na č in, kako je to
+povoljnije za okrivljenog i istog oglasio krivim za krivi č no djelo u č estvovanje u tu č i iz č lana 153 Krivi č nog
+zakonika, obzirom da je nesumnjivo utvr đ eno da je isti u č estvovao u tu č i u kojoj je o š t ć enom J M nanijeta
+teška tjelesna povreda.
+ 
+Tako đ e, s tim u vezi, odbranu okrivljenog N P sa glavnog pretresa u kojoj je isti negirao da je kriti č ne ve č eri
+imao fizi č ki obra č un sa bilo kim, sud nije prihvatio, jer je ovakva odbrana opovrgnuta odbranom istog
+okrivljenog datoj u prethodnom postupku na zapisnik pred ODT Kotor, kada je na detaljan na č in opisao svoje
+učešć e u predmetnoj tu č i, pa je sud odbranu okrivljenog N P sa glavnog pretresa cijenio kao usmjerenu na
+izbjegavanje sopstvene krivice.
+Dalje, u pogledu sporne okolnosti da li je okrivljeni S S kriti č ne prilike B D nanio laku tjelesnu povredu, sud je
+prihvatio navod B D u prethodnom postupku na zapisnik pred ODT K da je momak za kojeg je kasnije saznao
+da se zove S S izvadio navija č ku baklju, aktivirao je i bukvalno ga ubo upaljenom bakljom u le đ a, jer je ovaj
+navod potvr đ en, kako nalazom i mi š ljenjem vje š taka medicinske struke dr. K N od …. godine, iz kojeg je
+utvrđ eno da je opekotina ko ž e u desnom slabinskom predjelu (kod B D) nastala dejstvom baklje, tako i
+uvidom u fotodokumentaciju UP PJ B broj 271/12, iz koje je sud utvrdio da je ko š ulja B D izgorena na le đ ima,
+pa je sud u potpunosti prihvatio iskaz B D u dijelu na č ina nastanka predmetne povrede.
+ 
+S tim u vezi, navod okrivljenog B D sa glavnog pretresa da sa sigurno šć u sada ne mo ž e da tvrdi da je S S lice
+koje ga je kriti č ne prilike ubolo u le đ a upaljenom bakljom, te da mu je vjerovatno kod tu ž ioca pro č itan
+policijski izvje š taj u kome je stajalo da je okrivljeni S S imao kriti č ne prilike baklju, pa je zbog toga potvrdio da
+je isti u pitanju, sud nije prihvatio, jer je ovakvo pravdanje promjene iskaza od strane okrivljenog B D sasvim
+nelogi č no, jer sve i da je istome kod tu ž ioca pro č itan ,,izvje š taj'' policije da je S S imao baklju, to ne zna č i da
+bi on na osnovu te č injenice nadogradio iskaz tako š to bi naveo da ga je okrivljeni S S udario bakljom u le đ a, a
+da se to zaista i nije desilo, a sud je u uvjerenju da je okrivljeni B D na zapisnik pred ODT K dao vjerodostojnu
+izjavu u pogledu č injenice ko ga je ,,uboo'' bakljom, upravo zbog č injenice da je isti prije saslu š anja (a kako je
+to sam naveo) stajao u hodniku sa okrivljenim Stani š i ć  Stefanom (izme đ u ostalih), pa je sasvim ž ivotno
+logič no da je prilikom davanja iskaza precizno ozna č io napada č a bez obzira š to je tek od tu ž ioca saznao ime
+istog, a ovakvu promjenu iskaza okrivljenog B D sud je cijenio u kontekstu č injenice da su svi okrivljeni, u
+međ uvremenu od davanja iskaza na zapisnik pred ODT do glavnog pretresa, ,,zaboravili'' sa kim su se tukli
+(jer svi navode da prvi put na glavnom pretresu vide jedni druge), pa je za sud o č igledno da je izme đ u istih
+doš lo do dogovora da daju takve odbrane na glavnom pretresu, kako bi jedni drugoma olak š ali krivi č no-
+pravni polo ž aj u postupku, a š to sud nije prihvatio.
+ 
+Tako đ e, navod odbrane okrivljenog S S da je pored njega pala upaljena baklja, te se sagnuo i uzeo istu,
+međ utim č uo je da je momak uzviknuo ,,Pucat ć u'', pa se prepla š io i bacio baklju, sud nije prihvatio jer je
+ovakva odbrana obezvrije đ ena iskazom B D na zapisnik pred ODT K, kada je na detaljan i argumentovan
+nač in objasnio kako ga je okrivljeni S S udario upaljenom bakljom u le đ a, pa je sud odbranu okrivljenog S S
+cijenio kao smi š ljenu na izbjegavanje sopstvene krivice.
+ 
+Sud je u toku postupka utvrdio da je okrivljeni S S postupao sa umi š ljajem svjestan zna č aja svog djela i ž ele ć i
+njegovo izvr š enje. Naime okrivljeni je bio svjestan da upaljena navija č ka baklja predstavljaju sredstvo
+podobno da se tijelo te š ko povrijedi i zdravlje te š ko naru š i, pa je pogodiv š i B D u toku trajanja tu č e
+upaljenom bakljom u desnom slabinskom predjelu i nanijev š i mu povredu bli ž e opisanu u izreci presude,
+pokazao i svjesno i voljno u č e šć e u radnji izvr š enja predmetnog krivi č nog djela, a to mu je i bila namjera.
+ 
+Tako đ e, navode odbrana okrivljenih D D, B D i N P da je ta č no da su u č estvovali u tu č i, ali da su se samo
+branili, sud nije prihvatio jer se u konkretnom slu č aju ne radi o napadu jedne grupe okrivljenih na drugu, ve ć
+o obra č unu u koji su oni svjesno u š li, te su po mi š ljenju suda svi okrivljeni bili u polo ž aju istovremenog
+protivpravnog napada, kada je neposredno predstojao napad i sa jedne i sa druge strane, pri č emu je bez
+znač aja utvr đ ivanje č injenice ko je koga prvi napao, niti se okrivljeni mogu pozivati na nu ž nu odbranu, jer se
+njeno postojanje u okolnostima konkretnog slu č aja isklju č uje.
+ 
+Okrivljeni N P, D D i B D su postupali sa umi š ljajem, jer su bili svjesni da njihove preduzete radnje
+predstavljaju u č estvovanje u tu č i, š to su i htjeli.
+ 
+Kako je ispunjen i objektivni uslov inkriminacije u vidu te š ke tjelesne povrede koju je zadobio o š te ć eni J M, u
+radnjama okrivljenih N P, D D i B D su se ostvarili svi bitni elementi krivi č nog djela u č estvovanja u tu č i iz č lana
+153 Krivi č nog zakonika, pa ih je sud oglasio krivim za isto.
+ 
+Prilikom odluke o vrsti i visini krivi č ne sankcije koju okrivljenima treba izre ć i sud je po š ao od toga da je za
+predmetno krivi č no djelo propisana kazna zatvora u trajanju od tri mjeseca do tri godine.
+U smislu č lana 42 KZ sud je na strani okrivljenog N P kao olak š avaju ć e okolnosti cijenio njegovu mladost, te
+okolnost da se o š te ć eni nije pridru ž io krivi č nom gonjenju, dok je kao ote ž avaju ć u okolnost na njegovoj strani
+cijenio raniju osu đ ivanost. Sud je okrivljenog N P osudio na nov č anu kaznu u iznosu od 1.000,00 eura (hiljadu
+eura) i obavezao da istu plati u roku od 90 dana od dana pravosna ž nosti presude, a koja ć e se nov č ana kazna
+u slu č aju nenaplativosti zamijeniti tako š to ć e se za svakih zapo č etih 25,00 eura nov č ane kazne odrediti jedan
+dan zatvora. Sud je odlu č uju ć i o vrsti kazne uzeo u obzir imovinsko stanje okrivljenog, naime, iz iskaza
+okrivljenog proizilazi da je isti zaposlen kao menad ž er u restoranu u B, pa sud smatra da izre č ena nov č ana
+kazna u navedenom iznosu ne ć e ugroziti egzistenciju okrivljenog. Sud smatra da ć e izre č ena nov č ana kazna
+dovoljno uticati na okrivljenog da ubudu ć e ne č ini ovakva i sli č na krivi č na djela tj. da ć e se ostvariti ciljevi
+specijalne prevencije.
+Na osnovu naprijed navedenih krivi č no pravnih odredbi, te odredbi č lana 3, 5, 8, 13, 15, 32, 33, 39, 42, 45 i 46
+Kz-a CG i č lana 368. i 374. Zkp-a, a u odnosu na okrivljenog N P, sud je odlu č io kao u izreci.
+Kako je okrivljeni N P ogla š en krivim obavezan je da na ime sudskog pau š ala uplati iznos od 50,00 eura i na
+ime tro š kova krivi č nog postupka iznos od 13,00 eura, na ime tro š kova vje š ta č enja po vje š taku medicinske
+struke, u roku od 90 dana od dana pravosna ž nosti presude.
+Novč anu kaznu, tro š kove krivi č nog postupka i sudski pau š al okrivljeni Novakovi ć  ć e platiti u datom roku na
+žiro ra č un broj 832-16-52 u korist bud ž eta Crne Gore i dokaz o uplati dostaviti ovom sudu s pozivom na
+poslovni broj K. 273/12/12.
+ 
+U smislu č lana 42 KZ sud je na strani okrivljenih S S, B D i D D kao olak š avaju ć e okolnosti cijenio da je rije č  o
+licima koja ranije nisu osu đ ivana, te okolnost da se o š te ć eni nije pridru ž io krivi č nom gonjenju (za okrivljene S
+S i B D), a u odnosu na okrivljenog B D i okolnost da je isti porodi č an č ovjek, otac jednog maloljetnog djeteta,
+dok ote ž avaju ć ih okolnosti na njihovoj strani sud nije na š ao, pa je okrivljenima izrekao uslovne osude, na
+nač in š to je utvrdio kazne zatvora u trajanju od po 3 (tri) mjeseca i istovremeno odredio da se kazne ne ć e
+izvrš iti ukoliko okrivljeni za vrijeme od jedne godine od dana pravosna ž nosti presude ne u č ine novo krivi č no
+djelo. Sud smatra da su izre č ene krivi č ne sankcije adekvatne te ž ini u č injenog krivi č nog djela, stepenu krivice
+okrivljenih i okolnostima pod kojima je krivi č no djelo u č injeno, te da ć e se s obzirom na li č nost okrivljenih
+upozorenjem uz prijetnju kaznom dovoljno uticati na iste da ubudu ć e ne vr š i krivi č na djela, tj. da ć e se
+ostvariti svrha specijalne prevencije, te da zbog toga nije nu ž no primjeniti kaznu.
+Na osnovu naprijed navedenih krivi č no pravnih odredbi, te odredbi č lana 3, 5, 8, 13, 15, 32, 33, 36, 42, 52, 53 i
+54 KZ CG, te č lana 368. i 374. Zkp-a, a u odnosu na okrivljene S S, D D i B D, sud je odlu č io kao u izreci.
+Kako su okrivljeni S S, D D i B D ogla š eni krivim obavezani su da na ime tro š kova krivi č nog postupka uplate
+iznos od po 13,00 eura, na ime tro š kova vje š ta č enja po vje š taku medicinske struke i na ime sudskog pau š ala
+iznos od po 50,00 eura, u roku od 15 dana od dana pravosna ž nosti presude na ž iro ra č un broj 832-16-52, a u
+korist bud ž eta Crne Gore i dokaz o uplati dostave ovom sudu s pozivom na broj K. 273/12/12.
+Na osnovu č lana 239 Zkp-a o š te ć eni J M je radi ostvarivanja imovinsko-pravnog zahtjeva upu ć en na parnicu.
+Na prednjim razlozima sud je zasnovao svoju odluku.
+ 
+OSNOVNI SUD U KOTORU
+Dana, 19.05.2014 godine
+Zapisni č ar,Sudija,
+Ana Marija Petkovi ć Momirka Marovi ć
+ 
+PRAVNA POUKA: Protiv ove presude dozvoljna je ž alba Vi š em sudu u Podgorici, u roku od 8 dana od dana
+prijema, a preko ovog suda.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

@@ -403,34 +403,22 @@
      <rdfs:domain rdf:resource='&export;crime_art157_3'/>
 </rdf:Property>
 
-<export:crime_art143 rdf:about='&export;crime_art1431'>
-     <export:defendant>M. M.</export:defendant>
+<export:crime_art151_1 rdf:about='&export;crime_art151_11'>
+     <export:defendant>Boki</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
      <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof1</defeasible:proof>
-</export:crime_art143>
-
-<export:crime_art150_2 rdf:about='&export;crime_art150_21'>
-     <export:defendant>M. M.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
-</export:crime_art150_2>
-
-<export:crime_art151_1 rdf:about='&export;crime_art151_11'>
-     <export:defendant>M. M.</export:defendant>
-     <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
 </export:crime_art151_1>
 
-<export:crime_art151_2 rdf:about='&export;crime_art151_21'>
-     <export:defendant>M. M.</export:defendant>
+<export:crime_art153 rdf:about='&export;crime_art1531'>
+     <export:defendant>Boki</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof4</defeasible:proof>
-</export:crime_art151_2>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof2</defeasible:proof>
+</export:crime_art153>
 
-<export:crime_art151_3 rdf:about='&export;crime_art151_31'>
-     <export:defendant>M. M.</export:defendant>
+<export:crime_art154 rdf:about='&export;crime_art1541'>
+     <export:defendant>Boki</export:defendant>
      <defeasible:truthStatus>defeasibly-proven-positive</defeasible:truthStatus>
-     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof5</defeasible:proof>
-</export:crime_art151_3>
+     <defeasible:proof rdf:datatype='&xsd;anyURI'>&proof-export;proof3</defeasible:proof>
+</export:crime_art154>
 
 </rdf:RDF>

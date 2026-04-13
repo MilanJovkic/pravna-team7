@@ -166,7 +166,7 @@ class VerdictAnnotationPipeline:
             if not annotation:
                 continue
 
-            llm_meta = annotation.metadata or {}
+            llm_meta = annotation.metadata if isinstance(annotation.metadata, dict) else {}
             if not metadata.case_number and llm_meta.get("case_number"):
                 metadata.case_number = llm_meta.get("case_number")
             if not metadata.court_name and llm_meta.get("court_name"):
@@ -177,7 +177,7 @@ class VerdictAnnotationPipeline:
                 merged_judges = list({*metadata.judges, *[self._normalize_person_name(j) for j in llm_meta.get("judges")]})
                 metadata.judges = self._prefer_full_names(merged_judges)
 
-            llm_parties = llm_meta.get("parties") or {}
+            llm_parties = llm_meta.get("parties") if isinstance(llm_meta.get("parties"), dict) else {}
             for role, people in llm_parties.items():
                 if not people:
                     continue
@@ -201,10 +201,25 @@ class VerdictAnnotationPipeline:
         override: Dict[str, list[str]]
     ) -> Dict[str, list[str]]:
         merged = {k: list(v) for k, v in (base or {}).items()}
+        if isinstance(override, str):
+            # Some LLM responses return factual_state as a JSON string.
+            try:
+                parsed = json.loads(override)
+            except Exception:
+                return merged
+            override = parsed if isinstance(parsed, dict) else {}
+
+        if not isinstance(override, dict):
+            return merged
+
         for key, values in (override or {}).items():
             if not values:
                 continue
             merged.setdefault(key, [])
+            if isinstance(values, str):
+                values = [values]
+            elif not isinstance(values, list):
+                continue
             for value in values:
                 if value not in merged[key]:
                     merged[key].append(value)
@@ -275,13 +290,14 @@ class VerdictAnnotationPipeline:
 
             metadata = verdicts.get(case_id)
             if metadata:
+                existing_meta = annotation.metadata if isinstance(annotation.metadata, dict) else {}
                 annotation.metadata = {
-                    "case_number": metadata.case_number or (annotation.metadata or {}).get("case_number"),
-                    "court_name": metadata.court_name or (annotation.metadata or {}).get("court_name"),
-                    "date": metadata.date or (annotation.metadata or {}).get("date"),
-                    "judges": metadata.judges or (annotation.metadata or {}).get("judges", []),
-                    "parties": metadata.parties or (annotation.metadata or {}).get("parties", {}),
-                    "organizations": metadata.organizations or (annotation.metadata or {}).get("organizations", [])
+                    "case_number": metadata.case_number or existing_meta.get("case_number"),
+                    "court_name": metadata.court_name or existing_meta.get("court_name"),
+                    "date": metadata.date or existing_meta.get("date"),
+                    "judges": metadata.judges or existing_meta.get("judges", []),
+                    "parties": metadata.parties or existing_meta.get("parties", {}),
+                    "organizations": metadata.organizations or existing_meta.get("organizations", [])
                 }
                 metadata.factual_state = self._normalize_factual_state(metadata.factual_state)
 
@@ -292,8 +308,22 @@ class VerdictAnnotationPipeline:
         if not factual_state:
             return {}
 
+        if isinstance(factual_state, str):
+            try:
+                parsed = json.loads(factual_state)
+            except Exception:
+                return {}
+            factual_state = parsed if isinstance(parsed, dict) else {}
+
+        if not isinstance(factual_state, dict):
+            return {}
+
         normalized: Dict[str, list[str]] = {}
         for key, values in factual_state.items():
+            if isinstance(values, str):
+                values = [values]
+            elif not isinstance(values, list):
+                continue
             cleaned_values: list[str] = []
             for value in values or []:
                 v = str(value).strip()

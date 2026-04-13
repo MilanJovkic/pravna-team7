@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке31">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке31/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке31"/>
+                    <FRBRdate date="2019-11-28" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке31/sr@2019-11-28/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке31/sr@2019-11-28"/>
+                    <FRBRdate date="2019-11-28"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке31/sr@2019-11-28/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке31/sr@2019-11-28/!main.akn"/>
+                    <FRBRdate date="2026-04-13"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Novč"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 169/2019</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>VIŠI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2019-11-28">2019-11-28</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Novč</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Optuženi D.L. kriv za ubistvo na mah u pokušaju i nedozvoljeno držanje oružja.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Ubistvo na mah</p>
+                    <p>Nedozvoljeno držanje oružja</p>
+                    <p>Prethodna osuđivanja</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_145">Član 145</ref>
+                    <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/2024/!main#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/2024/!main#art_303">Član 303</ref>
+                    <ref href="/akn/me/act/2024/!main#art_301">Član 301</ref>
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/2024/!main#art_33">Član 33</ref>
+                    <ref href="/akn/me/act/2024/!main#art_272">Član 272</ref>
+                    <ref href="/akn/me/act/2024/!main#art_36">Član 36</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_19">Član 19</ref>
+                    <ref href="/akn/me/act/2024/!main#art_30">Član 30</ref>
+                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/2024/!main#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/2024/!main#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/2024/!main#art_46">Član 46</ref>
+                    <ref href="/akn/me/act/2024/!main#art_23">Član 23</ref>
+                    <ref href="/akn/me/act/2024/!main#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Optuženi je delovao pod jakim stresom, ali je prešao granicu nužne odbrane.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="nepoznato">
+                    <p>Krivica potvrđena.</p>
+                </block>
+            </decision>
+            <facts>
+                <fact key="location">Podgorici Kt</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Tuzima</fact>
+                <fact key="location">Danilovgrad</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>U IME CRNE GORE
+ 
+K.br. 169/2019
+ 
+ 
+VIŠI SUD U PODGORICI, kao prvostepeni krivi č ni po predsjedniku vije ć a - sudiji Taba š  Predragu, uz u č e šć e
+namje š tenika Nov č i ć  Slobodanke kao zapisni č ara, u predmetu protiv optuženog D.L., koga brani Đ.D.,
+advokat iz P..., zbog krivi č nog djela ubistvo na mah u poku š aju iz č l. 145. u vezi č l. 20. Krivi č nog zakonika Crne
+Gore u sticaju sa krivi č nim djelom nedozvojeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403. st. 1.
+Krivi č ngo zakonika Crne Gore, po optu ž nici Vi š eg dr ž avnog tu ž ioca u Podgorici Kt.br. 96/19 od 28.11.2019.
+godine, koju je na ro č i š tu povodom odlu č ivanja o sporazumu o priznanju krivice zastupala Jovanovi ć  Maja -
+državna tu ž iteljka u Vi š em dr ž avnom tu ž ila š tvu u Podgorici, nakon pravosna ž nosti rje š enja o usvajanju
+sporazuma o priznanju krivice, dana 12.02.2020.godine, donio je
+ 
+P R E S U D U
+ 
+Optu ž eni:
+ 
+D.L., JMB ..., zvani "Lj.", od oca M. i majke S., rođ ene Lj., rođ en .... godine u P..., sa prebivali š tem u T..., D... ...,
+državljanin Crne Gore, poljoprivredni tehni č ar, bavi se poljoprivredom, o ž enjen, otac č etvoro djece, zavr š io
+srednju poljoprivrednu š kolu, dobrog imovnog stanja, osu đ ivan i to: presudom Vi š eg suda u Podgorici K.br.
+11/97 od 28.06.2000. godine, zbog krivi č nog djela ubistvo u poku š aju iz č l. 30. st.1. u vezi č l. 19. KZ SRJ i
+osuđ en na kaznu zatvora u trajanju od 1 (jedne) godine i 6 ( š est) mjeseci, presudom Vi š eg suda u Podgorici
+K.br. 9/2008 od 24.12.2009. godine, zbog krivi č nog djela neovla šć ena proizvodnja, dr ž anje i stavljanje u
+promet opojnih droga iz č l. 300. st. 1. KZCG i osu đ en na kaznu zatvora od 6 ( š est) godina i presudom
+Osnovnog suda u Podgorici K.br. 10/546 od 24.11.2011. godine zbog krivi č nog djela te š ka tjelesna povreda iz
+čl. 151. st.1. u vezi č l. 23. KZCG, u pritvoru od 16.09.2019. godine od 12,40 č asova,
+ 
+KRIV JE
+Zato š to je:Viši Sud u Podgorici
+K 169/2019
+12. Februar 2020
+ 
+Dana 06.06.2019. godine, oko 21,30 č asova, u Tuzima, na terasi ugostiteljskog objekta "F..." prethodno
+doveden bez svoje krivice u jaku razdra ž enost, te š kim vrije đ anjem od strane o š te ć enog N.F., koji je, nakon š to
+je optu ž eni zaustavio vozilo ispred ugostiteljskog objekta, ustao od stola gdje je sjedio, krenuo u njegovom
+pravcu, po č eo da mu psuje oca, majku, ž enu i ć erku, nakon č ega mu je uputio rije č i "jebem ti mrtvog oca",
+nakon č ega je optu ž eni postupaju ć i na mah, sa umi š ljajem poku š ao da li š i ž ivota o š te ć enog N.F., na na č in š to
+je izvadio pi š tolj nepoznate marke, cal. 9mm - D, koji je surptono č lanu 33 Zakona o oru ž ju neovla šć eno nosio
+na javnom mjestu i iz istog ispalio tri projektila u o š te ć enog nanose ć i mu tom prilikom te š ku tjelesnu
+povredu u vidu strijelne rane prostreline desne butine, strijelne rane ustreline lijeve butine i strijelne rane
+prostreline drugog prsta lijeve š ake, pri č emu je bio svjestan svojih djela i htio je njihovo izvr š enje,
+ 
+- čime je izvr š io krivi č no djelo ubistvo na mah u poku š aju iz č l. 145. u vezi č l. 20. Krivi č nog zakonika Crne Gore
+u sticaju sa krivi č nim djelom nedozvojeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403. st. 1. Krivi č ngo
+zakonika Crne Gore
+ 
+Pa mu sud primjenom citiranih zakonskih odredbi, te odredbi č l. 32, č l. 33, č l. 36, č l. 42, č l. 45, č l. 46, i č l. 48. st.
+1. Krivi č nog zakonika Crne Gore, prethodno
+ 
+UTVR Đ UJE
+ 
+- za krivi č no djelo – ubistvo na mah u poku š aju iz č l. 145. u vezi č l.20. Krivi č nog zakonika Crne Gore, kaznu
+zatovra u trajanju od 11 (jedanaest) mjeseci,
+ 
+- za krivi č no djelo – nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403. st. 1. Krivi č nog zakonika
+Crne Gore, kaznu zatovra u trajanju od 2 (dva) mjeseca,
+ 
+Pa ga sud primijenom citiranih zakonskih odredbi, te odredbio č l. 48. st. 2. ta č .2 i č l. 51. Krivi č nog zakonika
+Crne Gore, te odredbi č l. 226, 229 i 374. Zakona o krivi č nom postupku
+O S U Đ  U J E
+ 
+Na jedinstvenu kaznu zatvora u trajanju od 1(jedne) godine, s tim š to ć e mu se u kaznu ura č unti vrijeme
+provedeno u pritvoru od 16.09.2019. godine od 12,40 č asova, pa nadalje, i isti se shodno č l. 301. st. 3. ZKP-a
+obavezuje na ispunjenje obaveza iz č l. 272. st.1. ZKP-a, da na plati nov č ani iznos od 10.000,00€ Klini č kom
+centru Crne Gore.
+OBAVEZUJE SE optu ž eni da na ime tro š kova krivi č nog postupka nastalih tokom istrage i tokom zaklju č enja
+sporazuma o priznanju uplati tro š kove na ime pau š ala Vi š em dr ž avnom tu ž ila š tvu u Podgorici uplati iznos od
+100,00€ i iznos od 1.707,75€ na ime vje š ta č enja, a sve na ra č un Vrhovnog dr ž avnog tu ž ila š tva broj 832-1187-
+31, i iznos od 100,00€ na ime pau š ala Vi š em sudu u Podgorici na ž iro ra č un broj 832-7113-04, sve u roku od 15
+dana od dana pravosna ž nosti presude donijete na osnovu sporazuma o priznanju krivice.
+ 
+O b r a z l o ž  e nj e
+ 
+Optu ž nicom Vi š eg dr ž avnog tu ž ila š tva u Podgorici Kt.br. 96/19 od 28.11.2019. godine, optu ž enom D.L.,
+stavljeno je na teret izvr š enje krivi č nog djela ubistvo na mah u poku š aju iz č l. 145. u vezi sa č l. 20. Krivi č nog
+zakonika Crne Gore u sticaju sa krivi č nim djelom nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l.
+403. st. 1. Krivi č nog zakonika Crne Gore.
+ 
+Dana 30.12.2019. godine, Vi š e dr ž avno tu ž ila š tvo dostavilo je sudu, zapisnik o pregovaranju, zapisnik i
+sporazum o priznanju krivice.
+ 
+Rješ enjem K.br. 169/19 od 22.01.2020. godine, usvojen je sporazum o priznanju krivice, a koje rje š enje je
+postalo pravosna ž no dana 12.02.2020. godine.
+ 
+Na ro č i š tu za razmatranje sporazuma, odr ž anom dana 22.01.2020.godine, sud je na saglasan predlog
+stranaka pro č itao dokaze predlo ž ene optu ž nicom i to: iskaz svjedoka - o š te ć enog F.N., iskaze svjedoka M.N.,
+U.D., Đ.D. i G.S., pro č itao zapisnik o uvi đ aju Uprave policije - CB Podgorica Ku.br. 481/19 od 06.06.2019.
+godine i izvr š io uvid u fotodokumentaciju koja je sastavni dio zapisnika o uvi đ aju, slu ž benu zabilje š ku Uprave
+policiije - CB Podgorica Ku.br. 481/19 od 06.06.2019. godine, Izvje š taj o vje š ta č enju prisustva "GSR" č estica,
+Forenzi č kog centra u Danilovgradu broj 2151/19 od 11.07.2019. godine, Izvje š taj o DNK vje š ta č enju
+Forenzi č kog centra u Danilovgradu broj 2149/19 od 25.07.2019. godine, Izvje š taj o balisti č kom vje š ta č enju
+Forenzi č kog centra u Danilovgradu broj 2150/19 od 05.08.2019. godine, Izvje š taj o vje š ta č enju "daljine
+pucanja" Forenzi č kog centra u Danilovgradu broj 2901/19 od 14.08.2019. godine, Izvje š taj o trasolo š kom
+vješ ta č enju Forenzi č kog centra u Danilovgradu broj 2902/19 od 07.06.2019. godine, vje š taka sudsko
+medicinske struke dr N.R. od 18.07.2019. godine, nalaz i mi š ljenje vje š taka sudsko medicinske struke dr N.R.
+od 18.07.2019. godine, nalaz i mi š ljenje komisije vje š taka u sastavu sudskog vje š taka neuropsihijatra dr M.S.,
+psihijatra dr G.Ž. i psihologa B.S.I. od 31.10.2019. godine, proč itao zapisnik o pregovaranju Kt.(sp)br. 142/19
+od 27.12.2019. godine, Zapisnik o priznanju krivice optu ž enog Kt.(sp)br. 142/19 od 27.12.2019. godine i
+Sporazum o priznanju krivice optu ž enog Kt.(sp)br. 142/19 od 27.12.2019. godine, Izvod iz kaznene evidencije
+Ministarstva pravde broj 05/2-72-635/20 od 20.01.2020. godine, na ime optu ž enog D.L..
+ 
+Iz sadr ž ine pro č itanih dokaza, na koje optu ž eni i njegov branilac nijesu imali primjedbi, sud zaklju č uje da je
+državna tu ž iteljka pru ž ila dovoljno dokaza o krivici optu ž enog, te da je optu ž eni izvr š io krivi č no djelo ubistvo
+na mah u poku š aju iz č l. 145. u vezi sa č l. 20. Krivi č nog zakonika Crne Gore u sticaju sa krivi č nim djelom
+nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403. st. 1. Krivi č nog zakonika Crne Gore.
+ 
+Odlu č uju ć i o visini kazne za optu ž enog iz sporazuma o priznanju krivice, zaklju č enog izme đ u stranaka, sud je
+našao da je predlog stranaka u vezi sa kaznom prihvatljiv. Naime, po ocjeni ovog suda, priznanje optu ž enog
+za izvr š eno krivi č no djelo i prihvatanje krivice za isto, te da je krivi č no djelo ubistvo na mah iz č l. 145.
+Krivi č nog zakonika Crne Gore ostalo u poku š aju, a da Zakon propisuje, da se za poku š aj krivi č nog djela
+shodno č l. 20. st.3. Krivini č nog Zakonika Crne Gore, u č inilac mo ž e bla ž e kazniti, u svojoj ukupnosti jesu
+okolnosti koje opravdavaju ubla ž avanje kazne zatvora ispod zakonom propisanog minimuma za predmetno
+krivi č no djelo shodno č l. 45. i 46. Krivi č nog zakonika Crne Gore, a pri tom sud nalazi i da ć e se jedinstvenom
+kaznom zatvora u trajanju od 1 (jedne) godine, te č injenice da je optu ž eni shodno č l. 301. st. 3. ZKP-a
+obavezan na ispunjenje obaveza iz č l. 272. st.1. ZKP-a, odnosno  da uplati iznos od 10.000,00€ Klini č kom
+centru Crne Gore, ostvariti svrha ka ž njavanja iz č l. 32. Krivi č nog zakonika Crne Gore, da optu ž eni ubudu ć e ne
+vrši krivi č na djela, u okviru op š te svrhe izricanja krivi č nih sankcija iz č l. 4. st. 2. Krivi č nog zakonika Crne Gore.
+ 
+Kako je optu ž eni ogla š en krivim, sud ga jeshodno č l. 226. i 229. Zakonika o krivi č nom postupku, obavezao i
+na pla ć anje tro š kova krivi č nog postupka i to pau š ala Višem dr ž avnom tu ž ila š tvu u Podgorici iznos od 100,00€
+kao i iznos od 1.707,75 € na ime vje š ta č eja, koje iznose je optu ž eni du ž an uplatiti na ra č un Vrhovnog
+državnog tu ž ila š tva Crne Gore, na broj ž iro ra č una 832-1187-31, i iznos od 100,00€ na ime pau š ala Vi š em sudu
+u Podgorici, na broj ž iro ra č una 832-7113-04, sve u roku od 15 dana od dana pravosna ž nosti presude donijete
+na osnovu sporazuma o priznanju krivice, a sve u skladu sa sporazumom o priznanju krivice, koji je zaklju č en
+izme đ u stranaka.
+ 
+Sa izlo ž enog, a shodno odredbi č l. 303. st. 1. Zakonika o krivi č nom postupku, odlu č eno je kao u dispozitivu
+presude.
+ 
+VIŠI SUD U PODGORICI
+Dana,12.02.2020.godine
+ 
+ 
+ 
+Zapisni č ar PREDSJEDNIK VIJE Ć A-SUDIJA
+Novč i ć  Slobodanka, s.r. Taba š  Predrag, s.r.
+ 
+PRAVNA POUKA
+Protiv ove presude nije dozvoljena ž alba.
+Tačnost otpravka ovjerava namje š tenik suda
+Novč i ć  Slobodanka</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

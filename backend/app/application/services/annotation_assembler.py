@@ -137,6 +137,19 @@ class AnnotationAssembler:
         add("fight_participation", facts.fight_participation)
         add("fight_consequence", facts.fight_consequence)
         add("left_without_help", facts.left_without_help)
+        add("previous_convictions", facts.previous_convictions)
+        add("repeat_offender", facts.repeat_offender)
+        add("confession", facts.confession)
+        add("remorse", facts.remorse)
+        add("plea_agreement", facts.plea_agreement)
+        add("aggravating_circumstances", facts.aggravating_circumstances)
+        add("mitigating_circumstances", facts.mitigating_circumstances)
+        add("family_circumstances", facts.family_circumstances)
+        add("poor_financial_status", facts.poor_financial_status)
+        add("alcohol_intoxication", facts.alcohol_intoxication)
+        add("narcotics_influence", facts.narcotics_influence)
+        add("conditional_sentence_requested", facts.conditional_sentence_requested)
+        add("attempted_offense", facts.attempted_offense)
         return state
 
     def _resolve_applied_articles(self, facts: CaseFacts, reasoning: ReasoningResponse) -> list[str]:

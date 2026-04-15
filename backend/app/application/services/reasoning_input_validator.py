@@ -10,11 +10,15 @@ class ReasoningInputValidator:
 
     def validate(self, request: ReasoningRequest) -> None:
         facts = request.facts
+        if facts.material_fact_count() == 0:
+            raise ValidationError("Nedostaju činjenice: glavni tok rezonovanja zahteva makar jednu materijalnu činjenicu.")
         issues = facts.validation_issues(strict_mode=request.strict_mode)
         if issues:
             raise ValidationError("; ".join(issues))
 
     def validate_facts(self, facts: CaseFacts, strict_mode: bool = True) -> None:
+        if facts.material_fact_count() == 0:
+            raise ValidationError("Nedostaju činjenice: glavni tok rezonovanja zahteva makar jednu materijalnu činjenicu.")
         issues = facts.validation_issues(strict_mode=strict_mode)
         if issues:
             raise ValidationError("; ".join(issues))

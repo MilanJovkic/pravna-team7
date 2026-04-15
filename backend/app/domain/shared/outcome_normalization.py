@@ -1,6 +1,8 @@
 """Centralized outcome normalization entrypoint."""
 from __future__ import annotations
 
+import re
+
 _CYR_TO_LAT = str.maketrans(
     {
         "а": "a",
@@ -78,6 +80,17 @@ def normalize_outcome(value: str | None) -> str:
         return "nepoznato"
 
     normalized = _latinize(raw).lower()
+
+    if re.search(r"\bnije\s+kriv\b|\bnijes\w*\s+krivi\b", normalized):
+        return "oslobodjen"
+    if re.search(r"\bodbij\w*\s+se\b|\bodbij\w*\s+optuzb\w*\b", normalized):
+        return "odbijeno"
+    if re.search(r"\bukid\w*\s+se\b|\bukinut\w*\s+presud\w*\b", normalized):
+        return "ukinuto"
+    if re.search(r"\boglas\w*\s+kriv\w*\b|\bproglas\w*\s+kriv\w*\b", normalized):
+        return "osudjen"
+    if re.search(r"\bkriv\s+je\b|\bkrivi\s+su\b", normalized):
+        return "osudjen"
 
     if "usvoj" in normalized:
         return "usvojeno"

@@ -1,5 +1,6 @@
 """Akoma Ntoso XML exporter for court verdicts (judgment format)."""
 import os
+import re
 from datetime import datetime
 from typing import Dict, Optional
 from xml.dom import minidom
@@ -241,14 +242,17 @@ class VerdictAkomaExporter:
             SubElement(reasoning_block, "p").text = annotation.legal_reasoning
 
         # Decision (verdict outcome)
-        if annotation and annotation.decision:
+        resolved_outcome = self._resolve_case_outcome(metadata, annotation)
+        resolved_decision_text = self._resolve_decision_text(annotation, resolved_outcome)
+
+        if resolved_decision_text or resolved_outcome:
             decision = SubElement(body, "decision")
             decision_block = SubElement(decision, "block", name="verdict")
-            SubElement(decision_block, "p").text = annotation.decision
+            if resolved_decision_text:
+                SubElement(decision_block, "p").text = resolved_decision_text
             
-            # Add outcome as attribute
-            if annotation.case_outcome:
-                decision_block.set("outcome", normalize_outcome(annotation.case_outcome))
+            if resolved_outcome:
+                decision_block.set("outcome", resolved_outcome)
 
         # Parties and organizations (metadata)
         if metadata.parties or metadata.organizations:
@@ -335,8 +339,9 @@ class VerdictAkomaExporter:
         if self.enable_db_insert:
             try:
                 factual_state = verdict_metadata.factual_state or (annotation.factual_state if annotation else {})
-                outcome = annotation.case_outcome if annotation else "nepoznato"
-                self._insert_case_to_db(case_id, factual_state, outcome)
+                outcome = self._resolve_case_outcome(verdict_metadata, annotation) or "nepoznato"
+                case_number = self._resolve_case_number(verdict_metadata, case_id)
+                self._insert_case_to_db(case_number, factual_state, outcome)
             except Exception as e:
                 safe_case_id = case_id.encode('ascii', 'replace').decode('ascii')
                 print(f"  [!] Nije uspeo upis u bazu za {safe_case_id}: {str(e)[:50]}")
@@ -403,37 +408,103 @@ class VerdictAkomaExporter:
         print(f"[OK] Anotacije presuda eksportovane u JSON: {output_file}")
         return output_file
 
-    def _extract_fact_value(self, factual_state: Dict[str, list], key: str, default: str = "ne") -> str:
+    def _extract_fact_value(self, factual_state: Dict[str, list], key: str, default: str | None = None) -> str | None:
         """Extracts a single fact value from factual_state dict."""
         values = factual_state.get(key, [])
         if not values:
             return default
         # Take first value if multiple exist
-        return str(values[0]) if values else default
+        value = str(values[0]).strip() if values else ""
+        return value if value else default
     
-    def _to_boolean(self, value: str) -> bool:
-        """Converts да/ne/da/не/true/false string to boolean."""
+    def _to_optional_boolean(self, value: str | None) -> bool | None:
+        """Converts boolean-like strings to bool, preserving unknown as None."""
+        if value is None:
+            return None
         value_lower = str(value).lower().strip()
-        return value_lower in ["да", "da", "true", "yes", "1"]
+        if value_lower in ["да", "da", "true", "yes", "1"]:
+            return True
+        if value_lower in ["не", "ne", "false", "no", "0"]:
+            return False
+        return None
+
+    def _normalize_fact_text(self, value: str | None) -> str | None:
+        if value is None:
+            return None
+        text = value.strip()
+        if not text:
+            return None
+        lowered = text.lower()
+        if lowered in {"nepoznato", "unknown", "n/a", "null", "none"}:
+            return None
+        return text
+
+    def _sanitize_case_number(self, case_number: str | None, fallback: str) -> str:
+        text = (case_number or "").strip()
+        text = re.sub(r"^[^\w\d]+", "", text)
+        text = re.sub(r"[^\w\d]+$", "", text)
+        if text and any(ch.isalnum() for ch in text):
+            return " ".join(text.split())
+        return fallback
+
+    def _resolve_case_outcome(
+        self,
+        verdict_metadata: VerdictMetadata,
+        annotation: Optional[VerdictAnnotation],
+    ) -> Optional[str]:
+        annotation_outcome = normalize_outcome(annotation.case_outcome) if annotation and annotation.case_outcome else None
+        if annotation_outcome and annotation_outcome != "nepoznato":
+            return annotation_outcome
+
+        metadata_outcome = normalize_outcome(verdict_metadata.case_outcome) if verdict_metadata.case_outcome else None
+        if metadata_outcome and metadata_outcome != "nepoznato":
+            return metadata_outcome
+
+        return annotation_outcome or metadata_outcome
+
+    def _resolve_decision_text(
+        self,
+        annotation: Optional[VerdictAnnotation],
+        resolved_outcome: Optional[str],
+    ) -> Optional[str]:
+        if annotation and annotation.decision and annotation.decision.strip():
+            return annotation.decision.strip()
+
+        defaults = {
+            "osudjen": "Sud je oglasio okrivljenog krivim.",
+            "oslobodjen": "Sud je oslobodio okrivljenog od optužbe.",
+            "odbijeno": "Sud je odbio optužbu.",
+            "ukinuto": "Odluka je ukinuta.",
+            "usvojeno": "Pravni lijek je usvojen.",
+        }
+        return defaults.get(resolved_outcome)
+
+    def _resolve_case_number(self, verdict_metadata: VerdictMetadata, fallback_case_id: str) -> str:
+        raw = (verdict_metadata.case_number or "").strip()
+        if raw and any(ch.isdigit() for ch in raw):
+            return raw
+        return fallback_case_id
 
     def _insert_case_to_db(self, case_number: str, factual_state: Dict[str, list], outcome: str):
         """Inserts case facts into PostgreSQL database."""
         if not POSTGRES_AVAILABLE:
             return
+
+        safe_case_number = self._sanitize_case_number(case_number, case_number)
         
         # Extract individual facts from factual_state
         facts_dict = {
-            "injury_type": self._extract_fact_value(factual_state, "injury_type", "непознато"),
-            "location": self._extract_fact_value(factual_state, "location", "непознато"),
-            "weapon": self._extract_fact_value(factual_state, "weapon", "непознато"),
-            "weapon_used": self._to_boolean(self._extract_fact_value(factual_state, "weapon_used", "не")),
-            "severe_consequence": self._to_boolean(self._extract_fact_value(factual_state, "severe_consequence", "не")),
-            "death_result": self._to_boolean(self._extract_fact_value(factual_state, "death_result", "не")),
-            "negligence": self._to_boolean(self._extract_fact_value(factual_state, "negligence", "не")),
-            "provocation": self._to_boolean(self._extract_fact_value(factual_state, "provocation", "не")),
-            "fight_participation": self._to_boolean(self._extract_fact_value(factual_state, "fight_participation", "не")),
-            "fight_consequence": self._extract_fact_value(factual_state, "fight_consequence", "непознато"),
-            "left_without_help": self._to_boolean(self._extract_fact_value(factual_state, "left_without_help", "не")),
+            "injury_type": self._normalize_fact_text(self._extract_fact_value(factual_state, "injury_type")),
+            "location": self._normalize_fact_text(self._extract_fact_value(factual_state, "location")),
+            "weapon": self._normalize_fact_text(self._extract_fact_value(factual_state, "weapon")),
+            "weapon_used": self._to_optional_boolean(self._extract_fact_value(factual_state, "weapon_used")),
+            "severe_consequence": self._to_optional_boolean(self._extract_fact_value(factual_state, "severe_consequence")),
+            "death_result": self._to_optional_boolean(self._extract_fact_value(factual_state, "death_result")),
+            "negligence": self._to_optional_boolean(self._extract_fact_value(factual_state, "negligence")),
+            "provocation": self._to_optional_boolean(self._extract_fact_value(factual_state, "provocation")),
+            "fight_participation": self._to_optional_boolean(self._extract_fact_value(factual_state, "fight_participation")),
+            "fight_consequence": self._normalize_fact_text(self._extract_fact_value(factual_state, "fight_consequence")),
+            "left_without_help": self._to_optional_boolean(self._extract_fact_value(factual_state, "left_without_help")),
             "outcome": outcome
         }
         
@@ -442,7 +513,7 @@ class VerdictAkomaExporter:
             cursor = conn.cursor()
             
             # Check if case already exists
-            cursor.execute("SELECT id FROM cases WHERE case_number = %s", (case_number,))
+            cursor.execute("SELECT id FROM cases WHERE case_number = %s", (safe_case_number,))
             existing = cursor.fetchone()
             
             if existing:
@@ -475,7 +546,7 @@ class VerdictAkomaExporter:
                     facts_dict["fight_consequence"],
                     facts_dict["left_without_help"],
                     facts_dict["outcome"],
-                    case_number
+                    safe_case_number
                 ))
             else:
                 # Insert new case
@@ -486,7 +557,7 @@ class VerdictAkomaExporter:
                         fight_participation, fight_consequence, left_without_help, outcome
                     ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 """, (
-                    case_number,
+                    safe_case_number,
                     facts_dict["injury_type"],
                     facts_dict["location"],
                     facts_dict["weapon"],

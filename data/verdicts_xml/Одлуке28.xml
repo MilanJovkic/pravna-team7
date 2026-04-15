@@ -20,14 +20,15 @@
                 <FRBRManifestation>
                     <FRBRthis value="/akn/me/judgment/Одлуке28/sr@2013-04-18/!main.xml"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке28/sr@2013-04-18/!main.akn"/>
-                    <FRBRdate date="2026-04-13"/>
+                    <FRBRdate date="2026-04-15"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
             <references source="#court">
-                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U NIK"/>
-                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="pojedinac Djurič"/>
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U NIKŠIĆU"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Igor Djuričković"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Budimirka Papović"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
             </references>
@@ -41,23 +42,25 @@
                     <docNumber>K.br. 1009/2012</docNumber>
                 </block>
                 <block name="court">
-                    <docTitle>OSNOVNI SUD U NIK</docTitle>
+                    <docTitle>OSNOVNI SUD U NIKŠIĆU</docTitle>
                 </block>
                 <block name="date">
                     <docDate date="2013-04-18">2013-04-18</docDate>
                 </block>
                 <block name="judges">
-                    <judge>pojedinac Djurič</judge>
+                    <judge>Igor Djuričković</judge>
+                    <judge>Budimirka Papović</judge>
                 </block>
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljena B.N. osuđena za ubistvo djeteta pri porođaju uz uslovnu osudu.</p>
+                    <p>Okrivljena B.N. je uslovno osuđena na godinu zatvora zbog ubistva novorođenčeta.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Ubistvo djeteta pri porođaju</p>
                     <p>Uslovna osuda</p>
                     <p>Troškovi postupka</p>
+                    <p>Pravo na žalbu</p>
                 </block>
             </introduction>
             <background>
@@ -69,172 +72,175 @@
                     <ref href="/akn/me/act/2024/!main#art_146">Član 146</ref>
                     <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
                     <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Okrivljena je lišila života novorođenče u stanju poremećaja izazvanog porođajem.</p>
+                    <p>Sud je utvrdio da je okrivljena, u stanju poremećaja izazvanog porođajem, lišila života svoje novorođenče, te je primenio uslovnu osudu uzimajući u obzir njeno loše imovno stanje i raniju neosuđivanost.</p>
                 </block>
             </motivation>
             <decision>
-                <block name="verdict" outcome="nepoznato">
-                    <p>Uslovna osuda sa kaznom zatvora od 1 godine.</p>
+                <block name="verdict" outcome="osudjen">
+                    <p>Uslovna osuda</p>
                 </block>
             </decision>
             <facts>
-                <fact key="location">Prvi</fact>
-                <fact key="location">Prvi Maj</fact>
-                <fact key="location">Nik</fact>
+                <fact key="location">Nikšić</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="family_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="conditional_sentence_requested">da</fact>
+                <fact key="imposed_prison_sentence_months">12</fact>
             </facts>
             <conclusions>
                 <block name="fullText">
                     <p>CRNA GORA
-OSNOVNI SUD U NIK Š I Ć U
+OSNOVNI SUD U NIKŠIĆU
 K.br.1009/2012
 Dana 18.04.2013. godine
 U IME CRNE GORE
-OSNOVNI SUD U NIK Š I Ć U, kao prvostepeni krivi č ni, sudija pojedinac Djuri č kovi ć  Igor, uz sudjelovanje
-Papovi ć  Budimirke kao zapisni č ara, rje š avaju ć i u krivi č nom predmetu okrivljene B.N, zbog krivi č nog djela
-ubistvo djeteta pri porodjaju iz č lana 146 KZ, postupaju ć i po optu ž nom predlogu ODT Nik š i ć  Kt.br.777/12 od
-23.11.2012.godine, nakon javnog glavnog pretresa odr ž anog dana 15.04.2013. godine, u prisustvu zamjenika
+OSNOVNI SUD U NIKŠIĆU, kao prvostepeni krivični, sudija pojedinac Djuričković Igor, uz sudjelovanje
+Papović Budimirke kao zapisničara, rješavajući u krivičnom predmetu okrivljene B.N, zbog krivičnog djela
+ubistvo djeteta pri porodjaju izčlana 146 KZ, postupajući po optužnom predlogu ODT Nikšić Kt.br.777/12 od
+23.11.2012.godine, nakon javnog glavnog pretresa održanog dana 15.04.2013. godine, u prisustvu zamjenika
 ODT-a Lukovac Sofije i okrivljene, donio je i dana 18.04.2013.godine javno objavio
 P R E S U D U
 Okrivljena:
-B.N. od oca M. i majke S. . B.rodjena . u Nik š i ć u, sa prebivali š tem u Nik š i ć u. .dr ž avljanin Crne Gore, zavr š ila
-osnovnu š kolu, majka dvoje djece, lo š eg imovnog stanja, ranije neosudjivana
+B.N. od oca M. i majke S.. B.rodjena. u Nikšiću, sa prebivalištem u Nikšiću..državljanin Crne Gore, završila
+osnovnuškolu, majka dvoje djece, lošeg imovnog stanja, ranije neosudjivana
 K r i v a j e:
 Što je:
-Dana 09.09.2012 godine u Nik š i ć u, u stanu koji je vlasni š tvo oca okrivljene A.M. koji stan se nalazi u ulici Prvi
-maj broj 44, neposredno nakon porodjaja, dok je kod nje trajao poreme ć aj izazvan porodjajem, li š ila ž ivota
-svoje novorodjeno dijete, na na č in š to je isto rukama stezala u predjelu vrata nosa i usta tako da je do š lo do
-uguš enja djeteta.
-- čime je po č inila kriv č no djelo ubistvo djeteta pri porodjaju iz č lana 146 Krivi č nog zakonika.
-- pa sud okrivljenoj zbog izvr š enja navedenog kriv č nog djela primjenom citiranih zakonskih odredbi iz č lana
-4, stav 2, č lana 42, 52 53 i 54 KZ i odredbi iz č lana 226, 229 stav 4 i č lana 374 ZKP-a i z r i č  e
+Dana 09.09.2012 godine u Nikšiću, u stanu koji je vlasništvo oca okrivljene A.M. koji stan se nalazi u ulici Prvi
+maj broj 44, neposredno nakon porodjaja, dok je kod nje trajao poremećaj izazvan porodjajem, lišilaživota
+svoje novorodjeno dijete, na načinšto je isto rukama stezala u predjelu vrata nosa i usta tako da je došlo do
+ugušenja djeteta.
+- čime je počinila krivčno djelo ubistvo djeteta pri porodjaju izčlana 146 Krivičnog zakonika.
+- pa sud okrivljenoj zbog izvršenja navedenog krivčnog djela primjenom citiranih zakonskih odredbi izčlana
+4, stav 2, č lana 42, 52 53 i 54 KZ i odredbi izčlana 226, 229 stav 4 ičlana 374 ZKP-a i z r iče
 USLOVNU OSUDU
 Sa kojom okrivljenoj utvrdjuje kaznu zatvora u trajanju od 1 (slovima: jedne) godine i istovremeno odredjuje
-da se navedena kazna ne ć e izvr š iti ukoliko okrivljena u roku od tri godine od dana pravosna ž nosti rpesude ne
-poč ini novo krivi č no djelo.
-Okrivljena se oslobadja pla ć anja tro š kova krivi č nog postupka, tako da isti padaju na teret bud ž etskih
-sredstava ovoga suda.Osnovni Sud u Nik š i ć u
+da se navedena kazna neće izvršiti ukoliko okrivljena u roku od tri godine od dana pravosnažnosti rpesude ne
+poč ini novo krivično djelo.
+Okrivljena se oslobadja plaćanja troškova krivičnog postupka, tako da isti padaju na teret budžetskih
+sredstava ovoga suda.Osnovni Sud u Nikšiću
 K 1009/2012
 18. April 2013
-O b r a z l o ž  e n j e
-Osnovni dr ž avni tu ž ilac u Nik š i ć u svojom optu ž nim predlogom Kt.br.777/12 od 23.11.2012. godine, stavio je
-na teret okrivljenoj B.N izvr š enje krivi č nog djela ubistvo djeteta pri porodjaju iz č lana 146 KZ. Zamjenik ODT-a
-Lukovac Sofija, koja je zastupala optu ž ni akt na glavnom pretresu, imaju ć i u vidu rezultate dokaznog
-postupka, djelimi č no je izmijenila č injeni č ni opis podnijetog optu ž nog akta i u svojoj zavr š noj rije č i, ostaju ć i
-pri navodima imijenjenog optu ž nog akta, predlo ž ila sudu da okrivljenu oglasi krivom i osudi po zakonu.
+
+O b r a z l ože n j e
+Osnovni državni tužilac u Nikšiću svojom optužnim predlogom Kt.br.777/12 od 23.11.2012. godine, stavio je
+na teret okrivljenoj B.N izvršenje krivičnog djela ubistvo djeteta pri porodjaju izčlana 146 KZ. Zamjenik ODT-a
+Lukovac Sofija, koja je zastupala optužni akt na glavnom pretresu, imajući u vidu rezultate dokaznog
+postupka, djelimično je izmijenilačinjenični opis podnijetog optužnog akta i u svojoj završnoj riječi, ostajući
+pri navodima imijenjenog optužnog akta, predložila sudu da okrivljenu oglasi krivom i osudi po zakonu.
 Okrivljena B.N u svojoj odbrani datoj u prethodnom postupku i na glavnom pretresu u bitnom je navela da
-je živi u stanu koji se nalazi u ulici Prvi maj, koji stan je vlasni š tvo njenog oca A.M., a u kojem stanu stanuje sa
+je živi u stanu koji se nalazi u ulici Prvi maj, koji stan je vlasništvo njenog oca A.M., a u kojem stanu stanuje sa
 svoje dvoje maloljetno djece iz braka sa B.M.om, koji brak nije formalno razveden iako izmedju nje i B.M.a u
-periodu od unazad osam i po godina ne postoji zajednica ž ivota. Dalje je objasnila da je priej kriti č nog
-dogadjaja znala da je u drugom stanju, da je redovno odlazila na ginekolo š ke preglede i da je o č ekivala
-porodjaj po č etkom oktobra mjeseca 2012. godine, ali da je dana 09.09.2012. godine, oko 22 sata, dok je djeci
-postavljala ve č eru osjetila bolove i procijenila da se radi o bolovima koji nagovje š tavaju porodjaj, nakon č ega
-je djecu legla da spavaju, kada su bolovi ve ć  bili jaki jer nije mogla da se kre ć e, nakon č ega je vidjela da je
-novorodjen č etu ve ć  bila iza š la glava i tada pozvala hitnu slu ž bu nik š i ć ke bolnice i pitala ih š ta da radi, na š ta
-su joj slu ž benici bolnice sa kojima je razgovarala rekla da ako je novorodjen č e ve ć  iza š lo iz materice presije č e
-pupč anu vrpcu, š to je ona i u č inila i nakon toga primijetila da novorodjen č e ne di š e, nakon č ega je uzela
-peškir sa kojim je novorodjen č e obrisala i isto okrenula, jer je mislila da novorodjen č e ne mo ž e da di š e zbog
-plodove vode, ali ni š ta od toga novorodjen č etu nije pomoglo da po č ne da di š e. Istakla je da je nakon toga
-osjetila jako krvarenje i da se ne sje ć a najbolje š ta se zatim de š avalo, a da je tek narednog dana ujutru oko 9
-časova, kada se probudila u nik š i ć koj bolnici postala svjesna gdje se nalazi, dok su joj dogadjaji od prethodne
-noć i ostali u sje ć anju kao u nekoj magli i da se ne mo ž e sjetiti da li je kriti č ne ve č ri nakon porodjaja
-novorodjen č e stavila u neku kesu i ponijela u š paiz svog stana, niti da li je iz stana izbacila neke pe š kire na
-kojima su se nalazili tragovi krvi. Istakla je i da je sigurna da kriti č nom prilikom nakon porodjaja
-novorodjen č e nije pokazivalo znakove ž ivota i da je sigurna da nije preduzela ni š ta š to nije trebalo da u č ini da
-bi novorodjen č etu pomoglo da po č ne da di š e.
-U svojoj zavr š noj rije č i okrivljena je ostaju ć i pri svom kazivanju, pitanje svoje krivi č no pravne odgovornosti
+periodu od unazad osam i po godina ne postoji zajednicaživota. Dalje je objasnila da je priej kritičnog
+dogadjaja znala da je u drugom stanju, da je redovno odlazila na ginekološke preglede i da je očekivala
+porodjaj početkom oktobra mjeseca 2012. godine, ali da je dana 09.09.2012. godine, oko 22 sata, dok je djeci
+postavljala večeru osjetila bolove i procijenila da se radi o bolovima koji nagovještavaju porodjaj, nakončega
+je djecu legla da spavaju, kada su bolovi većbili jaki jer nije mogla da se kreće, nakončega je vidjela da je
+novorodjenčetu većbila izašla glava i tada pozvala hitnu službu nikšićke bolnice i pitala ihšta da radi, našta
+su joj službenici bolnice sa kojima je razgovarala rekla da ako je novorodjenče većizašlo iz materice presiječe
+pupčanu vrpcu, š to je ona i učinila i nakon toga primijetila da novorodjenče ne diše, nakončega je uzela
+peškir sa kojim je novorodjenče obrisala i isto okrenula, jer je mislila da novorodjenče ne može da diše zbog
+plodove vode, ali ništa od toga novorodjenčetu nije pomoglo da počne da diše. Istakla je da je nakon toga
+osjetila jako krvarenje i da se ne sjeća najbolješta se zatim dešavalo, a da je tek narednog dana ujutru oko 9
+časova, kada se probudila u nikšićkoj bolnici postala svjesna gdje se nalazi, dok su joj dogadjaji od prethodne
+noć i ostali u sjećanju kao u nekoj magli i da se ne može sjetiti da li je kritične večri nakon porodjaja
+novorodjenče stavila u neku kesu i ponijela ušpaiz svog stana, niti da li je iz stana izbacila neke peškire na
+kojima su se nalazili tragovi krvi. Istakla je i da je sigurna da kritičnom prilikom nakon porodjaja
+novorodjenče nije pokazivalo znakoveživota i da je sigurna da nije preduzela ništašto nije trebalo da učini da
+bi novorodjenčetu pomoglo da počne da diše.
+U svojoj završnoj riječi okrivljena je ostajući pri svom kazivanju, pitanje svoje krivično pravne odgovornosti
 ostavila na ocjenu sudu.
-Sud je na glavnom pretresu u dokaznom postupku pro č itao zapisnik o uvidjaju Uprave policije CG PJ Nik š i ć
-Ku.br. 447 sa č injen dana 10.09.2012. godine, izvr š io uvid u foto-dokumentaciju Uprave policije CG PJ Nik š i ć
-sačinjenu prilikom vr š enja tog uvidjaja broj 473/12 od 10.09.2012. godine, pro č itao obdukcioni zapisnik
-S.br.125/2012 sa č injen od strane stalnog sudskog vje š taka sudske medicine dr. Č uki ć  Dragane, neposredno
-saslu š ao imenovanog vje š taka sudske medicine, na saglasan predlog stranaka pro č itao nalaz i mi š ljenje
-struč ne Komisije vje š taka koju su č inili vje š tak neuropsihijatr dr. Nik č evi ć  Zorica, vje š tak neuropsihijatar dr.
-Mićovi ć  Radojka i vje š tak psiholog Milovi ć  Veselinka, pro č itao izvje š taj Centra za socijalni rad za Op š tine
-Nikš i ć  Plu ž ine i Š avnik o porodi č nim prilikama okrivljene B.N i pro č itao izvod iz kaznene evidencije za
-okrivljenu dat od Uprave policije CG-PJ Nik š i ć .
-Analiziraju ć i provedene dokaze pojedina č no i u njihovoj medjusobnoj povezanosti, dovode ć ih ih u vezu sa
-navodima optu ž be i odbranom okrivljene, sud je na nesumnjiv na č in utvrdio da je okrivljena B.N po č inila
-krivi č no djelo koje joj je stavljeno na teret optu ž bom, pa ju je zbog izvr š enja istog oglasio krivim i krivi č no
-pravno odgovornom iz sljede ć ih razloga:
-Zapisnikom o uvidjaju Uprave policije CG PJ Nik š i ć  Ku.br. 447 od 10.09.2012. godine i fotodokumentacijom
-Uprave policije CG PJ Nik š i ć  broj 743/12 od 10.09.2012. godine, utvrdjeno je da su slu ž benici Uprave policije
-CG PJ Nik š i ć  u prizemnoj baraci č iji je vlasnik otac okrivljene A.M., a u kojoj stanuje okrivljena B.N, koji objekat
-se nalazi u ulici Prvi Maj broj 44, dana 10.09.2012. godine, prona š li na podu prostorije koja se nalazi na kraju
-hodnika jednu plasti č nu kantu bijele boje u kojoj su pronadjeni ć ebe, krevetna posteljina i pe š kir na kojima
-su se nalazili tragovi krvi, dok se na podu te prostorije nalazio dio tkiva i trag zgru š ane krvi, da su na tepihu
-spava ć e sobe izmedju bra č nog le ž aja i desno g prozora sobe pronadjene jedne makaze sa tragovima krvi,
-peškir i crna tkanina sa tragovima krvi, dok su se na tepihu uo č avali razliveni trag krvi i tragovi zgru š ane krvi,
-dok je na podu š paiza stana pronadjeno be ž ivotno tijelo novorodjen č eta koje je bilo stavljeno u tri najlonske
-kese, koje be ž ivotno tijelo je nakon vr š enja uvidjaja po nalogu zamjenika ODT-a poslato na obdukciju u KCCG
+Sud je na glavnom pretresu u dokaznom postupku pročitao zapisnik o uvidjaju Uprave policije CG PJ NikšićKu.br. 447 sačinjen dana 10.09.2012. godine, izvršio uvid u foto-dokumentaciju Uprave policije CG PJ Nikšićsačinjenu prilikom vršenja tog uvidjaja broj 473/12 od 10.09.2012. godine, pročitao obdukcioni zapisnik
+S.br.125/2012 sačinjen od strane stalnog sudskog vještaka sudske medicine dr. Č ukić Dragane, neposredno
+saslušao imenovanog vještaka sudske medicine, na saglasan predlog stranaka pročitao nalaz i mišljenje
+stručne Komisije vještaka koju sučinili vještak neuropsihijatr dr. Nikčević Zorica, vještak neuropsihijatar dr.
+Mićović Radojka i vještak psiholog Milović Veselinka, pročitao izvještaj Centra za socijalni rad za Opštine
+Nikšić Plužine i Šavnik o porodičnim prilikama okrivljene B.N i pročitao izvod iz kaznene evidencije za
+okrivljenu dat od Uprave policije CG-PJ Nikšić.
+Analizirajući provedene dokaze pojedinačno i u njihovoj medjusobnoj povezanosti, dovodećih ih u vezu sa
+navodima optužbe i odbranom okrivljene, sud je na nesumnjiv način utvrdio da je okrivljena B.N počinila
+krivično djelo koje joj je stavljeno na teret optužbom, pa ju je zbog izvršenja istog oglasio krivim i krivično
+pravno odgovornom iz sljedećih razloga:
+Zapisnikom o uvidjaju Uprave policije CG PJ NikšićKu.br. 447 od 10.09.2012. godine i fotodokumentacijom
+Uprave policije CG PJ Nikšićbroj 743/12 od 10.09.2012. godine, utvrdjeno je da su službenici Uprave policije
+CG PJ Nikšiću prizemnoj baracičiji je vlasnik otac okrivljene A.M., a u kojoj stanuje okrivljena B.N, koji objekat
+
+se nalazi u ulici Prvi Maj broj 44, dana 10.09.2012. godine, pronašli na podu prostorije koja se nalazi na kraju
+hodnika jednu plastičnu kantu bijele boje u kojoj su pronadjenićebe, krevetna posteljina i peškir na kojima
+su se nalazili tragovi krvi, dok se na podu te prostorije nalazio dio tkiva i trag zgrušane krvi, da su na tepihu
+spavaće sobe izmedju bračnog ležaja i desno g prozora sobe pronadjene jedne makaze sa tragovima krvi,
+peškir i crna tkanina sa tragovima krvi, dok su se na tepihu uočavali razliveni trag krvi i tragovi zgrušane krvi,
+dok je na podušpaiza stana pronadjeno beživotno tijelo novorodjenčeta koje je bilo stavljeno u tri najlonske
+kese, koje beživotno tijelo je nakon vršenja uvidjaja po nalogu zamjenika ODT-a poslato na obdukciju u KCCG
 Podgorica.
-Obdukcionim zapisnikom S.br. 125/2012 sa č injenim od stalnog sudskog vje š taka sudske medicine dr. Č uki ć
-Dragane utvrdjeno je da je nakon izvr š ene obdukcije novorodjen č eta pronadjenog u stanu koji koristi
-okrivljena B.N dana 10.09.2012. godine, utvrdjeno da se radi o le š u mu š kog djeteta u desetom mjesecu
-materi č nog ž ivota, dakle dono šč eta sposobnog za vanmateri č ni ž ivot, da je to novorodjen č e ž ivo rodjeno jer
-je disalo i gutalo vazduh, a da je smrt djeteta ubila č kog porijekla, dakle da se radi o nasilnoj smrti koja je
-nastupila uslijed ugu š enja zbog stezanja vrata novorodjen č eta i zagu š enja nosa i usta najvjerovatnije š akom,
-odnosno š akama. Odgovaraju ć i na pitanja postavljena na glavnom pretresu vje š tak sudske medicine dr.
-Čuki ć  Dragana navela je da je imaju ć i u vidu navedene č injenice utvrdjene obdukcijom le š a novorodjen č eta
-očigledno da je smrt novorodjen č eta nastupila nakon porodjaja, a ne u toku samog porodjaja.
-Nalazom i mi š ljenjem stru č ne Komisije vje š taka, koju su č inili sudski vje š tak neuropsihijatar dr. Nik č evi ć
-Zorica, sudski vje š tak neuropsihijatar dr. Mi ć ovi ć  Radojka i sudski vje š tak psihilog dr. Milovi ć  Veselinka
-utvrdjeno je da okrivljena B.N ne boluje od primarne mentalne retardacije, ni du š evne bolesti, da nije
-psihijatrijski lije č ena, a da je psiholo š kom eksploracijom okrivljene utvrdjeno da je okrivljena osoba
-prosje č nih intelektualnih sposobnosti sa karakteristikama li č nosti koja ima emocionalne nestabilnosti, sa
-neefikasnim mehanizmima odbrane i sklono šć u ka eksplozivnom ispoljavanju ljutnje i izra ž enom
-osjetljivo šć u, te da je objektivna nepovoljna ž ivotna situacija koja traje du ž i niz godina, psiholo š ko stanje
-okrivljene tokom trudno ć e i poreme ć aj koji se desio porodjajem-uslijed pretrpljenog bola, krvarenja, izrazite
-fizič ke i psihi č ke nemo ć i, iscrpljenosti i promjene hormonalnog statusa, neposredno nakon porodjaja uticali
+Obdukcionim zapisnikom S.br. 125/2012 sačinjenim od stalnog sudskog vještaka sudske medicine dr. Č ukić Dragane utvrdjeno je da je nakon izvršene obdukcije novorodjenčeta pronadjenog u stanu koji koristi
+okrivljena B.N dana 10.09.2012. godine, utvrdjeno da se radi o lešu muškog djeteta u desetom mjesecu
+materičnogživota, dakle donoščeta sposobnog za vanmateričniživot, da je to novorodjenčeživo rodjeno jer
+je disalo i gutalo vazduh, a da je smrt djeteta ubilačkog porijekla, dakle da se radi o nasilnoj smrti koja je
+nastupila uslijed ugušenja zbog stezanja vrata novorodjenčeta i zagušenja nosa i usta najvjerovatniješakom,
+odnosnošakama. Odgovarajući na pitanja postavljena na glavnom pretresu vještak sudske medicine dr.
+Čukić Dragana navela je da je imajući u vidu navedenečinjenice utvrdjene obdukcijom leša novorodjenčeta
+očigledno da je smrt novorodjenčeta nastupila nakon porodjaja, a ne u toku samog porodjaja.
+Nalazom i mišljenjem stručne Komisije vještaka, koju sučinili sudski vještak neuropsihijatar dr. Nikčević Zorica, sudski vještak neuropsihijatar dr. Mićović Radojka i sudski vještak psihilog dr. Milović Veselinka
+utvrdjeno je da okrivljena B.N ne boluje od primarne mentalne retardacije, ni duševne bolesti, da nije
+psihijatrijski liječena, a da je psihološkom eksploracijom okrivljene utvrdjeno da je okrivljena osoba
+prosječnih intelektualnih sposobnosti sa karakteristikama ličnosti koja ima emocionalne nestabilnosti, sa
+neefikasnim mehanizmima odbrane i sklonošću ka eksplozivnom ispoljavanju ljutnje i izraženom
+osjetljivošću, te da je objektivna nepovoljnaživotna situacija koja traje duži niz godina, psihološko stanje
+okrivljene tokom trudnoće i poremećaj koji se desio porodjajem-uslijed pretrpljenog bola, krvarenja, izrazite
+fizičke i psihičke nemoći, iscrpljenosti i promjene hormonalnog statusa, neposredno nakon porodjaja uticali
 na sposobnost okrivljene za rasudjivanje, razumijevanje i upravljanje svojim postupcima.
-Na osnovu navedenih č injenica utvrdjenih zapisnikom o uvidjaju Uprave policije CG PJ NIk š i ć , foto-
-dokumentacijom Uprave policije CG PJ Nik š i ć , obdukcionim zapisnikom i izja š njenjem vje š taka sudske
-medicine dr. Č uki ć  Dragane i nalazom i mi š ljenjem stru č ne Komisije vje š taka sud je na nesumnjiv na č in
-utvdio da je okrivljena B.N dana 09.09.2012 godine u Nik š i ć u, u stanu koji je vlasni š tvo oca okrivljene A.M.,
-koji stan se nalazi u ulici Prvi maj broj 44, neposredno nakon porodjaja dok je kod nje trajao poreme ć aj
-izazvan porodjajem li š ila ž ivota svoje novorodjeno dijete, na na č in š to je isto rukama stezala u predjelu vrata
-nosa i usta, tako da je do š lo do ugu š enja djeteta, č ime je okrivljena B.N po č inila krivi č no djelo ubistvo djeteta
-pri porodjaju iz č lana 146 KZ na na č in, u vrijeme i na mjestu kako je to predstavljeno u izreci presude.
-Cijene ć i subjektivni odnos okrivljene prema izvr š enom krivi č nom djelu utvrdio da je okrivljena
-prilikom izvr š enja radnnji predmetnog krivi č nog djela postupala sa eventualnim umi š ljajem, jer iz utvrdjenog
-činjeni č nog stanja nedvosmisleno proizilazi da je okrivljena preduzimaju ć i radnje bli ž e opisane u izreci
-presude, u vrijeme dok je kod nje postojao poreme ć aj izazvan porodjajem, bila svjesna da na taj na č in č ini
-predmetno krivi č no djelo pa je na to i pristala.
-Prilikom dono š enja odluke o krivi č noj sankciji okrivljenoj sud je u smislu č lana 42 KZ kao
-olak š avaju ć e okolnosti na strani okrivljene na š ao č injenicu da se radi o osobi ž enskog pola, porodi č ne prilike
+Na osnovu navedenihčinjenica utvrdjenih zapisnikom o uvidjaju Uprave policije CG PJ NIkšić, fotodokumentacijom Uprave policije CG PJ Nikšić, obdukcionim zapisnikom i izjašnjenjem vještaka sudske
+medicine dr. Č ukić Dragane i nalazom i mišljenjem stručne Komisije vještaka sud je na nesumnjiv način
+utvdio da je okrivljena B.N dana 09.09.2012 godine u Nikšiću, u stanu koji je vlasništvo oca okrivljene A.M.,
+koji stan se nalazi u ulici Prvi maj broj 44, neposredno nakon porodjaja dok je kod nje trajao poremećaj
+izazvan porodjajem lišilaživota svoje novorodjeno dijete, na načinšto je isto rukama stezala u predjelu vrata
+nosa i usta, tako da je došlo do ugušenja djeteta, č ime je okrivljena B.N počinila krivično djelo ubistvo djeteta
+pri porodjaju izčlana 146 KZ na način, u vrijeme i na mjestu kako je to predstavljeno u izreci presude.
+Cijeneći subjektivni odnos okrivljene prema izvršenom krivičnom djelu utvrdio da je okrivljena
+prilikom izvršenja radnnji predmetnog krivičnog djela postupala sa eventualnim umišljajem, jer iz utvrdjenog
+činjeničnog stanja nedvosmisleno proizilazi da je okrivljena preduzimajući radnje bliže opisane u izreci
+presude, u vrijeme dok je kod nje postojao poremećaj izazvan porodjajem, bila svjesna da na taj načinčini
+predmetno krivično djelo pa je na to i pristala.
+Prilikom donošenja odluke o krivičnoj sankciji okrivljenoj sud je u smislučlana 42 KZ kao
+olakšavajuće okolnosti na strani okrivljene našaočinjenicu da se radi o osobiženskog pola, porodične prilike
 okrivljene – č injenicu da je ista samohrana majka dvoje maloljetne djece i raniju neosudjivanost okrivljene
-utvrdjenu uvidom u izvod iz kaznene evidencije, dok ote ž avaju ć ih okolnosti na strani okrivljene po ocjeni
-suda nije bilo. Cijene ć i navedene olak š avaju ć e okolnosti kao i č injenicu utvrdjenu izvje š tajem Centra za
-socijalni rad za op š tine Nik š i ć , Plu ž ine i Š avnik o porodi č nim prilikama okrivljene B.N da okrivljena na
-adekvatan na č in zadovoljava razvojne potrebe svoje dvoje maloljetno djece D. i A., o kojima isklju č ivo
+utvrdjenu uvidom u izvod iz kaznene evidencije, dok otežavajućih okolnosti na strani okrivljene po ocjeni
+suda nije bilo. Cijeneći navedene olakšavajuće okolnosti kao ičinjenicu utvrdjenu izvještajem Centra za
+
+socijalni rad za opštine Nikšić, Plužine i Šavnik o porodičnim prilikama okrivljene B.N da okrivljena na
+adekvatan način zadovoljava razvojne potrebe svoje dvoje maloljetno djece D. i A., o kojima isključivo
 okrivljena vodi brigu i da sa istima ima izgradjen topao emotivan odnos povjerenja koji im uliva sigurnost za
-prevazila ž enje te š kih ž ivotnih situacija sa kojima su suo č eni, usljed č ega bi se du ž e odsustvo okrivljene, uz
-nepostojanje osobe iz najbli ž eg okru ž enja njene djece koja bi preuzela ulogu okrivljene u njihovim ž ivotima
-negativno odrazilo na psihofizi č ki razvoj djece i ozbiljno ugrozilo njihovu emotivnu i psihi č ku stabilnost, sud
-je na š ao da se radi o osobito olak š avaju ć im okolnostima i da prema okrivljenoj radi ostvarivanja ciljeva
-krivi č no pravne za š tite dru š tvenih vrijednosti nije nu ž no primijeniti kaznu, pa je sud okrivljenoj na osnovu
+prevazilaženje teškihživotnih situacija sa kojima su suočeni, usljedčega bi se duže odsustvo okrivljene, uz
+nepostojanje osobe iz najbližeg okruženja njene djece koja bi preuzela ulogu okrivljene u njihovimživotima
+negativno odrazilo na psihofizički razvoj djece i ozbiljno ugrozilo njihovu emotivnu i psihičku stabilnost, sud
+je našao da se radi o osobito olakšavajućim okolnostima i da prema okrivljenoj radi ostvarivanja ciljeva
+krivično pravne zaštite društvenih vrijednosti nije nužno primijeniti kaznu, pa je sud okrivljenoj na osnovu
 člana 53 i 54 KZ izrekao uslovnu osudu, sa kojom je okrivljenoj utvrdio kaznu zatvora u trajanju od jedne
-godine i istovremeno odredio da se navedena kazna ne ć e izvr š iti ukoliko okrivljena u roku od tri godine od
-dana pravosna ž nosti presude ne po č ini novo krivi č no djelo, smatraju ć i da ć e se i sa prijetnjom utvrdjene
-kazne zatvora uz provjeru pona š anja okrivljene u roku od tri godine od dana pravosna ž nosti presude na
-okrivljenu u dovoljnoj mjeri uticati da ubudu ć e ne vr š i nova krivi č na djela i da ć e se na taj na č in u ovom
-konkretnom slu č aju ostvariti svrha izricanja uslovnih osuda iz č lana 52 KZ, u okviru op š te svrhe izricanja
-krivi č nih sankcija iz č lana 4 stav 2 KZ.
-Odluku o tro š kovima krivi č nog postupka sud je donio na osno vu č lana 226 i 229 stav 4 ZKP-a i istom
-okrivljenu oslobodio pla ć anja tro š kova krivi č nog postupka iz razloga š to je okrivljena lice lo š eg imovnog
-stanja, bez stalnog zaposlenja , tako da bi po ocjeni suda pla ć anje dosta visokih tro š kova predmetnog
-krivi č nog postupka imovne prilike okrivljene bile dodatno ugro ž ene, jer bi time bilo ugro ž eno izdr ž avanje i
-okrivljene i lica koje ona izdr ž ava, odnosno njeno dvoje maloljetno djece.
-Na osnovu svega izlo ž enog, primjenom odredbi č lana 374 ZKP-a odlu č eno je kao u izreci presude.
-OSNOVNI SUD U NIK Š I Ć U, dana 18.04.2013. godine
-Zapisni č ar S U D I J A
-Papovi ć  Budimirka s.r. Djuri č kovi ć  Igor s.r.
-Za ta č nost otpravki tvrdi i ovjerava: Slu ž benik suda
-PRAVNA POUKA: Protiv ove presude dozvoljena je ž alba u roku od 8 dana od dana prijema iste
-Preko ovog suda Vi š em sudu Podgorica</p>
+godine i istovremeno odredio da se navedena kazna neće izvršiti ukoliko okrivljena u roku od tri godine od
+dana pravosnažnosti presude ne počini novo krivično djelo, smatrajući daće se i sa prijetnjom utvrdjene
+kazne zatvora uz provjeru ponašanja okrivljene u roku od tri godine od dana pravosnažnosti presude na
+okrivljenu u dovoljnoj mjeri uticati da ubuduće ne vrši nova krivična djela i daće se na taj način u ovom
+konkretnom slučaju ostvariti svrha izricanja uslovnih osuda izčlana 52 KZ, u okviru opšte svrhe izricanja
+krivičnih sankcija izčlana 4 stav 2 KZ.
+Odluku o troškovima krivičnog postupka sud je donio na osno vučlana 226 i 229 stav 4 ZKP-a i istom
+okrivljenu oslobodio plaćanja troškova krivičnog postupka iz razlogašto je okrivljena lice lošeg imovnog
+stanja, bez stalnog zaposlenja, tako da bi po ocjeni suda plaćanje dosta visokih troškova predmetnog
+krivičnog postupka imovne prilike okrivljene bile dodatno ugrožene, jer bi time bilo ugroženo izdržavanje i
+okrivljene i lica koje ona izdržava, odnosno njeno dvoje maloljetno djece.
+Na osnovu svega izloženog, primjenom odredbičlana 374 ZKP-a odlučeno je kao u izreci presude.
+OSNOVNI SUD U NIKŠIĆU, dana 18.04.2013. godine
+Zapisničar S U D I J A
+Papović Budimirka s.r. Djuričković Igor s.r.
+Za tačnost otpravki tvrdi i ovjerava: Službenik suda
+PRAVNA POUKA: Protiv ove presude dozvoljena ježalba u roku od 8 dana od dana prijema iste
+Preko ovog suda Višem sudu Podgorica</p>
                 </block>
             </conclusions>
         </judgmentBody>

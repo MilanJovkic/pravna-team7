@@ -22,7 +22,11 @@ public class UnknownAwareBooleanSimilarity implements LocalSimilarityFunction {
         if ("unknown".equals(left) || "unknown".equals(right)) {
             return 0.5;
         }
-        return left.equals(right) ? 1.0 : 0.0;
+        if (left.equals(right)) {
+            return 1.0;
+        }
+        // Contradictory boolean evidence should lower similarity, not just add no score.
+        return -0.15;
     }
 
     @Override

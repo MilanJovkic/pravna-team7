@@ -20,18 +20,27 @@
                 <FRBRManifestation>
                     <FRBRthis value="/akn/me/judgment/Одлуке57/sr@2018-03-12/!main.xml"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке57/sr@2018-03-12/!main.akn"/>
-                    <FRBRdate date="2026-04-13"/>
+                    <FRBRdate date="2026-04-15"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
             <references source="#court">
-                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U NIK"/>
-                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="pojedinacĐ"/>
-                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Crne Gore"/>
-                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="Stare Po"/>
-                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/kz-cg" showAs="KZ CG"/>
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U NIKŠIĆU"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Igor Đuričković"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Vasilisa Pejović"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Budimirka Papović"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="Srdanović Slavko"/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="C.G."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="Srdanović Slavka"/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="Bulatović Veselina"/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="Srdanovića Slavka"/>
+                <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="C.B."/>
+                <TLCPerson eId="victim_7" href="/akn/me/ontology/person/victim" showAs="Vučinić Nikola"/>
+                <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="Vučinić Nikoli"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo u Nikšiću"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -43,494 +52,516 @@
                     <docNumber>K.br. 253/2016</docNumber>
                 </block>
                 <block name="court">
-                    <docTitle>OSNOVNI SUD U NIK</docTitle>
+                    <docTitle>OSNOVNI SUD U NIKŠIĆU</docTitle>
                 </block>
                 <block name="date">
                     <docDate date="2018-03-12">2018-03-12</docDate>
                 </block>
                 <block name="judges">
-                    <judge>pojedinacĐ</judge>
+                    <judge>Igor Đuričković</judge>
+                    <judge>Vasilisa Pejović</judge>
+                    <judge>Budimirka Papović</judge>
                 </block>
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni su krivi za učešće u tuči.</p>
+                    <p>Okrivljeni su uslovno osuđeni zbog učestvovanja u tuči.</p>
                 </block>
                 <block name="legalIssues">
-                    <p>Učešće u tuči</p>
-                    <p>Nanosenje teške tjelesne povrede</p>
-                    <p>Odgovornost okrivljenih</p>
+                    <p>Učestvovanje u tuči</p>
+                    <p>Teška tjelesna povreda</p>
+                    <p>Uslovna osuda</p>
+                    <p>Troškovi postupka</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
-                    <ref href="#law_2">KZ CG</ref>
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/2024/!main#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_374">Član 374</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Okrivljeni su svesno učestvovali u tuči, što je dovelo do teške povrede oštećenog.</p>
+                    <p>Okrivljeni su svesno učestvovali u tuči koja je rezultirala teškom povredom oštećenog.</p>
                 </block>
             </motivation>
             <decision>
-                <block name="verdict" outcome="nepoznato">
-                    <p>Presuda o krivici okrivljenih.</p>
+                <block name="verdict" outcome="osudjen">
+                    <p>Uslovna osuda</p>
                 </block>
             </decision>
             <participants>
-                <block name="defendants">
-                    <person>Crne Gore</person>
-                    <person>Stare Po</person>
+                <block name="victims">
+                    <person>Srdanović Slavko</person>
+                    <person>C.G.</person>
+                    <person>Srdanović Slavka</person>
+                    <person>Bulatović Veselina</person>
+                    <person>Srdanovića Slavka</person>
+                    <person>C.B.</person>
+                    <person>Vučinić Nikola</person>
+                    <person>Vučinić Nikoli</person>
                 </block>
                 <block name="witnesses">
-                    <person>je izjavio da okrilvjene</person>
-                    <person>Krivokapi</person>
-                    <person>je naveo da se sje</person>
+                    <person>Krivokapić Mališa</person>
+                    <person>C.G.</person>
+                    <person>C.B.</person>
+                    <person>Srdanović Slavko</person>
+                </block>
+                <block name="organizations">
+                    <organization>Osnovno državno tužilaštvo u Nikšiću</organization>
                 </block>
             </participants>
             <facts>
-                <fact key="location">Njego</fact>
-                <fact key="location">Nik</fact>
-                <fact key="location">Radulovi</fact>
-                <fact key="location">Nikš</fact>
+                <fact key="injury_type">teška tjelesna povreda</fact>
                 <fact key="location">Podgorica</fact>
+                <fact key="location">Nikšić</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="alcohol_intoxication">da</fact>
+                <fact key="narcotics_influence">da</fact>
+                <fact key="conditional_sentence_requested">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">3</fact>
             </facts>
             <conclusions>
                 <block name="fullText">
                     <p>CRNA GORA
-OSNOVNI SUD U NIK Š I Ć U
+OSNOVNI SUD U NIKŠIĆU
 K.br.253/2016
 Dana 12.03.2018. godine
 U IME CRNE GORE
- 
-OSNOVNI SUD U NIK Š I Ć U, kao prvostepeni krivi č ni, sudija pojedinac Đ uri č kovi ć  Igor, uz sudjelovanje
-sudijskog pripravnika Pejovi ć  Vasilise i namje š tenika Papovi ć  Budimirke kao zapisni č ara, rje š avaju ć i u
-krivi č nom predmetu okrivljenih E..S.., Đ.. M.., J.. M..i V.. N.., svi iz Nik š i ć a, zbog krivi č nog djela u č estvovanje u
-tuči iz č lana 153 KZ CG, postupaju ć i po optu ž nom predlogu Osnovnog dr ž avnog tu ž ila š tva u Nik š i ć u
-Kt.br.295/16 od 12.09.2016.godine, nakon javnog glavnog pretresa odr ž anog dana 07.03.2018.godine, u
-prisustvu zastupnice ODT-a u Nik š i ć u Radulovi ć  Zorice, okrivljenih E.. S.., J.. M.. i V.. N.., branioca okrivljenog
-Đ.. M.. A..N.., advokata iz Nik š i ć a, a u odsustvu okrivljenog Đ.. M.., donio je i dana 12.03.2018. godine javno
+
+OSNOVNI SUD U NIKŠIĆU, kao prvostepeni krivični, sudija pojedinac Đuričković Igor, uz sudjelovanje
+sudijskog pripravnika Pejović Vasilise i namještenika Papović Budimirke kao zapisničara, rješavajući u
+krivičnom predmetu okrivljenih E..S.., Đ.. M.., J.. M..i V.. N.., svi iz Nikšića, zbog krivičnog djela učestvovanje u
+tuči izčlana 153 KZ CG, postupajući po optužnom predlogu Osnovnog državnog tužilaštva u Nikšiću
+Kt.br.295/16 od 12.09.2016.godine, nakon javnog glavnog pretresa održanog dana 07.03.2018.godine, u
+prisustvu zastupnice ODT-a u Nikšiću Radulović Zorice, okrivljenih E.. S.., J.. M.. i V.. N.., branioca okrivljenog
+Đ.. M.. A..N.., advokata iz Nikšića, a u odsustvu okrivljenog Đ.. M.., donio je i dana 12.03.2018. godine javno
 objavio
 P R E S U D U
- 
+
 Okrivljeni:
-1.E......... S...., jmbg .., od oca A.. i majke J.., rođ ene B.., rođ en ... godine u Nik š i ć u, sa prebivali š tem u Nik š i ć u,
-ulica I.. M.. broj .., drž avljanin Crne Gore, neo ž enjen, zaposlen, lo š eg imovnog stanja, ranije neosu đ ivan,
- 
-2.Đ..M.., jmbg .., od oca S.. i majke R.., rođ ene L.., rođ en ... godine u Nik š i ć u, sa prebivali š tem u Nik š i ć u, ulica
-J.. O.. br.6/5 , dr ž avljanin Crne Gore, ranije neosu đ ivan,
-3.J..M.., jmbg .., od oca G.. i majke M.., rođ ene K.., rođ en ...godine u Nik š i ć u, sa prebivali š tem u Nik š i ć u, ulica
-N.. M.. .., drž avljanin Crne Gore, neo ž enjen, nezaposlen, pismen, lo š eg imovnog stanja, ranije neosu đ ivan,
- 
-4.V.. N.., jmbg .. od oca Z.. i majke J.., rođ ene M.., rođ en ... godine, u Nik š i ć u, sa prebivali š tem u Nik š i ć u, ulica
-L.. S.. broj .., drž avljanin Crne Gore, neo ž enjen, nezaposlen, lo š eg imovnog stanja, ranije neosu đ ivan,
-K r i v i s u:Osnovni Sud u Nik š i ć u
+1.E......... S...., jmbg.., od oca A.. i majke J.., rođ ene B.., rođ en... godine u Nikšiću, sa prebivalištem u Nikšiću,
+ulica I.. M.. broj.., drž avljanin Crne Gore, neoženjen, zaposlen, lošeg imovnog stanja, ranije neosuđivan,
+
+2.Đ..M.., jmbg.., od oca S.. i majke R.., rođ ene L.., rođ en... godine u Nikšiću, sa prebivalištem u Nikšiću, ulica
+J.. O.. br.6/5, državljanin Crne Gore, ranije neosuđivan,
+3.J..M.., jmbg.., od oca G.. i majke M.., rođ ene K.., rođ en...godine u Nikšiću, sa prebivalištem u Nikšiću, ulica
+N.. M...., drž avljanin Crne Gore, neoženjen, nezaposlen, pismen, lošeg imovnog stanja, ranije neosuđivan,
+
+4.V.. N.., jmbg.. od oca Z.. i majke J.., rođ ene M.., rođ en... godine, u Nikšiću, sa prebivalištem u Nikšiću, ulica
+L.. S.. broj.., drž avljanin Crne Gore, neoženjen, nezaposlen, lošeg imovnog stanja, ranije neosuđivan,
+K r i v i s u:Osnovni Sud u Nikšiću
 K 253/2016
 12. Mart 2018
- 
+
 Što su:
-U no ć i 11./12.04.2016. godine, u Nik š i ć u, u ulici Njego š evoj, iako su bili svjesni svog djela i htjeli njegovo
-izvrš enje, učestvovali u tu č i u kojoj je ošte ć enom S.. S.. nanesena te š ka tjelesna povreda, a na na č in š to su,
-nakon š to je oš te ć eni S.. S.. izaš ao iz svog putni č kog motornog vozila marke Mercedes, registarskih oznaka
-NK .. i doš lo do me đ usobne sva đ e i tu č e izme đ u okrivljenih, sa jedne i o š te ć enog sa druge strane, svi
-okrivljeni gurali i udarali o š te ć enog S..S.., koji je tom prilikom pao na asfalt i zadobio te š ku tjelesnu povredu u
-vidu i šč a š enja desnog ramenog zgloba,
-- čime su izvrš ili krivi č no djelo u č estvovanje u tu č i iz č lana 153 Krivi č nog zakonika Crne Gore
--pa sud okrivljenima zbog izvr š enja navedenog krivi č nog djela primjenom citiranih zakonskih odredbi,
-odredbi iz č lana 4 stav 2, č lana 42, 52, 53 i 54 KZ CG, kao i odredbi iz č lana 226, 229 i č lana 374 ZKP-a i z r i č  e
- 
+U noći 11./12.04.2016. godine, u Nikšiću, u ulici Njegoševoj, iako su bili svjesni svog djela i htjeli njegovo
+izvršenje, učestvovali u tuči u kojoj je oštećenom S.. S.. nanesena teška tjelesna povreda, a na načinšto su,
+nakonšto je oš tećeni S.. S.. izašao iz svog putničkog motornog vozila marke Mercedes, registarskih oznaka
+NK.. i doš lo do međusobne svađe i tuče između okrivljenih, sa jedne i oštećenog sa druge strane, svi
+okrivljeni gurali i udarali oštećenog S..S.., koji je tom prilikom pao na asfalt i zadobio tešku tjelesnu povredu u
+vidu iščašenja desnog ramenog zgloba,
+- čime su izvršili krivično djelo učestvovanje u tuči izčlana 153 Krivičnog zakonika Crne Gore
+-pa sud okrivljenima zbog izvršenja navedenog krivičnog djela primjenom citiranih zakonskih odredbi,
+odredbi izčlana 4 stav 2, č lana 42, 52, 53 i 54 KZ CG, kao i odredbi izčlana 226, 229 ičlana 374 ZKP-a i z r iče
+
 USLOVNU OSUDU
- 
-Sa kojom svakom okrivljenom pojedina č no utvr đ uje kaznu zatvora u trajanju od po 3 (slovima: tri) mjeseca i
-istovremeno odre đ uje da se navedena kazna ne ć e izvr š iti ukoliko okrivljeni u roku od jedne godine od dana
-pravosna ž nosti presude ne u č ine novo krivi č no djelo.
- 
-Obavezuju se okrivljeni da na ime tro š kova krivi č nog postupka solidarno plate nov č ani iznos od 44,00 eura i
-da pojedina č no na ime pau š ala plate iznose od po 100,00 eura, sve navedeno u roku od 15 dana od dana
-pravosna ž nosti presude pod prijetnjom prinudnog izvr š enja na ž iro ra č un Osnovnog suda u Nik š i ć u broj 832-
-152-32 i da sudu dostave dokaz o izvr š enoj uplati.
- 
-Odluku o visini nagrade braniocu okrivljenog Đ.. M.. postavljenom po slu žbenoj du ž nosti za postupanje u
-dijelu predmetnog krivi č nog postupka koji se vodio pred Osnovnim sudom u Nik š i ć u i obavezi imenovanog
-okrivljenog da nadoknadi te tro š kove krivi č nog postupka, sud ć e odlu č iti posebnim rje š enjem nakon
-pravosna ž nosti odluke o krivici okrivljenog Đ.. M.. u predmetnom krivi č nom postupku.
- 
- 
-O b r a z l o ž  e n j e
- 
-Osnovno dr ž avno tu ž ila š tvo u Nik š i ć u svojim optu ž nim predlogom Kt.br.295/16 od 12.09.2016.godine,
-stavilo je na teret okrivljenima E.. S.., Đ.. M.., J.. M.. i V.. N..izvrš enje krivi č nog djela učestvovanje u tu č i iz č lana
-153 KZ CG, koje krivi č no djelo je č injeni č no opisano u izreci presude. Zastupnica ODT-a u Nik š i ć u Radulovi ć
-Zorica, koja je zastupala optu ž ni akt na glavnom pretresu, u svojoj zavr š noj rije č i, ostala je pri navodima
-podnijetog optu ž nog akta i predlo ž ila sudu da okrivljene oglasi krivim zbog izvr š enja krivi č nog djela koje im
-je stavljeno na teret optu ž bom i osudi po zakonu.
- 
-Prvookrivljeni E.. S.. u svojoj odbrani datoj u prethodnom postupku pred dr ž avnim tu ž iocem u ODT-u u
-Nikš i ć u i na glavnom pretresu, negiraju ć i izvr š enje krivi č nog djela koje mu je stavljeno na teret optu ž bom, u
-bitnom je istakao da je u no ć i 11./12.04.2016. godine upravljao svojim putni č kim motornim vozilom marke
-Renault Senic i da je dolaskom u ulicu koja se nalazi izme đ u lokala Mister i zgrade Stare Po š te vidio parkirano
-putni č ko motorno vozilo marke Passat, bijele boje, registarskog broja 322, koje je prepoznao kao vozilo svog
-druga drugookrivljenog Đ.. M.., a odmah potom i da se imenovani okrivljeni gura sa nekim, zbog č ega je svoje
-vozilo zaustavio pored vozila drugookrivljenog Đ..i priš ao i vidio da se na licu mjesta nalazi ošte ć eni S.. S..,
-kojeg on poznaje jer mu je kom š ija i drugookrivljenog Đ.. odmah zagrlio kako bi ga odmakao od o š te ć enog
-Srdanovi ć a, a potom istog doveo do njegovog vozila. Naveo je i da je za to vrijeme o š te ć eni S.. S.. vikao,
-psovao i gestikulirao rukama na okrivljenog Đ... M.. i na jo š  neka, njemu nepoznata lica, za koja pretpostavlja
-da su bila u dru š tvu sa drugookrivljenim Đ.., te da je u jednom trenutku vidio da se jedan od tih njemu
-nepoznatih momaka zateturao i da pretpostavlja da, iako on to nije vidio, da je tog momka udario o š te ć eni
-Srdanovi ć  Slavko i dodao da je kriti č ne ve č eri o š te ć eni S.. bio jako nasilan i da ga on takvog ne zna, te da je,
-koliko je on mogao da procjeni, isti bio vidno pod dejstvom alkohola i da se u trenutku kada je on pri š ao da
-drugookrivljenog Đ.. M.. odmakne od o š te ć enog Srdanovi ć a u neposrednoj blizini o š te ć enog Srdanovi ć a
-nalazio K.. M.., koji je smirivao o š te ć enog, a da on nije vidio da je K.. još nekoga poku š avao da razdvaja i da je
-u trenutku kada su na lice mjesta do š li slu ž benici Uprave policije CG on ve ć  bio pored vozila drugookrivljenog
-Đ..M..zajedno sa imenovanim okrivljenim i da je tu bila i jedna ž enska osoba č ije ime ne zna i da je zatim on
-ušao u svoje vozilo i napustio lice mjesta, kojom prilikom je vidio da je pored o š te ć enog S..S.. ostao K..M.. i ta
-njemu nepoznata lica, me đ u kojima je bio i taj momak kojeg je prethodno vidio da se bio zateturao i da ne
-zna š ta se nakon toga de š avalo izme đ u o š te ć enog i tih lica. Izjavio je i da kriti č ne ve č eri on nije vidio da je
-ošte ć enog S…. neko udario, da je isti padaona tlo ili da je povrije đ en i da ne zna na koji na č in je mogao
-zadobiti povredu koja je opisana u optu ž nom aktu ODT-a. Odgovaraju ć i na pitanja postavljena na glavnom
-pretresu imenovani okrivljeni je naveo da ne poznaje okrivljene J.. M.. i V.. N.. i ponovio da se te ve č eri
-zaustavio na mjestu de š avanja kriti č nog doga đ aja samo iz razloga š to je vidio da je tu prisutan
-drugookrivljeni Đ..M.. i da on kriti č nom prilikom nije udarao o š te ć enog S.. S.., već  je istom bio pri š ao tek
+
+Sa kojom svakom okrivljenom pojedinačno utvrđuje kaznu zatvora u trajanju od po 3 (slovima: tri) mjeseca i
+istovremeno određuje da se navedena kazna neće izvršiti ukoliko okrivljeni u roku od jedne godine od dana
+pravosnažnosti presude ne učine novo krivično djelo.
+
+Obavezuju se okrivljeni da na ime troškova krivičnog postupka solidarno plate novčani iznos od 44,00 eura i
+da pojedinačno na ime paušala plate iznose od po 100,00 eura, sve navedeno u roku od 15 dana od dana
+pravosnažnosti presude pod prijetnjom prinudnog izvršenja nažiro račun Osnovnog suda u Nikšiću broj 832152-32 i da sudu dostave dokaz o izvršenoj uplati.
+
+Odluku o visini nagrade braniocu okrivljenog Đ.. M.. postavljenom po slu žbenoj dužnosti za postupanje u
+dijelu predmetnog krivičnog postupka koji se vodio pred Osnovnim sudom u Nikšiću i obavezi imenovanog
+okrivljenog da nadoknadi te troškove krivičnog postupka, sudće odlučiti posebnim rješenjem nakon
+pravosnažnosti odluke o krivici okrivljenog Đ.. M.. u predmetnom krivičnom postupku.
+
+O b r a z l ože n j e
+
+Osnovno državno tužilaštvo u Nikšiću svojim optužnim predlogom Kt.br.295/16 od 12.09.2016.godine,
+stavilo je na teret okrivljenima E.. S.., Đ.. M.., J.. M.. i V.. N..izvršenje krivičnog djela učestvovanje u tuči izčlana
+153 KZ CG, koje krivično djelo ječinjenično opisano u izreci presude. Zastupnica ODT-a u Nikšiću Radulović Zorica, koja je zastupala optužni akt na glavnom pretresu, u svojoj završnoj riječi, ostala je pri navodima
+
+podnijetog optužnog akta i predložila sudu da okrivljene oglasi krivim zbog izvršenja krivičnog djela koje im
+je stavljeno na teret optužbom i osudi po zakonu.
+
+Prvookrivljeni E.. S.. u svojoj odbrani datoj u prethodnom postupku pred državnim tužiocem u ODT-u u
+Nikšiću i na glavnom pretresu, negirajući izvršenje krivičnog djela koje mu je stavljeno na teret optužbom, u
+bitnom je istakao da je u noći 11./12.04.2016. godine upravljao svojim putničkim motornim vozilom marke
+Renault Senic i da je dolaskom u ulicu koja se nalazi između lokala Mister i zgrade Stare Pošte vidio parkirano
+putničko motorno vozilo marke Passat, bijele boje, registarskog broja 322, koje je prepoznao kao vozilo svog
+druga drugookrivljenog Đ.. M.., a odmah potom i da se imenovani okrivljeni gura sa nekim, zbogčega je svoje
+vozilo zaustavio pored vozila drugookrivljenog Đ..i prišao i vidio da se na licu mjesta nalazi oštećeni S.. S..,
+kojeg on poznaje jer mu je komšija i drugookrivljenog Đ.. odmah zagrlio kako bi ga odmakao od oštećenog
+Srdanovića, a potom istog doveo do njegovog vozila. Naveo je i da je za to vrijeme oštećeni S.. S.. vikao,
+psovao i gestikulirao rukama na okrivljenog Đ... M.. i na jošneka, njemu nepoznata lica, za koja pretpostavlja
+da su bila u društvu sa drugookrivljenim Đ.., te da je u jednom trenutku vidio da se jedan od tih njemu
+nepoznatih momaka zateturao i da pretpostavlja da, iako on to nije vidio, da je tog momka udario oštećeni
+Srdanović Slavko i dodao da je kritične večeri oštećeni S.. bio jako nasilan i da ga on takvog ne zna, te da je,
+koliko je on mogao da procjeni, isti bio vidno pod dejstvom alkohola i da se u trenutku kada je on prišao da
+drugookrivljenog Đ.. M.. odmakne od oštećenog Srdanovića u neposrednoj blizini oštećenog Srdanovića
+nalazio K.. M.., koji je smirivao oštećenog, a da on nije vidio da je K.. još nekoga pokušavao da razdvaja i da je
+u trenutku kada su na lice mjesta došli službenici Uprave policije CG on većbio pored vozila drugookrivljenog
+Đ..M..zajedno sa imenovanim okrivljenim i da je tu bila i jednaženska osobačije ime ne zna i da je zatim on
+ušao u svoje vozilo i napustio lice mjesta, kojom prilikom je vidio da je pored oštećenog S..S.. ostao K..M.. i ta
+njemu nepoznata lica, među kojima je bio i taj momak kojeg je prethodno vidio da se bio zateturao i da ne
+znašta se nakon toga dešavalo između oštećenog i tih lica. Izjavio je i da kritične večeri on nije vidio da je
+oštećenog S…. neko udario, da je isti padaona tlo ili da je povrijeđen i da ne zna na koji način je mogao
+zadobiti povredu koja je opisana u optužnom aktu ODT-a. Odgovarajući na pitanja postavljena na glavnom
+pretresu imenovani okrivljeni je naveo da ne poznaje okrivljene J.. M.. i V.. N.. i ponovio da se te večeri
+zaustavio na mjestu dešavanja kritičnog događaja samo iz razlogašto je vidio da je tu prisutan
+drugookrivljeni Đ..M.. i da on kritičnom prilikom nije udarao oštećenog S.. S.., već je istom bio prišao tek
 toliko koliko mu je bilo potrebno da drugookrivljenog Đ..M.. odvoji od njega, te ne zna ko su lica koja su
-ostala da se guraju sa o š te ć enim S.. S.. kada je on o š te ć enog S..odvojio od drugookrivljenog Đ.., ali da
+ostala da se guraju sa oštećenim S.. S.. kada je on oštećenog S..odvojio od drugookrivljenog Đ.., ali da
 pretpostavlja da su to drugovi imenovanog okrivljenog. Dodao je i da se, iako je vidio da se ta lica guraju sa
-ošte ć enim, ne mo ž e izjasniti na koji na č in su se me đ usobno gurali, a da misli da se na tom mjestu nalazilo
-ukupno tri ili č etiri č ovjeka, uklju č uju ć i o š te ć enog S.. S.. i svjedoka K.. M...
- 
-U svojoj zavr š noj rije č i prvookrivljeni E.. S.. je, ostaju ć i pri svojoj odbrani, predlo ž io sudu da ga oslobodi od
-optu ž be.
- 
-Kako se pozivanjem i izdavanjem naredbi za prinudno dovo đ enje nije moglo obezbjediti prisustvo
-okrivljenog Đ.. M.., to isti u toku postupka nije saslu š an, a imaju ć i u vidu da su u konkretnom slu č aju
-ispunjeni uslovi iz č lana 324 Zakonika o krivi č nom postupku, to je rje š enjem ovog suda Kv.br.143/17 od
-24.05.2017. godine odlu č eno je se drugookrivljenom Đ.. M..sudi u odsustvu i shodno odredbi č lana 69 stav 4
-Zakonika o krivi č nom postupku, u smislu č lana 324 stav 2 tog zakonika, u kojoj je propisano da okrivljeni
-kome se sudi u odsustvu mora imati branioca č im sud donese rje š enje o su đ enju u odsustvu, rje š enjem V.Su.
-br. 246/17 od 29.05.2017. godine imenovanom okrivljenom za branioca po slu ž benoj du ž nosti postavljen
-Adž i ć  Novo, advokat iz Nik š i ć a.
- 
-Branilac drugookrivljenog Đ.. M.. postavljen po slu ž benoj du ž nosti A.. N.., u svojoj zavr š noj rije č i istakao je da
-smatra da u toku premetnog krivi č nog postupka nije dokazano da je njegov branjenik izvr š io krivi č no djelo
-koje mu je stavljeno na teret optu ž bom i predlo ž io sudu da imenovanog okrivljenog oslobodi od optu ž be.
- 
-Treć eokrivljeni J.. M.. u svojoj odbrani datoj u prehodnom postupku pred dr ž avnim tu ž iocem u ODT-u u
-Nikš i ć u i na glavnom pretresu, negiraju ć i izvr š enje krivi č nog djela koje mu je stavljeno na teret optu ž bom, u
-bitnom je istakao da se u no ć i 11./12.04.2016. godine nalazio na mjestu suvoza č a u putni č kom motornom
-vozilu marke Toyota, kojim je upravljao njegov drug č etvrtookrivljeni V.. N.., dok se na zadnjem sjedi š tu tog
-vozila nalazila sestra č etvrtookrivljenog V..To.. S..i da su se iz pravca naselja Kli č evo, Bulevarom 13. Jul, kretali
-prema centru grada, kada su u jednom trenutku vidjeli njihovog druga drugookrivljenog Đ aji ć  Mihaila, kako
-se drugom saobra ć ajnom trakom tog bulevara vozilom kre ć e pored njih u istom pravcu, zbog č ega su usporili
-kretanje na kratko i kretali se uporedo sa njegovim vozilom, a da se ubrzo zatim u saobra ć ajnoj traci iza vozila
-drugookrivljenog Đ aji ć  Mihaila pojavilo vozilo marke Mercedes, č iji je voza č  odmah po č eo da svira, „blica“
-svijetlima i da se pribli ž ava vozilu drugookrivljenog Đ..M.. i naglo ko č i iza istog, zbog č ega je drugookrivljeni
-Đ..M..ubrzao kretanje svog vozila, ali da voza č  tog vozila nije pre š ao u drugu saobra ć ajnu traku, iako je imao
-prostora da to u č ini, ve ć  je nastavio da se kre ć e trakom iza vozila kojim je upravljao drugookrivljeni Đ.., da se
-vozilo u kojem je on bio kretalo polako, tako da je jasno vidio da je po dolasku na kru ž ni tok kod zgrade Stare
-Poš te drugookrivljeni Đ..M.. sa svojim vozilom dva puta pro š ao oko tog kru ž nog toka i da je to vozilo marke
-Mercedes č itavo vrijeme i š lo za njegovim vozilom i da je voza č  tog vozila svo vrijeme “blicao” svijetlima i
-svirao drugookrivljenom Đ.., da je zatim u jednom trenutku drugookrivljeni .. .. sa svojim vozilom skrenuo sa
-kruž nog toka u ulicu Njego š evu i zaustavio se u neposrednoj blizini kafe bara Mister, a odmah iza njegovog
-vozila zaustavilo se to vozilo marke Mercedes, iza kojeg je č etvrto okrivljeni Vu č ini ć  zaustavio vozilo u kojem
-su oni bili i da je tada vidio da je da iz tog vozila marke Mercedes iza š lo jedno njemu tada nepoznato lice, za
-koje je saznao da se zove S.. S.., koji je pri š ao vozilu drugookrivljenog Đ.., otvorilo vrata od tog vozila i
-okrivljenog Đ aji ć a, dr ž e ć i za jaknu izvukao iz tog vozila i da im tada pri š ao č etvorookrivljeni V.. .. koji je
-zajedno sa drugookrivljenim Đ..M.. poku š avao da smiri o š te ć enog Srdanovi ć a, tako š to su ga kulturno molili
-da u đ e u vozilo, za koje vrijeme je on bio u vozilu sa T.. S.. koja se nalazila u drugom stanju i da je dok je bio u
-vozilu č uo da o š te ć eni vi č e i psuje, pa je on nakon nekoliko sekundi iza š ao iz vozila, za koje vrijeme je
-ošte ć eni S.. okrivljenima Đ.. M.. i V..N.. upu ć ivao psovke, nakon č ega je do š ao prvookrivljeni E..S.., kojeg je on
-poznavao iz vi đ enja, koji je o š te ć enog S.. S.. pitao u č emu je problem i da je tada nastala rasprava izme đ u
-okrivljenih E.. S.., V.. N.. i Đ.. M., sa jedne i o š te ć enog S..S..sa druge strane i da se on, po š to nije o č ekivao da ć e
-tu do ć i do nekog sukoba, vratio nazad u vozilo, tako da nije vidio š ta se nakon toga izme đ u njih de š avalo, jer
+oštećenim, ne može izjasniti na koji način su se međusobno gurali, a da misli da se na tom mjestu nalazilo
+ukupno tri iličetiričovjeka, uključujući oštećenog S.. S.. i svjedoka K.. M...
+
+U svojoj završnoj riječi prvookrivljeni E.. S.. je, ostajući pri svojoj odbrani, predložio sudu da ga oslobodi od
+optužbe.
+
+Kako se pozivanjem i izdavanjem naredbi za prinudno dovođenje nije moglo obezbjediti prisustvo
+okrivljenog Đ.. M.., to isti u toku postupka nije saslušan, a imajući u vidu da su u konkretnom slučaju
+ispunjeni uslovi izčlana 324 Zakonika o krivičnom postupku, to je rješenjem ovog suda Kv.br.143/17 od
+24.05.2017. godine odlučeno je se drugookrivljenom Đ.. M..sudi u odsustvu i shodno odredbičlana 69 stav 4
+Zakonika o krivičnom postupku, u smislučlana 324 stav 2 tog zakonika, u kojoj je propisano da okrivljeni
+kome se sudi u odsustvu mora imati braniocačim sud donese rješenje o suđenju u odsustvu, rješenjem V.Su.
+
+br. 246/17 od 29.05.2017. godine imenovanom okrivljenom za branioca po službenoj dužnosti postavljen
+Adž ić Novo, advokat iz Nikšića.
+
+Branilac drugookrivljenog Đ.. M.. postavljen po službenoj dužnosti A.. N.., u svojoj završnoj riječi istakao je da
+smatra da u toku premetnog krivičnog postupka nije dokazano da je njegov branjenik izvršio krivično djelo
+koje mu je stavljeno na teret optužbom i predložio sudu da imenovanog okrivljenog oslobodi od optužbe.
+
+Treć eokrivljeni J.. M.. u svojoj odbrani datoj u prehodnom postupku pred državnim tužiocem u ODT-u u
+Nikšiću i na glavnom pretresu, negirajući izvršenje krivičnog djela koje mu je stavljeno na teret optužbom, u
+bitnom je istakao da se u noći 11./12.04.2016. godine nalazio na mjestu suvozača u putničkom motornom
+vozilu marke Toyota, kojim je upravljao njegov drugčetvrtookrivljeni V.. N.., dok se na zadnjem sjedištu tog
+vozila nalazila sestračetvrtookrivljenog V..To.. S..i da su se iz pravca naselja Kličevo, Bulevarom 13. Jul, kretali
+prema centru grada, kada su u jednom trenutku vidjeli njihovog druga drugookrivljenog Đajić Mihaila, kako
+se drugom saobraćajnom trakom tog bulevara vozilom kreće pored njih u istom pravcu, zbogčega su usporili
+kretanje na kratko i kretali se uporedo sa njegovim vozilom, a da se ubrzo zatim u saobraćajnoj traci iza vozila
+drugookrivljenog Đajić Mihaila pojavilo vozilo marke Mercedes, č iji je vozačodmah počeo da svira, „blica“
+svijetlima i da se približava vozilu drugookrivljenog Đ..M.. i naglo koči iza istog, zbogčega je drugookrivljeni
+Đ..M..ubrzao kretanje svog vozila, ali da vozačtog vozila nije prešao u drugu saobraćajnu traku, iako je imao
+prostora da to učini, većje nastavio da se kreće trakom iza vozila kojim je upravljao drugookrivljeni Đ.., da se
+vozilo u kojem je on bio kretalo polako, tako da je jasno vidio da je po dolasku na kružni tok kod zgrade Stare
+Poš te drugookrivljeni Đ..M.. sa svojim vozilom dva puta prošao oko tog kružnog toka i da je to vozilo marke
+Mercedesčitavo vrijeme išlo za njegovim vozilom i da je vozačtog vozila svo vrijeme “blicao” svijetlima i
+svirao drugookrivljenom Đ.., da je zatim u jednom trenutku drugookrivljeni.... sa svojim vozilom skrenuo sa
+kružnog toka u ulicu Njegoševu i zaustavio se u neposrednoj blizini kafe bara Mister, a odmah iza njegovog
+vozila zaustavilo se to vozilo marke Mercedes, iza kojeg ječetvrto okrivljeni Vučinićzaustavio vozilo u kojem
+su oni bili i da je tada vidio da je da iz tog vozila marke Mercedes izašlo jedno njemu tada nepoznato lice, za
+koje je saznao da se zove S.. S.., koji je prišao vozilu drugookrivljenog Đ.., otvorilo vrata od tog vozila i
+okrivljenog Đajića, držeći za jaknu izvukao iz tog vozila i da im tada prišaočetvorookrivljeni V.... koji je
+zajedno sa drugookrivljenim Đ..M.. pokušavao da smiri oštećenog Srdanovića, takošto su ga kulturno molili
+da uđe u vozilo, za koje vrijeme je on bio u vozilu sa T.. S.. koja se nalazila u drugom stanju i da je dok je bio u
+vozilučuo da oštećeni viče i psuje, pa je on nakon nekoliko sekundi izašao iz vozila, za koje vrijeme je
+oštećeni S.. okrivljenima Đ.. M.. i V..N.. upućivao psovke, nakončega je došao prvookrivljeni E..S.., kojeg je on
+poznavao iz viđenja, koji je oštećenog S.. S.. pitao učemu je problem i da je tada nastala rasprava između
+okrivljenih E.. S.., V.. N.. i Đ.. M., sa jedne i oštećenog S..S..sa druge strane i da se on, pošto nije očekivao daće
+tu doći do nekog sukoba, vratio nazad u vozilo, tako da nije vidiošta se nakon toga između njih dešavalo, jer
 je jedno vozilo bilo parkirano ispred vozila u kojem se on nalazio i zaklanjalo mu pogled, a da je on za to
-vrijeme razgovarao sa Todorovi ć  Sne ž anom poku š avaju ć i da je smiri, nakon č ega je poslije nekog vremena
-ponovo iza š ao iz vozila, ali da ni tada nije vidio da bilo ko udara ošte ć enog S..S..ili da o š te ć eni pada na tlo,
-niti je vidio da o š te ć eni udara nekoga, tako da nije primijetio na koji na č in je o š te ć eni kriti č nom prilikom
-zadobio povrede i dodao da je u trenutku kada su na lice mjesta do š li slu ž benici Uprave policije CG on bio van
-vozila, odnosno pored vrata suvoza č a, koje mjesto je od mjesta gdje se nalazio o š te ć eni Srdanovi ć  Slavko bilo
-udaljeno oko trideset metara. Istakao je i da nakon zavr š etka predmetnog doga đ aja vidio da č etvorokrivljeni
-Vučini ć  Nikola ima povredu u predjelu lica, za koju povredu ne zna na koji na č in je nastala, ali da
-pretpostavlja da je tu povredu četrvtookrivljenom Vu č ini ć u nanio o š te ć eni Srdanovi ć .
-U svojoj zavr š noj rije č i tre ć eokrivljeni Jo.. M.. je, ostaju ć i pri svojoj odbrani predlo ž io sudu da ga oslobodi od
-optu ž be.
- 
-Četvrtookrivljeni V..N.. u svojoj odbrani datoj prethodnom postupku pred ODT Nik š i ć  in a glavnom pretresu,
-negiraju ć i izvr š enje krivi č nog djela koje mu je stavljeno na teret optu ž bom, u bitnom je naveo da se u no ć i
-11./12.04.2016 godine, zajedno sa svojim drugom tre ć eokrivljenim J.. M.. i svojom sestrom Todorovi ć
-Snež anom nalazio u putni č kom motornom vozilu marke Toyota, kojim su se iz pravca naselja Kli č evo u
-pravcu centra grada kretali Bulevarom 13. Jul, koji ima dvije saobra ć ajne trake namijenjene za kretanje vozila
-u istom smjeru, da je on upravljao tim vozilom i da je u jednom trenutku vidio svog druga drugookorivljenog
-Đ…. kako se upravljaju ć i svojim vozilom kre ć e pored njegovog vozila, pa je, usporio kretanje svog na kratko,
-što je bio u č inio i drugookrivljeni Đ..M.., ali da jo š  nije bio uspio ni da otvori prozor, kada je u saobra ć ajnoj
-traci iza vozila okrivljenog Đ..M.. ugledao vozilo marke Mercedes, č iji je voza č  po č eo odmah da svira i da se
-pribli ž ava vozilu okrivljenog Đ.. M.., naglo ko č i iza istog i „blica“ svijetlima, zbog č ega je okrivljeni Đ.. M..
-ubrzao kretanje svog vozila, ali da voza č  tog vozila marke Mercedes nije pre š ao u drugu saobra ć ajnu traku,
-iako je imao prostora za to, već  je nastavio da se kre ć e istom saobra ć ajnom trakom iza Đ aji ć evog vozila, da je
-nakon toga on vozio polako i da je jasno vidio da je po dolasku na kru ž ni tok saobra ć aja kod zgrade Stare
-poš te drugookrivljeni Đ..M.. sa svojim vozilom dva puta pro š ao oko tog kru ž nog toka, a da se to vozilo marke
-Mercedes č itavo to vrijeme kretalo iza Đ.. vozila i da je voza č  istog “blicao” svijetlima i svirao i da je u jednom
-trenutku Đ.. M..sa svojim vozilom skrenuo sa krru ž nog toka u Njego š evu ulicu i zaustavio se u neposrednoj
+vrijeme razgovarao sa Todorović Snežanom pokušavajući da je smiri, nakončega je poslije nekog vremena
+ponovo izašao iz vozila, ali da ni tada nije vidio da bilo ko udara oštećenog S..S..ili da oštećeni pada na tlo,
+niti je vidio da oštećeni udara nekoga, tako da nije primijetio na koji način je oštećeni kritičnom prilikom
+zadobio povrede i dodao da je u trenutku kada su na lice mjesta došli službenici Uprave policije CG on bio van
+vozila, odnosno pored vrata suvozača, koje mjesto je od mjesta gdje se nalazio oštećeni Srdanović Slavko bilo
+udaljeno oko trideset metara. Istakao je i da nakon završetka predmetnog događaja vidio dačetvorokrivljeni
+Vučinić Nikola ima povredu u predjelu lica, za koju povredu ne zna na koji način je nastala, ali da
+pretpostavlja da je tu povredu četrvtookrivljenom Vučiniću nanio oštećeni Srdanović.
+
+U svojoj završnoj riječi trećeokrivljeni Jo.. M.. je, ostajući pri svojoj odbrani predložio sudu da ga oslobodi od
+optužbe.
+
+Četvrtookrivljeni V..N.. u svojoj odbrani datoj prethodnom postupku pred ODT Nikšićin a glavnom pretresu,
+negirajući izvršenje krivičnog djela koje mu je stavljeno na teret optužbom, u bitnom je naveo da se u noći
+11./12.04.2016 godine, zajedno sa svojim drugom trećeokrivljenim J.. M.. i svojom sestrom Todorović Snežanom nalazio u putničkom motornom vozilu marke Toyota, kojim su se iz pravca naselja Kličevo u
+pravcu centra grada kretali Bulevarom 13. Jul, koji ima dvije saobraćajne trake namijenjene za kretanje vozila
+u istom smjeru, da je on upravljao tim vozilom i da je u jednom trenutku vidio svog druga drugookorivljenogĐ…. kako se upravljajući svojim vozilom kreće pored njegovog vozila, pa je, usporio kretanje svog na kratko,
+što je bio učinio i drugookrivljeni Đ..M.., ali da jošnije bio uspio ni da otvori prozor, kada je u saobraćajnoj
+traci iza vozila okrivljenog Đ..M.. ugledao vozilo marke Mercedes, č iji je vozačpočeo odmah da svira i da se
+približava vozilu okrivljenog Đ.. M.., naglo koči iza istog i „blica“ svijetlima, zbogčega je okrivljeni Đ.. M..
+ubrzao kretanje svog vozila, ali da vozačtog vozila marke Mercedes nije prešao u drugu saobraćajnu traku,
+iako je imao prostora za to, već je nastavio da se kreće istom saobraćajnom trakom iza Đajićevog vozila, da je
+nakon toga on vozio polako i da je jasno vidio da je po dolasku na kružni tok saobraćaja kod zgrade Stare
+poš te drugookrivljeni Đ..M.. sa svojim vozilom dva puta prošao oko tog kružnog toka, a da se to vozilo marke
+Mercedesčitavo to vrijeme kretalo iza Đ.. vozila i da je vozačistog “blicao” svijetlima i svirao i da je u jednom
+trenutku Đ.. M..sa svojim vozilom skrenuo sa krružnog toka u Njegoševu ulicu i zaustavio se u neposrednoj
 blizini kafe bara Mister, a da se odmah iza njegovog vozila zaustavilo i to vozilo marke Mercedes, iza kojeg
 vozila je nedugo zatim i on zaustavio svoje vozilo. Objasnio je da je vidio da iz vozila marke Mercedes izlazi
-njemu nepoznato lice, za koje je saznao da se zove Srdanovi ć  Slavko, koji je pri š ao vozilu drugookrivljenog Đ..
-i otvorio vrata voza č a na tom vozilu i zatim drugookrivljenog Đ.. M.., drž e ć i za jaknu, izvukao iz vozila, u kojem
-trenutku im je on pri š ao i zajedno sa okrivljenim Đ.. M.. poku š avao da smiri o š te ć enog Srdanovi ć a, tako š to su
-ga kulturno zamolili da u đ e u vozilo, š to je on odbio da u č ini i psovao ih i upu ć ivao im razne prijetnje, a da je
-po njegovom mi š ljenu razlog za takvo pona š anje o š te ć enog bilo to š to je isti bio vidno pod dejstvom
-alkohola, da je vidio da je tada iz kafe bara Mister iza š lo vi š e lica, koja su tako đ e poku š ala da smire o š te ć enog
-Srdanovi ć  Slavka poku š avaju ć u da mu ka ž u da u đ e u auto i da ga je u jednom trenutku o š te ć eni Srdanovi ć
-Slavko udario stisnutom pesnicom u predjelu lijevog uva, a da se ne mo ž e sa sigurno šć u izjasniti da li je
-nakon toga on udario o š te ć enog S.. S.., ali da u svakom slu č aju nije vidio da je o š te ć eni Srdanovi ć  padao na
-tlo, niti je vidio da je u pvom doga đ aju o š te ć eni zadobio bilo kakve povrede. Naveo je i da se sje ć a da je jedno
-od tih lica koja su do š la na lice mjesta bio prvookrivljeni E.. S.., koga on poznaje iz vi đ enja, a da se ne mo ž e
-izjasniti da li je tre ć eokrivljeni J..M.. za vrijeme trajanja kriti č nog doga đ aja uop š te izlazio iz vozila, dok zna da
-njegova sestra T.. S.. nije i dodao da je na licu mjesta kriti č nom prilikom bio i svjedok K.. M.., koji je, koliko se
-sjeć a, iza š ao iz kafe bara Mister i koji je poku š avao da smiri o š te ć enog S.. S... Istakao je i da je za svo vrijeme
-trajanja kriti č nog doga đ aja on bio u neposrednoj blizini o š te ć enog Srdanovi ć  Slavka i da isti za svo to vrijeme
-nije padao na tlo, niti je on o š te ć enog udarao i gurao.
- 
-U svojoj zavr š noj rije č i č etvrtookrivljeni V.. N.. je, ostaju ć i pri svojoj odbrani predlo ž io sudu da ga oslobodi od
-optu ž be.
- 
-Sud je na glavnom pretresu u dokaznom postupku neposredno saslu š ao svjedoke …, izvr š io uvid u izvje š taj
-ljekara specijaliste hitno-prijemne ambulante Hirur š kog odjeljenja JZU Op š ta bolnica Nik š i ć  broj protokola
-3142 od 11.04.2016. godine sa č injen dana 12.04.2016. godine u 02:04 č asova, na saglasan predlog stranaka
-proč itao iskaz o š te ć enog Srdanovi ć  Slavka i nalaz i mi š ljenje stalnog sudskog vje š taka medicinske struke
-dr.Bulatovi ć  Veselina, date u prethodnom postupku pred ODT Nik š i ć  i pro č itao izvode iz registra kaznenih
+njemu nepoznato lice, za koje je saznao da se zove Srdanović Slavko, koji je prišao vozilu drugookrivljenog Đ..
+i otvorio vrata vozača na tom vozilu i zatim drugookrivljenog Đ.. M.., drž eći za jaknu, izvukao iz vozila, u kojem
+trenutku im je on prišao i zajedno sa okrivljenim Đ.. M.. pokušavao da smiri oštećenog Srdanovića, takošto su
+ga kulturno zamolili da uđe u vozilo, š to je on odbio da učini i psovao ih i upućivao im razne prijetnje, a da je
+po njegovom mišljenu razlog za takvo ponašanje oštećenog bilo tošto je isti bio vidno pod dejstvom
+alkohola, da je vidio da je tada iz kafe bara Mister izašlo više lica, koja su takođe pokušala da smire oštećenog
+Srdanović Slavka pokušavajuću da mu kažu da uđe u auto i da ga je u jednom trenutku oštećeni Srdanović Slavko udario stisnutom pesnicom u predjelu lijevog uva, a da se ne može sa sigurnošću izjasniti da li je
+nakon toga on udario oštećenog S.. S.., ali da u svakom slučaju nije vidio da je oštećeni Srdanovićpadao na
+tlo, niti je vidio da je u pvom događaju oštećeni zadobio bilo kakve povrede. Naveo je i da se sjeća da je jedno
+od tih lica koja su došla na lice mjesta bio prvookrivljeni E.. S.., koga on poznaje iz viđenja, a da se ne može
+izjasniti da li je trećeokrivljeni J..M.. za vrijeme trajanja kritičnog događaja uopšte izlazio iz vozila, dok zna da
+njegova sestra T.. S.. nije i dodao da je na licu mjesta kritičnom prilikom bio i svjedok K.. M.., koji je, koliko se
+sjeća, izašao iz kafe bara Mister i koji je pokušavao da smiri oštećenog S.. S... Istakao je i da je za svo vrijeme
+trajanja kritičnog događaja on bio u neposrednoj blizini oštećenog Srdanović Slavka i da isti za svo to vrijeme
+nije padao na tlo, niti je on oštećenog udarao i gurao.
+
+U svojoj završnoj riječičetvrtookrivljeni V.. N.. je, ostajući pri svojoj odbrani predložio sudu da ga oslobodi od
+optužbe.
+
+Sud je na glavnom pretresu u dokaznom postupku neposredno saslušao svjedoke …, izvršio uvid u izvještaj
+ljekara specijaliste hitno-prijemne ambulante Hirurškog odjeljenja JZU Opšta bolnica Nikšićbroj protokola
+3142 od 11.04.2016. godine sačinjen dana 12.04.2016. godine u 02:04časova, na saglasan predlog stranaka
+
+pročitao iskaz oštećenog Srdanović Slavka i nalaz i mišljenje stalnog sudskog vještaka medicinske struke
+dr.Bulatović Veselina, date u prethodnom postupku pred ODT Nikšići pročitao izvode iz registra kaznenih
 evidencija Ministarstva pravde CG za okrivljene.
- 
-Analiziraju ć i provedene dokaze pojedina č no i u njihovoj me đ usobnoj povezanosti, dovode ć ih ih u vezu sa
-navodima optu ž be i odbranama okrivljenih, sud je na nesumnjiv na č in utvrdio da su okrivljeni E..S.., Đ..M..,
-J.. M.. i V.. N.., poč inili krivi č no djelo koje im je stavljeno na teret optu ž bom, pa ih je zbog izvr š enja istog
-oglasio krivim i krivi č no pravno odgovornim iz sljede ć ih razloga:
- 
-Krivi č no djelo u č estvovanje u tu č i iz č lana 153 KZ CG č ini onaj ko u č estvuje u tu č i u kojoj je neko li š en ž ivota ili
-je drugome nanesena te š ka tjelesna povreda.
- 
-Ošte ć eni S.. S.. u svom svjedo č kom iskazu datom u prethodnom postupku pred dr ž avnim tu ž iocem u ODT
-Nikš i ć , u bitnom je istakao da se u no ć i 11./12.04.2016. godine, upravljaju ć i svojim vozilom marke Mercedes,
-registarskih oznaka .., kretao iz pravca nasaelja Kli č evo prema centru grada i da se, prilikom dolaska na
-kruž ni tok kod preduze ć a Metalac Nik š i ć , dok se kretao lijevom saobra ć ajnom trakom desne kolovozne trake,
-prema centru grada, ispred njega u njegovoj saobra ć ajnoj traci, kretalo vozilo jedno marke Passat, bijele boje,
-dok se paralelno sa tim vozilom marke Passat, desnom saobra ć ajnom trakom, kretalo jedno vozilo marke
-Toyota, crne boje, da su se ta dva vozila kretala veoma malom brzinom i da je č ak u pojedinim trenucima
-voza č  vozila marke Passat zaustavljao kretanje svog vozila i naglo preduzimao radnju ko č enja, zbog č ega on
-nije mogao da se normalno kre ć e svojom saobra ć ajnom trakom, ve ć  je nekoliko puta i on zaustavio vozilo,
-zbog č ega poku š ao da svjetlosnim znakom, takozvanim “blicanjem” svijetlima, voza č ima tih vozila da signal
-da ubrzaju svoje kretanje, ali da oni to nijesu u č inili i da mu nijesu dozvoljavali da pored njih pro đ e sa svojim
-vozilom. Istakao je i da je dolasku na kru ž ni tok saobra ć aja kod zgrade Stare Po š te vidio da je to vozilo marke
-Passat sa tog kru ž nog toka skrenulo u ulicu Njego š evu, u kojem pravcu je i on oti š ao sa svojim vozilom pa je,
-kada je vidio da je voza č  tog vozila marke Passat, kojeg on nije poznavao, zaustavio svoje vozilo i iza š ao iz
-istog i on uradio isto to i pitao tog voza č a š ta mu zna č i to prethodno pona š anje, kada mu nije dozvolio da
-prođ e sa svojim vozilom, da mu ne dozvoljavaju prolaz sa vozilom, na š ta mu je voza č  vozila marke Passat
-odgovorio da to njega ne treba da zanima i da je on u tom trenutku vidio da se sa njegove bo č ne strane
-zaustavilo i vozilo marke Toyota i da su iz istog iza š la njemu dva tako đ e nepoznata momka, kao i da je u
+
+Analizirajući provedene dokaze pojedinačno i u njihovoj međusobnoj povezanosti, dovodećih ih u vezu sa
+navodima optužbe i odbranama okrivljenih, sud je na nesumnjiv način utvrdio da su okrivljeni E..S.., Đ..M..,
+J.. M.. i V.. N.., poč inili krivično djelo koje im je stavljeno na teret optužbom, pa ih je zbog izvršenja istog
+oglasio krivim i krivično pravno odgovornim iz sljedećih razloga:
+
+Krivično djelo učestvovanje u tuči izčlana 153 KZ CGčini onaj ko učestvuje u tuči u kojoj je neko lišenživota ili
+je drugome nanesena teška tjelesna povreda.
+
+Oštećeni S.. S.. u svom svjedočkom iskazu datom u prethodnom postupku pred državnim tužiocem u ODT
+Nikšić, u bitnom je istakao da se u noći 11./12.04.2016. godine, upravljajući svojim vozilom marke Mercedes,
+registarskih oznaka.., kretao iz pravca nasaelja Kličevo prema centru grada i da se, prilikom dolaska na
+kružni tok kod preduzeća Metalac Nikšić, dok se kretao lijevom saobraćajnom trakom desne kolovozne trake,
+prema centru grada, ispred njega u njegovoj saobraćajnoj traci, kretalo vozilo jedno marke Passat, bijele boje,
+dok se paralelno sa tim vozilom marke Passat, desnom saobraćajnom trakom, kretalo jedno vozilo marke
+Toyota, crne boje, da su se ta dva vozila kretala veoma malom brzinom i da ječak u pojedinim trenucima
+vozačvozila marke Passat zaustavljao kretanje svog vozila i naglo preduzimao radnju kočenja, zbogčega on
+nije mogao da se normalno kreće svojom saobraćajnom trakom, većje nekoliko puta i on zaustavio vozilo,
+zbogčega pokušao da svjetlosnim znakom, takozvanim “blicanjem” svijetlima, vozačima tih vozila da signal
+da ubrzaju svoje kretanje, ali da oni to nijesu učinili i da mu nijesu dozvoljavali da pored njih prođe sa svojim
+vozilom. Istakao je i da je dolasku na kružni tok saobraćaja kod zgrade Stare Pošte vidio da je to vozilo marke
+Passat sa tog kružnog toka skrenulo u ulicu Njegoševu, u kojem pravcu je i on otišao sa svojim vozilom pa je,
+kada je vidio da je vozačtog vozila marke Passat, kojeg on nije poznavao, zaustavio svoje vozilo i izašao iz
+istog i on uradio isto to i pitao tog vozačašta mu znači to prethodno ponašanje, kada mu nije dozvolio da
+prođe sa svojim vozilom, da mu ne dozvoljavaju prolaz sa vozilom, našta mu je vozačvozila marke Passat
+odgovorio da to njega ne treba da zanima i da je on u tom trenutku vidio da se sa njegove bočne strane
+zaustavilo i vozilo marke Toyota i da su iz istog izašla njemu dva takođe nepoznata momka, kao i da je u
 trenutku kada je vidio ta dva momka da izlaze iz vozila marke Toyota, vidio i prvookrivljenog E... S.., s kojim je
-on prije tog doga đ aja bio u lo š im odnosima i negovoru i koji mu je pri š ao dok je on stajao pored vrata svog
-vozila i udario ga stisnutom pesnicom u predjelu lijeve strane glave, odnosno lica, nakon č ega su sva ta lica
-koja su tu bila prisutna krenula prema njemu i po č eli d aga guraju i udaraju, dok se on za to vrijeme kretao
-unazad i u tom povla č enju pao na tlo, i to tako š to je desnom stranom tijela pao i udario od trotoar, kojom
+on prije tog događaja bio u lošim odnosima i negovoru i koji mu je prišao dok je on stajao pored vrata svog
+vozila i udario ga stisnutom pesnicom u predjelu lijeve strane glave, odnosno lica, nakončega su sva ta lica
+koja su tu bila prisutna krenula prema njemu i počeli d aga guraju i udaraju, dok se on za to vrijeme kretao
+unazad i u tom povlačenju pao na tlo, i to takošto je desnom stranom tijela pao i udario od trotoar, kojom
 prilikom je zadobio povredu u predjelu desnog ramena, i povredu u vidu oguljotine u predjelu desnog lakta,
-kao i povredu u predjelu unutra š nje strane lijeve butane, za koju povredu ne mo ž e da se izjasni na koji na č in
-mu je nanesena. Istakao je i da se ne mo ž e izjasniti ko ga je od okrivljenih kriti č nom prilikom udarao koliko
-puta, jer od svih okrivljenih poznaje samo prvookrivljenog Erakovi ć  Slobodana i da su ga u toj situaciji sva
-četvorica okrivljenih udarala i č upala, od č ega je u jednom trenutku pao na tlo i da je prvo č ega se nakon toga
-sjeć a to da mu je pri š ao svjedok Krivokapi ć  Mali š a, kojeg je tada prvi put te ve č eri vidio i pomogao mu da
-ustane, a da su u tom trenutku i na to mjesto stigli slu ž benici Uprave policije CG CB Nik š i ć . Istakao je i da
-kritič ne ve č eri on nikoga nije direktno udarao, ali da je od napada okrivljenih poku š avao da se odbrani tako
-što je zamahivao rukama prema napada č ima i da je mogu ć e da tada nekom od njih nanio povredu, odnosno
-zaka č io nekog od njih, jer nije mogao da se kontroli š e, ali da to nije vidio i dodao da na licu mjesta kriti č nom
-prilikom nije vidio ni jednu ž ensku osobu.
- 
-Svjedok Ž.. V.. u svom iskazu datom u bitnom je naveo da je slu ž benik Uprave policije CG CB Nik š i ć  i da je u
-noć i 11./12.04.2016 godine bio na du ž nosti i sa kolegom Boji ć  Goranom, slu ž benim vozilom vr š io redovan
-obilazak terena, te da je, dok su prolazili ulicom Njego š evom, njegov kolega Boji ć  preko puta zgrade Stare
-Poš te vidio neku gu ž vu, zbog č ega je on oko kru ž nog toka saobra ć aja na Trgu Save Kova č evi ć a okrenuo
-služ beno vozilo i da je, kada su do š li blizu te gu ž ve, vidio jedno lice za koje je kasnije saznao da se preziva
-Srdanovi ć  kako le ž i, odnosno ustaje sa travnjaka pored Po š te, nakon č ega su on i B.. izaš li iz vozila, u kojem
-trenutku je on vidio jednog momka, za kojeg je kasnije saznao da se radi o č etvrtookrivljenom Vu č ini ć  Nikoli,
-koji je od o š te ć enog S..išao put jednog parkiranog vozila i kojem je tada pri š ao inspektor Boji ć  i zaustavio ga,
-a da je tada on pri š ao jo š  jednom licu, č ije ime i prezime ne zna, koje je bilo u blizini i isto uveo u slu ž beno
-vozilo. Istakao je i da su kriti č nom prilikom, kada su primijetili tu gu ž vu, on i inspektor Boji ć , putem radio
-veze pozvali de ž urnu slu ž bu, kako bi im u ispomo ć  poslali Interventnu jedinicu policije, č iji slu ž benici su ubzo
-zatim do š li na lice mjesta i o š te ć enog Srdanovi ć a Slavka odveli u Op š tu bolnicu Nik š i ć , radi ukazivanja
-medicinske pomo ć i. Naveo je i da kriti č nom prilikom on nije vidio na koji na č in je o š te ć eni Srdanovi ć  pao, niti
-ko je istog udarao i odgovaraju ć i na pitanja postavljena na glavnom pretresu naveo da u predmetnoj situaciji
-od momenta kada su opazili gu ž vu, do momenta kada su on i njegov kolega Boji ć  slu ž benim vozilom do š li do
-lica mjesta on iz vozila, ni po izlasku iz istog, nije mogao vidjeti da li je i na koji na č in neko nekoga udarao, ve ć
-da je ono š to je vidio kad je iza š ao iz slu ž benog vozila da jedno lice le ž i na tlu, a da se kasnije ispostavilo da se
-radilo o o š te ć enom Srdanovi ć  Slavku, i da su ubrzo zatim na mjesto doga đ aja do š le njihove kolege iz
-interventne jedinice Uprave policije koje su neka od tih lica koja su zatekli u blizini o š te ć enog Srdanovi ć a koji
-je lež ao, slu ž benim vozilom priveli u slu ž bene prostorije Uprave policije CG CB Nik š i ć .
- 
-Svjedok B.. G.. u svom iskazu u bitnom je naveo da je slu ž benik Uprave policije CG CB Nik š i ć , da je u no ć i
-11./12.04.2016 godine bio na du ž nosti i zajedno sa kolegom Ž.. Vi.., služ benim vozilom vršio redovan obilazak
-terena i da je, dok su prolazili ulicom Njego š evom, u dijelu iste koji se nalazi preko puta zgrade Stare po š te,
-vidio zaustavljena dva vozila i nekoliko momaka u blizini tih vozila kako razgovaraju, ali da, budu ć i da mu se
-tom prilikom u č injelo da se ti momci raspravljaju, kolegi rekao da treba da pozovu interventnu jedinicu CB
-Nikš i ć , š to su i u č inili i zatim sa slu ž benim vozilom do š li na prostor ispred zgrade Stare po š te i da je po
-dolasku na lice mjesta vidio o š te ć enog S.. S.. kako ustaje sa travnjaka ispred zgrade Stare po š te, a da su u
-njegovoj blizini bila dva momka, od kojih je jedan, a za koga je saznao da se preziva Vu č ini ć , bio krenuo
-prema vozilu koje je bilo, koliko se sje ć a, marke Passat, u č emu ga je on sprije č io i sproveo to lice do CB
-Nikš i ć . Izjavio je i da se on ne mo ž e izjasniti kako se zove drugo mu š ko lice koje je bilo sa četvrtookrivljenim
-V.. M.., ali da su oba ta lica, od o š te ć enog S.. bila udaljena po njegovoj procjeni 3 ili 4 metra i nalazila se na
-trotoaru i naveo da su se na licu mjesta nalazila jo š  dva ili tri lica, od kojih je jedno bilo djevojka, a koji su
-stajali sa strane, prema prostoru ispred kafe bara Mister. Istakao je i da je, dok je ustajao, o š te ć eni Srdanovi ć
-Slavko vikao i psovao na ta dva lica, od kojih je jedno bio četvrtookrivljeni Vu č ini ć  Nikola, ali da on nije vidio
-da li je o š te ć enom Srdanovi ć u tom prilikom neko pomagao da ustane i da je to sve š to on mož e re ć i o
-predmetnom doga đ aju, jer u konkretnom slu č aju nije vidio na koji na č in je o š te ć eni Srdanovi ć  zadobio
-tjelesnu povredu i pao na tlo. Odgovaraju ć i na pitanja postavljena na glavnom pretresu imenovani svjedok je
-naveo da se sje ć a da je ta osoba ž enskog pola koja je bila na mjestu doga đ aja bila u drugom stanju i da je
-zbog tog doga đ aja bila jako uznemirena i da su istu on i njegove kolege smirivali i da od momenta kada je
-prvi put opazio tu grupu lica i vidio da se me đ u njima de š ava neka rasprava, do momenta kada se taj doga đ aj
-zavr š io, on nije vidio da bilo ko od učesnika u tom doga đ aju nekoga udara.
- 
-Svjedok K.. M.. u svom iskazu u bitnom je naveo da se u no ć i 11./12.04.2016 godine nalazio u kafe baru
-Mister, koji se nalazi kod zgrade Stare Po š te, odakle u jednom trenutku za č uo viku i galamu, pa nakon š to mu
-je konobar Bako č  Luka skrenuo pa ž nju da se na ulici ispred tog lokala neka lica guraju, on pogledao kroz
-prozor i vidio da njegov poznanik o š te ć eni S.. S..leži na trotoaru i da je oko istog bilo vi š e ljudi, ali da se ne
-mož e izjasniti ko su ta lica bila, da je tada pri š ao o š te ć enom i pomogao mu da ustane, kada mu se o š te ć eni
-Srdanovi ć  po ž alio na povredu ramena, ali da mu isti tom prilikom nije rekao ko ga je gurnuo prije nego š to je
-pao. Objasnio je da je kriti č ne ve č eri on konzumirao alkohol i bio u pripitom stanju i da se ne mo ž e sjetiti lica
-koja su jo š  tu bila prisutna, ali da je siguran da on nije nikoga razdvajao i da nije vidio kako je o š te ć eni
-S..S..zadobio tu povredu ramena i da se č im su na lice mjesta do š li slu ž benici Uprave policije o vratio u
-unutra š njost kafe bara Mister. Odgovaraju ć i na postavljena pitanja imenovani svjedok je izjavio da okrilvjene
-Đ..M.. i E.. S.. poznaje, ali da se ne mo ž e izjasniti da li ih je vidio kriti č ne no ć i na licu mjesta i istakao da je
-jedini razlog zbog koga je iza š ao iz lokala taj š to je, kako je to ve ć  naveo, vidio o š te ć enog Srdanovi ć  Slavka,
-kojeg je lako prepoznao jer su drugovi od ranije, da le ž i na tlu.
- 
-Svjedokinja T.. S.. u svom iskazu, u bitnom je navela da je u no ć i 11./12.04.2016.godine bila saputnik u vozilu
-marke Toyota, kojim je upravljao njen brat č etvrookrivljeni V..N.., a da je sa njima u vozilu bio njihov drug
+kao i povredu u predjelu unutrašnje strane lijeve butane, za koju povredu ne može da se izjasni na koji način
+mu je nanesena. Istakao je i da se ne može izjasniti ko ga je od okrivljenih kritičnom prilikom udarao koliko
+puta, jer od svih okrivljenih poznaje samo prvookrivljenog Eraković Slobodana i da su ga u toj situaciji sva
+četvorica okrivljenih udarala ičupala, odčega je u jednom trenutku pao na tlo i da je prvočega se nakon toga
+sjeća to da mu je prišao svjedok Krivokapić Mališa, kojeg je tada prvi put te večeri vidio i pomogao mu da
+ustane, a da su u tom trenutku i na to mjesto stigli službenici Uprave policije CG CB Nikšić. Istakao je i da
+kritične večeri on nikoga nije direktno udarao, ali da je od napada okrivljenih pokušavao da se odbrani tako
+što je zamahivao rukama prema napadačima i da je moguće da tada nekom od njih nanio povredu, odnosno
+
+zakačio nekog od njih, jer nije mogao da se kontroliše, ali da to nije vidio i dodao da na licu mjesta kritičnom
+prilikom nije vidio ni jednužensku osobu.
+
+Svjedok Ž.. V.. u svom iskazu datom u bitnom je naveo da je službenik Uprave policije CG CB Nikšići da je u
+noć i 11./12.04.2016 godine bio na dužnosti i sa kolegom Bojić Goranom, službenim vozilom vršio redovan
+obilazak terena, te da je, dok su prolazili ulicom Njegoševom, njegov kolega Bojićpreko puta zgrade Stare
+Poš te vidio neku gužvu, zbogčega je on oko kružnog toka saobraćaja na Trgu Save Kovačevića okrenuo
+službeno vozilo i da je, kada su došli blizu te gužve, vidio jedno lice za koje je kasnije saznao da se preziva
+Srdanovićkako leži, odnosno ustaje sa travnjaka pored Pošte, nakončega su on i B.. izašli iz vozila, u kojem
+trenutku je on vidio jednog momka, za kojeg je kasnije saznao da se radi očetvrtookrivljenom Vučinić Nikoli,
+koji je od oštećenog S..išao put jednog parkiranog vozila i kojem je tada prišao inspektor Bojići zaustavio ga,
+a da je tada on prišao jošjednom licu, č ije ime i prezime ne zna, koje je bilo u blizini i isto uveo u službeno
+vozilo. Istakao je i da su kritičnom prilikom, kada su primijetili tu gužvu, on i inspektor Bojić, putem radio
+veze pozvali dežurnu službu, kako bi im u ispomoćposlali Interventnu jedinicu policije, č iji službenici su ubzo
+zatim došli na lice mjesta i oštećenog Srdanovića Slavka odveli u Opštu bolnicu Nikšić, radi ukazivanja
+medicinske pomoći. Naveo je i da kritičnom prilikom on nije vidio na koji način je oštećeni Srdanovićpao, niti
+ko je istog udarao i odgovarajući na pitanja postavljena na glavnom pretresu naveo da u predmetnoj situaciji
+od momenta kada su opazili gužvu, do momenta kada su on i njegov kolega Bojićslužbenim vozilom došli do
+lica mjesta on iz vozila, ni po izlasku iz istog, nije mogao vidjeti da li je i na koji način neko nekoga udarao, većda je onošto je vidio kad je izašao iz službenog vozila da jedno lice leži na tlu, a da se kasnije ispostavilo da se
+radilo o oštećenom Srdanović Slavku, i da su ubrzo zatim na mjesto događaja došle njihove kolege iz
+interventne jedinice Uprave policije koje su neka od tih lica koja su zatekli u blizini oštećenog Srdanovića koji
+je lež ao, službenim vozilom priveli u službene prostorije Uprave policije CG CB Nikšić.
+
+Svjedok B.. G.. u svom iskazu u bitnom je naveo da je službenik Uprave policije CG CB Nikšić, da je u noći
+11./12.04.2016 godine bio na dužnosti i zajedno sa kolegom Ž.. Vi.., služ benim vozilom vršio redovan obilazak
+terena i da je, dok su prolazili ulicom Njegoševom, u dijelu iste koji se nalazi preko puta zgrade Stare pošte,
+vidio zaustavljena dva vozila i nekoliko momaka u blizini tih vozila kako razgovaraju, ali da, budući da mu se
+tom prilikom učinjelo da se ti momci raspravljaju, kolegi rekao da treba da pozovu interventnu jedinicu CB
+Nikšić, š to su i učinili i zatim sa službenim vozilom došli na prostor ispred zgrade Stare pošte i da je po
+dolasku na lice mjesta vidio oštećenog S.. S.. kako ustaje sa travnjaka ispred zgrade Stare pošte, a da su u
+njegovoj blizini bila dva momka, od kojih je jedan, a za koga je saznao da se preziva Vučinić, bio krenuo
+prema vozilu koje je bilo, koliko se sjeća, marke Passat, učemu ga je on spriječio i sproveo to lice do CB
+Nikšić. Izjavio je i da se on ne može izjasniti kako se zove drugo muško lice koje je bilo sa četvrtookrivljenim
+V.. M.., ali da su oba ta lica, od oštećenog S.. bila udaljena po njegovoj procjeni 3 ili 4 metra i nalazila se na
+trotoaru i naveo da su se na licu mjesta nalazila jošdva ili tri lica, od kojih je jedno bilo djevojka, a koji su
+stajali sa strane, prema prostoru ispred kafe bara Mister. Istakao je i da je, dok je ustajao, oštećeni Srdanović Slavko vikao i psovao na ta dva lica, od kojih je jedno bio četvrtookrivljeni Vučinić Nikola, ali da on nije vidio
+da li je oštećenom Srdanoviću tom prilikom neko pomagao da ustane i da je to svešto on mož e reći o
+predmetnom događaju, jer u konkretnom slučaju nije vidio na koji način je oštećeni Srdanovićzadobio
+tjelesnu povredu i pao na tlo. Odgovarajući na pitanja postavljena na glavnom pretresu imenovani svjedok je
+naveo da se sjeća da je ta osobaženskog pola koja je bila na mjestu događaja bila u drugom stanju i da je
+zbog tog događaja bila jako uznemirena i da su istu on i njegove kolege smirivali i da od momenta kada je
+prvi put opazio tu grupu lica i vidio da se među njima dešava neka rasprava, do momenta kada se taj događaj
+završio, on nije vidio da bilo ko od učesnika u tom događaju nekoga udara.
+
+Svjedok K.. M.. u svom iskazu u bitnom je naveo da se u noći 11./12.04.2016 godine nalazio u kafe baru
+Mister, koji se nalazi kod zgrade Stare Pošte, odakle u jednom trenutku začuo viku i galamu, pa nakonšto mu
+je konobar Bakoč Luka skrenuo pažnju da se na ulici ispred tog lokala neka lica guraju, on pogledao kroz
+prozor i vidio da njegov poznanik oštećeni S.. S..leži na trotoaru i da je oko istog bilo više ljudi, ali da se ne
+mož e izjasniti ko su ta lica bila, da je tada prišao oštećenom i pomogao mu da ustane, kada mu se oštećeni
+Srdanovićpožalio na povredu ramena, ali da mu isti tom prilikom nije rekao ko ga je gurnuo prije negošto je
+pao. Objasnio je da je kritične večeri on konzumirao alkohol i bio u pripitom stanju i da se ne može sjetiti lica
+koja su joštu bila prisutna, ali da je siguran da on nije nikoga razdvajao i da nije vidio kako je oštećeni
+S..S..zadobio tu povredu ramena i da sečim su na lice mjesta došli službenici Uprave policije o vratio u
+unutrašnjost kafe bara Mister. Odgovarajući na postavljena pitanja imenovani svjedok je izjavio da okrilvjene
+Đ..M.. i E.. S.. poznaje, ali da se ne može izjasniti da li ih je vidio kritične noći na licu mjesta i istakao da je
+jedini razlog zbog koga je izašao iz lokala tajšto je, kako je to većnaveo, vidio oštećenog Srdanović Slavka,
+kojeg je lako prepoznao jer su drugovi od ranije, da leži na tlu.
+
+Svjedokinja T.. S.. u svom iskazu, u bitnom je navela da je u noći 11./12.04.2016.godine bila saputnik u vozilu
+marke Toyota, kojim je upravljao njen bratčetvrookrivljeni V..N.., a da je sa njima u vozilu bio njihov drug
 treć eokrivljeni J.. M.., da su se sa tim vozilom kretali Bulevarom 13.Jul prema centru grada i da su se dok su
 prolazili prodavnice Okov sreli sa drugookrivljenim Đ.. M.., koji je upravljao vozilom marke Passat, i da su,
-poš to u tom trenutku nije bilo saobra ć aja, okrivljeni Đ.. M.. i njen brat V.. N... bili usporili kretanje svojih vozila
-i namjeravali da popri č aju kroz otvorene prozore vozila, kada se iza vozila kojim je upravljao Đ.pojavilo vozilo
-marke Mercedes, koje je sviralo i kretalo se tik uz branik Đ aji ć evog vozila, da je nakon te signalizacije
-drugookrivljeni Đ a...M.. ubrzao kretanje svog vozila tako da je to vozilo Mercedes moglo pro ć i pored njega
-drugom saobra ć ajnom trakom, ali da voza č  istog to nije ž elio da u č ini, ve ć  je nastavio kretanje iza Đ aji ć evog
-vozila i drugookrivljenom Đ.. M.dao znak da skrene, pa je drugookrivljeni Đ..M.., nakon š to je napravio dva
-kruga oko kru ž nog toka pored zgrade stare Stare Po š te zaustavio svoje vozilo, iza kojeg se zaustavilo to vozilo
-Mercedes, nakon č ega su i oni zaustavili svoje vozilo marke Toyota iza vozila marke Mercedes, da je zatim
-vidjela da je iz vozila marke Mercedes iza š lo njoj nepoznato mu š ko lice, koje je pri š lo vozilu okrivljenog Đ.. M..
-i istog izvuklo iz njega, nakon č ega je okrivljenom Đ aji ć u i voza č u vozila marke Mercedes pri š ao njen brat V..
-N.., koji je zajedno sa okrivljenim Đ aji ć em poku š ao da smiri to lice-o š te ć enog Srdanovi ć a, na š ta je isti
-reagovao prijetnjama i psovkama, š to je ona mogla da č uje, jer jo š  uvijek nije bilo gu ž ve i da se uskoro na licu
-mjesta stvorio veliki broj lica od kojih ona ve ć inu ne poznaje, kao i da su u jednom trenutku na lice mjesta
-stigli su i slu ž benici Uprave policije, te da je u jednom trenutku vidjela da o š te ć eni Srdanovi ć  Slavko le ž i na
-tlu, ali da ne zna zbog č ega je isti pao, niti da li je o š te ć eni pao na travu ili asfalt, ve ć  da samo zna da je le ž ao
-preko ivi č njaka, kao i da je to da je njen brat, č etvrtookrivljeni V.. N..povrije đ en, saznala tek kada je isti nakon
-kritič nog doga đ aja u š ao u vozilo i tada joj rekao da ga je taj mu š karac udario stisnutom pesnicom i dodala da
-je tre ć eokrivljeni J.. M.. za svo vrijeme trajanja kriti č nog doga đ aja, zajedno sa njom bio u vozilu marke Tojota.
-Odgovaraju ć i na pitanja postavljena na glavnom pretresu imenovana svjedokinja je izjavila da neposredno
-nakon kriti č nog dog đ aja vidjela da je njen brat - okrivljeni V.. N..imao jako crvenilo po desnom uvu, a da je
-kasnije te ve č eri, nakon nekoliko sati koje su proveli u slu ž benim prostorijama Uprave policije, vidjela da mu
-je to uvo, u dijelu u kojem je prethodno bilo crvenila po istom, pomodrilo, ali da iz istog on te ve č eri nije
-krvario. Na dalja pitanja svjedokinja je izjavila da je za vrijeme trajanja kriti č nog doga đ aja vidjela da je
-ošte ć eni Srdanovi ć  Slavko vi š e puta zamahnuo pesnicom ka okrivljenom Vu č ini ć  Nikoli, ali da nije uspjela da
-vidi da li ga je u toj situaciji udario, te da je sigurna da je o š te ć eni kriti č ne ve č eri bio pod desjtvom alkohola ili
-neke druge psihoaktivne supstance, š to je zaklju č ila po njegovom pona š anju jer je isti bez ikakvog razloga
-vikao i neprimjereno se pona š ao, kao i da je, kako se to ž argonski ka ž e, »teturao« dok je zamahivao rukom da
+poš to u tom trenutku nije bilo saobraćaja, okrivljeni Đ.. M.. i njen brat V.. N... bili usporili kretanje svojih vozila
+i namjeravali da popričaju kroz otvorene prozore vozila, kada se iza vozila kojim je upravljao Đ.pojavilo vozilo
+marke Mercedes, koje je sviralo i kretalo se tik uz branik Đajićevog vozila, da je nakon te signalizacije
+drugookrivljeni Đa...M.. ubrzao kretanje svog vozila tako da je to vozilo Mercedes moglo proći pored njega
+drugom saobraćajnom trakom, ali da vozačistog to niježelio da učini, većje nastavio kretanje iza Đajićevog
+vozila i drugookrivljenom Đ.. M.dao znak da skrene, pa je drugookrivljeni Đ..M.., nakonšto je napravio dva
+kruga oko kružnog toka pored zgrade stare Stare Pošte zaustavio svoje vozilo, iza kojeg se zaustavilo to vozilo
+Mercedes, nakončega su i oni zaustavili svoje vozilo marke Toyota iza vozila marke Mercedes, da je zatim
+vidjela da je iz vozila marke Mercedes izašlo njoj nepoznato muško lice, koje je prišlo vozilu okrivljenog Đ.. M..
+i istog izvuklo iz njega, nakončega je okrivljenom Đajiću i vozaču vozila marke Mercedes prišao njen brat V..
+N.., koji je zajedno sa okrivljenim Đajićem pokušao da smiri to lice-oštećenog Srdanovića, našta je isti
+reagovao prijetnjama i psovkama, š to je ona mogla dačuje, jer jošuvijek nije bilo gužve i da se uskoro na licu
+mjesta stvorio veliki broj lica od kojih ona većinu ne poznaje, kao i da su u jednom trenutku na lice mjesta
+stigli su i službenici Uprave policije, te da je u jednom trenutku vidjela da oštećeni Srdanović Slavko leži na
+tlu, ali da ne zna zbogčega je isti pao, niti da li je oštećeni pao na travu ili asfalt, većda samo zna da je ležao
+preko ivičnjaka, kao i da je to da je njen brat, č etvrtookrivljeni V.. N..povrijeđen, saznala tek kada je isti nakon
+kritičnog događaja ušao u vozilo i tada joj rekao da ga je taj muškarac udario stisnutom pesnicom i dodala da
+je trećeokrivljeni J.. M.. za svo vrijeme trajanja kritičnog događaja, zajedno sa njom bio u vozilu marke Tojota.
+Odgovarajući na pitanja postavljena na glavnom pretresu imenovana svjedokinja je izjavila da neposredno
+nakon kritičnog dogđaja vidjela da je njen brat - okrivljeni V.. N..imao jako crvenilo po desnom uvu, a da je
+kasnije te večeri, nakon nekoliko sati koje su proveli u službenim prostorijama Uprave policije, vidjela da mu
+je to uvo, u dijelu u kojem je prethodno bilo crvenila po istom, pomodrilo, ali da iz istog on te večeri nije
+krvario. Na dalja pitanja svjedokinja je izjavila da je za vrijeme trajanja kritičnog događaja vidjela da je
+oštećeni Srdanović Slavko više puta zamahnuo pesnicom ka okrivljenom Vučinić Nikoli, ali da nije uspjela da
+vidi da li ga je u toj situaciji udario, te da je sigurna da je oštećeni kritične večeri bio pod desjtvom alkohola ili
+neke druge psihoaktivne supstance, š to je zaključila po njegovom ponašanju jer je isti bez ikakvog razloga
+
+vikao i neprimjereno se ponašao, kao i da je, kako se tožargonski kaže, »teturao« dok je zamahivao rukom da
 udari njenog brata.
- 
-Stalni sudski vje š tak medicinske struke dr Bulatovi ć  Veselin u svom nalazu i mi š ljenju, koji sud cijenio kao
-jasan stru č an i objektivan, jer je isti dat po pravilima struke i na osnovu vjerodostojne medicinske
-dokumentacije koja se nalazi u spisima predmeta, naveo je da je izvr š io uvid u izje š taj ljekara specijaliste JZU
-Opš ta bolnica Nik š i ć , broj protokla 3140 od 11.04.2016. godine lica iz kojeg se vidi da se lice Srdanovi ć  Slavko
-javilo na pregled zbog povrede zadobijene od strane drugog lica i da je klini č kim pregledom kod istog
-konstatovano i šč a š enje desnog ramenog zgloba, koja povreda je po svojoj prirodi te š ka tjelesna povreda i da
-je ista mogla nastati prilikom pada i kontakta desne ruke sa tvrdom podlogom i to naj č e šć e kontaktom
-povrije đ enog ramena sa tvrdom podlogom-betonom, asfaltom, makadamom i sli č no, a da je ista eventualno
-mogla nastati i povla č enjem desne ruke ošte ć enog od strane snaž nog odraslog mu š karca.
- 
-Na osnovu iskaza o š te ć enog S.. .. koji iskaz je sud cijenio kao istinit, jer je o š te ć eni kriti č ni doga đ aj opisao
-odre đ eno i ubjedljivo, navode ć i pritom da su ga kriti č nom prilikom svi okrivljeni, a nakon š to ga je
-prvookrivljeni Erakovi ć  Slobodan udario stisnutom pesnicom u predjelu glave, gurali i udarali, od kojih
-udaraca i guranja je pao na trotoar i tom prilikom zadobio tjelesnu  povredu u predjelu desnog ramena i da je
+
+Stalni sudski vještak medicinske struke dr Bulatović Veselin u svom nalazu i mišljenju, koji sud cijenio kao
+jasan stručan i objektivan, jer je isti dat po pravilima struke i na osnovu vjerodostojne medicinske
+dokumentacije koja se nalazi u spisima predmeta, naveo je da je izvršio uvid u izještaj ljekara specijaliste JZU
+Opš ta bolnica Nikšić, broj protokla 3140 od 11.04.2016. godine lica iz kojeg se vidi da se lice Srdanović Slavko
+javilo na pregled zbog povrede zadobijene od strane drugog lica i da je kliničkim pregledom kod istog
+konstatovano iščašenje desnog ramenog zgloba, koja povreda je po svojoj prirodi teška tjelesna povreda i da
+je ista mogla nastati prilikom pada i kontakta desne ruke sa tvrdom podlogom i to najčešće kontaktom
+povrijeđenog ramena sa tvrdom podlogom-betonom, asfaltom, makadamom i slično, a da je ista eventualno
+mogla nastati i povlačenjem desne ruke oštećenog od strane snažnog odraslog muškarca.
+
+Na osnovu iskaza oštećenog S.... koji iskaz je sud cijenio kao istinit, jer je oštećeni kritični događaj opisao
+određeno i ubjedljivo, navodeći pritom da su ga kritičnom prilikom svi okrivljeni, a nakonšto ga je
+prvookrivljeni Eraković Slobodan udario stisnutom pesnicom u predjelu glave, gurali i udarali, od kojih
+udaraca i guranja je pao na trotoar i tom prilikom zadobio tjelesnu povredu u predjelu desnog ramena i da je
 za vrijeme dok su ga okrivljeni udarali I gurali on zamahivao rukama da udari okrivljene kako bi se odbranio,
-dakle da je kriti č nom prilikom postojala tu č a, kao fizi č ki konflikt izme đ u č etvorice okrivljenih, sa jedne i
-ošte ć enog, sa druge strane, a koje kazivanje o š te ć enog je u dijelu lokalizacije, vrste, te ž ine i mehanizma
-nastanka povreda kod o š te ć enog potvr đ eno nalazom i mi š ljenjem vje š taka medicinske struke dr Bulatovi ć
-Veselina, sud je na nesumnjiv na č in utvrdio da su okrivljeni E..S.., Đ.. .. J.. .. V.. N. u no ć i 11./12.04.2016.
-godine, u Nik š i ć u, u ulici Njego š evoj, iako su bili svjesni svog djela i htjeli njegovo izvr š enje, učestvovali u tu č i
-u kojoj je ošte ć enom Srdanovi ć  Slavku nanesena te š ka tjelesna povreda, a na na č in š to su, nakon š to je
-ošte ć eni Srdanovi ć Slavko iza š ao iz svog putni č kog motornog vozila marke Mercedes, registarskih oznaka .. i
-doš lo do me đ usobne sva đ e i tu č e izme đ u okrivljenih, sa jedne i o š te ć enog sa druge strane, svi okrivljeni
-gurali i udarali o š te ć enog Srdanovi ć Slavka, koji je tom prilikom pao na asfalt i zadobio te š ku tjelesnu
-povredu u vidu i šč a š enja desnog ramenog zgloba, kojim radnjama su okrivljeni izvrš ili krivi č no djelo
-učestvovanje u tu č i iz č lana 153 Krivi č nog zakonika Crne Gore, na na č in, u vrijeme i na mjestu kako je to
+dakle da je kritičnom prilikom postojala tuča, kao fizički konflikt izmeđučetvorice okrivljenih, sa jedne i
+oštećenog, sa druge strane, a koje kazivanje oštećenog je u dijelu lokalizacije, vrste, težine i mehanizma
+nastanka povreda kod oštećenog potvrđeno nalazom i mišljenjem vještaka medicinske struke dr Bulatović Veselina, sud je na nesumnjiv način utvrdio da su okrivljeni E..S.., Đ.... J.... V.. N. u noći 11./12.04.2016.
+godine, u Nikšiću, u ulici Njegoševoj, iako su bili svjesni svog djela i htjeli njegovo izvršenje, učestvovali u tuči
+u kojoj je oštećenom Srdanović Slavku nanesena teška tjelesna povreda, a na načinšto su, nakonšto je
+oštećeni Srdanović Slavko izašao iz svog putničkog motornog vozila marke Mercedes, registarskih oznaka.. i
+doš lo do međusobne svađe i tuče između okrivljenih, sa jedne i oštećenog sa druge strane, svi okrivljeni
+gurali i udarali oštećenog Srdanović Slavka, koji je tom prilikom pao na asfalt i zadobio tešku tjelesnu
+povredu u vidu iščašenja desnog ramenog zgloba, kojim radnjama su okrivljeni izvršili krivično djelo
+učestvovanje u tuči izčlana 153 Krivičnog zakonika Crne Gore, na način, u vrijeme i na mjestu kako je to
 predstavljeno u izreci presude.
- 
-U tom pravcu, sud je cijene ć i odbrane okrivljenih J.. M.. i E.. .. u kojoj su isti poku š ali da se predstave kao lica
-koja uop š te nijesu aktivno sudjelovala u sukobu i odbranu okrivljenog ...., koji je u istoj poku š ao da sebe
-predstavi kao ž rtvu napada o š te ć enog S..ć .. i u kojoj su sva trojica okrivljenih naveli da kriti č ne ve č eri
-ošte ć enog Srdanovi ć a niko nije gurao i udarao i da o š te ć eni nije padao na tlo, kao i da im nije poznato kako je
-isti kriti č nom prilikom zadobio povrede, našao da su iste neosnovane i usmjerene na izbjegavanje krivično
-pravne odgovornosti, jer su odbrane imenovanih okrivljenih u potpunosti opovrgnute iskazom o š te ć enog
-Srdanovi ć  Slavka, kojem dokazu je sud iz ve ć  navedenih razloga poklonio povjerenje i dovode ć i ga u vezu sa
-ostalim provedenim dokazima, prvenstveno nalazom i mi š ljenjem vješ taka medicinske struke dr Bulatovi ć
-Veselina, na istom zasnovao odluku o krivici okrivljenih u predmetnom krivi č nom postupku.
- 
-Iz istih razloga sud je cijene ć i iskaz svjedokinje T.. S.. naš ao da je isti neobjektivan i neistinit i kao takav dat sa
-očiglednom namjerom da se okrivljenom V…N . koji je imenovanoj svjedokinji ro đ eni brat i ostalim
+
+U tom pravcu, sud je cijeneći odbrane okrivljenih J.. M.. i E.... u kojoj su isti pokušali da se predstave kao lica
+koja uopšte nijesu aktivno sudjelovala u sukobu i odbranu okrivljenog...., koji je u istoj pokušao da sebe
+predstavi kao žrtvu napada oštećenog S..ć.. i u kojoj su sva trojica okrivljenih naveli da kritične večeri
+oštećenog Srdanovića niko nije gurao i udarao i da oštećeni nije padao na tlo, kao i da im nije poznato kako je
+isti kritičnom prilikom zadobio povrede, našao da su iste neosnovane i usmjerene na izbjegavanje krivično
+pravne odgovornosti, jer su odbrane imenovanih okrivljenih u potpunosti opovrgnute iskazom oštećenog
+Srdanović Slavka, kojem dokazu je sud iz većnavedenih razloga poklonio povjerenje i dovodeći ga u vezu sa
+ostalim provedenim dokazima, prvenstveno nalazom i mišljenjem vještaka medicinske struke dr Bulatović Veselina, na istom zasnovao odluku o krivici okrivljenih u predmetnom krivičnom postupku.
+
+Iz istih razloga sud je cijeneći iskaz svjedokinje T.. S.. naš ao da je isti neobjektivan i neistinit i kao takav dat sa
+očiglednom namjerom da se okrivljenom V…N. koji je imenovanoj svjedokinji rođeni brat i ostalim
 okrivljenima, sa kojima je imenovana svjedokinja u prijateljskim odnosima, pomogne u izbjegavanju
-krivi č no-pravne odgovornosti u predmetnom postupku.
- 
-Prilikom dono š enja odluke o krivici okrivljenih sud je cijenio i iskaze svjedoka Ž..V.., B.. G..i K… M.. i naš ao da
-ti dokazi nijesu od uticaja na dono š enje druga č ije odluke o krivici okrivljenih u predmetnom krivi č nom
-postupku, jer imenovani svjedoci za vrijeme de š avanja kriti č nog doga đ aja nijesu bili prisutni na mjestu
-dešavanja istog, tako da nijesu opazili na koji na č in je kriti č nom prilikom do š lo do povrije đ ivanja o š te ć enog
-Srdanovi ć  Slavka i š ta je tome prethodilo.
- 
-Cijene ć i subjektivni odnos okrivljenih prema izvr š enom krivi č nom djelu, sud je utvrdio da su imenovani
-okrivljeni prilikom izvr š enja predmetnog krivi č nog djela postupali sa direktnim umi š ljajem, jer iz utvr đ enog
-činjeni č nog stanja proizilazi da su okrivljeni preduzimaju ć i radnje bli ž e opisane izreci presude bili svjesni da
-učestvuju u tu č i u kojoj nekom licu mo ž e biti nanesena te š ka tjelesna povreda, odakle nedvosmisleno
-proizilazi da su okrivljeni preduzimaju ć i radnje bli ž e opisane u izreci presude, bili svjesni da na taj na č in č ine
-predmetno krivi č no djelo i htjeli njegovo izvr š enje, uslijed kojih radnji okrivljenih je nastupila i posljedica u
-vidu nano š enja te š ke tjelesne povrede o š te ć enom Srdanovi ć  Slavku, kao jedan od objektivnih elemenata
-neophodnih za postojanje bića krivi č nog djela u č estvovanje u tu č i iz č lana 153 Krivi č nog zakonika Crne Gore.
- 
-Prilikom dono š enja odluke o krivi č noj sankciji okrivljenima, sud je u smislu č lana 42 KZ CG kao olak š avaju ć e
-okolnosti na strani okrivljenih na š ao njihovu relativnu mladost u vrijeme izvr š enja krivi č nog djela, lo š e
-imovne prilike okrivljenih E..S.., J.. M.. i V.. N.. i raniju neosu đ ivanost sve č etvorice okrivljenih utvr đ enu
-uvidom u izvod iz kaznene evidencije za okrivljene, dok ote ž avaju ć ih okolnosti na strani okrivljenih po ocjeni
-suda nije bilo. Cijene ć i navedene olak š avaju ć e okolnosti sud je na š ao da se radi o osobito olak š avaju ć im
-okolnostima i da imaju ć i u vidu iste, kao i konkretne posljedice predmetnog krivi č nog djela prema
-okrivljenima radi ostvarivanja ciljeva krivi č no-pravne za š tite dru š tvenih vrijednosti nije nu ž no primijeniti
-kaznu i istima na osnovu č lana 53 i 54 KZ CG izrekao uslovne osude, sa kojima je svakom okrivljenom
-pojedina č no utvrdio kazne zatvora u trajanju od po 3 mjeseca i istovremeno odredio da se ove kazne ne ć e
-izvrš iti ukoliko okrivljeni u roku od jedne godine od dana pravosna ž nosti presude ne u č ine neko novo
-krivi č no djelo, smatraju ć i da ć e se i sa prijetnjom izvr š enja utvr đ ene kazne zatvora, uz provjeru pona š anja
-okrivljenih u roku od dvije godine na iste u dovoljnoj mjeri uticati da ubudu ć e ne vr š e nova krivi č na djela i da
-će se na taj na č in u ovom konkretnom slu č aju ostvariti svrha izricanja uslovnih osuda iz č lana 52 stav 2 KZ CG,
-u okviru op š te svrhe izricanja krivi č nih sankcija iz č lana 4 stav 2 KZ CG.
- 
-Odluku o tro š kovima krivi č nog postupka sud je donio na osnovu č lana 226 i 229 ZKP-a i istom obavezao
-okrivljene da na ime tro š kova krivi č nog postupka solidarno plate iznos od 44,00 eura, koji iznos se odnosi na
-ime nagrade vje š taku medicinske struke dr Bulatovi ć  Veselinu za dati nalaz i mi š ljenje i da na ime pau š ala,
-kao dijela tro š kova krivi č nog postupa, pojedina č no plate iznose od po 100,00 eura, koji iznosi su odre đ eni
-imaju ć i u vidu slo ž enost predmeta, trajanje postupka i imovne prilike okrivljenih. Tako đ e, prilikom dono š enja
-odluke o tro š kovima predmetnog krivi č nog postupka sud je odredio da ć e odluku o visini nagrade braniocu
-okrivljenog Đ...M.., postavljenom po slu ž enoj du ž nosti za postupanje u dijelu predmetnog krivi č nog postupka
-koji se vodio pred Osnovnim sudom u Nik š i ć u i obavezi imenovanog okrivljenog da nadoknadi te tro š kove
-krivi č nog postupka, odlu č iti posebnim rje š enjem, nakon pravosna ž nosti odluke o krivici okrivljenog Đ..M.. u
-predmetnom krivi č nom postupku, smatraju ć i da bi dono š enje odluke o tim tro š kovima krivi č nog postupka
-prije pravosna ž nosti odluke o krivici imenovanog okrivljenog bilo preuranjeno.
- 
-Na osnovu svega izlo ž enog, primjenom odredbi č lana 374 ZKP-a odlu č eno je kao u izreci presude.
- 
-OSNOVNI SUD U NIK Š I Ć U, dana 12.03.2018. godine
- 
-Zapisni č ar S U D I J A
-Papovi ć  Budimirka s.r. Đ uri č kovi ć  Igor s.r.
- 
-Za ta č nost otpravki tvrdi i ovjerava: Slu ž benik suda
- 
-PRAVNA POUKA: Protiv ove presude dozvoljena je ž alba u roku od 8 dana od dana
-prijema iste preko ovog suda Vi š em sudu u Podgorici</p>
+krivično-pravne odgovornosti u predmetnom postupku.
+
+Prilikom donošenja odluke o krivici okrivljenih sud je cijenio i iskaze svjedoka Ž..V.., B.. G..i K… M.. i naš ao da
+ti dokazi nijesu od uticaja na donošenje drugačije odluke o krivici okrivljenih u predmetnom krivičnom
+postupku, jer imenovani svjedoci za vrijeme dešavanja kritičnog događaja nijesu bili prisutni na mjestu
+dešavanja istog, tako da nijesu opazili na koji način je kritičnom prilikom došlo do povrijeđivanja oštećenog
+Srdanović Slavka išta je tome prethodilo.
+
+Cijeneći subjektivni odnos okrivljenih prema izvršenom krivičnom djelu, sud je utvrdio da su imenovani
+okrivljeni prilikom izvršenja predmetnog krivičnog djela postupali sa direktnim umišljajem, jer iz utvrđenog
+činjeničnog stanja proizilazi da su okrivljeni preduzimajući radnje bliže opisane izreci presude bili svjesni da
+učestvuju u tuči u kojoj nekom licu može biti nanesena teška tjelesna povreda, odakle nedvosmisleno
+proizilazi da su okrivljeni preduzimajući radnje bliže opisane u izreci presude, bili svjesni da na taj načinčine
+predmetno krivično djelo i htjeli njegovo izvršenje, uslijed kojih radnji okrivljenih je nastupila i posljedica u
+vidu nanošenja teške tjelesne povrede oštećenom Srdanović Slavku, kao jedan od objektivnih elemenata
+neophodnih za postojanje bića krivičnog djela učestvovanje u tuči izčlana 153 Krivičnog zakonika Crne Gore.
+
+Prilikom donošenja odluke o krivičnoj sankciji okrivljenima, sud je u smislučlana 42 KZ CG kao olakšavajuće
+okolnosti na strani okrivljenih našao njihovu relativnu mladost u vrijeme izvršenja krivičnog djela, loše
+imovne prilike okrivljenih E..S.., J.. M.. i V.. N.. i raniju neosuđivanost svečetvorice okrivljenih utvrđenu
+uvidom u izvod iz kaznene evidencije za okrivljene, dok otežavajućih okolnosti na strani okrivljenih po ocjeni
+suda nije bilo. Cijeneći navedene olakšavajuće okolnosti sud je našao da se radi o osobito olakšavajućim
+okolnostima i da imajući u vidu iste, kao i konkretne posljedice predmetnog krivičnog djela prema
+okrivljenima radi ostvarivanja ciljeva krivično-pravne zaštite društvenih vrijednosti nije nužno primijeniti
+kaznu i istima na osnovučlana 53 i 54 KZ CG izrekao uslovne osude, sa kojima je svakom okrivljenom
+pojedinačno utvrdio kazne zatvora u trajanju od po 3 mjeseca i istovremeno odredio da se ove kazne neće
+izvršiti ukoliko okrivljeni u roku od jedne godine od dana pravosnažnosti presude ne učine neko novo
+krivično djelo, smatrajući daće se i sa prijetnjom izvršenja utvrđene kazne zatvora, uz provjeru ponašanja
+okrivljenih u roku od dvije godine na iste u dovoljnoj mjeri uticati da ubuduće ne vrše nova krivična djela i da
+će se na taj način u ovom konkretnom slučaju ostvariti svrha izricanja uslovnih osuda izčlana 52 stav 2 KZ CG,
+u okviru opšte svrhe izricanja krivičnih sankcija izčlana 4 stav 2 KZ CG.
+
+Odluku o troškovima krivičnog postupka sud je donio na osnovučlana 226 i 229 ZKP-a i istom obavezao
+okrivljene da na ime troškova krivičnog postupka solidarno plate iznos od 44,00 eura, koji iznos se odnosi na
+ime nagrade vještaku medicinske struke dr Bulatović Veselinu za dati nalaz i mišljenje i da na ime paušala,
+kao dijela troškova krivičnog postupa, pojedinačno plate iznose od po 100,00 eura, koji iznosi su određeni
+imajući u vidu složenost predmeta, trajanje postupka i imovne prilike okrivljenih. Takođe, prilikom donošenja
+odluke o troškovima predmetnog krivičnog postupka sud je odredio daće odluku o visini nagrade braniocu
+okrivljenog Đ...M.., postavljenom po služenoj dužnosti za postupanje u dijelu predmetnog krivičnog postupka
+
+koji se vodio pred Osnovnim sudom u Nikšiću i obavezi imenovanog okrivljenog da nadoknadi te troškove
+krivičnog postupka, odlučiti posebnim rješenjem, nakon pravosnažnosti odluke o krivici okrivljenog Đ..M.. u
+predmetnom krivičnom postupku, smatrajući da bi donošenje odluke o tim troškovima krivičnog postupka
+prije pravosnažnosti odluke o krivici imenovanog okrivljenog bilo preuranjeno.
+
+Na osnovu svega izloženog, primjenom odredbičlana 374 ZKP-a odlučeno je kao u izreci presude.
+
+OSNOVNI SUD U NIKŠIĆU, dana 12.03.2018. godine
+
+Zapisničar S U D I J A
+Papović Budimirka s.r. Đ uričković Igor s.r.
+
+Za tačnost otpravki tvrdi i ovjerava: Službenik suda
+
+PRAVNA POUKA: Protiv ove presude dozvoljena ježalba u roku od 8 dana od dana
+prijema iste preko ovog suda Višem sudu u Podgorici</p>
                 </block>
             </conclusions>
         </judgmentBody>

@@ -61,6 +61,7 @@ class VerdictMetadata:
     organizations: List[str] = field(default_factory=list)
     legal_references: List[str] = field(default_factory=list)
     article_references: List[str] = field(default_factory=list)
+    case_outcome: Optional[str] = None
     verdict_type: Optional[str] = None
     factual_state: dict[str, List[str]] = field(default_factory=dict)
     raw_text: str = ""

@@ -107,22 +107,43 @@ class ReasoningPolicy:
         cbr_signal = "unavailable"
         if cbr_verdict:
             cbr_signal = "supports_conviction" if self._is_positive(cbr_verdict) else "supports_rejection"
+        elif top_similarity >= 0.35:
+            # Retrieval is informative even when outcome labels are missing in nearest cases.
+            cbr_signal = "retrieval_only"
+            cbr_confidence = max(cbr_confidence, min(0.7, top_similarity * 0.85))
 
-        conflict = cbr_signal != "unavailable" and cbr_signal != rule_signal
+        conflict = cbr_signal in {"supports_conviction", "supports_rejection"} and cbr_signal != rule_signal
 
         decision_basis = "rule_only"
         final_confidence = 0.7 if norms else 0.6
+
+        if cbr_signal != "unavailable":
+            if cbr_signal == "retrieval_only":
+                decision_basis = "rule_plus_cbr_retrieval"
+                final_confidence = self._clamp(0.68 + (top_similarity * 0.18), 0.68, 0.86)
+            elif conflict:
+                decision_basis = "hybrid_conflict_resolution"
+                final_confidence = self._clamp(0.55 + (cbr_confidence * 0.25), 0.55, 0.88)
+            else:
+                decision_basis = "hybrid_consensus"
+                agreement_strength = max(cbr_confidence, top_similarity)
+                final_confidence = self._clamp(0.68 + (agreement_strength * 0.27), 0.68, 0.95)
 
         if subsystem_status and subsystem_status.get("cbr") == "error":
             cbr_signal = "unavailable"
             cbr_confidence = 0.0
             top_similarity = 0.0
             decision_basis = "rule_only"
+            final_confidence = 0.7 if norms else 0.6
 
         if subsystem_status and subsystem_status.get("rule") == "error":
             rule_signal = "unavailable"
-            decision_basis = "manual_review"
-            final_confidence = 0.2
+            if cbr_signal in {"supports_conviction", "supports_rejection"}:
+                decision_basis = "cbr_only"
+                final_confidence = self._clamp(max(cbr_confidence, top_similarity * 0.9), 0.55, 0.9)
+            else:
+                decision_basis = "manual_review"
+                final_confidence = 0.2
 
         return ReasoningConfidence(
             decision_basis=decision_basis,
@@ -204,24 +225,35 @@ class ReasoningPolicy:
 
         weighted_scores: dict[str, float] = {}
         total_weight = 0.0
+        considered = 0
         for match in cbr.matches[:3]:
             similarity = float(match.similarity or 0.0)
-            if similarity < 0.55:
+            if similarity < 0.5:
                 continue
             outcome = normalize_outcome(match.outcome)
             if outcome == "nepoznato":
                 continue
+            considered += 1
             weighted_scores[outcome] = weighted_scores.get(outcome, 0.0) + similarity
             total_weight += similarity
 
-        if not weighted_scores or total_weight <= 0.0:
+        if not weighted_scores or total_weight <= 0.0 or considered <= 0:
             return None, 0.0
 
         best_outcome, best_weight = max(weighted_scores.items(), key=lambda item: item[1])
-        return best_outcome, (best_weight / total_weight)
+        consensus_ratio = best_weight / total_weight
+        average_similarity = total_weight / considered
+        return best_outcome, (consensus_ratio * average_similarity)
 
     def _is_positive(self, verdict: str) -> bool:
         return normalize_outcome(verdict) in {"osudjen", "usvojeno"}
+
+    def _clamp(self, value: float, min_value: float, max_value: float) -> float:
+        if value < min_value:
+            return min_value
+        if value > max_value:
+            return max_value
+        return value
 
     def _resolve_sanction_from_norm(self, norm: str) -> str | None:
         match = re.match(r"crime_art(\d+[a-z]?)(?:_(\d+))?$", str(norm).strip().lower())

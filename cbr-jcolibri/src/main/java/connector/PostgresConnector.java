@@ -52,6 +52,19 @@ public class PostgresConnector implements Connector {
                 caseDescription.setFightParticipation(boolToString((Boolean) rs.getObject("fight_participation")));
                 caseDescription.setFightConsequence(rs.getString("fight_consequence"));
                 caseDescription.setLeftWithoutHelp(boolToString((Boolean) rs.getObject("left_without_help")));
+                caseDescription.setPreviousConvictions(boolToString((Boolean) rs.getObject("previous_convictions")));
+                caseDescription.setRepeatOffender(boolToString((Boolean) rs.getObject("repeat_offender")));
+                caseDescription.setConfession(boolToString((Boolean) rs.getObject("confession")));
+                caseDescription.setRemorse(boolToString((Boolean) rs.getObject("remorse")));
+                caseDescription.setPleaAgreement(boolToString((Boolean) rs.getObject("plea_agreement")));
+                caseDescription.setAggravatingCircumstances(boolToString((Boolean) rs.getObject("aggravating_circumstances")));
+                caseDescription.setMitigatingCircumstances(boolToString((Boolean) rs.getObject("mitigating_circumstances")));
+                caseDescription.setFamilyCircumstances(boolToString((Boolean) rs.getObject("family_circumstances")));
+                caseDescription.setPoorFinancialStatus(boolToString((Boolean) rs.getObject("poor_financial_status")));
+                caseDescription.setAlcoholIntoxication(boolToString((Boolean) rs.getObject("alcohol_intoxication")));
+                caseDescription.setNarcoticsInfluence(boolToString((Boolean) rs.getObject("narcotics_influence")));
+                caseDescription.setConditionalSentenceRequested(boolToString((Boolean) rs.getObject("conditional_sentence_requested")));
+                caseDescription.setAttemptedOffense(boolToString((Boolean) rs.getObject("attempted_offense")));
                 caseDescription.setOutcome(rs.getString("outcome"));
 
                 cbrCase.setDescription(caseDescription);

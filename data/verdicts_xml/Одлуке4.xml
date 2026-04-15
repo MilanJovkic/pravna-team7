@@ -6,21 +6,21 @@
                 <FRBRWork>
                     <FRBRthis value="/akn/me/judgment/Одлуке4/!main"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке4"/>
-                    <FRBRdate date="2019-03-25" name="judgment"/>
+                    <FRBRdate date="2019-06-25" name="judgment"/>
                     <FRBRauthor href="#court"/>
                     <FRBRcountry value="me"/>
                 </FRBRWork>
                 <FRBRExpression>
-                    <FRBRthis value="/akn/me/judgment/Одлуке4/sr@2019-03-25/!main"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке4/sr@2019-03-25"/>
-                    <FRBRdate date="2019-03-25"/>
+                    <FRBRthis value="/akn/me/judgment/Одлуке4/sr@2019-06-25/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке4/sr@2019-06-25"/>
+                    <FRBRdate date="2019-06-25"/>
                     <FRBRauthor href="#court"/>
                     <FRBRlanguage language="sr"/>
                 </FRBRExpression>
                 <FRBRManifestation>
-                    <FRBRthis value="/akn/me/judgment/Одлуке4/sr@2019-03-25/!main.xml"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке4/sr@2019-03-25/!main.akn"/>
-                    <FRBRdate date="2026-04-13"/>
+                    <FRBRthis value="/akn/me/judgment/Одлуке4/sr@2019-06-25/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке4/sr@2019-06-25/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
@@ -28,9 +28,13 @@
             <references source="#court">
                 <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U PODGORICI"/>
                 <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Nenad Vujanović"/>
-                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Z. C."/>
-                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="G. V."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Nataša Paunović"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="G.V."/>
+                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="Z.C."/>
+                <TLCPerson eId="defendant_3" href="/akn/me/ontology/person/defendant" showAs="T.K."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="D.Z."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -45,188 +49,190 @@
                     <docTitle>OSNOVNI SUD U PODGORICI</docTitle>
                 </block>
                 <block name="date">
-                    <docDate date="2019-03-25">2019-03-25</docDate>
+                    <docDate date="2019-06-25">2019-06-25</docDate>
                 </block>
                 <block name="judges">
                     <judge>Nenad Vujanović</judge>
+                    <judge>Nataša Paunović</judge>
                 </block>
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni G. V. i Z. C. osuđeni za učestvovanje u tuči.</p>
+                    <p>Okrivljeni G.V. osuđen na rad u javnom interesu, Z.C. dobio uslovnu osudu.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Učestvovanje u tuči</p>
-                    <p>Nanosenje teške tjelesne povrede</p>
-                    <p>Priznavanje krivice</p>
+                    <p>Primena krivičnog zakona</p>
+                    <p>Uslovna osuda</p>
+                    <p>Kazna rada u javnom interesu</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/2024/!main#art_153">Član 153</ref>
-                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/2024/!main#art_54">Član 54</ref>
-                    <ref href="/akn/me/act/2024/!main#art_53">Član 53</ref>
-                    <ref href="/akn/me/act/2024/!main#art_303">Član 303</ref>
-                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/2024/!main#art_41">Član 41</ref>
-                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
-                    <ref href="/akn/me/act/2024/!main#art_399">Član 399</ref>
-                    <ref href="/akn/me/act/2024/!main#art_300">Član 300</ref>
-                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_52">Član 52</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_53">Član 53</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_41">Član 41</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_54">Član 54</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_399">Član 399</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Okrivljeni su svesno učestvovali u tuči, znajući da je njihovo ponašanje zabranjeno.</p>
+                    <p>Sud je utvrdio da su okrivljeni učestvovali u tuči koja je rezultirala teškom povredom, te su izrečene odgovarajuće kazne u skladu sa zakonom.</p>
                 </block>
             </motivation>
             <decision>
-                <block name="verdict" outcome="nepoznato">
-                    <p>Osuda okrivljenih na kaznu zatvora.</p>
+                <block name="verdict" outcome="osudjen">
+                    <p>Osuđeni i uslovno osuđeni</p>
                 </block>
             </decision>
             <participants>
                 <block name="defendants">
-                    <person>Z. C.</person>
-                    <person>G. V.</person>
+                    <person>G.V.</person>
+                    <person>Z.C.</person>
+                    <person>T.K.</person>
+                </block>
+                <block name="victims">
+                    <person>D.Z.</person>
+                </block>
+                <block name="witnesses">
+                    <person>D.Z.</person>
+                    <person>M.Š.</person>
+                    <person>V.T.</person>
+                    <person>S.P.</person>
+                    <person>C.B.</person>
                 </block>
             </participants>
             <facts>
                 <fact key="injury_type">teška tjelesna povreda</fact>
-                <fact key="location">Skadar</fact>
                 <fact key="location">Podgorica</fact>
-                <fact key="location">Što</fact>
                 <fact key="location">Danilovgrad</fact>
-                <fact key="location">Podgorici Kv</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="conditional_sentence_requested">da</fact>
+                <fact key="imposed_prison_sentence_months">3</fact>
             </facts>
             <conclusions>
                 <block name="fullText">
                     <p>K. br. 809/18
 U IME CRNE GORE
- 
-OSNOVNI SUD U PODGORICI, sudija Nenad Vujanovi ć , uz u č e šć e Nata š e Paunovi ć , kao zapisni č ara, u
-krivi č nom postupku protiv okrivljenih G. V. i Z. C., koje u postupku brani advokat T. K., zbog krivi č nog djela
-učestvovanje u tu č i iz č l. 153 Krivi č nog zakonika Crne Gore, postupaju ć i po optu ž nom predlogu ODT
-Podgorica Kt.br. 5/16 od 25.03.2019. godine, nakon pravosna ž nosti rje š enja o usvajanju dva sporazuma o
+
+OSNOVNI SUD U PODGORICI, sudija Nenad Vujanović, uz učešće Nataše Paunović, kao zapisničara, u
+krivičnom postupku protiv okrivljenih G.V. i Z.C., koje u postupku brani advokat T.K., zbog krivičnog djela
+učestvovanje u tuči izčl. 153 Krivičnog zakonika Crne Gore, postupajući po optužnom predlogu ODT
+Podgorica Kt.br. 5/16 od 25.03.2019. godine, nakon pravosnažnosti rješenja o usvajanju dva sporazuma o
 priznanju krivice, dana 25.06.2019. godine, donio je
 P R E S U D U
 Okrivljeni:
-G. V., od oca V. i majke Lj., rođ ene Š., rođ en xx.xx.19xx. godine u Skadru, Republika Albanija, sa prebivali š tem
-u Podgorici, Mahala bb, dr ž avljanin Republike Albanije, po zanimanju radnik, neo ž enjen, bez djece, zavr š io
-osnovnu š kolu, srednjeg imovnog stanja, osu đ ivan presudom Vi š eg suda u Podgorici K.br. 260/2009 od
-26.10.2011. godine, zbog krivi č nog djela nasilni č ko pona š anje iz č l. 399 Krivi č nog zakonika, na kaznu zatvora
+G.V., od oca V. i majke Lj., rođ ene Š., rođ en xx.xx.19xx. godine u Skadru, Republika Albanija, sa prebivalištem
+u Podgorici, Mahala bb, državljanin Republike Albanije, po zanimanju radnik, neoženjen, bez djece, završio
+osnovnuškolu, srednjeg imovnog stanja, osuđivan presudom Višeg suda u Podgorici K.br. 260/2009 od
+26.10.2011. godine, zbog krivičnog djela nasilničko ponašanje izčl. 399 Krivičnog zakonika, na kaznu zatvora
 u trajanju od 3 (tri) mjeseca i presudom Osnovnog suda u Podgorici K.br. 904/12 od 06.02.2013. godine, zbog
-krivi č nog djela te š ka tjelesna povreda iz č l. 151 st. 1 Krivi č nog zakonika Crne Gore, izre č ena uslovna osuda 6
+krivičnog djela teška tjelesna povreda izčl. 151 st. 1 Krivičnog zakonika Crne Gore, izrečena uslovna osuda 6
 (šest) mjeseci zatvora uslovno na 2 (dvije) godine.
-Z. C., JMB xxxxxxxxxxxxx, od oca Ž. i majke M., rođ ene B., rođ en xx.xx.19xx. godine u Skadru-Republika
-Albanija, sa prebivali š tem u Podgorici, Mojanovi ć i bb, dr ž avljanin Republike Albanije, po zanimanju privatnik,
-oženjen, otac jednog djeteta, zavr š io srednju elektrotehni č ku š kolu, srednjeg imovnog stanja, neosu đ ivan.
+Z.C., JMB xxxxxxxxxxxxx, od oca Ž. i majke M., rođ ene B., rođ en xx.xx.19xx. godine u Skadru-Republika
+Albanija, sa prebivalištem u Podgorici, Mojanovići bb, državljanin Republike Albanije, po zanimanju privatnik,
+oženjen, otac jednog djeteta, završio srednju elektrotehničkuškolu, srednjeg imovnog stanja, neosuđivan.
 K r i v i s u
 Što su:
-Dana 21.06.2015. godine, u kafe baru „Buda bar“, u Ulici Jovana Toma š evi ć a bb u Podgorici, svjesni svog djela
-čije su izvr š enje htjeli i znaju ć i da je njihovo djelo zabranjeno, u č estvovao u tu č i u kojoj je drugom nanijeta
-teška tjelesna povreda, na na č in š to je do š lo do tu č e izme đ u okrivljenih G. V. i Z. C. i oš te ć enog D. Z. sa jedne i
-M. Š. sa druge strane, kada su me đ usobno razmjenjivali udarce, kojom prilikom je o š te ć eni D. Z. zadobio
-tešku tjelesnu povredu u vidu ubodine u sredi š njem dijelu doki č menog predjela lijevo, koja sa kanalom
-nastavlja ka grudnoj duplji, istu otvara i pra ć ena je prisustvom vazduha u lijevoj polovini grudne duplje.Osnovni Sud u Podgorici
+Dana 21.06.2015. godine, u kafe baru „Buda bar“, u Ulici Jovana Tomaševića bb u Podgorici, svjesni svog djela
+čije su izvršenje htjeli i znajući da je njihovo djelo zabranjeno, učestvovao u tuči u kojoj je drugom nanijeta
+teška tjelesna povreda, na načinšto je došlo do tuče između okrivljenih G.V. i Z.C. i oš tećenog D.Z. sa jedne i
+M.Š. sa druge strane, kada su međusobno razmjenjivali udarce, kojom prilikom je oštećeni D.Z. zadobio
+tešku tjelesnu povredu u vidu ubodine u središnjem dijelu dokičmenog predjela lijevo, koja sa kanalom
+nastavlja ka grudnoj duplji, istu otvara i praćena je prisustvom vazduha u lijevoj polovini grudne duplje.Osnovni Sud u Podgorici
 K 809/2018
-25. Јун  2019
--čime su izvr š ili krivi č no djelo u č estvovanje u tu č i iz č l. 153 Krivi č nog zakonika Crne Gore.
-Pa sud okrivljenog Gojka Vuk č evi ć a, primjenom citirane odredbe, te č l. 4 st. 2, č l. 32, č l. 41 i 42 st. 1 Krivi č nog
-zakonika Crne Gore i č l. 226, 229 i 374 Zakonika o krivi č nom postupku,
-OSU Đ UJE
-Na kaznu rada u javnom interesu u trajanju od 360 (tristotine š ezdeset) č asova, koja ć e se izvr š iti za vrijeme od
-6 (šest) mjeseci, s tim š to ne mo ž e biti du ž a od 60 ( š ezdeset) č asova u toku jednog mjeseca.
-Ukoliko okrivljeni ne bude vr š io rad u javnom interesu, ova kazna ć e se zamijeniti kaznom zatvora tako š to ć e
-se svakih zapo č etih 60 ( š ezdeset) č asova rada u javnom interesu zamijeniti kaznom zatvora u trajanju od
+25. Јун 2019
+
+-čime su izvršili krivično djelo učestvovanje u tuči izčl. 153 Krivičnog zakonika Crne Gore.
+Pa sud okrivljenog Gojka Vukčevića, primjenom citirane odredbe, tečl. 4 st. 2, č l. 32, č l. 41 i 42 st. 1 Krivičnog
+zakonika Crne Gore ičl. 226, 229 i 374 Zakonika o krivičnom postupku,
+OSUĐUJE
+Na kaznu rada u javnom interesu u trajanju od 360 (tristotinešezdeset) č asova, kojaće se izvršiti za vrijeme od
+6 (šest) mjeseci, s timšto ne može biti duža od 60 ( š ezdeset) č asova u toku jednog mjeseca.
+Ukoliko okrivljeni ne bude vršio rad u javnom interesu, ova kaznaće se zamijeniti kaznom zatvora takoštoće
+se svakih započetih 60 ( š ezdeset) č asova rada u javnom interesu zamijeniti kaznom zatvora u trajanju od
 jednog mjeseca.
-Dok sud okrivljenom Z. C., primjenom citirane zakonske odredbe, te odredbe č l. 4 st. 2, č l. 42, č l. 52 st. 2, č l. 53
-i čl. 54 Krivi č nog zakonika Crne Gore, te odredbi č l. 226, 229 i 374 Zakonika o krivi č nom postupku, i z r i č  e
+Dok sud okrivljenom Z.C., primjenom citirane zakonske odredbe, te odredbečl. 4 st. 2, č l. 42, č l. 52 st. 2, č l. 53
+i čl. 54 Krivičnog zakonika Crne Gore, te odredbičl. 226, 229 i 374 Zakonika o krivičnom postupku, i z r iče
 USLOVNU OSUDU
-Kojom mu utvr đ uje kaznu zatvora u trajanju od 6 ( š est) mjeseci i istovremeno odre đ uje da se ista ne ć e izvr š iti,
-ako okrivljeni u roku od 2 (dvije) godine po pravosna ž nosti presude, ponovo ne u č ini krivi č no djelo.
-Obavezuju se okrivljeni da na ime tro š kova krivi č nog postupka plate ovom sudu iznose od po 30,00 eura na
-ime sudskog pau š ala, u roku od 15 dana po pravosna ž nosti presude, pod prijetnjom izvr š enja.
-O b r a z l o ž  e nj e
-Optu ž nim predlogom ODT-a Podgorica Kt.br. 5/16 od 25.03.2019. godine, izme đ u ostalog okrivljenim G. V. i Z.
-C. je stavljeno na teret da su u č inili krivi č no djelo u č estvovanje u tu č i iz č l. 153 Krivi č nog zakonika Crne Gore.
-Dana 21.06.2019. godine, zastupnik optu ž be je u smislu č l. 300 st. 3 Zakonika o krivi č nom postupku dostavio
+Kojom mu utvrđuje kaznu zatvora u trajanju od 6 ( š est) mjeseci i istovremeno određuje da se ista neće izvršiti,
+ako okrivljeni u roku od 2 (dvije) godine po pravosnažnosti presude, ponovo ne učini krivično djelo.
+Obavezuju se okrivljeni da na ime troškova krivičnog postupka plate ovom sudu iznose od po 30,00 eura na
+ime sudskog paušala, u roku od 15 dana po pravosnažnosti presude, pod prijetnjom izvršenja.
+O b r a z l ože nj e
+Optužnim predlogom ODT-a Podgorica Kt.br. 5/16 od 25.03.2019. godine, između ostalog okrivljenim G.V. i Z.C. je stavljeno na teret da su učinili krivično djelo učestvovanje u tuči izčl. 153 Krivičnog zakonika Crne Gore.
+Dana 21.06.2019. godine, zastupnik optužbe je u smislučl. 300 st. 3 Zakonika o krivičnom postupku dostavio
 sudu dva sporazuma o priznanju krivice Kt.br. 5/16 od 21.06.2019. godine, dva zapisnika o pregovaranju i dva
-zapisnika o priznanju okrivljenih, iste poslovne oznake i datuma, radi dono š enja odluke o zaklju č enim
+zapisnika o priznanju okrivljenih, iste poslovne oznake i datuma, radi donošenja odluke o zaključenim
 sporazumima, sa predlogom da se isti usvoje.
-Na ro č i š tu za razmatranje sporazuma, odr ž anom dana 25.06.2019. godine, sud je izvr š io uvid u dokaze
-predlo ž ene optu ž nim predlogom i to: iskaz svjedoka D. Z. datog pred Vi š im dr ž avnim tu ž ila š tvom u Podgorici,
-na zapisnik o saslu š anju svjedoka od 30.11.2015. godine, iskaz svjedoka M. Š., iskaz svjedoka V. T. dat pred
-Višim dr ž avnim tu ž ila š tvom u Podgorici, na zapisnik o saslu š anju svjedoka od 09.07.2015. godine, iskaz S. P.,
-dat pred Vi š im dr ž avnim tu ž ila š tvom u Podgorici, na zapisnik o saslu š anju svjedoka od 01.12.2015. godine,
-zapisnik o uvi đ aju Uprave policije CB Podgorica Ku.br. 438/15 od 21.06.2015. godine, potvrdu o privremeno
-oduzetim predmetima Uprave policije CB Podgorica Ku.br. 438/15 od 21.06.2015. godine, izvje š taj o analizi
-podataka o telefonskom saobra ć aju za SIM karticu 069/838-874 za dan 21.06.2015. godine u periodu od 01,00
-do 11,00 č asova, izvje š taj o DNK vje š ta č enju Forenzi č kog centra u Danilovgradu broj 2196/15 od 21.10.2015.
-godine, nalaz i mi š ljenje vje š taka medicinske struke N. R. od 21.10.2015. godine, u spise predmeta Vi š eg suda
-u Podgorici K.br. 123/15 i Kv.br. 913/15 i u presudu Vi š eg suda u Podgorici Kv.br. 913/15 od 01.02.2016. godine,
-koja je postala pravosna ž na dana 01.02.2016. godine, te uvjerenje iz kaznene evidencije na ime okrivljenog G.
-V. izdato od strane Ministarstva pravde broj 05/2-72-4720/19 od 09.04.2019. godine, te uvjerenje iz kaznene
-evidencije na ime okrivljenog Z. C. izdato od strane ovog suda pod brojem KE 566/2019 od 05.04.2019.
+Na ročištu za razmatranje sporazuma, održanom dana 25.06.2019. godine, sud je izvršio uvid u dokaze
+predložene optužnim predlogom i to: iskaz svjedoka D.Z. datog pred Višim državnim tužilaštvom u Podgorici,
+na zapisnik o saslušanju svjedoka od 30.11.2015. godine, iskaz svjedoka M.Š., iskaz svjedoka V.T. dat pred
+Višim državnim tužilaštvom u Podgorici, na zapisnik o saslušanju svjedoka od 09.07.2015. godine, iskaz S.P.,
+dat pred Višim državnim tužilaštvom u Podgorici, na zapisnik o saslušanju svjedoka od 01.12.2015. godine,
+zapisnik o uviđaju Uprave policije CB Podgorica Ku.br. 438/15 od 21.06.2015. godine, potvrdu o privremeno
+oduzetim predmetima Uprave policije CB Podgorica Ku.br. 438/15 od 21.06.2015. godine, izvještaj o analizi
+podataka o telefonskom saobraćaju za SIM karticu 069/838-874 za dan 21.06.2015. godine u periodu od 01,00
+do 11,00časova, izvještaj o DNK vještačenju Forenzičkog centra u Danilovgradu broj 2196/15 od 21.10.2015.
+godine, nalaz i mišljenje vještaka medicinske struke N.R. od 21.10.2015. godine, u spise predmeta Višeg suda
+u Podgorici K.br. 123/15 i Kv.br. 913/15 i u presudu Višeg suda u Podgorici Kv.br. 913/15 od 01.02.2016. godine,
+koja je postala pravosnažna dana 01.02.2016. godine, te uvjerenje iz kaznene evidencije na ime okrivljenog G.V. izdato od strane Ministarstva pravde broj 05/2-72-4720/19 od 09.04.2019. godine, te uvjerenje iz kaznene
+evidencije na ime okrivljenog Z.C. izdato od strane ovog suda pod brojem KE 566/2019 od 05.04.2019.
 godine.
-Utvr đ uju ć i da li postoji dovoljno dokaza o krivici okrivljenih za predmetno krivi č no djelo, na ro č i š tu za
-razmatranje sporazuma, sud je cijenio sadr ž inu navedenih dokaza, iz kojih nesumnjivo proizilazi da su
-okrivljeni G. V. i Z. C. u vrijeme, mjesto i na način opisan u izreci presude u č inili krivi č no djelo u č estvovanje u
-tuči iz č l. 153 Krivi č nog zakonika Crne Gore, za koje ih je ovaj sud oglasio krivim, nakon što je u svemu
+
+Utvrđujući da li postoji dovoljno dokaza o krivici okrivljenih za predmetno krivično djelo, na ročištu za
+razmatranje sporazuma, sud je cijenio sadržinu navedenih dokaza, iz kojih nesumnjivo proizilazi da su
+okrivljeni G.V. i Z.C. u vrijeme, mjesto i na način opisan u izreci presude učinili krivično djelo učestvovanje u
+tuči izčl. 153 Krivičnog zakonika Crne Gore, za koje ih je ovaj sud oglasio krivim, nakon što je u svemu
 prihvatio sporazume o priznanju krivice.
-Odlu č uju ć i o krivi č nim sankcijama iz sporazuma o priznanju krivice, zaklju č enog izme đ u stranaka, sud je
-našao da je predlog stranaka u vezi sa istim prihvatljiv. Naime, okrivljeni G. V. je ranije osu đ ivan, š to je
-nesumnjivo utvr đ eno iz Uvjerenja iz kaznene evidencije na ime okrivljenog G. V., izdatog od strane
-Ministarstva pravde broj 05/2-72-4720/19 od 09.04.2019. godine (izme đ u ostalog za krivi č no djelo sa
-elementima nasilja), dok okrivljeni Z. C. nije ranije osu đ ivan, š to je sud utvrdio iz uvjerenja iz kaznene
-evidencije na ime okrivljenog Z. C. izdatog od strane ovog suda pod brojem KE 566/2019 od 05.04.2019.
-godine, shodno č emu su po ocjeni suda, a imaju ć i u vidu prednje, kazna rada u javnom interesu na koju je
-osuđ en okrivljeni G. V. u trajanju od 360 (tristotine š ezdeset) č asova koja ć e se izvr š iti za vrijeme od 6 ( š est)
-mjeseci i izre č ena uslovna osuda okrivljenom Z. C., kojom mu je utvr đ ena kazna zatvora u trajanju od 6 ( š est)
-mjeseci i istovremeno odre đ eno da se ista ne ć e izvr š iti, ako okrivljeni u roku od 2 (dvije) godine po
-pravosna ž nosti presude ponovo ne u č ini krivi č no djelo, srazmjerne stepenu krivice okrivljenih i te ž ini
-učinjenog krivi č nog djela i sa istima ć e se u potpunosti ostvariti svrha ka ž njavanja iz č l. 32 Krivi č nog zakonika
-Crne Gore i svrha izricanja uslovne osude iz č l. 52 st. 2 Krivi č nog zakonika Crne Gore, tj. da okrivljeni ubudu ć e
-ne vr š e krivi č na djela, a u okviru op š te svrhe izricanja krivi č nih sankcija iz č l. 4 Krivi č nog zakonika Crne Gore.
-Okrivljeni su shodno č l. 226 i 229 ZKP-a, obavezani da ovom sudu solidarno plate tro š kove krivi č nog
-postupka, u iznosima od po 30,00 eura, na ime sudskog pau š ala, u roku od 15 dana po pravosna ž nosti
-presude, pod prijetnjom izvr š enja.
-Na osnovu izlo ž enog, a shodno č l. 303 st. 1 Zakonika o krivi č nom postupku odlu č eno je kao u izreci presude.
+Odlučujući o krivičnim sankcijama iz sporazuma o priznanju krivice, zaključenog između stranaka, sud je
+našao da je predlog stranaka u vezi sa istim prihvatljiv. Naime, okrivljeni G.V. je ranije osuđivan, š to je
+nesumnjivo utvrđeno iz Uvjerenja iz kaznene evidencije na ime okrivljenog G.V., izdatog od strane
+Ministarstva pravde broj 05/2-72-4720/19 od 09.04.2019. godine (između ostalog za krivično djelo sa
+elementima nasilja), dok okrivljeni Z.C. nije ranije osuđivan, š to je sud utvrdio iz uvjerenja iz kaznene
+evidencije na ime okrivljenog Z.C. izdatog od strane ovog suda pod brojem KE 566/2019 od 05.04.2019.
+godine, shodnočemu su po ocjeni suda, a imajući u vidu prednje, kazna rada u javnom interesu na koju je
+osuđen okrivljeni G.V. u trajanju od 360 (tristotinešezdeset) č asova kojaće se izvršiti za vrijeme od 6 ( š est)
+mjeseci i izrečena uslovna osuda okrivljenom Z.C., kojom mu je utvrđena kazna zatvora u trajanju od 6 ( š est)
+mjeseci i istovremeno određeno da se ista neće izvršiti, ako okrivljeni u roku od 2 (dvije) godine po
+pravosnažnosti presude ponovo ne učini krivično djelo, srazmjerne stepenu krivice okrivljenih i težini
+učinjenog krivičnog djela i sa istimaće se u potpunosti ostvariti svrha kažnjavanja izčl. 32 Krivičnog zakonika
+Crne Gore i svrha izricanja uslovne osude izčl. 52 st. 2 Krivičnog zakonika Crne Gore, tj. da okrivljeni ubuduće
+ne vrše krivična djela, a u okviru opšte svrhe izricanja krivičnih sankcija izčl. 4 Krivičnog zakonika Crne Gore.
+Okrivljeni su shodnočl. 226 i 229 ZKP-a, obavezani da ovom sudu solidarno plate troškove krivičnog
+postupka, u iznosima od po 30,00 eura, na ime sudskog paušala, u roku od 15 dana po pravosnažnosti
+presude, pod prijetnjom izvršenja.
+Na osnovu izloženog, a shodnočl. 303 st. 1 Zakonika o krivičnom postupku odlučeno je kao u izreci presude.
 OSNOVNI SUD U PODGORICI
 Dana 25.06.2019. godine
 S U D I J A
-Nenad Vujanovi ć  s.r.
- 
+Nenad Vujanovićs.r.
+
 PRAVNA POUKA
-Protiv ove presude dozvoljena je ž alba,
-ako presuda nije u skladu sa zaklju č enim sporazumom.
- 
-ZTO-Paunovi ć  Nata š a
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+Protiv ove presude dozvoljena ježalba,
+ako presuda nije u skladu sa zaključenim sporazumom.
+
+ZTO-Paunović Nataša
+
 Dn-a: Po primjerak presude dostaviti:
 -ODT-u Podgorica
 -okrivljenim
 -braniocu okrivljenih
 Postupljeno dana ___________
-Namje š tenik_____________</p>
+Namještenik_____________</p>
                 </block>
             </conclusions>
         </judgmentBody>

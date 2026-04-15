@@ -1,6 +1,7 @@
 """Service for loading and processing verdict documents."""
 from datetime import datetime, timezone
 from pathlib import Path
+import re
 from typing import List, Optional
 
 from backend.app.infrastructure.persistence.filesystem.override_repository_fs import (
@@ -209,30 +210,59 @@ class VerdictService:
                 yield case_id, root
 
     def _build_metadata_from_root(self, case_id: str, root, annotation: dict, override: dict) -> dict:
+        annotation = annotation or {}
+        trusted_annotation = self._is_annotation_reliable(annotation)
+
         xml_summary = self._find_text(root, ".//block[@name='summary']/p")
         xml_legal_issues = self._find_all_text(root, ".//block[@name='legalIssues']/p")
         xml_applied_laws = self._find_all_text(root, ".//block[@name='appliedLaws']/ref")
         xml_applied_articles = self._find_all_text(root, ".//block[@name='appliedArticles']/ref")
         xml_decision = self._find_text(root, ".//block[@name='verdict']/p")
         xml_outcome = self._find_attr(root, ".//block[@name='verdict']", "outcome")
+        xml_judges = self._normalize_judges(self._find_all_text(root, ".//judge"))
         xml_full_text = self._find_text(root, ".//block[@name='fullText']/p")
         text_summary = (xml_full_text[:300] + "...") if xml_full_text and len(xml_full_text) > 300 else xml_full_text
+        resolved_outcome = self._resolve_outcome(
+            annotation.get("case_outcome"),
+            xml_outcome,
+            annotation.get("decision"),
+            xml_decision,
+        )
+
+        resolved_summary = (
+            annotation.get("verdict_summary") if trusted_annotation else None
+        ) or xml_summary or text_summary
+        resolved_legal_issues = self._normalize_string_list(
+            (annotation.get("legal_issues") if trusted_annotation else None) or xml_legal_issues
+        )
+        resolved_applied_laws = self._normalize_law_list(
+            (annotation.get("applied_laws") if trusted_annotation else None) or xml_applied_laws
+        )
+        resolved_applied_articles = self._normalize_article_list(
+            (annotation.get("applied_articles") if trusted_annotation else None) or xml_applied_articles
+        )
+        resolved_decision = (
+            annotation.get("decision") if trusted_annotation else None
+        ) or xml_decision
+        resolved_legal_concepts = self._normalize_string_list(
+            annotation.get("legal_concepts") if trusted_annotation else []
+        )
 
         metadata = {
             "case_id": case_id,
             "case_number": self._find_text(root, ".//docNumber"),
             "court_name": self._find_text(root, ".//docTitle"),
             "date": self._find_attr(root, ".//docDate", "date") or self._find_text(root, ".//docDate"),
-            "judges": self._find_all_text(root, ".//judge"),
-            "summary": annotation.get("verdict_summary") or xml_summary or text_summary,
-            "legal_issues": annotation.get("legal_issues") or xml_legal_issues,
-            "applied_laws": annotation.get("applied_laws") or xml_applied_laws,
-            "applied_articles": annotation.get("applied_articles") or xml_applied_articles,
-            "decision": annotation.get("decision") or xml_decision,
-            "outcome": normalize_outcome(annotation.get("case_outcome") or xml_outcome),
+            "judges": xml_judges,
+            "summary": resolved_summary,
+            "legal_issues": resolved_legal_issues,
+            "applied_laws": resolved_applied_laws,
+            "applied_articles": resolved_applied_articles,
+            "decision": resolved_decision,
+            "outcome": resolved_outcome,
             "extraction_confidence": annotation.get("confidence"),
             "needs_review": bool(annotation.get("needs_review", False)),
-            "legal_concepts": annotation.get("legal_concepts", []),
+            "legal_concepts": resolved_legal_concepts,
             "parties": self._extract_participants(root),
             "factual_state": self._extract_factual_state(root, annotation),
             "full_text": xml_full_text,
@@ -288,7 +318,9 @@ class VerdictService:
                 elems = root.findall(f".//{{{self.AKOMA_NS['akn']}}}block[@name='{block_name}']/{{{self.AKOMA_NS['akn']}}}person")
             if not elems:
                 elems = root.findall(f".//block[@name='{block_name}']/person")
-            names = [elem.text for elem in elems if elem.text]
+            names = [self._normalize_participant_name(elem.text) for elem in elems if elem.text]
+            names = [name for name in names if self._looks_like_participant_name(name, role)]
+            names = self._dedupe_preserve(names)
             if names:
                 participants[role] = names
 
@@ -323,10 +355,10 @@ class VerdictService:
         elem = root.find(xpath, self.AKOMA_NS)
         if elem is None:
             elem = root.find(self._to_ns_xpath(xpath), self.AKOMA_NS)
-        if elem is None:
+        if elem is None and self._is_simple_xpath(xpath):
             tag = xpath.split('/')[-1]
             elem = root.find(f".//{{{self.AKOMA_NS['akn']}}}{tag}")
-        if elem is None:
+        if elem is None and self._is_simple_xpath(xpath):
             elem = root.find(f".//{tag}")
         return elem.text if elem is not None else None
 
@@ -335,10 +367,10 @@ class VerdictService:
         elem = root.find(xpath, self.AKOMA_NS)
         if elem is None:
             elem = root.find(self._to_ns_xpath(xpath), self.AKOMA_NS)
-        if elem is None:
+        if elem is None and self._is_simple_xpath(xpath):
             tag = xpath.split('/')[-1]
             elem = root.find(f".//{{{self.AKOMA_NS['akn']}}}{tag}")
-        if elem is None:
+        if elem is None and self._is_simple_xpath(xpath):
             elem = root.find(f".//{tag}")
         return elem.get(attr) if elem is not None else None
 
@@ -347,12 +379,15 @@ class VerdictService:
         elems = root.findall(xpath, self.AKOMA_NS)
         if not elems:
             elems = root.findall(self._to_ns_xpath(xpath), self.AKOMA_NS)
-        if not elems:
+        if not elems and self._is_simple_xpath(xpath):
             tag = xpath.split('/')[-1]
             elems = root.findall(f".//{{{self.AKOMA_NS['akn']}}}{tag}")
-        if not elems:
+        if not elems and self._is_simple_xpath(xpath):
             elems = root.findall(f".//{tag}")
         return [elem.text for elem in elems if elem.text]
+
+    def _is_simple_xpath(self, xpath: str) -> bool:
+        return "[" not in xpath and "]" not in xpath and "@" not in xpath
 
     def _to_ns_xpath(self, xpath: str) -> str:
         """Convert a simple XPath to a namespace-qualified XPath."""
@@ -379,6 +414,215 @@ class VerdictService:
             tag, rest = part.split('[', 1)
             return f"{{{ns}}}{tag}[{rest}"
         return f"{{{ns}}}{part}"
+
+    def _resolve_outcome(
+        self,
+        annotation_outcome: str | None,
+        xml_outcome: str | None,
+        annotation_decision: str | None,
+        xml_decision: str | None,
+    ) -> str:
+        ann = normalize_outcome(annotation_outcome)
+        if ann != "nepoznato":
+            return ann
+
+        xml = normalize_outcome(xml_outcome)
+        if xml != "nepoznato":
+            return xml
+
+        return normalize_outcome(annotation_decision or xml_decision)
+
+    def _normalize_judges(self, judges: list[str]) -> list[str]:
+        normalized: list[str] = []
+        seen: set[str] = set()
+
+        for judge in judges or []:
+            candidate = self._normalize_person_name(judge)
+            candidate = self._normalize_initials(candidate)
+            if not self._looks_like_person_name(candidate) and not self._looks_like_initials(candidate):
+                continue
+            key = candidate.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            normalized.append(candidate)
+
+        return normalized
+
+    def _normalize_person_name(self, value: str | None) -> str:
+        text = " ".join(str(value or "").replace("\u00a0", " ").split())
+        if not text:
+            return ""
+
+        text = re.sub(r"(?i)\bpravna\s+pouka\b.*$", "", text)
+        text = re.sub(r"(?i)\bs\.?\s*r\.?\b", " ", text)
+        text = re.sub(r"(?<=[a-zčćžšđ])(?=[A-ZČĆŽŠĐ])", " ", text)
+
+        prev = None
+        while prev != text:
+            prev = text
+            text = re.sub(
+                r"\b([A-ZČĆŽŠĐ][a-zčćžšđ]{2,6})\s+([a-zčćžšđ]{2,6})\b",
+                r"\1\2",
+                text,
+            )
+
+        text = re.sub(
+            r"(?i)\b(?:sudija|sutkinja|predsjednik(?:a)?|predsednik(?:a)?|vije[cć]a?|ve[cć]a?|porotnik(?:a)?|zapisni[cč]ar(?:a)?|kao)\b",
+            " ",
+            text,
+        )
+        text = " ".join(text.split())
+
+        tokens = re.findall(r"[A-ZČĆŽŠĐ][a-zčćžšđ]+", text)
+        if len(tokens) >= 2:
+            return " ".join(tokens[:2])
+
+        return text.strip(" ,.;:")
+
+    def _normalize_initials(self, value: str | None) -> str:
+        text = str(value or "").strip()
+        if not text:
+            return ""
+
+        letters = re.findall(r'[A-ZČĆŽŠĐА-Я]', text.upper())
+        if 2 <= len(letters) <= 3 and re.fullmatch(r'[A-ZČĆŽŠĐА-Я\.\s]+', text.upper()):
+            return "".join(f"{letter}." for letter in letters)
+        return text
+
+    def _looks_like_initials(self, value: str) -> bool:
+        compact = re.sub(r'\s+', '', value or "")
+        return bool(re.fullmatch(r'(?:[A-ZČĆŽŠĐА-Я]\.){2,3}', compact))
+
+    def _normalize_participant_name(self, value: str | None) -> str:
+        normalized = self._normalize_person_name(value)
+        normalized = self._normalize_initials(normalized)
+        return normalized.strip(" ,.;:")
+
+    def _looks_like_participant_name(self, value: str, role: str) -> bool:
+        if not value:
+            return False
+        if self._looks_like_initials(value):
+            return True
+        if not self._looks_like_person_name(value):
+            return False
+
+        lowered = re.sub(r'[^a-zčćžšđа-я\s]', ' ', value.lower())
+        tokens = set(lowered.split())
+
+        blocked_common = {
+            "sud", "suda", "sudija", "sutkinja", "zapisnicar", "zapisničar", "istragu",
+            "ispostava", "opstina", "opština", "ku", "kti", "predstavnik", "odbrane",
+            "okrivljeni", "optuzeni", "optuženi", "osteceni", "oštećeni", "svjedok", "svedok",
+            "naveo", "navela", "objasnio", "dodao", "pokazao", "odgovorio", "izjavio",
+        }
+        if tokens & blocked_common:
+            return False
+
+        blocked_geo_vehicle = {
+            "podgorica", "herceg", "novi", "ulcinj", "kotor", "bar", "budva", "tivat",
+            "cetinje", "rozaje", "rožaje", "berane", "pljevlja", "niksic", "nikšić",
+            "danilovgrad", "bijelo", "polje", "fiat", "zastava", "opel", "golf",
+            "punto", "corsa", "magnum", "mercedes", "audi", "bmw", "renault", "toyota",
+            "peugeot", "skoda", "škoda", "vozilo",
+        }
+        if role in {"victim", "witness", "clerk"} and (tokens & blocked_geo_vehicle):
+            return False
+
+        return True
+
+    def _dedupe_preserve(self, values: list[str]) -> list[str]:
+        unique: list[str] = []
+        seen: set[str] = set()
+        for value in values or []:
+            candidate = str(value or "").strip()
+            if not candidate:
+                continue
+            key = candidate.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            unique.append(candidate)
+        return unique
+
+    def _normalize_string_list(self, values: list[str] | None) -> list[str]:
+        cleaned: list[str] = []
+        for value in values or []:
+            candidate = str(value or "").strip()
+            if not candidate:
+                continue
+            cleaned.append(candidate)
+        return self._dedupe_preserve(cleaned)
+
+    def _normalize_law_name(self, value: str) -> str:
+        law = str(value or "").strip()
+        lowered = law.lower()
+
+        if lowered in {"kz", "kzcg", "kz cg", "krivicni zakonik", "krivični zakonik"}:
+            return "Krivični zakonik Crne Gore"
+        if "krivicni zakonik" in lowered or "krivični zakonik" in lowered:
+            return "Krivični zakonik Crne Gore"
+        if lowered in {"zkp", "zakon o krivičnom postupku", "zakonik o krivičnom postupku"}:
+            return "Zakonik o krivičnom postupku Crne Gore"
+        if "zakonik o krivicnom postupku" in lowered or "zakonik o krivičnom postupku" in lowered:
+            return "Zakonik o krivičnom postupku Crne Gore"
+
+        return law
+
+    def _normalize_law_list(self, values: list[str] | None) -> list[str]:
+        normalized = [self._normalize_law_name(value) for value in (values or []) if str(value or "").strip()]
+        return self._dedupe_preserve(normalized)
+
+    def _normalize_article_list(self, values: list[str] | None) -> list[str]:
+        normalized: list[str] = []
+        for value in values or []:
+            text = str(value or "").strip()
+            if not text:
+                continue
+            match = re.search(r"(\d+[a-zA-Z]?)", text)
+            if not match:
+                continue
+            normalized.append(f"Član {match.group(1)}")
+        return self._dedupe_preserve(normalized)
+
+    def _is_annotation_reliable(self, annotation: dict) -> bool:
+        if not annotation:
+            return False
+        if annotation.get("needs_review"):
+            return False
+
+        confidence = annotation.get("confidence")
+        if confidence is None:
+            return False
+
+        confidence_text = str(confidence).strip().lower()
+        if not confidence_text or confidence_text in {"none", "null", "n/a", "nan"}:
+            return False
+
+        return True
+
+    def _looks_like_person_name(self, value: str) -> bool:
+        if not value:
+            return False
+
+        words = value.split()
+        if len(words) < 2 or len(words) > 3:
+            return False
+
+        blocked = {
+            "sud", "suda", "sudija", "sutkinja", "pravna", "pouka", "predsjednika", "predsednika",
+            "vijeca", "veca", "zapisnicar", "porotnik", "osnovnog", "viseg", "višeg", "vrhovnog", "apelacionog",
+        }
+        for word in words:
+            low = word.lower().strip(".,")
+            if low in blocked:
+                return False
+            if not word[0].isupper():
+                return False
+            if any(ch.isdigit() for ch in word):
+                return False
+
+        return True
 
     def search_verdicts(self, query: str, filter_by: Optional[str] = None):
         """Search verdicts by query."""

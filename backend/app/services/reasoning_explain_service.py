@@ -180,21 +180,23 @@ class ReasoningExplainService:
 
         weighted_scores: dict[str, float] = {}
         total_weight = 0.0
+        considered = 0
         for match in cbr.matches[:3]:
             similarity = float(match.similarity or 0.0)
-            if similarity < 0.55:
+            if similarity < 0.5:
                 continue
             outcome = normalize_outcome(match.outcome)
             if outcome == "nepoznato":
                 continue
+            considered += 1
             weighted_scores[outcome] = weighted_scores.get(outcome, 0.0) + similarity
             total_weight += similarity
 
-        if not weighted_scores or total_weight <= 0.0:
+        if not weighted_scores or total_weight <= 0.0 or considered <= 0:
             return None, 0.0
 
         best_outcome, best_weight = max(weighted_scores.items(), key=lambda item: item[1])
-        confidence = best_weight / total_weight
+        confidence = (best_weight / total_weight) * (total_weight / considered)
         return best_outcome, confidence
 
     def _is_positive(self, verdict: str) -> bool:

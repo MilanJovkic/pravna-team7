@@ -6,31 +6,43 @@
                 <FRBRWork>
                     <FRBRthis value="/akn/me/judgment/Одлуке18/!main"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке18"/>
-                    <FRBRdate date="2022-02-21" name="judgment"/>
+                    <FRBRdate date="2022-03-28" name="judgment"/>
                     <FRBRauthor href="#court"/>
                     <FRBRcountry value="me"/>
                 </FRBRWork>
                 <FRBRExpression>
-                    <FRBRthis value="/akn/me/judgment/Одлуке18/sr@2022-02-21/!main"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке18/sr@2022-02-21"/>
-                    <FRBRdate date="2022-02-21"/>
+                    <FRBRthis value="/akn/me/judgment/Одлуке18/sr@2022-03-28/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке18/sr@2022-03-28"/>
+                    <FRBRdate date="2022-03-28"/>
                     <FRBRauthor href="#court"/>
                     <FRBRlanguage language="sr"/>
                 </FRBRExpression>
                 <FRBRManifestation>
-                    <FRBRthis value="/akn/me/judgment/Одлуке18/sr@2022-02-21/!main.xml"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке18/sr@2022-02-21/!main.akn"/>
-                    <FRBRdate date="2026-04-13"/>
+                    <FRBRthis value="/akn/me/judgment/Одлуке18/sr@2022-03-28/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке18/sr@2022-03-28/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
             <references source="#court">
                 <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
-                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Mirjane Popović"/>
-                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="M. A."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Vesna Kovačević"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Mirjana Popović"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Zoran Radović"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="M.A."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="V.N."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="T.S."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="I.D."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="T.L."/>
+                <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="T.M."/>
+                <TLCPerson eId="victim_7" href="/akn/me/ontology/person/victim" showAs="N.U."/>
+                <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="C.B."/>
+                <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="Šoć Miodragom"/>
+                <TLCPerson eId="victim_10" href="/akn/me/ontology/person/victim" showAs="Šoć Miodraga"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zkp" showAs="ZKP"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/kz-cg" showAs="KZ CG"/>
+                <TLCLaw eId="law_3" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -45,10 +57,12 @@
                     <docTitle>VIŠI SUD U PODGORICI</docTitle>
                 </block>
                 <block name="date">
-                    <docDate date="2022-02-21">2022-02-21</docDate>
+                    <docDate date="2022-03-28">2022-03-28</docDate>
                 </block>
                 <block name="judges">
-                    <judge>Mirjane Popović</judge>
+                    <judge>Vesna Kovačević</judge>
+                    <judge>Mirjana Popović</judge>
+                    <judge>Zoran Radović</judge>
                 </block>
             </header>
             <introduction>
@@ -57,841 +71,853 @@
                 </block>
                 <block name="legalIssues">
                     <p>Pokušaj ubistva</p>
-                    <p>Prethodne osude</p>
-                    <p>Pravo na odbranu</p>
+                    <p>Umišljaj</p>
+                    <p>Kazna zatvora</p>
+                    <p>Troškovi postupka</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">ZKP</ref>
                     <ref href="#law_2">KZ CG</ref>
+                    <ref href="#law_3">Krivični zakonik Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
-                    <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
-                    <ref href="/akn/me/act/2024/!main#art_49">Član 49</ref>
-                    <ref href="/akn/me/act/2024/!main#art_220">Član 220</ref>
-                    <ref href="/akn/me/act/2024/!main#art_66">Član 66</ref>
-                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/2024/!main#art_376">Član 376</ref>
-                    <ref href="/akn/me/act/2024/!main#art_71">Član 71</ref>
-                    <ref href="/akn/me/act/2024/!main#art_253">Član 253</ref>
-                    <ref href="/akn/me/act/2024/!main#art_2">Član 2</ref>
-                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
-                    <ref href="/akn/me/act/2024/!main#art_240">Član 240</ref>
-                    <ref href="/akn/me/act/2024/!main#art_10">Član 10</ref>
-                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
-                    <ref href="/akn/me/act/2024/!main#art_51">Član 51</ref>
-                    <ref href="/akn/me/act/2024/!main#art_300">Član 300</ref>
-                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zkp#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/zkp#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/zkp#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zkp#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zkp#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zkp#art_66">Član 66</ref>
+                    <ref href="/akn/me/act/zkp#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/zkp#art_71">Član 71</ref>
+                    <ref href="/akn/me/act/zkp#art_220">Član 220</ref>
+                    <ref href="/akn/me/act/zkp#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zkp#art_49">Član 49</ref>
+                    <ref href="/akn/me/act/zkp#art_2">Član 2</ref>
+                    <ref href="/akn/me/act/zkp#art_376">Član 376</ref>
+                    <ref href="/akn/me/act/zkp#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/zkp#art_240">Član 240</ref>
+                    <ref href="/akn/me/act/zkp#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/zkp#art_253">Član 253</ref>
+                    <ref href="/akn/me/act/zkp#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/zkp#art_10">Član 10</ref>
+                    <ref href="/akn/me/act/zkp#art_45">Član 45</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da su postojali svi elementi krivičnog dela pokušaja ubistva.</p>
+                    <p>Sud je utvrdio da je optuženi s umišljajem pokušao da liši života oštećenog, čime je izvršio krivično djelo.</p>
                 </block>
             </motivation>
             <decision>
-                <block name="verdict" outcome="nepoznato">
-                    <p>Osuda na kaznu zatvora.</p>
+                <block name="verdict" outcome="osudjen">
+                    <p>Osuđen</p>
                 </block>
             </decision>
             <participants>
                 <block name="victims">
-                    <person>M. A.</person>
+                    <person>M.A.</person>
+                    <person>V.N.</person>
+                    <person>T.S.</person>
+                    <person>I.D.</person>
+                    <person>T.L.</person>
+                    <person>T.M.</person>
+                    <person>N.U.</person>
+                    <person>C.B.</person>
+                    <person>Šoć Miodragom</person>
+                    <person>Šoć Miodraga</person>
                 </block>
                 <block name="witnesses">
-                    <person>naveo da ga niko nije tukao ili pak pretukao</person>
-                    <person>I. D.</person>
-                    <person>naveo da nije vidio momenat kada je optu</person>
-                    <person>T. M.</person>
-                    <person>T. L.</person>
-                    <person>N. U.</person>
+                    <person>M.A.</person>
+                    <person>T.S.</person>
+                    <person>I.D.</person>
+                    <person>T.L.</person>
+                    <person>T.M.</person>
+                    <person>N.U.</person>
+                    <person>C.B.</person>
+                    <person>Savo Pejanovi</person>
                 </block>
             </participants>
             <facts>
                 <fact key="weapon">nož</fact>
                 <fact key="location">Podgorica</fact>
-                <fact key="location">Dom</fact>
-                <fact key="location">Fotodokumentaciju Uprave</fact>
-                <fact key="location">Hitnu</fact>
-                <fact key="location">Klini</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="narcotics_influence">da</fact>
+                <fact key="attempted_offense">da</fact>
             </facts>
             <conclusions>
                 <block name="fullText">
                     <p>K.br. 83/20
- 
- 
- 
-VIŠI SUD U PODGORICI, kao prvostepeni krivi č ni, u vije ć u stastavljenom od sudije Kova č evi ć  Vesne, kao
-predsjednika vije ć a i sudija Mirjane Popovi ć  i Zorana Radovi ć a, kao č lanova vije ć a, uz u č e šć e zapisni č ara
-Jeleni ć  Vesne, u krivi č nom predmetu protiv optu ž enog V.N.a, zbog krivi č nog djela ubistvo u poku š aju iz č lana
-143 u vezi č lana 20 KZ CG, koga brani Dalibor Tomovi ć , advokat postavljen po službenoj du ž nosti, nakon
-zavr š enog glavnog i javnog pretresa dana 21.02.2022. godine, u prisustvu zastupnika optu ž be, optu ž enog i
-njegovg branioca a nakon tajnog vije ć anja i glasanja, donio je i dana 28.03.2022. godine javno objavio:
- 
- 
+
+VIŠI SUD U PODGORICI, kao prvostepeni krivični, u vijeću stastavljenom od sudije Kovačević Vesne, kao
+predsjednika vijeća i sudija Mirjane Popovići Zorana Radovića, kao članova vijeća, uz učešće zapisničara
+Jelenić Vesne, u krivičnom predmetu protiv optuženog V.N.a, zbog krivičnog djela ubistvo u pokušaju izčlana
+143 u vezičlana 20 KZ CG, koga brani Dalibor Tomović, advokat postavljen po službenoj dužnosti, nakon
+završenog glavnog i javnog pretresa dana 21.02.2022. godine, u prisustvu zastupnika optužbe, optuženog i
+njegovg branioca a nakon tajnog vijećanja i glasanja, donio je i dana 28.03.2022. godine javno objavio:
+
 P R E S U D U
- 
-Optu ž eni:
- 
-V.N., JMBG ......, od oca A.... i majke O..., rođ ene V...., rođ en 19.08.1998. godine, u Podgorici, sa prebivali š tem u
-P...., besku ć nik, dr ž avljanin Crne Gore, elektrotehni č ar, PTT, nezaposlen, neo ž enjen, otac jednog punoljetnog
-djeteta, lo š eg imovnog stanja, ranije osu đ ivan i to presudom Vi š eg suda u Podgorici K.br. 135/05 od
-03.04.2006. godine zbog krivi č nog djela iz č l. 300 st. 1 KZ CG na kaznu zatvora u trajanju od 6 ( š est) mjeseci,
-presudom Osnovnog suda u Podgorici K.br. 06/130 od 01.06.2006. godine zbog krivi č nog djela iz č l. 220 st. 1
+
+Optuženi:
+
+V.N., JMBG......, od oca A.... i majke O..., rođ ene V...., rođ en 19.08.1998. godine, u Podgorici, sa prebivalištem u
+P...., beskućnik, državljanin Crne Gore, elektrotehničar, PTT, nezaposlen, neoženjen, otac jednog punoljetnog
+djeteta, lošeg imovnog stanja, ranije osuđivan i to presudom Višeg suda u Podgorici K.br. 135/05 od
+03.04.2006. godine zbog krivičnog djela izčl. 300 st. 1 KZ CG na kaznu zatvora u trajanju od 6 ( š est) mjeseci,
+presudom Osnovnog suda u Podgorici K.br. 06/130 od 01.06.2006. godine zbog krivičnog djela izčl. 220 st. 1
 KZ CG na kaznu zatvora u trajanju od 3 (tri) mjeseca, presudom Osno vnog suda u Podgorici K.br. 07/1267 od
-05.03.2008. godine zbog krivi č nog djela iz č l. 240 st. 1 KZ CG na kaznu zatvora u trajanju od 1 (jedne) godine,
-presudom Vi š eg suda u Podgorici K.br. 238/08 od 11.03.2009. godine zbog izvr š enja krivi č nog djela iz č l. 300
+05.03.2008. godine zbog krivičnog djela izčl. 240 st. 1 KZ CG na kaznu zatvora u trajanju od 1 (jedne) godine,
+presudom Višeg suda u Podgorici K.br. 238/08 od 11.03.2009. godine zbog izvršenja krivičnog djela izčl. 300
 KZ CG na kaznu zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci, presudom Osno vnog suda u Podgorici
-K.br. 07/1418 od 21.04.2010. godine zbog krivi č nog djela iz č l. 240 st. 1 ta č . 1 KZ CG na kaznu zatvora u
+K.br. 07/1418 od 21.04.2010. godine zbog krivičnog djela izčl. 240 st. 1 ta č. 1 KZ CG na kaznu zatvora u
 trajanju od 1 (jedne) godine i 3 (tri) mjeseca, presudom Osnovnog suda u Podgorici K.br. 10/281 od
-24.05.2011. godine zbog krivi č nog djela iz č l. 240 st. 1 ta č . 1 KZ CG u vezi č l. 49 KZ, na kaznu zatvora u trajanju
+24.05.2011. godine zbog krivičnog djela izčl. 240 st. 1 ta č. 1 KZ CG u vezičl. 49 KZ, na kaznu zatvora u trajanju
 od 1 (jedne) godine i 6 ( š est) mjeseci, presudom Osnovnog suda u Podgorici K.br. 07/748 od 28.06.2012.
-godine zbog krivi č nog djela iz č l. 240 st. 1 KZ na kaznu zatvora u trajanju od 11 (jedanaest) mjeseci, presudom
-Osnovnog suda u Podgorici K.br.127/2018 od 04.06.2018. godine zbog izvr š enja krivi č nog djela iz č l. 253 st. 1
-u sticaju sa krivi č nim djelom iz č l. 376 st. 3 u vezi st. 1 i 2 KZ na kaznu zatvora u trajanju od 9 (devet) mjeseci i
-presudom Osnovnog suda u Podgorici K.br. 459/19 od 20.01.2020. godine zbog krivi č nog djela iz č l. 239 st. 1
-KZ CG na kaznu zatvora u trajanju od 6 ( š est) mjeseci, nalazi se u pritvoru od 20.01.2020. godine od 21,20 hViši Sud u Podgorici
+godine zbog krivičnog djela izčl. 240 st. 1 KZ na kaznu zatvora u trajanju od 11 (jedanaest) mjeseci, presudom
+Osnovnog suda u Podgorici K.br.127/2018 od 04.06.2018. godine zbog izvršenja krivičnog djela izčl. 253 st. 1
+u sticaju sa krivičnim djelom izčl. 376 st. 3 u vezi st. 1 i 2 KZ na kaznu zatvora u trajanju od 9 (devet) mjeseci i
+presudom Osnovnog suda u Podgorici K.br. 459/19 od 20.01.2020. godine zbog krivičnog djela izčl. 239 st. 1
+KZ CG na kaznu zatvora u trajanju od 6 ( š est) mjeseci, nalazi se u pritvoru od 20.01.2020. godine od 21,20 h Viši Sud u Podgorici
 K 83/2020
 28. Mart 2022
- 
- 
+
 K R I V J E
- 
- 
-Zato š to je:
- 
-Dana 20.01.2020.godine, oko 13.30 č asova u P..., u Ul. IV P... b.., sa umi š ljajem poku š ao da li š i ž ivota
-ošte ć enog M. A., na na č in š to je nakon sva đ e sa o š te ć enim no ž em uboo istog dva puta i to u predjelu grudi i
-stomaka, nanose ć i mu laku tjelesnu povredu u vidu ubodno rezne rane lijevog dojkinog predjela i ubodno
-rezne rane nadpreponskog predjela, pri č emu je bio svjestan svog djela i htio njegovo izvr š enje,
- 
-čime je izvr š ilo krivi č no djelo ubistvo u poku š aju iz č lana 143 u vezi č lana 20 Krivi č nog Zakonika Crne Gore.
- 
-Pa sud optu ž enog V.N.a primjenom naprijed navedenih zakonskih odredbi, te odredbi č l. 2, 4, 5, 6, 7,8, 14, 15,
-32, 36, 42, 45, 46, i č l.51 Krivi č nog zakonika Crne Gore, te odredbi čl. 226, 229. i 374. Zakonika o krivi č nom
+
+Zatošto je:
+
+Dana 20.01.2020.godine, oko 13.30časova u P..., u Ul. IV P... b.., sa umišljajem pokušao da lišiživota
+oštećenog M.A., na načinšto je nakon svađe sa oštećenim nožem uboo istog dva puta i to u predjelu grudi i
+stomaka, nanoseći mu laku tjelesnu povredu u vidu ubodno rezne rane lijevog dojkinog predjela i ubodno
+rezne rane nadpreponskog predjela, pričemu je bio svjestan svog djela i htio njegovo izvršenje,
+
+čime je izvršilo krivično djelo ubistvo u pokušaju izčlana 143 u vezičlana 20 Krivičnog Zakonika Crne Gore.
+
+Pa sud optuženog V.N.a primjenom naprijed navedenih zakonskih odredbi, te odredbičl. 2, 4, 5, 6, 7,8, 14, 15,
+32, 36, 42, 45, 46, ičl.51 Krivičnog zakonika Crne Gore, te odredbi čl. 226, 229. i 374. Zakonika o krivičnom
 postupku.
- 
-O S U Đ  U J E
- 
-Na kaznu zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci, u koju kaznu mu se ura č unava vrijeme
-provedeno u pritvoru, od 20.01.2020. godine u 21:20 č asova pa nadalje.
- 
-Na osnovu č l. 66, 68 st.4 i čl. 71. Krivi č nog zakonika Crne Gore, sud optu ž enom odre đ uje:
- 
-MJERU BEZBJEDNOSTI OBAVEZNOG LIJE Č ENJA NARKOMANA
- 
-Navedena mjera bezbjednosti ima se izvr š iti u ustanovi za izvr š enje kazne zatvora UIKS Podgorica dok bude
-postojala potreba za lije č enjem, ali ne du ž e od tri godine, a vrijeme provedeno u ustanovi za lije č enje
+
+O S UĐU J E
+
+Na kaznu zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci, u koju kaznu mu se uračunava vrijeme
+provedeno u pritvoru, od 20.01.2020. godine u 21:20časova pa nadalje.
+
+Na osnovučl. 66, 68 st.4 i čl. 71. Krivičnog zakonika Crne Gore, sud optuženom određuje:
+
+MJERU BEZBJEDNOSTI OBAVEZNOG LIJEČENJA NARKOMANA
+
+Navedena mjera bezbjednosti ima se izvršiti u ustanovi za izvršenje kazne zatvora UIKS Podgorica dok bude
+postojala potreba za liječenjem, ali ne duže od tri godine, a vrijeme provedeno u ustanovi za liječenje
 urač unava se u kaznu zatvora.
- 
-OBAVEZUJE SE optu ž eni da na ime tro š kova krivi č nog postupka-sudskog pau š ala plati ovom sudu nov č ani
-iznos od 100,00 eura, te da na ime ostalih tro š kova krivi č nog postupka plati nov č ani iznos od 231,00 eura, a
-koji tro š kovi se odnose na vje š ta č enje po vje š taku sudske medicine Š o ć  Miodragu u iznosu od 176,00 eura i na
-ime vje š ta č enje po vje š taku trasologu Jakovljevi ć  Miljanu u iznosu od 55,00 eura, sve u roku od 15 dana po
-pravosna ž nosti presude, pod prijetnjom prinudne naplate, na ž iro ra č un bud ž eta Crne Gore, dok ć e o ostalim
-troš kovima krivi č nog postupka, Sud odlu č iti naknadno, posebnim rje š enjem, po pribavljanju podataka o
+
+OBAVEZUJE SE optuženi da na ime troškova krivičnog postupka-sudskog paušala plati ovom sudu novčani
+iznos od 100,00 eura, te da na ime ostalih troškova krivičnog postupka plati novčani iznos od 231,00 eura, a
+koji troškovi se odnose na vještačenje po vještaku sudske medicine Šoć Miodragu u iznosu od 176,00 eura i na
+ime vještačenje po vještaku trasologu Jakovljević Miljanu u iznosu od 55,00 eura, sve u roku od 15 dana po
+pravosnažnosti presude, pod prijetnjom prinudne naplate, nažiro račun budžeta Crne Gore, dokće o ostalim
+troš kovima krivičnog postupka, Sud odlučiti naknadno, posebnim rješenjem, po pribavljanju podataka o
 njihovoj visini.
- 
-Shodno odredbi č l. 239 st.2 Zakonika o krivi č nom postupku o š te ć eni V. N. se radi ostavarivanja imovinsko –
-pravnog zahtjeva upu ć ije na parni č ni postupak.
- 
-O b r a z l o ž  e nj e
- 
-Optu ž nicom VDT – a Podgorica Kt.br.7/20 od 15.06.2020. godine, optu ž enom V.N.u stavljeno je na teret
-izvrš enje krivi č nog djela ubistvo u poku šaju iz č lana 143 u vezi člana 20 Krivi č nog Zakonika Crne Gore, pa je
-zastupnik optu ž be na glavnom pretresu u cjelosti ostao pri podnijetom optu ž nom aktu predla ž u ć i sudu u
-kona č nom da optu ž enog oglasi krivim i osudi po zakonu.
- 
-Optu ž ni V.N. je u svojoj odbrani u Vi š em dr ž avnom tu ž ila š tvu naveo da je kriti č nom dana i š ao na terapiju u
-Dom zdravlja na Koniku, te da je kada se vra ć ao, kao i svakog dana, pro š ao pored grupe momaka koji mu
-stalno ne š to dobacuju i vrijeđaju ga, da je pri š ao jednom od momaka i pitao ga za š to mu to radi, na š ta mu je
-isti rekao da bje ž i da ga ne ubije kao zeca i gurnuo ga je, pa je on pao. Produ ž io je dalje, sreo je druga U.,
-ispri č ao mu š ta se desilo, pa kada mu je rekao da nije dirao te momke, oti š li su zajedno da vide š ta je bilo. U.
-je pri š ao momcima, a onda je momak koji je kasnije povrije đ en odmah iz torbice izvadio sataru ili ve ć i no ž  i
-poč eo je da ma š e sa njim. Njih dvojica su krenuli da bje ž e, a ti momci su krenuli za njima, sustigli su U. i
-prebili ga. Kada je vidio da U. leži na zemlji i da ga tuku, izvadio je iz jakne š ipku i krenuo je da ma š e istom
+
+Shodno odredbičl. 239 st.2 Zakonika o krivičnom postupku oštećeni V.N. se radi ostavarivanja imovinsko –
+pravnog zahtjeva upućije na parnični postupak.
+
+O b r a z l ože nj e
+
+Optužnicom VDT – a Podgorica Kt.br.7/20 od 15.06.2020. godine, optuženom V.N.u stavljeno je na teret
+izvršenje krivičnog djela ubistvo u poku šaju izčlana 143 u vezi člana 20 Krivičnog Zakonika Crne Gore, pa je
+zastupnik optužbe na glavnom pretresu u cjelosti ostao pri podnijetom optužnom aktu predlažući sudu u
+konačnom da optuženog oglasi krivim i osudi po zakonu.
+
+Optužni V.N. je u svojoj odbrani u Višem državnom tužilaštvu naveo da je kritičnom dana išao na terapiju u
+Dom zdravlja na Koniku, te da je kada se vraćao, kao i svakog dana, prošao pored grupe momaka koji mu
+stalno nešto dobacuju i vrijeđaju ga, da je prišao jednom od momaka i pitao ga zašto mu to radi, našta mu je
+isti rekao da bježi da ga ne ubije kao zeca i gurnuo ga je, pa je on pao. Produžio je dalje, sreo je druga U.,
+ispričao mušta se desilo, pa kada mu je rekao da nije dirao te momke, otišli su zajedno da videšta je bilo. U.
+je prišao momcima, a onda je momak koji je kasnije povrijeđen odmah iz torbice izvadio sataru ili veći noži
+poč eo je da maše sa njim. Njih dvojica su krenuli da bježe, a ti momci su krenuli za njima, sustigli su U. i
+prebili ga. Kada je vidio da U. leži na zemlji i da ga tuku, izvadio je iz jaknešipku i krenuo je da maše istom
 kako bi ih otjerao i kada je ovaj momak zamahnuo satarom prema njemu i povrijedio ga u predjelu ramena,
 onda je on tog momka uboo negdje u predjelu stomaka.
- 
-Na glavnom pretresu optu ž eni obja š njava da je tog dana imao kod sebe dr š ku, odnosno ne š to improvizovano
-kao no ž , pa po š to se vratio sa U. kod ovih momaka, a nakon prethodnih provokacija, ti momci su odmah
-poč eli U. da biju, a njemu su zadali neki udarac zbog č ega su njih dvojica stali da bje ž e, me đ utim, po š to su ti
-momci tr č ali za njima i sustigli ih, nastavili su da tuku U., a on je kada je to vidio krenuo prema njima kao i oni
+
+Na glavnom pretresu optuženi objašnjava da je tog dana imao kod sebe dršku, odnosno nešto improvizovano
+kao no ž, pa pošto se vratio sa U. kod ovih momaka, a nakon prethodnih provokacija, ti momci su odmah
+poč eli U. da biju, a njemu su zadali neki udarac zbogčega su njih dvojica stali da bježe, međutim, pošto su ti
+momci trčali za njima i sustigli ih, nastavili su da tuku U., a on je kada je to vidio krenuo prema njima kao i oni
 prema njemu, i tom trenutku ga je jedan od tih momaka udario sa lijeve strane, odnosno, dok mu je M.A. bio
-okrenut licem i zamahnuo je prema njemu da ga udari nekom satarom, mada, to mu je vi š e li č ilo na jedan
-nož  koji se koristi za rezanje suvog mesa, pa je zbog toga izvadio ovu š ipku i samo je mahao sa ovom š ipkom
-ispred njih, tako da je vjerovatno na taj na č in i nanio te ubodne ta č ke M..
- 
-Nakon š to je optu ž enom predo č ena odbrana koju je dao pred Vi š im dr ž avnim tu ž ila š tvom, i upoznat sa
-razlikom u kazivanju, optu ž eni je naveo da je i kod tu ž ioca kazao da su ga ti momci odmah napali po š to su on
-i U. istima pri š li. Naime, on je vidio jedno lice kako izlazi iz prodavnice da je neki predmet bacio M. i da ga je
-M. uzeo u ruke i u tom momentu kada je njegov drug U. priš ao, ti momci su po č eli da tuku U. na na č in š to su
-ga sva trojica udarali i sigurno mu zadali tri do pet udaraca, pa po š to je vidio da U. pada istog je na neki na č in
-prihvatio jer mu je pri š ao na jedno metar i po, ali ga je jedan momak od T. udario u predjelu lijeve mi š ke,
-međ utim, to nije bio jak udarac pa je zbog toga izvadio š ipku koja je bila na neki na č in polomljena, imala je
-vrh kao imrpovizovano sje č ivo i sa istom zamahnuo, ali je vjerovatno M. izgleda to ja č e dohvatilo. Nije ta č no
-da je kod tu ž ioca rekao da je uboo M. u predjelu stomaka, jedino je rekao da se branio i koliko mu se č ini da je
-M. zaka č io dva puta, ali sve iz razloga š to je on njega prvi napao..
- 
-Odgovaraju na dalja pitanja u toku postupka optu ž eni je i dalje mijanjao svoju odbranu navode ć i da tog
+okrenut licem i zamahnuo je prema njemu da ga udari nekom satarom, mada, to mu je više ličilo na jedan
+nož koji se koristi za rezanje suvog mesa, pa je zbog toga izvadio ovušipku i samo je mahao sa ovomšipkom
+ispred njih, tako da je vjerovatno na taj način i nanio te ubodne tačke M..
+
+Nakonšto je optuženom predočena odbrana koju je dao pred Višim državnim tužilaštvom, i upoznat sa
+razlikom u kazivanju, optuženi je naveo da je i kod tužioca kazao da su ga ti momci odmah napali pošto su on
+i U. istima prišli. Naime, on je vidio jedno lice kako izlazi iz prodavnice da je neki predmet bacio M. i da ga je
+M. uzeo u ruke i u tom momentu kada je njegov drug U. prišao, ti momci su počeli da tuku U. na načinšto su
+ga sva trojica udarali i sigurno mu zadali tri do pet udaraca, pa pošto je vidio da U. pada istog je na neki način
+prihvatio jer mu je prišao na jedno metar i po, ali ga je jedan momak od T. udario u predjelu lijeve miške,
+međ utim, to nije bio jak udarac pa je zbog toga izvadiošipku koja je bila na neki način polomljena, imala je
+vrh kao imrpovizovano sječivo i sa istom zamahnuo, ali je vjerovatno M. izgleda to jače dohvatilo. Nije tačno
+da je kod tužioca rekao da je uboo M. u predjelu stomaka, jedino je rekao da se branio i koliko mu sečini da je
+M. zakačio dva puta, ali sve iz razlogašto je on njega prvi napao..
+
+Odgovaraju na dalja pitanja u toku postupka optuženi je i dalje mijanjao svoju odbranu navodeći da tog
 dana, iako su ga ti momci koji su bili sa M. provocirali, on nije htio da odgovori na te njihove provokacije i u
-momentu kada su se on i U. vratili, nije bilo nikakve sva đ e i rasprave izme đ u njega i U. sa ovom grupom
-momaka, ve ć  je U. samo digao ruke i kazao „momci do š ao sam da vas pitam za š to dirate ovog momka“,
-međ utim, oni su ga odmah napali i toliko tukli da je bio krvav po č itavom tijelu, nakon č ega su on i U. poč eli
-da bje ž e, me đ utim, M. je tr č ao za njima i nosio je no ž  u ruci, pa kako se u jednom trenutku okrenuo i vidio da
-trojica tuku U. i ska č u na njega, on je stao a zatim krenuo prema njima da odbrani U. iz kog razloga je izvadio
-tu metalnu š ipku i zamahnuo istom prema njima, kada je jedan od njih rekao „do ć i ć e policija“ i pobjegli su,
-poja š njavaju ć i da je samo zamahnuo sa š ipkom, mo ž da tri puta, i kada ga je M. nož em koji je imao u ruci
-zaka č io u predjelu klju č ne kosti i na taj na č in povrijedio, tek tada je misli M. uboo ovim improvizovanim
+momentu kada su se on i U. vratili, nije bilo nikakve svađe i rasprave između njega i U. sa ovom grupom
+momaka, većje U. samo digao ruke i kazao „momci došao sam da vas pitam zašto dirate ovog momka“,
+međ utim, oni su ga odmah napali i toliko tukli da je bio krvav počitavom tijelu, nakončega su on i U. poč eli
+da bježe, međutim, M. je trčao za njima i nosio je nožu ruci, pa kako se u jednom trenutku okrenuo i vidio da
+trojica tuku U. i skaču na njega, on je stao a zatim krenuo prema njima da odbrani U. iz kog razloga je izvadio
+tu metalnušipku i zamahnuo istom prema njima, kada je jedan od njih rekao „doćiće policija“ i pobjegli su,
+pojašnjavajući da je samo zamahnuo sašipkom, možda tri puta, i kada ga je M. nož em koji je imao u ruci
+zakačio u predjelu ključne kosti i na taj način povrijedio, tek tada je misli M. uboo ovim improvizovanim
 nož em, a da je od momenta kada su ga provocirali ovi momci prvi put, pa do momenta kada se on vratio kod
-njih zajedno sa U., pro š lo je nekih desetak minuta.
- 
-Branilac optu ž enog je u zavr š noj rije č i naveo da u toku postupka nije dokazano da je optu ž eni izvr š io
-predmetno krivi č no djelo stavljeno mu na teret optu ž nicom nadle ž nog tu ž ila š tva, ve ć  da je u konkretnom
-sluč aju postupao u nu ž noj odbrani, predla ž u ć i sudu da ga iz prednjih razloga oslobodi od optu ž be, tra ž e ć i
-istovremeno tro š kove krivi č nog postupka.
- 
+njih zajedno sa U., prošlo je nekih desetak minuta.
+
+Branilac optuženog je u završnoj riječi naveo da u toku postupka nije dokazano da je optuženi izvršio
+predmetno krivično djelo stavljeno mu na teret optužnicom nadležnog tužilaštva, većda je u konkretnom
+slučaju postupao u nužnoj odbrani, predlažući sudu da ga iz prednjih razloga oslobodi od optužbe, tražeći
+istovremeno troškove krivičnog postupka.
+
 Optuženi je u cjelosti prihvatio završnu riječ svog branioca.
- 
-Sud je u dokaznom postupku neposredno saslu š ao svjedoka – o š te ć enog M. A., svjedoke M. A., T.S., I. D.a, T.
-L., T. M. i N. U., pro č itao tri slu ž bene zabilje š ke CB Podgorica Ku.br.66/20 od 21.01.2020. godine, na saglasan
-predlog stranaka pro č itao Izvje š taj Forenzi č kog centra o trasolo š kom vje š ta č enju broj 304/20 od 24.02.2020.
-godine i neposredno saslu š ao vje š taka trasolo š ke struke Jakovljevi ć  Miljana, nalaz i mi š ljenje sudskog
-vješ taka medicinske struke – medicinska ekspertiza od 04.03.2020. godine i od 23.01.2020. godine, i
-neposredno saslu š ao vje š taka medicinske struke Š o ć  Miodraga, nalaz i mi š ljenje komisije vje š taka od
-11.06.2020. godine i predstavnika stru č nog tima komisije vje š taka neposredno saslu š ao na glavnom pretresu,
-izvrš io uvid u Fotodokumentaciju Uprave poliocije – CB Podgorica broj 17/03-4-119/138 i pro č itao izvod iz
+
+Sud je u dokaznom postupku neposredno saslušao svjedoka – oštećenog M.A., svjedoke M.A., T.S., I.D.a, T.L., T.M. i N.U., pročitao tri službene zabilješke CB Podgorica Ku.br.66/20 od 21.01.2020. godine, na saglasan
+predlog stranaka pročitao Izvještaj Forenzičkog centra o trasološkom vještačenju broj 304/20 od 24.02.2020.
+godine i neposredno saslušao vještaka trasološke struke Jakovljević Miljana, nalaz i mišljenje sudskog
+vještaka medicinske struke – medicinska ekspertiza od 04.03.2020. godine i od 23.01.2020. godine, i
+neposredno saslušao vještaka medicinske struke Šoć Miodraga, nalaz i mišljenje komisije vještaka od
+11.06.2020. godine i predstavnika stručnog tima komisije vještaka neposredno saslušao na glavnom pretresu,
+izvršio uvid u Fotodokumentaciju Uprave poliocije – CB Podgorica broj 17/03-4-119/138 i pročitao izvod iz
 registra kaznenih evidencija Ministarstva pravde, ljudskih i mainskih prava na ime okrivljenog.
- 
-Saslu š an u svojstvu svjedoka o š te ć eni M.A .je u svom iskazu pred VDT u bitnom naveo da je kriti č nom
-prilikom bio sa drugom I. D.om, te da su se zaustavili kod Centra za socijalni rad, da je u tom trenutku pro š ao
-momak sitnije gra đ e, da mu je D. rekao da pogleda tog momka. Po š to mu je bilo poznato da taj momak
-napada starije ž ene i da ih plja č ka, iz tog razloga mu je rekao da ne prolazi tuda vi š e. Nakon 10-tak minuta
-ovaj momak se vratio sa drugom, obojica su imali no ž eve u rukama i krenuli su prema njemu. Nadalje,
-poja š njava da se ovaj ni ž i momak zaletio u njegovom pravcu i da bi ga ubio da se nije izmakao i branio. Ni ž i
-momak je u rukama imao neki duga č ki no ž , nalik na ma č , dok je viso č iji momak na ruci imao boks, koji na
-sebi ima no ž . On je krenuo prema viso č ijem momku, a ni ž i momak mu je zadao nekoliko udaraca u predjelu
-grudnog ko š a i stomaka. Nakon toga je udario tog momka nogom u stomak, a onda ga je udario nogama po
-glavi i to kada je pao, a potom je po č eo da udara i ovog viso č ijeg momka, ali obojica su pali na zemlju od
-straha. Njemu je po č elo da se vrti u glavi, pa je potr č ao do prodavnice koju dr ž i S. T.. On i S. su zaustavili
+
+Saslušan u svojstvu svjedoka oštećeni M.A.je u svom iskazu pred VDT u bitnom naveo da je kritičnom
+prilikom bio sa drugom I.D.om, te da su se zaustavili kod Centra za socijalni rad, da je u tom trenutku prošao
+momak sitnije građe, da mu je D. rekao da pogleda tog momka. Pošto mu je bilo poznato da taj momak
+napada stariježene i da ih pljačka, iz tog razloga mu je rekao da ne prolazi tuda više. Nakon 10-tak minuta
+ovaj momak se vratio sa drugom, obojica su imali noževe u rukama i krenuli su prema njemu. Nadalje,
+pojašnjava da se ovaj niži momak zaletio u njegovom pravcu i da bi ga ubio da se nije izmakao i branio. Niži
+momak je u rukama imao neki dugački no ž, nalik na ma č, dok je visočiji momak na ruci imao boks, koji na
+sebi ima no ž. On je krenuo prema visočijem momku, a niži momak mu je zadao nekoliko udaraca u predjelu
+grudnog koša i stomaka. Nakon toga je udario tog momka nogom u stomak, a onda ga je udario nogama po
+glavi i to kada je pao, a potom je počeo da udara i ovog visočijeg momka, ali obojica su pali na zemlju od
+straha. Njemu je počelo da se vrti u glavi, pa je potrčao do prodavnice koju drži S.T.. On i S. su zaustavili
 jedno vozilo, a kako je u tom trenutku osjetio jak bol, pao je na sred ulice, a S. i njegov drug D. ubacili su ga u
-vozilo, koje ga je odvezlo u Hitnu pomo ć . Njegov drug D. je svo vrijeme stajao sa strane, mogu ć e je da je
-udario nekog od ova dva momka, ali to nije vidio. Tvrdi da on u rukama nije imao ni š ta i nije mu jasno odakle
-povreda ni ž em momku.
- 
-Na glavnom pretresu je ponovio svoj iskaz i pojasnio da je zaista konkretnom prilikom a po š to mu je V.N.
-kazao “ š ta je bilo, š ta ć ete vi” istog uhvatio u predjelu le đ a i rekao mu “ š ta ć e š  tu” zatim ga gurnuo i da je V. je
-otiš ao, a nakon toga kada se vratio sa tim njemu nepoznatim momkom, č ini mu se da su mu kazali “do đ i
-ovamo” i zatim ga napali na na č in š to su pri š li i krenuli istovremeno prema njemu i dok je poku š avao da se
-odbrani od viso č ijeg momka da ga je V. ubo jednom u predjelu grudi a drugi put u predjelu stomaka, a zatim
-da su stali da bje ž e, pa kada je V. pao on je V. udara nogama po glavi i le đ ima, stim š to ostavlja mogu ć nost da
-je nakon toga udario i tog viso č ijeg momka i da je od momenta kada je V. otiš ao od njih, a nakon ovog prvog
-razgovora pa do momenta kada je V. doš ao sa tim nepoznatim momkom, pro š lo nekih 15 minuta. Na kraju se
-pridru ž io krivi č nom gonjenju protiv optu ž enog.
- 
-Svjedoka T. S. je u svom iskazu pred VDT u bitnom naveo da je kriti č nog dana do š ao u prodavnicu koja je
-njegovo vlasni š tvo oko 13,30 č asova. Č im je do š ao kom š ija S.M. ga je zvao i tra ž io pomo ć  i legao je ispred
-njegove prodavnice, bio je krvav i rekao je: „Zovi hitnu pomo ć .“, jer ga je neko uboo no ž em. Zaustavio je prvo
-vozilo koje je nai š lo i zajedno sa svoja dva bratani ć a M. i L. ubacio je S. u vozilo jedne ž ene koja se zaustavila.
-Kada je on do š ao u prodavnicu njegovi bratani ć i su bili unutra, tako da nijesu mogli u č estvovati u doga đ aju.
- 
-Na glavnom pretresu je ponovio svoj iskaz i pojasnio da tog dana uop š te nije vidio V.N.a a kojeg poznaje od
-ranije jer je kod njega kupovao sok, cigare i sli č no.
- 
-Svjedok T. L. je u svom iskazu pred VDT u bitnom naveo da je kriti č nom prilikom bio na radnom mjestu u
-prodavnici, da je u jednom trenutku č uo neku vrisku, iza š ao je iz prodavnice i vidio A. M. kako le ž i na ulicu,
-ispred prodavnice i da je bio krvav. On i stric su zaustavili jedno vozilo, kojim je upravljala neka ž ena, ubacili
-ga u isto kako bi ga ona provela u Hitnu pomo ć .
- 
-Na glavnom pretresu je ponovio svoj iskaz i dodao da mu tog dana niko nije, a za vrijeme kriti č nog doga đ aja
-traž io da mu ne š to doda, bilo kakav predmet, no ž , sje č ivo ili sli č no tome, jer je č itavo vrijeme bio u drugi dio
-prodavnice i nije mogao ni vidjeti š ta se de š avalo napolje i da nije ta č no da je on bio sa M. kada je gurnuo V.a,
-a to mo ž e da posvjedo č i i njegov stric T. S. koji je tog dana bio sa njim u prodavnici, dok je njegov brat M.
-doš ao tek nakon š to je M.ranjen, odnosno posle te tu č e, da tog dana nije vidio V.a kojeg ina č e poznaje iz
-viđenja, jer je od njih u prodavnicu dolazio i kupovao hljeb, sokove, cigarete i sli č no, da N. U. ne poznaje i da
-ne zna da li je I. D.bio tog dana na mjestu doga đ aja kada se sve to de š avalo i da nije M. ispitivao o detaljima
-tog doga đ aja.
- 
-Svjedok T. M.je u svom iskazu pred VDT u bitnom istakao da je navedenog dana oko 13,30 č asova i š ao prema
-prodavnici koja je u vlasni š tvu njegovog strica S., a u kojoj je i on zaposlen, vidio je da se okupio narod u
-blizini prodavnice i tada je vidio A. M. i D.I. kako tr č e prema parkingu kod š kole „Savo Pejanovi ć “. Nije
-obra ć ao pa ž nju dok nije vidio da se S. vrać a, a D. ga dr ž i pod ruku, potr č ao je prema njima i tada mu je S.
+vozilo, koje ga je odvezlo u Hitnu pomoć. Njegov drug D. je svo vrijeme stajao sa strane, moguće je da je
+udario nekog od ova dva momka, ali to nije vidio. Tvrdi da on u rukama nije imao ništa i nije mu jasno odakle
+povreda nižem momku.
+
+Na glavnom pretresu je ponovio svoj iskaz i pojasnio da je zaista konkretnom prilikom a pošto mu je V.N.
+kazao “ š ta je bilo, š taćete vi” istog uhvatio u predjelu leđa i rekao mu “ š taćeštu” zatim ga gurnuo i da je V. je
+otišao, a nakon toga kada se vratio sa tim njemu nepoznatim momkom, č ini mu se da su mu kazali “dođi
+ovamo” i zatim ga napali na načinšto su prišli i krenuli istovremeno prema njemu i dok je pokušavao da se
+odbrani od visočijeg momka da ga je V. ubo jednom u predjelu grudi a drugi put u predjelu stomaka, a zatim
+da su stali da bježe, pa kada je V. pao on je V. udara nogama po glavi i leđima, stimšto ostavlja mogućnost da
+je nakon toga udario i tog visočijeg momka i da je od momenta kada je V. otišao od njih, a nakon ovog prvog
+razgovora pa do momenta kada je V. doš ao sa tim nepoznatim momkom, prošlo nekih 15 minuta. Na kraju se
+pridružio krivičnom gonjenju protiv optuženog.
+
+Svjedoka T.S. je u svom iskazu pred VDT u bitnom naveo da je kritičnog dana došao u prodavnicu koja je
+njegovo vlasništvo oko 13,30časova. Č im je došao komšija S.M. ga je zvao i tražio pomoći legao je ispred
+njegove prodavnice, bio je krvav i rekao je: „Zovi hitnu pomoć.“, jer ga je neko uboo nožem. Zaustavio je prvo
+vozilo koje je naišlo i zajedno sa svoja dva bratanića M. i L. ubacio je S. u vozilo jednežene koja se zaustavila.
+Kada je on došao u prodavnicu njegovi bratanići su bili unutra, tako da nijesu mogli učestvovati u događaju.
+
+Na glavnom pretresu je ponovio svoj iskaz i pojasnio da tog dana uopšte nije vidio V.N.a a kojeg poznaje od
+ranije jer je kod njega kupovao sok, cigare i slično.
+
+Svjedok T.L. je u svom iskazu pred VDT u bitnom naveo da je kritičnom prilikom bio na radnom mjestu u
+prodavnici, da je u jednom trenutkučuo neku vrisku, izašao je iz prodavnice i vidio A.M. kako leži na ulicu,
+ispred prodavnice i da je bio krvav. On i stric su zaustavili jedno vozilo, kojim je upravljala nekažena, ubacili
+ga u isto kako bi ga ona provela u Hitnu pomoć.
+
+Na glavnom pretresu je ponovio svoj iskaz i dodao da mu tog dana niko nije, a za vrijeme kritičnog događaja
+tražio da mu nešto doda, bilo kakav predmet, no ž, sječivo ili slično tome, jer ječitavo vrijeme bio u drugi dio
+prodavnice i nije mogao ni vidjetišta se dešavalo napolje i da nije tačno da je on bio sa M. kada je gurnuo V.a,
+a to može da posvjedoči i njegov stric T.S. koji je tog dana bio sa njim u prodavnici, dok je njegov brat M.
+doš ao tek nakonšto je M.ranjen, odnosno posle te tuče, da tog dana nije vidio V.a kojeg inače poznaje iz
+viđenja, jer je od njih u prodavnicu dolazio i kupovao hljeb, sokove, cigarete i slično, da N.U. ne poznaje i da
+ne zna da li je I.D.bio tog dana na mjestu događaja kada se sve to dešavalo i da nije M. ispitivao o detaljima
+tog događaja.
+
+Svjedok T.M.je u svom iskazu pred VDT u bitnom istakao da je navedenog dana oko 13,30časova išao prema
+prodavnici koja je u vlasništvu njegovog strica S., a u kojoj je i on zaposlen, vidio je da se okupio narod u
+blizini prodavnice i tada je vidio A.M. i D.I. kako trče prema parkingu kodškole „Savo Pejanović “. Nije
+obraćao pažnju dok nije vidio da se S. vraća, a D. ga drži pod ruku, potrčao je prema njima i tada mu je S.
 rekao da ga je uboo neki narkoman. Kada su stigli do prodavnice, A. je pao na sred ulice, bio je blijed i nije
-mogao da stoji, pa su zaustavili jedno vozilo koje ga je odvezlo do Hitne pomo ć i.
- 
-Na glavnom pretresu je ponovio svoj iskaz i dodao da je na licu mjesta kada je on do š ao bio njegov brat L. i
-stric S. kao i I. D. i da nije vidio da neko uzima bilo š ta iz prodavnice, odnosno neki predmet, da prvi put vidi u
-životu V.N., dok je N. U. zna iz vi đ enja.
- 
-Svjedok I. D. je u svom iskazu pred VDT naveo da se ne sje ć a datuma, ali zna da je bilo negdje oko 13,30
-časova, kada su se on i A.M: vratili sa treninga i stali na trotoar, da je pored njih pro š ao jedan ni ž i mr š aviji
-momak, koji je ne š to dobacio S., a ovaj mu je rekao da ide odatle. Nakon dvadesetak minuta, taj momak se
-vratio, bio je u dru š tvu sa nekim visokim momkom, krenuli su prema S., a ni ž i momak je u ruci imao no ž . S. je
-tako đ e krenuo prema njima, a on je ostao na istom mjestu i na nekih 50 ili 100 metara od njega vidio je da
-ovaj ni ž i momak zamahnuo rukom i oboo S. u predjelu grudi. Nakon toga ova dva lica su po č ela da bje ž e, S. je
-doš ao do njega i pao na zemlju. Nije vidio da li je viso č iji momak imao ne š to u rukama, samo je vidio da ni ž i
-momak ima neki ve ć i no ž . Vidio je kada je S. zadobio jedan ubod, ali nije vidio kada je zadobio drugi ubod.
-Osim njih trojice niko nije u č estvovao u predmetnom doga đ aju, niti je iko bio tu.
- 
+mogao da stoji, pa su zaustavili jedno vozilo koje ga je odvezlo do Hitne pomoći.
+
+Na glavnom pretresu je ponovio svoj iskaz i dodao da je na licu mjesta kada je on došao bio njegov brat L. i
+stric S. kao i I.D. i da nije vidio da neko uzima bilošta iz prodavnice, odnosno neki predmet, da prvi put vidi u
+životu V.N., dok je N.U. zna iz viđenja.
+
+Svjedok I.D. je u svom iskazu pred VDT naveo da se ne sjeća datuma, ali zna da je bilo negdje oko 13,30
+časova, kada su se on i A.M: vratili sa treninga i stali na trotoar, da je pored njih prošao jedan niži mršaviji
+momak, koji je nešto dobacio S., a ovaj mu je rekao da ide odatle. Nakon dvadesetak minuta, taj momak se
+vratio, bio je u društvu sa nekim visokim momkom, krenuli su prema S., a niži momak je u ruci imao no ž. S. je
+takođe krenuo prema njima, a on je ostao na istom mjestu i na nekih 50 ili 100 metara od njega vidio je da
+ovaj niži momak zamahnuo rukom i oboo S. u predjelu grudi. Nakon toga ova dva lica su počela da bježe, S. je
+doš ao do njega i pao na zemlju. Nije vidio da li je visočiji momak imao nešto u rukama, samo je vidio da niži
+momak ima neki veći no ž. Vidio je kada je S. zadobio jedan ubod, ali nije vidio kada je zadobio drugi ubod.
+Osim njih trojice niko nije učestvovao u predmetnom događaju, niti je iko bio tu.
+
 Na glavnom pretresu je pojasnio da se prvi put kada je V. prolazio pored njih okrenuo prema M. i rekao mu
-nešto “ š ta si rekao”, da su mu oni zatim rekli da pro đ e i vi š e nije nastavljan razgovor izme đ u njih, ve ć  je V.
-proš ao pored njih i nastavio dalje i da nije bilo nikakvog fizi č kog kontakta sa V.em a drugi put kada se V. vratio
+nešto “ š ta si rekao”, da su mu oni zatim rekli da prođe i više nije nastavljan razgovor između njih, većje V.
+prošao pored njih i nastavio dalje i da nije bilo nikakvog fizičkog kontakta sa V.em a drugi put kada se V. vratio
 do njih sa jednim momkom on je bio udaljen nekih 50-60 metara jer se pomjerao sa mjesta gdje je stajao i
-poš ao prema prodavnici, i osim ta dva lica i njega i M.a nije vi š e niko bio prisutan, š to zna č i da L. T. nije bio tu,
-već je radio u prodavnici, da tom prilikom nije obra ć ao posebnu pa ž nju na V.a i tog momka, ali je u jednom
-trenutku vidio kada je V. zamahnulo rukom prema M., me đ utim, nije mogao da vidi š ta je uradilo jer je
-istovremeno č uo da je M. viknuo “ubode me”, pa po š to se okrenuo, vidio je da V. maš e sa no ž em i shvatio je
-da je uboo M.a. Ne mo ž e da se sjeti kada je ta č no vidio no ž  u rukama V.a, ali se sje ć a da je to bio veliki no ž  i
-misli da ga je vidio tek po š to je M. izgovorio rije č i “ubode me”, ali isto tako je i vidio da je V. zamahnuo dva ili
+poš ao prema prodavnici, i osim ta dva lica i njega i M.a nije više niko bio prisutan, š to znači da L.T. nije bio tu,
+već je radio u prodavnici, da tom prilikom nije obraćao posebnu pažnju na V.a i tog momka, ali je u jednom
+trenutku vidio kada je V. zamahnulo rukom prema M., međutim, nije mogao da vidišta je uradilo jer je
+istovremenočuo da je M. viknuo “ubode me”, pa pošto se okrenuo, vidio je da V. maš e sa nožem i shvatio je
+da je uboo M.a. Ne može da se sjeti kada je tačno vidio nožu rukama V.a, ali se sjeća da je to bio veliki noži
+misli da ga je vidio tek pošto je M. izgovorio riječi “ubode me”, ali isto tako je i vidio da je V. zamahnuo dva ili
 tri puta prema M., i to je bio zamah sve jedan za drugim, odnosno zamahnuo je nekoliko puta bez prekida
-prema M., ali nije video ta č no na koji na č in i gdje ga je ubo tim no ž em, a zatim je vidio da je V. sa tim
-momkom po č eo da tr č i iza š kole “Savo Pejanovi ć ”.
- 
-Svjedok N. U. je u svom iskazu pred VDT u bitnom istakao da je kriti č nog dana bio u Dom zdravlja kod
-Osnovne š kole „Savo Pejanovi ć “, da je kada se vra ć ao vidio kako č etiri momka udaraju rukama i nogama
-jednog momka i mr š ikaju ga. Kada su se razi š li vidio je da se radi o momku kojeg od ranije zna po imenu
-„Neno“, pa ga je pitao da li je ne š to ukrao i za š to ga udaraju, a on je rekao da nije, pa je predlo ž io da smire
-situaciju. Sa udaljenosti od dvadeset metara, ovim momcima je rekao da ž eli da popri č aju, ali jedan od njih
-krupnije gra đ e, odmah se zaletio prema njemu i zamahnuo je pesnicom da ga udari, me đ utim on se izmakao,
-a ovaj momak je pao na N., koji je bio iza njega. Č uo je da je ovaj momak jauknuo i potr č ao prema jednoj
-trafici, pa kada se okrenuo vidio je da N. u ruci dr ž i no ž . Potom je ovaj krupni momak izletio iz trafike, u ruci je
-držao veliki no ž , sustigao je N., zahahnuo u njegovom pravcu i vjerovatno ga je tada zaka č io no ž em. Obojica
-su mahali jedan prema drugome, a on je poku š avao da ih sprije č i. Odjednom je zadobio udarac otpozadi,
-nakon toga udarac nogom u predjelu ispod lijevog oka, a potom ga je udaralo vi š e lica po glavi i tijelu, ali nije
+
+prema M., ali nije video tačno na koji način i gdje ga je ubo tim nožem, a zatim je vidio da je V. sa tim
+momkom počeo da trči izaškole “Savo Pejanović ”.
+
+Svjedok N.U. je u svom iskazu pred VDT u bitnom istakao da je kritičnog dana bio u Dom zdravlja kod
+Osnovneškole „Savo Pejanović “, da je kada se vraćao vidio kakočetiri momka udaraju rukama i nogama
+jednog momka i mršikaju ga. Kada su se razišli vidio je da se radi o momku kojeg od ranije zna po imenu
+„Neno“, pa ga je pitao da li je nešto ukrao i zašto ga udaraju, a on je rekao da nije, pa je predložio da smire
+situaciju. Sa udaljenosti od dvadeset metara, ovim momcima je rekao daželi da popričaju, ali jedan od njih
+krupnije građe, odmah se zaletio prema njemu i zamahnuo je pesnicom da ga udari, međutim on se izmakao,
+a ovaj momak je pao na N., koji je bio iza njega. Č uo je da je ovaj momak jauknuo i potrčao prema jednoj
+trafici, pa kada se okrenuo vidio je da N. u ruci drži no ž. Potom je ovaj krupni momak izletio iz trafike, u ruci je
+držao veliki no ž, sustigao je N., zahahnuo u njegovom pravcu i vjerovatno ga je tada zakačio nožem. Obojica
+su mahali jedan prema drugome, a on je pokušavao da ih spriječi. Odjednom je zadobio udarac otpozadi,
+nakon toga udarac nogom u predjelu ispod lijevog oka, a potom ga je udaralo više lica po glavi i tijelu, ali nije
 vidio ko ga je udarao.
- 
-Na glavnom pretresu je istakao da je konkretnog dana vidio jednu grupu mladi ć a kako š ikaniraju V.N.a a
-kojeg ina č e zna iz grada, da je pitao V.a zaš to su ga dirali kako bi smirio situaciju i nakon š to je po š ao sa V.em
+
+Na glavnom pretresu je istakao da je konkretnog dana vidio jednu grupu mladića kakošikaniraju V.N.a a
+kojeg inače zna iz grada, da je pitao V.a zaš to su ga dirali kako bi smirio situaciju i nakonšto je pošao sa V.em
 do ovih momaka, ali sa najboljom namjerom insistirao je da ostane V. iza njega nekih desetak metara, te kada
-je pri š ao istima jedan plavi momak ga je pogledao direktno u o č i i zatim je nasrnuo na njega iz č ista mira iako
-mu se on prethodno izvinio, me đ utim, na neki na č in se izmakao dok se to lice dokopalo sa V., da je zatim č uo
+je prišao istima jedan plavi momak ga je pogledao direktno u oči i zatim je nasrnuo na njega izčista mira iako
+mu se on prethodno izvinio, međutim, na neki način se izmakao dok se to lice dokopalo sa V., da je zatimčuo
 kako je to lice povikalo “no ž ” a misli upravo na tog plavog visokog momka i da se vratio u trafiku, da je uzeo
-neki no ž  š to je vi š e li č ilo na sablju, da je pro š ao pored njega i potr č ao za V.em, koji se ve ć  pomjerao sa mjesta
-doga đ aja. Nije vidio tom prilikom da je V. nož em uboo to lice za koje je kasnije saznao da se zove M., da je u
-jednom trenutku zadobio udarac u potilja č nom dijelu glave otpozadi, ali nije vidio ko ga je od njih udario, a
-zatim je pao na zemlju i osjetio da ga M. udara nogom direktno u oko, a zatim sva č etvorica da su nastavili da
-ga udaraju i gaze, nakon č ega su pobjegli.
- 
-Nakon š to bi upoznat sa iskazom koji je dao pred VDT i pozvan da objasni razlike u kazivanju svjedok N. je
-naveo da kada je kazao na glavnom pretresu da je V.a neko š ikanirao, mislio je na to da kada neko š klapa
-nekog i to da ga udara nogom u dupe i da je prilikom davanja izjave pred tu ž ila š tvom bio povrije đ en i da
-ostaje pri izjavi koju je dao i u tu ž ila š tvu i pri izjavi koju je dao na glavnom pretresu jer na glavnom pretresu je
-govorio po sje ć anju. Dalje obja š njava da je tom prilikom M. zamahnuo dva puta pesnicom ali da nije siguran
-jer je prvu izjavu davao po š to je zadobio povrede a kada je kazao pred tu ž ila š tvom da je rekao V.u da ne radi
-to, odnosilo se na sve njih da se smire i da se ne sje ć a da je rekao “ali ve ć  je bilo kasno”, a kada je rekao da ne
-bi sprije č io V. sve i da je bio u prilici da ne uradi to š to je uradio, mislio je na to da ne bi V. uboo M. jer č im je
-vidio da su pali jedan na drugog č uo je kako je M. rekao “no ž ”. Naime vidio je da su se njih dvojica dohvatili i
-da je do š lo do mahanja no ž em izme đ u M.a i V.a, ali po š to je M. bio le đ ima okrenut i po š to je bio nagnut nad
-V.em, nije mogao vidjeti koje radnje je no ž em preduzeo V.. Tako đ e u momentu kada je M. krenuo prema
-njemu i kada se on izmakao isti je nastavio prema V.u i nakon š to su se tu po č upali i nakon š to je č uo da je M.
-viknuo “no ž ” vidio je da je zatim M. ušao u trafiku i uzeo tu sablju i tek nakon š to je M. potr č ao prema toj
-trafici on je vidio da V. u ruci dr ž i no ž  koji je ponio sa sobom i to u trenutku kada je krenuo da bje ž i. Dalje
-obja š njava da nikog od ovih momaka koji su bili na licu mjesta nije poznavao, osim š to prepoznaje M. i u
-momentu kada je M. nasrnuo na V.a obja š njava da je on istom rekao da bje ž i i prva osoba koju je vidio nakon
-što se osvijestio bio je upravo V. koji je poku š avao da ga otrijezni i u tom momentu je vidio da je obimno
+neki nožšto je više ličilo na sablju, da je prošao pored njega i potrčao za V.em, koji se većpomjerao sa mjesta
+događaja. Nije vidio tom prilikom da je V. nož em uboo to lice za koje je kasnije saznao da se zove M., da je u
+jednom trenutku zadobio udarac u potiljačnom dijelu glave otpozadi, ali nije vidio ko ga je od njih udario, a
+zatim je pao na zemlju i osjetio da ga M. udara nogom direktno u oko, a zatim svačetvorica da su nastavili da
+ga udaraju i gaze, nakončega su pobjegli.
+
+Nakonšto bi upoznat sa iskazom koji je dao pred VDT i pozvan da objasni razlike u kazivanju svjedok N. je
+naveo da kada je kazao na glavnom pretresu da je V.a nekošikanirao, mislio je na to da kada nekošklapa
+nekog i to da ga udara nogom u dupe i da je prilikom davanja izjave pred tužilaštvom bio povrijeđen i da
+ostaje pri izjavi koju je dao i u tužilaštvu i pri izjavi koju je dao na glavnom pretresu jer na glavnom pretresu je
+govorio po sjećanju. Dalje objašnjava da je tom prilikom M. zamahnuo dva puta pesnicom ali da nije siguran
+jer je prvu izjavu davao pošto je zadobio povrede a kada je kazao pred tužilaštvom da je rekao V.u da ne radi
+to, odnosilo se na sve njih da se smire i da se ne sjeća da je rekao “ali većje bilo kasno”, a kada je rekao da ne
+bi spriječio V. sve i da je bio u prilici da ne uradi tošto je uradio, mislio je na to da ne bi V. uboo M. jerčim je
+vidio da su pali jedan na drugogčuo je kako je M. rekao “no ž ”. Naime vidio je da su se njih dvojica dohvatili i
+da je došlo do mahanja nožem između M.a i V.a, ali pošto je M. bio leđima okrenut i pošto je bio nagnut nad
+V.em, nije mogao vidjeti koje radnje je nožem preduzeo V.. Takođe u momentu kada je M. krenuo prema
+njemu i kada se on izmakao isti je nastavio prema V.u i nakonšto su se tu počupali i nakonšto ječuo da je M.
+viknuo “no ž ” vidio je da je zatim M. ušao u trafiku i uzeo tu sablju i tek nakonšto je M. potrčao prema toj
+trafici on je vidio da V. u ruci drži nožkoji je ponio sa sobom i to u trenutku kada je krenuo da bježi. Dalje
+objašnjava da nikog od ovih momaka koji su bili na licu mjesta nije poznavao, osimšto prepoznaje M. i u
+momentu kada je M. nasrnuo na V.a objašnjava da je on istom rekao da bježi i prva osoba koju je vidio nakon
+
+što se osvijestio bio je upravo V. koji je pokušavao da ga otrijezni i u tom momentu je vidio da je obimno
 krvario.
- 
-Obja š njavaju ć i razlike u kazivanju i odgovaraju ć i na dalja pitanja u toku postupka, svjedok N. navodi da ni u
-jednom trenutku nije vidio a prije nego š to je on po š ao do tih momaka sa V. da je neko udario jako V.a ili da je
-pao, da njemu li č no niko osim M. koji je bio zamahnu sa namjerom da ga udari nije prilazio, niti su ga tukli, pa
-ni M., već  tek po š to je V. povrijedio M. jer su prethodno svi stajali, š to zna č i da ga niko nije udarao ni
-pesnicama ni nogama, niti je tada padao, nije ni bje ž ao zajedno sa V. od navedenih lica, jer da je bje ž ao ne bi
-dobio batine, preciznije, njega ova lica napadaju tek po š to je V. ubo M.a no ž em i po š to je M. uzeo sataru iz
+
+Objašnjavajući razlike u kazivanju i odgovarajući na dalja pitanja u toku postupka, svjedok N. navodi da ni u
+jednom trenutku nije vidio a prije negošto je on pošao do tih momaka sa V. da je neko udario jako V.a ili da je
+pao, da njemu lično niko osim M. koji je bio zamahnu sa namjerom da ga udari nije prilazio, niti su ga tukli, pa
+ni M., već tek pošto je V. povrijedio M. jer su prethodno svi stajali, š to znači da ga niko nije udarao ni
+pesnicama ni nogama, niti je tada padao, nije ni bježao zajedno sa V. od navedenih lica, jer da je bježao ne bi
+dobio batine, preciznije, njega ova lica napadaju tek pošto je V. ubo M.a nožem i pošto je M. uzeo sataru iz
 trafike i krenuo sa njom prema V.u, a istovremeno u momentu kada su njega tukli on nije vidio V.a jer nije bio
-na mjestu gdje je on zadobio povrede jer je V. već  bio oti š ao.
-Iz uvida u tri slu ž bene zabilje š ke od 20.01.2020. godine proizilazi da je 20.01.2020. stanica policija za
-dežurstvo CB Podgorica obavije š tena u 13:40 č asova da je do š lo do tu č e vi š e lica kojom prilikom je jedno lice
-imalo no ž , da se lice mjesta nalazi u Ulici V proleterske kod Doma zdravlja, da su u desno j kolovoznoj traci
-ispred Doma gledano iz pravca Bulevera Ivana Crnojevi ć a bili vidni kaplji č asti tragovi crvene boje nalik na
-krv, da je kriminalisti č ki tehni č ar fotografisao lice mjesta i sa č inio fotoelaborat, koji je sastavni dio slu ž benih
-zabilje š ki. Tako đ e proizilazi da je o š te ć eno lice M.A. transportovan u Klini č ki centar Crne Gore koje je u 14:00
-časova dovedeno kolima hitne pomo ć i gdje ga je primio doktor Radulovi ć .
- 
-Iz nalaza i mi š ljenja vje š taka medicinske struke Š o ć  Miodraga od 04.03.2020. godine proizilazi da je u
-predmetnom doga đ aju M.A.zadobio povrede u vidu ubodno rezne razne lijevog dojkinog predjela, promjera
+na mjestu gdje je on zadobio povrede jer je V. već bio otišao.
+Iz uvida u tri službene zabilješke od 20.01.2020. godine proizilazi da je 20.01.2020. stanica policija za
+dežurstvo CB Podgorica obaviještena u 13:40časova da je došlo do tuče više lica kojom prilikom je jedno lice
+imalo no ž, da se lice mjesta nalazi u Ulici V proleterske kod Doma zdravlja, da su u desno j kolovoznoj traci
+ispred Doma gledano iz pravca Bulevera Ivana Crnojevića bili vidni kapljičasti tragovi crvene boje nalik na
+krv, da je kriminalistički tehničar fotografisao lice mjesta i sačinio fotoelaborat, koji je sastavni dio službenih
+zabilješki. Takođe proizilazi da je oštećeno lice M.A. transportovan u Klinički centar Crne Gore koje je u 14:00
+časova dovedeno kolima hitne pomoći gdje ga je primio doktor Radulović.
+
+Iz nalaza i mišljenja vještaka medicinske struke Šoć Miodraga od 04.03.2020. godine proizilazi da je u
+predmetnom događaju M.A.zadobio povrede u vidu ubodno rezne razne lijevog dojkinog predjela, promjera
 oko 3 x1,5 cm, ubodno reznu ranu nadpreponskog predjela promjera oko 3,5 x 1 cm i na postoji otok sa
-spolja š nje strane desnog sko č nog zgloba, da su navedene rane posljedica dva udarca š iljkom i o š tricom
-zamahnutog mehani č kog oru đ a – no ž  na odgovaraju ć i predio tijela – grudi i stomak, dok je navedeni otok
+spoljašnje strane desnog skočnog zgloba, da su navedene rane posljedica dva udarcašiljkom i oštricom
+zamahnutog mehaničkog oruđa – nožna odgovarajući predio tijela – grudi i stomak, dok je navedeni otok
 posljedica sopstvenog zamaha i udara desnim stopalom o tvrdu i neravnu podlogu, tako da navedene
-povrede predstavljaju i pojedina č no i u svom zbiru laku tjelesnu povredu i da je u vrijeme zadobijanja
+povrede predstavljaju i pojedinačno i u svom zbiru laku tjelesnu povredu i da je u vrijeme zadobijanja
 navedenih rana M.A.bio okrenuo licem u lice prema osobi koja mu je zadala ta dva udarca.
- 
-Na glavnom pretresu je objasnio da se ne mo ž e izjasniti o vremenu nano š enja ovih rana, da ne mo ž e da
-isklju č i mogu ć nost da su ove dvije rane nanesene i nekim drugim povrednim oru đ em koji nije no ž . To oru đ e
-mora imati i o š tricu i š iljak. Isklju č uje mogu ć nost da su ove dvije rane nastale tako š to se ma š e ovom vrstom
-povrednog oru đ a. Ove rane imaju ubodni kanal tako da su nane š ene zama š ivanjem a ne tangencijalnim
-povr š nim prela ž enjem preko tijela. Dakle ne mo ž e mahanjem ispred tijela, nego su rane nane š ene
-mehanizmom udaranjem u tijelo, i da ostaje pri mi š ljenju da su M. i osoba koja mu zadaje udarce u vrijeme
-nano š enja ovih rana bili okrenuti licem u lice u vrijeme nano š enja istih.
- 
-Iz nalaza i mi š ljenja sudskog vje š taka medicinske struke od 23.01.2020. godine vje š taka Š o ć  Miodraga
-proizilazi da je N. U. u predmetnom doga đ aju zadobio krvni podliv u predjelu lijeve o č ne duplje i oguljotine u
-predjelu oba koljena, da je navedeni krvni podliv posljedica udarca tupim, te š kim zamahnutim mehani č kim
-oruđ em, mogu ć e pesnica, na odgovaraju ć i dio tijela – glave, da su navedene oguljotine posljedica pada i
-udara u tvrdu i neravnu podlogu i da navedene povrede predstavljaju i pojedina č no i u svom zbiru laku
-tjelesnu povredu. Na glavnom pretresu je pojasnio da medicinska dokumentacija za N. U. pokazuje samo
-povrede koje je naveo u stavu 1 ta č  1 svoga mi š ljenja. Dakle, ustanovljeno je postojanje samo jednog krvnog
-podliva i oguljotina u predjelu koljena. Naravno, svaka sila ne ostavlja posledi č no trag na tijelo, š to zavisi od
-intenziteta sile mogu ć e da zavisi i od stepena obu č enosti tog dijela tijela, prekrivenost odje ć om. No, sudsko
-medicinski, kad nema povrede nema ni dejstva sile i da krvni podliv ne krvari. Ukoliko je N. U. na tijelu imao
-samo opisani krvni podliv i oguljotine onda posledi č no nije moglo do ć i do obimnog krvarenja.
- 
-Nadalje iz nalaza i mi š ljenja navedenog vje š taka Šoć  Miodraga medicinske struke proizilazi da je u
-predmetnom doga đ aju V.N. zadobio reznu ranu u predjelu desnog ramena i krvni podliv u predjelu o č ne
-duplje, da je navedeni krvni podliv posljedica udarca tupim, te š kim zamahnutim mehani č kim oru đ em,
-mogu ć e pesnica, na odgovaraju ć i dio tijela – glave, da je navedena rana posljedica udarca o š tricom
-zamahnutog mehani č kog oru đ a mogu ć e no ž , na odgovaraju ć i dio tijela i da navedene povrede predstavljaju i
-pojedina č no i u svom zbiru laku tjelesnu povredu. Na glavnom pretresu je pojasnio da nije mogu ć e
-ekspresivno ta č no opredijeliti kako se nalazio povrije đ eni u odnosu na lice koje mu je zadalo povredu. Glava
+
+Na glavnom pretresu je objasnio da se ne može izjasniti o vremenu nanošenja ovih rana, da ne može da
+isključi mogućnost da su ove dvije rane nanesene i nekim drugim povrednim oruđem koji nije no ž. To oruđe
+mora imati i oštricu išiljak. Isključuje mogućnost da su ove dvije rane nastale takošto se maše ovom vrstom
+povrednog oruđa. Ove rane imaju ubodni kanal tako da su nanešene zamašivanjem a ne tangencijalnim
+površnim prelaženjem preko tijela. Dakle ne može mahanjem ispred tijela, nego su rane nanešene
+mehanizmom udaranjem u tijelo, i da ostaje pri mišljenju da su M. i osoba koja mu zadaje udarce u vrijeme
+nanošenja ovih rana bili okrenuti licem u lice u vrijeme nanošenja istih.
+
+Iz nalaza i mišljenja sudskog vještaka medicinske struke od 23.01.2020. godine vještaka Šoć Miodraga
+proizilazi da je N.U. u predmetnom događaju zadobio krvni podliv u predjelu lijeve očne duplje i oguljotine u
+predjelu oba koljena, da je navedeni krvni podliv posljedica udarca tupim, teškim zamahnutim mehaničkim
+oruđem, moguće pesnica, na odgovarajući dio tijela – glave, da su navedene oguljotine posljedica pada i
+udara u tvrdu i neravnu podlogu i da navedene povrede predstavljaju i pojedinačno i u svom zbiru laku
+tjelesnu povredu. Na glavnom pretresu je pojasnio da medicinska dokumentacija za N.U. pokazuje samo
+
+povrede koje je naveo u stavu 1 tač1 svoga mišljenja. Dakle, ustanovljeno je postojanje samo jednog krvnog
+podliva i oguljotina u predjelu koljena. Naravno, svaka sila ne ostavlja posledično trag na tijelo, š to zavisi od
+intenziteta sile moguće da zavisi i od stepena obučenosti tog dijela tijela, prekrivenost odjećom. No, sudsko
+medicinski, kad nema povrede nema ni dejstva sile i da krvni podliv ne krvari. Ukoliko je N.U. na tijelu imao
+samo opisani krvni podliv i oguljotine onda posledično nije moglo doći do obimnog krvarenja.
+
+Nadalje iz nalaza i mišljenja navedenog vještaka Šoć Miodraga medicinske struke proizilazi da je u
+predmetnom događaju V.N. zadobio reznu ranu u predjelu desnog ramena i krvni podliv u predjelu očne
+duplje, da je navedeni krvni podliv posljedica udarca tupim, teškim zamahnutim mehaničkim oruđem,
+moguće pesnica, na odgovarajući dio tijela – glave, da je navedena rana posljedica udarca oštricom
+zamahnutog mehaničkog oruđa moguće no ž, na odgovarajući dio tijela i da navedene povrede predstavljaju i
+pojedinačno i u svom zbiru laku tjelesnu povredu. Na glavnom pretresu je pojasnio da nije moguće
+ekspresivno tačno opredijeliti kako se nalazio povrijeđeni u odnosu na lice koje mu je zadalo povredu. Glava
 je okretna do 180 stepeni i mogao je da stoji naprijed a da se osoba koja zadaje udarac u tom trenutku nalazi
 sa bilo koje strane njegove glave. Rana u predjelu desnog ramena je na takvoj lokalizaciji tj sa gornje strane
-istog, tako da je povredno oru đ e u ruci koji zadaje ovu povredu moglo biti u takvom polo ž aju da je osoba koja
-zadaje ovaj udarac i sa prednje i sa zadnje strane. Za pretpostaviti je da je o š trica no ž a usmjerena prema
+istog, tako da je povredno oruđe u ruci koji zadaje ovu povredu moglo biti u takvom položaju da je osoba koja
+zadaje ovaj udarac i sa prednje i sa zadnje strane. Za pretpostaviti je da je oštrica noža usmjerena prema
 naprijed a ne prema nazad pa je na osnovu izgleda ove rane osnovano pretpostaviti da je lice koje nanosi ovu
-ranu sa prednje strane tijela povrijedilo V.a. Krvni podliv u predjelu o č ne duplje posljedica je jednog udarca
-što zna č i da je V.N. u predmetnom doga đ aju zadobio jedan krvni odliv, i to u predjelu desne o č ne duplje, i ova
-povreda je mogla nastati posljedi č no od jednog udarca pesnicom, ali i od udarca stopalom u vidu takozvanog
-volej udarca i da ta povreda ne krvari. Dalje poja š njava da knjiga ka ž e da satarom nastaju posljedi č no
-takozvane rane sjekotine - velike zape ć e rane š to u ovom konkretnom slu č aju nije postojalo. Radi se o reznoj
-rani a ne o rani sjekotini a reznu ranu proizvodi lak š e oru đ e - manje u vidu no ž a, skalpela i sli č no a ne nikako
-sjekira, satara i sli č no. Nakon pregleda izvje š taj ljekara specijaliste KCCG Podgorica iz kojeg se vidi da je dana
+ranu sa prednje strane tijela povrijedilo V.a. Krvni podliv u predjelu očne duplje posljedica je jednog udarca
+što znači da je V.N. u predmetnom događaju zadobio jedan krvni odliv, i to u predjelu desne očne duplje, i ova
+povreda je mogla nastati posljedično od jednog udarca pesnicom, ali i od udarca stopalom u vidu takozvanog
+volej udarca i da ta povreda ne krvari. Dalje pojašnjava da knjiga kaže da satarom nastaju posljedično
+takozvane rane sjekotine - velike zapeće ranešto u ovom konkretnom slučaju nije postojalo. Radi se o reznoj
+rani a ne o rani sjekotini a reznu ranu proizvodi lakše oruđe - manje u vidu noža, skalpela i slično a ne nikako
+sjekira, satara i slično. Nakon pregleda izvještaj ljekara specijaliste KCCG Podgorica iz kojeg se vidi da je dana
 20.01.2020. godine u 15,54 h ustanovljena "ubodna rana u predjelu desnog ramena do pojasa koja aktivno
-krvari, rana du ž ine oko 4 cm, š irine oko 2 cm, zidova relativno glatkih sa probojem mekih tkiva do kosti gdje
-se i zavr š ava dno rane" na osnovu ovakvog opisa rane rana je dubine oko 1 cm i nastala kao posljedica
-direktnog udarca o š tricom jakog zamahnutog mehani č kog oru đ a, tako da ostaje i dalje da je mogu ć e no ž em,
+krvari, rana dužine oko 4 cm, š irine oko 2 cm, zidova relativno glatkih sa probojem mekih tkiva do kosti gdje
+se i završava dno rane" na osnovu ovakvog opisa rane rana je dubine oko 1 cm i nastala kao posljedica
+direktnog udarca oštricom jakog zamahnutog mehaničkog oruđa, tako da ostaje i dalje da je moguće nožem,
 ne mora satarom.
- 
-Iz izvje š taja Forenzi č kog centra o trasolo š kom vje š ta č enju proizilazi da je na vje š ta č enje dostavljena
-garderoba M. A., i to 1) gornji dio š u š kavca crvene boje sa kapulja č om marke “Legea”, da se na prednjoj strani
-navedenog š u š kavca i to lijevoj strani uo č ava jedno mehani č ko o š te ć enje na jedno 50 cm od donje ivice
-šuškavca i 17 cm od lijevog š ava, prednje i zadnje pole, a da je relativna veli č ina ovog mehani č kog o š te ć enja
-oko 4 cm, da su na zadnjoj strani š u š kavca u lijevom podpazu š nom dijelu po unutra š njem š avu lijevog rukava
-u du ž ini od oko 6 cm i š avu prednje i zadnje pole u du ž ini od oko 4 cm nalazi ra š irenost, nastala dejstvom sile,
-a da se sa obje strane š u š kavca uo č avaju tragovi te č nosti tamno braon boje nalik na krv.2) Dukserica crveno-
-teget boje sa natpistom “parfimerija Tanja” na kojoj se uo č ava jedno mehani č ko o š te ć enje na prednjoj strani
-sa lijeve strane n 32 cm od donje ivice dukserice i 11 cm od lijevog š ava prednje i zadnje pole, a da je relativna
-velič ina ovog mehani č kog o š te ć enja od oko 2 cm i da se na obje strane š u š kavca uo č avaju tragovi te č nosti
-tamno-braon boje nalik na krv, 3) Trik majca teget boje, dosta izno š ena, pa se na prednjoj strani majce na
-lijevoj strani uo č ava jedno mehani č ko o š te ć enje na 43 cm od donje ivice majce i pet cm od š ava lijevog
-tregera, dok je relativna veli č ina ovog mehani č kog o š te ć enja oko 2,5 cm, a na zadnjoj strani trik majce u
-gonjem dijelu uo č avaju se dva mehani č ka o š te ć enja veli č ine 10 cm i 4 cm, nastala kao posljedica izno š enosti i
-djelovanja sile i da se na obje strane trik majce uo č avaju tragovi i te č nosti tamno-braon boje nalik na krv. Da
-je dostavljena i garderoba V.N.a i to d ž emper teget boje gdje se u blizini gornje desno g ramena š ava uo č ava
-jedno mehani č ko o š te ć enje veli č ine oko 4,5 cm, i to na zadnjoj strani d ž empera, dok sa prednje strane nijesu
-uoč ena mehani č ka o š te ć enja, da sa obje strane d ž empera se uo č avaju tragovi te č nosti tamno-braon boje
+
+Iz izvještaja Forenzičkog centra o trasološkom vještačenju proizilazi da je na vještačenje dostavljena
+garderoba M.A., i to 1) gornji diošuškavca crvene boje sa kapuljačom marke “Legea”, da se na prednjoj strani
+navedenogšuškavca i to lijevoj strani uočava jedno mehaničko oštećenje na jedno 50 cm od donje ivice
+šuškavca i 17 cm od lijevogšava, prednje i zadnje pole, a da je relativna veličina ovog mehaničkog oštećenja
+oko 4 cm, da su na zadnjoj stranišuškavca u lijevom podpazušnom dijelu po unutrašnjemšavu lijevog rukava
+u dužini od oko 6 cm išavu prednje i zadnje pole u dužini od oko 4 cm nalazi raširenost, nastala dejstvom sile,
+a da se sa obje stranešuškavca uočavaju tragovi tečnosti tamno braon boje nalik na krv.2) Dukserica crvenoteget boje sa natpistom “parfimerija Tanja” na kojoj se uočava jedno mehaničko oštećenje na prednjoj strani
+sa lijeve strane n 32 cm od donje ivice dukserice i 11 cm od lijevogšava prednje i zadnje pole, a da je relativna
+veličina ovog mehaničkog oštećenja od oko 2 cm i da se na obje stranešuškavca uočavaju tragovi tečnosti
+tamno-braon boje nalik na krv, 3) Trik majca teget boje, dosta iznošena, pa se na prednjoj strani majce na
+lijevoj strani uočava jedno mehaničko oštećenje na 43 cm od donje ivice majce i pet cm odšava lijevog
+tregera, dok je relativna veličina ovog mehaničkog oštećenja oko 2,5 cm, a na zadnjoj strani trik majce u
+gonjem dijelu uočavaju se dva mehanička oštećenja veličine 10 cm i 4 cm, nastala kao posljedica iznošenosti i
+
+djelovanja sile i da se na obje strane trik majce uočavaju tragovi i tečnosti tamno-braon boje nalik na krv. Da
+je dostavljena i garderoba V.N.a i to džemper teget boje gdje se u blizini gornje desno g ramenašava uočava
+jedno mehaničko oštećenje veličine oko 4,5 cm, i to na zadnjoj strani džempera, dok sa prednje strane nijesu
+uoč ena mehanička oštećenja, da sa obje strane džempera se uočavaju tragovi tečnosti tamno-braon boje
 nalik na krv, majca dugih rukava teget boje, gdje se na prednjoj strani majce u desnom gornjem ramenom
-dijelu neposredno po š avu uo č ava mehani č ko o š te ć enje koje je sastavni dio sa o š te ć enjem na zadnjoj strani
-majce, tako đ e neposredno uz sam š av. Ovdje se radi o jednom mehani č kom o š te ć enju u desnom gornjem
-ramenom dijelu u du ž ini od oko 4,5 cm, koje prelazi preko gornjeg ramenog š ava a koje jedinim dijelom na
-prednjoj poli, a jednim dijelom na zadnjoj poli, dok se sa obje strane majce uo č avaju tragovi i te č nosti tamno-
-braon boje nalik na krv, dostavljena je i majca kratkih rukava plave boje gdje se tako đ e na prednjoj strani i
-desnom gornjem ramenom dijelu neposredno pri š avu uo č ava mehani č ko o š te ć enje koje je sastavni dio sa
-ošte ć enjem na zadnjoj strani majce, tako đ e neposredno uz sam š av i da se tu radi o jednom mehani č kom
-ošte ć enju u desnom gornjem ramenom dijelu u du ž ini od oko 4 cm, koje prelazi preko gornjeg ramenog š ava,
+dijelu neposredno pošavu uočava mehaničko oštećenje koje je sastavni dio sa oštećenjem na zadnjoj strani
+majce, takođe neposredno uz samšav. Ovdje se radi o jednom mehaničkom oštećenju u desnom gornjem
+ramenom dijelu u dužini od oko 4,5 cm, koje prelazi preko gornjeg ramenogšava a koje jedinim dijelom na
+prednjoj poli, a jednim dijelom na zadnjoj poli, dok se sa obje strane majce uočavaju tragovi i tečnosti tamnobraon boje nalik na krv, dostavljena je i majca kratkih rukava plave boje gdje se takođe na prednjoj strani i
+desnom gornjem ramenom dijelu neposredno prišavu uočava mehaničko oštećenje koje je sastavni dio sa
+oštećenjem na zadnjoj strani majce, takođe neposredno uz samšav i da se tu radi o jednom mehaničkom
+oštećenju u desnom gornjem ramenom dijelu u dužini od oko 4 cm, koje prelazi preko gornjeg ramenogšava,
 a koje je jednim dijelom na prednjoj poli (oko 3 cm) a jednim dijelom na zadnjoj poli (oko 1 cm) i da su sa obje
-strane majce uo č eni tragovi te č nosti braon boje nalik na krv.
- 
-Zaklju č ak vje š taka je da su mehani č ka o š te ć enja na odjevnim predjelima M. A. nastala usljed prolaska tvrdog
-i oštrog predmeta sa sje č ivom nalik na no ž , mehani č ka o š te ć enja na š u š kavcu po š avu nastala su dejstvom
-sile, mehani č ka o š te ć enja na trik majci, tipa pocijepanosti nastala su kao posljedica izno š enosti i djelovanja
-sile. Mehani č ka o š te ć enja na odjevnim predmetima V.N. nastala su usljed prolaska tvrdog i o š trog predmeta
-sa sje č ivom nalik na no ž .
- 
-Na glavnom pretresu vje š tak trasolog je pojasnio da se ne mo ž e izjasniti da li su ova o š te ć enja na garderobi
-ošte ć enog M. mogla nastati od neke š ipke koja je bila polomljena i koja je imala neke o š trice na vrhu jer je
-nema na uvid. O š te ć enja su karakteristi č na za o š te ć enje nastalo dejstvom sje č iva, odnosno dejstvom sje č iva
-nož a a kada je kazao u svom izvje š taju da su o š te ć enja kod o š te ć enog M. i to na odjevnom predmetu
-šuškavcu crvene boje mogle nastati dejstvom sile, mislio je na č upanje, a š to se ti č e trik-majce koja je bila
-dosta izno š ena mogla je i samim skidanjem da se o š teti, a isto tako mo ž e biti o š te ć ena dejstvom sile –
-čupanjem i da su o š te ć enja na garderobi kod M.a teš ko mogla nastati od polomljene š ipke i da je ta š ipka
-imala takvo sje č ivo, veoma te š ko.
- 
-Iz nalaza i mi š ljenja komisije vje š taka psihijatra Golubovi ć  Ž eljka, neuropsihijatra Mili ć  Stanka i psihologa
-Stepanovi ć  Branke proizilazi da optu ž eni V.N. na osnovu postignu ć a na testu inteligencije funkcioni š e na
-nivou ispod prosje č nih intelektualnih kapaciteta, te da isti ne boluje od trajnog du š evnog oboljenja, da je
-prisutna vi š egodi š nja upotreba vi š e psihoaktivnih supstanci da dominantno ispoljava kriterijume
-toksikomanske zavisnosti od heroina, da se na psihi č kom planu registruju kognitivnim emocionalnim
-ošte ć enjima sa povremenim psihoti č nim epizodama koje su verifikovane kao klini č ki simptomi neorganske,
-nespecifikovane psihoze, da je upotreba psihoaktivnih supstanci dovela do o š te ć enja kognitivnih funkcija
-blaž eg stepena u sveri neposrednog pam ć enja, poreme ć aja rasu đ ivanja i shvatanja, kao i afektivnih funkcija
-u smislu poja č ane labilnosti i promjena raspolo ž enja, stanja nepetosti i anksioznosti. U osnovi postoje
-strukturalne promjene li č nosti na nivou emocionalno nestabilne li č nosti, da je krivi č no djelo psihopatolo š ki
-motivisano osnovnim poreme ć ajem strukture li č nosti optu ž enog na stepenu emocionalno nestabilne
-ličnosti, dugotrojanim upotrebama psihoaktivnih supstanci, sa o š te ć enjem kognitivnih funkcija, sa
-epizodi č nim psihoti č nim pona š anjem. Imaju ć i u vidu okolnosti krivi č nog djela na temelju podataka u
-sudskom spisu i psihi č ko psiholo š kom eksploracijom li č nosti okrivljenog kako slijedi nakon prethdonog
-konflikta, a kako to obja š njava okrivljeni, da je bio izlo ž en provokativnim ponana š njem o š te ć enog na
-verbalnom planu, cijene da su opisane okolnosti uzrokovale stanje razdra ž enosti srednjeg intenziteta jer je
-napu š tanjem mjesta doga đ aja i dolaskom sa drugom poslije 10 do 15 minuata bio dovoljan period
-rastere ć enja afektivnog stanja. Pona š anje okrivljenog u neposredno deliktnoj situaciji ne ispunjava
-kriterijume koji bi se odnosili na patolo š ki afekat, odnosno  afekat jakog intenziteta, a to je da nedostaje
-subjektivni osje ć aj neposredne ž ivotne ugro ž enosti, nije ispoljavao simptome kvalitativnih poreme ć aja
-svijesti pra ć ene pomu ć enjem, su ž enjem ili sumra č nom svijesti. Detaljan opis deliktne situacije bez simptoma
-amnezije isklju č uje i afekat razdra ž enosti jakog intenziteta na nivou patolo š kog. Doprinos u realizaciji
-krivi č nog djela su psihopatolo š ka svojstva emocionalno nestabilne li č nosti okrivljenog, sa promjenama
-raspolo ž enja, sa povremenim psihoti č nim ispoljavanjem kao i kongitivni poreme ć aji koji proizilaze iz
-dugogodi š nje upotrebe psihoaktivnih supstanci. Sposobnost shvatanja zna č aja djela kao i mogu ć nost
-upravljanja svojim postupcima u vrijeme izvr š enja krivi č nog djela kod okrivljenog su bili bitno smanjeni, pa
-budu ć i da ispoljava standarde toksikomanske zavisnosti o heroinu, mi š ljenja su sa medicinske strane da je
-potrebno primijeniti mjeru bezbjednosti obaveznog psihijatrijskog lije č enja od zavisnosti, jer postoji
-druš tvena opasnost ponavljanja krivi č nog djela ukoliko se ne bi lije č io, iz kog razloga preporu č uju mjeru
-bezbjednosti u odgovaraju ć oj zdravstvenoj ustanovi.
- 
-Na glavnom pretresu su pojasnili da su se kao vje š taci opredijelili da je sposobnost okrivljenog da shvati
-znač aj svog djela i mogu ć nost upravljanja svojim postupcima bila bitno smanjena u vrijeme izvr š enja
-krivi č nog djela imaju ć i u vidu dugogodi š nje dejstvo psihoaktivnih supstanci na organizam optuženog a koji je
-uslovio poreme ć aj u kognitivno emocionalnoj sveri sa povremenim psihoti č nim epizodama. Ovi poreme ć aji
-se prvenstveno ogledaju u sveri neposrednog pam ć enja, pa ž nje, rasu đ ivanja i shvatanja kao i u emocionalno
-afektivnoj poja č anoj labilnosti i sklonosti promjeni raspolo ž enja, stanja napetosti i visoke anksioznosti. U
-osnovi radi se o promjeni li č nosti na nivou emocionalno nestabilne li č nosti sa o š te ć enjem prethodno
+strane majce uočeni tragovi tečnosti braon boje nalik na krv.
+
+Zaključak vještaka je da su mehanička oštećenja na odjevnim predjelima M.A. nastala usljed prolaska tvrdog
+i oštrog predmeta sa sječivom nalik na no ž, mehanička oštećenja našuškavcu pošavu nastala su dejstvom
+sile, mehanička oštećenja na trik majci, tipa pocijepanosti nastala su kao posljedica iznošenosti i djelovanja
+sile. Mehanička oštećenja na odjevnim predmetima V.N. nastala su usljed prolaska tvrdog i oštrog predmeta
+sa sječivom nalik na no ž.
+
+Na glavnom pretresu vještak trasolog je pojasnio da se ne može izjasniti da li su ova oštećenja na garderobi
+oštećenog M. mogla nastati od nekešipke koja je bila polomljena i koja je imala neke oštrice na vrhu jer je
+nema na uvid. Oštećenja su karakteristična za oštećenje nastalo dejstvom sječiva, odnosno dejstvom sječiva
+nož a a kada je kazao u svom izvještaju da su oštećenja kod oštećenog M. i to na odjevnom predmetu
+šuškavcu crvene boje mogle nastati dejstvom sile, mislio je načupanje, ašto se tiče trik-majce koja je bila
+dosta iznošena mogla je i samim skidanjem da se ošteti, a isto tako može biti oštećena dejstvom sile –
+čupanjem i da su oštećenja na garderobi kod M.a teš ko mogla nastati od polomljenešipke i da je tašipka
+imala takvo sječivo, veoma teško.
+
+Iz nalaza i mišljenja komisije vještaka psihijatra Golubović Željka, neuropsihijatra Milić Stanka i psihologa
+Stepanović Branke proizilazi da optuženi V.N. na osnovu postignuća na testu inteligencije funkcioniše na
+nivou ispod prosječnih intelektualnih kapaciteta, te da isti ne boluje od trajnog duševnog oboljenja, da je
+prisutna višegodišnja upotreba više psihoaktivnih supstanci da dominantno ispoljava kriterijume
+toksikomanske zavisnosti od heroina, da se na psihičkom planu registruju kognitivnim emocionalnim
+oštećenjima sa povremenim psihotičnim epizodama koje su verifikovane kao klinički simptomi neorganske,
+nespecifikovane psihoze, da je upotreba psihoaktivnih supstanci dovela do oštećenja kognitivnih funkcija
+blažeg stepena u sveri neposrednog pamćenja, poremećaja rasuđivanja i shvatanja, kao i afektivnih funkcija
+u smislu pojačane labilnosti i promjena raspoloženja, stanja nepetosti i anksioznosti. U osnovi postoje
+strukturalne promjene ličnosti na nivou emocionalno nestabilne ličnosti, da je krivično djelo psihopatološki
+motivisano osnovnim poremećajem strukture ličnosti optuženog na stepenu emocionalno nestabilne
+ličnosti, dugotrojanim upotrebama psihoaktivnih supstanci, sa oštećenjem kognitivnih funkcija, sa
+epizodičnim psihotičnim ponašanjem. Imajući u vidu okolnosti krivičnog djela na temelju podataka u
+
+sudskom spisu i psihičko psihološkom eksploracijom ličnosti okrivljenog kako slijedi nakon prethdonog
+konflikta, a kako to objašnjava okrivljeni, da je bio izložen provokativnim ponanašnjem oštećenog na
+verbalnom planu, cijene da su opisane okolnosti uzrokovale stanje razdraženosti srednjeg intenziteta jer je
+napuštanjem mjesta događaja i dolaskom sa drugom poslije 10 do 15 minuata bio dovoljan period
+rasterećenja afektivnog stanja. Ponašanje okrivljenog u neposredno deliktnoj situaciji ne ispunjava
+kriterijume koji bi se odnosili na patološki afekat, odnosno afekat jakog intenziteta, a to je da nedostaje
+subjektivni osjećaj neposredneživotne ugroženosti, nije ispoljavao simptome kvalitativnih poremećaja
+svijesti praćene pomućenjem, suženjem ili sumračnom svijesti. Detaljan opis deliktne situacije bez simptoma
+amnezije isključuje i afekat razdraženosti jakog intenziteta na nivou patološkog. Doprinos u realizaciji
+krivičnog djela su psihopatološka svojstva emocionalno nestabilne ličnosti okrivljenog, sa promjenama
+raspoloženja, sa povremenim psihotičnim ispoljavanjem kao i kongitivni poremećaji koji proizilaze iz
+dugogodišnje upotrebe psihoaktivnih supstanci. Sposobnost shvatanja značaja djela kao i mogućnost
+upravljanja svojim postupcima u vrijeme izvršenja krivičnog djela kod okrivljenog su bili bitno smanjeni, pa
+budući da ispoljava standarde toksikomanske zavisnosti o heroinu, mišljenja su sa medicinske strane da je
+potrebno primijeniti mjeru bezbjednosti obaveznog psihijatrijskog liječenja od zavisnosti, jer postoji
+druš tvena opasnost ponavljanja krivičnog djela ukoliko se ne bi liječio, iz kog razloga preporučuju mjeru
+bezbjednosti u odgovarajućoj zdravstvenoj ustanovi.
+
+Na glavnom pretresu su pojasnili da su se kao vještaci opredijelili da je sposobnost okrivljenog da shvati
+značaj svog djela i mogućnost upravljanja svojim postupcima bila bitno smanjena u vrijeme izvršenja
+krivičnog djela imajući u vidu dugogodišnje dejstvo psihoaktivnih supstanci na organizam optuženog a koji je
+uslovio poremećaj u kognitivno emocionalnoj sveri sa povremenim psihotičnim epizodama. Ovi poremećaji
+se prvenstveno ogledaju u sveri neposrednog pamćenja, pažnje, rasuđivanja i shvatanja kao i u emocionalno
+afektivnoj pojačanoj labilnosti i sklonosti promjeni raspoloženja, stanja napetosti i visoke anksioznosti. U
+osnovi radi se o promjeni ličnosti na nivou emocionalno nestabilne ličnosti sa oštećenjem prethodno
 navedenih kognitivnih i afektivno emotivnih funkcija. U okolnostima da okrivljeni nije zavisnik o
-psihoaktivnih supstanci to implicira o č uvanost strukture li č nosti u emotivno afektivnoj sveri kao i o č uvanosti
-kognitivno amnesti č kih funkcija pa samim tim i sposobnost okrivljenog da shvati zna č aj svog djela i
-mogu ć nost upravljanja svojim postupcima bi bile o č uvane. U okolnostima koje sud bude cijenio a da nije bilo
-provokativnog pona š anja od strane o š te ć enog, u smislu verbalnog konflikta, te samim tim ako nedostaje to
-verbalno provokativno pona š anje vi š e lica prema okrivljenom, to samim tim ako nedostaju takve okolnosti
-ne bi moglo do ć i ni do afektivno emotivnog odgovora u smislu povi š ene emocionalne uzbu đ enosti kod
-okrivljenog š to zna č i da nema stanja razdra ž enosti srednjeg intenziteta. Zaklju č ak vje š taka je da je okrivljeni
-zavisik od psihoaktivne supstance u du ž em vremenskom intervalu a koje su u konkretnom slu č aju kod
-okrivljenog dovele do promjena u ličnosti pona š anja u afektivno emotivnoj sveri i naro č ito u kognitivno
-funkcionisanju š to na dalje zna č i da je prirodno da u tim okolnostima odnosno takva osoba reaguje burnije,
-nagonski, impulsivnije na manji povod odnosno  stresnu  okolnost kao š to je u konkretnom slu č aju, pa bi
-definitivno u svim tim okolnostima ura č unljivost kod okrivljenog bila bitno smanjena.
- 
-Cijene ć i rezultate cjelokupnog dokaznog postupka, navode optu ž be i odbrane optu ž enog, te sve provedene
-dokaze kako pojedina č no, tako i u njihovoj me đ usobnoj vezi, ovaj sud je na š ao da je optu ž eni izvr š io krivi č no
-djelo ubistvo u poku š aju iz č lana 143 u vezi č lana 20 Krivi č nog Zakonika Crne Gore.
- 
-Naime u postupku je nesumnjivo utvr đ eno, da je optu ž eni dana 20.01.2020.godine, oko 13.30 č asova u
-Podgorici, u Ul. IV Proleterske brigade, sa umi š ljajem poku š ao da li š i ž ivota o š te ć enog M. A., na na č in š to je
-nakon sva đ e sa o š te ć enim no ž em uboo istog dva puta i to u predjelu grudi i stomaka, nanose ć i mu laku
+psihoaktivnih supstanci to implicira očuvanost strukture ličnosti u emotivno afektivnoj sveri kao i očuvanosti
+kognitivno amnestičkih funkcija pa samim tim i sposobnost okrivljenog da shvati značaj svog djela i
+mogućnost upravljanja svojim postupcima bi bile očuvane. U okolnostima koje sud bude cijenio a da nije bilo
+provokativnog ponašanja od strane oštećenog, u smislu verbalnog konflikta, te samim tim ako nedostaje to
+verbalno provokativno ponašanje više lica prema okrivljenom, to samim tim ako nedostaju takve okolnosti
+ne bi moglo doći ni do afektivno emotivnog odgovora u smislu povišene emocionalne uzbuđenosti kod
+okrivljenogšto znači da nema stanja razdraženosti srednjeg intenziteta. Zaključak vještaka je da je okrivljeni
+zavisik od psihoaktivne supstance u dužem vremenskom intervalu a koje su u konkretnom slučaju kod
+okrivljenog dovele do promjena u ličnosti ponašanja u afektivno emotivnoj sveri i naročito u kognitivno
+funkcionisanjušto na dalje znači da je prirodno da u tim okolnostima odnosno takva osoba reaguje burnije,
+nagonski, impulsivnije na manji povod odnosno stresnu okolnost kao što je u konkretnom slučaju, pa bi
+definitivno u svim tim okolnostima uračunljivost kod okrivljenog bila bitno smanjena.
+
+Cijeneći rezultate cjelokupnog dokaznog postupka, navode optužbe i odbrane optuženog, te sve provedene
+dokaze kako pojedinačno, tako i u njihovoj međusobnoj vezi, ovaj sud je našao da je optuženi izvršio krivično
+djelo ubistvo u pokušaju izčlana 143 u vezičlana 20 Krivičnog Zakonika Crne Gore.
+
+Naime u postupku je nesumnjivo utvrđeno, da je optuženi dana 20.01.2020.godine, oko 13.30časova u
+Podgorici, u Ul. IV Proleterske brigade, sa umišljajem pokušao da lišiživota oštećenog M.A., na načinšto je
+nakon svađe sa oštećenim nožem uboo istog dva puta i to u predjelu grudi i stomaka, nanoseći mu laku
 tjelesnu povredu u vidu ubodno rezne rane lijevog dojkinog predjela i ubodno rezne rane nadpreponskog
 predjela.
- 
-Naprijed utvrđ eno činjenično stanje sud je nesumnjivo utvrdio, kako iz doslednog iskaza svjedoka oštećenog
-M. A. da je kriti č nom prilikom bio sa svojim drugom I. D.om negdje u blizini Centra za socijani rad kada je
-naiš ao optu ž eni V. koga poznaje iz vi đ enja, jer stalno napada starije ž ene a koje istovremeno i plja č ka, te da je
-iz tog razloga a po š to mu je optu ž eni kazao „ š ta je bilo, š ta ć ete vi“ istog uhvatio u predjelu le đ a i rekao mu
-„šta ć e š  ti tu“ a zatim ga i gurnuo, nakon č ega je optu ž eni V. otiš ao, da bi se, nakon jedno deset - petnaest
-minuta vratio sa N. U. koji su obojica u rukama imali no ž eve i čini mu se da su mu kazali “do đ i ovamo” i zatim
-ga napali na na č in š to su krenuli istovremeno prema njemu, da je on u tom trenutku krenuo prema N.u koji je
-bio sa optu ž enim ali da mu je odmah pri š ao optu ž eni V. i ubo ga sa tim no ž em jednom u predjelu grudi a
-drugi put u predjelu stomaka, zbog č ega je o š te ć eni udario optu ž enog nogom u predjelu stomaka, od kog
-udarca je optu ž eni V. pao, a zatim ga je o š te ć eni udarao nogama po glavi š to je u saglasnosti sa nalazom
-vješ taka medicinske struke Š o ć  Miodragom da je povreda kod optu ž enog krvni podliv u predjelu o č ne duplje
-mogu ć a kao posljedica udarca stopalom u vidu takozvanog volej udarca. Dalje sud utvr đ uje na osnovu iskaza
-ošte ć enog da u momentu kada je optu ž enog savladao o š te ć eni je po č eo da udara i N. U. a što je tako đ e
-potvr đ eno nalazom vje š taka medicinske struke Š o ć  Miodraga da je u predmetnom doga đ aju zadobio krvni
-podliv u predjelu lijeve o č ne duplje i oguljotine u predjelu oba koljena, da je navedeni krvni podliv posljedica
-udarca tupim, te š kim zamahnutim mehani č kim oru đ em, na odgovaraju ć i dio tijela – glave a da su navedene
-oguljotine posljedica pada i udara u tvrdu i neravnu podlogu, nakon č ega je o š e ć enom po č elo da se vrti u
-glavi jer je izgubio dosta krvi, zbog č ega je potr č ao do prodavnice koju dr ž e T. i pao na sred ulice, a š to se
-utvrđ uje ne samo iz iskaza o š te ć enog koji iskaz je potvr đ en nalazom vje š taka medicinske struke ve ć  u
-saglasnosti sa navedenim sa dokazima jer se iz iskaz svjedoka I. D.a utvr đ uje da je zaista tog dana bio sa
-ošte ć enim M.em u momentu kada je nai š ao optu ž eni V. koji je o š te ć enom ne š to dobacio zbog č ega mu je
-ošte ć eni rekao da ide sa tog mjesta, da se optu ž eni nakon dvadesetak minuta vratio u dru š tvu sa jo š  nekim
-momkom i da je optu ž eni u ruci imao neki no ž , i da su krenuli prema o š te ć enom, da je i o š te ć eni krenuo
-prema njima kada je optu ž eni zamahnuo rukom u predjelu grudi o š te ć enog i to dva-tri puta i to zamahom
-jedan za drugim u kom trenutku je optu ž eni viknuo „ubode me“ .
- 
-Prednji iskazi o š te ć enog i svjedoka a pogledu klju č nih č injenica u kojem su usagla š eni sud je zaista cijenio
-kao vjerodsostojne i na č injenicama utemeljene obzirom da imaju kredibilitet u ostalim kako materijalnim
-tako i personalnim dokazima, iskazima svjedoka a u dijelu da je optu ž eni zaista uboo no ž em o š te ć enog
-potvr đ uje i svjedok N. U. koji je konkretnog dana bio sa optu ž enim, da je vidio da optu ž eni u ruci dr ž i no ž
-kada je o š te ć eni jauknuo i potr č ao prema jednoj trafici.
- 
-Ni sam optu ž eni u svojoj dobrani pred VDT nije negirao da je kriti č nom prilikom uboo negdje u predjelu
-stomaka o š te ć enog ali ne no ž em ve ć  jednom š ipkom, za koju je na glavnom pretresu pojasnio da je bila
-improvizovana kao no ž .
- 
-Međ utim da je konkretnom prilikom do š lo do upotrebe no ž a od strane optu ž enog a kako je to sud utvrdio iz
-iskaza o š te ć enog i navednih svjedoka koji su bili o č evici doga đ aja i koji su se jasno izjasnili da su kod
-optu ž enog vidjeli no ž , i da je optu ž eni zaista zadao povrede o š te ć enom no ž em potvr ž eno je izvje š tajem
-Forenzi č kog centra o trasolo š kom vje š ta č enju broj 304/20 od 24.02.2020. godine i neposrednog izja š njenja
-vješ taka trasologa na glavnom pretresu, da su mehani č ka o š te ć enja na odjevnim predmetima o š te ć enog M.
-A. a koja su precizno navedena i opisana u navedenom izvje š taju, a ista u saglasno sti i sa na č inom,
-mehanizmom i mjestom nastanka povreda kod o š te ć enog, nastala usljed prolaska tvdog i o š trog predmeta
-sa sje č ivom nalik na no ž  i da su navedena o š te ć ena karakteristi č na upravo za o š te ć enja nastala dejstvom
-sječ iva, odnosno sje č iva no ž a, š to demantuje odbranu optu ž enog da je konkretnom prilikom nanio povrede
-ošte ć enom improvizovanom š ipkom koja je bila polomljena.
- 
-Prednje je potvr đ eno i stručnim i objektivnim nalazom i mišljenjem vještaka sudske medicine dr. Šoć
+
+Naprijed utvrđeno činjenično stanje sud je nesumnjivo utvrdio, kako iz doslednog iskaza svjedoka oštećenog
+M.A. da je kritičnom prilikom bio sa svojim drugom I.D.om negdje u blizini Centra za socijani rad kada je
+naišao optuženi V. koga poznaje iz viđenja, jer stalno napada stariježene a koje istovremeno i pljačka, te da je
+iz tog razloga a pošto mu je optuženi kazao „ š ta je bilo, š taćete vi“ istog uhvatio u predjelu leđa i rekao mu
+„štaćešti tu“ a zatim ga i gurnuo, nakončega je optuženi V. otišao, da bi se, nakon jedno deset - petnaest
+minuta vratio sa N.U. koji su obojica u rukama imali noževe i čini mu se da su mu kazali “dođi ovamo” i zatim
+ga napali na načinšto su krenuli istovremeno prema njemu, da je on u tom trenutku krenuo prema N.u koji je
+bio sa optuženim ali da mu je odmah prišao optuženi V. i ubo ga sa tim nožem jednom u predjelu grudi a
+drugi put u predjelu stomaka, zbogčega je oštećeni udario optuženog nogom u predjelu stomaka, od kog
+udarca je optuženi V. pao, a zatim ga je oštećeni udarao nogama po glavišto je u saglasnosti sa nalazom
+vještaka medicinske struke Šoć Miodragom da je povreda kod optuženog krvni podliv u predjelu očne duplje
+moguća kao posljedica udarca stopalom u vidu takozvanog volej udarca. Dalje sud utvrđuje na osnovu iskaza
+oštećenog da u momentu kada je optuženog savladao oštećeni je počeo da udara i N.U. a što je takođe
+potvrđeno nalazom vještaka medicinske struke Šoć Miodraga da je u predmetnom događaju zadobio krvni
+podliv u predjelu lijeve očne duplje i oguljotine u predjelu oba koljena, da je navedeni krvni podliv posljedica
+udarca tupim, teškim zamahnutim mehaničkim oruđem, na odgovarajući dio tijela – glave a da su navedene
+oguljotine posljedica pada i udara u tvrdu i neravnu podlogu, nakončega je ošećenom počelo da se vrti u
+glavi jer je izgubio dosta krvi, zbogčega je potrčao do prodavnice koju drže T. i pao na sred ulice, ašto se
+utvrđuje ne samo iz iskaza oštećenog koji iskaz je potvrđen nalazom vještaka medicinske struke veću
+saglasnosti sa navedenim sa dokazima jer se iz iskaz svjedoka I.D.a utvrđuje da je zaista tog dana bio sa
+oštećenim M.em u momentu kada je naišao optuženi V. koji je oštećenom nešto dobacio zbogčega mu je
+oštećeni rekao da ide sa tog mjesta, da se optuženi nakon dvadesetak minuta vratio u društvu sa jošnekim
+momkom i da je optuženi u ruci imao neki no ž, i da su krenuli prema oštećenom, da je i oštećeni krenuo
+prema njima kada je optuženi zamahnuo rukom u predjelu grudi oštećenog i to dva-tri puta i to zamahom
+jedan za drugim u kom trenutku je optuženi viknuo „ubode me“.
+
+Prednji iskazi oštećenog i svjedoka a pogledu ključnihčinjenica u kojem su usaglašeni sud je zaista cijenio
+kao vjerodsostojne i načinjenicama utemeljene obzirom da imaju kredibilitet u ostalim kako materijalnim
+tako i personalnim dokazima, iskazima svjedoka a u dijelu da je optuženi zaista uboo nožem oštećenog
+potvrđuje i svjedok N.U. koji je konkretnog dana bio sa optuženim, da je vidio da optuženi u ruci drži nožkada je oštećeni jauknuo i potrčao prema jednoj trafici.
+
+Ni sam optuženi u svojoj dobrani pred VDT nije negirao da je kritičnom prilikom uboo negdje u predjelu
+stomaka oštećenog ali ne nožem većjednomšipkom, za koju je na glavnom pretresu pojasnio da je bila
+improvizovana kao no ž.
+
+Međ utim da je konkretnom prilikom došlo do upotrebe noža od strane optuženog a kako je to sud utvrdio iz
+iskaza oštećenog i navednih svjedoka koji su bili očevici događaja i koji su se jasno izjasnili da su kod
+optuženog vidjeli no ž, i da je optuženi zaista zadao povrede oštećenom nožem potvrženo je izvještajem
+Forenzičkog centra o trasološkom vještačenju broj 304/20 od 24.02.2020. godine i neposrednog izjašnjenja
+vještaka trasologa na glavnom pretresu, da su mehanička oštećenja na odjevnim predmetima oštećenog M.A. a koja su precizno navedena i opisana u navedenom izvještaju, a ista u saglasno sti i sa načinom,
+mehanizmom i mjestom nastanka povreda kod oštećenog, nastala usljed prolaska tvdog i oštrog predmeta
+sa sječivom nalik na noži da su navedena oštećena karakteristična upravo za oštećenja nastala dejstvom
+sječiva, odnosno sječiva noža, š to demantuje odbranu optuženog da je konkretnom prilikom nanio povrede
+oštećenom improvizovanomšipkom koja je bila polomljena.
+
+Prednje je potvrđeno i stručnim i objektivnim nalazom i mišljenjem vještaka sudske medicine dr. Šoć
 Miodraga od 04.03.2020. godine koji je utvrdio vrstu, težinu i mehanizam nastanka tjelesnih povreda kod
-oštećenog M. A., i to da je u predmetnom doga đ aju o š te ć eni M.A.zadobio povrede u vidu ubodno rezne razne
+oštećenog M.A., i to da je u predmetnom događaju oštećeni M.A.zadobio povrede u vidu ubodno rezne razne
 lijevog dojkinog predjela, promjera oko 3 x1,5 cm, ubodno reznu ranu nadpreponskog predjela promjera oko
-3,5 x 1 cm i na postoji otok sa spolja š nje strane desnog sko č nog zgloba, da su navedene rane posljedica dva
-udarca š iljkom i o š tricom zamahnutog mehani č kog oru đ a – no ž  na odgovaraju ć i predio tijela – grudi i
+3,5 x 1 cm i na postoji otok sa spoljašnje strane desnog skočnog zgloba, da su navedene rane posljedica dva
+udarcašiljkom i oštricom zamahnutog mehaničkog oruđa – nožna odgovarajući predio tijela – grudi i
 stomak, dok je navedeni otok posljedica sopstvenog zamaha i udara desnim stopalom o tvrdu i neravnu
-podlogu, tako da navedene povrede predstavljaju i pojedina č no i u svom zbiru laku tjelesnu povredu i da je u
-vrijeme zadobijanja navedenih rana o š te ć eni M.A.bio okrenuo licem u lice prema optu ž enom koji mu je zado
-ta dva udarca, poja š njavaju ć i da je oru đ e koje je kori šć eno moralo imati i o š tricu i š iljak i da isklju č uje
-mogu ć nost da su ove dvije rane nastale tako š to se mahalo ovom vrstom povrednog oru đ a kako to
-predstavlja optu ž eni jer navedene rane imaju ubodni kanal tako da su nane š ene zama š ivanjem a ne
-povr š nim prela ž enjem preko tijela, tako da je i u ovom dijelu demantovana odbrana optu ž enog, jer je
-zaklju č ak vje š taka da nijesu mogle nastati mahanjem ispred tijela, ve ć  su rane nane š ene mehanizmom
-udaranjem u tijelo, i da su o š te ć eni M. i optu ž eni u vrijeme nano š enja ovih rana bili okrenuti licem u lice što
-daje kredibilitet iskazu o š te ć enog o na č inu na koji se odigrao predmetni doga đ aj, te iskazu svjedoka I. i svim
+podlogu, tako da navedene povrede predstavljaju i pojedinačno i u svom zbiru laku tjelesnu povredu i da je u
+vrijeme zadobijanja navedenih rana oštećeni M.A.bio okrenuo licem u lice prema optuženom koji mu je zado
+ta dva udarca, pojašnjavajući da je oruđe koje je korišćeno moralo imati i oštricu išiljak i da isključuje
+mogućnost da su ove dvije rane nastale takošto se mahalo ovom vrstom povrednog oruđa kako to
+predstavlja optuženi jer navedene rane imaju ubodni kanal tako da su nanešene zamašivanjem a ne
+površnim prelaženjem preko tijela, tako da je i u ovom dijelu demantovana odbrana optuženog, jer je
+zaključak vještaka da nijesu mogle nastati mahanjem ispred tijela, većsu rane nanešene mehanizmom
+udaranjem u tijelo, i da su oštećeni M. i optuženi u vrijeme nanošenja ovih rana bili okrenuti licem u lice što
+daje kredibilitet iskazu oštećenog o načinu na koji se odigrao predmetni događaj, te iskazu svjedoka I. i svim
 ostalim kako materijalnim tako i personalnim dokazima.
- 
-Da se doga đ aj zaista desio dana 20.01.2020. godine u Podgorici u ulici IV proleterske brigade potvr đ eno je
-sadr ž inom materijalnih dokaza i to tri slu ž bene zabilje š ke CB Podgorica Ku.br.66/20 od 21.01.2020 godine, iz
-kojih se utvr đ uje da je stanica policija za de ž urstvo CB Podgorica obavije š tena u 13:40 č asova da je do š lo do
-tuče vi š e lica kojom prilikom je jedno lice u ruci dr ž alo no ž , da se lice mjesta nalazi u Ulici V proleterske kod
-Doma zdravlja, da su u desnoj kolovoznoj traci ispred Doma gledano iz pravca Bulevera Ivana Crnojevi ć a bili
-vidni kaplji č asti tragovi crvene boje nalik na krv, I da je kriminalisti č ki tehni č ar fotografisao lice mjesta i
-sačinio fotoelaborat, na kojem fotoelaboratu je ta č no prikazan izgled lica mjesta.
- 
-Sud je imao u vidu i odbranu optu ž enog i to prvu koju je dao pred VDT da ga je o š te ć eni sa svojim drugovima
-provocirao neposredno prije doga đ aja, da ga je gurnuo i da je pao, (me đ utim taj dio odbrane da je pao niko
-od svjedoka pa č ak ni N. ne potvr đ uje), da je zatim sreo druga N. i ispri č ao mu š ta se desilo, da se zatim sa N.
-vratio kod o š te ć enog i njegovog dru š tva i da je odmah a č im su im pri š li o š te ć eni iz torbice izvadio neku
-sataru i da je sa tom satarom po č eo da ma š e prema njima i da su oni stali da bje ž e, a da su ti momci koji su
-bili sa o š te ć enim kao i sam o š te ć eni tr č ali za njima i u jednom trenutku kad su ih sustigli da su N. prebili, pa
-kada je vidio da N. leži na zemlji i da ga trojica tuku izvadio je iz jakne nekakvu š ipku koju ina č e stalno nosi sa
-sobom, i da se vratio do njih i po č eo da ma š e sa tom š ipkom prema o š te ć enom i njegovim dru š tvom a sve
-kako bi odbranio svog druga N., da je o š te ć eni zamahnuo satarom prema njemu i zahvatio ga izme đ u ramena
-i klju č ne kosti u kom trenutku je zaista o š te ć enog uboo negdje u predjelu stomaka, odnosno vi š e ga
-posjekao, nakon č ega su pobjegli jer kako navodi uspio je da podigne N. koji je bio sav krvava i nagr đ en i koji
-mu je rekao da su mu polomili zube, da bi na glavnom pretresu u toku postupka optu ž eni mijenjao svoju
-odbranu navode ć i u prvom navratu da je tog dana imao neku dr š ku kod sebe vi š e improvizovanu kao no ž  i da
-su konkretnom prilikom kada su on i N. priš li o š te ć enom i tim momcima, oni N.a odmah po č eli da biju ( š to je
-u suprotnosti sa prethodnim iskazom da je o š te ć eni odmah kad su pri š li mahao satarom prema njima i da su
-odmah krenuli da bje ž e i da ih tada nijesu udarali) i njemu zadali nekoliko udaraca i da su nakon toga njih
-dvojica stali da bje ž e, pa kad su ih o š te ć eni i njegovo dru š tvo sustigli da su po č eli opet da tuku N.a i kada je
-im je pri š ao kako bi odbranio N.a, da ga je jedan od tih momaka udario sa lijeve strane, a da je o š te ć eni koji
-mu je bio okrenut licem zamahnuo prema njemu da ga udari tom satarom, zbog č ega je izvadio ovu š ipku
-koja je improvozovana kao no ž  i samo mahao sa istom ispred o š te ć enog, da nije uboo o š te ć enog, ve ć  je
-vjerovatno tokom tog zamahivanja nanio te ubodne ta č ke o š te ć enom, da bi opet a odgovaraju ć i na pitanja
-izmijenio odbranu i naveo da je od momenta kada su ga o š te ć eni i njegovo dru š tvo provocirali prvi put, pa do
-momenta kada se on vratio kod njih zajedno sa N.em, pro š lo nekih desetak minuta i da nije bilo nikakve
-svađ e i rasprave izme đ u njega i N.a sa njima, ve ć  je N. samo digao ruke i kazao „momci do š ao sam da vas
-pitam za š to dirate ovog momka“, me đ utim, da su o š te ć eni i ti momci odmah napali N.a i toliko ga tukli da je
-bio krvav po č itavom tijelu, nakon č ega su njih dvojica stali da bje ž e, me đ utim, da je o š te ć eni M. trčao za
-njima i nosio no ž  u ruci koja mu je bila spu š tena, pa kako se u jednom trenutku kako optu ž eni navodi
-okrenuo i vidio da trojica tuku N.a i ska č u na njega, stao je a zatim krenuo prema njima da odbrani N.a iz kog
-razloga je izvadio tu metalnu š ipku i zamahnuo istom prema o š te ć enom mo ž da tri puta, me đ utim o š te ć eni ga
-je prvi tom satarom koji je imao u ruci zaka č io u predjelu klju č ne kosti i na taj na č in povrijedio, tako da misli
-da je o š te ć enog M. uboo ovim improvizovanom š ipkom koja je bila polomljena, tek kada ga je o š te ć eni M.
-zaka č io satarom u predjelu klju č ne kosti, me đ utim imaju ć i u vidu da je prednja odbrana sama po sebi
-kontradiktorna, ni č im utemeljenja i neargumentovama sud je istu cijenio kao neosnovanu i sra č unato datu
+
+Da se događaj zaista desio dana 20.01.2020. godine u Podgorici u ulici IV proleterske brigade potvrđeno je
+sadržinom materijalnih dokaza i to tri službene zabilješke CB Podgorica Ku.br.66/20 od 21.01.2020 godine, iz
+kojih se utvrđuje da je stanica policija za dežurstvo CB Podgorica obaviještena u 13:40časova da je došlo do
+tuče više lica kojom prilikom je jedno lice u ruci držalo no ž, da se lice mjesta nalazi u Ulici V proleterske kod
+Doma zdravlja, da su u desnoj kolovoznoj traci ispred Doma gledano iz pravca Bulevera Ivana Crnojevića bili
+vidni kapljičasti tragovi crvene boje nalik na krv, I da je kriminalistički tehničar fotografisao lice mjesta i
+sačinio fotoelaborat, na kojem fotoelaboratu je tačno prikazan izgled lica mjesta.
+
+Sud je imao u vidu i odbranu optuženog i to prvu koju je dao pred VDT da ga je oštećeni sa svojim drugovima
+provocirao neposredno prije događaja, da ga je gurnuo i da je pao, (međutim taj dio odbrane da je pao niko
+od svjedoka pačak ni N. ne potvrđuje), da je zatim sreo druga N. i ispričao mušta se desilo, da se zatim sa N.
+vratio kod oštećenog i njegovog društva i da je odmah ačim su im prišli oštećeni iz torbice izvadio neku
+sataru i da je sa tom satarom počeo da maše prema njima i da su oni stali da bježe, a da su ti momci koji su
+bili sa oštećenim kao i sam oštećeni trčali za njima i u jednom trenutku kad su ih sustigli da su N. prebili, pa
+kada je vidio da N. leži na zemlji i da ga trojica tuku izvadio je iz jakne nekakvušipku koju inače stalno nosi sa
+
+sobom, i da se vratio do njih i počeo da maše sa tomšipkom prema oštećenom i njegovim društvom a sve
+kako bi odbranio svog druga N., da je oštećeni zamahnuo satarom prema njemu i zahvatio ga između ramena
+i ključne kosti u kom trenutku je zaista oštećenog uboo negdje u predjelu stomaka, odnosno više ga
+posjekao, nakončega su pobjegli jer kako navodi uspio je da podigne N. koji je bio sav krvava i nagrđen i koji
+mu je rekao da su mu polomili zube, da bi na glavnom pretresu u toku postupka optuženi mijenjao svoju
+odbranu navodeći u prvom navratu da je tog dana imao neku dršku kod sebe više improvizovanu kao noži da
+su konkretnom prilikom kada su on i N. prišli oštećenom i tim momcima, oni N.a odmah počeli da biju ( š to je
+u suprotnosti sa prethodnim iskazom da je oštećeni odmah kad su prišli mahao satarom prema njima i da su
+odmah krenuli da bježe i da ih tada nijesu udarali) i njemu zadali nekoliko udaraca i da su nakon toga njih
+dvojica stali da bježe, pa kad su ih oštećeni i njegovo društvo sustigli da su počeli opet da tuku N.a i kada je
+im je prišao kako bi odbranio N.a, da ga je jedan od tih momaka udario sa lijeve strane, a da je oštećeni koji
+mu je bio okrenut licem zamahnuo prema njemu da ga udari tom satarom, zbogčega je izvadio ovušipku
+koja je improvozovana kao noži samo mahao sa istom ispred oštećenog, da nije uboo oštećenog, većje
+vjerovatno tokom tog zamahivanja nanio te ubodne tačke oštećenom, da bi opet a odgovarajući na pitanja
+izmijenio odbranu i naveo da je od momenta kada su ga oštećeni i njegovo društvo provocirali prvi put, pa do
+momenta kada se on vratio kod njih zajedno sa N.em, prošlo nekih desetak minuta i da nije bilo nikakve
+svađe i rasprave između njega i N.a sa njima, većje N. samo digao ruke i kazao „momci došao sam da vas
+pitam zašto dirate ovog momka“, međutim, da su oštećeni i ti momci odmah napali N.a i toliko ga tukli da je
+bio krvav počitavom tijelu, nakončega su njih dvojica stali da bježe, međutim, da je oštećeni M. trčao za
+njima i nosio nožu ruci koja mu je bila spuštena, pa kako se u jednom trenutku kako optuženi navodi
+okrenuo i vidio da trojica tuku N.a i skaču na njega, stao je a zatim krenuo prema njima da odbrani N.a iz kog
+razloga je izvadio tu metalnušipku i zamahnuo istom prema oštećenom možda tri puta, međutim oštećeni ga
+je prvi tom satarom koji je imao u ruci zakačio u predjelu ključne kosti i na taj način povrijedio, tako da misli
+da je oštećenog M. uboo ovim improvizovanomšipkom koja je bila polomljena, tek kada ga je oštećeni M.
+zakačio satarom u predjelu ključne kosti, međutim imajući u vidu da je prednja odbrana sama po sebi
+kontradiktorna, ničim utemeljenja i neargumentovama sud je istu cijenio kao neosnovanu i sračunato datu
 radi izbjegavanja krivice.
- 
-Ovo iz razloga, š to je takva odbrana optu ž enog opovrgnuta kako doslednim iskazom svjedoka o š te ć enog M.a
-i svjedoka I.tako i iz razloga š to je u toku postupka kako je prethodno obrazlo ž eno, navedenu odbranu vi š e
-puta mijenjao, i to da je izvadio metalnu š ipku sa kojom je povrijedio o š te ć enog prvo zbog toga š to ga je
-ošte ć eni prvi napao i povrijedio satarom a zatim da je izvadio š ipku kako bi odbranio druga N.a, a koja
-odbrana nije u saglasnosti ni sa iskazom svjedoka N. U. jer je svjedok naveo da ga niko nije tukao ili pak
-pretukao u momentu kada se vratio sa optu ž enim do o š te ć enog kako bi ga pitao š ta se prethodno desilo ve ć
-kada je o š te ć eni M. zamahnuo da ga udari da je on izbjegao taj udarac i da je o š te ć eni pao na optu ž enog koji
-je bio iza njega i da je č uo kada je o š te ć eni jauknuo i potr č ao prema jednoj trafici, u kom trenutku je vidio da
-optu ž eni dr ž i no ž , i da ga je nakon ovog uboda no ž em od strane optu ž enog prema o š te ć enom neko udario u
-potilja č nom dijelu glave, ali ne mo ž e da se izjasni ko i da je zatim pao na zemlju i da je tada osjetio da ga
-ošte ć eni udara nogom, a zatim i ostala č etvorica, š to ukazuje da niko pa ni o š te ć eni ni prisutni momci koji su
-bili sa o š te ć enim prije nego š to je optu ž eni uboo no ž em o š te ć enog istom nije zadao bilo kakve udarce, kako
-to i sam svjedok N. potvr đ uje na glavnom pretresu, ve ć  da se to desilo nakon kriti č nog doga đ aja š to u
-kona č nom demantuje odbranu optu ž enog da je izvadio navedenu š ipku improvizovanu kao no ž  i sa njom
-mahao jer je morao da za š titi druga N.a kojeg su kako ka ž e toliko tukli da je bio krvav po č itavom tijelu ( a š to
-nema kredibilitet ni u nalazu vje š taka medicinske struke) i da je vjerovatno u tom zamahivanju posjekao
-ošte ć enog ali po š to je isti njega udario satarom u predjelu ramena i to sve kako bi se odbranio a š to je sve
-prednje demantovano ne samo iskazom o š te ć enog i svjedoka I. već i iskazom njegovog druga upravo N. da je
-ošte ć eni u š ao u trafiku i uzeo neki no ž  tek po š to ga je optu ž eni ubo svojm no ž em i da njega niko nije prebio ni
-udarao dok optu ž eni nije ubo no ž em o š te ć enog, š to zna č i da su ga tukli po š to je optu ž eni ubo o š te ć enog
+
+Ovo iz razloga, š to je takva odbrana optuženog opovrgnuta kako doslednim iskazom svjedoka oštećenog M.a
+i svjedoka I.tako i iz razlogašto je u toku postupka kako je prethodno obrazloženo, navedenu odbranu više
+puta mijenjao, i to da je izvadio metalnušipku sa kojom je povrijedio oštećenog prvo zbog togašto ga je
+oštećeni prvi napao i povrijedio satarom a zatim da je izvadiošipku kako bi odbranio druga N.a, a koja
+odbrana nije u saglasnosti ni sa iskazom svjedoka N.U. jer je svjedok naveo da ga niko nije tukao ili pak
+pretukao u momentu kada se vratio sa optuženim do oštećenog kako bi ga pitaošta se prethodno desilo većkada je oštećeni M. zamahnuo da ga udari da je on izbjegao taj udarac i da je oštećeni pao na optuženog koji
+je bio iza njega i da ječuo kada je oštećeni jauknuo i potrčao prema jednoj trafici, u kom trenutku je vidio da
+optuženi drži no ž, i da ga je nakon ovog uboda nožem od strane optuženog prema oštećenom neko udario u
+potiljačnom dijelu glave, ali ne može da se izjasni ko i da je zatim pao na zemlju i da je tada osjetio da ga
+oštećeni udara nogom, a zatim i ostalačetvorica, š to ukazuje da niko pa ni oštećeni ni prisutni momci koji su
+bili sa oštećenim prije negošto je optuženi uboo nožem oštećenog istom nije zadao bilo kakve udarce, kako
+to i sam svjedok N. potvrđuje na glavnom pretresu, većda se to desilo nakon kritičnog događajašto u
+konačnom demantuje odbranu optuženog da je izvadio navedenušipku improvizovanu kao noži sa njom
+mahao jer je morao da zaštiti druga N.a kojeg su kako kaže toliko tukli da je bio krvav počitavom tijelu ( ašto
+nema kredibilitet ni u nalazu vještaka medicinske struke) i da je vjerovatno u tom zamahivanju posjekao
+oštećenog ali pošto je isti njega udario satarom u predjelu ramena i to sve kako bi se odbranio ašto je sve
+prednje demantovano ne samo iskazom oštećenog i svjedoka I. već i iskazom njegovog druga upravo N. da je
+oštećeni ušao u trafiku i uzeo neki nožtek pošto ga je optuženi ubo svojm nožem i da njega niko nije prebio ni
+
+udarao dok optuženi nije ubo nožem oštećenog, š to znači da su ga tukli pošto je optuženi ubo oštećenog
 nož em.
- 
-Tačno je da je ovaj svjedok naveo da nije vidio momenat kada je optu ž eni uboo o š te ć enog no ž em, ali isto
-tako je istakao da mu je o š te ć eni bio okrenut le đ ima i da iz tog razloga nije mogao vidjeti koje je radnje
-nož em preduzeo optu ž eni V., osim š to je č uo da je o š te ć eni povikao „no ž “ i da je zatim u ruci optu ž enog vidio
-nož .
- 
-Kod ovako utvrdjenog č injeni č nog stanja sud je kao neosnovane cijenio navode odbrane optu ž enog, da mu
-namjera nije bila da li š i ž ivota o š te ć enog, pa č ak ni da ga povrijedi, ve ć  je š ipku izvadio isklju č ivo kako bi
-odbranio druga N.a koji je bio napadnut od strane vi š e lica i iz razloga š to ga je o š te ć eni satarom prvi
-povrijedio u predjelu ramena, (me đ utim i u tom dijelu je demantovana odbrana optu ž enog od strane
-vješ taka medicinske struke jer se radi o reznoj rani a ne o rani sjekotini a reznu ranu proizvodi lak š e oru đ e -
-manje u vidu no ž a, skalpela i sli č no a ne nikako sjekira, satara i sli č no), te da je š ipkom samo mahao kako bi
-se odbranio pa je takve navode odbrane optu ž enog cijenio kao neosnovane i sra č unate na izbjegavanje
-krivice. Ovo iz razloga, š to je takva odbrana optu ž enog opovrgnuta kako doslednim iskazom svjedoka
-ošte ć enog, č iji iskaz je sud u cjelosti prihvatio o č emu se prethodno izjasnio u presudi, tako i č injenicama koje
-proizilaze iz sadr ž ine ostalih materijalnih i personalnih dokaza a iz kojih je sud nesumnjivo utvrdio, da je
-optu ž eni nož em uboo o š te ć enog dva puta i to u predjelu grudi i stomaka, nanose ć i mu laku tjelesnu povredu
+
+Tačno je da je ovaj svjedok naveo da nije vidio momenat kada je optuženi uboo oštećenog nožem, ali isto
+tako je istakao da mu je oštećeni bio okrenut leđima i da iz tog razloga nije mogao vidjeti koje je radnje
+nož em preduzeo optuženi V., osimšto ječuo da je oštećeni povikao „no ž “ i da je zatim u ruci optuženog vidio
+nož.
+
+Kod ovako utvrdjenogčinjeničnog stanja sud je kao neosnovane cijenio navode odbrane optuženog, da mu
+namjera nije bila da lišiživota oštećenog, pačak ni da ga povrijedi, većješipku izvadio isključivo kako bi
+odbranio druga N.a koji je bio napadnut od strane više lica i iz razlogašto ga je oštećeni satarom prvi
+povrijedio u predjelu ramena, (međutim i u tom dijelu je demantovana odbrana optuženog od strane
+vještaka medicinske struke jer se radi o reznoj rani a ne o rani sjekotini a reznu ranu proizvodi lakše oruđe -
+manje u vidu noža, skalpela i slično a ne nikako sjekira, satara i slično), te da ješipkom samo mahao kako bi
+se odbranio pa je takve navode odbrane optuženog cijenio kao neosnovane i sračunate na izbjegavanje
+krivice. Ovo iz razloga, š to je takva odbrana optuženog opovrgnuta kako doslednim iskazom svjedoka
+oštećenog, č iji iskaz je sud u cjelosti prihvatio očemu se prethodno izjasnio u presudi, tako ičinjenicama koje
+proizilaze iz sadržine ostalih materijalnih i personalnih dokaza a iz kojih je sud nesumnjivo utvrdio, da je
+optuženi nož em uboo oštećenog dva puta i to u predjelu grudi i stomaka, nanoseći mu laku tjelesnu povredu
 u vidu ubodno rezne rane lijevog dojkinog predjela i ubodno rezne rane nadpreponskog predjela, kako je to
-utvrdjeno medicinskim vje š ta č enjem da navedeno oru đ e mora imati i o š tricu i š iljak, i da vje š tak isklju č uje
-mogu ć nost da su ove dvije rane nastale tako š to se ma š e ovom vrstom povrednog oru đ a, ve ć  da navedene
-rane imaju ubodni kanal tako da su nane š ene zama š ivanjem a ne tangencijalnim povr š nim prela ž enjem
-preko tijela, zna č i nijesu mogle nastati mahanjem ispred tijela, kako to predstavlja optu ž eni ve ć  su rane
-nane š ene mehanizmom udaranjem u tijelo š to na dalje zna č i da optu ž eni nije nasumice mahao no ž em, u
-namjeri da se odbrani, kako je to predstavio u svojoj odbrani, š to sve njegovu odbranu č ini neosnovanom.
- 
-Sa navedenih razloga sud je kao neosnovan cijenio i stav branioca optu ž enog iznijet u zavr š noj rije č i, da je
-optu ž eni u deliktnoj situaciji postupao u nu ž noj odbrani, odbijaju ć i od sebe ili njegovog druga istovremeni
-protivpravni napad od o š te ć enog. Ovo tim prije, š to je provedenim dokazima nesumnjivo utvrdjeno, da je na
-lice mjesta predmetnog dogadjaja optu ž eni do š ao zajedno sa svojim drugom N. kako bi se razra č unao sa
-ošte ć enim, a sve zbog dogadjaja koji se desio 10-15 minuta ranije. Da je optu ž eni na lice mjesta predmetnog
-dogadjaja do š ao kako bi se razra č unao sa o š te ć enim povodom dogadjaja koji je prethodio, nesumnjivo
-upuć uju i č injenice, da je optu ž eni do š ao sa no ž em i da je sa sobom poveo i druga N.a. Dakle, imaju ć i u vidu
-naprijed utvrdjeno č injeni č no stanje, da se optu ž eni vratio na lice mjesta predmetnog dogadjaja kako bi se
-razra č unao sa o š te ć enim, da je na lice mjesta do š ao naoru ž an no ž em, te da je dolaskom na lice mjesta prvi
-priš ao o š te ć enom i tom prilikom prvi ubo no ž em o š te ć enog, kako to nesumnjivo proizilazi iz prednje
-navedenih dokaza, to se optu ž eni u konkretnom slu č aju nije mogao pozivati na nu ž nu odbranu, budu ć i da je
-čl.10. KZ CG propisano da je nu ž na odbrana ona odbrana koja je neophodno potrebna da u č inilac od svog
-dobra ili pak dobra drugog odbije istovremen i neposredno predstoje ć i protivpravni napad, koji po stavu
-ovog suda nije postojao, jer imaju ć i u vidu sve provedene dokaze, nema mjesta primjeni ovog instituta sa
-razloga š to se u predmetnom doga đ aju, optu ž eni nose ć i no ž  vratio do o š te ć enog i izazvao konfliktnu situaciju
-i prvi napao na tijelo o š te ć enog i zadao mu udarce no ž em i nanio mu povrede opisane u nalazu i mi š ljenju
-vješ tak medicinske struke i da je tek nakon toga o š te ć eni stao da se brani i udarao a kako to i sam priznaje i
-optu ž enog i njegovog druga N.. U prilog prednjem zaklju ć ku suda je samo priznanje N.a da ga niko nije tukao
-niti pretukao dok nije optu ž eni ubo o š te ć enog no ž em.
-Da je zaista optu ž eni imao namjeru da napadne o š te ć enog govori i č injenica, a nakon š to mu je o š te ć eni
-rekao da napu š ti to mjesto, da se optu ž eni vratio i to poslije deset -petnaest minuta dr ž e ć i no ž  u rukama i
-direktno krenuo prema o š te ć enom i uboo ga dva puta u predjelu grudi i stomaka, odnosno svjesno se vratio
-na mjesto doga đ aja sa drugom N. i napao o š te ć enog.
- 
-Tačno je da su optu ž eni i svjedok N. imali povrede a koje je detaljno opisao vje š tak medicinske struke
-međ utim sud je cijenio da su iste nastale a kako je prethodno obja š njeno nakon kriti č nog doga đ aja tako da
-nijesu uticale na druga č iju odluku suda, stim š to se na č in i veliki broj udaraca koje N. navodi da je imao od
-navedenih lica ne podudara sa nalazom vje š taka medicinske struke a koje su prethodno obja š njene a š to je
-sud tako đ e imao u vidu prilikom utvr đ ivanja č injeni č nog stanja.
- 
-Isto tako sud je cijenio i iskaze svjedoka T. S., T. L., T. M. međ utim navedeni kako navode svjedoci nijesu vidjeli
-kako se ta č no i na koji na č in desio predmetni doga ć aj osim š to su potvrdili da je o š te ć eni tom prilikom
+utvrdjeno medicinskim vještačenjem da navedeno oruđe mora imati i oštricu išiljak, i da vještak isključuje
+mogućnost da su ove dvije rane nastale takošto se maše ovom vrstom povrednog oruđa, većda navedene
+rane imaju ubodni kanal tako da su nanešene zamašivanjem a ne tangencijalnim površnim prelaženjem
+preko tijela, znači nijesu mogle nastati mahanjem ispred tijela, kako to predstavlja optuženi većsu rane
+nanešene mehanizmom udaranjem u tijelošto na dalje znači da optuženi nije nasumice mahao nožem, u
+namjeri da se odbrani, kako je to predstavio u svojoj odbrani, š to sve njegovu odbranučini neosnovanom.
+
+Sa navedenih razloga sud je kao neosnovan cijenio i stav branioca optuženog iznijet u završnoj riječi, da je
+optuženi u deliktnoj situaciji postupao u nužnoj odbrani, odbijajući od sebe ili njegovog druga istovremeni
+protivpravni napad od oštećenog. Ovo tim prije, š to je provedenim dokazima nesumnjivo utvrdjeno, da je na
+lice mjesta predmetnog dogadjaja optuženi došao zajedno sa svojim drugom N. kako bi se razračunao sa
+oštećenim, a sve zbog dogadjaja koji se desio 10-15 minuta ranije. Da je optuženi na lice mjesta predmetnog
+dogadjaja došao kako bi se razračunao sa oštećenim povodom dogadjaja koji je prethodio, nesumnjivo
+upućuju ičinjenice, da je optuženi došao sa nožem i da je sa sobom poveo i druga N.a. Dakle, imajući u vidu
+naprijed utvrdjenočinjenično stanje, da se optuženi vratio na lice mjesta predmetnog dogadjaja kako bi se
+razračunao sa oštećenim, da je na lice mjesta došao naoružan nožem, te da je dolaskom na lice mjesta prvi
+prišao oštećenom i tom prilikom prvi ubo nožem oštećenog, kako to nesumnjivo proizilazi iz prednje
+navedenih dokaza, to se optuženi u konkretnom slučaju nije mogao pozivati na nužnu odbranu, budući da je
+čl.10. KZ CG propisano da je nužna odbrana ona odbrana koja je neophodno potrebna da učinilac od svog
+dobra ili pak dobra drugog odbije istovremen i neposredno predstojeći protivpravni napad, koji po stavu
+ovog suda nije postojao, jer imajući u vidu sve provedene dokaze, nema mjesta primjeni ovog instituta sa
+razlogašto se u predmetnom događaju, optuženi noseći nožvratio do oštećenog i izazvao konfliktnu situaciju
+i prvi napao na tijelo oštećenog i zadao mu udarce nožem i nanio mu povrede opisane u nalazu i mišljenju
+vještak medicinske struke i da je tek nakon toga oštećeni stao da se brani i udarao a kako to i sam priznaje i
+
+optuženog i njegovog druga N.. U prilog prednjem zakljućku suda je samo priznanje N.a da ga niko nije tukao
+niti pretukao dok nije optuženi ubo oštećenog nožem.
+Da je zaista optuženi imao namjeru da napadne oštećenog govori ičinjenica, a nakonšto mu je oštećeni
+rekao da napušti to mjesto, da se optuženi vratio i to poslije deset -petnaest minuta držeći nožu rukama i
+direktno krenuo prema oštećenom i uboo ga dva puta u predjelu grudi i stomaka, odnosno svjesno se vratio
+na mjesto događaja sa drugom N. i napao oštećenog.
+
+Tačno je da su optuženi i svjedok N. imali povrede a koje je detaljno opisao vještak medicinske struke
+međ utim sud je cijenio da su iste nastale a kako je prethodno objašnjeno nakon kritičnog događaja tako da
+nijesu uticale na drugačiju odluku suda, stimšto se način i veliki broj udaraca koje N. navodi da je imao od
+navedenih lica ne podudara sa nalazom vještaka medicinske struke a koje su prethodno objašnjene ašto je
+sud takođe imao u vidu prilikom utvrđivanjačinjeničnog stanja.
+
+Isto tako sud je cijenio i iskaze svjedoka T.S., T.L., T.M. međ utim navedeni kako navode svjedoci nijesu vidjeli
+kako se tačno i na koji način desio predmetni dogaćaj osimšto su potvrdili da je oštećeni tom prilikom
 zadobio povrede.
- 
-Sud je odbio predlog odbrane da se provede kao dokaz saslu š anje majke optu ž enog obzirom da nije bila
-očevidac doga đ aja i da se pribavi medicinska dokumentacija I vje š ta č i N. U. na okolnosti da li je heroinski
-zavisnik kao i da se izvr š i suo č enje optu ž enog i o š te ć enog imaju ć i u vidu da je pru ž eno dovoljno dokaza za
-razja š njenje kriti č nog doga đ aja tako da bi se provo đ enjem istih samo nepotrebno odugovla č io krivi č ni
-postupak i stvarali se ve ć i materijalni tro š kovi.
- 
+
+Sud je odbio predlog odbrane da se provede kao dokaz saslušanje majke optuženog obzirom da nije bila
+očevidac događaja i da se pribavi medicinska dokumentacija I vještači N.U. na okolnosti da li je heroinski
+zavisnik kao i da se izvrši suočenje optuženog i oštećenog imajući u vidu da je pruženo dovoljno dokaza za
+razjašnjenje kritičnog događaja tako da bi se provođenjem istih samo nepotrebno odugovlačio krivični
+postupak i stvarali se veći materijalni troškovi.
+
 Cijeneći naprijed utvrdjeno činjenično stanje ovaj sud nalazi, da su se u radnjama optuženog V.N. stekli svi
 bitni elementi bića krivičnog djela ubistvo u pokušaju iz čl. 143. u vezi čl. 20. Krivičnog zakonika Crne Gore,
-obzirom da je u postupku nesumnjivo utvrdjeno, da je optu ž eni dana 20.01.2020.godine, oko 13.30 č asova u
-Podgorici, u Ul. IV Proleterske brigade, sa umi š ljajem poku š ao da li š i ž ivota o š te ć enog M. A., na na č in š to je
-nakon sva đ e sa o š te ć enim no ž em uboo istog dva puta i to u predjelu grudi i stomaka, u predjelu tijela gdje se
-nalaze vitalni organi nanose ć i mu laku tjelesnu povredu u vidu ubodno rezne rane lijevog dojkinog predjela i
-ubodno rezne rane nadpreponskog predjela, pri č emu je bio svjestan svog djela i htio njegovo izvr š enje.
-Optu ž eni je svojim pona š anjem stvorio incidentnu situaciju i bio je svjestan da zamahuju ć i o š trim vrhom
-nož a u pravcu grudi i to po lijevoj strani gdje se nalazi srce a zatim i u predjelu stomaka o š te ć enog odnosno u
-pravcu vitalnih djelova tijela o š te ć enog, i to direktnim ubodom, jer se radi o ubodnim ranama, o š te ć enog
-mož e li š iti ž ivota, pa je to i htio, dok se izostanak posledice krivi č nog djela (li š enja ž ivota o š te ć enog) ne mo ž e
-pripisati volji i htjenju optu ž enog, ve ć  je sticaj drugih okolnosti, š to je dovela ovaj sud do zaklju č ka da je
-optu ž eni pri izvr š enju predmetnog krivi č nog djela postupao sa direktnim umi š ljajem tj. bio je svjestan svog
-djela i htio je njegovo izvr š enje.
- 
-Pri ocjeni stanja svijesti optu ž enog u vrijeme izvr š enja krivi č nog djela sud je imao u vidu i zaklju č ak komisije
-vješ taka koja je obavila sudsko-psihijatrijsko vje š ta č enje optu ž enog, da optu ž eni V.N. ne boluje od trajnog
-duš evnog oboljenja, da je prisutna vi š egodi š nja upotreba vi š e psihoaktivnih supstanci da dominantno
+obzirom da je u postupku nesumnjivo utvrdjeno, da je optuženi dana 20.01.2020.godine, oko 13.30časova u
+Podgorici, u Ul. IV Proleterske brigade, sa umišljajem pokušao da lišiživota oštećenog M.A., na načinšto je
+nakon svađe sa oštećenim nožem uboo istog dva puta i to u predjelu grudi i stomaka, u predjelu tijela gdje se
+nalaze vitalni organi nanoseći mu laku tjelesnu povredu u vidu ubodno rezne rane lijevog dojkinog predjela i
+ubodno rezne rane nadpreponskog predjela, pričemu je bio svjestan svog djela i htio njegovo izvršenje.
+Optuženi je svojim ponašanjem stvorio incidentnu situaciju i bio je svjestan da zamahujući oštrim vrhom
+nož a u pravcu grudi i to po lijevoj strani gdje se nalazi srce a zatim i u predjelu stomaka oštećenog odnosno u
+pravcu vitalnih djelova tijela oštećenog, i to direktnim ubodom, jer se radi o ubodnim ranama, oštećenog
+mož e lišitiživota, pa je to i htio, dok se izostanak posledice krivičnog djela (lišenjaživota oštećenog) ne može
+pripisati volji i htjenju optuženog, većje sticaj drugih okolnosti, š to je dovela ovaj sud do zaključka da je
+optuženi pri izvršenju predmetnog krivičnog djela postupao sa direktnim umišljajem tj. bio je svjestan svog
+djela i htio je njegovo izvršenje.
+
+Pri ocjeni stanja svijesti optuženog u vrijeme izvršenja krivičnog djela sud je imao u vidu i zaključak komisije
+vještaka koja je obavila sudsko-psihijatrijsko vještačenje optuženog, da optuženi V.N. ne boluje od trajnog
+
+duš evnog oboljenja, da je prisutna višegodišnja upotreba više psihoaktivnih supstanci da dominantno
 ispoljava kriterijume toksikomanske zavisnosti od heroina, da u osnovi postoje strukturalne promjene
-ličnosti na nivou emocionalno nestabilne li č nosti i da je krivi č no djelo psihopatolo š ki motivisano osnovnim
-poreme ć ajem strukture li č nosti optu ž enog na stepenu emocionalno nestabilne li č nosti, dugotrojanim
-upotrebama psihoaktivnih supstanci, sa o š te ć enjem kognitivnih funkcija i sa epizodi č nim psihoti č nim
-pona š anjem. Imaju ć i u vidu okolnosti krivi č nog djela na temelju podataka u sudskom spisu i psihi č ko
-psiholo š kom eksploracijom li č nosti okrivljenog kako slijedi nakon prethdonog konflikta, cijene da su opisane
-okolnosti uzrokovale stanje razdra ž enosti srednjeg intenziteta jer je napu š tanjem mjesta doga đ aja i
-dolaskom sa drugom poslije 10 do 15 minuata bio dovoljan period rastere ć enja afektivnog stanja. Pona š anje
-okrivljenog u neposredno deliktnoj situaciji ne ispunjava kriterijume koji bi se odnosili na patolo š ki afekat,
-odnosno afekat jakog intenziteta, a to jer nedostaje subjektivni osje ć aj neposredne ž ivotne ugro ž enosti, i nije
-ispoljavao simptome kvalitativnih poreme ć aja svijesti pra ć ene pomu ć enjem, su ž enjem ili sumra č nom
-svijesti. Doprinos u realizaciji krivi č nog djela su psihopatolo š ka svojstva emocionalno nestabilne li č nosti
-okrivljenog, sa promjenama raspolo ž enja, sa povremenim psihoti č nim ispoljavanjem kao i kongitivni
-poreme ć aji koji proizilaze iz dugogodi š nje upotrebe psihoaktivnih supstanci. Sposobnost shvatanja zna č aja
-djela kao i mogu ć nost upravljanja svojim postupcima u vrijeme izvr š enja krivi č nog djela kod okrivljenog su
-bili bitno smanjeni, pa budu ć i da ispoljava standarde toksikomanske zavisnosti o heroinu, mi š ljenja su sa
-medicinske strane da je potrebno primijeniti mjeru bezbjednosti obaveznog psihijatrijskog lije č enja od
-zavisnosti, jer postoji dru š tvena opasnost ponavljanja krivi č nog djela ukoliko se ne bi lije č io, iz kog razloga
-preporu č uju mjeru bezbjednosti u odgovaraju ć oj zdravstvenoj ustanovi, jer se u osno vi radi se o promjeni
-ličnosti na nivou emocionalno nestabilne li č nosti sa o š te ć enjem prethodno navedenih kognitivnih i afektivno
-emotivnih funkcija. U okolnostima da okrivljeni nije zavisnik o psihoaktivnih supstanci to implicira o č uvanost
-strukture li č nosti u emotivno afektivnoj sveri kao i o č uvanosti kognitivno amnesti č kih funkcija pa samim tim i
-sposobnost okrivljenog da shvati zna č aj svog djela i mogu ć nost upravljanja svojim postupcima bi bile
+ličnosti na nivou emocionalno nestabilne ličnosti i da je krivično djelo psihopatološki motivisano osnovnim
+poremećajem strukture ličnosti optuženog na stepenu emocionalno nestabilne ličnosti, dugotrojanim
+upotrebama psihoaktivnih supstanci, sa oštećenjem kognitivnih funkcija i sa epizodičnim psihotičnim
+ponašanjem. Imajući u vidu okolnosti krivičnog djela na temelju podataka u sudskom spisu i psihičko
+psihološkom eksploracijom ličnosti okrivljenog kako slijedi nakon prethdonog konflikta, cijene da su opisane
+okolnosti uzrokovale stanje razdraženosti srednjeg intenziteta jer je napuštanjem mjesta događaja i
+dolaskom sa drugom poslije 10 do 15 minuata bio dovoljan period rasterećenja afektivnog stanja. Ponašanje
+okrivljenog u neposredno deliktnoj situaciji ne ispunjava kriterijume koji bi se odnosili na patološki afekat,
+odnosno afekat jakog intenziteta, a to jer nedostaje subjektivni osjećaj neposredneživotne ugroženosti, i nije
+ispoljavao simptome kvalitativnih poremećaja svijesti praćene pomućenjem, suženjem ili sumračnom
+svijesti. Doprinos u realizaciji krivičnog djela su psihopatološka svojstva emocionalno nestabilne ličnosti
+okrivljenog, sa promjenama raspoloženja, sa povremenim psihotičnim ispoljavanjem kao i kongitivni
+poremećaji koji proizilaze iz dugogodišnje upotrebe psihoaktivnih supstanci. Sposobnost shvatanja značaja
+djela kao i mogućnost upravljanja svojim postupcima u vrijeme izvršenja krivičnog djela kod okrivljenog su
+bili bitno smanjeni, pa budući da ispoljava standarde toksikomanske zavisnosti o heroinu, mišljenja su sa
+medicinske strane da je potrebno primijeniti mjeru bezbjednosti obaveznog psihijatrijskog liječenja od
+zavisnosti, jer postoji društvena opasnost ponavljanja krivičnog djela ukoliko se ne bi liječio, iz kog razloga
+preporučuju mjeru bezbjednosti u odgovarajućoj zdravstvenoj ustanovi, jer se u osno vi radi se o promjeni
+ličnosti na nivou emocionalno nestabilne ličnosti sa oštećenjem prethodno navedenih kognitivnih i afektivno
+emotivnih funkcija. U okolnostima da okrivljeni nije zavisnik o psihoaktivnih supstanci to implicira očuvanost
+strukture ličnosti u emotivno afektivnoj sveri kao i očuvanosti kognitivno amnestičkih funkcija pa samim tim i
+sposobnost okrivljenog da shvati značaj svog djela i mogućnost upravljanja svojim postupcima bi bile
 očuvane.
- 
-Imaju ć i u vidu prednje izja š njenje vje š taka i utvr đ eno č injeni č no stanje kako se doga đ aj desio i kako je sud
-isti predhodno obrazlo ž io sud zaklju č uje da je optuž eni a kako je to na osnovu vje š ta č enja utvr đ eno da je
-zaista zavisik od psihoaktivne supstance u du ž em vremenskom intervalu zbog č ega kod optu ž enog u osnovi
-postoje strukturalne promjene li č nosti na nivou emocionalno nestabilne li č nosti i da je krivi č no djelo
-psihopatolo š ki motivisano osnovnim poreme ć ajem strukture li č nosti optu ž enog na stepenu emocionalno
-nestabilne li č nosti, dugotrojanim upotrebama psihoaktivnih supstanci, sa o š te ć enjem kognitivnih funkcija i
-sa epizodi č nim psihoti č nim pona š anjem koje su dovele do promjena u li č nosti pona š anja u afektivno
-emotivnoj sveri i naro č ito u kognitivnom funkcionisanju, š to na dalje zna č i kako to zaklju č uju vje š taci da je
+
+Imajući u vidu prednje izjašnjenje vještaka i utvrđenočinjenično stanje kako se događaj desio i kako je sud
+isti predhodno obrazložio sud zaključuje da je optuženi a kako je to na osnovu vještačenja utvrđeno da je
+zaista zavisik od psihoaktivne supstance u dužem vremenskom intervalu zbogčega kod optuženog u osnovi
+postoje strukturalne promjene ličnosti na nivou emocionalno nestabilne ličnosti i da je krivično djelo
+psihopatološki motivisano osnovnim poremećajem strukture ličnosti optuženog na stepenu emocionalno
+nestabilne ličnosti, dugotrojanim upotrebama psihoaktivnih supstanci, sa oštećenjem kognitivnih funkcija i
+sa epizodičnim psihotičnim ponašanjem koje su dovele do promjena u ličnosti ponašanja u afektivno
+emotivnoj sveri i naročito u kognitivnom funkcionisanju, š to na dalje znači kako to zaključuju vještaci da je
 prirodno da u tim okolnostima odnosno takva osoba reaguje burnije, nagonski, impulsivnije na manji povod
-odnosno stresnu okolnost kao š to je u konkretnom slu č aju bila, odnosno i pod okolnostima kako je to sud
-utvrdio da se zaista desio doga đ aj a kako je to prethodno u presudi obrazlo ž eno, tako da je cijene ć i prednje
-utvrž eno č injeni č no stanje sud prihvatio zaklju č ak vje š taka da je zbog toga u kona č nom ura č unljivost u
-vrijeme doga đ aja kod optu ž enog bila bitno smanjena.
- 
-Odlu č uju ć i o kazni za optu ž enog sud, sud je najprije u smislu č l. 42 Krivi č nog zakonika Crne Gore, cijenio sve
-okolnosti od kojih zavisi da kazna bude manja ili ve ć a (olak š avaju ć e i ote ž avaju ć e okolnosti), pa je od
-olak š avaju ć ih okolnosti na strani optu ž enog cijenio da je besku ć nik, otac jednog maloljetnog djeteta, da je
-lošeg imovnog stanja, da je krivi č no djelo ostalo u poku š aju, a da se za poku š aj krivi č nog djela shodno č l. 20.
-st. 3. Krivi č nog zakonika Crne Gore, u č inilac mo ž e bla ž e kazniti, dok je od ote ž evaju ć ih okolnosti na š ao
-njegovu raniju osu đ ivanost, koju je sud utvrdio iz kaznene evidencije optu ž enog, cijene ć i i č injenicu da nije
-osuđ ivan za istovrsno krivi č no djelo, pa je sud naprijed navedene olak š avaju ć e okolnosti, a posebno
-činjenicu da je krivi č no djelo ostalo u poku š aju, cijenio kao naro č ito olak š avaju ć e i optu ž enom shodno č l. 45.
-i 46. Krivi č nog zakonika Crne Gore, ubla ž io kaznu ispod zakonom propisanog minimuma za predmetno
-krivi č no djelo, osudiv š i ga na kaznu zatvora u trajanju od 2 (dvije) godine i 6 (šest) mjeseci , nalaze ć i da je tako
-ubla ž ena kazna srazmjerna stepenu krivice optu ž enog i te ž ini po č injenog krivi č nog djela i da predstavlja onu
-kaznu koja je nu ž no potrebna da se ostvari svrha ka ž njavanja iz č l. 32. Krivi č nog zakonika Crne Gore, da
-optu ž eni ubudu ć e ne vr š i krivi č na djela, u okviru op š te svrhe izricanja krivi č nih sankcija iz č l. 4 st. 2. Krivi č nog
+odnosno stresnu okolnost kao što je u konkretnom slučaju bila, odnosno i pod okolnostima kako je to sud
+utvrdio da se zaista desio događaj a kako je to prethodno u presudi obrazloženo, tako da je cijeneći prednje
+utvrž enočinjenično stanje sud prihvatio zaključak vještaka da je zbog toga u konačnom uračunljivost u
+vrijeme događaja kod optuženog bila bitno smanjena.
+
+Odlučujući o kazni za optuženog sud, sud je najprije u smislučl. 42 Krivičnog zakonika Crne Gore, cijenio sve
+okolnosti od kojih zavisi da kazna bude manja ili veća (olakšavajuće i otežavajuće okolnosti), pa je od
+olakšavajućih okolnosti na strani optuženog cijenio da je beskućnik, otac jednog maloljetnog djeteta, da je
+lošeg imovnog stanja, da je krivično djelo ostalo u pokušaju, a da se za pokušaj krivičnog djela shodnočl. 20.
+st. 3. Krivičnog zakonika Crne Gore, učinilac može blaže kazniti, dok je od oteževajućih okolnosti našao
+
+njegovu raniju osuđivanost, koju je sud utvrdio iz kaznene evidencije optuženog, cijeneći ičinjenicu da nije
+osuđivan za istovrsno krivično djelo, pa je sud naprijed navedene olakšavajuće okolnosti, a posebno
+činjenicu da je krivično djelo ostalo u pokušaju, cijenio kao naročito olakšavajuće i optuženom shodnočl. 45.
+i 46. Krivičnog zakonika Crne Gore, ublažio kaznu ispod zakonom propisanog minimuma za predmetno
+krivično djelo, osudivši ga na kaznu zatvora u trajanju od 2 (dvije) godine i 6 (šest) mjeseci, nalazeći da je tako
+ublažena kazna srazmjerna stepenu krivice optuženog i težini počinjenog krivičnog djela i da predstavlja onu
+kaznu koja je nužno potrebna da se ostvari svrha kažnjavanja izčl. 32. Krivičnog zakonika Crne Gore, da
+optuženi ubuduće ne vrši krivična djela, u okviru opšte svrhe izricanja krivičnih sankcija izčl. 4 st. 2. Krivičnog
 zakonika Crne Gore.
- 
-Na osnovu prednjeg i shodno č l. 71. Krivi č nog zakonika Crne Gore, sud je optu ž enom izrekao i mjeru
-bezbjednosti obavezno lije č enje narkomana i istovremeno odredio da ć e se navedena mjera bezbjednosti
-izvrš iti u ustanovi za izvr š enje kazne zatvora UIKS Podgorica, dok bude postojala potreba za lije č enjem ali ne
-duž e od tri godine, a vrijeme provedeno u ustanovi za lije č enje ura č unava se u kaznu zatvora jer kod
-optu ž enog prema nalazu i mi š ljenju komisije vje š taka a koji je sud u cjelosti prihvatio, prisutna vi š egodi š nja
-upotreba vi š e psihoaktivnih supstanci da dominantno ispoljava kriterijume toksikomanske zavisnosti od
-heroina, da u osnovi postoje strukturalne promjene li č nosti na nivou emocionalno nestabilne li č nosti i da je
-krivi č no djelo psihopatolo š ki motivisano osnovnim poreme ć ajem strukture li č nosti optu ž enog na stepenu
-emocionalno nestabilne li č nosti, dugotrojanim upotrebama psihoaktivnih supstanci, sa o š te ć enjem
-kognitivnih funkcija i sa epizodi č nim psihoti č nim pona š anjem, da su sposobnosti shvatanja zna č aja djela kao
-i mogu ć nost upravljanja svojim postupcima u vrijeme izvr š enja krivi č nog djela kod okrivljenog bili bitno
-smanjeni, pa budu ć i da ispoljava standarde toksikomanske zavisnosti o heroinu, mi š ljenja su sa medicinske
-strane da je potrebno primijeniti mjeru bezbjednosti obaveznog psihijatrijskog lije č enja od zavisnosti, jer
-postoji dru š tvena opasnost ponavljanja krivi č nog djela ukoliko se ne bi lije č io, iz kog razloga preporu č uju
-mjeru bezbjednosti u odgovaraju ć oj zdravstvenoj ustanovi, š to je sud i prihvatio a sve kako bi se otklonili
-stanja i uslovi da optu ž eni ubudu ć e vr š i krivi č na djela u okviru op š te svrhe propisivanja i izricanja mjera
-bezbjednosti iz č l. 66. Krivi č nog zakonika Crne Gore.
- 
-Na osnovu č lana 51 KZ CG sud je optu ž enom u kaznu zatvora ura č unao vrijeme provedeno u pritvoru, po č ev
+
+Na osnovu prednjeg i shodnočl. 71. Krivičnog zakonika Crne Gore, sud je optuženom izrekao i mjeru
+bezbjednosti obavezno liječenje narkomana i istovremeno odredio daće se navedena mjera bezbjednosti
+izvršiti u ustanovi za izvršenje kazne zatvora UIKS Podgorica, dok bude postojala potreba za liječenjem ali ne
+duž e od tri godine, a vrijeme provedeno u ustanovi za liječenje uračunava se u kaznu zatvora jer kod
+optuženog prema nalazu i mišljenju komisije vještaka a koji je sud u cjelosti prihvatio, prisutna višegodišnja
+upotreba više psihoaktivnih supstanci da dominantno ispoljava kriterijume toksikomanske zavisnosti od
+heroina, da u osnovi postoje strukturalne promjene ličnosti na nivou emocionalno nestabilne ličnosti i da je
+krivično djelo psihopatološki motivisano osnovnim poremećajem strukture ličnosti optuženog na stepenu
+emocionalno nestabilne ličnosti, dugotrojanim upotrebama psihoaktivnih supstanci, sa oštećenjem
+kognitivnih funkcija i sa epizodičnim psihotičnim ponašanjem, da su sposobnosti shvatanja značaja djela kao
+i mogućnost upravljanja svojim postupcima u vrijeme izvršenja krivičnog djela kod okrivljenog bili bitno
+smanjeni, pa budući da ispoljava standarde toksikomanske zavisnosti o heroinu, mišljenja su sa medicinske
+strane da je potrebno primijeniti mjeru bezbjednosti obaveznog psihijatrijskog liječenja od zavisnosti, jer
+postoji društvena opasnost ponavljanja krivičnog djela ukoliko se ne bi liječio, iz kog razloga preporučuju
+mjeru bezbjednosti u odgovarajućoj zdravstvenoj ustanovi, š to je sud i prihvatio a sve kako bi se otklonili
+stanja i uslovi da optuženi ubuduće vrši krivična djela u okviru opšte svrhe propisivanja i izricanja mjera
+bezbjednosti izčl. 66. Krivičnog zakonika Crne Gore.
+
+Na osnovučlana 51 KZ CG sud je optuženom u kaznu zatvora uračunao vrijeme provedeno u pritvoru, počev
 od 20.01.2020. godine od 21,20 h, pa na dalje.
- 
-Shodno č lanu 239 stav 2 Zakonika o krivi č nom postupku, sud je o š te ć enog radi ostvarivanja imovinsko –
-pravnog zahtjeva uputio na redovnu gra đ ansku parnicu, obzirom da podaci krivi č nog postupka ne pru ž aju
-dovoljan osnov za potpuno ili djelimi č no presu đ enje, a utvr đ ivanje tih č injenica vodilo bi samo
-odugovla č enju postupka i uve ć anju njegovih tro š kova.
- 
-Kako je sud optu ž enog oglasio krivim, to ga je shodno č l. 226. i 229. Zakonika o krivi č nom postupku,
-obavezao na pla ć anje tro š kova krivi č nog postupka-sudskog pau š ala u iznosu od 100,00 eura, te da na ime
-ostalih tro š kova krivi č nog postupka plati nov č ani iznos od 231,00 eura, a koji tro š kovi se odnose na
-vješ ta č enje po vje š taku sudske medicine Š o ć  Miodragu u iznosu od 176,00 eura i na ime vje š ta č enje po
-vješ taku trasologu Jakovljevi ć  Miljanu u iznosu od 55,00 eura, sve u roku od 15 dana po pravosna ž nosti
-presude, pod prijetnjom prinudne naplate, na ž iro ra č un bud ž eta Crne Gore dok ć e o ostalim tro š kovima
-krivi č nog postupka, Sud odlu č iti naknadno, posebnim rje š enjem, po pribavljanju podataka o njihovoj visini.
- 
-Na osnovu izlo ž enog, odlu č eno je kao u dispozitivu presude.
- 
+
+Shodnočlanu 239 stav 2 Zakonika o krivičnom postupku, sud je oštećenog radi ostvarivanja imovinsko –
+pravnog zahtjeva uputio na redovnu građansku parnicu, obzirom da podaci krivičnog postupka ne pružaju
+dovoljan osnov za potpuno ili djelimično presuđenje, a utvrđivanje tihčinjenica vodilo bi samo
+odugovlačenju postupka i uvećanju njegovih troškova.
+
+Kako je sud optuženog oglasio krivim, to ga je shodnočl. 226. i 229. Zakonika o krivičnom postupku,
+obavezao na plaćanje troškova krivičnog postupka-sudskog paušala u iznosu od 100,00 eura, te da na ime
+ostalih troškova krivičnog postupka plati novčani iznos od 231,00 eura, a koji troškovi se odnose na
+vješ tačenje po vještaku sudske medicine Šoć Miodragu u iznosu od 176,00 eura i na ime vještačenje po
+vještaku trasologu Jakovljević Miljanu u iznosu od 55,00 eura, sve u roku od 15 dana po pravosnažnosti
+
+presude, pod prijetnjom prinudne naplate, nažiro račun budžeta Crne Gore dokće o ostalim troškovima
+krivičnog postupka, Sud odlučiti naknadno, posebnim rješenjem, po pribavljanju podataka o njihovoj visini.
+
+Na osnovu izloženog, odlučeno je kao u dispozitivu presude.
+
 VIŠI SUD U PODGORCI
 Dana dana 28.03.2022. godine
- 
-Zapisni č ar PREDSJEDNIK VIJE Ć A - SUDIJA,
-Jeleni ć  Vesna s.r. Kova č evi ć  Vesna s.r.
- 
- 
+
+Zapisničar PREDSJEDNIK VIJEĆA - SUDIJA,
+Jelenić Vesna s.r. Kovačević Vesna s.r.
+
 PRAVNA POUKA
-Protiv ove presude je dozvoljena ž alba, u roku od
+Protiv ove presude je dozvoljenažalba, u roku od
 15 dana od dana prijema pisanog otpravka,
 Apelacionom sudu Crne Gore, preko ovog suda.
- 
- 
-Tačnost otpravka ovjerava namje š tenik suda
-                                      Jeleni ć  Vesna
-                                   ________________
- 
-:</p>
+
+Tačnost otpravka ovjerava namještenik suda
+Jelenić Vesna
+________________:</p>
                 </block>
             </conclusions>
         </judgmentBody>

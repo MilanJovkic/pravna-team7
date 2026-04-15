@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+import subprocess
 
 from backend.app.bootstrap.telemetry import start_span
 from backend.app.models.schemas import CaseFacts, RuleReasoningResult
@@ -37,6 +38,8 @@ class DrDeviceRuleEngineAdapter(RuleEngine):
                 except Exception as exc:
                     last_error = exc
                     self._breaker.on_failure()
+                    if isinstance(exc, subprocess.TimeoutExpired):
+                        break
                     if attempt >= attempts:
                         break
                     self._logger.warning(

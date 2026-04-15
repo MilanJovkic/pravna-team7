@@ -15,17 +15,13 @@ import java.util.function.Function;
 import connector.PostgresConnector;
 import es.ucm.fdi.gaia.jcolibri.casebase.LinealCaseBase;
 import es.ucm.fdi.gaia.jcolibri.cbraplications.StandardCBRApplication;
-import es.ucm.fdi.gaia.jcolibri.cbrcore.Attribute;
+import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRCase;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRCaseBase;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRQuery;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.Connector;
 import es.ucm.fdi.gaia.jcolibri.exception.ExecutionException;
-import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.NNConfig;
-import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.NNScoringMethod;
-import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.global.Average;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.RetrievalResult;
-import es.ucm.fdi.gaia.jcolibri.method.retrieve.selection.SelectCases;
 import model.CaseDescription;
 import similarity.SoftTextSimilarity;
 import similarity.TabularSimilarity;
@@ -37,24 +33,20 @@ public class CbrApplication implements StandardCBRApplication {
 
     private Connector connector;
     private CBRCaseBase caseBase;
-    private NNConfig simConfig;
     private List<FeatureSpec> featureSpecs;
 
     private static class FeatureSpec {
         private final String name;
-        private final Attribute attribute;
         private final LocalSimilarityFunction function;
         private final double weight;
         private final Function<CaseDescription, String> extractor;
 
         private FeatureSpec(
                 String name,
-                Attribute attribute,
                 LocalSimilarityFunction function,
                 double weight,
                 Function<CaseDescription, String> extractor) {
             this.name = name;
-            this.attribute = attribute;
             this.function = function;
             this.weight = weight;
             this.extractor = extractor;
@@ -65,19 +57,17 @@ public class CbrApplication implements StandardCBRApplication {
         connector = new PostgresConnector();
         caseBase = new LinealCaseBase();
 
-        simConfig = new NNConfig();
-        simConfig.setDescriptionSimFunction(new Average());
         featureSpecs = new ArrayList<FeatureSpec>();
 
         TabularSimilarity injurySim = new TabularSimilarity(
                 Arrays.asList(new String[] {"teska tjelesna povreda", "laka tjelesna povreda", UNKNOWN})
         );
-        injurySim.setSimilarity("teska tjelesna povreda", "laka tjelesna povreda", 0.35);
+        injurySim.setSimilarity("teska tjelesna povreda", "laka tjelesna povreda", 0.15);
 
         TabularSimilarity fightConsequenceSim = new TabularSimilarity(
                 Arrays.asList(new String[] {"none", "death_or_serious_injury", UNKNOWN})
         );
-        fightConsequenceSim.setSimilarity("none", "death_or_serious_injury", 0.3);
+        fightConsequenceSim.setSimilarity("none", "death_or_serious_injury", 0.1);
 
         SoftTextSimilarity locationSim = new SoftTextSimilarity();
         locationSim.addSynonyms("podgorica", "podgorici", "podgorica centar");
@@ -88,87 +78,163 @@ public class CbrApplication implements StandardCBRApplication {
         weaponSim.addSynonyms("noz", "nozem", "sjekivo", "secivo");
         weaponSim.addSynonyms("metalni kljuc", "kljuc", "metalni predmet");
         weaponSim.addSynonyms("staklena flasa", "flasa", "staklom");
+        weaponSim.addSynonyms("opasno_orudje", "noz", "pistolj", "puska", "oruzje");
+        weaponSim.addSynonyms("sredstvo_podobno_za_tesku_povredu", "palica", "kamen", "metalni kljuc", "staklena flasa", "metalni predmet");
 
         UnknownAwareBooleanSimilarity triBool = new UnknownAwareBooleanSimilarity();
 
-        addFeature("injury_type", "injuryType", injurySim, 0.22, new Function<CaseDescription, String>() {
+        addFeature("injury_type", injurySim, 0.22, new Function<CaseDescription, String>() {
             @Override
             public String apply(CaseDescription c) {
                 return normalizeValue(c.getInjuryType());
             }
         });
-        addFeature("location", "location", locationSim, 0.10, new Function<CaseDescription, String>() {
+        addFeature("location", locationSim, 0.10, new Function<CaseDescription, String>() {
             @Override
             public String apply(CaseDescription c) {
                 return normalizeValue(c.getLocation());
             }
         });
-        addFeature("weapon", "weapon", weaponSim, 0.08, new Function<CaseDescription, String>() {
+        addFeature("weapon", weaponSim, 0.08, new Function<CaseDescription, String>() {
             @Override
             public String apply(CaseDescription c) {
                 return normalizeValue(c.getWeapon());
             }
         });
-        addFeature("weapon_used", "weaponUsed", triBool, 0.10, new Function<CaseDescription, String>() {
+        addFeature("weapon_used", triBool, 0.10, new Function<CaseDescription, String>() {
             @Override
             public String apply(CaseDescription c) {
                 return normalizeBoolean(c.getWeaponUsed());
             }
         });
-        addFeature("severe_consequence", "severeConsequence", triBool, 0.12, new Function<CaseDescription, String>() {
+        addFeature("severe_consequence", triBool, 0.12, new Function<CaseDescription, String>() {
             @Override
             public String apply(CaseDescription c) {
                 return normalizeBoolean(c.getSevereConsequence());
             }
         });
-        addFeature("death_result", "deathResult", triBool, 0.10, new Function<CaseDescription, String>() {
+        addFeature("death_result", triBool, 0.10, new Function<CaseDescription, String>() {
             @Override
             public String apply(CaseDescription c) {
                 return normalizeBoolean(c.getDeathResult());
             }
         });
-        addFeature("negligence", "negligence", triBool, 0.06, new Function<CaseDescription, String>() {
+        addFeature("negligence", triBool, 0.06, new Function<CaseDescription, String>() {
             @Override
             public String apply(CaseDescription c) {
                 return normalizeBoolean(c.getNegligence());
             }
         });
-        addFeature("provocation", "provocation", triBool, 0.06, new Function<CaseDescription, String>() {
+        addFeature("provocation", triBool, 0.06, new Function<CaseDescription, String>() {
             @Override
             public String apply(CaseDescription c) {
                 return normalizeBoolean(c.getProvocation());
             }
         });
-        addFeature("fight_participation", "fightParticipation", triBool, 0.06, new Function<CaseDescription, String>() {
+        addFeature("fight_participation", triBool, 0.06, new Function<CaseDescription, String>() {
             @Override
             public String apply(CaseDescription c) {
                 return normalizeBoolean(c.getFightParticipation());
             }
         });
-        addFeature("fight_consequence", "fightConsequence", fightConsequenceSim, 0.05, new Function<CaseDescription, String>() {
+        addFeature("fight_consequence", fightConsequenceSim, 0.05, new Function<CaseDescription, String>() {
             @Override
             public String apply(CaseDescription c) {
                 return normalizeValue(c.getFightConsequence());
             }
         });
-        addFeature("left_without_help", "leftWithoutHelp", triBool, 0.05, new Function<CaseDescription, String>() {
+        addFeature("left_without_help", triBool, 0.05, new Function<CaseDescription, String>() {
             @Override
             public String apply(CaseDescription c) {
                 return normalizeBoolean(c.getLeftWithoutHelp());
+            }
+        });
+        addFeature("previous_convictions", triBool, 0.05, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getPreviousConvictions());
+            }
+        });
+        addFeature("repeat_offender", triBool, 0.04, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getRepeatOffender());
+            }
+        });
+        addFeature("confession", triBool, 0.05, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getConfession());
+            }
+        });
+        addFeature("remorse", triBool, 0.03, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getRemorse());
+            }
+        });
+        addFeature("plea_agreement", triBool, 0.05, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getPleaAgreement());
+            }
+        });
+        addFeature("aggravating_circumstances", triBool, 0.03, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getAggravatingCircumstances());
+            }
+        });
+        addFeature("mitigating_circumstances", triBool, 0.03, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getMitigatingCircumstances());
+            }
+        });
+        addFeature("family_circumstances", triBool, 0.02, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getFamilyCircumstances());
+            }
+        });
+        addFeature("poor_financial_status", triBool, 0.02, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getPoorFinancialStatus());
+            }
+        });
+        addFeature("alcohol_intoxication", triBool, 0.02, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getAlcoholIntoxication());
+            }
+        });
+        addFeature("narcotics_influence", triBool, 0.02, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getNarcoticsInfluence());
+            }
+        });
+        addFeature("conditional_sentence_requested", triBool, 0.02, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getConditionalSentenceRequested());
+            }
+        });
+        addFeature("attempted_offense", triBool, 0.03, new Function<CaseDescription, String>() {
+            @Override
+            public String apply(CaseDescription c) {
+                return normalizeBoolean(c.getAttemptedOffense());
             }
         });
     }
 
     private void addFeature(
             String featureName,
-            String attributeName,
             LocalSimilarityFunction function,
             double weight,
             Function<CaseDescription, String> extractor) {
-        Attribute attribute = new Attribute(attributeName, CaseDescription.class);
-        simConfig.addMapping(attribute, function);
-        simConfig.setWeight(attribute, weight);
-        featureSpecs.add(new FeatureSpec(featureName, attribute, function, weight, extractor));
+        featureSpecs.add(new FeatureSpec(featureName, function, weight, extractor));
     }
 
     public void cycle(CBRQuery query) throws ExecutionException {
@@ -180,8 +246,26 @@ public class CbrApplication implements StandardCBRApplication {
     }
 
     public Collection<RetrievalResult> runQuery(CBRQuery query, int topK) throws ExecutionException {
-        Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(caseBase.getCases(), query, simConfig);
-        return SelectCases.selectTopKRR(eval, topK);
+        int safeTopK = topK <= 0 ? 5 : topK;
+        CaseDescription queryCase = (CaseDescription) query.getDescription();
+
+        List<RetrievalResult> scored = new ArrayList<RetrievalResult>();
+        for (CBRCase cbrCase : caseBase.getCases()) {
+            CaseDescription candidate = (CaseDescription) cbrCase.getDescription();
+            double score = computeSimilarity(queryCase, candidate, featureSpecs);
+            scored.add(new RetrievalResult(cbrCase, score));
+        }
+
+        Collections.sort(scored, new java.util.Comparator<RetrievalResult>() {
+            @Override
+            public int compare(RetrievalResult left, RetrievalResult right) {
+                return Double.compare(right.getEval(), left.getEval());
+            }
+        });
+        if (safeTopK < scored.size()) {
+            return new ArrayList<RetrievalResult>(scored.subList(0, safeTopK));
+        }
+        return scored;
     }
 
     public void postCycle() throws ExecutionException {
@@ -275,6 +359,19 @@ public class CbrApplication implements StandardCBRApplication {
         String fightParticipation = first(params, "fight_participation", "fightParticipation");
         String fightConsequence = first(params, "fight_consequence", "fightConsequence");
         String leftWithoutHelp = first(params, "left_without_help", "leftWithoutHelp");
+        String previousConvictions = first(params, "previous_convictions", "previousConvictions");
+        String repeatOffender = first(params, "repeat_offender", "repeatOffender");
+        String confession = first(params, "confession");
+        String remorse = first(params, "remorse");
+        String pleaAgreement = first(params, "plea_agreement", "pleaAgreement");
+        String aggravatingCircumstances = first(params, "aggravating_circumstances", "aggravatingCircumstances");
+        String mitigatingCircumstances = first(params, "mitigating_circumstances", "mitigatingCircumstances");
+        String familyCircumstances = first(params, "family_circumstances", "familyCircumstances");
+        String poorFinancialStatus = first(params, "poor_financial_status", "poorFinancialStatus");
+        String alcoholIntoxication = first(params, "alcohol_intoxication", "alcoholIntoxication");
+        String narcoticsInfluence = first(params, "narcotics_influence", "narcoticsInfluence");
+        String conditionalSentenceRequested = first(params, "conditional_sentence_requested", "conditionalSentenceRequested");
+        String attemptedOffense = first(params, "attempted_offense", "attemptedOffense");
 
         if (injuryType != null) {
             queryCase.setInjuryType(injuryType);
@@ -309,19 +406,44 @@ public class CbrApplication implements StandardCBRApplication {
         if (leftWithoutHelp != null) {
             queryCase.setLeftWithoutHelp(leftWithoutHelp);
         }
-
-        if (params.isEmpty()) {
-            queryCase.setInjuryType("teska tjelesna povreda");
-            queryCase.setLocation("Podgorica");
-            queryCase.setWeapon("metalni kljuc");
-            queryCase.setWeaponUsed("true");
-            queryCase.setSevereConsequence("true");
-            queryCase.setDeathResult("false");
-            queryCase.setNegligence("false");
-            queryCase.setProvocation("false");
-            queryCase.setFightParticipation("false");
-            queryCase.setFightConsequence("none");
-            queryCase.setLeftWithoutHelp("false");
+        if (previousConvictions != null) {
+            queryCase.setPreviousConvictions(previousConvictions);
+        }
+        if (repeatOffender != null) {
+            queryCase.setRepeatOffender(repeatOffender);
+        }
+        if (confession != null) {
+            queryCase.setConfession(confession);
+        }
+        if (remorse != null) {
+            queryCase.setRemorse(remorse);
+        }
+        if (pleaAgreement != null) {
+            queryCase.setPleaAgreement(pleaAgreement);
+        }
+        if (aggravatingCircumstances != null) {
+            queryCase.setAggravatingCircumstances(aggravatingCircumstances);
+        }
+        if (mitigatingCircumstances != null) {
+            queryCase.setMitigatingCircumstances(mitigatingCircumstances);
+        }
+        if (familyCircumstances != null) {
+            queryCase.setFamilyCircumstances(familyCircumstances);
+        }
+        if (poorFinancialStatus != null) {
+            queryCase.setPoorFinancialStatus(poorFinancialStatus);
+        }
+        if (alcoholIntoxication != null) {
+            queryCase.setAlcoholIntoxication(alcoholIntoxication);
+        }
+        if (narcoticsInfluence != null) {
+            queryCase.setNarcoticsInfluence(narcoticsInfluence);
+        }
+        if (conditionalSentenceRequested != null) {
+            queryCase.setConditionalSentenceRequested(conditionalSentenceRequested);
+        }
+        if (attemptedOffense != null) {
+            queryCase.setAttemptedOffense(attemptedOffense);
         }
 
         return queryCase;
@@ -371,11 +493,22 @@ public class CbrApplication implements StandardCBRApplication {
         }
 
         Map<String, Double> weightedScores = new LinkedHashMap<String, Double>();
-        double totalWeight = 0.0;
+        double activeQueryWeight = 0.0;
 
         for (FeatureSpec spec : specs) {
             String left = spec.extractor.apply(queryCase);
+            if (isUnknown(left)) {
+                weightedScores.put(spec.name, 0.0);
+                continue;
+            }
+
+            activeQueryWeight += spec.weight;
             String right = spec.extractor.apply(retrieved);
+            if (isUnknown(right)) {
+                weightedScores.put(spec.name, 0.0);
+                continue;
+            }
+
             double local = 0.0;
             try {
                 local = spec.function.compute(left, right);
@@ -385,18 +518,77 @@ public class CbrApplication implements StandardCBRApplication {
 
             double weighted = local * spec.weight;
             weightedScores.put(spec.name, weighted);
-            totalWeight += spec.weight;
         }
 
-        if (totalWeight <= 0.0) {
+        if (activeQueryWeight <= 0.0) {
             return weightedScores;
         }
 
         Map<String, Double> normalized = new LinkedHashMap<String, Double>();
         for (Map.Entry<String, Double> entry : weightedScores.entrySet()) {
-            normalized.put(entry.getKey(), entry.getValue() / totalWeight);
+            normalized.put(entry.getKey(), entry.getValue() / activeQueryWeight);
         }
         return normalized;
+    }
+
+    private static double computeSimilarity(
+            CaseDescription queryCase,
+            CaseDescription candidate,
+            List<FeatureSpec> specs) {
+        if (specs == null || specs.isEmpty()) {
+            return 0.0;
+        }
+
+        double activeQueryWeight = 0.0;
+        double weightedScore = 0.0;
+
+        for (FeatureSpec spec : specs) {
+            String left = spec.extractor.apply(queryCase);
+            if (isUnknown(left)) {
+                continue;
+            }
+
+            activeQueryWeight += spec.weight;
+
+            String right = spec.extractor.apply(candidate);
+            if (isUnknown(right)) {
+                continue;
+            }
+
+            double local = 0.0;
+            try {
+                local = spec.function.compute(left, right);
+            } catch (Exception ex) {
+                local = 0.0;
+            }
+
+            weightedScore += local * spec.weight;
+        }
+
+        if (activeQueryWeight <= 0.0) {
+            return 0.0;
+        }
+
+        double normalized = weightedScore / activeQueryWeight;
+        if (normalized < 0.0) {
+            return 0.0;
+        }
+        if (normalized > 1.0) {
+            return 1.0;
+        }
+        return normalized;
+    }
+
+    private static boolean isUnknown(String value) {
+        if (value == null) {
+            return true;
+        }
+        String normalized = value.trim().toLowerCase();
+        return normalized.isEmpty()
+                || UNKNOWN.equals(normalized)
+                || "null".equals(normalized)
+                || "nepoznato".equals(normalized)
+                || "n/a".equals(normalized);
     }
 
     private static String toJsonObject(Map<String, Double> map) {

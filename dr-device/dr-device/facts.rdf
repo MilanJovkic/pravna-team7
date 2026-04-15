@@ -199,9 +199,8 @@
         <lc:negligence>false</lc:negligence>
         <lc:provocation>false</lc:provocation>
         <lc:fight_participation>true</lc:fight_participation>
-        <lc:fight_consequence>teska_povreda</lc:fight_consequence>
+        <lc:fight_consequence>death_or_serious_injury</lc:fight_consequence>
         <lc:injury_means_type>sredstvo_podobno_za_tesku_povredu</lc:injury_means_type>
-        <lc:guilt_form>umisljaj_direktni</lc:guilt_form>
         <lc:high_intensity_distress>false</lc:high_intensity_distress>
     </lc:case>
 </rdf:RDF>

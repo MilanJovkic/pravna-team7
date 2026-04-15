@@ -32,7 +32,11 @@ call .venv\Scripts\activate.bat
 echo ============================================================
 echo Checking verdict synchronization (PDF -^> TXT -^> XML)...
 echo ============================================================
-python sync_verdicts.py --no-llm
+if "%SYNC_NO_LLM%"=="1" (
+    python sync_verdicts.py --no-llm
+) else (
+    python sync_verdicts.py
+)
 if errorlevel 1 (
     echo WARNING: Verdict sync had issues. Check output above.
 )

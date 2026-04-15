@@ -12,10 +12,12 @@ import psycopg2
 from psycopg2.extras import execute_values
 
 from backend.app.models.schemas import CaseFacts, CbrResult, CbrMatch
+from backend.app.services.cbr_fact_extractor import extract_case_facts, normalize_case_number
 from backend.app.services.cbr_normalization import (
     normalize_fight_consequence,
     normalize_injury_type,
     normalize_text,
+    normalize_weapon,
     bool_to_text,
     parse_bool,
 )
@@ -26,6 +28,29 @@ from backend.app.domain.shared.outcome_normalization import normalize_outcome
 ROOT = Path(__file__).resolve().parents[3]
 CBR_DIR = ROOT / "cbr-jcolibri"
 JAR_PATH = CBR_DIR / "target" / "pravna-cbr-0.0.1-SNAPSHOT.jar"
+
+BOOLEAN_COLUMNS = (
+    "weapon_used",
+    "severe_consequence",
+    "death_result",
+    "negligence",
+    "provocation",
+    "fight_participation",
+    "left_without_help",
+    "previous_convictions",
+    "repeat_offender",
+    "confession",
+    "remorse",
+    "plea_agreement",
+    "aggravating_circumstances",
+    "mitigating_circumstances",
+    "family_circumstances",
+    "poor_financial_status",
+    "alcohol_intoxication",
+    "narcotics_influence",
+    "conditional_sentence_requested",
+    "attempted_offense",
+)
 
 
 class CbrService:
@@ -54,7 +79,7 @@ class CbrService:
 
         self._append_arg(args, "injury_type", normalize_injury_type(facts.injury_type))
         self._append_arg(args, "location", normalize_text(facts.location))
-        self._append_arg(args, "weapon", normalize_text(facts.weapon))
+        self._append_arg(args, "weapon", normalize_weapon(facts.weapon))
         self._append_arg(args, "weapon_used", self._bool_str(facts.weapon_used))
         self._append_arg(args, "severe_consequence", self._bool_str(facts.severe_consequence))
         self._append_arg(args, "death_result", self._bool_str(facts.death_result))
@@ -63,6 +88,19 @@ class CbrService:
         self._append_arg(args, "fight_participation", self._bool_str(facts.fight_participation))
         self._append_arg(args, "fight_consequence", normalize_fight_consequence(facts.fight_consequence))
         self._append_arg(args, "left_without_help", self._bool_str(facts.left_without_help))
+        self._append_arg(args, "previous_convictions", self._bool_str(facts.previous_convictions))
+        self._append_arg(args, "repeat_offender", self._bool_str(facts.repeat_offender))
+        self._append_arg(args, "confession", self._bool_str(facts.confession))
+        self._append_arg(args, "remorse", self._bool_str(facts.remorse))
+        self._append_arg(args, "plea_agreement", self._bool_str(facts.plea_agreement))
+        self._append_arg(args, "aggravating_circumstances", self._bool_str(facts.aggravating_circumstances))
+        self._append_arg(args, "mitigating_circumstances", self._bool_str(facts.mitigating_circumstances))
+        self._append_arg(args, "family_circumstances", self._bool_str(facts.family_circumstances))
+        self._append_arg(args, "poor_financial_status", self._bool_str(facts.poor_financial_status))
+        self._append_arg(args, "alcohol_intoxication", self._bool_str(facts.alcohol_intoxication))
+        self._append_arg(args, "narcotics_influence", self._bool_str(facts.narcotics_influence))
+        self._append_arg(args, "conditional_sentence_requested", self._bool_str(facts.conditional_sentence_requested))
+        self._append_arg(args, "attempted_offense", self._bool_str(facts.attempted_offense))
 
         env = self._cbr_env()
 
@@ -92,7 +130,7 @@ class CbrService:
         payload = json.loads(json_text)
         matches = [
             CbrMatch(
-                case_number=item.get("case_number"),
+                case_number=self._sanitize_case_number(item.get("case_number")),
                 verdict_case_id=self._resolve_verdict_case_id(item.get("case_number")),
                 similarity=float(item.get("similarity", 0.0)),
                 outcome=normalize_outcome(item.get("outcome")),
@@ -114,12 +152,19 @@ class CbrService:
         try:
             with psycopg2.connect(**config) as conn:
                 with conn.cursor() as cursor:
+                    self._ensure_case_schema(cursor)
                     cursor.execute("SELECT COUNT(*) FROM cases")
                     count = cursor.fetchone()[0]
                     if count == 0:
                         self._import_cases(conn)
-        except Exception:
+                    elif self._has_legacy_false_defaults(cursor):
+                        logger.warning(
+                            "Detected legacy CBR boolean defaults (all false); re-importing XML case base"
+                        )
+                        self._import_cases(conn)
+        except Exception as exc:
             logger.exception("CBR database initialization failed")
+            raise RuntimeError("CBR database initialization failed") from exc
 
     def _import_cases(self, conn) -> None:
         xml_dir = ROOT / "data" / "verdicts_xml"
@@ -128,6 +173,9 @@ class CbrService:
 
         records = []
         for xml_file in sorted(xml_dir.glob("*.xml")):
+            if xml_file.stem.upper().startswith("GEN"):
+                continue
+
             facts = self._extract_facts(xml_file)
             if not facts:
                 continue
@@ -136,7 +184,7 @@ class CbrService:
                 facts.get("case_number", ""),
                 normalize_injury_type(facts.get("injury_type")),
                 normalize_text(facts.get("location")),
-                normalize_text(facts.get("weapon")),
+                normalize_weapon(facts.get("weapon")),
                 self._extract_bool_or_none(facts.get("weapon_used")),
                 self._extract_bool_or_none(facts.get("severe_consequence")),
                 self._extract_bool_or_none(facts.get("death_result")),
@@ -145,6 +193,19 @@ class CbrService:
                 self._extract_bool_or_none(facts.get("fight_participation")),
                 normalize_fight_consequence(facts.get("fight_consequence")),
                 self._extract_bool_or_none(facts.get("left_without_help")),
+                self._extract_bool_or_none(facts.get("previous_convictions")),
+                self._extract_bool_or_none(facts.get("repeat_offender")),
+                self._extract_bool_or_none(facts.get("confession")),
+                self._extract_bool_or_none(facts.get("remorse")),
+                self._extract_bool_or_none(facts.get("plea_agreement")),
+                self._extract_bool_or_none(facts.get("aggravating_circumstances")),
+                self._extract_bool_or_none(facts.get("mitigating_circumstances")),
+                self._extract_bool_or_none(facts.get("family_circumstances")),
+                self._extract_bool_or_none(facts.get("poor_financial_status")),
+                self._extract_bool_or_none(facts.get("alcohol_intoxication")),
+                self._extract_bool_or_none(facts.get("narcotics_influence")),
+                self._extract_bool_or_none(facts.get("conditional_sentence_requested")),
+                self._extract_bool_or_none(facts.get("attempted_offense")),
                 normalize_outcome(facts.get("outcome")),
             )
             records.append(record)
@@ -153,39 +214,26 @@ class CbrService:
             return
 
         with conn.cursor() as cursor:
+            self._ensure_case_schema(cursor)
             cursor.execute("TRUNCATE TABLE cases RESTART IDENTITY CASCADE")
             insert_query = """
                 INSERT INTO cases (
                     case_number, injury_type, location, weapon, weapon_used,
                     severe_consequence, death_result, negligence, provocation,
-                    fight_participation, fight_consequence, left_without_help, outcome
+                    fight_participation, fight_consequence, left_without_help,
+                    previous_convictions, repeat_offender, confession, remorse,
+                    plea_agreement, aggravating_circumstances, mitigating_circumstances,
+                    family_circumstances, poor_financial_status, alcohol_intoxication,
+                    narcotics_influence, conditional_sentence_requested, attempted_offense,
+                    outcome
                 ) VALUES %s
             """
             execute_values(cursor, insert_query, records)
         conn.commit()
+        self._case_number_index = None
 
     def _extract_facts(self, xml_path: Path) -> dict:
-        tree = ET.parse(xml_path)
-        root = tree.getroot()
-
-        case_number_elem = root.find(".//{*}docNumber")
-        outcome_elem = root.find(".//{*}block[@name='verdict']")
-        case_number = case_number_elem.text.strip() if case_number_elem is not None and case_number_elem.text else ""
-        outcome = outcome_elem.get("outcome") if outcome_elem is not None else ""
-
-        facts = {
-            "case_number": case_number,
-            "outcome": outcome,
-        }
-
-        for fact in root.findall(".//{*}facts/{*}fact"):
-            key = fact.attrib.get("key")
-            value = (fact.text or "").strip()
-            if not key or not value:
-                continue
-            facts[key] = value
-
-        return facts
+        return extract_case_facts(xml_path)
 
     def _cbr_env(self) -> dict:
         config = get_db_config()
@@ -223,11 +271,48 @@ class CbrService:
         parsed = parse_bool(value)
         return parsed
 
+    def _ensure_case_schema(self, cursor) -> None:
+        for column in BOOLEAN_COLUMNS:
+            cursor.execute(f"ALTER TABLE cases ADD COLUMN IF NOT EXISTS {column} BOOLEAN")
+
+    def _sanitize_case_number(self, value: str | None, fallback: str | None = None) -> str | None:
+        if fallback is None:
+            normalized = normalize_case_number(value, "")
+            return normalized or None
+        return normalize_case_number(value, fallback)
+
+    def _has_legacy_false_defaults(self, cursor) -> bool:
+        select_parts = ["COUNT(*)"]
+        for col in BOOLEAN_COLUMNS:
+            select_parts.append(f"SUM(CASE WHEN {col} IS NULL THEN 1 ELSE 0 END)")
+            select_parts.append(f"SUM(CASE WHEN {col} = TRUE THEN 1 ELSE 0 END)")
+
+        cursor.execute(f"SELECT {', '.join(select_parts)} FROM cases")
+        row = cursor.fetchone()
+        if not row:
+            return False
+
+        total = int(row[0] or 0)
+        if total < 10:
+            return False
+
+        offset = 1
+        for _ in BOOLEAN_COLUMNS:
+            null_count = int(row[offset] or 0)
+            true_count = int(row[offset + 1] or 0)
+            offset += 2
+
+            if null_count != 0 or true_count != 0:
+                return False
+
+        return True
+
     def _resolve_verdict_case_id(self, case_number: str | None) -> str | None:
-        if not case_number:
+        normalized_case_number = self._sanitize_case_number(case_number)
+        if not normalized_case_number:
             return None
         index = self._load_case_number_index()
-        return index.get(case_number.strip().lower())
+        return index.get(normalized_case_number.lower())
 
     def _load_case_number_index(self) -> dict[str, str]:
         if self._case_number_index is not None:
@@ -240,13 +325,16 @@ class CbrService:
             return index
 
         for xml_file in sorted(xml_dir.glob("*.xml")):
+            if xml_file.stem.upper().startswith("GEN"):
+                continue
             try:
                 tree = ET.parse(xml_file)
                 root = tree.getroot()
                 case_number_elem = root.find(".//{*}docNumber")
-                if case_number_elem is None or not case_number_elem.text:
-                    continue
-                case_number = case_number_elem.text.strip()
+                case_number = self._sanitize_case_number(
+                    case_number_elem.text if case_number_elem is not None else None,
+                    fallback=xml_file.stem,
+                )
                 if case_number:
                     index[case_number.lower()] = xml_file.stem
             except Exception:

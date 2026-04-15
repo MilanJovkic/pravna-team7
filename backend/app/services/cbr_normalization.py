@@ -50,8 +50,37 @@ def normalize_fight_consequence(value: str | None) -> str | None:
     text = normalize_text(value)
     if not text:
         return None
+    if text in {
+        "smrt",
+        "death",
+        "death_or_serious_injury",
+        "teska_povreda",
+        "teska tjelesna povreda",
+        "teska_tjelesna_povreda",
+        "ozbiljna_povreda",
+    }:
+        return "death_or_serious_injury"
+    if text in {"laka_povreda", "laka tjelesna povreda", "laka_tjelesna_povreda"}:
+        return "none"
     if text in {"none", "nema", "bez", "bez posledica", "bez posljedica"}:
         return "none"
+    return text
+
+
+def normalize_weapon(value: str | None) -> str | None:
+    text = normalize_text(value)
+    if not text:
+        return None
+
+    if text in {"opasno_orudje", "sredstvo_podobno_za_tesku_povredu"}:
+        return text
+
+    if any(token in text for token in ("noz", "pistolj", "pusk", "vatreno", "oruzje")):
+        return "opasno_orudje"
+
+    if any(token in text for token in ("palic", "kamen", "metalni", "kljuc", "fla", "sipk", "letv", "predmet")):
+        return "sredstvo_podobno_za_tesku_povredu"
+
     return text
 
 

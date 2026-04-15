@@ -7,6 +7,8 @@ try:
 except ImportError:
     PdfReader = None
 
+from .text_normalization import normalize_legal_text
+
 
 class PDFExtractor:
     """Extracts text from PDF court verdicts."""
@@ -14,6 +16,15 @@ class PDFExtractor:
     def __init__(self):
         if PdfReader is None:
             raise ImportError("PyPDF2 nije instaliran. Pokreni: pip install PyPDF2>=3.0.0")
+
+    def _extract_with_pypdf2(self, pdf_path: Path) -> str:
+        reader = PdfReader(str(pdf_path))
+        text_parts = []
+        for page in reader.pages:
+            text = page.extract_text() or ""
+            if text.strip():
+                text_parts.append(text)
+        return "\n\n".join(text_parts).strip()
 
     def extract_text(self, pdf_path: Path) -> str:
         """
@@ -26,17 +37,14 @@ class PDFExtractor:
             Ekstraktovani tekst
         """
         try:
-            reader = PdfReader(str(pdf_path))
-            text_parts = []
-            
-            for page in reader.pages:
-                text = page.extract_text()
-                if text:
-                    text_parts.append(text)
-            
-            full_text = "\n".join(text_parts)
-            return full_text.strip()
-        
+            text = self._extract_with_pypdf2(pdf_path)
+            normalized = normalize_legal_text(text)
+
+            if normalized:
+                return normalized
+
+            raise RuntimeError("Nijedan extractor nije uspeo da izdvoji tekst")
+
         except Exception as e:
             raise RuntimeError(f"Greška pri ekstrakciji teksta iz {pdf_path}: {e}")
 

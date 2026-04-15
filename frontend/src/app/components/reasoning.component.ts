@@ -1677,10 +1677,12 @@ export class ReasoningComponent {
     const labels: Record<string, string> = {
       hybrid_consensus: 'Hibridni konsenzus',
       hybrid_conflict_resolution: 'Hibridno razrešenje konflikta',
+      rule_plus_cbr_retrieval: 'Pravila + CBR sličnost',
       rule_only: 'Samo pravila',
       cbr_only: 'Samo slični slučajevi',
       supports_conviction: 'Podržava osudu',
       supports_rejection: 'Podržava odbijanje',
+      retrieval_only: 'CBR sličnost bez konsenzusa ishoda',
       unavailable: 'Nedostupno',
       unknown: 'Nepoznato',
     };
@@ -1877,12 +1879,8 @@ export class ReasoningComponent {
     const injuryType = this.facts.injury_type || '';
 
     let fightConsequence = 'none';
-    if (deathResult) {
-      fightConsequence = 'smrt';
-    } else if (severeConsequence) {
-      fightConsequence = 'teska_povreda';
-    } else if (injuryType) {
-      fightConsequence = 'laka_povreda';
+    if (deathResult || severeConsequence) {
+      fightConsequence = 'death_or_serious_injury';
     }
 
     const leftWithoutHelp = this.facts.left_without_help;

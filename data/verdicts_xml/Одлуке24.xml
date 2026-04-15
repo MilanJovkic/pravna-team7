@@ -6,30 +6,41 @@
                 <FRBRWork>
                     <FRBRthis value="/akn/me/judgment/Одлуке24/!main"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке24"/>
-                    <FRBRdate date="2013-03-11" name="judgment"/>
+                    <FRBRdate date="2013-03-14" name="judgment"/>
                     <FRBRauthor href="#court"/>
                     <FRBRcountry value="me"/>
                 </FRBRWork>
                 <FRBRExpression>
-                    <FRBRthis value="/akn/me/judgment/Одлуке24/sr@2013-03-11/!main"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке24/sr@2013-03-11"/>
-                    <FRBRdate date="2013-03-11"/>
+                    <FRBRthis value="/akn/me/judgment/Одлуке24/sr@2013-03-14/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке24/sr@2013-03-14"/>
+                    <FRBRdate date="2013-03-14"/>
                     <FRBRauthor href="#court"/>
                     <FRBRlanguage language="sr"/>
                 </FRBRExpression>
                 <FRBRManifestation>
-                    <FRBRthis value="/akn/me/judgment/Одлуке24/sr@2013-03-11/!main.xml"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке24/sr@2013-03-11/!main.akn"/>
-                    <FRBRdate date="2026-04-13"/>
+                    <FRBRthis value="/akn/me/judgment/Одлуке24/sr@2013-03-14/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке24/sr@2013-03-14/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
             <references source="#court">
                 <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Viši sud u Podgorici"/>
-                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Đuranović"/>
-                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Mila Cupara"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Dragoja Jović"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Dragana Đuranović"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Snežana Aleksić"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="H.R."/>
+                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="D.M."/>
+                <TLCPerson eId="defendant_3" href="/akn/me/ontology/person/defendant" showAs="C.G."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="Z.E."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="Z.N."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="Š.H."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="G.V."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Opšta bolnica B."/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Viši sud u Podgorici"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -44,645 +55,677 @@
                     <docTitle>Viši sud u Podgorici</docTitle>
                 </block>
                 <block name="date">
-                    <docDate date="2013-03-11">2013-03-11</docDate>
+                    <docDate date="2013-03-14">2013-03-14</docDate>
                 </block>
                 <block name="judges">
-                    <judge>Đuranović</judge>
-                    <judge>Mila Cupara</judge>
+                    <judge>Dragoja Jović</judge>
+                    <judge>Dragana Đuranović</judge>
+                    <judge>Snežana Aleksić</judge>
                 </block>
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Optuženi N.A. kriv za pokušaj teškog ubistva.</p>
+                    <p>Optuženi N.A. osuđen za teško ubistvo u pokušaju.</p>
                 </block>
                 <block name="legalIssues">
-                    <p>Prekoračenje nužne odbrane</p>
-                    <p>Pokušaj ubistva</p>
-                    <p>Stanje prepasti</p>
+                    <p>prekoračenje granica nužne odbrane</p>
+                    <p>teško ubistvo u pokušaju</p>
+                    <p>izvršenje krivičnog djela</p>
+                    <p>određivanje kazne</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
                     <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakonik o krivičnom postupku</ref>
                 </block>
                 <block name="appliedArticles">
                     <ref href="/akn/me/act/2024/!main#art_144">Član 144</ref>
                     <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/2024/!main#art_36">Član 36</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
                     <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
                     <ref href="/akn/me/act/2024/!main#art_10">Član 10</ref>
-                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Optuženi je delovao u stanju prepasti, ali je prekoračio granice nužne odbrane.</p>
+                    <p>Sud je utvrdio da je optuženi delovao u stanju prepasti i prekoračio granice nužne odbrane.</p>
                 </block>
             </motivation>
             <decision>
-                <block name="verdict" outcome="nepoznato">
-                    <p>Krivica optuženog potvrđena.</p>
+                <block name="verdict" outcome="osudjen">
+                    <p>Optuženi N.A. osuđen na 10 mjeseci zatvora.</p>
                 </block>
             </decision>
             <participants>
-                <block name="witnesses">
-                    <person>odbrane naveo da su se</person>
-                    <person>C.A.</person>
+                <block name="defendants">
+                    <person>H.R.</person>
+                    <person>D.M.</person>
+                    <person>C.G.</person>
+                </block>
+                <block name="victims">
+                    <person>Z.E.</person>
                     <person>Z.N.</person>
-                    <person>pojasnio</person>
+                    <person>Š.H.</person>
+                    <person>G.V.</person>
+                </block>
+                <block name="witnesses">
+                    <person>C.A.</person>
                     <person>T.A.</person>
                     <person>R.H.</person>
+                    <person>Š.H.</person>
+                    <person>K.U.</person>
+                    <person>Z.N.</person>
+                    <person>Z.E.</person>
                     <person>G.V.</person>
-                    <person>je na pitanje suda</person>
+                    <person>M.P.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Opšta bolnica B.</organization>
+                    <organization>Viši sud u Podgorici</organization>
                 </block>
             </participants>
             <facts>
                 <fact key="injury_type">laka tjelesna povreda</fact>
                 <fact key="weapon">nož</fact>
                 <fact key="location">Podgorica</fact>
-                <fact key="location">Podgorici Kt</fact>
-                <fact key="location">Domu</fact>
-                <fact key="location">Dom</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">10</fact>
             </facts>
             <conclusions>
                 <block name="fullText">
                     <p>K.br. 86/12
 U IME CRNE GORE
-Viši sud u Podgorici, u vije ć u sastavljenom od sudije Jovi ć  Dragoja, kao predsjednika vije ć a i sudija
-Đuranovi ć  Dragane i Aleksi ć  Sne ž ane, kao č lanova vije ć a, uz u č e šć e namje š tenika suda Cupara Mile, kao
-zapisni č ara, u predmetu optu ž enog N.A., zbog krivi č nog djela - teško ubistvo u poku š aju iz č lana 144 ta č ka 8
-u vezi č lana 20 Krivi č nog zakonika, nakon odr ž anog glavnog i javnog pretresa, dana 11.03.2013. godine, kome
-su prisustvovali zastupnik optu ž nice, Tomkovi ć  Ž eljko, zamjenik Vi š eg dr ž avnog tu ž ioca u Podgorici, optu ž eni
+Viši sud u Podgorici, u vijeću sastavljenom od sudije Jović Dragoja, kao predsjednika vijeća i sudija
+Đuranović Dragane i Aleksić Snežane, kao članova vijeća, uz učešće namještenika suda Cupara Mile, kao
+zapisničara, u predmetu optuženog N.A., zbog krivičnog djela - teško ubistvo u pokušaju izčlana 144 tačka 8
+u vezičlana 20 Krivičnog zakonika, nakon održanog glavnog i javnog pretresa, dana 11.03.2013. godine, kome
+su prisustvovali zastupnik optužnice, Tomković Željko, zamjenik Višeg državnog tužioca u Podgorici, optuženi
 i njegov branilac, A.M., advokat iz U., donio je i dana 14.03.2013. godine, javno objavio
 P R E S U D U
-Optu ž eni N.A., od oca Đ . i majke V., rodjene R., rodjen ... godine u S. – R.A., sa prebivalia š tem u S., k. S., sa
-privremenim boravkom u U., ul. ".." bb, kod stanodavca L.N., zavr š io osnovnu š kolu, i dva razreda srednje T. š .
-u U., dr ž avljanin R.A., neo ž enjen, nezaposlen, srednjeg imovnog stanja,
+Optuženi N.A., od oca Đ. i majke V., rodjene R., rodjen... godine u S. – R.A., sa prebivaliaštem u S., k. S., sa
+privremenim boravkom u U., ul. ".." bb, kod stanodavca L.N., završio osnovnuškolu, i dva razreda srednje T. š.
+u U., državljanin R.A., neoženjen, nezaposlen, srednjeg imovnog stanja,
 K R I V J E
-Zato š to je:
-Dana 21.04.2012. godine, oko 11,00 č asova, u U., u B.M.T., u blizini č . "B.", u prekora č enju granica nu ž ne
-odbrane, u stanju prepasti jakog intenziteta izazvane napadom na njegovo pravno dobro, s umi š ljajem
-poku š ao da li š i ž ivota vi š e lica, na na č in š to ga je napao o š te ć eni Z.E. i udario pesnicom u glavu, nakon č ega
-su krenuli na njega Z.N. i Š .H., pa je nalaze ć i se u stanju prepasti jakog intenziteta, u cilju odbijanja od sebe
-tog istovremenog protivpravnog i neposredno predstoje ć eg napada, prekora č io granice nu ž ne odbrane, tako
-što je no ž em vi š e puta uboo o š te ć ene Z.N., Z.E. i Š .H., u predjelu tijela, nanijev š i im lake tjelesne povrede i to
-ošte ć enom Z.N. ubodnu ranu u predjelu lijeve polovine grudnog ko š a i to u zadnjoj pazu š noj liniji, du ž ine 1
-cm sa kanalom rane du ž ine 8 cm i ubodnu ranu u lijevom podlopati č nom predjelu, du ž ine 3 cm, sa
-presijecanjem mi š i ć a, sa kanalom rane du ž ine 6 cm, o š te ć enom Z.E. tri ogrebotine na ka ž iprstu i tre ć em prstu
-desne š ake, dimenzija od po 3 mm i sjekotinu ka ž iprsta desne š ake spolja, promjera oko 1,0 cm i o š te ć enom
-Š.H. ubodnu ranu u predjelu lijeve strane grudnog ko š a, u predjelu lijeve pazu š ne jame, du ž ine 1,5 sa
-kanalom rane du ž ine 5 cm, ubodnu ranu u predjelu lijeve nadlaktice, du ž ine 3 cm sa kanalom rane du ž ine 6
-cm i ranu sjekotinu na zadnjoj strani lijeve š ake, du ž ine 4 cm, iako je bio svjestan da upotrebom no ž a na
-opisani na č in mo ž e li š iti ž ivota o š te ć ene, pa je na to pristao,
-- čime je izvr š io krivi č no djelo te š ko ubistvo u poku š aju, u prekora č enju granica nu ž ne odbrane, iz č lana 144
-tačka 8 u vezi č lana 20 i č lana 10 st. 3 Krivi č nog zakonika,
-pa ga sud primjenom navedenih zakonskih propisa, te č lana 36, 42, 45 ta č . 2, 46 st. 2 i 51 Krivi č nog zakonika,
-kao i č lana 374 Zakonika o krivi č nom postupku,
-O S U Đ  U J EViši Sud u Podgorici
+Zatošto je:
+Dana 21.04.2012. godine, oko 11,00časova, u U., u B.M.T., u blizinič. "B.", u prekoračenju granica nužne
+odbrane, u stanju prepasti jakog intenziteta izazvane napadom na njegovo pravno dobro, s umišljajem
+pokušao da lišiživota više lica, na načinšto ga je napao oštećeni Z.E. i udario pesnicom u glavu, nakončega
+su krenuli na njega Z.N. i Š.H., pa je nalazeći se u stanju prepasti jakog intenziteta, u cilju odbijanja od sebe
+tog istovremenog protivpravnog i neposredno predstojećeg napada, prekoračio granice nužne odbrane, tako
+što je nožem više puta uboo oštećene Z.N., Z.E. i Š.H., u predjelu tijela, nanijevši im lake tjelesne povrede i to
+oštećenom Z.N. ubodnu ranu u predjelu lijeve polovine grudnog koša i to u zadnjoj pazušnoj liniji, dužine 1
+cm sa kanalom rane dužine 8 cm i ubodnu ranu u lijevom podlopatičnom predjelu, dužine 3 cm, sa
+presijecanjem mišića, sa kanalom rane dužine 6 cm, oštećenom Z.E. tri ogrebotine na kažiprstu i trećem prstu
+desnešake, dimenzija od po 3 mm i sjekotinu kažiprsta desnešake spolja, promjera oko 1,0 cm i oštećenom
+Š.H. ubodnu ranu u predjelu lijeve strane grudnog koša, u predjelu lijeve pazušne jame, dužine 1,5 sa
+kanalom rane dužine 5 cm, ubodnu ranu u predjelu lijeve nadlaktice, dužine 3 cm sa kanalom rane dužine 6
+cm i ranu sjekotinu na zadnjoj strani lijevešake, dužine 4 cm, iako je bio svjestan da upotrebom noža na
+opisani način može lišitiživota oštećene, pa je na to pristao,
+- čime je izvršio krivično djelo teško ubistvo u pokušaju, u prekoračenju granica nužne odbrane, izčlana 144
+tačka 8 u vezičlana 20 ičlana 10 st. 3 Krivičnog zakonika,
+pa ga sud primjenom navedenih zakonskih propisa, tečlana 36, 42, 45 ta č. 2, 46 st. 2 i 51 Krivičnog zakonika,
+kao ičlana 374 Zakonika o krivičnom postupku,
+O S UĐU J EViši Sud u Podgorici
 K 86/2012
 14. Mart 2013
-na kaznu zatvora u trajanju od 10 (deset) mjeseci, u koju mu se ura č unava vrijeme provedeno u pritvoru, od
+
+na kaznu zatvora u trajanju od 10 (deset) mjeseci, u koju mu se uračunava vrijeme provedeno u pritvoru, od
 27.04.2012. godine do 27.02.2013. godine.
-Na osnovu č lana 229 u vezi č lana 226 Zakonika o krivi č nom postupku, optu ž eni se obavezuje da na ime
-troš kova krivi č nog postupka u korist bud ž eta Crne Gore uplati 1.072,50 €, a na ime sudskog pau š ala 150,00
-eura, u roku od 15 dana po pravosna ž nosti presude.
-O b r a z l o ž  e nj e
-Optu ž nicom Vi š eg dr ž avnog tu ž ila š tva u Podgorici Kt. br. 31/12 od 22.06.2012. godine, staviljeno je na teret
-optu ž enom da je izvr š io krivi č nog djela - te š ko ubistvo u poku š aju iz č lana 144 ta č ka 8 u vezi č lana 20
-Krivi č nog zakonika, ali je sud utvrdjeno č injeni č no stanje prilagodio rezultatima izvedenih dokaza i izmijenio
-činjeni č ni opis i pravnu oznaku krivi č nog djela, kako je to navedeno u izreci presude.
-Sud je u dokaznom postupku u skladu sa zakonom neposredno saslu š ao svjedoke Z.E., Z.N., G.V., vje š taka
-sudsko medicinske struke prof. dr Č . D., koja je ostala pri nalazu i mi š ljenju od 10.06.2012. godine, kao i
-predstavnika tima vje š taka neuropsihijatrijsko psiholo š ke struke - psihijatra dr G. Ž ., koji je ostao pri nalazu i
-mišljenju od 25.02.2013. godine, te je pro č itao iskaze svjedoka C. A., T.A., R.H., Š .H., pro č itao zapisnik o
-uvidjaju Uprave policije - Podru č na jedinica Bar - Ispostava Ulcinj KU br. 60/12 od 21.04.2012. godine,
-služ benu zabilje š ku Uprave policije - Podru č na jedinica Bar - Ispostava Ulcinj KU.br. 60/12 od 21.04.2012.
-godine, sa č injena od ovla šć enog policijskog slu ž benika Red ž ematovi ć  Miralema, slu ž benu zabilje š ku Uprave
-policije - Podru č na jedinica Bar - Ispostava Ulcinj KU.br. 60/12 od 21.04.2012. godine sa č injena od ovla šć enih
-policijskih slu ž benika Gojkovi ć  Danila i Sredojevi ć  Dragana, medicinsku dokumentaciju na ime svjedoka -
-ošte ć enog Z.N. (izvje š taj ljekara specijaliste hirurga Urgentne medicinske pomo ć i Op š te bolnice B. od
-21.04.2012. godine, otpusnu listu sa epikrizom Odjeljenja hirurgije Op š te bolnice B., mati č ni broj istorije
-bolesti 2398/2012), medicinsku dokumentaciju na ime svjedoka-o š te ć enog Z.Eg. (izvje š taj ljekara HMP – U.
-od 21.04.2012. godine), medicinsku dokumentaciju na ime svjedoka - o š te ć enog Š .H. (izvje š taj ljekara
-specijaliste hirurga Urgentne medicinske pomo ć i Op š te bolnice B. od 21.04.2012. godine, otpusnu listu sa
-epikrizom Odjeljenja hirurgije Op š te bolnice B., mati č ni broj istorije bolesti 2404/2012), te izvje š taj o DNK
-vješ ta č enju br. 1821/12 Forenzi č kog centra Danilovgrad i izvr š io uvid u prate ć u fotodokumentaciju.
-Optu ž eni N.A. je u svojoj odbrani koju je iznio pred tu ž iocem naveo da se dana 21.04.2012. godine, oko
-10,30h, kretao B. prema kru ž nom toku, u blizini p. ''D. i n.'' u U., kada su iz parkiranog vozila iza š la dva lica i
-upitala da li je izbio momka, koji je ostao u vozilu, te da im je odgovorio, da su se posva đ ali ali da ga je on tom
-prilikom ubo no ž em. Iz vozila je, zatim, i taj momak iza š ao, pa su ga pozvali da u đ u u neku uli č icu, š to je on
-odbio, izvadiv š i mobilni telefon u namjeri da pozove policiju. Nije u tome uspio, jer ga je najstariji udario
-rukom po ruci, zbog č ega mu je ispao telefon i polomio se od podlogu. Nakon toga, sva su trojica po č eli da ga
-udaraju stisnutim pesnicama i nogama u predjelu glave i tijela, a jedan od njih je krenuo š rafcigerom prema
-njemu, i zamahnuo da ga udari. Uspio da izbjegne taj udarac, ali se upla š io za svoj ž ivot kad je vidio š rafciger,
-pa je bio prinu đ en da iz d ž epa izvadi upalja č  sa britvom na rasklapanje, koja ima sje č ivo du ž ine oko 5 cm.
-Poč eo je da ma š e ispred sebe, kako bi ih zapla š io i odbio taj njihov napad. Nije imao namjeru da ih povrijedi,
-niti li š i ž ivota. Tom prilikom povrijedio je najstarijeg od njih, tako š to ga je ubo u predjelu rebara, ali se ne
-sjeć a da li je jo š  nekog povrijedi. Primijetio je i da momak koji ga je u ranijem sukobu povrijedio no ž em, ima
-kod sebe š rafciger, koji je uzeo iz vozila. Uspio je da mu pobjegne dok se kretao prema njemu, iako je on za
-njim kratko potr č ao. Dok je bje ž ao bacio je britvu u mjestu ''B.G.'' i nakon li š enja slobode, zajedno sa
-policijom je po š ao do tog mjesta, ali je tamo nijesu mogli prona ć i. Nakon ovog doga đ aja optu ž eni je po š ao za
-V., kod svog druga H.R., gdje je proveo dva dana. Ostalo vrijeme, do li š enja slobode, proveo je kod druga D.M.
-u mjestu Z., i nije bje ž ao iz C.G..
+Na osnovučlana 229 u vezičlana 226 Zakonika o krivičnom postupku, optuženi se obavezuje da na ime
+troškova krivičnog postupka u korist budžeta Crne Gore uplati 1.072,50 €, a na ime sudskog paušala 150,00
+eura, u roku od 15 dana po pravosnažnosti presude.
+O b r a z l ože nj e
+Optužnicom Višeg državnog tužilaštva u Podgorici Kt. br. 31/12 od 22.06.2012. godine, staviljeno je na teret
+optuženom da je izvršio krivičnog djela - teško ubistvo u pokušaju izčlana 144 tačka 8 u vezičlana 20
+Krivičnog zakonika, ali je sud utvrdjenočinjenično stanje prilagodio rezultatima izvedenih dokaza i izmijenio
+činjenični opis i pravnu oznaku krivičnog djela, kako je to navedeno u izreci presude.
+Sud je u dokaznom postupku u skladu sa zakonom neposredno saslušao svjedoke Z.E., Z.N., G.V., vještaka
+sudsko medicinske struke prof. dr Č.D., koja je ostala pri nalazu i mišljenju od 10.06.2012. godine, kao i
+predstavnika tima vještaka neuropsihijatrijsko psihološke struke - psihijatra dr G.Ž., koji je ostao pri nalazu i
+mišljenju od 25.02.2013. godine, te je pročitao iskaze svjedoka C.A., T.A., R.H., Š.H., pročitao zapisnik o
+uvidjaju Uprave policije - Područna jedinica Bar - Ispostava Ulcinj KU br. 60/12 od 21.04.2012. godine,
+službenu zabilješku Uprave policije - Područna jedinica Bar - Ispostava Ulcinj KU.br. 60/12 od 21.04.2012.
+godine, sačinjena od ovlašćenog policijskog službenika Redžematović Miralema, službenu zabilješku Uprave
+policije - Područna jedinica Bar - Ispostava Ulcinj KU.br. 60/12 od 21.04.2012. godine sačinjena od ovlašćenih
+policijskih službenika Gojković Danila i Sredojević Dragana, medicinsku dokumentaciju na ime svjedoka -
+oštećenog Z.N. (izvještaj ljekara specijaliste hirurga Urgentne medicinske pomoći Opšte bolnice B. od
+21.04.2012. godine, otpusnu listu sa epikrizom Odjeljenja hirurgije Opšte bolnice B., matični broj istorije
+bolesti 2398/2012), medicinsku dokumentaciju na ime svjedoka-oštećenog Z.Eg. (izvještaj ljekara HMP – U.
+od 21.04.2012. godine), medicinsku dokumentaciju na ime svjedoka - oštećenog Š.H. (izvještaj ljekara
+specijaliste hirurga Urgentne medicinske pomoći Opšte bolnice B. od 21.04.2012. godine, otpusnu listu sa
+epikrizom Odjeljenja hirurgije Opšte bolnice B., matični broj istorije bolesti 2404/2012), te izvještaj o DNK
+vješ tačenju br. 1821/12 Forenzičkog centra Danilovgrad i izvršio uvid u prateću fotodokumentaciju.
+Optuženi N.A. je u svojoj odbrani koju je iznio pred tužiocem naveo da se dana 21.04.2012. godine, oko
+10,30h, kretao B. prema kružnom toku, u blizini p. ''D. i n.'' u U., kada su iz parkiranog vozila izašla dva lica i
+upitala da li je izbio momka, koji je ostao u vozilu, te da im je odgovorio, da su se posvađali ali da ga je on tom
+prilikom ubo nožem. Iz vozila je, zatim, i taj momak izašao, pa su ga pozvali da uđu u neku uličicu, š to je on
+odbio, izvadivši mobilni telefon u namjeri da pozove policiju. Nije u tome uspio, jer ga je najstariji udario
+rukom po ruci, zbogčega mu je ispao telefon i polomio se od podlogu. Nakon toga, sva su trojica počeli da ga
+udaraju stisnutim pesnicama i nogama u predjelu glave i tijela, a jedan od njih je krenuošrafcigerom prema
+njemu, i zamahnuo da ga udari. Uspio da izbjegne taj udarac, ali se uplašio za svojživot kad je vidiošrafciger,
+pa je bio prinuđen da iz džepa izvadi upaljačsa britvom na rasklapanje, koja ima sječivo dužine oko 5 cm.
+Poč eo je da maše ispred sebe, kako bi ih zaplašio i odbio taj njihov napad. Nije imao namjeru da ih povrijedi,
+niti lišiživota. Tom prilikom povrijedio je najstarijeg od njih, takošto ga je ubo u predjelu rebara, ali se ne
+sjeća da li je jošnekog povrijedi. Primijetio je i da momak koji ga je u ranijem sukobu povrijedio nožem, ima
+kod sebešrafciger, koji je uzeo iz vozila. Uspio je da mu pobjegne dok se kretao prema njemu, iako je on za
+njim kratko potrčao. Dok je bježao bacio je britvu u mjestu ''B.G.'' i nakon lišenja slobode, zajedno sa
+policijom je pošao do tog mjesta, ali je tamo nijesu mogli pronaći. Nakon ovog događaja optuženi je pošao za
+V., kod svog druga H.R., gdje je proveo dva dana. Ostalo vrijeme, do lišenja slobode, proveo je kod druga D.M.
+u mjestu Z., i nije bježao iz C.G..
+
 Nadalje je naveo da je nakon ovog dogadjaja preko interneta kontaktirao sa T.A. koji mu je rekao da je zbog
-tog dogadjaja i š ao u policiju, ali da o tome ni š ta sa njim nije pri č ao. Tako đ e, optu ž eni je naveo da poznaje
-C.A., ali da nakon tog dogadjaja nije sa njim kontaktirao, nego je borave ć i kod H.R. i D.M. njima rekao da je
-imao sva đ u sa tri lica zbog jednog prethodnog dogadjaja.
+tog dogadjaja išao u policiju, ali da o tome ništa sa njim nije pričao. Takođe, optuženi je naveo da poznaje
+C.A., ali da nakon tog dogadjaja nije sa njim kontaktirao, nego je boraveći kod H.R. i D.M. njima rekao da je
+imao svađu sa tri lica zbog jednog prethodnog dogadjaja.
 U vezi tog prethodnog sukoba koji je sa tim momkom imao u ''I.k.'', pojasnio je da je tom prilikom zadobio
-tjelesne povrede u predjelu desne strane le đ a, u blizini bubrega, i da mu je te povrede nanio no ž em.
-Ljekarska pomo ć  mu je ukazana u javnoj ambulanti u S., 3 - 4 sata nakon tog doga đ aja, kada su mu za š ili
-ranu, koju je dvije nedelje svakog drugog dana previjao.Navedeni doga đ aj nije prijavio policiji, a u vezi ovog
+tjelesne povrede u predjelu desne strane leđa, u blizini bubrega, i da mu je te povrede nanio nožem.
+Ljekarska pomoćmu je ukazana u javnoj ambulanti u S., 3 - 4 sata nakon tog događaja, kada su mu zašili
+ranu, koju je dvije nedelje svakog drugog dana previjao.Navedeni događaj nije prijavio policiji, a u vezi ovog
 dogadjaja na mjestu gdje se desio bilo je dosta ljudi, od kojih je jedino prepoznao osobu po imenu V.
-Optu ž eni je u odbrani na glavnom pretresu pojasnio, da je kasnije saznao da mu se prvi tom prilikom obratio
-Š.H. i da ga je on pitao je li izbio tog momka, a nakon š to je iza š ao iz kola E. ga je pitao jesi li ozdravio. Nadalje
+Optuženi je u odbrani na glavnom pretresu pojasnio, da je kasnije saznao da mu se prvi tom prilikom obratio
+Š.H. i da ga je on pitao je li izbio tog momka, a nakonšto je izašao iz kola E. ga je pitao jesi li ozdravio. Nadalje
 je istakao da su ga 15-tak puta svi udarali pesnicama i nogama po tijelu, ali da od tih udaraca nije pao na
-asfaltnu podlogu, te da je kasnije shvatio, da je on tom prilikom no ž em udario najstarijeg u predjelu lijeve
-boč ne strane grudnog ko š a, dok se branio od napada š rafcigerom koji je u ruci imao Š .H. Takodje je naglasio,
-da je taj njihov napad prestao onog trenutka kada je izvadio no ž , nakon č ega je E. po š ao do kola, te se dao u
-bjekstvo kada je vidio da nosi š rafciger u ruci.
-Nakon prvog dogadjaja koji je imao sa njim vi š e puta su se sretali u gradu i bio je u prilici da se sa njim
-obra č una, ali to nije ž elio, kao ni ovog puta u dogadjaju u kojem je bio napadnut pod opisanim okolnosima.
-Na kraju je pojasnio, da ni onda kada je izvadio no ž  iz d ž epa oni nisu prestali sa napadom iako su se samo za
-trenutak odmakli od njega pa su ga sa ledja napadali otac i sin, dok je ispred njega bio Š .H. koji je zamahivao
-šrafcigerom u njegovom pravcu i istovremeno poku š avao da ga udari nogom. Upravo u tim trenucima kada
-su ga otac i sin udarali u ledja on se okrenuo i N. udario no ž em. U tom trenutku je mislio da je mnogo dalje od
-njega, ali ga je ipak zaka č io no ž em u onaj predio tijela koji je naprijed naveo, dok se nije mogao sjetiti u
-kojem trenutku je mogao zaka č iti ili udariti no ž em Š . koji je mahao š arafcigerom.
-Svjedok - o š te ć eni Z.N. je naveo, da je dana 24.04.2012.godine u U. sa svojim sinom E. i ro đ akom Š .H. i š ao
-pješ ke u pravcu grada, kada su u blizini kru ž nog toka kod pekare ''D. i n.'', nai š li na jedno lice koje im je
+asfaltnu podlogu, te da je kasnije shvatio, da je on tom prilikom nožem udario najstarijeg u predjelu lijeve
+boč ne strane grudnog koša, dok se branio od napadašrafcigerom koji je u ruci imao Š.H. Takodje je naglasio,
+da je taj njihov napad prestao onog trenutka kada je izvadio no ž, nakončega je E. pošao do kola, te se dao u
+bjekstvo kada je vidio da nosišrafciger u ruci.
+Nakon prvog dogadjaja koji je imao sa njim više puta su se sretali u gradu i bio je u prilici da se sa njim
+obračuna, ali to niježelio, kao ni ovog puta u dogadjaju u kojem je bio napadnut pod opisanim okolnosima.
+Na kraju je pojasnio, da ni onda kada je izvadio nožiz džepa oni nisu prestali sa napadom iako su se samo za
+trenutak odmakli od njega pa su ga sa ledja napadali otac i sin, dok je ispred njega bio Š.H. koji je zamahivao
+šrafcigerom u njegovom pravcu i istovremeno pokušavao da ga udari nogom. Upravo u tim trenucima kada
+su ga otac i sin udarali u ledja on se okrenuo i N. udario nožem. U tom trenutku je mislio da je mnogo dalje od
+njega, ali ga je ipak zakačio nožem u onaj predio tijela koji je naprijed naveo, dok se nije mogao sjetiti u
+kojem trenutku je mogao zakačiti ili udariti nožem Š. koji je mahaošarafcigerom.
+Svjedok - oštećeni Z.N. je naveo, da je dana 24.04.2012.godine u U. sa svojim sinom E. i rođakom Š.H. išao
+pješke u pravcu grada, kada su u blizini kružnog toka kod pekare ''D. i n.'', naišli na jedno lice koje im je
 dolazilo iz suprotnog pravca. Njegov sin E. mu je tada rekao da je sa njim prije mjesec dana, imao sukob u
-kafić u ''I.k.'' u U. i da mu je tada nanio povrede. Kad im je pri š ao, taj momak se obratio E. rije č ima: ''jesi li
-ozdravio?'', nakon č ega je E. zapo č eo tu č u u kojoj on i Š .H. nisu u č estvovali. On je samo poku š ao da ih
-razdvoji, uhvativ š i E. za desnu ruku i tada je osjetio jak udarac u predjelu le đ a. U tako nastaloj situaciji H. je
-poku š ao da mu otme no ž , kada je zadobio posjekotinu u predjelu š ake jedne ruke, kao i rebara sa lijeve
-strane, dok je E. zadobio posjekotinu, u predjelu š ake desne ruke. Pojasnio je da nije odmah primijetio da su
-oni povrije đ eni, nego kasnije, kad su i š li prema Domu zdravlja. Prilikom ljekarskog pregleda u Domu zdravlja,
-izgubio je svijest, i do š ao ksebi u toku vo ž nje prema b. bolnici, gdje je zadr ž an na lije č enju č etiri dana, kao i
+kafiću ''I.k.'' u U. i da mu je tada nanio povrede. Kad im je prišao, taj momak se obratio E. riječima: ''jesi li
+ozdravio?'', nakončega je E. započeo tuču u kojoj on i Š.H. nisu učestvovali. On je samo pokušao da ih
+razdvoji, uhvativši E. za desnu ruku i tada je osjetio jak udarac u predjelu leđa. U tako nastaloj situaciji H. je
+pokušao da mu otme no ž, kada je zadobio posjekotinu u predjelušake jedne ruke, kao i rebara sa lijeve
+strane, dok je E. zadobio posjekotinu, u predjelušake desne ruke. Pojasnio je da nije odmah primijetio da su
+oni povrijeđeni, nego kasnije, kad su išli prema Domu zdravlja. Prilikom ljekarskog pregleda u Domu zdravlja,
+izgubio je svijest, i došao ksebi u toku vožnje prema b. bolnici, gdje je zadržan na liječenjučetiri dana, kao i
 Š.H.
-Odgovaraju ć i na pitanja, on je pojasnio da od momenta kada je do š lo do tu č e izme đ u optu ž enog i njegovog
-sina E., te njihovog povredjivanja nije pro š lo vi š e od jednog minuta, ali je naglasio da u rukama optu ž enog za
-vrijeme tu č e nije primijetio no ž , nego tek onda kada je bje ž ao sa lica mjesta. Tada je vidio da mu o š trica no ž a
-viri ispod rukava od trenerke, u desnoj ruci i taj no ž  mu je li č io na tzv. ''skakavac''. Takodje je pojasnio da mu
-je poznato da je na licu mjesta ostala jedna mu š ka kapa - ka č ket i jedan polomljeni telefon, od optu ž enog,
-kao i da od vi š e lica, slu č ajnih prolaznika, koji su posmatrali taj dogadjaj nikog nije prepoznao. Na kraju je
-naveo, da je mi š ljenja da optu ž eni nije imao namjeru da nikog od njih li š i ž ivota, nego da je u strahu
-upotrijebio no ž , pa bez obzira š to se niko od č lanova njegove porodice nije interesovao za njihovo zdravlje,
-nije se pridru ž io krivi č nom gonjenju niti postavio imovinsko pravni zahtjev.
-U svom iskazu na glavnom pretresu je kroz postavljena pitanja ponovio da za vrijeme tu č e nije primijetio no ž
-u ruci optu ž enog i pojasnio, kada je govorio u svom iskazu, da je nakon hvatanja E. za desnu ruku osjetio jak
-udarac u predjelu ledja, vi š e je mislio, da ga je tada udario pesnicom nego nekim drugim sredstvom. Kasnije,
-kada je optu ž eni pobjegao sa lica mjesta, primijetio je da mu š aka krvari, dok je E. posjekotinu u predjelu
-šake desne ruke vidio tek u Domu zdravlja, pa ako su te okolnosti na druga č iji na č in zabilje ž ene kod tu ž ioca
-onda je u pitanju nesporazum i ostao je pri tom razja š njenju koje je dao na glavnom pretresu.
-Imaju ć i u vidu, da je zapo č eo, izmedju ostalog iskaz sa tvrdnjom, da je tom prilikom, dok su se pribli ž avali
-optu ž enom, najednom njegov sin rekao, da mu se č ini da je to momak sa kojim je imao ranije fizi č ki sukob, pa
-mu je pri š ao, podigao kapu i skinuo nao č ari, svjedok je na pitanje suda, za š to te okolnosti koje su prethodile
-tuči nije naveo prilikom saslu š anja kod tu ž ioca, odgovorio da se tada toga nije ni sjetio. Takodje je pojasnio
-da je vidio kako mobilni telefon pada pored nogu optu ž enog, u onom trenutku kada je E. povukao za ruku, ali
-da nije obra ć ao pa ž nju da li se slomio i da je nakon bjekstva optu ž enog vidio da je na licu mjesta ostao i
+Odgovarajući na pitanja, on je pojasnio da od momenta kada je došlo do tuče između optuženog i njegovog
+sina E., te njihovog povredjivanja nije prošlo više od jednog minuta, ali je naglasio da u rukama optuženog za
+vrijeme tuče nije primijetio no ž, nego tek onda kada je bježao sa lica mjesta. Tada je vidio da mu oštrica noža
+viri ispod rukava od trenerke, u desnoj ruci i taj nožmu je ličio na tzv. ''skakavac''. Takodje je pojasnio da mu
+je poznato da je na licu mjesta ostala jedna muška kapa - kačket i jedan polomljeni telefon, od optuženog,
+kao i da od više lica, slučajnih prolaznika, koji su posmatrali taj dogadjaj nikog nije prepoznao. Na kraju je
+naveo, da je mišljenja da optuženi nije imao namjeru da nikog od njih lišiživota, nego da je u strahu
+upotrijebio no ž, pa bez obzirašto se niko odčlanova njegove porodice nije interesovao za njihovo zdravlje,
+nije se pridružio krivičnom gonjenju niti postavio imovinsko pravni zahtjev.
+
+U svom iskazu na glavnom pretresu je kroz postavljena pitanja ponovio da za vrijeme tuče nije primijetio nožu ruci optuženog i pojasnio, kada je govorio u svom iskazu, da je nakon hvatanja E. za desnu ruku osjetio jak
+udarac u predjelu ledja, više je mislio, da ga je tada udario pesnicom nego nekim drugim sredstvom. Kasnije,
+kada je optuženi pobjegao sa lica mjesta, primijetio je da mušaka krvari, dok je E. posjekotinu u predjelu
+šake desne ruke vidio tek u Domu zdravlja, pa ako su te okolnosti na drugačiji način zabilježene kod tužioca
+onda je u pitanju nesporazum i ostao je pri tom razjašnjenju koje je dao na glavnom pretresu.
+Imajući u vidu, da je započeo, izmedju ostalog iskaz sa tvrdnjom, da je tom prilikom, dok su se približavali
+optuženom, najednom njegov sin rekao, da mu sečini da je to momak sa kojim je imao ranije fizički sukob, pa
+mu je prišao, podigao kapu i skinuo naočari, svjedok je na pitanje suda, zašto te okolnosti koje su prethodile
+tuči nije naveo prilikom saslušanja kod tužioca, odgovorio da se tada toga nije ni sjetio. Takodje je pojasnio
+da je vidio kako mobilni telefon pada pored nogu optuženog, u onom trenutku kada je E. povukao za ruku, ali
+da nije obraćao pažnju da li se slomio i da je nakon bjekstva optuženog vidio da je na licu mjesta ostao i
 kačket.
-Nadalje je svjedok pojasnio u odnosu na ranije iznesenu konstataciju kod tu ž ioca i tvrdnju "da je E. zapo č eo
-tuču", da je pod tim mislio, da su se samo na š li u tom bliskom fizi č kom kontaktu, ali da nije vidio da li je neko
-nekog tom prilikom udario i da je on odmah reagovao, tako š to je svog sina povukao za ruku unazad, kao i da,
-on i H. u tom sukobu ni na koji na č in nijesu u č estvovali. Takodje je kroz odgovore na postavljena pitanja
-naveo da je njegov sin pribli ž avaju ć i se kru ž nom toku i š ao ispred njih 4 - 5 metara, kao i da u vezi ranijeg
-dogadjaja koji je prije 2 - 3 mjeseca imao sa optu ž enim ni š ta bli ž e ne zna da ka ž e, jer o tome sa njim nije
-prič ao. Medjutim, sje ć a se da ga je tada nazvao jedan stariji č ovjek i obavijestio o tome, te da je tamo ne š to
-kasnije i oti š ao i vidio da je njegovom sinu nos krvav i da ima ogrebotine po jednoj nozi, ali ga zbog toga nije
-vodio u Dom zdravlja, niti mu je pru ž ana medicinska pomo ć
-Svjedok - o š te ć eni Z.E. je naveo da je dana 21.04.2012. godine oko 11h, u U., sa svojim ocem N. i ro đ akom
-Š.H. i š ao pje š ke ulicom koja vodi prema pla ž i, kada im je pri š ao jedan momak koji je nosio kapu i nao č ari i
-lično ga pitao: ''jesi li ozdravio?''. Nije ga prepoznao, dok nije skinuo nao č ari, nego se tek onda prisjetio da je
-sa njim i njegovim dru š tvom prije 2-3 mjeseca imao fizi č ki sukob, ispred jednog ''I.k.'', zboh nekog USB-kabla.
-Kad mu je pri š ao, osim š to ga je pitao "jesi li ozdravio", po č eo je da mu psuje sestru i porodicu, nakon č ega je
-doš lo do razmjene udaraca stisnutim pesnicama. Tada im je pri š ao njegov otac i povukao ga za ruku, š to je
-iskoristio optu ž eni i izvadio no ž , du ž ine oko 10cm, sive boje i po č eo vi š e puta zamahivati prema njemu,
-njegovom ocu i ro đ aku Š .H.. Tom prilikom je 2-3 puta ubo no ž em njegovog oca u predjelu ispod pazuha i
-leđa, a njihovog ro đ aka tri puta u predjelu lijevog ramena, lijeve š ake i le đ a. Njemu je nanio povredu u
-predjelu ka ž iprsta desne ruke, ali nije mogao da se izjasni na koji na č in je to u č inio. Odmah nakon toga je
+Nadalje je svjedok pojasnio u odnosu na ranije iznesenu konstataciju kod tužioca i tvrdnju "da je E. započeo
+tuču", da je pod tim mislio, da su se samo našli u tom bliskom fizičkom kontaktu, ali da nije vidio da li je neko
+nekog tom prilikom udario i da je on odmah reagovao, takošto je svog sina povukao za ruku unazad, kao i da,
+on i H. u tom sukobu ni na koji način nijesu učestvovali. Takodje je kroz odgovore na postavljena pitanja
+naveo da je njegov sin približavajući se kružnom toku išao ispred njih 4 - 5 metara, kao i da u vezi ranijeg
+dogadjaja koji je prije 2 - 3 mjeseca imao sa optuženim ništa bliže ne zna da kaže, jer o tome sa njim nije
+pričao. Medjutim, sjeća se da ga je tada nazvao jedan starijičovjek i obavijestio o tome, te da je tamo nešto
+kasnije i otišao i vidio da je njegovom sinu nos krvav i da ima ogrebotine po jednoj nozi, ali ga zbog toga nije
+vodio u Dom zdravlja, niti mu je pružana medicinska pomoć Svjedok - oštećeni Z.E. je naveo da je dana 21.04.2012. godine oko 11h, u U., sa svojim ocem N. i rođakom
+Š.H. išao pješke ulicom koja vodi prema plaži, kada im je prišao jedan momak koji je nosio kapu i naočari i
+lično ga pitao: ''jesi li ozdravio?''. Nije ga prepoznao, dok nije skinuo naočari, nego se tek onda prisjetio da je
+sa njim i njegovim društvom prije 2-3 mjeseca imao fizički sukob, ispred jednog ''I.k.'', zboh nekog USB-kabla.
+Kad mu je prišao, osimšto ga je pitao "jesi li ozdravio", počeo je da mu psuje sestru i porodicu, nakončega je
+doš lo do razmjene udaraca stisnutim pesnicama. Tada im je prišao njegov otac i povukao ga za ruku, š to je
+iskoristio optuženi i izvadio no ž, dužine oko 10cm, sive boje i počeo više puta zamahivati prema njemu,
+njegovom ocu i rođaku Š.H.. Tom prilikom je 2-3 puta ubo nožem njegovog oca u predjelu ispod pazuha i
+leđa, a njihovog rođaka tri puta u predjelu lijevog ramena, lijevešake i leđa. Njemu je nanio povredu u
+predjelu kažiprsta desne ruke, ali nije mogao da se izjasni na koji način je to učinio. Odmah nakon toga je
 pobjegao sa lica mjesta, a oni su sa vozilom kojim je upravljao njegov otac krenuli u pravcu bolnice i u toku
-vožnje su primijetili da krvare. Nakon dolaska u Dom zdravlja u U., N. i H. su preba č eni u bolnicu u B., dok je
-on nakon ukazane ljekarske pomo ć i po š ao u u. policiju.
-Odgovaraju ć i na postavljena pitanja o š te ć eni je pojasnio, da prije nego š to su nai š li na optu ž enog, njegov
-otac i ro đ ak su se kretali veoma sporo ispred njega, tako da on nije primijetio odakle je optu ž eni
-izaš ao.Nakon dodgadjaja je sa policijom izlazio na lice mjesta i rekao im da su kapa i slomljeni telefon onog
+vožnje su primijetili da krvare. Nakon dolaska u Dom zdravlja u U., N. i H. su prebačeni u bolnicu u B., dok je
+on nakon ukazane ljekarske pomoći pošao u u. policiju.
+Odgovarajući na postavljena pitanja oštećeni je pojasnio, da prije negošto su naišli na optuženog, njegov
+otac i rođak su se kretali veoma sporo ispred njega, tako da on nije primijetio odakle je optuženi
+izašao.Nakon dodgadjaja je sa policijom izlazio na lice mjesta i rekao im da su kapa i slomljeni telefon onog
 momka koji ih je tom prilikom napao.
-Ošte ć eni je na glavnom pretresu na razli č it na č in opisao dinamiku dogadjaja, nakon š to ga je optu ž eni upitao
-"jesi li ozdravio" i opsovao njegovu sestru i porodicu, naglasiv š i da je potom krenuo da ga udari glavnom, ali
-da je on taj udarac izbjegao i uspio da ga udari š akom 1 ili 2 puta u predjelu glave. I optu ž eni je tom prilikom
-uspio da ga udari pesnicom u glavu, prije nego š to su uspjeli da ih razdvoje njegov otac i Š .H. Nadalje je
-naveo, da nije u tom sukobu vidio no ž  u njegovim rukama i da ne zna na koji su na č in povrijedjen njegov otac
-i rodjak H., dok je on malo posje č en u predjelu ka ž iprsta desne ruke, ali takodje nije znao da objasni na koji
+Oštećeni je na glavnom pretresu na različit način opisao dinamiku dogadjaja, nakonšto ga je optuženi upitao
+"jesi li ozdravio" i opsovao njegovu sestru i porodicu, naglasivši da je potom krenuo da ga udari glavnom, ali
+da je on taj udarac izbjegao i uspio da ga udarišakom 1 ili 2 puta u predjelu glave. I optuženi je tom prilikom
+uspio da ga udari pesnicom u glavu, prije negošto su uspjeli da ih razdvoje njegov otac i Š.H. Nadalje je
+naveo, da nije u tom sukobu vidio nožu njegovim rukama i da ne zna na koji su način povrijedjen njegov otac
+i rodjak H., dok je on malo posječen u predjelu kažiprsta desne ruke, ali takodje nije znao da objasni na koji
+
 nač in mu je nanijeta da povreda. Takodje je naveo da prilikom razdvajanja ni njegov otac ni H. nisu udarali
-optu ž enog, nego je samo njega otac povukao za ruku, dok je H. na jedan fin na č in spre č avao optu ž enog da ne
-nastavimo sukob. Nakon š to su ih razdvojili, uo č io je tu povredu na svojoj ruci, a ne š to kasnije ili ta č nije tek u
+optuženog, nego je samo njega otac povukao za ruku, dok je H. na jedan fin način sprečavao optuženog da ne
+nastavimo sukob. Nakonšto su ih razdvojili, uočio je tu povredu na svojoj ruci, a nešto kasnije ili tačnije tek u
 Domu zdravlja primijetio je da krvari i njegov otac.
-Razlike u svojim iskazima u onim dijelovima koji su mu od strane suda predo č eni nije mogao da objasni,
-nagla š avaju ć i da je ta č na ona izjava koju je dao pred tu ž iocem, zaklju č uju ć i da izmedju njih ustvari i nema
-razlike, nego samo da je tada podrobnije iznio sve ono š to se desilo u sukobu sa optu ž enim. U vezi sukoba od
+Razlike u svojim iskazima u onim dijelovima koji su mu od strane suda predočeni nije mogao da objasni,
+naglašavajući da je tačna ona izjava koju je dao pred tužiocem, zaključujući da izmedju njih ustvari i nema
+razlike, nego samo da je tada podrobnije iznio sve onošto se desilo u sukobu sa optuženim. U vezi sukoba od
 prije 2-3 mjeseca, od ovog dogadjaja, ispred "I.c." je pojasnio da su ga tada napala tri lica medju kojima su bili
-optu ž eni, njegov brat i osoba koju ne poznaje, te da je samo tada on bio izudaran.
-Svjedok-o š te ć eni Š .H., naveo je da je dana 21.04.2012. godine u U. sa svojim ro đ acima Z.N. i E. njihovim
-vozilom krenuo prema centru grada i da su vozilo parkirali u blizini autobuske stanice i potom se pje š ke
-uputili prema kru ž nom toku. U blizini jedne pekare, u susret im je i š ao jedan momak, i nakon š to je upitao E.
-''jesi li ozdravio?'', po č eli su se psovati. Potom je taj momak izvadio mobilni telefon, nakon č ega mu je N.
-rekao, da mu ne treba mobilni telefon, nego da ž ele samo da razgovaraju. Odmah nakon toga, to lice je
-izvadilo no ž  i njime tri puta zamahnulo prema N., ali on nije primijetio da ga je tom prilikom povrijedio.
-Poku š ao je da ih razdvoji i tada mu je optu ž eni zadao udarac u predjelu lijeve strane grudnog ko š a, ali nije
+optuženi, njegov brat i osoba koju ne poznaje, te da je samo tada on bio izudaran.
+Svjedok-oštećeni Š.H., naveo je da je dana 21.04.2012. godine u U. sa svojim rođacima Z.N. i E. njihovim
+vozilom krenuo prema centru grada i da su vozilo parkirali u blizini autobuske stanice i potom se pješke
+uputili prema kružnom toku. U blizini jedne pekare, u susret im je išao jedan momak, i nakonšto je upitao E.
+''jesi li ozdravio?'', počeli su se psovati. Potom je taj momak izvadio mobilni telefon, nakončega mu je N.
+rekao, da mu ne treba mobilni telefon, nego dažele samo da razgovaraju. Odmah nakon toga, to lice je
+izvadilo noži njime tri puta zamahnulo prema N., ali on nije primijetio da ga je tom prilikom povrijedio.
+Pokušao je da ih razdvoji i tada mu je optuženi zadao udarac u predjelu lijeve strane grudnog koša, ali nije
 mogao da procijeni kojim predmetom. Kada je ponovo zamahnuo, podmetnuo mu je rame lijeve ruke, i u tom
-predjelu je zadobio udarac. Nadalje je pojasnio da je optu ž eni krenuo prema N., i kada je stao izme đ u njih, da
-je tada prvi put vidio no ž  u njegovim rukama, i tom prilikom mu je optu ž eni nanio posjekotinu u predjelu
-lijeve š ake, dok nije mogao da se izjasni na koji su na č in N. i E. zadobili povrede. Optu ž eni je nakon toga
-pobjegao sa lica mjesta, a o š te ć eni je sa N. i E. po š ao do Hitne pomo ć i, poslije č ega su vozilom prevezeni do
-bolnice u B., gdje su zadr ž ani na bolni č kom lije č enju.
-Odgovaraju ć i na postavljena pitanja, on je naveo da taj doga đ aj nije trajao du ž e od dva minuta i da mu nije
-poznato da li je ranije imao sukob sa Z.E., kao i da je tom prilikom kod optu ž enog vidio no ž  koji mu je li č io na
-tzv. ''skakavac'', i procijenio njegovu ukupnu du ž inu oko 10-tak cm.
-Svjedok C.A., je naveo da je prije godinu dana upoznao u kafi ć u ''M.'' u U. optu ž enog, ali da nije o č evidac
-predmetnog dogadjaja, niti je saznao od optu ž enog sa kojim je kontaktirao putem facebook-a na koji na č in
-se on odigrao. U vezi ranijeg sukoba on je naveo da mu je optu ž eni pri č ao da su ga udarali po tijelu i glavi i
-uboli u predjelu rebara sa lijeve strane zbog č ega je zatra ž io medicinsku pomo ć  u S.
-Ni svjedok T.A., koji se povremeno dru ž io sa optu ž enim nije o č evidac i ne zna pod kojim se okolnostima
+predjelu je zadobio udarac. Nadalje je pojasnio da je optuženi krenuo prema N., i kada je stao između njih, da
+je tada prvi put vidio nožu njegovim rukama, i tom prilikom mu je optuženi nanio posjekotinu u predjelu
+lijevešake, dok nije mogao da se izjasni na koji su način N. i E. zadobili povrede. Optuženi je nakon toga
+pobjegao sa lica mjesta, a oštećeni je sa N. i E. pošao do Hitne pomoći, posliječega su vozilom prevezeni do
+bolnice u B., gdje su zadržani na bolničkom liječenju.
+Odgovarajući na postavljena pitanja, on je naveo da taj događaj nije trajao duže od dva minuta i da mu nije
+poznato da li je ranije imao sukob sa Z.E., kao i da je tom prilikom kod optuženog vidio nožkoji mu je ličio na
+tzv. ''skakavac'', i procijenio njegovu ukupnu dužinu oko 10-tak cm.
+Svjedok C.A., je naveo da je prije godinu dana upoznao u kafiću ''M.'' u U. optuženog, ali da nije očevidac
+predmetnog dogadjaja, niti je saznao od optuženog sa kojim je kontaktirao putem facebook-a na koji način
+se on odigrao. U vezi ranijeg sukoba on je naveo da mu je optuženi pričao da su ga udarali po tijelu i glavi i
+uboli u predjelu rebara sa lijeve strane zbogčega je zatražio medicinsku pomoću S.
+Ni svjedok T.A., koji se povremeno družio sa optuženim nije očevidac i ne zna pod kojim se okolnostima
 desio ovaj dogadjaj, kao i da je od jednog njegovog druga saznao da je prije dva mjeseca u U. imao sukob sa
-tri lica sa K. i da mu je jedno od njih nanijelo povredu no ž em, zbog koje je zatra ž io medicinsku pomo ć  u S.
-Svjedok R.H., nije o č evidac dogadjaja, nego se sje ć a da je da je dana 21.04.2012.godine u poslepodnevnim
-satima, optu ž eni do š ao kod njega u iznajmljeni stan u V., i upla š en rekao da je imao svadju i tu č u sa nekim
+tri lica sa K. i da mu je jedno od njih nanijelo povredu nožem, zbog koje je zatražio medicinsku pomoću S.
+Svjedok R.H., nije očevidac dogadjaja, nego se sjeća da je da je dana 21.04.2012.godine u poslepodnevnim
+satima, optuženi došao kod njega u iznajmljeni stan u V., i uplašen rekao da je imao svadju i tuču sa nekim
 licima, da mu je tom prilikom jedno od njih uzelo mobilni telefon iz ruke i polomilo kao i da su ga udarali
 stisnutim pesnicama po tijelu.
-Svjedok G.V. je naveo da je dana 21.04.2012. godine, negdje oko 11 sati sjedio u dru š tvu njegovog kuma M.P.
-u jednoj kafani pored pijace, kada je primijetio da od kru ž nog toka ide optu ž eni, dok su se trotoarom
-pribli ž avale tri osobe i da mu jedan od njih, onaj najkrupniji, prilazi, hvata ga za kapu i baca je na asfalt.
-Nakon toga je optu ž eni krenuo ne š to da tipka po telefonu i tada uo č ava da ga taj isti č ovjek udara š akom po
-ruci i da mu telefon pada na asfalt. Nadalje je vidio da su ga sva trojica okru ž ili, da je do š lo do guranja, ali da
-nije vidio da je neko nekoga udario, te da je to trajalo veoma kratko, jer je optu ž eni pobjegao, put kru ž nog
-toka. Sve se to de š avalo na udaljenosti od 10-15 metara i kroz odgovore na postavljena pitanja je naveo da
-nije primijetio da je neko od te trojice povrijedjen, niti je vidio bilo koji predmet u rukama optu ž enog, jer je
-sjedio za stolom i sa tog mjesta je posmatrao š ta se de š avalo.
-Iz sadr ž ine zapisnika o uvi đ aju UP PJ Bar - Ispostava Ulcinj, Ku.br. 60/12 od 21.04.2012. godine proizilazi
-da je isti sa č injen povodom nano š enja tjelesnih povreda podesnim predmetom od strane NN lica licima: Z.N.,
-Š.H. i Z. E., dana 21.04.2012. godine. Izlazak na mjesto doga đ aja je izvr š en povodom obavje š tenja da je dana
-21.04.2012. godine u 07:00h, putem telefona de ž urnom slu ž beniku Ispostave Ulcinj doktor HMP DZ Ulcinj,
-M.H., prijavila da su kod njih dovezena tri lica sa ubodnim ranama po tijelu, o č emu je upoznata i ZVDT-a
-Podgorica, koja je ovlastila slu ž benike Ispostave Ulcinj da izvr š e uvi đ aj.Uvi đ aj je zapo č et u 11.30h. Lice mjesta
-je parking prostor uz kolovoz i trotoar B. M. T., u neposrednoj blizini ć . ''B'', vl. N.M. iz U. Na licu mjesta je
-prona đ en polomljen mobilni telefon marke ''N'' 6233 sive boje, IMEI-a 352744/01/486979/3744/ sa SIM-
-karticom ...., koji se nalazio na parking prostoru 0,90m udaljen od trotoara. Tako đ e je prona đ ena kapa-ka č ket
+Svjedok G.V. je naveo da je dana 21.04.2012. godine, negdje oko 11 sati sjedio u društvu njegovog kuma M.P.
+u jednoj kafani pored pijace, kada je primijetio da od kružnog toka ide optuženi, dok su se trotoarom
+približavale tri osobe i da mu jedan od njih, onaj najkrupniji, prilazi, hvata ga za kapu i baca je na asfalt.
+Nakon toga je optuženi krenuo nešto da tipka po telefonu i tada uočava da ga taj ističovjek udarašakom po
+ruci i da mu telefon pada na asfalt. Nadalje je vidio da su ga sva trojica okružili, da je došlo do guranja, ali da
+nije vidio da je neko nekoga udario, te da je to trajalo veoma kratko, jer je optuženi pobjegao, put kružnog
+toka. Sve se to dešavalo na udaljenosti od 10-15 metara i kroz odgovore na postavljena pitanja je naveo da
+
+nije primijetio da je neko od te trojice povrijedjen, niti je vidio bilo koji predmet u rukama optuženog, jer je
+sjedio za stolom i sa tog mjesta je posmatraošta se dešavalo.
+Iz sadržine zapisnika o uviđaju UP PJ Bar - Ispostava Ulcinj, Ku.br. 60/12 od 21.04.2012. godine proizilazi
+da je isti sačinjen povodom nanošenja tjelesnih povreda podesnim predmetom od strane NN lica licima: Z.N.,
+Š.H. i Z.E., dana 21.04.2012. godine. Izlazak na mjesto događaja je izvršen povodom obavještenja da je dana
+21.04.2012. godine u 07:00h, putem telefona dežurnom službeniku Ispostave Ulcinj doktor HMP DZ Ulcinj,
+M.H., prijavila da su kod njih dovezena tri lica sa ubodnim ranama po tijelu, očemu je upoznata i ZVDT-a
+Podgorica, koja je ovlastila službenike Ispostave Ulcinj da izvrše uviđaj.Uviđaj je započet u 11.30h. Lice mjesta
+je parking prostor uz kolovoz i trotoar B.M. T., u neposrednoj blizinić. ''B'', vl. N.M. iz U. Na licu mjesta je
+pronađen polomljen mobilni telefon marke ''N'' 6233 sive boje, IMEI-a 352744/01/486979/3744/ sa SIMkarticom...., koji se nalazio na parking prostoru 0,90m udaljen od trotoara. Takođe je pronađena kapa-kačket
 crveno-crne boje, koji se nalazio na parking prostoru na udaljenosti od 0,60m od trotoara, na kome su bili
-vidljivi tragovi kapljica krvi, nepravilno raspore đ eni.
-Iz sadr ž ine služ bene zabilje š ke UP PJ Bar - Ispostava Ulcinj, Ku.br.60/12 od 21.04.2012. godine,
-sačinjene od strane ovla šć enog policijskog slu ž benika Red ž ematovi ć  Miralema proizilazi da je ovaj
-ovla šć eni policijski slu ž benik pomenutog dana, oko 11:20h, obavije š ten od strane de ž urne slu ž be da po đ e da
-obezbijedi lice mjesta u B.M.T., kod kafane ''T.''. Dolaskom na lice mjesta zatekao je saobra ć ajnu patrolu
-Gojkovi ć  - Sredojevi ć , koji su prije toga obezbje đ ivali lice mjesta. Nakon toga, preuzeo je od pomenutih lice
-mjesta i na trotoaru ispred kafane uo č io kapljice krvi, a na jednom parking mjestu polomljen telefon marke N.
-sive boje i kapu crne boje. Obezbje đ enje lica mjesta je vr š io do dolaska ekipe za uvi đ aj, kojima je pomogao u
-vršenju uvi đ aja do 13h.
-Iz sadr ž ine služ bene zabilje š ke UP PJ Bar - Ispostava Ulcinj, Ku.br. 60/12 od 21.04.2012. godine,
-sačinjene od ovla šć enih policijskih slu ž benika Gojkovi ć  Danila i Sredojevi ć  Dragana proizilazi da su
-ovla šć eni slu ž benici policije navedenog dana oko 10,50h upu ć eni od strane de ž urnog policijskog slu ž benika
-Ispostave Ulcinj u HMP Ulcinj zbog prijave de ž urnog ljekara da su dovedena lica sa zadobijenim povredama u
+vidljivi tragovi kapljica krvi, nepravilno raspoređeni.
+Iz sadržine službene zabilješke UP PJ Bar - Ispostava Ulcinj, Ku.br.60/12 od 21.04.2012. godine,
+sačinjene od strane ovlašćenog policijskog službenika Redžematović Miralema proizilazi da je ovaj
+ovlašćeni policijski službenik pomenutog dana, oko 11:20h, obaviješten od strane dežurne službe da pođe da
+obezbijedi lice mjesta u B.M.T., kod kafane ''T.''. Dolaskom na lice mjesta zatekao je saobraćajnu patrolu
+Gojković - Sredojević, koji su prije toga obezbjeđivali lice mjesta. Nakon toga, preuzeo je od pomenutih lice
+mjesta i na trotoaru ispred kafane uočio kapljice krvi, a na jednom parking mjestu polomljen telefon marke N.
+sive boje i kapu crne boje. Obezbjeđenje lica mjesta je vršio do dolaska ekipe za uviđaj, kojima je pomogao u
+vršenju uviđaja do 13h.
+Iz sadržine službene zabilješke UP PJ Bar - Ispostava Ulcinj, Ku.br. 60/12 od 21.04.2012. godine,
+sačinjene od ovlašćenih policijskih službenika Gojković Danila i Sredojević Dragana proizilazi da su
+ovlašćeni službenici policije navedenog dana oko 10,50h upućeni od strane dežurnog policijskog službenika
+Ispostave Ulcinj u HMP Ulcinj zbog prijave dežurnog ljekara da su dovedena lica sa zadobijenim povredama u
 tuči. Dolaskom u HMP, od strane dr M., saznali su da su kod njih pristupila lica sa zadobijenim povredama u
-tuči, a koje su zadobili, najvjerovatnije, od hladnog oru ž ja (no ž a) i to: Z.N., koji je zadobio te š ke tjelesne
-povrede i kome je ž ivot ugro ž en; Z.E., koji je zadobio lake tjelesne povrede i Š .H. koji je, tako đ e, zadobio lake
+tuči, a koje su zadobili, najvjerovatnije, od hladnog oružja (noža) i to: Z.N., koji je zadobio teške tjelesne
+povrede i kome ježivot ugrožen; Z.E., koji je zadobio lake tjelesne povrede i Š.H. koji je, takođe, zadobio lake
 tjelesne povrede.
-Iz medicinske dokumentacije – izvje š taja ljekara specijaliste hirurga Urgentne medicinske pomo ć i
-Opš te bolnice u B., od 21.04.2012.godine, na ime o š te ć enog Z.N. proizilazi da je isti pregledan od strane
-ljekara navedenog dana u 11:37h i da je povrije đ en – ubod no ž em u predjelu lijeve strane grudnog ko š a, sat
-vremena prije pregleda. Ž alio se na bol po lijevoj strani grudnog ko š a. Konstatovane su dvije ubodne rane i to
-prva u nivou zadnje pazu š ne linije, du ž ine 1cm, sa kanalom rane du ž ine 8cm, prema nazad upolje i druga
-rana upolje postavljena od prve ispod lijeve lopatice, du ž ine 3cm, sije č e mi š i ć  sa kanalom rane du ž ine 6cm.
-Urađ eno je rentgenolo š ko snimanje i pretrage krvi, u lokalnoj anesteziji su ispitane rane, drenirane i u š ivene i
-ošte ć eni je upu ć en na bolni č ko lije č enje uz dijagnozu – ubodne rane u predjelu grudnog ko š a sa lijeve strane i
+Iz medicinske dokumentacije – izvještaja ljekara specijaliste hirurga Urgentne medicinske pomoći
+Opš te bolnice u B., od 21.04.2012.godine, na ime oštećenog Z.N. proizilazi da je isti pregledan od strane
+ljekara navedenog dana u 11:37h i da je povrijeđen – ubod nožem u predjelu lijeve strane grudnog koša, sat
+vremena prije pregleda. Ž alio se na bol po lijevoj strani grudnog koša. Konstatovane su dvije ubodne rane i to
+prva u nivou zadnje pazušne linije, dužine 1cm, sa kanalom rane dužine 8cm, prema nazad upolje i druga
+rana upolje postavljena od prve ispod lijeve lopatice, dužine 3cm, siječe mišićsa kanalom rane dužine 6cm.
+Urađeno je rentgenološko snimanje i pretrage krvi, u lokalnoj anesteziji su ispitane rane, drenirane i ušivene i
+oštećeni je upućen na bolničko liječenje uz dijagnozu – ubodne rane u predjelu grudnog koša sa lijeve strane i
 ispod lijeve lopatice.
-Iz otpusne liste sa epikrizom Odjeljenja hirurgije Op š te bolnice B., mat.br. istorije bolesti 2398/12, na
-ime o š te ć enog Z.N. proizilazi da je isti lije č en na navedenom odjeljenju dva dana (od
-22.04.-24.04.2012.godine) pod dijagnozom: strano tijelo ili predmet koji su u š li kroz ko ž u, dvije ubodne rane
-na lijevoj strani grudnog ko š a. Od intervencija je obavljeno ispitivanje i posmatranje rane, drena ž a i
-zaustavljanje krvarenja. Primljen je zbog ubodnih rana no ž em od njemu poznate osobe u predjelu grudnog
-koša u tu č i. Obra đ en je klini č ki, laboratorijski, radiolo š ki i ehosonografski. U lokalnoj anesteziji je ura đ ena
-navedena intervencija, a postoperativni tok je bio uredan. Ura đ en je kontrolni rentgenolo š ki snimak plu ć a i
-lijeve polovine grudnog ko š a, gdje nije bilo znakova prisustva vazduha u grudnoj duplji, niti izliva, niti
-preloma. Tokom lije č enja vitalni parametri su bili uredni.
-Iz medicinske dokumentacije – izvje š taja ljekare HMP U. od 21.04.2012. godine, na ime o š te ć enog Z.E.
+Iz otpusne liste sa epikrizom Odjeljenja hirurgije Opšte bolnice B., mat.br. istorije bolesti 2398/12, na
+ime oštećenog Z.N. proizilazi da je isti liječen na navedenom odjeljenju dva dana (od
+22.04.-24.04.2012.godine) pod dijagnozom: strano tijelo ili predmet koji su ušli kroz kožu, dvije ubodne rane
+na lijevoj strani grudnog koša. Od intervencija je obavljeno ispitivanje i posmatranje rane, drenaža i
+zaustavljanje krvarenja. Primljen je zbog ubodnih rana nožem od njemu poznate osobe u predjelu grudnog
+koša u tuči. Obrađen je klinički, laboratorijski, radiološki i ehosonografski. U lokalnoj anesteziji je urađena
+navedena intervencija, a postoperativni tok je bio uredan. Urađen je kontrolni rentgenološki snimak pluća i
+
+lijeve polovine grudnog koša, gdje nije bilo znakova prisustva vazduha u grudnoj duplji, niti izliva, niti
+preloma. Tokom liječenja vitalni parametri su bili uredni.
+Iz medicinske dokumentacije – izvještaja ljekare HMP U. od 21.04.2012. godine, na ime oštećenog Z.E.
 proizilazi da je isti pregledan u toj zdravstvenoj ustanovi navedenog dana u 11h, a da je primljen zbog
-povreda zadobijenih u fizi č kom konfliktu. Naveo je da je napada č  imao no ž . Pri pregledu je bio svjestan,
-orjentisan, urednog disanja i temperature. Na ka ž iprstu i tre ć em prstu desne ruke bile su vidne tri ogrebotine
-dimenzija od po 3 mm. Vidna je bila i posjekotina ka ž iprsta desne ruke, lateralno, promjera oko 1cm. Upu ć en
-je hirurgu radi dalje obrade, a navedene su dijagnoze: oguljotine ka ž iprsta i srednjeg prsta desne š ake i rana
-sjekotina ka ž iprsta desne š ake.
-Iz medicinske dokumentacije – izvje š taja ljekara spec. hirurga Urgentne medicinske pomo ć i Op š te
-bolnice u B. od 21.04.2012. godine, na ime o š te ć enog Š .H. proizilazi da je isti pregledan od strane ljekara
-navedenog dana u 11:41h, da je uboden no ž em od strane njemu nepoznate osobe sat vremena prije
-pregleda. Ubodna rana je du ž ine 1,5cm u predjelu lijeve pazu š ne jame, sa kanalom rane du ž ine 5cm,
-usmjerenim prema unutra. Na lijevoj nadlaktici konstatovana je ubodna rana du ž ine 3cm sa kanalom rane
-duž ine 6cm, usmjerenim prema upolje. U predjelu lijeve š ake sa zadnje strane, konstatovana je posjekotina
-duž ine 4cm. Dno rane č ini tetiva koja nije povrije đ ena. Pokreti prstiju su o č uvani, ura đ eno je rentgenolo š ko
+povreda zadobijenih u fizičkom konfliktu. Naveo je da je napadačimao no ž. Pri pregledu je bio svjestan,
+orjentisan, urednog disanja i temperature. Na kažiprstu i trećem prstu desne ruke bile su vidne tri ogrebotine
+dimenzija od po 3 mm. Vidna je bila i posjekotina kažiprsta desne ruke, lateralno, promjera oko 1cm. Upućen
+je hirurgu radi dalje obrade, a navedene su dijagnoze: oguljotine kažiprsta i srednjeg prsta desnešake i rana
+sjekotina kažiprsta desnešake.
+Iz medicinske dokumentacije – izvještaja ljekara spec. hirurga Urgentne medicinske pomoći Opšte
+bolnice u B. od 21.04.2012. godine, na ime oštećenog Š.H. proizilazi da je isti pregledan od strane ljekara
+navedenog dana u 11:41h, da je uboden nožem od strane njemu nepoznate osobe sat vremena prije
+pregleda. Ubodna rana je dužine 1,5cm u predjelu lijeve pazušne jame, sa kanalom rane dužine 5cm,
+usmjerenim prema unutra. Na lijevoj nadlaktici konstatovana je ubodna rana dužine 3cm sa kanalom rane
+duž ine 6cm, usmjerenim prema upolje. U predjelu lijevešake sa zadnje strane, konstatovana je posjekotina
+duž ine 4cm. Dno ranečini tetiva koja nije povrijeđena. Pokreti prstiju su očuvani, urađeno je rentgenološko
 snimanje, krvne analize i eho trbuha.
-Iz otpusne liste sa epikrizom Odjeljenja hirurgije Op š te bolnice u B., mat. br. istorije bolesti 2404/2012,
-na ime o š te ć enog Š .H. proizilazi da je o š te ć eni na tom odjeljenju lije č en tri dana (od 21.-24.04.2012.godine)
-pod dijagnozom: strano tijelo ili predmet koji su u š li kroz ko ž u, ubodna rana u predjelu lijeve strane grudnog
-koša, ubodna rana u predjelu lijeve nadlaktice i rana sjekotina na zadnjoj strani lijeve š ake. Ura đ ena je
-intervencija – ispitivanje i posmatranje rane, drena ž a i zaustavljanje krvarenja. O š te ć eni je primljen zbog
-ubodnih rana no ž em od njemu poznate osobe u tu č i. Obra đ en je klini č ki, laboratorijski, radiolo š ki i
-ehosonografski. Navedena intervencija je ura đ ena u lokalnoj anesteziji, a postoperativni tok je bio uredan.
-Urađ en je i kontrolni rentgenolo š ki snimak plu ć a, srca i lijeve polovine grudnog ko š a, gdje nije bilo znakova
+Iz otpusne liste sa epikrizom Odjeljenja hirurgije Opšte bolnice u B., mat. br. istorije bolesti 2404/2012,
+na ime oštećenog Š.H. proizilazi da je oštećeni na tom odjeljenju liječen tri dana (od 21.-24.04.2012.godine)
+pod dijagnozom: strano tijelo ili predmet koji su ušli kroz kožu, ubodna rana u predjelu lijeve strane grudnog
+koša, ubodna rana u predjelu lijeve nadlaktice i rana sjekotina na zadnjoj strani lijevešake. Urađena je
+intervencija – ispitivanje i posmatranje rane, drenaža i zaustavljanje krvarenja. Oštećeni je primljen zbog
+ubodnih rana nožem od njemu poznate osobe u tuči. Obrađen je klinički, laboratorijski, radiološki i
+ehosonografski. Navedena intervencija je urađena u lokalnoj anesteziji, a postoperativni tok je bio uredan.
+Urađen je i kontrolni rentgenološki snimak pluća, srca i lijeve polovine grudnog koša, gdje nije bilo znakova
 prisustva vazduha u grudnoj duplji, niti izliva, niti preloma, a desno lateralno bazalno, uz fe sinus, manja
-transparentnost, mogu ć e zbog superpozicije rebara. Tokom lije č enja vitalni parametri su bili uredni.
-Iz nalaza i mi š ljenja sudskog vje š taka medicinske struke, prof dr D. Č ., od 10.06.2012. godine proizilazi
-da je dat na osnovu medicinske dokumentacije na ime o š te ć enih Z.N., Z.E. i Š .H., koji su povrije đ eni u
-predmetnom doga đ aju.
-Iz navedene dokumentacije proizilazi da je Z. N. u predmetnom doga đ aju zadobio: ubodnu ranu u predjelu
-lijeve polovine grudnog ko š a i to u zadnjoj pazu š noj liniji, du ž ine 1cm sa kanalom rane du ž ine 8cm, prema
-nazad upolje; ubodnu ranu u lijevom podlopati č nom predjelu du ž ine 3cm koja sije č e mi š i ć  kanalom rane
-duž ine 6cm. Ove povrede, u vrijeme nano š enja, pojedina č no i zbirno, kvalifikovane su kao laka tjelesna
-povreda, uz napomenu da je jedna od rana dovela do ''sje č enja'' mi š i ć a, me đ utim, u daljoj medicinskoj
-dokumentaciji se ne navodi ispad funkcije bilo kog mi š i ć a, pa je povreda kvalifikovana kao laka. Navedene
-povrede su nastale dvokratnim djelovanjem š iljka i sje č iva zamahnutog mehani č kog oru đ a, najvjerovatnije
-nož em. Nije bilo mogu ć e odrediti smjer ubodnih kanala, zbog nejasno ć a u medicinskoj dokumentaciji.
-Naime, navedeno je da je rana u zadnjoj lijevoj pazu š noj liniji usmjerena prema nazad i upolje, a da je rana u
-lijevom podlopati č nom predjelu upolje od prve rane, š to medicinski nije mogu ć e, jer se podlopati č ni predio
-ne nalazi upolje od zadnje pazu š ne linije, ve ć  unutra od nje.
-Š.H. je u predmatnom doga đ aju zadobio:ubodnu ranu u predjelu lijeve strane grudnog ko š a, u predjelu lijeve
-pazu š ne jame, du ž ine 1,5cm, sa kanalom rane du ž ine 5cm usmjerenim prema unutra; ubodnu ranu u
-predjelu lijeve nadlaktice du ž ine 3cm sa kanalom rane du ž ine 6cm, usmjerenim prema upolje i ranu -
-sjekotinu na zadnjoj strani lijeve š ake, du ž ine 4cm. Navedene povrede u vrijeme nano š enja, pojedina č no i
-zbirno, kvalifikovane su kao laka tjelesna povreda. Ubodne rane su nastale dvokratnim djelovanjem š iljka i
-sječ iva zamahnutog mehani č kog oru đ a, dok je sjekotina lijeve š ake nastala djelovanjem sje č iva mehani č kog
-oruđ a, najvjerovatnije no ž em. Nije bilo mogu ć e odrediti smjer ubodnih kanala zbog nepreciznosti u
+transparentnost, moguće zbog superpozicije rebara. Tokom liječenja vitalni parametri su bili uredni.
+Iz nalaza i mišljenja sudskog vještaka medicinske struke, prof dr D.Č., od 10.06.2012. godine proizilazi
+da je dat na osnovu medicinske dokumentacije na ime oštećenih Z.N., Z.E. i Š.H., koji su povrijeđeni u
+predmetnom događaju.
+Iz navedene dokumentacije proizilazi da je Z.N. u predmetnom događaju zadobio: ubodnu ranu u predjelu
+lijeve polovine grudnog koša i to u zadnjoj pazušnoj liniji, dužine 1cm sa kanalom rane dužine 8cm, prema
+nazad upolje; ubodnu ranu u lijevom podlopatičnom predjelu dužine 3cm koja siječe mišićkanalom rane
+duž ine 6cm. Ove povrede, u vrijeme nanošenja, pojedinačno i zbirno, kvalifikovane su kao laka tjelesna
+povreda, uz napomenu da je jedna od rana dovela do ''sječenja'' mišića, međutim, u daljoj medicinskoj
+dokumentaciji se ne navodi ispad funkcije bilo kog mišića, pa je povreda kvalifikovana kao laka. Navedene
+povrede su nastale dvokratnim djelovanjemšiljka i sječiva zamahnutog mehaničkog oruđa, najvjerovatnije
+nož em. Nije bilo moguće odrediti smjer ubodnih kanala, zbog nejasnoća u medicinskoj dokumentaciji.
+Naime, navedeno je da je rana u zadnjoj lijevoj pazušnoj liniji usmjerena prema nazad i upolje, a da je rana u
+lijevom podlopatičnom predjelu upolje od prve rane, š to medicinski nije moguće, jer se podlopatični predio
+ne nalazi upolje od zadnje pazušne linije, većunutra od nje.
+Š.H. je u predmatnom događaju zadobio:ubodnu ranu u predjelu lijeve strane grudnog koša, u predjelu lijeve
+pazušne jame, dužine 1,5cm, sa kanalom rane dužine 5cm usmjerenim prema unutra; ubodnu ranu u
+predjelu lijeve nadlaktice dužine 3cm sa kanalom rane dužine 6cm, usmjerenim prema upolje i ranu -
+
+sjekotinu na zadnjoj strani lijevešake, dužine 4cm. Navedene povrede u vrijeme nanošenja, pojedinačno i
+zbirno, kvalifikovane su kao laka tjelesna povreda. Ubodne rane su nastale dvokratnim djelovanjemšiljka i
+sječiva zamahnutog mehaničkog oruđa, dok je sjekotina lijevešake nastala djelovanjem sječiva mehaničkog
+oruđa, najvjerovatnije nožem. Nije bilo moguće odrediti smjer ubodnih kanala zbog nepreciznosti u
 medicinskoj dokumentaciji.
-Z.E. je u predmetnom doga đ aju zadobio tri ogrebotine na ka ž iprstu i tre ć em prstu desne š ake, dimenzija od
-po 3mm i sjekotinu ka ž iprsta desne š ake spolja, promjera oko 1cm. Navedene povrede u vrijeme nano š enja,
-pojedina č no i zbirno, kvalifikovane su kao laka tjelesna povreda. Ogrebotine su nastale djelovanjem vrha
-mehani č kog oru đ a, male povr š ine, a sjekotina djelovanjem sje č iva mehani č kog oru đ a.
-Na glavnom pretresu je pojasnila da se medjusobni polo ž aj o š te ć enih i onoga ko je povrede nanosio ne mo ž e
+Z.E. je u predmetnom događaju zadobio tri ogrebotine na kažiprstu i trećem prstu desnešake, dimenzija od
+po 3mm i sjekotinu kažiprsta desnešake spolja, promjera oko 1cm. Navedene povrede u vrijeme nanošenja,
+pojedinačno i zbirno, kvalifikovane su kao laka tjelesna povreda. Ogrebotine su nastale djelovanjem vrha
+mehaničkog oruđa, male površine, a sjekotina djelovanjem sječiva mehaničkog oruđa.
+Na glavnom pretresu je pojasnila da se medjusobni položaj oštećenih i onoga ko je povrede nanosio ne može
 ustanoviti, jer se ne mogu ustanoviti smjerovi kanala ubodnih rana, zbog nepreciznosti u medicinskoj
-dokumentaciji, ali da se na osnovu onoga š to je u njoj konstatovano, s obzirom na lokalizaciju ubodnih rana
-kod Z.N. - u predjelu lijeve pazu š ne linije, lijevog podlopati č nog predjela - mo ž e re ć i da su obje povrede
-mogle nastati "licem u lice", ukoliko je onaj koji je nanosio povrede no ž em de š njak; tako đ e ne mo ž e se
-isklju č iti ni polo ž aj sa le đ a ili sa lijeve bo č ne strane.
-Nadalje je navela da su kod Š .H. ustanovljene 2 ubodne rane i to u predjelu lijeve pazu š ne jame i lijeve
-nadlaktice, pa se u vezi njegovog i polo ž aja napada č a, uglavnom mo ž e kazati isto, kao i za prethodni slu č aj, s
-tim š to je sekotina na lijevoj š aci mogla nastati u bilo kom polo ž aju, jer je ruka pokretni dio tijela. Povrede
-kod Z.E., s obzirom da su lokalizovane na desnoj š aci, mogle su nastati u bilo kom polo ž aju i mo ž e se raditi o
-tzv. "odbrambenim povredama", ali kako za ogrebotine nije navedeno na kojoj strani š ake se nalaze, nije se
-mogla na pouzdan na č in izjasniti ni u vezi te č injenice. Nakon zadobijanja povreda, o š te ć eni su mogli da se
-kreć u, da preduzimaju razli č ite fizi č ke aktivnosti, da se brane, da se tuku, da tr č e i sli č no.
-Takodje je kroz odgovore na postavljena pitanja u vezi intenziteta sile kojom su nano š ene povrede
-ošte ć enim, navela da ubodne rane koje su ustanovljene kod Z.N. su nastale djelovanjem š iljka mehani č kog
-oruđ a, najvjerovatnije no ž a, silom srednjeg intenziteta, i taj zaklju č ak izvodi na osnovu du ž ine kanala tih
-rana. Kod Š .H. ustanovljene su 2 ubodne rane i obje su nastale djelovanjem sile srednjeg intenziteta, dok je
-sjekotina na lijevoj š aci mogla nastati i silom od manjeg do srednjeg intenziteta, djelovanjem sje č iva, a kod
-Z.E. ogrebotine na ka ž iprstu i tre ć em prstu desne š ake dimenzija po 3 mm, kao i sjekotina ka ž iprsta desne
+dokumentaciji, ali da se na osnovu onogašto je u njoj konstatovano, s obzirom na lokalizaciju ubodnih rana
+kod Z.N. - u predjelu lijeve pazušne linije, lijevog podlopatičnog predjela - može reći da su obje povrede
+mogle nastati "licem u lice", ukoliko je onaj koji je nanosio povrede nožem dešnjak; takođe ne može se
+isključiti ni položaj sa leđa ili sa lijeve bočne strane.
+Nadalje je navela da su kod Š.H. ustanovljene 2 ubodne rane i to u predjelu lijeve pazušne jame i lijeve
+nadlaktice, pa se u vezi njegovog i položaja napadača, uglavnom može kazati isto, kao i za prethodni slučaj, s
+timšto je sekotina na lijevojšaci mogla nastati u bilo kom položaju, jer je ruka pokretni dio tijela. Povrede
+kod Z.E., s obzirom da su lokalizovane na desnojšaci, mogle su nastati u bilo kom položaju i može se raditi o
+tzv. "odbrambenim povredama", ali kako za ogrebotine nije navedeno na kojoj stranišake se nalaze, nije se
+mogla na pouzdan način izjasniti ni u vezi tečinjenice. Nakon zadobijanja povreda, oštećeni su mogli da se
+kreću, da preduzimaju različite fizičke aktivnosti, da se brane, da se tuku, da trče i slično.
+Takodje je kroz odgovore na postavljena pitanja u vezi intenziteta sile kojom su nanošene povrede
+oštećenim, navela da ubodne rane koje su ustanovljene kod Z.N. su nastale djelovanjemšiljka mehaničkog
+oruđa, najvjerovatnije noža, silom srednjeg intenziteta, i taj zaključak izvodi na osnovu dužine kanala tih
+rana. Kod Š.H. ustanovljene su 2 ubodne rane i obje su nastale djelovanjem sile srednjeg intenziteta, dok je
+sjekotina na lijevojšaci mogla nastati i silom od manjeg do srednjeg intenziteta, djelovanjem sječiva, a kod
+Z.E. ogrebotine na kažiprstu i trećem prstu desnešake dimenzija po 3 mm, kao i sjekotina kažiprsta desne
 šake promjera oko 1 cm, su nastale djelovanjem sile slabijeg intenziteta.
-Takodje je istakla s obzirom na lokalizaciju ubodnih rana, mo ž e se zaklju č iti da su iste nastale brzo jedna za
-drugom, jer su na bliskom rastojanju, a na osno vu medicinske dokumentacije i č injenica da je ustanovljen
-jedan kanal du ž ine 8 cm, drugi 3 cm, tre ć i 6 cm itd., izvela je zaklju č ak da je du ž ina sje č iva morala biti
-najmanje oko 8 cm; i ono predstavlja takvo sredstvo koje mo ž e dovesti do nano š enja naro č ito te š ke odnosno
-smrtonosne tjelesne povrede, kao š to je npr. ubod u srce, jetru, plu ć a, crijeva i sli č no.
-Nadalje je pojasnila da lokalizacija ubodnih rana kod Z.N. - zadnja pazu š na linija, lijevi podlopati č ni predio,
-predstavljaju mjesta gdje se u zavisnosti od smjera kanala mogu povrijediti prije svega plu ć a, potom arterije
-izme đ u rebara i sl., u zavisnosti od na č ina dr ž anja i djelovanja š iljka mehani č kog oru đ a, dok je u vezi povreda
-kod Š .H., posebno u predjelu grudnog ko š a, mogla biti povrije đ ena plu ć a i velike arterije, a isto tako i rana na
+Takodje je istakla s obzirom na lokalizaciju ubodnih rana, može se zaključiti da su iste nastale brzo jedna za
+drugom, jer su na bliskom rastojanju, a na osno vu medicinske dokumentacije ičinjenica da je ustanovljen
+jedan kanal dužine 8 cm, drugi 3 cm, treći 6 cm itd., izvela je zaključak da je dužina sječiva morala biti
+najmanje oko 8 cm; i ono predstavlja takvo sredstvo koje može dovesti do nanošenja naročito teške odnosno
+smrtonosne tjelesne povrede, kao što je npr. ubod u srce, jetru, pluća, crijeva i slično.
+Nadalje je pojasnila da lokalizacija ubodnih rana kod Z.N. - zadnja pazušna linija, lijevi podlopatični predio,
+predstavljaju mjesta gdje se u zavisnosti od smjera kanala mogu povrijediti prije svega pluća, potom arterije
+između rebara i sl., u zavisnosti od načina držanja i djelovanjašiljka mehaničkog oruđa, dok je u vezi povreda
+kod Š.H., posebno u predjelu grudnog koša, mogla biti povrijeđena pluća i velike arterije, a isto tako i rana na
 lijevoj nadlaktici je mogla dovesti do povrede velikih krvnih sudova ruke. Povrede kod Z.E., da se radilo o
-primjeni jake sile, mogle su dovesti do povrede velikih ž ivaca i krvnih sudova š ake, š to bi kasnije dovelo do
+primjeni jake sile, mogle su dovesti do povrede velikihživaca i krvnih sudovašake, š to bi kasnije dovelo do
 nekih posledica.
-Nakon neposrednog pregleda optu ž enog N.A. je ustanovljeno slede ć e: u desnom slabinskom predjelu, u
-zadnjem dijelu nalazi se lu č ni sedefasto bjeli č asti o ž iljak du ž ine oko 4 cm, du ž  kog se vide popre č ni brkljasti i
-tačkasti o ž iljci, koji ukazuju da je rana hirur š ki zbrinuta, odnosno u š ivena, pa na osnovu izgleda o ž iljka je
-mišljenja da je mogao nastati djelovanjem š iljka i sje č iva mehani č kog oru đ a, odnosno no ž a, najmanje š est
-mjeseci prije dana š njeg pregleda, ali da precizno vrijeme nastanka rane ne mo ž e ta č no ustanoviti.
-Iz nalaza i mi š ljenja tima vje š taka medicinske struke prof.dr sci S. M.-neuropsihijatar, ass.mr.sci dr Ž .G.-
-psihijatar i B.S.I. - dipl.psiholog od 25.02.2013.godine proizilazi da svoj nalaz i mi š ljenje temelje na
-podacima iz sudskog spisa K.br.86/12, izvoda iz medicinske dokumentacije i neposrednog neurolo š ko
-psihijatriskog pregleda, te su mi š ljenja, ozbirom da je ovaj konfliktni odnos bio u periodu od nekoliko
-mjeseci, da su te okolnosti kod optu ž enog na psihi č kom planu uzrokovale stanje kumuliranog afekta straha
-na neurotskom nivou, a pogotovo prilikom slu č ajnih susreta sa njim te da je isti, a ako se prihvate kao realne
-činjenice, u okolnostima neposrednog fi ž i č kog kontakta i sa nesrazmjerno ve ć im brojem sudionika deliktne
-situacije, kod optu ž enog generisano afektivno prvenstveno stanje straha, prepasti jakog inteziteta. Pri tome
-su imali u vidu iskaz optu ž enog o prethodnom konfliktnom odnosu na fizi č kom i verbalnom planu u
-preddeliktnom periodu koji je bio pospje š uju ć i faktor prelaska afekta straha i prepasti u patalo š ki afekt u
-vrijeme izvr š enja krivi č nog djela. Postojanje tog "pospje š uju ć eg faktora" je potvrdjeno neposrednim
-pregledom optu ž enog od strane vje š taka sudsko medicinske struke, nakon kojeg je iznijeto mi š ljenje, da je na
-osnovu izgleda o ž iljka du ž ine oko 4 cm koji se nalazio u desno m slabinskom predjelu, isti mogao nastati
-najmanje 6 mjeseci prije obavljenog pregleda, pa dakle i u periodu koji su optu ž eni i o š te ć eni ozna č ili kao
-vrijeme njihovog prvog sukoba. Cijenili su i izmjene svijesti ispitanika u vrijeme izvr š enja krivi č nog djela koji
-je po njihovom mi š ljenju dostaio stepen su ž enja svijesti sa o č uvanim globalnim sje ć anjem na okolnosti
-krivi č nog djela uz nesje ć anje nekih detalja, š to je karakteristika patalo š kog efekta. U ovom stanju pona š anje
-je impulsivno i polazi iz afektivno nagonske sfere zaobilazi svjesni dio li č nosti, a sposobnost shvatanja
-znač aja djela i upravljanja njegovim postupcima kod optu ž enog je bila bitno smanjena.
-Imaju ć i u vidu navedeni nalaz imenovani stru č ni tim je dao svoje mi š ljenje, koje je branio na glavnom
-pretresu njihov predstavnik dr G. Ž . psihijatar, da je N. A. osoba prosje č nih intelektualnih sposobnosti, koja ne
-pokazuje simptome trajnog du š evnog oboljenja, niti te ž eg du š evnog poreme ć aja te da se radi o dru š tveno
-zdravoj osobi, optu ž eni se u vrijeme izvr š enja krivi č nog djela nalazio u stanju afekta straha i prepasti jakog
-inteziteta koji odgovara stanju privremene du š evne poreme ć enosti pa je sposobnost shvatanja zna č aja svog
-djela kao i mogu ć nost upravljanja svojim postupcima u vrijeme izvr š enja krivi č nog djela kod okrivljenog bila
-bitno smanjena. U slu č aju da se ne utvrde okolnosti, da nije bilo provokativnog pona š anja o š te ć enih na
-verbalnom i fizi č kom planu prema optu ž enom, a time i bez neposrednog subjektivnog do ž ivljavanja ž ivotne
-ugro ž enosti optu ž enog, u tom slu č aju su mi š ljenja da afekt straha i prepasti je dostigao nivo srednjeg
-intenziteta i nema karakteristike patolo š kog afekta, a time sposobnost shvatanja zna č aja djela i upravljanja
+Nakon neposrednog pregleda optuženog N.A. je ustanovljeno sledeće: u desnom slabinskom predjelu, u
+zadnjem dijelu nalazi se lučni sedefasto bjeličasti ožiljak dužine oko 4 cm, dužkog se vide poprečni brkljasti i
+
+tačkasti ožiljci, koji ukazuju da je rana hirurški zbrinuta, odnosno ušivena, pa na osnovu izgleda ožiljka je
+mišljenja da je mogao nastati djelovanjemšiljka i sječiva mehaničkog oruđa, odnosno noža, najmanješest
+mjeseci prije današnjeg pregleda, ali da precizno vrijeme nastanka rane ne može tačno ustanoviti.
+Iz nalaza i mišljenja tima vještaka medicinske struke prof.dr sci S.M.-neuropsihijatar, ass.mr.sci dr Ž.G.-
+psihijatar i B.S.I. - dipl.psiholog od 25.02.2013.godine proizilazi da svoj nalaz i mišljenje temelje na
+podacima iz sudskog spisa K.br.86/12, izvoda iz medicinske dokumentacije i neposrednog neurološko
+psihijatriskog pregleda, te su mišljenja, ozbirom da je ovaj konfliktni odnos bio u periodu od nekoliko
+mjeseci, da su te okolnosti kod optuženog na psihičkom planu uzrokovale stanje kumuliranog afekta straha
+na neurotskom nivou, a pogotovo prilikom slučajnih susreta sa njim te da je isti, a ako se prihvate kao realne
+činjenice, u okolnostima neposrednog fižičkog kontakta i sa nesrazmjerno većim brojem sudionika deliktne
+situacije, kod optuženog generisano afektivno prvenstveno stanje straha, prepasti jakog inteziteta. Pri tome
+su imali u vidu iskaz optuženog o prethodnom konfliktnom odnosu na fizičkom i verbalnom planu u
+preddeliktnom periodu koji je bio pospješujući faktor prelaska afekta straha i prepasti u pataloški afekt u
+vrijeme izvršenja krivičnog djela. Postojanje tog "pospješujućeg faktora" je potvrdjeno neposrednim
+pregledom optuženog od strane vještaka sudsko medicinske struke, nakon kojeg je iznijeto mišljenje, da je na
+osnovu izgleda ožiljka dužine oko 4 cm koji se nalazio u desno m slabinskom predjelu, isti mogao nastati
+najmanje 6 mjeseci prije obavljenog pregleda, pa dakle i u periodu koji su optuženi i oštećeni označili kao
+vrijeme njihovog prvog sukoba. Cijenili su i izmjene svijesti ispitanika u vrijeme izvršenja krivičnog djela koji
+je po njihovom mišljenju dostaio stepen suženja svijesti sa očuvanim globalnim sjećanjem na okolnosti
+krivičnog djela uz nesjećanje nekih detalja, š to je karakteristika pataloškog efekta. U ovom stanju ponašanje
+je impulsivno i polazi iz afektivno nagonske sfere zaobilazi svjesni dio ličnosti, a sposobnost shvatanja
+značaja djela i upravljanja njegovim postupcima kod optuženog je bila bitno smanjena.
+Imajući u vidu navedeni nalaz imenovani stručni tim je dao svoje mišljenje, koje je branio na glavnom
+pretresu njihov predstavnik dr G.Ž. psihijatar, da je N.A. osoba prosječnih intelektualnih sposobnosti, koja ne
+pokazuje simptome trajnog duševnog oboljenja, niti težeg duševnog poremećaja te da se radi o društveno
+zdravoj osobi, optuženi se u vrijeme izvršenja krivičnog djela nalazio u stanju afekta straha i prepasti jakog
+inteziteta koji odgovara stanju privremene duševne poremećenosti pa je sposobnost shvatanja značaja svog
+djela kao i mogućnost upravljanja svojim postupcima u vrijeme izvršenja krivičnog djela kod okrivljenog bila
+bitno smanjena. U slučaju da se ne utvrde okolnosti, da nije bilo provokativnog ponašanja oštećenih na
+verbalnom i fizičkom planu prema optuženom, a time i bez neposrednog subjektivnog doživljavanjaživotne
+ugroženosti optuženog, u tom slučaju su mišljenja da afekt straha i prepasti je dostigao nivo srednjeg
+intenziteta i nema karakteristike patološkog afekta, a time sposobnost shvatanja značaja djela i upravljanja
 svojim postupcima su smanjeni ali ne bitno.
-Dakle, iz pojedina č no analizirane odbrane optu ž enog proizilazi da su ga dana 21.04.2012. godine u
+Dakle, iz pojedinačno analizirane odbrane optuženog proizilazi da su ga dana 21.04.2012. godine u
 prijepodnevnim satima, u U., napale tri osobe, medju kojima je bio i momak koji mu je prije 2-3 mjeseca
-nanio povredu, u sukobu koji su imali ispred jednog "I.c.", kada ga je uboo no ž em u predjelu ledja. Novi
-napad se dogodio pri slu č ajnom susretu kod kru ž nog toka, u blizini pekare "D. i n." kada je odbio da podje sa
-njima u neku ulicu i poslije neuspjelog poku š aja da mobilnim telefonom o njihovom napadu obavijesti
-policiju. Tada ga je najprije otac tog momka rukom udario po ruci u kojoj je dr ž ao mobilni telefon, nakon č ega
-su istovremeno po č eli po cijelom tijelu da ga sva trojica udaraju pesnicama i nogama. Za vrijeme trajanja tog
-napada jedan od njih je krenuo da ga udari š arafcigerom zamahuju ć i u njegovom pravcu, pa je on u namjeri
-da odbije taj njegov napad ( Š .H.) izvadio no ž  tzv. "skakavac" i njime najstarijeg od njih (Z. N.) udario u
-predjelu lijeve bo č ne strane grudnog ko š a.
-Kada se dio odbrane optu ž enog u kome je naveo mjesto i vrijeme predmetnog dogadjaja dovede u vezu sa
-sadr ž inom zapisnika o uvidjaju, te navedenim slu ž benim zabilje š kama, kao i iskazima o š te ć enih onda se
-izvodi nesumnjiv č injeni č ni zaklju č ak o dokazanosti tih č injenica koje uop š te i nijesu bile sporne u ovom
+nanio povredu, u sukobu koji su imali ispred jednog "I.c.", kada ga je uboo nožem u predjelu ledja. Novi
+napad se dogodio pri slučajnom susretu kod kružnog toka, u blizini pekare "D. i n." kada je odbio da podje sa
+njima u neku ulicu i poslije neuspjelog pokušaja da mobilnim telefonom o njihovom napadu obavijesti
+policiju. Tada ga je najprije otac tog momka rukom udario po ruci u kojoj je držao mobilni telefon, nakončega
+su istovremeno počeli po cijelom tijelu da ga sva trojica udaraju pesnicama i nogama. Za vrijeme trajanja tog
+napada jedan od njih je krenuo da ga udarišarafcigerom zamahujući u njegovom pravcu, pa je on u namjeri
+da odbije taj njegov napad ( Š.H.) izvadio nožtzv. "skakavac" i njime najstarijeg od njih (Z.N.) udario u
+predjelu lijeve bočne strane grudnog koša.
+Kada se dio odbrane optuženog u kome je naveo mjesto i vrijeme predmetnog dogadjaja dovede u vezu sa
+sadržinom zapisnika o uvidjaju, te navedenim službenim zabilješkama, kao i iskazima oštećenih onda se
+
+izvodi nesumnjivčinjenični zaključak o dokazanosti tihčinjenica koje uopšte i nijesu bile sporne u ovom
 postupku.
-Nema sumnje, kada bi se ovaj dogadjaj odigrao isklju č ivo pod okolnostima koje je optu ž eni predstavio u
+Nema sumnje, kada bi se ovaj dogadjaj odigrao isključivo pod okolnostima koje je optuženi predstavio u
 svojoj odbrani, onda bi on stekao pravo da opisani protivpravni i istovremeni napad od strane trojice
-napada č a, od kojih je jedan na njega nasrnuo i sredstvom podobnim da njegovo tijelo te š ko povrijedi -
-(šarafciger), odbije na na č in koji bi bio srazmjeran i proporcionalan situaciji u kojoj se na š ao, pa dakle i uz
-upotrebu no ž a na rasklapanje.
-Medjutim, tvrdnja optu ž enog da je ovaj dogadjaj zapo č eo tako š to su dvojica o š te ć enih iza š la iz parkiranog
+napadača, od kojih je jedan na njega nasrnuo i sredstvom podobnim da njegovo tijelo teško povrijedi -
+(šarafciger), odbije na način koji bi bio srazmjeran i proporcionalan situaciji u kojoj se našao, pa dakle i uz
+upotrebu noža na rasklapanje.
+Medjutim, tvrdnja optuženog da je ovaj dogadjaj započeo takošto su dvojica oštećenih izašla iz parkiranog
 vozila i upitala ga da li poznaje momka koji je ostao unutra, nije samo u suprotnosti sa njihovim iskazima,
-nego i sa iskazom svjedoka G.V., u kome je naveo da je iz obli ž njeg ugostiteljskog objekta vidio optu ž enog
-kako se kre ć e od kru ž nog toka i tri osobe koje su mu se trotoarom pje š ke pribli ž avale. Naravno, da tvrdnje o
-tome kako se sukob u po č etnoj fazi odvijao nijesu neva ž ne pogotovo š to ni dalji razvoj dogadjaja optu ž eni, ni
-sami o š te ć eni nijesu na saglasan na č in predstavili, ali ć e se zna č aj tih razlika najasnije sagledati kroz njihovu
-dalju i detaljnu analizu zajedno sa ostalim izvedenim dokazima. Naime, dok je optu ž eni tvrdio da ga je E. po
-izlasku iz kola upitao "jesi li ozdravio", dotle je sam o š te ć eni naveo da je to ustvari njega upitao optu ž eni
-kojeg je prepoznao tek onda kad mu se pribli ž io i skinuo nao č ari i odmah po č eo da mu psuje sestru i
-porodicu, zbog č ega je i do š lo do medjusobne razmjene udaraca.
-U vezi tih okolnosti o š te ć eni E. nije bio iskren, jer je njegov otac Z.N. naveo, da mu je upravo on rekao, dok im
-se optu ž eni pribli ž avao, da se radi o momku sa kojim je ranije imao sukob i koji ga je povrijedio ispred "I.c.", te
-da je on (E.) zapo č eo tu č u u koju se oni nijesu mije š ali. I on je naveo, da se optu ž eni prije toga njegovom sinu
-obratio rije č ima "jesi li ozdravio", š to je u svom iskazu potvrdio Š .H., ali ne i da je nakon toga samo optu ž eni
-psovao o š te ć enog E., kako je on tvrdio, nego da su se potom "po č eli psovati".
-Prema tome, neuvjerljivost odbrane optu ž enog i njegova tvrdnja da je o š te ć enog E. vidio u kolima, tek onda
-kada su ga o njemu pitali njegov otac i Š . H., najubjedljivije je osporena od strane G.V., koji je kao svjedok
-odbrane naveo da su se o š te ć eni prije tog susreta kod kru ž nog toka kretali pje š ke, trotoarom u njegovom
+nego i sa iskazom svjedoka G.V., u kome je naveo da je iz obližnjeg ugostiteljskog objekta vidio optuženog
+kako se kreće od kružnog toka i tri osobe koje su mu se trotoarom pješke približavale. Naravno, da tvrdnje o
+tome kako se sukob u početnoj fazi odvijao nijesu nevažne pogotovošto ni dalji razvoj dogadjaja optuženi, ni
+sami oštećeni nijesu na saglasan način predstavili, aliće se značaj tih razlika najasnije sagledati kroz njihovu
+dalju i detaljnu analizu zajedno sa ostalim izvedenim dokazima. Naime, dok je optuženi tvrdio da ga je E. po
+izlasku iz kola upitao "jesi li ozdravio", dotle je sam oštećeni naveo da je to ustvari njega upitao optuženi
+kojeg je prepoznao tek onda kad mu se približio i skinuo naočari i odmah počeo da mu psuje sestru i
+porodicu, zbogčega je i došlo do medjusobne razmjene udaraca.
+U vezi tih okolnosti oštećeni E. nije bio iskren, jer je njegov otac Z.N. naveo, da mu je upravo on rekao, dok im
+se optuženi približavao, da se radi o momku sa kojim je ranije imao sukob i koji ga je povrijedio ispred "I.c.", te
+da je on (E.) započeo tuču u koju se oni nijesu miješali. I on je naveo, da se optuženi prije toga njegovom sinu
+obratio riječima "jesi li ozdravio", š to je u svom iskazu potvrdio Š.H., ali ne i da je nakon toga samo optuženi
+psovao oštećenog E., kako je on tvrdio, nego da su se potom "počeli psovati".
+Prema tome, neuvjerljivost odbrane optuženog i njegova tvrdnja da je oštećenog E. vidio u kolima, tek onda
+kada su ga o njemu pitali njegov otac i Š.H., najubjedljivije je osporena od strane G.V., koji je kao svjedok
+odbrane naveo da su se oštećeni prije tog susreta kod kružnog toka kretali pješke, trotoarom u njegovom
 pravcu.
-Sud cijeni da je optu ž eni iznio te tvrdnje, o izlasku dvije osobe iz parkiranog vozila, kako bi u č inio
-vjerodostojnim i naknadno iznijete tvrdnje, da je jedan od njih imao š arafciger u ruci, odnosno da je u toku
-sukoba E. oti š ao do kola i uzeo jo š  jedan š arafciger, te tako stvorio konstrukciju o iznenadnom i
-neoč ekivanom napadu u kome je morao djelovati na mah, u granicama nu ž ne odbrane neophodno potrebne
-za njegovo odbijanje. Sasvim je jasno, da ni jedan od njih nije imao š arafciger u ruci, jer je potpuno nelogi č no
+Sud cijeni da je optuženi iznio te tvrdnje, o izlasku dvije osobe iz parkiranog vozila, kako bi učinio
+vjerodostojnim i naknadno iznijete tvrdnje, da je jedan od njih imaošarafciger u ruci, odnosno da je u toku
+sukoba E. otišao do kola i uzeo jošjedanšarafciger, te tako stvorio konstrukciju o iznenadnom i
+neoč ekivanom napadu u kome je morao djelovati na mah, u granicama nužne odbrane neophodno potrebne
+za njegovo odbijanje. Sasvim je jasno, da ni jedan od njih nije imaošarafciger u ruci, jer je potpuno nelogično
 rezonovati, da je u varijanti njihovog kretanja koja je utvrdjena od strane svjedoka V.G., jedan od njih nosio
-šarafciger, zato š to je znao da ć e do ć i do tog susreta, te da ga je i E. uzeo tek onda kada se ispostavilo
-nedovoljnim da optu ž enog savladaju pesnicama, nogama i uz upotrebu jednog š arafcigera. Nelogi č no je i
-pomisliti, da tri osobe vi š e od 15 puta udaraju pesnicama i nogama po tijelu momka, koji je bio nemo ć an da
-im se suprotstavi, a da takvo njihovo pona š anje nema za posledicu njegovo obaranje na podlogu i nano š enje
-ni jedne povrede, kao i da ga osoba sa š arafcigerom u ruci uspijeva udariti pesnicom ili nogom, ali ne i tim
-sredstvom koje je bilo podobno za nano š enje najte ž ih povreda. Zato su nevjerodostojne i one tvrdnje da mu
-je telefon iz ruku izbio Z.N., nego mu je o č igledno ispao iz ruke kada ga je napao E. i nadalje u tom sukobu mu
-je i pao ka č ket sa glave, u razvoju dogadjaja koji svoj po č etak nije imao onakvim kakvim ga je predstavio
-optu ž eni u svojoj odbrani.
-Nevjerodostojna je i tvrdnja o š te ć enog E.Z., da je optu ž enog prepoznao tek onda kada je skinuo nao č ari, jer
-kao š to je sud ve ć  naveo, ona je u protivurje č nosti sa onim dijelom iskaza njegovog oca N., u kome je tvrdio,
-da mu je za momka koji im je od kru ž nog toka dolazio u susret rekao, da je sa njim prije mjesec dana imao
-sukob u "I.c.", pa je logi č na i njegova naknadna tvrdnja, da je optu ž enog prvo napao njegov sin E. i da je
-potom do š lo do razmjene udaraca pesnicama. O š te ć eni E. je u pogledu tih okolnosti izmijenio svoj iskaz na
-glavnom pretresu i poku š ao optu ž enog da predstavi kao nekog ko je prvi krenuo da ga udari glavom, te da je
-on, izbjegav š i taj udarac, tek nakon toga udario optu ž enog š akom jedanput ili dvaput u predjelu glave.
-Nesumnjivo se iz iskaza o š te ć enog Z. N., zbog svih navedenih razloga mo ž e izvesti č injeni č ni zaklju č ak, da se
-u ulozi napada č a u ovom krivi č no pravnom dogadjaju najprije na š ao njegov sin E., jer je on prvi "zapo č eo
-tuču", pa je samim tim optu ž eni stekao pravo da od sebe odbije taj istovremeni i protivpravni napad na
-srazmjeran na č in.
-Sud vjeruje da je ovaj dogadjaj tako otpo č eo, zato š to je i logi č no da neko, ko se na š ao u dru š tvu svog oca i
-rodjaka, prvi napadne onog sa kojim se fizi č ki obra č unavao prije par mjeseci, u situaciji u kojoj se on tada,
-kako je sam tvrdio, nalazio usamljen naspram trojice napada č a. Treba dodati, da po č etak ovog sukoba, kao
-što je ve ć  navedeno, nije na istovjetan na č in iznio ni Š .H. koji je o č igledno htio da umanji zna č aj i ulogu koju
-je E. u svemu tome imao tvrdnjom, da su se samo po č eli psovati, nakon š to ga je optu ž eni upitao "jesi li
-ozdravio". Medjutim, ono š to je isto tako va ž no, ovaj o š te ć eni, kao ni Z.N. nijesu svoje uloge u daljem toku
-dogadjaja na vjerodostojan na č in opisali, jer je o č igledno da su pre ć utali svoju namjeru da kroz fizi č ki nasrtaj
-na optu ž enog pomognu E. u njihovom medjusobnom razra č unavanju. U skladu sa takvim njihovim
-postupcima treba naglasiti, da je o č igledno optu ž eni otvorio tzv. no ž  "skakavac" u jednom trenutku, kada je
-prestalo njegovo fizi č ko razra č unavanje sa o š te ć enim E., š to zna č i da je bio u mogu ć nosti, obzirom da se nije
-našao oboren na asfaltu, da im stavi do znanja svoju naoru ž anost hladnim oru ž jem. Te okolnosti ukazuju i da
-nije postojao tako intenzivan napad, kakvim ga je opisao u svojoj odbrani optu ž eni, jer da jeste on nebi bio
-samo oboren i povrijedjen, nego, pri tolikom broju udaraca koji su mu nano š eni po tijelu i glavi, ne bi ni
-doš ao u priliku da izvadi no ž  za koji je tvrdio da mu se nalazio u d ž epu. Suprotno tome, on je prikriveno
-djeluju ć i potajno izvadio no ž  i potom veoma brzo im nanosio te povrede, jer ni jedan od njih nije mogao da
-objasni na jasan i potpun na č in pod kojim okolnostima ih je zadobio. O š te ć eni Z.N. je rekao da mu je o š tricu
-nož a vidio ispod rukava trenerke u desnoj ruci, tek onda kada je po č eo da bje ž i sa lica mjesta.
-U vezi povreda koje su bli ž e navedene u č injeni č nom opisu izreke presude vje š tak medicinske struke se nije
-mogao odrediti o redosledu njihovog nano š enja, kao i o preciznom medjusobnom polo ž aju o š te ć enog i onog
-koji ih je nanosio, zato š to u medicinskoj dokumentaciji nisu navedeni smjerovi kanala ubodnih rana.
-Medjutim, imaju ć i u vidu lokalizaciju ubodnih rana kod Z.N., u predjelu lijeve pazu š ne linije, lijevog
-podlopati č nog predjela ona je mi š ljenja da su one mogle nastati "licem u lice", ukoliko su nano š ene sa no ž em
-u desnoj ruci, ali ni u toj varijanti se nije moglo isklju č iti da su nane š ene sa ledja ili sa lijeve bo č ne strane.
-Kada se radi o medjusobnom polo ž aju o š te ć enog Š .H. i onog ko mu je nanosio opisane povrede, vje š tak je
-mišljenja kao i u prethodnom slu č aju, dok je u vezi povreda kod Z.E. istakla da su mogle nastati u bilo kom
-polo ž aju. Ostale okolnosti koje se ti č u njihove ta č ne lokalizacije, dimenzija, vrsta i te ž ine povreda, kao i
-intenziteta sile kojom se djelovalo u momentu njihovog nano š enja detaljno su navedene prilikom
+šarafciger, zatošto je znao daće doći do tog susreta, te da ga je i E. uzeo tek onda kada se ispostavilo
+nedovoljnim da optuženog savladaju pesnicama, nogama i uz upotrebu jednogšarafcigera. Nelogično je i
+pomisliti, da tri osobe više od 15 puta udaraju pesnicama i nogama po tijelu momka, koji je bio nemoćan da
+im se suprotstavi, a da takvo njihovo ponašanje nema za posledicu njegovo obaranje na podlogu i nanošenje
+ni jedne povrede, kao i da ga osoba sašarafcigerom u ruci uspijeva udariti pesnicom ili nogom, ali ne i tim
+sredstvom koje je bilo podobno za nanošenje najtežih povreda. Zato su nevjerodostojne i one tvrdnje da mu
+je telefon iz ruku izbio Z.N., nego mu je očigledno ispao iz ruke kada ga je napao E. i nadalje u tom sukobu mu
+je i pao kačket sa glave, u razvoju dogadjaja koji svoj početak nije imao onakvim kakvim ga je predstavio
+optuženi u svojoj odbrani.
+Nevjerodostojna je i tvrdnja oštećenog E.Z., da je optuženog prepoznao tek onda kada je skinuo naočari, jer
+kao što je sud većnaveo, ona je u protivurječnosti sa onim dijelom iskaza njegovog oca N., u kome je tvrdio,
+da mu je za momka koji im je od kružnog toka dolazio u susret rekao, da je sa njim prije mjesec dana imao
+
+sukob u "I.c.", pa je logična i njegova naknadna tvrdnja, da je optuženog prvo napao njegov sin E. i da je
+potom došlo do razmjene udaraca pesnicama. Oštećeni E. je u pogledu tih okolnosti izmijenio svoj iskaz na
+glavnom pretresu i pokušao optuženog da predstavi kao nekog ko je prvi krenuo da ga udari glavom, te da je
+on, izbjegavši taj udarac, tek nakon toga udario optuženogšakom jedanput ili dvaput u predjelu glave.
+Nesumnjivo se iz iskaza oštećenog Z.N., zbog svih navedenih razloga može izvestičinjenični zaključak, da se
+u ulozi napadača u ovom krivično pravnom dogadjaju najprije našao njegov sin E., jer je on prvi "započeo
+tuču", pa je samim tim optuženi stekao pravo da od sebe odbije taj istovremeni i protivpravni napad na
+srazmjeran način.
+Sud vjeruje da je ovaj dogadjaj tako otpočeo, zatošto je i logično da neko, ko se našao u društvu svog oca i
+rodjaka, prvi napadne onog sa kojim se fizički obračunavao prije par mjeseci, u situaciji u kojoj se on tada,
+kako je sam tvrdio, nalazio usamljen naspram trojice napadača. Treba dodati, da početak ovog sukoba, kao
+što je većnavedeno, nije na istovjetan način iznio ni Š.H. koji je očigledno htio da umanji značaj i ulogu koju
+je E. u svemu tome imao tvrdnjom, da su se samo počeli psovati, nakonšto ga je optuženi upitao "jesi li
+ozdravio". Medjutim, onošto je isto tako važno, ovaj oštećeni, kao ni Z.N. nijesu svoje uloge u daljem toku
+dogadjaja na vjerodostojan način opisali, jer je očigledno da su prećutali svoju namjeru da kroz fizički nasrtaj
+na optuženog pomognu E. u njihovom medjusobnom razračunavanju. U skladu sa takvim njihovim
+postupcima treba naglasiti, da je očigledno optuženi otvorio tzv. no ž "skakavac" u jednom trenutku, kada je
+prestalo njegovo fizičko razračunavanje sa oštećenim E., š to znači da je bio u mogućnosti, obzirom da se nije
+našao oboren na asfaltu, da im stavi do znanja svoju naoružanost hladnim oružjem. Te okolnosti ukazuju i da
+nije postojao tako intenzivan napad, kakvim ga je opisao u svojoj odbrani optuženi, jer da jeste on nebi bio
+samo oboren i povrijedjen, nego, pri tolikom broju udaraca koji su mu nanošeni po tijelu i glavi, ne bi ni
+doš ao u priliku da izvadi nožza koji je tvrdio da mu se nalazio u džepu. Suprotno tome, on je prikriveno
+djelujući potajno izvadio noži potom veoma brzo im nanosio te povrede, jer ni jedan od njih nije mogao da
+objasni na jasan i potpun način pod kojim okolnostima ih je zadobio. Oštećeni Z.N. je rekao da mu je oštricu
+nož a vidio ispod rukava trenerke u desnoj ruci, tek onda kada je počeo da bježi sa lica mjesta.
+U vezi povreda koje su bliže navedene učinjeničnom opisu izreke presude vještak medicinske struke se nije
+mogao odrediti o redosledu njihovog nanošenja, kao i o preciznom medjusobnom položaju oštećenog i onog
+koji ih je nanosio, zatošto u medicinskoj dokumentaciji nisu navedeni smjerovi kanala ubodnih rana.
+Medjutim, imajući u vidu lokalizaciju ubodnih rana kod Z.N., u predjelu lijeve pazušne linije, lijevog
+podlopatičnog predjela ona je mišljenja da su one mogle nastati "licem u lice", ukoliko su nanošene sa nožem
+u desnoj ruci, ali ni u toj varijanti se nije moglo isključiti da su nanešene sa ledja ili sa lijeve bočne strane.
+Kada se radi o medjusobnom položaju oštećenog Š.H. i onog ko mu je nanosio opisane povrede, vještak je
+mišljenja kao i u prethodnom slučaju, dok je u vezi povreda kod Z.E. istakla da su mogle nastati u bilo kom
+položaju. Ostale okolnosti koje se tiču njihove tačne lokalizacije, dimenzija, vrsta i težine povreda, kao i
+intenziteta sile kojom se djelovalo u momentu njihovog nanošenja detaljno su navedene prilikom
 interpretacije ovog dokaza na prethodnim stranama presude.
-Dakle, kada se ima u vidu mi š ljenje vje š taka o na č inu nano š enja tih povreda onda se mo ž e izvesti jasan
-zaklju č ak, da one nijesu nastale onako kako je to optu ž eni objasnio - nekontrolisanim mahanjem no ž a ispred
-sebe, nego se radilo o ciljnom nano š enju povreda koji je podrazumijevao zamah i direktno dejstvo u
-pomenute dijelove tijela o š te ć enih lica, bez obzira u kakvom su se polo ž aju ta č no u tom trenutku nalazili.
-Optu ž eni ni jednu od tih povreda nije nanio u fazi ste č enog prava na nu ž nu odbranu, nego onda kada je
-prekora č io njene granice, pa se taj zaklju č ak odnosi i na ogrebotine i posjekotine po š akama Z.E., koji je
-prirodnim reakcijama, kroz podizanje ruku, š titio svoje vitalne organe. Optu ž eni te povrede nije nanosio ni
-sječ ivom du ž ine 5 cm, kako je tvrdio, nego je na osnovu onog dijela mi š ljenja vje š taka sudsko medicinske
-struke, u kome je navedena ustanovljena du ž ina kanala rana utvrdjeno da je du ž ina sje č iva no ž a morala biti
-najmanje oko 8cm i da su se njime mogle nanijeti te š ke odnosno smrtonosne tjelesne povrede ubodom u
-srce, jetru, plu ć a, crijeva i sli č no.
-To š to vrh sje č iva nije ta č no pogadjao u navedene organe ne predstavlja, po ocjeni suda, rezultat stvarnog
-htenja optu ž enog, nego razvoja dogadjaja, u kome nije mogao napraviti tako precizan izbor, zbog brzine
-njihovog nano š enja, trenutnog polo ž aja i brojnosti o š te ć enih lica. Medjutim, potpuno je jasno da i
-lokalizacija nanijetih ubodnih rana u predjelu lijeve strane grudnog ko š a, u odnosu na o š te ć ene Z.N. i Š .H.,
-kao i njihova brojnost, bez obzira na njihovu kvalifikaciju, ukazuje da je optu ž eni bio svjestan da se u tom
-dijelu njihovog tijela nalaze i drugi va ž ni organi, pa je o č igledno pristao da ih li š i ž ivota, č im je nanio vi š e
-ubodnih rana u predjelu njihovog grudnog ko š a, ta č nije, na onim mjestima koja su bli ž e navedena kroz nalaz
-i miš ljenje vje š taka medicinske struke. To š to je o š te ć enom Z.E. nanio samo tri ogrebotine na prstima desne
-šake, te jednu sjekotinu, kao š to je sud naveo, ne zna č i da je isklju č ivo pristao na te posledice, zbog onih
-razloga kojima je obja š njavano njegovo stanje svijesti i volje u momentu nano š enja brojnih povreda
+Dakle, kada se ima u vidu mišljenje vještaka o načinu nanošenja tih povreda onda se može izvesti jasan
+zaključak, da one nijesu nastale onako kako je to optuženi objasnio - nekontrolisanim mahanjem noža ispred
+sebe, nego se radilo o ciljnom nanošenju povreda koji je podrazumijevao zamah i direktno dejstvo u
+pomenute dijelove tijela oštećenih lica, bez obzira u kakvom su se položaju tačno u tom trenutku nalazili.
+Optuženi ni jednu od tih povreda nije nanio u fazi stečenog prava na nužnu odbranu, nego onda kada je
+prekoračio njene granice, pa se taj zaključak odnosi i na ogrebotine i posjekotine pošakama Z.E., koji je
+prirodnim reakcijama, kroz podizanje ruku, š titio svoje vitalne organe. Optuženi te povrede nije nanosio ni
+sječivom dužine 5 cm, kako je tvrdio, nego je na osnovu onog dijela mišljenja vještaka sudsko medicinske
+struke, u kome je navedena ustanovljena dužina kanala rana utvrdjeno da je dužina sječiva noža morala biti
+
+najmanje oko 8cm i da su se njime mogle nanijeti teške odnosno smrtonosne tjelesne povrede ubodom u
+srce, jetru, pluća, crijeva i slično.
+Tošto vrh sječiva nije tačno pogadjao u navedene organe ne predstavlja, po ocjeni suda, rezultat stvarnog
+htenja optuženog, nego razvoja dogadjaja, u kome nije mogao napraviti tako precizan izbor, zbog brzine
+njihovog nanošenja, trenutnog položaja i brojnosti oštećenih lica. Medjutim, potpuno je jasno da i
+lokalizacija nanijetih ubodnih rana u predjelu lijeve strane grudnog koša, u odnosu na oštećene Z.N. i Š.H.,
+kao i njihova brojnost, bez obzira na njihovu kvalifikaciju, ukazuje da je optuženi bio svjestan da se u tom
+dijelu njihovog tijela nalaze i drugi važni organi, pa je očigledno pristao da ih lišiživota, č im je nanio više
+ubodnih rana u predjelu njihovog grudnog koša, tačnije, na onim mjestima koja su bliže navedena kroz nalaz
+i miš ljenje vještaka medicinske struke. Tošto je oštećenom Z.E. nanio samo tri ogrebotine na prstima desne
+šake, te jednu sjekotinu, kao što je sud naveo, ne znači da je isključivo pristao na te posledice, zbog onih
+razloga kojima je objašnjavano njegovo stanje svijesti i volje u momentu nanošenja brojnih povreda
 njegovom ocu i rodjaku.
-Prema tome, sud cijeni da je na č in na koji je optu ž eni upotrijebio no ž  prevazi š ao opasnost napada
-preduzetog od strane napada č a koji u rukama nijesu imali nikakve predmete i č ija brojnost nije do š la do
-posebnog izra ž aja, pogotovo ne onako kako je to potencirao u svojoj odbrani optu ž eni kroz nano š enje vi š e
-od 15 udaraca u njegovo tijelo pesnicama i nogama. Nesumnjivo je utvrdjeno, da je on dr ž ao no ž  u ruci prije
-nego š to su ga o š te ć eni N.Z. i Š .H. napali, te da samim tim nije bilo neophodno da na takav na č in otklanja
-njihov predstoje ć i napad i on je svoje pravo na nu ž nu odbranu branio u ve ć oj mjeri nego š to mu je
-zakonodavac dozvolio za razrje š enje te situacije i odbijanje napada za koji je re č eno da je jo š  uvijek trajao od
-strane E.Z. Naime, time š to je bio u prilici da im stavi do znanja svoju naoru ž anost rije č ima i pokazivanjem
-nož a, a na takav zaklju č ak upu ć uje č injenica da nije prvo udario E. sa kojim je bio u fizi č kom kontaktu,
-optu ž eni je bio u mogu ć nosti da izbjegne njegovu upotrebu kroz vi š estruko ubadanje i nano š enje povreda
-svim o š te ć enim licima, pa zato sud smatra da njegova odbrana, na opisani na č in nije bila jedino mogu ć a i
-neophodno potrebna da se od sebe odbija na takav na č in napad protiv njegovog ž ivota i tijela.
-U nastavku naprijed navedenog stava treba posebno naglasiti, da je nesumnjivo utvrdjeno, da optu ž eni nije
-bio istovremeno napadnut od trojice napada č a, kako je to nagla š avao u svojoj odbrani, nego od E. sa kojim je
+Prema tome, sud cijeni da je način na koji je optuženi upotrijebio nožprevazišao opasnost napada
+preduzetog od strane napadača koji u rukama nijesu imali nikakve predmete ičija brojnost nije došla do
+posebnog izražaja, pogotovo ne onako kako je to potencirao u svojoj odbrani optuženi kroz nanošenje više
+od 15 udaraca u njegovo tijelo pesnicama i nogama. Nesumnjivo je utvrdjeno, da je on držao nožu ruci prije
+negošto su ga oštećeni N.Z. i Š.H. napali, te da samim tim nije bilo neophodno da na takav način otklanja
+njihov predstojeći napad i on je svoje pravo na nužnu odbranu branio u većoj mjeri negošto mu je
+zakonodavac dozvolio za razrješenje te situacije i odbijanje napada za koji je rečeno da je jošuvijek trajao od
+strane E.Z. Naime, timešto je bio u prilici da im stavi do znanja svoju naoružanost riječima i pokazivanjem
+nož a, a na takav zaključak upućuječinjenica da nije prvo udario E. sa kojim je bio u fizičkom kontaktu,
+optuženi je bio u mogućnosti da izbjegne njegovu upotrebu kroz višestruko ubadanje i nanošenje povreda
+svim oštećenim licima, pa zato sud smatra da njegova odbrana, na opisani način nije bila jedino moguća i
+neophodno potrebna da se od sebe odbija na takav način napad protiv njegovogživota i tijela.
+U nastavku naprijed navedenog stava treba posebno naglasiti, da je nesumnjivo utvrdjeno, da optuženi nije
+bio istovremeno napadnut od trojice napadača, kako je to naglašavao u svojoj odbrani, nego od E. sa kojim je
 ranije imao sukob i koji je u jednom trenutku bio odmakao nekoliko koraka ispred svog oca i rodjaka. Takodje
-je nesumnjivo utvrdjeno, da mu taj prvi udarac nije donio nikakvu prednost i da nije bio takve ja č ine, zbog
-koje bi optu ž eni bio doveden u inferiorni polo ž aj, š to je i razumljivo, č im je uspio da se upusti u obra č un i kroz
-steč eno pravo na nu ž nu odbranu, uzvrati i razmijeni nekoliko udaraca sa o š te ć enim Z.E.
-Sud je takodje istakao, da je u prostornom i vremenskom smislu optu ž eni bio u situaciji, da napad koji je
-trajao od strane o š te ć enog E., i za koji se ne mo ž e re ć i da je prestao samo zato š to su se nakratko fizi č ki
-razdvojili, kome su krenuli da se pridru ž e Z. i H. i tako poja č aju njegov intenzitet, ipak, nije bio po svom
-karakteru takve ja č ine, da je morao upotrijebiti na navedeni na č in sredstvo koje mu je u toj situaciji bilo na
-raspolaganju. Upravo je optu ž eni u jednoj takvoj situaciji, kada se u prvom dijelu sukoba na srazmjeran na č in
-branio, u drugoj fazi prekora č io tu mjeru neophodno potrebne odbrane i za š ao u sferu protivpravnog i
-kažnjivog pona š anja, č im je vi š e puta, pod navedenim okolnostima, na nesrazmjeran na č in upotrijebio no ž ,
-kao zamahnuto sredstvo, i zadao mnogobrojne povrede o š te ć enim, iako oni njegov ž ivot i tjelesni integritet
+je nesumnjivo utvrdjeno, da mu taj prvi udarac nije donio nikakvu prednost i da nije bio takve jačine, zbog
+koje bi optuženi bio doveden u inferiorni položaj, š to je i razumljivo, č im je uspio da se upusti u obračun i kroz
+stečeno pravo na nužnu odbranu, uzvrati i razmijeni nekoliko udaraca sa oštećenim Z.E.
+Sud je takodje istakao, da je u prostornom i vremenskom smislu optuženi bio u situaciji, da napad koji je
+trajao od strane oštećenog E., i za koji se ne može reći da je prestao samo zatošto su se nakratko fizički
+razdvojili, kome su krenuli da se pridruže Z. i H. i tako pojačaju njegov intenzitet, ipak, nije bio po svom
+karakteru takve jačine, da je morao upotrijebiti na navedeni način sredstvo koje mu je u toj situaciji bilo na
+raspolaganju. Upravo je optuženi u jednoj takvoj situaciji, kada se u prvom dijelu sukoba na srazmjeran način
+branio, u drugoj fazi prekoračio tu mjeru neophodno potrebne odbrane i zašao u sferu protivpravnog i
+kažnjivog ponašanja, č im je više puta, pod navedenim okolnostima, na nesrazmjeran način upotrijebio no ž,
+kao zamahnuto sredstvo, i zadao mnogobrojne povrede oštećenim, iako oni njegovživot i tjelesni integritet
 nijesu ni u jednom trenutku ozbiljnije ugrozili.
-U trenutku kada je optu ž eni preduzeo tu radnju njegova sposobnost da shvati zna č aj svog djela i mogu ć nost
-da upravlja svojim postupcima su bili bitno smanjeni, zbog pomenutog afektivnog stanja, š to zna č i da je u toj
-bitno umanjenoj mjeri bio svjestan onih postupaka koji su bli ž e opisani na prethodnim stranama i
-činjeni č nom opisu izreke presude, pa je u toj mjeri bilo izra ž eno i njegovo pristajanje da ih li š i ž ivota, č ime se
-u takvom njegovom cjelokupnom pona š anju sti č u sva zakonska obilje ž ja krivi č nog djela te š ko ubistvo u
-poku š aju, u prekora č enju granica nu ž ne odbrane iz č lana 144 ta č ka 8 u vezi č lana 20 i 10 stav 3 Krivi č nog
+U trenutku kada je optuženi preduzeo tu radnju njegova sposobnost da shvati značaj svog djela i mogućnost
+da upravlja svojim postupcima su bili bitno smanjeni, zbog pomenutog afektivnog stanja, š to znači da je u toj
+bitno umanjenoj mjeri bio svjestan onih postupaka koji su bliže opisani na prethodnim stranama i
+činjeničnom opisu izreke presude, pa je u toj mjeri bilo izraženo i njegovo pristajanje da ih lišiživota, č ime se
+u takvom njegovom cjelokupnom ponašanju stiču sva zakonska obilježja krivičnog djela teško ubistvo u
+
+pokušaju, u prekoračenju granica nužne odbrane izčlana 144 tačka 8 u vezičlana 20 i 10 stav 3 Krivičnog
 zakonika.
-Sud je prihvatio nalaz i mi š ljenje tima vje š taka neuropsihijatrijsko-psihijatrijsko-psiholo š ke struke, koji je dat
-nakon neposredog pregleda, testiranja i obavljenog razgovora sa optu ž enim, na osnovu kojeg je utvrdjeno da
-se radi o du š evno zdravoj osobi, prosje č nih intelektualnih sposobnosti i na osnovu istog izveo zaklju č ak da su
-afekti straha i prepasti jakog intenziteta, koji odgovaraju stanju privremene du š evne poreme ć enosti, izazvani
-napadom o š te ć enih, te da su isti bitno smanjili njegove sposobnosti koje se ti č u rasudjivanja i upravljanja
-svojim postupcima. U vezi tako iznijetih stru č nih znanja iz tih oblasti stranke nijesu imale primjedbi ni bilo
+Sud je prihvatio nalaz i mišljenje tima vještaka neuropsihijatrijsko-psihijatrijsko-psihološke struke, koji je dat
+nakon neposredog pregleda, testiranja i obavljenog razgovora sa optuženim, na osnovu kojeg je utvrdjeno da
+se radi o duševno zdravoj osobi, prosječnih intelektualnih sposobnosti i na osnovu istog izveo zaključak da su
+afekti straha i prepasti jakog intenziteta, koji odgovaraju stanju privremene duševne poremećenosti, izazvani
+napadom oštećenih, te da su isti bitno smanjili njegove sposobnosti koje se tiču rasudjivanja i upravljanja
+svojim postupcima. U vezi tako iznijetih stručnih znanja iz tih oblasti stranke nijesu imale primjedbi ni bilo
 kakvih prigovora.
-Sud je prihvatio nalaz i mi š ljenje vje š taka sudsko medicinske struke i izveo zaklju č ak o dokazanosti naprijed
-navedenih č injenica zato š to se i on na potpun i stru č an na č in bavio svim pitanjima koja spadaju u njegovu
-oblast vje š ta č enja, dok je branilac optu ž enog kroz djelimi č an prigovor zahtijevao odgovore na pitanja na koja
+Sud je prihvatio nalaz i mišljenje vještaka sudsko medicinske struke i izveo zaključak o dokazanosti naprijed
+navedenihčinjenica zatošto se i on na potpun i stručan način bavio svim pitanjima koja spadaju u njegovu
+oblast vještačenja, dok je branilac optuženog kroz djelimičan prigovor zahtijevao odgovore na pitanja na koja
 se nije moglo odgovoriti zbog nepotpune medicinske dokumentacije i sa zahtjevom da ocjenjuje razloge
-preduzetih postupaka od strane optu ž enog, koji ne spadaju u njegovu oblast vje š ta č enja, niti se uop š te
-ocjena istinitosti odbrane optu ž enog mo ž e prepustiti nekom drugom vje š taku bilo koje struke.
-Sud je ve ć  naveo razloge zbog kojih je prihvatio pojedine č injeni č ne tvrdnje svjedoka o š te ć enih i svjedoka
-G.V., kao i zbog č ega su neke ocijenjene nevjerodostojnim, pa je jasno  da ni jedan od njih nije bio u potpunosti
+preduzetih postupaka od strane optuženog, koji ne spadaju u njegovu oblast vještačenja, niti se uopšte
+ocjena istinitosti odbrane optuženog može prepustiti nekom drugom vještaku bilo koje struke.
+Sud je većnaveo razloge zbog kojih je prihvatio pojedinečinjenične tvrdnje svjedoka oštećenih i svjedoka
+G.V., kao i zbogčega su neke ocijenjene nevjerodostojnim, pa je jasno da ni jedan od njih nije bio u potpunosti
 iskren i da nijesu do kraja iznijeli sve pojedinosti tog dogadjaja, nego su, iz razloga koji su navedeni, prikrivali
-i svoje stvarne namjere (Z.N. i Š .H.), kada su krenuli ka optu ž enom, da kao najbli ž i srodnici u napadu na njega
-udru ž eno pomognu Z.E. S druge strane, neki od njih su iznosili neobavezuju ć a mi š ljenja o namjerama koje je
-optu ž eni imao kada je upotrebljavao no ž  (svjedok Z.N.), č iji je o č igledni cilj bio da se naknadno pomogne
-optu ž enom i olak š a njegov polo ž aj u ovom postupku, kao š to je to u č injeno i kroz stav, u kome se ni jedan od
-ošte ć enih nije pridru ž io krivi č nom gonjenju.
-Sud je cijenio i ostale dokaze, pa je ocijenio da njihovi rezultati nijesu od zna č aja za dono š enje druga č ijih
-činjeni č nih zaklju č aka koji bi se odnosili na odlu č ne č injenice i izvodjenje zaklju č aka o njihovoj dokazanosti.
-Premda je zakonodavac propisao mogu ć nost oslobadjanja od kazne onog u č inioca koji je prekora č io granice
-nuž ne odbrane usled jake razdra ž enosti ili prepasti izazvane napadom č lan (10 stav 3 KZ), sud cijeni da u
-konkretnom slu č aju ne bi bilo opravdano donijeti takvu odluku imaju ć i u vidu sve okolnosti koje su pratile
-ovaj krivi č no pravni dogadjaj.
-Pri odmjeravanju kazne optu ž enom u smislu č lana 42 KZ sud je vodio ra č una o svim okolnostima koje uti č u
-da ona bude ve ć a ili manja, pa mu je kao olak š avaju ć e uzeo u obzir da je u vrijeme izvr š enja djela pripadao
-kategoriji mladjih punoljetnih lica (18-21 godina) i stav o š te ć enih koji se nisu pridru ž ili krivi č nom gonjenju,
-dok od ote ž avaju ć ih okolnosti nije posebno ni jednu konstatovao.
-Imaju ć i u vidu da je u konkretnom slu č aju zakonodavac predvidjao da se u č inilac mo ž e osloboditi od kazne
-(član 10 stav 3 KZ), a sud ga nije oslobodio od kazne ( č lan 45 ta č ka 2 KZ), to mu je u smislu č lana 46 stav 2 KZ,
-obzirom na navedene okolnosti i č injenicu da je krivi č no djelo izvr š io u prekora č enju granica nu ž ne odbrane,
-u stanju prepasti jakog intenziteta izazvane napadom na njegovo pravno dobro, ubla ž io kaznu bez
-ograni č enja propisanih za njeno ubla ž avanje cijene ć i da ć e se i sa takvom visinom u trajanju od deset mjeseci
-posti ć i u okviru op š te svrhe krivi č nih sankcija iz č lana 4 KZ i ona svrha ka ž njavanja, č iji je cilj spre č avanje
-učinioca da č ini krivi č na djela i uticanje na njega da ubudu ć e ne č ini krivi č na djela, uticanje na druge da ne
-čine krivi č na djela, kao i da se tom, kaznom izra ž ava istovremeno i dru š tvena osuda za u č injeno krivi č no
-djelo i obaveza po š tovanja zakona, odnosno ja č a moral i uti č e na razvijanje dru š tvene odgovornosti ( č lan 32
+i svoje stvarne namjere (Z.N. i Š.H.), kada su krenuli ka optuženom, da kao najbliži srodnici u napadu na njega
+udruženo pomognu Z.E. S druge strane, neki od njih su iznosili neobavezujuća mišljenja o namjerama koje je
+optuženi imao kada je upotrebljavao no ž (svjedok Z.N.), č iji je očigledni cilj bio da se naknadno pomogne
+optuženom i olakša njegov položaj u ovom postupku, kao što je to učinjeno i kroz stav, u kome se ni jedan od
+oštećenih nije pridružio krivičnom gonjenju.
+Sud je cijenio i ostale dokaze, pa je ocijenio da njihovi rezultati nijesu od značaja za donošenje drugačijih
+činjeničnih zaključaka koji bi se odnosili na odlučnečinjenice i izvodjenje zaključaka o njihovoj dokazanosti.
+Premda je zakonodavac propisao mogućnost oslobadjanja od kazne onog učinioca koji je prekoračio granice
+nuž ne odbrane usled jake razdraženosti ili prepasti izazvane napadomčlan (10 stav 3 KZ), sud cijeni da u
+konkretnom slučaju ne bi bilo opravdano donijeti takvu odluku imajući u vidu sve okolnosti koje su pratile
+ovaj krivično pravni dogadjaj.
+Pri odmjeravanju kazne optuženom u smislučlana 42 KZ sud je vodio računa o svim okolnostima koje utiču
+da ona bude veća ili manja, pa mu je kao olakšavajuće uzeo u obzir da je u vrijeme izvršenja djela pripadao
+kategoriji mladjih punoljetnih lica (18-21 godina) i stav oštećenih koji se nisu pridružili krivičnom gonjenju,
+dok od otežavajućih okolnosti nije posebno ni jednu konstatovao.
+Imajući u vidu da je u konkretnom slučaju zakonodavac predvidjao da se učinilac može osloboditi od kazne
+(član 10 stav 3 KZ), a sud ga nije oslobodio od kazne ( č lan 45 tačka 2 KZ), to mu je u smislučlana 46 stav 2 KZ,
+obzirom na navedene okolnosti ičinjenicu da je krivično djelo izvršio u prekoračenju granica nužne odbrane,
+u stanju prepasti jakog intenziteta izazvane napadom na njegovo pravno dobro, ublažio kaznu bez
+ograničenja propisanih za njeno ublažavanje cijeneći daće se i sa takvom visinom u trajanju od deset mjeseci
+postići u okviru opšte svrhe krivičnih sankcija izčlana 4 KZ i ona svrha kažnjavanja, č iji je cilj sprečavanje
+učinioca dačini krivična djela i uticanje na njega da ubuduće nečini krivična djela, uticanje na druge da ne
+čine krivična djela, kao i da se tom, kaznom izražava istovremeno i društvena osuda za učinjeno krivično
+djelo i obaveza poštovanja zakona, odnosno jača moral i utiče na razvijanje društvene odgovornosti ( č lan 32
 KZ).
-Na osnovu č lana 51 KZ optu ž enom je u izre č enu kaznu zatvora u trajanju od deset mjeseci, ura č unato vrijeme
-provedeno u pritvoru od 27.04.2012. godine do 27.02.2013. godine, č ime je istu u potpunosti izdr ž ao.
-Kako je optu ž eni ogla š en krivim to je, na osno vu č l. 229 u vezi č l. 226 Zakonika o krivi č nom postupku,
-obavezan da, u korist bud ž eta Crne Gore, plati tro š kove krivi č nog postupka u iznosu od 1.072,50 €, koji se
-odnose na nagradu za rad sudskog vje š taka medicinske struke, Č .D. (187,00€), te vje š taka neuropsihijatra,
-psihijatra i psihologa, prof. dr M.S. (291,50€), dr G. Ž . (319,00€) i S.-I. B. (275,00€). Optu ž eni je du ž an i da, na
-ime pau š ala, uplati iznos od 150,00 €, koji je odre đ en shodno slo ž enosti i trajanju postupka, te njegovom
-imovnom stanju, u roku od 15 dana po pravosna ž nosti presude.
-Sa iznijetog odlu č eno je kao u izreci presude.
+
+Na osnovučlana 51 KZ optuženom je u izrečenu kaznu zatvora u trajanju od deset mjeseci, uračunato vrijeme
+provedeno u pritvoru od 27.04.2012. godine do 27.02.2013. godine, č ime je istu u potpunosti izdržao.
+Kako je optuženi oglašen krivim to je, na osno vučl. 229 u vezičl. 226 Zakonika o krivičnom postupku,
+obavezan da, u korist budžeta Crne Gore, plati troškove krivičnog postupka u iznosu od 1.072,50 €, koji se
+odnose na nagradu za rad sudskog vještaka medicinske struke, Č.D. (187,00€), te vještaka neuropsihijatra,
+psihijatra i psihologa, prof. dr M.S. (291,50€), dr G.Ž. (319,00€) i S.-I.B. (275,00€). Optuženi je dužan i da, na
+ime paušala, uplati iznos od 150,00 €, koji je određen shodno složenosti i trajanju postupka, te njegovom
+imovnom stanju, u roku od 15 dana po pravosnažnosti presude.
+Sa iznijetog odlučeno je kao u izreci presude.
 VIŠI SUD U PODGORICI Dana 14.03.2013. godine
-ZAPISNI Č AR PREDSJEDNIK VIJE Ć A-SUDIJA Mila Cupara,s.r. Dragoje Jovi ć ,s.r.
-PRAVNA POUKA: Protiv ove presude mo ž e se izjaviti ž alba Apelacinom sudu CG u roku od 15 dana od dana
+ZAPISNIČAR PREDSJEDNIK VIJEĆA-SUDIJA Mila Cupara,s.r. Dragoje Jović,s.r.
+PRAVNA POUKA: Protiv ove presude može se izjavitižalba Apelacinom sudu CG u roku od 15 dana od dana
 prijema prepisa, a preko ovog suda.
-Za ta č nost otpravka tvrdi i ovjerava namje š tenik suda Mila Cupara</p>
+Za tačnost otpravka tvrdi i ovjerava namještenik suda Mila Cupara</p>
                 </block>
             </conclusions>
         </judgmentBody>

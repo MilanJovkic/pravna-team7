@@ -6,29 +6,35 @@
                 <FRBRWork>
                     <FRBRthis value="/akn/me/judgment/Одлуке54/!main"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке54"/>
-                    <FRBRdate date="2014-04-25" name="judgment"/>
+                    <FRBRdate date="2014-06-27" name="judgment"/>
                     <FRBRauthor href="#court"/>
                     <FRBRcountry value="me"/>
                 </FRBRWork>
                 <FRBRExpression>
-                    <FRBRthis value="/akn/me/judgment/Одлуке54/sr@2014-04-25/!main"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке54/sr@2014-04-25"/>
-                    <FRBRdate date="2014-04-25"/>
+                    <FRBRthis value="/akn/me/judgment/Одлуке54/sr@2014-06-27/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке54/sr@2014-06-27"/>
+                    <FRBRdate date="2014-06-27"/>
                     <FRBRauthor href="#court"/>
                     <FRBRlanguage language="sr"/>
                 </FRBRExpression>
                 <FRBRManifestation>
-                    <FRBRthis value="/akn/me/judgment/Одлуке54/sr@2014-04-25/!main.xml"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке54/sr@2014-04-25/!main.akn"/>
-                    <FRBRdate date="2026-04-13"/>
+                    <FRBRthis value="/akn/me/judgment/Одлуке54/sr@2014-06-27/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке54/sr@2014-06-27/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
             <references source="#court">
                 <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
-                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Hasnije Simonović"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Vesna Pean"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Hasnija Simonović"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Predrag Tabaš"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="C.B."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="Radojević Nemanje"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -37,495 +43,520 @@
         <judgmentBody>
             <header>
                 <block name="caseNumber">
-                    <docNumber>Posl.br.43/2014</docNumber>
+                    <docNumber>K.br. 43/2014</docNumber>
                 </block>
                 <block name="court">
                     <docTitle>VIŠI SUD U PODGORICI</docTitle>
                 </block>
                 <block name="date">
-                    <docDate date="2014-04-25">2014-04-25</docDate>
+                    <docDate date="2014-06-27">2014-06-27</docDate>
                 </block>
                 <block name="judges">
-                    <judge>Hasnije Simonović</judge>
+                    <judge>Vesna Pean</judge>
+                    <judge>Hasnija Simonović</judge>
+                    <judge>Predrag Tabaš</judge>
                 </block>
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Optuženi M.A. kriv za pokušaj ubistva oca.</p>
+                    <p>Optuženi M.. A.. je proglašen krivim za pokušaj ubistva svog oca.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Pokušaj ubistva</p>
-                    <p>Umisao</p>
-                    <p>Smanjena uračunljivost</p>
+                    <p>Uračunljivost</p>
+                    <p>Usvojena uslovna osuda</p>
+                    <p>Troškovi postupka</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
                     <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakonik o krivičnom postupku</ref>
                 </block>
                 <block name="appliedArticles">
                     <ref href="/akn/me/act/2024/!main#art_145">Član 145</ref>
                     <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
-                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
                     <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
-                    <ref href="/akn/me/act/2024/!main#art_75">Član 75</ref>
-                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_67">Član 67</ref>
+                    <ref href="/akn/me/act/2024/!main#art_14">Član 14</ref>
                     <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_75">Član 75</ref>
                     <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
                     <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
-                    <ref href="/akn/me/act/2024/!main#art_14">Član 14</ref>
                     <ref href="/akn/me/act/2024/!main#art_300">Član 300</ref>
-                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Optuženi je bio svestan svojih postupaka, ali je delovao pod jakim stresom izazvanim uvredama.</p>
+                    <p>Sud je utvrdio da je optuženi bio svestan svojih postupaka, ali u stanju smanjene uračunljivosti.</p>
                 </block>
             </motivation>
             <decision>
-                <block name="verdict" outcome="nepoznato">
-                    <p>Krivica potvrđena.</p>
+                <block name="verdict" outcome="osudjen">
+                    <p>Uslovna osuda</p>
                 </block>
             </decision>
+            <participants>
+                <block name="victims">
+                    <person>C.B.</person>
+                    <person>Radojević Nemanje</person>
+                </block>
+                <block name="witnesses">
+                    <person>C.B.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Više državno tužilaštvo</organization>
+                </block>
+            </participants>
             <facts>
+                <fact key="injury_type">teška tjelesna povreda</fact>
                 <fact key="weapon">nož</fact>
-                <fact key="location">Baru</fact>
                 <fact key="location">Podgorica</fact>
-                <fact key="location">Podgorici Kt</fact>
-                <fact key="location">Starom Baru</fact>
-                <fact key="location">Trebinju</fact>
-                <fact key="location">Forenzi</fact>
+                <fact key="location">Bar</fact>
                 <fact key="location">Danilovgrad</fact>
-                <fact key="location">Kaznenu</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="previous_convictions">ne</fact>
+                <fact key="remorse">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="alcohol_intoxication">da</fact>
+                <fact key="conditional_sentence_requested">da</fact>
+                <fact key="attempted_offense">da</fact>
             </facts>
             <conclusions>
                 <block name="fullText">
                     <p>Posl.br.43/2014
 U IME CRNE GORE
- 
-VIŠI SUD U PODGORICI, kao prvostepeni krivi č ni, u vije ć u sastavljenom od sudije Vesne Pean, kao
-Predsjednika vije ć a i sudija Hasnije Simonovi ć  i Predraga Taba š a, kao č lanova vije ć a, uz u č e šć e Bojane
-Rakovi ć , kao zapisni č ara, u krivi č nom predmetu protiv optu ž enog M.. A.. iz B.., kojeg po slu ž benoj du ž nosti
-brani adv. V.. Č .. iz Podgorice, zbog krivi č nog djela ubistvo na mah u poku š aju iz č l. 145 u vezi č l. 20 Krivi č nog
-zakonika, odlu č uju ć i po optu ž nici Vi š eg dr ž avnog tu ž ila š tva iz Podgorice Kt.br.4/14 od 25.04.2014. godine,
-koju je zastupao Ž eljko Tomkovi ć  - zamjenik VDT-a iz Podgorice, nakon odr ž anog glavnog i javnog pretresa
-dana 24.06.2014. godina, u prisustvu zastupnika optu ž be, optu ž enog i njegovog branioca, donio je i javno
+
+VIŠI SUD U PODGORICI, kao prvostepeni krivični, u vijeću sastavljenom od sudije Vesne Pean, kao
+Predsjednika vijeća i sudija Hasnije Simonovići Predraga Tabaša, kao članova vijeća, uz učešće Bojane
+Raković, kao zapisničara, u krivičnom predmetu protiv optuženog M.. A.. iz B.., kojeg po službenoj dužnosti
+brani adv. V.. Č.. iz Podgorice, zbog krivičnog djela ubistvo na mah u pokušaju izčl. 145 u vezičl. 20 Krivičnog
+zakonika, odlučujući po optužnici Višeg državnog tužilaštva iz Podgorice Kt.br.4/14 od 25.04.2014. godine,
+koju je zastupao Željko Tomković - zamjenik VDT-a iz Podgorice, nakon održanog glavnog i javnog pretresa
+dana 24.06.2014. godina, u prisustvu zastupnika optužbe, optuženog i njegovog branioca, donio je i javno
 objavio, dana 27.06.2014. godine,
- 
+
 P R E S U D U
- 
-Optu ž eni: M.. A.., JMBG.., od oca N.. i majke R.., rodjene P.., rodjen ...godine u B.., sa prebivali š tem u B.., ..,
-državljanin.., nezaposlen, neo ž enjen, zavr š io srednju poljoprivrednu š kolu, dobrog imovnog stanja,
+
+Optuženi: M.. A.., JMBG.., od oca N.. i majke R.., rodjene P.., rodjen...godine u B.., sa prebivalištem u B..,..,
+državljanin.., nezaposlen, neoženjen, završio srednju poljoprivrednuškolu, dobrog imovnog stanja,
 neosudjivan,
- 
+
 KRIV JE
- 
+
 Što je:
-Dana 09.01.2014. godine, oko 02,20 č asova, u Baru, u naselju Bjeli š i bb, u ku ć i vlasni š tvo Ne š kovi ć  Vjere, sa
-umiš ljajem, sposoban da shvati zna č aj djela i upravlja svojim postupcima, svjestan zabranjenosti radnje koju
-preduzima i ž ele ć i njeno izvr š enje, u stanju bitno smanjene ura č unljivosti poku š ao da li š i ž ivota na mah svog
-oca - o š te ć enog M.. N.., doveden bez svoje krivice u jaku razdra ž enost te š kim vrije đ anjem od strane
-ošte ć enog, na na č in š to je nakon š to je prethodno o š te ć eni do š ao u ku ć u u vidno pijanom stanju i vrije đ ao
-okrivljenog i njegovu majku M.. R.., govore ć i im da su „nikakvi, da su maloumni, da su glupi, da ne mo ž e vi š e
-da ž ivi sa njima, da im vi š e ne ć e pla ć ati stan, da ne ć e vi š e da ih hrani, da ć e morati da se sami hrane“, a majci
-okrivljenog upu ć uju ć i i rije č i „kurvo, droljo, navodno č isti š  po ku ć ama, a u stvari se vi đ a š  sa drugim
-muš karcima“, potom im o š te ć eni isklju č io televizor i po š ao u spava ć u sobu da spava, a onda se ponovo vratio
-u prostoriju gdje su sjedjeli okrivljeni i njegova majka nastavljaju ć i sa vrije đ anjem rije č ima da ć e morati oni
-njega da hrane i i šč upao kabal od televizora iz uti č nice, nakon č ega je okrivljeni iz kuhinje dohvatio kuhinjski
-nož , du ž ine sje č iva 11,5 cm i sa navedenim no ž em ubo o š te ć enog u predjelu desne strane grudnog ko š a,
-kojom prilikom je o š te ć eni zadobio te š ku tjelesnu povredu opasnu po ž ivot u vidu ubodno-rezne rane u
-desnom potklju č nom predjelu, koja se kanalom sa smjerom unazad nastavlja kroz tre ć i me đ urebarni prostor,
-ulazi u desnu polovinu grudne duplje i zavr š ava u tkivu desnog plu ć nog tkiva, pra ć ena prisustvom krvi i
+Dana 09.01.2014. godine, oko 02,20časova, u Baru, u naselju Bjeliši bb, u kući vlasništvo Nešković Vjere, sa
+umiš ljajem, sposoban da shvati značaj djela i upravlja svojim postupcima, svjestan zabranjenosti radnje koju
+preduzima iželeći njeno izvršenje, u stanju bitno smanjene uračunljivosti pokušao da lišiživota na mah svog
+oca - oštećenog M.. N.., doveden bez svoje krivice u jaku razdraženost teškim vrijeđanjem od strane
+oštećenog, na načinšto je nakonšto je prethodno oštećeni došao u kuću u vidno pijanom stanju i vrijeđao
+okrivljenog i njegovu majku M.. R.., govoreći im da su „nikakvi, da su maloumni, da su glupi, da ne može više
+daživi sa njima, da im više neće plaćati stan, da neće više da ih hrani, daće morati da se sami hrane“, a majci
+okrivljenog upućujući i riječi „kurvo, droljo, navodnočistišpo kućama, a u stvari se viđašsa drugim
+muš karcima“, potom im oštećeni isključio televizor i pošao u spavaću sobu da spava, a onda se ponovo vratio
+u prostoriju gdje su sjedjeli okrivljeni i njegova majka nastavljajući sa vrijeđanjem riječima daće morati oni
+njega da hrane i iščupao kabal od televizora iz utičnice, nakončega je okrivljeni iz kuhinje dohvatio kuhinjski
+nož, dužine sječiva 11,5 cm i sa navedenim nožem ubo oštećenog u predjelu desne strane grudnog koša,
+kojom prilikom je oštećeni zadobio tešku tjelesnu povredu opasnu poživot u vidu ubodno-rezne rane u
+desnom potključnom predjelu, koja se kanalom sa smjerom unazad nastavlja kroz treći međurebarni prostor,
+ulazi u desnu polovinu grudne duplje i završava u tkivu desnog plućnog tkiva, praćena prisustvom krvi i
 vazduha u desnoj polovini grudne duplje.Viši Sud u Podgorici
 K 43/2014
 27. Jun 2014
- 
--čime je izvr š io krivi č no djelo - ubistvo na mah u poku š aju iz č lana 145 u vezi č lana 20 Krivi č nog zakonika
- 
-Pa sud optu ž enom M.. A.., na osnovu naprijed navedene krivi č nopravne odredbe, te č lanova 2, 4, 5,
-14.st.2,15, 32, 33, 36, 42, 45, 46, 52, 53 i 54 Krivi č nog zakonika, te č lana 374 ZKP-a, i z r i č  e
- 
+
+-čime je izvršio krivično djelo - ubistvo na mah u pokušaju izčlana 145 u vezičlana 20 Krivičnog zakonika
+
+Pa sud optuženom M.. A.., na osnovu naprijed navedene krivičnopravne odredbe, tečlanova 2, 4, 5,
+14.st.2,15, 32, 33, 36, 42, 45, 46, 52, 53 i 54 Krivičnog zakonika, tečlana 374 ZKP-a, i z r iče
+
 USLOVNU OSUDU
- 
-Kojom mu predhodno utvrdjuje kaznu zatvora u trajanju od 6 ( š est) mjeseci, te se istovremeno odre đ uje da se
-ista ne ć e izvr š iti, ukoliko optu ž eni za vrijeme od tri godine od pravosna ž nosti presude, ne u č ini novo krivi č no
+
+Kojom mu predhodno utvrdjuje kaznu zatvora u trajanju od 6 ( š est) mjeseci, te se istovremeno određuje da se
+ista neće izvršiti, ukoliko optuženi za vrijeme od tri godine od pravosnažnosti presude, ne učini novo krivično
 djelo.
- 
-Duž an je optu ž eni na ime sudskog pau š ala platiti iznos od 50,00 eura, kao i na ime tro š kova krivi č nog
-postupka platiti iznos od 1.061,00 eura, a sve u roku od 30 dana, po pravnosna ž nosti presude, pod prijetnjom
-prinudnog izvr š enja, a u korist Bud ž eta CG.
- 
-Na osnovu č lana 67 u vezi č lana 75 stav 1 Krivi č nog zakonika, prema optu ž enom se izri č e:
+
+Duž an je optuženi na ime sudskog paušala platiti iznos od 50,00 eura, kao i na ime troškova krivičnog
+postupka platiti iznos od 1.061,00 eura, a sve u roku od 30 dana, po pravnosnažnosti presude, pod prijetnjom
+prinudnog izvršenja, a u korist Budžeta CG.
+
+Na osnovučlana 67 u vezičlana 75 stav 1 Krivičnog zakonika, prema optuženom se izriče:
 MJERA BEZBJEDNOSTI ODUZIMANJA PREDMETA
- 
-Oduzima se kunjinjski no ž  sa drvenom dr š kom braon boje, du ž ine sje č iva 11,50cm, sa natpisom na sje č ivu
-"peterh off classic", kao predmet upotrebljen u izv š enju krivi č nog djela.
-O b r a z l o ž  e nj e :
- 
-Optu ž nicom Vi š eg dr ž avnog tu ž ila š tva u Podgorici Kt.br. 4/14 od 25.04.2014. godine, optu ž enom M.. A..
-stavljeno je na teret izvr š enje krivi č nog djela ubistvo u poku š aju iz č l. 143 u vezi č l. 20 Krivi č nog zakonika. U
-zavr š noj rije č i zastupnik optu ž be je cijene ć i rezultate izvedenih dokaza izmijenio č injeni č ni opis dispozitiva
-optu ž nice, a sa tim u vezi i pravnu kvalifikaciju, smatraju ć i da su se u radnjama optu ž enog stekli svi bitni
-elementi bi ć a krivi č nog djela ubistvo na mah u poku š aju iz č l. 145 u vezi č l. 20 Krivi č nog zakonika, pa je u
-kona č nom predlo ž io sudu da optu ž enog oglasi krivim za navedeno krivi č no djelo i osudi na kaznu zatvora u
-granicama predvi đ enim zakonom.
- 
-Optu ž eni M.. A.. je u svojoj odbrani potvrdio da je svog oca N.. povrijedio no ž em, ali nije imao namjeru da ga
-ubije, ve ć  samo da ga sprije č i da se nasilni č ki pona š a prema njemu i njegovoj majci. Objasnio je da je dana
-08.01.2014. godine, zajedno sa svojom majkom R.. bio u ku ć i u naselju Bjeli š i, u kojoj ž ive kao podstanari,
-sjedjeli su u dnevnoj sobi i gledali televiziju. Oko pola sata poslije pono ć i u kuću je do š ao njegov otac N.. koji
-je bio u vidno pijanom stanju i odmah po č eo da se dere na njega i njegovu majku govore ć i im “ ne ć u vi š e da
-vas hranim, sad ć ete vi morati da se sami hranite i da pla ć ate struju i vodu”, kao i da ć e oni morati njega da
-hrane. Nakon toga otac je po š ao do kuhinje i uzeo da jede, posle jela je nastavio da pije rakiju, a potom
-ugasio televizor i po š ao da spava u spava ć u sobu. Poslije otprilike pola sata se probudio i po č eo da se deru
-prema njemu i majci govore ć i im “ ugasite televizor”, i ponovo im je zaprijetio da ć e oni morati njega da
-hrane. Njega je ovakvo pona š anje oca iznerviralo, jer se i u ranijem periodu u vi š e navrata pona š ao na sli č an
-nač in, pa je po š ao do kuhinje i iz sudopere uzeo jedan kuhinjski no ž  i sa tim no ž em se uputio u dnevnu sobu,
-gdje su se nalazili njegovi otac i majka. Pri š ao je svom ocu, zamahnuo je jednom no ž em u njegovom pravcu i
-tom prilikom ga ubo u predjelu grudi, ali taj zamah nije bio jak, i nije imao namjeru da ga te ž e povrijedi.
-Njegova majka je pri š la ocu i legla ga na krevet, uzela zavoj koji je natopila rakijom i stavila mu na mjesto gdje
-ga je ubo, kako bi na taj na č in zaustavila krvarenje. Nakon toga majka je zvala Hitnu pomo ć  koja je do š la
+
+Oduzima se kunjinjski nožsa drvenom drškom braon boje, dužine sječiva 11,50cm, sa natpisom na sječivu
+"peterh off classic", kao predmet upotrebljen u izvšenju krivičnog djela.
+O b r a z l ože nj e:
+
+Optužnicom Višeg državnog tužilaštva u Podgorici Kt.br. 4/14 od 25.04.2014. godine, optuženom M.. A..
+stavljeno je na teret izvršenje krivičnog djela ubistvo u pokušaju izčl. 143 u vezičl. 20 Krivičnog zakonika. U
+završnoj riječi zastupnik optužbe je cijeneći rezultate izvedenih dokaza izmijeniočinjenični opis dispozitiva
+optužnice, a sa tim u vezi i pravnu kvalifikaciju, smatrajući da su se u radnjama optuženog stekli svi bitni
+elementi bića krivičnog djela ubistvo na mah u pokušaju izčl. 145 u vezičl. 20 Krivičnog zakonika, pa je u
+konačnom predložio sudu da optuženog oglasi krivim za navedeno krivično djelo i osudi na kaznu zatvora u
+granicama predviđenim zakonom.
+
+Optuženi M.. A.. je u svojoj odbrani potvrdio da je svog oca N.. povrijedio nožem, ali nije imao namjeru da ga
+ubije, većsamo da ga spriječi da se nasilnički ponaša prema njemu i njegovoj majci. Objasnio je da je dana
+08.01.2014. godine, zajedno sa svojom majkom R.. bio u kući u naselju Bjeliši, u kojojžive kao podstanari,
+sjedjeli su u dnevnoj sobi i gledali televiziju. Oko pola sata poslije ponoći u kuću je došao njegov otac N.. koji
+je bio u vidno pijanom stanju i odmah počeo da se dere na njega i njegovu majku govoreći im “ neću više da
+vas hranim, sadćete vi morati da se sami hranite i da plaćate struju i vodu”, kao i daće oni morati njega da
+hrane. Nakon toga otac je pošao do kuhinje i uzeo da jede, posle jela je nastavio da pije rakiju, a potom
+ugasio televizor i pošao da spava u spavaću sobu. Poslije otprilike pola sata se probudio i počeo da se deru
+prema njemu i majci govoreći im “ ugasite televizor”, i ponovo im je zaprijetio daće oni morati njega da
+hrane. Njega je ovakvo ponašanje oca iznerviralo, jer se i u ranijem periodu u više navrata ponašao na sličan
+nač in, pa je pošao do kuhinje i iz sudopere uzeo jedan kuhinjski noži sa tim nožem se uputio u dnevnu sobu,
+
+gdje su se nalazili njegovi otac i majka. Prišao je svom ocu, zamahnuo je jednom nožem u njegovom pravcu i
+tom prilikom ga ubo u predjelu grudi, ali taj zamah nije bio jak, i nije imao namjeru da ga teže povrijedi.
+Njegova majka je prišla ocu i legla ga na krevet, uzela zavoj koji je natopila rakijom i stavila mu na mjesto gdje
+ga je ubo, kako bi na taj način zaustavila krvarenje. Nakon toga majka je zvala Hitnu pomoćkoja je došla
 poslije desetak minuta i odvela oca u bolnicu u Starom Baru. Kada je saznao da zdravstveno stanje njegovog
-oca nije kriti č no bilo mu je mnogo lak š e, izrazio je kajanje zbog ovoga š to je uradio i ponovio da nije imao
-namjeru da svog oca ubije. Ina č e je istakao da ima zdravstvenih problema, da od ro đ enja boluje od epilepsije
-i svakodnevno pije terapiju i to ujutro i uve č e. Posebno je dodao da je i ranije bilo slu č ajeva da se njegov otac
-na ovakav na č in pona š ao u ku ć i, ali ovako kao ovog puta se nije ranije pona š ao, te da tih ranijih prilika nijesu
-zvali policiju, kao i da je i ranije otac samo vikao na njih, vrije đ ao ih, ali da nikad fizi č ki nije napao ni njega, ni
+oca nije kritično bilo mu je mnogo lakše, izrazio je kajanje zbog ovogašto je uradio i ponovio da nije imao
+namjeru da svog oca ubije. Inače je istakao da ima zdravstvenih problema, da od rođenja boluje od epilepsije
+i svakodnevno pije terapiju i to ujutro i uveče. Posebno je dodao da je i ranije bilo slučajeva da se njegov otac
+na ovakav način ponašao u kući, ali ovako kao ovog puta se nije ranije ponašao, te da tih ranijih prilika nijesu
+zvali policiju, kao i da je i ranije otac samo vikao na njih, vrijeđao ih, ali da nikad fizički nije napao ni njega, ni
 majku.
- 
-Branilac optu ž enog M.. A.., adv. V.. Č .. u zavr š noj rije č i je istakao da nije sporno, a š to je optu ž eni i priznao,
-djelo koje mu se stavlja na teret ovako izmijenjenom optu ž nicom, a takvo č injeni č no stanje proizilazi iz izjave
-ošte ć enog svjedoka. Ukazao je vije ć u da prilikom odmjeravanja kazne optu ž enom cijeni sve olak š avaju ć e
-okolnosti i da ima u vidu njegovo psihofizi č ko rasu đ ivanje. Predlo ž io je u kona č nom osloba đ aju ć u odluku, ali
-ukoliko vije ć e stane na drugo stanovi š te i oglasi ga krivim, predlo ž io je da sud optu ž enom, imaju ć i u vidu sve
-olak š avaju ć e okolnosti, izrekne uslovnu osudu. Optu ž eni M.. A.. je prihvatio zavr š nu rije č  svog branioca i
-izjavio je da nema ni š ta posebno da doda.
- 
-Sud je u dokaznom postupku proveo slede ć e dokaze: neposredno saslu šao svjedoka o š te ć enog M.. N..,
-saslu š ao svjedoka M.. R.., pro č itao zapisnik o uvi đ aju CB Bar Ku.br.6/14 od 09.01.2014. godine, pro č itao
-potvrdu CB Bar Ku.br. 6/14 od 09.01.2014. godine o privremeno oduzetim predmetima od M.. R.., pro č itao
-izvje š taj ljekara specijaliste Urgentne medicinske pomo ć i – Op š te bolnice Bar br. Protokola 275 od
-09.01.2014. godine, na ime o š te ć enog M.. N.., pro č itao izvje š taj ljekara specijaliste Urgentne medicinske
-pomo ć i – Op š te bolnice Bar br. Protokola 18 od 09.01.2014. godine, na ime o š te ć enog M.. N.., pro č itao istoriju
-Opš te bolnice Bar mat.br. 119/2014 na ime o š te ć enog M.. N.., pro č itao labaratorijske analize krvi od 09.01 i
-10.01.2014. godine, na ime o š te ć enog M.. N.., pro č itao operacionu listu, na ime o š te ć enog M.. N.., pro č itao
-otpusnu listu na ime o š te ć enog M.. N.., pro č itao izvje š taj KCCCG – Odjeljenje za sudsku medicinu br. 168 od
-06.02.2014. godine o analizi alkohola u krvi kod o š te ć enog M.. N.., pro č itao nalaz i mi š ljenje sudskog vje š taka
-medicinske struke dr Radojevi ć  Nemanje od 27.01.2014. godine i neposredno saslu š ao istog, uz saglasnost
-optu ž be i odbrane pro č itao izvje š taj Forenzi č kog centra Danilovgrad broj 157/14 o DNK vje š ta č enju i izvje š taj
-Forenzi č kog centra Danilovgrad broj 158/14-1 o trasolo š kom vje š ta č enju, nalaz i mi š ljenje Komisije vje š taka
-pri Klinici za psihijariju Podgorica od 09.06.2014. godine i neposredno saslu š ao predstavnika Komisije
-vješ taka stalnog sudskog vje š taka psihijatrijske struke dr Ž eljka Golubovi ć a, te pro č itao izvod iz kaznene
-evidencije CB Bar 71-03-245/14-128/2 od 14.01.2014. godine i izvr š io uvid u fotodokumentaciju CB Bar br.
+
+Branilac optuženog M.. A.., adv. V.. Č.. u završnoj riječi je istakao da nije sporno, ašto je optuženi i priznao,
+djelo koje mu se stavlja na teret ovako izmijenjenom optužnicom, a takvočinjenično stanje proizilazi iz izjave
+oštećenog svjedoka. Ukazao je vijeću da prilikom odmjeravanja kazne optuženom cijeni sve olakšavajuće
+okolnosti i da ima u vidu njegovo psihofizičko rasuđivanje. Predložio je u konačnom oslobađajuću odluku, ali
+ukoliko vijeće stane na drugo stanovište i oglasi ga krivim, predložio je da sud optuženom, imajući u vidu sve
+olakšavajuće okolnosti, izrekne uslovnu osudu. Optuženi M.. A.. je prihvatio završnu riječsvog branioca i
+izjavio je da nema ništa posebno da doda.
+
+Sud je u dokaznom postupku proveo sledeće dokaze: neposredno saslu šao svjedoka oštećenog M.. N..,
+saslušao svjedoka M.. R.., pročitao zapisnik o uviđaju CB Bar Ku.br.6/14 od 09.01.2014. godine, pročitao
+potvrdu CB Bar Ku.br. 6/14 od 09.01.2014. godine o privremeno oduzetim predmetima od M.. R.., pročitao
+izvještaj ljekara specijaliste Urgentne medicinske pomoći – Opšte bolnice Bar br. Protokola 275 od
+09.01.2014. godine, na ime oštećenog M.. N.., pročitao izvještaj ljekara specijaliste Urgentne medicinske
+pomoći – Opšte bolnice Bar br. Protokola 18 od 09.01.2014. godine, na ime oštećenog M.. N.., pročitao istoriju
+Opš te bolnice Bar mat.br. 119/2014 na ime oštećenog M.. N.., pročitao labaratorijske analize krvi od 09.01 i
+10.01.2014. godine, na ime oštećenog M.. N.., pročitao operacionu listu, na ime oštećenog M.. N.., pročitao
+otpusnu listu na ime oštećenog M.. N.., pročitao izvještaj KCCCG – Odjeljenje za sudsku medicinu br. 168 od
+06.02.2014. godine o analizi alkohola u krvi kod oštećenog M.. N.., pročitao nalaz i mišljenje sudskog vještaka
+medicinske struke dr Radojević Nemanje od 27.01.2014. godine i neposredno saslušao istog, uz saglasnost
+optužbe i odbrane pročitao izvještaj Forenzičkog centra Danilovgrad broj 157/14 o DNK vještačenju i izvještaj
+Forenzičkog centra Danilovgrad broj 158/14-1 o trasološkom vještačenju, nalaz i mišljenje Komisije vještaka
+pri Klinici za psihijariju Podgorica od 09.06.2014. godine i neposredno saslušao predstavnika Komisije
+vještaka stalnog sudskog vještaka psihijatrijske struke dr Željka Golubovića, te pročitao izvod iz kaznene
+evidencije CB Bar 71-03-245/14-128/2 od 14.01.2014. godine i izvršio uvid u fotodokumentaciju CB Bar br.
 17/14 od 09.01.2014. godine.
- 
-Svjedok o š te ć eni M.. N.. je u svom svjedo č kom iskazu naveo da je dana 08.01.2014. godine bio na poslu do 11
-časova, nakon toga boravio je u vi š e kafana na teritoriji Op š tine Bar sve do kasnih ve č ernjih č asova, tj. do
-otprilike oko 24,00 č asa. Tom prilikom je prvo pio rakiju, a posle je nastavio da pije pivo. Popio je veliku
-količ inu rakije i piva, ali ne zna ta č no koliko. Negdje oko pono ć i je do š ao u ku ć u u kojoj stanuje i to ga je neko
-dovezao sa vozilom, ali ne zna ko, jer je toliko bio pijan da se nije sje ć ao. Sje ć ao se da je po ulasku u ku ć u
-odmah po č eo da vrije đ a svoju suprugu i sina, ali se nije sje ć ao koje im je rije č i uputio, ali je znao da im je tom
-prilikom zabranio da gledaju televiziju i da je ugasio televizor, nakon č ega je nastavio da pije rakiju u dnevnoj
-sobi. Poslije izvjesnog vremena po š ao je u spava ć u sobu da spava, ali se ubrzo probudio i vratio u dnevnu
-sobu, gdje je nastavio da vrije đ a svoju suprugu i sina. Obja š njavao je da mu je u jednom trenutku sin
-Aleksandar pri š ao kako bi ga sprije č io da i dalje pije, a on je tada poku š ao da ga udari, nakon č ega je sin sa
-jednog š anka, koji dijeli dnevnu sobu i kuhinju uzeo kuhinjski no ž  i sa tim no ž em ga ubo u predjelu desne
-strane grudi, u blizini ramena. Nakon š to ga je ubo, i dalje je ostao na nogama, odnosno nije pao niti je gubio
-svijest, a dao je telefon svojoj ž eni da pozove slu ž bu Hitne pomo ć i, š to je ona i uradila. Njegova ž ena i sin su
-poku š ali da zaustave krvarenje tako š to su mu stavili krpu u predjelu gdje je uboden. Ubrzo je do š la slu ž ba
-Hitne pomo ć i koja ga je odvela u bolnicu u Starom Baru gdje je zadr ž an radi daljeg lije č enja, i tu je bio u
-periodu od 09.01 do 14.01.2014. godine. Povrede koje je zadobio od no ž a, nijesu bile te š ke povrede, jer je on
-već narednog dana mogao da iza đ e iz bolnice i normalno se kretao, ali je u bolnici ostao na zahtjev ljekara.
-Odmah po izlasku iz bolnice nastavio je normalno da radi na svojim poslovima, č ak je radio i te š ke fizi č ke
-poslove na utovaru i istovaru robe, i to mu nije predstavljalo nikakvu te š ko ć u, jer ta povreda koju je zadobio
+
+Svjedok oštećeni M.. N.. je u svom svjedočkom iskazu naveo da je dana 08.01.2014. godine bio na poslu do 11
+časova, nakon toga boravio je u više kafana na teritoriji Opštine Bar sve do kasnih večernjihčasova, tj. do
+otprilike oko 24,00časa. Tom prilikom je prvo pio rakiju, a posle je nastavio da pije pivo. Popio je veliku
+količinu rakije i piva, ali ne zna tačno koliko. Negdje oko ponoći je došao u kuću u kojoj stanuje i to ga je neko
+dovezao sa vozilom, ali ne zna ko, jer je toliko bio pijan da se nije sjećao. Sjećao se da je po ulasku u kuću
+odmah počeo da vrijeđa svoju suprugu i sina, ali se nije sjećao koje im je riječi uputio, ali je znao da im je tom
+prilikom zabranio da gledaju televiziju i da je ugasio televizor, nakončega je nastavio da pije rakiju u dnevnoj
+sobi. Poslije izvjesnog vremena pošao je u spavaću sobu da spava, ali se ubrzo probudio i vratio u dnevnu
+
+sobu, gdje je nastavio da vrijeđa svoju suprugu i sina. Objašnjavao je da mu je u jednom trenutku sin
+Aleksandar prišao kako bi ga spriječio da i dalje pije, a on je tada pokušao da ga udari, nakončega je sin sa
+jednogšanka, koji dijeli dnevnu sobu i kuhinju uzeo kuhinjski noži sa tim nožem ga ubo u predjelu desne
+strane grudi, u blizini ramena. Nakonšto ga je ubo, i dalje je ostao na nogama, odnosno nije pao niti je gubio
+svijest, a dao je telefon svojojženi da pozove službu Hitne pomoći, š to je ona i uradila. Njegovažena i sin su
+pokušali da zaustave krvarenje takošto su mu stavili krpu u predjelu gdje je uboden. Ubrzo je došla služba
+Hitne pomoći koja ga je odvela u bolnicu u Starom Baru gdje je zadržan radi daljeg liječenja, i tu je bio u
+periodu od 09.01 do 14.01.2014. godine. Povrede koje je zadobio od noža, nijesu bile teške povrede, jer je on
+već narednog dana mogao da izađe iz bolnice i normalno se kretao, ali je u bolnici ostao na zahtjev ljekara.
+Odmah po izlasku iz bolnice nastavio je normalno da radi na svojim poslovima, č ak je radio i teške fizičke
+poslove na utovaru i istovaru robe, i to mu nije predstavljalo nikakvu teškoću, jer ta povreda koju je zadobio
 je samo jedna manja posjekotina. Potvrdio je da je i u ranijem periodu maltretirao svoju suprugu i djecu, ali
-da se to svodilo samo na uvredljive rije č i, ali ih nije fizi č ki zlostavljao. Sa svojom porodicom nikada nije imao
-problema zbog njihovog pona š anja, a da je razlog njihovih sva đ a bila nema š tina, te da njegov sin sigurno ne
-bi digao no ž  na njega da ga on nije prethodno maltretirao. Njegova supruga se ž alila njegovom bratu i
-sestrama na njegovo pona š anje i oni su č ak poku š avali da uti č u na njega da ih vi š e ne maltretira. U
-kona č nom je istakao da je njegov sin Aleksandar poslije ovog doga đ aja sa njim uspostavio normalan odnos i
-da ž ive u istom stanu. Nije se pridru ž io krivi č nom gonjenju, niti je postaviljao imovinskopravni zahtjev i
-dodao da nema nikakvih posledica od povrede koju je zadobio, da vi š e ne pije, te da i dalje ž ive zajedno kao
-porodica u istoj ku ć i.
- 
-Svjedok M.. R.. je u svom svedo č kom iskazu navela da je dana 08.01.2014. godine bila na poslu od 08,00
-časova do 16,00 č asova, a njen suprug je u periodu od 08,00 do 15,00 č asova tako đ e bio na poslu, dok je
-njihov sin Aleksandar ostao ku ć i, a toga dana su se njeni mla đ i sinovi Jovan i Bogdan nalazili u Trebinju kod
-njene sestre. Negdje oko pono ć i je njen suprug do š ao u ku ć u i tom prilikom je bio u vidno pijanom stanju.
-Odmah po ulasku u dnevnu sobu po č eo je da vrije đ a nju i sina Aleksandra govore ć i im da su nikakvi, da su
-maloumni, da su glupi, da ne mo ž e vi š e da ž ivi sa njima, da im vi š e ne ć e pla ć ati stan, a njoj je upu ć ivao
-vulgarne rije č i nazivaju ć i je “ kurvo, droljo, navodno č isti š  po ku ć ama, a u stvari se vi đ a š  sa drugim
-muš karcima”. Zatim je po š ao u kuhinju i uzeo da ve č era, i dok je ve č erao ponovo im se obratio govore ć i im
-razne uvredljive rije č i. Na te njegove uvrede nijesu odgovarali ni ona, ni sin, ali je on i pored tog nastavio da ih
-maltretira govore ć i kako se on mu č i za sve njih, da oni ni š ta ne rade, da vi š e ne ć e da radi za njih, da moraju
-sami da se snalaze i ponovo joj uputio razne vulgarne rije č i govore ć i da je “ kurva”. Zatim je isklju č io televizor
-i rekao da vi š e ne ć e da pla ć a struju i da vi š e ne ć e mo ć i da gledaju televiziju. Njen sin je tada reagovao pitaju ć i
-ga zbog č ega je ugasio televizor, nakon č ega je o š te ć eni krenuo prema spava ć oj sobi i sa vrata od sobe im se
-obratio rije č ima “ dosta mi vas je vi š e, ja pla ć am struju”. U š ao je u spava ć u sobu i legao, da bi oko 02,00 č asa
-izaš ao iz spava ć e sobe i kada je primijetio da je televizor uklju č en po č eo je da vi č e na njih, i šč upao je kabal od
-televizora iz uti č nice i rekao im da ne ć e vi š e gledati televiziju. Njen sin Aleksandar je zatim ustao sa kau č a na
-kojem je sjedio, upalio svijetlo i krenuo u pravcu sudopere, odakle je uzeo jedan kuhinjski no ž  i kada je pri š ao
-njenom suprugu sa tim no ž em ga je ubo u predjelu grudi, i to preko nje, jer je poku š avala da ga sprije č i da
-upotrijebi no ž . U tom momentu je mislila da njen suprug nije te ž e povrije đ en, jer je on nastavio da pri č a i
-ostao je da stoji na nogama i malo je krvario. Nakon toga pozvala je Hitnu pomo ć , a dok su do š la kola Hitne
-pomo ć i, ona je svom suprugu isprala ranu alkoholom i stavila krpu kako bi zaustavila krvarenje. Nakon
-desetak minuta do š la je slu ž ba Hitne pomo ć i i nakon ukazane prve pomo ć i na licu mjesta, odvezli su ga u
-bolnicu. Istakla je da je sve ovom vrlo te š ko palo njenom sinu i on se puno kaje zbog toga, da je ina č e, miran i
-nikada nije bilo primjedbi na njegovo pona š anje. Istakla je da je njen suprug i ranije vi š e puta maltretirao, č ak
+da se to svodilo samo na uvredljive riječi, ali ih nije fizički zlostavljao. Sa svojom porodicom nikada nije imao
+problema zbog njihovog ponašanja, a da je razlog njihovih svađa bila nemaština, te da njegov sin sigurno ne
+bi digao nožna njega da ga on nije prethodno maltretirao. Njegova supruga sežalila njegovom bratu i
+sestrama na njegovo ponašanje i oni sučak pokušavali da utiču na njega da ih više ne maltretira. U
+konačnom je istakao da je njegov sin Aleksandar poslije ovog događaja sa njim uspostavio normalan odnos i
+dažive u istom stanu. Nije se pridružio krivičnom gonjenju, niti je postaviljao imovinskopravni zahtjev i
+dodao da nema nikakvih posledica od povrede koju je zadobio, da više ne pije, te da i dalježive zajedno kao
+porodica u istoj kući.
+
+Svjedok M.. R.. je u svom svedočkom iskazu navela da je dana 08.01.2014. godine bila na poslu od 08,00
+časova do 16,00časova, a njen suprug je u periodu od 08,00 do 15,00časova takođe bio na poslu, dok je
+njihov sin Aleksandar ostao kući, a toga dana su se njeni mlađi sinovi Jovan i Bogdan nalazili u Trebinju kod
+njene sestre. Negdje oko ponoći je njen suprug došao u kuću i tom prilikom je bio u vidno pijanom stanju.
+Odmah po ulasku u dnevnu sobu počeo je da vrijeđa nju i sina Aleksandra govoreći im da su nikakvi, da su
+maloumni, da su glupi, da ne može više daživi sa njima, da im više neće plaćati stan, a njoj je upućivao
+vulgarne riječi nazivajući je “ kurvo, droljo, navodnočistišpo kućama, a u stvari se viđašsa drugim
+muš karcima”. Zatim je pošao u kuhinju i uzeo da večera, i dok je večerao ponovo im se obratio govoreći im
+razne uvredljive riječi. Na te njegove uvrede nijesu odgovarali ni ona, ni sin, ali je on i pored tog nastavio da ih
+maltretira govoreći kako se on muči za sve njih, da oni ništa ne rade, da više neće da radi za njih, da moraju
+sami da se snalaze i ponovo joj uputio razne vulgarne riječi govoreći da je “ kurva”. Zatim je isključio televizor
+i rekao da više neće da plaća struju i da više neće moći da gledaju televiziju. Njen sin je tada reagovao pitajući
+ga zbogčega je ugasio televizor, nakončega je oštećeni krenuo prema spavaćoj sobi i sa vrata od sobe im se
+obratio riječima “ dosta mi vas je više, ja plaćam struju”. Ušao je u spavaću sobu i legao, da bi oko 02,00časa
+izašao iz spavaće sobe i kada je primijetio da je televizor uključen počeo je da viče na njih, iščupao je kabal od
+televizora iz utičnice i rekao im da neće više gledati televiziju. Njen sin Aleksandar je zatim ustao sa kauča na
+kojem je sjedio, upalio svijetlo i krenuo u pravcu sudopere, odakle je uzeo jedan kuhinjski noži kada je prišao
+njenom suprugu sa tim nožem ga je ubo u predjelu grudi, i to preko nje, jer je pokušavala da ga spriječi da
+upotrijebi no ž. U tom momentu je mislila da njen suprug nije teže povrijeđen, jer je on nastavio da priča i
+ostao je da stoji na nogama i malo je krvario. Nakon toga pozvala je Hitnu pomoć, a dok su došla kola Hitne
+pomoći, ona je svom suprugu isprala ranu alkoholom i stavila krpu kako bi zaustavila krvarenje. Nakon
+desetak minuta došla je služba Hitne pomoći i nakon ukazane prve pomoći na licu mjesta, odvezli su ga u
+bolnicu. Istakla je da je sve ovom vrlo teško palo njenom sinu i on se puno kaje zbog toga, da je inače, miran i
+nikada nije bilo primjedbi na njegovo ponašanje. Istakla je da je njen suprug i ranije više puta maltretirao, č ak
 ga je jednom i prijavila policiji, ali po toj prijavi nije pokrenut nikakav postupak. Razgovarala je sa njegovom
-porodicom kako bi oni uticali na njega da se vi š e tako na pona š a, ali on je i dalje nastavio sa agresivnim
-pona š anjem. Nakon š to je je njen sin ubo no ž em njenog supruga, i nakon š to je slu ž ba Hitne pomo ć i povezla
-njenog supruga u bolnicu, smirivala je svog sina govore ć i mu da vrijeme ne mo ž e da vrati.
- 
-Iz zapisnika o uvi đ aju CB Bar Ku.br.6/14 od 09.01.2014. godine proizilazi da je isti sa č injen dana 09.01.2014.
-godine na okolnosti vr š enja uvi đ aja krivi č nog djela ubistvo u poku š aju iz č l. 143 u vezi č l. 20 KZ-a, uč injenog
-na š tetu M.. N.. iz Bara. Prije preduzimanja uvi đ aja de ž urna slu ž ba CB Bar telefonskim putem je obavije š tena
-od strane jedinice za HMP u Baru, da transportuju jedno lice u Op š tu bolnicu u Starom Baru, te da je to lice
-zadobilo povredu u predjelu grudnog ko š a, o š trim predmetom. Uvi đ ajem na licu mjesta utvr đ eno je da lice
-mjesta predstavlja prizemna ku ć a ( Vl.Ne š kovi ć  Vjere iz Bara) koja se nalazi u naselju Bjeli š i bb. Ku ć a je
-prizemna, ogra đ ena metalnom ogradom sa tri strane, dok se sa zadnje strane ku ć e nalazi kanalisani potok
+porodicom kako bi oni uticali na njega da se više tako na ponaša, ali on je i dalje nastavio sa agresivnim
+
+ponašanjem. Nakonšto je je njen sin ubo nožem njenog supruga, i nakonšto je služba Hitne pomoći povezla
+njenog supruga u bolnicu, smirivala je svog sina govoreći mu da vrijeme ne može da vrati.
+
+Iz zapisnika o uviđaju CB Bar Ku.br.6/14 od 09.01.2014. godine proizilazi da je isti sačinjen dana 09.01.2014.
+godine na okolnosti vršenja uviđaja krivičnog djela ubistvo u pokušaju izčl. 143 u vezičl. 20 KZ-a, uč injenog
+naštetu M.. N.. iz Bara. Prije preduzimanja uviđaja dežurna služba CB Bar telefonskim putem je obaviještena
+od strane jedinice za HMP u Baru, da transportuju jedno lice u Opštu bolnicu u Starom Baru, te da je to lice
+zadobilo povredu u predjelu grudnog koša, oštrim predmetom. Uviđajem na licu mjesta utvrđeno je da lice
+mjesta predstavlja prizemna kuća ( Vl.Nešković Vjere iz Bara) koja se nalazi u naselju Bjeliši bb. Kuća je
+prizemna, ograđena metalnom ogradom sa tri strane, dok se sa zadnje strane kuće nalazi kanalisani potok
 betonskim zidom. U istu se ulazi kroz metalna ulazna vrata u hodnik, iz koga se lijevo od ulaznih vrata ulazi u
-prvu spava ć u sobu, pravo se ulazi u dnevni boravak sa kuhinjom. Pravo od ulaznih vrata od dnevnog boravka,
-a pored kuhinje ulazi se u kupatilo. Lijevo od ulaznih vrata u dnevni boravak ulazi se u drugu spava ć u sobu.
-Na licu mjesta prona đ eni su i fiksirani slede ć i tragovi: kapljice te č nosti crvene boje nalik na krv, koje se nalaze
-na otira č u u dnevnom boravku, a ispred ulaznih vrata od spava ć e sobe, obris te č nosti crvene boje nalik na
-krv, koji se nalazi na podu-laminatu u spava ć oj sobi koja se nalazi lijevo od ulaznih vrata od dnevnog
-boravka, trag crvene te č nosti nalik na krv, koji se nalazi na kvaki od vrata sa unutra š nje strane, od spava ć e
+prvu spavaću sobu, pravo se ulazi u dnevni boravak sa kuhinjom. Pravo od ulaznih vrata od dnevnog boravka,
+a pored kuhinje ulazi se u kupatilo. Lijevo od ulaznih vrata u dnevni boravak ulazi se u drugu spavaću sobu.
+Na licu mjesta pronađeni su i fiksirani sledeći tragovi: kapljice tečnosti crvene boje nalik na krv, koje se nalaze
+na otiraču u dnevnom boravku, a ispred ulaznih vrata od spavaće sobe, obris tečnosti crvene boje nalik na
+krv, koji se nalazi na podu-laminatu u spavaćoj sobi koja se nalazi lijevo od ulaznih vrata od dnevnog
+boravka, trag crvene tečnosti nalik na krv, koji se nalazi na kvaki od vrata sa unutrašnje strane, od spavaće
 sobe koja se nalazi lijevo od ulaznih vrata u dnevnom boravku, korpa za otpatke, braon boje, koja se nalazi u
-hodniku do zida sa desne strane od ulaznih vrata ku ć e, kuhinjski no ž , sa drvenom dr ž kom braon boje,
-rebrastog-reckastog sje č iva du ž ine oko 11cm, prona đ en u navedenoj korpi za odpatke, trik majica, plave
-boje, na kojoj se nalaze tragovi te č nosti crvene boje, nalik na krv, prona đ ena u navedenoj korpi za odpatke,
-krpa za posu đ e bijele boje sa plavim kockama, na kojoj se nalaze tragovi te č nosti crvene boje, nalik na krv,
-prona đ ena u navedenoj korpi za odpatke. Kompletno lice mjesta je fotografisano od strane krim tehni č ara, a
-navedeni tragovi su fiksirani, izuzeti i proslije đ eni na odgovaraju ć a vje š ta č enja u Forenzi č ki centar u
+hodniku do zida sa desne strane od ulaznih vrata kuće, kuhinjski no ž, sa drvenom držkom braon boje,
+rebrastog-reckastog sječiva dužine oko 11cm, pronađen u navedenoj korpi za odpatke, trik majica, plave
+boje, na kojoj se nalaze tragovi tečnosti crvene boje, nalik na krv, pronađena u navedenoj korpi za odpatke,
+krpa za posuđe bijele boje sa plavim kockama, na kojoj se nalaze tragovi tečnosti crvene boje, nalik na krv,
+pronađena u navedenoj korpi za odpatke. Kompletno lice mjesta je fotografisano od strane krim tehničara, a
+navedeni tragovi su fiksirani, izuzeti i proslijeđeni na odgovarajuća vještačenja u Forenzički centar u
 Danilovgradu.
- 
+
 Iz potvrde CB Bar Ku.br.6/14 od 09.01.2014. godine o privremeno oduzetim predmetima proizilazi da je
-ovla šć eni policijski slu ž benik od lica M.. R.. privremeno oduzeo slede ć e predmete: kuhinjski no ž  sa drvenom
-drškom braon boje, rebrastog-reckastog sje č iva du ž ine oko 11cm; trik majica plave boje bez aplikacija, na
-kojoj se uo č avaju tragovi te č nosti crvene boje nalik na krv; krpa za posu đ e, bijele boje, sa plavim kockama na
-kojoj se uo č avaju tragovi te č nosti crvene boje nalik na krv.
- 
-Iz cjelokupne medicinske dokumentacije zajedno sa istorijom bolesti Op š te bolnice Bar proizilazi da je
-ošte ć eni M.. N.. primljen u JZU Op š ta bolnica Bar 09.01.2014. godine kao hitan slu č aj zbog povrede desne
-strane grudnog ko š a, a u alkoholisanom stanju. O š te ć eni je klini č ki, laboratorijski i radiolo š ki hitno obra đ en,
-u uslovima lokalne anestezije ura đ ena je drena ž a desne pleure. Pacijent je otpu š ten iz bolnice 14.01.2014.
-godine u dobrom op š tem stanju uz odgovaraju ć u terapiju. Naprijed navedenu medicinsku dokumentaciju
-koristio je stalni sudski vje š tak medicinske struke dr Radojevi ć  Nemanja pri izradi nalaza i mi š ljenja. On je u
-svom nalazu, a na osnovu medicinske dokumentacije, kao i podataka dobijenih klini č kim
-sudskomedicinskim pregledom utvrdio da je o š te ć eni M.. N.. zadobio ubodno-reznu ranu u desnom
-potklju č nom predjelu, koja se kanalom sa smjerom unazad nastavlja kroz tre ć i me đ urebarni prostor, ulazi u
-desnu polovinu grudne duplje i zavr š ava u tkivu desnog plu ć nog krila, pra ć ena prisustvom krvi i vazduha u
-desnoj polovini grudne duplje. Navedena povreda posledica je dejstva vrha i o š trice aktivno zamahnutog
-mehani č kog oru đ a – no ž a. U vrijeme nano š enja, zadobijena povreda se kvalifikuje kao te š ka tjelesna povreda
-opasna po ž ivot, odnosno kvalifikovana (osobito) te š ka tjelesna povreda, a opasnost po ž ivot je otklonjena
-blagovremenom hiru š kom intervencijom. Na glavnom pretresu vje š tak je ostao pri svom pismenom nalazu,
-posebno objasnio da je intezitet sile prilikom zadavanja udarca, koji je doveo do povre đ ivanja, bio srednje
-jak, odnosno cijela du ž ina sje č iva nije prodrla u tijelo o š te ć enog. Tako đ e je naveo da iz medicinske
-dokumentacije, a na osnovu zadobijenih povreda i obilnosti krvarenja, du ž ina kanala rane je bila oko 4 do
-5cm. Š to se ti č e polo ž aja u trenutku zadobijanja povreda, o š te ć eni i napada č  su se nalazili u polo ž aju licem u
-lice, imaju ć i u vidu da je napada č  lijevoruk i da je no ž  dr ž ao u lijevoj ruci, š to je bilo nesporno i potvrdjeno od
-optu ž enog i o š te ć enog.
- 
-Iz izvje š taja Forenzi č kog centra Danilovgrad broj 157/14 o DNK vje š ta č enju proizilazi da je nakon izvr š enih
-analiza na sje č ivu no ž a, plavoj trik majici, kuhinjskoj krpi utvr đ eno prisustvo krvi ljudskog porijekla, pri č emu
-krajnji rezultat daje ekstremno jaku podr š ku hipotezi da je krv porijeklom od M.. N... Na uzorku izuzetom sa
-drške no ž a dobijen je mije š ani DNK profil, kome su doprinijele najmanje dvije osobe. Takođe je navedeno da
-se M.. A.., M.. N.., i M.. R.. ne mogu isklju č iti kao mogu ć i donori, dok dalji biostatisti č ki prora č un na ovome
-uzorku nije mogu ć e sprovesti, usljed prisustva srodni č kih veza.
- 
-Iz izvje š taja Forenzi č kog centra Danilovgrad broj 158/14-1 o trasolo š kom vje š ta č enju proizilazi da na trik
-majici o š te ć enog M.. N.. nijesu uo č ena o š te ć enja koja su posledica dostavljenog no ž a.
- 
-Iz nalaza i mi š ljenja Komisije vje š taka pri Klinici za psihijatriju Podgorica od 09.06.2014. godine proizilazi da je
-optu ž eni M.. A.. osoba ispodprosje č nih intelektualnih potencijala, ne boluje od trajnog du š evnog oboljenja,
-niti te ž eg du š evnog poreme ć aja. Od djetinjstva se lije č i od mje š ovitog tipa epilepsije (padavice) sa
-posledicama na psihi č kom planu po tipu epilepti č kog poreme ć aja li č nosti. U vrijeme izvr š enja krivi č nog djela
-nalazio se u stanju afekta straha, razdra ž enosti, bijesa jakog inteziteta koje odgovara stanju privremene
-duš evne poreme ć enosti. Sposobnost shvatanja zna č aja djela kao i mogu ć nost upravljanja svojim
-postupcima kod optu ž enog u vrijeme izvr š enja krivi č nog djela je bila bitno smanjena. Tako đ e je navedeno da
-nema indikacija za primjenu mjera bezbijednosti. Na glavnom pretresu u ime Komisije vje š taka, stalni sudski
-vješ tak psihijatrijske struke dr Ž eljko Golubovi ć  ostao je pri pismenom nalazu i mi š ljenju, s tim š to je posebno
-objasnio da u pisanom nalazu i mi š ljenju nisu razdvojili afektivno stanje straha, razdra ž enosti i bijesa iz
-razloga š to upravo preddeliktni period, u dva navrata, nesumnjivo govori da je o š te ć eni iskazao pona š anje na
-provokativan na č in u vidu verbalne i fizi č ke agresije prema majci optu ž enog, kao i prema optu ž enom, da je
-ošte ć eni bio u vidno alkoholisanom stanju, da prakti č no nije znao š ta radi, kako je sam izjavio u sudskim
-spisima, odnosno da je ispoljavao agresivno pona š anje prema svom sinu. Sam optu ž eni je naveo da se
-njegov otac kretao prema njemu, da je dr ž ao bocu, da je majka stala izme đ u njih, pa je taj dio deliktne
-situacije doveo optu ž enog u situaciju stanja straha, a cjelokupno pona š anje njegovog oca u preddeliktnom i
-deliktnom periodu je kod optu ž enog dovelo do afekta razdra ž enosti i bijesa. Tako đ e je naveo da je u trenutku
-neposrednog izvr š enja krivi č nog djela, pona š anje o š te ć enog generisalo kod optu ž enog stanje afekta
-razdra ž enosti i bijesa, a strah je na sekundarnom nivou. Nivo patolo š kog afekta prema mi š ljenju Komisije
-vješ taka je dostignut u momentu tkz. drugog dijela deliktne situacije kada se o š te ć eni pona š ao agresivno
-odnosno kada je isklju č io struju, vikao na optu ž enog i u tom stanju do š lo je do kulminacije afekta do nivoa
-jake razdra ž enosti.
- 
-Iz izvoda iz Kaznene evidencije CB Bar 71-03-245/14-128/2 od 14.01.2014. godine proizilazi da optu ž eni M.. A..
+ovlašćeni policijski službenik od lica M.. R.. privremeno oduzeo sledeće predmete: kuhinjski nožsa drvenom
+drškom braon boje, rebrastog-reckastog sječiva dužine oko 11cm; trik majica plave boje bez aplikacija, na
+kojoj se uočavaju tragovi tečnosti crvene boje nalik na krv; krpa za posuđe, bijele boje, sa plavim kockama na
+kojoj se uočavaju tragovi tečnosti crvene boje nalik na krv.
+
+Iz cjelokupne medicinske dokumentacije zajedno sa istorijom bolesti Opšte bolnice Bar proizilazi da je
+oštećeni M.. N.. primljen u JZU Opšta bolnica Bar 09.01.2014. godine kao hitan slučaj zbog povrede desne
+strane grudnog koša, a u alkoholisanom stanju. Oštećeni je klinički, laboratorijski i radiološki hitno obrađen,
+u uslovima lokalne anestezije urađena je drenaža desne pleure. Pacijent je otpušten iz bolnice 14.01.2014.
+godine u dobrom opštem stanju uz odgovarajuću terapiju. Naprijed navedenu medicinsku dokumentaciju
+koristio je stalni sudski vještak medicinske struke dr Radojević Nemanja pri izradi nalaza i mišljenja. On je u
+svom nalazu, a na osnovu medicinske dokumentacije, kao i podataka dobijenih kliničkim
+sudskomedicinskim pregledom utvrdio da je oštećeni M.. N.. zadobio ubodno-reznu ranu u desnom
+potključnom predjelu, koja se kanalom sa smjerom unazad nastavlja kroz treći međurebarni prostor, ulazi u
+desnu polovinu grudne duplje i završava u tkivu desnog plućnog krila, praćena prisustvom krvi i vazduha u
+desnoj polovini grudne duplje. Navedena povreda posledica je dejstva vrha i oštrice aktivno zamahnutog
+mehaničkog oruđa – noža. U vrijeme nanošenja, zadobijena povreda se kvalifikuje kao teška tjelesna povreda
+opasna poživot, odnosno kvalifikovana (osobito) teška tjelesna povreda, a opasnost poživot je otklonjena
+blagovremenom hiruškom intervencijom. Na glavnom pretresu vještak je ostao pri svom pismenom nalazu,
+
+posebno objasnio da je intezitet sile prilikom zadavanja udarca, koji je doveo do povređivanja, bio srednje
+jak, odnosno cijela dužina sječiva nije prodrla u tijelo oštećenog. Takođe je naveo da iz medicinske
+dokumentacije, a na osnovu zadobijenih povreda i obilnosti krvarenja, dužina kanala rane je bila oko 4 do
+5cm. Š to se tiče položaja u trenutku zadobijanja povreda, oštećeni i napadačsu se nalazili u položaju licem u
+lice, imajući u vidu da je napadačlijevoruk i da je noždržao u lijevoj ruci, š to je bilo nesporno i potvrdjeno od
+optuženog i oštećenog.
+
+Iz izvještaja Forenzičkog centra Danilovgrad broj 157/14 o DNK vještačenju proizilazi da je nakon izvršenih
+analiza na sječivu noža, plavoj trik majici, kuhinjskoj krpi utvrđeno prisustvo krvi ljudskog porijekla, pričemu
+krajnji rezultat daje ekstremno jaku podršku hipotezi da je krv porijeklom od M.. N... Na uzorku izuzetom sa
+drške noža dobijen je miješani DNK profil, kome su doprinijele najmanje dvije osobe. Takođe je navedeno da
+se M.. A.., M.. N.., i M.. R.. ne mogu isključiti kao mogući donori, dok dalji biostatistički proračun na ovome
+uzorku nije moguće sprovesti, usljed prisustva srodničkih veza.
+
+Iz izvještaja Forenzičkog centra Danilovgrad broj 158/14-1 o trasološkom vještačenju proizilazi da na trik
+majici oštećenog M.. N.. nijesu uočena oštećenja koja su posledica dostavljenog noža.
+
+Iz nalaza i mišljenja Komisije vještaka pri Klinici za psihijatriju Podgorica od 09.06.2014. godine proizilazi da je
+optuženi M.. A.. osoba ispodprosječnih intelektualnih potencijala, ne boluje od trajnog duševnog oboljenja,
+niti težeg duševnog poremećaja. Od djetinjstva se liječi od mješovitog tipa epilepsije (padavice) sa
+posledicama na psihičkom planu po tipu epileptičkog poremećaja ličnosti. U vrijeme izvršenja krivičnog djela
+nalazio se u stanju afekta straha, razdraženosti, bijesa jakog inteziteta koje odgovara stanju privremene
+duš evne poremećenosti. Sposobnost shvatanja značaja djela kao i mogućnost upravljanja svojim
+postupcima kod optuženog u vrijeme izvršenja krivičnog djela je bila bitno smanjena. Takođe je navedeno da
+nema indikacija za primjenu mjera bezbijednosti. Na glavnom pretresu u ime Komisije vještaka, stalni sudski
+vještak psihijatrijske struke dr Željko Golubovićostao je pri pismenom nalazu i mišljenju, s timšto je posebno
+objasnio da u pisanom nalazu i mišljenju nisu razdvojili afektivno stanje straha, razdraženosti i bijesa iz
+razlogašto upravo preddeliktni period, u dva navrata, nesumnjivo govori da je oštećeni iskazao ponašanje na
+provokativan način u vidu verbalne i fizičke agresije prema majci optuženog, kao i prema optuženom, da je
+oštećeni bio u vidno alkoholisanom stanju, da praktično nije znaošta radi, kako je sam izjavio u sudskim
+spisima, odnosno da je ispoljavao agresivno ponašanje prema svom sinu. Sam optuženi je naveo da se
+njegov otac kretao prema njemu, da je držao bocu, da je majka stala između njih, pa je taj dio deliktne
+situacije doveo optuženog u situaciju stanja straha, a cjelokupno ponašanje njegovog oca u preddeliktnom i
+deliktnom periodu je kod optuženog dovelo do afekta razdraženosti i bijesa. Takođe je naveo da je u trenutku
+neposrednog izvršenja krivičnog djela, ponašanje oštećenog generisalo kod optuženog stanje afekta
+razdraženosti i bijesa, a strah je na sekundarnom nivou. Nivo patološkog afekta prema mišljenju Komisije
+vještaka je dostignut u momentu tkz. drugog dijela deliktne situacije kada se oštećeni ponašao agresivno
+odnosno kada je isključio struju, vikao na optuženog i u tom stanju došlo je do kulminacije afekta do nivoa
+jake razdraženosti.
+
+Iz izvoda iz Kaznene evidencije CB Bar 71-03-245/14-128/2 od 14.01.2014. godine proizilazi da optuženi M.. A..
 nije evidentiran u Kaznenu evidenciju CB Bar.
- 
-Uvidom u fotodokumentaciju CB Bar br.17/14 od 09.01.2014. godine proizilazi da je ista sa č injena povodom
-fotografisanja prostorija – ku ć e u kojoj ž ive optu ž eni i o š te ć eni kao podstanari i gdje je izvr š eno krivi č no djelo,
-kao i tragova koji su izuzeti sa lica mjesta i upu ć eni na odgovaraju ć a vje š ta č enja.
- 
-Cijene ć i navode optu ž be, odbranu optu ž enog, provedene dokaze i utvr đ eno č injeni č no stanje, sud nalazi da
-je optu ž eni izvr š io krivi č no djelo koje mu se stavlja na teret, na na č in, u vrijeme i na mjestu kako je to
-utvrđ eno izrekom presude.
- 
-Naime, u postupku je nesumnjivo utvr đ eno da je optu ž eni dana 09.01.2014. godine, oko 02,20 č asova, u Baru,
-u naselju Bjeli š i bb, u ku ć i vlasni š tvo Ne š kovi ć  Vjere, sa umi š ljajem, sposoban da shvati zna č aj djela i upravlja
-svojim postupcima, svjestan zabranjenosti radnje koju preduzima i ž ele ć i njeno izvr š enje, u stanju bitno
-smanjene ura č unljivosti poku š ao da li š i ž ivota na mah svog oca - o š te ć enog M.. N.., doveden bez svoje krivice
-u jaku razdra ž enost te š kim vrije đ anjem od strane o š te ć enog, na na č in š to je nakon š to je prethodno o š te ć eni
-doš ao u ku ć u u vidno pijanom stanju i vrije đ ao okrivljenog i njegovu majku M.. R.., govore ć i im da su „nikakvi,
-da su maloumni, da su glupi, da ne mo ž e vi š e da ž ivi sa njima, da im vi š e ne ć e pla ć ati stan, da ne ć e vi š e da ih
-hrani, da ć e morati da se sami hrane“, a majci okrivljenog upu ć uju ć i i rije č i „kurvo, droljo, navodno č isti š  po
-kućama, a u stvari se vi đ a š  sa drugim mu š karcima“, potom im o š te ć eni isklju č io televizor i po š ao u spava ć u
-sobu da spava, a onda se ponovo vratio u prostoriju gdje su sjedjeli okrivljeni i njegova majka nastavljaju ć i sa
-vrije đ anjem rije č ima da ć e morati oni njega da hrane i i šč upao kabal od televizora iz uti č nice, nakon č ega je
-okrivljeni iz kuhinje dohvatio kuhinjski no ž , du ž ine sje č iva 11,5 cm i sa navedenim no ž em uboo o š te ć enog u
-predjelu desne strane grudnog ko š a, kojom prilikom je o š te ć eni zadobio te š ku tjelesnu povredu opasnu po
-život u vidu ubodno-rezne rane u desnom potklju č nom predjelu, koja se kanalom sa smjerom unazad
-nastavlja kroz tre ć i me đ urebarni prostor, ulazi u desnu polovinu grudne duplje i zavr š ava u tkivu desnog
-pluć nog tkiva, pra ć ena prisustvom krvi i vazduha u desnoj polovini grudne duplje.
- 
-Naprijed navedeno č injeni č no stanje je nesporno utvr đ eno na osnovu svih materijalnih i personalnih dokaza
+
+Uvidom u fotodokumentaciju CB Bar br.17/14 od 09.01.2014. godine proizilazi da je ista sačinjena povodom
+fotografisanja prostorija – kuće u kojojžive optuženi i oštećeni kao podstanari i gdje je izvršeno krivično djelo,
+
+kao i tragova koji su izuzeti sa lica mjesta i upućeni na odgovarajuća vještačenja.
+
+Cijeneći navode optužbe, odbranu optuženog, provedene dokaze i utvrđenočinjenično stanje, sud nalazi da
+je optuženi izvršio krivično djelo koje mu se stavlja na teret, na način, u vrijeme i na mjestu kako je to
+utvrđeno izrekom presude.
+
+Naime, u postupku je nesumnjivo utvrđeno da je optuženi dana 09.01.2014. godine, oko 02,20časova, u Baru,
+u naselju Bjeliši bb, u kući vlasništvo Nešković Vjere, sa umišljajem, sposoban da shvati značaj djela i upravlja
+svojim postupcima, svjestan zabranjenosti radnje koju preduzima iželeći njeno izvršenje, u stanju bitno
+smanjene uračunljivosti pokušao da lišiživota na mah svog oca - oštećenog M.. N.., doveden bez svoje krivice
+u jaku razdraženost teškim vrijeđanjem od strane oštećenog, na načinšto je nakonšto je prethodno oštećeni
+doš ao u kuću u vidno pijanom stanju i vrijeđao okrivljenog i njegovu majku M.. R.., govoreći im da su „nikakvi,
+da su maloumni, da su glupi, da ne može više daživi sa njima, da im više neće plaćati stan, da neće više da ih
+hrani, daće morati da se sami hrane“, a majci okrivljenog upućujući i riječi „kurvo, droljo, navodnočistišpo
+kućama, a u stvari se viđašsa drugim muškarcima“, potom im oštećeni isključio televizor i pošao u spavaću
+sobu da spava, a onda se ponovo vratio u prostoriju gdje su sjedjeli okrivljeni i njegova majka nastavljajući sa
+vrijeđanjem riječima daće morati oni njega da hrane i iščupao kabal od televizora iz utičnice, nakončega je
+okrivljeni iz kuhinje dohvatio kuhinjski no ž, dužine sječiva 11,5 cm i sa navedenim nožem uboo oštećenog u
+predjelu desne strane grudnog koša, kojom prilikom je oštećeni zadobio tešku tjelesnu povredu opasnu po
+život u vidu ubodno-rezne rane u desnom potključnom predjelu, koja se kanalom sa smjerom unazad
+nastavlja kroz treći međurebarni prostor, ulazi u desnu polovinu grudne duplje i završava u tkivu desnog
+plućnog tkiva, praćena prisustvom krvi i vazduha u desnoj polovini grudne duplje.
+
+Naprijed navedenočinjenično stanje je nesporno utvrđeno na osnovu svih materijalnih i personalnih dokaza
 koji su provedeni na glavnom pretresu.
- 
-Prilikom utvr đ ivanja č injeni č nog stanja sud je prvenstveno po š ao od iskaza o š te ć enog svjedoka M.. N.. koji je
-na jasan, potpun i nedvosmislen na č in opisao predmetni doga đ aj, navode ć i da je dana 08.01.2014. godine,
-doš ao ku ć i oko pono ć i, toliko pijan da se nije sje ć ao ni ko ga je doveo, a prethodno je popio ve ć u koli č inu
-rakije i piva u vi š e kafana po Baru. Potvrdio je da je odmah po ulasku u ku ć u po č eo da vrijedja i suprugu i sina
-(mada je obja š njavao da se ne sje ć a ta č nih rije č i koje im je upu ć ivao), da im je branio da gledaju televiziju, da
-je ugasio televizor, da je nastavio da pije rakiju, da je poslije izvjesnog vremena po š ao da spava u spava ć oj
-sobi, ali se ubrzo probudio, vratio u dnevnu sobu gdje je nastavio da vrijedja suprugu i sina. O š te ć eni je
-objasnio da mu je u jednom trenutku sin A.. priš ao kako bi ga sprije č io da i dalje pije, da je on poku š ao da ga
-tada udari, a potom je sin sa š anka uzeo kuhinjski no ž  i ubo ga u predjelu desne strane grudi u blizini ramena.
-Sud je prihvatio iskaz o š te ć enog, jer je bio saglasan iskazu svjedoka M.. R.. koja je sudu potvrdila da je oko
-pono ć i njen suprug do š ao u ku ć u, u vidno pijanom stanju, da je odmah po ulasku u dnevnu sobu po č eo je da
-vrije đ a nju i sina A.. govore ć i im da su nikakvi, da su maloumni, da su glupi, da ne mo ž e vi š e da ž ivi sa njima,
-da im vi š e ne ć e pla ć ati stan, a njoj je upu ć ivao vulgarne rije č i nazivaju ć i je “ kurvo, droljo, navodno čistiš  po
-kućama, a ustvari se vi đ a š  sa drugim mu š karcima”. Takodje ih je maltretirao govore ć i kako se on mu č i za sve
-njih, da oni ni š ta ne rade, da vi š e ne ć e da radi za njih, da moraju sami da se snalaze i ponovo joj uputio razne
-vulgarne rije č i govore ć i da je “ kurva”, zatim je isklju č io televizor i rekao da vi š e ne ć e da pla ć a struju i da vi š e
-neće mo ć i da gledaju televiziju. Nakon š to je kratko odspavao, te iza š ao iz spava ć e sobe, i kada je primijetio
-da je televizor uklju č en po č eo je da vi č e na njih, i šč upao je kabal od televizora iz uti č nice i rekao im da ne ć e
-više gledati televiziju, a tada je njen sin A.. ustao sa kau č a na kojem je sjedio i iz sudopere uzeo jedan
-kuhinjski no ž  i pri š ao njenom suprugu i sa tim no ž em ga ubo u predjelu grudi, i to preko nje, jer je poku š avala
-da ga sprije č i da upotrijebi no ž .
- 
-Sud je u potpunosti poklonio vjeru iskazima o š te ć enog i svjedoka, jer su isti potvr đ eni i materijalnim
+
+Prilikom utvrđivanjačinjeničnog stanja sud je prvenstveno pošao od iskaza oštećenog svjedoka M.. N.. koji je
+na jasan, potpun i nedvosmislen način opisao predmetni događaj, navodeći da je dana 08.01.2014. godine,
+doš ao kući oko ponoći, toliko pijan da se nije sjećao ni ko ga je doveo, a prethodno je popio veću količinu
+rakije i piva u više kafana po Baru. Potvrdio je da je odmah po ulasku u kuću počeo da vrijedja i suprugu i sina
+(mada je objašnjavao da se ne sjeća tačnih riječi koje im je upućivao), da im je branio da gledaju televiziju, da
+je ugasio televizor, da je nastavio da pije rakiju, da je poslije izvjesnog vremena pošao da spava u spavaćoj
+sobi, ali se ubrzo probudio, vratio u dnevnu sobu gdje je nastavio da vrijedja suprugu i sina. Oštećeni je
+objasnio da mu je u jednom trenutku sin A.. prišao kako bi ga spriječio da i dalje pije, da je on pokušao da ga
+tada udari, a potom je sin sašanka uzeo kuhinjski noži ubo ga u predjelu desne strane grudi u blizini ramena.
+Sud je prihvatio iskaz oštećenog, jer je bio saglasan iskazu svjedoka M.. R.. koja je sudu potvrdila da je oko
+ponoći njen suprug došao u kuću, u vidno pijanom stanju, da je odmah po ulasku u dnevnu sobu počeo je da
+vrijeđa nju i sina A.. govoreći im da su nikakvi, da su maloumni, da su glupi, da ne može više daživi sa njima,
+da im više neće plaćati stan, a njoj je upućivao vulgarne riječi nazivajući je “ kurvo, droljo, navodno čistiš po
+kućama, a ustvari se viđašsa drugim muškarcima”. Takodje ih je maltretirao govoreći kako se on muči za sve
+njih, da oni ništa ne rade, da više neće da radi za njih, da moraju sami da se snalaze i ponovo joj uputio razne
+vulgarne riječi govoreći da je “ kurva”, zatim je isključio televizor i rekao da više neće da plaća struju i da više
+neće moći da gledaju televiziju. Nakonšto je kratko odspavao, te izašao iz spavaće sobe, i kada je primijetio
+da je televizor uključen počeo je da viče na njih, iščupao je kabal od televizora iz utičnice i rekao im da neće
+više gledati televiziju, a tada je njen sin A.. ustao sa kauča na kojem je sjedio i iz sudopere uzeo jedan
+
+kuhinjski noži prišao njenom suprugu i sa tim nožem ga ubo u predjelu grudi, i to preko nje, jer je pokušavala
+da ga spriječi da upotrijebi no ž.
+
+Sud je u potpunosti poklonio vjeru iskazima oštećenog i svjedoka, jer su isti potvrđeni i materijalnim
 dokazima koji su provedeni na glavnom pretresu i to potvrdom CB Bar Ku.br. 6/14 od 09.01.2014. godine o
-privremeno oduzetim predmetima, a kojom potvrdom je izme đ u ostalog oduzet no ž  koji je upotrijebljen
-prilikom izvr š enja krivi č nog djela, a njegov bli ž i izgled sud je utvrdio uvidom u fotodokumentaciju sa č injene
-na lice mjesta. Da je navedeni no ž  optu ž eni upotrijebio prilikom izvr š enja krivi č nog djela sud je utvrdio iz
-izvje š taja Forenzi č kog centra Danilovgrad o DNK vje š ta č enju, a kojim vje š ta č enjem je utvr đ eno da je na
-sječ ivu no ž a konstatovano prisustvo krvi ljudskog porijekla, pri č emu krajnji rezultat daje ekstremno jaku
-podr š ku hipotezi da je krv porijeklom od M.. N.. Naprijed navedeno u vezi je i sa nalazom i mi š ljenjem
-vješ taka medicinske struke koji se na jasan i detaljan na č in izjasnio o vrsti i te ž ini povreda kod o š te ć enog M..
-N.., koji je kriti č ne prilike zadobio ubodno-reznu ranu u desnom potklju č nom predjelu, koja se kanalom sa
-smjerom unazad nastavlja kroz tre ć i me đ urebarni prostor, ulazi u desnu polovinu grudne duplje i zavr š ava u
-tkivu desnog plu ć nog krila, pra ć ena prisustvom krvi i vazduha u desnoj polovini grudne duplje, a koja je
-posledica dejstva vrha i o š trice aktivno zamahnutog mehani č kog oru đ a – no ž a, koju je vje š tak kvalifikovao
-kao te š ku tjelesnu povredu opasnu po ž ivot. U pogledu inteziteta sile prilikom zadavanja udarca vje š tak je
-naveo da je bio srednje jak, a š to se ti č e polo ž aja o š te ć enog i optu ž enog u trenutku zadobijanja povrede
-proizilazilo je da su se nalazili u polo ž aju licem u lice, pa je sud takvom nalazu i mi š ljenju poklonio punu
+privremeno oduzetim predmetima, a kojom potvrdom je između ostalog oduzet nožkoji je upotrijebljen
+prilikom izvršenja krivičnog djela, a njegov bliži izgled sud je utvrdio uvidom u fotodokumentaciju sačinjene
+na lice mjesta. Da je navedeni nožoptuženi upotrijebio prilikom izvršenja krivičnog djela sud je utvrdio iz
+izvještaja Forenzičkog centra Danilovgrad o DNK vještačenju, a kojim vještačenjem je utvrđeno da je na
+sječivu noža konstatovano prisustvo krvi ljudskog porijekla, pričemu krajnji rezultat daje ekstremno jaku
+podršku hipotezi da je krv porijeklom od M.. N.. Naprijed navedeno u vezi je i sa nalazom i mišljenjem
+vještaka medicinske struke koji se na jasan i detaljan način izjasnio o vrsti i težini povreda kod oštećenog M..
+N.., koji je kritične prilike zadobio ubodno-reznu ranu u desnom potključnom predjelu, koja se kanalom sa
+smjerom unazad nastavlja kroz treći međurebarni prostor, ulazi u desnu polovinu grudne duplje i završava u
+tkivu desnog plućnog krila, praćena prisustvom krvi i vazduha u desnoj polovini grudne duplje, a koja je
+posledica dejstva vrha i oštrice aktivno zamahnutog mehaničkog oruđa – noža, koju je vještak kvalifikovao
+kao tešku tjelesnu povredu opasnu poživot. U pogledu inteziteta sile prilikom zadavanja udarca vještak je
+naveo da je bio srednje jak, ašto se tiče položaja oštećenog i optuženog u trenutku zadobijanja povrede
+proizilazilo je da su se nalazili u položaju licem u lice, pa je sud takvom nalazu i mišljenju poklonio punu
 vjeru, obzirom da je saglasan pravilima nauke i struke.
- 
-Inač e, i sam optu ž eni je u svojoj odbrani potvrdio da je svog oca N.. povrijedio no ž em, obja š njavaju ć i da je
-ovaj ku ć i do š ao u pijanom stanju, da je po č eo da se "dere" na njega i njegovu majku, govore ć i da vi š e ne ć e da
-ih hrani, da ć e morati sami da se hrane, da pla ć aju struju i vodu, da ć e oni morati njega da hrane, da je
-nastavio da pije rakiju, da im je ugasio televizor, a nakon š to je odspavao ponovo je po č eo da se dere prema
-njemu i majci, š to je njega iznerviralo, pa je po š ao do kuhinje, iz sudopere je uzeo jedan kuhinjski no ž , sa
-nož em se uputio u dnevnu sobu, gdje je pri š ao ocu, zamahnuo jednom no ž em u njegovom pravcu i ubo ga u
-predjelu grudi. Posebno je istakao da nije zamahnuo jako, da nije imao namjeru da ga te ž e povrijedi, niti da
-ga ubije, ve ć  samo da ga sprije č i da se nasilni č ki pona š a prema njemu i njegovoj majci.
- 
-Medjutim, nesporno je utvrdjeno da je optu ž eni o š te ć enog opasnim sredstvom - no ž em du ž ine sje č iva 11,5
-cm, ubo u predjelu desne strane grudnog ko š a, nanose ć i mu pritom te š ku tjelesnu povredu opasnu po ž ivot,
-pa time sud zaklju č uje da je preduzimaju ć i opisanu radnju optu ž eni bio svjestan da mo ž e o š te ć enog li š iti
-života, š to je i htio, zadaju ć i o š te ć enom udarac no ž em u vitalni dio tijela. Ove č injenice u potpunosti
-rasvjetljavaju njegov subjektivni odnos prema izvr š enom krivi č nom djelu odnosno  da je postupao sa
-direktnim umi š ljajem. Posebno cijene ć i psihi č ki odnos optu ž enog prema izvr š enom krivi č nom djelu, te
-imaju ć i u vidu nalaz i mi š ljenje Komisije vje š taka pri Klinici za psihijatriju, koji je sud u potpunosti prihvatio
-jer je dat na osnovu pravila nauke i struke, sud je utvrdio da je optu ž eni osoba ispod prosje č nih intelektualnih
-potencijala, da ne boluje od trajnog du š evnog oboljenja, niti te ž eg du š evnog poreme ć aja, da se od djetinstva
-liječ i od mje š ovitog tipa epilepsije sa posledicama na psihi č kom planu po tipu epilepti č kog poreme ć aja
-ličnosti, da se u vrijeme izv š enja krivi č nog djela nalazio u stanju afekta straha, razdra ž enosti, bijesa jakog
-inteziteta koje odgovara stanju privremene du š evne poreme ć enosti, a sposobnost shvatanja zna č aj djela kao
-i mogu ć nost upravljanja svojim postupcima kod optu ž enog, u vrijeme izvr š enja krivi č nog djela, je bila bitno
+
+Inače, i sam optuženi je u svojoj odbrani potvrdio da je svog oca N.. povrijedio nožem, objašnjavajući da je
+ovaj kući došao u pijanom stanju, da je počeo da se "dere" na njega i njegovu majku, govoreći da više neće da
+ih hrani, daće morati sami da se hrane, da plaćaju struju i vodu, daće oni morati njega da hrane, da je
+nastavio da pije rakiju, da im je ugasio televizor, a nakonšto je odspavao ponovo je počeo da se dere prema
+njemu i majci, š to je njega iznerviralo, pa je pošao do kuhinje, iz sudopere je uzeo jedan kuhinjski no ž, sa
+nož em se uputio u dnevnu sobu, gdje je prišao ocu, zamahnuo jednom nožem u njegovom pravcu i ubo ga u
+predjelu grudi. Posebno je istakao da nije zamahnuo jako, da nije imao namjeru da ga teže povrijedi, niti da
+ga ubije, većsamo da ga spriječi da se nasilnički ponaša prema njemu i njegovoj majci.
+
+Medjutim, nesporno je utvrdjeno da je optuženi oštećenog opasnim sredstvom - nožem dužine sječiva 11,5
+cm, ubo u predjelu desne strane grudnog koša, nanoseći mu pritom tešku tjelesnu povredu opasnu poživot,
+pa time sud zaključuje da je preduzimajući opisanu radnju optuženi bio svjestan da može oštećenog lišiti
+života, š to je i htio, zadajući oštećenom udarac nožem u vitalni dio tijela. Ovečinjenice u potpunosti
+rasvjetljavaju njegov subjektivni odnos prema izvršenom krivičnom djelu odnosno da je postupao sa
+direktnim umišljajem. Posebno cijeneći psihički odnos optuženog prema izvršenom krivičnom djelu, te
+imajući u vidu nalaz i mišljenje Komisije vještaka pri Klinici za psihijatriju, koji je sud u potpunosti prihvatio
+jer je dat na osnovu pravila nauke i struke, sud je utvrdio da je optuženi osoba ispod prosječnih intelektualnih
+potencijala, da ne boluje od trajnog duševnog oboljenja, niti težeg duševnog poremećaja, da se od djetinstva
+liječi od mješovitog tipa epilepsije sa posledicama na psihičkom planu po tipu epileptičkog poremećaja
+ličnosti, da se u vrijeme izvšenja krivičnog djela nalazio u stanju afekta straha, razdraženosti, bijesa jakog
+inteziteta koje odgovara stanju privremene duševne poremećenosti, a sposobnost shvatanja značaj djela kao
+i mogućnost upravljanja svojim postupcima kod optuženog, u vrijeme izvršenja krivičnog djela, je bila bitno
 smanjena.
-Dakle, sud je nesporno utvrdio da je psiholo š ki osnov optu ž enom u vrijeme izvr š enja krivi č nog djela bio u
-granicama bitno smanjene ura č unjivost, s obzirom da je optu ž eni bio u stanju afekta, straha, razdra ž ljivosti,
-bijesa jakog inteziteta, koji odgovara stanju privremene du š evne poreme ć enosti. Takodje je utvrdjeno da je
-optu ž eni u takvo stanje doveden bez svoje krivice, isklju č ivo pona š anjem o š te ć enog, te je i iz nalaza Komisije
-vješ taka proizilazilo da je cjelokupno pona š anje oca optu ž enog, u preddeliktnom i deliktnom periodu
-generisalo kod optu ž enog stanje afekta i to prvenstveno razdra ž enosti i bijesa, a potom i straha, te da je nivo
-patolo š kog afekta dostignut u momentu tkz. drugog dijela deliktne situacije kada se o š te ć eni ponovo
-pona š ao agresivno prema optu ž enom i njegovoj majci, dakle kada je o š te ć eni ponovo upu ć ivao uvredljive
-riječ i, detaljno navedene u izreci presude, č upaju ć i kabel od televizora, š to je kod optu ž enog dovelo do
-kulminacije afekta do nivoa jake razra ž enosti. Ova jaka razra ž enost, kao vanredno du š evno stanje,
-prouzrokovalo je dalju reakciju optu ž enog koja se ogledala u tome da je uzeo no ž  iz sudopere i sa istim, bez
-prethodnog kriti č nog razmi š ljanja, uz povi š en afekat i sni ž enje praga tolerancije, zadao udarac no ž em u grudi
-ocu-o š te ć enom, dakle, u trenutku kada je njegova sposobnost da shvati zna č aj svog djela i mogu ć nost da
-upravlja svojim postupcima bila bitno smanjena usljed afektivnog stanja jake razra ž enosti, pa je u toj bitno
-umanjenoj mjeri bio svjestan tog postupka i htio da ga li š i ž ivota.
- 
-Imaju ć i u vidu sadr ž inu naprijed provedenih dokaza i utvr đ eno č injeni č no stanje, a posebno imaju ć i u vidu
-činjenicu da je kod optu ž enog u vrijeme izvr š enja krivi č nog djela sposobnost shvatanja zna č aja djela, kao i
-mogu ć nost upravljanja svojim postupcima bila bitno smanjena usljed afektivnog stanja jake razra ž enosti,
-ovaj sud nalazi da su se u radnjama optu ž enog ostvarili svi subjektivni i objektivni elementi bi ć a krivi č nog
-djela ubistvo na mah u poku š aju iz č l. 145 u vezi č l.20 KZ-a, za koje djelo ga je oglasio krivim.
- 
-Odlu č uju ć i o vrsti i visini krivi č ne sankcije za optu ž enog M.. A.. sud mu je izrekao uslovnu osudu, a u smislu č l.
-42 Krivi č nog zakonika cijenjene su sve okolnosti, pa je u odsustvu ote ž avaju ć ih okolnosti, od olak š avaju ć ih
-okolnosti na strani optu ž enog sud cijenio njegovu mladost, lo š e zdrastveno stanje, obzirom da od djetinstva
-boluje od epilepsije, da je navodima svoje odbrane doprinio rasvjetljenju č injeni č nog stanja, da je izrazio
-iskreno kajanje zbog u č injenog, činjenicu da nije sklon vr š enju krivi č nih djela, obzirom da ranije nije
-osuđ ivan, š to je sud nesporno utvrdio iz izvoda iz kaznene evidencije, stav o š te ć enog koji se nije pridru ž io
-krivi č nom gonjenju, niti postavio imovinskopravni zahtjev, obzirom da je o š te ć eni otac optu ž enog M.. A.., i da
-su se porodi č ni odnosi izme đ u njih, nakon izvr š enja krivi č nog djela, normalizovali, da i dalje ž ive u istoj ku ć i
-zajedno, da o š te ć eni nema posledica od zadobijene povrede, č injenicu da je kriti č ni dogadjaj svojim
-pona š anjem isprovocirao upravo o š te ć eni š to je sam potvrdio u svom iskazu, zatim da je djelo ostalo u
-poku š aju, a da se za poku š aj krivi č nog djela shodno č l. 20 st.3 KZ-a u č inilac mo ž e bla ž e kazniti, te naro č ito da
-su sposobnosti shvatanja zna č aja djela i sposobnost upravljanja postupcima kod optu ž enog u vrijeme
-izvš enja krivi č nog djela bile bitno smanjene, usled č ega zakon propisuje mogu ć nost bla ž eg ka ž njavanja,
-shodno č l.14 st.2 KZ-a. Ove navedene olak š avaju ć e okolnosti su cijenjene kao naro č ito olak š avaju ć e, pa je
-sud primjenom odredbi č l.45 u 46 KZ, o ubla ž avanju, prethodno utvrdio kaznu zatvora ispod zakonskog
-minimuma, a radi krivi č no pravne za š tite, optu ž enom nije bilo nu ž no izre ć i efektivnu kaznu zatvora, ve ć  je
-ubla ž ena kazna uslovljena, shodno č l.52 i 53 KZ, jer je sud smatrao da ć e i upozorenje uz prijetnju kazne
-zatvora od 6 (mjeseci ) sa rokom provjeravanja od 3 (tri) godine, u dovoljnoj mjeri uticati na optu ž enog da
-ubudu ć e ne vr š i ovakva ili sli č na krivi č na djela, č ime ć e biti ostvarena svrha izricanja uslovne osude, a u
-okviru op š te svrhe izricanja krivi č nih sankcija iz č l. 4 st.2 Krivi č nog zakonika.
- 
-Shodno č l. 300 stav 7 u vezi č l. 75 Krivi č nog zakonika sud je optu ž enom izrekao mjeru bezbijednosti
-oduzimanja predmeta - kuhinjskog no ž a sa drvenom dr š kom braon boje, du ž ine sje č iva 11,50cm, sa
-natpisom na sje č ivu "peterh off classic", kao predmeta upotrebljenog u izv š enju krivi č nog djela.
- 
-Kako je optu ž eni ogla š en krivim, sud ga je shodno odredbama č l.226 i 229 Zakonika o krivi č nom postupku
-obavezao na pla ć anje sudskog pau š ala u iznosu od 50 eura, koji iznos je odmjeren shodno slo ž enosti, du ž ini
-trajanja postupka i imovinskim prilikama optu ž enog, kao i na ime tro š kova krivi č nog postupka iznos od
-1.061,00 euro a koji tro š kovi se odnose na tro š kove anga ž ovanja vje š taka medicinske struke i Komisije
-vješ taka pri Klinici za psihijatriju Podgorica, kao i tro š kove branioca po slu ž benoj du ž nosti.
- 
-Na osnovu izlo ž enog, a shodno č l. 374 ZKP-a, odlu č eno je kao u izreci presude.
- 
+Dakle, sud je nesporno utvrdio da je psihološki osnov optuženom u vrijeme izvršenja krivičnog djela bio u
+granicama bitno smanjene uračunjivost, s obzirom da je optuženi bio u stanju afekta, straha, razdražljivosti,
+
+bijesa jakog inteziteta, koji odgovara stanju privremene duševne poremećenosti. Takodje je utvrdjeno da je
+optuženi u takvo stanje doveden bez svoje krivice, isključivo ponašanjem oštećenog, te je i iz nalaza Komisije
+vještaka proizilazilo da je cjelokupno ponašanje oca optuženog, u preddeliktnom i deliktnom periodu
+generisalo kod optuženog stanje afekta i to prvenstveno razdraženosti i bijesa, a potom i straha, te da je nivo
+patološkog afekta dostignut u momentu tkz. drugog dijela deliktne situacije kada se oštećeni ponovo
+ponašao agresivno prema optuženom i njegovoj majci, dakle kada je oštećeni ponovo upućivao uvredljive
+riječi, detaljno navedene u izreci presude, č upajući kabel od televizora, š to je kod optuženog dovelo do
+kulminacije afekta do nivoa jake razraženosti. Ova jaka razraženost, kao vanredno duševno stanje,
+prouzrokovalo je dalju reakciju optuženog koja se ogledala u tome da je uzeo nožiz sudopere i sa istim, bez
+prethodnog kritičnog razmišljanja, uz povišen afekat i sniženje praga tolerancije, zadao udarac nožem u grudi
+ocu-oštećenom, dakle, u trenutku kada je njegova sposobnost da shvati značaj svog djela i mogućnost da
+upravlja svojim postupcima bila bitno smanjena usljed afektivnog stanja jake razraženosti, pa je u toj bitno
+umanjenoj mjeri bio svjestan tog postupka i htio da ga lišiživota.
+
+Imajući u vidu sadržinu naprijed provedenih dokaza i utvrđenočinjenično stanje, a posebno imajući u vidu
+činjenicu da je kod optuženog u vrijeme izvršenja krivičnog djela sposobnost shvatanja značaja djela, kao i
+mogućnost upravljanja svojim postupcima bila bitno smanjena usljed afektivnog stanja jake razraženosti,
+ovaj sud nalazi da su se u radnjama optuženog ostvarili svi subjektivni i objektivni elementi bića krivičnog
+djela ubistvo na mah u pokušaju izčl. 145 u vezičl.20 KZ-a, za koje djelo ga je oglasio krivim.
+
+Odlučujući o vrsti i visini krivične sankcije za optuženog M.. A.. sud mu je izrekao uslovnu osudu, a u smislučl.
+42 Krivičnog zakonika cijenjene su sve okolnosti, pa je u odsustvu otežavajućih okolnosti, od olakšavajućih
+okolnosti na strani optuženog sud cijenio njegovu mladost, loše zdrastveno stanje, obzirom da od djetinstva
+boluje od epilepsije, da je navodima svoje odbrane doprinio rasvjetljenjučinjeničnog stanja, da je izrazio
+iskreno kajanje zbog učinjenog, činjenicu da nije sklon vršenju krivičnih djela, obzirom da ranije nije
+osuđivan, š to je sud nesporno utvrdio iz izvoda iz kaznene evidencije, stav oštećenog koji se nije pridružio
+krivičnom gonjenju, niti postavio imovinskopravni zahtjev, obzirom da je oštećeni otac optuženog M.. A.., i da
+su se porodični odnosi između njih, nakon izvršenja krivičnog djela, normalizovali, da i dalježive u istoj kući
+zajedno, da oštećeni nema posledica od zadobijene povrede, č injenicu da je kritični dogadjaj svojim
+ponašanjem isprovocirao upravo oštećeništo je sam potvrdio u svom iskazu, zatim da je djelo ostalo u
+pokušaju, a da se za pokušaj krivičnog djela shodnočl. 20 st.3 KZ-a učinilac može blaže kazniti, te naročito da
+su sposobnosti shvatanja značaja djela i sposobnost upravljanja postupcima kod optuženog u vrijeme
+izvršenja krivičnog djela bile bitno smanjene, usledčega zakon propisuje mogućnost blažeg kažnjavanja,
+shodnočl.14 st.2 KZ-a. Ove navedene olakšavajuće okolnosti su cijenjene kao naročito olakšavajuće, pa je
+sud primjenom odredbičl.45 u 46 KZ, o ublažavanju, prethodno utvrdio kaznu zatvora ispod zakonskog
+minimuma, a radi krivično pravne zaštite, optuženom nije bilo nužno izreći efektivnu kaznu zatvora, većje
+ublažena kazna uslovljena, shodnočl.52 i 53 KZ, jer je sud smatrao daće i upozorenje uz prijetnju kazne
+zatvora od 6 (mjeseci ) sa rokom provjeravanja od 3 (tri) godine, u dovoljnoj mjeri uticati na optuženog da
+ubuduće ne vrši ovakva ili slična krivična djela, č imeće biti ostvarena svrha izricanja uslovne osude, a u
+okviru opšte svrhe izricanja krivičnih sankcija izčl. 4 st.2 Krivičnog zakonika.
+
+Shodnočl. 300 stav 7 u vezičl. 75 Krivičnog zakonika sud je optuženom izrekao mjeru bezbijednosti
+oduzimanja predmeta - kuhinjskog noža sa drvenom drškom braon boje, dužine sječiva 11,50cm, sa
+natpisom na sječivu "peterh off classic", kao predmeta upotrebljenog u izvšenju krivičnog djela.
+
+Kako je optuženi oglašen krivim, sud ga je shodno odredbamačl.226 i 229 Zakonika o krivičnom postupku
+obavezao na plaćanje sudskog paušala u iznosu od 50 eura, koji iznos je odmjeren shodno složenosti, dužini
+trajanja postupka i imovinskim prilikama optuženog, kao i na ime troškova krivičnog postupka iznos od
+1.061,00 euro a koji troškovi se odnose na troškove angažovanja vještaka medicinske struke i Komisije
+vještaka pri Klinici za psihijatriju Podgorica, kao i troškove branioca po službenoj dužnosti.
+
+Na osnovu izloženog, a shodnočl. 374 ZKP-a, odlučeno je kao u izreci presude.
+
 VIŠI SUD U PODGORICI,
 Dana, 27.06.2014.godine
-ZAPISNI Č AR, PREDSJEDNIK VIJE Ć A - S U D I J A,
-Bojana Rakovi ć,s.r. Vesna Pean,s.r.
- 
- 
- 
-PRAVNA POUKA: Protiv ove presude dozvoljena je ž alba Apelacionom sudu Crne Gore u roku od 15 dana od
-prijema pismenog otpravka iste, a preko Vi š eg suda Podgorica.
- 
- 
- 
- 
-Za ta č nost otpravka tvrdi i ovjerava
-namje š tenik suda
- 
+ZAPISNIČAR, PREDSJEDNIK VIJEĆA - S U D I J A,
+Bojana Raković,s.r. Vesna Pean,s.r.
+
+PRAVNA POUKA: Protiv ove presude dozvoljena ježalba Apelacionom sudu Crne Gore u roku od 15 dana od
+prijema pismenog otpravka iste, a preko Višeg suda Podgorica.
+
+Za tačnost otpravka tvrdi i ovjerava
+namještenik suda
+
 ___________________</p>
                 </block>
             </conclusions>

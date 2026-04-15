@@ -143,20 +143,28 @@ def sync_txt_to_xml(
     print()
     
     # Run annotation pipeline
+    target_stems = set(missing)
     pipeline = VerdictAnnotationPipeline(
         txt_folder=str(txt_folder),
         output_xml_dir=str(xml_folder),
         model=model,
         provider=provider,
-        enable_llm=not no_llm
+        enable_llm=not no_llm,
+        include_stems=target_stems,
     )
     
     success = pipeline.run()
-    
+
+    new_xml_stems = get_verdict_stems(xml_folder, ".xml")
+    annotated = sorted(stem for stem in target_stems if stem in new_xml_stems)
+
     if success:
-        new_xml_stems = get_verdict_stems(xml_folder, ".xml")
-        annotated = list(new_xml_stems - xml_stems)
         return annotated
+
+    if annotated:
+        print(f"[!] Pipeline prijavio gresku, ali je anotirano {len(annotated)} fajlova")
+        return annotated
+
     else:
         print("[!] Anotacija nije uspela u potpunosti")
         return []

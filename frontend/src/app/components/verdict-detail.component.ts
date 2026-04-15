@@ -17,8 +17,8 @@ import { VerdictDetail, VerdictOverrideUpdate } from '../models/models';
       <div *ngIf="verdict" class="verdict-detail">
         <div class="verdict-header">
           <h2>{{ verdict.case_number || verdict.case_id }}</h2>
-          <span class="outcome-badge" *ngIf="verdict.outcome" [class]="'outcome-' + verdict.outcome.toLowerCase()">
-            {{ verdict.outcome }}
+          <span class="outcome-badge" *ngIf="verdict.outcome" [ngClass]="getOutcomeClass(verdict.outcome)">
+            {{ formatOutcome(verdict.outcome) }}
           </span>
         </div>
 
@@ -160,8 +160,8 @@ import { VerdictDetail, VerdictOverrideUpdate } from '../models/models';
 
         <div class="section" *ngIf="verdict.factual_state && objectKeys(verdict.factual_state).length > 0">
           <h3>Činjenično stanje</h3>
-          <div class="facts" *ngFor="let key of objectKeys(verdict.factual_state)">
-            <strong>{{ key }}:</strong> {{ verdict.factual_state[key].join(', ') }}
+          <div class="facts" *ngFor="let key of getFactualStateKeys(verdict.factual_state)">
+            <strong>{{ getFactualStateLabel(key) }}:</strong> {{ formatFactualStateValues(key, verdict.factual_state[key]) }}
           </div>
         </div>
 
@@ -232,14 +232,37 @@ import { VerdictDetail, VerdictOverrideUpdate } from '../models/models';
       text-transform: uppercase;
     }
     
+    .outcome-oslobodjen,
+    .outcome-opravdan,
     .outcome-оправдан {
       background: #d4edda;
       color: #155724;
     }
     
+    .outcome-osudjen,
     .outcome-осуђен {
       background: #f8d7da;
       color: #721c24;
+    }
+
+    .outcome-odbijeno {
+      background: #fff3cd;
+      color: #7c5a00;
+    }
+
+    .outcome-usvojeno {
+      background: #d1ecf1;
+      color: #0c5460;
+    }
+
+    .outcome-ukinuto {
+      background: #f8d7da;
+      color: #6f1d1b;
+    }
+
+    .outcome-nepoznato {
+      background: #eceff1;
+      color: #455a64;
     }
     
     .info-section {
@@ -501,6 +524,60 @@ export class VerdictDetailComponent implements OnInit {
   editJudges = '';
   editParties = '';
   editFactualState = '';
+  factualStateLabelMap: Record<string, string> = {
+    injury_type: 'Vrsta povrede',
+    location: 'Lokacija',
+    weapon: 'Sredstvo',
+    weapon_used: 'Upotrebljeno sredstvo',
+    severe_consequence: 'Teška posledica',
+    death_result: 'Smrtni ishod',
+    negligence: 'Nehat',
+    provocation: 'Provokacija',
+    fight_participation: 'Učestvovanje u tuči',
+    fight_consequence: 'Posledica tuče',
+    left_without_help: 'Ostavljanje bez pomoći',
+    previous_convictions: 'Ranije osuđivan',
+    repeat_offender: 'Povratnik',
+    confession: 'Priznanje',
+    remorse: 'Kajanje',
+    plea_agreement: 'Sporazum o priznanju krivice',
+    aggravating_circumstances: 'Otežavajuće okolnosti',
+    mitigating_circumstances: 'Olakšavajuće okolnosti',
+    family_circumstances: 'Porodične okolnosti',
+    poor_financial_status: 'Loše imovinsko stanje',
+    alcohol_intoxication: 'Alkoholisanost',
+    narcotics_influence: 'Uticaj narkotika',
+    conditional_sentence_requested: 'Tražena uslovna osuda',
+    attempted_offense: 'Pokušaj dela',
+    imposed_prison_sentence_months: 'Izrečena kazna zatvora (meseci)',
+  };
+  factualStatePreferredOrder: string[] = [
+    'injury_type',
+    'location',
+    'weapon',
+    'weapon_used',
+    'severe_consequence',
+    'death_result',
+    'negligence',
+    'provocation',
+    'fight_participation',
+    'fight_consequence',
+    'left_without_help',
+    'previous_convictions',
+    'repeat_offender',
+    'confession',
+    'remorse',
+    'plea_agreement',
+    'aggravating_circumstances',
+    'mitigating_circumstances',
+    'family_circumstances',
+    'poor_financial_status',
+    'alcohol_intoxication',
+    'narcotics_influence',
+    'conditional_sentence_requested',
+    'attempted_offense',
+    'imposed_prison_sentence_months',
+  ];
 
   constructor(
     private route: ActivatedRoute,
@@ -641,6 +718,126 @@ export class VerdictDetailComponent implements OnInit {
 
   goBack() {
     this.router.navigate(['/verdicts']);
+  }
+
+  getOutcomeClass(outcome: string): string {
+    return `outcome-${this.normalizeOutcome(outcome)}`;
+  }
+
+  formatOutcome(outcome: string): string {
+    const normalized = this.normalizeOutcome(outcome);
+    const labels: Record<string, string> = {
+      osudjen: 'Osuđen',
+      oslobodjen: 'Oslobođen',
+      odbijeno: 'Odbijeno',
+      usvojeno: 'Usvojeno',
+      ukinuto: 'Ukinuto',
+      nepoznato: 'Nepoznato',
+    };
+    return labels[normalized] || outcome;
+  }
+
+  normalizeOutcome(outcome: string): string {
+    const key = (outcome || '').trim().toLowerCase();
+    const map: Record<string, string> = {
+      'osudjen': 'osudjen',
+      'osuđen': 'osudjen',
+      'осуђен': 'osudjen',
+      'oslobodjen': 'oslobodjen',
+      'oslobođen': 'oslobodjen',
+      'оправдан': 'oslobodjen',
+      'opravdan': 'oslobodjen',
+      'odbijeno': 'odbijeno',
+      'usvojeno': 'usvojeno',
+      'ukinuto': 'ukinuto',
+      'nepoznato': 'nepoznato',
+    };
+    return map[key] || key;
+  }
+
+  getFactualStateKeys(factualState?: Record<string, string[]> | null): string[] {
+    if (!factualState) {
+      return [];
+    }
+
+    const order = new Map(this.factualStatePreferredOrder.map((key, index) => [key, index]));
+    return Object.keys(factualState).sort((a, b) => {
+      const aRank = order.has(a) ? (order.get(a) as number) : Number.MAX_SAFE_INTEGER;
+      const bRank = order.has(b) ? (order.get(b) as number) : Number.MAX_SAFE_INTEGER;
+      if (aRank !== bRank) {
+        return aRank - bRank;
+      }
+      return a.localeCompare(b);
+    });
+  }
+
+  getFactualStateLabel(key: string): string {
+    return this.factualStateLabelMap[key] || this.humanizeFactKey(key);
+  }
+
+  formatFactualStateValues(key: string, values: string[] | undefined): string {
+    if (!values || values.length === 0) {
+      return '-';
+    }
+
+    const formatted = values
+      .map((value) => this.formatFactualStateValue(key, value))
+      .filter((value) => value.length > 0);
+
+    const unique = Array.from(new Set(formatted));
+    return unique.length > 0 ? unique.join(', ') : '-';
+  }
+
+  formatFactualStateValue(key: string, value: string): string {
+    const raw = (value || '').trim();
+    if (!raw) {
+      return '';
+    }
+
+    const lowered = raw.toLowerCase();
+    if (['da', 'true', '1', 'yes'].includes(lowered)) {
+      return 'da';
+    }
+    if (['ne', 'false', '0', 'no'].includes(lowered)) {
+      return 'ne';
+    }
+
+    if (key === 'fight_consequence') {
+      const map: Record<string, string> = {
+        death_or_serious_injury: 'smrt ili teška povreda',
+        teska_povreda: 'teška povreda',
+        laka_povreda: 'laka povreda',
+        none: 'bez posledice',
+      };
+      if (map[lowered]) {
+        return map[lowered];
+      }
+    }
+
+    const normalized = raw.replace(/_/g, ' ');
+    const clean = normalized.toLowerCase();
+    const valueMap: Record<string, string> = {
+      'teska tjelesna povreda': 'teška tjelesna povreda',
+      'teska telesna povreda': 'teška tjelesna povreda',
+      'laka tjelesna povreda': 'laka tjelesna povreda',
+      'laka telesna povreda': 'laka tjelesna povreda',
+    };
+    if (valueMap[clean]) {
+      return valueMap[clean];
+    }
+
+    return normalized;
+  }
+
+  humanizeFactKey(key: string): string {
+    if (!key) {
+      return '';
+    }
+    return key
+      .replace(/_/g, ' ')
+      .split(' ')
+      .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
+      .join(' ');
   }
 
   buildAppliedArticleLinks(appliedArticles: string[]) {

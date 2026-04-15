@@ -6,30 +6,35 @@
                 <FRBRWork>
                     <FRBRthis value="/akn/me/judgment/Одлуке52/!main"/>
                     <FRBRuri value="/akn/me/judgment/Одлуке52"/>
-                    <FRBRdate date="2017-12-07" name="judgment"/>
+                    <FRBRdate date="2018-03-07" name="judgment"/>
                     <FRBRauthor href="#court"/>
                     <FRBRcountry value="me"/>
                 </FRBRWork>
                 <FRBRExpression>
-                    <FRBRthis value="/akn/me/judgment/Одлуке52/sr@2017-12-07/!main"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке52/sr@2017-12-07"/>
-                    <FRBRdate date="2017-12-07"/>
+                    <FRBRthis value="/akn/me/judgment/Одлуке52/sr@2018-03-07/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке52/sr@2018-03-07"/>
+                    <FRBRdate date="2018-03-07"/>
                     <FRBRauthor href="#court"/>
                     <FRBRlanguage language="sr"/>
                 </FRBRExpression>
                 <FRBRManifestation>
-                    <FRBRthis value="/akn/me/judgment/Одлуке52/sr@2017-12-07/!main.xml"/>
-                    <FRBRuri value="/akn/me/judgment/Одлуке52/sr@2017-12-07/!main.akn"/>
-                    <FRBRdate date="2026-04-13"/>
+                    <FRBRthis value="/akn/me/judgment/Одлуке52/sr@2018-03-07/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке52/sr@2018-03-07/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
                     <FRBRauthor href="#court"/>
                     <FRBRformat value="xml"/>
                 </FRBRManifestation>
             </identification>
             <references source="#court">
-                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Viši sud u Bijelom"/>
-                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Dragana Vojinović"/>
-                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="M. I."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Viši sud u Bijelom Polju"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Vukomir Bošković"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Dragan Vojinović"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Konatar Sanja"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="H.S."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="H.A."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="H.S."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakon-o-krivičnom-postupku" showAs="Zakon o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -41,1264 +46,1280 @@
                     <docNumber>K.br. 2/18</docNumber>
                 </block>
                 <block name="court">
-                    <docTitle>Viši sud u Bijelom</docTitle>
+                    <docTitle>Viši sud u Bijelom Polju</docTitle>
                 </block>
                 <block name="date">
-                    <docDate date="2017-12-07">2017-12-07</docDate>
+                    <docDate date="2018-03-07">2018-03-07</docDate>
                 </block>
                 <block name="judges">
-                    <judge>Dragana Vojinović</judge>
+                    <judge>Vukomir Bošković</judge>
+                    <judge>Dragan Vojinović</judge>
+                    <judge>Konatar Sanja</judge>
                 </block>
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Optuženi H. S. i M. I. osuđeni za ubistvo u pokušaju i nedozvoljeno držanje oružja.</p>
+                    <p>Optuženi H.S. i M.I. su osuđeni za ubistvo u pokušaju i nedozvoljeno držanje oružja.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Ubistvo u pokušaju</p>
                     <p>Nedozvoljeno držanje oružja</p>
-                    <p>Prethodne presude optuženih</p>
+                    <p>Olakšavajuće okolnosti</p>
+                    <p>Troškovi postupka</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Zakon o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
-                    <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
-                    <ref href="/akn/me/act/2024/!main#art_403">Član 403</ref>
-                    <ref href="/akn/me/act/2024/!main#art_5">Član 5</ref>
-                    <ref href="/akn/me/act/2024/!main#art_227">Član 227</ref>
-                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/2024/!main#art_156">Član 156</ref>
-                    <ref href="/akn/me/act/2024/!main#art_33">Član 33</ref>
-                    <ref href="/akn/me/act/2024/!main#art_165">Član 165</ref>
-                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/2024/!main#art_376">Član 376</ref>
-                    <ref href="/akn/me/act/2024/!main#art_168">Član 168</ref>
-                    <ref href="/akn/me/act/2024/!main#art_151">Član 151s</ref>
-                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
-                    <ref href="/akn/me/act/2024/!main#art_14">Član 14</ref>
-                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
-                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/2024/!main#art_23">Član 23</ref>
-                    <ref href="/akn/me/act/2024/!main#art_48">Član 48</ref>
-                    <ref href="/akn/me/act/2024/!main#art_51">Član 51</ref>
-                    <ref href="/akn/me/act/2024/!main#art_375">Član 375</ref>
-                    <ref href="/akn/me/act/2024/!main#art_154">Član 154</ref>
-                    <ref href="/akn/me/act/2024/!main#art_37">Član 37</ref>
-                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/2024/!main#art_171">Član 171</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_5">Član 5</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_168">Član 168</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_33">Član 33</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_376">Član 376</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_375">Član 375</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_37">Član 37</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_171">Član 171</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_165">Član 165</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_156">Član 156</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_14">Član 14</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_151">Član 151s</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_227">Član 227</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_23">Član 23</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_154">Član 154</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da su optuženi delovali sa umišljajem i da su prethodne presude uticale na težinu kazne.</p>
+                    <p>Sud je utvrdio da su optuženi delovali u samoodbrani, ali su prešli granice nužne odbrane.</p>
                 </block>
             </motivation>
             <decision>
-                <block name="verdict" outcome="nepoznato">
-                    <p>Osuda optuženih H. S. i M. I.</p>
+                <block name="verdict" outcome="osudjen">
+                    <p>Osudjeni</p>
                 </block>
             </decision>
             <participants>
                 <block name="defendants">
-                    <person>M. I.</person>
+                    <person>H.S.</person>
+                </block>
+                <block name="victims">
+                    <person>H.A.</person>
+                    <person>H.S.</person>
                 </block>
                 <block name="witnesses">
-                    <person>M. S.</person>
-                    <person>H. A.</person>
-                    <person>tvrdi da je zapazio da je</person>
-                    <person>poku</person>
-                    <person>je kategori</person>
-                    <person>vidio</person>
-                    <person>nalazio na mjestu gdje se desio doga</person>
+                    <person>H.A.</person>
+                    <person>M.S.</person>
+                    <person>H.S.</person>
+                    <person>I.M.</person>
+                    <person>A.U.</person>
                 </block>
             </participants>
             <facts>
+                <fact key="weapon">nož</fact>
                 <fact key="weapon">pistolj</fact>
                 <fact key="weapon">kamen</fact>
-                <fact key="location">Bijelom Polju</fact>
-                <fact key="location">Što</fact>
+                <fact key="location">Bijelo Polje</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">1</fact>
             </facts>
             <conclusions>
                 <block name="fullText">
                     <p>K.br. 2/18
- 
+
 U IME CRNE GORE
- 
-Viši sud u Bijelom Polju u vije ć u sastavljenom od sudije Bo š kovi ć  Vukomira, kao predsjednika vije ć a, stalnih
-sudija Dragana Vojinovi ć a i Konatar Sanje, kao č lanova vije ć a, uz u č e šć e namje š tenika suda Duborija
-Radmile, kao zapisni č ara, u krivi č nom predmetu optu ž enih H. S. i M. I, oba iz R, zbog krivi č nog djela ubistvo u
-poku š aju iz č l. 143 u vezi č l. 20 Krivi č nog zakonika Crne Gore u sticaju sa krivi č nim djelom nedozvoljeno
-držanje oru ž ja i eksplozivnih materija iz č l. 403 st. 1 Krivi č nog zakonika Crne Gore, po optu ž nici Vi š eg
-državnog tu ž ila š tva Kt. br. 49/17 od 07.12.2017 godine, nakon odr ž anog usmenog, javnog i glavnog pretresa u
-prisustvu dr ž avnog tu ž ioca u Vi š em dr ž avnom tu ž ila š tvu u Bijelom Polju, L. H, optu ž enog H. S. i njegovog
-branioca B. V, optu ž enog M. I. i njegovog branioca adv. R. O, donio je dana 07.03.2018 godine, a javno objavio
+
+Viši sud u Bijelom Polju u vijeću sastavljenom od sudije Bošković Vukomira, kao predsjednika vijeća, stalnih
+sudija Dragana Vojinovića i Konatar Sanje, kao članova vijeća, uz učešće namještenika suda Duborija
+Radmile, kao zapisničara, u krivičnom predmetu optuženih H.S. i M. I, oba iz R, zbog krivičnog djela ubistvo u
+pokušaju izčl. 143 u vezičl. 20 Krivičnog zakonika Crne Gore u sticaju sa krivičnim djelom nedozvoljeno
+držanje oružja i eksplozivnih materija izčl. 403 st. 1 Krivičnog zakonika Crne Gore, po optužnici Višeg
+državnog tužilaštva Kt. br. 49/17 od 07.12.2017 godine, nakon održanog usmenog, javnog i glavnog pretresa u
+prisustvu državnog tužioca u Višem državnom tužilaštvu u Bijelom Polju, L. H, optuženog H.S. i njegovog
+branioca B. V, optuženog M.I. i njegovog branioca adv. R. O, donio je dana 07.03.2018 godine, a javno objavio
 dana 08.03.2018 godine,
- 
+
 P R E S U D U
- 
-Optu ž eni H. S, JMBG ..., od oca R. i majke U, ro đ ene M, ro đ en ... godine, u R, sa stalnim boravkom u R, ul. .. N,
-bb, o ž enjen, otac dvoje maloljetne djece, zavr š io srednju š kolu, neosu đ ivan, nalazio se u pritvoru od
+
+Optuženi H. S, JMBG..., od oca R. i majke U, rođene M, rođen... godine, u R, sa stalnim boravkom u R, ul... N,
+bb, oženjen, otac dvoje maloljetne djece, završio srednjuškolu, neosuđivan, nalazio se u pritvoru od
 10.09.2017 godine, do 08.03.2018 godine.
- 
-Optu ž eni M. I, JMBG ..., od oca T. i majke R, ro đ ene S, ro đ en ... godine, u R, sa stalnim boravkom u R. ul. I, bb,
-oženjen, otac č etvoro djece, zavr š io srednju š kolu, osu đ ivan i to: presudama Osnovnog suda iz R, i to: K. br.
-22/16 zbog krivi č nog djela iz č l. 154 KZ CG, na nov č anu kaznu u iznosu od 800 eura; K. br. 139/12 i K. br.
-140/12 zbog krivi č nog djela iz č l. 151st. 2 Kz CG na kaznu zatvora u trajanju od godinu dana i jedan mjesec; K.
-br. 8/13 (spojen sa predmetom K. br. 9/13) zbog krivi č nog djela iz č l. 151 st. 1 Kz CG, na kaznu zatvora u
-trajanju od 7 mjeseci; K. br. 131/14 zbog krivi č nog djela iz č l. 168 st. 1 Kz CG na kaznu zatvora u trajanju od
-1.500 eura; K. br. 153/10 zbog krivi č nog djela iz č l. 154 st. 1 KZ CG, na nov č anu kaznu od 500 eura; K. br.
-226/05 zbog krivi č nog djela iz č l. 375 st. 3 KZ CG, kazna zatvora od 60 dana; K. br. 249/07 zbog krivi č nog djela
-iz čl. 376 st. 1 Kz CG, na kaznu zatvora od 3 mjeseca; K. br. 312/05 zbog krivi č nog djela iz č l. 154 st. 1 Kz CG, na
-novč anu kaznu od 800 eura; K. br. 2/03 zbog krivi č nog djela iz č l. 33 st. 1 Zakona o inspekcijskoj kontroli, naViši Sud u Bijelom Polju
+
+Optuženi M. I, JMBG..., od oca T. i majke R, rođene S, rođen... godine, u R, sa stalnim boravkom u R. ul. I, bb,
+oženjen, otacčetvoro djece, završio srednjuškolu, osuđivan i to: presudama Osnovnog suda iz R, i to: K. br.
+22/16 zbog krivičnog djela izčl. 154 KZ CG, na novčanu kaznu u iznosu od 800 eura; K. br. 139/12 i K. br.
+140/12 zbog krivičnog djela izčl. 151st. 2 Kz CG na kaznu zatvora u trajanju od godinu dana i jedan mjesec; K.
+br. 8/13 (spojen sa predmetom K. br. 9/13) zbog krivičnog djela izčl. 151 st. 1 Kz CG, na kaznu zatvora u
+trajanju od 7 mjeseci; K. br. 131/14 zbog krivičnog djela izčl. 168 st. 1 Kz CG na kaznu zatvora u trajanju od
+1.500 eura; K. br. 153/10 zbog krivičnog djela izčl. 154 st. 1 KZ CG, na novčanu kaznu od 500 eura; K. br.
+226/05 zbog krivičnog djela izčl. 375 st. 3 KZ CG, kazna zatvora od 60 dana; K. br. 249/07 zbog krivičnog djela
+iz čl. 376 st. 1 Kz CG, na kaznu zatvora od 3 mjeseca; K. br. 312/05 zbog krivičnog djela izčl. 154 st. 1 Kz CG, na
+novčanu kaznu od 800 eura; K. br. 2/03 zbog krivičnog djela izčl. 33 st. 1 Zakona o inspekcijskoj kontroli, na Viši Sud u Bijelom Polju
 K 2/2018
 07. Mart 2018
-novč anu kaznu u iznosu od 6.000 dinara; K. br. 319/00 zbog krivi č nog djela iz č l. 154 st.3 Kz CG, na kaznu
-zatvora u trajanju od godinu dana; K. br. 294/00 zbog krivi č nog djela iz č l. 37 st. 2 Kz CG, na nov č anu kaznu u
-iznosu od 9.000 dinara; K. br. 128/84 zbog krivi č nog djela iz č l. 152 st. 1 Kz CG, na kaznu zatvora u trajanju od
-90 dana, uslovno na jednu godinu, te presudom Op š tinskog suda iz T. K. br. 118/07 zbog krivi č nog djela iz č l.
-23 st. 1 KZ Srbije, na kaznu zatvora u trajanju od tri mjeseca; presudom Okru ž nog suda iz K. K. br. 34/91 zbog
-krivi č nog djela iz č l. 171 st. 3 Kz Srbije, na kaznu zatvora u trajanju od č etiri godine; presudom Op š tinskog
-suda iz T. M. K. br. 5/88 zbog krivi č nog djela iz č l. 165 st. 3 KZ Srbije, na nov č anu kaznu u iznosu od 350.000
-dinara i presudom Op š tinskog suda iz S. K. br. 1288/83 zbog krivi č nog djela iz č l. 156 st. 1 KZ Makedonije, na
+
+novčanu kaznu u iznosu od 6.000 dinara; K. br. 319/00 zbog krivičnog djela izčl. 154 st.3 Kz CG, na kaznu
+zatvora u trajanju od godinu dana; K. br. 294/00 zbog krivičnog djela izčl. 37 st. 2 Kz CG, na novčanu kaznu u
+iznosu od 9.000 dinara; K. br. 128/84 zbog krivičnog djela izčl. 152 st. 1 Kz CG, na kaznu zatvora u trajanju od
+90 dana, uslovno na jednu godinu, te presudom Opštinskog suda iz T.K. br. 118/07 zbog krivičnog djela izčl.
+23 st. 1 KZ Srbije, na kaznu zatvora u trajanju od tri mjeseca; presudom Okružnog suda iz K.K. br. 34/91 zbog
+krivičnog djela izčl. 171 st. 3 Kz Srbije, na kaznu zatvora u trajanju odčetiri godine; presudom Opštinskog
+suda iz T.M. K. br. 5/88 zbog krivičnog djela izčl. 165 st. 3 KZ Srbije, na novčanu kaznu u iznosu od 350.000
+dinara i presudom Opštinskog suda iz S.K. br. 1288/83 zbog krivičnog djela izčl. 156 st. 1 KZ Makedonije, na
 kaznu zatvora u trajanju od 20 mjeseci, nalazio se u pritvoru od 09.09.2017 godine, do 08.03.2018 goidne.
- 
+
 K r i v i s u
- 
+
 Što su, i to:
-1. Okrivljeni H. S, dana 09.09.2017 godine, oko 19,00 h. u naselju "Z", op š tina R, dok se nalazio ispred
-poslovnog objekta "A. P" vlasni š tvo njegovog oca H.R, zbog ranije netrpeljivih odnosa, povodom duga
-izme đ u brata okrivljenog M. I. - M. I. i brata okrivljenog H. S, H. A, sposoban da shvati zna č aj svoga djela i
-upravlja svojim postupcima, poku š ao da li š i ž ivota okrivljenog M. I. koji se nalazio ispred dva svoja poslovna
-objekta, iako je bio svjestan da ga na taj na č in mo ž e li š iti ž ivota, š to je i htio, pa je u njegovom pravcu ispalio
-više projektila iz pi š tolja nepoznate marke i nepoznatog broja, cal. 9 mm-D (duga 9x19 mm), koji pi š tolj je
-neovla šć eno nabavio i dr ž ao, suprotno odredbi č l. 5 i č l. 33 Zakona o oru ž ju, od kojih je jedan prjektil pogodio
-okrivljenog M. I. u predjelu gornjeg desnog kvadranta prednjeg trbu š nog zida, sredinom na oko 120 cm iznad
-ravni tabana i 8 cm udesno od prednje sredi š ne uzdu ž ne linije, kojom prilikom je zadobio laku tjelesnu
+1. Okrivljeni H. S, dana 09.09.2017 godine, oko 19,00 h. u naselju "Z", opština R, dok se nalazio ispred
+poslovnog objekta "A. P" vlasništvo njegovog oca H.R, zbog ranije netrpeljivih odnosa, povodom duga
+između brata okrivljenog M.I. - M.I. i brata okrivljenog H. S, H. A, sposoban da shvati značaj svoga djela i
+upravlja svojim postupcima, pokušao da lišiživota okrivljenog M.I. koji se nalazio ispred dva svoja poslovna
+objekta, iako je bio svjestan da ga na taj način može lišitiživota, š to je i htio, pa je u njegovom pravcu ispalio
+više projektila iz pištolja nepoznate marke i nepoznatog broja, cal. 9 mm-D (duga 9x19 mm), koji pištolj je
+neovlašćeno nabavio i držao, suprotno odredbičl. 5 ičl. 33 Zakona o oružju, od kojih je jedan prjektil pogodio
+okrivljenog M.I. u predjelu gornjeg desnog kvadranta prednjeg trbušnog zida, sredinom na oko 120 cm iznad
+ravni tabana i 8 cm udesno od prednje središne uzdužne linije, kojom prilikom je zadobio laku tjelesnu
 povredu u vidu strijelne rane - ustreline sa ulaznom ranom u predjelu gornjeg desno g kvadranta prednje
-strane trbuha, koja se plitkim kanalom nastavlja kroz ko ž u i neposredno ispod nivoa ko ž e, tj. u njenoj debljini
-i dijelom u debljini potko ž nog mekog tkiva se zavr š ava, na kom mjestu je ustanovljen projektil, koja povreda
+strane trbuha, koja se plitkim kanalom nastavlja kroz kožu i neposredno ispod nivoa kože, tj. u njenoj debljini
+i dijelom u debljini potkožnog mekog tkiva se završava, na kom mjestu je ustanovljen projektil, koja povreda
 je posljedica direktnog dejstva projektila,
- 
-- Čime je izvr š io krivi č no djelo ubistvo u poku š aju iz č . 143 KZ CG u vezi sa č l. 20 KZ CG u sticaju sa krivi č nim
-djelom nedoozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403 st. 1 KZ CG.
- 
-2. Okrivljeni M. I. istog dana, u isto vrijeme i u istom mjestu kao pod ta č kom 1 dispozitiva optu ž nice, dok se
-nalazio ispred svoja dva poslovna objekta, sposoban da shvati zna č aj svog djela i upravlja svojim
-postupcima, poku š ao da li š i ž ivota okrivljenog H. S, koji se nalazio ispred poslovnog objekta "A.-P" vlasni š tvo
-svog oca H. R, iako je bio svjestan da ga na taj na č in mo ž e li š ititi ž ivota, š to je i htio, pa je u njegovom pravcu
-ispalio vi š e projektila, iz pi š tolja nepoznate marke i fabri č kog broja, cal. 9 mm - K (9x17 mm), koji pi š tolj je
-neovla šć eno nabavio i dr ž ao, suprotno odredbi č l. 5 i č l. 33 Zakona o oru ž ju, koji projektili ga nijesu pogodili,
- 
-- Čime je izvr š io krivi č no djelo ubistvo u poku š aju iz č . 143 KZ CG u vezi sa č l. 20 KZ CG u stiaju sa krivi č nim
-djelom nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403 st. 1 KZ CG.
- 
-Pa sud primjenom citiranih zakonskih propisa te č l. 14, 15, 32, 36, 42, 51 KZ-a, i č l. 226 i 227, 229 i 374 Zkp
-(Zakonika o krivi č nom postupku), a za krivi č no djelo ubistvo u poku š aju iz č l. 143 u vezi č l. 20 Krivi č nog
-zakonika Crne Gore, i primjenom odredaba č l. 45 i 46 Kz-a, utvrđ uje,
- 
-Optu ž enom H. S.
- 
--Za krivi č no djelo ubistvo u poku š aju iz č l. 143 u vezi č l. 20 Krivi č nog zakonika Crne Gore, kaznu zatvora u
+
+- Čime je izvršio krivično djelo ubistvo u pokušaju iz č. 143 KZ CG u vezi sačl. 20 KZ CG u sticaju sa krivičnim
+djelom nedoozvoljeno držanje oružja i eksplozivnih materija izčl. 403 st. 1 KZ CG.
+
+2. Okrivljeni M.I. istog dana, u isto vrijeme i u istom mjestu kao pod tačkom 1 dispozitiva optužnice, dok se
+nalazio ispred svoja dva poslovna objekta, sposoban da shvati značaj svog djela i upravlja svojim
+postupcima, pokušao da lišiživota okrivljenog H. S, koji se nalazio ispred poslovnog objekta "A.-P" vlasništvo
+svog oca H. R, iako je bio svjestan da ga na taj način može lišititiživota, š to je i htio, pa je u njegovom pravcu
+ispalio više projektila, iz pištolja nepoznate marke i fabričkog broja, cal. 9 mm - K (9x17 mm), koji pištolj je
+neovlašćeno nabavio i držao, suprotno odredbičl. 5 ičl. 33 Zakona o oružju, koji projektili ga nijesu pogodili,
+
+- Čime je izvršio krivično djelo ubistvo u pokušaju iz č. 143 KZ CG u vezi sačl. 20 KZ CG u stiaju sa krivičnim
+djelom nedozvoljeno držanje oružja i eksplozivnih materija izčl. 403 st. 1 KZ CG.
+
+Pa sud primjenom citiranih zakonskih propisa tečl. 14, 15, 32, 36, 42, 51 KZ-a, ičl. 226 i 227, 229 i 374 Zkp
+(Zakonika o krivičnom postupku), a za krivično djelo ubistvo u pokušaju izčl. 143 u vezičl. 20 Krivičnog
+zakonika Crne Gore, i primjenom odredabačl. 45 i 46 Kz-a, utvrđuje,
+
+Optuženom H.S.
+
+-Za krivično djelo ubistvo u pokušaju izčl. 143 u vezičl. 20 Krivičnog zakonika Crne Gore, kaznu zatvora u
 trajanju od 2 (dvije) godine,
--Za krivi č no djelo nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403 st. 1 Krivi č nog zakonika Crne
+-Za krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija izčl. 403 st. 1 Krivičnog zakonika Crne
 Gore, kaznu zatvora u trajanju od 3 (tri) mjeseca,
- 
-Optu ž enom M. I.
- 
--Za krivi č no djelo ubistvo u poku š aju iz č l. 143 u vezi č l. 20 Krivi č nog zakonika Crne Gore, kaznu zatvora u
+
+Optuženom M.I.
+
+-Za krivično djelo ubistvo u pokušaju izčl. 143 u vezičl. 20 Krivičnog zakonika Crne Gore, kaznu zatvora u
 trajanju od 2 (dvije) godine i 4 ( č etiri) mjeseca,
--Za krivi č no djelo nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403 st. 1 Krivi č nog zakonika Crne
+-Za krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija izčl. 403 st. 1 Krivičnog zakonika Crne
 Gore, kaznu zatvora u trajanju od 3 (tri) mjeseca,
- 
-te primjenom č l. 48 Krivi č nog zakonika,
- 
-O s u đ  u j e
-Optu ž enog H. S. na jedinstvenu kaznu zatvora u trajanju od 2 (dvije) godine i 2 (dva) mjeseca, u koju kaznu
-mu se ima ura č unati vrijeme provedeno u pritvoru od 10.09.2017 godine, do 08.03.2018 godine.
- 
-Optu ž enog M. I. na jedinstvenu kaznu zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci, u koju kaznu mu
-se ima ura č unati vrijeme provedeno u pritvoru od 09.09.2017 godine, do 08.03.2018 godine.
- 
-Optu ž eni se obavezuju da na ime pau š ala plate iznos od po 100,00 €, u korist Bud ž eta Crne Gore, u roku od 15
-dana po pravnosna ž nosti presude pod prijetnjom prinudnog izvr š enja.
- 
-Optu ž eni se obavezuju da na ime tro š kova krivi č nog postupka solidarno plate iznos od 985,00 €, te da
-optu ž eni H. S. plati iznos od 1.637,04 €, na ž iro ra č un br. 832-7114-98, u roku od 15 dana po pravnosna ž nosti
-presude pod prijetnjom prinudnog izvr š enja.
- 
-O ostalim tro š kovima postupka bi ć e odlu č eno posebnim rje š enjem kada budu pribavljeni potpuniji podaci.
- 
+
+te primjenomčl. 48 Krivičnog zakonika,
+
+O s uđu j e
+Optuženog H.S. na jedinstvenu kaznu zatvora u trajanju od 2 (dvije) godine i 2 (dva) mjeseca, u koju kaznu
+mu se ima uračunati vrijeme provedeno u pritvoru od 10.09.2017 godine, do 08.03.2018 godine.
+
+Optuženog M.I. na jedinstvenu kaznu zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci, u koju kaznu mu
+se ima uračunati vrijeme provedeno u pritvoru od 09.09.2017 godine, do 08.03.2018 godine.
+
+Optuženi se obavezuju da na ime paušala plate iznos od po 100,00 €, u korist Budžeta Crne Gore, u roku od 15
+dana po pravnosnažnosti presude pod prijetnjom prinudnog izvršenja.
+
+Optuženi se obavezuju da na ime troškova krivičnog postupka solidarno plate iznos od 985,00 €, te da
+optuženi H.S. plati iznos od 1.637,04 €, nažiro račun br. 832-7114-98, u roku od 15 dana po pravnosnažnosti
+presude pod prijetnjom prinudnog izvršenja.
+
+O ostalim troškovima postupka biće odlučeno posebnim rješenjem kada budu pribavljeni potpuniji podaci.
+
 Imovinsko-pravnog zahtjeva nije bilo.
-O b r a z l o ž  e n j e
-Više dr ž avno tu ž ila š tvo u Bijelom Polju podnijelo je ovom sudu optu ž nicu Kt.br. 49/17 od 07.12.2017 godine,
-protiv optu ž enih H. S. i M. I, oba iz R, zbog krivi č nog djela ubistvo u poku š aju iz č l. 143 u vezi č l. 20 Krivi č nog
-zakonika Crne Gore u sticaju sa krivi č nim djelom nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403
-st. 1 Krivi č nog zakonika Crne Gore, koju optu ž nicu je tu ž ilac precizirao na pretresu od 07.03.2018 godine.
- 
-U zavr š noj rije č i tu ž ilac je uz analizu dokaza koji su izvedeni tokom postupka, stanovi š ta da su optu ž eni
-poč inili krivi č na djela stavljena im na teret optu ž nicom, pa je zatra ž io od suda da ih oglasi krivim i osudi na
+O b r a z l ože n j e
+Više državno tužilaštvo u Bijelom Polju podnijelo je ovom sudu optužnicu Kt.br. 49/17 od 07.12.2017 godine,
+protiv optuženih H.S. i M. I, oba iz R, zbog krivičnog djela ubistvo u pokušaju izčl. 143 u vezičl. 20 Krivičnog
+zakonika Crne Gore u sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija izčl. 403
+st. 1 Krivičnog zakonika Crne Gore, koju optužnicu je tužilac precizirao na pretresu od 07.03.2018 godine.
+
+U završnoj riječi tužilac je uz analizu dokaza koji su izvedeni tokom postupka, stanovišta da su optuženi
+poč inili krivična djela stavljena im na teret optužnicom, pa je zatražio od suda da ih oglasi krivim i osudi na
 kazne po zakonu.
- 
-Optu ž eni H. S. tokom postupka ne priznaje izvr š enje krivi č nog djela, niti krivicu.
- 
-U istrazi u bitnom predo č ava da ga je dana 09.09.2017 godine, pozvao brat A, govore ć i mu da se prethodno
-posva đ ao sa njihovim ujakom M. I, jer je A. tra ž io da mu I. vrati dug u iznosu od 35.000 eura. A. mu je tada
-govorio da je kod sebe imao gasni pi š tolj, te mu nije govorio da je tim pi š toljem prijetio I. Potom se sreo sa A,
-pa su po š li u kafi ć  "G" iz kojeg kafi ć a je A. pozvao telefonom njihovog brata od ujaka S. M, sina I, tra ž e ć i da
-dođ e u kafi ć  kako bi razgovarali u vezi sva đ e koju je prethodno imao sa I. Tada je S. reagovao ljutito, govore ć i
-mu " š to me zove š , š ta ć e š  ti od mene". Tada je I. uzeo telefon od S. i po č eo A. da psuje, govore ć i mu i
-uvredljive rije č i i zaprijetio da ć e ih zaklati, pobiti, te da ć e im baciti bombu. Pitao je A. gdje se nalazi, i
-zatra ž io da do đ e kod njihove firme koja se nalazi u industrijskoj zoni Z, u neposrednoj blizini I. objekata.
-Potom je prekinuo razgovor. A. je predlo ž io da po đ u do njihove firme, kako bi vidjeli zbog č ega im I. prijeti i
+
+Optuženi H.S. tokom postupka ne priznaje izvršenje krivičnog djela, niti krivicu.
+
+U istrazi u bitnom predočava da ga je dana 09.09.2017 godine, pozvao brat A, govoreći mu da se prethodno
+posvađao sa njihovim ujakom M. I, jer je A. tražio da mu I. vrati dug u iznosu od 35.000 eura. A. mu je tada
+govorio da je kod sebe imao gasni pištolj, te mu nije govorio da je tim pištoljem prijetio I. Potom se sreo sa A,
+pa su pošli u kafić "G" iz kojeg kafića je A. pozvao telefonom njihovog brata od ujaka S. M, sina I, tražeći da
+dođ e u kafićkako bi razgovarali u vezi svađe koju je prethodno imao sa I. Tada je S. reagovao ljutito, govoreći
+mu " š to me zoveš, š taćešti od mene". Tada je I. uzeo telefon od S. i počeo A. da psuje, govoreći mu i
+uvredljive riječi i zaprijetio daće ih zaklati, pobiti, te daće im baciti bombu. Pitao je A. gdje se nalazi, i
+zatražio da dođe kod njihove firme koja se nalazi u industrijskoj zoni Z, u neposrednoj blizini I. objekata.
+Potom je prekinuo razgovor. A. je predložio da pođu do njihove firme, kako bi vidjeli zbogčega im I. prijeti i
 kako bi se vidjeli sa njim. Po dolasku kod I. objekta, na parkingu su primijetili vozilo marke "Audi A3". Pored
 vozila se nalazio M. S, a I. nijesu primijetili u blizini.
- 
-Kada su prolazili pored vozila, a po š to je on upravljao vozilom, usporio je kretanje vozila, otvorio vrata od
-vozila i rekao S. " š ta ć e š , hajde dolje gdje ste nas zvali, ispred na š e firme". Tada je M. I. iza š ao iz objekta i
-ispalio projektile iz pi š tolja u njihovom pravcu. Po š to ih nije pogodio, on je ubrzao kretanje vozila i parkirao
+
+Kada su prolazili pored vozila, a pošto je on upravljao vozilom, usporio je kretanje vozila, otvorio vrata od
+vozila i rekao S. " š taćeš, hajde dolje gdje ste nas zvali, ispred naše firme". Tada je M.I. izašao iz objekta i
+ispalio projektile iz pištolja u njihovom pravcu. Pošto ih nije pogodio, on je ubrzao kretanje vozila i parkirao
 se na parkingu njihove firme.
- 
-Izaš li su iz vozila i tr č e ć i se uputili prema parkingu koji se nalazi ispred njihove firme, te kada su do š li do
-betonskog zida koji razdvaja njihov plac i plac M, I. im je rekao "hajde do đ ite p.... jebem li vam mater", a
-potom je pucao pi š toljem u njihovom pravcu. On i A. su se sagnuli i sklonili se iza zida. Metak je pogodio
-livadu i granje iznad magistralnog puta. Tvrdi da je č uo zvuk projektila koji je pro š ao pored njih. Tada je iz
-torbice izvadio pi š tolj marke "Glok" i pucao ukoso, a ne u pravcu M. i u vis, kako ih ne bi pogodio, a sa ciljem
-kako bi se on i A. odbranili i kako bi naveli I. da prestane da puca u njihovom pravcu. Me đ utim, I. je i nakon
+
+Izašli su iz vozila i trčeći se uputili prema parkingu koji se nalazi ispred njihove firme, te kada su došli do
+betonskog zida koji razdvaja njihov plac i plac M, I. im je rekao "hajde dođite p.... jebem li vam mater", a
+potom je pucao pištoljem u njihovom pravcu. On i A. su se sagnuli i sklonili se iza zida. Metak je pogodio
+livadu i granje iznad magistralnog puta. Tvrdi da ječuo zvuk projektila koji je prošao pored njih. Tada je iz
+torbice izvadio pištolj marke "Glok" i pucao ukoso, a ne u pravcu M. i u vis, kako ih ne bi pogodio, a sa ciljem
+kako bi se on i A. odbranili i kako bi naveli I. da prestane da puca u njihovom pravcu. Međutim, I. je i nakon
 toga ispalio nekoliko projektila u njihovom pravcu. Jedan projektil je pogodio njegovog brata A. u predjelu
-stomaka preko trenerke, ali ga nije povrijedio. Smatra da se zrno nije odbilo od beton ili druge podloge, ve ć
-da je direktno pogodilo A. Dok je ispaljivao projektile, I. se zaklanjao iza objekta, a potom se pomaljao i pucao
-u njegovom pravcu. Za to vrijeme S. M. nije vidio ispred zgrade gdje se nalazio I, te smatra da se vjerovatno
-sklonio iza I. objekta. S. je č uo da psuje, ali nije vidio da puca u njihovom pravcu. U jednom momentu A. je
-poš ao kako bi provjerio da nije mo ž da S. krenuo iza objekta prema njima, a kada je vidio da S. nema u š li su u
-vozilo, a potom se udaljili prema selu B. Kada su do š li na most iznad rijeke I. pi š tolj je bacio u rijeku. Potom je
-izaš ao iz vozila kod gradske deponije i sakrio se u obli ž nju š umu, a potom po š ao do svoje ku ć e i u ve č ernjim
+stomaka preko trenerke, ali ga nije povrijedio. Smatra da se zrno nije odbilo od beton ili druge podloge, većda je direktno pogodilo A. Dok je ispaljivao projektile, I. se zaklanjao iza objekta, a potom se pomaljao i pucao
+u njegovom pravcu. Za to vrijeme S.M. nije vidio ispred zgrade gdje se nalazio I, te smatra da se vjerovatno
+sklonio iza I. objekta. S. ječuo da psuje, ali nije vidio da puca u njihovom pravcu. U jednom momentu A. je
+poš ao kako bi provjerio da nije možda S. krenuo iza objekta prema njima, a kada je vidio da S. nema ušli su u
+vozilo, a potom se udaljili prema selu B. Kada su došli na most iznad rijeke I. pištolj je bacio u rijeku. Potom je
+izašao iz vozila kod gradske deponije i sakrio se u obližnjušumu, a potom pošao do svoje kuće i u večernjim
 časovima se predao policiji.
- 
-Tvrdi da kriti č nom prilikom nije imao namjeru povrijediti I. i S, ve ć  je htio da ih zapla š i, kako I. ne bi pucao u
+
+Tvrdi da kritičnom prilikom nije imao namjeru povrijediti I. i S, većje htio da ih zaplaši, kako I. ne bi pucao u
 njihovom pravcu. Misli da je ispalio oko pet metaka, a I. je njihovom pravcu ispalio sedam-osam metaka.
- 
+
 Pištolj koji je nosio kupio je od nekog lica sa K. prije mjesec dana i za isti nije posjedovao dozvolu.
- 
+
 Navodi da ih je I. č esto napadao i prijetio, te da je od ranije sa I. bio u netrpeljivim odnosima zbog imovinskih
-sporova, kao i da je toga dana njegov brat A. imao sva đ u sa I.
- 
-Tvrdi da je č uo kada je I. uputio prijetnje njegovom bratu A. koji je sjedio pored njega i č uo je kada mu je
-rekao da ć e da baci bombu u njihovu ku ć u i da ć e ih pobiti.
- 
+sporova, kao i da je toga dana njegov brat A. imao svađu sa I.
+
+Tvrdi da ječuo kada je I. uputio prijetnje njegovom bratu A. koji je sjedio pored njega ičuo je kada mu je
+rekao daće da baci bombu u njihovu kuću i daće ih pobiti.
+
 Dok je I. u njihovom pravcu ispaljivao projektile, A. se nalazio udaljen od njega na oko dva-tri metra, a tokom
-doga đ aja A. je uticao na njega da idu ku ć i.
- 
-Prijetnje koje je uputio I. je shvatio da su upu ć ene porodici, a nakon tih prijetnji je po š ao kako bi se vidio sa I,
-kako bi saznao zbog č ega im prijeti, te da bi rije š ili sukob. Tada su se dogovorili da se na đ u ispred njihove
+događaja A. je uticao na njega da idu kući.
+
+Prijetnje koje je uputio I. je shvatio da su upućene porodici, a nakon tih prijetnji je pošao kako bi se vidio sa I,
+kako bi saznao zbogčega im prijeti, te da bi riješili sukob. Tada su se dogovorili da se nađu ispred njihove
 firme koja se nalazi u neposrednoj blizini I. firme. Kada je prolazio autom pored firme vidio je S. - sinovca I. i
-rekao mu da do đ u na njihov posjed kako bi porazgovarali. Pored S. se nalazio I. i kada je č uo š ta je govorio S,
-I. je izvadio pi š tolj i po č eo da puca u pravcu njihovog vozila. Nakon toga je zatvorio vrata od vozila, dao gas i
-pobjegao sa tog mjesta, a potom do š ao na njihov posjed.
- 
-I. je tada ispaljivao projektile sa udaljenosti od oko 15 metara. Nakon š to su do š li vozilom na njihov plac, on i
-A. su iza š li iz vozila i ubrzanim korakom po š li u I. pravcu, sa namjerom da ga pitaju zbog č ega je ispaljivao
-projektile i zato š to je bio u strahu. Dok su se pribli ž avali poslovnom prostoru, A. je I. govorio vi š e puta da ne
+rekao mu da dođu na njihov posjed kako bi porazgovarali. Pored S. se nalazio I. i kada ječuošta je govorio S,
+I. je izvadio pištolj i počeo da puca u pravcu njihovog vozila. Nakon toga je zatvorio vrata od vozila, dao gas i
+pobjegao sa tog mjesta, a potom došao na njihov posjed.
+
+I. je tada ispaljivao projektile sa udaljenosti od oko 15 metara. Nakonšto su došli vozilom na njihov plac, on i
+A. su izašli iz vozila i ubrzanim korakom pošli u I. pravcu, sa namjerom da ga pitaju zbogčega je ispaljivao
+projektile i zatošto je bio u strahu. Dok su se približavali poslovnom prostoru, A. je I. govorio više puta da ne
 puca, ali je I. i dalje pucao u njihovom pravcu i to u momentu kada su bili zaklonjeni iza jednog zida. I. je tada
-ispalio 3-4 projektila u njihovom pravcu sa udaljenosti od 30 metara, a mo ž da i vi š e. Nije vidio I. kada je
-ispaljivao projektile, jer se krio iza zida, pa je nasumice preko zida ispalio č etiri-pet metaka u I. pravcu. Ne zna
-da li je projektile ispalio jedan za drugim ili sa prekidom. Svi ti projektili su poga đ ali kamion koji je bio
-parkiran na tom mjestu i u zid I. ku ć e, a neki od tih projektila i objekte koji nijesu u krugu I. objekta. Za svo to
-vrijeme nije vidio I, jer se vjerovatno krio, a krili su se i oni. Dok je ispaljivao projektile nije ni š anio, a ispaljivao
-je projektile da zapla š i I, a ne i da ga li š i ž ivota.
- 
-Doga đ aj po č ev od momenta kada su do š li na plac on i A. pa do zavr š etka doga đ aja je trajao oko tri minuta. Za
-svo to vrijeme je osje ć ao veliki strah za svoj ž ivot i ž ivot svog brata A.
- 
-Predo č ava da je pi š tolj kod sebe posjedovao mjesec dana unazad. Isti se nalazio u torbici, koja torbica se
-nalazila u vozilu, a nakon ispaljenih projektila u pi š tolju je ostalo jo š  metaka, misli 11. Takva tvrdnja po
-osnovu zapa ž anja da je izvadio š ar ž er prije nego š to je bacio pi š tolj u rijeku i tada vidio na oznaci na š ar ž eru
+ispalio 3-4 projektila u njihovom pravcu sa udaljenosti od 30 metara, a možda i više. Nije vidio I. kada je
+ispaljivao projektile, jer se krio iza zida, pa je nasumice preko zida ispaliočetiri-pet metaka u I. pravcu. Ne zna
+da li je projektile ispalio jedan za drugim ili sa prekidom. Svi ti projektili su pogađali kamion koji je bio
+parkiran na tom mjestu i u zid I. kuće, a neki od tih projektila i objekte koji nijesu u krugu I. objekta. Za svo to
+vrijeme nije vidio I, jer se vjerovatno krio, a krili su se i oni. Dok je ispaljivao projektile nije nišanio, a ispaljivao
+je projektile da zaplaši I, a ne i da ga lišiživota.
+
+Događaj počev od momenta kada su došli na plac on i A. pa do završetka događaja je trajao oko tri minuta. Za
+svo to vrijeme je osjećao veliki strah za svojživot iživot svog brata A.
+
+Predočava da je pištolj kod sebe posjedovao mjesec dana unazad. Isti se nalazio u torbici, koja torbica se
+nalazila u vozilu, a nakon ispaljenih projektila u pištolju je ostalo jošmetaka, misli 11. Takva tvrdnja po
+osnovu zapažanja da je izvadiošaržer prije negošto je bacio pištolj u rijeku i tada vidio na oznaci našaržeru
 da je zadnji metak bio na broju 11.
- 
-Dalje je predo č io da kada je A. pozvao S, da je I. oteo telefon od S. i da im je tada upu ć ivao prijetnje da ć e ih
-pobiti, baciti bombu, da ć e im j.. mater i tada ih je pozvao da do đ u kod njihove firme.
- 
+
+Dalje je predočio da kada je A. pozvao S, da je I. oteo telefon od S. i da im je tada upućivao prijetnje daće ih
+pobiti, baciti bombu, daće im j.. mater i tada ih je pozvao da dođu kod njihove firme.
+
 Pojasnio je da je ispaljeni projektil pocijepao gornji dio A. trenerke, te da je prije tri- č etiri godine I. pucao u
-njihovom pravcu i ranije u vi š e navrata kretao vozilom u pravcu njihovog oca.
-Ne zna zbog č ega ih je napadao, ali je takvih napada bilo vi š e.
- 
-Ustvrdio je da njihova porodica nema nikakvih dugovanja prema optu ž enom M. I, te predo č io da je u jednom
-momentu vidio I. kada se nalazio izme đ u svog objekta i vozila i da je tada ispaljivao projektile u njihovom
-pravcu, a on se skrivao iza zida. Nije se mogao izjasniti o na č inu na koji je ispaljivao projektile, niti da li je
-projektile ispalio odjednom ili sa prekidima, ali zna da je pucao nasumice kada je č uo pucanj. Dok je
-ispaljivao projektile, I. se nalazio bli ž e prednjem dijelu vozila, koje vozilo je bilo parkirano prednjim dijelom
-prema objektu. Zapazio je da su projektili koje je ispaljivao I. udarali u asfaltnu podlogu i č uo je kako zrna
-prolije ć u preko njihovih glava i to u momentu dok su se skrivali. Projektile u pravcu I. je ispaljivao iz razloga
-jer se upla š io za svoj ž ivot i ž ivot svog brata, a projektile nije ispaljiovao zbog ranije netrpeljivih odnosa.
- 
-U zavr š noj rije č i branilac optu ž enog adv. B. V, nalazi da tokom postupka nije utvr đ eno da je optu ž eni H. S.
-poč inio krivi č no djelo ubistvo u poku š aju, a da je kriv za krivi č no djelo neovla šć eno dr ž anje oru ž ja i
-eksplozivnih materija, jer je tokom postupka utvr đ eno da je predmetni pi š tolj kriti č nom prilikom posjedovao
+njihovom pravcu i ranije u više navrata kretao vozilom u pravcu njihovog oca.
+Ne zna zbogčega ih je napadao, ali je takvih napada bilo više.
+
+Ustvrdio je da njihova porodica nema nikakvih dugovanja prema optuženom M. I, te predočio da je u jednom
+momentu vidio I. kada se nalazio između svog objekta i vozila i da je tada ispaljivao projektile u njihovom
+pravcu, a on se skrivao iza zida. Nije se mogao izjasniti o načinu na koji je ispaljivao projektile, niti da li je
+projektile ispalio odjednom ili sa prekidima, ali zna da je pucao nasumice kada ječuo pucanj. Dok je
+ispaljivao projektile, I. se nalazio bliže prednjem dijelu vozila, koje vozilo je bilo parkirano prednjim dijelom
+prema objektu. Zapazio je da su projektili koje je ispaljivao I. udarali u asfaltnu podlogu ičuo je kako zrna
+prolijeću preko njihovih glava i to u momentu dok su se skrivali. Projektile u pravcu I. je ispaljivao iz razloga
+jer se uplašio za svojživot iživot svog brata, a projektile nije ispaljiovao zbog ranije netrpeljivih odnosa.
+
+U završnoj riječi branilac optuženog adv. B. V, nalazi da tokom postupka nije utvrđeno da je optuženi H.S.
+poč inio krivično djelo ubistvo u pokušaju, a da je kriv za krivično djelo neovlašćeno držanje oružja i
+eksplozivnih materija, jer je tokom postupka utvrđeno da je predmetni pištolj kritičnom prilikom posjedovao
 bez odobrenja.
- 
-Navodi da su me đ uljudski odnosi kako izme đ u optu ž enih, tako i izme đ u njihovih porodica, u vrijeme
-dešavanja bili poreme ć eni, a š to po ocjeni branioca, nije bio razlog da kriti č nom prilikom optu ž eni H.
-upotrijebi pi š tolj. Ukazuje da se prije kriti č nog doga đ aja desio i drugi doga đ aj zbog kojeg je H. A. osu đ en za
-krivi č no djelo ugro ž avanje sigurnosti. Nakon toga, ostvarene su telefonske komunikacije izme đ u optu ž enih,
-kako posredno, tako i neposredno u prisustvu H. A. i M. S, kada su se dogovarali da se sretnu u mjestu Z, gdje
-posjeduju poslovne objekte, kako bi poku š ali da razrije š e nesuglasice.
- 
-Po dolasku na to mjesto, optu ž eni M. je, po nala ž enju branioca, ispalio projektile, a potom je projektile ispalio
-H. S, iritiran pona š anjem optu ž enog M.
- 
-Da je optu ž eni M. ispaljivao projektile, ukazuju na đ ene č aure, kako na nepokretnostima H, tako i na
-nepokretnostima M. Da je M. ispaljivao projektile, govori u prilog č injenica da su na đ ene tri č aure u blizini
-vozila "Audi" kojim je M. do š ao na to mjesto, a jedna od č aura je na đ ena prilikom vr š enja uvi đ aja iza desnog
-brisa č a, pa po nala ž enju branioca, je stoga neosnovana odbrana optu ž enog M. da su na đ ene č aure poticale
-od nekog drugog doga đ aja, gdje se skupljaju svatovi. Da je M. ispaljivao projektile, govori č injenica prisustva
-barutnih č estica na dlanu njegove desne ruke.
- 
-Nalazi da zbog gubitka kineti č ke energije zrno koje je pogodilo sada optu ž enog M. bi trebalo da se kre ć e
-silaznom, a ne uzlaznom putanjom, kako to proizilazi iz nalaza vje š taka medicinske i balisti č ke struke.
- 
-Da je optu ž eni M. ispaljivao projektile, kako navodi branilac, proizilazi i iz sadr ž aja video zapisa i nalaza
-vješ taka trasologa, te i č injenica da je jedan od tih projektila zaka č io odjevni predmet H. A.
- 
-Na osnovu utvr đ enih č injenica zaklju č uje da je optu ž eni H. bio napadnut od strane M, te da je optu ž eni H.
-ispaljuju ć i projektile odbijao neskrivljeni protivpravni napad. Smatra da je ispaljivanje projektila bilo
-srazmjerno napadu, jer optu ž eni H. nije nastavio da dalje puca, iako je u pi š tolju imao metaka, ve ć  je sa
-ispaljivanjem prestao kada je procijenio da mu vi š e ne prijeti opasnost.
- 
-Stoga, nalazi da je optu ž eni H. postupao u nu ž noj odbrani, a koje postupanje isklju č uje postojanje krivi č nog
-djela, zbog č ega je predlo ž io dono š enje osloba đ aju ć e presude u odnosu na krivi č no djelo ubistvo u poku š aju.
-Međ utim, navodi da ukoliko sud ne prihvati takvo zaklju č ivanje da bi se eventualno u radnjama optu ž enog H.
-stekli elementi bi ć a krivi č nog djela izazivanje op š te opasnoti, pa je stoga predlozi da sud optu ž enog H. š to
-blaž e kazni zbog postojanja brojnih olak š avaju ć ih okolnosti.
- 
-Optu ž eni je prihvatio zavr š nu rije č  svog branioca, te izrazio ž aljenje zbog doga đ aja koji se desio, uz obe ć anje
-da ne ć e vi š e č initi krivi č na djela.
- 
-Optu ž eni M. I. tokom postupka ne priznaje izvr š enje krivi č nog djela niti krivicu.
- 
-U istrazi pred Osnovnim tu ž iocem je u bitnom predo č io da se toga dana vratio iz B. P. i po š ao do svojih
-poslovnih objekata, kada ga je njegov sin A. telefonom upoznao da je njegov sestri ć  H. A. njegovom bratu I.
-prijetio pi š toljem, a š to mu je I. kasnije u razgovoru i potvrdio. Nakon toga, po š ao je kod I, kako bi vidio š ta se
+
+Navodi da su međuljudski odnosi kako između optuženih, tako i između njihovih porodica, u vrijeme
+dešavanja bili poremećeni, ašto po ocjeni branioca, nije bio razlog da kritičnom prilikom optuženi H.
+upotrijebi pištolj. Ukazuje da se prije kritičnog događaja desio i drugi događaj zbog kojeg je H.A. osuđen za
+krivično djelo ugrožavanje sigurnosti. Nakon toga, ostvarene su telefonske komunikacije između optuženih,
+kako posredno, tako i neposredno u prisustvu H.A. i M. S, kada su se dogovarali da se sretnu u mjestu Z, gdje
+posjeduju poslovne objekte, kako bi pokušali da razriješe nesuglasice.
+
+Po dolasku na to mjesto, optuženi M. je, po nalaženju branioca, ispalio projektile, a potom je projektile ispalio
+H. S, iritiran ponašanjem optuženog M.
+
+Da je optuženi M. ispaljivao projektile, ukazuju nađenečaure, kako na nepokretnostima H, tako i na
+nepokretnostima M. Da je M. ispaljivao projektile, govori u prilogčinjenica da su nađene tričaure u blizini
+vozila "Audi" kojim je M. došao na to mjesto, a jedna odčaura je nađena prilikom vršenja uviđaja iza desnog
+brisača, pa po nalaženju branioca, je stoga neosnovana odbrana optuženog M. da su nađenečaure poticale
+od nekog drugog događaja, gdje se skupljaju svatovi. Da je M. ispaljivao projektile, govoričinjenica prisustva
+barutnihčestica na dlanu njegove desne ruke.
+
+Nalazi da zbog gubitka kinetičke energije zrno koje je pogodilo sada optuženog M. bi trebalo da se kreće
+silaznom, a ne uzlaznom putanjom, kako to proizilazi iz nalaza vještaka medicinske i balističke struke.
+
+Da je optuženi M. ispaljivao projektile, kako navodi branilac, proizilazi i iz sadržaja video zapisa i nalaza
+vještaka trasologa, te ičinjenica da je jedan od tih projektila zakačio odjevni predmet H.A.
+
+Na osnovu utvrđenihčinjenica zaključuje da je optuženi H. bio napadnut od strane M, te da je optuženi H.
+ispaljujući projektile odbijao neskrivljeni protivpravni napad. Smatra da je ispaljivanje projektila bilo
+srazmjerno napadu, jer optuženi H. nije nastavio da dalje puca, iako je u pištolju imao metaka, većje sa
+ispaljivanjem prestao kada je procijenio da mu više ne prijeti opasnost.
+
+Stoga, nalazi da je optuženi H. postupao u nužnoj odbrani, a koje postupanje isključuje postojanje krivičnog
+djela, zbogčega je predložio donošenje oslobađajuće presude u odnosu na krivično djelo ubistvo u pokušaju.
+Međ utim, navodi da ukoliko sud ne prihvati takvo zaključivanje da bi se eventualno u radnjama optuženog H.
+stekli elementi bića krivičnog djela izazivanje opšte opasnoti, pa je stoga predlozi da sud optuženog H. š to
+blaže kazni zbog postojanja brojnih olakšavajućih okolnosti.
+
+Optuženi je prihvatio završnu riječsvog branioca, te izraziožaljenje zbog događaja koji se desio, uz obećanje
+da neće višečiniti krivična djela.
+
+Optuženi M.I. tokom postupka ne priznaje izvršenje krivičnog djela niti krivicu.
+
+U istrazi pred Osnovnim tužiocem je u bitnom predočio da se toga dana vratio iz B.P. i pošao do svojih
+poslovnih objekata, kada ga je njegov sin A. telefonom upoznao da je njegov sestrić H.A. njegovom bratu I.
+prijetio pištoljem, ašto mu je I. kasnije u razgovoru i potvrdio. Nakon toga, pošao je kod I, kako bi vidiošta se
 to desilo. I. posjeduje zlatarsku radnju i u radnji je pored I. zatekao njihovog sinovca S, koji ga je upoznao da
-se njegova bra ć a I. i I. nalaze u zgradi policije i da daju izjave. U policiji je sreo brata I. koji mu je rekao da ć e
-da ide ku ć i i da ć e I. brzo do ć i. Vratio se u zlatarsku radnju u koju je potom do š ao I. Tada je neko pozvao
-njegovog sinovca telefonom i č uo je da mu je rekao " š ta ć e š  A. vi š e". Tada je on uzeo telefon, govore ć i A. da ne
+se njegova braća I. i I. nalaze u zgradi policije i da daju izjave. U policiji je sreo brata I. koji mu je rekao daće
+da ide kući i daće I. brzo doći. Vratio se u zlatarsku radnju u koju je potom došao I. Tada je neko pozvao
+njegovog sinovca telefonom ičuo je da mu je rekao " š taćešA. više". Tada je on uzeo telefon, govoreći A. da ne
 galami.
- 
-Pred Vi š im tu ž iocem je predo č io da kada se iz B. P. vratio za R, da ga je pozvao sin, pitaju ć i ga da li je č uo š ta je
-A. napravio I. Potom je po š ao u Z. kod svoje firme, kod koje je do š ao i njegov sin i supruga, a potom i brat
-Isad. Sa njim je kod firme po š ao i sinovac S. Dok su se nalazili u krugu firme, S. mu je rekao "evo pro đ o š e"
-misle ć i na S. H. i njegovog brata A. Kada se parkirao ispred firme i kada su iza š li iz vozila, za č uo je pucanj i S.
-mu je tada rekao da su pucali A.i S. Nije ih vidio jer je u tom momentu prema njima bio okrenut le đ ima. U
-jednom momentu se okrenuo i na udaljenosti od oko 60-70 metara zapazio je A. i S. koji su pro š li svoj plac, a
+
+Pred Višim tužiocem je predočio da kada se iz B.P. vratio za R, da ga je pozvao sin, pitajući ga da li ječuošta je
+A. napravio I. Potom je pošao u Z. kod svoje firme, kod koje je došao i njegov sin i supruga, a potom i brat
+Isad. Sa njim je kod firme pošao i sinovac S. Dok su se nalazili u krugu firme, S. mu je rekao "evo prođoše"
+misleći na S.H. i njegovog brata A. Kada se parkirao ispred firme i kada su izašli iz vozila, začuo je pucanj i S.
+mu je tada rekao da su pucali A.i S. Nije ih vidio jer je u tom momentu prema njima bio okrenut leđima. U
+jednom momentu se okrenuo i na udaljenosti od oko 60-70 metara zapazio je A. i S. koji su prošli svoj plac, a
 u jednom momentu ih je primijetio da idu u pravcu njegovog objekta, te da pucaju. Nije vidio ko je pucao.
-Tada se sklonio iza nekog auta. U jednom momentu osjetio je da ga je ne š to pogodilo. Podigao je d ž emper i
-zapazio je zrno od projektila koje je bilo deformisano. Uzeo je zrno u i pomislio je da su ga ga đ ali gumenim
+Tada se sklonio iza nekog auta. U jednom momentu osjetio je da ga je nešto pogodilo. Podigao je džemper i
+zapazio je zrno od projektila koje je bilo deformisano. Uzeo je zrno u i pomislio je da su ga gađali gumenim
 metkom, pa je taj metak bacio ispred auta.
- 
-Opisuje da izme đ u njihovih placeva postoji zid visine oko dva metra, a iza zida na njegovom placu bio je
-parkiran teretni kamion. Smatra da su projektili ispaljivani sa pje š a č ke staze, a ne iz dvori š ta. Tvrdi da nije
-vidio ko je ispaljivao projektile, jer se upla š io i krio iza vozila.
- 
-Ne zna kako i na koji na č in ga je pogodilo zrno. Smatra da je prethodno pogodilo neki č vrsti predmet - zid ili
-vozilo i nakon toga riko š etiralo i pogodilo ga u predjelu stomaka.
- 
-Tvrdi da tada kod sebe nije imao bilo kakvo oru ž je, niti da je pucao u njihovom pravcu, a da je imao pi š tolj
+
+Opisuje da između njihovih placeva postoji zid visine oko dva metra, a iza zida na njegovom placu bio je
+parkiran teretni kamion. Smatra da su projektili ispaljivani sa pješačke staze, a ne iz dvorišta. Tvrdi da nije
+vidio ko je ispaljivao projektile, jer se uplašio i krio iza vozila.
+
+Ne zna kako i na koji način ga je pogodilo zrno. Smatra da je prethodno pogodilo nekičvrsti predmet - zid ili
+vozilo i nakon toga rikošetiralo i pogodilo ga u predjelu stomaka.
+
+Tvrdi da tada kod sebe nije imao bilo kakvo oružje, niti da je pucao u njihovom pravcu, a da je imao pištolj
 sigurno je da bi pucao, jer se morao braniti.
- 
+
 Ne zna gdje se nalazio S. kada su ispaljivani projektili, a misli da je vjerovatno pobjegao ili se krio iza zida. Od
 ranije su imali nesporazuma u vezi placa, a H. im duguju novac. Prethodno su imali konflikt i sa I, a H.su
-ljubomorni, jer je njegov brat jedan od ja č ih privrednika u R.
- 
-Pojasnio je da kada je saznao od sinovca S. da mu A. i S. upu ć uju prijetnje, da je tada uzeo telefon od S. Nije
-im ni š ta govorio, jer nije č uo š ta oni govore, niti je razumio š ta pri č aju.
- 
-Ne zna ko je sa druge strane govorio, a č uo je da su upu ć ene prijetnje, ali ne zna ta č no da li od S. ili od A. Tada
-mu je prije ć eno da ć e ga ubiti i da ć u mu ubiti unu č ad.
- 
-Sjeć a se da im je tada rekao "kako ih nije sramota da č ovjeka od 62 godine bacaju na patos i to č ovjeka koji je
-poluinvalid i koji je trebao da se operi š e".
- 
+ljubomorni, jer je njegov brat jedan od jačih privrednika u R.
+
+Pojasnio je da kada je saznao od sinovca S. da mu A. i S. upućuju prijetnje, da je tada uzeo telefon od S. Nije
+im ništa govorio, jer niječuošta oni govore, niti je razumiošta pričaju.
+
+Ne zna ko je sa druge strane govorio, ačuo je da su upućene prijetnje, ali ne zna tačno da li od S. ili od A. Tada
+mu je prijećeno daće ga ubiti i daću mu ubiti unučad.
+
+Sjeća se da im je tada rekao "kako ih nije sramota dačovjeka od 62 godine bacaju na patos i točovjeka koji je
+poluinvalid i koji je trebao da se operiše".
+
 Tvrdi da nije sa S, niti sa A. dogovarao bilo kakav susret, a takav susret nije dogovarao ni S. Tada je ispaljeno
-kako ka ž e "ki š a metaka". Ne zna sa kojeg rastojanja su projektili ispaljivani, jer nije vidio lice koje ispaljuje
+kako kaže "kiša metaka". Ne zna sa kojeg rastojanja su projektili ispaljivani, jer nije vidio lice koje ispaljuje
 projektile. S. i A. je vidio u momentu kad aje zadobio povredu i to na udaljenosti od oko 20-30 metara. Misli da
 je projektile ispaljivao samo S.
- 
-Doga đ aj ispaljivanja projektila trajao je pet- š est minuta. Njegov objekat nije obezbije đ en video nadzorom,
-dok je objekat H. obezbije đ en i misli da je njihov nadzor mogao da prati sav doga đ aj, kao i š iri prostor mjesta
-gdje se doga đ aj de š avao.
- 
-Dalje je na pretresu predo č io da je od sina saznao da je A. dolazio kod njegovog brata u zlataru, da ih je
-maltretirao, da je tada njegovog brata I. koji ima 62 godine oborio na patos i stavljao mu pi š tolj u usta.
-Predo č ava da je od ranije imao sukob sa S. i A, a negira da je bilo kada ispaljivao projektile u njihovom
+
+Događaj ispaljivanja projektila trajao je pet- š est minuta. Njegov objekat nije obezbijeđen video nadzorom,
+dok je objekat H. obezbijeđen i misli da je njihov nadzor mogao da prati sav događaj, kao iširi prostor mjesta
+gdje se događaj dešavao.
+
+Dalje je na pretresu predočio da je od sina saznao da je A. dolazio kod njegovog brata u zlataru, da ih je
+maltretirao, da je tada njegovog brata I. koji ima 62 godine oborio na patos i stavljao mu pištolj u usta.
+Predočava da je od ranije imao sukob sa S. i A, a negira da je bilo kada ispaljivao projektile u njihovom
 pravcu.
- 
-Tvrdi da tada nije pravio bilo kakav dogovor sa S. i A. da se vide, te da je ta č no da je po š ao kod svojih
-poslovnih objekata i da je tada sa njim bio njegov sinovac M. S.
- 
-Predo č io je da je u vi š e navrata poku š avao izmirenje sa porodicom H. i da je on to prihvatio, me đ utim, da su
-mu kasnije rekli da od pomirenja nema ni š ta. Drugi put se izmirio sa S. i tada su se rukovali i poljubili, ali je na
-rekonstrukciji shvatio da je to samo bilo formalno, a ne stvarno izmirenje. Me đ utim, kada je do š ao nalaz
-vješ taka, S. je negodovao, govore ć i da izmirenje ne va ž i, kao i da ga je otac optu ž enog S. vrije đ ao na ulazu u
-sud, a da im je i S. u sudnici izgovorio uvredljive rije č i.
- 
-Pojasnio je da su se S. i Al. tr č e ć i pribli ž avali prema mjestu gdje su se nalazili on i S, te da je vidio S. da dr ž i
+
+Tvrdi da tada nije pravio bilo kakav dogovor sa S. i A. da se vide, te da je tačno da je pošao kod svojih
+poslovnih objekata i da je tada sa njim bio njegov sinovac M.S.
+
+Predočio je da je u više navrata pokušavao izmirenje sa porodicom H. i da je on to prihvatio, međutim, da su
+mu kasnije rekli da od pomirenja nema ništa. Drugi put se izmirio sa S. i tada su se rukovali i poljubili, ali je na
+rekonstrukciji shvatio da je to samo bilo formalno, a ne stvarno izmirenje. Međutim, kada je došao nalaz
+vještaka, S. je negodovao, govoreći da izmirenje ne važi, kao i da ga je otac optuženog S. vrijeđao na ulazu u
+sud, a da im je i S. u sudnici izgovorio uvredljive riječi.
+
+Pojasnio je da su se S. i Al. trčeći približavali prema mjestu gdje su se nalazili on i S, te da je vidio S. da drži
 pištolj u ruci sa ustima cijevi okrenutim prema podlozi. Kasnije je vidio da je jedan od ispaljenih projektila
-koji je ispalio S. pogodio kamion na visini od 1,80 m, a na rekonstrukciji je zapazio o š te ć enje na zidu na visini
-od 1 do 1,20 m. kao i o š te ć enje na putni č kom vozilu. Smatra da ga je upravo pogodio projektil koji se odbio
-od putni č kog vozila.
- 
-Visina ograde izme đ u njihovoh placeva je 1,80m. a ne 1,60 m. kako je ozna č eno na rekonstrukciji, te da je
-dvori š te sa njegove strane malo ni ž e, a da je njegova visina 1,94 cm.
- 
-Potvr đ uje da su prilikom vr š enja uvi đ aja na đ ene č aure od pi š tolja u njegovom dvori š tu, ali predo č ava da se
-na tom mjestu skupljaju č esto svatovi i č ekaju nevjestu i pucaju iz oru ž ja, pa da stoga č aure poti č u iz tih
-dešavanja, a ne iz doga đ aja koji se kriti č nom prilikom desio.
- 
+koji je ispalio S. pogodio kamion na visini od 1,80 m, a na rekonstrukciji je zapazio oštećenje na zidu na visini
+od 1 do 1,20 m. kao i oštećenje na putničkom vozilu. Smatra da ga je upravo pogodio projektil koji se odbio
+od putničkog vozila.
+
+Visina ograde između njihovoh placeva je 1,80m. a ne 1,60 m. kako je označeno na rekonstrukciji, te da je
+dvorište sa njegove strane malo niže, a da je njegova visina 1,94 cm.
+
+Potvrđuje da su prilikom vršenja uviđaja nađenečaure od pištolja u njegovom dvorištu, ali predočava da se
+na tom mjestu skupljajučesto svatovi ičekaju nevjestu i pucaju iz oružja, pa da stogačaure potiču iz tih
+dešavanja, a ne iz događaja koji se kritičnom prilikom desio.
+
 Tada je bio u strahu i od tada pije tablete za smirenje.
- 
-Tvrdi da je H. ispaljivao projektile sa pje š a č ke staze, koja staza nije na njegovom posjedu.
- 
-Poš to se njegov sinovac nalazio pored njega, smatra da je i on bio ugro ž en od ispaljenih projektila.
- 
-Zbog doga đ aja koji se desio kada je bio o š te ć en njegov brat, H. A. je osu đ en, a radi se o doga đ aju koji se desio
+
+Tvrdi da je H. ispaljivao projektile sa pješačke staze, koja staza nije na njegovom posjedu.
+
+Poš to se njegov sinovac nalazio pored njega, smatra da je i on bio ugrožen od ispaljenih projektila.
+
+Zbog događaja koji se desio kada je bio oštećen njegov brat, H.A. je osuđen, a radi se o događaju koji se desio
 prethodno istog dana.
- 
-Tvrdi da H. nije stupao na njegov posjed kada je ispaljivao projektile, ali jeste na pje š a č ku stazu i na
+
+Tvrdi da H. nije stupao na njegov posjed kada je ispaljivao projektile, ali jeste na pješačku stazu i na
 magistralu.
- 
-Dok su se nalazili u vozilu i kada su se kretali ka gradu, na petnji, da mu je S. rekao "evo ih" misle ć i na H, a
-drugi put su ih vidjeli kada su do š li na plac.
- 
-Kada su do š li na plac, S. mu je rekao da H. pucaju.
- 
-Toga dana u pravcu svojih poslovnih objekata po š ao je sa S. jer je vozilo sa robom trebao da ubaci na carinski
+
+Dok su se nalazili u vozilu i kada su se kretali ka gradu, na petnji, da mu je S. rekao "evo ih" misleći na H, a
+drugi put su ih vidjeli kada su došli na plac.
+
+Kada su došli na plac, S. mu je rekao da H. pucaju.
+
+Toga dana u pravcu svojih poslovnih objekata pošao je sa S. jer je vozilo sa robom trebao da ubaci na carinski
 terminal.
- 
-Kada je zadobio povrede nalazio se iza putni č kog vozila "Audi 3" sa lijeve strane. Dok su pucali bio je malo
-sagnut. S. je vidio nakon š to je zadobio povredu i tada se nalazio iza "Forda". Nakon š to je podigao d ž emper i
-vidio da je povrije đ en zapazio je deformisani projektil, koji se "malo dr ž ao na ko ž i", a kada su meci po č eli da
-"zviž de" oko glave, taj projektil je bacio i na tom mjestu je kasnije i na đ en.
- 
-Prema optu ž enom H. u momentu zadobijanja povrede bio je okrenut prsima. Zrno kojim je povrije đ en je
-uzeo desnom rukom, a kada je do š ao do S, povukao ga je za ruku i zna da je tada S. sa obje ruke dirao ranu.
- 
-Tačno je da je vidio pi š tolj kod S, a š to je ranije govorio suprotno kao razlogom navodi postignuto pomirenje
-izme đ u njih, na koji na č in je poku š ao da mu pomogne.
- 
-U zavr š noj rije č i branilac optu ž enog adv. R. O, cijeni da tu ž ila š tvo nije uspjelo da doka ž e navode iz optu ž nice
-u odnosu na optu ž enog M.I, pa je stavio predlog da sud istog oslobodi usled nedostatka dokaza.
-Predo č ava da se M. tokom postupka branio dosledno. Ukazuje da se doga đ aj desio na posjeduju optu ž enog
-M, te navodi da prethodno, prije predmetnog doga đ aja, nije dogovaran susret. Ukazuje na sadr ž ano u nalazu
-vješ taka balisti č ara, š to po nala ž enju branioca, potvr đ uje odbranu optu ž enog M. Nalazi da nije bilo nikakvih
-fizič kih o š te ć enja sa unutra š nje strane zida I. placa, niti na vrhu zida, a š to č ini nelogi č nim zaklju č ak u
-pogledu postojanja riko š eta, koji bi o š tetio trenerku svjedoka H. A.
- 
-Smatra da je dokaz - trenerka koja je dostavljena na vje š ta č enje, kontaminiran i kompromitovan, te da
-nađ ene č aure kod tvrdnje da je pucano sa placa optu ž enog M. bli ž e sa pozicije ugla objekta u pravcu
-optu ž enog H, ne bi se mogle na ć i na tom mjestu.
-Primje ć uje da se iz video zapisa nejasno vidi da d ž ip zastaje i da su vrata voza č a poluotvorena, te da se tada
-začuo pucanj iz pravca d ž ipa, a konfuznost u izno š enju odbrane optu ž enog S. M. u dijelu iznijete odbrane
-cijeni razumnom zbog postojanja ogromnog straha kod istog. Ukazuje na nelogi č nost u izno š enju odbrane
-optu ž enog H, pa time i na neta č nost.
- 
-Cijeni da postoje svi elementi nu ž ne odbrane u odnosu na optu ž enog I. M. i tra ž i osloba đ aju ć u odluku, te moli
-sud da bude blag i prema optu ž enom S. H.
- 
-Optu ž eni je prihvatio zavr š nu rije č  svog branioca
- 
-Sud je u dokaznom postupku na glavnom pretresu izveo dokaze: saslu š ao svjedoka M. S; pro č itao: iskaz
-svjedoka H. A. sa zapisnika o saslu š anju pred VDT-om dana 14.11.2017 godine; zapisnik o uvi đ aju Osnovnog
-državnog tu ž ila š tva R, Kt. br. 127/17 od 14.09.2017 godine, sa skicom lica mjesta od 09.09.2017 godine, broj
-77/02-240/17-4557 od 12.09.2017 godine; izvje š taj ljekara specijaliste Op š te bolnice B. na ime I. M. od
-09.09.2017 godine; otpusna lista sa epikrizom Op š te bolnice B. na ime I. M. sa mati č nim brojem istorije bolesti
-5962/2017; izvje š taj ljekara dr. S. N. specijaliste psihijatrije od 11.09.2017 godine; nalaz vje š taka dr. N. R. od
-25.09.2017 godine, na ime M. I; nalaz i mi š ljenje vje š taka dr. N. R. - ljekara obducenta na ime M. I. od
-14.11.2017 godine; izvje š taj o balisti č kom vje š ta č enju Uprave policije - Forenzi č kog centra Danilovgrad br.
-3829-1/17 od 03.10.2017 godine, sa fotodokumentacijom, kao i č aure sporna zrna na đ ena na licu mjesta
-uprakovana u dvije nailonske kesice sa brojem 3829/17; balisti č ko vje š ta č enje sa mi š ljenjem,
-fotodokumentacijom i skicama 1, 2 i 3, sa č injen od strane vje š taka balistike M. M; izvje š aj o vje š ta č enju GSR
-čestica Uprave policije Forenzi č kog centra Danilovgrad br. 3830/17 od 03.10.2017 godine; izvje š taj o DNK
-vješ ta č enju Uprave policije Forenzi č kog centra Danilovgrad br. 3828/17 od 06.10.2017 godine, sa
-fotodokumentacijom; izvje š taj o vje š ta č enju "prisustva barutnih č estica" Uprave policije Foreni č kog centra
-Danilovgrad br. 3831/17 od 09.10.2017 godine; izvje š taj o trasolo š kom vje š ta č enju Uprave policije
-Forenzi č kog centra Danilovgrad br. 3832-1/17 od 04.10.2017 godine, sa skicom; zapisnik o rekonstrukciji
-doga đ aj asa č injen od strane VDT-a Kti. br. 37/17 od 26.10.2017 godine, sa fotodokumentacijom i skicama
-sačinjenim od strane Uprave policije - OB R. br. Sl. od 26.10.2017 godine, prema izjavi okrivljenog M. I. koa i
+
+Kada je zadobio povrede nalazio se iza putničkog vozila "Audi 3" sa lijeve strane. Dok su pucali bio je malo
+sagnut. S. je vidio nakonšto je zadobio povredu i tada se nalazio iza "Forda". Nakonšto je podigao džemper i
+vidio da je povrijeđen zapazio je deformisani projektil, koji se "malo držao na koži", a kada su meci počeli da
+"zvižde" oko glave, taj projektil je bacio i na tom mjestu je kasnije i nađen.
+
+Prema optuženom H. u momentu zadobijanja povrede bio je okrenut prsima. Zrno kojim je povrijeđen je
+uzeo desnom rukom, a kada je došao do S, povukao ga je za ruku i zna da je tada S. sa obje ruke dirao ranu.
+
+Tačno je da je vidio pištolj kod S, ašto je ranije govorio suprotno kao razlogom navodi postignuto pomirenje
+između njih, na koji način je pokušao da mu pomogne.
+
+U završnoj riječi branilac optuženog adv. R. O, cijeni da tužilaštvo nije uspjelo da dokaže navode iz optužnice
+u odnosu na optuženog M.I, pa je stavio predlog da sud istog oslobodi usled nedostatka dokaza.
+Predočava da se M. tokom postupka branio dosledno. Ukazuje da se događaj desio na posjeduju optuženog
+M, te navodi da prethodno, prije predmetnog događaja, nije dogovaran susret. Ukazuje na sadržano u nalazu
+vještaka balističara, š to po nalaženju branioca, potvrđuje odbranu optuženog M. Nalazi da nije bilo nikakvih
+fizičkih oštećenja sa unutrašnje strane zida I. placa, niti na vrhu zida, aštočini nelogičnim zaključak u
+pogledu postojanja rikošeta, koji bi oštetio trenerku svjedoka H.A.
+
+Smatra da je dokaz - trenerka koja je dostavljena na vještačenje, kontaminiran i kompromitovan, te da
+nađ enečaure kod tvrdnje da je pucano sa placa optuženog M. bliže sa pozicije ugla objekta u pravcu
+optuženog H, ne bi se mogle naći na tom mjestu.
+Primjećuje da se iz video zapisa nejasno vidi da džip zastaje i da su vrata vozača poluotvorena, te da se tada
+začuo pucanj iz pravca džipa, a konfuznost u iznošenju odbrane optuženog S.M. u dijelu iznijete odbrane
+cijeni razumnom zbog postojanja ogromnog straha kod istog. Ukazuje na nelogičnost u iznošenju odbrane
+optuženog H, pa time i na netačnost.
+
+Cijeni da postoje svi elementi nužne odbrane u odnosu na optuženog I.M. i traži oslobađajuću odluku, te moli
+sud da bude blag i prema optuženom S.H.
+
+Optuženi je prihvatio završnu riječsvog branioca
+
+Sud je u dokaznom postupku na glavnom pretresu izveo dokaze: saslušao svjedoka M. S; pročitao: iskaz
+svjedoka H.A. sa zapisnika o saslušanju pred VDT-om dana 14.11.2017 godine; zapisnik o uviđaju Osnovnog
+državnog tužilaštva R, Kt. br. 127/17 od 14.09.2017 godine, sa skicom lica mjesta od 09.09.2017 godine, broj
+77/02-240/17-4557 od 12.09.2017 godine; izvještaj ljekara specijaliste Opšte bolnice B. na ime I.M. od
+09.09.2017 godine; otpusna lista sa epikrizom Opšte bolnice B. na ime I.M. sa matičnim brojem istorije bolesti
+5962/2017; izvještaj ljekara dr. S.N. specijaliste psihijatrije od 11.09.2017 godine; nalaz vještaka dr. N.R. od
+25.09.2017 godine, na ime M. I; nalaz i mišljenje vještaka dr. N.R. - ljekara obducenta na ime M.I. od
+14.11.2017 godine; izvještaj o balističkom vještačenju Uprave policije - Forenzičkog centra Danilovgrad br.
+3829-1/17 od 03.10.2017 godine, sa fotodokumentacijom, kao ičaure sporna zrna nađena na licu mjesta
+
+uprakovana u dvije nailonske kesice sa brojem 3829/17; balističko vještačenje sa mišljenjem,
+fotodokumentacijom i skicama 1, 2 i 3, sačinjen od strane vještaka balistike M. M; izvješaj o vještačenju GSR
+čestica Uprave policije Forenzičkog centra Danilovgrad br. 3830/17 od 03.10.2017 godine; izvještaj o DNK
+vješ tačenju Uprave policije Forenzičkog centra Danilovgrad br. 3828/17 od 06.10.2017 godine, sa
+fotodokumentacijom; izvještaj o vještačenju "prisustva barutnihčestica" Uprave policije Foreničkog centra
+Danilovgrad br. 3831/17 od 09.10.2017 godine; izvještaj o trasološkom vještačenju Uprave policije
+Forenzičkog centra Danilovgrad br. 3832-1/17 od 04.10.2017 godine, sa skicom; zapisnik o rekonstrukciji
+događaj asačinjen od strane VDT-a Kti. br. 37/17 od 26.10.2017 godine, sa fotodokumentacijom i skicama
+sačinjenim od strane Uprave policije - OB R. br. Sl. od 26.10.2017 godine, prema izjavi okrivljenog M.I. koa i
 prema izjavi okrivljenog H. S; izvod iz registra kaznenih evidencija Ministarstva pravde Crne Gore na br.
 3/2018 od 10.01.2018 godine, na ime H. S; izvod iz registra kaznenih evidencija Ministarstva pravde Crne Gore
 na br. 4/2018 od 10.01.2018 godine, na ime M. I; presudu Osnovnog suda iz R, K. br. 77/17 od 25.12.2017
-godine; izvr š io uvid u: fotodokumentaciju OB R. br. 148/17 od 10.09.2017 godine; saslu š ao vje š take: N. R, M.
-M. i D. G, pa je cijene ć i iste i u kontekstu dovode ć i ih u vezu sa odbranom optu ž enog utvrdio č injeni č no stanje
+godine; izvršio uvid u: fotodokumentaciju OB R. br. 148/17 od 10.09.2017 godine; saslušao vještake: N. R, M.M. i D. G, pa je cijeneći iste i u kontekstu dovodeći ih u vezu sa odbranom optuženog utvrdiočinjenično stanje
 kao u izreci presude.
- 
-Kao nesporno u ovoj krivi č no-pravnoj stvari utvr đ eno je slede ć e č injeni č no stanje:
- 
-Optu ž eni H.S. je sestri ć  sada optu ž enog M. I. Odnosi izme đ u njih su bili poreme ć eni zbog nevra ć enog duga, te
-je toga dana brat optu ž enog S. A, u vezi toga imao nesporazum sa bratom sada optu ž enog I. I, zbog kojeg
-doga đ aja je A. pravnosna ž no osu đ en.
- 
-Po saznanju da je do š lo do tog konflikta sada optu ž eni I. je razgovarao telefonom sa bratom sada optu ž enog
-S. A. i to dok se nalazio u ku ć i I. Odmah potom I. je zajedno sa sinovcem S, po š ao do svojih poslovnih
-objekata koji se nalaze u mjestu Z, gdje poslovne objekte posjeduju i sada optu ž eni H, a koje prostore dijeli
-kameni zid. Odmah po dolasku M. na to mjesto do š li su i sada optu ž eni S. i njegov brat A.
- 
-Nesporno je da je sada optu ž eni S. ispalio vi š e projektila koje ispaljene č aure su na đ ene na mjestu gdje se
-desio doga đ aj.
- 
-Nesporno je da su na đ ene i č aure pored vozila gdje se u trenutku ispaljivanja projektila nalazio optu ž eni M,
-kao i jedna č aura koja je na đ ena iza brisa č a vozila kojim su tada do š li optu ž eni M. i svjedok S.
- 
-Optu ž eni S. ne spori da je ispaljivao projektile, ali tvrdi da je to radio brane ć i se od napada optu ž enog I., te da
-je projektile ispaljivao nasumice iz straha, ne ni š ane ć i u pravcu ispaljivanja, dok optu ž eni I. tvrdi da kriti č nom
-prilikom nije posjedovao pi š tolj, niti da je ispaljivao projektile.
- 
-To š to su na đ ene č aure pored kojeg se on nalazio tada, tvrdi da č aure poti č u iz drugih doga đ aja, a ne od
-doga đ aja koji se desio toga dana, a preko branioca ukazuje na postojanje nu ž ne odbrane.
- 
-Odbrane optu ž enih na na č in kako su iznijete sud nije mogao prihvatiti.
- 
-U kona č nom, oba optu ž ena tvrde da su se branili od protivpravnog napada koji nijesu skrivili.
- 
-Po nala ž enju suda, oba optu ž ena su ispoljila nedoslednost u iznijetim odbranama tokom postupka. Odbrane,
-po nala ž enju suda, prilago đ avaju nastaloj situaciji i na pouzdan na č in ne opisuju doga đ aj onako kako se
+
+Kao nesporno u ovoj krivično-pravnoj stvari utvrđeno je sledećečinjenično stanje:
+
+Optuženi H.S. je sestrićsada optuženog M.I. Odnosi između njih su bili poremećeni zbog nevraćenog duga, te
+je toga dana brat optuženog S. A, u vezi toga imao nesporazum sa bratom sada optuženog I. I, zbog kojeg
+događaja je A. pravnosnažno osuđen.
+
+Po saznanju da je došlo do tog konflikta sada optuženi I. je razgovarao telefonom sa bratom sada optuženog
+S.A. i to dok se nalazio u kući I. Odmah potom I. je zajedno sa sinovcem S, pošao do svojih poslovnih
+objekata koji se nalaze u mjestu Z, gdje poslovne objekte posjeduju i sada optuženi H, a koje prostore dijeli
+kameni zid. Odmah po dolasku M. na to mjesto došli su i sada optuženi S. i njegov brat A.
+
+Nesporno je da je sada optuženi S. ispalio više projektila koje ispaljenečaure su nađene na mjestu gdje se
+desio događaj.
+
+Nesporno je da su nađene ičaure pored vozila gdje se u trenutku ispaljivanja projektila nalazio optuženi M,
+kao i jednačaura koja je nađena iza brisača vozila kojim su tada došli optuženi M. i svjedok S.
+
+Optuženi S. ne spori da je ispaljivao projektile, ali tvrdi da je to radio braneći se od napada optuženog I., te da
+je projektile ispaljivao nasumice iz straha, ne nišaneći u pravcu ispaljivanja, dok optuženi I. tvrdi da kritičnom
+prilikom nije posjedovao pištolj, niti da je ispaljivao projektile.
+
+Tošto su nađenečaure pored kojeg se on nalazio tada, tvrdi dačaure potiču iz drugih događaja, a ne od
+događaja koji se desio toga dana, a preko branioca ukazuje na postojanje nužne odbrane.
+
+Odbrane optuženih na način kako su iznijete sud nije mogao prihvatiti.
+
+U konačnom, oba optužena tvrde da su se branili od protivpravnog napada koji nijesu skrivili.
+
+Po nalaženju suda, oba optužena su ispoljila nedoslednost u iznijetim odbranama tokom postupka. Odbrane,
+po nalaženju suda, prilagođavaju nastaloj situaciji i na pouzdan način ne opisuju događaj onako kako se
 desio.
- 
-Njihove odbrane se me đ usobno obezvre đ uju, a nijesu potvr đ ene u potpunosti nijednim izvedenim dokazom
-tokom postupka, ve ć  suprotno izvedeni dokazi ukazuju da se doga đ aj desio suprotno sadr ž ini njihovih
+
+Njihove odbrane se međusobno obezvređuju, a nijesu potvrđene u potpunosti nijednim izvedenim dokazom
+tokom postupka, većsuprotno izvedeni dokazi ukazuju da se događaj desio suprotno sadržini njihovih
 iznijetih odbrana.
- 
-Tako, svjedok M. S. u bitnom tokom postupka predo č ava da se toga dana nalazio u P. kada ga je telefonom
-pozvao brat od tetke H. S. Tra ž io je da se vide, a zatim je po č eo da ga psuje. Po proteku oko pola sata, pozvao
-ga je H. A, isto tako brat od tetke, pa je i A. po č eo da ga psuje i da mu prijeti da ć e ih pobiti. Po dolasku iz P,
-svratio je u zlatarsku radnju koju dr ž i njegov otac I. U istoj je zatekao oca i majku E. Zapazio je da su im o č i
-pune suza. U me đ uvremenu u radnju je do š ao i njegov sin I. Tada su njegov otac i majka ispri č ali š ta se desilo,
-te da je u radnju dolazio H. A, vadio pi š tolj i prijetio im da ć e ih pobiti. Saznao je da I.duguje novac A, ne zna u
-kojem iznosu i da je A. zbog toga dolazio i tra ž io da mu vrate novac. Odlu č ili su da njegov otac po đ e u stanicu
-policije i prijavi š ta se desilo. U me đ uvremenu je u radnju do š ao i njegov drugi stric I. I sa njim su razgovarali o
-tome š ta se desilo. Dok su razgovarali, telefonom ga je pozvao A. i pitao ga gdje se nalazi. Odgovorio mu je da
-se nalazi u zlatarskoj radnji i rekao mu "kako te nije sramota da me zove š  a zna š  š ta si u toku dana uradio".
-Tada je I. uzeo telefonom i pitao A. zbog č ega ih zove. A. je po č eo da psuje I.. Nije č uo rije č i koje mu je
-upuć ivao. I. je tada stavio telefon na sto i "izleteo" iz radnje, pa je on po š ao za njim i u š ao u njegovo vozilo, a
-potom zajedno po š li prema objektima koje I. posjeduje u I. z. u mjestu Z. U vozilu mu je I. govorio da treba da
-pođ e do njegovih objekata kako bi ne š to uzeo, ali nije govorio š ta.
- 
-Zapazio je da je I. bio uznemiren i ljut, zbog č ega ga je on smirivao. Kada su do š li do Z, do blizine jednog od I.
-objekata, parkirali su vozilo na parking prostoru, a odmah potom nai š lo je vozilo kojim je upravljao H.S. Na
-mjestu suvoza č a nalazio se H. A. Dok su se on i I. nalazili u vozilu za č uo je pucanj sa mjesta suvoza č a i misli da
-je pucanj bio u vazduh. Zaklju č io je da je pucao A, jer je S. upravljao vozilo i nije vidio da je izbacivao iz vozila
+
+Tako, svjedok M.S. u bitnom tokom postupka predočava da se toga dana nalazio u P. kada ga je telefonom
+pozvao brat od tetke H.S. Tražio je da se vide, a zatim je počeo da ga psuje. Po proteku oko pola sata, pozvao
+ga je H. A, isto tako brat od tetke, pa je i A. počeo da ga psuje i da mu prijeti daće ih pobiti. Po dolasku iz P,
+svratio je u zlatarsku radnju koju drži njegov otac I. U istoj je zatekao oca i majku E. Zapazio je da su im oči
+pune suza. U međuvremenu u radnju je došao i njegov sin I. Tada su njegov otac i majka ispričališta se desilo,
+te da je u radnju dolazio H. A, vadio pištolj i prijetio im daće ih pobiti. Saznao je da I.duguje novac A, ne zna u
+kojem iznosu i da je A. zbog toga dolazio i tražio da mu vrate novac. Odlučili su da njegov otac pođe u stanicu
+policije i prijavišta se desilo. U međuvremenu je u radnju došao i njegov drugi stric I. I sa njim su razgovarali o
+tomešta se desilo. Dok su razgovarali, telefonom ga je pozvao A. i pitao ga gdje se nalazi. Odgovorio mu je da
+se nalazi u zlatarskoj radnji i rekao mu "kako te nije sramota da me zoveša znaššta si u toku dana uradio".
+Tada je I. uzeo telefonom i pitao A. zbogčega ih zove. A. je počeo da psuje I.. Niječuo riječi koje mu je
+upućivao. I. je tada stavio telefon na sto i "izleteo" iz radnje, pa je on pošao za njim i ušao u njegovo vozilo, a
+potom zajedno pošli prema objektima koje I. posjeduje u I. z. u mjestu Z. U vozilu mu je I. govorio da treba da
+pođ e do njegovih objekata kako bi nešto uzeo, ali nije govoriošta.
+
+Zapazio je da je I. bio uznemiren i ljut, zbogčega ga je on smirivao. Kada su došli do Z, do blizine jednog od I.
+objekata, parkirali su vozilo na parking prostoru, a odmah potom naišlo je vozilo kojim je upravljao H.S. Na
+mjestu suvozača nalazio se H.A. Dok su se on i I. nalazili u vozilu začuo je pucanj sa mjesta suvozača i misli da
+je pucanj bio u vazduh. Zaključio je da je pucao A, jer je S. upravljao vozilo i nije vidio da je izbacivao iz vozila
 ruku.
- 
-Parkirali su vozilo na svom parkingu ispred objekta za tehni č ki pregled, a potom je iza š ao iz vozila. Nije
-zapazio da je iz vozila iza š ao I, niti je od tog momenta vidio gdje se nalazi, jer je pa ž nju usmjerio gdje su vozilo
-parkirali S. i A. Po š ao je u njihovog pravcu i tada je zapazio da S. i A. tr č e prema njemu, te da S. puca vi š e puta
+
+Parkirali su vozilo na svom parkingu ispred objekta za tehnički pregled, a potom je izašao iz vozila. Nije
+zapazio da je iz vozila izašao I, niti je od tog momenta vidio gdje se nalazi, jer je pažnju usmjerio gdje su vozilo
+
+parkirali S. i A. Pošao je u njihovog pravcu i tada je zapazio da S. i A. trče prema njemu, te da S. puca više puta
 u njegovom pravcu. Pogled mu je bio usmjeren prema njima, tako da nije vidio gdje se nalazi I. Sakrio se iza
 vozila, a potom iza zida objekta njegovog strica I. i to u blizini vozila marke "Ford". Tada je primijetio I. i
 rukama ga je dohvatio i povukao prema sebi, kako bi se sakrili. S. je i dalje pucao u njihovom pravcu. Tada je
-I. rekao "mene rani š e". Potom je S. prestao da puca i tada su se S. i A. udaljili prema svom vozilu, a zatim po š li
-magistralnim putem prema selu B. Odmah potom je do š la policija, pa su po š li u stanicu policije, a potom je I.
-preba č en u Op š tu bolnicu u B.
- 
+I. rekao "mene raniše". Potom je S. prestao da puca i tada su se S. i A. udaljili prema svom vozilu, a zatim pošli
+magistralnim putem prema selu B. Odmah potom je došla policija, pa su pošli u stanicu policije, a potom je I.
+prebačen u Opštu bolnicu u B.
+
 Vidio je da je S. pucao u njihovom pravcu dva puta kada su parkirali vozilo, dok nije vidio da projektile
-ispaljuje A. Od uzbu đ enja i straha nije vidio da I. puca u pravcu S. i A, a jasno je vidio da S. puca u njihovom
-pravcu. Ne zna ta č no kada je projektil pogodio I., te ne zna da li se radilo o direktnom pogodku ili riko š etu.
+ispaljuje A. Od uzbuđenja i straha nije vidio da I. puca u pravcu S. i A, a jasno je vidio da S. puca u njihovom
+pravcu. Ne zna tačno kada je projektil pogodio I., te ne zna da li se radilo o direktnom pogodku ili rikošetu.
 Nije vidio gdje se nalazilo zrno koje je povrijedilo I, a I.mu je pokazao povredu u predjelu stomaka u vidu
-okrznu ć a.
- 
-Tvrdi da kod sebe toga dana nije imao pi š tolj, niti da je pucao.
- 
+okrznuća.
+
+Tvrdi da kod sebe toga dana nije imao pištolj, niti da je pucao.
+
 S. nije mogao da ga pogodi kada je pucao u njegovom pravcu, jer je bio zaklonjen iza vozila i iza objekta. Tvrdi
-da ne posjeduje pi š tolj u legalnom posjedu, te da su on i I. sa S. i A. prije ovog doga đ aja bili u dobrim
-odnosima, a ina č e su srodnici.
- 
-Smatra da sa njegovim stricem I. S. i A. nijesu bili u dobrim odnosima zbog ranije nerije š enih imovinskih
+da ne posjeduje pištolj u legalnom posjedu, te da su on i I. sa S. i A. prije ovog događaja bili u dobrim
+odnosima, a inače su srodnici.
+
+Smatra da sa njegovim stricem I.S. i A. nijesu bili u dobrim odnosima zbog ranije neriješenih imovinskih
 odnosa.
- 
-Toga dana sa I. je po š ao prema industrijskoj zoni Z. kako bi smirio situaciju, jer je primijetio da je I. iznerviran,
-pa je pretpostavio da mo ž e do ć i do nekog ekcesa.
- 
-Dalje je pred Vi š im tu ž iocem predo č io da je toga dana, njegov otac I. imao nesuglasicu sa H. A, a vezano za
-neki dug. Nakon toga ga je A. pozvao telefonom, insistiraju ć i da se vide, na š ta mu je on odgovorio kako ima
-obraza da ga poziva obzirom na ono š to se prethodno desilo. Navodi da je tada njegov stric I. uzeo telefon iz
-njegovih ruku, pitaju ć i A. š to ga zove. A. mu je odgovorio da ne zna. Nakon razgovora koji su obavili I. i A,
-zajedno sa I. je po š ao u pravcu njegovih poslovnih objekata koji se nalazile u mjestu Z. U vozilu su pri č ali o
+
+Toga dana sa I. je pošao prema industrijskoj zoni Z. kako bi smirio situaciju, jer je primijetio da je I. iznerviran,
+pa je pretpostavio da može doći do nekog ekcesa.
+
+Dalje je pred Višim tužiocem predočio da je toga dana, njegov otac I. imao nesuglasicu sa H. A, a vezano za
+neki dug. Nakon toga ga je A. pozvao telefonom, insistirajući da se vide, našta mu je on odgovorio kako ima
+obraza da ga poziva obzirom na onošto se prethodno desilo. Navodi da je tada njegov stric I. uzeo telefon iz
+njegovih ruku, pitajući A. š to ga zove. A. mu je odgovorio da ne zna. Nakon razgovora koji su obavili I. i A,
+zajedno sa I. je pošao u pravcu njegovih poslovnih objekata koji se nalazile u mjestu Z. U vozilu su pričali o
 autu koje je I. uvezao iz Nj. Po dolasku u Z, parkirali su vozilo i sjedjeli u vozilu par minuta. Tada je on
-primijetio kako svojim vozilom dolaze A. i S. H. i prolaze pored poslovnog prostora njegovog strica I. Tada je
-on I. rekao "evo pro đ o š e ovi" misle ć i na A. i S. Iza š ao je iz vozila i stao pored vozila kako bi ga oni vidjeli. S. je
-upravljao vozilom i kretao se polako. Nijesu jedni drugima bilo š ta govorili. A. i S. su nastavili kretanje vozilom
-i parkirali ga dijelom i na placu njegovog strica I, u š ta nije siguran. I dalje je stajao pored vozila "Audi" iza
-vrata koja su u tom momentu bila otvorena i tada je č uo vi š e pucnjeva iz pravca gdje su se nalazili S. i A. Nije
-vidio ko je ispaljivao projektile, jer se sakrio iza vozila, a potom iza zida, nakon č ega je u š ao u objekat. Nije
-vidio gdje se nalazi njegov stric I, a po proteku kra ć eg vremena A. i S. su po š li sa tog mjesta. Potom je do š la
-policija, pa je on iza š ao iz objekta u kojem se prethodno bio sakrio i tada mu je I. saop š tio da je povrije đ en i
-pokazao mu povredu u predjelu stomaka sa desne strane. Misli da je bila neka povr š inska rana. Policajci su I.
-poveli u bolnici, a on je po š ao u OB R.
- 
+primijetio kako svojim vozilom dolaze A. i S.H. i prolaze pored poslovnog prostora njegovog strica I. Tada je
+on I. rekao "evo prođoše ovi" misleći na A. i S. Izašao je iz vozila i stao pored vozila kako bi ga oni vidjeli. S. je
+upravljao vozilom i kretao se polako. Nijesu jedni drugima bilošta govorili. A. i S. su nastavili kretanje vozilom
+i parkirali ga dijelom i na placu njegovog strica I, ušta nije siguran. I dalje je stajao pored vozila "Audi" iza
+vrata koja su u tom momentu bila otvorena i tada ječuo više pucnjeva iz pravca gdje su se nalazili S. i A. Nije
+vidio ko je ispaljivao projektile, jer se sakrio iza vozila, a potom iza zida, nakončega je ušao u objekat. Nije
+vidio gdje se nalazi njegov stric I, a po proteku kraćeg vremena A. i S. su pošli sa tog mjesta. Potom je došla
+
+policija, pa je on izašao iz objekta u kojem se prethodno bio sakrio i tada mu je I. saopštio da je povrijeđen i
+pokazao mu povredu u predjelu stomaka sa desne strane. Misli da je bila neka površinska rana. Policajci su I.
+poveli u bolnici, a on je pošao u OB R.
+
 Tvrdi da nije vidio da je I. ispaljivao projektile, te da on nije ispaljivao projektile.
- 
-Nakon š to je do š ao do I. zagrlio ga je i svojom rukom je dirao mjesto gdje je I. zadobio povredu.
- 
-Na pretresu je pojasnio da je ta č no da su on i I. po š li iz zlatarske radnje nakon š to su i jedan i drugi razgovarali
-telefonom sa A. i da je razlog njihovog izlaska iz zlatare bio kako bi zavr š ili neke radove oko vozila koje je I.
+
+Nakonšto je došao do I. zagrlio ga je i svojom rukom je dirao mjesto gdje je I. zadobio povredu.
+
+Na pretresu je pojasnio da je tačno da su on i I. pošli iz zlatarske radnje nakonšto su i jedan i drugi razgovarali
+telefonom sa A. i da je razlog njihovog izlaska iz zlatare bio kako bi završili neke radove oko vozila koje je I.
 ranije kupio u inostranstvu.
- 
+
 Poš li su u mjesto Z. gdje I. posjeduje poslovni prostor, te dok su se nalazili na tom mjestu i u momentu kada
-su sjedjeli u vozilu nai š li su S. i A. U prolasku S. je otvorio vrata od vozila u kojem su se nalazili, govore ć i
-"dođ ite gore p..." pokazuju ć i rukom prema njihovom objektu.
- 
-Kada se nalazio ispred vozila za č uo je pucanj, nakon č ega se sakrio. Ne zna ko je ispalio projektil.
- 
-Po povratku iz P. saznao je da je njegov otac dugovao S. ocu novac, te da je ta č no da je dok su se nalazili u
-vozilu, I. je rekao "evo ih ovi" ili mo ž da "da li su oni ovo".
- 
-Nije se mogao precizno izjasniti da li su se nalazili u vozilu ili pored vozila kada im je S. izgovorio te rije č i.Ne
-zna da li je ne š to nakon tih rije č i prokomentarisao I, a ta č no je da se on nalazio ispred vozila kada je za č uo
+su sjedjeli u vozilu naišli su S. i A. U prolasku S. je otvorio vrata od vozila u kojem su se nalazili, govoreći
+"dođ ite gore p..." pokazujući rukom prema njihovom objektu.
+
+Kada se nalazio ispred vozila začuo je pucanj, nakončega se sakrio. Ne zna ko je ispalio projektil.
+
+Po povratku iz P. saznao je da je njegov otac dugovao S. ocu novac, te da je tačno da je dok su se nalazili u
+vozilu, I. je rekao "evo ih ovi" ili možda "da li su oni ovo".
+
+Nije se mogao precizno izjasniti da li su se nalazili u vozilu ili pored vozila kada im je S. izgovorio te riječi.Ne
+zna da li je nešto nakon tih riječi prokomentarisao I, a tačno je da se on nalazio ispred vozila kada je začuo
 pucnje iz vozila u kojem su se nalazili S.i A.
- 
-Prvi pucanj je bio odmah nakon š to je S. izgovorio te rije č i i to iz vozila koje je bilo u pokretu. Nije vidio ta č no
+
+Prvi pucanj je bio odmah nakonšto je S. izgovorio te riječi i to iz vozila koje je bilo u pokretu. Nije vidio tačno
 ko ispaljuje projektile.
- 
-Tvrdi da se nalazio van vozila kada je č uo drugi pucanj, nakon č ega je pobjegao. Ne zna gdje su se nalazili H.
+
+Tvrdi da se nalazio van vozila kada ječuo drugi pucanj, nakončega je pobjegao. Ne zna gdje su se nalazili H.
 kada su ispaljeni ostali projektili.
- 
-Osim rije č i kako je predo č io, nije č uo da je neko izgovarao druge rije č i.
- 
-Dalje tvrdi da nije postojao nikakav dogovor izme đ u njega i strica I. i H. da se na đ u na mjestu gdje se desio
-doga đ aj, niti je bilo u vezi toga bilo kakavog razgovora a da je on č uo.
- 
-Od momenta kada su do š li na plac, pa do momenta dolaska policije pro š lo je pet minuta.
- 
+
+Osim riječi kako je predočio, niječuo da je neko izgovarao druge riječi.
+
+Dalje tvrdi da nije postojao nikakav dogovor između njega i strica I. i H. da se nađu na mjestu gdje se desio
+događaj, niti je bilo u vezi toga bilo kakavog razgovora a da je ončuo.
+
+Od momenta kada su došli na plac, pa do momenta dolaska policije prošlo je pet minuta.
+
 Kada se nalazio iza zida i u momentu kada se I. kretao prema njemu, kazao mu je da je ranjen i misli da je bio
 tada udaljen od njega dva-tri metra.
- 
-Dalje predo č ava da kada je do š ao iz P. u zlatarsku radnju, da je tada njegov otac pozvao strica I, pa su tada i
-njemu kazali da je A. dolazio u njihovu zlatarsku radnju, da je prijetio njegovom ocu I. sa pi š toljem, tra ž e ć i da
+
+Dalje predočava da kada je došao iz P. u zlatarsku radnju, da je tada njegov otac pozvao strica I, pa su tada i
+njemu kazali da je A. dolazio u njihovu zlatarsku radnju, da je prijetio njegovom ocu I. sa pištoljem, tražeći da
 mu vrati novac. Tom prilikom mu je otac rekao da ga je A. povukao za rame, da ga je spustio na dvosjed, da je
-potom izvadio pi š tolj i istim prijetio. Prijetnje je upu ć ivao i njegovoj majci.
- 
-Predo č ava da je bio u velikom strahu kada su ispaljeni projektili, jer se ranije nije nalazio u takvoj situaciji, a
-bilo mu je neuobi č ajno da se srodnik mo ž e tako pona š ati. U tom momentu je pomislio da ć e da ih pobiju.
- 
-Kada je ispaljen prvi projektil S. je upravljao vozilom, a ne zna da li je projektil do š ao sa mjesta voza č a ili
-suvoza č a.
- 
-Na mjestu gdje su se on i I. nalazili kriti č nom prilikom skupljaju se svatovi, gdje š enlu č e, pa na taj na č in
-obja š njava prisustvo na đ enih č aura na tom prostoru.
- 
-Ni u jednom momentu dok je trajala pucnjava nije zapazio da je I. kod sebe imao oru ž je, niti da je ispaljivao
+potom izvadio pištolj i istim prijetio. Prijetnje je upućivao i njegovoj majci.
+
+Predočava da je bio u velikom strahu kada su ispaljeni projektili, jer se ranije nije nalazio u takvoj situaciji, a
+bilo mu je neuobičajno da se srodnik može tako ponašati. U tom momentu je pomislio daće da ih pobiju.
+
+Kada je ispaljen prvi projektil S. je upravljao vozilom, a ne zna da li je projektil došao sa mjesta vozača ili
+suvozača.
+
+Na mjestu gdje su se on i I. nalazili kritičnom prilikom skupljaju se svatovi, gdješenluče, pa na taj način
+objašnjava prisustvo nađenihčaura na tom prostoru.
+
+Ni u jednom momentu dok je trajala pucnjava nije zapazio da je I. kod sebe imao oružje, niti da je ispaljivao
 projektile.
- 
-Kada je iza š ao iz vozila prvi put, zapazio je da u njegovom pravcu tr č e S. i A, a da je kojim slu č ajem imao
+
+Kada je izašao iz vozila prvi put, zapazio je da u njegovom pravcu trče S. i A, a da je kojim slučajem imao
 pištolj kod sebe sigurno je da bi se branio od njihovog napada.
- 
-Tvrdi da je motiv njihovog odlaska iz zlatare bio isklju č ivo pla ć anje poreza za vozilo koje je I. nabavio iz
+
+Tvrdi da je motiv njihovog odlaska iz zlatare bio isključivo plaćanje poreza za vozilo koje je I. nabavio iz
 inostranstva.
- 
-Predo č ava da je ta č no da je S. izgovorio rije č i kako je kazao na pretresu, a ne kako je to tokom istrage da
-nijesu izgovarali nikakve rije č i, te se nije mogao izjasniti koliko je pro š lo vremena od kada je vidio H. da tr č e
+
+Predočava da je tačno da je S. izgovorio riječi kako je kazao na pretresu, a ne kako je to tokom istrage da
+nijesu izgovarali nikakve riječi, te se nije mogao izjasniti koliko je prošlo vremena od kada je vidio H. da trče
 prema njima, u odnosu na pravi ispaljeni projektil.
- 
-Po nala ž enju suda, svjedok M. S. u potpunosti ne prikazuje doga đ aj onako kako se desio. O č igledno je
-njegovo nastojanje da svojim iskazom poku š a da pru ž i pomo ć  optu ž enom I, tvrdnjom da I. nije ispaljivao
-projektile u pravcu o š te ć enog H. S. i njegovog brata A, te poku š avaju ć i da prika ž e da se taj susret desio na
-insistiranje H, a ne optu ž enog I. Me đ utim, iz iskaza ovog svjedoka se utvr đ uje da je I. bio izrevoltiran
-sadr ž inom razgovora sa A. i da je odmah potom ostavio telefon na sto i kako ka ž e ovaj svjedok "izlete iz
-radnje" i po š ao u industrijsku zonu Z. kod svojih poslovnih objekata. Ovaj svjedok tvrdi da je zapazio da je I.
-bio iznerviran i ljut i da ga je on smirivao, te da je po š ao zajedno sa njim, pla š e ć i se da ne do đ e do konflikta, a
-što je bilo za o č ekivati obzirom na pona š anje I. Dokazi ukazuju da se za svo vrijeme de š avanja ovaj svjedok
-nalazio na mjestu gdje se desio doga đ aj, pa njegova tvrdnja da ni u jednom trenutku nije zapazio da je I. kod
-sebe imao oru ž je, niti da je ispaljivao projektile, ne mo ž e se prihvatiti, a sud cijeni da je to svjedok vidio, ali
-nije ž elio predo č iti, jer bi na taj na č in ote ž ao poziciju svoga strica sada optu ž enog I.
- 
-Svjedok H. A. je pred Osnovnim dr ž avnim tu ž ila š tvom predo č io da je toga dana u zlatarskoj radnji njegovog
-ujaka I. M. do š lo do prepirke izme đ u njega i I. zbog duga od 35.000 eura koji mu duguje I. Tada ga je I. psovao i
-upuć ivao mu razne pogrdne rije č i. Tvrdi da on tada nije prijetio I. Nakon toga, pozvao je brata od ujaka S. M. -
-sina I, tra ž e ć i da se vide i razgovaraju. S. mu je kazao da se nalazi na K. i da ć e mu se javiti kada do đ e. Potom
-je sa bratom S. po š ao u kafi ć  "G" i tada je pozvao S. S.je tada po č eo da mu psuje majku i nazivao ga pogrdnim
-riječ ima, a potom je M. I. uzeo telefon iz S. ruku i po č eo da mu psuje majku, ž enu, k ć erku i č itavu porodicu.
-Tada je on smirivao I, a tokom razgovora mu je I. rekao "do đ i na tehni č ki, ubi ć u vas kao pa šč ad". Pojasnio je
-da oni posjeduju objekat tehni č kih pregleda u naselju Z, pored kojeg poslovni prostor posjeduju i M. Tada mu
-je odgovorio da ć e odmah do ć i, pa je zajedno sa S. vozilom "Micibu š i" kojim je upravljao S, po š li u tom
-pravcu. Nije znao da S. kod sebe posjeduje pi š tolj, a to mu S. nije ni rekao. Tvrdi da on nije imao oru ž je. Po
-dolasku ispred objekta M, primijetio je njegovo vozilo marke "Audi 3" pored kojeg vozila su bili M. I. i S. Oba su
-u rukama dr ž ali pi š tolje. Tada je S. malo usporio vozilo, govore ć i im da uklone oru ž je, te da do đ u kod
-njihovog objekta za tehni č ke preglede i tada je I, a nakon š to je S. nastavio da se kre ć e sa vozilom ispalio
-jedan metak. Ne zna u kom pravcu. Po dolasku ispred njihovog objekta za tehni č ke preglede zaustavili su
-vozilo i iza š li, a potom se uputili prema parking prostoru koji se nalazi ispred prostora namijenjenom za
-tehni č ki pregled vozila.
- 
+
+Po nalaženju suda, svjedok M.S. u potpunosti ne prikazuje događaj onako kako se desio. Očigledno je
+njegovo nastojanje da svojim iskazom pokuša da pruži pomoćoptuženom I, tvrdnjom da I. nije ispaljivao
+projektile u pravcu oštećenog H.S. i njegovog brata A, te pokušavajući da prikaže da se taj susret desio na
+insistiranje H, a ne optuženog I. Međutim, iz iskaza ovog svjedoka se utvrđuje da je I. bio izrevoltiran
+sadržinom razgovora sa A. i da je odmah potom ostavio telefon na sto i kako kaže ovaj svjedok "izlete iz
+radnje" i pošao u industrijsku zonu Z. kod svojih poslovnih objekata. Ovaj svjedok tvrdi da je zapazio da je I.
+bio iznerviran i ljut i da ga je on smirivao, te da je pošao zajedno sa njim, plašeći se da ne dođe do konflikta, a
+što je bilo za očekivati obzirom na ponašanje I. Dokazi ukazuju da se za svo vrijeme dešavanja ovaj svjedok
+nalazio na mjestu gdje se desio događaj, pa njegova tvrdnja da ni u jednom trenutku nije zapazio da je I. kod
+sebe imao oružje, niti da je ispaljivao projektile, ne može se prihvatiti, a sud cijeni da je to svjedok vidio, ali
+niježelio predočiti, jer bi na taj način otežao poziciju svoga strica sada optuženog I.
+
+Svjedok H.A. je pred Osnovnim državnim tužilaštvom predočio da je toga dana u zlatarskoj radnji njegovog
+ujaka I.M. došlo do prepirke između njega i I. zbog duga od 35.000 eura koji mu duguje I. Tada ga je I. psovao i
+upućivao mu razne pogrdne riječi. Tvrdi da on tada nije prijetio I. Nakon toga, pozvao je brata od ujaka S.M. -
+sina I, tražeći da se vide i razgovaraju. S. mu je kazao da se nalazi na K. i daće mu se javiti kada dođe. Potom
+je sa bratom S. pošao u kafić "G" i tada je pozvao S.S.je tada počeo da mu psuje majku i nazivao ga pogrdnim
+riječima, a potom je M.I. uzeo telefon iz S. ruku i počeo da mu psuje majku, ž enu, kćerku ičitavu porodicu.
+Tada je on smirivao I, a tokom razgovora mu je I. rekao "dođi na tehnički, ubiću vas kao paščad". Pojasnio je
+da oni posjeduju objekat tehničkih pregleda u naselju Z, pored kojeg poslovni prostor posjeduju i M. Tada mu
+je odgovorio daće odmah doći, pa je zajedno sa S. vozilom "Micibuši" kojim je upravljao S, pošli u tom
+pravcu. Nije znao da S. kod sebe posjeduje pištolj, a to mu S. nije ni rekao. Tvrdi da on nije imao oružje. Po
+dolasku ispred objekta M, primijetio je njegovo vozilo marke "Audi 3" pored kojeg vozila su bili M.I. i S. Oba su
+u rukama držali pištolje. Tada je S. malo usporio vozilo, govoreći im da uklone oružje, te da dođu kod
+njihovog objekta za tehničke preglede i tada je I, a nakonšto je S. nastavio da se kreće sa vozilom ispalio
+jedan metak. Ne zna u kom pravcu. Po dolasku ispred njihovog objekta za tehničke preglede zaustavili su
+vozilo i izašli, a potom se uputili prema parking prostoru koji se nalazi ispred prostora namijenjenom za
+tehnički pregled vozila.
+
 Dok su se kretali prema betonskom zidu koji razdvaja njihov parking prostor i parking prostor ispred I.
-objekta, I. je po č eo da puca u njihovom pravcu. Sakrili su se iza svog objekta. Ne zna koliko je projektila
-ispalio I. Tada je i S. iz pi š tolja pucao u I. pravcu i to dok je I. bio sakriven iza objekta. Nakon toga, on i S. su se
-vrać ali u pravcu njihovog vozila i I. je ponovo po č eo da puca u njihovom pravcu, ali ih nije pogodio i nije vidio
-gdje su ti projektili poga đ ali. Tada su se vratili prema zidu. Pozvao je I. govore ć i mu da se smiri i da spusti
-oruž je, me đ utim, I je ponovo zapucao u njihovom pravcu. On se tada zaklonio iza betonskog zida, a zapazio je
-i da se S. sagnuo. Nakon toga je i S. po č eo da puca prema I, a I.se u tom momentu bio ponovo sakrio iza
-objekta, tako da S. nije mogao da ga pogodi, a misli da S. nije ni pucao da ga pogodi, ve ć  da ga zapla š i, kako
+objekta, I. je počeo da puca u njihovom pravcu. Sakrili su se iza svog objekta. Ne zna koliko je projektila
+ispalio I. Tada je i S. iz pištolja pucao u I. pravcu i to dok je I. bio sakriven iza objekta. Nakon toga, on i S. su se
+vraćali u pravcu njihovog vozila i I. je ponovo počeo da puca u njihovom pravcu, ali ih nije pogodio i nije vidio
+gdje su ti projektili pogađali. Tada su se vratili prema zidu. Pozvao je I. govoreći mu da se smiri i da spusti
+oružje, međutim, I je ponovo zapucao u njihovom pravcu. On se tada zaklonio iza betonskog zida, a zapazio je
+i da se S. sagnuo. Nakon toga je i S. počeo da puca prema I, a I.se u tom momentu bio ponovo sakrio iza
+objekta, tako da S. nije mogao da ga pogodi, a misli da S. nije ni pucao da ga pogodi, većda ga zaplaši, kako
 bi prestao da puca u njihovom pravcu.
- 
-Zapazio je da je S. pucao u kamion koji je parkiran ispred, a zatim i u zidove ku ć e, a ne zna gdje su zavr š avali
+
+Zapazio je da je S. pucao u kamion koji je parkiran ispred, a zatim i u zidove kuće, a ne zna gdje su završavali
 projektili koje je ispaljivao I.
- 
+
 Potom je na svojoj trenerci primijetio tragove od ispaljenog projektila, ali se nije mogao izjasniti da li isti
-potič u od riko š eta ili nekog drugog predmeta gdje je zrno pogodilo.
- 
+potiču od rikošeta ili nekog drugog predmeta gdje je zrno pogodilo.
+
 Tom prilikom niti on, niti S. nijesu zadobili povrede.
- 
-Ne zna gdje su zavr š avali projektili koje je ispaljivao I, a mogu ć e iznad magistrale, u zemlji ili granju. Po
-prestanku pucnjave po š li su prema svom vozilu, a zatim prema gradskoj deponiji, gdje je S. iza š ao iz vozila.
-Nakon toga je po š ao za U. gdje mu se nalazila supruga, gdje se zadr ž ao dva dana.
- 
-Tvrdi da kriti č nom prilikom kod sebe nije imao pi š tolj, niti da je ispaljivao projektile, ve ć  da je projektile
-ispaljivao njegov brat S, a š to kako navodi, se vidi na snimcima koji su izuzeti od strane policije sa njihovog
-objekta za tehni č ke preglede.
- 
-Za svo vrijeme dok je S. ispaljivao projektile, poku š avao je da smiri situaciju i da mu oduzme pi š tolj kako bi ga
-sprije č io da dalje puca, a isto tako je i molio I. da prestane da puca i insistirao da mirno razgovaraju. S. je vi š e
+
+Ne zna gdje su završavali projektili koje je ispaljivao I, a moguće iznad magistrale, u zemlji ili granju. Po
+prestanku pucnjave pošli su prema svom vozilu, a zatim prema gradskoj deponiji, gdje je S. izašao iz vozila.
+Nakon toga je pošao za U. gdje mu se nalazila supruga, gdje se zadržao dva dana.
+
+Tvrdi da kritičnom prilikom kod sebe nije imao pištolj, niti da je ispaljivao projektile, većda je projektile
+ispaljivao njegov brat S, ašto kako navodi, se vidi na snimcima koji su izuzeti od strane policije sa njihovog
+objekta za tehničke preglede.
+
+Za svo vrijeme dok je S. ispaljivao projektile, pokušavao je da smiri situaciju i da mu oduzme pištolj kako bi ga
+spriječio da dalje puca, a isto tako je i molio I. da prestane da puca i insistirao da mirno razgovaraju. S. je više
 puta hvatao i gurao kako bi prestao da puca.
- 
-Po njegovom mi š ljenju, S. je projektile vi š e ispaljivao iz straha i kako bi zapla š io I. da prestane da puca u
+
+Po njegovom mišljenju, S. je projektile više ispaljivao iz straha i kako bi zaplašio I. da prestane da puca u
 njihovom pravcu, nego u namjeri da ga ugrozi ili povrijedi.
- 
+
 Nije se mogao izjasniti koliko je metaka ispalio S, kao ni I.
- 
-Predo č ava da je prije dvije godine M. I. na istom mjestu pucao S, ali ga nije povrijedio. Doga đ aj se desio na
+
+Predočava da je prije dvije godine M.I. na istom mjestu pucao S, ali ga nije povrijedio. Događaj se desio na
 istom mjestu kao predmetni, ali da S. to nije prijavljivao zbog rodbinskih veza.
- 
-Pred Vi š im tu ž iocem je predo č io da se sa M. I. dogovorio, a nakon sukoba koji je imao sa njegovim bratom I,
-da se vide u krugu njegovog poslovnog prostora. Dogovorili su se da razgovaraju, o č emu je obavijestio svog
+
+Pred Višim tužiocem je predočio da se sa M.I. dogovorio, a nakon sukoba koji je imao sa njegovim bratom I,
+da se vide u krugu njegovog poslovnog prostora. Dogovorili su se da razgovaraju, očemu je obavijestio svog
 brata S, pa su se uputili prema tom mjestu.
- 
-Po dolasku, primijetio je da M. S. stoji ispred auta sive boje, dok je I. stajao ispred ulaznih vrata njegovog
-objekta. Tada su malo zastali sa vozilom, pa je S. otvorio vrata, pozivaju ć i S. da do đ u na mjesto gdje su se
-dogovorili da razgovaraju. Tada je č uo da je ispaljen jedan projektil. Nije vidio ko je to uradio. Nakon toga je S.
-ubrzao vozilo i parkirao na njihov plac. Po izlasku iz vozila krenuli su u pravcu M. I, glasno govore ć i da ne
-pucaju, te da ž ele da razgovaraju. Me đ utim, č uli su jo š  pucanja, a ne znaju ko je pucao. Potom su se sakrili iza
+
+Po dolasku, primijetio je da M.S. stoji ispred auta sive boje, dok je I. stajao ispred ulaznih vrata njegovog
+objekta. Tada su malo zastali sa vozilom, pa je S. otvorio vrata, pozivajući S. da dođu na mjesto gdje su se
+dogovorili da razgovaraju. Tada ječuo da je ispaljen jedan projektil. Nije vidio ko je to uradio. Nakon toga je S.
+ubrzao vozilo i parkirao na njihov plac. Po izlasku iz vozila krenuli su u pravcu M. I, glasno govoreći da ne
+
+pucaju, te dažele da razgovaraju. Međutim, č uli su jošpucanja, a ne znaju ko je pucao. Potom su se sakrili iza
 zida koji razdvaja njihove placeve. U jednom momentu je osjetio na garderobi, a najvjerovatnije od betona ili
-kamena neko prskanje po gornjem dijelu trenerke i zapazio je na trenerci mala o š te ć enja u vidu ta č kica. Tada
-je njegov brat S. iz torbice izvadio pi š tolj i ispalio je projektile u pravcu mjesta odakle su ispaljivani projektili,
-odnosno odakle su č uli da dolaze pucnji, ta č nije u pravcu placa na kojem su se nalazili M. I. i njegov sinovac S.
- 
+kamena neko prskanje po gornjem dijelu trenerke i zapazio je na trenerci mala oštećenja u vidu tačkica. Tada
+je njegov brat S. iz torbice izvadio pištolj i ispalio je projektile u pravcu mjesta odakle su ispaljivani projektili,
+odnosno odakle sučuli da dolaze pucnji, tačnije u pravcu placa na kojem su se nalazili M.I. i njegov sinovac S.
+
 Tvrdi da nije vidio odakle su ispaljivani projektili, niti od strane M, niti sa njihove strane. Nije se mogao
-izjasniti koliko je S. ispalio projektila, da li tri ili č etiri, a kada je ispaljivao projektile, na placu M. nije primijetio
+izjasniti koliko je S. ispalio projektila, da li tri iličetiri, a kada je ispaljivao projektile, na placu M. nije primijetio
 bilo koga.
- 
-Poku š avao je da sprije č i S. da ispaljuje projektile, na na č in š to je stajao ispred njega i poku š avao da mu otme
-pištolj, me đ utim, S.mu nije dao pi š tolj, pa su se potom vratili na mjesto gdje su parkirali vozilo.
- 
-Po ulasku u vozilu zapazio je da u S. pi š tolju ima jo š  metaka, a S. je odbacio pi š tolj u rijeku I, kada su se uputili
+
+Pokušavao je da spriječi S. da ispaljuje projektile, na načinšto je stajao ispred njega i pokušavao da mu otme
+pištolj, međutim, S.mu nije dao pištolj, pa su se potom vratili na mjesto gdje su parkirali vozilo.
+
+Po ulasku u vozilu zapazio je da u S. pištolju ima jošmetaka, a S. je odbacio pištolj u rijeku I, kada su se uputili
 u pravcu P.
- 
-Smatra da je S. htio da ispali preostale projektile, da ga on ne bi mogao sprije č iti u tome.
- 
-Nakon š to je č uo da su ispaljeni projektili sa mjesta gdje su se nalazili osumnji č eni M. I. i njegov sinovac S, vi š e
-ih nije primje ć ivao, jer su se po njegovom mi š ljenju sklonili iza svojih objekata, a mogu ć e iza zida koji je visine
+
+Smatra da je S. htio da ispali preostale projektile, da ga on ne bi mogao spriječiti u tome.
+
+Nakonšto ječuo da su ispaljeni projektili sa mjesta gdje su se nalazili osumnjičeni M.I. i njegov sinovac S, više
+ih nije primjećivao, jer su se po njegovom mišljenju sklonili iza svojih objekata, a moguće iza zida koji je visine
 oko dva metra.
- 
+
 Kazivanje ovog svjedoka u bitnom sud je prihvatio u dijelu koji se odnosi na radnje koje je preuzeo sada
-optu ž eni M. I, kao i u dijelu radnji koje je preuzeo optu ž eni H. S. ali ne i njegova zapa ž anja da je optu ž eni S.
-ispaljivao projektile iz straha i kako bi zapla š io I. da prestane da puca, ali ne da je projektile ispaljivao u
-namjeri da povrijedi sada optu ž enog I.
- 
-Ovaj svjedok je kategori č an da je optu ž eni I. u razgovoru rekao ovom svjedoku "do đ i na tehni č ki, ubi ć u vas
-kao pa šč ad", a nakon č ega su oni i po š li na mjesto na koje ih je pozvao optu ž eni I.
- 
-Radnje koje su nakon dolaska na to mjesto optu ž eni S, kao i ovaj svjedok, su prikazane snimljenim video
-zapisom, pa po nala ž enju vije ć a, bezpredmetno je kometarisati ili analizirati iskaz ovog svjedoka u dijelu koji
+optuženi M. I, kao i u dijelu radnji koje je preuzeo optuženi H.S. ali ne i njegova zapažanja da je optuženi S.
+ispaljivao projektile iz straha i kako bi zaplašio I. da prestane da puca, ali ne da je projektile ispaljivao u
+namjeri da povrijedi sada optuženog I.
+
+Ovaj svjedok je kategoričan da je optuženi I. u razgovoru rekao ovom svjedoku "dođi na tehnički, ubiću vas
+kao paščad", a nakončega su oni i pošli na mjesto na koje ih je pozvao optuženi I.
+
+Radnje koje su nakon dolaska na to mjesto optuženi S, kao i ovaj svjedok, su prikazane snimljenim video
+zapisom, pa po nalaženju vijeća, bezpredmetno je kometarisati ili analizirati iskaz ovog svjedoka u dijelu koji
 se odnosi na radnje predstavljene video zapisom.
- 
-Iz tog zapisa se jasno vidi kada i na koji na č in i koje radnje su pojedina č no preduzimali i optu ž eni S. i svjedok
-A. Iz tog zapisa se utvr đ uje pona š anje optu ž enog S, kao i svjedoka A, a koje pona š anje je suprotno tvrdnji
-ovog svjedoka da je optu ž eni S. ispaljivao projektile iz straha kako bi zapla š io optu ž enog I. da prestane da
+
+Iz tog zapisa se jasno vidi kada i na koji način i koje radnje su pojedinačno preduzimali i optuženi S. i svjedok
+A. Iz tog zapisa se utvrđuje ponašanje optuženog S, kao i svjedoka A, a koje ponašanje je suprotno tvrdnji
+ovog svjedoka da je optuženi S. ispaljivao projektile iz straha kako bi zaplašio optuženog I. da prestane da
 puca u njihovom pravcu, te da nije ispaljivao projektile u namjeri da povrijedi I.
- 
-Zapisnikom o uvi đ aju Osnovnog dr ž avnog tu ž ila š tva R, Kt. br. 127/17 od 14.09.2017 godine, je prikazano
-mjesto gdje se desio doga đ aj, predo č eni i opisani zaote č eni tragovi i na đ eni predmeti, te bli ž e predstavljeno
-mjesto gdje su ti predmeti na đ eni. Svi tragovi su ozna č eni brojevima i bli ž e prikazani foto-dokumentacijom
+
+Zapisnikom o uviđaju Osnovnog državnog tužilaštva R, Kt. br. 127/17 od 14.09.2017 godine, je prikazano
+mjesto gdje se desio događaj, predočeni i opisani zaotečeni tragovi i nađeni predmeti, te bliže predstavljeno
+mjesto gdje su ti predmeti nađeni. Svi tragovi su označeni brojevima i bliže prikazani foto-dokumentacijom
 od 10.09. i skicom od 09.09. i 12.09.2017 godine.
-Medcinskom dokumentacijom na ime optu ž enog M. I. opisane su povrede, a vje š tak sudske medicine N.R.
-izjaš njavaju ć i se o povredama u nalazu od 25.09.2017 godine, se izjasnio o vrsti i te ž ini povreda kod tog lica,
-te predo č io da je kod istog dijagnostikovana povreda u vidu strijelnog okrznu ć a u predjelu desne polovine
+Medcinskom dokumentacijom na ime optuženog M.I. opisane su povrede, a vještak sudske medicine N.R.
+izjaš njavajući se o povredama u nalazu od 25.09.2017 godine, se izjasnio o vrsti i težini povreda kod tog lica,
+te predočio da je kod istog dijagnostikovana povreda u vidu strijelnog okrznuća u predjelu desne polovine
 prednje strane trbuha. Nalazi da je zadobijena povreda posledica tangencionalnog dejstva projektila
-ispaljenog iz ru č nog vatrenog oru ž ja. Povredu kvalifikuje kao laku bez posledice po zdravlje. Nalazi da na
-osnovu podataka iz medicinske dokumentacije se nije mogu ć e izjasniti o smjeru kanala strijelnog okrznu ć a,
-niti se pak o tome mogao izjasniti nakon pregleda povrije đ enog.
- 
-Izvje š tajem ljekara dr. S. N. specijaliste psihijatrije od 11.09.2017 godine, opisane su povrede kod optu ž enog
-M. I. i data zapa ž anja ljekara uo č ena prilikom pregleda.
- 
-Nalazom i mi š ljenjem vje š taka dr. N. R. - ljekara obducenta na ime M. I. od 14.11.2017 godine, je dato
+ispaljenog iz ručnog vatrenog oružja. Povredu kvalifikuje kao laku bez posledice po zdravlje. Nalazi da na
+osnovu podataka iz medicinske dokumentacije se nije moguće izjasniti o smjeru kanala strijelnog okrznuća,
+niti se pak o tome mogao izjasniti nakon pregleda povrijeđenog.
+
+Izvještajem ljekara dr. S.N. specijaliste psihijatrije od 11.09.2017 godine, opisane su povrede kod optuženog
+M.I. i data zapažanja ljekara uočena prilikom pregleda.
+
+Nalazom i mišljenjem vještaka dr. N.R. - ljekara obducenta na ime M.I. od 14.11.2017 godine, je dato
 mišljenje da je zadobio povredu u vidu strijelne rane ustrijeline sa ulaznom ranoim u predjelu gornjeg desnog
-kvadranta prednje strane trbuha, koja se plitkim kanalom nastavlja kroz ko ž u i neposredno ispod nivoa ko ž e,
-tj. u njenoj debljini i dijelom u debljini potko ž nog mekog tkiva se zavr š ava, na kom mjestu je ustanovljen
-projektil. Nalazi da je zadobijena povreda posledica direktnog dejstva projektila ispaljenog iz ru č nog
-vatrenog oru ž ja, koje je prethodno znatno izgubilo od svoje kineti č ke energije.
- 
+kvadranta prednje strane trbuha, koja se plitkim kanalom nastavlja kroz kožu i neposredno ispod nivoa kože,
+tj. u njenoj debljini i dijelom u debljini potkožnog mekog tkiva se završava, na kom mjestu je ustanovljen
+projektil. Nalazi da je zadobijena povreda posledica direktnog dejstva projektila ispaljenog iz ručnog
+vatrenog oružja, koje je prethodno znatno izgubilo od svoje kinetičke energije.
+
 Povredu kvalifikuje kao laku.
- 
-Navodi da se sa sudsko-medicinskog aspekta nije mogu ć e izjasniti o daljini pucanja, a da je smjer kanala od
-naprijed unazad i horizontalno, ali da nije mogu ć e opredijeliti smjer kanala strijelne rane u smislu zdesna
-ulijevo ili sa lijeva udesno, a š to je sa sudsko-medicinskog aspekta mogao biti ili blago slijeva udesno ili blago
-zdesna ulijevo, te da se samo na osnovu izgleda strijelne rane ne mo ž e pouzdano utvrditi, ve ć  kako navodi
+
+Navodi da se sa sudsko-medicinskog aspekta nije moguće izjasniti o daljini pucanja, a da je smjer kanala od
+naprijed unazad i horizontalno, ali da nije moguće opredijeliti smjer kanala strijelne rane u smislu zdesna
+ulijevo ili sa lijeva udesno, ašto je sa sudsko-medicinskog aspekta mogao biti ili blago slijeva udesno ili blago
+zdesna ulijevo, te da se samo na osnovu izgleda strijelne rane ne može pouzdano utvrditi, većkako navodi
 nakon dobijenih podataka po rekonstrukciji.
- 
-Na pretresu je predo č io da je njegovo kona č no mi š ljenje sadr ž ano u nalazu od 10.11.2017 godine.
- 
-Pojasnio je da je prilikom sudsko-medicinskog pregleda M. I. opisan kru ž ni ru ž i č asti o ž iljak pre č nika oko 1
-cm, koji izgled o ž iljka odgovara direktnom dejstvu projektila, a ne strijelnom okrznu ć u, kada bi o ž iljak imao
-izdu ž en-ovalni oblik, te stim u vezi da se ne radi o strijelnom okrznu ć u, odnosno tangencionalnom pristupu
-projektila na ko ž i, ve ć  o direktnom dejstvu projektila koji je doveo do formiranja ulazne rane na ko ž i i plitkog
+
+Na pretresu je predočio da je njegovo konačno mišljenje sadržano u nalazu od 10.11.2017 godine.
+
+Pojasnio je da je prilikom sudsko-medicinskog pregleda M.I. opisan kružni ružičasti ožiljak prečnika oko 1
+cm, koji izgled ožiljka odgovara direktnom dejstvu projektila, a ne strijelnom okrznuću, kada bi ožiljak imao
+izdužen-ovalni oblik, te stim u vezi da se ne radi o strijelnom okrznuću, odnosno tangencionalnom pristupu
+projektila na koži, većo direktnom dejstvu projektila koji je doveo do formiranja ulazne rane na koži i plitkog
 kanala iz razloga gubitka energije projektila prije ulaska u tijelo.
- 
-Navodi da izgled o ž iljka koji je opisan prilikom sudsko-medicinskog pregleda upu ć uje na okolnost da je M.
-bio u uspravnom polo ž aju, a u odnosu prema ustima cijevi posebno, imaju ć i u vidu da je prije ulaska u tijelo
-projektil izgubio dio kineti č ke energije, te da je polo ž aj koji je pokazao M.prilikom rekonstrukcije i koji je
-prikazan na slici br. 5 balisti č kog vje š ta č enja nakon obavljene rekonstrukcije, mo ž e biti polo ž aj u kojem je
+
+Navodi da izgled ožiljka koji je opisan prilikom sudsko-medicinskog pregleda upućuje na okolnost da je M.
+bio u uspravnom položaju, a u odnosu prema ustima cijevi posebno, imajući u vidu da je prije ulaska u tijelo
+projektil izgubio dio kinetičke energije, te da je položaj koji je pokazao M.prilikom rekonstrukcije i koji je
+prikazan na slici br. 5 balističkog vještačenja nakon obavljene rekonstrukcije, može biti položaj u kojem je
 zadobio tjelesnu povredu.
- 
-Nalazi da je tijelo M. bilo lagano povijeno naprijed gornjim dijelom tijela ili ka nazad, a š to sve spada u
-usparavni polo ž aj.
- 
-Izvje š tajem o balisti č kom vje š ta č enju Uprave policije - Forenzi č kog centra Danilovgrad br. 3829-1/17 od
-03.10.2017 godine, sa fotodokumentacijom, kao i č aure sporna zrna na đ ena na licu mjesta uprakovana u
-dvije nailonske kesice sa brojem 3829/17; dat je zaklju č ak da dostavljene č aure pod brojem 7,8,9,10 i 11,
-pripadaju pi š toljskoj municiji cal. 9 mm-D(duga) 9x19 mm, ispaljene su iz istog pi š tolja. Dostavljene č aure
-pod brojem 1,2, 4 i 4/1 nalazi da pripadaju pi š toljskoj municiji cal. 99 mm-K(kratka)-9x17 mm, i ispaljene su iz
-istog pi š tolja.
- 
-Dalje navodi da dostavljeni projektili pripadaju pi š toljskoj municiji cal. 9 mm-D. Putanje projektila i pozicije
-sa kojih su ispaljeni su bli ž e prikazani na skici koja sa č injava sastavni dio ovog izvje š taja o vje š ta č enju.
- 
-Izvje š ajem o vje š ta č enju GSR č estica Uprave policije Forenzi č kog centra Danilovgrad br. 3830/17 od
-03.10.2017 godine, vje š taka Lj. I, dato je mi š ljenje da je na desnoj š aci M. I. prona đ en mali broj
-karakteristi č nih GSR č estica, dok na lijevoj nije, da je na desno j š aci M. S. na đ ena jedna karakteristi č na GSR
-čestica, a na lijevoj š aci prona đ en mali broj GSR č estica drugog hemijskog sastava, dok je na desnoj i lijevoj
-šaci H. S. prona đ en mali broj karakteristi č nih GSR č estica ozna č enog sastava, pa je vje š tak mi š ljenja da
-prisustvo karakteristi č nih GSR č estica na š akama M. I. i S, te H. S. ukazuju da se ne mo ž e isklju č iti mogu ć nost
-da su isti bili povezani sa procesom opaljenja iz vatrenog oru ž ja.
- 
-Izvje š tajem o DNK vje š ta č enju Uprave policije Forenzi č kog centra Danilovgrad br. 3828/17 od 06.10.2017
-godine, vje š taka S. K, dato je mi š ljenje da se na osnovu sprovedenih analiza i biostatisti č kog prora č una mo ž e
-zaklju č iti da na uzorku izuzetog sa projektila ozna č enim brojem 3 (prona đ ene č aure) je utvr đ eno prisustvo
-biolo š kog materijala porijeklom od jedne osobe, pri č emu rezultat pru ž a ekstremno jaku podr š ku da je donor
-istog M. I, dok na uzorcima izuzetih sa dostavljenih č aura sa ozna č enim brojevima kao u nalazu, te uzorku
-izuzetog sa neispravljenog metrka ozna č enimi brojem 6 u nalazu, kao i uzorka izuzetog sa projektila
-ozna č enim brojem 7, nije utvr đ eno prisustvo biolo š kog materijala. Dostavljeni materijal radi vje š ta č enja i koji
-je vje š ta č en, bli ž e je prikazan foto-dokumentacijom ozna č enom br. 3828/17 od 06.10.2017 godine.
- 
-Izvje š tajem o vje š ta č enju "prisustva barutnih č estica" Uprave policije Foreni č kog centra Danilovgrad br.
-3831/17 od 09.10.2017 godine, dato je mi š ljenje da je nakon ispitivanja dostavljene garderobe vlasni š tvo M. I,
-M. S, H. S. i H. A, nije dokazno prisustvo barutnih č estica.
- 
-Izvje š tajem o trasolo š kom vje š ta č enju Uprave policije Forenzi č kog centra Danilovgrad br. 3832-1/17 od
-04.10.2017 godine, sa skicom, vje š taka G. D, dato je mi š ljenje da na osnovu trasolo š kog vje š ta č enja
-konstatuje da su mehani č ka o š te ć enja na dostavljenih odjevnim predmetima H. A, karakteristi č na za
-ošte ć enja koja nastaju dejstvom manjeg metalnog predmeta o š trih ivica, koji je posjedovao odre đ enu
-kineti č ku energiju. Nalazi da navedena o š te ć enja ne posjeduju karakteristike o š te ć enja koja nastaju
-direktnim dejstvom projektila ispaljenim iz vatrenog oru ž ja, te da ista mogu nastati dejstvom projektila ili
+
+Nalazi da je tijelo M. bilo lagano povijeno naprijed gornjim dijelom tijela ili ka nazad, ašto sve spada u
+usparavni položaj.
+
+Izvještajem o balističkom vještačenju Uprave policije - Forenzičkog centra Danilovgrad br. 3829-1/17 od
+03.10.2017 godine, sa fotodokumentacijom, kao ičaure sporna zrna nađena na licu mjesta uprakovana u
+dvije nailonske kesice sa brojem 3829/17; dat je zaključak da dostavljenečaure pod brojem 7,8,9,10 i 11,
+pripadaju pištoljskoj municiji cal. 9 mm-D(duga) 9x19 mm, ispaljene su iz istog pištolja. Dostavljenečaure
+pod brojem 1,2, 4 i 4/1 nalazi da pripadaju pištoljskoj municiji cal. 99 mm-K(kratka)-9x17 mm, i ispaljene su iz
+istog pištolja.
+
+Dalje navodi da dostavljeni projektili pripadaju pištoljskoj municiji cal. 9 mm-D. Putanje projektila i pozicije
+sa kojih su ispaljeni su bliže prikazani na skici koja sačinjava sastavni dio ovog izvještaja o vještačenju.
+
+Izvješajem o vještačenju GSRčestica Uprave policije Forenzičkog centra Danilovgrad br. 3830/17 od
+03.10.2017 godine, vještaka Lj. I, dato je mišljenje da je na desnojšaci M.I. pronađen mali broj
+karakterističnih GSRčestica, dok na lijevoj nije, da je na desno jšaci M.S. nađena jedna karakteristična GSR
+čestica, a na lijevojšaci pronađen mali broj GSRčestica drugog hemijskog sastava, dok je na desnoj i lijevoj
+šaci H.S. pronađen mali broj karakterističnih GSRčestica označenog sastava, pa je vještak mišljenja da
+prisustvo karakterističnih GSRčestica našakama M.I. i S, te H.S. ukazuju da se ne može isključiti mogućnost
+da su isti bili povezani sa procesom opaljenja iz vatrenog oružja.
+
+Izvještajem o DNK vještačenju Uprave policije Forenzičkog centra Danilovgrad br. 3828/17 od 06.10.2017
+godine, vještaka S. K, dato je mišljenje da se na osnovu sprovedenih analiza i biostatističkog proračuna može
+zaključiti da na uzorku izuzetog sa projektila označenim brojem 3 (pronađenečaure) je utvrđeno prisustvo
+biološkog materijala porijeklom od jedne osobe, pričemu rezultat pruža ekstremno jaku podršku da je donor
+istog M. I, dok na uzorcima izuzetih sa dostavljenihčaura sa označenim brojevima kao u nalazu, te uzorku
+izuzetog sa neispravljenog metrka označenimi brojem 6 u nalazu, kao i uzorka izuzetog sa projektila
+
+označenim brojem 7, nije utvrđeno prisustvo biološkog materijala. Dostavljeni materijal radi vještačenja i koji
+je vještačen, bliže je prikazan foto-dokumentacijom označenom br. 3828/17 od 06.10.2017 godine.
+
+Izvještajem o vještačenju "prisustva barutnihčestica" Uprave policije Foreničkog centra Danilovgrad br.
+3831/17 od 09.10.2017 godine, dato je mišljenje da je nakon ispitivanja dostavljene garderobe vlasništvo M. I,
+M. S, H.S. i H. A, nije dokazno prisustvo barutnihčestica.
+
+Izvještajem o trasološkom vještačenju Uprave policije Forenzičkog centra Danilovgrad br. 3832-1/17 od
+04.10.2017 godine, sa skicom, vještaka G. D, dato je mišljenje da na osnovu trasološkog vještačenja
+konstatuje da su mehanička oštećenja na dostavljenih odjevnim predmetima H. A, karakteristična za
+oštećenja koja nastaju dejstvom manjeg metalnog predmeta oštrih ivica, koji je posjedovao određenu
+kinetičku energiju. Nalazi da navedena oštećenja ne posjeduju karakteristike oštećenja koja nastaju
+direktnim dejstvom projektila ispaljenim iz vatrenog oružja, te da ista mogu nastati dejstvom projektila ili
 dijela projektila koji se odbila od krute prepreke.
- 
-Vješ tak je na pretresu pojasnio da je nakon sagledavanja video zapisa i slu š anja sadr ž ine izvedenih dokaza,
-ima bli ž u percepciju doga đ aja kako se desio u odnosu na ranije, te da i dalje ostaje pri mi š ljenju da na
-dostavljenim garderobama od dva lica je konstatovao o š te ć enja koja imaju karakteristike o š te ć enja koja
-nastaju dejstvom manjeg predmeta o š trih ivica, koje je posjedovalo kineti č ku energiju.
- 
-Nije isklju č io mogu ć nost da su ta o š te ć enja posledica riko š eta ili indirektnog dejstva projektila koje je imalo
-kineti č ku energiju.
- 
-Pojasnio je da je o š te ć enje na gornjem dijelu trenerke H. A. karakteristi č no po tome š to je nepravilnog oblika,
-pokrzanih ivica na rubu o š te ć enja i veli č ine 0,7 cm, isklju č io je mogu ć nost da je nastalo od direktnog dejstva
-projektila, a nije i mogu ć nost da je nastalo od nekog dijela projektila koje se odbilo od neke prepreke.
-Isklju č io je mogu ć nost da je nastalo od dejstva hladnog oru ž ja-no ž a, ž ice i sli č no.
- 
-Mišljenja je da se radi o o š te ć enju koje je nastalo krzanjem tkanine o š trim predmetom koje je posjedovalo
-kineti č ku energiju nepravilnog oblika.
- 
-Nalazi da to o š te ć enje nema karakteristike o š te ć enja koja bi nastala od naprimjer komada betona koji se
+
+Vještak je na pretresu pojasnio da je nakon sagledavanja video zapisa i slušanja sadržine izvedenih dokaza,
+ima bližu percepciju događaja kako se desio u odnosu na ranije, te da i dalje ostaje pri mišljenju da na
+dostavljenim garderobama od dva lica je konstatovao oštećenja koja imaju karakteristike oštećenja koja
+nastaju dejstvom manjeg predmeta oštrih ivica, koje je posjedovalo kinetičku energiju.
+
+Nije isključio mogućnost da su ta oštećenja posledica rikošeta ili indirektnog dejstva projektila koje je imalo
+kinetičku energiju.
+
+Pojasnio je da je oštećenje na gornjem dijelu trenerke H.A. karakteristično po tomešto je nepravilnog oblika,
+pokrzanih ivica na rubu oštećenja i veličine 0,7 cm, isključio je mogućnost da je nastalo od direktnog dejstva
+projektila, a nije i mogućnost da je nastalo od nekog dijela projektila koje se odbilo od neke prepreke.
+Isključio je mogućnost da je nastalo od dejstva hladnog oružja-noža, ž ice i slično.
+
+Mišljenja je da se radi o oštećenju koje je nastalo krzanjem tkanine oštrim predmetom koje je posjedovalo
+kinetičku energiju nepravilnog oblika.
+
+Nalazi da to oštećenje nema karakteristike oštećenja koja bi nastala od naprimjer komada betona koji se
 odbio od udara projektila.
- 
-Isklju č io je mogu ć nost da su o š te ć enja na trenerci mogla nastati usled kontakta sa kamenom ili od ka č enja
-od zid, jer bi u tom slu č aju moralo do ć i do izvla č enja niti u š iroj zoni o š te ć enja.
- 
-Predo č io je da vje š ta č enje uvijek vr š i uz pomo ć  tehni č ara, a u nalazu nije obavezan navesti njegovo ime, a da
-je tehni č ar osoba koja mu poma ž e u radu, ali ne i u dono š enju zaklju č ka.
- 
-Zapisnik o rekonstrukciji doga đ aja sa č injen od strane VDT-a Kti. br. 37/17 od 26.10.2017 godine, optu ž eni H. S.
-i M. I.su predstavili doga đ aj kako se desio, a kojoj rekonstrukciji je prisustvovao vje š tak balisti č ar M. M, koji je
-izvrš io balisti č ko vje š ta č enje i dao mi š ljenje. Pozicije koje su pokazali optu ž eni su prikazani skicom lica
-mjesta, a tok rekonstrukcije bli ž e je predstavljen foto-dokumentacijom.
- 
-Vješ tak balisti č ar M. M. je mi š ljenja, a vezano za pokazivanje optu ž enog H. S. na rekonstrukciji, da nije
-mogu ć e pucati sa pozicije i na na č in kako on to pokazuje a da č aure budu na prikazanim mjestima, te da nije
-mogu ć e sa te pozicije napraviti o š te ć enja ozna č ena na skici br. 12, 13, 4/2 i 4/3, jer nijesu u vidnom polju, a
+
+Isključio je mogućnost da su oštećenja na trenerci mogla nastati usled kontakta sa kamenom ili od kačenja
+od zid, jer bi u tom slučaju moralo doći do izvlačenja niti uširoj zoni oštećenja.
+
+Predočio je da vještačenje uvijek vrši uz pomoćtehničara, a u nalazu nije obavezan navesti njegovo ime, a da
+je tehničar osoba koja mu pomaže u radu, ali ne i u donošenju zaključka.
+
+Zapisnik o rekonstrukciji događaja sačinjen od strane VDT-a Kti. br. 37/17 od 26.10.2017 godine, optuženi H.S.
+i M.I.su predstavili događaj kako se desio, a kojoj rekonstrukciji je prisustvovao vještak balističar M. M, koji je
+izvršio balističko vještačenje i dao mišljenje. Pozicije koje su pokazali optuženi su prikazani skicom lica
+mjesta, a tok rekonstrukcije bliže je predstavljen foto-dokumentacijom.
+
+Vještak balističar M.M. je mišljenja, a vezano za pokazivanje optuženog H.S. na rekonstrukciji, da nije
+moguće pucati sa pozicije i na način kako on to pokazuje a dačaure budu na prikazanim mjestima, te da nije
+moguće sa te pozicije napraviti oštećenja označena na skici br. 12, 13, 4/2 i 4/3, jer nijesu u vidnom polju, a
 zbog visine kamenog zida od 1,65 m.
- 
-Vezano za kazivanje optu ž enog M. I, vje š tak navodi da je mogu ć e da se taj optu ž eni nalazio na prikazanoj
-poziciji iza svog vozila kada je pogo đ en projektilom. U tom pravcu je djelovao projektil koji je napravio
-ošte ć enja na vozilu koja su ozna č ena brojevima 4/2 i 4/3.
- 
-Poja š njava da je taj projektil izgubio ve ć u koli č inu kineti č ke energije na prodore kroz vjetrobransko i zadnje
+
+Vezano za kazivanje optuženog M. I, vještak navodi da je moguće da se taj optuženi nalazio na prikazanoj
+poziciji iza svog vozila kada je pogođen projektilom. U tom pravcu je djelovao projektil koji je napravio
+oštećenja na vozilu koja su označena brojevima 4/2 i 4/3.
+
+Pojašnjava da je taj projektil izgubio veću količinu kinetičke energije na prodore kroz vjetrobransko i zadnje
 lijevo staklo, te da je prodor kroz vjetrobransko staklo na visini od 1,1 m. od podloge.
- 
-Predo č ava da putanja projektila koji je napravio ova o š te ć enja ima blago silaznu putanju od oko dva posto u
-odnosu na horizontalnu ravan, a š to zna č i da na udaljenosti od oko dva metra po prolasku kroz vjetrobransko
+
+Predočava da putanja projektila koji je napravio ova oštećenja ima blago silaznu putanju od oko dva posto u
+odnosu na horizontalnu ravan, ašto znači da na udaljenosti od oko dva metra po prolasku kroz vjetrobransko
 staklo, putanja ovog projektila ima rastojanje od podloge oko 1,03 m.
- 
-U mi š ljenju navodi da se vje š tak medicinske struke izjasnio da je M. pogo đ en u predjelu trupa na rastojanju
-od 1,2 metra od podloge, pa navodi da se po osnovu svega toga mo ž e konstatovati da je M. u momentu kada
-je pogo đ en bio u blago sagnutom polo ž aju.
- 
-Dalje poja š njava da na osnovu materijalnih tragova pozicije sa koje je pucano prema M. I. su prikazana na
-skici 3. Kako se za č aure koje su se na š le u neposrednoj blizini pozicije na kojoj se na š ao M. I. nijesu na đ eni
-projektili, tj. nijesu ouo č ena o š te ć enja koja bi nastala dejstvom tih projektila, da se stoga ne mo ž e preciznije
+
+U mišljenju navodi da se vještak medicinske struke izjasnio da je M. pogođen u predjelu trupa na rastojanju
+od 1,2 metra od podloge, pa navodi da se po osnovu svega toga može konstatovati da je M. u momentu kada
+je pogođen bio u blago sagnutom položaju.
+
+Dalje pojašnjava da na osnovu materijalnih tragova pozicije sa koje je pucano prema M.I. su prikazana na
+skici 3. Kako se začaure koje su se našle u neposrednoj blizini pozicije na kojoj se našao M.I. nijesu nađeni
+projektili, tj. nijesu ouočena oštećenja koja bi nastala dejstvom tih projektila, da se stoga ne može preciznije
 utvrditi pozicija sa koje su ispaljeni.
- 
-Na pretresu je pojasnio da se koristio podacima sa rekonstrukcije i sa uvi đ aja prilikom vje š ta č enja, te da se
-koristio i podacima vje š taka sudske medicine vezano za povredu na tijelu sada optu ž enog M. I, pa je stoga
-dao jednu verziju mogu ć eg polo ž aja u kojem se nalazilo to lice u momentu zadobijanja povrede, a sve
-uklapanjem podataka i to po osnovu visine o š te ć enja na š ofer š ajbni vozila posmatrano od podloge, te drugih
-podataka. Stoga je dao mogu ć nost da se to lice prilikom povre đ ivanja nalazilo u pognutom polo ž aju.
- 
-Dalje je predo č io da je utvr đ eno da je pet č aura ispaljeno iz istog pi š tolja cal. 9 mm Duga, te da su na đ ena dva
-projektila na lice mjesta, a po osnovu č ega se mo ž e konstatovati da svi projektili imaju definisanu putanju
+
+Na pretresu je pojasnio da se koristio podacima sa rekonstrukcije i sa uviđaja prilikom vještačenja, te da se
+koristio i podacima vještaka sudske medicine vezano za povredu na tijelu sada optuženog M. I, pa je stoga
+
+dao jednu verziju mogućeg položaja u kojem se nalazilo to lice u momentu zadobijanja povrede, a sve
+uklapanjem podataka i to po osnovu visine oštećenja našoferšajbni vozila posmatrano od podloge, te drugih
+podataka. Stoga je dao mogućnost da se to lice prilikom povređivanja nalazilo u pognutom položaju.
+
+Dalje je predočio da je utvrđeno da je petčaura ispaljeno iz istog pištolja cal. 9 mm Duga, te da su nađena dva
+projektila na lice mjesta, a po osnovučega se može konstatovati da svi projektili imaju definisanu putanju
 kojom su se kretali, a da samo jedna putanja koja je definisana da prolazi kroz vozilo je mogla da nanese
 povredu kakvu je zadobio M.
- 
-Na skici su bli ž e prikazane pozicije sa koje su ispaljeni projektili, a po osnovu na đ enih č aura na licu mjesta, te
-mogu ć nost da su tri č aure koje su na đ ene pored vozila i jednu na vozilu, mogle su biti ispaljene sa pozicije sa
+
+Na skici su bliže prikazane pozicije sa koje su ispaljeni projektili, a po osnovu nađenihčaura na licu mjesta, te
+mogućnost da su tričaure koje su nađene pored vozila i jednu na vozilu, mogle su biti ispaljene sa pozicije sa
 ugla objekta, ali pod pretpostavkom da je pravac u kojem se puca u pravcu iz kojeg se puca prema njemu.
- 
-Dalje je predo č io da je u prvom nalazu uzeo pretpostavku da lice koje puca pi š toljem kratka devetka, puca iz
-pravca iz kojeg se na njega puca pi š toljem duga devetka, te da ta pozicija mo ž e biti na samom uglu
+
+Dalje je predočio da je u prvom nalazu uzeo pretpostavku da lice koje puca pištoljem kratka devetka, puca iz
+pravca iz kojeg se na njega puca pištoljem duga devetka, te da ta pozicija može biti na samom uglu
 poslovnog objekta, te da je prikazana na skici osno vnog nalaza koji nosi oznaku br. 3829/17.
- 
-Dalje je naveo da na rekonstrukciji nijesu postojali dokazi, odnosno  iskazi, koji bi obuhvatali mogu ć nost
-pucanja sa tih pozicija gdje su na đ ene č aure ispaljene iz pi š tolja kratka devetka, te kako ne postoje i ni
-konkretna o š te ć enja nastala dejstvom projektila iz tog pi š tolja, nije se mogao opredijeliti za pozicije sa kojih
-je mogu ć e ispaliti te metke, a da bi č aure bile na fiksiranim pozicijama.
- 
-Predo č io je da je op š ta karakteristika pi š tolja koji bi ispaljivao municiju kratke devetke, da č aure izbacuje u
+
+Dalje je naveo da na rekonstrukciji nijesu postojali dokazi, odnosno iskazi, koji bi obuhvatali mogućnost
+pucanja sa tih pozicija gdje su nađenečaure ispaljene iz pištolja kratka devetka, te kako ne postoje i ni
+konkretna oštećenja nastala dejstvom projektila iz tog pištolja, nije se mogao opredijeliti za pozicije sa kojih
+je moguće ispaliti te metke, a da bičaure bile na fiksiranim pozicijama.
+
+Predočio je da je opšta karakteristika pištolja koji bi ispaljivao municiju kratke devetke, dačaure izbacuje u
 desnu stranu u odnosu na pravac pucanja, a ukoliko bi se uzele u obzir postavljena pozicija iza vozila "Audi",
-te da se sa te pozicije puca i da č aura zauzme fiksirane pozicije, da bi pravac u kojem bi pi š tolj u tom
+te da se sa te pozicije puca i dačaura zauzme fiksirane pozicije, da bi pravac u kojem bi pištolj u tom
 momentu je bio okrenut suprotno od pravca sa kojeg se puca prema toj osobi.
- 
-Nalazi da su č aure cal. 9 duga, ispaljene iz istog pi š tolja tog kalibra, te da iste nijesu po na đ enim
-karakteristikama mogle biti ispaljene iz pi š tolja marke "glok" jer taj pi š tolj ima specifi č nost da mu otisak č ela
-zatvara č a i udarne igle izgleda pravougaono.
- 
-Na kazivanje vje š taka vezano za marku pi š tolja iz kojeg su ispaljeni projektili, optu ž eni H. primje ć uje da je
-mogu ć e da su projektili ispaljeni iz drugog pi š tolja, a ne pi š tolja marke "glok".
- 
+
+Nalazi da sučaure cal. 9 duga, ispaljene iz istog pištolja tog kalibra, te da iste nijesu po nađenim
+karakteristikama mogle biti ispaljene iz pištolja marke "glok" jer taj pištolj ima specifičnost da mu otisakčela
+zatvarača i udarne igle izgleda pravougaono.
+
+Na kazivanje vještaka vezano za marku pištolja iz kojeg su ispaljeni projektili, optuženi H. primjećuje da je
+moguće da su projektili ispaljeni iz drugog pištolja, a ne pištolja marke "glok".
+
 Izvodom iz registra kaznenih evidencija Ministarstva pravde Crne Gore na br. 3/2018 od 10.01.2018 godine, na
-ime H. S, se utvr đ uje da isti ranije nije osu đ ivan.
- 
+ime H. S, se utvrđuje da isti ranije nije osuđivan.
+
 Izvodom iz registra kaznenih evidencija Ministarstva pravde Crne Gore na br. 4/2018 od 10.01.2018 godine, na
-ime M. I, se utvr đ uje da je isti ranije osu đ ivan i to: presudama Osnovnog suda iz R, i to: K. br. 22/16 zbog
-krivi č nog djela iz č l. 154 KZ CG, na nov č anu kaznu u iznosu od 800 eura; K. br. 139/12 i K. br. 140/12 zbog
-krivi č nog djela iz č l. 151st. 2 Kz CG na kaznu zatvora u trajanju od godinu dana i jedan mjesec; K. br. 8/13
-(spojen sa predmetom K. br. 9/13) zbog krivi č nog djela iz č l. 151 st. 1 Kz CG, na kaznu zatvora u trajanju od 7
-mjeseci; K. br. 131/14 zbog krivi č nog djela iz č l. 168 st. 1 Kz CG na kaznu zatvora u trajanju od 1.500 eura; K. br.
-153/10 zbog krivi č nog djela iz č l. 154 st. 1 KZ CG, na nov č anu kaznu od 500 eura; K. br. 226/05 zbog krivi č nog
-djela iz č l. 375 st. 3 KZ CG, kazna zatvora od 60 dana; K. br. 249/07 zbog krivi č nog djela iz č l. 376 st. 1 Kz CG, na
-kaznu zatvora od 3 mjeseca; K. br. 312/05 zbog krivi č nog djela iz č l. 154 st. 1 Kz CG, na nov č anu kaznu od 800
-eura; K. br. 2/03 zbog krivi č nog djela iz č l. 33 st. 1 Zakona o inspekcijskoj kontroli, na nov č anu kaznu u iznosu
-od 6.000 dinara; K. br. 319/00 zbog krivi č nog djela iz č l. 154 st.3 Kz CG, na kaznu zatvora u trajanju od godinu
-dana; K. br. 294/00 zbog krivi č nog djela iz č l. 37 st. 2 Kz CG, na nov č anu kaznu u iznosu od 9.000 dinara; K. br.
-128/84 zbog krivi č nog djela iz č l. 152 st. 1 Kz CG, na kaznu zatvora u trajanju od 90 dana, uslovno na jednu
-godinu, te presudom Op š tinskog suda iz T. K. br. 118/07 zbog krivi č nog djela iz č l. 23 st. 1 KZ Srbije, na kaznu
-zatvora u trajanju od tri mjeseca; presudom Okru ž nog suda iz K. K. br. 34/91 zbog krivi č nog djela iz č l. 171 st.
-3 Kz Srbije, na kaznu zatvora u trajanju od č etiri godine; presudom Op š tinskog suda iz T. M. K. br. 5/88 zbog
-krivi č nog djela iz č l. 165 st. 3 KZ Srbije, na nov č anu kaznu u iznosu od 350.000 dinara i presudom Op š tinskog
-suda iz S. K. br. 1288/83 zbog krivi č nog djela iz č l. 156 st. 1 KZ Makedonije, na kaznu zatvora u trajanju od 20
+ime M. I, se utvrđuje da je isti ranije osuđivan i to: presudama Osnovnog suda iz R, i to: K. br. 22/16 zbog
+krivičnog djela izčl. 154 KZ CG, na novčanu kaznu u iznosu od 800 eura; K. br. 139/12 i K. br. 140/12 zbog
+krivičnog djela izčl. 151st. 2 Kz CG na kaznu zatvora u trajanju od godinu dana i jedan mjesec; K. br. 8/13
+(spojen sa predmetom K. br. 9/13) zbog krivičnog djela izčl. 151 st. 1 Kz CG, na kaznu zatvora u trajanju od 7
+mjeseci; K. br. 131/14 zbog krivičnog djela izčl. 168 st. 1 Kz CG na kaznu zatvora u trajanju od 1.500 eura; K. br.
+153/10 zbog krivičnog djela izčl. 154 st. 1 KZ CG, na novčanu kaznu od 500 eura; K. br. 226/05 zbog krivičnog
+djela izčl. 375 st. 3 KZ CG, kazna zatvora od 60 dana; K. br. 249/07 zbog krivičnog djela izčl. 376 st. 1 Kz CG, na
+kaznu zatvora od 3 mjeseca; K. br. 312/05 zbog krivičnog djela izčl. 154 st. 1 Kz CG, na novčanu kaznu od 800
+eura; K. br. 2/03 zbog krivičnog djela izčl. 33 st. 1 Zakona o inspekcijskoj kontroli, na novčanu kaznu u iznosu
+od 6.000 dinara; K. br. 319/00 zbog krivičnog djela izčl. 154 st.3 Kz CG, na kaznu zatvora u trajanju od godinu
+dana; K. br. 294/00 zbog krivičnog djela izčl. 37 st. 2 Kz CG, na novčanu kaznu u iznosu od 9.000 dinara; K. br.
+128/84 zbog krivičnog djela izčl. 152 st. 1 Kz CG, na kaznu zatvora u trajanju od 90 dana, uslovno na jednu
+godinu, te presudom Opštinskog suda iz T.K. br. 118/07 zbog krivičnog djela izčl. 23 st. 1 KZ Srbije, na kaznu
+zatvora u trajanju od tri mjeseca; presudom Okružnog suda iz K.K. br. 34/91 zbog krivičnog djela izčl. 171 st.
+3 Kz Srbije, na kaznu zatvora u trajanju odčetiri godine; presudom Opštinskog suda iz T.M. K. br. 5/88 zbog
+krivičnog djela izčl. 165 st. 3 KZ Srbije, na novčanu kaznu u iznosu od 350.000 dinara i presudom Opštinskog
+suda iz S.K. br. 1288/83 zbog krivičnog djela izčl. 156 st. 1 KZ Makedonije, na kaznu zatvora u trajanju od 20
 mjeseci.
- 
-Presudom Osnovnog suda iz R, K. br. 77/17 od 25.12.2017 godine, a koja presuda je postala pravnosna ž na
-dana 05.01.2018 godine, se utvr đ uje da je H.A. ogla š en krivim zbog krivi č nog djela ugro ž avanje sigurnosti iz
-čl. 168 st. 2 u vezi st. 1 Krivi č nog zakonika Crne Gore, a vezano za doga đ aj koji se desio dana 09.09.2017
-godine u zlatarskoj radnji "S. k. ..", ugrozio sigurnost M. I. i M. E, izme đ u ostalog i na na č in š to je prislonio
-pištolj na I. č elo, govore ć i mu "ubi ć u vas i pobi ć u vam unu č ad i sve vas", a potom dohvatio I. rukama, a potom
-i E. i bacio ih na dvosjed, a zatim uperio pi š tolj u njihovom pravcu, govore ć i "pobi ć u vas sve.
- 
-Foto-dokumentacijom OB R. br. 148/17 od 10.09.2017 godine, je bli ž e predstavljeno mjesto gdje se doga đ aj
-desio, te obilje ž eni i fotografisani zate č eni tragovi prilikom vr š enja uvi đ aja, a š to je bli ž e prikazano
-izvje š tajem o kriminalisti č ko-tehni č kom pregledu lica mjesta i uzrokovanju tragova Odjelenja bezbjednosti R.
-koji je sa č injen dana 10.09.2017 godine, od strane krimi tehni č ara Č . D ž . i B. A.
- 
-Sud nije imao razloga da ne prihvati sadr ž inu prethodno izvedenih dokaza. Toj sadr ž ini u bitnom nije bilo
-prigovora i po nala ž enju suda u tim dokazima je sadr ž an istinito po osnovu zapa ž anja ili stru č nog mi š ljenja, a
-po osnovu zate č enog stanja ili dokumentacije koja je bila predmet razmatranja, a sve stru č no i nepristrasno.
- 
+
+Presudom Osnovnog suda iz R, K. br. 77/17 od 25.12.2017 godine, a koja presuda je postala pravnosnažna
+dana 05.01.2018 godine, se utvrđuje da je H.A. oglašen krivim zbog krivičnog djela ugrožavanje sigurnosti iz
+čl. 168 st. 2 u vezi st. 1 Krivičnog zakonika Crne Gore, a vezano za događaj koji se desio dana 09.09.2017
+godine u zlatarskoj radnji "S. k...", ugrozio sigurnost M.I. i M. E, između ostalog i na načinšto je prislonio
+pištolj na I. č elo, govoreći mu "ubiću vas i pobiću vam unučad i sve vas", a potom dohvatio I. rukama, a potom
+i E. i bacio ih na dvosjed, a zatim uperio pištolj u njihovom pravcu, govoreći "pobiću vas sve.
+
+Foto-dokumentacijom OB R. br. 148/17 od 10.09.2017 godine, je bliže predstavljeno mjesto gdje se događaj
+desio, te obilježeni i fotografisani zatečeni tragovi prilikom vršenja uviđaja, ašto je bliže prikazano
+izvještajem o kriminalističko-tehničkom pregledu lica mjesta i uzrokovanju tragova Odjelenja bezbjednosti R.
+koji je sačinjen dana 10.09.2017 godine, od strane krimi tehničara Č. D ž. i B.A.
+
+Sud nije imao razloga da ne prihvati sadržinu prethodno izvedenih dokaza. Toj sadržini u bitnom nije bilo
+prigovora i po nalaženju suda u tim dokazima je sadržan istinito po osnovu zapažanja ili stručnog mišljenja, a
+po osnovu zatečenog stanja ili dokumentacije koja je bila predmet razmatranja, a sve stručno i nepristrasno.
+
 Sud je izveo i dokaz prikazivanjem snimljenog materijala sa kamera postavljenim na poslovnim objektima H,
-koji snimljeni materijal se odnosi na vrijeme po č ev od dolaska optu ž enog H. S. i njegovog brata A, pa do
-zavr š etka doga đ aja koji se desio.
- 
-Nakon š to je pregledan video zapis sa USB fle š  memorije, optu ž eni H. S. je predo č io da je on lice u bijeloj
-majci, a da je pored njega njegov brat A. Prostor na kojem su se nalazila tada ta lica oivi č en je sa jedne strane
-kamenom ogradom, a sa druge strane poslovnim prostorom koji je njihovo vlasni š tvo.
- 
-Dalje optu ž eni S. predo č ava da je on ispaljivao projektile kako se to zapa ž a na materijalu snimljen kamerom
-broj 6 ozna č enog zapisa.
- 
-Optu ž eni S. primje ć uje da je H. A. lice koje je presko č ilo zid, š to je zabilje ž eno kamerom br. 3, kako je to
-ozna č eno, i to zid koji ivi č ava njihov poslovni prostor.
- 
-Nakon š to je prisustvovao sagledanju tog materijala vje š tak M. je predo č io da navedeni tragovi koji su
-obra đ eni na skici u potpunosti korespondiraju sa prikazanim snimkom, tj. sa pozicijama sa kojih se uo č ava da
-je vr š eno pucanje.
- 
-Na tom snimku se zapa ž a da se H. kre ć u "cik-cak", da se nalaze iza zida, pa se vra ć aju na poziciju koja je
-poziciji na kojoj se nalazi optu ž eni I.
- 
-Pojasnio je da č aura nema dovoljno kineti č ke energije da napravi o š te ć enje tipa okrznu ć a kamenog zida, jer
-je kineti č ka energija č aure u takvoj situaciji izuzetno mala.
- 
+koji snimljeni materijal se odnosi na vrijeme počev od dolaska optuženog H.S. i njegovog brata A, pa do
+završetka događaja koji se desio.
+
+Nakonšto je pregledan video zapis sa USB flešmemorije, optuženi H.S. je predočio da je on lice u bijeloj
+majci, a da je pored njega njegov brat A. Prostor na kojem su se nalazila tada ta lica oivičen je sa jedne strane
+kamenom ogradom, a sa druge strane poslovnim prostorom koji je njihovo vlasništvo.
+
+Dalje optuženi S. predočava da je on ispaljivao projektile kako se to zapaža na materijalu snimljen kamerom
+broj 6 označenog zapisa.
+
+Optuženi S. primjećuje da je H.A. lice koje je preskočilo zid, š to je zabilježeno kamerom br. 3, kako je to
+označeno, i to zid koji ivičava njihov poslovni prostor.
+
+Nakonšto je prisustvovao sagledanju tog materijala vještak M. je predočio da navedeni tragovi koji su
+obrađeni na skici u potpunosti korespondiraju sa prikazanim snimkom, tj. sa pozicijama sa kojih se uočava da
+je vršeno pucanje.
+
+Na tom snimku se zapaža da se H. kreću "cik-cak", da se nalaze iza zida, pa se vraćaju na poziciju koja je
+poziciji na kojoj se nalazi optuženi I.
+
+Pojasnio je dačaura nema dovoljno kinetičke energije da napravi oštećenje tipa okrznuća kamenog zida, jer
+je kinetička energijačaure u takvoj situaciji izuzetno mala.
+
 Na prikazanom video materijalu koji je snimljen kamera 2,3 i 6 koje se nalaze na poslvonom objektu
-optu ž enog H. se zapa ž a, i to na materijalu snimljenom kamerom broj 6 da u 18:47:03 h. dolazi d ž ip zelene
-boje, da zastaje, pa produ ž ava. D ž ip dolazi iz pravca koji je bli ž i poslovnom prostoru optu ž enog M. U 18:47:33
-h. kamerom je zabilje ž eno da dolaze optu ž eni i svjedok H. A. tr č e ć i. Zapa ž a se da optu ž eni H. dr ž i pi š tolj u
-desnoj ruci, da prilazi do blizu zida, a potom se vra ć aju nazad, te se zapa ž a da u jednom momentu optu ž eni
-prebacuje pi š tolj u lijevoj ruci. Za svo vrijeme se okre ć u u pravcu poslovnog prostora optu ž enog M. U 18:49:22
-h. dolazi prvo optu ž eni H, a za njim i svjedok. U 18:49:25 h. primje ć uje se da optu ž eni H. ispaljuje projektil, a
-drugi u 18.49:29 h. odmah po ispaljivanju prvog projektila. Zapa ž a se da odmah potom u 18:49:30 h. da se
-oba saginju istovremeno i skrivaju od ne č ega. U 18:49:36 h. se zapa ž a da svjedok A. poku š ava da otme pi š tolj
-od optu ž enog S, koji to ne dozvoljava, te da se potom optu ž eni odmi č e od zida koji dijeli poslovne prostore,
-dok A. ostaje do samog zida i da oba gledaju u pravcu poslovnog prostora sada optu ž enog M. U 18.49:48 h. po
-osnovu pona š anja A. zapa ž a se da ne š to govori i gleda u pravcu poslovnog prostora M, a zatim se i oba -
-optu ž eni i A. saginju u istom trenutku, i to optu ž eni H. iza zida, a optu ž eni A. prema zemlji. Zapa ž a se da
-optu ž eni H. dr ž i pi š tolj u desnoj ruci.
- 
-U 18:49:49 h. optu ž eni ispaljuje projektil prvo jedan, a odmah i drugi u pravcu poslovnog prostora M. Potom
-se optu ž eni H. vra ć a u pravcu iz kojeg je do š ao, dok svjedok A. se kre ć e parkingom njihovog poslovnog
+optuženog H. se zapaža, i to na materijalu snimljenom kamerom broj 6 da u 18:47:03 h. dolazi džip zelene
+boje, da zastaje, pa produžava. Džip dolazi iz pravca koji je bliži poslovnom prostoru optuženog M. U 18:47:33
+h. kamerom je zabilježeno da dolaze optuženi i svjedok H.A. trčeći. Zapaža se da optuženi H. drži pištolj u
+desnoj ruci, da prilazi do blizu zida, a potom se vraćaju nazad, te se zapaža da u jednom momentu optuženi
+prebacuje pištolj u lijevoj ruci. Za svo vrijeme se okreću u pravcu poslovnog prostora optuženog M. U 18:49:22
+h. dolazi prvo optuženi H, a za njim i svjedok. U 18:49:25 h. primjećuje se da optuženi H. ispaljuje projektil, a
+drugi u 18.49:29 h. odmah po ispaljivanju prvog projektila. Zapaža se da odmah potom u 18:49:30 h. da se
+oba saginju istovremeno i skrivaju od nečega. U 18:49:36 h. se zapaža da svjedok A. pokušava da otme pištolj
+od optuženog S, koji to ne dozvoljava, te da se potom optuženi odmiče od zida koji dijeli poslovne prostore,
+dok A. ostaje do samog zida i da oba gledaju u pravcu poslovnog prostora sada optuženog M. U 18.49:48 h. po
+osnovu ponašanja A. zapaža se da nešto govori i gleda u pravcu poslovnog prostora M, a zatim se i oba -
+optuženi i A. saginju u istom trenutku, i to optuženi H. iza zida, a optuženi A. prema zemlji. Zapaža se da
+optuženi H. drži pištolj u desnoj ruci.
+
+U 18:49:49 h. optuženi ispaljuje projektil prvo jedan, a odmah i drugi u pravcu poslovnog prostora M. Potom
+se optuženi H. vraća u pravcu iz kojeg je došao, dok svjedok A. se kreće parkingom njihovog poslovnog
 prostora u pravcu kamere br. 6.
- 
-Na materijalu snimljenom kamerom br. 3 zapa ž a se da u 18:50:02 h. svjedok A. ulazi u kadar te kamere i da se
-svo vrijeme okre ć e unazad, a u 18:50:15 h. preska č e kameni zid suprotno od poslovnog prostora optu ž enog
-M, u blizini mjesta gdje je postavljen kontjener, desno  pored prostora gdje je obilje ž en parking.
- 
-Kamerom br. 2 je snimljeno izme đ u ostalog da u 18:47:02 h. dolazi d ž ip koji zastaje, a zatim se na d ž ipu
-otvaraju vrata voza č a. U 18:47:05 h. vrata se zatvaraju i d ž ip nastavlja kretanje u istom pravcu.
- 
-U 18:47:21 h. i optu ž eni H. i svjedok A. ulaze u kadar kamere, prvo ide svjedok, a za njim optu ž eni. Za to
-vrijeme optu ž eni dr ž i pi š tolj u ruci.
- 
-U 18:47:31 h. oba ubrzavaju kretanje, kre ć u se desnom ivicom kolovozne trake. Zapa ž a se da kada su do š li na
-ćošak ograde blizu prostora ispred njihovog objekta da optu ž eni H. ispaljuje projektil u pravcu poslovnog
-prostora optu ž enog M, i to u 18.47:32 h. a da prije toga trkom kre ć e u tom pravcu i ispaljuje projektile. Zatim
-se oba vra ć aju nazad. Za svo vrijeme zastaju i okre ć u se u pravcu poslovnog prostora M.
- 
-U 18:48:08 h. se zapa ž a da svjedok poku š ava da uzme pi š tolj od optu ž enog H, i to u momentu kada optu ž eni
-stavlja pi š tolj u torbicu. Tada se vra ć aju unazad i izlaze iz kadra kamere, da bi se u 18:48:45 h. u kadar ponovo
-pojavio optu ž eni. Zapa ž a se da podi ž e ruku u pravcu poslovnog prostora optu ž enog M. i gestakulacijom kao
+
+Na materijalu snimljenom kamerom br. 3 zapaža se da u 18:50:02 h. svjedok A. ulazi u kadar te kamere i da se
+svo vrijeme okreće unazad, a u 18:50:15 h. preskače kameni zid suprotno od poslovnog prostora optuženog
+M, u blizini mjesta gdje je postavljen kontjener, desno pored prostora gdje je obilježen parking.
+
+Kamerom br. 2 je snimljeno između ostalog da u 18:47:02 h. dolazi džip koji zastaje, a zatim se na džipu
+otvaraju vrata vozača. U 18:47:05 h. vrata se zatvaraju i džip nastavlja kretanje u istom pravcu.
+
+U 18:47:21 h. i optuženi H. i svjedok A. ulaze u kadar kamere, prvo ide svjedok, a za njim optuženi. Za to
+vrijeme optuženi drži pištolj u ruci.
+
+U 18:47:31 h. oba ubrzavaju kretanje, kreću se desnom ivicom kolovozne trake. Zapaža se da kada su došli na
+ćošak ograde blizu prostora ispred njihovog objekta da optuženi H. ispaljuje projektil u pravcu poslovnog
+prostora optuženog M, i to u 18.47:32 h. a da prije toga trkom kreće u tom pravcu i ispaljuje projektile. Zatim
+se oba vraćaju nazad. Za svo vrijeme zastaju i okreću se u pravcu poslovnog prostora M.
+
+U 18:48:08 h. se zapaža da svjedok pokušava da uzme pištolj od optuženog H, i to u momentu kada optuženi
+stavlja pištolj u torbicu. Tada se vraćaju unazad i izlaze iz kadra kamere, da bi se u 18:48:45 h. u kadar ponovo
+pojavio optuženi. Zapaža se da podiže ruku u pravcu poslovnog prostora optuženog M. i gestakulacijom kao
 da poziva nekog. U tom momentu se nalazio na lijevoj kolovoznoj traci posmatrano iz pravca iz kojeg dolazi.
-Na tom materijalu se zapa ž a da potom stoje na ć o š ku ograde, te da u 18:49:14 h. optu ž eni H. podi ž e ruku u
-pravcu u kojem je ispaljivao projektile, a da potom kre ć e u tom pravcu i vadi pi š tolj, a za njim se kre ć e
+Na tom materijalu se zapaža da potom stoje naćošku ograde, te da u 18:49:14 h. optuženi H. podiže ruku u
+pravcu u kojem je ispaljivao projektile, a da potom kreće u tom pravcu i vadi pištolj, a za njim se kreće
 svjedok A.
- 
-U 18:49:16 h. ispaljuje projektil u tom pravcu i tr č e ć i se kre ć u u tom pravcu. Prethodno se vidi da svjedok A.
-hvata za lijevu ruku optu ž enog i povla č i ga unazad, a da potom optu ž eni tr č i u pravcu poslovnog prostora
-optu ž enog M. i podi ž e ruku. Nastavak doga đ aja dijelom je bli ž e opisan po osnovu snimljenog materijala
-snimljenog kamerom br. 6, koja kamera se nalazila bli ž e mjstu de š avanja i taj dio doga đ aja bli ž e snimila.
- 
-Zapa ž a se da u 18:50:16 h. optu ž eni izlazi iz kadra kamere br. 2 i kre ć u ć i se iz pravca u kojem je do š ao i za svo
-to vrijeme se okre ć e u pravcu iz kojeg je ispaljivao projektile i za svo vrijeme dr ž i pi š tolj u ruci.
- 
-Sud nije imao nijednog razloga da ne prihvati sadr ž inu ovog dokaza. Ovim je jasno prikazano pona š anje
-optu ž enog H. S. i svjedoka A, te prikazane radnje koje su oni tada preduzeli. Optu ž eni H. S.nije ni sporio
-istinitost sadr ž anog u snimljenom materijalu.
- 
-Stoga, detaljnom analizom izvedenih dokaza kako pojedina č no, tako i u ukupnosti se na potpuno pouzdan
-nač in utvr đ uje da su optu ž eni po č inili krivi č na djela stavljena im na teret optu ž nicom tu ž ioca. Odbrane
-optu ž enih na na č in kako su iznijeli sud nije mogao prihvatiti i cijenio ih je kao poku š aj izbjegavanja krivi č no-
-pravne odgovornosti. Njihove odbrane su obezvrije đ ene kako njihovim nedoslednim, razli č itim i
-prilago đ enim izjavama naknadnim de š avanjima, tako i ostalim izvedenim dokazima, a posebno iskazima
-saslu š anim svjedoka M. S, H. A, te sadr ž inom snimljenog materijala kamerama sa poslovnog objekta H, kao i
+
+U 18:49:16 h. ispaljuje projektil u tom pravcu i trčeći se kreću u tom pravcu. Prethodno se vidi da svjedok A.
+hvata za lijevu ruku optuženog i povlači ga unazad, a da potom optuženi trči u pravcu poslovnog prostora
+optuženog M. i podiže ruku. Nastavak događaja dijelom je bliže opisan po osnovu snimljenog materijala
+snimljenog kamerom br. 6, koja kamera se nalazila bliže mjstu dešavanja i taj dio događaja bliže snimila.
+
+Zapaža se da u 18:50:16 h. optuženi izlazi iz kadra kamere br. 2 i krećući se iz pravca u kojem je došao i za svo
+to vrijeme se okreće u pravcu iz kojeg je ispaljivao projektile i za svo vrijeme drži pištolj u ruci.
+
+Sud nije imao nijednog razloga da ne prihvati sadržinu ovog dokaza. Ovim je jasno prikazano ponašanje
+optuženog H.S. i svjedoka A, te prikazane radnje koje su oni tada preduzeli. Optuženi H.S.nije ni sporio
+istinitost sadržanog u snimljenom materijalu.
+
+Stoga, detaljnom analizom izvedenih dokaza kako pojedinačno, tako i u ukupnosti se na potpuno pouzdan
+nač in utvrđuje da su optuženi počinili krivična djela stavljena im na teret optužnicom tužioca. Odbrane
+optuženih na način kako su iznijeli sud nije mogao prihvatiti i cijenio ih je kao pokušaj izbjegavanja krivičnopravne odgovornosti. Njihove odbrane su obezvrijeđene kako njihovim nedoslednim, različitim i
+prilagođenim izjavama naknadnim dešavanjima, tako i ostalim izvedenim dokazima, a posebno iskazima
+saslušanim svjedoka M. S, H. A, te sadržinom snimljenog materijala kamerama sa poslovnog objekta H, kao i
 ostalim izvedenim dokazima.
- 
-Svjedok M. S. predo č ava da je I. razgovarao telefonom sa A, te da je A. psovao I. i da je sada optu ž eni I, kako
-navodi svjedok "izleteo iz radnje". Navodi da je zapazio da je I. bio uznemiren i ljut, te da se pla š io da ne do đ e
-do nekog ekcesa, pa ga je smirivao dok su se kretali prema objektu u naselju Z, kao i da je po š ao sa njim kako
+
+Svjedok M.S. predočava da je I. razgovarao telefonom sa A, te da je A. psovao I. i da je sada optuženi I, kako
+navodi svjedok "izleteo iz radnje". Navodi da je zapazio da je I. bio uznemiren i ljut, te da se plašio da ne dođe
+do nekog ekcesa, pa ga je smirivao dok su se kretali prema objektu u naselju Z, kao i da je pošao sa njim kako
 bi smirio situaciju.
- 
-Optu ž eni S. tvrdi da je optu ž eni I. uzeo telefon od S. i po č eo da psuje A, te zaprijetio da ć e ih zaklati, pobiti,
-baciti bombu, a potom zahtijevao od A. da do đ u u naselju Z. kod poslovnih objekata, a potom prekinuo vezu.
-Potvr đ uje da su on i A. odmah nakon tog razgovara po š li na to mjesto, te da ih je po dolasku I. pozvao,
-govore ć i im "hajde do đ ite .... jeba ć u vam mater", a da je potom pucao u njihovom pravcu.
- 
-Optu ž eni M. tvrdi da je tada u razgovoru prvo rekao da ne galami, a potom je ustvrdio da mu nije ni š ta
-govorio, da bi potom kazao da se sje ć a da je A. govorio "kako ih nije sramota da č ovjeka od 62 godine bacuje
-na patos...". Tvrdi da sa njima nije dogovarao bilo kakav susret, ve ć  da je po š ao u Z. zbog poslova oko vozila.
- 
-Međ utim, svjedok H. A. je kategori č an da mu je I. tada rekao "do đ i na tehni č ki, ubi ć u vas ko pa šč ad", na š ta je
-on odgovorio da ć e odmah do ć i, te je zajedno sa S. po š ao. Potvr đ uje da je tada I. ispalio projektile u njihovom
-pravcu, te da su se oni upla š ili i skrivali od upla š enih projektila. Tvrdi da je za svo to vrijeme poku š ao da smiri
-S. i da mu oduzme pi š tolj, u č emu nije uspio.
- 
-Stoga se mo ž e izvesti pouzdan zaklju č ak da je kriti č nom doga đ aju prethodila sva đ a izme đ u brata optu ž enog
-S. A, kao i brata optu ž enog I. I, te da je nakon toga do š lo do sva đ e izme đ u sada optu ž enog I. i A, kada je I.
-pozvao A. i S. da do đ u u mjesto Z, govore ć i im da ć e ih pobiti, baciti bombu i sli č no, a š to su oni i prihatili, te
-kada su do š li, da ih je na tom mjestu č ekao I, govore ć i im da do đ u, te da ć e ih pobiti ko pa šč ad.
- 
-Nakon ovih de š avanja, do š lo je do ispaljivanja projektila sa obje strane, a š to u potpunosti potvr đ uju izvedeni
+
+Optuženi S. tvrdi da je optuženi I. uzeo telefon od S. i počeo da psuje A, te zaprijetio daće ih zaklati, pobiti,
+baciti bombu, a potom zahtijevao od A. da dođu u naselju Z. kod poslovnih objekata, a potom prekinuo vezu.
+Potvrđuje da su on i A. odmah nakon tog razgovara pošli na to mjesto, te da ih je po dolasku I. pozvao,
+govoreći im "hajde dođite.... jebaću vam mater", a da je potom pucao u njihovom pravcu.
+
+Optuženi M. tvrdi da je tada u razgovoru prvo rekao da ne galami, a potom je ustvrdio da mu nije ništa
+govorio, da bi potom kazao da se sjeća da je A. govorio "kako ih nije sramota dačovjeka od 62 godine bacuje
+na patos...". Tvrdi da sa njima nije dogovarao bilo kakav susret, većda je pošao u Z. zbog poslova oko vozila.
+
+Međ utim, svjedok H.A. je kategoričan da mu je I. tada rekao "dođi na tehnički, ubiću vas ko paščad", našta je
+on odgovorio daće odmah doći, te je zajedno sa S. pošao. Potvrđuje da je tada I. ispalio projektile u njihovom
+pravcu, te da su se oni uplašili i skrivali od uplašenih projektila. Tvrdi da je za svo to vrijeme pokušao da smiri
+S. i da mu oduzme pištolj, učemu nije uspio.
+
+Stoga se može izvesti pouzdan zaključak da je kritičnom događaju prethodila svađa između brata optuženog
+S. A, kao i brata optuženog I. I, te da je nakon toga došlo do svađe između sada optuženog I. i A, kada je I.
+pozvao A. i S. da dođu u mjesto Z, govoreći im daće ih pobiti, baciti bombu i slično, ašto su oni i prihatili, te
+kada su došli, da ih je na tom mjestučekao I, govoreći im da dođu, te daće ih pobiti ko paščad.
+
+Nakon ovih dešavanja, došlo je do ispaljivanja projektila sa obje strane, ašto u potpunosti potvrđuju izvedeni
 dokazi.
- 
-Optu ž eni S. ne spori da je ispaljivao projektile, a tvrdi da se branio od napada, dok optu ž eni M. negira da je
-ispaljivao projektile. Takvu tvrdnju ni optu ž enog H, ni optu ž enog M, sud nije mogao prihvatiti. Tvrdnja
-optu ž enog M. je obezvrije đ ena sadr ž inom odbrane optu ž enog S, kao i kazivanjem svjedoka A, te zate č enim
-tragovima na mjestu gdje se doga đ aj desio, odnosno  nespornom č injenicom da su na đ ene č aure pored vozila
-pored kojeg se u momentu de š avanja nalazio sada optu ž eni I, kao i jedna č aura iza brisa č a tog vozila, a kojim
-vozilom je na to mjesto do š ao optu ž eni I. sa sinovcem S.
- 
-Bez upori š ta je posebno njegova tvrdnja da na đ ene č aure poti č u iz drugih doga đ aja. Nije dovedeno u sumnju
-da je na đ ena jedna č aura iza brisa č a njegovog vozila, niti je osporeno da je ta č aura kao i č aure koje su
-nađ ene pored vozila ispaljene iz istog pi š tolja, a š to se potvr đ uje nalazom vje š taka balisti č ara.
- 
-Sasvim je sigurno da ukoliko su na đ ene č aure poticale iz doga đ aja kako to opisuje optu ž eni I, da na đ ena
-čaura iza brisa č a njegovog vozila nije mogla poticati iz dog đ aja kako to on opisuje, ve ć  iz doga đ aja koji se
+
+Optuženi S. ne spori da je ispaljivao projektile, a tvrdi da se branio od napada, dok optuženi M. negira da je
+ispaljivao projektile. Takvu tvrdnju ni optuženog H, ni optuženog M, sud nije mogao prihvatiti. Tvrdnja
+optuženog M. je obezvrijeđena sadržinom odbrane optuženog S, kao i kazivanjem svjedoka A, te zatečenim
+
+tragovima na mjestu gdje se događaj desio, odnosno nespornomčinjenicom da su nađenečaure pored vozila
+pored kojeg se u momentu dešavanja nalazio sada optuženi I, kao i jednačaura iza brisača tog vozila, a kojim
+vozilom je na to mjesto došao optuženi I. sa sinovcem S.
+
+Bez uporišta je posebno njegova tvrdnja da nađenečaure potiču iz drugih događaja. Nije dovedeno u sumnju
+da je nađena jednačaura iza brisača njegovog vozila, niti je osporeno da je tačaura kao ičaure koje su
+nađ ene pored vozila ispaljene iz istog pištolja, ašto se potvrđuje nalazom vještaka balističara.
+
+Sasvim je sigurno da ukoliko su nađenečaure poticale iz događaja kako to opisuje optuženi I, da nađena
+čaura iza brisača njegovog vozila nije mogla poticati iz dogđaja kako to on opisuje, većiz događaja koji se
 desio upravo tog dana.
- 
-Da se optu ž eni I. mo ž e dovesti u vezi procesom ispaljenja projektila proizilazi iz nalaza vje š taka Ivanovi ć , a to
-po osnovu na đ enih GSR č estica na njegovoj desnoj š aci.
- 
-Da su projektili ispaljivani u pravcu sada optu ž enog S. i njegovog brata, ukazuje sadr ž ina prikazanog video
-materijala snimljenog kamerama sa poslovnog objekta H. na kojem se jasno vidi kako optu ž eni S, kao i
-svjedok A. se naglo i istovremeno saginju i poku š avaju sakriti, a š to ukazuje na postojanje opasnosti od
-povre đ ivanja usled ispaljenog projektila sa druge strane, odnosno strane iz pravca u kojem je prethodno
-ispaljivao projektile sada optu ž eni S.
- 
-Činjenica je da na prikazanom materijalu ne postoji snimljeno da optu ž eni I. ispaljuje projektile, ali kod
-sadr ž anog u odbrani optu ž enog S, te iskaza svjedoka A, nalaza vje š takinje I. o prisustvu GSR č estica na ruci
-optu ž enog I, na đ enih č aura pored vozila pored kojeg se nalazio sada optu ž eni I. i kojim je do š ao na to mjesto,
-te na đ ene č aure iza brisa č a tog vozila, a koje č aure su ispaljene iz istog pi š tolja, pona š anja optu ž enog S. i
-svjedoka A, š to se jasno vidi iz snimljenog materijala, a š to ukazuje na postojanje opasnosti na koju
-istoremeno reaguju saginjuju ć i se i skrivaju ć i se, sve to ukazuje, a suprotno tvrdnji optu ž enog I, da je on
-ispaljivao projektile u pravcu optu ž enog S. i svjedoka A.
- 
-Odbrana optu ž enog S. da je u strahu ispaljivao projektile, te da se branio od napada u potpunosti je
-obezvrije đ ena izvedenim dokazima, a posebno sadr ž anom u snimljenom materijalu, iz č ega proizilazi jasan
-zaklju č ak suprotan njegovoj odbrani, pa istu, po nala ž enju vije ć a, ne treba posebno komentarisati, niti
-analizirati. Snimljenim materijalom je jasno predo č eno njegovo pona š anje prilikom dolaska na to mjesto,
-pona š anje tokom doga đ aja i nakon doga đ aja, iz č ega se ne mo ž e zaklju č iti da je kod istog postojala
-uznemirenosti, ve ć  suprotno, da je postojala smirenost prilikom ispaljivanja projektila, te da je projektile
-ispaljivao u vi š e navrata, dolaze ć i, a potom vra ć aju ć i se ponovo na to mjesto, a š to govori ne o prisustvu
-njegovog straha, niti nu ž nosti, ve ć  o upornosti i bahatosti.
- 
-Pouzdano se mo ž e zaklju č iti da je optu ž eni I. pozvao svjedoka A. i njegovog brata sada optu ž enog S. da
-"rije š e problem" koji je postojao izme đ u njihovih porodica, tra ž e ć i da do đ u na mjestu kako je predo č eno.
-Optu ž eni S. i njegov brat A. su to prihvatili i odmah nakon sva đ e koja se desila prvo izme đ u A. i I. brata I, a
-potom izme đ u A. i sada optu ž enog I, po š li su na to mjesto. I optu ž eni S. i optu ž eni I. su posjedovali, dakle
+
+Da se optuženi I. može dovesti u vezi procesom ispaljenja projektila proizilazi iz nalaza vještaka Ivanović, a to
+po osnovu nađenih GSRčestica na njegovoj desnojšaci.
+
+Da su projektili ispaljivani u pravcu sada optuženog S. i njegovog brata, ukazuje sadržina prikazanog video
+materijala snimljenog kamerama sa poslovnog objekta H. na kojem se jasno vidi kako optuženi S, kao i
+svjedok A. se naglo i istovremeno saginju i pokušavaju sakriti, ašto ukazuje na postojanje opasnosti od
+povređivanja usled ispaljenog projektila sa druge strane, odnosno strane iz pravca u kojem je prethodno
+ispaljivao projektile sada optuženi S.
+
+Činjenica je da na prikazanom materijalu ne postoji snimljeno da optuženi I. ispaljuje projektile, ali kod
+sadržanog u odbrani optuženog S, te iskaza svjedoka A, nalaza vještakinje I. o prisustvu GSRčestica na ruci
+optuženog I, nađenihčaura pored vozila pored kojeg se nalazio sada optuženi I. i kojim je došao na to mjesto,
+te nađenečaure iza brisača tog vozila, a koječaure su ispaljene iz istog pištolja, ponašanja optuženog S. i
+svjedoka A, š to se jasno vidi iz snimljenog materijala, ašto ukazuje na postojanje opasnosti na koju
+istoremeno reaguju saginjujući se i skrivajući se, sve to ukazuje, a suprotno tvrdnji optuženog I, da je on
+ispaljivao projektile u pravcu optuženog S. i svjedoka A.
+
+Odbrana optuženog S. da je u strahu ispaljivao projektile, te da se branio od napada u potpunosti je
+obezvrijeđena izvedenim dokazima, a posebno sadržanom u snimljenom materijalu, izčega proizilazi jasan
+zaključak suprotan njegovoj odbrani, pa istu, po nalaženju vijeća, ne treba posebno komentarisati, niti
+analizirati. Snimljenim materijalom je jasno predočeno njegovo ponašanje prilikom dolaska na to mjesto,
+ponašanje tokom događaja i nakon događaja, izčega se ne može zaključiti da je kod istog postojala
+uznemirenosti, većsuprotno, da je postojala smirenost prilikom ispaljivanja projektila, te da je projektile
+ispaljivao u više navrata, dolazeći, a potom vraćajući se ponovo na to mjesto, ašto govori ne o prisustvu
+njegovog straha, niti nužnosti, većo upornosti i bahatosti.
+
+Pouzdano se može zaključiti da je optuženi I. pozvao svjedoka A. i njegovog brata sada optuženog S. da
+"riješe problem" koji je postojao između njihovih porodica, tražeći da dođu na mjestu kako je predočeno.
+Optuženi S. i njegov brat A. su to prihvatili i odmah nakon svađe koja se desila prvo između A. i I. brata I, a
+potom između A. i sada optuženog I, pošli su na to mjesto. I optuženi S. i optuženi I. su posjedovali, dakle
 poš li su "pripremljeni" na to mjesto i sa stvorenom namjerom, a koju namjeru su potom i realizovali.
- 
-Dakle, postojao je uzrok, poziv na obra č un i prihvatanje poziva, pa se po nala ž enju ovog vije ć a, ne mo ž e
-pozivati na nu ž nu odbranu niti onaj koji poziva na obra č un, niti onaj koji prihvata takav obra č un.
- 
-Proizilazi da su optu ž eni tra ž ili i ž eljeli sukob, a do kojeg sukoba je potom i do š lo na na č in kako je to
+
+Dakle, postojao je uzrok, poziv na obračun i prihvatanje poziva, pa se po nalaženju ovog vijeća, ne može
+pozivati na nužnu odbranu niti onaj koji poziva na obračun, niti onaj koji prihvata takav obračun.
+
+Proizilazi da su optuženi tražili iželjeli sukob, a do kojeg sukoba je potom i došlo na način kako je to
 prethodno opisano.
- 
-Za napomenuti je da se optu ž eni M. I. uporno tokom postupka branio da uop š te nije ispaljivao projektile u
-pravcu sada optu ž enog S, niti njegovog brata A, ve ć  da se samo skrivao kako bi izbjegao eventualno
-povre đ ivanje. Me đ utim, kroz zavr š nu rije č  svog branioca je ukazao na postojanje nu ž ne odbrane na njegovoj
-strani, pa se sasvim logi č no postavlja pitanje o nu ž nosti odbrane i o na č inu na koji je ta odbrana preduzeta, a
-što ukazuje na njegovu upornost u nedoslednosti izno š enja odbrane tokom č itavog postupka, pa samim time
-i na neta č nost njegove odbrane, koja nije potvr đ ena nijednim izvedenim dokazom tokom postupka, ve ć
-obezvrije đ ena na na č in kako je to prethodno predstavljeno.
- 
-Stoga, po nala ž enju ovog suda, u radnjama oba optu ž ena sadr ž ana su sva obilje ž ja krivi č nih djela ubistvo u
-poku š aju iz č . 143 KZ CG u vezi sa č l. 20 KZ CG u sticaju sa krivi č nim djelom nedoozvoljeno dr ž anje oru ž ja i
-eksplozivnih materija iz č l. 403 st. 1 KZ CG.
- 
-Čl. 5 Zakona o oru ž ju je izme đ u ostalog predvi đ eno da je dozvoljena nabavka, dr ž anje i no š enje i preno š enje
-oruž ja i municije, oru ž ja kategorije B za koje je izdata odogaraju ć a isprava o oru ž ju u skladu sa tim Zakonom,
-a čl. 33 istog Zakona, izme đ u ostalog da je zabranjeno no š enje oru ž ja na javnom mjestu, a koje mjesto gdje se
-doga đ aj desio se smatra javnim mjestom.
- 
+
+Za napomenuti je da se optuženi M.I. uporno tokom postupka branio da uopšte nije ispaljivao projektile u
+pravcu sada optuženog S, niti njegovog brata A, većda se samo skrivao kako bi izbjegao eventualno
+povređivanje. Međutim, kroz završnu riječsvog branioca je ukazao na postojanje nužne odbrane na njegovoj
+strani, pa se sasvim logično postavlja pitanje o nužnosti odbrane i o načinu na koji je ta odbrana preduzeta, a
+što ukazuje na njegovu upornost u nedoslednosti iznošenja odbrane tokomčitavog postupka, pa samim time
+i na netačnost njegove odbrane, koja nije potvrđena nijednim izvedenim dokazom tokom postupka, većobezvrijeđena na način kako je to prethodno predstavljeno.
+
+Stoga, po nalaženju ovog suda, u radnjama oba optužena sadržana su sva obilježja krivičnih djela ubistvo u
+pokušaju iz č. 143 KZ CG u vezi sačl. 20 KZ CG u sticaju sa krivičnim djelom nedoozvoljeno držanje oružja i
+eksplozivnih materija izčl. 403 st. 1 KZ CG.
+
+Čl. 5 Zakona o oružju je između ostalog predviđeno da je dozvoljena nabavka, držanje i nošenje i prenošenje
+oružja i municije, oružja kategorije B za koje je izdata odogarajuća isprava o oružju u skladu sa tim Zakonom,
+a čl. 33 istog Zakona, između ostalog da je zabranjeno nošenje oružja na javnom mjestu, a koje mjesto gdje se
+događaj desio se smatra javnim mjestom.
+
 Javnim mjestom se smatra svako mjesto na kojem je svakom dozvoljen pristup. U tom smislu, javnim
-mjestom se ima smatrati i mjesto gdje se desio taj doga đ aj, jer se radi o parkingu pored javnog puta i javnom
-putu na kojem se dijelom i de š avao ovaj doga đ aj, a izvedeni dokazi na potpuno pouzdan na č in ukazuju da su
-optu ž eni iz pi š tolja ozna č enih kalibara ispaljivali projektile za koje nabavljanje, dr ž anje i no š enje nijesu imali
-odobrenje, pa su stoga te pi š tolje neovla šć eno nabavili i dr ž ali.
- 
-Postupanje optu ž enih u konkretnom slu č aju je dokazano i kvalifikuje se kao izvr š enje krivi č nih djela ubistvo u
-poku š aju iz č l. 143 u vezi č l. 20 Kz i krivi č nog djela nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l.
+mjestom se ima smatrati i mjesto gdje se desio taj događaj, jer se radi o parkingu pored javnog puta i javnom
+putu na kojem se dijelom i dešavao ovaj događaj, a izvedeni dokazi na potpuno pouzdan način ukazuju da su
+optuženi iz pištolja označenih kalibara ispaljivali projektile za koje nabavljanje, držanje i nošenje nijesu imali
+odobrenje, pa su stoga te pištolje neovlašćeno nabavili i držali.
+
+Postupanje optuženih u konkretnom slučaju je dokazano i kvalifikuje se kao izvršenje krivičnih djela ubistvo u
+pokušaju izčl. 143 u vezičl. 20 Kz i krivičnog djela nedozvoljeno držanje oružja i eksplozivnih materija izčl.
 403 st. 1 Kz.
- 
-I jedno i drugo krivi č no djelo optu ž enisu po č inili sa direktnim umi š ljajem.
- 
-Optu ž eni su bili svjestni da pucanjem iz pi š tolja na opisani na č in preduzimaju radnje kojim je mogu ć e da ć e
-usmrtiti o š te ć enog, te su bili svjestni da je ta radnja uperena prema ž ivom č ovjeku i htjeli da jedan drugog li š e
+
+I jedno i drugo krivično djelo optuženisu počinili sa direktnim umišljajem.
+
+Optuženi su bili svjestni da pucanjem iz pištolja na opisani način preduzimaju radnje kojim je moguće daće
+usmrtiti oštećenog, te su bili svjestni da je ta radnja uperena premaživomčovjeku i htjeli da jedan drugog liše
 života.
- 
-To š to nije do š lo do najte ž e posledice, po nala ž enju ovog suda, samo je igra slu č aja i splet sre ć nih okolnosti,
-a cijene ć i na č in na koji se doga đ aj desio, da je me đ usobno ispaljen ve ć i broj projektila, od kojeg ispaljenog
-projektila od strane optu ž enog H. S. je laku tjelesnu povredu zadobio sada optu ž eni M. I, te da je usled
-ispaljenog projektila od strane optu ž enog M. nastupilo o š te ć enje na trenerci svjedoka A. koji se nalazio za svo
-vrijeme u neposrednoj blizini sada optu ž enog S, da su projektili ispaljeni sa udaljenosti sa koje se precizno ne
-mož e kontrolisati njihova putanja, pa po nala ž enju vije ć a, to š to nije do š lo do nastupanja najte ž e posledice,
-nije izraz ž elje i htjenja optu ž enih da nanesu samo takve povrede ili o š te ć enja, ve ć  slu č aj i splet sre ć nih
+
+Tošto nije došlo do najteže posledice, po nalaženju ovog suda, samo je igra slučaja i splet srećnih okolnosti,
+a cijeneći način na koji se događaj desio, da je međusobno ispaljen veći broj projektila, od kojeg ispaljenog
+projektila od strane optuženog H.S. je laku tjelesnu povredu zadobio sada optuženi M. I, te da je usled
+ispaljenog projektila od strane optuženog M. nastupilo oštećenje na trenerci svjedoka A. koji se nalazio za svo
+vrijeme u neposrednoj blizini sada optuženog S, da su projektili ispaljeni sa udaljenosti sa koje se precizno ne
+mož e kontrolisati njihova putanja, pa po nalaženju vijeća, tošto nije došlo do nastupanja najteže posledice,
+nije izrazželje i htjenja optuženih da nanesu samo takve povrede ili oštećenja, većslučaj i splet srećnih
 okolnosti.
- 
-Po nala ž enju vije ć a, optu ž eni su bili potpuno svjesni da je nabavljanje, dr ž anje i no š enje oru ž ja na javnom
-mjestu zabranjeno, ali su bez obzira na to pi š tolje kalibara kako je to predstavljeno nabavili, dr ž ali i nosili bez
-odobrenja nadle ž nih organa.
- 
-Sa iznijetog, u radnjama optu ž enih su sadr ž ana sva obilje ž ja navedenih krivi č nih djela, zbog č ega su krivi i
-krivi č no-pravno odgovorni.
- 
-Odlu č uju ć i o vrsti i visini kazne optu ž enim, sud je cijenio sve okolnosti iz č l. 42 Kz, pa je na strani oba
-optu ž ena kao olak š avaju ć e okolnosti na š ao da se radi o porodi č nim ljudima, koji su izrazili ž aljenje i kajanje
-zbog doga đ aja koji se desio, te da su postigli iskreno izmirenje, a u š ta se sud neposredno uvjerio, te da su
-izostale najte ž e posledice. Kao olaka š avaju ć u okolnost na strani optu ž enog H. S. cijenio je da se radi o
-mladom č ovjeku, do sada neosu đ ivanom, dok je na strani optu ž enog M. I. cijenio kao ote ž avaju ć u okolnost
-njegovu raniju vi š estruku osu đ ivanost i za istorodna krivi č na djela. Ote ž avjau ć ih okolnosti na strani
-optu ž enog H. S. sud nije na š ao. Nazna č ene olak š avaju ć e okolnosti sud je cijenio kao osobito olak š avaju ć e,
-pa je stoga mi š ljenja da su se stekli uslovi za primjenu odredaba č l. 45 i 46 Kz, u odnosu na oba optu ž ena za
-krivi č no djelo ubistvo u poku š aju iz č l. 143 u vezi č l. 20 Krivi č nog zakonika Crne Gore, pa je istim ubla ž io
-kaznu i istim utvrdio kaznu i to optu ž enom H. S. za krivi č no djelo ubistvo u poku š aju iz č l. 143 u vezi č l. 20
-Krivi č nog zakonika Crne Gore, kaznu zatvora u trajanju od 2 (dvije) godine, za krivi č no djelo nedozvoljeno
-držanje oru ž ja i eksplozivnih materija iz č l. 403 st. 1 Krivi č nog zakonika Crne Gore, kaznu zatvora u trajanju od
-3 (tri) mjeseca, a optu ž enom M. I. za krivi č no djelo ubistvo u poku š aju iz č l. 143 u vezi č l. 20 Krivi č nog
-zakonika Crne Gore, kaznu zatvora u trajanju od 2 (dvije) godine i 4 ( č etiri) mjeseca, za krivi č no djelo
-nedozvoljeno dr ž anje oru ž ja i eksplozivnih materija iz č l. 403 st. 1 Krivi č nog zakonika Crne Gore, kaznu
-zatvora u trajanju od 3 (tri) mjeseca, te primjenom č l. 48 Krivi č nog zakonika, osudio: optu ž enog H. S. na
-jedinstvenu kaznu zatvora u trajanju od 2 (dvije) godine i 2 (dva) mjeseca, optu ž enog M. I. na jedinstvenu
-kaznu zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci, cijene ć i da su iste srazmjerne te ž ini izvr š enih
-krivi č nih djela i dru š tvenoj opasnosti po č inioca.
- 
-Obzirom da su optu ž eni bliski srodni, da je optu ž eni I.ujak optu ž enom S, te da su postigli izmirenje koje je po
-nala ž enju suda bilo iskreno, sud nalazi da bi izricanjem kazne zatvora u du ž em trajanju moglo pogor š ati
-njihove odnose i da se time ne bi postigla svrha, pa sud nalazi da ć e se i izre č enom kaznom posti ć i svrha
-kažnjavanja u okviru op š te svrhe izricanja krivi č nih sankcija i uticati kako na optu ž ene, tako i na druge, da
-ubudu ć e ne vr š e krivi č na djela.
- 
-Shodno č l. 51 Kz, optu ž enim se u izre č ene kazne zatvora ima ura č unati vrijeme provedeno u pritvoru i to:
-optu ž enom H. S. od 10.09.2017 godine, do 08.03.2018 godine, a optu ž enom M. I. od 09.09.2017 godine, do
+
+Po nalaženju vijeća, optuženi su bili potpuno svjesni da je nabavljanje, držanje i nošenje oružja na javnom
+mjestu zabranjeno, ali su bez obzira na to pištolje kalibara kako je to predstavljeno nabavili, držali i nosili bez
+odobrenja nadležnih organa.
+
+Sa iznijetog, u radnjama optuženih su sadržana sva obilježja navedenih krivičnih djela, zbogčega su krivi i
+krivično-pravno odgovorni.
+
+Odlučujući o vrsti i visini kazne optuženim, sud je cijenio sve okolnosti izčl. 42 Kz, pa je na strani oba
+optužena kao olakšavajuće okolnosti našao da se radi o porodičnim ljudima, koji su izraziližaljenje i kajanje
+zbog događaja koji se desio, te da su postigli iskreno izmirenje, a ušta se sud neposredno uvjerio, te da su
+izostale najteže posledice. Kao olakašavajuću okolnost na strani optuženog H.S. cijenio je da se radi o
+mladomčovjeku, do sada neosuđivanom, dok je na strani optuženog M.I. cijenio kao otežavajuću okolnost
+njegovu raniju višestruku osuđivanost i za istorodna krivična djela. Otežavjaućih okolnosti na strani
+optuženog H.S. sud nije našao. Naznačene olakšavajuće okolnosti sud je cijenio kao osobito olakšavajuće,
+pa je stoga mišljenja da su se stekli uslovi za primjenu odredabačl. 45 i 46 Kz, u odnosu na oba optužena za
+krivično djelo ubistvo u pokušaju izčl. 143 u vezičl. 20 Krivičnog zakonika Crne Gore, pa je istim ublažio
+kaznu i istim utvrdio kaznu i to optuženom H.S. za krivično djelo ubistvo u pokušaju izčl. 143 u vezičl. 20
+Krivičnog zakonika Crne Gore, kaznu zatvora u trajanju od 2 (dvije) godine, za krivično djelo nedozvoljeno
+držanje oružja i eksplozivnih materija izčl. 403 st. 1 Krivičnog zakonika Crne Gore, kaznu zatvora u trajanju od
+3 (tri) mjeseca, a optuženom M.I. za krivično djelo ubistvo u pokušaju izčl. 143 u vezičl. 20 Krivičnog
+zakonika Crne Gore, kaznu zatvora u trajanju od 2 (dvije) godine i 4 ( č etiri) mjeseca, za krivično djelo
+nedozvoljeno držanje oružja i eksplozivnih materija izčl. 403 st. 1 Krivičnog zakonika Crne Gore, kaznu
+zatvora u trajanju od 3 (tri) mjeseca, te primjenomčl. 48 Krivičnog zakonika, osudio: optuženog H.S. na
+jedinstvenu kaznu zatvora u trajanju od 2 (dvije) godine i 2 (dva) mjeseca, optuženog M.I. na jedinstvenu
+
+kaznu zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci, cijeneći da su iste srazmjerne težini izvršenih
+krivičnih djela i društvenoj opasnosti počinioca.
+
+Obzirom da su optuženi bliski srodni, da je optuženi I.ujak optuženom S, te da su postigli izmirenje koje je po
+nalaženju suda bilo iskreno, sud nalazi da bi izricanjem kazne zatvora u dužem trajanju moglo pogoršati
+njihove odnose i da se time ne bi postigla svrha, pa sud nalazi daće se i izrečenom kaznom postići svrha
+kažnjavanja u okviru opšte svrhe izricanja krivičnih sankcija i uticati kako na optužene, tako i na druge, da
+ubuduće ne vrše krivična djela.
+
+Shodnočl. 51 Kz, optuženim se u izrečene kazne zatvora ima uračunati vrijeme provedeno u pritvoru i to:
+optuženom H.S. od 10.09.2017 godine, do 08.03.2018 godine, a optuženom M.I. od 09.09.2017 godine, do
 08.03.2018 godine
- 
-Shodno č l. 226 Zkp-a, optu ž eni se obavezuju da na ime pau š ala plate iznos od po 100,00 €, koji pau š al je
-odre đ en obzirom na trajanje i slo ž enost postupka i imovno stanje optu ž enih.
- 
-Shodno odredbi č l. 229 Zkp-a, optu ž eni se obavezuju da solidarno nadoknade tro š kove koji su ispla ć eni
-tokom postupka u iznosu od 985,00 €, koji su nastali pred ODT-om R, a koji se odnose na ime tro š kova
-vješ ta č enja vje š taku N. R. uiznosu od 60,50 € i vje š taku balisti č aru M. M. u iznosu od 110,00 €, tro š kovi nastali
-pred VDT-om B. P, a koji se odnosi na ime vje š ta č enja vje š taka sudske medicine dr. N. R. u iznosu od 88,00 € i
-vješ taka balisti č ara M. M. u iznosu od 273,00 € i tro š kova koji su nastali pred Vi š im sudom - tro š kovi vje š taka
-trasologa D. G, u iznosu od 168,00 €, vje š taku N. R. u iznosu od 115,50 €, vje š taku M. M. u iznosu od 170,00 €;
-te da optu ž eni H. S. plati iznos od 1.637,04 € - na ime tro š kova koji su ispla ć eni braniocu po slu ž benoj
-duž nosti R. S.
- 
-O ostalim tro š kovima postupka bi ć e odlu č eno posebnim rje š enjem kada se pribave potpuniji podaci, a ovo
-shodno č l. 227 Zkp-a.
- 
-Sa iznijetog odlu č eno je kao u izreci presude.
+
+Shodnočl. 226 Zkp-a, optuženi se obavezuju da na ime paušala plate iznos od po 100,00 €, koji paušal je
+određen obzirom na trajanje i složenost postupka i imovno stanje optuženih.
+
+Shodno odredbičl. 229 Zkp-a, optuženi se obavezuju da solidarno nadoknade troškove koji su isplaćeni
+tokom postupka u iznosu od 985,00 €, koji su nastali pred ODT-om R, a koji se odnose na ime troškova
+vješ tačenja vještaku N.R. uiznosu od 60,50 € i vještaku balističaru M.M. u iznosu od 110,00 €, troškovi nastali
+pred VDT-om B. P, a koji se odnosi na ime vještačenja vještaka sudske medicine dr. N.R. u iznosu od 88,00 € i
+vještaka balističara M.M. u iznosu od 273,00 € i troškova koji su nastali pred Višim sudom - troškovi vještaka
+trasologa D. G, u iznosu od 168,00 €, vještaku N.R. u iznosu od 115,50 €, vještaku M.M. u iznosu od 170,00 €;
+te da optuženi H.S. plati iznos od 1.637,04 € - na ime troškova koji su isplaćeni braniocu po službenoj
+duž nosti R.S.
+
+O ostalim troškovima postupka biće odlučeno posebnim rješenjem kada se pribave potpuniji podaci, a ovo
+shodnočl. 227 Zkp-a.
+
+Sa iznijetog odlučeno je kao u izreci presude.
 VIŠI SUD U BIJELOM POLJU
 Dana, 08.03.2018 godine.
- 
-Zapisni č ar, PREDSJEDNIK VIJE Ć A-SUDIJA,
-Radmila Duborija,s.r. Vukomir Bo š kovi ć ,s.r.
- 
-PRAVNA POUKA :
-Protiv ove presude mo ž e se izjaviti ž alba
+
+Zapisničar, PREDSJEDNIK VIJEĆA-SUDIJA,
+Radmila Duborija,s.r. Vukomir Bošković,s.r.
+
+PRAVNA POUKA:
+Protiv ove presude može se izjavitižalba
 Apelacionom sudu RCG Podgorica u roku
 od 15 dana od dana prijema a preko ovog
 suda.</p>

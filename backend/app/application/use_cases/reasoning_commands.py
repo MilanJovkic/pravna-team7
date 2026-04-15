@@ -8,7 +8,7 @@ from backend.app.application.services.reasoning_decision_strategies import Verdi
 from backend.app.application.services.reasoning_input_validator import ReasoningInputValidator
 from backend.app.domain.reasoning.policies import ReasoningPolicy
 from backend.app.domain.shared.errors import ExternalServiceError
-from backend.app.models.schemas import CbrResult, ReasoningRequest, ReasoningResponse, RuleReasoningResult
+from backend.app.models.schemas import CbrResult, ReasoningRequest, ReasoningResponse
 from backend.app.ports.outbound.cbr_engine import CbrEngine
 from backend.app.ports.outbound.rule_engine import RuleEngine
 from backend.app.services.reasoning_explain_service import ReasoningExplainService
@@ -39,53 +39,33 @@ class RunHybridReasoningUseCase:
             self._input_validator.validate(request)
 
             subsystem_status: dict[str, str] = {}
-
-            rule_error: str | None = None
-            cbr_error: str | None = None
-
             try:
                 rule_result = self._rule_engine.run(request.facts, strict_mode=request.strict_mode)
                 subsystem_status["rule"] = "ok"
             except Exception as exc:
-                rule_error = str(exc)
                 self._logger.exception("Rule reasoning failed")
-                rule_result = RuleReasoningResult(
-                    applied_norms=[],
-                    proofs=[],
-                    strict_mode=request.strict_mode,
-                    status="error",
-                )
-                subsystem_status["rule"] = "error"
+                raise ExternalServiceError(f"rule_error={exc}") from exc
 
             try:
                 cbr_result = self._cbr_engine.query(request.facts, request.top_k)
                 subsystem_status["cbr"] = "ok"
             except Exception as exc:
-                cbr_error = str(exc)
                 self._logger.exception("CBR reasoning failed")
-                cbr_result = CbrResult(matches=[])
-                subsystem_status["cbr"] = "error"
+                raise ExternalServiceError(f"cbr_error={exc}") from exc
 
-            if subsystem_status.get("cbr") == "ok":
-                cbr_result = self._apply_cbr_dampening(cbr_result, request.facts)
-
-            if rule_error and cbr_error:
-                raise ExternalServiceError(f"rule_error={rule_error}; cbr_error={cbr_error}")
+            cbr_result = self._apply_cbr_dampening(cbr_result, request.facts)
 
             applied_articles = self._explain_service.map_norms_to_articles(rule_result.applied_norms)
             applied_texts = self._explain_service.get_applied_law_texts(
                 applied_articles,
                 norms=rule_result.applied_norms,
             )
-            if subsystem_status.get("rule") == "error":
-                suggested_verdict = "manual_review"
-            else:
-                suggested_verdict = self._decision_selector.decide(
-                    rule_result.applied_norms,
-                    cbr_result,
-                    rule_available=subsystem_status.get("rule") != "error",
-                    cbr_available=subsystem_status.get("cbr") != "error",
-                )
+            suggested_verdict = self._decision_selector.decide(
+                rule_result.applied_norms,
+                cbr_result,
+                rule_available=True,
+                cbr_available=True,
+            )
             suggested_sanction = self._reasoning_policy.suggest_sanction(
                 applied_articles,
                 facts=request.facts,
@@ -129,6 +109,7 @@ class RunHybridReasoningUseCase:
         return CbrResult(matches=dampened_matches)
 
     def _count_key_facts(self, facts) -> int:
+        # Count only features that are actually part of the CBR retrieval model.
         key_values = [
             facts.injury_type,
             facts.location,
@@ -140,26 +121,7 @@ class RunHybridReasoningUseCase:
             facts.provocation,
             facts.fight_participation,
             facts.fight_consequence,
-            facts.life_consequence_type,
-            facts.injury_severity_level,
             facts.left_without_help,
-            facts.danger_caused_by_offender,
-            facts.help_provision_ability,
-            facts.failure_to_help_consequence,
-            facts.duty_connection,
-            facts.inhuman_treatment,
-            facts.high_intensity_distress,
-            facts.danger_to_life,
-            facts.danger_to_health,
-        ]
-        list_values = [
-            facts.victim_status,
-            facts.severe_injury_specific_consequences,
-            facts.abortion_outcomes,
-            facts.execution_manner,
-            facts.offender_motive,
-            facts.provocation_types,
-            facts.special_action_types,
         ]
 
         count = 0
@@ -169,6 +131,4 @@ class RunHybridReasoningUseCase:
             if isinstance(value, str) and not value.strip():
                 continue
             count += 1
-        for entries in list_values:
-            count += len([entry for entry in entries if str(entry).strip()])
         return count

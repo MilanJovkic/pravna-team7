@@ -43,9 +43,9 @@
                 <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="P.P."/>
                 <TLCPerson eId="victim_10" href="/akn/me/ontology/person/victim" showAs="Koprivica Igora"/>
                 <TLCPerson eId="victim_11" href="/akn/me/ontology/person/victim" showAs="K.I."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zkp" showAs="ZKP"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/kz-cg" showAs="KZ CG"/>
-                <TLCLaw eId="law_3" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zkp" showAs="ZKP"/>
+                <TLCLaw eId="law_3" href="/akn/me/act/kz-cg" showAs="KZ CG"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -69,7 +69,7 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni K.K. osuđen na 60 dana zatvora, K.I. na 6 mjeseci.</p>
+                    <p>Okrivljeni K.K. osuđen na 60 dana zatvora, K.I. na 6 meseci.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Ugrožavanje opasnim orudjem</p>
@@ -80,16 +80,16 @@
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">ZKP</ref>
-                    <ref href="#law_2">KZ CG</ref>
-                    <ref href="#law_3">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">ZKP</ref>
+                    <ref href="#law_3">KZ CG</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zkp#art_154">Član 154</ref>
-                    <ref href="/akn/me/act/zkp#art_152">Član 152</ref>
-                    <ref href="/akn/me/act/zkp#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zkp#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zkp#art_242">Član 242</ref>
+                    <ref href="/akn/me/act/2024/!main#art_154">Član 154</ref>
+                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_242">Član 242</ref>
                 </block>
             </background>
             <motivation>
@@ -99,7 +99,7 @@
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Osuda</p>
+                    <p>Osudjen</p>
                 </block>
             </decision>
             <participants>
@@ -253,7 +253,7 @@ U svojoj završnoj riječi imenovani okrivljeni je, ostajući pri stavu da ne iz
 krivično pravne odgovornosti ostavio na ocjenu sudu.
 
 Sud je na glavnom pretresu u dokaznom postupku neposredno saslušao oštećenog C.P. u svojstvu svjedoka,
-pročitao zapisnik o uvidjaju Uprave policije CG CB NikšićKu.br.372 od 19.07.2014.godine i izvršio uvid u
+pročitao zapisnik o uvidjaju Uprave policije CG CB Nikšićku.br.372 od 19.07.2014.godine i izvršio uvid u
 fotodokumentaciju CB Nikšićbroj 598/14 od 19.07.2014.godine, na saglasan predlog stranaka pročitao nalaz i
 mišljenje stalnog sudskog vještaka medicinske struke dr Bulatović Veselina dat u prethodnom postupku i
 pročitao izvode iz registra kaznenih evidencija Ministarstva pravde CG za okrivljene.
@@ -262,7 +262,7 @@ Analizirajući provedene dokaze pojedinačno i u njihovoj medjusobnoj povezanost
 navodima optužbe i odbranom okrivljenog K.K. sud je na nesumnjiv način utvrdio da su okrivljeni K.K. i K.I.izvršili krivična djela koja su im stavljena na teret optužbom, pa ih je zbog izvršenja istih oglasio krivim i
 krivično pravno odgovornim iz sljedećih razloga:
 
-U zapisniku o uvidjaju Uprave policije CG CB NikšićKu.br.372 od 19.07.2014.godine konstatovano je da su
+U zapisniku o uvidjaju Uprave policije CG CB Nikšićku.br.372 od 19.07.2014.godine konstatovano je da su
 služ benici Uprave policije CG CB Nikšić, nakonšto je dežurna služba CB Nikšićobaviještena da je došlo do
 tuče više lica našetalištu pored ograde G.S. C., dana 19.07.2014.godine u 20:45časova obavili uviđaj na
 mjestu događaja-južnom ulazu u dvorište G.S. C. i pored samog ulaza, na kojem nema kapije, sa desne strane
@@ -281,7 +281,7 @@ popio malo?“, jer se imenovani okrivljeničudno ponašao, zbogčega mu je izgl
 stanju, na koje njegove riječi je reagovao brat okrivljenog K.K.-okrivljeni K.I. rekavši mu: “Zašto mi provocirašbrata?“, našta je on istom rekao: “Ne provociram, samo sam pitao“, da bi se nakon toga obojica okrivljenih
 zaletjeli na njega, a okrivljeni K.K. uzeo u ruku jedan drveni kolac dužine oko jedan metar i sa istim se
 zalijetao prema njemu, ali ga nije udario, dok mu je okrivljeni K.I. uputio riječi: “Sadćešti vidjeti“ i otišao sa
-tog mjesta i za minut-dva se vratio držeći u ruci nožč ije je sječivo bilo dugačko oko 30 cm i krenuo ka njemu
+tog mjesta i za minut-dva se vratio držeći u ruci nožči je je sječivo bilo dugačko oko 30 cm i krenuo ka njemu
 podižući ruku u kojoj je držao no ž, našta je on reagovao takošto je okrivljenom K.I. rekao da baci noži daće
 
 taj nesporazum mirno riješiti, ali se isti nije obazirao na te njegove riječi, većje nastavio da zamahuje nožem u

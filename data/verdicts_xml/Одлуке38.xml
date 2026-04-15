@@ -34,9 +34,8 @@
                 <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="S.J."/>
                 <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="Bijelom Polju"/>
                 <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="K.Z."/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo u Bijelom Polju"/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore" showAs="Zakonik o krivičnom postupku Crne Gore"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore" showAs="Zakonik o krivičnom postupku Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -65,35 +64,35 @@
                 <block name="legalIssues">
                     <p>Nehatno lišenje života</p>
                     <p>Primena krivičnog zakona</p>
-                    <p>Kazna zatvora</p>
-                    <p>Mera bezbednosti</p>
+                    <p>Kaznena politika</p>
+                    <p>Troškovi postupka</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Zakonik o krivičnom postupku Crne Gore</ref>
-                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakonik o krivičnom postupku Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_148">Član 148</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_2">Član 2</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_75">Član 75</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_148">Član 148</ref>
+                    <ref href="/akn/me/act/2024/!main#art_2">Član 2</ref>
+                    <ref href="/akn/me/act/2024/!main#art_75">Član 75</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je okrivljeni, svestan mogućnosti izvršenja krivičnog dela, olako smatrao da do toga neće doći, što je dovelo do smrti oštećenog.</p>
+                    <p>Sud je utvrdio da je okrivljeni, svestan mogućnosti izvršenja krivičnog dela, olako držao da do toga neće doći, što je dovelo do smrti oštećenog.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Osuđuje se na kaznu zatvora od 6 meseci.</p>
+                    <p>Osuđuje se na kaznu zatvora.</p>
                 </block>
             </decision>
             <participants>
@@ -117,9 +116,6 @@
                     <person>V.D.</person>
                     <person>J.N.</person>
                     <person>Djapanov Grob</person>
-                </block>
-                <block name="organizations">
-                    <organization>Osnovno državno tužilaštvo u Bijelom Polju</organization>
                 </block>
             </participants>
             <facts>

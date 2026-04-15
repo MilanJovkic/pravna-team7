@@ -28,7 +28,6 @@
             <references source="#court">
                 <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
                 <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Vesna Moštrokol"/>
-                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Anka Raković"/>
                 <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="Š.I."/>
                 <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Vrhovno državno tužilaštvo Crne Gore"/>
                 <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo u Podgorici"/>
@@ -52,7 +51,6 @@
                 </block>
                 <block name="judges">
                     <judge>Vesna Moštrokol</judge>
-                    <judge>Anka Raković</judge>
                 </block>
             </header>
             <introduction>
@@ -88,7 +86,7 @@
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Optužena Z.D. osuđena na 4 godine zatvora.</p>
+                    <p>Optužena Z.D. je osuđena na 4 godine zatvora.</p>
                 </block>
             </decision>
             <participants>

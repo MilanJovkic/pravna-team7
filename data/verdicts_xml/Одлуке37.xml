@@ -43,9 +43,10 @@
                 <TLCPerson eId="victim_11" href="/akn/me/ontology/person/victim" showAs="V.R."/>
                 <TLCPerson eId="victim_12" href="/akn/me/ontology/person/victim" showAs="V.Z."/>
                 <TLCPerson eId="victim_13" href="/akn/me/ontology/person/victim" showAs="M.M."/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo u Podgorici"/>
-                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Advokat V.P."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Advokat V.P."/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo u Podgorici"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -70,41 +71,42 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Optuženi V.R. je proglašen krivim za nehatno lišenje života.</p>
+                    <p>Optuženi V.R. kriv za nehatno lišenje života.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Nehatno lišenje života</p>
-                    <p>Odgovornost za smrt</p>
-                    <p>Primjena krivičnog zakona</p>
-                    <p>Procjena namjere</p>
+                    <p>Krivična odgovornost</p>
+                    <p>Složenost slučaja</p>
+                    <p>Imovinski zahtjev</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/2024/!main#art_148">Član 148</ref>
-                    <ref href="/akn/me/act/2024/!main#art_159">Član 159</ref>
-                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
-                    <ref href="/akn/me/act/2024/!main#art_51">Član 51</ref>
-                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/2024/!main#art_66">Član 66</ref>
-                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
-                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/2024/!main#art_75">Član 75</ref>
-                    <ref href="/akn/me/act/2024/!main#art_248">Član 248</ref>
-                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/2024/!main#art_190">Član 190</ref>
-                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
-                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_148">Član 148</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_75">Član 75</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_248">Član 248</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_66">Član 66</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_190">Član 190</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_159">Član 159</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_152">Član 152</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Optuženi je bio svjestan mogućnosti da može lišiti života oštećenog, ali je olako smatrao da do toga neće doći.</p>
+                    <p>Optuženi je, iako svjestan mogućih posljedica, olako postupio i izazvao smrt oštećenog.</p>
                 </block>
             </motivation>
             <decision>
@@ -138,8 +140,8 @@
                     <person>Č.D.</person>
                 </block>
                 <block name="organizations">
-                    <organization>Više državno tužilaštvo u Podgorici</organization>
                     <organization>Advokat V.P.</organization>
+                    <organization>Više državno tužilaštvo u Podgorici</organization>
                 </block>
             </participants>
             <facts>

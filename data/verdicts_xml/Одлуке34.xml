@@ -30,8 +30,8 @@
                 <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Sanja Aničić"/>
                 <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Sanja Koružić"/>
                 <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo u Pljevljima"/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore" showAs="Zakonik o krivičnom postupku Crne Gore"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore" showAs="Zakonik o krivičnom postupku Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -55,7 +55,7 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljena D.K. je uslovno osuđena na 6 meseci zatvora i obavezno psihijatrijsko lečenje.</p>
+                    <p>Okrivljena D.K. je uslovno osuđena na 6 meseci zatvora uz obavezno psihijatrijsko lečenje.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Ubistvo djeteta pri porođaju</p>
@@ -66,16 +66,16 @@
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Zakonik o krivičnom postupku Crne Gore</ref>
-                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakonik o krivičnom postupku Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_146">Član 146</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_66">Član 66</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_471">Član 471</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_109">Član 109</ref>
+                    <ref href="/akn/me/act/2024/!main#art_146">Član 146</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_66">Član 66</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_471">Član 471</ref>
+                    <ref href="/akn/me/act/2024/!main#art_109">Član 109</ref>
                 </block>
             </background>
             <motivation>
@@ -311,7 +311,7 @@ epikrizom JZU O. b. P., zapisnika o uviđaju i obdukcionog zapisnika na nesumnji
 optužena kritične prilike izvršila krivično djelo ubistvo djeteta pri porođaju na načinšto je u toaletu
 porodične kuće u toku porođaja, dok je plod jošuvijek bio povezan sa majkom pupčanom vrpcom udavila
 novorođenče stavljajući mu oko vrata omču od vezice koju je prethodno izvukla iz donjeg dijela trenerke,
-stez ući je i vežući učvor mašnice u predjelu potiljka sa desne strane, usledčega je nastupila smrt kod djeteta.
+stezati je i vežući učvor mašnice u predjelu potiljka sa desne strane, usledčega je nastupila smrt kod djeteta.
 
 Iz medicinske dokumentacije (izvještaja ljekara specijalista) i otpusne liste sa epikrizom KCCG obr.br. 1-11/2SR na ime okrivljene, sud je utvrdio da je okrivljena bila na liječenju u Psihijatrijskoj klinici od 25.08.2020. do
 22.09.2020. godine, da je otpuštena u stanju inicijalne remisije, te da se radi o simplifikovanoj strukturi

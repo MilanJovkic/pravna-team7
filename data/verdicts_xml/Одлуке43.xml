@@ -35,8 +35,8 @@
                 <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="P.Ž."/>
                 <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="G.M."/>
                 <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="Coca Cole"/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovni sud u N."/>
-                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="ODT Nikšić"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="ODT Nikšić"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Osnovni sud u N."/>
                 <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
             </references>
@@ -85,7 +85,7 @@
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je smatrao da je kazna zatvora primerena težini dela i ranijoj osudjivanosti okrivljenog.</p>
+                    <p>Sud je uzeo u obzir raniju osudjivanost i težinu izvršenog djela prilikom izricanja kazne.</p>
                 </block>
             </motivation>
             <decision>
@@ -113,8 +113,8 @@
                     <person>Coca Cole</person>
                 </block>
                 <block name="organizations">
-                    <organization>Osnovni sud u N.</organization>
                     <organization>ODT Nikšić</organization>
+                    <organization>Osnovni sud u N.</organization>
                 </block>
             </participants>
             <facts>

@@ -33,8 +33,8 @@
                 <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="R.P."/>
                 <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="P.L."/>
                 <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo u P."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zakon-o-oružju" showAs="Zakon o oružju"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakon-o-oružju" showAs="Zakon o oružju"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -63,40 +63,42 @@
                 <block name="legalIssues">
                     <p>Ubistvo</p>
                     <p>Nedozvoljeno držanje oružja</p>
+                    <p>Namjera</p>
+                    <p>Samoodbrana</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Zakon o oružju</ref>
-                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakon o oružju</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zakon-o-oružju#art_143">Član 143</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_403">Član 403</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_152">Član 152</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_148">Član 148</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_51">Član 51</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_66">Član 66</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_48">Član 48</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_75">Član 75</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_33">Član 33</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_374">Član 374</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_12">Član 12</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/2024/!main#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/2024/!main#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/2024/!main#art_75">Član 75</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_66">Član 66</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_148">Član 148</ref>
+                    <ref href="/akn/me/act/2024/!main#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/2024/!main#art_33">Član 33</ref>
+                    <ref href="/akn/me/act/2024/!main#art_12">Član 12</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je optuženi s umišljajem lišio života oštećenog i neovlašćeno nosio oružje.</p>
+                    <p>Sud je utvrdio da je optuženi s umišljajem izvršio ubistvo i neovlašćeno držao oružje.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Optuženi je kriv.</p>
+                    <p>Osudjen</p>
                 </block>
             </decision>
             <participants>

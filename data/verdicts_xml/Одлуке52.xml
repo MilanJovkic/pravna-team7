@@ -33,8 +33,8 @@
                 <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="H.S."/>
                 <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="H.A."/>
                 <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="H.S."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zakon-o-krivičnom-postupku" showAs="Zakon o krivičnom postupku"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakon-o-krivičnom-postupku" showAs="Zakon o krivičnom postupku"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -70,35 +70,35 @@
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Zakon o krivičnom postupku</ref>
-                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakon o krivičnom postupku</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_143">Član 143</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_20">Član 20</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_403">Član 403</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_48">Član 48</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_5">Član 5</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_152">Član 152</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_168">Član 168</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_33">Član 33</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_376">Član 376</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_375">Član 375</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_37">Član 37</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_171">Član 171</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_165">Član 165</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_156">Član 156</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_14">Član 14</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_51">Član 51</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_151">Član 151s</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_227">Član 227</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_23">Član 23</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_45">Član 45</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_154">Član 154</ref>
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/2024/!main#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_14">Član 14</ref>
+                    <ref href="/akn/me/act/2024/!main#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/2024/!main#art_37">Član 37</ref>
+                    <ref href="/akn/me/act/2024/!main#art_5">Član 5</ref>
+                    <ref href="/akn/me/act/2024/!main#art_376">Član 376</ref>
+                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_165">Član 165</ref>
+                    <ref href="/akn/me/act/2024/!main#art_156">Član 156</ref>
+                    <ref href="/akn/me/act/2024/!main#art_33">Član 33</ref>
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151s</ref>
+                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/2024/!main#art_375">Član 375</ref>
+                    <ref href="/akn/me/act/2024/!main#art_23">Član 23</ref>
+                    <ref href="/akn/me/act/2024/!main#art_171">Član 171</ref>
+                    <ref href="/akn/me/act/2024/!main#art_154">Član 154</ref>
+                    <ref href="/akn/me/act/2024/!main#art_168">Član 168</ref>
+                    <ref href="/akn/me/act/2024/!main#art_227">Član 227</ref>
                 </block>
             </background>
             <motivation>
@@ -400,7 +400,7 @@ prijetio pištoljem, ašto mu je I. kasnije u razgovoru i potvrdio. Nakon toga, 
 to desilo. I. posjeduje zlatarsku radnju i u radnji je pored I. zatekao njihovog sinovca S, koji ga je upoznao da
 se njegova braća I. i I. nalaze u zgradi policije i da daju izjave. U policiji je sreo brata I. koji mu je rekao daće
 da ide kući i daće I. brzo doći. Vratio se u zlatarsku radnju u koju je potom došao I. Tada je neko pozvao
-njegovog sinovca telefonom ičuo je da mu je rekao " š taćešA. više". Tada je on uzeo telefon, govoreći A. da ne
+njegovog sinovca telefonom ičuo je da mu je rekao " š taćeš A. više". Tada je on uzeo telefon, govoreći A. da ne
 galami.
 
 Pred Višim tužiocem je predočio da kada se iz B.P. vratio za R, da ga je pozvao sin, pitajući ga da li ječuošta je

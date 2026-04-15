@@ -72,7 +72,7 @@
                 <block name="legalIssues">
                     <p>Pokušaj ubistva</p>
                     <p>Priznanje krivice</p>
-                    <p>Kazna zatvora</p>
+                    <p>Kaznena politika</p>
                     <p>Troškovi postupka</p>
                 </block>
             </introduction>
@@ -86,14 +86,14 @@
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_240">Član 240</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_403">Član 403</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_240">Član 240</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
                 </block>
             </background>
             <motivation>
@@ -103,7 +103,7 @@
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Optuženi proglašen krivim.</p>
+                    <p>Optuženi je osuđen na kaznu zatvora.</p>
                 </block>
             </decision>
             <participants>

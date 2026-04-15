@@ -29,8 +29,7 @@
                 <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
                 <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Igor Đuričković"/>
                 <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Zoran Radović"/>
-                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Aleksandra Stojanović"/>
-                <TLCPerson eId="judge_4" href="/akn/me/ontology/person/judge" showAs="Aleksandar Stojanović"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Aleksandar Stojanović"/>
                 <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="R.B."/>
                 <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="H.N."/>
                 <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="D.M."/>
@@ -39,7 +38,7 @@
                 <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="R.B."/>
                 <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="Podgorici Ktr"/>
                 <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo u Podgorici"/>
-                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Uprava policije CG"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Uprava policije Crne Gore"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
             <classification source="#court">
@@ -60,7 +59,6 @@
                 <block name="judges">
                     <judge>Igor Đuričković</judge>
                     <judge>Zoran Radović</judge>
-                    <judge>Aleksandra Stojanović</judge>
                     <judge>Aleksandar Stojanović</judge>
                 </block>
             </header>
@@ -86,18 +84,18 @@
                     <ref href="/akn/me/act/2024/!main#art_12">Član 12</ref>
                     <ref href="/akn/me/act/2024/!main#art_14">Član 14</ref>
                     <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/2024/!main#art_13">Član 13</ref>
                     <ref href="/akn/me/act/2024/!main#art_69">Član 69</ref>
+                    <ref href="/akn/me/act/2024/!main#art_13">Član 13</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je okrivljeni s umišljajem lišio života oštećenu, koristeći nedozvoljeno oružje.</p>
+                    <p>Sud je utvrdio da je okrivljeni s umišljajem lišio života oštećenu, koristeći neovlašćeno oružje.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Osuđuje se</p>
+                    <p>Osuđen</p>
                 </block>
             </decision>
             <participants>
@@ -123,7 +121,7 @@
                 </block>
                 <block name="organizations">
                     <organization>Više državno tužilaštvo u Podgorici</organization>
-                    <organization>Uprava policije CG</organization>
+                    <organization>Uprava policije Crne Gore</organization>
                 </block>
             </participants>
             <facts>
@@ -798,7 +796,7 @@ i 17cm od desnogšava prednje zadnje pole(prikazana na fotografijama broj 4 i 5)
 veličina ovog mehaničkog oštećenja 0,4cm; oštećenje na 50 cm od donje ivice haljine i 14cm od desnogšava i
 prednje i zadnje pole (prikazano na fotogarfijama 4 i 6, koje su sastavni dio ovog izvještaja), a da je relativna
 veličina ovog mehainičkog oštećenja 0,3cm i da su se na zadnjoj strani predmetne haljine uočavali tragovi
-osušene tečnosti tamno braon boje, nalik na krv (prikazane na fotografiji broj 4.) U zaključku ovog izvještaja o
+osušenih tečnosti tamno braon boje, nalik na krv (prikazane na fotografiji broj 4.) U zaključku ovog izvještaja o
 trasološkom vještačenju je navedeno da sva prethodno opisana mehanička oštećenja na predmetnoj haljini
 oštećene P B, imaju karakteristike oštećenja nastalih dejstom projektila ispaljenog iz vatrenog oružja.
 
@@ -813,7 +811,7 @@ mož e zaključiti sljedeće: na uzorku izuzetom sa drvenih djelova puške i met
 cijevi, koji je označen kao trag br. 1-puška kalibra 22, marke M-57, serijski broj K9460, utvrđeno prisustvo
 biološkog materijala od minimum dvije osobe, pričemu rezultat DNK analize daje ekstremno jaku podršku
 hipotezi da je oštećena P.B.dominantni donor tog materijala, a umjereno jaku podršku hipotezi da je
-okrivljeni R.B. jedan od donora tog biološkog materijala; na uzorku izuzetom sa obarača puške - trag br. 1puš ka kalibra 22, marke M-57, serijski broj....., utvrđeno je prisustvo biološkog materijala od minimum jedne
+okrivljeni R.B. jedan od donora tog biološkog materijala; na uzorku izuzetom sa obarača puške - trag br. 1puška kalibra 22, marke M-57, serijski broj....., utvrđeno je prisustvo biološkog materijala od minimum jedne
 osobe, pričemu rezultat DNK analize daje ekstremno jaku podršku hipotezi da je okrivljeni R.B. donor
 biološkog materijala, uz očitavanje samo jednog alela koji ne pripada njegovom referentnom DNK profilu i da
 je na tragu broj 4/1 – bris izuzet iz mrlje nalik na krv, koja je prilikom vršenja uviđaja zatečena u stanu

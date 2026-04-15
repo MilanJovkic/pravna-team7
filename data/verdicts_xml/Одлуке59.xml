@@ -38,7 +38,7 @@
                 <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="N.P."/>
                 <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="K.N."/>
                 <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="ODT Kotor"/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zakon-o-krivičnom-postupku" showAs="Zakon o krivičnom postupku"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
             <classification source="#court">
@@ -62,25 +62,25 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni N P, S S, D D i B D su oglašeni krivim za učestvovanje u tuči i nanošenje povreda.</p>
+                    <p>Okrivljeni N P, S S, D D i B D su oglašeni krivim za učestvovanje u tuči i teške i lake tjelesne povrede.</p>
                 </block>
                 <block name="legalIssues">
+                    <p>Učestvovanje u tuči</p>
                     <p>Teška tjelesna povreda</p>
                     <p>Laka tjelesna povreda</p>
-                    <p>Učestvovanje u tuči</p>
                     <p>Odgovornost okrivljenih</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Zakon o krivičnom postupku</ref>
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
                     <ref href="#law_2">Krivični zakonik Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_152">Član 152</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_153">Član 153</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku#art_457">Član 457</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_457">Član 457</ref>
                 </block>
             </background>
             <motivation>

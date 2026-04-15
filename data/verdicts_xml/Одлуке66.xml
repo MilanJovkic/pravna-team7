@@ -64,7 +64,7 @@
                     <p>Učestvovanje u tuči</p>
                     <p>Teške tjelesne povrede</p>
                     <p>Uslovna osuda</p>
-                    <p>Kazna zatvora</p>
+                    <p>Troškovi postupka</p>
                 </block>
             </introduction>
             <background>
@@ -74,15 +74,15 @@
                 </block>
                 <block name="appliedArticles">
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_3">Član 3</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_368">Član 368</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_374">Član 374</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_3">Član 3</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_457">Član 457</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da su se stekli uslovi za izricanje uslovne osude, uzimajući u obzir okolnosti slučaja.</p>
+                    <p>Sud je utvrdio da su se stekli uslovi za izricanje uslovne osude, uzimajući u obzir prethodno neosuđivanje okrivljenog.</p>
                 </block>
             </motivation>
             <decision>
@@ -345,7 +345,7 @@ ili da je njega neko udario, a nije vidio ni da je bilo ko udarao P.i P., ačija
 vidio tek ispred stanice policije, te da je u društvu P.N.i P.I. bila jedna starija muška osoba, ali se ne sjeća da je
 isti uopšte učestvovao u ovom događaju. Tvrdio je da nije uspio zadati niti jedan udarac P. niti bilo kome
 drugo. Navodi iskaza svjedoka oštećenog Đ.B. su potkrijepljeni i medicinskom dokumetacijom na njegovo
-ime, kao i nalazom i mišljenjem vještaka medicinske struke dr K.N., na osnovu kojeg je utvrđeno da je isti
+ime, kao i nalazom i mišljenjem veštaka medicinske struke dr K.N., na osnovu kojeg je utvrđeno da je isti
 kritične prilike zadobio povrede bliže pobrojane u izreci presude, a koje povrede predstavljaju u vrijeme
 nanošenja, skupno procjenjeno, tešku tjelesnu povredu, te da potres mozga predstavlja u vrijeme nanošenja,
 sam za sebe, pojedinačno procijenjen, tešku tjelesnu pvoredu, i nanesen dejstvom tupine aktivno -
@@ -467,7 +467,7 @@ Na osnovu naprijed navedenih krivičnopravnih odredbi, te odredbičlana 3,5,8, 1
 368 i 374 Zkp-a, sud je odlučio kao u izreci presude.
 Sud je obavezao okrivljenog da na ime sudskog paušala uplati iznos od 80,00 eura, i na ime troškova
 krivičnog postupka iznos od 49,50 eura (koji troškovi se odnose na trećinu dijela troškova vještačenja po
-vještaku medicinske struke ) u roku od mjesec dana od dana pravosnažnosti presude, na žiro račun br.832-1652, u korist budžeta Crne Gore, a dokaz o uplati dostaviti ovom sudu s pozivom na broj K. 336/19/19.
+veštaku medicinske struke ) u roku od mjesec dana od dana pravosnažnosti presude, na žiro račun br.832-1652, u korist budžeta Crne Gore, a dokaz o uplati dostaviti ovom sudu s pozivom na broj K. 336/19/19.
 Na naprijed navedenim razlozima, sud je zasnovao svoju odluku.
 OSNOVNI SUD U KOTORU
 Dana, 4.06.2020 godine

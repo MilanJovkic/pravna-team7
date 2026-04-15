@@ -31,6 +31,7 @@
                 <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="K.B."/>
                 <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="K.N."/>
                 <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="A.N."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo Podgorica"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
@@ -74,9 +75,9 @@
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_239">Član 239</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_41">Član 41</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
                 </block>
             </background>
             <motivation>
@@ -96,6 +97,9 @@
                 <block name="victims">
                     <person>K.N.</person>
                     <person>A.N.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Osnovno državno tužilaštvo Podgorica</organization>
                 </block>
             </participants>
             <facts>

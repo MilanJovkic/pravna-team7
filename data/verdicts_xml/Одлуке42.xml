@@ -32,8 +32,7 @@
                 <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Osman Husić"/>
                 <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="Šabotić Enisa"/>
                 <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="Honsić Harunom"/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Zapisničar"/>
-                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo iz Bijelog Polja"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/zakon-o-uslovima-i-postupku-za-prekid-trudnoće" showAs="Zakon o uslovima i postupku za prekid trudnoće"/>
                 <TLCLaw eId="law_3" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
@@ -65,9 +64,9 @@
                 </block>
                 <block name="legalIssues">
                     <p>nedozvoljen prekid trudnoće</p>
-                    <p>pristanka oštećene</p>
-                    <p>ranija osudjenost</p>
+                    <p>pristanak oštećene</p>
                     <p>uslovna osuda</p>
+                    <p>troškovi postupka</p>
                 </block>
             </introduction>
             <background>
@@ -80,19 +79,19 @@
                     <ref href="/akn/me/act/2024/!main#art_150">Član 150</ref>
                     <ref href="/akn/me/act/2024/!main#art_5">Član 5</ref>
                     <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
-                    <ref href="/akn/me/act/2024/!main#art_364">Član 364</ref>
                     <ref href="/akn/me/act/2024/!main#art_202">Član 202</ref>
-                    <ref href="/akn/me/act/2024/!main#art_25">Član 25</ref>
                     <ref href="/akn/me/act/2024/!main#art_212">Član 212</ref>
-                    <ref href="/akn/me/act/2024/!main#art_360">Član 360</ref>
                     <ref href="/akn/me/act/2024/!main#art_199">Član 199</ref>
+                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
                     <ref href="/akn/me/act/2024/!main#art_183">Član 183</ref>
+                    <ref href="/akn/me/act/2024/!main#art_360">Član 360</ref>
+                    <ref href="/akn/me/act/2024/!main#art_25">Član 25</ref>
+                    <ref href="/akn/me/act/2024/!main#art_364">Član 364</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je optuženi izvršio krivično djelo bez pristanka oštećene, ali je ranija osudjenost cijenjena kao nebitna zbog proteka vremena.</p>
+                    <p>Sud je utvrdio da je optuženi izvršio krivično djelo bez pristanka oštećene, ali je ranija osudjivanost cijenjena kao nebitna za izricanje strože kazne.</p>
                 </block>
             </motivation>
             <decision>
@@ -117,8 +116,7 @@
                     <person>Šabović Enise</person>
                 </block>
                 <block name="organizations">
-                    <organization>Zapisničar</organization>
-                    <organization>Osnovno državno tužilaštvo</organization>
+                    <organization>Osnovno državno tužilaštvo iz Bijelog Polja</organization>
                 </block>
             </participants>
             <facts>

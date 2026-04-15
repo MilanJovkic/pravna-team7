@@ -71,10 +71,10 @@
                     <p>Optužba odbijena zbog apsolutne zastarjelosti.</p>
                 </block>
                 <block name="legalIssues">
+                    <p>Zastarjelost krivičnog gonjenja</p>
                     <p>Teško ubistvo u pokušaju</p>
                     <p>Nedozvoljeno držanje oružja</p>
-                    <p>Zastarjelost krivičnog gonjenja</p>
-                    <p>Meritorno odlučivanje</p>
+                    <p>Pravo na odbranu</p>
                 </block>
             </introduction>
             <background>
@@ -87,40 +87,40 @@
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_403">Član 403</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_372">Član 372</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_91">Član 91</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_185">Član 185</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_147">Član 147</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_66">Član 66</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_75">Član 75</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_27">Član 27</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_143">Član 143</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_208">Član 208</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_131">Član 131</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_124">Član 124</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_11">Član 11</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_195">Član 195</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_230">Član 230</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_84">Član 84</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_124">Član 124</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_3">Član 3</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_125">Član 125</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_195">Član 195</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_3">Član 3</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_75">Član 75</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_131">Član 131</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_66">Član 66</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_125">Član 125</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_11">Član 11</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_91">Član 91</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_147">Član 147</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Krivično djelo izvršeno 30.04.2010. godine, nastupila apsolutna zastarjelost 30.04.2016. godine.</p>
+                    <p>Krivično djelo nedozvoljenog držanja oružja zastarjelo je 30.04.2016. godine, što je uticalo na odbijanje optužbe.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="odbijeno">
-                    <p>Odbijena optužba</p>
+                    <p>Odbijeno</p>
                 </block>
             </decision>
             <participants>

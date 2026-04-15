@@ -26,15 +26,11 @@ export class LegalReferenceService {
    */
   parseReferences(references: Array<Record<string, any>>): ParsedReference[] {
     const parsed: ParsedReference[] = [];
-    
-    console.log('Raw references from backend:', references);
-    
+
     for (const ref of references) {
       const original = this.formatReference(ref);
       let label = original;
       let articleNumber: string | null = null;
-
-      console.log('Processing reference:', ref);
 
       // Extract article number from href (e.g., #art_147 -> 147)
       if (ref['href']) {
@@ -42,11 +38,9 @@ export class LegalReferenceService {
         if (hrefMatch) {
           articleNumber = hrefMatch[1];
           label = ref['text'] || `Član ${articleNumber}`;
-          console.log('Extracted from href:', articleNumber);
         } else if (ref['href'].includes('__para_')) {
           // It's a paragraph reference, not an article
           label = ref['text'] || original;
-          console.log('Paragraph reference, skipping');
         }
       }
       
@@ -56,7 +50,6 @@ export class LegalReferenceService {
         if (textMatch) {
           articleNumber = textMatch[1];
           label = ref['text'];
-          console.log('Extracted from text:', articleNumber);
         }
       }
       
@@ -66,7 +59,6 @@ export class LegalReferenceService {
         if (articleMatch) {
           articleNumber = articleMatch[1];
           label = `Član ${articleNumber}`;
-          console.log('Extracted from article field:', articleNumber);
         }
       }
       
@@ -76,7 +68,6 @@ export class LegalReferenceService {
         if (targetMatch) {
           articleNumber = targetMatch[1];
           label = `Član ${articleNumber}`;
-          console.log('Extracted from target:', articleNumber);
         }
       }
 
@@ -86,11 +77,8 @@ export class LegalReferenceService {
         if (labelMatch) {
           articleNumber = labelMatch[1];
           label = `Član ${articleNumber}`;
-          console.log('Extracted from original:', articleNumber);
         }
       }
-
-      console.log('Final parsed:', { label, articleNumber, original });
       parsed.push({ label, articleNumber, original });
     }
 

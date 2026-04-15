@@ -38,8 +38,8 @@
                 <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="C.D."/>
                 <TLCPerson eId="victim_7" href="/akn/me/ontology/person/victim" showAs="K.L."/>
                 <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="Dragene Čukić"/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Uprava policije"/>
-                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Forenzički centar"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Forenzički centar"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Uprava policije"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
@@ -83,18 +83,19 @@
                 <block name="appliedArticles">
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_143">Član 143</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_66">Član 66</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_71">Član 71</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_66">Član 66</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_239">Član 239</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_10">Član 10</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_145">Član 145</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_2">Član 2</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_71">Član 71</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
                 </block>
             </background>
             <motivation>
@@ -129,8 +130,8 @@
                     <person>K.L.</person>
                 </block>
                 <block name="organizations">
-                    <organization>Uprava policije</organization>
                     <organization>Forenzički centar</organization>
+                    <organization>Uprava policije</organization>
                 </block>
             </participants>
             <facts>
@@ -262,9 +263,9 @@ Na glavnom pretresu optuženi je izmijenio svoju odbranu i naveo, da je 15 dana 
 brutalno isprebijan od strane D.M. i njegovog društva, zbogčega nije izlazio tih 15 dana iz kuće, a kada je
 izašao sa sobom je uzeo noži biber sprej, bojeći se daće ponovo biti napadnut i krenuo da kupi cigarete, da
 nije imao namjeru da prođe ispred zgrade „ Zabjelska vektra“ upravo da se ne bi susreo sa D. i njegovim
-društvom, pa je pošao iza zgrade i nastavio kretanje prema Zabjelu i u jednom trenutku je vidio neke osobe
+društvu, pa je pošao iza zgrade i nastavio kretanje prema Zabjelu i u jednom trenutku je vidio neke osobe
 na kraju zgrade i mislio je da su djeca, međutim, kada je prišao shvatio je da se tu nalazi D.M. sa nekim
-društvom. Prišli su jedan drugom i on je pitao M.a zašto ga je onako krvnički prebio, našta mu je D. odgovorio
+društvu. Prišli su jedan drugom i on je pitao M.a zašto ga je onako krvnički prebio, našta mu je D. odgovorio
 „narkomančino jedna matora“ i nakon toga ga je pljunuo. Optuženi je naveo da se nakon toga ne sjeća više
 ničega, jer kada ga je pljunuo njemu je odjednom pao mrak na oči, navodeći da je tog dana ušmrkaočetiri
 tablete formidala ičetiri tablete ksalola iz terapiju koju inače pije. Naveo je da događaj od prije 15 dana nije

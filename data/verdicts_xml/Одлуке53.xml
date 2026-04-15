@@ -41,8 +41,8 @@
                 <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="B.I."/>
                 <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="K.D."/>
                 <TLCPerson eId="victim_10" href="/akn/me/ontology/person/victim" showAs="P.N."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/kz" showAs="KZ"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/zkp" showAs="ZKP"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -66,35 +66,35 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Oslobađajuća presuda zbog nedostatka dokaza o krivici.</p>
+                    <p>Oslobađanje od optužbe za nepružanje pomoći.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Nepružanje pomoći</p>
-                    <p>Krivično djelo</p>
-                    <p>Dokazi</p>
-                    <p>Odgovornost</p>
+                    <p>Krivična odgovornost</p>
+                    <p>Dokazi o krivici</p>
+                    <p>Oslobađajuća presuda</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">KZ</ref>
-                    <ref href="#law_2">ZKP</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakonik o krivičnom postupku</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/kz#art_157">Član 157</ref>
-                    <ref href="/akn/me/act/kz#art_373">Član 373</ref>
-                    <ref href="/akn/me/act/kz#art_230">Član 230</ref>
-                    <ref href="/akn/me/act/kz#art_240">Član 240</ref>
+                    <ref href="/akn/me/act/2024/!main#art_157">Član 157</ref>
+                    <ref href="/akn/me/act/2024/!main#art_373">Član 373</ref>
+                    <ref href="/akn/me/act/2024/!main#art_230">Član 230</ref>
+                    <ref href="/akn/me/act/2024/!main#art_240">Član 240</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je zaključio da nema dokaza da je okrivljeni izvršio krivično djelo koje mu se stavlja na teret.</p>
+                    <p>Nema dokaza da je okrivljeni izvršio krivično djelo.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="oslobodjen">
-                    <p>Oslobođen</p>
+                    <p>Oslobađajuća presuda</p>
                 </block>
             </decision>
             <participants>
@@ -577,7 +577,7 @@ donijeti ne samo kad je dokazana nevinost optuženog,veći u situaciji kao što 
 optuženog nije dokazana, pa ga je na osnovučlana 373.ta č. 2 ZKP-a u tom pravcu odlučeno kao u izreci.
 Na osnovučl.230. st.1. ZKP-a sud je odlučio da troškovi postupka padaju na teret budžetskih sredstava suda,
 s obzirom da je navedenimčlanom propisano da kada sud donese oslobađajuću presudu, izrećiće da
-troškovni krivičnog postupka padaju na teret budžetskih sredstava
+troškovima krivičnog postupka padaju na teret budžetskih sredstava
 OSNOVNI SUD U HERCEG NOVOM
 Dana, 12.01.2012.godine
 Zapisničar: Sudija

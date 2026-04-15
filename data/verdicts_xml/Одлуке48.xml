@@ -34,18 +34,18 @@
                 <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="A.D."/>
                 <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="C.Z."/>
                 <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="H.Z."/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="te je pištolj&#10;repetirao i usmjerio u pravcu oštećenog A.D."/>
-                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="ušao u kuću iz koje je izašao za pištoljem za koji ne zna da li je prethodno bio&#10;repetiran i usmjerio ga je u pravcu A.D."/>
-                <TLCOrganization eId="org_3" href="/akn/me/ontology/organization" showAs="tačnije A.D."/>
-                <TLCOrganization eId="org_4" href="/akn/me/ontology/organization" showAs="oštećenog A.D."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo u Cetinju"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="te je pištolj&#10;repetirao i usmjerio u pravcu oštećenog A.D."/>
+                <TLCOrganization eId="org_3" href="/akn/me/ontology/organization" showAs="te je pištolj repetirao i usmjerio u pravcu&#10;oštećenog A.D."/>
+                <TLCOrganization eId="org_4" href="/akn/me/ontology/organization" showAs="koji ih je uzeo bez znanja i pitanja tako da se sa radnicama A.D."/>
                 <TLCOrganization eId="org_5" href="/akn/me/ontology/organization" showAs="Inače A.D."/>
-                <TLCOrganization eId="org_6" href="/akn/me/ontology/organization" showAs="Sud je odustao od saslušanja oštećenog A.D."/>
-                <TLCOrganization eId="org_7" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo u Cetinju"/>
+                <TLCOrganization eId="org_6" href="/akn/me/ontology/organization" showAs="je u svojoj odbrani naveo da je navedenog dana oštećeni A.D."/>
+                <TLCOrganization eId="org_7" href="/akn/me/ontology/organization" showAs="tačnije A.D."/>
                 <TLCOrganization eId="org_8" href="/akn/me/ontology/organization" showAs="te je pištolj repetirao i usmjerio u&#10;pravcu oštećenog A.D."/>
-                <TLCOrganization eId="org_9" href="/akn/me/ontology/organization" showAs="ušao u kuću iz koje je izašao sa pištoljem za&#10;koji ne zna da li je prethodno bio repetiran i usmjerio ga je u pravcu A.D."/>
-                <TLCOrganization eId="org_10" href="/akn/me/ontology/organization" showAs="koji ih je uzeo bez znanja i pitanja tako da se sa radnicama A.D."/>
-                <TLCOrganization eId="org_11" href="/akn/me/ontology/organization" showAs="te je pištolj repetirao i usmjerio u pravcu&#10;oštećenog A.D."/>
-                <TLCOrganization eId="org_12" href="/akn/me/ontology/organization" showAs="je u svojoj odbrani naveo da je navedenog dana oštećeni A.D."/>
+                <TLCOrganization eId="org_9" href="/akn/me/ontology/organization" showAs="Sud je odustao od saslušanja oštećenog A.D."/>
+                <TLCOrganization eId="org_10" href="/akn/me/ontology/organization" showAs="ušao u kuću iz koje je izašao sa pištoljem za&#10;koji ne zna da li je prethodno bio repetiran i usmjerio ga je u pravcu A.D."/>
+                <TLCOrganization eId="org_11" href="/akn/me/ontology/organization" showAs="oštećenog A.D."/>
+                <TLCOrganization eId="org_12" href="/akn/me/ontology/organization" showAs="ušao u kuću iz koje je izašao za pištoljem za koji ne zna da li je prethodno bio&#10;repetiran i usmjerio ga je u pravcu A.D."/>
                 <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
@@ -71,13 +71,11 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni V.D. kriv za ugrožavanje opasnim oruđem, oslobođen optužbe za nedozvoljeno držanje oružja.</p>
+                    <p>Okrivljeni V.D. je kriv za ugrožavanje opasnim oruđem, ali je optužba za nedozvoljeno držanje oružja odbijena.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Ugrožavanje opasnim oruđem</p>
                     <p>Nedozvoljeno držanje oružja</p>
-                    <p>Primena zakonskih odredbi</p>
-                    <p>Odbijanje optužbe</p>
                 </block>
             </introduction>
             <background>
@@ -88,18 +86,18 @@
                 <block name="appliedArticles">
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_154">Član 154</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_403">Član 403</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_48">Član 48</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_372">Član 372</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_53">Član 53</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_75">Član 75</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_52">Član 52</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_53">Član 53</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da su radnje okrivljenog ispunile obeležja krivičnog dela ugrožavanje opasnim oruđem, dok nisu ispunjena obeležja za nedozvoljeno držanje oružja zbog prestanka važenja relevantnog zakona.</p>
+                    <p>Sud je utvrdio da su ispunjena obilježja krivičnog djela ugrožavanje opasnim oruđem, dok se za nedozvoljeno držanje oružja nisu ostvarila obilježja zbog prestanka važenja relevantnog zakona.</p>
                 </block>
             </motivation>
             <decision>
@@ -132,23 +130,23 @@
                     <person>B.P.</person>
                 </block>
                 <block name="organizations">
+                    <organization>Osnovno državno tužilaštvo u Cetinju</organization>
                     <organization>te je pištolj
 repetirao i usmjerio u pravcu oštećenog A.D.</organization>
-                    <organization>ušao u kuću iz koje je izašao za pištoljem za koji ne zna da li je prethodno bio
-repetiran i usmjerio ga je u pravcu A.D.</organization>
-                    <organization>tačnije A.D.</organization>
-                    <organization>oštećenog A.D.</organization>
-                    <organization>Inače A.D.</organization>
-                    <organization>Sud je odustao od saslušanja oštećenog A.D.</organization>
-                    <organization>Osnovno državno tužilaštvo u Cetinju</organization>
-                    <organization>te je pištolj repetirao i usmjerio u
-pravcu oštećenog A.D.</organization>
-                    <organization>ušao u kuću iz koje je izašao sa pištoljem za
-koji ne zna da li je prethodno bio repetiran i usmjerio ga je u pravcu A.D.</organization>
-                    <organization>koji ih je uzeo bez znanja i pitanja tako da se sa radnicama A.D.</organization>
                     <organization>te je pištolj repetirao i usmjerio u pravcu
 oštećenog A.D.</organization>
+                    <organization>koji ih je uzeo bez znanja i pitanja tako da se sa radnicama A.D.</organization>
+                    <organization>Inače A.D.</organization>
                     <organization>je u svojoj odbrani naveo da je navedenog dana oštećeni A.D.</organization>
+                    <organization>tačnije A.D.</organization>
+                    <organization>te je pištolj repetirao i usmjerio u
+pravcu oštećenog A.D.</organization>
+                    <organization>Sud je odustao od saslušanja oštećenog A.D.</organization>
+                    <organization>ušao u kuću iz koje je izašao sa pištoljem za
+koji ne zna da li je prethodno bio repetiran i usmjerio ga je u pravcu A.D.</organization>
+                    <organization>oštećenog A.D.</organization>
+                    <organization>ušao u kuću iz koje je izašao za pištoljem za koji ne zna da li je prethodno bio
+repetiran i usmjerio ga je u pravcu A.D.</organization>
                 </block>
             </participants>
             <facts>

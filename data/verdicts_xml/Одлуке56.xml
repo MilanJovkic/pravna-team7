@@ -40,6 +40,7 @@
                 <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="U.P."/>
                 <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="P.J."/>
                 <TLCPerson eId="victim_7" href="/akn/me/ontology/person/victim" showAs="K.P."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Viši državni tužilac u Podgorici"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
             </references>
@@ -68,13 +69,13 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Optuženi K.V. je oglašen krivim za pokušaj ubistva i izrečena mu je uslovna osuda.</p>
+                    <p>Optuženi K.V. oglašen krivim za pokušaj ubistva.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Pokušaj ubistva</p>
+                    <p>Afekt</p>
                     <p>Uslovna osuda</p>
                     <p>Oduzimanje sredstva izvršenja</p>
-                    <p>Troškovi postupka</p>
                 </block>
             </introduction>
             <background>
@@ -88,15 +89,15 @@
                     <ref href="/akn/me/act/2024/!main#art_145">Član 145</ref>
                     <ref href="/akn/me/act/2024/!main#art_75">Član 75</ref>
                     <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
                     <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
                     <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
                     <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
-                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je optuženi delovao u afektu, što je uticalo na njegovu krivicu.</p>
+                    <p>Sud je utvrdio da je optuženi delovao pod uticajem afekta, što je uticalo na njegovu krivičnu odgovornost.</p>
                 </block>
             </motivation>
             <decision>
@@ -125,6 +126,9 @@
                     <person>K.V.</person>
                     <person>U.P.</person>
                     <person>P.J.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Viši državni tužilac u Podgorici</organization>
                 </block>
             </participants>
             <facts>
@@ -167,7 +171,7 @@ vrata iznenada ga, bez razloga, udario pesnicom u lice od kojeg udarca se okrivl
 nastavio da ga udara pesnicama po glavi dok se okrivljeni povlačio niz hodnik prema dnevnom boravku, od
 kojih udaraca je pao na pod u dnevnom boravku i dok je bio na podu sjeo mu na grudi i zadao više udaraca
 pesnicom po glavi, te nogom u predjelu leđa i nogu, ašto je kod okrivljenog izazvalo stanje afekta jake
-razdražljivosti, bijesa i straha, usledčega nakonšto je napad prestao, ustao se i sa stola uzeo kuhinjski nož duž ine sječiva 19,5 cm, š irine 3,7 cm, krenuo za oštećenim i u dvorištu iza kuće kada ga je sustigao, sječivom
+razdražljivosti, bijesa i straha, usledčega nakonšto je napad prestao, ustao se i sa stola uzeo kuhinjski noždužine sječiva 19,5 cm, š irine 3,7 cm, krenuo za oštećenim i u dvorištu iza kuće kada ga je sustigao, sječivom
 nož a ubo oštećenog u predjelu grudi nanoseći mu laku tjelesnu povredu u vidu rane ubodine u predjelu
 prednje lijeve strane grudnog koša
 - čime je izvršio krivično djelo ubistvo na mah u pokušaju izčlana 145 Krivičnog Zakonika u vezičlana 20.
@@ -233,7 +237,7 @@ njemu.Vjerovatno ga je ubo dok je mahao nožem, ali ne zna ni gdje ni kako.Tada 
 ispred kuće, č emu se M.1 nije odupirao. Nakonšto su M.1 i M.2 izašli, izašao je do praga svoje kuće ičuo kako
 M.1 govori,, posjekao me je, evo krvarim“. Nakon toga je odbacio nožu drvljanik pored kuće i ušao u
 kuću.Takođe je naveo da su mu supruga i R., M.2 sin, nakonšto je izašao iz pritvora ispričali da su ga M.2 i M.1
-traž ili prije negošto su došli kod njega kući u jednoj pomoćnoj prostorij, koja se nalazi pedesetak metara od
+tražili prije negošto su došli kod njega kući u jednoj pomoćnoj prostorij, koja se nalazi pedesetak metara od
 njegove kuće.
 Optuženi K.V. u svom iskazu datom na glavnom pretresu je ponovio svoj iskaz iz predkrivičnog i prethodnog
 postupka s timšto je pojasnio da je svadbu napustio negdje oko 12,30 ili 13,00časova, nakončega je pošao
@@ -262,8 +266,8 @@ odlazili, č uo da je M.1 rekao "evo krvarim" ušta nije povjerovao.Tada je nož
 
 kuće u dvorište gdje se nalaze drva, gdje ga je kasnije policija i pronašla.
 U dokaznom postupku sud je proveo dokaze – neposredno saslušao svjedoka oštećenog K.M.1, svjedoke K.M.2, K.R., K.N. i K.M.3, vještaka medicinske struke B. Dr B. i vještaka psiihijatra G. Dr Ž., pročitao zapisnik o
-uviđ aju UP PJ Nikšićod 25.10.2010.godine, potvrdu o privremenom oduzimanju predmeta UP Ispostave
-Pluž ine broj 23-1808/1 od 25.10.2010. godine, izvještaj o trasološkom vještačenju Forenzičkog centra
+uviđaju UP PJ Nikšićod 25.10.2010.godine, potvrdu o privremenom oduzimanju predmeta UP Ispostave
+Plužine broj 23-1808/1 od 25.10.2010. godine, izvještaj o trasološkom vještačenju Forenzičkog centra
 Danilovgrad broj 4337/10, nalaz i mišljenje vještaka medicinske struke B. dr B. od 10.12.2010. godine, nalaz i
 mišljenje komisije vještaka neuropsihijatrijske struke od 10.07.2011. godine, izvještaj iz kaznene evidencije
 UP PJ Nikšić Ispostave Plužine broj 270/10-1808/8 od 25.10.2010. godine za optuženog K.V., te izvršio uvid u
@@ -404,7 +408,7 @@ govore jedan drugome, ali je uhvatio svog brata V. za ruku i poveo ga svojim voz
 luku. Nije bio svjedok prepirke između V. i R., ali ječuo da je razlog bio koće da ide u povode. Negdje oko
 13,30časova imao je poziv na mobilni telefon, i u prvi mah je mislio da ga zove R., ali je tek sjutra dan shvatio
 da je to bio M.1 koji ga je pitao zašto su se svađali P. i V., naša mu je odgovorio,, ma ajde bolan kako se
-svađ aju, evo ga V. kući kod mene, a P. je pošao kod prijatelja u povode. M.1 mu je na to odgovorio „reci V. da
+svađaju, evo ga V. kući kod mene, a P. je pošao kod prijatelja u povode. M.1 mu je na to odgovorio „reci V. da
 ću mu glavu otkinuti“, nakončega mu je prekinuo vezu. V. je oko 16,00časova pošao u selo. Nije mu ništa
 govorio o telefonskom razgovoru koji je imao sa M.1. Vratio se na svadbu, ali nije zatekao P. i R.. Bila je majka
 M.1 i R. koja mu je kada ga je vidjela rekla „ovogčuda danas nijesam vidjela, ubiće ga“. Mislio je da se to
@@ -468,7 +472,7 @@ K.M.1 je djelovala u jednom navratu slabim intezitetom, a ovo jer je došlo do o
 struktura zida lijeve strane grudnog koša dok su druge strukture ostale nepovrijeđene.Vještak se nije mogao
 izjasniti da li je sila na tijelo povrijeđenog djelovala odozgo ili odozdo a to sa razlogašto ljekari prilikom opisa
 rane nijesu naveli koje strukture potkožnog dijela zida lijeve strane grudnog koša su bile povrijeđene.Nadalje,
-vješ tak je naveo da je povreda kod oštećenog mogla nastati kako u momentu kada se optuženi nalazio u
+vještak je naveo da je povreda kod oštećenog mogla nastati kako u momentu kada se optuženi nalazio u
 ležećem položaju ali tako okrenut prema oštećenom da prilikom nanošenja povrede je predmet kojim se
 povreda nanosi morao biti okrenut ka tijelu oštećenog, tako i u momentu kada je optuženi držeći nožu ruci
 mahao nožem horizontalno lijevo-desno i vrhom noža uspio da povrijedi oštećenog. Kod optuženog K.V.
@@ -501,7 +505,7 @@ Iz listinga komunikacija M:Tel br.20939/1 od 14.12.2010.godine i Crnogorski Tele
 (vl.svjedoka K.N.) u 13,35h, broj 067357...(vl.optuženog K.V.) u 18,29h, 20,53h, te da je broj 068603... pozivan
 od broja 067357... u 17,48,40h, 17,51,42h, 20,56,00h i 20,56,41h.
 Iz izvještaja o trasološkom vještačenju Forenzičkog centra Danilovgrad broj 4337/10,vještaka J.M., se
-utvrđ uje da je navedenom centru na vještačenje dostavljena garderoba izuzeta od oštećenog K.M.1 i to 1)
+utvrđuje da je navedenom centru na vještačenje dostavljena garderoba izuzeta od oštećenog K.M.1 i to 1)
 jakna marke "Nike" veličine XXXL bežboje, 2) gornji dio trenerke marke "Nike" veličine L svijetlo plave boje i
 3) majica kratkih rukava marke "Zeus" nepoznate veličine, bijele boje, te i kuhinjski no ž.Na prednjoj strani
 jakne nalazi se jedno mehaničko oštećenje na 19 cm od donje ivice jakne i 8,5 cm od lijevogšava prednje i
@@ -525,7 +529,7 @@ mišljenja su da se optuženi u vrijeme izvršenja krivičnog djela nalazio u st
 bijesa jakog intenziteta koji odgovara stanju privremene duševne poremećenosti ako se ocijene od strane
 suda kao realnečinjenice, okolnosti vezane za krivično djelo kako se prikazuje od strane optuženog, te da bi u
 tim okolnosti sposobnost shvatanja značaja djela, kao i mogućnost upravljanja svojim postupcima u vrijeme
-izvrš enja krivičnog djela kod optuženog bile bitno smanjene. U slučaju ako se ocijene od strane suda kao
+izvršenja krivičnog djela kod optuženog bile bitno smanjene. U slučaju ako se ocijene od strane suda kao
 realnečinjenice, okolnosti vezane za krivično djelo kako se prikazuje od strane oštećenog mišljenja su da u
 tim okolnostima optuženi se nije nalazio u stanju afekta straha, razdražljivosti, bijesa jakog intenziteta većse
 radi o afektu od blagog do srednjeg intenziteta jer nedostaje neposredno prvokativno ponašanje oštećenog i
@@ -538,7 +542,7 @@ pismenog nalaza i mišljenja komisije vještaka stimšto je pojasnio da optužen
 frustracije, da nije sklon agresivnom ponašanju, da bazično nema sklonost ka impulsivnom i agresivnom
 ponašanju.
 Iz izvještaja iz kaznene evidencije UP PJ Nikšić Ispostave Plužine broj 270/10-1808/8 od 25.10.2010. godine se
-utvrđ uje da optuženi K.V. ne prolazi kroz kaznenu evidenciju.
+utvrđuje da optuženi K.V. ne prolazi kroz kaznenu evidenciju.
 Cijeneći sprovedene dokaze pojedinačno, dovodeći ih u medjusobnu vezu i u vezu sa odbranom optuženog, a
 sve u cilju rasvjetljenja ove krivičnopravne stvari, sud je našao da je optuženi K.V. izvršio krivično djelo
 ubistvo na mah u pokušaju izčlana 145. Krivičnog zakonika u vezičlana 20 KZ, č injenično opisano u izreci
@@ -582,7 +586,7 @@ oštećenog.
 Ocjenom materijalne odbrane optuženog K. evidentno je da ona sadrži priznanje optuženog da je dana
 24.10.2010 godine oko 23.40časova ubo kuhinjskim nožem oštećenog K.M.1. Optuženi je u navodima svoje
 odbrane objasnio cjelokupni dogadjaj koji se odigrao u njegovoj porodičnoj kući u selu Boričje-opština
-Pluž ine. Istakao je da ga je kritičnog dana nakon 23,00časažena probudila govoreći mu da neko lupa na
+Plužine. Istakao je da ga je kritičnog dana nakon 23,00časažena probudila govoreći mu da neko lupa na
 vrata. Kada je otvorio vrata dobio je udarac zatvorenom pesnicom u predjelu glave od strane K.M.1, a onda
 još dva - tri udarca na isti način. Kako se zateturao od ovih udaraca tako je počeo da se povlači prema
 dnevnoj sobi, da bi na vratima dnevne sobe od zadobijenih udaraca pao. Kada je pao, M.1 je sjeo na njega i
@@ -614,7 +618,7 @@ nijesu ulazili u dnevni boravak kuće optuženog. Zato sud njegov iskaz u nazna�
 neistinit i izmišljen u strahu od eventualnog pokretanja pitanja njegove krivičnopravne odgovornosti.
 Medjutim, dalji tok dogadjaja i opis radnje krivičnog djela sud utvrdjuje iz sadržine saglasnih iskaza
 neposrednog svjedoka dogadjaja K.M.2 i oštećenog K.M.1. Naime, K.M.2 je tokom cjelokupnog postupka
-izrič it u svojim navodima da nakonšto je izgurao M.1 iz dnevne sobe da su izašli iz kuće i krenuli ka vozilu iza
+izričit u svojim navodima da nakonšto je izgurao M.1 iz dnevne sobe da su izašli iz kuće i krenuli ka vozilu iza
 
 V. kuće. U tom trenutku ponovo započinje tuča izmedju optuženog i oštećenog i on ih ponovo razdvaja.
 Nakon nekih 15 do 20 m hoda M.1 mu je rekao “vidi udari me nožem”, i kako je pogledao vidio je da mu je
@@ -641,7 +645,7 @@ istovremeni ili neposredno predstojeći protivpravni napad. Da bi se utvrdilo po
 mora da utvrdi da li je postojao napad, učemu se sastojao napad, kakvog je inteziteta i da li je radnja
 odbrane preduzeta dok je napad trajao. U nužnoj odbrani se može postupati samo dok napad traje ili
 neposredno predstoji. Napad traje dok traje opasnost za dobro koje je predmet napada, u konkretnom
-sluč aj u tjelesni integritet optuženog. Medjutim, nakonšto je oštećeni optuženom K. nanio tjelesnu povredu,
+slučaju tjelesni integritet optuženog. Medjutim, nakonšto je oštećeni optuženom K. nanio tjelesnu povredu,
 isti se udaljio od mjesta napada ( iz dnevne sobe optuženog) i zajedno sa svojim stricem K.M.2 krenuo je iza
 kuće ka svom vozilu izražavajući namjeru da ide kući. Imajući u vidu takvo njegovo postupanje jasno
 proizilazi da je protivpravni napad prestao. U trenutku kad je napad završen prestalo je i pravo optuženog na

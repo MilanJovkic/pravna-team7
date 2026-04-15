@@ -90,12 +90,12 @@
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je optuženi delovao u stanju prepasti i prekoračio granice nužne odbrane.</p>
+                    <p>Sud je prilagodio činjenično stanje rezultatima izvedenih dokaza i izmijenio pravnu oznaku krivičnog djela.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Optuženi N.A. osuđen na 10 mjeseci zatvora.</p>
+                    <p>Optuženi se osuđuje na kaznu zatvora.</p>
                 </block>
             </decision>
             <participants>

@@ -35,8 +35,8 @@
                 <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="P.J."/>
                 <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="Kapino Pol"/>
                 <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="R.M."/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Uprava policije CG"/>
-                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Osnovni sud u Nikšiću"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovni sud u Nikšiću"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Uprava policije CG"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/kz" showAs="KZ"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/zkp" showAs="ZKP"/>
             </references>
@@ -85,7 +85,7 @@
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je cijenio da su okolnosti i ranija osudjivanost okrivljenog uticale na izricanje kazne.</p>
+                    <p>Sud je utvrdio da je okrivljeni izvršio krivično djelo ugrožavanja opasnim orudjem, uzimajući u obzir raniju osudjivanost i okolnosti slučaja.</p>
                 </block>
             </motivation>
             <decision>
@@ -106,8 +106,8 @@
                     <person>K.Ž.</person>
                 </block>
                 <block name="organizations">
-                    <organization>Uprava policije CG</organization>
                     <organization>Osnovni sud u Nikšiću</organization>
+                    <organization>Uprava policije CG</organization>
                 </block>
             </participants>
             <facts>

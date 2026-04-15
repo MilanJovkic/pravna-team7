@@ -30,10 +30,9 @@
                 <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Igor Đuričković"/>
                 <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Milorad Šekarić"/>
                 <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Budimirka Papović"/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo u Nikšiću"/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zkp" showAs="ZKP"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/kz-cg" showAs="KZ CG"/>
-                <TLCLaw eId="law_3" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zkp" showAs="ZKP"/>
+                <TLCLaw eId="law_3" href="/akn/me/act/kz-cg" showAs="KZ CG"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -69,20 +68,20 @@
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">ZKP</ref>
-                    <ref href="#law_2">KZ CG</ref>
-                    <ref href="#law_3">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">ZKP</ref>
+                    <ref href="#law_3">KZ CG</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zkp#art_168">Član 168</ref>
-                    <ref href="/akn/me/act/zkp#art_154">Član 154</ref>
-                    <ref href="/akn/me/act/zkp#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zkp#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zkp#art_41">Član 41</ref>
-                    <ref href="/akn/me/act/zkp#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/zkp#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zkp#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/zkp#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_168">Član 168</ref>
+                    <ref href="/akn/me/act/2024/!main#art_154">Član 154</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_41">Član 41</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
                 </block>
             </background>
             <motivation>
@@ -92,14 +91,9 @@
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>OSUĐUJE</p>
+                    <p>Osuđuje se K.. M.. na rad u javnom interesu.</p>
                 </block>
             </decision>
-            <participants>
-                <block name="organizations">
-                    <organization>Osnovno državno tužilaštvo u Nikšiću</organization>
-                </block>
-            </participants>
             <facts>
                 <fact key="injury_type">laka tjelesna povreda</fact>
                 <fact key="location">Nikšić</fact>

@@ -39,8 +39,8 @@
                 <TLCPerson eId="victim_7" href="/akn/me/ontology/person/victim" showAs="S.C."/>
                 <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="M.D."/>
                 <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="B.B."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore" showAs="Zakon o krivičnom postupku Crne Gore"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore" showAs="Zakon o krivičnom postupku Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -65,7 +65,7 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni E. Š. osuđen za nehato lišenje života.</p>
+                    <p>Okrivljeni E. Š. osuđen za nehatno lišenje života.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Nehatno ubistvo</p>
@@ -76,25 +76,25 @@
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Zakon o krivičnom postupku Crne Gore</ref>
-                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakon o krivičnom postupku Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore#art_143">Član 143</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore#art_148">Član 148</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore#art_10">Član 10</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore#art_51">Član 51</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore#art_100">Član 100</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore#art_374">Član 374</ref>
-                    <ref href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore#art_370">Član 370</ref>
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_148">Član 148</ref>
+                    <ref href="/akn/me/act/2024/!main#art_10">Član 10</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_100">Član 100</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_370">Član 370</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je okrivljeni, svestan svojih radnji, izazvao smrt svog brata iz nehata.</p>
+                    <p>Sud je utvrdio da je okrivljeni, svestan svojih radnji, nehatno lišio života svog brata, što je kvalifikovano kao ubistvo iz nehata.</p>
                 </block>
             </motivation>
             <decision>
@@ -1406,7 +1406,7 @@ Cijeneći naprijed utvrđenočinjenično stanje, sud je izmijeniočinjenični op
 shodno svojim ovlašćenjima i u granicama ovlašćenja, obzirom da kako je prethodno analizirano, nije bilo
 dokaza koji bi opredijelili ovaj sud u pravcu zaključka da je okrivljeni E.Š. počinio krivično djelo ubistvo izčl.
 143 KZ-a CG. Naime sud je tokom postupka utvrdio da je okrivljeni E.Š. kritičnog dana i vremena, i na
-kritičnog mjestu, svjestan da svojom radnjom može izvršiti krivično djelo, ali je olako držao da do toga neće
+kritičnom mjestu, svjestan da svojom radnjom može izvršiti krivično djelo, ali je olako držao da do toga neće
 doć i, iz nehata lišioživota svog brata oštećenog M. Š, na načinšto je tokom otimanja o pištolj marke M-57 -
 tetejac, cal. 7,62 mm, ser. broja C-191540, ispalio dva projektila u pravcu oštećenog, od kojih ga je jedan
 pogodio u predjelu grudi, nanijevši mu - prostrelnu ranu u lijevom nizdojkinom predjelu sa ulaznom ranom

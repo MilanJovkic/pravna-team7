@@ -10,11 +10,13 @@ import { CommonModule } from '@angular/common';
     <div class="app">
       <nav class="navbar">
         <div class="nav-container">
-          <h1 class="app-title">Pravna Anotacija</h1>
+          <h1 class="app-title">
+            <a class="title-link" routerLink="/laws">Sistem za podršku u sudskom odlučivanju</a>
+          </h1>
           <div class="nav-links">
             <a routerLink="/laws" routerLinkActive="active">Zakoni</a>
             <a routerLink="/verdicts" routerLinkActive="active">Presude</a>
-            <a routerLink="/reasoning" routerLinkActive="active">Rasudjivanje</a>
+            <a routerLink="/reasoning" routerLinkActive="active">Rasuđivanje</a>
           </div>
         </div>
       </nav>
@@ -51,6 +53,15 @@ import { CommonModule } from '@angular/common';
       font-size: 24px;
       font-weight: 600;
     }
+
+    .title-link {
+      color: white;
+      text-decoration: none;
+    }
+
+    .title-link:hover {
+      text-decoration: underline;
+    }
     
     .nav-links {
       display: flex;
@@ -80,5 +91,5 @@ import { CommonModule } from '@angular/common';
   `]
 })
 export class AppComponent {
-  title = 'Legal Annotation';
+  title = 'Sistem za podršku u sudskom odlučivanju';
 }

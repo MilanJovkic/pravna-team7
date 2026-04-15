@@ -90,13 +90,13 @@
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_403">Član 403</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_48">Član 48</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_113">Član 113</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_115">Član 115</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_2">Član 2</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_109">Član 109</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_115">Član 115</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_2">Član 2</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
                 </block>
             </background>
             <motivation>
@@ -106,7 +106,7 @@
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Optuženi je osuđen na jedinstvenu kaznu zatvora.</p>
+                    <p>Osuđen</p>
                 </block>
             </decision>
             <participants>

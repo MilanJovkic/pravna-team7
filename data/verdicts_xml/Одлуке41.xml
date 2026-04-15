@@ -64,8 +64,8 @@
                 <block name="legalIssues">
                     <p>Pokušaj ubistva</p>
                     <p>Pravo na odbranu</p>
-                    <p>Pravo na pravično suđenje</p>
-                    <p>Primena zakona</p>
+                    <p>Prikazivanje dokaza</p>
+                    <p>Sankcije za krivična dela</p>
                 </block>
             </introduction>
             <background>
@@ -78,19 +78,19 @@
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_374">Član 374</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_220">Član 220</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_149">Član 149</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_36">Član 36</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_212">Član 212</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_66">Član 66</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_208">Član 208</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_157">Član 157</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_144">Član 144</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_2">Član 2</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_149">Član 149</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_212">Član 212</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_66">Član 66</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_36">Član 36</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_144">Član 144</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_2">Član 2</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_220">Član 220</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_208">Član 208</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
                 </block>
             </background>
@@ -101,7 +101,7 @@
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Osuđuje se na kaznu zatvora.</p>
+                    <p>Osuđuje</p>
                 </block>
             </decision>
             <participants>

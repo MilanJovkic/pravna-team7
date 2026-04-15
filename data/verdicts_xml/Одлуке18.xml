@@ -40,9 +40,9 @@
                 <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="C.B."/>
                 <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="Šoć Miodragom"/>
                 <TLCPerson eId="victim_10" href="/akn/me/ontology/person/victim" showAs="Šoć Miodraga"/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zkp" showAs="ZKP"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/kz-cg" showAs="KZ CG"/>
-                <TLCLaw eId="law_3" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zkp" showAs="ZKP"/>
+                <TLCLaw eId="law_3" href="/akn/me/act/kz-cg" showAs="KZ CG"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -78,31 +78,31 @@
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">ZKP</ref>
-                    <ref href="#law_2">KZ CG</ref>
-                    <ref href="#law_3">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">ZKP</ref>
+                    <ref href="#law_3">KZ CG</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zkp#art_143">Član 143</ref>
-                    <ref href="/akn/me/act/zkp#art_20">Član 20</ref>
-                    <ref href="/akn/me/act/zkp#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zkp#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/zkp#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zkp#art_66">Član 66</ref>
-                    <ref href="/akn/me/act/zkp#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zkp#art_71">Član 71</ref>
-                    <ref href="/akn/me/act/zkp#art_220">Član 220</ref>
-                    <ref href="/akn/me/act/zkp#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/zkp#art_49">Član 49</ref>
-                    <ref href="/akn/me/act/zkp#art_2">Član 2</ref>
-                    <ref href="/akn/me/act/zkp#art_376">Član 376</ref>
-                    <ref href="/akn/me/act/zkp#art_239">Član 239</ref>
-                    <ref href="/akn/me/act/zkp#art_240">Član 240</ref>
-                    <ref href="/akn/me/act/zkp#art_300">Član 300</ref>
-                    <ref href="/akn/me/act/zkp#art_253">Član 253</ref>
-                    <ref href="/akn/me/act/zkp#art_51">Član 51</ref>
-                    <ref href="/akn/me/act/zkp#art_10">Član 10</ref>
-                    <ref href="/akn/me/act/zkp#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/2024/!main#art_240">Član 240</ref>
+                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_2">Član 2</ref>
+                    <ref href="/akn/me/act/2024/!main#art_376">Član 376</ref>
+                    <ref href="/akn/me/act/2024/!main#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/2024/!main#art_10">Član 10</ref>
+                    <ref href="/akn/me/act/2024/!main#art_253">Član 253</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_49">Član 49</ref>
+                    <ref href="/akn/me/act/2024/!main#art_66">Član 66</ref>
+                    <ref href="/akn/me/act/2024/!main#art_71">Član 71</ref>
+                    <ref href="/akn/me/act/2024/!main#art_220">Član 220</ref>
                 </block>
             </background>
             <motivation>
@@ -227,7 +227,7 @@ pravnog zahtjeva upućije na parnični postupak.
 O b r a z l ože nj e
 
 Optužnicom VDT – a Podgorica Kt.br.7/20 od 15.06.2020. godine, optuženom V.N.u stavljeno je na teret
-izvršenje krivičnog djela ubistvo u poku šaju izčlana 143 u vezi člana 20 Krivičnog Zakonika Crne Gore, pa je
+izvršenje krivičnog djela ubistvo u pokuša u izčlana 143 u vezi člana 20 Krivičnog Zakonika Crne Gore, pa je
 zastupnik optužbe na glavnom pretresu u cjelosti ostao pri podnijetom optužnom aktu predlažući sudu u
 konačnom da optuženog oglasi krivim i osudi po zakonu.
 

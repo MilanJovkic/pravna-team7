@@ -58,13 +58,13 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Optuženi L... S... osuđen na 10 meseci zatvora, R... L... uslovna osuda od 6 meseci.</p>
+                    <p>Optuženi L... S... osuđen na 10 mjeseci zatvora, R... L... uslovno osuđen na 6 mjeseci.</p>
                 </block>
                 <block name="legalIssues">
-                    <p>Teška tjelesna povreda</p>
-                    <p>Učestvovanje u tuči</p>
-                    <p>Primena uslovne osude</p>
-                    <p>Troškovi krivičnog postupka</p>
+                    <p>teška tjelesna povreda</p>
+                    <p>učestvovanje u tuči</p>
+                    <p>uslovna osuda</p>
+                    <p>troškovi postupka</p>
                 </block>
             </introduction>
             <background>
@@ -77,25 +77,25 @@
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_153">Član 153</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_53">Član 53</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_36">Član 36</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_36">Član 36</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_52">Član 52</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_374">Član 374</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_46">Član 46</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_53">Član 53</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_52">Član 52</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_46">Član 46</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_374">Član 374</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da su optuženi izvršili krivična dela opisana u presudi, uzimajući u obzir sve relevantne činjenice i dokaze.</p>
+                    <p>Sud je utvrdio da su optuženi izvršili krivična djela, uzimajući u obzir njihove prethodne biografije i okolnosti slučaja.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Osuda</p>
+                    <p>Optuženi L... S... osuđen, R... L... uslovno osuđen.</p>
                 </block>
             </decision>
             <participants>
@@ -309,7 +309,7 @@ su se interesovali za njegovo zdravlje a da se oštećenom izvinjava.
 
 U dokaznom postupku sud je neposredno saslušao svjedoka oštećenog R... N..., svjedoka G... B..., na saglasan
 predlog stranaka pročitao nalaz i mišljenje vještaka medicinske struke Dr. B... V... dat pred ODT-om i istog
-vještaka neposredo saslušao na glavnom pretresu, te pročitao zapisnik o uvidjaju UP PJ NikšićKu.br. 245 od
+vještaka neposredo saslušao na glavnom pretresu, te pročitao zapisnik o uvidjaju UP PJ NIkšićku.br. 245 od
 8.06.2014. god., izvršio uvid u skicu lica mjesta i fotodokumetnaciju Upr... policije CB Nikšćbr. 484714 od
 8.06.2014.god. i pročitao izvode iz kaznene evidencije na ime optuženih.
 
@@ -387,7 +387,7 @@ u pravcu taxi vozila. U tom momentu joj nije bilo jasno zašto je sukob tako nag
 pitala ga "ko su ovi momci i da li je dobro", kada je primijetila krv na njegovoj majci, farmericama i po
 trotoaru, a kada je zavrnuo majicu vidjela je da je povrijeđen u predjelu iznad lijevog bubrega.
 
-Iz zapisnika o uvidjaju UP PJ NikšićKu. br. 245 od 8. 06. 2014.god proizilazi da je isti sačinjen od strane Upr...
+Iz zapisnika o uvidjaju UP PJ NIkšićku. br. 245 od 8. 06. 2014.god proizilazi da je isti sačinjen od strane Upr...
 Policije Crne Gore CB Nikšićdana 08. 06. 2015. god, te da je izlasak na mjesto događaja izvršen povodom
 obavještenja od radnika obezbeđenja Opšte bolnice Nikšić, da je kod istih dovezeno lice R... N... od oca Jo...a
 rođ. 22.12.1990.god u Nikšiću nastanjen u selo Jugovići bb sa povredom u predjelu lijevog slabinskog dijela

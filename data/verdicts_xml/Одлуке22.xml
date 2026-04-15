@@ -76,35 +76,36 @@
                 </block>
                 <block name="appliedArticles">
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_144">Član 144</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_403">Član 403</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_48">Član 48</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_75">Član 75</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_5">Član 5</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_407">Član 407</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_33">Član 33</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_339">Član 339</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_375">Član 375</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_37">Član 37</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_300">Član 300</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_162">Član 162</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_348">Član 348</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_162">Član 162</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_37">Član 37</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_5">Član 5</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_33">Član 33</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_339">Član 339</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_348">Član 348</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_375">Član 375</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_75">Član 75</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_407">Član 407</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Optuženi je s umišljajem pokušao da liši života oštećenog P.E. i doveo u opasnost život oštećenog P.J. ispalivši hitac iz pištolja.</p>
+                    <p>Optuženi je s umišljajem pokušao da liši života oštećenog i doveo u opasnost još jedno lice, koristeći vatreno oružje.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Optuženi kriv.</p>
+                    <p>Optuženi kriv</p>
                 </block>
             </decision>
             <participants>

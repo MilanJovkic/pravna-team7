@@ -29,7 +29,6 @@
                 <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U ROŽAJAMA"/>
                 <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Milosav Zekić"/>
                 <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo"/>
-                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Osnovni sud u Rožajama"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
@@ -71,17 +70,17 @@
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_410">Član 410</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_370">Član 370</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_370">Član 370</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je okrivljena, svjesna svojih postupaka, lišila života svoje dijete i sakrila leš, čime je izvršila krivična djela.</p>
+                    <p>Sud je utvrdio da je okrivljena svjesno izvršila krivična djela, uzimajući u obzir sve okolnosti.</p>
                 </block>
             </motivation>
             <decision>
@@ -96,7 +95,6 @@
                 </block>
                 <block name="organizations">
                     <organization>Osnovno državno tužilaštvo</organization>
-                    <organization>Osnovni sud u Rožajama</organization>
                 </block>
             </participants>
             <facts>

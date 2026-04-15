@@ -57,7 +57,7 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni M.N. osuđen za ugrožavanje opasnim oruđem.</p>
+                    <p>Okrivljeni M.N. osuđen na novčanu kaznu zbog ugrožavanja opasnim oruđem.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Ugrožavanje opasnim oruđem</p>
@@ -73,25 +73,24 @@
                 </block>
                 <block name="appliedArticles">
                     <ref href="/akn/me/act/kzcg#art_154">Član 154</ref>
-                    <ref href="/akn/me/act/kzcg#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/kzcg#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/kzcg#art_368">Član 368</ref>
                     <ref href="/akn/me/act/kzcg#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/kzcg#art_7">Član 7</ref>
-                    <ref href="/akn/me/act/kzcg#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/kzcg#art_10">Član 10</ref>
+                    <ref href="/akn/me/act/kzcg#art_5">Član 5</ref>
+                    <ref href="/akn/me/act/kzcg#art_226">Član 226</ref>
                     <ref href="/akn/me/act/kzcg#art_3">Član 3</ref>
                     <ref href="/akn/me/act/kzcg#art_54">Član 54</ref>
+                    <ref href="/akn/me/act/kzcg#art_7">Član 7</ref>
+                    <ref href="/akn/me/act/kzcg#art_10">Član 10</ref>
+                    <ref href="/akn/me/act/kzcg#art_42">Član 42</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je okrivljeni M.N. izvršio krivično delo ugrožavanja opasnim oruđem, a izrečena kazna je adekvatna težini dela.</p>
+                    <p>Sud je utvrdio da je okrivljeni bio svestan svog dela i njegove zabranjenosti, a izrečena kazna je adekvatna težini dela.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Osuđuje se na novčanu kaznu.</p>
+                    <p>Osuđuje se</p>
                 </block>
             </decision>
             <participants>

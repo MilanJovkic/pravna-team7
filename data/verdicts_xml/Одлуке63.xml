@@ -59,7 +59,7 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni G J je uslovno osuđen na 3 meseca zatvora.</p>
+                    <p>Okrivljeni G J je uslovno osuđen na 3 meseca zatvora zbog učestvovanja u tuči.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Učestvovanje u tuči</p>
@@ -76,14 +76,14 @@
                 <block name="appliedArticles">
                     <ref href="/akn/me/act/2024/!main#art_153">Član 153</ref>
                     <ref href="/akn/me/act/2024/!main#art_3">Član 3</ref>
+                    <ref href="/akn/me/act/2024/!main#art_5">Član 5</ref>
                     <ref href="/akn/me/act/2024/!main#art_368">Član 368</ref>
-                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
                     <ref href="/akn/me/act/2024/!main#art_457">Član 457</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je okrivljeni učestvovao u tuči, ali nije nanio tešku tjelesnu povredu oštećenom.</p>
+                    <p>Sud je utvrdio da je okrivljeni učestvovao u tuči koja je rezultirala teškom povredom oštećenog, ali nije nanio povredu.</p>
                 </block>
             </motivation>
             <decision>

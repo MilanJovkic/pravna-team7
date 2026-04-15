@@ -62,9 +62,9 @@
                 </block>
                 <block name="legalIssues">
                     <p>Učestvovanje u tuči</p>
-                    <p>Primena krivičnog zakona</p>
+                    <p>Primena zakonskih odredbi</p>
+                    <p>Sankcije za krivična dela</p>
                     <p>Uslovna osuda</p>
-                    <p>Kazna rada u javnom interesu</p>
                 </block>
             </introduction>
             <background>
@@ -77,25 +77,25 @@
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_52">Član 52</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_53">Član 53</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_300">Član 300</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_41">Član 41</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_41">Član 41</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_300">Član 300</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_54">Član 54</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_53">Član 53</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da su okrivljeni učestvovali u tuči koja je rezultirala teškom povredom, te su izrečene odgovarajuće kazne u skladu sa zakonom.</p>
+                    <p>Sud je primenio zakonske odredbe u skladu sa težinom krivičnog dela i prethodnim osuđivanjima okrivljenih.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Osuđeni i uslovno osuđeni</p>
+                    <p>Osuđuje se G.V. na rad u javnom interesu, Z.C. dobija uslovnu osudu.</p>
                 </block>
             </decision>
             <participants>

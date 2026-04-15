@@ -63,7 +63,7 @@
                     <p>Optuženi D.L. proglašen krivim za ubistvo na mah u pokušaju i nedozvoljeno držanje oružja.</p>
                 </block>
                 <block name="legalIssues">
-                    <p>Ubistvo na mah u pokušaju</p>
+                    <p>Pokušaj ubistva</p>
                     <p>Nedozvoljeno držanje oružja</p>
                     <p>Sporazum o priznanju krivice</p>
                     <p>Kaznena politika</p>
@@ -79,33 +79,33 @@
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_403">Član 403</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_19">Član 19</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_46">Član 46</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_48">Član 48</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_301">Član 301</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_33">Član 33</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_30">Član 30</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_19">Član 19</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_46">Član 46</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_300">Član 300</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_36">Član 36</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_23">Član 23</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_33">Član 33</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_30">Član 30</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_23">Član 23</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_272">Član 272</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_36">Član 36</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Optuženi je postupao sa umišljajem i bio svjestan svojih djela, što je utvrđeno tokom suđenja.</p>
+                    <p>Sud je utvrdio da je optuženi, pod uticajem provokacija, pokušao da liši života oštećenog, koristeći nelegalno oružje.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Optuženi D.L. je osuđen.</p>
+                    <p>Optuženi je osuđen na ukupno 13 meseci zatvora.</p>
                 </block>
             </decision>
             <participants>

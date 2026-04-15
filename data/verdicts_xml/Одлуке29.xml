@@ -34,9 +34,8 @@
                 <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="P.J."/>
                 <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="I.Ć."/>
                 <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="VDT Podgorica"/>
-                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Viši sud u Podgorici"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/zakon-o-krivičnom-postupku" showAs="Zakon o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -73,40 +72,40 @@
             <background>
                 <block name="appliedLaws">
                     <ref href="#law_1">Krivični zakonik Crne Gore</ref>
-                    <ref href="#law_2">Zakon o krivičnom postupku</ref>
+                    <ref href="#law_2">Zakonik o krivičnom postupku</ref>
                 </block>
                 <block name="appliedArticles">
                     <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
                     <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
                     <ref href="/akn/me/act/2024/!main#art_23">Član 23</ref>
                     <ref href="/akn/me/act/2024/!main#art_75">Član 75</ref>
-                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/2024/!main#art_147">Član 147</ref>
-                    <ref href="/akn/me/act/2024/!main#art_149">Član 149</ref>
-                    <ref href="/akn/me/act/2024/!main#art_242">Član 242</ref>
-                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/2024/!main#art_245">Član 245</ref>
-                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
-                    <ref href="/akn/me/act/2024/!main#art_67">Član 67</ref>
-                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/2024/!main#art_256">Član 256</ref>
-                    <ref href="/akn/me/act/2024/!main#art_244">Član 244</ref>
-                    <ref href="/akn/me/act/2024/!main#art_49">Član 49</ref>
-                    <ref href="/akn/me/act/2024/!main#art_2">Član 2</ref>
-                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
-                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
-                    <ref href="/akn/me/act/2024/!main#art_146">Član 146</ref>
                     <ref href="/akn/me/act/2024/!main#art_240">Član 240</ref>
                     <ref href="/akn/me/act/2024/!main#art_69">Član 69</ref>
+                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
                     <ref href="/akn/me/act/2024/!main#art_144">Član 144</ref>
-                    <ref href="/akn/me/act/2024/!main#art_190">Član 190</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_2">Član 2</ref>
                     <ref href="/akn/me/act/2024/!main#art_14">Član 14</ref>
-                    <ref href="/akn/me/act/2024/!main#art_246">Član 246</ref>
-                    <ref href="/akn/me/act/2024/!main#art_145">Član 145</ref>
-                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
                     <ref href="/akn/me/act/2024/!main#art_373">Član 373</ref>
+                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/2024/!main#art_245">Član 245</ref>
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_149">Član 149</ref>
+                    <ref href="/akn/me/act/2024/!main#art_242">Član 242</ref>
+                    <ref href="/akn/me/act/2024/!main#art_67">Član 67</ref>
+                    <ref href="/akn/me/act/2024/!main#art_244">Član 244</ref>
+                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/2024/!main#art_190">Član 190</ref>
+                    <ref href="/akn/me/act/2024/!main#art_145">Član 145</ref>
+                    <ref href="/akn/me/act/2024/!main#art_246">Član 246</ref>
+                    <ref href="/akn/me/act/2024/!main#art_146">Član 146</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_49">Član 49</ref>
+                    <ref href="/akn/me/act/2024/!main#art_256">Član 256</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_147">Član 147</ref>
                 </block>
             </background>
             <motivation>
@@ -130,7 +129,6 @@
                 </block>
                 <block name="organizations">
                     <organization>VDT Podgorica</organization>
-                    <organization>Viši sud u Podgorici</organization>
                 </block>
             </participants>
             <facts>

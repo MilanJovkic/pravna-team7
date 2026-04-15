@@ -36,7 +36,6 @@
                 <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="B.S."/>
                 <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="K.E."/>
                 <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="U.P."/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="ODT Kotor"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
             </references>
@@ -68,7 +67,7 @@
                     <p>Ugrožavanje opasnim oruđem</p>
                     <p>Pravo na odbranu</p>
                     <p>Sankcije za krivična dela</p>
-                    <p>Otežavajuće i olakšavajuće okolnosti</p>
+                    <p>Otežavajuće okolnosti</p>
                 </block>
             </introduction>
             <background>
@@ -82,8 +81,8 @@
                     <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
                     <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
                     <ref href="/akn/me/act/2024/!main#art_185">Član 185</ref>
-                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
                     <ref href="/akn/me/act/2024/!main#art_370">Član 370</ref>
+                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
                 </block>
             </background>
             <motivation>
@@ -112,9 +111,6 @@
                     <person>V.R.</person>
                     <person>B.S.</person>
                     <person>K.E.</person>
-                </block>
-                <block name="organizations">
-                    <organization>ODT Kotor</organization>
                 </block>
             </participants>
             <facts>

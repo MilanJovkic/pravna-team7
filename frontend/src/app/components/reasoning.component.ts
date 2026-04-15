@@ -16,7 +16,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
     <div class="reasoning-page">
       <header class="hero">
         <div>
-          <p class="eyebrow">Rasudjivanje</p>
+          <p class="eyebrow">Rasuđivanje</p>
           <h2>Unos slučaja i predlog presude</h2>
           <p class="subtitle">Popuni opis činjenica kroz napredne pravne atribute, pokreni rasuđivanje i sačuvaj novi slučaj.</p>
         </div>
@@ -181,7 +181,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                 </section>
 
                 <section class="fact-group">
-                  <h5>Grupa 7: Broj zrtava</h5>
+                  <h5>Grupa 7: Broj žrtava</h5>
                   <div class="field-grid">
                     <label>
                       Broj žrtava
@@ -195,7 +195,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                 </section>
 
                 <section class="fact-group">
-                  <h5>Grupa 8: Opasnost po treca lica</h5>
+                  <h5>Grupa 8: Opasnost po treća lica</h5>
                   <div class="field-grid">
                     <label>
                       Opasnost po treća lica
@@ -618,7 +618,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                 Broj rezultata
                 <input type="number" name="top_k" [(ngModel)]="topK" min="1" max="10" />
               </label>
-              <button type="submit" [disabled]="loading || !form.valid">Pokreni rasudjivanje</button>
+              <button type="submit" [disabled]="loading || !form.valid">Pokreni rasuđivanje</button>
             </div>
 
             <div *ngIf="error" class="error">{{ error }}</div>
@@ -633,7 +633,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
 
           <div *ngIf="response" class="results">
             <div class="result-block">
-              <h4>Rasudjivanje po pravilima</h4>
+              <h4>Rasuđivanje po pravilima</h4>
               <div *ngIf="response.rule_reasoning.applied_norms.length > 0" class="norms">
                 <span *ngFor="let norm of response.rule_reasoning.applied_norms" class="norm-chip">{{ norm }}</span>
               </div>
@@ -669,8 +669,8 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                   Izabrana presuda
                   <select name="selectedVerdict" [(ngModel)]="selectedVerdict">
                     <option [ngValue]="''">-- Izaberi --</option>
-                    <option value="osudjen">Osudjen</option>
-                    <option value="oslobodjen">Oslobodjen</option>
+                    <option value="osudjen">Osuđen</option>
+                    <option value="oslobodjen">Oslobođen</option>
                     <option value="odbijeno">Odbijeno</option>
                   </select>
                 </label>
@@ -716,7 +716,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
               <h4>Primenjene zakonske odredbe</h4>
               <div *ngIf="response.applied_law_texts.length > 0" class="law-texts">
                 <div *ngFor="let law of response.applied_law_texts" class="law-card">
-                  <div class="law-title">Clan {{ law.article_number }}{{ law.title ? ' - ' + law.title : '' }}</div>
+                  <div class="law-title">Član {{ law.article_number }}{{ law.title ? ' - ' + law.title : '' }}</div>
                   <div class="law-content">{{ law.content }}</div>
                 </div>
               </div>
@@ -768,7 +768,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
           </div>
 
           <div class="result-block">
-            <h4>Generiši sudsku presudu (Task 9)</h4>
+            <h4>Generiši sudsku presudu (Zadatak 9)</h4>
             <div class="save-grid">
               <label>
                 Sud (opciono)
@@ -779,7 +779,7 @@ import { normalizeRuleFactsInput } from '../services/rule-input-normalization';
                 <input type="text" [(ngModel)]="judgeName" name="judgeName" placeholder="Sudija" />
               </label>
             </div>
-            <button class="secondary" (click)="generateVerdict()" [disabled]="generating || !response">Generisi presudu</button>
+            <button class="secondary" (click)="generateVerdict()" [disabled]="generating || !response">Generiši presudu</button>
             <div *ngIf="generationMessage" class="save-message">{{ generationMessage }}</div>
           </div>
           </div>
@@ -1457,7 +1457,7 @@ export class ReasoningComponent {
         this.loading = false;
       },
       error: (err: unknown) => {
-        this.error = 'Greska pri pokretanju rasudjivanja.';
+        this.error = 'Greška pri pokretanju rasuđivanja.';
         this.loading = false;
         console.error(err);
       }
@@ -1524,7 +1524,7 @@ export class ReasoningComponent {
         this.router.navigate(['/verdicts', data.case_id]);
       },
       error: (err: unknown) => {
-        this.generationMessage = 'Greska pri generisanju presude.';
+        this.generationMessage = 'Greška pri generisanju presude.';
         this.generating = false;
         console.error(err);
       }

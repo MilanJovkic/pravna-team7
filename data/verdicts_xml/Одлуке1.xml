@@ -30,10 +30,10 @@
                 <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Goran Đuković"/>
                 <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="B.M."/>
                 <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="ODT Podgorica"/>
-                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Advokat M. Sn."/>
-                <TLCOrganization eId="org_3" href="/akn/me/ontology/organization" showAs="Advokat M.D."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore" showAs="Zakonik o krivičnom postupku Crne Gore"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Advokat M.D."/>
+                <TLCOrganization eId="org_3" href="/akn/me/ontology/organization" showAs="Advokat M. Sn."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore" showAs="Zakonik o krivičnom postupku Crne Gore"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -56,7 +56,7 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni B.M. osuđen na 5 mjeseci zatvora zbog teške tjelesne povrede.</p>
+                    <p>Okrivljeni B.M. osuđen na 5 mjeseci zatvora za tešku tjelesnu povredu.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Teška tjelesna povreda</p>
@@ -67,32 +67,32 @@
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Zakonik o krivičnom postupku Crne Gore</ref>
-                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakonik o krivičnom postupku Crne Gore</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_45">Član 45</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_46">Član 46</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_19">Član 19</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_3">Član 3</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_303">Član 303</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_32">Član 32</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_300">Član 300</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku-crne-gore#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/2024/!main#art_46">Član 46</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/2024/!main#art_303">Član 303</ref>
+                    <ref href="/akn/me/act/2024/!main#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/2024/!main#art_3">Član 3</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_19">Član 19</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da su dokazi dovoljni za utvrđivanje krivice okrivljenog, uzimajući u obzir otežavajuće okolnosti.</p>
+                    <p>Sud je utvrdio da je okrivljeni izvršio krivično djelo teške tjelesne povrede, uzimajući u obzir raniju osudjivanost kao otežavajuću okolnost.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Osuđuje se</p>
+                    <p>Osudjuje se</p>
                 </block>
             </decision>
             <participants>
@@ -101,8 +101,8 @@
                 </block>
                 <block name="organizations">
                     <organization>ODT Podgorica</organization>
-                    <organization>Advokat M. Sn.</organization>
                     <organization>Advokat M.D.</organization>
+                    <organization>Advokat M. Sn.</organization>
                 </block>
             </participants>
             <facts>

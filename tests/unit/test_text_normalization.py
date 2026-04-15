@@ -49,6 +49,14 @@ def test_normalization_does_not_reglue_uppercase_initial_suffix() -> None:
     assert "taćeš A." in normalized
 
 
+def test_normalization_merges_titlecase_suffix_fragment() -> None:
+    text = "trag koji obiljež Ja predmet napada"
+
+    normalized = normalize_legal_text(text)
+
+    assert "obilježja" in normalized
+
+
 def test_normalization_fixes_split_suffixes_and_kao_glue() -> None:
     text = "predsjednika vijeć a, sudija N.R. i N.T., kaočlanova vijeća, izvrš io radnju"
 

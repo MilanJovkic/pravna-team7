@@ -43,7 +43,6 @@
                 <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="M.S."/>
                 <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="D.N."/>
                 <TLCPerson eId="victim_10" href="/akn/me/ontology/person/victim" showAs="I.D."/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="ODT K"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
@@ -84,11 +83,10 @@
                 </block>
                 <block name="appliedArticles">
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_3">Član 3</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_368">Član 368</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_374">Član 374</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_236">Član 236</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_457">Član 457</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_3">Član 3</ref>
                 </block>
             </background>
             <motivation>
@@ -131,9 +129,6 @@
                     <person>M.S.</person>
                     <person>D.N.</person>
                     <person>I.D.</person>
-                </block>
-                <block name="organizations">
-                    <organization>ODT K</organization>
                 </block>
             </participants>
             <facts>

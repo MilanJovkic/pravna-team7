@@ -35,10 +35,10 @@
                 <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="U.D."/>
                 <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="M.D."/>
                 <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="A.D."/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Iz iskaza svedoka A.D."/>
-                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="svedoka A.D."/>
-                <TLCOrganization eId="org_3" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo"/>
-                <TLCOrganization eId="org_4" href="/akn/me/ontology/organization" showAs="uvjerljiv i&#10;potkrijepljen iskazom svedoka A.D."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="uvjerljiv i&#10;potkrijepljen iskazom svedoka A.D."/>
+                <TLCOrganization eId="org_3" href="/akn/me/ontology/organization" showAs="svedoka A.D."/>
+                <TLCOrganization eId="org_4" href="/akn/me/ontology/organization" showAs="Iz iskaza svedoka A.D."/>
                 <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
             </references>
@@ -63,13 +63,13 @@
             </header>
             <introduction>
                 <block name="summary">
-                    <p>Okrivljeni M.D. osuđen na novčanu kaznu zbog ugrožavanja opasnim oruđem pri tuči.</p>
+                    <p>Okrivljeni M.D. osuđen na novčanu kaznu zbog ugrožavanja opasnim oruđem.</p>
                 </block>
                 <block name="legalIssues">
                     <p>Ugrožavanje opasnim oruđem</p>
                     <p>Primena krivičnog zakona</p>
                     <p>Visina kazne</p>
-                    <p>Olakšavajuće okolnosti</p>
+                    <p>Imovinsko-pravni zahtev</p>
                 </block>
             </introduction>
             <background>
@@ -82,16 +82,16 @@
                     <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
                     <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
                     <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
                     <ref href="/akn/me/act/2024/!main#art_155">Član 155</ref>
-                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
-                    <ref href="/akn/me/act/2024/!main#art_370">Član 370</ref>
                     <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_370">Član 370</ref>
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je uzeo u obzir težinu dela, stepen krivice, porodične prilike okrivljenog i ranije osude prilikom izricanja kazne.</p>
+                    <p>Sud je uzeo u obzir težinu dela, okolnosti izvršenja, ranije osude i porodične prilike okrivljenog.</p>
                 </block>
             </motivation>
             <decision>
@@ -116,11 +116,11 @@
                     <person>S.D.</person>
                 </block>
                 <block name="organizations">
-                    <organization>Iz iskaza svedoka A.D.</organization>
-                    <organization>svedoka A.D.</organization>
                     <organization>Osnovno državno tužilaštvo</organization>
                     <organization>uvjerljiv i
 potkrijepljen iskazom svedoka A.D.</organization>
+                    <organization>svedoka A.D.</organization>
+                    <organization>Iz iskaza svedoka A.D.</organization>
                 </block>
             </participants>
             <facts>

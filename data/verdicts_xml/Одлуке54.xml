@@ -28,11 +28,12 @@
             <references source="#court">
                 <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
                 <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Vesna Pean"/>
-                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Hasnija Simonović"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Hasnije Simonović"/>
                 <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Predrag Tabaš"/>
                 <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="C.B."/>
                 <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="Radojević Nemanje"/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Forenzički centar Danilovgrad"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
             </references>
@@ -53,7 +54,7 @@
                 </block>
                 <block name="judges">
                     <judge>Vesna Pean</judge>
-                    <judge>Hasnija Simonović</judge>
+                    <judge>Hasnije Simonović</judge>
                     <judge>Predrag Tabaš</judge>
                 </block>
             </header>
@@ -78,15 +79,15 @@
                     <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
                     <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
                     <ref href="/akn/me/act/2024/!main#art_67">Član 67</ref>
-                    <ref href="/akn/me/act/2024/!main#art_14">Član 14</ref>
-                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
                     <ref href="/akn/me/act/2024/!main#art_75">Član 75</ref>
                     <ref href="/akn/me/act/2024/!main#art_45">Član 45</ref>
-                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
                     <ref href="/akn/me/act/2024/!main#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/2024/!main#art_52">Član 52</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_14">Član 14</ref>
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
                 </block>
             </background>
             <motivation>
@@ -108,6 +109,7 @@
                     <person>C.B.</person>
                 </block>
                 <block name="organizations">
+                    <organization>Forenzički centar Danilovgrad</organization>
                     <organization>Više državno tužilaštvo</organization>
                 </block>
             </participants>

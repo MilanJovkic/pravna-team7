@@ -38,8 +38,8 @@
                 <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="L.B."/>
                 <TLCPerson eId="victim_7" href="/akn/me/ontology/person/victim" showAs="Šćepanović Sandra"/>
                 <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="V.W."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakon-o-krivičnom-postupku" showAs="Zakon o krivičnom postupku"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -67,7 +67,7 @@
                     <p>Optuženi L.B. je kriv za pokušaj teškog ubistva.</p>
                 </block>
                 <block name="legalIssues">
-                    <p>Pokušaj teškog ubistva</p>
+                    <p>Pokušaj ubistva</p>
                     <p>Umišljaj</p>
                     <p>Otežavajuće okolnosti</p>
                     <p>Prethodne presude</p>
@@ -75,32 +75,32 @@
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
-                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakon o krivičnom postupku</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_144">Član 144</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_239">Član 239</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_374">Član 374</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_168">Član 168</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_14">Član 14</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_403">Član 403</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_388">Član 388</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_16">Član 16</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_163">Član 163</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_151">Član 151</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_152">Član 152</ref>
+                    <ref href="/akn/me/act/2024/!main#art_144">Član 144</ref>
+                    <ref href="/akn/me/act/2024/!main#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/2024/!main#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_168">Član 168</ref>
+                    <ref href="/akn/me/act/2024/!main#art_16">Član 16</ref>
+                    <ref href="/akn/me/act/2024/!main#art_163">Član 163</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_14">Član 14</ref>
+                    <ref href="/akn/me/act/2024/!main#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/2024/!main#art_388">Član 388</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_152">Član 152</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Optuženi je s umišljajem pokušao da liši života više lica, što je utvrđeno tokom glavnog pretresa.</p>
+                    <p>Optuženi je s umišljajem pokušao da liši života više lica, a iskazi oštećenih nisu bili verodostojni.</p>
                 </block>
             </motivation>
             <decision>

@@ -32,7 +32,7 @@
                 <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="N.R."/>
                 <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="S.S."/>
                 <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="Senev Sashka"/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo u Podgorici"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="ODT Podgorica"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
@@ -61,10 +61,10 @@
                     <p>Okrivljeni N.R. je uslovno osuđen za lako tjelesno povređivanje.</p>
                 </block>
                 <block name="legalIssues">
-                    <p>Izvršenje krivičnog djela</p>
+                    <p>Laka tjelesna povreda</p>
                     <p>Sporazum o priznanju krivice</p>
                     <p>Uslovna osuda</p>
-                    <p>Imovinskopravni zahtjev</p>
+                    <p>Troškovi postupka</p>
                 </block>
             </introduction>
             <background>
@@ -77,10 +77,10 @@
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_239">Član 239</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_227">Član 227</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_52">Član 52</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_227">Član 227</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
                 </block>
             </background>
             <motivation>
@@ -102,7 +102,7 @@
                     <person>Senev Sashka</person>
                 </block>
                 <block name="organizations">
-                    <organization>Osnovno državno tužilaštvo u Podgorici</organization>
+                    <organization>ODT Podgorica</organization>
                 </block>
             </participants>
             <facts>

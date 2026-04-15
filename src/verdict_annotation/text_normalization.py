@@ -81,8 +81,10 @@ def _merge_suffix_after_diacritic(text: str) -> str:
         if len(stem) < 4:
             return match.group(0)
         if suffix != suffix.lower():
-            return match.group(0)
-        if suffix.lower() not in _CASE_SUFFIXES:
+            if len(suffix) == 1:
+                return match.group(0)
+            suffix = suffix.lower()
+        if suffix not in _CASE_SUFFIXES:
             return match.group(0)
         return f"{stem}{suffix}"
 

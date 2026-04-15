@@ -50,8 +50,8 @@
                 <TLCPerson eId="victim_17" href="/akn/me/ontology/person/victim" showAs="Š.M."/>
                 <TLCPerson eId="victim_18" href="/akn/me/ontology/person/victim" showAs="T.S."/>
                 <TLCPerson eId="victim_19" href="/akn/me/ontology/person/victim" showAs="J.M."/>
-                <TLCLaw eId="law_1" href="/akn/me/act/zakon-o-oružju" showAs="Zakon o oružju"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakon-o-oružju" showAs="Zakon o oružju"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -87,26 +87,26 @@
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">Zakon o oružju</ref>
-                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakon o oružju</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/zakon-o-oružju#art_143">Član 143</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_403">Član 403</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_23">Član 23</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_5">Član 5</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_226">Član 226</ref>
-                    <ref href="/akn/me/act/zakon-o-oružju#art_10">Član 10</ref>
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/2024/!main#art_23">Član 23</ref>
+                    <ref href="/akn/me/act/2024/!main#art_5">Član 5</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_10">Član 10</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je okrivljeni K.D. zajedno sa Đ.P. izvršio ubistvo, koristeći vatreno oružje, čime su prekršili zakonske odredbe.</p>
+                    <p>Sud je utvrdio da je okrivljeni K.D. zajedno sa Đ.P. izvršio krivično djelo ubistva, koristeći vatreno oružje.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Osuđuje se</p>
+                    <p>Osuđen</p>
                 </block>
             </decision>
             <participants>

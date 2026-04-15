@@ -40,8 +40,10 @@
                 <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="Jauković Miloša"/>
                 <TLCPerson eId="victim_10" href="/akn/me/ontology/person/victim" showAs="Samoposluge Pela"/>
                 <TLCPerson eId="victim_11" href="/akn/me/ontology/person/victim" showAs="Radojičić Nikolu"/>
-                <TLCLaw eId="law_1" href="/akn/me/act/kz-cg" showAs="KZ CG"/>
-                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo u Nikšiću"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zkp" showAs="ZKP"/>
+                <TLCLaw eId="law_3" href="/akn/me/act/kz-cg" showAs="KZ CG"/>
             </references>
             <classification source="#court">
                 <keyword value="criminal_case" showAs="Krivična stvar"/>
@@ -71,21 +73,24 @@
                     <p>Učestvovanje u tuči</p>
                     <p>Teške tjelesne povrede</p>
                     <p>Odgovornost okrivljenih</p>
-                    <p>Prethodne osude</p>
+                    <p>Imovinsko-pravni zahtjev</p>
                 </block>
             </introduction>
             <background>
                 <block name="appliedLaws">
-                    <ref href="#law_1">KZ CG</ref>
-                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">ZKP</ref>
+                    <ref href="#law_3">KZ CG</ref>
                 </block>
                 <block name="appliedArticles">
-                    <ref href="/akn/me/act/kz-cg#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/2024/!main#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/2024/!main#art_239">Član 239</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da su okrivljeni svesno učestvovali u tuči koja je dovela do teških povreda oštećenog.</p>
+                    <p>Sud je utvrdio da su okrivljeni svjesno učestvovali u tuči koja je rezultirala teškim povredama oštećenog, te su stoga odgovorni za učinjeno.</p>
                 </block>
             </motivation>
             <decision>
@@ -110,6 +115,9 @@
                 <block name="witnesses">
                     <person>C.G.</person>
                     <person>C.B.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Osnovno državno tužilaštvo u Nikšiću</organization>
                 </block>
             </participants>
             <facts>

@@ -83,12 +83,12 @@
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da su okrivljeni zajednički izvršili krivična djela, uzimajući u obzir težinu povreda i okolnosti slučaja.</p>
+                    <p>Sud je utvrdio da su okrivljeni učestvovali u tuči i nanijeli teške povrede oštećenom.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Osudjeni</p>
+                    <p>Osudjen</p>
                 </block>
             </decision>
             <participants>

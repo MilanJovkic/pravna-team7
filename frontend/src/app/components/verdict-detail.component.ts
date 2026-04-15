@@ -29,7 +29,7 @@ import { VerdictDetail, VerdictOverrideUpdate } from '../models/models';
         </div>
 
         <div class="edit-panel" *ngIf="editMode">
-          <h3>Rucne ispravke</h3>
+          <h3>Ručne ispravke</h3>
           <div class="edit-grid">
             <label>
               Rezime
@@ -44,11 +44,11 @@ import { VerdictDetail, VerdictOverrideUpdate } from '../models/models';
               <input type="text" [(ngModel)]="editAppliedLaws" />
             </label>
             <label>
-              Primenjeni clanci (odvoji zarezom)
+              Primenjeni članci (odvoji zarezom)
               <input type="text" [(ngModel)]="editAppliedArticles" />
             </label>
             <label>
-              Pravno obrazlozenje
+              Pravno obrazloženje
               <textarea [(ngModel)]="editLegalReasoning" rows="4"></textarea>
             </label>
             <label>
@@ -76,17 +76,17 @@ import { VerdictDetail, VerdictOverrideUpdate } from '../models/models';
               <input type="text" [(ngModel)]="editJudges" />
             </label>
             <label>
-              Ucesnici (JSON)
+              Učesnici (JSON)
               <textarea [(ngModel)]="editParties" rows="4"></textarea>
             </label>
             <label>
-              Cinjenicno stanje (JSON)
+              Činjenično stanje (JSON)
               <textarea [(ngModel)]="editFactualState" rows="4"></textarea>
             </label>
           </div>
           <div class="edit-actions">
-            <button class="secondary-btn" (click)="saveOverrides()" [disabled]="editLoading">Sacuvaj izmene</button>
-            <button class="ghost-btn" (click)="resetOverrides()" [disabled]="editLoading">Ponisti promene</button>
+            <button class="secondary-btn" (click)="saveOverrides()" [disabled]="editLoading">Sačuvaj izmene</button>
+            <button class="ghost-btn" (click)="resetOverrides()" [disabled]="editLoading">Poništi promene</button>
           </div>
           <div class="navigation-error" *ngIf="editError">{{ editError }}</div>
         </div>
@@ -168,7 +168,7 @@ import { VerdictDetail, VerdictOverrideUpdate } from '../models/models';
         <div class="section" *ngIf="verdict.parties && objectKeys(verdict.parties).length > 0">
           <h3>Učesnici</h3>
           <div class="facts" *ngFor="let key of objectKeys(verdict.parties)">
-            <strong>{{ key }}:</strong> {{ verdict.parties[key].join(', ') }}
+            <strong>{{ getPartyLabel(key) }}:</strong> {{ formatPartyValues(verdict.parties[key]) }}
           </div>
         </div>
 
@@ -525,16 +525,21 @@ export class VerdictDetailComponent implements OnInit {
   editParties = '';
   editFactualState = '';
   factualStateLabelMap: Record<string, string> = {
+    amount: 'Količina',
+    quantity: 'Količina',
+    defendant: 'Okrivljeni',
+    victim: 'Žrtva',
+    witness: 'Svjedok',
     injury_type: 'Vrsta povrede',
     location: 'Lokacija',
     weapon: 'Sredstvo',
     weapon_used: 'Upotrebljeno sredstvo',
-    severe_consequence: 'Teška posledica',
+    severe_consequence: 'Teška posljedica',
     death_result: 'Smrtni ishod',
     negligence: 'Nehat',
     provocation: 'Provokacija',
     fight_participation: 'Učestvovanje u tuči',
-    fight_consequence: 'Posledica tuče',
+    fight_consequence: 'Posljedica tuče',
     left_without_help: 'Ostavljanje bez pomoći',
     previous_convictions: 'Ranije osuđivan',
     repeat_offender: 'Povratnik',
@@ -548,8 +553,22 @@ export class VerdictDetailComponent implements OnInit {
     alcohol_intoxication: 'Alkoholisanost',
     narcotics_influence: 'Uticaj narkotika',
     conditional_sentence_requested: 'Tražena uslovna osuda',
-    attempted_offense: 'Pokušaj dela',
-    imposed_prison_sentence_months: 'Izrečena kazna zatvora (meseci)',
+    attempted_offense: 'Pokušaj djela',
+    imposed_prison_sentence_months: 'Izrečena kazna zatvora (mjeseci)',
+  };
+  partyLabelMap: Record<string, string> = {
+    defendant: 'Okrivljeni',
+    defendants: 'Okrivljeni',
+    accused: 'Okrivljeni',
+    victim: 'Žrtva',
+    victims: 'Žrtve',
+    witness: 'Svjedok',
+    witnesses: 'Svjedoci',
+    prosecutor: 'Tužilac',
+    prosecutors: 'Tužioci',
+    court: 'Sud',
+    judge: 'Sudija',
+    judges: 'Sudije',
   };
   factualStatePreferredOrder: string[] = [
     'injury_type',
@@ -654,8 +673,8 @@ export class VerdictDetailComponent implements OnInit {
     this.editLoading = true;
     this.editError = '';
 
-    const partiesResult = this.parseJsonField(this.editParties, 'Ucesnici');
-    const factualStateResult = this.parseJsonField(this.editFactualState, 'Cinjenicno stanje');
+    const partiesResult = this.parseJsonField(this.editParties, 'Učesnici');
+    const factualStateResult = this.parseJsonField(this.editFactualState, 'Činjenično stanje');
     if (partiesResult.error || factualStateResult.error) {
       this.editError = partiesResult.error || factualStateResult.error || '';
       this.editLoading = false;
@@ -685,7 +704,7 @@ export class VerdictDetailComponent implements OnInit {
       },
       error: (err) => {
         this.editLoading = false;
-        this.editError = 'Greska pri cuvanju izmena.';
+        this.editError = 'Greška pri čuvanju izmena.';
         console.error(err);
       }
     });
@@ -775,6 +794,23 @@ export class VerdictDetailComponent implements OnInit {
     return this.factualStateLabelMap[key] || this.humanizeFactKey(key);
   }
 
+  getPartyLabel(key: string): string {
+    return this.partyLabelMap[key] || this.humanizeFactKey(key);
+  }
+
+  formatPartyValues(values: string[] | undefined): string {
+    if (!values || values.length === 0) {
+      return '-';
+    }
+
+    const normalized = values
+      .map((value) => (value || '').trim())
+      .filter((value) => value.length > 0);
+
+    const unique = Array.from(new Set(normalized));
+    return unique.length > 0 ? unique.join(', ') : '-';
+  }
+
   formatFactualStateValues(key: string, values: string[] | undefined): string {
     if (!values || values.length === 0) {
       return '-';
@@ -807,7 +843,7 @@ export class VerdictDetailComponent implements OnInit {
         death_or_serious_injury: 'smrt ili teška povreda',
         teska_povreda: 'teška povreda',
         laka_povreda: 'laka povreda',
-        none: 'bez posledice',
+        none: 'bez posljedice',
       };
       if (map[lowered]) {
         return map[lowered];
@@ -833,10 +869,36 @@ export class VerdictDetailComponent implements OnInit {
     if (!key) {
       return '';
     }
+
+    const wordMap: Record<string, string> = {
+      defendant: 'okrivljeni',
+      defendants: 'okrivljeni',
+      accused: 'okrivljeni',
+      victim: 'žrtva',
+      victims: 'žrtve',
+      witness: 'svjedok',
+      witnesses: 'svjedoci',
+      amount: 'količina',
+      quantity: 'količina',
+      prosecutor: 'tužilac',
+      court: 'sud',
+      judge: 'sudija',
+      judges: 'sudije',
+      law: 'zakon',
+      article: 'član',
+      issue: 'pitanje',
+      summary: 'rezime',
+      name: 'ime',
+    };
+
     return key
       .replace(/_/g, ' ')
       .split(' ')
-      .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
+      .map((part) => {
+        const normalized = part.toLowerCase();
+        const localized = wordMap[normalized] || normalized;
+        return localized.charAt(0).toUpperCase() + localized.slice(1);
+      })
       .join(' ');
   }
 

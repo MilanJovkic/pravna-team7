@@ -29,7 +29,7 @@
                 <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
                 <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Vesna Kovačević"/>
                 <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Anisa Hasanović"/>
-                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Više Državno tužilaštvo u Podgorici"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo u Podgorici"/>
                 <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
                 <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
             </references>
@@ -74,30 +74,30 @@
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_5">Član 5</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_15">Član 15</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_36">Član 36</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_33">Član 33</ref>
-                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
                     <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_13">Član 13</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
                 </block>
             </background>
             <motivation>
                 <block name="reasoning">
-                    <p>Sud je utvrdio da je optuženi K.P. izvršio krivično djelo teško ubistvo u stanju smanjene uračunljivosti, uzimajući u obzir sporazum o priznanju krivice.</p>
+                    <p>Optuženi je svestan svog dela i htio je njegovo izvršenje, što je potvrđeno dokazima.</p>
                 </block>
             </motivation>
             <decision>
                 <block name="verdict" outcome="osudjen">
-                    <p>Optuženi K.P. osuđen na 20 godina zatvora.</p>
+                    <p>Osuđuje se na 20 godina zatvora.</p>
                 </block>
             </decision>
             <participants>
                 <block name="organizations">
-                    <organization>Više Državno tužilaštvo u Podgorici</organization>
+                    <organization>Više državno tužilaštvo u Podgorici</organization>
                 </block>
             </participants>
             <facts>

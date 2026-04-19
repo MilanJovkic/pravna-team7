@@ -155,16 +155,48 @@ class CbrService:
                     self._ensure_case_schema(cursor)
                     cursor.execute("SELECT COUNT(*) FROM cases")
                     count = cursor.fetchone()[0]
-                    if count == 0:
+                    non_generated_count = self._count_non_generated_cases(cursor)
+                    if non_generated_count == 0:
                         self._import_cases(conn)
                     elif self._has_legacy_false_defaults(cursor):
                         logger.warning(
                             "Detected legacy CBR boolean defaults (all false); re-importing XML case base"
                         )
                         self._import_cases(conn)
+                    else:
+                        expected_xml_cases = self._count_xml_cases()
+                        if expected_xml_cases > 0 and non_generated_count < expected_xml_cases:
+                            logger.warning(
+                                "Detected stale CBR case base (%s non-GEN rows, %s total rows in DB, %s XML cases); re-importing XML case base",
+                                non_generated_count,
+                                count,
+                                expected_xml_cases,
+                            )
+                            self._import_cases(conn)
         except Exception as exc:
             logger.exception("CBR database initialization failed")
             raise RuntimeError("CBR database initialization failed") from exc
+
+    def _count_xml_cases(self) -> int:
+        xml_dir = ROOT / "data" / "verdicts_xml"
+        if not xml_dir.exists():
+            return 0
+        count = 0
+        for xml_file in xml_dir.glob("*.xml"):
+            if xml_file.stem.upper().startswith("GEN"):
+                continue
+            count += 1
+        return count
+
+    def _count_non_generated_cases(self, cursor) -> int:
+        cursor.execute(
+            """
+            SELECT COUNT(*)
+            FROM cases
+            WHERE case_number IS NULL OR case_number NOT ILIKE 'GEN-%'
+            """
+        )
+        return int(cursor.fetchone()[0] or 0)
 
     def _import_cases(self, conn) -> None:
         xml_dir = ROOT / "data" / "verdicts_xml"
@@ -215,7 +247,12 @@ class CbrService:
 
         with conn.cursor() as cursor:
             self._ensure_case_schema(cursor)
-            cursor.execute("TRUNCATE TABLE cases RESTART IDENTITY CASCADE")
+            cursor.execute(
+                """
+                DELETE FROM cases
+                WHERE case_number IS NULL OR case_number NOT ILIKE 'GEN-%'
+                """
+            )
             insert_query = """
                 INSERT INTO cases (
                     case_number, injury_type, location, weapon, weapon_used,

@@ -42,7 +42,7 @@ public class TabularSimilarity implements LocalSimilarityFunction {
 
     public double compute(String str1, String str2) {
         if (isUnknown(str1) || isUnknown(str2)) {
-            return 0.5;
+            return 0.2;
         }
         int index1 = categories.indexOf(str1);
         int index2 = categories.indexOf(str2);

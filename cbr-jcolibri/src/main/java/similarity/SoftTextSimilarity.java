@@ -35,7 +35,7 @@ public class SoftTextSimilarity implements LocalSimilarityFunction {
         String right = normalize(value2);
 
         if (isUnknown(left) || isUnknown(right)) {
-            return 0.5;
+            return 0.2;
         }
 
         if (left.equals(right)) {

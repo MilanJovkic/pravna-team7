@@ -541,6 +541,7 @@ public class CbrApplication implements StandardCBRApplication {
 
         double activeQueryWeight = 0.0;
         double weightedScore = 0.0;
+        int activeQueryFeatures = 0;
 
         for (FeatureSpec spec : specs) {
             String left = spec.extractor.apply(queryCase);
@@ -549,6 +550,7 @@ public class CbrApplication implements StandardCBRApplication {
             }
 
             activeQueryWeight += spec.weight;
+            activeQueryFeatures += 1;
 
             String right = spec.extractor.apply(candidate);
             if (isUnknown(right)) {
@@ -576,6 +578,34 @@ public class CbrApplication implements StandardCBRApplication {
         if (normalized > 1.0) {
             return 1.0;
         }
+        return applySparseQueryPenalty(normalized, activeQueryFeatures);
+    }
+
+    private static double applySparseQueryPenalty(double normalized, int activeQueryFeatures) {
+        if (activeQueryFeatures <= 0) {
+            return 0.0;
+        }
+
+        if (activeQueryFeatures == 1) {
+            return Math.min(normalized * 0.55, 0.60);
+        }
+
+        if (activeQueryFeatures == 2) {
+            return Math.min(normalized * 0.75, 0.80);
+        }
+
+        if (activeQueryFeatures == 3) {
+            return Math.min(normalized * 0.92, 0.93);
+        }
+
+        if (activeQueryFeatures == 4) {
+            return Math.min(normalized * 0.96, 0.97);
+        }
+
+        if (activeQueryFeatures == 5) {
+            return Math.min(normalized * 0.985, 0.99);
+        }
+
         return normalized;
     }
 

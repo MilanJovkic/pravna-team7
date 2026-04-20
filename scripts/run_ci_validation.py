@@ -52,6 +52,22 @@ def run_step(name: str, command: list[str], env: dict[str, str], extra_env: dict
     return True
 
 
+def run_optional_step(
+    name: str,
+    command: list[str],
+    env: dict[str, str],
+    required_path: Path,
+    extra_env: dict[str, str] | None = None,
+) -> bool:
+    if not required_path.exists():
+        print("\n" + "-" * 78)
+        print(f"STEP: {name}")
+        print("-" * 78)
+        print(f"[SKIP] {name} (missing: {required_path.relative_to(ROOT)})")
+        return True
+    return run_step(name, command, env, extra_env=extra_env)
+
+
 def wait_for_health(health_url: str, timeout_seconds: int = 60) -> bool:
     started = time.time()
     while time.time() - started < timeout_seconds:
@@ -106,7 +122,6 @@ def main() -> int:
                 ],
                 None,
             ),
-            ("API smoke", [PYTHON, "tests/api_smoke.py"], None),
             (
                 "Final protocol evaluation (5 locked verdicts)",
                 [PYTHON, "scripts/evaluate_final_protocol.py"],
@@ -130,6 +145,14 @@ def main() -> int:
         for name, command, extra_env in steps:
             if not run_step(name, command, env, extra_env=extra_env):
                 return 1
+
+        if not run_optional_step(
+            "API smoke",
+            [PYTHON, "tests/api_smoke.py"],
+            env,
+            required_path=ROOT / "tests" / "api_smoke.py",
+        ):
+            return 1
 
         print("\nAll CI validation steps passed.")
         return 0

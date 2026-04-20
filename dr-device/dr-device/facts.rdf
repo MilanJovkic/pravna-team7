@@ -51,20 +51,156 @@
         <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
     </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#victim_status">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#victim_health_state">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#victim_accountability">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#victim_previously_abused">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#victim_count">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#victim_explicit_request">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#victim_subordination">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#life_consequence_type">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#injury_severity_level">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#severe_injury_specific_consequences">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#danger_to_third_parties">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#suicide_outcome">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#abortion_outcomes">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#execution_manner">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#offender_motive">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#provocation_types">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#injury_means_type">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#victim_consent">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#guardian_consent">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#abortion_action_mode">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#sterilization_goal">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#guilt_form">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#offender_psych_state">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#high_intensity_distress">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#offender_is_mother">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#death_attributed_to_negligence">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#danger_to_life">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#danger_to_health">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#offender_victim_relationship">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#help_provision_ability">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#failure_to_help_consequence">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#duty_connection">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#special_action_types">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
+    <rdf:Property rdf:about="http://ftn.uns.ac.rs/legal-case#inhuman_treatment">
+        <rdfs:domain rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+    </rdf:Property>
 
     <lc:case rdf:about="http://ftn.uns.ac.rs/legal-case#case01">
         <rdf:type rdf:resource="http://ftn.uns.ac.rs/legal-case#case" />
-        <lc:defendant>Jovan S.</lc:defendant>
+        <lc:defendant>Boki</lc:defendant>
         <lc:injury_type>teska tjelesna povreda</lc:injury_type>
-        <lc:location>Mostar</lc:location>
-        <lc:weapon>opasan predmet</lc:weapon>
+        <lc:weapon>sredstvo_podobno_za_tesku_povredu</lc:weapon>
         <lc:weapon_used>true</lc:weapon_used>
         <lc:severe_consequence>true</lc:severe_consequence>
         <lc:death_result>false</lc:death_result>
         <lc:negligence>false</lc:negligence>
         <lc:provocation>false</lc:provocation>
-        <lc:fight_participation>false</lc:fight_participation>
-        <lc:fight_consequence>none</lc:fight_consequence>
-        <lc:left_without_help>false</lc:left_without_help>
+        <lc:fight_participation>true</lc:fight_participation>
+        <lc:fight_consequence>death_or_serious_injury</lc:fight_consequence>
+        <lc:injury_means_type>sredstvo_podobno_za_tesku_povredu</lc:injury_means_type>
+        <lc:high_intensity_distress>false</lc:high_intensity_distress>
     </lc:case>
 </rdf:RDF>

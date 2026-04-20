@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке43">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке43/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке43"/>
+                    <FRBRdate date="2013-02-01" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке43/sr@2013-02-01/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке43/sr@2013-02-01"/>
+                    <FRBRdate date="2013-02-01"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке43/sr@2013-02-01/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке43/sr@2013-02-01/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni Sud u Nikšiću"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Igor Djuričković"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Budimirka Papović"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="S.M."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="S.M."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="M.B."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="P.Ž."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="G.M."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="Coca Cole"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="ODT Nikšić"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Osnovni sud u N."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 334/2012</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>Osnovni Sud u Nikšiću</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2013-02-01">2013-02-01</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Igor Djuričković</judge>
+                    <judge>Budimirka Papović</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni G.M. osuđen na 40 dana zatvora zbog ugrožavanja opasnim orudjem.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Ugrožavanje opasnim orudjem</p>
+                    <p>Ranija osudjivanost</p>
+                    <p>Svrha kažnjavanja</p>
+                    <p>Troškovi postupka</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakonik o krivičnom postupku</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_154">Član 154</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_36">Član 36</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je uzeo u obzir raniju osudjivanost i težinu izvršenog djela prilikom izricanja kazne.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Osudjen</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>S.M.</person>
+                </block>
+                <block name="victims">
+                    <person>S.M.</person>
+                    <person>M.B.</person>
+                    <person>P.Ž.</person>
+                    <person>G.M.</person>
+                    <person>Coca Cole</person>
+                </block>
+                <block name="witnesses">
+                    <person>M.B.</person>
+                    <person>P.Ž.</person>
+                    <person>S.M.</person>
+                    <person>G.M.</person>
+                    <person>Perović Željko</person>
+                    <person>Coca Cole</person>
+                </block>
+                <block name="organizations">
+                    <organization>ODT Nikšić</organization>
+                    <organization>Osnovni sud u N.</organization>
+                </block>
+            </participants>
+            <facts>
+                <fact key="weapon">kamen</fact>
+                <fact key="location">Nikšić</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="previous_convictions">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="family_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="alcohol_intoxication">da</fact>
+                <fact key="conditional_sentence_requested">da</fact>
+                <fact key="attempted_offense">da</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>CRNA GORA
+OSNOVNI SUD U N.K. br. 334/2012
+Dana 01.02.2013.godine
+U IME CRNE GORE
+OSNOVNI SUD U N., kao prvostepeni krivični, sudija pojedinac Djuričković Igor, uz sudjelovanje namještenika
+Papović Budimirke kao zapisničara, rješavajući u krivičnom predmetu okrivljenog G.M. iz N., zbog krivičnog
+djela ugrožavanje opasnim orudjem pri tuči ili svadji izčlana 154 KZ, postupajući po optužnom predlogu ODT
+Nikšić Kt.br. 666/11 od 23.03.2012. godine, nakon javnog glavnog pretresa održanog dana 28.01.2013.godine,
+u prisustvu zamjenika ODT-a iz Nikšića S.V. i okrivljenog, donio je i dana 01.02.2013.godine javno objavio
+P R E S U D U
+Okrivljeni:
+G.M., JMBG …, od oca j D. i majke S. rodjene B., rodjen.... godine u N., sa prebivalištem u N.-naselje S.,ulica O.
+bb, državljanin Crne Gore, po zanimanju automehaničar, oženjen, otac dvoje djece, lošeg imovnog stanja,
+ranije osudjivan presudama Osnovnog suda u N.K.br. 616/2008 od 16.09.2008 godine, zbog krivičnog djela iz
+člana 152 stav 1 u vezi stava 1 Krivičnog zakonika, uslovnom osudom, na 60 dana zatvora uslovno na jednu
+godinu i K.br. 119/2008 od 25.06.2009 godine, zbog krivičnog djela izčlana 154 Krivičnog zakonika, uslovnom
+osudom na 30 dana zatvora uslovno na jednu godinu.
+-IK r i v j e
+Što je:
+Dana 11.08.2011. godine, ispred ugostiteljskog objekta R., koji se nalazi u ulici P.P. prilikom svadje sa
+oštećenim S.M. mašio se sjekire kao sredstva podobnog da tijelo teško povrijedi ili zdravlje teško naruši, a
+potom istom zamahivao u pravcu oštećenog S.M.
+- čime je izvršio krivično djelo ugrožavanje opasnim orudjem pri tuči ili svadji izčlana 154 Krivičnog
+zakonika.
+- pa sud okrivljenog zbog izvršenja navedenog krivičnih djela primjenom citiranih zakonskih odredbi,
+odredbi izčlana 4 stav 2, č lana 32, 36 ičlana 42 KZ i odredbi izčlana 226, 229 i 374 ZKP-a
+O S U D J U J EOsnovni Sud u Nikšiću
+K 334/2012
+01. Februar 2013
+
+Na kaznu zatvora u trajanju od 40 (slovima: č etrdeset) dana, koju kaznu je okrivljeni dužan
+izdržati nakon pravosnažnosti presude.
+Obavezuje se okrivljeni da na ime paušala kao dijela troškova krivičnog postupka plati iznos od 30,00
+eura u roku od 15 dana od dana pravosnažnosti presude pod prijetnjom prinudnog izvršenja nažiro račun
+Osnovnog suda u N. broj 832-32-152 i da sudu dostavi dokaz o izvršenoj uplati.
+-II-
+-prema okrivljenom G.M.
+-Na osnovučlana 372 stav 1 tačka 1 ZKP-a
+ODBIJA SE OPTUŽBA
+Da je:
+Dana 11.08.2011. godine, u ugostiteljskom objektu R. koji se nalazi u ulici P.p.prilikom svadje i tuče sa S.M.
+maš io se staklene flaše od Coca Cole, kao sredstva podobnog da tijelo teško povrijedi ili zdravlje teško naruši
+i sa istom zamahnuo u pravcu oštećenog M.B., koji je bio u društvu sa oštećenim S.M.
+-čime bi počinio krivično djelo ugrožavanje opasnim orudjem pri tuči i svadji izčlana 154 Krivičnog zakonika.
+O b r a z l ože nj e
+Osnovni državni tužilac u N. svojim optužnim predlogom Kt.br.666/11 od 23.03.2012.godine, stavio je na
+teret okrivljenom G.M. izvršenje dva krivična djela ugrožavanje opasnim orudjem pri tuči ili svadji izčlana 154
+Krivičnog zakonika. Zamjenik ODT-a S.V., koja je zastupala optužni akt na glavnom pretresu, prije davanja
+završnih riječi imajući u vidu rezultate dokaznog postupka izjavila je da odustaje od krvičnog gonjenja protiv
+okrivljenog G.M. zbog izvršenja krivičnog djela ugrožavanje opasnim orudjem pri tuči ili svadji izčlana 154 KZ
+u odnosu na oštećenog M.B. i u tom pravcu izmijenilačinjenični opis optužnog akta u dijelu koji se odnosi na
+izvršenje krivičnog djela ugrožavanje opasnim orudjem pri tuči ili svadji u odnosu na oštećenog S.M.a, pa
+zatim u svojoj završnoj riječi ostajući pri navodima izmijenjenog optužnog akta predložila sudu da
+okrivljenog G.M. zbog izvršenja krivičnog djela izčlana 154 KZ u odnosu na oštećenog S.M.a oglasi krivim i
+osudi po zakonu.
+Imajući u vidučinjenicu da je zamjenik ODT-a na glavnom pretresu odustao od krivičnog gonjenja protiv
+okrivljenog G.M. u odnosu na izvršenje krivičnog djela ugrožavanje opsanim orudjem pri tuči ili svadji izčlana
+154 KZ, koje krivično djelo ječinjenično opisano u stavu II izreke presude, sud je na osnovučlana 372 stav 1
+tačka 1 ZKP-a u pogledu izvršenja tog krivičnog djela donio presudu sa kojom se prema optuženom G.M.
+odbija optužba zbog izvršenja navedenog krivičnog djela.
+Okrivljeni G.M. u svojoj odbrani datoj u prethodnom postupku i na glavnom pretresu, negirajući izvršenje
+krivičnog djela koje mu je stavljeno na teret optužbom, u bitnom je istakao da se dana 11.08.2011. godine,
+nalazio u kafe baru R. u N., da je u tom lokalu bio prisutan i oštećeni S.M. u društvu sa M.B.om i da je u
+jednom momentu došlo do neke rasprave izmedju njega i oštećenog S. i za vrijeme trajanja te rasprave
+oštećeni S. ga je iznenada udario dva puta pesnicom u predjelu lica, našta je on reagovao takošto je
+oštećenom S. uzvratio udarce pesnicama, kada ga je napao i M.B. takošto je počeo da ga udara pesnicama, a
+on pokušao da se odbrani, pričemu ne zna da li je u toj situaciji M. udario pesnicama. Takodje je objasnio da
+su nakon tog dogadjaja izašli iz ove kafane gdje je došlo do situacije u kojoj su se on i oštećeni S.M. pogurali i
+porvali i u toj situaciji je oštećeni S. u jednom momentu pao na neko bure od piva, načemu se cijeli dogadjaj
+
+završio.Takodje je istakao da je moguće da je za vrijeme trajanja dogadjaja u kafani on u ruke uzeo neku
+staklenu flašu, ali da je to učinio samo da bi se odbranio, s timšto se ne sjeća da je sa staklenom flašom
+zamahivao ka M.B.u, a da se sjeća da je za vrijeme trajanja dijela kritičnog dogadjaja ispred kafane R. oštećeni
+S. u jednom momentu uzeo ključod točkova vozila i sa tim ključem krenuo na njega, dok ga je M.B. gadjao
+kamenjem, a on se od njih dvojice branio takošto se sa njimačupao i udarao ih pesnicama, ali nije uzimao
+sjekiru za cijepanje drva u ruke i sa tom sjekirom zamahivao u pravcu oštećenog S.M.. Istakao je i da je
+kritičnom prilikom on bio u društvu sa P.Ž. koji je mogao da vidi cijeli dogadjaj koji se desio i u unujtrašnjosti i
+ispred kafane R..
+U svojoj završnoj riječi okrivljeni je, ostajući pri svojoj odbrani predložio sudu da ga oslobodi od
+optužbe.
+Sud je na glavnom pretresu u dokaznom postupku na saglasan predlog stranaka pročitao iskaze oštećenog
+S.M.a i svjedoka M.B. date u prethodnom postupku i na ranijem održanom ročištu glavnog pretresa, iskaz
+svjedoka P.Ž. dat na ranije održanom glavnom pretresu i pročitao izvod iz kaznene evidencije za okrivljenog
+dat od Uprave policije Crne Gore – PJ Nikšić.
+Analizirajući provedene dokaze, pojedinačno i u njihovoj povezanosti, dovodeći ih u vezu sa navodima
+optužbe i odbranom optuženog, sud je na nesumnjiv način utvrdio da je okrivljeni G.M. počinio krivično djelo
+koje ječinjenično i pravno opisano u stavu jedan izreke presude i istog oglasio krivim i krivično-pravno
+odgovornim iz sljedećih razloga:
+Oštećeni S.M. u svom iskazu u bitnom je naveo da se dana 11.08.2011. godine, oko 16časova, nalazio u kafe
+baru R. u društvu sa M.B., da je u to vrijeme u taj lokal došao okrivljeni G.M., koji je bio vidno pijan i odmah po
+dolasku počeo da ga provocira, našta je on okrivljenom G. rekao da ga ostavi na miru, ali je okrivljeni ubrzo
+zatim fizički nasrnuo na njega, nakončega su se on i okrivljeni uhvatili u koštac, kada je okrivljeni G. počeo da
+ga udara pesnicama po glavi i tijelu, a M.B. pokušao da ih razdvoji, da bi okrivljeni G.uzeo jednu keramičku
+pepeljaru i sa istom 2-3 puta po glavi udario M., nakončega su ostali prisutni u lokalu okrivljenog G. bukvalno
+izgurali izvan lokala. Dalje je objasnio da su nekoliko minuta zatim on i M. krenuli da idu iz lokala i po izlasku
+iz istog na terasi ih je dočekao okrivljeni G., koji je u ruci držao staklenu flašu od Coca Cole i sa istom nasrnuo
+od M., u kommomentu nije bilo nikakve svadje izmedju njih, kada je on uhvatio okrivljenog G. preko njegovih
+ruku, š to je neko od prisutnih iskoristio da okrivljenom iz ruke otme staklenu flašu od Coca Cole, nakončega
+je okrivljeni nasrnuo na njega i tada su se on i okrivljeni uhvatili u koštac i u toj situaciji okrivljeni G. mu je
+zubima otkinuo malo parče uveta, š to on u prvom momentu nije osjetio, nakončega je on sa M. otišao i sjeo u
+svoj kombi, jer su namjeravali da odu sa tog mjesta i tada je vidio da ka njegovom kombiju ide okrivljeni G.
+noseći u ruci veliku sjekiru za cijepanje drva, nakončega je izašao iz svog kombija i okrivljenog pozvao da se
+potuku, ali prisutni nijesu dozvolili da oni dodju u poziciju da bi imali bilo kakav fizički kontakt i u toj situaciji
+on i okrivljeni G. su razmijenili dosta teških riječi svadjajući se, takošto su prijetili i psovali jedan drugoga, za
+koje vrijeme je okrivljeni G. je sa sjekirom zamahivao ka njemu.
+Svjedok M.B. u svom iskazu u bitnom je naveo da je dana 11.08.2011. godine, bio u kafe baru R. u društvu sa
+oštećenim S.M. i da u jednom momentu okrivljeni G.M. fizički napao oštećenog S. takošto ga je 2-3 puta
+udario pesnicom u predjelu, da je on zatim pokušao da razdvoji oštećenog i okrivljenog, kada ga je okrivljeni
+G. keramičkom pepeljarom 2-3 puta udario po glavi, nakončega su drugi prisutni gosti okrivljenog izveli iz
+lokala. Dalje je objasnio da su ubrzo zatim on i oštećeni S. krenuli kući, da bi u momentu kada su izašli na
+terasu lokala on vidio da se okrivljeni G. sa nekom staklenom flašom u ruci zalijeće na njega, kada je oštećeni
+S. stao izmedju njega i okrivljenog i tada su se oštećeni S. i okrivljeni G. uhvatili u koštac, koja situacija je
+trajala vrlo kratko, nakončega se okrivljeni G. udaljio iza lokala, a on vidio da oštećenom S.u ide krv iz uva, da
+bi ubrzo zatim okrivljeni G. sa prostora iza lokala došao držeći u rukama veliku sjekiru za cijepanje drva i sa
+tom sjekirom zamahnuo u pravcu oštećenog S.M.a.
+
+Svjedok Perović Željko u svom iskazu u bitnom je naveo da je kritičnog dana bio u kafe baru R., u društvu sa
+okrivljenim G.M., da su on i okrivljeni po dolasku u kafanu u istoj zatekli oštećenog S.M.a i M.B. i da je za
+vrijeme boravka u kafani došlo do prepirke i svadje izmedju oštećenog S. i M. sa jedne i okrivljenog G.M. sa
+druge strane, da se ta prepirka ubrzo pretvorila u medjusobnočupanje i guranje, kada je on zbog togašto je
+invalid prešao u drugu prostoriju tog lokala i sa pozicije na kojoj se nalazio vidio samo da su u jednom
+momentu iz kafane izašli i okrivljeni G. i oštećeni S. i M., nakončega on nije izlazio iz kafane, tako da ne zna
+šta se izmedju imenovanih dešavalo na prostoru ispred te kafane.
+Na osnovu interpretiranih dokaza sud je utvrdio sljedečečinjenice:
+Na osnovu svjedočkog iskaza oštećenog S.M. i iskaza svjedoka M.B., koje je sud cijenio kao istinite jer su
+oštećeni i imenovani svjedok kritične dogadjaje u svojim iskazima opisali odredjeno i ubjedljivo, kazujući pri
+tom na istovjetan način i u prethodnom postupku i na glavnom pretresu u prisustvu okrivljenog, utvrdjeno je
+da je dana 11.08.2011. godine došlo do svadje izmedju okrivljenog G.M. i oštećenog S.M. u kafani R., da je
+nakon te svadje došlo i do fizičkog kontakta izmedju okrivljenog i oštećenog, nakončega je okrivljeni G.
+napustio tu kafanu, da bi nakon nekoliko minuta kada su oštećeni S. i svjedok M.B. izašli iz kafane okrivljeni
+G. sa flašom od Coca Cole u ruci krenuo na svjedoka M.B., č emu nije neposredno prethodila svadja ili tuča
+izmedju imenovanih, kada je okrivljenog G. u tome spriječio oštećeni S. takošto ga je uhvatio rukama preko
+njegovih ruku, nakončega su se oštećeni S. i okrivljeni G. uhvatili u koštac u kojem je okrivljeni G. ugrizao za
+uvo oštećenog S.a koji ga je tada pustio, da bi zatim okrivljeni G. otišao iza objekta u kome se nalazi kafe bar
+R. i uzeo jednu sjekiru za cijepanje drva sa kojom se zaletio u pravcu oštećenog S.a, kada su prisutna lica stala
+izmedju njih da spriječe njihov fizički kontakt, nakončega su su oštećeni S. i okrivljeni G. jedan drugom
+upuć ivali riječi prijetnje i uvrede, koji dogadjaj nedvosmisleno predstavlja svadju izmedju okrivljenog i
+oštećenog kao intenzivan medjusobni verbalni duel koji je prijetio da se pretvori u fizički obračun, za koje
+vrijeme je okrivljeni G. sa sjekirom za cijepanje drva zamahivao u pravcu oštećenog.
+Na osnovu ovako utvrdjenihčinjenica sud je na nesumnjiv način utvrdio da je okrivljeni G.M. dana
+11.08.2011. godine, ispred ugostiteljskog objekta R., koji se nalazi u ulici P.P. prilikom svadje sa S.M. mašio se
+sjekire, kao sredstva podobnog da tijelo teško povrijedi ili zdravlje teško naruši, a potom istom zamahivao u
+pravcu oštećenog S.M.a i da je na taj način okrivljeni počinio krivično djelo ugrožavanje opasnim orudjem pri
+tuči i svadji izčlana 154 KZ na način, u vrijeme i na mjestu kako je to predstavljeno u izreci presude.
+U tom pravcu sud je cijeneći odbranu okrivljenog istu odbacio kao neosno vanu i usmjerenu na izbjegavanje
+krivčno pravne odgovornosti, iz razlogašto je odbrana okrivljenog u potpunosti opovrgnuta iskazima
+oštećenog S.M. i svjedoka M.B., kojim dokazima je sud iz većnavedenih razloga poklonio povjerenje i na
+istima zasnovao odluku o krivici okrivljenog.
+Prilikom ocjene subjektivnog odnosa okrivljenog prema izvršenom krivičnom djelima sud je utvrdio da je
+okrivljeni prilikom izvršenja predmetnog krivičnog djela postupao sa direktnim umišljajem, jer iz utvrdjenog
+činjeničnog stanja proizilazi da je okrivljeni uzimajući u ruke sjekiru za cijepanje drva i zamahujući sa istom u
+pravcu oštećenog S.M. prilikom svadje sa imenovanim oštećenim postupao sa očiglednom namjerom da sa
+sjekirom kao sredstvom podobnim da tijelo teško povrijedi ili zdravlje teško naruši ugrozi oštećenog, odakle
+nedvosmisleno proizilazi da je orkivljeni preduzimajući radnje bliže opisane u izreci presude bio svjestan da
+na taj načinčini predmetno krivčno djelo i htio njegovo izvršenje. Prilikom donošenja navedene odluke o
+stepenu vinosti okrivljenog, sud je cijenio ičinjenicu utvrdjenu kazivanjem oštećenog S.a da je kritičnom
+prilikom okrivljeni G. bio pod dejstvom alkohola i našao da tačinjenica nije od uticaja na donošenje drugačije
+odluke o stepenu vinosti okrivljenog, jer je okrivljeni iznoseći svoju odbranu i u prethodnom postupku i na
+glavnom pretresu jasno i detaljno iznio svoju verziju kritičnog dogadjaja, tako da je očigledno da je u vrijeme
+dešavanja predmetnog dogadjaja okrivljeni G. bio u stanju takozvanog običnog pijanstva, dakle da
+alkoholisanost okrivljenog u vrijeme izvršenja predmetnog krivčnog djela nije bila takvog stepena da je
+
+mogla uticati na sposobnost okrivljenog da upravlja svojim postupcima, jer po mišljenju suda u slučaju da je
+alkoholisanost okrivljenog u vrijeme izvršenja predmetnog krivičnog djela bila takvog intenziteta da je mogla
+uticati na sposobnost okrivljenog da upravlja svojim postupcima, okrivljeni G.M. ne bi bio u mogućnosti da u
+svojoj odbrani datoj u prethodnom postupku i na glavnom pretresu rekonstruiše kritični dogadjaj na način
+kako je to učinio iznoseći svoju odbranu u predmetnom krivičnom postupku.
+Cijeneći iskaz svjedoka P.Ž. sud je našao da isti nije od uticaja na donošenje drugačije odluke o krivici
+okrivljenog u predmetnom postupku jer imenovani svjedok po sopstvenom kazivanju nije bio očevidac dijela
+kritičnog dogadjaja koji se desio ispred kafe bara R., tako da nije mogao opaziti ni jednu bitnučinjenicu ili
+okolnost koja bi mogla uticati na presudjenje ove krivično pravne stvari.
+Prilikom donošenja odluke o vrsti i visini kazne okrivljenom, sud je u smislučlana 42 stav 1 KZ kao
+olakšavajuće okolnosti na strani okrivljenog našao loše imovno stanje i porodične prilike- č injenicu da je
+okrivljeni oženjen i otac dvoje djece, dok je raniju osudjivanost okrivljenog utvrdjenu uvidom u izvod iz
+kaznene evidencije za istog, sud okrivljenom cijenio kao otežavajuću okolnost u sklopu ličnosti okrivljenog,
+jer je očigledno da krivične sankcije koje su okrivljenom izricanje prilikom ranije osudjivanosti, s timšto je
+okrivljeni u jednom navratu osudjivan zbog izvršenja krivičnog djela koje je istovrsno sa djelom za koje mu se
+sudilo u predmetnom postupku, na okrivljenog nijesu u dovoljnoj mjeri uticale da nečini nova krivična djela.
+Cijeneći navedene okolnosti sud je na osnovučlana 36 KZ okrivljenog osudio na kaznu zatvora u trajanju od
+40 dana, smatrajući da je ovakva kazna primjerena težini izvršenog krivičnog djela i okrivljenom kao učiniocu
+istog i daće se sa ovakvom kaznom na okrivljenog u dovoljnoj mjeri uticati da nečini nova krivična djela i da
+će se na taj način u ovom konkretnom slučaju ostvariti svrha kažnjavanja izčlana 32 KZ, u okviru opšte svrhe
+izricanja krivičnih sankcija izčlana 4 stav 2 KZ.
+Odluku o troškovima krivičnog postupka sud je donio primjenom odredbičlana 226 ičlana 229 ZKP-a i istom
+obavezao okrivljenog da na ime paušala kao dijela troškova krivičnog postupka plati iznos od 30,00 eura, koji
+iznos je odredjen imajući u vidu složensot predmeta, trajanje postupka i imovne prilike okrivljenog.
+Na osnovu svega izloženog, primjenom odredbičlana 374 ZKP-a odlučeno je kao u izreci presude.
+OSNOVNI SUD U N., dana 01.02.2013. godine.
+Zapisničar S U D I J A
+Papović Budimirka s.r. Djuričković Igor s.r.
+Za tačnost otpravki tvrdi i ovjerava: Službenik suda
+PRAVNA POUKA: Protiv ove presude dozvoljena ježalba u roku od 8 dana od dana prijema iste Preko ovog
+suda Višem sudu Podgorica.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

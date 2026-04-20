@@ -2,6 +2,8 @@
 from pathlib import Path
 from typing import Optional
 
+from .text_normalization import normalize_legal_text
+
 
 class TextExtractor:
     """Loads text from .txt verdict files."""
@@ -19,12 +21,8 @@ class TextExtractor:
         Returns:
             File contents as a string
         """
-        for enc in (self.encoding, "utf-8-sig", "cp1250", "latin-1"):
-            try:
-                return txt_path.read_text(encoding=enc).strip()
-            except UnicodeDecodeError:
-                continue
-        return txt_path.read_text(errors="replace").strip()
+        text = txt_path.read_text(encoding=self.encoding)
+        return normalize_legal_text(text)
 
     def extract_from_folder(self, folder_path: Path) -> dict[str, str]:
         """

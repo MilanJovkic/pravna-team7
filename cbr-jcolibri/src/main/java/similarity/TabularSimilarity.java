@@ -41,6 +41,9 @@ public class TabularSimilarity implements LocalSimilarityFunction {
     }
 
     public double compute(String str1, String str2) {
+        if (isUnknown(str1) || isUnknown(str2)) {
+            return 0.2;
+        }
         int index1 = categories.indexOf(str1);
         int index2 = categories.indexOf(str2);
         if (index1 != -1 && index2 != -1) {
@@ -50,6 +53,14 @@ public class TabularSimilarity implements LocalSimilarityFunction {
             return 1;
         }
         return 0;
+    }
+
+    private boolean isUnknown(String value) {
+        if (value == null) {
+            return true;
+        }
+        String normalized = value.trim().toLowerCase();
+        return normalized.isEmpty() || "unknown".equals(normalized) || "null".equals(normalized);
     }
 
     @Override

@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке30">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке30/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке30"/>
+                    <FRBRdate date="2019-10-16" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке30/sr@2019-10-16/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке30/sr@2019-10-16"/>
+                    <FRBRdate date="2019-10-16"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке30/sr@2019-10-16/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке30/sr@2019-10-16/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Tabaš Predrag"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Vladimir Novović"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Aleksandar Stojanović"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="Š.M."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="R.D."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="K.S."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="Podgorici Ki"/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="M.I."/>
+                <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="T.D."/>
+                <TLCPerson eId="victim_7" href="/akn/me/ontology/person/victim" showAs="Č.P."/>
+                <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="S.O."/>
+                <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="Ljudmili Ivanović"/>
+                <TLCPerson eId="victim_10" href="/akn/me/ontology/person/victim" showAs="L.A."/>
+                <TLCPerson eId="victim_11" href="/akn/me/ontology/person/victim" showAs="A.B."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo u Podgorici"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 130/2015</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>VIŠI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2019-10-16">2019-10-16</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Tabaš Predrag</judge>
+                    <judge>Vladimir Novović</judge>
+                    <judge>Aleksandar Stojanović</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Optužba odbijena zbog apsolutne zastarjelosti.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Zastarjelost krivičnog gonjenja</p>
+                    <p>Teško ubistvo u pokušaju</p>
+                    <p>Nedozvoljeno držanje oružja</p>
+                    <p>Pravo na odbranu</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_144">Član 144</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_372">Član 372</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_185">Član 185</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_27">Član 27</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_208">Član 208</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_124">Član 124</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_195">Član 195</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_230">Član 230</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_84">Član 84</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_3">Član 3</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_75">Član 75</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_131">Član 131</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_66">Član 66</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_125">Član 125</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_11">Član 11</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_91">Član 91</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_147">Član 147</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Krivično djelo nedozvoljenog držanja oružja zastarjelo je 30.04.2016. godine, što je uticalo na odbijanje optužbe.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="odbijeno">
+                    <p>Odbijeno</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="victims">
+                    <person>Š.M.</person>
+                    <person>R.D.</person>
+                    <person>K.S.</person>
+                    <person>Podgorici Ki</person>
+                    <person>M.I.</person>
+                    <person>T.D.</person>
+                    <person>Č.P.</person>
+                    <person>S.O.</person>
+                    <person>Ljudmili Ivanović</person>
+                    <person>L.A.</person>
+                    <person>A.B.</person>
+                </block>
+                <block name="witnesses">
+                    <person>Š.M.</person>
+                    <person>Podgorici Ki</person>
+                    <person>R.D.</person>
+                    <person>G.D.</person>
+                    <person>T.D.</person>
+                    <person>Č.P.</person>
+                    <person>S.K.</person>
+                    <person>A.B.</person>
+                    <person>M.I.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Više državno tužilaštvo u Podgorici</organization>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="weapon">pistolj</fact>
+                <fact key="weapon">kamen</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Herceg Novi</fact>
+                <fact key="location">Kotor</fact>
+                <fact key="location">Danilovgrad</fact>
+                <fact key="location">Cetinje</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="previous_convictions">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">37</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K.br. 130/2015
+
+U IME CRNE GORE
+
+VIŠI SUD U PODGORICI, kao prvostepeni krivični, u vijeću sastavljenom od sudije Tabaš Predraga, kao
+predsjednika vijeća i sudija Vladimira Novovića i Aleksandra Stojanovića kao članova vijeća, uz učešće Novčić Slobodanke kao zapisničara, u krivičnom predmetu protiv optuženog K.S., zbog krivičnog djela teško ubistvo
+u pokušaju izčl. 144. st. ta č. 3. u vezičl. 20. Krivičnog zakonika, u sticaju sa krivičnim djelom nedozvoljeno
+držanje oružija i ekspolozivnih materija izčl. 403. st.1. Krivičnog zakonika, kojeg brane adv. K. Novica i adv.
+Dragoljub Đukanovićiz Podgorice i optuženog M.I., zbog krivičnog djela ubistvo u pokušaju izčl. 143. u vezičl.
+20. Krivičnog zakonika, u sticaju sa krivičnim djelom nedozvoljeno držanje oružija i eksplozivnih materija iz
+čl. 403. st.1. Krivičnog zakonika, koga brani adv.Danilo Mićović, odlučujući po optužnici Višeg državnog
+tužilaštva u Podgorici Kt.br. 89/10 od 19.07.2010. godine, č injenično i pravno izmijenjena na glavnim
+pretresima od 10.03.2014. godine i 02.07.2015. godine, koju je na glavnom pretresu zastupao Vučinić Zoran,
+državni tužilac u VDT-a u Podgorici, nakon održanog glavnog i javnog pretresa, dana 26.09.2019. godine, u
+prisustvu zastupnika optužbe, optuženih i njihovih branilaca, nakon tajnog vijećanja i glasanja, dana
+16.10.2019. godine, donio je i istog dana javno objavio.
+
+P R E S U D U
+Optuženi:
+
+1. K.S., JMBG..., zvani S., od oca V. i majke R., rodjene P., rodjenog.... godine u K..., sa prebivalištem u K..., V......, privatnik, završio srednju mašinsko-tehničkuškolu, neoženjen, vojsku služio 1981. i 1982. godine u
+Šibeniku, srednjeg imovnog stanja, državljanin Crne Gore, ranije osudjivan i to: presudom Opštinskog suda u
+Dubrovniku, koja je preinačena presudom Okružnog suda u Dubrovniku K.br. 445/83 od 19.12.1983. godine i
+Kž.25/84 od 23.02.1984. godine i osudjen na kaznu zatvora u trajanju od 1 mjeseci, uslovno na 3(tri) godine,
+zbog krivičnog djela izčl. 131. st.1. KZH- KD-teška krađa, presudom Opštinskog suda u Kotoru K.br. 41/87 od
+04.03.1987. godine, osuđen na novčanu kaznu od 40.000 ( č etrdeset hiljada) dinara, zbog djela izčl. 185/3/1
+KZ SRCG, presudom Opštinskog suda u Cetinju K. 14/89 od 03.04.1990. godine, kojom je osuđen na kaznu
+zatvora u trajanju od 3(tri) mjeseca, uslovno na 1( jednu) godinu, zbog djela izčl. 143. st.2. KZ SRCG ( š umska
+krađa), presudom Osnovnog suda u Kotoru K. 398/90 od 20.12.1990, godine, kojom je osuđen na novčanu Viši Sud u Podgorici
+K 130/2015
+16. Oktobar 2019
+
+kaznu u iznosu od 2.700 dinara, zbog djela izčl. 185/3/1 KZ SRCG, presudom Osnovnog suda u Kotoru posl. br
+K.153/91 od 15.09.1992 godine, kojom je osuđen na kaznu zatvora u trajanju od 6( š est) mjeseci, zbog
+krivičnog djela izčl. 208. st.2. u vezi st.1. KZ RCG, presudom Osno vnog suda u Kotoru posl. br. K.3/92 od
+24.06.1992. godine, kojom je osuđen na kaznu zatvora u trajanju od 3(tri) mjeseca, zbog krivičnog djela izčl.
+208. st.1. KZ RCG, presudom Osnovnog suda u Herceg Novom K. 214/92 d 18.03.1994. godine, a koja je
+preinačena presudom Višeg suda u Podgorici K ž.br. 252/94 od 10.06.1994. godine, kojom je osuđen na kaznu
+zatvora u trajanju od 15 (petnaest) dana, zbog krivičnog djela uvreda izčl. 84. st.1. u vezičl. 91. st. 3. KZ RCG,
+odlukom Predsjednika RCG-Podgorica br. 01-705/2 od 19.12.1995. godine, oslobodjen izdržavanja kazne
+zatvora za presudu Višeg suda u Podgorici br. 252/94 od 10.06.1994. godine. Kaznu izdržavao od 31.08.1995.
+godine do 27.01.1996 godine po redovnom isteku kazne, presudom Osnovnog suda u Kotoru K. 326/95 od
+31.12.1996. godine, kojom je osudjen na novčanu kaznu u iznosu od 1.000(hiljadu) dinara, zbog krivičnog
+djela nedozvoljena trgovina izčl. 131. st.1. KZ RCG, presudom Osno vnog suda u Kotoru, posl. br. K. 306/96 od
+22.10.1997. godine, oglašen krivim zbog krivičnog djela nedozvoljena trgovina izčl. 147. st.1. KZ RS i osudjen
+na novčanu kaznu u iznosu od 2.600,00 dinara, presudom Osnovnog suda u Kotoru K.br. 293/98 od
+02.11.1998. godine, zbog krivičnog djela nedozvoljena trgovina izčl. 131. st.1. KZ RCG, kojom je osudjen na
+novčanu kaznu u iznosu od 3.000(tri hiljade) dinara, presudom Osnovnog suda u Kotoru br. 256/97 od
+15.09.1999. godine, zbog krivičnog djela nasilničko ponašanje izčl. 195. st.1. KZ RCG, kojom je osudjen na
+kaznu zatvora u trajanju od 3 mjeseca, uslovno na dvije godine, presudom Osnovnog suda u Kotoru K.br.
+82/99 od 22.04.1999. godine, zbog krivičnog djela nedozvoljena trgovina izčl. 147. st.1. KZ R. Srbije i osudjen
+na novčanu kaznu u iznosu od 5.000 ( pet hiljada) dinara, presudom Osnovnog suda u Kotoru K.br. 181/97 od
+04.09.1998. godine, osudjen na kaznu zatvora u trajanju od 70 (sedamdeset) dana, zbog djela nedozvoljena
+trgovina izčl. 131 st.1 KZ RCG, presudom Osnovnog suda u Kotoru Kv.br. 263/00 od 19.12.2000 godine, ranija
+presuda K.br. 181/97 od 04.09.1998 godine i presuda K.br. 176/99 od 18.10.1999. godine od 18.10.1999
+godine, su preinačene na jedinstvu kaznu zatvora u trajanju od 90(devedeset) dana. Kaznu je izdržavao u
+vremenu od 25.12.2002. godine do 05.02.2003. godine, presudom Osnovnog suda u Kotoru K.br. 340/06 od
+27.11.2008. godine, zbog krivičnog djela nasilničko ponašanje izčl. 399. st.2. KZ, kojom je osuđen na kaznu
+zatvora u trajanju od 6( š est) mjeseci, uslovno na 1 (jednu) godinu i 6 ( š est) mjeseci, nalazio se u pritvoru od
+01.05.2010. godine do 13.10.2010. godine.
+
+2. M.I., JMBG..., od oca I. i majke N., rodjene M., rodjenog.... godine u K... sa prebivalištem u P......, opština
+K..., završio višu brodomašinskuškolu, privatnik, oženjen, otac jednog djeteta, vojsku nije služio, srednjeg
+imovnog stanja, državljanin Crne Gore, ranije osudjivan i to presudom Osnovnog suda u Kotoru K.br. 169/09
+od 22.04.2009 godine, zbog krivičnog djela teška tjelesna povreda izčl. 151 st.1 KZ-a na 4( č etiri) mjeseca
+zatvora, uslovno na 2(dvije) godine, državljanin Crne Gore, nalazio se u pritvoru od 01.05.2010. godine do
+13.10.2010 godine.
+
+KRIVI SU
+Zatošto su:
+
+Dana 30.04.2010. godine u P..., opština K..., na parking prostoru i putu pored ugostiteljskog objekta "V...M..."
+sa umišljajem pokušali jedan drugog da lišeživota iako su bili svjesni da na taj način jedan drugog mogu lišiti
+
+života, pa su to i htjeli i pri tom optuženi K.S. sa umišljajem doveo u opasnost iživote oštećenih Š.M. i R.D.,
+iako je bio svjestan da time dovodi u opasnost iživote oštećenih Š.M. i R.D., pa je na to i pristao, na načinšto
+je optuženi M.I., vraćajući se sa posla, prolazeći pored ugostiteljskog objekta „V...M...“ kada je vidio da
+optuženi K.S. sjedi za stolom na terasi navedenog ugostiteljskog objekta sa oštećenim Š.M. m i R.D.om, prišao
+njihovom stolu i pozvao optuženog K.S. da ustane i krene prema parkingu, kako bi sa njim razjasnio neke
+priče koje je prethodnočuo po gradu i kupoprodaje kuće koja je prethodno bila upisana na ime optuženog
+M.I., nakončega je optuženi K.S. ustao od stola i krenuo prema parkingu, a potom naglo skrenuo prema
+svom vozilu, koje se nalazilo na parkingu u njihovoj neposrednoj blizini, otvorio vrata vozila i iz istog uzeo
+revolver nepoznate marke, a onda sa revolverom u ruci krenuo da se udaljava unazad prema suprotnom
+kraju terase, dok je optuženi M.I. izvadio iza pojasa pištolj marke „CZ“ model 50, cal. 7,65 mm, bez fabričkog
+broja i isti repetirao, pa kada je optuženi K. stigao do stuba na suprotnoj strani terase i zaklonio se iza istog,
+obojica su istovremeno ispalili više projektila jedan u pravcu drugog i to optuženi K.S. najmanje jedan
+projektil, a optuženi M.I. najmanje dva projektila, kada su se u neposrednoj blizini optuženog M.I. nalazili i
+oštećeni Š.M. i R.D., koji su u međuvremenu dotrčali do optuženog M., pa je projektil, koji je ispalio optuženi
+K.S., nakonšto se odbio od neke tvrde prepreke na svojoj putanji, pogodio oštećenog Š.M. u predjelu prednje
+strane desnog ramena nanoseći mu laku tjelesnu povredu u vidu ustrijelne rane.
+
+- čime je optuženi K.S. izvršio krivično djelo teško ubistvo u pokušaju izčl. 144. tačka 3. u vezičl. 20. Krivičnog
+zakonika, a optuženi M.I. krivično djelo ubistvo u pokušaju izčl. 143. u vezičl. 20. Krivičnog zakonika.
+
+Pa sud optuženim primjenom citiranih zakonskih odredbi, tečl. 3, 4, 5,13,14,15, 32, 36, 42, 45,46. i 51.
+Krivičnog zakonika, te odredbičl. 226,229. i 374. Zakonika o krivičnom postupku,
+O S UĐU J E
+
+Optuženog K.S. na kaznu zatvora u trajanju od 2 (dvije) godine i 4 ( č etri) mjeseca, u koju kaznu mu se
+urač unava vrijeme provedeno u pritvoru počev od 01.05.2010. godine do 13.10.2010. godine.
+
+Optuženog M.I. na kaznu zatvora u trajanju od 2 (dvije) godine, u koju kaznu mu se uračunava vrijeme
+provedeno u pritvoru počev od 01.05.2010. godine do 13.10.2010. godine.
+
+Duž ni su optuženi da na ime troškova krivičnog postupka-sudskog paušala plate ovom sudu novčani iznos od
+po 150,00 eura, te da na ime ostalih troškova krivičnog postupka solidarno plate novčani iznos od 2.809,25
+eura, sve u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudne naplate, dokće o ostalim
+troš kovima sud odlučiti naknadno posebnim rješenjem, po pribavljanju podataka o njihovoj visini.
+
+Shodnočl.75. Zakonika o krivičnom postupku, optuženom M.I. u se izriče:
+
+MJERA BEZBJEDNOSTI
+ODUZIMANJE PREDMETA
+
+Od optuženog M.I. oduzima pištolj marke " Č Z" M50, cal. 7,65 mm, kao predmet izvršenja krivičnog djela.
+
+II. Prema optuženim
+
+1. K.S., sa podacima kao u stavu I izreke presude.
+
+2. M.I. U, sa podacima kao u stavu I izreke presude.
+
+Na osnovučl. 372. st. 1. tačka 3. Zakonika o krivičnom postupku,
+
+OPTUŽBA SE ODBIJA
+
+Kojom je predstavljeno da su:
+
+Dana 30.04.2010. godine, u P..., Opština K..., na prostoru i putu ispred ugostiteljskog objekta
+"V...M..."neovlašćeno držali vatreno oružje i to optuženi K.S. revolver nepoznate marke, a optuženi M.I., pištolj
+marke CZ model 50, cal. 7,65 mm, bez fabričkog broja, suprotnočlanu 27. Zakona o oružju, za koje nijesu
+izmali izdat oružni list i ista neovlašćeno nosili na javnom mjestu suprotnočl. 11. Zakona o oružju, iako su bili
+svjesni da navedeno oružje neovlašćeno drže i neovlašćeno nose na javnom mjestu, pa su to i htjeli,
+
+- čime bi izvršili krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija izčl. 403. st. 1. Krivičnog
+zakonika.
+
+Troškovima krivičnog postupka u odnosu na ovo krivino djelo padaju na teret budžetskih sredstava suda.
+
+O b r a z l ože nj e
+
+Optužnicom VDT-u Podgorici, Kt.br. 89/10 od 19.07.2010. godine, koja ječinjenično i pravno izmijenjena na
+glavnim pretresima od 10.03.2014. i 02.07.2015. godine, optuženom K.S., stavljeno je na teret da je izvršio
+krivično djelo teško ubistvo u pokušaju izčl. 144. tačka 3, u vezičl. 20. Krivičnog zakonika, u sticaju sa
+krivičnim djelom - nedozvoljeno držanje oružja i eksplozivnih materija izčl. 403. st. 1. Krivičnog zakonika, dok
+je optuženom M.I. u stavljeno na teret, da je izvršio krivično djelo ubistvo u pokušaju izčl. 143. u vezičl. 20.
+Krivičnog zakonika, u sticaju sa krivičnim djelom - nedozvoljeno držanje oružja i eksplozivnih materija izčl.
+403. st. 1. Krivičnog zakonika, pri kojoj optužnici je njen zastupnik u cjelosti ostao do završetka glavnog
+pretresa, predlažući sudu u završnoj riječi da optužene oglasi krivim i osudi po zakonu.
+
+Optuženi K.S. u prethodnom postupku nije iznosio odbranu, branio sećutanjem.
+Na glavnom pretresu dana 21.09.2010. godine optuženi K.S. je naveo, da je kritičnog dana sa oštećenim R.D.,
+ispred konobe "V...M..." u P..., zatekao vlasnika, oštećenog Š.M., koji je insistirao da svrate u konobu i popiju
+svi zajedno po piće, našta su oni i pristali. Dok su sjedili za stolom, primijetio je da je ispred objekta sa svojim
+automobilom, došao optuženi M.I., koji mu je uputio „drski pogled“, da bi u u jednom trenutku prišao
+njihovom stolu i drskim glasom mu rekao da krene, pokazavši mu rukom u kojem pravcu, a on ga je poslušao
+i ustao. Objasnio je da je išao pola koraka ispred njega, dok mu se optuženi M. nalazio sa lijeve strane, kojom
+prilikom nisu razgovarali, da bi u jednom trenutku vidio da on drži svoju desnu ruku u predjelu lijevog kuka,
+pa je tada pretpostavio da ima pištolj, nakončega se sa namjerom da pobjegne, uputio ka svom vozilu. U tom
+trenutku optuženi M. mu je rekao "stoj" i uperio je pištolj put njega, a oštećeni R.D. i Š.M. su počeli da viču "ne
+pištolj" i kako se M. u tom trenutku okrenuo prema njima, on je to iskoristio, pa je otvorio vrata od kola i iz
+pregrade od vrata uzeo pištolj, nakončega je nastavio da bježi. Naveo je, da se u trenutku kada je uzeo pištolj,
+još jednom okrenuo i tom prilikom je vidio oštećenog R.D. koji je njemu bio okrenut leđima, a koji je stajao
+ispred optuženog M., a kada se odmakao od auta, nakon nekih deset metara, č uo je pucnje i viku, te da ne
+zna kako je i kada pucao, jer je u tom trenutku bio jako uplašen. Pojasnio je da je par dana prije kritičnog
+događaja svoj automobil pozajmio kumu, koji je išao na svadbu, pa mu je njegov pištolj ostao u kolima.
+Naveo je da se ne može tačno izjasniti koliko je pucnjevačuo, ali zna da ih je bilo više, te da pištolj nije
+usmjeravao ni učijem pravcu i da je ispalio samo jedan metak, jer je branio goliživot. Nije mogao da objasni
+zašto je stao i okrenuo se prema mjestu na kom se nalazio optuženi M., ali kako je u tom trenutku bio na
+otvorenom, zastao je kako bi se zaklonio. Dalje je naveo da je na kraju oštećeni M.Š. došao do njega, zgrabio
+ga za desnu ruku u kojoj se nalazio pištolj, koji je usled toga ispao na pod, pa ga je on dohvatio i držao ga
+zajedno sa oštećenim Š. om, a u istom trenutku ječuo kako optuženi M. psuje ičuo je opaljenje jošdva
+metka, nakončega ga je optuženi M. pozvao na tuču, u kom trenutku se pojavio P.Č. koji je poveo optuženog
+M.. Pojasnio je da je tom prilikom primijetio da je oštećeni M.Š. ranjen u predjelu desnog ramena, jer mu je u
+tom predjelu majica bila krvava. Dalje je naveo da se ne može izjasniti koje je marke bio pištolj, jer se slabo
+razumije u oružje, ali zna da je bio kafene boje i da je imao „bure“, te da nije provjeravao da li u njemu ima
+metaka u trenutku kada je vidio da ga je njegov kum zaboravio u vozilu i da je nakon svegašto se izdešavalo
+„popizdio“ pa je pištolj bacio u more.
+Optuženi K.S. je na glavnim pretresima održanim dana 11.05.2015. godine, 03.03.2016. i 16.05.2019. godine,
+ponovio odbranu sa ranijeg glavnog pretresa, s timšto je dodao, da mu se kritičnom prilikom optuženi M.I.,
+obratio drsko, u trenutku dok je sjedio za stolom, govoreći mu povišenim tonom da krene prema ponti, zbog
+čega je pomislio da optuženi M. hoće da se bije, a da pritom nije znao da objasni, zbogčega je to zaključio, da
+nakon toga nijesu više razgovarali i da oštećenog Š. više nije vidio, obzirom da je Š. ostao da sjedi u bašti
+lokala, a da ga je ugledao tek kada je bio povrijedjen.
+
+Branilac optuženog K.S. adv. Dragoljub Đukanovićje ostao pri ranije datoj završnoj riječi u kojoj je ukazao
+sudu na ukidno rješenje Apelacionog suda, gdje je navedno da se kritični događaj mora posmatrati u cjelini.
+Naveo je da nije najbitnije ko je prvi pucao, jer optuženi K. ničim nije skrivio napad, većje bio u strahu, a da je
+bilo očigledno da u njihovim odnosima nešto nije bilo kako treba. Naveo je da mu je predstojao napadšto
+podrazumijeva nužnu odbranu. Kada su izašli njegov branjenik je uzeo pištolj iz vozila, ali se povlačio unazad,
+što kada se dogadaj poveže u cjelini upućuje da je upravo on postupao u nužnoj odbrani, zbogčega je tražio
+oslobadjajuću presudu. Dodao je da ni u ovom ponovljenom postupku nije utvrđeno da su optuženi K. i M.
+ispalili projektile u pravcu jedan drugog ili ljudi koji su tu bili prisutni na licu mjesta, te da bi se eventualno
+moglo raditi o nekom drugom krivičnom djelu, a ne o krivičnom djelu ubistvo u pokušaju.
+
+Optuženi K.S. je prihvatio završnu riječbranioca.
+Optuženi M.I. u prethodnom postupku nije iznosio odbranu, branio sećutanjem.
+Na glavnom pretresu održanom dana 21.09.2010. godine optuženi M.I. je naveo, da je kritičnog dana, negdje
+oko 5časova, na putu do kuće, sa svojim vozilom prolazio pored objekta "V...M..." i tada je primjetio kako za
+jednim stolom sjedi optuženi K.S., sa oštećenima R.D. i Š.M.. Pojasnio je da je prethodnočuo neke priče po
+gradu, pa kada je vidio optuženog K., zaustavio je svoje vozilo ispred objekta, nakončega je prišao stolu gdje
+je sjedio, da bi ga pitao da li su te priče tačne. Naveo je da se, kada je prišao stolu, pozdravio sa oštećenima Š.
+i R., a K. je rekao da pođe sa njim prema ponti, jer mu je bilo neprijatno da o tim stvarima razgovara pred
+drugim licima. K. je tada bez riječi ustao od stola i krenuo korak, dva, ispred njega, u pravcu gdje su se
+nalazila parkirana vozila, nakončega je u jednom trenutku iznenada potrčao, napravio iskorak na desno ka
+svom vozilu, otvorio vrata i izvadio pištolj, š to je njega potpuno iznenadilo, pa mu se obratio riječima "Stani,
+šta to radiš, kojom prilikom je optuženi K. držao pištolj u desnoj ruci uperen ka zemlji. U tom trenutku je
+oštećeni R.D. stao ispred njega okrenut mu licem, a leđima ka optuženom K., pa ga je upitao „ š ta ti je, š ta to
+radiš “, te kako je imao pištolj koji mu se nalazio iza ledja, desnom rukom ga je uzeo, ali ga je držao uperenog
+ka zemlji. Nakon toga, optuženi K. je krenuo korak, dva unazad, a potom je došao i oštećeni Š. i rekao
+"stanite, jeste li poludjeli, š ta to radite", nakončega je oštećeni Š. krenuo ka optuženom K. i u tom trenutku je
+čuo dva pucnja, da bi nakon toga repetirao pištolj i ispalio dva hica u vazduh, sa rukom podignutom u visini
+ramena, kao znak upozorenja optuženom K. u, da bi mu stavio do znanja da i on ima pištolj. Naveo je da se ne
+mož e izjasniti u kom položaju je bila ruka optuženog K., jer ga nije mogao vidjeti, zatošto su se se oštećeni R.
+i Š. nalazili izmedju njih. Dalje je naveo da nakonšto je ispalio dva hica, u tom trenutku je oštećeni Š. rekao:
+„I. ne pucaj, pogodićešmene“, nakončega je izvadiošaržer iz pištolja i kako mu je metak ostao u cijevi,
+ispalio je hitac u more, a kako se tom prilikom iznervirao, bacio je pištolj na vozilo „G...“ crvene boje koje je tu
+bilo parkirano i pozvao K. da se fizički obračunaju. Tada je vidio da oštećeni Š. gura K. od mjesta događaja, a
+onda se okrenuo i uzeo pištolj u kom trenutku je vidio i oštećenog R. koji je stajao pored crvenog „G...“. Nakon
+što je uzeo pištolj, isti je stavio za pojas, a u tom trenutku se odnekud pojavio Č., pa je sa njim krenuo put
+auta da bi pošao kući. Pojasnio je da se K. u za stolom obratio normalnim tonom, te da je tačno da mu je
+rukom pokazao ka mjestu gdje je htio da porazgovaraju, a koje je bilo udaljeno nekih par metara odatle, ali
+da nije imao namjeru da se fizički obračuna sa njim, niti da puca, većsamo da popriča, te da je mu je u
+trenutku kada je vidio pištolj kod K. i kada mu je rekao „staništa to radiš “, K. tada rekao „neće mene niko da
+bije“. Takođe je pojasnio da u trenutku kada ječuo pucnje, rastojanje između njega i optuženog K. bilo 8-10
+metara i u tom trenutku je bio okrenut licem ka oštećenom R. u koji se nalazio neposredno ispred njega, dok
+je oš tećeni Š. bio udaljen nekih 3 metra od K., te da je siguran da kada je ispalio dva hica, desno od njega,
+nije bilo nikoga. Dalje je naveo da se u trenutku kada je ispalio hice, nalazio između vozila „A...“, č iji je vlasnik
+optuženi K., koje se nalazilo sa njegove lijeve strane, i vozila „G...“, sa njegove desne strane, licem okrenutim
+ka optuženom K., a leđima okrenutim ka moru. Pojasnio je da ga je u trenutku kada ječuo dva pucnja
+
+uhvatila panika, i da je to razlog zbog kojih je on ispalio dva hica. U trenutku kada je ispalio ta dva hica, vidio
+je optuženog K., jer se u tom momentu oštećeni Š. pomjerio malo udesno i tada je vidio da se K. okreće i trči
+u pravcu Tivta, te da ne zna koja je bila njegova namjera, da li da se sakrije ili nešto drugo, ali zna da se on
+udaljavao od njega. Dalje je naveo, da je tačno da je pozivao K. nakon svega na tuču, ali iz razlogašto je bio
+revoltiran, jer je pucao na njega, te je bacio pištolj i krenuo ka njemu da se fizički obračunaju. Pojasnio je da je
+pištolj imao kod sebe iz razlogašto je kritičnog dana, prije negošto je ugledao K., išao po pazar, te da ne zna
+koji je tačno pištolj u pitanju, zna samo da je isti bio kalibra 7,65, a koji pištolj je nabavio na crno godinu dana
+prije kritičnog događaja, jer su kladionice koje drži, prethodno bilečetiri puta opljačkane, te da je pištolj koji
+je K. imao kod sebe, bio revolver.
+Na pretresu održanom dana 11.05.2015. godine, optuženi M.I. je naveo da je razlog zbog kojeg je zvao K. da
+izadje iz kafane, taj, š to ježelio da porazgovara sa njim, te da mu nije bila namjera da koristi pištolj, jer da je
+htio da puca, pucao bi u njega na mjestu gdje ga je i našao u kafani, budući da mu je pištolj bio pun. Pojasnio
+je da se optuženom K. u kafani javio normalnim tonom, bez vrijeđanja i rekao mu "ajde Slobo da
+porazgovaramo" pokazujući mu rukom prema Ponti. Smatra da se optuženom K. u obratio normalnim
+tonom, te da se sjeća da je oštećeni R. bio ispred njega, ali da se ne može izjasniti gdje je bio oštećeni Š., ali u
+trenutku kada je izvadiošaržer Š. je većtada bio kod K..
+Na glavnim pretresima održanim dana 03.03.2016., 28.09.2017. i 16.05.2019. godine optuženi I.M. je ostao pri
+svojoj ranijoj odbrani, s timšto je dodao da se ne osjeća krivim za izvršenje krivičnih djela koja mu se stavljaju
+na teret optužnicom, jer mu nijednog trenutka nije bila namjera da lišiživota optuženog K., te da da je samo
+ispalio dva metka u vazduh, a zatim ostavio pištolj na krov automobila i krenuo da se fizički obračunava sa
+optuženim K..
+Branilac optuženog M.I. adv. Danilo Mićovićje u završnoj riječi naveo, da je optuženi M. postupao u nužnoj
+odbrani, jer to proizilazi iz dokaza provedenih u postupku, da je on prišao K. u kafani i zvao ga da izadju
+napolje kako bih razgovarali, a da pri tome niko od prisutnih nije primjetio da M. ima pistolj. Naglasio je da
+tek kada je K. otišao do svoga vozila, uzeo pišolj i zaklonio se iza stuba i nakon repetiranja pištolja od strane
+K., M. je uzeo pistolj i držao ga u ruci spuštenoj na dolje kako su i to svjedoci naveli. Kako su se u tom trenutku
+ispred njega nalazili Š. i R., onda logično proizilazi da je tačno onošto je naveo njegov branjenik, da je pucao
+u vis, a ne u pravcu K., jer bi u suprotnom neko od te dvojice bio povrijeđen. Mišljenja je da K. nije potegao
+pištolj, da se u tom slučaju vjerovatno kritični događaj ne bi ni desio, većbi oni to verbalno raspravili i da
+kada se ovečinjenice dovedu u vezu sa nalazom vještak psihijatara, nesporno je da se nalazio u stanju afekta
+straha i jake razdraženosti zbogčega smatra da u njegovim radnjama nema elemenata protivpravnosti.
+Dodao je da u radnjama optuženog M.I. nisu ostvarena ni objektiva ni subjektivna obilježja bića krivičnih
+djela koja mu se optužnicom stavljaju na teret, pa je predložio sudu da u smilu odredbe “ u sumnji povoljnije
+za okrivljenog”, optuženog M.I. oslobodi od optužbe.
+Optuženi M.I. je prihvatio završnu riječbranioca.
+U dokaznom postupku sud je proveo sledeće dokaze: na saglasan predlog stranaka pročitao iskaz svjedoka
+oštećenog Š.M. sa zapisnika o saslušanju svjedoka pred istražnim sudijom Višeg suda u Podgorici Ki.br 71/10
+od 17.05.2010. godine, kao i sa zapisnika sa ranijih glavnih pretresa, te zapisnika o rekonstrukciji događaja sa
+lica mjesta i zapisnika sa glavnog pretresa od 03.03.2016. godine, iskaz svjedoka oštećenog R.D. sa zapisnika
+o saslušanju svjedoka pred istražnim sudijom Višeg suda u Podgorici Ki.br 71/10 od 17.05.2010. godine i sa
+zapisnika o glavnom pretresu od 03.03.2016. godine, pročitao iskaze svjedoka G.D. sa sa zapisnika o
+saslušanju svjedoka pred istražnim sudijom Višeg suda u Podgorici Ki.br 71/10 od 17.05.2010, svjedoka T.D. sa
+zapisnika o saslušanju svjedoka pred istražnim sudijom Višeg suda u Podgorici Ki.br 71/10 od 18.05.2010,
+svjedoka Č.P. sa zapisnika o saslušanju svjedoka pred istražnim sudijom Višeg suda u Podgorici Ki.br 71/10 od
+17.05.2010. godine, pročitao zapisnik o uvidjaju Uprave policije Ispostave Kotor 28-03 br. 240/10 -1816 od
+
+30.04.2010 godine, službenu zabilješku Uprave policije Područna jedinica Herceg Novi- Ispostava Kotor 28-03
+broj 240/10-1816 od 30.04.2010 godine, potvrdu Uprave policije - Ispostave Kotor br. 240/10-1816 od
+01.05.2010 godine o privremeno oduzetim predmetima od M.I., nalaz i mišljenje sudsko - medicinskog
+vještaka dr. K.N. Ki.br. 71/10 od 11.05.2010 godine o povredama oštećenog Š.M. i dopunu nalaza i mišljenja
+sudsko medicinskog vještačenja od 14.10. 2010. godine i 03.05.2018. godine, saslušao sudsko - medicinskog
+vještaka dr. K.N.. Pročitao izvještaj Uprave policije- Forenzičkog centra Danilovgrad br. 244/10-27-1816 od
+14.06.2010. godine o vještačenju pištolja " CZ" M 50 cal. 7,65mm, izvještaj Uprave policije - Forenzičkog centra
+Danilovgrad br. 244/10-27-1815 od 22.06.2010 godine o analizi "parafinskih rukavica "skinutih sašaka ruku
+oštećenog Š.M. i okrivljenih M.I. i K.S. sačinjenog od strane vještaka Lj.I., izvještaj Forenzičkog centra
+Danilovgrad br. 244/10-27-1814 od 14.06.2010 godine o trasološkom vještačenju izuzete garderobe od
+oštećenog Š.M.. Pročitao zapisnik o rekonstrukciji događaja na lica mjesta od 19.11.2010 godine, zapisnik o
+rekonstrukciji događaja na licu mjesta od 18.04.2018.godine. Izvještaj o balističkom vještačenju Forenzičkog
+centra Danilovgrad od 10.06.2010 godine, 30.11.2010. godine i dopunu nalaza i mišljenja vještaka balističke
+struke od 29.05.2018.godine, saslušao vještaka balističke struke B.B., pročitao izvod iz kaznene evidencije
+Ministarstva pravde Crne Gore za optuženog K.S. od 02.10.2017.godine, izvod iz kaznene evidencije
+Ministarstva pravde Crne Gore za optuženog M.I. od 02.10.2019. godine, nalaz i mišljenje tima vještaka
+psihijatrijske struke profesora dr. S.M., dr. Ž.G. i psihologa B.S.I. od 28.11.2012 godine koji su obavili sudsko –
+psihijatrijsko vještačenje optuženog K.S., te usmena izjašnjenja vještaka na ranijim glavnim pretresima,
+pročitao nalaz i mišljenje tima vještaka psihijatrijske struke profesora dr. S.M., dr. Ž.G. i psihologa B.S.I. od
+11.02.2013 godine i izjašnjenje dr. M.S. sa zapisnika o glavnom pretresu od 03.09.2013.godine.
+Svjedok oštećeni M.Š. je na zapisniku o saslušanju svjedoka pred istražnim sudijom Višeg suda u Podgorici
+Ki.br 71/10 od 17.05.2010. godine naveo, da je on vlasnik objekta "V...M..."koji se nalazi u Prčnju, te da su
+dana 30.04.2010. godine, dok je zalivao cvijeće kod restorana, pored njega prošli, u vozilu marke “audi”,
+optuženi K.S. i oštećeni D.R., da su zaustavili vozilo pored bašte, kada mu se optuženi K.S. obratio riječima
+“đe si brate srbine”, jer se tako stalnošale, našta mu je on odgovorio “ajte braćo crnogorci, svratite na piće”,
+nakončega je optuženi K. parkirao svoje vozilo na parkingu ispred restorana. Pojasnio je da su se na parkingu
+nalazila jošdva vozila, njegovo vozilo, “G...” crvene boje i vozilo “F...” koje pripada njegovom sinu, a optuženi
+K. se parkirao između ta dva vozila. Kada su ušli u restoran, sva trojica su sjeli za jednim od stolova na terasi,
+da bi se u jednom trenutku pojavio optuženi I.M.i pozvao optuženog K. da izadju napolje, ali kako je znao da
+su oni odavno prijatelji, tome nije pridavao značaj, dok u jednom trenutku nije nastala trka. Naveo je da je
+D.R. potrčao ka parkiranom “G...” na parkingu, a on za njim, gdje su zatekli optužene K. i M. sa pištoljima.
+Tada je vidio da je optuženi M.I. drži pištolj u desno j ruci, okrenut prema zemlji, dok se optuženi K.S. za to
+vrijeme povlačio nazad držeči pištolj u ruci, sve dok se nije zaklonio iza jednog stuba. Dalje je naveo, da se on
+u tom trenutku nalazio izmedju njih dvojice, dok se D. nalazio blizu Igora M., a optuženi M.I. i K.S. su bili
+udaljeni jedan od drugog nekih 10-11 metara, te da je u jednom trenutku počeo da viče na njih " Š to vam je,
+jeste li poludjeli, š toće vam pištolji, nemoj ko metka da je opalio", nakončega kreću pucnji sa obije starne.
+Naveo je da ne zna ko je prvi pucao, jer se u tom trenutku sagnuo kako bi izbjegao pucnje, da bi se potom u
+jednom trenutku podigao i tada je vidio R. pored M., nakončega je jurnuo na optuženog K.S. i zavikao
+"prekinite pucanjavu" i tada je prestala pucnjava, nakončega je lijevom rukom uhvatio Slobodana K. za cijev
+od revolvera, a desnom ga je pridržavao za ruku, kako ne bi mogao više da puca, kojom prilikom se okrenuo
+prema optuženom M. i rekao mu "nema više pucanja Igore, ako opališjošjedan metak, prvoćešmene ubiti,
+pa onda Slobodana K. ". U tom trenutku optuženi M.I. je okrenuo pištolj prema moru i opalio jedan metak, a
+onda je bacio pištolj na krov vozila "Golf " i počeo da psuje, a tada je psovao i optuženi K.. Dalje je naveo da
+im je tada prišao P.Č.kako bi spriječio optuženog Igora u njegovoj namjeri da se bije sa K. om i tada je rekao
+Peru “Pero, drži ti toga, a jaću ovoga”, pa je izveo optuženog K. ne ispuštajući iz svoje ruke K. pištolj, iako se
+on trzao, a u tom trenutku je pomišljao da K. gurne u more, š to ipak nije uradio, budući da je on kod sebe
+imao pištolj, kojim bi se mogao povrijediti, a nije ni bio siguran da li je optuženi M.I. bio savladan, pa se bojao
+da on može ubiti K. ako mu uzme pištolj. Pojasnio je da u tom trenutku nije ni bio svjestan da je ranjen, dok
+
+mu optuženi K. nije rekao “ kukavice moja ti si ranjen”, našta je on pomislio da je to samožargon i da K. hoće
+da ga “isfolira”, kako bi ga se oslobodio i krenuo ka optuženom M.. Međutim, tada je ipak vidio da je ranjen, ali
+i dalje nije dao K. da ide narijed ka optuženom M., iako je vidio da njega tamo više nema i da je Č. uspio da ga
+skloni. Dalje je naveo, da je nakon toga optuženi K. pozvao oštećenog R. govoreći mu: “D. dovedi mi to auto
+ovamo”, a zatim sjeo u svoje vozilo i uputio se u pravcu Tivta, dok je optuženi M. napustio kritično mjesto sa
+PČ.. Kada se sve smirilo, vidio je da na desnom ramenu, sa prednje strane ima povredu, a u međuvremenu je
+doš la policija i odvela ga u Kotorsku bolnicu.
+Svjedok-oštećeni M.Š. je na glavnom pretresu od 30.06.2011. godine, ponovio svoj iskaz iz prethodnog
+postupka, s timšto je dodao da ništa posebno nije skrenulo njegovu pažnju, prije negošto ječuo da su se
+zalupila vrata od automobila, a kad ječuo lupu, istovremeno je sa lupom vrata reagovao i oštećeni D.R., pa se
+i on okrenuo i pošao za njim. U tom trenutku je vidio da optuženi M. repetira pištolj, dok se K. povlačio
+unazad sa pištoljem u desnoj ruci okrenutim ka dolje. U trenutku kada je optuženi M. repetirao pištolj,
+optuženi K. se nalazio na sredini terase, između mjesta gdje je stajao M. i stuba, iza kojeg se optuženi K.
+kasnije sklonio, Pojasnio je da je u trenutku kada je prvi putčuo pucnje, rastojanje izmedju K. i M. bilo oko 1011 metara, a u tom trenutku je K. bio iza stuba, a M. iza vozila, a u trenutku kada je bio pogođen, optuženi M.
+se nalazio iza njega, a optuženi K. i dalje iza stuba. Nije se mogao izjasniti ko je prvi pucao, jer se pucalo i sa
+jedne i sa druge strane, te da se tom prilikom obojici obratio sa riječima "bačite pištolje, š taće vam oružije",
+da bi po prestanku pucnjave i jedan i drugi pokušavali da krenu jedan put drugoga, s timšto je on držao
+optuženog K., Č.P. optuženog M.. Pojasnio je da je poziv na tuču od strane optuženog M. bio upućen
+optuženom K. nakon, š to je završena pucnjava.
+Na pretresu od 14.06.2012 godine, se dodatno izjašnjavao i naveo da su optuženi M.I. i K.S. imali pištolj u
+rukama i da su bili okrenuti licem u lice jedan prema drugom, a kako su oni mijenjali položaj, ne može
+precizno da se izjasni kako su bila okrenuta usta cijevi pištolja, zna samo da optuženi M. pištolj uperio prema
+dolje, a optuženi K. se povlačio unazad i pištolj je držao ispred sebe, ali on nije bio uperen u optuženog M., i u
+tom trenutku nije bilo ispaljenja metaka. Pojasnio je da je u trenutku kada ječuo da je optuženi I. repetirao
+pištolj, optuženi K. je stigao do stuba, možda većiza stuba ili negdje u blizini, dok je on bio okrenut leđima
+optuženom M..
+
+Na glavnom pretresu održanom dana 11.05.2015. godine, svjedok oštećeni M.Š. je naveo, da se zbog proteka
+vremena ne može sjetiti svih detalja i da ne može tačno navesti koliko je pucnjevačuo, jer ih je bilo više, a da
+pod „više“ podrazumijeva 5,6,7,8 pucnjeva. Pojasnio je da se u trenutku kada je počela pucnjava, nalazio
+imeđu optuženih K. i M., odnosno, optuženi M. mu je bio iza ledja, dok se optuženi K. nalazio ispred njega iza
+jednog stuba, da je u trenutku kadaje započela punjavačučnuo ispred svog lautomobila marke "G..." koji mu
+je bio iza ledja, da je u tom trenutku najvjerovatnije ranjen, iako on u tom trenutku nije znao, većje mislio da
+je imao srčani napad. Pojasnio je, da je u trenutku kada ječuo da su se zalupila vrata od vozila optuženog K.,
+bio okrenut leđima mjestu gdje je auto bilo parkirano, da se ne može sjetiti tačno kako se optuženi M.
+kritičnog dana obratio optuženom K. u kafani, osim da je ton optuženog M. bio naredbodavan, ali nije slutio
+štaće se toga dana desiti, niti se mogao izjasniti, u kom položaju je bila ruka K. kada mu je vidio pištolj u ruci.
+Kao oštećeni nije se pridružio krivičnom gonjenju optuženih, niti je u odnosu na njih postavio imovinskopravni zahtjev.
+Saslušan na glavnom pretresu dana 03.03.2016. godine, svjedok oštećeni Š.M. se izjasnio, da se zbog proteka
+vremena od predmetnog dogadjaja ne može sjetiti detalja.
+Nakonšto su svjedoku oštećenom predočeni njegovi iskazi kako iz prethodnog postupka, tako i sa ranijih
+glavnih pretresa, isti se izjasnio, da je u tim iskazima iznio sva svoja saznanja vezano za predmetni dogadjaj,
+
+odnosno da se dogadjaj desio upravo na način kako je to naveo u svojim ranijim iskazima.
+Svjedok oštećeni D.R. je u iskazu u prethodnom postupku naveo, da je dana 30.04.2010. godine, sa
+optuženim SK. nakonšto su prethodno obavili neki posao vraćajući se prema Kotoru, njegovim vozilom
+marke ” prolazili kroz, gdje su ispred objekta "V...M..." zatekli oštećenog Š. a kako pere terasu. Optuženi K. je
+zaustavio vozilo, nakončega im je prišao oštećeni Š. i pozdravio se sa njima i pozvao ih da svrate, pa su
+parkirali kola i pridružili mu se na terasi konobe "V...M...". Naveo je da nije obraćao pažnju očemu su K. i Š.
+razgovarali, da bi u jednom trenutku podigao glavu i primjetio optuženog M.I., kako stoji na metar, metar ipo
+od njihovog stola. Pojasnio je da optuženog M. poznaje, te da njihovo poznanstvo datira tri godine prije
+kritičnog događaja, da mu je bilo poznato da se optuženi M. poznaje sa optuženim K. i da su do skoro bili u
+dobrim odnosima, s timšto njihovi odnosi u zadnje vrijeme nijesu bili dobri. Dalje je naveo, da se optuženi M.
+tom prilikom ponašao arogantno, obzirom na ton sa kojim se obratio optuženom K., rekavši mu "Slobo, diži
+se" pokazavši mu desnom rukom da krene u pravcu parkinga i ponte, š to je optuženi K. bez riječi prihvatio,
+ustao i krenuo ka parkingu. Dalje je naveo i objasnio, da mu je sve to bilo neobično, zbogčega je ustao i
+krenuo za njima i odmah primijetio da optuženi M. za pojasom ima pištolj, te da je u jednom trenutku
+optuženi K. napravio iskorak prema svojim kolima i uhvatio se za kvaku od vrata vozača, s timšto nije znao da
+kaže, da li ih je i otvorio, obzhirom da je bio skoncentrisan na optuženog M.. Dalje je naveo, da je optuženi M.,
+nakonšto je vidio da se optuženi K. hvata za kvaku, istom obratio riječima "stani", a zatim je izvadio pištolj, da
+bi odmah potom, on zajedno sa Š.M. počeo moliti optuženog M. da ne puca, kojom prilikom je optuženog M.
+uhvatio za ramena, dok su bili licem u lice okrenuti, zbogčega nije mogao da vidi gdje su se u tom trenutku
+nalazili optuženi K. i oštećeni Š., osimšto je iza sebečuo neku priču, pa je pretpostavio da su se oštećeni Š. i
+optuženi K. udaljili. U jednom trenutku ječuo kako optuženi M. poziva optuženog K. riječima “pičko vrati se”,
+našta mu je i optuženi K. nešto dobacivao, nakončega su sečula dva pucnja koja je ispalio optuženi Igor M.,
+nakončega ga je oštećeni Š. pozvao i rekao mu da ne puca više, kada je optuženi M. opalio jošjedan metak u
+vazduh i stavio pištolj za pojas, nakončega je pozvao optuženog K. na tuču, da bi u jednom trenutku
+primjetio kako iz pravca Kotora optuženom M. u prilazi P.Č., koji ga odvodi u pravcu Kotora, za koje vrijeme
+mu se optuženi M. opirao. Pojasnio je da optuženi K. nije pucao i da kod njega nije primjetio nikakvo oružije,
+budući da je bio skoncentrisan na optuženog M.. Dalje je pojasnio, da nije vidio da je optuženi K. otvorio vrata
+od svog automobila, osimšto se uhvatio za kvaku, te da ječuo trzaj kao kad se vrata otvaraju. Nije mogao da
+opiše položaj ruke optuženog Mraković Igora u trenutku kada je ispalio dva hica iz pištolja, kao ni u kojem ih
+je pravcu ispalio, obzirom da su u tom trenutku bili okrenuti lijem u lice jedan drugom, na rastojanju manjem
+od pola metra i leđima okrenut mjestu gdje je bio okrenut K., te da je nakonšto se sve završilo primijetio, da
+je Š.M. povrijeđen.
+
+Svjedok oštećeni D.R. je na glavnom pretresu održanom dana 21.09.2010 godine naveo, da je dana
+30.04.2010. godine, sjedio na terasi sa optuženim K. om i oštećenim Š. kada je primijetio da njihovom stolu
+prilazi optuženi M.I., koji tom prilikom nije rekao ni „dobar dan“, samo se obratio optuženom K. govoreći mu
+„ustani“. Pojasnio je da je tada znao daće biti neprilika, jer su njih dvojica jošranije imali nekih nesporazuma.
+Dalje je naveo da je vidio da je optuženi K. krenuo u pravcu u kojem ga je optuženi M. usmjerio, da bi u
+jednom trenutku optuženi K. pobjegao udesno ka svom vozilu, zbogčega je on odmah stao ispred optuženog
+M.I., koji je u tom trenutku desnom rukom izvadio pištolj, koji mu se nalazio iza pasa sa lijeve strane, ali pištolj
+nije držao usmjeren u pravcu K., većga je držao sa spuštenom rukom pored svog tijela. Objasnio je da se on
+više nije okretao put optuženog K., većje sve vrijeme bio licem okrenut ka optuženom M. i bio odmah uz
+njega, pa je u trenutku kada je optuženi M. preko njegove lijeve ruke ispalio dva hica.
+Svjedok oštećeni D.R. je na glavnom pretresu od 08.12.2011 godine, ponovio svoj iskaz iz prethodnog
+postupka i ranijeg glavnog pretresa, s timšto je pojasnio, da je kritične prilike optuženi M. bio prilično
+
+nervozan i bahat, kada se optuženom K. u obratio riječima: „S. polazi“, pokazujući mu ispruženom rukom
+mjesto do kojeg je trebao da pođe, da mimo toga izmedju njih nije bilo nikakve priče, da je vidio da je
+optuženi K. bio zbunjen i blijed, da je potom ustao i krenuo u pravcu koji mu je optuženi M. pokazao, da je
+bilo očigledno daće doći do konflikta između K. i M., pa je pogledom pratio M. i tada je primijetio da on ispod
+košulje nosi pištolj iza pasa, sa lijeve strane, odnosno nešto nalik na pištolj, iako ga on tada nije vadio niti
+pokazivao, a nakonšto je optuženi K. skrenuo put svog vozila, optuženi M. je izvadio pištolj velikom brzinom i
+rekao K. „stani“, kojom prilikom je držao pištolj u polusavijenoj ruci pri svom desnom kuku, pod uglom od 90
+stepeni, pa je on stao ispred M. kako bi napravio barikadu između njega i optuženog K., nakončega ječuo
+zvuk otvaranja vrata vozila. Pojasnio je da je nakonšto je optuženi M. ispalio dva hitca, preko njegove lijeve
+ruke, istog izgubio iz vidokruga, budući da se on zaklonio iza vozila K., koje je tu bilo parkirano, jer se u tom
+trenutkučula jošjedna detonacija za koju je siguran da se radilo o hitcu iz pištolja, nakončega je optuženi M.
+podigao ruku i ispalio treći hitac, a nakon toga pištolj stavio na krov od „G...“. Dalje je naveo, da se u trenutku
+ispaljenja dva hica od strane optuženog M., oštećeni Š. nalazio na nekih 2-2,5 m na glavnom putu, gledajući
+u pravcu Kotora, dok se nije mogao izjasniti gdje se Š. nalazio u trenutku navedene detonacije. Upitan od
+strane suda da objasni razlike u svom iskazu na glavnom pretresu u odnosu na iskaz koji je dao kod istražnog
+sudije svjedok oštećeni se izjasnio, da prilikom davanja iskaza kod istražnog sudije nije pitan na sve
+okolnosti, te zato nekečinjenice nije pomenuo u tom iskazu, ali da se dogadjaj desio onako kako ga je
+predstavio na glavnom pretresu. Kao oštećeni nije se pridružio krivičnom gonjenju optuženih niti je u odnosu
+na njih postavio imovinsko pravni zahtjev.
+Na glavnom pretresu održanom dana 11.05.2015. godine, svjedok oštećeni je naveo, da je u trenutku kada je
+stajao ispred optuženog M., licem u lice, raširenih ruku kao barikada, č uo da Š. moli M. da ne puca, nakon
+čega su sečule detonacije, te da je jedna bila različita od druge dvije. Pojasnio je da su prve dvije detonacije,
+bile na nekih pola metra od njega jer je stajao ispred optuženog M. u visini svojih ramena, a ruke su mu
+prelazile preko krova od "G...", a da je tu drugačiju detonaciju ispalio optuženi K., jer je dolazila sa njegove
+lijeve strane, nakončega je optuženi M. ispalio hitac u vazduh i staviošažer od puštolja na vozilo, a pištolj za
+pas. Pojasnio je da je prema optuženom M. u bio okrenut licem u lice, a da je pola metra bio udaljen od njega
+u trenutku kada je počela pucnjava, dok je optuženi K. bio udaljen nekih 8 metara od njih.
+Nakonšto je od strane suda pozvan da objasni razlike u kazivanju na ranijem glavnom pretresu i u istrazi,
+svjedok oštećeni je naveo da kada je bio kod istražnog sudije nije bio puno pitan i da nije bio skoncentrisan,
+ali da su mu se sada „sklopile kockice“, te da je kritične prilikečuo ukupno 4 detonacije.
+
+Na glavnom pretresu održanom dana 03.03.2016. godine svjedok oštećeni R.D. je izjavio kao u ranijem
+postupku, s timšto je dodao da nakonšto je optuženi M. ispalio dva metka iz pištolja, on je instiktivno
+zatvorio oči i sagao se, nakončega ječuo jošjednu kao eksploziju koja je dolazila sa lijeve strane, iz pravca
+gdje se nalazio optuženi K., dok je optuženi M. nakon toga ispalio jošjedan metak u vis, te da se nakon
+rekonstrukcije predmetnog događaja prisjetio svega, pa i toga da je optuženi K. kritičnom prilikom pucao.
+Dodao je da mu je poznato da su optuženi M.I. i K.S. bili u dobrim odnosima, ali da su se njihovi odnosi
+pokvarili prije spornog događaja zbog kupovine kuće, koja je bila upisana na ime optuženog M.. Nije se
+pridružio krivičnom gonjenju i nije tražio naknaduštete.
+Svjedok P.Č. je u svom iskazu u prethodnom postupku naveo, da je dana 30.04.2010. godine sjedio kući, koja
+se nalazi nekih 30-40 metara od restorana "V...M..." i gledao televizor, da bi u jednom trenutku njegova
+trogodišnjaćerka ušla u kuću, uplakana govoreći „tata, tata puca se“, nakončega je on izašao na terasu ičuo
+3-4 pucnja. Pojasnio je da su mu ti pucnji ličili na pucnje iz pištolja manjeg kalibra, da mu sečak učinilo da
+pucaju petarde i da su pucnji dolazili sa njegove lijeve strane, odnosno iz pravca Tivta. Dalje je naveo, da je
+zatim izašao napolje na put ičuo kako mu neko govori: „ đ ećeš P. puca se“, a nakon toga vidio oštećenog
+
+Š.M., kako sa optuženim K. om ide od restorana "V...M..." ka T..., a potom i optuženog M., koji mu je komšija i
+školski drug, kako stoje pored svog vozila, a nedaleko od njega i R.D.. Prišao je optuženom M. i počeo da ga
+povlači prema vozilu, za koje vrijeme je optuženi M. psovao optuženog K.. Potom su ušli u vozilo M. i odvezli
+se do njegove kuće, gdje je M. ostavio kući, dok se on pješke vratio do restorana „V...M...“ gdje se sreo sa M.Š. i
+shvatio da je pogođen u rame. Dalje je naveo i objasnio, da u trenutku kada je izašao iz kuće kod optuženih M.
+i K. nije vidio oružje. Ovaj svjedok je na glavnom pretresu održanom dana 16.06.2011. godine, ponovio svoj
+iskaz dat u prethodnom postupku.
+Svjedok D.G. je u svom iskazu u prethodnom postupku naveo, da je dana 30.04.2010. godine, bio u restoranu
+„V...M...“ č iji je zakupac, da je popravljao neki kompjuter, zbogčega nije obraćao pažnjušta se dešava napolju,
+da bi u jednom trenutkučuo glas oštećenog Š.M. koji je vikao, a odmah nakon toga i tri pucnja, zbog toga je
+ustao i sklonio svoju suprugu T.D. u, koja je bila u restoranu, a nakon toga izašao napolje gdje je vidio Č.P., koji
+je držao optuženog M.I., a na drugoj strani u pravcu Tivta, na 20-tak metara od restorana „V...M...“ oštećenog
+Š.M. koji je držao optuženog K.S.. Dalje je naveo je da je Č.P. ugurao optuženog M. u njegova kola, da mu je
+optuženi M. sve vrijeme pružao otpor, da su potom otišli sa lica mjesta, nakon ečgas se okrenuo prema Š. u i
+vidio da je ranjen. Objasnio je, da po izlasku iz restorana kod optuženih M. i K. nije vidio oružje. Saslušan na
+glavnom pretresu održanom dana 30.06.2011. godine, svjedok je ponovio svoj iskaz iz prethodnog postupka.
+Svjedok D.T. je u svom iskazu u prethodnom postupku navela, da je dana 30.04.2010. godine, bila u restoranu
+"V...M..." u kojem je radila kao konobar, a koji restoran su ona i njen suprug Dejan Grandis zakupili od
+oštećenog Š. M, da je vidjela da je Š.M. došao na terasu konobe i naručio pivo, da se u tom trenutku ispred
+konobe zaustavilo jedno vozilo, te da je oštećeni Š. pozvao ljude iz toga vozila da svrate i popiju piće, da bi
+potom izašli na terasu lokala, kako bi odnijela pivo oštećenom Š. i tom prilikom vidjela da na terasi sa Š. om
+sjede jošdvačovjeka,koje je pitalaštoće da piju, nakončega je ušla u konobu kako bi ih uslužila. Dalje je
+navela, da je u Konobi bio i njen suprug D.G., koji je radio nešto oko laptopa, da bi u jednom trenutku začula
+pucnje, dva ili tri, nije bila sigurna, zbogčega se sakrila u dno konobe. Objasnila je, da je tom prilikom ispred
+konobečula neku galanu, ali da nije vidjelašto se ispred konobe dešavalo, da bi nakon nekog vremena kada
+je sve prestalo, kroz vrata konobe vidjela Č.P., koji je držao optuženog M.I., kojeg je znala iz vidjenja.
+Saslušana na glavnom pretresu održanom dana 30.06.2011. godine je ponovila svoj iskaz iz prethodnog
+postupka, s timšto se nije mogla izjasniti koliko je pucnjevačula kritičnom prilikom, navodeći da je sigurna
+da ih je bilo dva, a moguće i više, obzirom da to nije mogla jasno dačuje, jer je napolju bila jaka galama.
+Iz sadržine zapisnika o uvidjaju Uprave policije Ispostave Kotor 28-03 br. 240/10 -1816 od 30.04.2010 godine,
+izvještaj o kriminalističko-tehničkom pregledu lica mjesta proizilazi, da je lice mjesta predmetnog dogadjaja
+ugostiteljski objekat „V...M...“ koji se nalazi u prizemlju dvospratne kuće, u naselju P..., pri samoj ivici sa lijeve
+strane lokalnog puta K...-M... r...-L..., gledano iz pravca Kotora, da se preko puta navedenog objekta, nalazi
+terasa koja pripada ugostiteljskom objektu, naslonjena na pet betonskih stubova i jedan metalni koji se
+nalazi na početku terase, gledano iz pravca Kotora, a koja terasa se nalazi između lokalnog puta i obale mora
+i koja je sa tri strane (strana do puta i strane desno i lijevo gledajući iz pravca ulaza) ograđena betonskim
+žardinjerama obloženim kamenom, u kojima je zasađena " ž iva ograda, a na istoj su se nalazilačetiri drvena
+stola sa klupama. Pored drugog stola do mora, gledajući iz pravca ulaza na kamenom pločniku uoč ene su
+dvije kapljice tamno-crvene boje tečnosti nalik na krv, obilježene brojevima 3 i 4. Iza drugog stola do puta,
+gledajući iz pravca ulaza, na kamenom pločniku pored stola, pronađen je manji komad metala sive boje, koji
+liči na dio projektila, i isti je obilježen br. 5, dok je užardinjeri koja se nalazi do puta, iza pomenutog stola
+pronađen manji komad metala bakarne boje, koji liči na dio projektila, obilježen br. 6, a u neposrednoj blizini
+u istojžardinjeri, nalazi se metalna kutija sive boje, na kojoj je sa desne strane, gledajući iz pravca puta, na
+visini od oko 0,95 cm od pločnika, vidljivo oštećenje u vidu rupe, obilježeno brojem 7. Na zadnjem
+betonskom stubu do puta gledano iz pravca K... u pravcu L... na visini od oko 1,35 m, vidljivo je oštećenje
+
+(odvaljen manji komad betona), obilježeno brojem 8. Odmah pored terase, u pravcu K... nalazio se parking
+prostor, okrenut u pravcu mora na kojem se nalazilo parkirano vozilo marke „V...G...“ – karavan, crvene boje,
+reg. oznake KO..., iza kojeg vozila se na betonskom pločniku parkinga, poredžardinjere od terase, na
+udaljenosti 2,30 m od ivice puta, nalazilačaura bakarne boje, cal 7.65 mm. Na parking – prostoru na
+udaljenosti od oko 4 m od ivice terase nalazila sečaura bakarne boje, cal. 7. 65 mm. Iz porodične kuće
+oštećenog Š.M. koja se nalazi u mjestu P..., SO K... izuzeta je majica kratkih rukava, svijetlo zelene boje sa
+etiketom „Lacoste“ na kojoj je u predjelu desnog ramena bilo vidljivo oštećenje u vidu rupe, obilježeno
+oznakom A.
+Iz sadržine službene zabilješke Uprave policije-Područna jedinica Herceg Novi-Ispostava Kotor 28-03 broj
+240/10-1816 od 30.04.2010. godine, proizilazi, da je dana 30.04.2010. godine u Opštoj bolnici u Kotoru u
+večernjim satima dovezeno lice Š.M., sa ustrelnom ranom u predjelu desnog ramena, te da je medicinskim
+pregledom iz rane izvadjeno zrno-projektil ispaljen iz vatrenog oružja, koji je predat ovlašćenim policijskim
+služ benicima Ispostave Kotor.
+Iz sadržine potvrde Uprave policije-Ispostave Kotor br. 240/10-1816 od 01/05/2010 godine o privremeno
+oduzetim predmetima na ime optuženog M.I., proizilazi, da su ovlašćeni policijski službenici ispostave Kotor,
+dana 01.05.2010. godine, od optuežnog M.I. privremeno oduzeli pištolj marke „vzor“ cal. 7,65 mm sa okvirom
+od 6 metaka bez fabričkog broja, koji im je optuženi dobrovoljno predao.
+Iz sadržine Nalaza i mišljenja, sudsko - medicinskog vještaka dr. K.N. Ki.br. 71/10 od 11.05.2010 godine o
+povredama oštećenog Š.M., koji je dat na osnovu neposrednog uvida u Izvještaj ljekara specijaliste, Prijemne
+ambulante Odjeljenja urgentne medicinske pomoći JZU- Opšte bolnice Kotor, broj protokola 362 od
+30.04.2010. godine, utvrdjuje se, da je oštećeni Š.M. dana 30.04.2010. godine zadobio ustrijelnu ranu u
+predjelu prednje strane desnog ramena, sa ulaznim otvorom ustrjeline ovalnog oblika, š irine od oko 1,5 cm,
+na prednjoj strani desnog ramena, koji se kanalom nastavlja kroz potkožno meko tkivo u predjelu prednje
+strane desnog ramena, do desnog podlopatičnog predjela, gdje se u nivou zgloba između natpolećka desne
+lopatice i desne ključnjače, nalazio projektil, te da je pravac kanala ustrjeline sa desna na lijevo, a koja
+povreda u vrijeme nanošenja kvalifikuje kao laka tjelesna povreda, nanešena dejstvom projektla ispaljenog iz
+ručnog vatrenog oružja.
+Iz sadržine dopune nalaza i mišljenja istog vještaka od 14.10.2010. godine, utvrdjuje se, da je vještak nakon
+sudsko-medicinskog pregleda oštećenog Š.M., dao mišljenje, da je oštećeni u kritičnom dogadjaju zadobio
+ustrelnu ranu u predjelu prednje strane desnog ramena, da je ulazni otvor ustreline ovalnog oblika uširini
+oko 1,5 cm, koji se nalazi na prednjoj strani desnog ramena i koji se kanalom nastavlja unazad, kroz potkožno
+meko tkivo u predjelu prednje strane desnog ramena do desnog potključnjačinog predjela u spoljašnjoj
+trećini-ispod spoljašnjeg okrajka desne ključnjače, gdje se u mekom tkivu u nivou zgloba izmedju natplećka
+desne lopatice i desne ključnjače nalazio prosjektil, da je pravac kanala utreline od naprijed put nazad, da se
+oštećeni Š.M. u vrijeme zadobijanja naveden ustreline nalazio u uspravnom položaju, lako nagnut gornjim
+dijelom tijela put naprijed, okrenut prednjom stranom tijela u odnosu na otvor usta cijevi vatrenog oružja iz
+kojeg je ispaljen projektil, č ijim dejstvom je oštećenom nanešena ustrelina.
+Iz sadržine dopune nalaza i mišljenja vještaka dr. N. od 03.05.2018. godine, koja dopuna je uslijedila nakon
+izvršene rekunstrukcije dogadjaja na licu mjesta utvrdjuje se, da je vještak nakon ponovnog neposrednog
+pregleda oštećenog Š.M. i prisustva rekonstrukciji dogadjaja ustanovio vrhljasti ožiljak blijedo- ž ućkaste boje
+duž ine 7 cm iširine 0,2 cm, sa konkavitetom usmjerenim ka nadolje, a koji ožiljak se nalazi na prednjem
+dijelu i gornjoj strani desnog ramena, lučnog oblika, načijem spoljašnjem kraju se nalazi blijedo- ž ućkasti
+ovalni ožiljak promjera 1,4x1,2 cm uvučen ispod nivoa okolne kože. Na osno vu izgleda ožiljka, vještak je
+zaključio, da je oštećeni Š.M. u predmetnom dogadjaju zadobio: ustrijelnu ranu u predjelu desnog ramena sa
+ulaznim otvorom ovalnog oblika, uširini od oko 1,5 cm u predjelu prednje strane desnog ramena, koja se u
+
+vrijeme nanošenja kvalifikuje kao laka tjelesna povreda, nanešena dejstvom projektila ispaljenog iz ručnog
+vatrenog oružja, u trenutku kada se oštećeni Š. nalazio u polučučećem, č učećem ili nekom od savijenih
+položaja, okrenut prednjom stranom svoga tijela prema ustima cijevi ručnog vatrenog oružja iz kojeg je
+izvršeno ispaljenje predmetnog projektila.
+Vještak medicinske struke dr. K.N. je na glavnom pretresu održanom dana 16.05.2019. godine, ostao pri
+svojim ranijim datom pisanom nalazu i mišljenju i dopunama istog, s timšto je dodao, da u raspoloživoj
+medicinskoj dokumentaciji nema preciznog podatka o dubini ustrijelnog kanala, ali je na osnovu svih
+medicinskihčinjenica iz te dokumentacije očigledno da se dno ustreline nalazi u potkožnom mekom tkivu,
+što bi podrazumijevalo odgovarajuću dubinu do 1,5 cm. Dalje je naveo, da u raspoloživoj medicinskoj
+dokumentaciji nisu opisane nikakve povrede anatomskih zglobnih struktura desnog ramena, niti povrede
+većih krvnih sudova i nerava, te da se u tački 1. mišljenja od 11.05.2010. godine, potkrala greška u stavu 2., pa
+umjesto „do desnog podlopatičnog predjela“ treba da glasi „do desnog potključnjačinog predjela“. Takođe, u
+medicinskoj dokumentaciji nije notirana precizna lokalizacija dna ustrijelnog kanala i shodno tome se ne
+mož e sa potrebnom preciznošću izračunati ugao iz kojeg je projektil ušao u tijelo oštećenog Š.. Dalje je naveo
+da je zaključak iz tačke 3. dopune nalaza od 03.05.2018. godine donio na osnovu podataka sa same
+rekonstrukcije i na osnovu medicinskihčinjenica dobijenih neposrednim pregledom oštećenog Š.M. za
+vrijeme rekonstrukcije. Takođe je naveo da se na fotografijama dostavljenim uz dopunski nalaz i mišljenje od
+03.05.2018. godine jasno vidi da se na prednjoj, zahvatajućim dijelom gornje strane desnog ramena, nalazi
+lučni grkljasti ožiljakžućkaste boje, dužine 7 cm iširine 0,2 cm sa konkavitetom usmjerenim ka nadolje i
+upolje, a načijem se spoljašnjem kraju nalazi ovalni ožiljak bljedožućkaste boje promjera 1,4 x 1,2 cm, koji
+ožiljak je uvučen ispod nivoa okoline kože. Pojasnio je da je taj ožiljak dio ukupno opisanog ožiljka koji se
+nalazi na spoljašnjem, tj. gornjem kraju ukupnog ožiljka, definitivno nastao zarastanjem ulaznog otvora
+ustreline, a ostali dio ožiljka je nastao zarastanjem tzv. insizije, koju je ljekar učinio kako bi došao do
+projektila i da bi ga izvadio. Dalje je pojasnio, da je pravac kanala ustreline bio od naprijed put nazad, odozgo
+naniže i lako sa desna u lijevo u anatomskom položaju, te da je na osnovu navedenog opredijelio položaj
+oštećenog Š. a u vrijeme zadobijanja povrede, a koji je opisan u tačci 3 dopunskog nalaza i mišljenja od
+03.05.2018. godine. Takođe je pojasnio dašto se tiče povrijeđenih anatomskih struktura, ne postoji nijedan
+razlog da bi se projektil deformisao usljed udara i prolaska kroz te anatomske strukture, jer su iste bile meke,
+a s obzirom na medicinsku dokumentaciju, izgled ustrelnog otvora, koji je ovalnog oblika, te njegovu veličinu
+i utvrđenu deformisanost projektila, to se najvjerovatnije ne radi o direktnom dejstvu nedeformisanog
+projektila, a u medicinskoj dokumentaciji figurira prisustvo stranog tijela metka i „ekstipacije stranog tijela“,
+što znači da je bio samo jedan projektil, odnosno nisu ustanovljeni djelovi projektila.
+Sud je pisani nalaz nalaz i mišljenje vještaka medicinske struke dr. K.N., dopunu nalaza i mišljenja kao i
+njegovo usmeno izjašnjenje na glavnom pretresu cijenio kao stručno, jasno, objektivno i zasnovano na
+pravilima struke i nauke, pa je ista u cjelosti prihvatio.
+
+Iz sadržine izvještaja o balističkom vještačenju Uprave policije - Forenzički centar u Danilovgradu, br.244/1027-1816 od 14.06.2010. godine, o vještačenju pištolja „ Č Z“ M 50 cal, 7,65mm proizilazi, da je pregledom
+površina na kojima su utisnuti serijski brojevi spornog pištolja na za to fabrički predvidjenim mjestima:
+navlaci i cijevi, uočeno da su isti mehaničkim putem obrušeni, a pištolj je zatim podvrgnut površinskoj zaštiti
+hemijskim postupkom-bruniranjem, te se iz tog razloga na pištolju ne mogu očitati serijski brojevi, š to je
+prikazano i na fotografiji koja je sastavni dio izvještaja, u koju je sud izvršio uvid.
+Iz izvještaja o balističkom vještačenju predmetnih pištolja, č aura i projektila Forenzičkog centra u
+Danilovgradu, broj br.1812/10 od 10.06.2010. godine, utvrdjuje se, da su tom centru na vještačenje
+dostavljena 2 pištolja i to: pištolj marke „CZ“ model 70, kalibar 7,65 mm. fab.br. 91281 sa 6 metaka ušanžeru.
+
+Navedeni meci na dnučaura imaju utisnute oznake i to: tri metka PPU – 82 - 7,65 mm i tri metka PPU 85-7,65,
+pištolj marke „ Č Z“, model 50, kalibar 7,65 mm, č iji fab. br. je mehanički uništen - izbrušen, sašest metaka u
+šaržeru, koji meci na dnučaura imaju utisnute oznake i to: dva metka PPU - 76 - 7,65, jedan metak PPU 827,65, jedan metak PPU 85-7,65, jedan metak PPU 32 AUTO i jedan metak PPU – 70 – kal 7,65. Na vještačenje su
+dostavljene dviječaure PPU – 83- 7,65 i PPU – 32 AUTO, te projektili i to: dio olovne mase projektila, znatno
+deformisana, težine 0,40 gr i dio košulje projektila, koji je takođe znatno deformisan težine 0,14 gr, kao
+projektil izvađen iz tijela oštećenog Š.M., deformisan na vrhu i bočno po uzdužnoj osi mase 9,68 grama.
+Opš tičkim pregledom brisa cijevi predmetnih pištolja utvrdjeno je, da je iz pištolja marke „CZ“ model 70,
+kalibar 7,65 mm. fab.br. 91281 pucano, da je cijev nakon poslednjeg pucanja navlaženo sredstvo za
+podmazivanje, a da pritom nije očišćena barutna garež, dok je pregledom brisa cijevi pištolja marke " Č Z",
+model 50, bez fabričkog broja utvrdjeno, da je iz pištolja pucano, nakončega cijev niječišćena, niti
+podmazivana. U cilju ispitivanja ispravnosti predmetnih pištolja izvršeno je ispaljivanje odredjene količine
+municije odgovarajućeg kalibra, kojom prilikom je utvrdjeno da kod pištolja marke " Č Z", model 50, bez
+fabričkog broja dolazi do povremenog zastoja prilikom ulaska metka izšanžera u ležište, jer metak ne
+nalegne u cijev, zbogčega navlaka ostaje nezabravljena, zbogčega se mora vršiti repetiranje pištolja, dok
+pištolj marke „CZ“ model 70, kalibar 7,65 mm. fab.br. 91281 normalno funkcioniše, bez bilo kakvih zastoja.
+Analizom dvije spornečaure utvrdjeno je, da su iste cal. 7,65 mm, da na dnu obječaure postoje tragovi nastali
+ispaljivanjem iz vatrenog oružja nastalih od udarne igle, sa izraženim individualnim karakteristikama.
+Komparacijom spornihčaura sa probnimčaurama ispaljenim iz predmetnih pištolja utvrdjene su podudarne
+karakteristike sačaurama ispaljenim iz pištolja " Č Z" M-50, cal. 7,65 bez fabričkog broja. Analizom dijela
+olovne mase projektila i košuljice projektila utvrdjeno je, da isti nijesu podobni za identifikaciju, dok je
+analizom projektila izvadjenog iz tijela oštećenog Š.M. utvrdjeno, da je sporni projektil cal. 38 specijal i da je
+isti ispaljen iz revolvera cal. 38 specijal ili cal. 357 Magnum.
+Iz izvještaja o hemijskom vještačenju Uprave policije-Forenzičkog centra u Danilovgradu, br.244/10-27-1815
+od 22.06.2010. godine, o analizi „parafinskih rukavica“ skinutih sašaka ruku oštećenog Š.M. i optuženih M.I. i
+K.S., sačinjenog po vještaku hemijske struke Ljudmili Ivanović, utvrdjuje se, da na samolepljivim folijama
+skinutih sašaka oštećenog Š.M. i optuženih M.I. i K.S., nije dokazano prisustvo barutnihčestica.
+Iz sadržine izvještaja o trasološkom vještačenju Forenzičkog centra u Danilovgradu, br.244/10-27-1814 od
+14.06.2010. godine, izuzete garderobe oštećenog Š.M. i to majice kratkih rukava zelene boje, marke „LA
+COSTE“, veličine 6, proizilazi da je na prednjoj strani majice, na desnom ramenu, uočeno jedno mehaničko
+oštećenje i to na 6 cm od ramenogšava desnog rukava i 0,8 cm od gornjeg ramenogšava, relativne veličine
+1,6 cm, dok na zadnjoj strani majice nisu uočena mehanička oštećenja. Iz izvještaja se dalje utvrdjuje, da je
+mehaničko oštećenje na majici oštećenog Š.M. nastalo dejstvom projektila ispaljenog iz vatrenog oružija.
+Bliži izgled navedenog oštećenja prikazano je u fotodokumentaciji koja je sastavni dio izvještaja, u koju je sud
+izvršio uvid na glavnom pretresu.
+Iz sadržine zapisnika o rekonstrukciji sačinjenog dana 19.11.2010. godine u mjestu P..., opština K..., na
+parking prostoru ispred ugostiteljskog objekta „V...M...“ a koji prati i fotoelaborat i skica lica mjesta, proizilazi
+da su u vrijeme rekonstrukcije vozila postavljena na pozicije shodno skici lica mjesta i zapisnika o uvidjaju, pa
+od bašte ugostiteljskog objekta, koja su obilježena redosledom "B" i "C". Optuženi K.S. je pokazao da je sjedio
+bliže mjestu označenom "AC", kada je primijetio optuženog M. da nailazi vozilom sa desne na lijevu stranu od
+njegove tačke gledišta, pa je produžio vozilom do oznake "D", gdje je i parkirao auto. Zatim je pokazao stub
+(na kojem postoje oštećenja) iza kojeg se sakrio, te da mu je dok je bježao do tog stuba pištolj bio u desnoj
+ruci, kojom prilikom ga nije uperio u bilo koju stranu, većje isti opušteno držao, a u trenutku kada je vidio da
+je oš tećeni Š. ranjen, optuženi M. se tada nalazio iza vozila pod oznakom "B", a tada je vidio i svjedoka Č. a i
+oštećenog R. koji su bili u neposrednoj blizini optuženog M.. Dalje je pokazao da se optuženi M. u trenutku
+kada je ispalio metak u vis nalazio 2,9 m odžardinjere sa spoljnje starne, a da je rastojanje između njega i
+
+optuženog M. u trenutku ispaljenja metka bilo 10,8m. Konstatovano da je optuženi M. je pomjerio vozilo
+optuženog K. za oko 0,50 m unaprijed, a svoje vozilo postavio onako kako ga je parkirao kritičnom prilikom,
+kojom prilikom su sačinjene i fotografije. Nadalje, optuženi M.I. je pokazao da je optuženi K. išao ispred njega,
+sve do dolaska ispred parkiranog vozila označenog sa "B" i "C", nakončega je naglo skrenuo udesno ka
+vratima svog vozila, i tada je otvorio vrata i uzeo pištolj, koji je držao uperenog ka podu krećući se unazad, a
+tada je njega ispred stajao oštećeni Š., koji mu je bio okrenut leđima, a koji je stajao na udaljenosti od 2,6
+metara od optuženog K., kada ječuo minimum dva, a najviše tri pucnja, u kom trenutku je oštećeni Š.
+napravio blagi iskorak bočno-desno i posrnuo tačno iza zadnjeg dijela vozila "B". Pokazao je da je da u
+trenutku kada je optuženi K. izvadio pištolj i kada mu je on rekao: "Stani", u tom trenutu se oštećeni R. stvorio
+ispred njega, a u trenutku kada je izvadio svoj pištolj, oštećeni R. se većnalazio ispred njega, licem okrenutim
+ka njemu, na jedno pola metra. Pokazao je da je u trenutku kada je repetirao svoj pištolj rastojanje između
+njega i K. bilo oko 6,50 metara, a od njega dožardinjere 3,3 metra. Dalje je pokazao da se u trenutku kada je
+naišao svjedok Č. i kada mu je oštećeni Š. rekao: "Igore ne pucaj, menećešpogoditi", pomjerio do mjesta
+između "B" i "C", tačnije dva koraka do sredine vozila "B", i tada je izvadiošaržer i metak koji je ostao u cijevi
+ispalio u pravcu mora, nakončega je pištolj išaržer ostavio na vozilo "B". Svjedok - oštećeni Š.M. je pokazao
+da je u trenutku kada je prišao optuženom M., ispred njega stajao oštećeni R., dok mu je on bio leđima
+okrenut, gledajući u pravcu K., koji je išao unazad licem okrenutim ka njemu i M. u, pa kada je optuženi K.
+doš ao do sredine ulice, okrenuo se i nastavio da trči do stuba, iza kojeg je stao, a u trenutku kada sečuo
+pucanj, tada se nalazio na udaljenosti od oko pola metra ispred optuženog M., okrenut mu leđima, a do
+optuženog M. stajao je oštećeni R. i u tom trenutku se sagao, da ga ne pogode meci. Svjedok-oštećeni R.D. je
+pokazao da je kritičnog dana sjedio na mjestu označenom "AB", a kada su optuženi stali do ivice između
+žardinjere i mora, odmah je ustao i pošao za njima, a nakonšto su optuženi došli do sredine između mjesta
+"B" i "C", stajao je na ivicižardinjere, a u trenutku kada se optuženi M. naglo okrenuo i izvadio pištolj, većse
+nalazio ispred vozila "B", pa je stao ispred optuženog M., okrenut licem u lice, u kom trenutku ječuo
+oštećenog Š. a koji je stao iza vozila "B".
+Iz sadržine zapisnika o rekonstrukciji spornog događaja sačinjenog dana 18.04.2018. godine u mjestu P...,
+opš tina K..., a koji prati i fotoelaborat i skica lica mjesta, proizilazi da je lice mjesta djelimično izmijenjeno i to:
+na načinšto na terasi konobe "V...M..."ne postji oštećeni ormarićza struju, kao ni oštećenja na betonskom
+stubu, dok su betonski stubovi svježe ofarbani sa spoljnje starne, a na mjestu na kojem se nalazilo oštećenje
+na stubu postavljena je plastična kanalica za svijetleću reklamu "Becks", dok je rastinje u odnosu na kritični
+događaj, izraslo. Optuženi M.I. je pokazao da se on u trenutku kada je optuženi K. otvorio vrata od svog
+automobila nalazio na parking prostoru ispred druge kocke parkinga gledano prema moru, a optuženi K. se
+nalazio u trećoj kocki parking prostora gledano iz pravca bašte konobe "V...M...". Dalje je pokazao da se
+optuženi K. u trenutku kada je pucao nalazio na ulici uz desnu ivicu, gledano u pravcu Kamenara i da je
+ispred njega licem u lice stajao oštećeni Š.M., dok se on nalazio između dva parkirana automobila, a da se
+ispred njega, licem u lice nalazio oštećeni R.D., na nekih par metara udaljenosti, sa podignutim rukama.
+Pokazao je da se Š. sagnuo u svoju desnu stranu, iza automobila koje je bilo parkirano na prvom parking
+mjestu, te da je tada dva puta pucao u pravcu Tivta. Dalje je pokazao da se u trenutku kada je izvadiošaržer iz
+pištolja, a zatim iz istog ispalio jedan projektil u pravcu mora, nalazio iza parkiranog automobila, u prvoj
+parking kocki do bašte lokala "V...M..."licem okrenutim ka Tivtu. Oštećeni Š.M. je pokazao da se optuženi K. sa
+pištoljem u ruci, č ija je cijev bila okrenuta ka zemlji, nalazio između dva parkirana automobila, uz desnu ivicu
+puta gledano ka Tivtu, licem okrenutim ka moru, dok se on nalazio ispred optuženog K., licem okrenutim ka
+njemu, u dijelu zadnje lijeve strane automobila, koji je bio parkiran u trećoj parking kocki, gledano iz pravca
+bašte lokala "V...M..."Dalje je pokazao put kojim se optuženi K. povlačio unazad i to desnom ivicom puta,
+gledano u pravcu Tivta, uzživu ogradu lokla "V...M..." kao i poziciju iza betonskog stuba, na kraju terase
+lokala, gledano u pravcu Tivta, gdje se zaklonio optuženi K., kao i položaj njegove ruke u kojoj je držao pištolj,
+a koja je bila podignuta i ispružena u njegovom pravcu. Dalje je pokazao da se, kada je prišao optuženom
+M.I., koji je stajao iza parkiranog automobila (desna zadnja ivica) nalazio uz lijevu zadnju ivicu automobila,
+
+leđima okrenut optuženom M.. Takođe je pokazao da se u trenutku kada je bio pogođen projektilom nalazio
+uz zadnju lijevu stranu, tačnije u predjelu zadnjeg lijevog točka parkiranog automobila, u prvoj kocki uz
+terasu konobe "V...M..."Dalje je pokazao da se optuženi M. u trenutku kada je zapucao nalazio iza njegovih
+leđa, u predjelu zadnje strane parkirang automobila, u kocki broj jedan. Svjedok-oštećeni R.D. je pokazao da
+je pokazao da se optuženi K., nalazio sa lijeve strane njegovog automobila, a optuženi M. je stajao bliže moru
+u trenutku kada je rekao optuženom K. da stane. Dalje je pokazao poziciju sa koje je optuženi M. pucao preko
+krova parkiranog automobila, u pravcu zadnjeg stuba na terasi lokala do ulice, na kom mjestu se nalazio
+optuženi K.. Pokazao je da je optuženi M. usmjerio ruku u pravcu mjesta gdje se nalazio optuženi K. i preko
+njegove lijeve ruke, ispalio projektile, u kom trenutku ječuo jaku detonaciju iz pravca gdje se nalazio K., dok
+je oš tećeni Š. bio licem okrenut ka mjestu gdje se nalazio optuženi K..
+Iz sadržine balističkog vještačenja br. B 112/10 od 30.11.2010. godine utvrdjuje se, da je vještak balističke
+struke B.B., nakon izvršene rekonstrukcije dogadjaja na licu mjesta, koja je obavljena dana 19.11.2010.
+godine, kojom prilikom je za potrebe balističkog vještačenja izdvojio i izmjerio bitne parametre i nakon
+završenog pokazivanja od strane učesnika i svjedoka spornog događaja, utvrdio, da se oštećenje na
+metalnom ormariću u vidu otvora dimenzije 12x10 mm, nalazi na 62cm od nivoažardinjere, odnosno 92 cm
+od nivoa platoa terase (visinažardinjere na tom mjestu je 30cm), da se u unutrašnjosti ormarića, na suprotnoj
+strani, nalazi oštećenje u vidu udubljenja lima, da je na osnovu ta dva oštećenja odredio i balističku putanju
+projektila koji je napravilo opisano oštećenja, a koja putanja je po pravcužardinjere, kroz zelenilo u njoj.
+Nadalje iz nalaza se utvrdjuje, da se oštećenje na betonskom stubu terase nalazi na 109 cm od ravni
+žardinjere, odnosno na 132 cm od nivoa platoa terase, da je na osnovu oštećenja određen i balistički pravac
+putanje projektila, ali da se smjer ne može sa sigurnošću utvrditi.
+
+Iz sadržine nalaza i mišljenja vještaka balističara B.B., br. B-03/18 od 30.05.2018.godine, sačinjenog nakon
+izvršene rekonstrukcije na licu mjesta dana 18.04.2018. godine, utvrdjuje se, da je vještak na osnovu
+pokazivanja učesnika u predmetnom dogadjaju, kao i očevidaca dogadjaja, te na osnovu balističkih
+zakonitosti i materijalnih tragova sa lica mjesta odredio stajne tačke lica koja su ispalila projektile kritičnom
+prilikom, ašto je prikazano na slici S-4 koji je sastavni dio nalaza u koji je sud izvršio uvid na glavnom
+pretresu.
+
+Vještak balističke struke B.B. je na glavnom pretresu od 16.06.2011 godine, naveo je da ostaje pri svojim
+ranijim nalazima i mišljenjima i objasnio da do povremenog zastoja u pištolju ČZ- č eška zbrojevka dolazi
+kada se metak pogura prema naprijed, a to se radi pomjeranjem navlake prema naprijed, te da se u
+konkretnom ne može ispaliti projektil ukoliko se prethodno ne izvrši takozvana radnja „repetiranja“, odnosno
+smještanja metka u ležište ili cijev pištolja, te da je tek tada pištolj spreman za opaljenje, a da bi do opaljenja
+doš lo, potrebno je da se povuče obaračka zadnjem položaju. U pogledu djelova projektila označenih pod
+brojevima 5 i 6 u izvještaju o balističkom veštačenju br. 1812/10, za koje je navedeno da nisu podobni za
+identifikaciju, pojasnio je da je dio projektila pod br. 5 olovna masa projektila, težine 0,4 grama, te da na
+olovnoj masi ukoliko ne postoji košuljica, ne ostaju tragovi od prolaska kroz ožrijebljenu cijev vatrenog oružja
+i nemaju individualnih karakteristika, pa je kao takva nepodobna za identifikaciju, dok je za dio projektila pod
+br. 6, težine 0,14 grama pojasnio da se radi o veoma malom dijelu košuljice na kojem takođe nema
+individualnih karakteristika od prolaska kroz ožrijebljenu cijev vatrenog oružja, pa je iz tog razloga i ovaj dio
+projektila nepodoban za indetifikaciju. U pogledu projektila koji je izvađen iz tijela oštećenog Š.M., naveo je
+da je u izvještaju o balističkom vještačenju br. 1812/10 detaljno opisao taj projektil, te da je isti deformisan na
+vrhu i bočno po uzdužnoj osi, pa se iz pisanog izvještaja i fotografije pod br. 4, a koja je sastavni dio tog
+izvještaja, vidi da sporni projektil nije udarao o neku tvrdu prepreku, da je mijenjao balističku putanju tj da je
+
+“rikošetirao”. Pojasnio je da ovaj projektil nema košuljicu, a kako je olovo mek metal, to bi kontakt ovog
+projektila sa tvrdom podlogom na projektilu izazvao deformacije jačeg inteziteta, dok su opisane deformacije
+u nalazu neznatne, pogotovo bočne koje su u vidu ogrebotine, a deformacija na vrhu projektila je nastala od
+udara u tijelo, odnosno prolaska kroz tijelo oštećenog Š.M., te da po katalogu kalibar 38 special ima težinu
+10,3 grama, š to zavisi od proizvođača, koja težina može biti i manja, ali opisom projektila nije konstatovao da
+njemu fali dio mase. Pojasnio je da se prolaskom projektila kroz prepreku metala ucrtava prečnik projektila
+koji je napravio to oštećenje, te da je oštećenje na metalnom ormariću dimenzija 12x10 vjerovatno posledica
+ispaljenja projektila iz pištolja kalibra 7,65 mm i to iz razlogašto je odredio putanju projektila koje je
+napravilo pomenuto oštećenje, a koje prolazi kroz zeleno rastinje na terasi. Dalje je naveo da ne isključuje
+mogućnost da je došlo do “okretanja projektila” i da projektil nije udario direktno u površinu na metalnom
+ormariću, te da je jasno da nema projektila od 12 mm, ali se na osnovu dimenzija oštećenja na metalnom
+ormariću nije mogao precizno izjasniti kojeg kalibra je bio metak koji je napravio to oštećenje, ali nije
+isključena ni mogućnost da je predmetno oštećenje moglo nastati i od projektila od 9 mm, ali u svakom
+slučaju, da je pod normalnim uslovima, pod pravim uglom ispaljen projektil bila bi uočljiva razlika. Pojasnio
+je, da se mjerenjem najvjerovatnije može utvrditi prečnik oštećenja nastao od projektila 7,65 mm i projektila
+9 mm, ali ne u konkretnom slučaju, jer je oštećenje na ormariću daleko veće negošto bi moglo nastati od
+kalibra 7,65 mm i 9 mm, pod uslovom da su isti nastali direktno, š to u konkrenom nije slučaj. Naveo je da iako
+se nije mogao izjasniti o prečniku, odnosno kalibru projektila, koji je napravio pomenuto oštećenje na
+metalnom ormariću, on je imajući u vidu obavljenu rekonstrukciju dozvolio mogućnost da je oštećenje
+nastalo u oba pravca po balističkoj putanji koja je prikazana na slici br. 7 u izvještaju o balističkom vještačenju
+br. B 112/10 od 30.10.2010. godine.
+
+Vještak balističke struke B.B. je na glavnom pretresu od 30.06.2011 godine, naveo je da je mehanizam kod
+pištolja marke ČZ, takav, da se iz njega ne može ispaliti projektil ukoliko ješaržer izvađen iz usnika pištolja,
+već je on takve konstrukcije da se projektil može ispaliti, samo ako je metak smješten u ležište cijevi pištolja,
+samim povlačenjem obarača, te da s obzirom na određenu balističku putanju koja prolazi kroz rastinje u
+žardinjeri nije moguće da su oštećenja na metalnom ormariću nastala iz pozicije optuženog M.I., a po
+kazivanju svjedoka-oštećenog R.D.. Pojasnio je da kada je govorio o oštećenju koje nastaje na prepreci od
+metala ili stakla, mislio je na činjenicu da se projektil nalazi pod pravim uglom u odnosu na tu prepreku, te da
+ukoliko je projektil naišao pod određenim uglom, onda oštećenje koje nastaje nije kružnog nego elipsastog
+oblika, pa je moguće da je u konkretnom slučaju projektil udario u neku granu na rastinju užardinjeri, zbog
+čega je došlo do njegovog zaokretanja, tako da projektil nije udario vrhom direktno u ormarić, većsvojom
+boč nom stranom, š to dodatno povećava prečnik oštećenja na prepreci, pa se ne može sa sigurnošću izjasniti
+da li je to oštećenje nastalo od projektila kalibra 7,65 ili 9 mm. Dalje je naveo da je prilikom određivanja
+putanje imao u vidu dva oštećenja na ormariću i to jedno ulazno, č ija dimenzija je određena i jedno u
+unutrašnjosti metalnog ormarića manjeg inteziteta, dok su oštećenja u unutrašnjosti u obliku manje
+deformacije lima, š to znači da nije došlo do probijanja metala, pa je spajanjem te dvije tačke određena
+balistička putanja projektila kako je to prikazano na skicama i fotografijama.
+
+Vještak balističke struke B.B. je na glavnom pretresu od 17.05.2012 godine, je bjasnio je da su spoljni djelovi
+projektila obilježeni brojevima 5 i 6 nepodobni za identifikaciju, da nije utvrđen njihov kalibar jer to nije bilo
+moguće, kao ni za vatreno oružje iz kojih su ispaljeni, od kojeg projektila potiču, te da konkretno ne može
+isključiti mogućnost da su sporni projektili obilježeni navedenim brojevima ispaljeni iz bilo kog vatrenog
+oružja, pa ni oružja kojim je rukovao optuženi M.. Pojasnio je da su djelovi projektila prema skici lica mjesta
+ispaljeni na suprotnoj strani od mjesta gdje je stajao oštećeni Š.M. prilikom povrjeđivanja, š to je utvrđeno
+
+prilikom rekonstrukcije spornog događaja. Pojasnio je da je projektil iz tijela oštećenog Š. olovni, a djelovi
+projektila pod br. 5 i 6 su od košuljice projektila, koji dijelovi ne mogu poticati od olovnog projektila koji je
+povrijedio oštećenog Š.. Dalje je pojasnio da prilikom ispaljenja projektila, odnosno njegovog izlaska iz cijevi,
+dolazi do naglogširenja sagorelih barutnih gasova koji potiskuju projektil, te da se tom prilikom javlja prasak
+ili detonacija, koja zavisi od brzine projektila na ustima cijevi, kinetičke energije i kalibra i da je brzina
+projektila kalibra 7,65 mm prilikom izlaska iz cijevi 315 m/s, a kalibra 38 special 240 m/s, a kinetička energija
+projektila 7,65 mm je 228 džula, dok kinetička energija kalibra 38 special iznosi 305 džula. Dalje je naveo da
+prečnik kalibra 7,65 iznosi 7,65 mm, a kalibra 38 special iznosi 305 džula, pa je uzimajući u obzir sve navedene
+parametre, š to je i u praksi potvrđeno, jači prasak-detonacija prilikom ispaljenja kalibra 38 special. Pojasnio
+je da je oštećenje na ormariću znatno veće od prečnika pomenutih kalibara, koje oštećenje je moglo nastati
+od bilo kojeg od ta dva kalibra, te da kodčinjenice da u unutrašnjosti ormara nisu pronađeni bilo kakvi djelovi
+projektila, a imajući vidu evidentirano oštećenje u unutrašnjosti ormarića, s obzirom na stepen ulaznog
+oštećenja na metalnom ormariću i blagom udubljenju na suprotnoj strani ormarića, zaključuje se da je
+projektil koji je napravio opisano oštećenje u unutrašnjost ormarića izgubio znatan dio kinetičke energije i
+brzine, zbog toga je i malo oštećenje u vidu ulubljenja lima.
+
+Vještak balističke struke B.B. je na glavnom pretresu od 15.06.2015. naveo da smatra da se probnim
+pucanjem na bi mogli izazvati efekti kakvi su bili krtičnog dana iz razlogašto je oštećenje nastalo dejstvom
+projektila izazvano projektilom koji je prethodno udario o nekučvrstu prepreku, pa je došlo do njegovog
+zakretanja i formiranja oštećenja na metalnom ormariću, a prošlo je i dosta vremena, pa rastinje nije isto kao
+što je bilo u vrijeme spornog događaja. Naveo je da su na licu mjesta pronađene dviječaure kalibra 7.65, š to
+ukazuje da je ispaljeno dva projektila kalibra 7.65, te da je u tijelu Š.M. pronađen olovni projektil za kojeg je
+konstatovano da je kalibra.38 sepcijal, š to ukazuje da je kritičnom prilikom pucano iz dva vatrena oružja i to
+pištolja kalibra 7.65mm i revolvera kalibra 38 specijal ili pak 357 Magnum. Pojasnio je da se kalibar.38
+specijal može ispaliti iz revolvera odgovarajućeg kalibra kao i kalibra 357 magnum. Dalje je pojasnio, da
+prilikom ispaljenja projektila iz pištolja, č aure ispadaju u blizini stanja tačke lica koje puca, jer je takva
+konstrukcija pištolja i njegov princip rada, dok prilikom ispaljenja projektila iz revolveračaure ostaju u
+dobošu revolvera, te da nije poznata naučna metoda koja može utvrditi ko je od dva prisutna lica prvi ispalio
+projektil, a s obzirom da se radi o olovnom projektilu koji je relativno mekan, pa stepen deformiteta na
+projektilu ukazuje i načvrstoću ili tvrdoću prepreke na koju je naišao. Nije isključio mogućnost da je do
+deformiteta projektila moglo doći udarom u tijelo oštećenog Š. kako je to opisano od strane vještaka
+medicinske struke, jer bi udarom projektila o tvrdu prepreku, kakva je betonska podloga ili zid došlo do
+znatnog deformisanja projektila.
+
+Vještak balističke struke B.B. je na glavnom pretresu od 27.06.2019. godine naveo, da ostaje pri svojim
+pisanim nalazima i mišljenjima, te usmenim izjašnjenjima datim na glavnim pretresima, stimšto je naveo, da
+se na fotografijama sa rekonstrukcije spornog događaja, a po kazivanju optuženog M.I. i svjedoka-oštećenog
+R.D. vidi da je oštećeni R., prilikom ispaljivanja projektila od strane optuženog M., bio neposredno ispred
+njega i da on puca sa ispruženom rukom preko ramena oštećenog R.. Pojasnio je oštećeni R. pokazao poziciju
+kada je optuženi M. ispalio projektile i u tom slučaju je ruka optuženog M. iznad lijeve ruke oštećenog R., š to
+se može vidjeti na fotografiji br. 15, pa od ovako ispaljenih projektila, od strane optuženog M. nije postojala
+konkretna opasnost za oštećenog R. a. Dalje je pojasnio, dašto se tiče projektila ispaljenih od strane K.S. u
+pravcu optuženog M., nije postojala konkretna opasnost, jer se niko od prisutnih nije našao na balističkoj
+putanji ispaljenog projektila, č injenica da je Š.M. povrijeđen od projektila cal. 38 special, a koji je mogao biti
+ispaljen iz revolvera iz kojeg je pucao K., ukazuje da je oštećeni Š. povrijeđen od tzv. "rikošeta", te da je
+
+opš tepoznato pravilo u balistici da nakon odbijanja projektila od tvrde prepreke, tzv "rikošeta" nepredvidiva
+je putanja projektila, kako osnovnog dijela tako i eventualno sekundarnih djelova rasprslih od projektila.
+Dalje je naveo da može tvrditi da je optuženi K. ispalio jedan projektil i to navedeni "rikošet" koji je završio u
+tijelu oštećenog Š.M., ali da se ne može izjasniti da li je on ispalio jošprojektila, jer za to nije bilo materijalnih
+dokaza. Pojasnio je da su balističke putanje projektila približno određene i to na osnovu oštećenja koje je bilo
+na metalnom ormariću i na osnovu pozicije koju je pokazao optuženi M., a i ostali prisutni prilikom
+rekonstrukcije i to samo jednog projektila. Dalje je pojasnio, da je na osno vu mjesta pronalaženjačaura na
+skici S4 izvještaja sa rekonstrukcije, prikazao stajne tačke lica koje puca iz pištolja od kojih potičučaure
+obilježene brojevima 1 i 2, te da su crvenom isprekidanom linijom sa strelicom prikazani pravci ispaljenja
+projektila, a plavom isprekidanom linijom pravac ispadanjačaure iz pištolja nakon ispaljenja projektila.
+
+Sud je nalaz i mišljenje vještaka balističke struke B.B., dopune nalaza i mišljenja kao i njegovo usmeno
+izjaš njenje na glavnim pretresima cijenio kao stručne, jasne, objektivne i zasno vane na pravilima struke i
+nauke, pa je iste u cjelosti prihvatio.
+
+Iz sadržine nalaza i misljenja komisije vještaka koji su obavili sudsko-psihijatrijsko vještačenje optuženog
+K.S., u sastavu neuropsihijatra prof. dr. S.M., psihijatra dr. Ž.G. i psihologa B.S.I. od 28.11.2012. godine, koji je
+dat na osnovu podataka iz sudskog spisa, medicinske dokumentacije na ime otuženog, te njegovim
+neposrednim sudsko-psihijatrijskim pregledom, utvrdjuje se, da je optuženi K.S. osoba prosječnih
+intelektualnih sposobnosti, da ne boluje od trajnog duševnog oboljenja, da pokazuje simptomešizoidnog
+poremećaja ličnosti sa epizodičnim psihotičnim vladanjem koji se klaslifikuje kao teži duševni poremećaj.
+Objasnili su da ako se prihvati kao realan i vjerodostojan iskaz optuženog koji se odnosi na okolnosti
+krivičnog djela, pri kojem je prisutno neposredno provokativno ponašanje optuženog M. u vrijeme izvršenja
+krivičnog djela uz subjektivni osjećajživotne ugroženosti, optuženi se u tim okolnostima nalazio u stanju
+afekta straha, prepasti jakog inteziteta koji odgovara stanju privremene duševne poremećenosti. Navedeno je
+da je krivično djelo djelimično psihopatološki motivisanošizoidnim poremećajem ličnosti i patološkim
+afektom, te su mišljenja da pod navedenim okolnostima sposobnost optuženog da shvati značaj krivičnog
+djela koje mu se stavlja na teret, kao i njegova sposobnost da upravlja svojim postupcima u vrijeme izvršenja
+krivičnog djela bila bitno smanjena i konstatovali su da nema indikacija za primjenu mjera bezbijednosti.
+Predstavnik komisije vještaka neuropsihijatar prof.dr. S.M. je na glavnom pretresu dana 28.01.2013. godine, u
+cijelosti ostao pri pisanom nalazu i mišljenju, stimšto je naveo, da pod pretpostavkom da su optuženi K. i M.
+istovremeno pucali jedan na drugog, obojica su se nalazila u stanju neposredneživotne ugroženosti. Pojasnio
+je da prema pravnoj terminologiji dijagnoza F20 spada u kategoriju trajnog duševnog oboljenja, a dijagnoza
+F31.9 spada u kategoriju težeg duševneg poremećaja, te da je kod prve dijagnozešizofrenije, ista postavljena
+mimo standarda medjunarodne kvalifikacije duševnih bolesti koje se psihijatri pridržavaju kod postavljanja
+dijagnoze, te da se kod dijagnozešizofreniije, odnosno trajnog duševnog oboljenja, ako je u pitanju krivično
+djelo, cijeni da li je motivacija za krivično djelo psihopatološka, odnosno da li proizliazi iz simptoma
+šizofrenije sumanutih ideja, halucinacija, naročito zapovjednih halucinacija da se izvrši krivično djelo, te da u
+konkretnom slučaju kod optuženog K. i sama dijagnozašizofrenije ne daje osnova za tvrdnju da je krivično
+djelo izvršeno pod uticajem manifestnih simptoma psihoze, a prilikom neposrednog pregleda nijesu pronašli
+simptomešizofrenije kod optuženog. Naveo je da druga dijagnozašizoidni poremećaj ličnosti sa povremenim
+psihotičnim vladnjem ne označava dijagnozušizofrenije, većse radi o karakterološkim svojstvima ličnosti
+kod kojih ne postoje sistematizovane sumanute ideje uz prisutne afektivne poremećaje ili druge vidove
+simptoma, kao što su halucinacije, te da su imali u vidu navode ljekara da je isti liječen 1987., 1988., 1989. i
+1990. godine pa nadalje. Pojasnio je, da su sposobnost shvatanja značaja djela i mogućnosti upravljanja
+
+svojim postupcima kod optuženog K. bili bitno smanjeni, koji zaključak je baziran na navedenim svojstvima
+njegove ličnosti, sa povremenim psihotičnim vladanjem i stanjem optuženog na nivou patološkog afekta, te
+da se ne može tvrditi da optuženi boluje od tranog duševnog oboljenjašizofrenije i da se motivacija za
+krivično djelo ne može objasniti simptomimašizofrenije, odnosno sumanutim idejama i halucinacijama.
+Dalje je naveo, da dijagnozašizofrenije, koja je postavljena u predeliktnom periodu 2002. godine, a naknadne
+dijagnoze od istog tipašizofrenije i kontrolni pregledi 2010. godine, uz nedostatak praćenja stanja pacijenta u
+periodu od 8 godina, ne potvrđuju dijagnozušizofrenije, te da način izvršenja krivičnog djela i sve druge
+okolnosti kao i iskaz samog optuženog ne upućuju na to da su u vrijeme izvršenja krivičnog djela bili prisutni
+simptomi psihotičkog vladanja, jer prilikom neposrednog pregleda i razgovora kao i podataka u sudskom
+spisu nisu registrovani simptomi psihoze u vrijeme izvršenja krivičnog djela.
+Iz nalaza i mišljenja komisije vještaka koji su obavili sudsko-psihijatrijsko vještačenje optuženog K.S., u
+sastavu neuropsihijatra prof. dr. S.M., psihijatra dr. Ž.G. i psihologa B.S.I. od 11.02.2013. godine, za optuženog
+M.I., koji je dat na osnovu podataka iz sudskog spisa K.br. 198/10 i neposrednim sudsko-psihijatrijskim
+pregledom optuženog, utvrdjuje se, da je optuženi M.I. osoba prosječnih intelektualnih sposobnosti, da ne
+pokazuje simptome duševnog oboljenja, niti težeg duševnog poremećaja, te da se radi o duševno zdravoj
+osobi. Mišljenja su, da se optuženi u vrijeme izvršenja krivičnog djela nalazio u stanju afekta straha, prepasti
+jakog inteziteta koji odgovara stanju privremene duševne poremećenosti i da je krivično djelo psihopatološki
+motivisano patološkim afektom straha jakog inteziteta, usljedčega je sposobnost shvatanja značaja djela kao
+i mogućnost upravljanja svojim postupcima u vrijeme izvršenja krivičnog djela kod optuženog M. bili bitno
+smanjeni.
+Predstavnik komisije vještaka neuropsihijatar prof.dr. S.M. je na glavnom pretresu od 03.09.2013. godine, je u
+ime komisije u cjelosti ostao pri pisanom nalazu i mišljenju, s timšto je objasnio, da se u principima
+vješ tačenja iz sudske psihijatrije analizira ličnost okrivljenog kao i okolnosti krivičnog djela, a posebno kada
+su u pitanju delikti u afektu, te da se u odnosu na nalaz i mišljenje, koji je komisija dala u odnosu na
+optuženog K.S., ne može utvrditi da je isti identičan sa nalazom i mišljenjem koji se odnosi na optuženog
+Igora M., ali su okolnosti krivičnog djela za obojicu optuženih identični, naročito kada se ima u vidu okolnost
+da je istovremeno došlo do opaljivanja metaka, pa je u tom smislu cijenjeno afektivno stanje kod optuženog
+M. kao duševno zdrave osobe. U istim okolnostima je u odnosu na optuženog K. navedeno da je osnov
+njegove strukture ličnostišizoidni poremećaj, koji poremećaj ne spada u trajna duševna oboljenja, koja bi
+eventualno dovela i do stava o neuračunljivosti, pa su iz tog razloga za oba okrivljena cijenili afektivno stanje
+kako je navedeno i u pisanim nalazima i mišljenjima. Pojasnio je, da je prema standardima sudske
+psihijatrije, u konkretnom slučaju cijenjen i udiožrtve odnosno ponašanježrtve u deliktnoj situaciji, pa je
+logično da ako bi postojao udiožrtve, tada bi se moglo očekivati da postoji afektivno uzbuđenje koje može
+biti različitog inteziteta, š to su imali u vidu kod jednog i drugog okrivljenog, ali se afekat jakog inteziteta
+odnosi na period ispaljivanja metaka i u tom momentu je dostigao jak intezitet, odnosno patološki afekat,
+dok je ponašanje neposredno u preddeliktnom periodu racionalno, odnosno može se reći da se radi o
+svjesnom ponašanju i traženju izlaza iz konfliktne situacije, š to podrazumijeva očuvanu svijest. Dalje je naveo
+i objasnio, da se u konkretnom slučaju radi o individualnoj reakciji na strah, koja reakcija se može sastojati u
+tome da sečovjek ukoči, kao i reakcija besciljnog bježanja, te da je u predeliktnom periodu optuženi M.
+pokušao da na racionalan način riješi konfliktnu situaciju, u kom periodu nema patološkog afekta, nema
+afekta straha ni prepasti jakog inteziteta, samo afekat razdraženosti s obzirom na konfliktne odnose u
+preddeliktnom periodu. Pojasnio je da je u podgledu medicinske dokumentacije na ime optuženog K.S., na
+str. 3 nalaza naveden Izvještaj psihijatra iz Herceg Novog od 25.11.2010. godine, sa dijagnozom koja je
+identična kao kod prethodnih nalazašizofrenije, pa je prema tome izvještaj od 11 mjeseci relevantniji nego
+prethodni izvještaj koji se odnosi na istu godinu, te da se radi o istoj dijagnozi koja je ustanovljena 2002.
+godine od strane dr. Stojovića, ali da da je period od 2002 godine do 2010 godine, faktički bez dijagnoze, jer
+postavljena dijagnozašizofrenije treba da ima hronični tok, a imajući u vidu da nedostaje 8 godina njenog
+
+toka, to dovodi u pitanju postavljanje ove dijagnoze, te da se u Izvještaju dr. S. od 01.06.2010. godine, samo
+navodi da je ptuženi K. liječen 1987.,1989.,1990., 1995. i 1996. godine, ali da nije priložena medicinska
+dokumentacija. Nadalje, vještak je objasnio da se dijagnozašizofrenije ne postavlja i ne prati ambulantnim
+pregledima, većse postavlja na temelju međunarodne kvalifikacije duševnih bolesti, koja nije poštovana od
+strane psihijatra i nije na temelju bolničkog liječenja verifikovana duševna bolest, kontinuirano u periodu od
+šest mjeseci ičitava dokumentacija od 2002. do 2010. godine, ne upućuje na kontinuirano liječenje i
+ponašanje optuženog kao bolesnika koji boluje odšizofrenije i u potpunosti isključuje mogućnost da je K.
+liječen odšizofrenije, te da nije bilo potrebe za njegovim dužim psihijatrijskim vještačenjem. Dalje je
+pojasnio, da je optuženi I.M. duševno zdrava osoba, a opisano je njegovo duševno stanje u vrijeme izvršenja
+krivičnog djela, te da nije bilo potrebe tražiti medicinsku dokumentaciju kojom bi se dokazalo da je isti
+obolio, jer kod njega nisu uočeni nikakvi simptomi duševne bolesti.
+Sud je pisane nalaze i mišljenja komisije vještaka, kao i usmeno izjašnjenje predstavnika komisije prof.dr.
+neuropsihjatra S.M. na glavnim pretresima cijenio kao stručne, jasne, objektivne i zasno vane na pravilima
+struke i nauke, pa je ista u cjelosti prihvatio.
+
+Iz izvoda iz kaznene evidencije Ministarsva pravde Crne Gore br. 04/2-72-15951/17 0d 02.10.2017. godine za
+optuženog K.S. proizilazi da je isti osuđivan i to presudom Opštinskog suda u Dubrovniku, koja je preinačena
+presudom Okružnog suda u Dubrovniku K.br. 445/83 od 19.12.1983. godine i K ž.25/84 od 23.02.1984. godine i
+osudjen na kaznu zatvora u trajanju od 1 mjeseci, uslovno na 3(tri) godine, zbog krivičnog djela izčl. 131. st.1.
+KZH- KD-teška krađa, presudom Opštinskog suda u Kotoru K.br. 41/87 od 04.03.1987. godine, osuđen na
+novčanu kaznu od 40.000 ( č etrdeset hiljada) dinara, zbog djela izčl. 185/3/1 KZ SRCG, presudom Opštinskog
+suda u Cetinju K. 14/89 od 03.04.1990. godine, kojom je osuđen na kaznu zatvora u trajanju od 3(tri) mjeseca,
+uslovno na 1( jednu) godinu, zbog djela izčl. 143. st.2. KZ SRCG ( š umska krađa), presudom Osnovnog suda u
+Kotoru K. 398/90 od 20.12.1990, godine, kojom je osuđen na novčanu kaznu u iznosu od 2.700 dinara, zbog
+djela izčl. 185/3/1 KZ SRCG, presudom Osnovnog suda u Kotoru posl. br K.153/91 od 15.09.1992 godine,
+kojom je osuđen na kaznu zatvora u trajanju od 6( š est) mjeseci, zbog krivičnog djela izčl. 208. st.2. u vezi st.1.
+KZ RCG, presudom Osnovnog suda u Kotoru posl. br. K.3/92 od 24.06.1992. godine, kojom je osuđen na kaznu
+zatvora u trajanju od 3(tri) mjeseca, zbog krivičnog djela izčl. 208. st.1. KZ RCG, presudom Osnovnog suda u
+Herceg Novom K. 214/92 d 18.03.1994. godine, a koja je preinačena presudom Višeg suda u Podgorici K ž.br.
+252/94 od 10.06.1994. godine, kojom je osuđen na kaznu zatvora u trajanju od 15 (petnaest) dana, zbog
+krivičnog djela uvreda izčl. 84. st.1. u vezičl. 91. st. 3. KZ RCG, odlukom Predsjednika RCG-Podgorica br. 01705/2 od 19.12.1995. godine, oslobodjen izdržavanja kazne zatvora za presudu Višeg suda u Podgorici br.
+252/94 od 10.06.1994. godine. Kaznu izdržavao od 31.08.1995. godine do 27.01.1996 godine po redovnom
+isteku kazne, presudom Osnovnog suda u Kotoru K. 326/95 od 31.12.1996. godine, kojom je osudjen na
+novčanu kaznu u iznosu od 1.000(hiljadu) dinara, zbog krivičnog djela nedozvoljena trgovina izčl. 131. st.1.
+KZ RCG, presudom Osnovnog suda u Kotoru, posl. br. K. 306/96 od 22.10.1997. godine, oglašen krivim zbog
+krivičnog djela nedozvoljena trgovina izčl. 147. st.1. KZ RS i osudjen na novčanu kaznu u iznosu od 2.600,00
+dinara, presudom Osnovnog suda u Kotoru K.br. 293/98 od 02.11.1998. godine, zbog krivičnog djela
+nedozvoljena trgovina izčl. 131. st.1. KZ RCG, kojom je osudjen na novčanu kaznu u iznosu od 3.000(tri
+hiljade) dinara, presudom Osnovnog suda u Kotoru br. 256/97 od 15.09.1999. godine, zbog krivičnog djela
+nasilničko ponašanje izčl. 195. st.1. KZ RCG, kojom je osudjen na kaznu zatvora u trajanju od 3 mjeseca,
+uslovno na dvije godine, presudom Osnovnog suda u Kotoru K.br. 82/99 od 22.04.1999. godine, zbog
+krivičnog djela nedozvoljena trgovina izčl. 147. st.1. KZ R. Srbije i osudjen na novčanu kaznu u iznosu od
+5.000 ( pet hiljada) dinara, presudom Osnovnog suda u Kotoru K.br. 181/97 od 04.09.1998. godine, osudjen na
+kaznu zatvora u trajanju od 70 (sedamdeset) dana, zbog djela nedozvoljena trgovina izčl. 131 st.1 KZ RCG,
+presudom Osnovnog suda u Kotoru Kv.br. 263/00 od 19.12.2000 godine, ranija presuda K.br. 181/97 od
+
+04.09.1998 godine i presuda K.br. 176/99 od 18.10.1999. godine od 18.10.1999 godine, su preinačene na
+jedinstvu kaznu zatvora u trajanju od 90(devedeset) dana. Kaznu je izdržavao u vremenu od 25.12.2002.
+godine do 05.02.2003. godine, presudom Osnovnog suda u Kotoru K.br. 340/06 od 27.11.2008. godine, zbog
+krivičnog djela nasilničko ponašanje izčl. 399. st.2. KZ, kojom je osuđen na kaznu zatvora u trajanju od 6( š est)
+mjeseci, uslovno na 1 (jednu) godinu i 6 ( š est) mjeseci.
+
+Iz izvoda iz kaznene evidencije Ministarsva pravde Crne Gore br. 04-2/72/15954/17 za optuženog M.I.
+proizilazi, da isti nije osuđivan.
+
+Cijeneći navode optužbe, odbranu optuženih, te sve provedene dokaze kako pojedinačno, tako i u njihovoj
+međ usobnoj vezi, ovaj sud nalazi, da je optuženi K.S. izvršio krivično djelo teško ubistvo u pokušaju izčl. 144.
+tač. 3. u vezičl. 20. Krivičnog zakonika Crne Gore, a optuženi M.I. krivično djelo ubistvo u pokušaju izčl. 143. u
+vezičl. 20. Krivičnog zakonika Crne Gore, na način, u vrijeme i na mjesto kako je to predstavljeno u izreci
+presude.
+
+Naime u postupku je nesumnjivo utvrđeno, da je dana 30.04.2010. godine, u P...., Opština K..., na parking
+prostoru i putu ispred ugostiteljskog objekta „Vi... M...“ optuženi M.I., vraćajući se sa posla prolazeći pored
+navedenog ugostiteljskog objekta, ugledao optuženog K.S., koji je sjedio na terasi lokala u društvu sa
+oštećenima Š.M. i R.D., zbogčega je zaustavio automobil, u namjeri da sa optuženim K. razjasni neke priče
+koje je prethodnočuo po gradu i kupoprodaje kuće koja je prethodno bila upisana na ime optuženog M.I.,
+nakončega je prišao stolu i pozvao optuženog K.S. da ustane i krene prema parkingu, š to je optuženi K.
+prihvatio, da bi potom idući prema parkingu optuženi K. naglo skrenuo udesno prema svom vozilu, koje je
+bilo parkirano u neposrednoj blizini ugostiteljskog objekta, otvorio vrata od vozila i iz istog uzeo revolver
+nepoznate marke, nakončega je sa revolverom u ruci krenuo da se udaljava unazad prema suprotnom kraju
+terase ugostiteljskog objekta, kojom prilikom je i optuženi M.I., iza pojasa izvadio pištolj marke " Č Z", model
+50, cal. 7,65 mm, bez fabričkog broja, isti repetirao, pa kada je optuženi K.S. stigao do stuba na suprotnoj
+strani terase i zaklonio se iza istog, obojica su u pravcu jedan drugog ispalili više projektila i to optuženi K.S.
+najmanje jedan u pravcu optuženog M., kada su se u njegovoj blizini nalazili oštećeni Š.M. i R.D., kojom
+prilikom se projektil koji je ispalio optuženi K. odbio od neke tvrde prepreke na svojoj putanji i pogodio
+oštećenog Š.M. u predjelu prednje strane desnog ramena, nanoseći mu laku tjelesnu povredu u vidu ustrelne
+rane, dok je optuženi M. u pravcu optuženog K. ispalio najmanje dva projektila, koja ga nijesu pogodila.
+
+Naprijed utvrdjenočinjenično stanje ovaj sud je utvrdio, kako dijelom iz navoda odbrana optuženih, iskaza
+saslušanih svjedoka, očevidaca predmetnog dogadjaja, sadržine uvidjajne dokumentacije, kao i stručnog i
+objektivnog balističkog i medicinskog vještačenja.
+
+Naime, optuženi K.S. u navodima svoje odbrane nije sporiočinjenicu, da je kritičnog dana sjedio za stolom, u
+bašti lokala "V...M..."sa optećenima Š.M. i R.D., kada je primijetio, kako je ispred lokala automobilom došao
+optuženi M.I., koji je u jednom trenutku prišao stolu za kojim je sjedio i drsko mu rekao da ustane i pokazao
+mu da krene prema parkingu, š to je on prihvatio, ustao i krenuo prema parking prostoru, da bi u jednom
+trenutku posumnjao da je optuženi M. naoružan, jer je sve vrijeme držao ruku u predjelu lijevog kuka, nakon
+
+čega je sa namjerom da pobjegne krenuo ka svom vozilu, iz kojeg je uzeo pištolj, a zatim nastavio da se
+udaljava, da bi u jednom trenutku začuo više pucnjeva, nakončega je i on iz revolvera pucao jedanput.
+
+I optuženi M.I. je u navodima svoje odbrane naveo, da je kritičnom prilikom prolazeći pored objekta
+"V...M..."vidio optuženog K.S., zbogčega je odlučio da se zaustavi i sa njim popriča vezano za neke priče koje
+je čuo po gradu, u namjeri da ga pita da li su te priče tačne, nakončega je prišao stolu, za kojim je sjedio
+optuženi K. u društvu, oštećenih Š.M. i R.D., pozdravio se sa njima, a zatim rekao optuženom K. da krene
+prema ponti, š to je optuženi K. bez riječi prihvatio, ustao i krenuo korak-dva idući ispred njega u pravcu gdje
+su se nalazila parkirana vozila, nakončega je optuženi K. u jednom trenutku napravio iskorak udesno ka
+svom vozilu, otvorio vrata vozila, izvadio pištolj, zbogčega mu se obratio riječima "stani, š ta to radiš ", našta
+mu je optuženi K. odgovorio "neće mene niko da bije", držeći pritom pištolj u desnoj ruci uperen ka zemlji,
+kada se pojavio i oštećeni R.D., koji je stao ispred njega, pokušavajući da spriječi sukob, u kom trenutku je i
+optuženi M. izvadio pištolj, koji mu se nalazio za pasom, držeći ga niz nogu usmjeren ka zemlji, nakončega se
+optuženi K. počeo povlačiti par koraka unazad, kojom prilikom mu je prišao oštećeni Š.M., govoreći "stanite,
+jeste li poludjeli, š ta to radite". Nadalje, optuženi M.I. nije sporio, da je kritičnom prilikom ispalio dva hica iz
+pištolja koji je imao, ali u trenutku nakonšto je i optuženi K. ispalio projektile iz svog pištolja, da je nakon
+toga izvadiošanžer iz pištolja i pištolj odložio na parkirano vozilo crvene boje, a potom pozvao optuženog K.
+da se fizički obračunaju, nakončega je uzeo pištolj i obzirom da je u cijevi ostao metak, ispalio jošjedan
+projektil u vazduh.
+
+Dakle, cijeneći odbrane optuženih K.S. i M.I. u dijelu u kojem su optuženi opisali dio dogadjaja kojem je
+prethodila upotreba vatrenog oružja, nesumnjivo se može zaključiti, da je kritičnom prilikom, optuženi M.I.,
+prolazeći pored ugostiteljskog objekta "V...M..." u P..., ugledao optuženog K.S., koji je sjedio na terasi tog
+ugostiteljskog objekta, u društvu oštećenih Š.M. i R.D., a potom zaustavio vozilo, u namjeri da sa optuženi K.
+om porazgovara vezano za neke priče koje ječuo po gradu, prišao stolu za kojim je sjedio optuženi K.,
+naoružan pištoljem, koji je držao na ledjima za pasom, a zatim pozvao optuženog K. da dodje do ponte da
+porazgovaraju, š to je optuženi K. prihvatio, ustao i krenuo prema ponti, odnosno dijelu gdje su bila parkirana
+vozila, idući par koraka ispred optuženog M., da bi u jednom trenutku naglo skrenuo udesno prema svom
+parkiranom automobilu, otvorio vrata automobila i iz istog uzeo revolver koji je držao u desnoj ruci okrenut
+ka zemlji, kada je i optuženi M. iza pasa izvadio pištolj koji je imao kod sebe, takodje držeći ga u desnoj ruci
+okrenutog ka zemlji, a kada su im prišli oštećeni R.D., koji je stao ispred optuženog M. i oštećeni Š.M., koji je
+stao pored optuženog K., u namjeri da spriječe eventualni sukob.
+
+Saglasno kazivanju optuženih K.S. i M.I. u navedenom dijelu, stoje ičinjenice koje proizilaze iz iskaza svjedoka
+oštećenog Š.M. očevidca predmetnog dogadjaja i dijelom iskaza svjedoka oštećenog R.D..
+
+Naime, svjedok oštećeni Š.M. je u svom iskazu posvjedočio, da je dana 30.04.2010. godine, zajedno sa
+optuženim K.S.om i oštećenim R.D.om, sjedio za jednim od stolova na terasi konobe "V...M..."da bi se u
+jednom trenutku na terasi pojavio optuženi M.I., koji je tom prilikom pozvao optuženog K. da izadju, š to je
+optuženi K. prihvatio, da tom prilikom nije obraćao posebnu pažnju na njih, jer je znao da su dobri prijatelji,
+da bi u jednom trenutku nastala neka "trka", zbogčega je oštećeni R.D. potrčao ka parkingu, koji se nalazio u
+blizini terase, a za njim i on, gdje su na parkingu zatekli optužene K.S. i M.I. sa pištoljima u rukama i to
+
+optuženog Makrovića kako repertira pištolj držeći ga uperenog ka zemlji, dok se optuženi K. povlačio unazad
+držeći pištolj u ruci, koji nije usmjeravao u pravcu optuženog M., da je tom prilikom oštećeni R.D. stao u blizini
+optuženog M., a on izmedju njih i optuženog K., govoreći im " š to vam je, jeste li poludjeli, š toće vam pištolji,
+nemoj ko metka da je opalio", nakončega je vidio da se optuženi K. zaklonio iza jednog stuba.
+
+I svjedok oštećeni R.D. je u svom iskazu naveo, da je kritičnom prilikom sjedio na terasi u društvu optuženog
+K.S. i oštećenog Š.M., te da je njihovom stolu prišao optuženi M.I., koji se arogantno obratio optuženom K.,
+govoreći mu "S. diži se", a zatim mu rukom pokazao u pravcu parkinga, nakončega je optuženi K. bez riječi
+ustao i krenuo ka parkingu, da je tom prilikom posumnjao da se nešto može loše desiti, jer je znao da su
+optuženi u zadnje vrijeme u lošim odnosima, zbog kupovine kuće, koja je prethodno bila upisana na
+optuženog M., da je zbog toga ubrzo ustao i krenuo za njima i tom prilikom za pasom optuženog M. primijetio
+pištolj, da bi odmah nakon toga vidio, kako optuženi K. pravi iskorak prema svojim kolima, hvata se za kvaku
+od vrata vozača, kada mu se optuženi M. obraća riječima "stani", a nakon toga "vadi pištolj", koji drži u visini
+kuka, ali ga ne usmjerava u pravcu optuženog K., zbogčega je stao ispred optuženog M., zajedno sa
+oštećenim Š.M., držeći raširene ruke, okrenut licem ka optuženom M., zbogčega nije mogao da vidi gdje se u
+tom trenutku nalazio optuženi K.S., da ječuo kako je tom prilikom optuženi M. obratio optuženom K. "pičko
+vrati se", našto je i optuženi K. nešto dobacio optuženom M., ali nije znao da kažešto, nakončega je M. preko
+njegove lijeve ruke ispalio dva hica.
+
+Da su optuženi K.S. i M.I. kritičnom prilikom, u pravcu jedan drugog ispalili projektile iz vatrenog oružja i to
+optuženi K.S. jedan pojektil, koji se na svojoj putanji odbio od tvrde prepreke i pogodio oštećenog Š.M. u
+predjelu prednje strane desnog ramena, a optuženi M.I. istom prilikom, ispalio najmanje dva projektila u
+pravcu optuženog K., sud je nesumnjivo utvrdio, kako iz navoda odbrana optuženih, koji nijesu sporili
+činjenicu, da su kritičnom prilikom pucali iz vatrenog oružja koje su imali kod sebe i to optuženi M.I. pištolja
+marke " Č Z" model 50, cal. 7,65 mm bez fabričkog broja, odnosno revolvera nepoznate marke koji je kod sebe
+imao optuženi K., tako i objektivnog i u pogledu odlučnihčinjenica doslednog iskaza svjedoka oštećenog
+Š.M. i sadržine materijalnih dokaza zapisnika o uvidjaju Uprave policije-Ispostava Kotor od 30.04.2010.
+godine, te sadržine stručnih i objektivnih nalaza i mišljenja kako vještaka balističara, tako i vještaka
+medicinske struke.
+
+Naime, iz iskaza svjedoka oštećenog Š.M., koji je u pogledu navedenihčinjenica dosledno svjedočio u
+postupku, nesumnjivo se utvrdjuje, da je do ispaljenja spornih projektila od strane optuženih došlo u
+trenutku kada je optuženi K.S. povlačeći se sa parking prostora, koji se nalazio uz terasu ugostiteljskog
+objekta, u pravcu T..., došao sa suprotne strane terase i zaklonio se iza stuba koji se nalazi uz lokalni put,
+gledano u pravcu T..., u kom trenutku se oštećeni nalazio licem okrenut ka optuženom K. u pored zadnje
+lijeve strane automobila "G..." crvene boje, koji je prvi bio parkiran uz terasu ugostiteljskog objekta, ašto je
+ovaj svjedok pokazao i na rekonstrukciji koja je održana dana 18.04.2018. godine, u kom trenutku su se
+optuženi M.I. i oštećeni R.D. nalazili u njegovoj neposrednoj blizini iza njegovih ledja, sa zadnje strane
+automobila "G...", kada su optuženi kako to svjedok navodi, zapucali jedan na drugog, a koječinjenice nijesu
+sporili ni optuženi K. i M., kao ni svjedok R.D., koji je u svom iskazu bio decidan, da je optuženi M.I. preko
+njegove lijeve ruke ispalio dva metka iz pištolja koji je imao kod sebe.
+
+Saglasno iskazu svjedoka Š.M. u pogledu pozicija sa kojih su optuženi ispalili sporne projektile u pravcu jedan
+drugog stoje ičinjenice koje proizilaze iz sadržine zapsinika o uvidjaju Uprave policije OB Kotor od
+30.04.2010. godine, iz kojeg je sud utvrdio, da su na licu mjesta predmetnog dogadjaja pronadjene dvije
+čaure cal. 7,65 mm i to na pločniku iza parkiranog vozila marke "Golf III" karavan crvene boje, reg. oznake KO..., u blizinižardinjere terase i na platou parkinga, š to jasno ukazuje, da su kritičnom prilikom ispaljena
+najmanje dva projektila tog kalibra i to iz pištolja, koji je kritičnom prilikom koristio optuženi M.I. marke " Č Z",
+model 50, cal. 7,65 mm, koji je optuženi predao policijskim službenicima, dana 01.05.2010. godine, kako to
+proizilazi, iz sadržine potvrde o privremeno oduzetim predmetima na ime ovog optuženog, te izvještaja o
+balističkom vještačenju Forenzičkog centra u Danilovgradu, sačinjenog po vještaku B.B., iz koje proizilazi, da
+je komparacijom dvije spornečaure pronadjene na licu mjesta i nespornihčaura ispaljenih iz pištolja marke
+"ČZ" model 50, cal. 7,65 mm, utvrdjeno postojanje individualnih karakteristika koje se podudaraju, š to znači
+da su spornečaure ispaljene iz pištolja, koji je kritičnom prilikom oduzet od optuženog M.I.. Nadalje, imajući
+u vidu nalaz i mišljenje vještaka balističara B.B. od 30.05.2018. godine, sačinjenog nakon obavljene
+rekonstrukcije na licu mjesta, gdje su učesnici u dogadjaju pokazali pozicije na kojima su se nalazili u
+trenutku ispaljenja spornih projektila i dovodeći u vezu tečinjenice sa karakteristikama modela pištolja koji
+je koristio optuženi M.I. u kritičnom dogadjaju, a koji pištolj izbacuječaure uvis i udesno pod uglom od oko 90
+stepeni u odnosu na uzdužnu osu cijevi, na rastojanju od 1-3 metra od stajne tačke, kada je ruka u
+anatomskom položaju, to je vještak na osnovu balističkih zakonitosti i materijalnih tragova i položajačaura
+pronadjenih na licu mjesta utvrdio, da je optuženi M.I. sporne projektile ispalio kada se nalazio sa zadnje
+strane parkiranog automobila marke "G..." crvene boje, odnosno kada se nalazio na poziciji zadnje desne
+boč ne strane tog automobila, ašto je prikazao na skici S-4, koja je sastavni dio nalaza i mišljenja, na kojoj je
+vješ tak balističara a imajući u vidu mjesta pronalaženjačaura prikazao stajne tačke lica koje puca iz pištolja
+od kojih potičučaure, cal. 7,65mm,a na kojoj su isprekidanom crvenom linijom prikazani pravci ispaljenja
+projektila, a plavom isprekidanom linijom pravac ispadanjačaura, na osnovučega se može izvesti nesumnjivi
+zaključak da je optuženi M.I. najamnje jedan projektil ispalio u prvcu mejsta gdje se nalazio optuženi K.S.,
+čime se potvrđuje iskaz svjedoka oštećenog Š.M., koji je opredijelio poziciju optuženog M.I. u trenutku kada je
+čuo pucnje. Na ovakav zaključak suda, koji proizilazi iz balsitičkog vještačenja, da je optuženi M.I. kritičnom
+prilikom ispalio projektile, u pravcu mjesta gdje se nalazio optuženi K.S. zaklonjen iza stuba, sa suprotne
+strane terase, nesumnjivo upućuju i materijalni tragovi, evidentirani u zapisniku u uvidjaju u vidu oštećenja
+koja potiču od dejstva projektila, kao i metalne djelove projektila i to na kamenom pločniku pored stola na
+terasi, gdje je pronadjen manji komad metala sive boje, koji potiče od dijela projektila, dok je nažardinjeri
+koja se nalazi do puta iza pomenutog stola, pronadjen manji komad metala bakarne boje, koji takodje potiče
+od dijela projektila, dok je na metalnoj kutiji sive boje, koja se nalazi u neposrednoj blizinižardinjere, gdje je
+pronadjen dio projektila, na visini od oko 0,95 cm od pločnika uočeno oštećenje u vidu rupe, upravo na
+poziciji gdje se nalazio optuženi K.S..
+
+Nadalje, č injenica da je projektil koji je kritičnom prilikom ispalio optuženi K.S., u optuženog M.I., na svojoj
+putanji odbijajući se od tvrde prepreke, pogodio oštećenog Š.M., kojom prilikom mu je nanio ustrelnu ranu u
+predjelu prednje strane lijevog ramena, nesumnjivo upućujučinjenice koje je sud utvrdio, iz sadržine
+izvještaja o balističkom vještačenju Forenzičkog centra u Danilovgradu broj 1812/10 od 10.06.2010. godine, iz
+kojeg se utvrdjuje, da je projektil koji je izvadjen iz tijela oštećenog Š.M. olovni i isti potiče od cal. 38 specijal,
+ispaljen iz revolvera 38 specijal ili "357 Magnum", koji po svojim karakteristikama ne izbacuječaure, kako se
+to izjasnio vješta balističar na glavnom pretresu, pa dovodeći u vezu tečinjenice sa navodima odbrane
+optuženog K.S., da je kritičnom prilikom kod sebe imao pištolj sa "burencetom", iz kojeg je ispalio jedan
+projektil, nesumnjivo se može zaključiti, da je projektil koji je ispalio optuženi K.S. na svojoj putanji pogodio
+oštećenog Š.M..
+
+Da je oštećeni Š.M. ustrelnu ranu u predjelu prednje strane desnog ramena, zadobio kada je prednjom
+stranom tijela bio okrenut ka otvoru usta cijevi, nesumnjivo upućujučinjenice koje je sud utvrdio iz stručnog i
+objektivnog nalaza i mišljenja vještaka medicinske struke dr. K.N., koji je u svom osno vnom nalazu, kao i u
+dopunama istog utvrdio, da je oštećeni Š.M. u predmetnom dogadjaju zadobio ustrelnu ranu u predjelu
+prednje strane desnog ramena sa ulaznim otvorom ustreline ovalnog oblika, š irine oko 1,5 cm, koji se
+kanalom produžava unazad kroz potkožno meko tkivo u predjelu prednje strane desnog ramena od desnog
+potključnjačinog predjela u spoljnjoj trećini, ispod spoljašnjeg okrajka desne ključnjače, gdje je u mekom
+tkivu u nivou zgloba izmedju natplećka desne lopatice i desne ključnjače ustanovljen projektil, te da je kanal
+strijelne rane ustreline od naprijed ka nazad, kada je oštećeni gornjim dijelom tijela bio nagnut, savijen
+prema otvoru usta cijevi ili kada se nalazio u polučučećem iličučećem položaju, ašto je saglasno sa
+kazivanjem svjedoka oštećenog, da je u trenutku pucnjave licem bio okrenut ka mjestu gdje se nalazio
+optuženi K.S., koji je ispalio projektil koji je pogodio oštećenog, dok su se u njegovoj neposrednoj blizini iza
+njega nalazili optuženi M.I. i oštećeni R.D., odnosno po kazivanju ovog svjedoka na rekonstrukcijim, koji je
+pokazao da je u trenutku započinjanja pucnjave savio ičučnuo ispred lijeve bočne strane automobila "G.".
+Činjenica, da se projektil koji je pogodio oštećenog Š.M. na svojoj putanji odbio o neke tvrde prepreke, sud je
+utvrdio iz usmenih izjašnjenja kako vještaka medicinske struke, tako i vještaka balističara. Naime, vještak
+medicinske struke se na glavnom pretresu, a nakon izvršene rekonstrukcije na licu mjesta dana 18.04.2018.
+godine i ponovnog sudsko-medicinskog pregleda oštećenog, te imajući u vidu rezultate balističkog
+vješ tačenja projektila koji je izvadjen iz tijela oštećenog utvrdio, da se imajući u vidu povrede anatomskih
+struktura kod oštećenog Š.M., odnosnočinjenice, da je projektil prošao kroz meka tkiva, te medicinske
+karakteristike ustrelnog otvora koji je ovalnog oblika, njegovu veličinu, kao i utvrdjenost deformisanosti
+projektila, vješ tak je ustvrdio, da se ne radi o direktnom dejstvu projektila, ašto je saglasno sa izjašnjenjem
+vještaka balističara B.B., koji je na osnovu deformiteta projektila cal. 38 specijal ustvrdio, da je oštećeni Š.
+povrijedjen od tzv. rikošeta, odnosno nakon odbijanja projektila o tvrdu prepreku na svojoj putanji.
+
+Cijeneći naprijed utvrdjenočinjenično stanje ovaj sud nalazi da su se u radnjama optuženog K.S. stekli svi
+bitni elementi bića krivičnog djela teško ubistvo u pokušaju iz čl. 144 st. 1. tačka 3, u vezičl. 20. Krivičnog
+zakonika, a u radnjama optuženog M.I. krivičnog djela ubistvo u pokušaju izčl. 143. u vezičl. 20. Krivičnog
+zakonika, obzirom da je u postupku nesumnjivo utvrđeno, da su optuženi su optuženi dana 30.04.2019.
+godine, u P..., Opština K..., na parking prostoru i putu pored ugostiteljskog objekta „V...M...“ sa umišljajem
+pokušali jedan drugog da lišeživota, dok je optuženi K. istom prilikom, doveo u opasno st iživote oštećene
+Š.M. i R.D., na način, š to je optuženi M.I. vraćajući se sa posla, prolazeći pored ugostiteljskog objekta „V...M...“
+kada je vidio da optuženi K.S. sjedi za stolom na terasi navedenog ugostiteljskog objekta sa oštećenim Š.M. i
+R.D., prišao njihovom stolu i pozvao optuženog K.S. da ustane i krene prema parkingu, kako bi sa njim
+razjasnio neke priče koje je prethodnočuo po gradu i kupoprodaje kuće koja je prethodno bila upisana na
+ime optuženog M.I., nakončega je optuženi K.S. ustao od stola i krenuo prema parkingu, a potom naglo
+skrenuo prema svom vozilu, koje se nalazilo na parkingu u njihovoj neposrednoj blizini, otvorio vrata vozila i
+iz istog uzeo revolver nepoznate marke, a onda sa revolverom u ruci krenuo da se udaljava unazad prema
+suprotnom kraju terase, dok je optuženi M.I. izvadio iza pojasa pištolj marke „CZ“ model 50, cal. 7,65 mm, bez
+fabričkog broja i isti repetirao, pa kada je optuženi K. stigao do stuba na suprotnoj strani terase i zaklonio se
+iza istog, obojica su istovremeno ispalili više projektila jedan u pravcu drugog i to optuženi K.S. najmanje
+jedan projektil, a optuženi M.I. najmanje dva projektila, kada su se u neposrednoj blizini optuženog M.I.
+nalazili i oštećeni Š.M. i R.D., koji su u međuvremenu dotrčali do optuženog M., pa je projektil, koji je ispalio
+optuženi K.S., nakonšto se odbio od neke tvrde prepreke na svojoj putanji, pogodio oštećenog Š.M. u
+predjelu prednje strane desnog ramena nanoseći mu laku tjelesnu povredu u vidu ustrijelne rane.
+
+Iz okolnosti konkretnog slučaja proizilazi, da su optuženi u izvršenju krivičnog djela postupali sa umišljajem.
+Optuženi K.S. je bio svjestan da pucajući iz revolvera nepoznate marke, sa kratkog rastojanja (10-11 metara) u
+pravcu optuženog M.I., istog može lišitiživota, pa je to i htio, dok se u odsustvu zabranjene posledice ne može
+pripisati volji i htjenju optuženog, većsticaju drugih okolnosti. U odnosu na kvalifikatornu okolnost,
+ranjavanje oštećenog Š.M. i dovodjenje u opasnostživota oštećenog R.D., optuženi K.S. postupao je sa
+eventualnim umišljajem, dakle, bio je svjestan da pucajući u pravcu gdje se nalazio optuženi M.I., a učijoj su
+se neposrednoj blizini nalazio oštećeni Š.M., sa desne strane optuženog M.I. i oštećenog R.D., koji se nalazio
+ispred optuženog M.I., istima može ugrozitiživot, pa je na to i pristao. Nadalje, optuženi M.I. je bio svjestan da
+pucajući iz vatrenog oružja pištolja dva puta u pravcu optuženog K.S., iz reletivne blizine, istog može lišiti
+života, pa je to i htio, našto upućuju okolnosti konkretnog slučaja, a izostanak zabranjene posljedice ne može
+se pripisati volji i htjenju optuženog M., većsticaju drugih okolnosti.
+
+Pri ocjeni stanja svijesti optuženih u vrijeme izvršenja krivičnog djela sud je imao u vidu i rezultate sudskopsihijatrijskog vještačenja optuženih, iz kojih je nesumnjivo utvrdio, da je optuženi K.S. osoba prosječno
+intelektualnih sposobnosti, da ne boluje od trajnog duševnog oboljenja, sa simptomimašizoidnog
+poremećaja ličnosti, dok je optuženi M.I., osoba prosječnih intelektualnih sposobnosti, koja ne pokazuje
+simptome duževnog oboljenja, niti težeg duševnog poremećaja, te da se radi o duševno zdravoj osobi, š to
+znači da su optuženi u vrijeme izvršenja krivičnog djela bili uračunljivi.
+
+Kod ovako utvrdjenogčinjeničnog stanja, sud je kao neosnovan cijenio stav odbrane kako optuženog K.S.,
+tako i optuženog M.I., da su u konkretnom slučaju postupali u nužnoj odbrani, odbijajući od sebe istovremeni
+protivpravni napad. Naime, kako to proizilazi iz provedenih dokaza na glavnom pretresu, a očemu se sud
+prethodno izjasnio u presudi, nesumnjivo je utvrdjeno, da je kritičnom prilikom optuženi M.I., naoružan
+pištoljem koji je držao za pasom na ledjima ispod majice, prišao stolu za kojim je sjedio optuženi K.S., kako bi
+sa njim porazgovarao, vezano za neke priče koje ječuo po gradu, kako to proizilazi iz navoda odbrane
+optuženog M.I., odnosno, vezano za kupoprodaju kuće optuženom K. u, koja se prethodno vodila na M.I.,
+kako to proizilazi iz iskaza saslušanog svjedoka R.D., koji je kritičnom prilikom bio u društvu optuženog K..
+Nadalje, iz iskaza svjedoka R.D. proizilazi, da su optuženi K. i optuženi M. bili u dobrim prijateljskim
+odnosima, ali da su se ti odnosi pokvarili neposredno pred konkretan dogadjaj, upravo zbog kupovine kuće,
+zbogčega je isti i strahovao o ishodu susreta optuženih, kako je to objasnio u svom iskazu. Nadalje,
+provedenim dokazima, nesumnjivo je utvrdjeno, da je kritičnom prilikom optuženi M.I. pozvao optuženog K.,
+da podju na pontu u neposrednoj blizini terase ugostiteljskog objekta "V...M..."kako bi porazgovarali, š to je
+optuženi K. prihvatio, ustao i krenuo prema ponti gdje se nalazio parkiran njegov automobil, idući ispred
+optuženog M.I., za koje vrijeme nijesu razgovarali, ašto se potvrdjuje iskazom svjedoka R.D., da bi u jednom
+trenutku optuženi K.S., naglo skrenuo udesno prema svom parkiranom automobilu, otvorio vrata vozača i iz
+unutrašnjeg automobila uzeo revolver, kako to proizilazi iz odbrane ovog optuženog, koji je držao u desnoj
+ruci niz nogu, a u kom trenutku je i optuženi M.I. iza pasa izvadio pištolj i repetirao ga, držeći ga okrenutim ka
+zemlji, dakle, ne usmjeravajući ga ka optuženom K., niti je optuženi K., pištolj usmjeravao u pravcu
+optuženog M., ašto se potvrdjuje, kako iskazom svjedoka R.D. iz prethodnog postupka, tako i doslednog
+iskaza Š.M., koji su vidjevši u rukama optuženih oružje, pritrčali u namjeri da ih spriječe u daljem sukobu.
+Nadalje, optuženi K. se povlačio sa parking prostora putem pored terase ugostiteljskog objekta, do zadnjeg
+stuba terase, gledano u pravcu Tivta, iza kojeg se zaklonio, dok je optuženi M. ostao na prostoru parkinga sa
+suprotne strane terase, sa kojih pozicija su ispalili projektile jedan prema drugom, š to ni sami nijesu sporili u
+svojim odbranama, ašto je potvrdjeno i iskazom svjedoka očevidaca Š.M. i R.D., te materijalnim dokazima i
+
+balističkim vještačenjem, očemu se sud prethodno u presudi izjasnio. Dakle, imajući u vidu naprijed
+navedenečinjenice, nedvosmisleno se može zaključiti, da su odnosi izmedju optuženog K. sa jedne strane i
+optuženog M. sa druge strane bili narušeni, te da optuženi K. poziv optuženog M. da porazgovaraju nije
+shvatio kao dobronamjeran poziv na razgovor, našto upućuječinjenica, da je naglo skrenuo prema svom
+automobilu, iz kojeg je uzeo revolver, š to upućuje na zaključak, da je očekivao eventualni sukob sa
+optuženim M., koji do tada nije preduzeo bilo kakvu radnju u smislu predstojećeg ili stvarnog napada, većje
+pištolj koji je držao za pasom izvadio tek kada je K. otvorio vozilo, iz kojeg je uzeo revolver, govoreći "neće
+niko mene da bije".
+
+U konkretnom slučaju po ocjeni suda, ne radi se o napadu jednog optuženog na drugog, većse u konkretnom
+slučaju radilo o obračunu, u koji su optuženi svjesno ušli, zbogčega nije od značajačinjenica, ko je od dvojice
+optuženi prvi ispalio projektile, niti je tučinjenicu sud mogao na objektivan način utvrditi provedenim
+dokazima na glavnom pretresu, tj. iskazima svjedoka očevidaca predmetnog dogadjaja i to oštećenog Š.M.,
+koji se u ponovnom postupku izjasnio, da u jednom trenutku počinju pucnji sa obje strane, dok iskaz
+svjedoka očevidca oštećenog R.D. na tu okolnost, sud nije mogao prihvatiti kao objektivan, obzirom da se
+ovaj svjedok na tu okolnost tokom postupka različito izjašnjavao, pa je tako u prethodnom postupku tvrdio,
+da optuženi K. uopšte nije pucao, da bi u iskazima na glavnom pretresu naveo, da ječuo jednu eksploziju, ali
+da nije vidio ko puca, upodobljavajući svoj iskaz na glavnom pretresu sa odbranom optuženog K., koji nije
+sporio da je ispalio jedan projektil, a sve u namjeri da pomogne optuženom K., koji mu je drug i prijatelj, u
+cilju izbjegavanja krivice za izvršeno krivično djelo.
+
+Nasuprot stavu odbrane, po ocjeni suda, oba optužena su bila istovremeno u protivpravnom napadu, jer su
+obojica bili spremni na medjusobni obračun, hvatajući se za oružje koji su imali kod sebe, a do kog obračuna
+je i došlo, š to upućuje na zaključak, da su oba optužena postupala voljno, a posebno kada se ima u vidu
+činjenica, da su projektile ispalili u pravcu jedan u drugom, a ne kako su to optuženi pokušali da predstave u
+svojim odbranama, da su projektile ispalili kako bi zastrašili jedan drugog, odnosno da je optuženi M.
+projektile ispalio u vazduh, š to je osporeno balističkim vještačenjem, kojim su utvrdjene balističke putanje
+projektila.
+
+Sud je cijenio i ostale provedene dokaze, ali je našao da isti nijesu od uticaja na drugačije presuđenje.
+
+Odlučujući o kazni za optužene sud je najprije, u smislučl. 42. Krivičnog zakonika, cijenio sve okolnosti od
+kojih zavisi da kazna bude manja ili veća (olakšavajuće i otežavajuće okolnosti), pa je sud od olakšavajućih
+okolnosti na trani optuženog K.S. cijenio njegov odnos prema oštećenim Š.M. i R.D., nakon izvršenog
+krivičnog djela, š to je u krajnjem imalo za rezultat da se oštećeni ne pridruže krivičnom gonjenju, dok je kao
+otež avajuću okolnost cijenio njegov ranijiživot, tj. njegovu osudjivanost, ašto je utvrdjeno iz izvoda iz KE za
+optuženog, pa je cijeneći naprijed navedenu olakšavajuću i otežavajuću okolnost, a posebnočinjenicu da je
+krivično djelo ostalo u pokušaju, a da se shodnočl. 20. st. 3. Krivičnog zakonika, učinilac za pokušaj krivičnog
+djela može blaže kazniti, te protek vremena od izvršenog krivičnog djela (proteklo više od 9 godina), ne može
+pripisati krivici optuženog, to je sud shodnočl. 45. i 46. Krivičnog zakonika, optuženom ublažio kaznu ispod
+zakonom propisanog minimuma za predmetno krivično djelo, osudivši ga na kaznu zatvora u trajanju od 2
+(dvije) godine i 4 ( č etri) mjeseca.
+
+U odnosu na optuženog M.I., sud je kao olakšavajuću okolnost cijenio njegove lične prilike, tj. č injenicu da je
+oženjen, otac jednog djeteta, dok je kao otežavajuću okolnost cijenio njegov ranijiživot, tj. osudjivanost, ašto
+je utvrdjeno iz izvoda iz KE za optuženog, pa je cijeneći naprijed navedenu olakšavajuću i otežavajuću
+okolnost, a posebnočinjenicu da je krivično djelo ostalo u pokušaju, a da se shodnočl. 20. st. 3. Krivičnog
+zakonika, učinilac za pokušaj krivičnog djela može blaže kazniti, te protek vremena od izvršenog krivičnog
+djela (proteklo više od 9 godina), ne može pripisati krivici optuženog, to je sud shodnočl. 45. i 46. Krivičnog
+zakonika, optuženom ublažio kaznu ispod zakonom propisanog minimuma za predmetno krivično djelo,
+osudivši ga na kaznu zatvora u trajanju od 2 (dvije) godine.
+
+Po ocjeni suda izrečene kazne zatvora su srazmjerne stepenu krivice optuženih i težini počinjenih krivičnih
+djela i da predstavlja onu kaznu kaja je nužno potrebna da bi se ostvarila svrha kažnjavanja izčl. 32. Krivičnog
+zakonika, da optuženi ubuduće ne vrše krivična djela, u okviru opšte svrhe izricanja krivičnih sankcija izčl. 4.
+st. 2. Krivičnog zakonika Crne Gore.
+
+Na osnovučl. 51. Krivičnog zakonika, optuženima K.S. i M.I. u izrečenu kaznu zatvora uračunato je vrijeme
+provedeno u pritvoru počev od 01.05.2010 godine do 13.10.2010 godine.
+
+Na osnovučl. 75 Krivičnog zakonika, sud je optuženom M.I. u izrekao i mjeru bezbjednosti oduzimanja
+predmeta i to: pištolja marke “ Č Z” M50, cal. 7,65 mm, kao predmeta upotrijebljenog za izvršenje krivičnog
+djela, kako bi se otklonili stanja i uslovi da optuženi ubuduće vrši krivična djela, u okviru opšte svrhe
+propisivanja mjere bezbjednosti izčl. 66. Krivičnog zakonika.
+
+Kako je sud optužene oglasio krivim, to ih je shodnočl. 226. i 229. Zakonika o krivičnom postupku, obavezao
+da snose troškove krivičnog postupka-sudskog paušala u iznosu od 150,00 eura, koji paušal je odredjen
+srazmjerno složenosti postupka, dužini njegovog trajanja, te imovinskim prilikama optužeih, te da na ime
+ostalih troškova solidarno plate novčani iznos od 2.809,25 eura, a koji troškovi se odnose na nagradu vještaku
+medicinske struke dr. K.N. u iznosu od 288,75 eura i vještaku balističke struke B.B. u iznosu od 1.091,5 eura, te
+nagrade komisiji vještaka koja je obavila sudsko psihijatrijsko vještačenje optuženih u iznosu od 1.428,75
+eura, sve u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudne naplate, dokće o ostalim
+troš kovima krivičnog postupka sud odlučiti naknadno, posebnim rješenjem, po pribavljanju podataka o
+njihovoj visini.
+
+II. Predmetnom optužnicom, optuženim K.S. i M.I., stavljeno je na teret izvršenje krivičnog djela nedozvoljeno
+držanje oružja i eksplozivnih materija izčl. 403. st. 1. Krivičnog zakonika, da su dana 30.04.2010. godine,
+suprotnočl. 27. Zakona o oružju, bez izdatog oružnog lista za vatreno oružje, neovlašćeno nosili na javnom
+mjestu suprotnočl. 11. Zakona o oružju i to optuženi K.S. revolver marke "38 Special", a optuženi M.I. pištolj
+marke " Č Z" model 50, cal. 7,55 mm, bez fabričkog broja.
+
+Za krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija izčl. 403. st. 1. Krivičnog zakonika, koje
+je optuženima stavljeno na teret optužnicom, zakonom je propisana kazna zatvora od tri mjeseca do tri
+godine. Odredbomčl. 125. st. 1. Krivičnog zakonika, propisano je, da zastarijevanje krivičnog gonjenja
+poč inje od dana kada je krivično djelo učinjeno, dok je odredbomčl. 124. st. 1. tačka 6. Krivičnog zakonika,
+propisano da se krivično gonjenje ne može preduzeti, kada proteknu tri godine od izvršenja krivičnog djela,
+za koje se po zakonu može izreći kazna zatvora preko jedne godine, dok je odredbomčl. 125. st. 7. Krivičnog
+zakonika, pripisano da zastarjelost krivičnog gonjenja nastaje u svakom slučaju kada protekne dvostruko
+vrijeme kada se po zakonu traži za zastarjelost krivičnog gonjenja.
+
+Imajući u vidu citirane zakonske odredbe Krivičnog zakonika, tečinjenice da je krivično djelo izvršeno dana
+30.04.2010. godine, to je shodno odredbičl. 125. st. 7. Krivičnog zakonika, nastupila apsolutna zastarjelost
+krivičnog gonjenja za krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija izčl. 403. st. 1.
+Krivičnog zakonika, dana 30.04.2016. godine, zbogčega se sud nije upuštao u meritor odlučivanja, većje
+shodnočl. 372. st. 1. tačka 3. Zakonika o krivičnom postupku u odnosu na to krivično djelo, za oba optužena
+donio presudu kojom se optužba odbija.
+
+Troškovima krivičnog postupka u odnosu na ovo krivično djelo shodnočl. 230. st. 1. Krivičnog zakonika Crne
+Gore, padaju na teret budžetskih sredstava suda.
+
+Na osnovu izloženog, odlučeno je kao u stavu I i II izreke presude.
+
+VIŠI SUD U PODGORICI
+16.10.2019. godine
+
+ZAPISNIČAR PREDSJEDNIK VIJEĆA-SUDIJA
+Slobodanka Novčić Tabaš Predrag
+
+Dn-a: Po primjerak presude dostaviti:
+- VDT Podgorica,
+- optuženima,
+- braniocima optuženih,
+-a/a
+
+Post.dana________________</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

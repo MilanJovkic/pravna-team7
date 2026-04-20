@@ -5,7 +5,9 @@ from typing import Dict, List, Optional
 
 from .annotator import LLMAnnotator, SemanticAnnotation
 from .exporter import AkomaExporter
+from .law_xml_validator import validate_law_xml
 from .parser import LegalArticle, LegalChapter, LegalTextParser
+from src.config.llm_config import DEFAULT_MODEL
 
 
 class AnnotationPipeline:
@@ -17,8 +19,8 @@ class AnnotationPipeline:
         output_xml: str,
         output_json: Optional[str] = None,
         api_token: Optional[str] = None,
-        model: str = "gpt-5-nano",
-        provider: str = "openai",
+        model: Optional[str] = None,
+        provider: Optional[str] = None,
         article_limit: Optional[int] = None,
         enable_llm: bool = True
     ):
@@ -27,6 +29,8 @@ class AnnotationPipeline:
         self.output_json = output_json or output_xml.replace('.xml', '_annotations.json')
         self.article_limit = article_limit
         self.enable_llm = enable_llm
+        # Use passed model or centralized default
+        display_model = model or DEFAULT_MODEL
 
         self.parser = LegalTextParser()
         self.annotator = None
@@ -39,8 +43,8 @@ class AnnotationPipeline:
         print("=" * 70)
         print(f"Input:    {input_file}")
         print(f"Output:   {output_xml}")
-        print(f"Provider: {provider if self.enable_llm else 'disabled'}")
-        print(f"Model:    {model if self.enable_llm else 'n/a'}")
+        print(f"Provider: {provider or 'openai' if self.enable_llm else 'disabled'}")
+        print(f"Model:    {display_model if self.enable_llm else 'n/a'}")
         if article_limit:
             print(f"Limit:    {article_limit} članaka (test mode)")
         print("=" * 70)
@@ -52,13 +56,13 @@ class AnnotationPipeline:
             chapters = self._parse_law()
 
             if not chapters:
-                print("✗ Greška: Nijedan član nije parsovan.")
+                print("[X] Greska: Nijedan clan nije parsovan.")
                 return False
 
             if self.enable_llm:
-                print("\n[FAZA 2/3] LLM semantička anotacija...")
+                print("\n[FAZA 2/3] LLM semanticka anotacija...")
             else:
-                print("\n[FAZA 2/3] LLM semantička anotacija... (preskočeno)")
+                print("\n[FAZA 2/3] LLM semanticka anotacija... (preskoceno)")
             annotations = self._annotate_articles(chapters)
 
             print("\n[FAZA 3/3] Generisanje AKOMA Ntoso XML-a...")
@@ -66,17 +70,17 @@ class AnnotationPipeline:
             self._print_statistics(chapters, annotations)
 
             print("\n" + "=" * 70)
-            print("✓ PIPELINE ZAVRŠEN USPEŠNO")
+            print("[OK] PIPELINE ZAVRSEN USPESNO")
             print("=" * 70)
             return True
 
         except KeyboardInterrupt:
-            print("\n\n⚠ Pipeline prekinut od strane korisnika (Ctrl+C)")
-            print("Delimični rezultati mogu biti sačuvani.")
+            print("\n\n[!] Pipeline prekinut od strane korisnika (Ctrl+C)")
+            print("Delimicni rezultati mogu biti sacuvani.")
             return False
 
         except Exception as exc:
-            print(f"\n✗ KRITIČNA GREŠKA: {exc}")
+            print(f"\n[X] KRITICNA GRESKA: {exc}")
             import traceback
             traceback.print_exc()
             return False
@@ -87,7 +91,7 @@ class AnnotationPipeline:
 
         chapters = self.parser.parse(text)
         total_articles = sum(len(ch.articles) for ch in chapters)
-        print(f"  ✓ Parsovano: {len(chapters)} glava, {total_articles} članaka")
+        print(f"  [OK] Parsovano: {len(chapters)} glava, {total_articles} clanaka")
         return chapters
 
     def _annotate_articles(self, chapters: List[LegalChapter]) -> Dict[str, SemanticAnnotation]:
@@ -95,7 +99,7 @@ class AnnotationPipeline:
 
         if self.article_limit:
             all_articles = all_articles[:self.article_limit]
-            print(f"  → Procesiraće se {len(all_articles)} članaka (limit primenjen)")
+            print(f"  -> Procesira se {len(all_articles)} clanaka (limit primenjen)")
 
         articles_batch = [
             (art.number, self.parser.get_article_full_text(art))
@@ -108,7 +112,7 @@ class AnnotationPipeline:
 
         if articles_batch:
             success_rate = len(annotations) / len(articles_batch) * 100
-            print(f"\n  ✓ Anotirano: {len(annotations)}/{len(articles_batch)} ({success_rate:.1f}% uspešnosti)")
+            print(f"\n  [OK] Anotirano: {len(annotations)}/{len(articles_batch)} ({success_rate:.1f}% uspesnosti)")
 
         return annotations
 
@@ -293,6 +297,11 @@ class AnnotationPipeline:
         self.exporter.export(chapters, annotations, self.output_xml)
         if annotations:
             self.exporter.export_annotations_json(annotations, self.output_json)
+
+        validation_errors = validate_law_xml(self.output_xml)
+        if validation_errors:
+            formatted = "\n".join(f"- {err}" for err in validation_errors)
+            raise ValueError(f"Law XML validation failed:\n{formatted}")
 
     def _print_statistics(self, chapters: List[LegalChapter], annotations: Dict[str, SemanticAnnotation]) -> None:
         print("\n" + "=" * 70)

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке63">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке63/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке63"/>
+                    <FRBRdate date="2019-05-24" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке63/sr@2019-05-24/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке63/sr@2019-05-24"/>
+                    <FRBRdate date="2019-05-24"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке63/sr@2019-05-24/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке63/sr@2019-05-24/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U KOTORU"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="M.T."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="M.A."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="G.J."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="C.I."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="R.I."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="N.N."/>
+                <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="K.N."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="ODT K"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 262/19</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U KOTORU</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2019-05-24">2019-05-24</docDate>
+                </block>
+                <block name="judges">
+                    <judge>M.T.</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni G J je uslovno osuđen na 3 meseca zatvora zbog učestvovanja u tuči.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Učestvovanje u tuči</p>
+                    <p>Teška tjelesna povreda</p>
+                    <p>Uslovna osuda</p>
+                    <p>Imovinsko-pravni zahtjev</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakonik o krivičnom postupku</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/2024/!main#art_3">Član 3</ref>
+                    <ref href="/akn/me/act/2024/!main#art_5">Član 5</ref>
+                    <ref href="/akn/me/act/2024/!main#art_368">Član 368</ref>
+                    <ref href="/akn/me/act/2024/!main#art_457">Član 457</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da je okrivljeni učestvovao u tuči koja je rezultirala teškom povredom oštećenog, ali nije nanio povredu.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Uslovna osuda</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="victims">
+                    <person>M.A.</person>
+                    <person>G.J.</person>
+                    <person>C.I.</person>
+                    <person>R.I.</person>
+                    <person>N.N.</person>
+                    <person>K.N.</person>
+                </block>
+                <block name="witnesses">
+                    <person>M.A.</person>
+                    <person>G.J.</person>
+                </block>
+                <block name="organizations">
+                    <organization>ODT K</organization>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Kotor</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="conditional_sentence_requested">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">3</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>U IME CRNE GORE
+Posl. br. K.262/19/18
+OSNOVNI SUD U KOTORU, kao nadležni prvostepeni krivični sud, po sudiji M T, uz učešće zapisničara V T, u
+krivičnom predmetu protiv optuženog G J zbog krivičnog djela učestvovanje u tuči izčl.153 Krivičnog
+zakonika C G, koji se vodi po optužnom predlogu ODT K Kt. broj 210/17 od 17.12.2018. godine, nakon
+održanog glavnog i javnog pretresa dana 28.11.2019. godine, u prisustvu državne tužiteljke iz ODT K T Č, a u
+odsustvu uredno pozvanog okrivljenog, koji je prethodno ispitan, a svoj izostanak je opravdao, shodno
+odredbičl.457. ZKP-a, ačije prisustvo nije nužno, istog dana donio je i javno objavio sledeću:
+P R E S U D U
+Okrivljeni G J, od oca Lj i majke O, rođene Lozo, rođen. godine u S, stalno nastanjen u,, državljanin Republike
+H, stolar i građevinar, neoženjen, bez djece, sa završenom VSS, lošeg imovnog stanja, neosuđivan, protiv koga
+se ne vodi postupak za neko drugo krivično djelo
+K r i v j e
+Što je:
+Dana 14.05.2017. godine, oko 20:00časova, u ulici B u B, u neposrednoj blizini objekta "P", učestvovao u tuči
+u kojoj je oštećeni M A iz S zadobio tešku tjelesnu povredu, na načinšto su se poslije kraće verbalne rasprave
+potukli, sa jedne strane G J i oštećeni M A protiv C I, načijoj strani su se u tuču uključili R I i jošnekoliko NN
+lica, a kojom prilikom je usled međusobno zadatih udaraca oštećeni M A zadobio tešku tjelesnu povredu u
+vidu nagnječenja tkiva mozga u lijevom slijepoočnom predjelu, uz ljusku lijeve slijepoočne kosti, promjera
+0,9 cm; nagnječno razderne rane u lijevoj polovini potinjačnog predjela; nagnječno razderne rane u predjelu
+naddlanene strane prstijušaka, pričemu je bio uračunljiv i svjestan svoga djela i njegove zabranjenosti, ačije
+izvršenje je htio,
+-čime je izvršio krivično djelo učestvovanje u tuči izčl.153 Krivičnog zakonika C G.
+Pa sud okrivljenom na osnovu naprijed navedenih krivično-pravnih odredbi, te odredbičl. 3, 5, 8, 13, 15, 36,
+42, 52, 53. i 54. Krivičnog zakonika, tečl. 368. i 374. Zakonika o krivičnom postupku izriče
+USLOVNU OSUDU
+Kojom mu utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se kazna neće
+izvršiti ukoliko okrivljeni za vrijeme od jedne godine od dana pravosnažnosti presude ne učini novo krivično
+djelo.
+Duž an je okrivljeni na ime sudskog paušala platiti iznos od 50,00 eura, i na ime troškova krivičnog postupka
+iznos od 16,50 eura, u roku od mjesec dana od dana pravosnažnosti presude, nažiro račun br. 832-16-52, u
+korist budžeta Crne Gore, a dokaz o uplati dostaviti ovom sudu s pozivom na broj K. 262/19/18.Osnovni Sud u Kotoru
+K 262/2019
+28. Novembar 2019
+
+O b r a z l ože nj e
+ODT K je aktom Kt. broj 210/17 od 17.12.2018. godine stavilo na teret okrivljenima C I, R I i G J, izvršenje
+krivičnog djela učestvovanje u tuči izčl.153 Krivičnog zakonika C G.
+Nakon provedenog postupka, sud je donio presudu posl. br. K.357/18/18 od 24.05.2019. godine kojom je C I, R
+I i G J oglasio krivima za krivično djelo stavljeno im na teret pomenutim optužnim aktom ODT-a K, a koja
+presuda je rješenjem Višeg suda u P K ž. br. 644/19 od 12.09.2019. godine, ukinuta samo u odnosu na
+okrivljenog G J i u tom dijelu vraćena ovom sudu na ponovno suđenje, dok je u odnosu na okrivljene C I i R I
+navedena presuda ovog suda ostala neizmijenjena.
+Okrivljeni G J je u svojoj odbrani na zapisnik pred ODT K dana 17.05.2017. godine izjavio da je kritične večeri
+bio u društvu sa svojim drugom M A i vraćali su se prema hotelu u kom su bili smješteni u B. Prije toga su
+djevojke koje su bile sa njima bile u prodavnici i on je u rukama nosio kesu sa stvarima iz iste, ali ne zna tačno
+šta je bilo u njoj. Dok su prolazili trotoarom pored nekog lokala, crni džip je krenuo prema njima kao daće da
+ih udari, odnosno cimnuo je prema njima i parkirao se na nekih deset metara od njih. Iz vozila je izašao jedan
+krupni momak crne kose i jednaženska osoba. To lice im je nešto dobacilo, našta mu je A odgovorio " Š ta ti
+ovo triba, ubičešnas", nakončega je ovo lice prišlo njima, odmah odgurnulo Anta i krenulo prema njemu da
+ga udari i udario ga je, nakončega je on udario tog momka kesom koja mu je bila u ruci. Odjednom se tu
+pojavila grupa od 5-6 momaka i on se više i ne sjeća jer je bio ušoku kako se sve izdešavalo. Prvo su krenuli
+na A, a onda i na njega. Nastala je tuča i sve je to trajalo nekih minut-dva. On je imao povrede u predjelu glave
+i tijela, ali nijesu bile ozbiljne, pa nije išao u Dom zdravlja radi ukazivanja ljekarske pomoći. Smatra da ovo
+nije bila tuča, većda se on kritične prilike branio, odnosno da je postupao u samoodbrani. Ne bi mogao
+prepoznati ova lica koja su učestvovala u tuči, jer ih je tu noćprvi put vidio, a sve se brzo izdešavalo. Nakon
+što mu je pokazan video snimak, objasnio je da prepoznaje sebe i M A, kao lica koja stoje pored parking vozila
+i razgovaraju, ašto je prikazano na snimku u 21:59, da A ima bijelu majicu kratkih rukava, a da on drži nešto u
+rukama, da se u 22:00 vidi taj džip kako cima u njihovom pravcu i kako iz vozila izlazi više lica, te da on i A
+stoje sa strane bez namjere da izazivaju bilo kakav sukob, većoni stoje na kraju ograde, a ovo lice koje je
+izašlo iz džipa krupnije građe im se obraća. U 22:01 se vidi na snimku kako im to lice krupnije građe prilazi i
+prvo se obraća A kojeg udara, od kojeg udarca je A pao, nakončega se okreće prema njemu i zadaje mu
+udarac, a onda on u odbrani tog momka udara kesom. Ne može prepoznati i ne poznaje ova lica koja se na
+snimku vide da prilaze njima i da ih napadaju.
+U dokaznom postupku koji je proveden u cilju utvrđenjačinjeničnog stanja i krivice okrivljenih, sud je proveo
+sledeće dokaze: izvršen je uvid u otpusnu listu sa epikrizom JU "V Ć " R mat. broj istorije bolesti 916 na ime M
+A; otpusnu listu sa epikrizom JZU Opšte bolnice u K mat. broj istorije bolesti 2379/2017 na ime A M; izvještaj
+ljekara specijaliste JZU Opšte bolnice u K, broj protokola 3978 od 14.05.2017. godine na ime M A; izvještaj
+ljekara jedinice za HMP u B br. 4558 od 15.05.2017. godine na ime C I; telegram UP OB K br. 02-538 od
+15.05.2017. godine; pročitan je nalaz i mišljenje vještaka medicinske struke dr K N od 10.11.2017. godine;
+izvršen je uvid u registar kaznenih evidencija Ministarstva pravosuđa R. H na ime G J od 05.02.2019. godine, te
+u snimak nadzornih kamera objekta "P" u B na CD-u i pročitan je iskaz svjedoka oštećenog M A sa zapisnika
+pred Županijskim sudom u S dana 22.03.2019. godine.
+Madicinska dokumentacija na ime M A i to: otpusna lista sa epikrizom JU "V Ć " R mat. broj istorije bolesti 916,
+otpusna lista sa epikrizom JZU Opšte bolnice u K mat. broj istorije bolesti 2379/2017, izvještaj ljekara
+specijaliste JZU opšte bolnice u K, broj protokola 3978 od 14.05.2017. godine, kao i izvještaj ljekara jedinice za
+HMP u B br. 4558 od 15.05.2017. godine na ime C I, bili su predmet vještačenja po vještaku medicinske struke
+dr K N, pa ih sud nije posebno obrazlagao.
+
+Uvidom u telegram UP OB Kbr. 02-538 od 15.05.2017. godine utvrđeno je da je isti sačinjen povodom
+obavljenog razgovora OPS sa dežurnim ljekarom specijalne bolnice u R dr P, vezano za zdravstveno stanje M
+A.
+Na osnovu nalaza i mišljenja vještaka medicinske struke dr KN od 10.11.2017. godine utvrđeno je da je
+oštećeni M A kritične prilike zadobio sledeće tjelesne povrede: nagnječinu tkiva mozga u lijevom
+sljepoočnom predjelu, uz ljusku lijeve sljepoočne kosti, promjera 0,9 cm; nagnječno-razdernu ranu u lijevoj
+polovini potiljačnog predjela; nagnječno-razdernu ranu u predjelu donje usne; krvni podliv kože oko oba oka
+sa otokom lijevog obraza i sa prisustvom krvi u sinusu ( š upljini lijeve gornjevilične kosti) i nekoliko oguljotina
+kože u predjelu naddlanene strane prstijušaka. Navedene povrede predstavljaju u vrijeme nanošenja,
+skupno procjenjeno, tešku tjelesnu povredu i nanešene su višekratnim dejstvom tupine aktivno zamahnutog
+mehaničkog oruđa, ušta bi spadalo: stisnuta pesnica, noga i sl. Nagnječina tkiva mozga u lijevom
+sljepoočnom predjelu, uz ljusku lijeve sljepoočne kosti predstavlja u vrijeme nanošenja, sama za sebe,
+pojedinačno procijenjena, tešku tjelesnu povredu, dok ostale povrede koje je zadobio M A predstavljaju u
+vrijeme nanošenja, same za sebe, pojedinačno procjenjene, laku tjelesnu povredu. C I nije zadobio tjelesnu
+povredu. C I je kritične prilike zadobio crvenilo kože u lijevom jagodičnom predjelu, a koje crvenilo samo za
+sebe ne predstavlja tjelesnu povredu, te koje crvenilo je nanešeno dejstvom tupine aktivno zamahnutog
+mehaničkog oruđa, ušta bi spadalo: stisnuta pesnica i sl.
+Uvidom u registar kaznenih evidencija Ministarstva pravosudja R.H na ime G J od 05.02.2019. godine
+proizilazi da isti ranije nije osuđivan.
+Uvidom u snimak nadzornih kamera objetka "P" u B na CD-u utvrđeno je da su se kritične prilike oko 21:59 h,
+oštećeni M A i okrivljeni G J lagano kretali trotoarom i razgovarali, kojom prilikom je oštećeni M bio u bijeloj
+majici, a okrivljeni G je u ruci nosio plastičnu kesu sa nepoznatim sadržajem. Oko 22:00 h crni džip koji se
+kretao ulicom u pravcu lokala "P", nekontrolisano i naglo skrenuo je ka mjestu gdje su u tom trenutku stajali
+oštećeni M i okrivljeni G, da bi se potom navedeno vozilo u neposrednoj blizini i parkiralo. Iz vozila je izašlo
+više muških osoba i jednaženska osoba, od kojih je vozačovog vozila C I, nakonšto se oštećeni M okrenuo
+prema njemu i nešto mu rekao, nakončega je isti ušao u verbalnu raspravu sa oštećenim M i okrivljenim Gr.
+Nakon kraće verbalne rasprave, iako je prednje navedenaženska osoba pokušala da ga spriječi u tome, C je
+prišao oštećenom M i okrivljenom G, i na snimku se vidi da mu je oštećeni M stavio ruku na rame nakončega
+ga je C, koji je inače dosta krupniji i od oštećenog M i od okrivljenog G, snažno odgurno, od koje siline je
+oštećeni M pao na ulicu, otprilike 2 metra dalje od mjesta gdje je stajao. Potom je C odgurno i okrivljenog G.
+Nakonšto je oštećeni M ustao sa asfalta i prišao Careviću, isti ga je opet odgurno, a u tom trenutku okrivljeni
+G udario C i to u predjelu glave sa pomenutom kesom koju je nosio u ruci. Nakon toga Czamahuje više puta
+rukama u pravcu okrivljenog G, i zadaje mu više udaraca u predjelu glave i tijela, a zatim okrivljeni G uspjeva
+da se iščupa iz ruku C. U 22:02 iz pravca kafića, pritrčava više muških osoba, te se okrivljeni G udaljava od C i
+diže ruke u vis, međutim, momak iz ove grupe koji je prvi pritrčao, nogom udara u predjelu tijela oštećenog
+M, a nakon toga C i taj momak koji je prvi pritrčao, kao i ostali momci koju su pritrčali, nastavljaju da zadaju
+udarce u predjelu glave i tijela okivljenom G i oštećenom M, i u jednom trenutku se vidi da oštećeni M pada
+na pod. Međutim kako se stvorila velika gužva, tuča se premjestila u dio ulice koji nije pokriven video
+nadzorom, ali se na snimku vidi da se oko 22:03 sa lica mjesta u pravcu kafića, udaljava više NN lica, kao i C.
+Svjedok oštećeni M A je na zapisnik pred Žsudom u S, dana 22.03.2019. godine izjavio da je student
+građ evine i u maju mjesecu prošle godine je išao u C G, na jednu vrstu studentskih susreta i tu su trebali
+provesti 5-6 dana. Odsjeli su u B i taj incident koji je predmet postupka dogodio se kraj jednog kafića i odmah
+uz hotel, drugi dan njihovog boravka. To se dogodilo u večernjim satima, a sa njim je tada u društvu bio J G.
+Oni su se vraćali iz grada prema hotelu, kad je kraj njih prošlo jedno vozilo, toliko blizu da ih je skoro
+zahvatilo. Kada su oni vozaču tog vozila rekli da malo pripazi, vozilo se zaustavilo, vozačje izašao iz vozila i
+
+prišao im. Odmah ih je počeo verbalno napadati, a zatim ih je i fizički napao. Vrlo brzo u tom napadu su mu se
+priključile jošneke osobe iz kafića koji se tu nalazio. U tom guranju on je u jednom trenutku izgubio
+ravnotežu i pao, te pritom udario glavom u asfalt, posliječega se onesvjestio. Na putu do bolnice je došao
+svjesti i tu mu je ukazana pomoć. Od ozlijeda imao je na prednjoj strani lica više podliva, a i boljela ga je glava
+od tog udarca o asfalt, s tim da mu je tek po povratku u S ustanovljeno da mu je na stražnjem djelu glave
+napukla kost lobanje. Njemu nije jasno zašto je G u ovom slučaju okrivljen, jer je isti zajedno sa njim bio
+napadnut, te se kao i on samo branio. Misli da tošto su oni prigovarali vozaču na njegov način vožnje ne može
+biti razlog za ovako brutalan napad kojem su oni bili izloženi, te da za to on i G ne snose nikakvu krivicu, u
+smislu da bi svojim ponašanjem tome pridonijeli. Nije se pridružio krivičnom gonjenju protiv okrivljenog G, a
+što se tiče imovinsko-pravnog zahtjeva naveo je daće pokrenuti postupak radi naknadeštete i to protiv C I.
+Cijeneći sve provedene dokaze pojedinačno i u uzajamnoj povezanosti shodnočlanu 370 stav 3 Zkp-a, a u
+odnosu na odbrane okrivljenog G J, sud je utvrdiočinjenično stanje bliže navedeno u izreci presude. Krivično
+pravno ocjenjujući ovako utvrđenočinjenično stanje sud je našao da je okrivljeni G J izvršio krivično djelo
+učestvovanje u tuči izčl.153. Krivičnog zakonika C G.
+Ovakvočinjenično stanje sud je utvrdio na osnovu pisano provedenih dokaza i to medicinske dokumentacije
+na ime oštećenog M A i nalaza i mišljenja vještaka medicinske struke dr K N od 10.11.2017 godine, kao i
+snimka nadzornih kamera objekta "P" u B na CD-u, a koje dokaze je sud prihvatio.
+U konkretnom slučaju nesporno je da je svjedok oštećeni M A dana 14.05.2017. godine, oko 20:00časova, u
+ulici B u B, u neposrednoj blizini objekta "P", u tuči u kojoj je učestvovao i okrivljeni G J, zadobio tešku
+tjelesnu povredu i to u vidu nagnječine tkiva mozga u lijevom sljepoočnom predjelu, uz ljusku lijeve
+sljepoočne kosti, promjera 0,9 cm; nagnječno-razderne rane u lijevoj polovini potiljačnog predjela;
+nagnječno-razderne rane u predjelu donje usne; krvnog podliva kože oko oba oka sa otokom lijevog obraza i
+sa prisustvom krvi u sinusu ( š upljini lijeve gornjevilične kosti ) i nekoliko oguljotina kože u predjelu
+naddlanene strane prstijušaka, ašto je utvrđeno na osnovu medicinske dokumentacije na njegovo ime i
+nalaza i mišljenja vještaka medicinske struke dr K N od 10.11.2017. godine, koje dokaze je sud prihvatio.
+Svjedok oštećeni M A je u svom iskazu u bitnom naveo da je kritične prilike bio u društvu sa GJ, te da su se
+vraćali iz grada prema hotelu u kojem su odsjeli u B, kad je kraj njih prošlo jedno terensko vozilo, toliko blizu
+da ih je skoro zahvatilo, pa su vozaču tog vozila rekli da malo pripazi, te da im je isti, a kada je zaustavio
+vozilo, prišao i počeo ih verbalno napadati, da bi ih potom i fizički napao. Vrlo brzo u tom napadu su mu se
+priključile jošneke osobe iz kafića koji se tu nalazio, te da je u tom guranju u jednom trenutku izgubio
+ravnotežu i pao, te pritom udario glavom u asfalt, posliječega se onesvjestio. Sud je prihvatio navode
+oštećenog M A, ovo tim priješto je njegov iskaz potkrijepljen snimkom sa nadzornih kamera objekta "P" u B,
+a koji dokaz je prihvatio, a iz kojeg proizilazi da su se kritične prilike oko 21:59 h, oštećeni M A i okrivljeni G J
+lagano kretali trotoarom i razgovarali, kojom prilikom je oštećeni M bio u bijeloj majici, a okrivljeni G je u ruci
+nosio plastičnu kesu sa nepoznatim sadržajem. Oko 22:00 h crni džip koji se kretao ulicom u pravcu lokala
+"P", nekontrolisano i naglo skrenuo je ka mjestu gdje su u tom trenutku stajali oštećeni M i okrivljeni G, da bi
+se potom navedno vozilo u neposrednoj blizini i parkiralo. Iz vozila je izašlo više muških osoba i jednaženska
+osoba, od kojih je vozačovog vozila C I, nakonšto se oštećeni M okrenuo prema njemu i nešto mu rekao,
+nakončega je isti ušao u verbalnu raspravu sa oštećenim M i okrivljenim G. Nakon kraće verbalne rasprave,
+iako je prednje navedenaženska osoba pokušala da ga spriječi u tome, C je prišao oštećenom M i okrivljenom
+G, i na snimku se vidi da mu je oštećeni M stavio ruku na rame nakončega ga je C, koji je inače dosta krupniji i
+od oštećenog M i od okrivljenog G, snažno odgurno, od koje siline je oštećeni M pao na ulicu, otprilike 2 metra
+dalje od mjesta gdje je stajao. Potom je C odgurno i okrivljenog G. Nakonšto je oštećeni M ustao sa asfalta i
+prišao C, isti ga je opet odgurno, a u tom trenutku okrivljeni G udara C i to u predjelu glave sa pomenutom
+kesom koju je nosio u ruci. Nakon toga C zamahuje više puta rukama u pravcu okrivljenog G, i zadaje mu više
+
+udaraca u predjelu glave i tijela, a zatim okrivljeni G uspjeva da se iščupa iz ruku C. U 22:02 iz pravca kafića,
+pritrčava više muških osoba, te se okrivljeni G udaljava od C i diže ruke u vis, međutim, momak iz ove grupe
+koji je prvi pritrčao, nogom udara u predjelu tijela oštećenog M, a nakon toga C i taj momak koji je prvi
+pritrčao, kao i ostali momci koju su pritrčali, nastavljaju da zadaju udarce u predjelu glave i tijela okivljenom
+G i oštećenom M, i u jednom trenutku se vidi da oštećeni M pada na pod. Međutim kako se stvorila velika
+gužva, tuča se premjestila u dio ulice koji nije pokriven video nadzorom, ali se na snimku vidi da se oko 22:03
+sa lica mjesta u pravcu kafića, udaljava više lica, kao i C.
+Uostalom, navodi iskaza svjedoka oštećenog M A su potkrijepljeni i medicinskom dokumetacijom na njegovo
+ime, kao i nalazom i mišljenjem vještaka medicinske struke dr K N, na osnovu kojeg je utvrđeno da je isti
+kritične prilike zadobio povrede bliže pobrojane u izreci presude, a koje povrede predstavljaju u vrijeme
+nanošenja, skupno procjenjeno, tešku tjelesnu povredu i nanešene su višekratnim dejstvom tupine aktivno
+zamahnutog mehaničkog oruđa, ušta bi spadalo: stisnuta pesnica, noga i sl, od kojih povreda nagnječina
+tkiva mozga u lijevom sljepoočnom predjelu, uz ljusku lijeve sljepoočne kosti predstavlja u vrijeme
+nanošenja, sama za sebe, pojedinačno procijenjena, tešku tjelesnu povredu.
+Okrivljeni G J je u svojoj odbrani negirao izvršenje predmetnog krivičnog djela, navodeći da se branio,
+odnosno postupao u samoodbrani kritične prilike, te u bitnom pojasnio da je kritične večeri bio u društvu sa
+M A, i da su se vraćali prema hotelu, i u rukama je nosio kesu sa stvarima, ali da nije znao tačnošta je bilo u
+njoj, jer su stvari kupile njegove drugarice prethodno i dok su prolazili trotoarom pored nekog lokala, crni
+džip je krenuo prema njima kao daće da ih udari, odnosno cimnuo je prema njima i parkirao se na nekih
+deset metara od njih. Iz vozila je izašao jedan krupni momak (C) crne kose i jednaženska osoba i da im isti
+nešto dobacio, našta mu je Ante odgovorio " Š ta ti ovo triba, ubičešnas", nakončega im je C prišao, odmah
+odgurnulo A i krenulo prema njemu da ga udari i udario ga je, nakončega je on udario C kesom koja mu je
+bila u ruci, te da se odjednom tu pojavila grupa od 5-6 momaka i on se više ničega ne sjeća jer je bio ušoku
+kako se sve izdešavalo, jer su prvo krenuli na A, a onda i na njega, nakončega je nastala tuča i sve je to trajalo
+nekih minut-dva, u kojoj je zadobio povrede u predjelu glave i tijela.
+Sud je prihvatio navode odbrane okrivljenog G u dijelu u kojem je naveo da je kritične večeri bio u društvu sa
+M A, i da su se vraćali prema hotelu, i u rukama je nosio kesu sa stvarima, ali da nije znao tačnošta je bilo u
+njoj, jer su stvari kupile njegove drugarice prethodno i dok su prolazili trotoarom pored nekog lokala, crni
+džip je krenuo prema njima kao daće da ih udari, odnosno cimnuo je prema njima i parkirao se na nekih
+deset metara od njih i iz vozila je izašao jedan krupni momak (C I) crne kose i jednaženska osoba i da im isti
+nešto dobacio, našta mu je A odgovorio " Š ta ti ovo triba, ubičešnas", nakončega im je C prišao, odmah
+odgurnuo A, a s obzirom na to da je u ovom dijelu njegova odbrana potkrijepljena video snimkom, a koji
+dokaz je sud prihvatio. Međutim, sud nije prihvatio njegovu odbranu u dijelu u kojem je naveo da je nakon
+ovoga taj momak (C I) krenuo prema njemu da ga udari i da ga je udario, nakončega je on udario tog momka
+kesom koja mu je bila u ruci, a ovo stogašto je uvidom u pomenuti snimak utvrđeno da se događaj odvijao
+takošto je C prvo odgurnuo oštećenog M i to nakonšto mu je isti stavio ruku na rame, od koje siline je
+oštećeni M pao na ulicu, a zatim je C odgurno i okrivljenog G, dakle odgurnuo, ne udario, nakončega je
+oštećeni M ustao sa asfalta i prišao C, koji ga je opet odgurnuo, a u tom trenutku okrivljeni G je udario C i to u
+predjelu glave sa pomenutom kesom koju je nosio u ruci i tek nakon toga C zamahuje više puta rukama u
+pravcu okrivljenog G.
+Sud nije prihvatio navode okrivljenog G da se kritične prilike samo branio, tj. da je postupao u samoodbrani,
+a ovo stogašto je, kako je i sam naveo, ašto je utvrđeno i neposrednim uvidom u video snimak, isti kesom
+koju je držao u rukama, nakonšto je C odgurnuo oštećenog M, a zatim okr. G i zatim opet oštećenog M, istog
+udario u predjelu glave, te je dakle aktivno učestvovao u ovoj tuči, a tuča inače podrazumjeva međusobno
+fizičko obračunavanje, tj. situaciju da se svi učesnici u tuči i napadaju i brane, odnosno da jedni napadaju, a
+
+drugi se brane, takošto i sami napadaju, š to u konkretnom, po mišljenju suda, i jeste bio slučaj, te stoga ne
+stoje navodi odbrane okrivljenog G i ne može se uzeti da se radilo o nužnoj odbrani. Ovo tim prije ako se ima
+u vidu sam početak događaja u konkretnoj situaciji, kada su na jednoj strani dvojica njih i to okrivljeni G i
+oštećeni M, a na drugoj strani jedan i to C (pa bez obzira na tošto je isti od obojice dosta krupniji) a koji ih je
+gurnuo, nakončega je uslijedio udarac od strane okr. G. Pri donošenju ovakvog zaključka, sud je cijenio
+okolnost da okrivljeni G nije zadavao udarce svjedoku oštećenom A M, te da je u stvari on bio na strani
+oštećenog, međutim, našao je da navedeno nije od uticaja na drugačiji zaključak suda da je i okr. G
+učestvovao u tuči, jer bitan elemenat - objektivni uslov postajanja krivičnog djela učestvovanje u tuči jeste da
+je nekom licu nanijeta teška tjelesna povreda, ašto se u konkretnom desilo, i kako je okrivljeni G i sam naveo
+da je zadao udarac C i to kesom koju je nosio u ruci, š to je vidljivo i na snimku sa video nadzora, to je i on
+aktivno učestvovao u tuči u kojoj je svjedok oštećeni M zadobio tešku tjelesnu povredu, a pri ovome cijeneći
+da učestvujući u tuči svaki učesnik, pa i ovdje okr. G doprinisi ostvarenju neophodnog uslova da neko bude
+teško tjelesno povrijeđen, zbogčega i treba da odgovara za učešće u takvoj tuči, a bez obzirašto on svojim
+radnjama nije ostvario ovu povredu. Dakle, sud je mišljenja da okr. G jeste bio učesnik u predmetnoj tuči i da
+je na to pristao dobrovoljno, jer onošto je prethodilo tomešto je on udario C u predjelu glave kesom sa
+nepoznatim sadržajem (proizvoda kupljenih prethodno u prodavnici), jeste odgurivanje njih dvojice (G i M) od
+strane C, pri kojem odgurivanju svjedok oštećeni M nije zadobio tešku tjelesnu povredu, jer se to desilo u
+kasnijem dijelu ovog događaja, te je okr. G, iako nije prvi otpočeo predmetnu tuču, nesporno učesnik iste.
+Iz svega navedenog, sud je utvrdio da je kritične prilike došlo do tuče u kojoj je oštećeni M A zadobio tešku
+tjelesnu povredu, pa obzirom da je okr. G aktivno učestvovao u tuči i to sa jedne strane okrivljeni G J i
+oštećeni M A, a sa druge strane C I, načijoj strani su se u tuču uključili R I i jošnekoliko NN lica, a kojom
+prilikom je usled međusobno zadatih udaraca oštećeni M A zadobio tešku tjelesnu povredu, bliže navedenu u
+izreci presude, to je u konkretnom slučaju njegova svijest obuhvatala i svijest o mogućnosti nastupanja teške
+tjelesne povrede kod nekog od učesnika tuče, pa i kod oštećenog M, pa je izvršenje ovog djela i htio.
+Imajući u vidu sve naprijed navedeno, sud smatra da su se u radnjama okrivljenog G J bliže opisanim u izreci
+presude, ostvarili svi bitni elementi krivičnog djela učestvovanje u tuči izčlana 153 Krivičnog zakonika C G, pa
+ga je sud oglasio krivim za isto.
+Prilikom odluke o vrsti i visini krivične sankcije koju okrivljenom treba izreći sud je pošao od toga da je za
+krivično djelo učestvovanje u tuči izčlana 153 KZ CG propisana kazna zatvora u trajanju od tri mjeseca do tri
+godine. U smislučlana 42 KZ CG, sud je na strani okrivljenog kao olakšavajuće okolnosti cijenio tošto nije
+ranije osuđivan, te tošto se oštećeni nije pridružio krivičnom gonjenju protiv ovog okrivljenog, dok
+otež avajućih okolnosti na strani okrivljenog nije bilo. Imajući naprijed navedeno u vidu, sud je okrivljenom
+izrekao uslovnu osudu, kojim mu je utvrdio kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno odredio
+da se ista neće izvršiti ukoliko okrivljeni za vrijeme od 1 (jedne) godine od dana pravosnažnosti presude ne
+učini novo krivično djelo. Sud smatra da su se stekli uslovi za izricanje uslovne osuda, te daće se istom
+dovoljno uticati na okrivljenog da ubuduće nečini ovakva i slična krivična djela, tj. daće se ostvariti ciljevi
+specijalne prevencije.
+Na osnovu naprijed navedenih krivičnopravnih odredbi, te odredbičlana 3, 5, 8, 13, 15, 36, 42, 52, 53 i 54 Kz-a
+i čl. 368 i 374 Zkp-a, sud je odlučio kao u izreci presude.
+Sud je obavezao okrivljenog da na ime sudskog paušala uplati iznos od 50,00 eura, i na ime troškova
+krivičnog postupka iznos od 16,50 eura (koji troškovi se odnose na trećinu dijela troškova vještačenja po
+vještaku medicinske struke ) u roku od mjesec dana od dana pravosnažnosti presude, nažiro račun br. 83216-52, u korist budžeta C G, a dokaz o uplati dostaviti ovom sudu s pozivom na broj K. 262/19/18.
+
+Što se tiče imovinsko-pravnog zahtjeva oštećenog M A, kako iz utvrđenogčinjeničnog stanja proizilazi da mu
+tešku tjelesnu povredu nije nanio okrivljeni G J, iako je isti učestvovao u tuči, te da njegov imovinsko-pravni
+zahtjev i nije usmjeren ka okrivljenom G, te s obzirom da je o istom odlučeno presudom K.357/18/18 od
+24.05.2019. godine, koja je postala pravosnažna u dijelu koji se odnosi na okrivljene C I i R I, a kojom je
+imenovani radi ostvarivanja istog upućen u parnicu, to sud ovom odlukom nije ponovo odlučivao o istom.
+Na naprijed navedenim razlozima, sud je zasnovao svoju odluku.
+OSNOVNI SUD U KOTORU
+Dana, 28.11.2019 godine
+Zapisničarka, S U D I J A,
+M T
+
+PRAVNA POUKA: Protiv ove presude ima se pravožalbe u roku od 8 dana od dana prijema iste, Višem sudu u
+Podgorici, a preko ovog suda.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

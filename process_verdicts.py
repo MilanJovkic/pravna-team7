@@ -52,7 +52,7 @@ def main() -> None:
     parser.add_argument(
         "--model",
         type=str,
-        default="gpt-5-nano",
+        default="gpt-4o-mini",
         help="Naziv LLM modela"
     )
 

@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке65">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке65/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке65"/>
+                    <FRBRdate date="2015-06-01" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке65/sr@2015-06-01/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке65/sr@2015-06-01"/>
+                    <FRBRdate date="2015-06-01"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке65/sr@2015-06-01/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке65/sr@2015-06-01/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U NIKŠIĆU"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Vesna Kovačević"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="P.R."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="E.S."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="U.D."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="C.B."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="K.Z."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo Nikšić"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 43/15</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U NIKŠIĆU</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2015-06-01">2015-06-01</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Vesna Kovačević</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Optuženi L... S... osuđen na 10 mjeseci zatvora, R... L... uslovno osuđen na 6 mjeseci.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>teška tjelesna povreda</p>
+                    <p>učestvovanje u tuči</p>
+                    <p>uslovna osuda</p>
+                    <p>troškovi postupka</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_151">Član 151</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_36">Član 36</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_52">Član 52</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_46">Član 46</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_53">Član 53</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da su optuženi izvršili krivična djela, uzimajući u obzir njihove prethodne biografije i okolnosti slučaja.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Optuženi L... S... osuđen, R... L... uslovno osuđen.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="victims">
+                    <person>P.R.</person>
+                    <person>E.S.</person>
+                    <person>U.D.</person>
+                    <person>C.B.</person>
+                    <person>K.Z.</person>
+                </block>
+                <block name="witnesses">
+                    <person>O.D.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Osnovno državno tužilaštvo Nikšić</organization>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Nikšić</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="conditional_sentence_requested">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">10</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K.br 43/15
+U IME CRNE GORE
+
+OSNOVNI SUD U NIKŠIĆU, kao prvostepeni krivični, sudija Kovačević Vesna, uz sudjelo...je N...ć Rade, kao
+zapisničara u krivičnom predmetu protiv optuženog L... S... zbog krivičnog djela teška tjelesna povreda iz
+čl.151 st.2 KZ i optuženog R... L... zbog krivičnog djela učestvo...ja u tuči izčl.153 KZ po optužnici ODT-a u
+Nikšiću Kt.br. 282/14 od. 29.10.2014. godine, nakon završenog glavnog i javnog pretresa, dana 28.05.2015.
+godine u prisustvu zamjenika ODT-a Nikšić Lukovac Sofije, optuženih i branioca optuženog L... S... B... S... -
+advokata iz Nikšića i punomoćnika oštećenog K... S... - advokata iz Nikšića istog dana je donio a dana
+01.06.2015.godine i javno objavio
+
+P R E S U D U
+
+Optuženi:
+L... S...,jmbg, od oca M... i majke D...,rodjene R...,rodjenog god. u Nikšiću,sa prebivalištem u Nikšiću –Ulica
+V... K... broj,državljanin Crne Gore, pismen, završio srednjuškolu,student,neoženjen,dobrog imovnog
+stanja,ranije neosuđi...,
+
+R... L...,jmbg, oca R... i majke R...,rodjene B...,rodjenog god. u Nikšiću,sa prebivalištem u Nikšiću –M...
+broj,državljanin Crne Gore, pismen, završio srednjuškolu,student,neoženjen,dobrog imovnog stanja,ranije
+neosuđi...
+
+K r i v i s u
+
+Što su:
+Osnovni Sud u Nikšiću
+K 43/2015
+28. Maj 2015
+
+Dana 08.06.2014.godine u Nikšiću,u ulici S... Š..., i to optuženi L... S... što je svjestan da svojom radnjom može
+učiniti djelo pa je na to pristao, oštećenom R... N... nanio tešku tjelesnu povredu u vidu ubodne rane u lijevoj
+slabinskoj regiji sa povredom lijevog bubrega i korjena poprečnog dijela debelog crijeva, usled koje povrede
+je doveden u opasnostživot oštećenog R... N..., na nač inšto je prilikom tuče sa oštećenim R... N... nakonšto
+je oš tećenog više puta udario pesnicama u predjelu gl... i tijela,oštećenog sječivom noža uboo u predjelu
+lijeve slabinske regije, a optuženi R... L... što je svjestan svog djela i htio njegovo izvršenje učestvovao u tuči u
+kojoj je oštećenom R... N... nanesena teška tjelesna povreda na načinšto je pesnicama više puta u predjelu
+gl... i tijela udarao oštećenog R... N...,
+
+čime su izvršili i to optuženi L... S... krivično djelo teška tjelesna povreda izčlana 151 stav 2 Krivičnog
+zakonika Crne Gore a optuženi R... L... krivično djelo učestvo...je u tuči izčlana 153 Krivičnog zakonika Crne
+Gore
+
+sud optuženog L... S... primjenom odredbi izčl.4 st.2, č l.32,36,42 st.1, č l. čl. 45 st. 3 ičl. 46 st. 4 Krivičnog
+zakonika ičl.226 st.1čl. 229 ičl. 374 st.1. Zakonika o krivičnom postupku
+
+O S U D J U J E
+
+Na kaznu zatvora u trajanju od 10 (deset) mjeseci, koju je dužan izdržati po prijemu pravosnažne presude
+
+sud optuženom R... L...u za n...deno krivično djelo primjenom odredbi izčl. 4.st.2, č l. 42 st.1, č l. 52, 53, 54 KZ i
+226, 229 ičl.374 st.1. ZKP a i z r iče
+
+U S L O V N U O S U D U
+
+Sa kojom mu utvrđuje kaznu zatvora u trajnju od 6 ( š est) mjeseci i istovremeno određuje da se ova kazna
+neće izvršiti ukoliko optuženi u roku od dvije godine po pravosnažnosti presude ne izvrši novo krivično djelo.
+
+Duž ni su optuženi na ime troškova krivičnog postupka solidarno platiti iznos od 99,00 (devedesetdevet) €,
+kao i svaki ponaosob iznos od po 40,00 ( č etrdeset) € na ime sudskog paušala, a sve prednje u roku od 15 dana
+po pravosnažnosti presude pod prijetnjom prinudnog izvršenja nažiro-račun ovog suda br. 832-152-32
+
+O b r a z l ože n j e
+
+Osnovno državno tužilaštvo Nikšićje aktom Kt.br.282/14 od 29.10.2014.god optuženima L... S...u i R... L...u
+stavio na teret izvršenje krivičnih djela, č injenično i pravno opisanih izrekom presude, pa je zamjenik ODT-a
+Lukovac Sofija, zastupajući optužni akt na glavnom pretresu ostala pri istom i u konačnom predložila da sud
+optužene oglasi krivim i osudi po zakonu.
+
+Optuženi L... S... je u svojoj odbrani u bitnom n...o da se dana 07. 06. 2014 god. dogovorio sa svojim drugom
+R... L...om da izađu u grad i da se nađu oko 21 sat lokal ʼʼ Bʼʼ te da je u taj lokal došao po dogovoru oko 21 sat
+gdje se našao sa R...em a kojom prilikom su im se pridružili i njegova djevojka D... A... i mlađi brat L... I.... U
+lokalu su bili negdje do ispred ponoći, kada su svočetvoro izašli iz lokala stimšto je dogovor bio da on i R...
+L... pođ u do centra i da u objektu brze hrane kupe picu a da ih njegova djevojka i brat sačekaju kod R... Kuć e.
+N...o je, da su on i L... krenuli u pracu centra i kada su u prolazu pored zgrade SDK primijetili su jednog
+momka kako udaraošakom u pano na koji se stavljaju umrlice i da je u njegovoj neposrednoj blizini bila
+jedna djevojka na koju je vikao, nakončega su pitali tu djevojku je li sve u redu. U tom momentu taj momak je
+krenuo da ide prema pijaci i bio je malo dalje od nje, dok im je djevojka kazala da je sve u redu nakončega su
+produžili u pravcu centra. Kod objekta brze hrane zadržali su se par minuta a potom krenuli da se vraćaju u
+pracu R... Kuć e, i dolaskom naćošak gdje se nekada nalazila apoteka preko puta T... centra Z... primijetili su
+istu djevojku i momka koji je prethodno udarao u panoe kako se svađaju, tačnije taj momak je vikao i granao
+r...ma put djevojke, nakončega im se isti momak obratio riječimaʼʼšta je bilo momci, š ta gledate ʼʼ te da je u
+tom momentu njegov drug L... istom rekao „učemu je problem“ bez ikakve namjere da se svađa sa njim,
+nakončega se taj momak zaletio u pravcu R... L... i uhvatio ga rukom za desni r...v i pov...o ga sa namjerom da
+ga obori na zemlju, zatim ga je pesnicom udario u predjelu gl... a onda nekolika puta pesnicom u predjelu
+grudnog koša. Između njih je tada je došlo do razmjene udaraca pesnicama, zbogčega je prišao u namjeri da
+ih razdvoji, aličim im je prišao taj isti momak ga je udario pesnicom u predjelu gl..., iznad lijevog uva, a zatim
+u predjelu lijeve strane lica, od kog udarca je posrnuo i zavrtjelo se u glavi a zatim ponovo da ga udara. S
+obzirom da taj momak nije odustajao od napada, a po njegovoj procjeni bio je monogo krupniji i jači od
+njega, on je iz zadnjeg desnog džepa izvadio mali džepni no ž, tačnije privezak sječiva 3-4 cm i istim počeo da
+zamahuje lijevo desno u pravcu momka u namjeri da se odbrani od njegovog napada. Nije kr...o da ga ubode
+n...denim nožem većje zamahivao lijevo desno da bi ga spriječio da mu se približi i da nije primijetio da je
+istog zakačio nožem ili ubo, ali da je u jednom momentu taj momak odustao od napada. Nakonšto je taj
+momak otrčao u pravcu zgrade SDK on i L... su produžili u pravcu taksista gdje su se kod rampe za parking iza
+R... Kuć e našli sa I...om i A... i zajedno ušli u jedno taksi vozilo a da dok su bili u taksi vozilu primijetili su da je
+taj momak trčao u pravcu taksi vozila sa jošjednim momkom i da je jedan od njih imao nešto u r...ma ali su se
+oni taksi vozilom udaljili u pravcu kuće, a da je sjutri dan iz medija saznao da je taj momak povrijeđen i da
+ima ubodnu ranu.
+
+Na glavnom pretresu je pored prednjeg pojasnio da je kritičnom prilikom zamahivao u predjelu stomaka tog
+momka, lijevo i desno i da ječitavo vrijeme to lice bilo okrenuto prema njemu, dok R... L... nije preduzimao
+ništa, da se radilo o džepnom nožu koji kada se sklopi je u dužini 5-6 cm, a kada se rasklopi oštrica noža je
+duž ine 3-4 cm. Nije se javljao ljekaru zbog povreda koje je zadobio kao ni u policiju da prijavi oštećenog tj.
+lice koje ga je napalo, jer nije imao neke strašne povrede. N...o je da povrijedjenog Rončevič N... nije
+poznavao od ranije kao ni djevojku koja je bila sa njim pojašnjavajući da je možda u trenutku prilikom
+zamahi...ja noža lijevo - desno ubo direktno nožem u predjelu stomaka R...a, obzirom na povrede koje kasnije
+saznao da je imao. U konačnom, pridružio se završnoj riječi svog branioca ističući da mu ježaošto je do toga
+doš lo, da se oštećenom izvinjava i ako se neosjeća krivim.
+
+Branilac optuženog L... S... u završnoj riječi je istakao da sud mora dati jasan i odredjeni odgovor da li je do
+povrede kod oštećenog došlo posledicom bahatog i nasilničkog ponašanja optuženih ili je do povrede došlo
+više sticajem nekih drugih okolnosti pri tom imajući u vidu ličnosti optuženih tj. da su isti u vrijeme izvršenja
+kriv.djela bili vrlo mladi, ranije neporočnog vladanja, stim u vezi i neosudji...i, pa smatra da kvaliteti koji su
+iznijeti od strane predstavnika oštećene porodice u odnosu na optužene kod takvog stanja stvari ne mogu da
+stoje, dašto se tiče samog krivičnog dogadjaja i kako je isti počeo, jasno je i oštećenom i svjedoku sada
+njegovoj supruzi, a to je da je upravo radnjama oštećenog došlo prvo do verbalnog a zatim do fizičkog
+kontakta izmedju optuženih i oštećenog pa kad se i tačinjenica cijeni i dovede vezi sa obranom optuženih,
+njihov postupak uključi...ja u taj konflikt koji je bio izmedju oštećenog i tada njegove djevojke sada supruge a
+ima se u vidu mjesto i vrijeme i način kako se isti odigravao, mora se na objekti... nač in cijenti odbrana
+optuženih, s tim u vezi i odlučna i glavnačinjenica da oni svojim radnjama nijesu inicirali tok kritičnog
+dogadjaja, niti su imali namjeru da bilo koga napadaju većsamo da u postojećem verbalnom sukobu zaštite
+djevojku a da je to tako sud može da utvrdi iz samog iskaza ne samo optuženih nego i svjedokinje koja je
+n...la da je jedan od optuženih prilazeći oštećenom u r...ma držao hranu, te da mu je ista kada je prišao ispala
+iz ruku, pa da li osoba koja se sprema da nekog napadne na način na koji se pokušalo predstaviti, č ini to
+takav način. Smatra da odbrana optuženih nije dovedena u sumnju, obzirom da optuženi L... S... tokom
+postupka nije ni sporio, objašnjavajući način na koji je držao noži kako je došlo do povrede, te da treba imati
+u vidu da se vještak med.struke nije mogo izjasniti na mehanizam nanošenja povrede, kao i to da su roditelji
+optuženi pokušali preko rodbine da stupe u kontakt sa porodocom oštećenog i da im to nije dozvoljeno, pa
+na osnovu izloženog smatra daće sud prilikom izbora kriv.sankcije sve odlučnečinjenice pravilno vrednovati
+i daće u sklopu svih tihčinjenica donijeti pr...dnu presudu.
+
+Optuženi R... L... je u svojoj odbrani u bitnom n...o da je konkretne večeri L... S... po dogovoru došao oko 21
+sat ispred lokala ʼʼ Bʼʼ gdje su im se kasnije pridružili S...ova djevojka A... i mlađi brat I... u kom lokalu su bili
+negdje do ispred ponoći. Kada su izašli iz lokala A... i I... su otišli u pravcu R... Kuć e gdje su trebali da ih
+sačekaju dok su on i S... krenuli u pravcu Trga kako bi u jednom od objekata brze hrane uzeli picu. Dok su se
+kr...li u pravcu Trga na raskrsnici kod zgrade primijetili su jednog momka i djevojku kako razgovaraju. Vidjeli
+su kada je taj momakšakama udarao u pano na koji se stavljaju umrlnice, dok je djevojka stajala malo dalje
+od njega. Dok su im se primicali taj momak se udaljio u pravcu pijace, dok je djevojka ostala da stoji pa su istu
+u prolazu pitali je li sve u redu našto im je odgovorila da je sve u redu nakončega su produžili u pravcu Trga.
+Na Trgu su se ispred objekta zadržali par minuta a potom krenuli da se vraćaju u pravcu R... kuć e te da su na
+raskrsnici kod zgrade SDK skrenuli desno i pošli u pravcu taksi stajališta. Dolaskom naćošak objekta u kome
+se nalazila apoteka preko t... centra Z..., primijetili su istog momka i djevojku, momak je nešto vikao i granao
+r...ma u pravcu djevojke. Dok su prolazili pored njih taj momak im se obratio riječima ʼʼšta je bilo, š ta gledateʼʼ
+nakončega mu je on na to odgovorio „ učemu je problem“, da je to rekao normalnim tonom, da u njegovom
+tonu nije bilo ništa provokativno jer nije imao namjeru da se sa njim svađa. Č im je to izgovorio taj momak je
+krenuo u njihovom pravcu i uhvatio ga za r...v od košulje, pov...o ga i tom prilikom mu je iscijepao r...v. Nakon
+toga je zamahnuo pesnicom da ga udari u predjelu gl... ali se izmakao tako da nije uspio da ga udari a odmah
+zatim ga je pesnicom udario u predjelu grudi, nakončega mu je uzvratio, pa su tu njih dvojica razmijenili par
+udaraca pesnicama, te da se ne može izjasniti tačno u kom predjelu tijela, misli da su se udarali u predjelu
+gl... i gornjeg dijela tijela. U tom momentu im je prišao S... u namjeri da ih razdvoji, nakončega se taj momak
+okrenuo prema S...u i nasrnuo na njega, udario ga pesnicom u predjelu gl... 2-3 puta. Od jednog od tih
+udaraca koji mu je zadao u predjelu lijeve strane lica S... je posrnuo ali se odmah krenuo ustajati dok se taj
+momak i dalje zalij...o da ga udari. Vidio je, da je S... iz zadnjeg džepa izvadio mali džepni nožna rasklapanje,
+da je isti rasklopio, te da je sječivo noža bilo manje od 5 cm. Nakonšto je rasklopio nož S... je istim zamahivao
+
+lijevo, desno ispred sebe u visini stomaka tog momka koji ječitavo vrijeme nasrtao na S... da ga udari, a da
+S... nije ni u jednom momentu put tog momka kr...o nožem da ga ubode, većje samo zamahivao lijevo desno
+kako bi ga spriječio da mu se približi, a da je to je trajalo nekih des...k sekundi i za to vrijeme nije bilo
+razmjene udaraca između njih jer taj momak iako je uporno nasrtao nije uspio da priđe S...u. Primijetio je u
+jednom momentu da se taj momak okrenuo i krenuo da trči u pravcu zgrade, a da su oni produžili u pravcu
+taksista. Kod rampe za ulaz u parking iza R... kuć ečekali su ih I... i A... nakončega su odmah ušli u jedno taksi
+vozilo a kada su ušli u vozilo primijetio je da iz pravca pijace trče dva momka od kojih je jedan bio momak sa
+kojim su se prethodno tukli i da je vidio je da drugi momak u ruci ima neki predmet koji je ličio na palicu ili
+šipku. N...o je, da je momak sa kojim su bili u sukob bio visočiji i krupniji i od njega i S..., da je istom vidio lice,
+da ga ranije nikad nije vidio, a da je djevojka koja je bila sa njim svo vrijeme njihovog sukoba bila u blizini. I... i
+A... nijesu vidjelišta se dešavalo tek kasnije kući su im ispričali za taj sukob. Nije primijetio da je taj momak
+povrijeđen u momentu kada je otrčao u pravcu SDK i nije vidio da ga je S... zakačio nožem, niti zna da li se to
+desilo. Sjutri dan su iz medija saznali da je neki momak u bolnici zbog ubodne rane te da su oni to doveli u
+vezi sa tim događajem i odlučili da pođu u policiju i da ispričajušta se zapravo desilo.
+
+Na glavnom pretresu je pored prednjeg pojasnio da im se momak sa kojim su imali sukob krtične večeri
+obratio riječima“ š ta je bilo, š ta gledate pičkice“ a pojaš njavajući zašto to nije kazao u kazi...ju pred ODT
+optuženi je n...o da kod tužioca nije htio da spominjem riječ „pičkice“, ali da je u medjuvremenu razmislio i
+shvatio da je bolje da to kaže, da je od udaraca koje je zadobio od R...a imao povredu u predjelu grudi, ali da
+nije zatražio pomoću medicinskom centru niti su R...a prijavili iz razloga jer su smatrali da nema potrebe. U
+završnoj riječi je istakao da mu je jakožaošto je došlo do tog dogadjaja, te da se kaje zbog svegašto se desilo
+i ako se ne osjećam krivim a da je njegova m... bila u kontaktu od kada se to desilo sa sestrom oštećenog i da
+su se interesovali za njegovo zdravlje a da se oštećenom izvinjava.
+
+U dokaznom postupku sud je neposredno saslušao svjedoka oštećenog R... N..., svjedoka G... B..., na saglasan
+predlog stranaka pročitao nalaz i mišljenje vještaka medicinske struke Dr. B... V... dat pred ODT-om i istog
+vještaka neposredo saslušao na glavnom pretresu, te pročitao zapisnik o uvidjaju UP PJ NIkšićku.br. 245 od
+8.06.2014. god., izvršio uvid u skicu lica mjesta i fotodokumetnaciju Upr... policije CB Nikšćbr. 484714 od
+8.06.2014.god. i pročitao izvode iz kaznene evidencije na ime optuženih.
+
+Svjedok oštećeni R... N... je u svom iskazu u bitnom n...o da su 07.06.2014. godine u večernjim satima nakon
+što su izašali iz lokala "J..." on i G... B..., zastali na mjestu niže od zgrade SDK, gdje su se raspravljali, te da je u
+jednom momentu krenuo da ide u pravcu T... centra "Z..." dok je B... išla 2-3 metra iza njega, te da ječuo da
+mu je B... u jednom momentu rekla " č ekaj" a kada se osvrnuo rekao joj je " š ta je" i nije htio da zastane.
+Doš avši do mjesta gdje se nalazila apoteka preko puta t... centra "Z...", B... je i dalje išla iza njega 2 - 3 metra,
+čuo je da se B... obraća neko muško lice riječima "maltretira li te to" našto je B... odgovorila " ne, to mi je
+momak" nakončega joj je to lice reklo " ne smije on da te maltretira samo ti kaži nama, mićemo da te
+zaštitimo". Nije se okr...o da vidi ko razgovara sa B..., ali je malo zastao da je sačeka, kada je vidio dva
+nepoznata momka koja su prošla pored njega u pravcu taksista. Obratio im se riječima "momci učemu je
+problem", ičim je to rekao isti su počeli da ga psuju, nakončega su krenuli u njegovom pravcu. Prvo mu je
+prišao momak nižeg rasta i udario ga pesnicom u predjelu gl..., a nakon toga obojica su ga udarala pesnicama
+u predjelu gl... i tijela, te da se sa preciznošću nemože izjasniti koliko puta su ga udarili pesnicama jer je bio
+zatečen i iznenađen njihovim napadom. Pokušao je da se od istih odbrani ali ih nije udarao pesnicama tačnije
+nije uspio da ih udari većih je više odgurkivao od sebe. U jednom momentu dok je pokušao da odgurne
+
+jednog od tih momaka koji je bio visočiji i dok se sa njimčupao, drugi momak, kojji je bio niži rastom se
+nalazio odmah pored njih, osjetio je udar u predjelu bubrega. Vidio je da je taj niži momak prethodno
+zamahnuo rukom u predjelu njegovog bubrega, ali da nije ništa vidio u njegovim r...ma, te da je odmah nakon
+udara osjetio toplinu u tom predjelu, nakončega su ti momci prestali da ga udaraju i udaljili se u pravcu taxi
+vozila. Kada se dohvatio taj predio gdje je osjetio toplinu vidio je da u tom dijelu krvari. Nakon toga njegova
+djevojka kad je vidjela da krvari, počela je da doziva njegovog druga Z... N... koji je ubrzo došao i pomogao
+mu da pođe u bolnicu. Zbog zadobijenih povreda bio je ušok sobi nedjelju dana a nakon toga 4 dana na
+odjeljenju urologije. N...o je, da su konkretnom prilikom on i B... hodali prilično brzo, tako da su ti momci
+sigurno morali jako brzo da idu za njima da bi ih sustigli, zbogčega sumnja da su oni namjerno krenuli za
+njima, da bi ga isprovocirali i napali, a da nije mu poznat razlog n...denog ponašanja, jer ih odranije ne
+poznaje.
+
+Na glavnom pretresu je pored prednjeg pojasnio da je vidio da su ta dva momka prije negošto su nasrnuli na
+njega gurnuli njegovu djevojku B..., da je u tom napadu on odgurivao te momke od sebe, sa razloga jer su ga
+istovremeno napadali i jedan i drugi, da je vjerovatno i hvatao iste za djelove garderobe, te da je tačno da je
+neko od njih dvojice posrtao ali da je nije padao. Nakon tog događaja on se nije sr...o sa optuženima, da dok
+je 11 dana bio u bolnici dok su mu se boril zaživot, niko od porodice ni sa jedne ni sa druge strane nije došao
+da ga obiđe, niti ih je to interesovalo. N...o je, da kako se radilo o hiruškoj intervenciji vjerovatno da je bilo i
+drigih povreda, ali da se ljekari nijesu bavili time, većsamo kako da mu spasuživot.
+
+U završnoj riječi je sam i preko svog punomoćnika K... S... istakao da se na osnovu provedenih dokaza na
+glavnom pretresu sa sigurnošću može izvesti zaključak da su optuženi počinili krivično djelo stavljeno im na
+teret, te da način na koji su iznosili svoju odbranu kao i sadržina iste jasno pokazuje da je njihova odbrana
+smiš ljena i dogovorena kako bi se pokušao olakšati njihov položaj u postupku, da su isti pokušali sebe
+predstavitižrtvom, te da je njihova odbrana opovrgnuta provedenim dokazima a da su tačni navodi
+oštećenog R... pokazuje iskaz svjedoka G... B..., nalaz i mišljenje vještaka medicinske struke dr. B... V... kao i
+njegovo usmeno pojašnjenje na glavnom pretresu a koji je je bio izričit i jasan da je dužina sječiva kojim je
+nanij... povreda kod oštećenog je najmanje 10-15 cm čime se direktno obesmišljvaju navodi optuženih da je
+„perorez“ L... imao sječivo dužine 3 cm, te da je n...deni vještak bio izričit da je intezitet sile koji je djelovao
+prlikom nanošenja povrede oštećenom bio izuzetno jakčime je odlučno isključio mogućnost da je oštećeni
+zadobio povredu na način kako su to predstavili optuženi, da se „ogrebao“ o „perorez“, pa imajući u vidu
+n...deno predložio je da sud optužene osudi po zakonu takoštoće cijeneći n...deno optuženima izrći
+maksimalne kazne zatvora propisane za krivično djelo za koje su optuženi.
+
+Svjedok G... B... je u svom iskazu u bitnom n...la da je dana 07.06.2014. godine u večernjim satima izašla sa
+svojim momkom R... N... u lokal "J..." a sa njima u društvu bili su Z... N... i K... K..., u tom lokalu bili su do 00:10
+ili 00:15časova, a onda su krenuli u pravcu centra grada, dok su K... i N... produžili u pravcu centra grada da bi
+N... i ona zastali i raspravljali se. Zadržali su se par minuta, raspravljajući se a zatim je N... krenuo ulicom koja
+vodi prema pijaci, dok je ona 3-4 metra išla za njim, jer je N... hodao brže da bi se u jednom trenutku njemu
+obratila riječima "uspori malo", kada se on okrenuo i rekao " š ta je". Negdje naspram apoteke "L..." čula je da
+je neko pita "curo je li tebe onaj momak maltretira", pa je vidjela da se ulicom paralelno sa njom kreću dva
+mlađa lica, jedno od tih lica je bilo vrlo kratke kose i krupnije i bilo je u bijeloj majici, dok je drugo lice bilo
+niže od njega, mršavo i imao je izrazito crnu ježastu kosu. Nakon toga odgovorila im je da joj je to momak i da
+nemaju nikakvih problema a ti momci su nešto komentarisali u smislu kako ne može muškarac da maltretira
+
+ženu, te daće je zaštiti, č itavo vrijeme krećući se paralelno sa njom. U jednom momentu N... je zastao i pitao
+"učemu je problem momci ", a u međuvremenu je i ona prešla ulicu i prišla im. N...deni momci su psovali N...
+i krenuli u njegovom pravcu, jedan od njih ju je odgurnuo zbogčega joj je ispala torba, dok je jednom od njih
+ispala kesa sa hranom da bi u jednom trenutku obojica počeli pesnicama da udaraju N..., s timšto je krupniji
+momak bio sa N...ne desne strane a niži momak sa lijeve strane i obojica su ga udarala u predjelu stomaka,
+leđa i bokova, jer je N... puno visočiji od njih te misli da ga nijesu mogli udarati u predjelu gl.... Ta dva momka
+su se bukvalno vrtjela oko N... udarajući ga, a on je pokušavao da ih odgurne, da nije prmijetila da je N...
+nekom od njih zadao udarac pesnicom jer su ga salij...li. Dakle,u momentu kada bi n... pokušao da udari
+jednog od njih tsj bi se malo izmakao a ovaj drugi bi ga udario, Sve n...deno je trajalo 6 - 7 sekundi i u jednom
+momentu N... se udaljio od njih krećući se prema apoteci unazad i stao je na trotoar dok su ti momci produžili
+u pravcu taxi vozila. U tom momentu joj nije bilo jasno zašto je sukob tako naglo prestao pa je prišla N... i
+pitala ga "ko su ovi momci i da li je dobro", kada je primijetila krv na njegovoj majci, farmericama i po
+trotoaru, a kada je zavrnuo majicu vidjela je da je povrijeđen u predjelu iznad lijevog bubrega.
+
+Iz zapisnika o uvidjaju UP PJ NIkšićku. br. 245 od 8. 06. 2014.god proizilazi da je isti sačinjen od strane Upr...
+Policije Crne Gore CB Nikšićdana 08. 06. 2015. god, te da je izlasak na mjesto događaja izvršen povodom
+obavještenja od radnika obezbeđenja Opšte bolnice Nikšić, da je kod istih dovezeno lice R... N... od oca Jo...a
+rođ. 22.12.1990.god u Nikšiću nastanjen u selo Jugovići bb sa povredom u predjelu lijevog slabinskog dijela
+leđa, koja je nanesena oštrim predmetom - nožem, te da je u vezi prednjeg obaviješten ZVDT u Podgorici M S,
+koja je ovlastila službenike CB Nikšićda izvrše uviđaj. Izlaskom na lice mjesta konstato...o je da se isto nalazi
+na raskrsnici ul. Pete P... i S... Š u Nikšiću, da isto pored ulice obuhvata i trotoar namijenjen za pješake kao i
+spratni objekat tvrde gradnje dimenzija 45x12,50 m u kojem se nalazi više poslovnih objekata, da je uviđaj
+rađen tokom noći, vrijeme vedro dok je radila ulična rasvj..., te da je pregledom lica mjesta utvrđeno da se na
+trotoaru ul. S... Š... nalazio dio sendviča sa papirnim omotom na kojem je stajao natpis Brza hrana- „B“ i br.
+telefona a da je kao stajna tačka tokom vršenja uviđaja uz... m...lnašahta sa natpisom V Nikšić, da se ista
+nalazi na samoj raskrsnici pomenutih ulica u neposrednoj blizinićoška trotoara i od iste je trag br.1 udaljen
+13,20 m a udaljenost pomenutog traga odćoška objekta je 4.50m. Daljim pregledom na trotoaru ul. Pete P...
+nalazi se skup kapi crvene boje nalik na krv (trag.2) č ija je udaljenost od stajne tačke 6.50 m odćoška objekta
+2,60 m dok je od zida zgrade 0,80 m. Na udaljenosti od 0,90 m od stajne tačke, takođe na trotoaru pored
+sjevernog zida objekta na udaljenosti od 0,60m od istog nalaze se tragovi crvene boje nalik na krv (trag.3),
+dok se na trotoaru na udaljenosti od 0.60m od zida objekta nalazi više kapi crvene boje nalik na krv (trag.4)
+koji je udaljen od tačke 25m.Takođe na m...lnoj roletni objekta galerije „D“ na visini od 0,60 m se nalazi trag
+crvene boje nalik na krv (trag. 5), a da je fotografisano i skicirano lice mjesta, da su sa lica mjesta izuzeti
+n...deni predmeti-tragovi te da je krim tehničaru u prostorijama Hitne službe MC Nikšićsa povrijeđenog lica
+Roć enović N... dostavljena majica kratkih r...va, teget pl... boje marke „B“ veličine, sa tragovima crvene boje.
+(trag 6).
+
+Konstatacije iz zapisnika o uviđaju predstavljene su foto dokumentacijom i skicom lica mjesta Upr... policije
+CB Nik šć, br. 484714, od 8.06.2014.god.
+
+Iz nalaza i mišljenja stalnog sudskog vještaka medicinske struke dr B... V... datog na zapisniku pred ODT-om
+Nikš ićproizilazi da se R... N... javio na pregled zbog povreda koje je zadobio oštrim sječivom u lijevom
+slabinskom predjelu, da je primljen u jedinicu intezivne njege gdje je započ... intezivna reanimacija, i da je u
+dijagnozi n...deno da se radi o ubodnoj rani u predjelu lijeve slabinske regije i sumnji na povredu lijevog
+
+bubrega, te da je u jedinici Intezivne njege nakon reanimacije i urađenih dijagnostičkih procedura operisan,
+gdje je urađeno otvaranje trbušne duplje u srednjoj liniji vertikalnom incizijom i uši...je mjesta krvarenja u
+predjelu korijena poprečnog dijela debelog crijeva kao i uši...je mjesta krvarenja u predjelu lijevog bubrega,
+te da je n...dena povreda kod R... N... u vidu ubodne rane u lijevoj slabinskoj regiji sa povredom lijevog
+bubrega i korijena poprečnog dijela debelog crijeva povreda teške prirode, da je od iste doveden u opasnost
+život oštećenog, a koji je vještak na glavnom pretresu pojasnio da povreda nije mogla nastati od peroreza
+duž ine 3 cm, s obzirom na njenu lokalizaciju i eskluzivnost, te da je povreda mogla biti nanešena nožem
+(sječivo dužine 10-15 cm,) bajonetom, nekim improvizo...im bodežom dužine 10-15 cm, oštrimšrafcigerom i
+sl, a s obzirom na konstituciju oštećenog, da bi se došlo do bubrega najmanje 10 cm, morala je biti sila jakog
+intezit... da bi došlo do takve povrede. Prilikom pregleda oštećenog vještak je utvrdio da je ožiljak izgleda
+slova Tšto znači da je ubodna rana hiruški revidirana, č iji je uzdužni krak dužine oko 5 cm, a poprečni dužine
+oko 7-8 cm, a da je položaj lica koje mu je nanijelo povredu moralo biti okrenuto u odnosu na optuženog
+boč no ili sa ledja. Nadalje je pojasnio, da bi se povrijedio bubreg sječivo je moralo prvo da povrijedi kožu,
+potkožno tkivo, fasije odnosno omotače mišića i par...rtabalne mišiće, odnosno mišiće koji se nalaze uz
+kičmeni stub, jer u konkretnom slučaju nije zakačeno rebro, kao ni nastavak nekog od pršljenja, a da je u
+momentu nanošenja povrede kod oštećenog, veoma značajno kako je to lice bilo odjeveno u tom momentu,
+da li je ljetni ili zimski period kada je zimska debela garderoba odčegaće zavisiti dubina i oštećenje tkiva.
+Istakao je, da je od kože do bubrega sječivo moralo biti bez obzira na garderobu 10 cm, i da se u konkretnom
+slučaju moralo raditi direktno o ubodu sječiva (povrijedjeni dio tijela) i nikako nije moglo nastati zamahi...jem
+oštricom lijevo, desno, okrznućem ili slično, da u kliničkom nalazu gdje je neophodno opisati karakteristike
+rane, njenuširinu, izgled ivica, izgled kanala, nije ništa napisano ni u jednom dokumentu iz razlogašto je
+primljen kao hitan slučaj i odmah se pristupilo operativnom zahvatu.
+
+Cijeneći provedene dokaze pojedinačno i u njihovoj međusobnoj vezi i dovodeći iste u vezi sa odbranom
+optuženih sud je na nesumljiv način utvrdio da su optuženi na način u vrijeme i mjesto bliže opisano izrekom
+presude izvršili i to optuženi L... S... krivično djelo teška tjelesna povreda izčlana 151 stav 2 Krivičnog
+zakonika, a optuženi R... L... krivično djelo učestvo...je u tuči izčlana 153 Krivičnog zakonika.
+
+Naime optuženi ne priznaju izvršenje krivičnog djela na način kako mu je stavljeno optužbom na teretu. U
+svojim odbranama u bitnom negiraju da su prvi napali oštećenog većda su oni bili isprovocirani i napadnuti
+od strane oštećenog. Sud ne prihvata odbranu optuženih u tom pravcu kao istinitu većiste ocjenjuje kao
+konstruisanu u cilju umanjenja sopstvene krivice, budući da je obesmišljena rezultatima dokaznog postupka
+u odnosu načinjenice od odlučnog značaja, prevashodno uvjerljivim i logičnim kazi...jima oštećenog koji na
+d...ljan način predstavlja tok predmetnog događaja, te podrobno opisuju radnje koje su kritičnom prilikom
+preduzeli optuženi, a koji iskaz je potvrdjen i iskazom svjedoka G... B.... Naime, iz njihovih svjedočkih iskaza
+proizilazi da su optuženi na način, u mjestu i vremenu kako je to predstavljeno u izreci odluke preduzeli
+inkriminisanu radnju, koja je rezultirala nastankom teških tjelesnih povreda kod ostećenog opasnih poživot
+kao zabranjena posljedica. O vrsti i prirodi nastalih povreda, te mehanizmu njhovog nanošenja stručno
+mišljenje sudu je pružio vještak medicinske struke na koji način je takodje potrkijepljen iskaz oštećenog.
+Da su optuženi izvršli krivično djelo na nač in opisan izrekom presude sud zaključuje prevashodno na osnovu
+iskaza oštećenog R... N... i svjedoka G... B..., koje iskaze je sud cijenio kao istinite, jer su kritični događaj
+predstavili jasno i ubjedljivo, d...ljno opisujući radnje koje su kritičnom prilikom preduzeli optuženi. Dakle na
+osnovu njihovih iskaza sud zaključuje da se kritičnom prilikom dok se oštećeni R... nalazio u ulici Svetozara
+Š... i raspravljao sa svojom djevojkom G... B... koja je 2-3 m išla iza njega, jedan od optuženih G... B... obratio
+riječima“ maltrtira li te to“ a potom "ne smije on da te maltretira samo ti kaži nama, mićemo da te zaštitimo”,
+
+da je oštećeni zastao da je sačeka, a zatim optužene pitao u” č emu je problem momci” nakončega su
+optuženi stali da ga psuju a zatim i krenuli prema oštećenog, da ga je optuženi L... udario pesnicom u
+predjelu gl..., a da su ga nakon toga obojica optuženih udarala pesnicama u predjelu gl... i tijela, da se
+oštećeničupao sa njima, da je pokušavao da ih odgurne od sebe i u momentu kada bi pokušao da udari
+jednog od njih drugi bi mu prišao i zadao mu udarac, a koje činjenice nesporno dovode do zaključka da je
+postojala tuča u krivično pravnom smislu u kojoj je u jednom momentu optuženi L... sječivom noža ubo u
+predjelu lijeve slabinske regije oštećenog. Prednje ima uporište i u odbrani optuženog L... S... da je kritične
+večeri imao nožkod sebe i da je zaista istim uboo oštećenog u predjelu slabinske regije.
+Prednječinjenično utvrdjenje u potpunosti je potvrdjeno nalazom i mišljenjem vještaka medicinske struke dr
+B... V... iz kojeg je sud utvrdio vrstu i težinu povreda koje je oštećeni kritične prilike zadobio (povredu u vidu
+ubodne rane u lijevoj slabinskoj regiji sa povredom lijevog bubrega i korjena poprečnog dijela debelog
+crijeva) koje se kvalifikuju kao teška tjelesna povreda, usled koje povrede je doveden u opasnostživot
+oštećenog R... N..., kao i mehanizam kojim je ista nanij... jer po navodima vještaka iste povrede su nastale
+ubodom sječiva izmedju 10-15 cm i nije mogla nastati od peroreza dužine 3 cm, s obzirom na njenu
+lokalizaciju i eskluzivnost i da se u konkretnom slučaju moralo raditi direktno o ubodu sječiva (povrijedjeni
+dio tijela) i nikako nije moglo nastati zamahi...jem oštricom lijevo, desno, okrznućem ili slično i da seširina
+ubodne rane nije mogla odrediti jer je konstato...o da je oštećeni primljen nakon povrede oštrim sječivom u
+lijevom slabinskom predjelu, da u kliničkom nalazu gdje je neophodno opisati karakteristike rane, njenu
+širinu, izgled ivica, izgled kanala, nije ništa napisano ni u jednom dokumentu iz razlogašto je primljen kao
+hitan slučaj i odmah se pristupilo operativnom zahvatu što znači da nalaz potkrepljuje navode oštećenog o
+vrsti, težini, lokalitetu same povrede, kao i načinu nastanka iste. Po mišljenju ovog suda izjašnjenje vještaka
+je jasno i odredjeno, obzirom da se n...deni vještak izjasnio o mehanizmu nastanka n...dene povrede kod
+oštećenog, i isključio mogućnost nastanka povrede kako tožele predstaviti optuženi perorezom ili
+zamahivajući većdirektnim ubodom i sječivom dužine najmanje 10 cm, iz kog razloga je sud imajući u vidu
+takav nalaz i izjašnjenje s jedne strane, te iskaz oštećenog R...a i svjedoka G... B... s druge strane koja je kao
+očevidac samog događaja d...ljno opisala isti u pogledu nastanka povrede kod oštećenog i u tom pravcu
+pojasnila da je kritičnom prilikom vidjela kako su optuženi napali i udarali pesnicama oštećenog. Tošto ovaj
+svjedok nije vidjela da su optuženi udarali i po glavi oštećenog, za sud je i logično obzirom da je u takvoj
+situaciji bila vidno potrešena i nije mogla pratiti d...lje kritičnog događaja a posebno imajući u vidu vrijeme
+odvijanja kritičnog dogadjaja jer se sve dešava u noćnim satima. Medjutim oštećeni i svjedok su u pogledu
+važnihčinjenica i okolnosti, kako je većnotirano, saglasni i ujednačeni a to je da je oštećeni sigurno
+napadnut i da je to sigurno učinjeno od strane ovdje optuženih i da je oštećeni sigurno u tom dogadjaju
+zadobio predmetnu povredu.
+
+Cijeneći prednje dokaze kao ičinjenicu da ni optuženi ne spori da je sječivom ubo oštećenog u predjelu
+slabinske regije na nedvosmislen način je utvrdjeno na koji način je povrijedjen oštećeni te dovodeći isto u
+vezu sa zapisnikom o uviđaju, foto dokumentacijom i skicom lica mjesta Upr... policije CB Nikšćbr. 484714 od
+8.06.2014.god te navodima vještaka da je od n...dene povrede bio doveden u opasnostživot oštećenog R...
+N... sud je utvrdio da je optuženi L... S... izvršio krivično djelo teška tjelesna povreda izčl. 151 st.2 KZ a
+optuženi R... L... krivično djelo učestvo...je u tuči izčl. 153 KZ.
+
+Sud je cijenio navode odbrane optuženih, da su konkretnom prilikom bili napadnuti od strane oštećenog, da
+oštećeni nije odustajao od napada, da je zbog toga optuženi L... izvadio mali džepni no ž, tačnije privezak
+sječiva 3-4 cm kojim je zamahivao lijevo desno u pravcu oštećenog, da je sječivo noža bilo okrenuto u ravni
+stomaka oštećenog R...a i da je oštećeni bez obzira na to direktno krenuo prema njemu bez obzirašto je vidio
+
+nož, ali je n...dena odbrana optuženih obesmišljena ne samo iskazima gore n...denih svjedoka veći nalazom
+vještaka medicinske struke a koji dokazi dovode ovaj sud do zaključka da se njihovim odbranama ne može
+povjerovati i da dogadjaj zaista nijesu predstavili na način kako se odigrao a osim prednjegživotno je
+nelogično da bi oštećeni krenuo direktno na noži doveo svojživot u opasnost kako tožele predstaviti
+optuženi.
+
+Kao izvršilac krivičnog djela teška tjelesna povreda izčl. 151 st.2 KZ je u zakonu izmedju ostalog odredjen ko
+drugog teško tjelesno povrijedi ili mu zdravlje teško naruši da je usled toga doveden u opasnostživot
+povrijedjenog, dok krivično djelo učestvo...je u tuči izčl. 153 KZ postoji kada neko učestvuje u tuči u kojoj je
+neko lišenživota ili je drugom nanesena teška tjelesna povreda. Imajući u vidu zakonske definicije krivičnih
+djela u pitanju a cijeneći subjektivni odnos optuženih prema izvršenim krivičnim djelima sud utvrdjuje da je
+optuženi L... S... bio svjestan da u momentu kada je oštećenog sječivom noža ubo u predjelu lijeve slabinske
+regije može istom naniijeti tešku tjelesnu povredu kojom će biti doveden u opasnostživot oštećenog R... N...,
+pa je na to i pristao tako da je optuženi L... S... izvršio krivično djelo teška tjelesna povreda izčl. 151 st. 2 KZ sa
+eventualnim umišljajem kao oblikom vinosti, dok je optuženi R... L... izvršio krivično djelo učestvo...je u tuči
+iz čl. 153 KZ sa direktnim umišljajem jer je bio svjestan da učestvuje u tuči jer je pesnicama više puta u
+predjelu gl... i tijela udarao oštećenog R... N... a što je i htio a u kojoj tuči je oštećenom nanesena teška
+tjelesna povreda na nač in opisan u izreci odluke kao objektivni uslov inkriminacije. Prednje iz razlog jer
+učinilac ovog djela samim učestvo...jem u tuči stvara konretnu opasnost zaživot i tijelo lica koja učestvuju u
+tuči, na koji način doprinosi nastupanju zabranjene posledice.
+
+Prilikom odmjera...je kazne optuženom L... S...u za izvršeno krivično djelo, sud je u smislučl. 42 Krivičnog
+zakonika, cijenio sve okolnosti koje utiču na odmjera...je kazne, pa je optuženom kao olakšavajuće okolnosti
+cijenio nezaposlenost, mladost, da je student, njegovu raniju neosuđi...ost ušto se sud uvjerio uvidom u
+izvod iz kaznene evidencije na ime optuženog, pa je istom primjenomčl. 36 KZ izrečena kazna zatvora koja je
+predhodno na osnovučl.45 st. 3 ičl.46 st. 4 KZ ublažena ispod zakonskog minimuma predviđene kazne za
+predmetno krivično djelo jer je sud kod optuženog prednje olakšavajuće okolnosti cijenio kao osobito
+olakšavajuću okolnost, pa imajući u vidu prednje sud je mišljenja daće se i sa...vom ublaženom kaznom
+zatvora u trajanju od 10 (deset) mjeseci, u dovoljnoj mjeri uticati da u buduće ne vrši krivična djela, č imeće
+se sa uspjehom ostvariti svrha kažnja...ja izčl. 32 Krivičnog zakonika, a u okviru opšte svrhe izricanja krivičnih
+sankcija u smislučl. 4 st. 2 Krivičnog zakonika.
+
+Prilikom izbora vrste i visine krivičnih sankcija za optuženog R... L... sud je cijenio sve okolnosti izčl. 42.
+Krivičnog zakonika, koje su od uticaja da kazna bude manja ili veća, pa je od olakšavajućih okolnosti na
+stranu optuženog cijenio ranije dobro ponašanje i s tim u vezi raniju neosuđi...ost, ušto se sud uvjerio
+uvidom u izvod iz kaznene evidencije na ime optuženog, njegovu mladost, da je student, dok otežavajućih
+okolnosti na strani istog sud nije našao pa je mišljenja da optuženom, nije nužno izricati efektivnu kaznu
+zatvora, većmu je primjenomčl. 53 i 54 Krivičnog zakona izrekao uslovnu osudu, vjerujući daće se i
+upozorenjem uz prijetnju izvršenja utvrđene kazne zatvora u trajanju odšest mjeseci, sa rokom provjere od
+dvije godine na optuženog, u dovoljnoj mjeri uticati da u buduće ne vrši nova krivična djela i daće se i
+uslovnom osudom, u konkretnom slučaju, ostvariti svrha izricanja uslovne osude izčl. 52 Krivičnog zakonika
+u okviru opšte svrhe propisi...je i izricanje krivičnih sankcija izčl. 4 st. 2 Krivičnog zakonika.
+
+Kako su optuženi oglašeni krivim, sud ih je ob...zao da na osnovučl. 226 i 229 ZKP-a, na ime troškova
+krivičnog postupka solidarno plate iznos od 139,00 €, odčega iznos od 44,00 € na ime naknade sudskom
+vještaku medicinske struke za urađeni nalaz i mišljenje i iznos od 55,00 € na ime nagrade sudskom vještaku za
+dva izjašnjenja na glavnom pretresu, a da svako od optuženih na ime sudskog paušala plati iznos od po 40,00
+€, što je srazmjerno trajanju i složenosti krivičnog postupka i imovnim prilikama optuženih.
+
+Sa svega izloženog, a primjenomčl. 374 ZKP-a, odlučeno je kao u izreci presude.
+
+OSNOVNI SUD U NIKŠIĆU, dana 01.06.2015.godine
+
+ZAPISNIČAR S U D I J A
+N...ć Rada, s.r. Kovačević Vesna, s.r.
+
+Za tačnost otpravka tvrdi i ovjerava
+Služ benik Suda
+
+PRAVNA PO...: Protiv ove presude nezadovoljna stranka ima pravožalbe u roku od 15 dana od dana prijema
+iste preko ovog suda, Višem sudu Podgorica.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

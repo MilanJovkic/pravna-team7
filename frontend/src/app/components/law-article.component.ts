@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { LawService } from '../services/law.service';
+import { LegalReferenceService } from '../services/legal-reference.service';
 import { LawArticle } from '../models/models';
 
 @Component({
@@ -210,17 +211,20 @@ export class LawArticleComponent implements OnInit {
   loading = true;
   error = '';
   parsedReferences: Array<{ label: string; articleNumber: string | null; original: string }> = [];
+  lawId: string = 'crime-code'; // Default law ID
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private lawService: LawService
+    private lawService: LawService,
+    private referenceService: LegalReferenceService
   ) {}
 
   ngOnInit() {
     // Subscribe to route parameter changes to handle navigation within same component
     this.route.paramMap.subscribe(params => {
-      const articleNumber = params.get('id');
+      this.lawId = params.get('lawId') || 'crime-code';
+      const articleNumber = params.get('articleNumber');
       if (articleNumber) {
         this.loadArticle(articleNumber);
       }
@@ -231,7 +235,7 @@ export class LawArticleComponent implements OnInit {
     this.lawService.getArticle(articleNumber).subscribe({
       next: (data) => {
         this.article = data;
-        this.parsedReferences = this.parseReferences(data.references || []);
+        this.parsedReferences = this.referenceService.parseReferences(data.references || []);
         this.loading = false;
       },
       error: (err) => {
@@ -250,105 +254,12 @@ export class LawArticleComponent implements OnInit {
       (article.references && article.references.length > 0));
   }
 
-  formatReference(reference: Record<string, any>): string {
-    if (!reference) {
-      return '';
-    }
-
-    const parts = [
-      reference['type'],
-      reference['article'],
-      reference['law'],
-      reference['label'],
-      reference['target']
-    ]
-      .filter(Boolean);
-    if (parts.length > 0) {
-      return parts.join(' ');
-    }
-
-    return JSON.stringify(reference);
-  }
-
-  parseReferences(references: Array<Record<string, any>>): Array<{ label: string; articleNumber: string | null; original: string }> {
-    const parsed: Array<{ label: string; articleNumber: string | null; original: string }> = [];
-    
-    console.log('Raw references from backend:', references);
-    
-    for (const ref of references) {
-      const original = this.formatReference(ref);
-      let label = original;
-      let articleNumber: string | null = null;
-
-      console.log('Processing reference:', ref);
-
-      // Extract article number from href (e.g., #art_147 -> 147)
-      if (ref['href']) {
-        const hrefMatch = ref['href'].match(/#art_(\d+[a-z]?)/i);
-        if (hrefMatch) {
-          articleNumber = hrefMatch[1];
-          label = ref['text'] || `Član ${articleNumber}`;
-          console.log('Extracted from href:', articleNumber);
-        } else if (ref['href'].includes('__para_')) {
-          // It's a paragraph reference, not an article
-          label = ref['text'] || original;
-          console.log('Paragraph reference, skipping');
-        }
-      }
-      
-      // Try to extract from text field if we don't have articleNumber yet
-      if (!articleNumber && ref['text']) {
-        const textMatch = String(ref['text']).match(/[Čč]lan\s*(\d+[a-z]?)/i);
-        if (textMatch) {
-          articleNumber = textMatch[1];
-          label = ref['text'];
-          console.log('Extracted from text:', articleNumber);
-        }
-      }
-      
-      if (!articleNumber && ref['article']) {
-        // Try to extract from article field
-        const articleMatch = String(ref['article']).match(/(\d+[a-z]?)/i);
-        if (articleMatch) {
-          articleNumber = articleMatch[1];
-          label = `Član ${articleNumber}`;
-          console.log('Extracted from article field:', articleNumber);
-        }
-      }
-      
-      if (!articleNumber && ref['target']) {
-        // Try to extract from target field
-        const targetMatch = String(ref['target']).match(/[čć]lan\s*(\d+[a-z]?)/i);
-        if (targetMatch) {
-          articleNumber = targetMatch[1];
-          label = `Član ${articleNumber}`;
-          console.log('Extracted from target:', articleNumber);
-        }
-      }
-
-      // If we still don't have a label, try to parse from original
-      if (!label || label === original) {
-        const labelMatch = original.match(/[čć]lan\s*(\d+[a-z]?)/i);
-        if (labelMatch) {
-          articleNumber = labelMatch[1];
-          label = `Član ${articleNumber}`;
-          console.log('Extracted from original:', articleNumber);
-        }
-      }
-
-      console.log('Final parsed:', { label, articleNumber, original });
-      parsed.push({ label, articleNumber, original });
-    }
-
-    console.log('All parsed references:', parsed);
-    return parsed;
-  }
-
   navigateToArticle(articleNumber: string) {
     if (!articleNumber) {
       return;
     }
-    this.router.navigate(['/laws/article', articleNumber]);
+    // Navigate using law-aware route
+    this.router.navigate(['/laws', this.lawId, 'article', articleNumber]);
   }
 
   goBack() {
@@ -356,6 +267,7 @@ export class LawArticleComponent implements OnInit {
   }
 
   goToChapter(chapterNumber: string) {
-    this.router.navigate(['/laws/chapter', chapterNumber]);
+    // Navigate using law-aware route
+    this.router.navigate(['/laws', this.lawId, 'chapter', chapterNumber]);
   }
 }

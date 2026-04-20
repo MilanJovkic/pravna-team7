@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке51">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке51/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке51"/>
+                    <FRBRdate date="2013-10-25" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке51/sr@2013-10-25/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке51/sr@2013-10-25"/>
+                    <FRBRdate date="2013-10-25"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке51/sr@2013-10-25/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке51/sr@2013-10-25/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U ROŽAJAMA"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Milosav Zekić"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="M.D."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="S.D."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="P.R."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="E.S."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="U.D."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="M.D."/>
+                <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="A.D."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovno državno tužilaštvo"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="uvjerljiv i&#10;potkrijepljen iskazom svedoka A.D."/>
+                <TLCOrganization eId="org_3" href="/akn/me/ontology/organization" showAs="svedoka A.D."/>
+                <TLCOrganization eId="org_4" href="/akn/me/ontology/organization" showAs="Iz iskaza svedoka A.D."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 145/13</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U ROŽAJAMA</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2013-10-25">2013-10-25</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Milosav Zekić</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni M.D. osuđen na novčanu kaznu zbog ugrožavanja opasnim oruđem.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Ugrožavanje opasnim oruđem</p>
+                    <p>Primena krivičnog zakona</p>
+                    <p>Visina kazne</p>
+                    <p>Imovinsko-pravni zahtev</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakonik o krivičnom postupku</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_154">Član 154</ref>
+                    <ref href="/akn/me/act/2024/!main#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/2024/!main#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/2024/!main#art_155">Član 155</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_370">Član 370</ref>
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je uzeo u obzir težinu dela, okolnosti izvršenja, ranije osude i porodične prilike okrivljenog.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Osudjen</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>M.D.</person>
+                </block>
+                <block name="victims">
+                    <person>S.D.</person>
+                    <person>P.R.</person>
+                    <person>E.S.</person>
+                    <person>U.D.</person>
+                    <person>M.D.</person>
+                    <person>A.D.</person>
+                </block>
+                <block name="witnesses">
+                    <person>A.D.</person>
+                    <person>S.D.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Osnovno državno tužilaštvo</organization>
+                    <organization>uvjerljiv i
+potkrijepljen iskazom svedoka A.D.</organization>
+                    <organization>svedoka A.D.</organization>
+                    <organization>Iz iskaza svedoka A.D.</organization>
+                </block>
+            </participants>
+            <facts>
+                <fact key="location">Bijelo Polje</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="family_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>OSNOVNI SUD U ROŽAJAMA
+K.br. 145/13
+
+U IME CRNE GORE
+
+Sudija Osnovnog suda u Rožajama Milosav Zekić, uz učešće zapisničara Aide Luboder, rješavajući po
+optužnom predlogu Osnovnog državnog tužilaštva iz Rožaja Kt.br. 173/13 od 19.09.2013.g. podnijet protiv
+okrivljenog M.D. iz Rožaja, zbog krivičnog djela ugrožavanje opasnim oruđem pri tuči i svađi izčl. 154.
+Krivičnog zakonika, nakon održanog glavnog i javnog pretresa u prisustvu Zamjenika Osnovnog državnog
+tužioca Armina Selmanovića, oštećenog S.D. i okrivljenog, dana 25.10.2013. donio je i javno objavio
+
+P R E S U D U
+
+Okrivljeni M.D., JMB. od oca F. i majke Z., rodj. S., rodjen.g. u selo Balotiće, Opština Rožaje, gdje iživi u dr ž.
+CG, razumije crnogorski jezik, njegov jezik je bosanski, pismen, završio osnovnuškolu nezaposlen, oženjen,
+otac dvoje maloletne djece siromašnog imovnog stanja, osudjivan presudom Opštinskog suda Rožaje K.br.
+10/84 od 17.09.1984.g., zbog krivičnog djela izčl. 143. st. 1. KZCG na kaznu zatvora u trajanju od 45 dana,Osnovni Sud u Rožajama
+K 145/2013
+25. Oktobar 2013
+
+uslovno za jednu godinu, presudom II opštinski sud Skoplje K.br. 154/86 od 12.02.1988.g. zbog krivičnog djela
+iz čl. 155. st. 1. KZ na kaznu zatvora u trajanju od 4 mjeseca, uslovno za jednu godinu.
+
+K R I V J E
+
+Što je:
+
+dana 04.09.2013.g., oko 10,00 h, u selu Balotiće, Opština Rožaje, pri svađi sa S.D. koja se ogledala u
+međ usobnom upućivanju uvredljivih riječi i psovki, mašio se sjekire - sredstva podobnog da tijelo teško
+povrijedi ili zdravlje teško naruši, na načinšto je rukom dohvatio sjekiru za držalo, podigao je i krenuo prema
+S.,
+
+- čime je izvršio krivično djelo ugrožavanje opasnim oruđem pri tuči i svađi izčl. 154. Krivičnog zakonika
+
+pa ga sud primjenom pomenutog zakonskog propisa ičl. 4,13,15,32,39 st. 2. ta č. 2, 42, Krivičnog zakonika ičl.
+374. Zakonika o krivičnom postupku
+
+O S UĐU J E
+
+Na NOVČANU KAZNU u iznosu od 400,00 ( č etiri stotine ) eura.
+
+Ako osudjeni ne plati novčanu kaznu u roku od dva mjeseca po pravosnažnosti ove presude, istaće se
+zamijeniti kaznom zatvora, takoštoće se za svakih započetih 25,00 eura novčane kazne odrediti jedan dan
+kazne zatvora.
+
+Da plati na ime troškova krivičnog postupka paušalni iznos od 30,00 eura, u korist budžeta Crne Gore u roku
+od 15 dana po pravosnažnosti ove presude.
+
+Imovinsko-pravni zahtjev nije postavljen.
+
+O b r a z l ože nj e
+
+Osnovno državno tužilaštvo iz Rožaja, podnijelo je ovome sudu optužni predlog Kt.br. 173/13 od
+19.09.2013.g. protiv okrivljenog M.D. iz Rožaja, zbog krivičnog djela ugrožavanje opasnim oruđem pri tuči i
+svađi izčl. 154. Krivičnog zakonika (KZ).
+
+Na glavnom pretresu ODT Zamjenik ODT-a Armin Selmanovićje ostao pri podnijetom optužnom predlogu, te
+je predložio da sud okrivljenog oglasi krivim zbog krivičnog djela koje mu je optužbom stavljeno na teret i da
+ga osudi na novčanu kaznu u iznosu od 400,00 eura.
+
+Oštećeni S.D. je u završnoj riječi istakao da se pridružuje krivičnom gonjenju ODTa u odnosu na okrivljenog, a
+imovinsko-pravni zahtjev ne postavlja.
+
+Okrivljeni je u svojoj odbrani istakao, da se dana 04.09.2013.g. oko 10,00časova posvađao sa oštećenim S.D.
+u selu Balotiće, Opština Rožaje, zbog sporne međe između njihovih parcela, jer mu je oštećeni zauzeo dio
+zemljišta, kojom prilikom su jedan drugom upućivali riječi "džukelo, stoko, hajvanu" i druge uvrede i psovke.
+Naveo je da se nije mašio sekire i istu nije držao za držalicu i nije je podigao kada je krenuo ka oštećenom i
+nije imao namjeru da udari oštećenog, većju je koristio kao mačugu za poštapanje. Predložio je da ga sud
+oslobodi od optužbe, jer nije izvršio djelo za koje je optužen.
+
+Po ovoj krivičnopravnoj stvari, sud je izveo dokaze: saslušao svedoke - oštećenog S.D., svedoka A.D.i izvršio
+uvid u izvod iz kaznene evidencije na ime okrivljenog.
+
+Cijeneći odbranu okrivljenog i sve izvedene dokaze, kako pojedinačno, tako i u međusobnoj vezi, u smislučl.
+370. st. 3. Zakonika o krivičnom postupku (ZKP), sud je nesumnjivo utvrdio da je okrivljeni izvršio krivično
+djelo koje mu je optužbom stavljeno na teret i da je zato kriv i krivičnopravno odgovoran.
+
+Naime, iz iskaza svedoka - oštećenog S.D.,proizilazi da se kritičnog dana posvađao sa okrivljenim u selu
+Balotiće, Opština Rožaje u vezi puta koji vodi prema njegovoj kući, jer okrivljeni smatra da on nema pravo da
+koristi taj put. Tom prilikom okrivljeni se mašio sekire koju je držao u ruci za držalicu, podigao je iznad glave i
+poš ao prema njemu u namjeri da ga udari, pa je ispred njega stao njegov sin A. i spriječio ga u tome, nakon
+čega je on ušao u kuću i pozvao policiju. Iskaz ovog svedoka, sud je prihvatio kao jasan, objektivan, uvjerljiv i
+potkrijepljen iskazom svedoka A.D., a djelimično i iskazom okrivljenog.
+
+Iz iskaza svedoka A.D. proizilazi da je kritičnog dana došlo do svađe između okrivljenog i oštećenog, koji su
+se međusobno psovali, govoreći " đ ubre, stoko, jebo te S. i sl.". Tom prilikom okrivljeni se mašio sekire držeći
+je u desnoj ruci za držalicu, podigao je i krenuo prema oštećenom u namjeri da ga udari, pa je stao ispred
+njega i spriječio ga da ne dođe do težih posledica. Oštećeni je tada ušao u kuću i pozvao policiju. Iskaz ovog
+svedoka, sud je ocijenio kao objektivan, uvjerljiv i jasan, a dovodeći isti u vezu sa iskazom oštećenog i
+iskazom okrivljenog u dijelu u kojem ne spori da se kritičnog dana posvađao sa oštećenim i da su jedan
+drugom upućivali uvrede i psovke, zaista se nedvosmisleno utvrđuje da se okrivljeni kritičnog dana pri svađi
+sa oš tećenim mašio sekire koja predstavlja podobno sredstvo da tijelo teško povrijedi ili zdravlje teško
+naruši, koju je držao za držalicu, podigao je i krenuo prema oštećenom u namjeri da ga udari.
+
+Iz izvoda kaznene evidenciej na ime okrivljenog, utvrđeno je da je isti osudjivan presudom Opštinskog suda
+Rož aje K.br. 10/84 od 17.09.2013.g., zbog krivičnog djela izčl. 143. st. 1. KZCG na kaznu zatvora u trajanju od
+45 dana, uslovno za jednu godinu, presudom II opštinski sud Skoplje K.br. 154/86 od 12.02.1988.g. zbog
+krivičnog djela izčl. 155. st. 1. KZ na kaznu zatvora u trajanju od 4 mjeseca, uslovno za jednu godinu. Ovaj
+dokaz, sud je ocijenio kao jasan i određen jer je izdat od nadležnog organa u propisanom postupku.
+
+Sud je cijenio iskaz okrivljenog, pa je isti prihvatio u dijelu u kojem ne spori da je kritičnog dana došlo do
+svađe koja se sastojala u upućivanju uvredljivih riječi i psovki,između njega i oštećenog, jer je njegov iskaz, u
+ovom dijelu potvrđen dokazima izvedenim u postupku, tako da nema sumnje u drugačiječinjenično stanje.
+Međ utim, iskaz okrivljenog u dijelu u kojem ističe da se nije mašio sekire i istu nije držao za držalicu i nije je
+podigao, jer nije imao namjeru da udari oštećenog, većje sekiru koristio kao mačugu za poštapanje, sud nije
+prihvatio, obzirom da je isti neuvjerljiv, neobjektivan i opovrgnut iskazima saslušanih svedoka, tako da je
+očigledno da okrivljeni sa ovakvom odbranom smišljeno i sračunato nastoji da izbjegne krivičnopravnu
+odgovornost.
+Dakle, u postupku je utvrđeno da je okrivljeni dana 04.09.2013.g., oko 10,00 h, u selu Balotiće, Opština
+Rož aje, pri svađi sa S.D. koja se ogledala u međusobnom upućivanju uvredljivih riječi i psovki, mašio se
+sjekire - sredstva podobnog da tijelo teško povrijedi ili zdravlje teško naruši, na načinšto je rukom dohvatio
+sjekiru za držalo, podigao je i krenuo prema S.
+
+Cijeneći psihički odnos okrivljenog prema izvršenom krivičnom djelu, sud je našao da je isti bio svjestan svog
+djela tj. svjestan da se na opisani način pri svađi sa oštećenim mašio sekire koja predstavlja sredstvo da tijelo
+teško povrijedi ili zdravlje teško naruši i to je htio, pa je postupao sa umišljajem.
+
+Pravnom ocjenom utvrđenogčinjeničnog stanja, sud je našao da su u radnjama okrivljenog sadržani svi bitni
+elementi krivičnog djela ugrožavanje opasnim oruđem pri tuči i svađi izčl. 154. KZ, za koje djelo je istog
+oglasio krivim i osudio ga na novčanu kaznu u iznosu od 400,00 eura.
+
+Prilikom odlučivanja o izboru vrste i visine kazne, sud je imao u vidu težinu izvršenog krivičnog djela, stepen
+krivice okrivljenog, stepen nastupjele posledice, okolnosti pod kojima je djelo izvršeno, ranijiživot
+okrivljenog, te protek vremena od ranije osude, njegovo držanje nakon izvršenog djela, cijeneći pri tom kao
+olakšavajuće okolnosti njegove porodične prilike - otac dvoje maloletno djece i siromašno imovno stanje, pa
+je sud imajući pri tom u vidu svrhu kažnjavanja izčl. 32. KZ u okviru opšte svrhe krivičnih sankcija izčl. 4.
+istog zakona, našao da je imalo mjesta izricanju ovakve vrste i visine kazne, ubijeđen daće izrečena novčana
+kazna u naznačenom iznosu u dovoljnoj mjeri uticati na okrivljenog da ubuduće ne vrši bilo kakva krivična
+djela i daće vaspitno djelovati na druge da nečine ista ili slična djela.
+
+Na osnovučl. 229. u vezičl. 226. st. 2. ta č. 9. i st. 3. ZKP, sud je obavezao okrivljenog da plati na ime paušala
+iznos od 30,00 eura, u korist budžeta Crne Gore, a ovo imajući u vidu trajanje i složenost krivičnog postupka,
+kao i imovno stanje okrivljenog.
+
+Imovinsko-pravni zahtjev nije postavljen.
+
+Sa izloženog odlučeno je kao u dispozitivu ove presude.
+
+OSNOVNI SUD U ROŽAJAMA, dana 25.10.2013.g.
+
+Zapisničar,S U D I J A,
+Aida Luboder s.r.Milosav Zekićs.r.
+
+PRAVNA POUKA: Protiv ove presude može se izjavitižalba u roku od 8 dana od dana prijema iste i to Višem
+sudu u Bijelom Polju, a preko ovog suda.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

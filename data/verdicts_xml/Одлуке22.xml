@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке22">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке22/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке22"/>
+                    <FRBRdate date="2018-06-26" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке22/sr@2018-06-26/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке22/sr@2018-06-26"/>
+                    <FRBRdate date="2018-06-26"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке22/sr@2018-06-26/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке22/sr@2018-06-26/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Vesna Moštrokol"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Anka Raković"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="P.E."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="P.J."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="V.W."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="T.T."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="P.H."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo u Podgorici"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 29/18</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>VIŠI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2018-06-26">2018-06-26</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Vesna Moštrokol</judge>
+                    <judge>Anka Raković</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Optuženi H.I. proglašen krivim za teško ubistvo u pokušaju i nedozvoljeno držanje oružja.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Teško ubistvo u pokušaju</p>
+                    <p>Nedozvoljeno držanje oružja</p>
+                    <p>Sporazum o priznanju krivice</p>
+                    <p>Troškovi krivičnog postupka</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_144">Član 144</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_162">Član 162</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_37">Član 37</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_5">Član 5</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_33">Član 33</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_339">Član 339</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_348">Član 348</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_375">Član 375</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_75">Član 75</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_407">Član 407</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Optuženi je s umišljajem pokušao da liši života oštećenog i doveo u opasnost još jedno lice, koristeći vatreno oružje.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Optuženi kriv</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="victims">
+                    <person>P.E.</person>
+                    <person>P.J.</person>
+                    <person>V.W.</person>
+                    <person>T.T.</person>
+                    <person>P.H.</person>
+                </block>
+                <block name="witnesses">
+                    <person>P.E.</person>
+                    <person>P.J.</person>
+                    <person>P.H.</person>
+                    <person>P.Š.</person>
+                    <person>A.D.</person>
+                    <person>H.R.</person>
+                    <person>O.B.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Više državno tužilaštvo u Podgorici</organization>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">pistolj</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Ulcinj</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="previous_convictions">da</fact>
+                <fact key="confession">da</fact>
+                <fact key="plea_agreement">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="narcotics_influence">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">24</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>U IME CRNE GORE
+
+K.br. 29/18
+
+VIŠI SUD U PODGORICI, kao prvostepeni krivični po sudiji Vesni Moštrokol, kao predsjedniku vijeća, uz učešće
+namještenika Anke Raković, kao zapisničara, u predmetu protiv optuženog H.I. iz U., koga brani H.G., advokat
+iz Podgorice, zbog krivičnog djela teško ubistvo u pokušaju izčlana 144 ta č.3 u vezičl. 20 Krivičnog zakonika
+Crne Gore u sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija izčlana 403 st.1
+Krivičnog zakonika Crne Gore, po optužnici Višeg državnog tužioca u Podgorici Kt.br. 2/18 od 16.03.2018.
+godine, koju je na ročištu povodom odlučivanja o sporazumu o priznanju krivice zastupala Tanja Čolan
+Deretić Državni tužilac u VDT-a u Podgorici, nakon donešenog rješenja o usvajanju sporazuma o priznanju
+krivice, dana 26.06.2018. godine, donio je
+
+P R E S U D U
+
+Optuženi:
+
+H.I., JMB..., od oca Lj. i majke N., rodjene I., rodjen.... godine u U., gdje je i nastanjen U. – Z. b.b, državljanin
+Crne Gore, oženjen, otac troje maloljetne djece, završio osnovnuškolu, po zanimanju taksista, nezaposlen,
+lošeg imovnog stanja, osudjivan presudama Osnovnog suda Ulcinj K.br. 173/03 od 16.03.2006. godine zbog
+krivičnog djela laka tjelesna povreda izčl. 37 st. 2 u vezi st.1 KZ RCG, na dva mjeseca zatvora uslovno na jednu
+godinu i K.br. 406/07 od 16.10.2009. godine zbog krivičnog djela nasilničko ponašanje izčl. 399 i protivprano
+lišenje slobode izčl. 162 st.1 KZ CG, na osam mjeseci zatvora uslovno na dvije godine; presudom Višeg suda u
+Podgorici K.br.128/12 od 09.12.2013. godine, zbog krivičnog zbog krivičnog djela neovlašćena proizvodnja,
+držanje i stavljanje u promet opojnih droga izčl. 300 st.2 u vezi st.1 KZ-a na kaznu zatvora u trajanju od dvije
+godine, presudama Osnovnog suda u Ulcinj K.br.90/11 od 11.08.2011. godine zbog krivičnog djela
+neovlašćeno organizovanje igara na sreću izčl.407. st.1 KZ-a na kaznu ztavora u trajanju od 30 dana uslovno
+na jednu godinu, K.br. 205/10 od 31.05.2011.godine zbog krivičnog djela teško djelo protiv bezbjednosti
+javnog saobrćaja izčl. 348 st.1 u vezičl.339 st.1 KZ-a na tri mjeseca zatvora i K.br.84/16 od 09.01.2017. godine Viši Sud u Podgorici
+K 29/2018
+26. Jun 2018
+
+zbog krivičnog djela sprečavanje službenog lica u vršenju službene dužnosti izčl. 375 st.1 KZ-a na rad u
+javnom interesu u trajanju od 150 sati na tri mjeseca, u pritvoru od.... godine od 20,00časova
+
+KRIV JE
+Zatošto je:
+
+Dana.... godine, oko 18,50časova u U., na B.T., sa umišljajem pokušao da lišiživota oštećenog P.E. i pri tome
+sa umišljajem doveo u opasnostživot jošnekog lica, oštećenog P.J., svjestan svoga djelačije je izvršenje htio,
+na načinšto je, dok su oštećeni P. bili u vozilu „VW T.“ reg. oznaka..., kojim je upravljao oštećeni P.E., dok se
+oštećeni P.J. nalazio na mjestu suvozača, ispalio jedan hitac iz pištolja „Crvena Zastava TT“, kalibra 7,62 mm,
+serijskog broja 160507 u pravcu oštećenog P.E. i pri tom projektilom pogodio u prednje lijevo staklo vozila,
+koje staklo je pored sjedišta vozača, nakončega je ispaljeni projektil nastavio kretanje kroz unutrašnjost
+vozila i pogodio vjetrobransko staklo na oko 50 cm od lijeve ivice i oko 15 cm od donje ivice stakla, koji
+projektil se potom zario u gumenu zaptivku izmedju stakla i metalnog dijela karoserije sa unutrašnje strane
+vjetrobranskog stakla, na koji način je optuženi doveo u opasnostživot oštećenog P.J., koji je bio u
+neposrednoj blizini, na mjestu suvozača u vozilu, a potom pokušao u pravcu oštećenog P.E. da ispali jošjedan
+hitac, učemu je spriječen od strane majke oštećenih P.H., koja je djelovala na njegovu ruku, podižući mu istu,
+usljedčega je jedan projektil ispalio u vazduh, a koje projektile je ispalio iz oružja koje je neovlašćeno držao i
+nosio, kao i municiju, i to pištolja „Crvena Zastava TT“, kalibra 7,62 mm, serijskog broja 160507 i municiju tri
+metka kalibra 7,62 mm, koji je suprotno odredbamačl. 5 ičl. 33 st. 1 Zakona o oružju neovlašćeno držao i
+nosio na javnom mjestu, bez izdate odgovarajuće isprave o oružju, iako je bio svjestan da postupa
+neovlašćeno i protivpravno, pa je to i htio
+
+- čime je izvršio krivično djelo teško ubistvo u pokušaju izčlana 144 ta č. 3 u vezičl. 20 Krivičnog zakonika Crne
+Gore u sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija izčlana 403 st.1.
+Krivičnog zakonika Crne Gore.
+
+Pa mu sud primjenom citiranih zakonskih odredbi, te odredbičl. 4 st. 2, 5, 13, 15, 32, 36 i 42, a u odnosu na
+krivično djelo teško ubistvo u pokušaju izčl. 144 ta č. 3 u vezičl. 20 Krivičnog zakonika Crne Gore i primjenom
+odredbičl. 45 i 46, te primjenom odredbičl. 48 st. 1 Krivičnog zakonika Crne Gore, prethodno u t v r d j u j e:
+
+-za krivično djelo teško ubistvo u pokušaju izčlana 144 ta č. 3 u vezičl. 20 Krivičnog zakonika Crne Gore kaznu
+zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci,
+
+-za krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija izčlana 403 st.1. Krivičnog zakonika
+Crne Gore kaznu zatvora u trajanju od 3 (tri) mjeseca.
+
+Pa ga sud primjenom citiranih zakonskih odredbi, te odredbičl. 48 st. 2 ta č. 2 i 51 Krivičnog zakonika Crne
+Gore, te odredbičl. 226, 229, 303 i 374 Zakonika o krivičnom postupku.
+
+O S UĐU J E
+
+Na jedinstvenu kaznu zatvora u trajanju od 2 (dvije) godine i 7 (sedam) mjeseci, u koju kaznu mu se
+urač unava vrijeme provedeno u pritvoru, počev od.... godine od 20,00časova, pa nadalje.
+
+Na osnovučl. 75.Krivičnog zakonika Crne Gore, optuženom se i z r iče
+
+MJERA BEZBJEDNOSTI
+ODUZIMANJE PREDMETA
+
+ODUZIMA SE pištolj „Crvena Zastava TT“, kalibra 7,62 mm, serijskog broja 160507 i tri metka kalibra 7,62 mm.
+
+OBAVEZUJE SE optuženi da na ime troškova krivičnog postupka uplati novčano iznos od 388,21 €
+(tristaosmdesetosam eura i dvadesetjedan cent), a na ime paušala iznos od 100,00 (sto) eura, na račun
+Vrhovnog državnog tužilaštva Crne Gore, broj 832-1187-31, koji se vodi kod Societe Generale Group AD
+Podgorica, sve u roku od 15 dana popravosnažnosti presude pod prijetnjom prinudnog izvršenja.
+
+O b r a z l ože nj e
+
+Optužnicom Višeg Državnog tužilaštva u Podgorici Kt.br. 2/18 od 16.03.2018. godine, optuženom H.I.u
+stavljeno je na teret izvršenje krivičnog djela teško ubistvo u pokušaju izčlana 144 ta č. 3 u vezičl. 20
+Krivičnog zakonika Crne Gore u sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih
+materija izčlana 403 st.1. Krivičnog zakonika Crne Gore (KZ CG)
+
+Dana 25.06.2018. godine, zastupnik optužbe je dostavio sudu sporazum o priznanju krivice, zapisnik o
+pregovaranju i zapisnik o priznanju krivice optuženog.
+
+Na ročištu za razmatranje sporazuma, održanom dana 26.06.2018. godine, zastupnik optužbe je izjavio da su
+branilac i optuženi predložili da se zaključi sporazum o priznanju krivice, š to je od strane VDT-a prihvaćeno,
+nakončega se pristupilo pregovaranju, očemu je sačinjen zapisnik o pregovaranju, zapisnik o saslušanju
+optuženog i njegovo priznanje krivice, kao i sporazum o priznanju krivice, ašto je dostavljeno sudu, izčije
+sadržine proizilazi da su zastupnik optužbe i optuženi saglasni da Viši sud u Podgorici optuženog H.I., za
+krivično djelo teško ubistvo u pokušaju izčl. 144 ta č. 3 u vezičl. 20 Krivičnog zakonika Crne Gore u sticaju sa
+krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija izčl. 403 st.1 Krivičnog zakonika Crne
+Gore, stavljenog mu na teret optužnicom VDT u Podgorici Kt.br. 2/18 od 16.03.2018. godine, izrekne i to za
+krivično djelo teško ubistvo u pokušaju izčl. 144 ta č. 3 u vezičl. 20 Krivičnog zakonika Crne Gore kaznu
+zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci a za krivično djelo nedozvoljeno držanje oružja i
+eksplozivnih materija izčl. 403 st.1. Krivičnog zakonika Crne Gore kaznu zatvora u trajanju od 3 (tri) mjeseca,
+te da mu se izrekne jedinstvena kazna zatvora u trajanju od 2 godine i 7 mjeseci, u koju kaznuće mu se
+urač unati vrijeme provedeno u pritvoru od.... godine od 20,00časova, pa nadalje, i da optuženi, na ime
+troškova krivičnog postupka koji iznose 388,21 € i paušala koji iznosi 100,00 eura, VDT-u Podgorici uplati
+navedene iznose u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja.
+
+Optuženi i njegov branilac su izjavili da pomenuti sporazum jeste njihov sporazum i da od istog nijesu
+odustali.
+
+Iz sadržine dokaza koji se nalaze u spisima predmeta i koji su predloženi optužnicom: iskaza svjedoka –
+oštećenih P.E. i P.J., iskaza svjedoka P.H., P.Š., A.D., H.R., zapisnika o uvidjaju Uprave policije OB Ulcinj Ku.br.
+5/18 od.... godine, dvije potvrde o privremeno oduzetim predmetima Uprave policije OB Ulcinj Ku.br.5/18 od.... godine, izvještaja o kriminalističko tehničkom pregledu lica mjesta Uprave policije OB Ulcinj Ku.br.5/18,
+zapisnika o pretresanju pokretnih stvari Uprave policije OB Ulcinj Ku.br.5/18 od 12.01.2018. godine, službene
+zabilješke Uprave policije OB Ulcinj Ku.br. 5/18 od 09.01.2018. godine i 12.01.2018. godine, izvještaja o
+balističkom vještačenju broj 390-1/18 od 05.02.2018. godine, izvještaja o vještačenju barutnihčestica broj
+392/18 od 15.02.2018. godine, izvještaja o vještačenju prisustva GSRčestica broj 391/18 od 12.02.2018.
+godine, izvještaja o balističkoj analizi broj 733-1/18 od 22.02.2018. godine, izvještaja o trasološkom
+vješ tačenju broj 591/18 od 20.02.2018. godine, dvije potvrde o vraćanju predmeta Uprave policije OB Ulcinj
+Ku.br.5/18 od 19.02.2018. godine, službene zabilješke o tehničkom pregledu i uzorkovanju tragova za
+putničko motorno vozilo broj 244-18-2-593/2 od 16.02.2018. godine, skice lica mjesta, fotoelaborata Uprave
+policije OB Ulcinj od.... godine i fotodokumentacije Forenzičkog centra broj 244-18-2-593/2 od 16.02.2018.
+godine i izvoda iz kaznene evidencije MInistarstva pravde broj 05/2-72-4283/18 od 12.04.2018. godine, sud
+zaključuje da je državni tužilac pružio dovoljno dokaza o krivici optuženog H.I., kojim dokazima je potvrđeno
+njegovo priznanje, te da je optuženi izvršio krivično djelo teško ubistvo u pokušaju izčl. 144 ta č. 3 u vezičl. 20
+Krivičnog zakonika Crne Gore u sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih
+materija izčl. 403 st.1. Krivičnog zakonika Crne Gore, na način, u vrijeme i na mjestu kako je to opisano
+izrekom ove presude, a nakonšto je u svemu prihvatio sporazum o priznanju krivice.
+
+Odlučujući o visini kazne za optuženog iz sporazuma o priznanju krivice zaključenog između stranaka, sud je
+našao da je predlog stranaka u vezi sa kaznom prihvatljiv. Naime, i pored otežavajućih okolnosti koje stoje na
+strani optuženog, a koje se ogledaju u tome da je ranije više puta osudjivan, izmedju ostalog i za krivična
+djela protivživota i tijela i sa elementima nasilja, kako to proizilazi iz izvoda iz kaznene evidencije, sud smatra
+da je poseban značaj trebalo dati olakšavajućim okolnostima koje stoje na strani optuženog, a to su potpuno
+
+i jasno priznanje optuženog, koje je doprinijelo bržem i efikasnijem okončanju krivičnog postupka i koji je
+prihvatio svoju krivicu i izraziožaljenje i kajanje, njegove lične prilike koje se ogledaju u tome da se radi o
+porodičnomčovjeku koji je oženjen i otac troje maloljene djece, koje je po zakonu dužan da izdržava, da je
+lošeg imovnog stanja i nezaposlen, da je nakon izvršenja krivičnog djela sa oštećenima uspostavljen korektan
+odnos, š to je bio i razlog da se oštećeni ne pridružuju krivičnom gonjenju i ne postavljaju imovinsko- pravni
+zahtjev, da kritičnom prilikom ni jedan od oštećenih nije zadobio tjelesne povrede, te da je djelo ostalo u
+pokušaju u kojem slučaju zakon predvidja da se učinilac može blaže kazniti, a koje okolnosti sud smatra
+naročito olakšavajućim da bi se za krivično djelo teško ubistvo u pokušaju izčl. 144 ta č. 3 u vezičl. 20 KZ CG
+izrekla kazna zatvora ispod zakonskog minimuma, a za krivično djelo nedozvoljeno držanje oružja i
+eksplozivnih materija izčl. 403 st.1. Krivičnog zakonika Crne Gore kazna zatvora u granicama propisanim
+zakonom, posebno imajući u vidu svrhu instituta sporazuma o priznanju krivice koji je optuženi zaključio, pa
+je po ocjeni suda jedinstvena kazna zatvora u trajanju od 2 (dvije) godine i 7 (sedam) mjeseci, srazmjerna
+stepenu krivice optuženog i težini počinjenih krivičnih djela, i predstavlja onu mjeru koja je neophodno
+potrebna za postizanje svrhe kažnjavanja izčl. 32 KZ CG, u odnosu na opštu svrhu izricanja krivičnih sankcija
+iz čl. 4 st.2 KZ-a CG, odnosno daće sa istom uticati na optuženo, ali i na druge, da ubuduće ne vrše krivična
+djela.
+
+U izrečenu kaznu zatvora, optuženomće se uračunati vrijeme provedeno u pritvoru od.... godine od 20,00
+časova pa nadalje, shodno odredbičlana 51 KZ-a CG.
+
+Shodnočlanu 75 KZCG sud je od optuženog oduzeo pištolj „Crvena Zastava TT“, kalibra 7,62 mm, serijskog
+broja 160507 i tri metka kalibra 7,62 mm, jer se radi o predmetima koji su upotrijebljeni za izvršenje krivičnih
+djela, na koji način se otklanjaju uslovi koji su od uticaja da optuženi ubuduće vrši krivična djela, a sve u
+okviru opšte svrhe krivičnih sankcija i svrhe same mjere bezbjednosti propisanečlanom 66 Krivičnog
+zakonika Crne Gore.
+
+Kako je optuženi oglašen krivim, sud ga shodnočl. 226. i 229. Zakonika o krivičnom postupku, obavezuje i na
+plaćanje troškova krivičnog postupka u iznosu od 388,21 € i paušala iznos od 100,00 eura, koje je dužan
+uplatiti na račun Vrhovnog državnog tužilaštva Crne Gore, na brojžiro računa 832-1187-31, koji se vodi kod
+Societe Generale Group AD Podgorica, sve u roku od 15 dana po pravosnažnosti presude pod prijetnjom
+prinudnog izvršenja, a sve u skladu sa sporazumom o priznanju krivice koji je zaključen između stranaka.
+
+Sa izloženog, a shodno odredbičl. 303 st.1 i 2 i 374 Zakonika o krivičnom postupku, odlučeno je kao u izreci
+presude.
+
+VIŠI SUD U PODGORICI
+Dana, 26.06.2018. godine
+
+PREDSJEDNIK VIJEĆA - SUDIJA
+
+Vesna Moštrokol s.r.
+
+PRAVNA POUKA:
+Protiv ove presudežalba nije dozvoljena.
+
+Za tačnost otpravka ovjerava
+Anka Raković___________________</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

@@ -1,86 +1,64 @@
 """Service for loading and processing law documents."""
-import sys
-from pathlib import Path
-from typing import List, Optional, Dict, Any
-import json
-from xml.etree import ElementTree as ET
+from typing import Optional
 
-# Add parent directory to path
-sys.path.append(str(Path(__file__).parent.parent.parent.parent))
-
-from src.akoma_annotation.parser import LegalTextParser
+from backend.app.infrastructure.persistence.filesystem.law_repository_fs import (
+    FileSystemLawRepository,
+)
+from backend.app.infrastructure.parsers.legal_text_parser_adapter import LegalTextParserAdapter
+from backend.app.ports.outbound.law_repository import LawRepository
 
 
 class LawService:
     """Service for law document operations."""
 
-    def __init__(self):
-        self.parser = LegalTextParser()
-        self.law_file = Path(__file__).parent.parent.parent.parent / "data" / "zakon.txt"
-        self.xml_file = Path(__file__).parent.parent.parent.parent / "output" / "annotated_law.xml"
-        self.annotations_file = None
+    def __init__(self, repository: LawRepository | None = None):
+        self.parser = LegalTextParserAdapter()
+        self.repository = repository or FileSystemLawRepository()
         self._chapters = None
         self._annotations = None
         self._xml_references = None
+        self._article_cache: dict[str, dict] = {}
+        self._cache_version: str | None = None
+
+    def _refresh_cache_if_stale(self):
+        """Invalidate in-memory cache when law source files change."""
+        version = self.repository.get_cache_version()
+        if self._cache_version is None:
+            self._cache_version = version
+            return
+        if version != self._cache_version:
+            self._cache_version = version
+            self._chapters = None
+            self._annotations = None
+            self._xml_references = None
+            self._article_cache.clear()
 
     def _load_law(self):
         """Load and parse law document."""
+        self._refresh_cache_if_stale()
         if self._chapters is None:
-            with open(self.law_file, "r", encoding="utf-8") as f:
-                text = f.read()
+            text = self.repository.load_law_text()
             self._chapters = self.parser.parse(text)
         return self._chapters
 
     def _load_annotations(self):
         """Load annotations if available."""
+        self._refresh_cache_if_stale()
         if self._annotations is None:
-            # Try to find annotations file (prefer output folder)
-            output_dir = Path(__file__).parent.parent.parent.parent / "output"
-            potential_files = list(output_dir.glob("*_annotations.json"))
-            if not potential_files:
-                potential_files = list(Path(self.law_file.parent).glob("*_annotations.json"))
-            if potential_files:
-                with open(potential_files[0], "r", encoding="utf-8") as f:
-                    self._annotations = json.load(f)
-            else:
+            try:
+                self._annotations = self.repository.load_annotations()
+            except Exception:
                 self._annotations = {}
         return self._annotations
 
     def _load_xml_references(self):
         """Load references from XML file."""
+        self._refresh_cache_if_stale()
         if self._xml_references is None:
-            self._xml_references = {}
-            if not self.xml_file.exists():
-                return self._xml_references
-
             try:
-                tree = ET.parse(self.xml_file)
-                root = tree.getroot()
-                
-                # Find all articles
-                for article in root.findall(".//{http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17}article"):
-                    article_id = article.get("eId", "")
-                    if not article_id.startswith("art_"):
-                        continue
-                    
-                    article_number = article_id.replace("art_", "")
-                    references = []
-                    
-                    # Find all ref elements within this article
-                    for ref in article.findall(".//{http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17}ref"):
-                        href = ref.get("href", "")
-                        text = ref.text or ""
-                        
-                        ref_data = {
-                            "href": href,
-                            "text": text
-                        }
-                        references.append(ref_data)
-                    
-                    if references:
-                        self._xml_references[article_number] = references
-            except Exception as e:
-                print(f"Error loading XML references: {e}")
+                self._xml_references = self.repository.load_xml_references()
+            except Exception:
+                self._xml_references = {}
                 
         return self._xml_references
 
@@ -115,13 +93,20 @@ class LawService:
 
     def get_article(self, article_number: str):
         """Get specific article."""
+        self._refresh_cache_if_stale()
+        cached = self._article_cache.get(article_number)
+        if cached is not None:
+            return cached
+
         chapters = self._load_law()
         annotations = self._load_annotations()
 
         for chapter in chapters:
             for article in chapter.articles:
                 if article.number == article_number:
-                    return self._format_article(article, annotations, chapter.number)
+                    formatted = self._format_article(article, annotations, chapter.number)
+                    self._article_cache[article_number] = formatted
+                    return formatted
         return None
 
     def _format_article(self, article, annotations, chapter_number: Optional[str] = None):

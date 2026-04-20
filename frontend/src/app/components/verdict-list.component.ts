@@ -27,8 +27,8 @@ import { VerdictMetadata } from '../models/models';
             <div class="applied-laws" *ngIf="verdict.applied_laws && verdict.applied_laws.length > 0">
               <strong>Zakoni:</strong> {{ verdict.applied_laws.join(', ') }}
             </div>
-            <span class="outcome-badge" *ngIf="verdict.outcome" [class]="'outcome-' + verdict.outcome?.toLowerCase()">
-              {{ verdict.outcome }}
+            <span class="outcome-badge" *ngIf="verdict.outcome" [class]="'outcome-' + verdict.outcome.toLowerCase()">
+              {{ verdict.outcome.toLowerCase() === 'osudjen' ? 'Osuđen' : verdict.outcome }}
             </span>
           </div>
         </div>
@@ -121,14 +121,34 @@ import { VerdictMetadata } from '../models/models';
       text-transform: uppercase;
     }
     
-    .outcome-оправдан {
+    .outcome-oslobodjen {
       background: #d4edda;
       color: #155724;
     }
     
-    .outcome-осуђен {
+    .outcome-osudjen {
       background: #f8d7da;
       color: #721c24;
+    }
+
+    .outcome-odbijeno {
+      background: #fff3cd;
+      color: #7c5a00;
+    }
+
+    .outcome-usvojeno {
+      background: #d1ecf1;
+      color: #0c5460;
+    }
+
+    .outcome-ukinuto {
+      background: #f8d7da;
+      color: #6f1d1b;
+    }
+
+    .outcome-nepoznato {
+      background: #eceff1;
+      color: #455a64;
     }
     
     .loading, .error {

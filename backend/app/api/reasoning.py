@@ -1,42 +1,104 @@
 """API endpoints for combined reasoning."""
 import logging
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends
+from starlette.concurrency import run_in_threadpool
 
-from backend.app.models.schemas import ReasoningRequest, ReasoningResponse, CbrResult
-from backend.app.services.rule_reasoning_service import RuleReasoningService
-from backend.app.services.cbr_service import CbrService
+from backend.app.bootstrap.dependencies import provide_cbr_engine, provide_rule_engine
+from backend.app.bootstrap.error_handling import map_exception_to_http
+from backend.app.application.services.reasoning_decision_strategies import VerdictDecisionStrategySelector
+from backend.app.application.services.reasoning_input_validator import ReasoningInputValidator
+from backend.app.application.use_cases.reasoning_commands import RunHybridReasoningUseCase
+from backend.app.domain.reasoning.policies import ReasoningPolicy
+from backend.app.models.schemas import ReasoningRequest, ReasoningResponse
+from backend.app.ports.outbound.cbr_engine import CbrEngine
+from backend.app.ports.outbound.rule_engine import RuleEngine
 from backend.app.services.reasoning_explain_service import ReasoningExplainService
 
 
 router = APIRouter()
-rule_service = RuleReasoningService()
-cbr_service = CbrService()
-explain_service = ReasoningExplainService()
 logger = logging.getLogger(__name__)
 
 
+def get_rule_reasoning_service() -> RuleEngine:
+    """Provide rule reasoning engine dependency (legacy provider name preserved)."""
+    return provide_rule_engine()
+
+
+def get_cbr_service() -> CbrEngine:
+    """Provide CBR engine dependency (legacy provider name preserved)."""
+    return provide_cbr_engine()
+
+
+def get_reasoning_explain_service() -> ReasoningExplainService:
+    """Provide reasoning explain service dependency."""
+    return ReasoningExplainService()
+
+
+def get_reasoning_decision_selector() -> VerdictDecisionStrategySelector:
+    """Provide hybrid verdict strategy selector dependency."""
+    return VerdictDecisionStrategySelector()
+
+
+def get_reasoning_policy() -> ReasoningPolicy:
+    """Provide domain reasoning policy dependency."""
+    return ReasoningPolicy()
+
+
+def get_reasoning_input_validator() -> ReasoningInputValidator:
+    """Provide pre-reasoning validator dependency."""
+    return ReasoningInputValidator()
+
+
+def get_run_hybrid_reasoning_use_case(
+    rule_engine: RuleEngine = Depends(get_rule_reasoning_service),
+    cbr_engine: CbrEngine = Depends(get_cbr_service),
+    explain_service: ReasoningExplainService = Depends(get_reasoning_explain_service),
+    decision_selector: VerdictDecisionStrategySelector = Depends(get_reasoning_decision_selector),
+    reasoning_policy: ReasoningPolicy = Depends(get_reasoning_policy),
+    input_validator: ReasoningInputValidator = Depends(get_reasoning_input_validator),
+) -> RunHybridReasoningUseCase:
+    return RunHybridReasoningUseCase(
+        rule_engine=rule_engine,
+        cbr_engine=cbr_engine,
+        explain_service=explain_service,
+        decision_selector=decision_selector,
+        reasoning_policy=reasoning_policy,
+        input_validator=input_validator,
+    )
+
+
 @router.post("/", response_model=ReasoningResponse)
-async def run_reasoning(request: ReasoningRequest):
+async def run_reasoning(
+    request: ReasoningRequest,
+    use_case: RunHybridReasoningUseCase = Depends(get_run_hybrid_reasoning_use_case),
+):
     """Run rule-based and case-based reasoning for provided facts."""
     try:
-        rule_result = rule_service.run(request.facts)
-        try:
-            cbr_result = cbr_service.query(request.facts, request.top_k)
-        except Exception:
-            logger.exception("CBR reasoning failed; returning rule-based result only")
-            cbr_result = CbrResult()
-        applied_articles = explain_service.map_norms_to_articles(rule_result.applied_norms)
-        applied_texts = explain_service.get_applied_law_texts(applied_articles)
-        suggested_verdict = explain_service.suggest_verdict(rule_result.applied_norms, cbr_result)
-        suggested_sanction = explain_service.suggest_sanction(applied_articles)
-        return ReasoningResponse(
-            rule_reasoning=rule_result,
-            cbr=cbr_result,
-            applied_articles=applied_articles,
-            applied_law_texts=applied_texts,
-            suggested_verdict=suggested_verdict,
-            suggested_sanction=suggested_sanction,
+        facts_payload = request.facts.model_dump(mode="python")
+        logger.info("[Reasoning][Backend] Request facts: %s", facts_payload)
+        logger.info(
+            "[Reasoning][Backend] Focus 153/154: defendant=%s fight_participation=%s injury_type=%s weapon_used=%s injury_means_type=%s death_result=%s",
+            request.facts.defendant,
+            request.facts.fight_participation,
+            request.facts.injury_type,
+            request.facts.weapon_used,
+            request.facts.injury_means_type,
+            request.facts.death_result,
         )
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        print("[Reasoning][Backend] Request facts:", facts_payload, flush=True)
+        print(
+            "[Reasoning][Backend] Focus 153/154:",
+            {
+                "defendant": request.facts.defendant,
+                "fight_participation": request.facts.fight_participation,
+                "injury_type": request.facts.injury_type,
+                "weapon_used": request.facts.weapon_used,
+                "injury_means_type": request.facts.injury_means_type,
+                "death_result": request.facts.death_result,
+            },
+            flush=True,
+        )
+        return await run_in_threadpool(use_case.execute, request)
+    except Exception as exc:
+        raise map_exception_to_http(exc)

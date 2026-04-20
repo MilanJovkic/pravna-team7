@@ -2,20 +2,25 @@
 from __future__ import annotations
 
 from datetime import datetime
-import os
 
-import psycopg2
-
+from backend.app.infrastructure.persistence.postgres.case_repository_pg import (
+    PostgresCaseRepository,
+)
 from backend.app.models.schemas import CaseFacts
+from backend.app.ports.outbound.case_repository import CaseRepository, PersistCaseRecord
 from backend.app.services.cbr_normalization import (
     normalize_fight_consequence,
     normalize_injury_type,
     normalize_text,
 )
+from backend.app.domain.shared.outcome_normalization import normalize_outcome
 
 
 class CaseService:
     """Service for persisting new cases in the CBR database."""
+
+    def __init__(self, repository: CaseRepository | None = None) -> None:
+        self._repository = repository or PostgresCaseRepository()
 
     def insert_case(
         self,
@@ -25,74 +30,74 @@ class CaseService:
         verdict_type: str | None,
         sanction: str | None,
     ) -> dict:
-        case_number = case_number or self._generate_case_number()
-        config = self._db_config()
+        canonical_outcome = normalize_outcome(outcome)
 
-        normalized = CaseFacts(
-            defendant=facts.defendant,
-            injury_type=normalize_injury_type(facts.injury_type),
-            location=normalize_text(facts.location),
-            weapon=normalize_text(facts.weapon),
-            weapon_used=facts.weapon_used,
-            severe_consequence=facts.severe_consequence,
-            death_result=facts.death_result,
-            negligence=facts.negligence,
-            provocation=facts.provocation,
-            fight_participation=facts.fight_participation,
-            fight_consequence=normalize_fight_consequence(facts.fight_consequence),
-            left_without_help=facts.left_without_help,
+        payload = facts.model_dump()
+        payload.update(
+            {
+                "injury_type": normalize_injury_type(facts.injury_type),
+                "location": normalize_text(facts.location),
+                "weapon": normalize_text(facts.weapon),
+                "fight_consequence": normalize_fight_consequence(facts.fight_consequence),
+            }
+        )
+        normalized = CaseFacts(**payload)
+
+        existing = self._repository.find_existing_case(
+            facts=normalized,
+            outcome=canonical_outcome,
+            verdict_type=verdict_type,
+            sanction=sanction,
+        )
+        if existing:
+            existing_id, existing_case_number = existing
+            return {
+                "id": existing_id,
+                "case_number": existing_case_number,
+                "reused_existing": True,
+                "version": self._extract_version(existing_case_number),
+            }
+
+        version = self._repository.next_version(facts=normalized)
+        if case_number:
+            case_number = case_number.strip()
+        if not case_number:
+            case_number = self._generate_case_number(version=version)
+        elif version > 1 and "-v" not in case_number.lower():
+            case_number = f"{case_number}-v{version}"
+
+        new_id, new_case_number = self._repository.insert_case(
+            PersistCaseRecord(
+                case_number=case_number,
+                facts=normalized,
+                outcome=canonical_outcome,
+                verdict_type=verdict_type,
+                sanction=sanction,
+            )
         )
 
-        conn = psycopg2.connect(**config)
-        cursor = conn.cursor()
-
-        insert_query = """
-            INSERT INTO cases (
-                case_number, injury_type, location, weapon, weapon_used,
-                severe_consequence, death_result, negligence, provocation,
-                fight_participation, fight_consequence, left_without_help,
-                outcome, verdict_type, sanction
-            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-            RETURNING id, case_number
-        """
-
-        cursor.execute(
-            insert_query,
-            (
-                case_number,
-                normalized.injury_type,
-                normalized.location,
-                normalized.weapon,
-                normalized.weapon_used,
-                normalized.severe_consequence,
-                normalized.death_result,
-                normalized.negligence,
-                normalized.provocation,
-                normalized.fight_participation,
-                normalized.fight_consequence,
-                normalized.left_without_help,
-                outcome,
-                verdict_type,
-                sanction,
-            ),
-        )
-
-        new_id, new_case_number = cursor.fetchone()
-        conn.commit()
-        cursor.close()
-        conn.close()
-
-        return {"id": new_id, "case_number": new_case_number}
-
-    def _generate_case_number(self) -> str:
-        stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-        return f"USER-{stamp}"
-
-    def _db_config(self) -> dict:
         return {
-            "host": os.getenv("DB_HOST") or os.getenv("POSTGRES_HOST", "127.0.0.1"),
-            "port": int(os.getenv("DB_PORT") or os.getenv("POSTGRES_PORT", "5432")),
-            "database": os.getenv("DB_NAME") or os.getenv("POSTGRES_DB", "pravna_cbr"),
-            "user": os.getenv("DB_USER") or os.getenv("POSTGRES_USER", "pravna_user"),
-            "password": os.getenv("DB_PASSWORD") or os.getenv("POSTGRES_PASSWORD", "pravna_pass"),
+            "id": new_id,
+            "case_number": new_case_number,
+            "reused_existing": False,
+            "version": version,
         }
+
+    def _generate_case_number(self, version: int = 1) -> str:
+        stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+        base = f"USER-{stamp}"
+        if version <= 1:
+            return base
+        return f"{base}-v{version}"
+
+    def _extract_version(self, case_number: str) -> int:
+        value = (case_number or "").strip()
+        marker = "-v"
+        idx = value.lower().rfind(marker)
+        if idx == -1:
+            return 1
+        suffix = value[idx + len(marker):]
+        if suffix.isdigit():
+            return int(suffix)
+        return 1
+

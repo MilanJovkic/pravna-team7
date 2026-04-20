@@ -2,4 +2,4 @@
 (import-rdf-files facts.rdf)
 (load-compiled-dr-device rulebase.clp)
 (go-dr-device)
-(dr-device_export_rdf rulebase.ruleml export.rdf proof.ruleml crime_art151_1 crime_art151_2 crime_art151_3 crime_art151_4 crime_art151_5 crime_art152_1 crime_art152_2 crime_art153 crime_art154 crime_art155_1)
+(dr-device_export_rdf rulebase.ruleml export.rdf proof.ruleml crime_art143 crime_art144 crime_art144_1 crime_art144_2 crime_art144_3 crime_art144_4 crime_art144_5 crime_art144_6 crime_art144_7 crime_art144_8 crime_art145 crime_art146 crime_art147 crime_art148 crime_art149_1 crime_art149_2 crime_art149_3 crime_art149_4 crime_art149_5 crime_art150_1 crime_art150_2 crime_art150_3 crime_art151_1 crime_art151_2 crime_art151_3 crime_art151_4 crime_art151_5 crime_art151a crime_art151b crime_art152_1 crime_art152_2 crime_art152_3 crime_art153 crime_art154 crime_art155_1 crime_art155_2 crime_art155_3 crime_art156 crime_art156_2 crime_art156_3 crime_art157 crime_art157_2 crime_art157_3)

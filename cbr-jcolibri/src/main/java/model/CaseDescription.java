@@ -18,6 +18,19 @@ public class CaseDescription implements CaseComponent {
     private String fightParticipation;
     private String fightConsequence;
     private String leftWithoutHelp;
+    private String previousConvictions;
+    private String repeatOffender;
+    private String confession;
+    private String remorse;
+    private String pleaAgreement;
+    private String aggravatingCircumstances;
+    private String mitigatingCircumstances;
+    private String familyCircumstances;
+    private String poorFinancialStatus;
+    private String alcoholIntoxication;
+    private String narcoticsInfluence;
+    private String conditionalSentenceRequested;
+    private String attemptedOffense;
     private String outcome;
 
     public int getId() {
@@ -124,6 +137,110 @@ public class CaseDescription implements CaseComponent {
         this.leftWithoutHelp = leftWithoutHelp;
     }
 
+    public String getPreviousConvictions() {
+        return previousConvictions;
+    }
+
+    public void setPreviousConvictions(String previousConvictions) {
+        this.previousConvictions = previousConvictions;
+    }
+
+    public String getRepeatOffender() {
+        return repeatOffender;
+    }
+
+    public void setRepeatOffender(String repeatOffender) {
+        this.repeatOffender = repeatOffender;
+    }
+
+    public String getConfession() {
+        return confession;
+    }
+
+    public void setConfession(String confession) {
+        this.confession = confession;
+    }
+
+    public String getRemorse() {
+        return remorse;
+    }
+
+    public void setRemorse(String remorse) {
+        this.remorse = remorse;
+    }
+
+    public String getPleaAgreement() {
+        return pleaAgreement;
+    }
+
+    public void setPleaAgreement(String pleaAgreement) {
+        this.pleaAgreement = pleaAgreement;
+    }
+
+    public String getAggravatingCircumstances() {
+        return aggravatingCircumstances;
+    }
+
+    public void setAggravatingCircumstances(String aggravatingCircumstances) {
+        this.aggravatingCircumstances = aggravatingCircumstances;
+    }
+
+    public String getMitigatingCircumstances() {
+        return mitigatingCircumstances;
+    }
+
+    public void setMitigatingCircumstances(String mitigatingCircumstances) {
+        this.mitigatingCircumstances = mitigatingCircumstances;
+    }
+
+    public String getFamilyCircumstances() {
+        return familyCircumstances;
+    }
+
+    public void setFamilyCircumstances(String familyCircumstances) {
+        this.familyCircumstances = familyCircumstances;
+    }
+
+    public String getPoorFinancialStatus() {
+        return poorFinancialStatus;
+    }
+
+    public void setPoorFinancialStatus(String poorFinancialStatus) {
+        this.poorFinancialStatus = poorFinancialStatus;
+    }
+
+    public String getAlcoholIntoxication() {
+        return alcoholIntoxication;
+    }
+
+    public void setAlcoholIntoxication(String alcoholIntoxication) {
+        this.alcoholIntoxication = alcoholIntoxication;
+    }
+
+    public String getNarcoticsInfluence() {
+        return narcoticsInfluence;
+    }
+
+    public void setNarcoticsInfluence(String narcoticsInfluence) {
+        this.narcoticsInfluence = narcoticsInfluence;
+    }
+
+    public String getConditionalSentenceRequested() {
+        return conditionalSentenceRequested;
+    }
+
+    public void setConditionalSentenceRequested(String conditionalSentenceRequested) {
+        this.conditionalSentenceRequested = conditionalSentenceRequested;
+    }
+
+    public String getAttemptedOffense() {
+        return attemptedOffense;
+    }
+
+    public void setAttemptedOffense(String attemptedOffense) {
+        this.attemptedOffense = attemptedOffense;
+    }
+
     public String getOutcome() {
         return outcome;
     }
@@ -144,6 +261,16 @@ public class CaseDescription implements CaseComponent {
                 + ", severeConsequence=" + severeConsequence + ", deathResult=" + deathResult + ", negligence="
                 + negligence + ", provocation=" + provocation + ", fightParticipation=" + fightParticipation
                 + ", fightConsequence=" + fightConsequence + ", leftWithoutHelp=" + leftWithoutHelp
+            + ", previousConvictions=" + previousConvictions + ", repeatOffender=" + repeatOffender
+            + ", confession=" + confession + ", remorse=" + remorse + ", pleaAgreement=" + pleaAgreement
+            + ", aggravatingCircumstances=" + aggravatingCircumstances
+            + ", mitigatingCircumstances=" + mitigatingCircumstances
+            + ", familyCircumstances=" + familyCircumstances
+            + ", poorFinancialStatus=" + poorFinancialStatus
+            + ", alcoholIntoxication=" + alcoholIntoxication
+            + ", narcoticsInfluence=" + narcoticsInfluence
+            + ", conditionalSentenceRequested=" + conditionalSentenceRequested
+            + ", attemptedOffense=" + attemptedOffense
                 + ", outcome=" + outcome + "]";
     }
 }

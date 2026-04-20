@@ -1,0 +1,1544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке20">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке20/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке20"/>
+                    <FRBRdate date="2023-04-21" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке20/sr@2023-04-21/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке20/sr@2023-04-21"/>
+                    <FRBRdate date="2023-04-21"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке20/sr@2023-04-21/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке20/sr@2023-04-21/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Igor Đuričković"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Zoran Radović"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Aleksandar Stojanović"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="R.B."/>
+                <TLCPerson eId="defendant_2" href="/akn/me/ontology/person/defendant" showAs="H.N."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="D.M."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="P.B."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="N.S."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="R.B."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="Podgorici Ktr"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo u Podgorici"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Uprava policije Crne Gore"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 160/2022</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>VIŠI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2023-04-21">2023-04-21</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Igor Đuričković</judge>
+                    <judge>Zoran Radović</judge>
+                    <judge>Aleksandar Stojanović</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni R.B. osuđen za teško ubistvo i nedozvoljeno držanje oružja.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Teško ubistvo</p>
+                    <p>Nedozvoljeno držanje oružja</p>
+                    <p>Umišljaj</p>
+                    <p>Bitno smanjena uračunljivost</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_144">Član 144</ref>
+                    <ref href="/akn/me/act/2024/!main#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/2024/!main#art_5">Član 5</ref>
+                    <ref href="/akn/me/act/2024/!main#art_12">Član 12</ref>
+                    <ref href="/akn/me/act/2024/!main#art_14">Član 14</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_69">Član 69</ref>
+                    <ref href="/akn/me/act/2024/!main#art_13">Član 13</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da je okrivljeni s umišljajem lišio života oštećenu, koristeći neovlašćeno oružje.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Osuđen</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>R.B.</person>
+                    <person>H.N.</person>
+                </block>
+                <block name="victims">
+                    <person>D.M.</person>
+                    <person>P.B.</person>
+                    <person>N.S.</person>
+                    <person>R.B.</person>
+                    <person>Podgorici Ktr</person>
+                </block>
+                <block name="witnesses">
+                    <person>D.M.</person>
+                    <person>P.B.</person>
+                    <person>N.S.</person>
+                    <person>I.I.</person>
+                    <person>R.B.</person>
+                    <person>Podgorici Ktr</person>
+                    <person>C.G.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Više državno tužilaštvo u Podgorici</organization>
+                    <organization>Uprava policije Crne Gore</organization>
+                </block>
+            </participants>
+            <facts>
+                <fact key="weapon">nož</fact>
+                <fact key="weapon">puška</fact>
+                <fact key="amount">0.41 g</fact>
+                <fact key="alcohol_level">0,00 promila</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Herceg Novi</fact>
+                <fact key="location">Kotor</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="death_result">da</fact>
+                <fact key="remorse">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="alcohol_intoxication">da</fact>
+                <fact key="narcotics_influence">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">240</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K.br. 160/2022
+
+U IME CRNE GORE
+
+VIŠI SUD U PODGORICI, kao prvostepeni krivični u vijeću sastavljenom od sudije Đuričković Igora, kao
+predsjednika vijeća i sudija Radović Zorana i Stojanović Aleksandra, kao članova vijeća, uz učešće savjetnice
+Sanele Spahići namještenice suda Cupara Mile, kao zapisničarke, rješavajući u krivičnom predmetu
+okrivljenog R.B., zbog krivičnog djela teško ubistvo izčlana 144 tačka 1 i 4 Krivičnog zakonika Crne Gore (u
+daljem tekstu: KZ CG), u sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija iz
+člana 403 stav 1 KZ CG, postupajući po optužnici Višeg državnog tužilaštva u Podgorici (u daljem testu: VDT-a
+u Podgorici) Kt.br. 123/22 od 30.09.2022. godine, nakon javnog glavnog pretresa održanog dana
+06.04.2022.godine, u prisustvu zastupnika optužbe Selmanović Armina-državnog tužioca u VDT-u u Podgorici,
+okrivljenog i njegovog branioca advokata J.N., nakon tajnog vijećanja i glasanja, dana 21.04.2023.godine,
+donio je i istog dana javno objavio
+
+P R E S U D U
+
+Okrivljeni:
+R.B., JMB.., od oca D. i majke R., rođene Š., rođen... godine u Kotoru, sa prebivalištem u H.N. – Ul. S. i M. broj.., državljanin Crne Gore, završio srednjuškolu, tehničar usluživanja, razveden, otac dvoje djece, lošeg
+imovnog stanja, ranije osuđivan presudom Osnovnog suda u Herceg Novom K.br.53/13 od 03.06.2013.godine,
+zbog krivičnog djela izčlana 327 KZCG, na kaznu rada u javnom interesu u trajanju od 60 sati, uz izrečenu
+mjeru bezbjednosti-obavezno psihijatrijsko liječenje na slobodi, nalazi se u pritvoru od dana 27.06.2022.
+godine od 06:10časova,
+
+K r i v j e
+Viši Sud u Podgorici
+K 160/2022
+21. April 2023
+
+Što je:
+Dana 27.06.2022.godine, oko 05:40časova u Herceg Novom, u ulici.., u stanu broj 7, koji se nalazi na drugom
+spratu zgrade, na podmukao način i iz drugih niskih pobuda, sa umišljajem, u stanju bitno smanjene
+urač unljivosti, lišioživota oštećenu P.B., na načinšto je u ranim jutarnjimčasovima, misleći da oštećena
+spava, a kako bi je iznenadio i bezobzirne sebičnosti i osjećaja posjedovanja, jer je smatrao da mu ista kao
+bivša supruga i dalje pripada i da ne može biti sa drugim muškarcem, zbogčega je neopaženo i lukavo došao
+sa oružjem-puškom marke Crvena zastava, model 56, kalibar 22L.R (5,6mm) fabrički broj...(broj na zatvaraču
+puš ke...), koje vatreno oružje je neovlašćeno držao, bez odobrenja nadležnog državnog organa, suprotno
+odredbamačlana 5 stav 2 ičlana 12 Zakona o oružju (Službeni list CG br. 10/15), ušao u unutrašnjost stana
+kroz otključana vrata, a zatim u spavaću sobu i u oštećenu, koju je zatekao u spavaćoj sobi, pored kreveta, sa
+udaljenosti 150 cm, iz navedene puške ispalio dva projektila u grudni košoštećene, nanoseći joj tom prilikom
+prostrijelne rane u desnom i lijevom dojkinom predjelu i ispalio dva projektila u glavu oštećene, nanoseći joj
+tom prilikom jednu prostrijelnu ranu u lijevom slijepoočnom predjelu i jednu ustrijelnu ranu u zadnjoj trećini
+tjemenog predjela, koje povrede su kod oštećene prouzrokovale smrt usljed oštećenja zaživot važnih
+mož danih centara i iskrvavljenja iz rascjepa pluća, sve dužkanala strijelnih rana nanesenih projektilima
+ispaljenim iz vatrenog oružja, pričemu je bio svjestan daće na opisani način oštećenu lišitiživota, pa je to i
+htio,
+
+-čime je izvršio krivično djelo teško ubistvo izčlana 144 tačka 1 i 4 Krivičnog zakonika Crne Gore, u sticaju sa
+krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija izčlana 403 stav 1 Krivičnog zakonika
+Crne Gore;
+
+-Pa sud okrivljenom primjenom citiranih zakonskih odredbi, te odredbičlana 4, 5, 6, 7, 8, 14, 15, 32, 36, 42 i 48
+stav 1 Krivičnog zakonika Crne Gore, a u odnosu na izvršeno krivično djelo teško ubistvo izčlana 144 tačka 1 i
+4 Krivičnog zakonika Crne Gore i primjenom odredbečlana 35 stav 2 tačka 2 Krivičnog zakonika Crne Gore,
+prethodno
+
+U T V RĐU J E
+
+-za krivično djelo teško ubistvo izčlana 144 tačka 1 i 4 Krivičnog zakonika Crne Gore, kaznu zatvora u trajanju
+od 20 (slovima: dvadeset) godina,
+
+-za krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija izčlana 403 stav 1 Krivičnog zakonika
+Crne Gore, kaznu zatvora u trajanju od 6 (slovima: š est) mjeseci;
+
+-Pa zatim sud okrivljenog primjenom citiranih zakonskih odredbi, te odredbičlana 48 stav 2 tačka 2 i 51
+Krivičnog zakonika Crne Gore, te odredbičlan 226, 229 i 374 Zakonika o krivičnom postupku.
+
+O S UĐU J E
+
+Na jedinstvenu kaznu zatvora u trajanju od 20 (slovima: dvadeset) godina, u koju kaznu se okrivljenom
+urač unava vrijeme provedeno u pritvoru poč ev od 27.06.2022. godine od 06:10 časova, pa nadalje dok pritvor
+bude trajao.
+
+Obavezuje se okrivljeni da na ime naknade troškova predmetnog krivičnog postupka uplati iznos od 1.402,50
+eura, i da na ime sudskog paušala uplati iznos od 100,00 eura, koje uplate je okrivljeni dužan izvršiti u korist
+budž etskih sredstava Višeg suda u Podgorici, na brojžiro-računa 832-7113-04, u roku od 15 dana od dana
+pravosnažnosti ove presude, pod prijetnjom prinudnog izvršenja, uz obavezu da sudu dostavi dokaz o
+izvršenim uplatama.
+
+Odluku o visini nagrade braniocu okrivljenog postavljenom po službenoj dužnosti za postupanje u
+predmetnom krivičnom postupku i obavezi okrivljenog da nadoknadi te troškove krivičnog postupka, sudće
+donijeti naknadno, takoštoće o tim troškovima krivičnog postupka odlučiti posebnim rješenjem nakon
+pribavljanja dokaza o ukupnoj visini tih troškova postupka i nakon pravosnažnosti odluke o krivici
+okrivljenog u predmetnom krivičnom postupku, odnosno nakon razrješenja branioca postavljenog po
+službenenoj dužnosti.
+
+Na osnovučlana 75 stav 1 Krivičnog zakonika Crne Gore, okrivljenom R.B.izriče se
+
+MJERA BEZBJEDNOSTI
+ODUZIMANJE PREDMETA
+
+Od okrivljenog R.B. se trajno oduzima puška marke Crvena zastava, model 56, kalibar 22L.R (5,6mm) fabrički
+broj..(broj na zatvaraču puške...), kao predmet upotrijebljen za izvršenje krivičnog djela.
+
+Na osnovučlana 69 Krivičnog zakonika Crne Gore, okrivljenom R.B. izriče se
+
+MJERA BEZBJEDNOSTI
+OBAVEZNO PSIHIJATRIJSKO LIJEČENJE IČUVANJE U ZDRAVSTVENOJ USTANOVI
+
+Mjera bezbjednosti obaveznog psihijatrijskog liječenja ičuvanja u zdravstvenoj ustanovi okrivljenog izvršiće
+se u zdravstvenoj ustanovi JZU Specijalna bolnica za psihijatriju Dobrota – Kotor i trajaće dok postoji potreba
+
+za liječenjem okrivljenog, a vrijeme provedeno u ustanovi za liječenje okrivljenomće se uračunati u izrečenu
+kaznu zatvora, s timšto ova mjera bezbjednosti može trajati i duže od izrečene kazne zatvora.
+
+O b r a z l ože nj e
+
+Više državno tužilaštvo u Podgorici svojom optužnicom Kt.br.123/22 od 30.09.2022.godine, stavilo je na
+teret okrivljenom R.B. da je izvršio krivično djelo teško ubistvo izčlana 144 tačka 1 i 4 Krivičnog zakonika
+Crne Gore (u daljem tekstu: KZ CG), u sticaju sa krivičnim djelom - nedozvoljeno držanje oružja i eksplozivnih
+materija izčlana 403 stav 1 KZ CG.
+
+Državni tužilac u VDT-u u Podgorici S.A., koji je zastupao optužnicu na glavnom pretresu, u svojoj završnoj
+riječi naveo je da smatra da je izvedenim dokazima na glavnom pretresu nesumnjivo utvrđeno da je okrivljeni
+R.B. krivična djela koja su mu stavljena na teret optužbom izvršio na način kako mu je to optužnicom
+stavljeno na teret, da se takav zaključak se izvodi iz pisanih dokaza koji su izvedeni na glavnom pretresu, a da
+se iz iskaza svjedoka oštećenog D.M. posebno utvrđuje da je okrivljeni znaoživotne navike oštećene P.B.,
+majke imenovanog svjedoka, jer je okrivljeni sa njim i oštećenomživio duži vremenski period prije kritičnog
+događaja, tako da je okrivljeni znao da se oštećena obično budila u ranim jutarnjimčasova, oko 05:30časova,
+zbogčega je kritičnog dana u ranim jutarnjimčasovima okrivljeni i došao do njihovog stana misleći daće
+oštećenu zateći na spavanju, ušao u stan i kada je vidio oštećenu budnu odmah počeo sa ispaljivanjem
+projektila u nju. Nakon toga, okrivljeni je prijetio svjedoku oštećenom D.M. i pokušao da uđe u njegovu sobu
+sa oružjem, dovodeći i njega u opasnost, zbogčega se imenovani oštećeni osjetio ugroženim, a te pucnje je
+čuo i svjedok N.S. iz svog stana, koji je nakon vriske i galame koju ječuo da dolazi iz stana oštećene, vidio
+okrivljenog sa puškom u ruci kako pretrčava ulicu, sjeda u vozilo i odlazi prema Kotoru, nakončega se
+svjedok N.S. popeo na II sprat stambene zgrade na kojem se nalazi stan oštećene i u tom stanu vidio
+oštećenu-pokojnu P.B. u klečećem položaju kako krvari, pričemu su iskazi imenovanih svjedoka potvrđeni
+materijalnim dokazima koji su izvedeni na glavnom pretresu, tako da, po ocjeni optužbe, zaista nema sumnje
+u utvrđenočinjenično stanje. Naveo je i da je potrebno ukazati da je okrivljeni u pismima, koja je prije
+izvršenja predmetnog krivičnog djela napisao i naslovio ih, i to jedno rođenom bratu R.B. i drugo svojoj
+djevojci V.I., jasno iskazao svoju namjeru i razloge zbogčega se odlučuje načinjenje ovako teškog krivičnog
+djela, a to je njegova opsesivna ljubomora, bezobzirna sebičnost i osjećaj posjedovanja prema oštećenoj i
+njegovo shvatanje da mu oštećena, kao njegova bivša supruga, iako neživi sa njim i dalje pripada i da ista ne
+mož e biti sa drugim muškarcem, našta je posebno ukazao i svjedok – oštećeni D.M. u svom iskazu, kada je
+citirao riječi koje je okrivljeni izgovarao tokom izvršenja predmetnog krivičnog djela, govoreći: „Neće ona
+meni da se kurva“. Takođe, naveo je da za tužilaštvo nema dileme da je kritičnom prilikom okrivljeni
+postupao na podmukao način kada je oštećenu lišioživota, odnosno da je prilikom izvršenja tog djela
+ostvario je objektivnu i subjektivnu komponentu te vrste krivičnog djela, jer je isto učinio sa direktnim
+umiš ljajem, lukavo i prevarno, pričemu je za izvršenje djela odabrao rane jutarnječasove, kada se oštećena
+kao žrtva nije nadala nikakvom zlu, kao i njenu bezazlenost u tom momentu, odnosno kada se oštećena
+tome nije nadala i kada nije mogla da pruži nikakav otpor, na koji način izvršenja djela teškog ubistva na
+podmukao način ukazuje dosadašnja sudska praksa iskazana u presudi Vrhovnog suda Srbije K ž.br.152/86, a
+ovo posebno iz razlogašto je okrivljeni znao navike oštećene, konkretno vrijeme njenog ustajanja i kritičnom
+prilikom, misleći daće je zateći na spavanju, ušao u stan naoružan i lišio ježivota, smatrajući da mu ona iako
+
+bivša supruga i dalje pripada. Istakao je i da smatra da se kroz sami način izvršenja predmetnog krivičnog
+djela vidi i faktor iznenađenja, na koji je okrivljeni računao i njegovu bezobzirnu sebičnost i hladnokrvnost, a
+da je razlog za takvo postupanje okrivljenog bio njegov osjećaj posjedovanja, koji je okrivljeni sam sebi
+usadio i generisano stanje opsesivne precijenjene ljubomore oštećenog, š to su vještaci medicinske strukepsihijatri u svom nalazu posebno obrazložili. Takođe, pored toga, naveo je i da smatra da je okrivljeni
+predmetno djelo izvršio i iz niskih pobuda, jer njegova pobuda da mu oštećena i dalje pripada i da ne može
+biti sa drugim muškarcem, prelazi granice moralno negativne pobude, jer se ne radi o mržnji, niti o nekom
+drugom faktoru koji bi se mogao podvesti pod moralno negativnu pobudu, većpobudi da okrivljeni, kao bivši
+supružnik oštećene, iz bezobzirne sebičnosti i osjećaja posjedovanja, smatrajući da mu oštećena kao bivša
+supruga i dalje pripada i da zbog toga ne može biti sa drugim muškarcem, oštećenu lišiživota, š to predstavlja
+kvalifikatornu nisku pobudu, š to je kao stav sudske prakse istaknuto u presudi Vrhovnog suda Srbije
+Kž.192/92). Zastupnik optužbe u svojoj završnoj riječi je naveo i da su, bez obzira na trajno duševno oboljenje
+okrivljenog, vještaci koji su obavili psihjatrijsko vještačenje okrivljenog, u svom nalazu i mišljenju istakli da je
+okrivljeni kritičnom prilikom itekako bio svjestan svih svojih radnji i djela, a da je to bilo tako vidi se iz
+njegovog ponašanja, prije, u toku i nakon izvršenog predmetnog krivičnog djela, a posebno iz njegovog
+držanja nakon izvršenja krivičnog djela. U konačnom, predložio je sudu da okrivljenog R.B.oglasi krivim i
+osudi na kaznu propisanu zakonom, a da, imajući u vidučinjenicu da je okrivljeni krivično djelo izvršio u
+stanju bitno smanjene uračunljivosti, postoji ograničenje za izricanje kazne dugotrajnog zatvora okrivljenom
+iz člana 35 stav 3 tačka 2 KZCG, tako da je predložio da sud okrivljenom utvrdi, i to: za krivično djelo teško
+ubistvo izčlana 144 tačka 1 i 4 KZCG kaznu zatvora u trajanju od 20 godina, a za krivično djelo nedozvoljeno
+držanje oružja i eksplozivnih materija izčlana 403 stav 1 KZCG, kaznu zatvora u trajanju od 6 mjeseci, te da ga
+primjenom odredbičlana 48 KZCG osudi na jedinstvenu kaznu zatvora u trajanju od 20 godina.
+
+Okrivljeni R.B., u prethodnom postupku pred VDT-om u Podgorici, i na glavnom pretresu nije iznosio svoju
+odbranu, većse branioćutanjem.
+
+Branilac okrivljenog R.B. u svojoj završnoj riječi je navela da u svim fazama ovog postupka njen branjenik R.B. niježelio da iznosi svoju odbranu, tako da ona, imajući u vidu ovučinjenicu, ostavlja sudu na ocjenu
+dokaze provedene na glavnom pretresu, vezano za donošenje odluke o krivici i vrsti i visini kazne, odnosno
+mjere bezbjednosti, kouće sud donijeti u odnosu na okrivljenog. Navela je i da ukazuje na nalaz i mišljene
+komisije vještaka psihijatara, koji su nesporno utvrdili da kod njenog branjenika postoji akutni poremećaj na
+psihičkoj osnovi, klinički bliže označen kao afektivna bipolarna psihoza, da se radi o trajnoj duševnoj bolesti
+koja se karakteriše fluktuacijama raspoloženja, odnosno epizodama depresije, koje se smjenjuju sa
+epizodama povišenog raspoloženja, da je ta bolest hroničnog progredijentnog toka, te da su pogoršanje
+osnovne bolesti i epizodične promjene raspoloženja kod okrivljenog uslovljene, pored neredovne medikacije
+i povremenom upotrebom alkohola, koja generiše impulsivnost i smanjenu samokontrolu. Takođe, branilac
+okrivljenog je navela i da je komisija vještaka psihijatara stava da je predmetno krivično djelo kod okrivljenog
+motivisano afektom razdraženosti jakog inteziteta, koji je generisan opsesivnom precijenjenom ljubomorom,
+dok je upotreba alkohola potencirala impulsivno i agresivno ponašanje okrivljenog, uslijedčega su vještaci
+mišljenja da je kod okrivljenog u vrijeme izvršenja predmetnog djela sposobnost shvatanja značaja djela i
+mogućnost upravljanja svojim postupcima bila bitno smanjena, te da uz to ičinjenica je da je njen branjenik
+bio u braku sa oštećenom, sada pokojnom P.B., dugi niz godina, ukazuje da je između njih postojala
+određena emotivna veza, koja vjerovatno nije prestala razvodom, dok zdravstveno stanje okrivljenog nije bilo
+praćeno adekvatnom terapijom, zbog kojih razloga je okrivljeni ispoljavao određene oblike ponašanja koje su
+veštaci detaljno opisali u svom nalazu i mišljenju, š to sve ukazuje da se, budući da su u psihijatriji i ne samo
+
+u njoj, poznati mnogi događaji kvalifikovani u praksi pod imenom ljubavne drame, u kojima se događaju i
+najteži delikti, a kao posljedica smanjenja sposobnosti neke osobe da upravlja svojim postupcima i da se u
+konkretnom slučaju radilo o jednoj takvoj situaciji. U konačnom, branilac okrivljenog je navela da, imajući u
+vidu držanje okrivljenog u toku postupka, te provedene dokaze, ona predlaže da sud istog oslobodi krivice,
+odnosno da ukoliko ocijeni da postoje dokazi da se okrivljeni osudi za krivična djela koja mu se optužnicom
+stavljaju na teret, predlaže da sud prilikom donošenja svoje odluke posebno ima u vidučlan 69 Krivičnog
+zakonika Crne Gore, koji propisuje daće učiniocu koji je krivično djelo učinio u stanju bitno smanjene
+urač unljivosti sud izreći mjeru bezbjednosti-obavezno psihijatrijsko liječenje ičuvanje u odgovarajućoj
+zdravstvenoj ustanovi, ako, s obzirom na učinjeno krivično djelo i stanje duševne poremećenosti, utvrdi da
+postoji ozbiljna opasnost da učinilac učini teže krivično djelo i da je radi otklanjanja ove opasnosti potrebno
+njegovo liječenje u takvoj ustanovi, kao ičlan 14 Krivičnog zakonika Crne Gore, a da se u konkretnom slučaju,
+po njenom mišljenju, u odnosu na okrivljenog ne može primijenitičlan 13 Krivičnog zakonika Crne Gore, jer
+se, imajući u vidu zdravstveno stanje okrivljenog, koje je medicinski dokumentovano, isti ne može smatrati
+krivim, jer okrivljeni kritičnom prilikom nije bio uračunljiv, niti je postupao sa umišljajem, te da navodi
+optužbe u tom pravcu nijesu dokazani, većsu ostali samo u fazi osnovane sumnje.
+
+Okrivljeni R.B.u svojoj završnoj riječi se pridružio završnoj riječi svog branioca i dodao da se jako kaje zbog
+djela koje je izvršio, da je odmah nakonšto je izvršio ovo djelo postao svjestan težine istog i to kajanje
+osjećao svakog dana i da mu je zbog togažaošto nakon izvršenja ovog djela nije i sebe lišioživota.
+
+Sud je na glavnom pretresu u dokaznom postupku: neposredno saslušao svjedoke D.M. i N.S.; pročitao
+zapisnik o uviđaju VDT-a u Podgorici Ktr.br. 412/22 od 27.06.2022. godine; zapisnik o uviđaju Uprave policije
+CG CB Herceg Novi 18/3-1 br. 215/22-3364/4 od 27.06.2022.godine, zapisnik o uviđaju Uprave policije CG CB
+Herceg Novi 18/3-1 br. 215/22-3364/4 od 27.06.2022.godine; izvještaj Uprave policije CG CB Herceg Novi o
+uzorkovanju tragova sa lica mjesta br. knjige uvidjaja Ku.199/22 od 27.06.2022.godine; izvještaj Uprave
+policije CG CB Herceg Novi o uzorkovanju tragova sa lica mjesta, broj knjige uviđaja Ku:200/22 od 27.06.2022.
+godine; službenu zabilješku Uprave policije CG CB Herceg Novi 18/3-1 br. 215/22-3365 od 27.06.2022.godine;
+zapisnik Uprave policije CG CB Herceg Novi o izvršenoj kontroli prisustva alkohola u organizmu okrivljenog R.B. broj 0242721, sačinjen dana 27.06.2022.godine; ljekarski izvještaj JZU Zavoda za hitnu medicinsku pomoć CG broj... od 27.06.2022.godine, izvještaj Uprave policije CG o uzorkovanju tragova sa lica mjesta broj knjige
+uviđaja Ku. 201/22 od 27.06.2022.godine, izvještaj Uprave policije CG CB Herceg Novi o uzorkovanju tragova
+sa lica mjesta broj knjige uviđaja Ku.202/22 od 27.06.2022.godine, izvještaj o analizi alkohola u krvi sačinjen
+od strane JZU KCCG Odjeljenja za sudsku medicinu S.br.106/22 od 27.06.2022.godine; potvrdu Uprave policije
+CG CB Herceg Novi o vraćanju privremeno oduzetih predmeta broj 18-3-1 br. 215/22-3617/2 od 28.06.2022.
+godine; izvještaj tzv.skrining testova na psihoaktivne supstance u urinu sačinjen od strane JZU KCCG dana
+28.06.2022.godine; izvještaj KCCG o analizi alkohola u krvi broj 1088 od 26.07.2022.godine; na saglasan
+predlog stranaka pročitao izvještaj Forenzičkog centra Uprave policije CG o prisustvu GSRčestica br.1671/22
+od 08.07.2022.godine; izvještaj Forenzičkog centra Uprave policije CG o vještačenju prisusutva barutnih
+čestica br.1672/22 od 11.07.2022. godine; izvještaj Forenzičkog centra Uprave policje CG o vještačenju daljine
+pucanja br.1673/22 od 11.07.2022. godine; izvještaj Forenzičkog centra Uprave policije CG o trasološkom
+vješ tačenju br. 1674/22 od 18.07.2022. godin, izvještaj Forenzičkog centra Uprave policije CG o DNK
+vješ tačenju br. 1669/22 od 05.08.2022. godine i izvršio uvid u fotodokumentaciju koja je sastavni dio tog
+izvještaja o vještačenju; izvještaj Forenzičkog centra Uprave policije CG o balističkom vještačenju br. 1670/22
+od 08.08.2022. godine; obdukcioni zapisnik JZU KC CG S.br.106/22 od 04.07.2022. godine, sačinjen u formi
+nalaza i mišljenja od strane vještaka sudske medicine dr Č.I.,izvršio uvid u fotodokumentaciju Uprave policije
+
+CG CB Herceg Novi br. 199/22; fotodokumentaciju Uprave policije CG CB Herceg Novi br. 201/22 i
+fotodokumentaciju Uprave policije CG CB Herceg Novi br. 202/22 koje fotodokumentacije su sačinjene dana
+27.06.2022. godine; izvršio uvid u situacioni plan – skicu lica mjesta, sačinjenu od strane službenika Uprave
+policije CG CB Herceg Novi prilikom vršenja uvidjaja, foto-dokumentaciju S.br.106/22 od 04.07.2022. godine
+sačinjenu prilikom obdukcije tijela pok. P.B.; izvršio uvid u medicinsku dokumentaciju izdatu od strane JZU
+Specijalna bolnica za psihijatriju Kotor matični broj istorije bolesti 8237, koja glasi na ime okrivljenog R.B.;
+pročitao pisma okrivljenog R.B.upućena R.B. i V.I., uvjerenje Ministarstva pravde-izvod iz kaznene evidencije
+br. 07-0702-13402/22 od 15.07.2022. godine izdato na ime okrivljenog i dopis Osnovnog suda u Herceg
+Novom Kr.br.12/23 od 01.03.2023.godine i pravosnažnu presudu Osnovnog suda u Herceg Novom K.br.53/13
+od 03.06.2013.godine. Za napomenuti je da je sud na glavnom pretresu, nakonšto stranke nijesu imale
+primjedbi na sadržinu provedenih dokaza u vidu prethodno navedenih fotodokumentacija sačinjenih od
+strane Uprave policije CG CB Herceg Novi u odštampanoj formi, odlučio da se neće vršiti uvid u CD nosače na
+kojima se nalaze fotografije koje sadrže navedene fotodokumentacije koje su uštampanoj formi provedene
+na glavnom pretresu, jer za provođenjem tih dokaza u elektronskoj formi nije bilo potrebe.
+
+Oštećeni D.M., u svom svjedočkom iskazu datom u postupku istrage, na zapisniku o saslušanju pred VDT-om
+u Podgorici Kti.br. 62/22 od 05.07.2012. godine, u bitnom je naveo da je sa svojom sada pokojnom majkomoštećenom P.B. ž ivio u stanu koji se nalazi na II spratu zgrade locirane u ulici I Bokeške brigade br. 4, u Herceg
+Novom, da je njegova majka-oštećena P.B. bila u braku sa okrivljenim R.B. oko osam godina, a da su se nekih
+godinu dana prije kritičnog događaja njih dvoje sporazumno razveli. Objasnio je i da su okrivljeni i oštećena
+dok su bili u braku imali svađa oko novca, ali da nakon razvoda braka nisu imali svađa, većsu imali normalnu
+komunikaciju, a i on je, takođe, imao normalnu komunikaciju i korektne odnose sa okrivljenim R.B.. Naveo je
+i da je dana 26.06.2022. godine, došao sa posla u taj stan i legao da spava, da se sjeća da je po doalsku u stan
+ulazna vrata stana zaključao dva puta, a da ga sjutradan ujutro, odnosno dana 27.06.2022. godine, oko 05:40
+časova, iz sna trgao i probudio jaki zvuk otvaranja i udara ulaznih vrata od zid i jedan pucanj iz vatrenog
+oružja, nakončega je odmah ustao iz kreveta da vidi očemu se radi i tada je u spavaćoj sobi oštećene vidio
+svoju majku oštećenu P.B. kako leži u krvi, na podu te sobe, pored kreveta, a da pored balkonskih vrata te
+sobe stoji okrivljeni R.B. sa puškom u ruci. Takođe je naveo da se sjeća da je prije prvog pucnjačuo kako
+njegova majka govori: "Nemoj B.!", a da je zatim uslijedio taj prvi pucanj koji ječuo i dodao da je kada je ušao
+na u spavaću sobe oštećene i vidio onošto je prethodno opisao, on bio ljut i okrivljenog, koji je u tom
+momentu stavljao metak u pušku, gađao nekim peškirom i da mu je okrivljeni tada uputio riječi: „I tebeću
+ubit pičko jedna!“, a zatim mu rekao i: „Neće ona meni da se kurva!" i podigao pušku u njegovom pravcu i
+krenuo sa puškom prema njemu, a on je tada pobjegao u svoju spavaću sobu, a okrivljeni je, kada je došao
+do te sobe uspio da kroz uski dio između skoro zatvorenih vrata i okvira vrata te sobe provuče cijev puške.
+Tada je on okrivljenog molio da ide odatle i okrivljeni je izvukao cijev puške iz tog prostora, š to je on iskoristio
+da potpuno zatvori i zaključa vrata te sobe i prozor iste, da okrivljeni ne bi ušao u njegovu sobu preko kuhinje,
+a zatim ječuo jošjedan pucanj iz vatrenog oružja, ičuo je kako okrivljeni trčeći izlazi iz stana, š to je on
+iskoristio da izađe iz spavaće sobe i zaključa ulazna vrata od stana i prozore od kuhinje, da se okrivljeni ne bi
+vratio, a okrivljeni je potom sa prostora ispred te zgrade pobjegao vozilom, a on je kasniječuo da se nakon
+tog odlaska iz stana okrivljeni predao policiji. Dodao je i da se kao oštećeni pridružuje krivičnom gonjenju
+protiv okrivljenog R.B., a daće se u vezi ispostavljanja imovinsko pravnog zahtjeva prema okrivljenom
+izjasniti kasnije u toku postupka, jerželi da jošmalo o tome razmisli. U odgovorima na pitanja postavljena na
+tom saslušanju imenovani oštećeni je naveo da je u vrijeme dešavanja kritičnog događaja on radio kao
+konobar i da je svakog jutra išao na posao u 06:00časova, a da je oštećena ustajala prije njega da mu opegla
+uniformu, da je noćprije kritičnog događaja on, kada je došao sa posla, zaključao ulazna vrata stana, a da ih
+je vjerovatno oštećena otključala kada je ustala kritičnog dana, š to je okrivljeni iskoristio i tog jutra u njihov
+stan ušao otvorivši vrata koja su bila otključana. Pojasnio je da je okrivljeniživio u tom stanu sa njim i
+
+njegovom majkom-oštećenom P.B. osam godina, tako da je znao njegove iživotne navike oštećene P.B.,
+odnosno da je okrivljeni znao da je oštećena obično ustajala svakog jutra oko 05:30časova i objasnio da je
+kritičnom prilikom, u momentu kada ga je on vidio držao u rukama pušku koja se puni prekošaržera, koja
+ima jednu cijev i da je vidio da je jedan dio puške obložen drvenim oblogama i da je u tom momentu
+okrivljeni stavljao jedan metak u cijev te puške, kojom prilikom mu je okrivljeni uputio prijeteće riječi i uperio
+tu pušku u njegovom pravcu, š to je kod njega izazvalo osjećaj straha i ugroženosti, a da je on, u tom
+momentu kada je vidio u kakvom se stanju nalazi njegova majka, osjećao ljutnju, ali je bio bespomoćan da
+bilošta uradi, pa je okrivljenog gađao jednim peškirom, koji mu je bio u blizini. U odgovorima na pitanja
+postavljena na tom saslušanju imenovani oštećeni-svjedok je naveo i da mu je poznato da okrivljeni R.B.i
+oštećena P.B., od razvoda njihovog braka nijesu imali nikakav kontakt, a da mu je poznato i to da je u periodu
+nedugo prije kritičnog događaja okrivljeni imao emotivnu partnerku, dok njegova majka nije imala nikoga,
+kao i da je nakon kritičnog događaja ončuo da se okrivljeni normalno ponašao po gradu, da je isti boravio po
+kafićima i koristio alkohol i da je prije braka sa njegovom majkom okrivljeni imao suprugu i dvoje djece iz tog
+braka, te da je maltretirao tu svoju suprugu, zbogčega su se njih dvoje razveli, te da takođe zna da je
+okrivljeni dva puta bio na liječenju u Specijalnoj bolnici za psihijatriju u Dobroti-Kotor, š to je bilo znatno
+ranije, a da dok ježivio sa njim i sa njegovom majkom, okrivljeni nije išao ni na kakvo liječenje od zdravstenih
+problema psihijatrijske prirode, ali da zna da je okrivljeni koristio terapiju koja mu je bila propisana za te
+zdravstvene probleme.
+
+Prilikom saslušanja na glavnom pretresu održanom dana 26.01.2023. godine, oštećeni-svjedok D.M. je
+ponovio svoj iskaz i izjašnjenje dato na zapisniku o saslušanju pred VDT-om u Podgorici Kti.br.62/22 od
+05.07.2022.godine, dok je u odgovorima na postavljena pitanja naveo da nema saznanja o tome da su se
+njegova pokojna majka i okrivljeni noćprije predmetnog događaja sreli u gradu i da su imali bilo kakvu
+komunikaciju, te da po njegovim saznanjima oštećena sa okrivljenim nije imala nikakvu komunikaciju u
+periodu od deset mjeseci prije kiritičnog dana, odnosno od razvoda njihovog njihovog braka i dodao da mu je
+poznato da su nakon kritičnog događaja službenici Uprave policije CG pregledali mobilni telefon koji je
+koristila njegova majka i u istom nijesu pronašli bilo kakvu komunikaciju sa okrivljenim, pogotovo ne
+komunikaciju koja bi mogla ukazivati da postoji opasno st daće se desiti tošto se kritičnom prilikom desilo. U
+odgovorima na pitanja postavljena na glavnom pretresu naveo je i da je, koliko se sjeća, u periodu od mjesec
+dana nakon razvoda braka okrivljenog i oštećene, okrivljeniživio u njihovom stanu, u istom domaćinstvu sa
+njim i njegovom majkom-oštećeno P.B. i on je ponašanje okrivljenog prema njemu i njegovoj majci u tom
+periodu opisao kao normalno, te da je to trajalo dok okrivljeni jednog dana nije odlučio da spakuje svoje
+stvari i ode iz tog stana.
+
+Svjedok N.S. u svom iskazu datom u postupku istrage, na zapisniku o saslušanju pred VDT-om u Podgorici
+Kti.br. 62/22 od 05.07.2012. godine, naveo je da je komšija sa oštećenom, sada pokojnom B.P.i njenim sinom
+D.M., da se njegov stan nalazi u istoj zgradi, i to na I spratu, a stan oštećenih na II spratu, da na svakom spratu
+te zgrade ima po tri stana, a da je njegov stan u sredini I sprata, a stan oštećenih prvi po redu na II spratu.
+Naveo je i da je veče prije kritičnog događaja gledao nešto na Youtube-u i kritičnog jutra se probudio negdje
+oko 05:30časova, sa namjerom da nastavi da gleda tošto je prethodne večeri gledao i nekih desetak minuta
+nakonšto je nastavio sa gledanjem te emisiječuo je neku galamu i udar metala od metal, a zatimčuo i vrisku,
+nakončega je izašao ispred svog stana i vidio okrivljenog R.B., kojeg dobro poznaje, kako pretrčava ulicu
+ispred te stambene zgrade sa puškom u ruci, za koju pušku misli da se radi o karabinu (jer je u pitanju bila
+puš ka sa jednom cijevi i drvenim kundakom), zatim vidio kako okrivljeni ubacuje pušku u jedno tamno plavo
+vozilo i sjeda u to vozilo i istim odlazi prema Kotoru. Nakon toga je načas zastao, a zatim se popeo na II sprat,
+
+gdje je vidio jednu komšinicu iz susjednog stana i u tome je oštećeni D.M. otvorio vrata od stana oštećenih, a
+on ušao u taj stan i u istom vidio oštećenu P.B. u klečećem položaju, glavom oslonjenom na krevet, pričemu
+joj je iz glave i tijela tekla krv i tada oštećenom D.M. sugerisao da je ne pomjeraju dok ne dođu pripadnici
+službene Hitne medicinske pomoći, da ne bi pomjeranjem oštećene nešto gore prouzrokovali, ali kada su
+pripadnici službe Hitne medicinske pomoći došli u taj stan, mogli su samo da konstatuju smrt oštećene.
+Ubrzo zatim u taj stan su došla i dva policajca, kojima je on kazao gdje okrivljeni R.B. posjeduje kuće, ali je
+njima neko od njihovih kolega preko radio veze javio da se okrivljeni u međuvremenu većpredao
+službenenicima Uprave policije CG. U odgovorima na pitanja postavljena na tom saslušanju imenovani svjedok
+je naveo da je osim zvukova koje je opisao, č uo i zvuk pucnja i objasnio da bi u slučaju da su kritičnom
+prilikom na njegovom stanu bila otvorena vrata sa južne strane, on sigurnočuo i riječi i pucanj, a da je, pošto
+su ta vrata bila zatvorena ončuo zvuk koji je bio prigušen i nerazgovjetan. Naveo je i da je, po njegovoj
+procjeni ta galama i gungula koju je kritičnom prilikomčuo, trajala ne više od jedan minut i da ječuo daje
+okrivljeni, kada ga je on vidio sa puškom u ruci, ispred zgrade, a prije ulaska u svoje vozilo, izgovorio riječi:
+„Jebem ti kurvo majku!" ili „majku kurvu", ili nešto u tom smislu i dodao da okrivljenog R.B. poznaje joškad
+je okrivljeni bio dječak, da zna da je okrivljeni igrao fudbal, a zna i da se isti liječio od duševnih bolesti, a
+takođe mu je poznato nekoliko situacija u kojima je oštećena P.B. reagovala u odnosu na okrivljenog kada bi
+isti imao neke napade, te da je ona nastojala da okrivljeni stalno bude pod terapijom, a da misli da je i
+oštećena imala nekih psihičkih problema i da misli da su se njih dvoje upoznali vjerovatno kod ljekara
+psihijatra, ali da takođe zna da dok su okrivljeni i oštećenaživjeli zajedno nijesu imali probleme koji bi
+ukazivali na nasilje ili nešto slično tome.
+
+Prilikom saslušanja na glavnom pretresu održanom dana 26.01.2023. godine, imenovani svjedok je ponovio
+svoj iskaz dat na u postupku istrage, na zapisniku o saslušanju pred VDT Podgorica Kti.br.62/22 od
+05.07.2022.godine, dok je u odgovorima na postavljena pitanja naveo da je njegov utisak kada je vidio
+okrivljenog kako izlazi iz zgrade i ide ka svom vozilu noseći pušku u ruci ičuo da izgovara riječi koje je
+prethodno naveo u, da je okrivljeni bio vidno zadovoljan tim, kako se izrazio „poslom koji je obavio“ i vidio da
+je okrivljeni stavio pušku u svoje vozilo, zatim sjeo u to vozilo i sa istim otišao u pravcu O Š „M.V.“. Dalje je
+naveo da je njegovo zapažanje kao komšije, za vrijeme dok su okrivljeni R.B. i oštećena P.B. bili u braku, da je
+taj njihov brak funkcionisao takošto se oštećena P.B. prema okrivljenom bila postavila maltene kao majka,
+odnosno da je brinula o njemu i da je vodila računa da okrivljeni uredno uzima terapiju koja mu je bila
+potrebna zbog psihičkih problema koje je imao, tako da je okrivljeni imao svu njenu pažnju i on nikada nije
+primijetio da je u tom periodu dok suživjeli u braku okrivljeni prema oštećenoj P.B.bio agresivan, niti da je
+bio agresivan prema njemu ili nekom drugom od ljudi iz njihovog komšiluka. Takodje, kao karakterističnu
+situaciju iz tog perioda, opisao je događaj kada je bio jedan veliki skup u dvorani P., za vrijeme kojeg skupa je
+okrivljeni odjednom osjetio da ne može tu više da bude i tada je oštećena P.B. to primijetila i njega i ostale
+komšije koje su bile prisutne na tom skupu pozvala da joj pomognu da okrivljenog R.B.izvedu iz te dvorane.
+U odgovorima na pitanja postavljena na glavnom pretresu imenovani svjedok je naveo i da od razvoda braka
+okrivljenog B.R. i oštećene P.B., on nikada nije vidio da okrivljeni dolazi u stan u kojem suživjeli oštećena i
+njen sin D.M. i koliko je njemu poznato oni u tom periodu nisu imali nikakav kontakt. Takođe, pojasnio je da
+je mjesto na kojem se nalazio na terasi svog stana u momentu kada je vidio okrivljenog kako ulazi u svoje
+parkirano vozilo sa puškom u ruci, od mjesta na kojem je to vozilo bilo parkirano, udaljeno okošest metara
+vazdušne linije, a da se radi o toj udaljenosti procjenio je na osnovu togašto se njegov stan nalazi na prvom
+spratu zgrade, ispred zgrade se nalazi trotoar koji ješirine oko dva metra, a između trotoara i mjesta na kojem
+je bilo parkirano vozilo okrivljenog kolovoz ulice koji je po njegovoj procjeniširok okočetiri metra, te da od
+tog mjesta na njegovoj terasi na kojem je kritičnom prilikom stajao do mjesta na kojem se nalazilo parkirano
+vozilo okrivljenog ne postoji nikakva fizička prepreka u vidu npr. drveta ili stuba rasvjete, koja bi mu
+onemogućavala da nesmetano vidi ičuje tošto je opazio kritičnog jutra. Po njegovoj procjeni od momenta
+
+kada ječuo taj prvi zvuk udara metala do momenta kada je izašao na terasu svog stana i vidio okrivljenog da
+pretrčava ulicu, ubacuje pušku u svoje vozilo i zatim sjeda u vozilo, prošlo je po njegovoj slobodnoj procjeni
+oko jedan ipo minut i objasnio da je odmah nakonšto ječuo taj zvuk on prvo otišao do prozora svog stana,
+gdje je jedno vrijeme gledao kroz prozor na prostor ispred zgrade i zatim otišao na balkon, odnosno terasu i
+vidio ovošto je prethodno naveo u svom iskazu.
+
+U zapisniku o uviđaju Uprave policije CG CB Herceg Novi 18/3-1 br. 215/22-3364/4 od 27.06.2022.godine i
+zapisniku o uviđaju VDT-a u Podgorici Ktr.br. 412/22 od 27.06.2022. godine, navedeno je da su isti sačinjeni od
+strane ovlašćenog policijskog službenika CB Herceg Novi, Stanica kriminalističke policije, odnosno
+postupajućeg državnog tužioca u VDT-u u Podgorici dana 27.06.2022. godine, u ulici.......broj 4, stan broj 7 u
+Herceg Novom, povodom prijave da je u ulici.... lice R.B. iz vatrenog oružja lišioživota svoju bivšu suprugu P.B., da je o tom događaju upoznat državni tužilac u Višem državnom tužilaštvu u Podgorici S.A., koji je ovlastio
+policijske službenike CB Herceg Novi da otpočnu vršenje uviđaja do njegovog dolaska, da je taj uviđaj
+započet danju 27.06.2022 godine, u 06:30časova; da su postupajući policijski službenici CB Herceg Novi
+dolaskom na lice mjesta, koje je bilo obezbijeđeno od strane policijskih službenika CB Herceg Novi zatekli
+otvorena ulazna vrata prethodno navedenog stana, sa ključem koji ima plavi privezak i koji se nalazio sa
+unutrašnje strane vrata i jezičak brave u položaju otključano; da je raspored prostorija tog stana takav da se
+ulaskom u unutrašnjost stana dolazi do hodnika, da je prostorija koja se nalazi sa desne strane od ulaznih
+vrata kuhinja sa trepezarijom, na kojoj je prozor bioširom otvoren; da se lijevo od ulaznih vrata nalazi
+kupatilo i da u navedenim prostorijama nijesu uočeni tragovi crvene boje nalik na krv; da su dvije prostorije
+koje se nalaze gledano pravo od ulaznih vrata stana spavaće sobe, od kojih je jedna na lijevoj, a druga na
+desnoj strani i u iste se ulazi prolaskom kroz hodnik stana; da je u spavaćoj sobi koja se nalazi desno, gledano
+od ulaznih vrata nalazio namještaj i garderoba i da se iz te prostorije stana izlazi na balkon kroz balkonska
+vrata, te da u toj spavaćoj sobi nijesu uočeni tragovi crvene boje nalik na krv. U ovom zapisniku o uviđaju je
+navedeno i da je pregledom stana u spavaćoj sobi koja se nalazi sa lijeve strane, gledano pravo od ulaznih
+vrata, zatečen trag broj 1-beživotnožensko tijelo P.B., koje se nalazilo između drvenog kreveta sa jedne
+strane i ormara sa druge strane, u ležećem položaju na parketu, pričemu je oštećena prednjim dijelom tijela
+bila prema podu, sa savijenim rukama ispod tijela, kao i savijenim nogama u koljenima, da je oštećena ma
+sebi je imala teget spavaćicu sa bijelim kružićima, roziženski veši traku kojom joj je bila zavezana kosa, da je
+ispod glave oštećene zatičen trag broj 4-tragove crvene boje (lokvu) tečnosti nalik na krv, kao i oko tijela veci
+broj crvenih mrlja nalik na krv, da je pregledmo te prostorije uočen i trag broj 2- č aura nepoznatog kalibra,
+prije beživotnog tijela oštećene, kao i trag broj 3- č aura nepoznatog kalibra, iza beživotnog tijela oštećene
+bliže balkonskim vratima, koja su bila otvorena, da je ućošku te spavaće sobe, na stolu, zatečena pegla, koja
+je bila uspravljena, sa utikačem uključenom u strujnu utičnicu, a da na ormaru koji se u toj spavaćoj sobi
+nalazi sa desne strane, gledano od vrata te sobe, i to na bočnoj strani, tačnije vratima ormara, uočen trag broj
+5-veći broj tragova mlazeva crvene boje nalik na krv (prskotine). U tom zapisniku je konstatovano je i da je
+uviđaj nastavljen u 10:00časova u prisustvu državnog tužioca u Višem državnom tužilaštvu u Podgorici S.A.,
+koji je u nastavku rukovodio uviđajem i da su sa lica mjesta izuzeti sljedeći tragovi: trag br. 1 - beživotno
+žensko tijelo pokojne P.B.radi obdukcije; trag broj 2- č aura nepoznatog kalibra; trag broj 3- č aura nepoznatog
+kalibra; trag broj 4 /1 -bris iz tamno crvene mrlje nalik na krv izuzet iz traga br.4; trag.br.6 -izuzeta spavaćicahaljina sa tijela oštećene P.B.; trag broj 8-SEM stubići sa ruku počivše P.B.; kao i da su naknadno izuzeti trag
+broj 7- izuzeta majica bijele boje veličine M, sa više natpisa "LEGEA" sa okrivljenog R.B., trag broj 9- SEM
+stubići sa ruku D.M., sina počivše B.P.,trag broj 10- SEM stubići sa ruku okrivljenog R.B., kao i da su lice
+mjesta iširi izgled lice mjesta fotografisani i da je sačinjen fotoelaborat, kao i skica lica mjesta, koji su sastavni
+dio ovog zapisnika i da je uviđaj završen dana 27.06.2022.godine u 11,00časova.
+
+U izvještaju Uprave policije CG CB Herceg Novi o uzorkovanju tragova sa lica mjesta broj knjige uviđaja
+Ku.199/22 od 27.06.2022.godine, navedeno je da je isti sačinjen od strane kriminalističkog tehničara Uprave
+policije CG CB Herceg Novi, dana 27.06.2022. godine, prilikom vršenja uviđaja u ulici....., broj 4, u stanu broj 7
+u Herceg Novom, i da su na mjestu događaja pronađeni sljedeći tragovi: trag br. 1 - lešoštećene P.B.; trag broj
+2- čaura nepoznatog kalibra; trag broj 3- č aura nepoznatog kalibra; trag broj 4-mrlje crvene boje nalik na krv
+pronađene na podu u blizini i ispod leša P.B., trag broj 4 /1 -bris iz tamno crvene mrlje nalik na krv izuzet iz
+traga br.4; trag broj 5- mrlje crvene boje nalik na krv pronađene na vratima ormara u blizini leša P.B., trag br.6
+- haljina plave boje sa bijelim krugovima skinuta sa leša P.B.; a da su na drugim mjestima, dakle mimo lica
+mjesta, izuzeti trag broj 7 - majica bijele boje veličine M, sa više natpisa "LEGEA" skinuta sa osumnjičenog
+R.B., u prostorijama CB Herceg Novi, trag broj 8-GSR uzorci sa ruku oštećene P.B., trag broj 9-GSR uzorci sa
+ruku D.M., trag broj 10-GSR uzorci sa ruku osumnjičenog R.B..
+
+Konstatacije iz navedenih zapisnika o uviđaju prikazane su na ukupno 19 fotografija u fotodokumentaciji
+Uprave policije CG CB Herceg Novi br. 199/22 od 27.06.2022.godine, na kojima je prikazanširi i bliži izgled lica
+mjesta i materijalnih tragova pronađenih i izuzetih na licu mjesta prilikom vršenja uviđaja, kao i u situacinom
+planu-skici lica mjesta, koja je sačinjena od strane službenika Uprave policije CG CB Herceg Novi prilikom
+vršenja uviđaja.
+
+U ljekarskom izvještaju JZU Zavoda za hitnu medicinsku pomoć CG broj 1037 od 27.06.2022.godine,
+navedeno je da je ta služba poziv za pružanje pomoći dobila dana 27.06.2022.godine, u 05:42časova i da ja
+zatim u 05:49časova, ekipa te službe došla u stan oštećene P.B., lociran u Herceg Novom, na adresi..... broj 4
+i da je od strane ljekara te službe dr S.M. P.-specijaliste urgentne medicine, konstatovana smrt oštećene P.B.,
+odnosno da je ista ubijena vatrenim oružjem.
+
+U službenoj zabilješci Uprave policije CG CB Herceg Novi 18/3-1 br. 215/22-3365 od 27.06.2022.godine,
+navedeno je da je ista sačinjena od strane policijskih službenika
+T.M., D.N. i D.M., povodom togašto je dana 27.06.2022.godine, u 05:55časova, dežurnoj službi CB Herceg
+Novi, lice N.S., telefonskim putem, prijavio da je u stambenoj zgradi koja se nalazi u Herceg Novom, na adresi......, okrivljeni R.B., upotrebom vatrenog oružja lišioživota svoju bivšu suprugu P.B. i pored ostalog,
+konstatovano da je tog istog dana, u 06:05časova, u službene prostorije CB Herceg Novi pristupio okrivljeni
+R.B., nakončega je isti lišen slobode od strane policijskih službenika CB Herceg Novi.
+
+U zapisniku o uviđaju Uprave policije CG CB Herceg Novi 18/3-1 br. 215/22-3364/4 od 27.06.2022.godine,
+navedeno je da je isti sačinjen od strane ovlašćenog policijskog službenika CB Herceg Novi, Stanica
+kriminalističke policije, dana 27.06.2022. godine, povodom pronalaska vatrenog oružja-puške kojom je
+okrivljeni R.B. lišioživota svoju bivšu suprugu oštećenu P.B.; da je taj uviđaj od strane policijskih službenika
+CB Herceg Novi obavljen po ovlašćenu postupajućeg državnog tužioca u VDT-u u Podgorici, na licu mjesta II, u
+naselju S.-opština Hreceg Novi; da je uviđaj započet dana 27.06.2022 godine, danju u 11:15časova, da je uže
+lice mjesta vršenja uviđaja ostava (podrum), koja se nalazi na prvom nivou trospratne kuće, koja je vlasništvo
+okrivljenog R.B. i koja je locirana na adresi S. i M.59, opština Herceg Novi; da su postupajući policijski
+službenenici po dolaskom na to lice mjesta, koje je bilo obezbijeđeno od strane policijskih službenika CB Herceg
+Novi zatekli zatvorena vrata kuće, koja su dobrovoljno otvorena od strane okrivljenog R.B., a koji je
+
+prethodno uzeo ključkoji je bio sakriven ispod jedne cigle, koja se nalazila sa desne strane, neposredno do
+ulaznih vrata; da je po ulasku u unutrašnjost te prostorije-ostave, kroz vrata iste, u unutrašnjosti zatečen
+veliki broj stvari koje su vlasništvo okrivljenog R.B., a među kojim stvarima su bili razni građevinski i
+baštenski alati i da je, po dobrovoljnom pokazivanju od strane okrivljenog R.B., ućošku te prostorije, na
+mjestu gdje se odlaže alat, uočena puška kalibra 22. Kragujevac M-56, serijskog broja...., koja je bila
+prislonjena uz zid. U tom zapisniku je konstatovano i da su prilikom vršenja uviđaja izuzeti sljedeći tragovi:
+trag br.1- puška kalibra 22, Kragujevac M-56, serijskog broja K946 sa drvenim kundakom i trag br. 2- č aura NN
+kalibra, zatečena u zatvaraču prethodno navedene puške, kao i da je lice mjesta fotografisano i kriminalistički
+tehnički obrađeno i da je sačinjen je fotoelaborat lica mjesta, koji je sastavni dio predmetnog zapisnika.
+
+U izvještaju Uprave policije CG CB Herceg Novi o uzorkovanju tragova sa lica mjesta, broj knjige uvidjaja
+Ku:200/22 od 27.06.2022. godine, navedeno je da je isti sačinjen od strane kriminalističkog tehničara CB
+Herceg Novi, dana 27.06.2022. godine u Herceg Novom, na adresi S. i M. 59 i da su na mjestu vršenja uviđaja
+pronađeni sljedeći tragovi: trag br. 1-puška kalibra 22, Kragujevac M-57, serijskog broja..... i trag br.2- č aura
+nepoznatog kalibra, pronađena u navedenoj pušci.
+
+Konstatacije iz navedenog zapisnika o uviđaju prikazane su na ukupno 6 fotografija u fotodokumentaciji
+Uprave policije CG CB Herceg Novi br. 200/22 od 27.06.2022.godine, na kojima je prikazanširi i bliži izgled lica
+mjesta i materijalnih tragova pronađenih i izuzetih na licu mjesta prilikom vršenja tog uviđaja.
+
+U izvještaju Uprave policije CG o uzorkovanju tragova sa lica mjesta broj knjige uvidjaja Ku.201/22 od
+27.06.2022.godine, navedeno je da je isti sačinjen od strane kriminalističkog tehničara CB Herceg Novi, dana
+27.06.2022. godine, povodom pronalaska putničkog motornog vozila marke VW Polo registarskih oznaka......, koje je koristio okrivljeni R.B., te da su sa tog vozila, koje je pronađeno u ulici Put narodnih heroja u Igalu,
+pronađeni i uzorkovani sljedeći tragovi: trag br. 1- putničko motorno vozilo marke VW Polo, registarskih
+oznaka..., trag br.2- DNK bris sa ručice za otvaranje prednjih vozačevih vrata tog vozila, trag br. 3- DNK bris sa
+podizača stakala prednjih vozačevih vrata navedenog vozila, trag br.4- DNK bris sa ručice pokazivača pravca i
+svjetala, trag br.5- DNK bris sa ručne kočnice, trag br.6- folija za uzorkovanje prisustva barutnihčestica sa
+sjedišta vozača sjedalni dio, trag br.7- folija za uzorkovanje prisustva barutnihčestica sa sjedišta vozača
+naslon, trag br.8- folija za uzorkovanje prisustva barutnihčestica sa sjedišta suvozača sjedalni dio, trag br.9folija za uzorkovanje prisustva barutnihčestica sa sjedišta suvozača naslon, trag br.10- folija za uzorkovanje
+prisustva barutnihčestica sa ručice menjača vozila, trag br.11- folija za uzorkovanje prisustva barutnihčestica
+sa upravljača vozila.
+
+U fotodokumentaciji Uprave policije CG CB Herceg Novi br. 201/22, koja je sačinjena dana 27.06.2022.
+godine, povodom pronalaska putničkog motornog vozila marke VW Polo, registarskih oznaka..., sa kojim se
+osumnjičeni R.B.prevezao nakon izvršenja krivičnog djela, nalaze se 3 fotografije, pričemu je na prvoj
+fotografiji prikazan izgled putničkog motornog vozila marke VW Polo registarskih oznaka.AS...., na drugoj
+fotografiji je prikazan bliži izgled navedenog vozila, a na trećoj fotograji su prikazane pozicije sa kojih su uzeti
+DNK brisevi i pozicije sa kojih su, sa mjesta u unutrašnjosti vozila, uzete folije za uzorkovanje prisustva
+barutnihčestica.
+
+U izvještaju Uprave policije CG CB Herceg Novi o uzorkovanju tragova sa lica mjesta broj knjige uviđaja
+Ku.202/22 od 27.06.2022.godine, povodom ostavljenih pisama po kazivanju R.B., koji je nakon lišenja
+slobode pokazao mjesto u svojoj kući gdje se nalaze pisma koja je on navodno pisao prije izvršenja krivičnog
+djela, navedeno je da su nađeni tragovi označeni kao trag br.1-pismo za B.R., trag br.2- pismo za I.V., trag
+br.3-puška nepoznate marke i seriskog broja.
+
+U fotodokumentaciji Uprave policije CG CB Herceg Novi br. 202/22, koja je sačinjena dana 27.06.2022.
+godine, povodom povodom pronalaska pisama po kazivanju okrivljenog R.B. u njegovoj kući, nalazi se
+ukupno 10 fotografija, i to: fotografija 1-na kojoj je prikazana kuća okrivljenog R.B.u mjestu S.-opština Herceg
+Novi, fotografija 2-na kojoj je prikazan okrivljeni R.B. kako pokazujue na ostavljena pisma, fotografija 3- na
+kojoj je prikazan izgled ostavljenih pisama i fotografije 4, 5, 6, 7 i 8 – na kojima je prikazan bliži izgled pisama,
+fotografija 9 – na kojoj je prikazan okrivljeni R.B. kako pokazuje na pušku okačenu na zid kuće i fotografija
+broj 10 - na kojoj je prikazan bliži izgled te puške nepoznate marke i serijskog broja okačene na zid kuće
+okrivljenog.
+
+Uvidom u pismo koje je dana 27.06.2022.godine, pronadjeno u kući okrivljenog R.B., a koje je naslovljeno:
+„za I.V. T.“ š to je ispisano na poledjini tog pisma, utvrđeno je da je to pismo ispisano na papiru koji je istrgnut
+iz nekog bloka i u kojem u gornjem desnom uglu stoji odštampan logo i natpis: „Biro contoštamparija“, da je
+u lijevom gornjem uglu tog papira ispisano rukopisom „26.06.2022.godine S.“ i da je sadržina tog pisma
+sledeća: „Draga I. do tebe mi je puno stalo. Imao sam dogovor sa bivšomženom da hoće daživi sama bez
+muš karca uživotu, međutimčujem priče i sam sam se uvjerio da je pogazila taj dogovor. Zaboljelo me
+mnogo, taman sam se sa tobom našao i osjetio da je to to. Prije petnaestak godina sam prevashodno zbog
+djece odlučio da ne ubijem njihovu majku iako je pošla sa mojim dobrim prijateljem... Sum sumarum ako ovo
+čitašželim ti sve naj bolje neka te Bogčuva!“ i u potpisu: „R.B.“
+
+Uvidom u pismo koje je dana 27.06.2022.godine, pronadjeno u kući okrivljenog R.B., a koje je naslovljeno:
+„za B.R.“ š to je ispisano na poledjini prve strane tog pisma, utvrđeno je da je to pismo ispisano na dva papira
+koji su istrgnuti iz nekog bloka i u kojem u gornjem desnom uglu prve strane stoji odštampan logo i natpis:
+„Biro contoštamparija“, da je u lijevom gornjem uglu tog papira ispisano rukopisom „27.06.2022.godine S.“ i
+da je sadržina tog pisma sledeća: „Brate moj, pišem ti ovo jer ne mogu više da izdržim. Imao osam dogovor sa
+B. rekla je daće daživi sama bez nekog muškarca uživotu. Ja sam to ispoštovao i otišao. Međutim po
+K.čujem da se vaćari sa nekim mlađim momkom. To me pogodilo iako imam I. do koje mi je puno stalo, ali ne
+mogu preći preko toga. Molim te da ko i do sad pripaziš D. i S. bez obzira oću li ja bitiživ ili mrtav! Jošte
+molim da ne zapustite kuću na selo. Boli me ovo većduže vremena ja sam trpeći ali ovo je jače. Sudbina
+kleta, od djetinjstva smo nesretni, ja mjesto tebe u „D.“ ti mjesto mene u „S.“. Jebiga karma neka loša ko zna
+od kog pretka ili to jednostavno je tok vremena. Da ste mi zdravo svi! Č uvaj ove moje piliće, oni su većsvoji
+ljudi ali treba im autoritet i savjet. Pomozi S.da onaj mali stan preuzme jer struja nije reg. pa da se to
+legalizuje. D. ć e srediti potkrovlje dogovorili smo se ja i on. Neka vas Bogčuva!!!“ i u potpisu „R. B“.
+
+U zapisniku Uprave policije CG CB Herceg Novi o izvršenoj kontroli prisustva alkohola u organizmu
+okrivljenog R.B.broj 0242721 sačinjenog dana 27.06.2022.godine, koji su sačinili ovlašćeni policijski
+službenenici Ministarstva unutrašnjih poslova-Uprave policije CG CB Herceg Novi, navedeno je da nakon
+
+završenog ispitavanja uređajem marke Alko-ulant, tip 6620 plus, serijskog broja 0421824, koje je obavljeno
+navedenog dana u 06:52h, konstatovano da je okrivljeni R.B. imao 0,41 g/kg alkohola u organizmu, i da je tu
+vrijednost sa alkometra očitao i sam okrivljeni, te da je okrivljeni ovaj zapisnik o alkotestiranju potpisao bez
+primjedbi.
+
+U izvještaju KCCG o analizi alkohola u krvi okrivljenog R.B. broj 1088 od 26.07.2022.godine, navedeno je
+da je od okrivljenog krv na analizu uzeta dana 27.06.2022.godine u 12:45h i da je analizom uzetog uzorka
+ustanovljeno da okrilvjeni nije imao alkohola u krvi, odnosno da je vrijednost koncentracije apsolutnog
+alkohola u uzetom uzorku krvi okrivljenog bila 0,00 promila.
+
+U izvještaju o analizi alkohola u krvi koji je sačinjen od strane KCCG Odjeljenja za sudsku medicinu
+S.br.106/22 od 27.06.2022.godine, navedeno je da je u uzorku krvi i urina, koji su od oštećene P.B. uzeti
+prilikom vršenja obdukcije nije nađeno prisustvo apsolutnog alkohola u krvi i urinu, kao i da analizom TST-a
+nije nađeno prisustvo apsolutnog alkohola.
+
+U izvještaju tzv. skrining testova na psihoaktivne supstance u urinu, koji je sačinjen od strane KCCG dana
+28.06.2022.godine, navedeno je da su rezultati uzorci oštećene P.B. na PAS, negativni na kokain (COC),
+amfetamin (AMF), metamfetamin(MET), marihuana (THC), ekstazi (MDMA), metadon (MTD), opijati (OPI),
+barbiturati (BAR)i triciklični antidepresivi (TCA), dok je pozitivan na benzodiazepin (BZO).
+
+U potvrdi Uprave policije CG CB Herceg Novi o vraćanju privremeno oduzetih predmeta broj 18-03-1 br.
+215/22-3617/2 od 28.06.2022. godine, navedeno je da je toga dana ovlašćeni policijski službenik CB Herceg
+Novi putničko motorno vozilo marke VW Polo, registarskih oznaka... i ključod tog vozila sa privjescima i 5
+drugih različitih ključeva, vratio licu J.D., JMB 0903978245021 i da je tu potvrdu J.D.potpisala bez primjedbi.
+
+U izvještaju Forenzičkog centra Uprave policije CG o vještačenju prisustva GSRčestica br.1671/22 od
+08.07.2022. godine, navedeno je da je Forenzičkom centru Uprave policije CG, dana 01.05.2022.godine, od
+strane CB Herceg Novi dostavljenošest "SEM" stubića, pomoću kojih su izuzeti eventualni tragovi pucanja
+(uzorci), i to: sašaka oštećene P.B., dana 27.06.2022. godine u 08:00časova, sašaka D.M., dana 27.06.2022.
+godine u 09:00časova i sašaka okrivljenog R.B., dana 27.06.2022. godine u 07:00časova, na analizu za
+utvrđ ivanje prisustva, odnosno neprisustva, GSRčestica. Nakon završene GSR analize površina "SEM stubića"
+pomoću kojih su izuzeti eventualni tragovi pucanja sašaka okrivljenog R.B., na „SEM stubiću“ izuzetom sa
+desnešake okrivljenog pronađen je mali broj karakterističnih GSRčestica, hemijskog sastava Pb Sb Ba, dok na
+stubiću izuzetom sa lijevešake okrivljenog nijesu pronađene karakteristične GSRčestice. U ovom izvještaju o
+vješ tačenju navedeno je i da je nakon završene GSR analize površina "SEM stubića" pomoću kojih su izuzeti
+eventualni tragovi pucanja sašaka oštećene P.B., na stubićima izuzetim sa desne i lijevešake oštećene
+pronađen veliki broj karakterističnih GSRčestica, hemijskog sastava Ph Sb Ba dok nakon završene GSR analize
+površina "SEM stubića", pomoću kojih su izuzeti eventualni tragovi sašaka oštećenog D.M., nijesu pronadene
+karakteristične GSRčestice. U zaključku ovog izvještaja o vještačenju je navedeno da prisustvo
+karakterističnih GSRčestica na desnojšaci okrivljenog R.B. i našakama oštećene P.B., ukazuje na
+mogućnost da su isti bili povezani sa procesom opaljenja iz vatrenog oružja, dok neprisustvo karakterističnih
+
+GSRčestica našakama oštećenog D.M., ukazuje da se ne može pretpostaviti mogućnost da je isti bio
+povezan sa procesom opaljenja iz vatrenog oružja.
+
+U izvještaju Forenzičkog centra Uprave policije CG o vještačenju prisusutva barutnihčestica br.1672/22
+od 11.07.2022.godine, navedeno je da je Forenzičkom centru dana 01.07.2022 godine, od strane CB Herceg
+Novi, na vještačenje dostavljena majica kratkih rukava, koja je bila vlasništvo okrivljenog R.B. i spavaćicahaljina, koja je bila vlasništvo oštećene P.B., da je pregledom tog dostavljenog dokaznog materijala
+ustanovljeno da su navedeni odjevni predmeti, kao dokazni materijal, bili propisno upakovani i označeni; da
+su za potrebe vještačenja površine dostavljene majice kratkih rukava, bijele boje, marke Legea, veličine M,
+koja je bila vlasništvo okrivljenog R.B., kao i površine dostavljenje spavaćice-haljine, teget boje sa bijelim
+tačkicama, marke LCWACASUAL, veličine 2XL, koja je bila vlasništvo oštećene P.B., oblijepljene
+samoljepljivim folijama, koje se inače koriste za uzorkovanje barutnihčestica sašaka lica koje je pucalo iz
+vatrenog oružja tzv.“parafinske rukavice". Takođe je navedeno da su te samoljepljive folije, koje su izuzete sa
+površina predmetne garderobe, ispitane difenilaminskim testom i da je nakon izvršenih ispitivanja, na
+dostavljenoj majici kratkih rukava vlasništvo okrivljenog R.B., i to na prednjem donjem dijelu te majice,
+pronađeno prisustvo barutnihčestica u rasporedu i koncetraciji kao što se to vidi na fotografiji koja je
+sastavnio dio tog nalaza i mišljenja, dok na dostavljenoj spavaćici-haljini koja je bila vlasništvo oštećene P.B.,
+nije pronađeno prisustvo barutnihčestica, uz napomenu da je u okolini svih oštećenja na prednjoj strani
+spavaćice-haljine vlasništvo oštećene P.B. koja su konstatovana prilikom vještačenja daljine pucanja,
+pronađeno je prisustvo barutnihčestica, š to je opisano u Izvještaju o vještačenju daljine pucanja broj
+1673/22.
+
+U izvještaju Forenzičkog centra Uprave policije CG o vještačenju daljine pucanja br.1673/22 od
+11.07.2022. godine, navedeno je da je Forenzičkom centru Uprave policije CG dana 01.07.2022 godine, od
+strane CB Herceg Novi, dostavljena spavaćica-haljina koja je bila vlasništvo P.B., za analizu utvrđivanja
+daljine pucanja odnosno rastojanja usta cijevi od vatrenog oružja do oštećenja na istoj; da je makroskopskim
+pregledom dostavljene spavaćice-haljine, teget boje, sa bijelim tačkicama, marke LCW CASUAL, veličine 2XL,
+koja je bila vlasništvo oštećene P.B.i koja je dostavljena razrezana po desno m i lijevom ramenom dijelu, sa
+prednje strane primjećujučetiri oštećenja, veličina: 0,8cm, 5cm, 0,5cm i 0,6cm, koja su prikazana na fotorafiji
+broj 1, koja je sastavni dio tog izvještaja; da se oko ovih oštećenja primjećuju tragovi osušene tečnosti tamno
+braon boje nalik na krv; da se sa zadnje strane te spavaćice-haljine, primjećuju dva oštećenja označena
+brojevima 5 i 6, veličine: 0,3cm i 0,4cm, koja su prikazana na fotorafiji broj 2, koja je sastavni dio tog izvještaja
+i da se oko navedenih oštećenja primjećuju se tragovi osušene tečnosti tamno braon boje nalik na krv. U
+ovom izvještaju je navedeno i da je nakon izvršenih ispitivanja, u okolini gore pomenutih oštećenja na
+prednjoj strani spavaćice-haljine, koja je bila vlasništvo oštećene P.B., pronađeno prisustvo barutnihčestica
+u rasporedu i koncetraciji kao što je to dato na fotografiji broj 3, koja je sastavni dio ovog izvještaja, dok u
+okolini oštećenja na zadnjoj strani predmetne spavaćice-haljine, nije pronađeno prisustvo barutnihčestica.
+Navedeno je i da su prethodno opisana oštećenja na prednjoj strani spavaćice-haljine, koja je bila vlasništvo
+oštećene P.B., nastala od projektila iz vatrenog oružja, sa rastojanja usta cijevi od 150cm do istih.
+
+Sud je izvještaje Forenzičkog centra Uprave policije CG o vještačenjima prisustva GSRčestica, prisustva
+barutnihčestica i daljine pucanja, cijenio kao stručne, jasne, pravilne i zasnovane na pravilima struke i nauke,
+pa je iste u cjelosti prihvatio.
+
+U Izvještaju Forenzičkog centra Uprave policije CG o trasološkom vještačenju br. 1674/22 od 18.07.2022.
+godine, navedeno je da je Forenzičkom centru Uprave policije CG, od strane CB Herceg Novi, na trasološko
+vješ tačenje dostavljena haljina-spavaćica koja je bila vlasništvo oštećene P.B., koji odjevni predmet je, kao
+dokazni materijal, prilikom dostavljanja bio pravilno spakovan i obilježen, da se radilo o haljini marke
+LCWCASUAL, veličine xxl, plave boje, sa bijelim kružićima, koja je bila prerezana preko obje bretele,
+najverovatnije prilikom pružanja medicinske pomoći u zdravstvenoj ustanovi, a koja oštećenja na bretelama
+su prikazana na fotografijama 1, 2, 3, 4, 5 i 6 koje su sastavni dio tog izvještaja. Takođe, u predmetnom
+izvještaju je navedeno i da se na prednjoj strani te haljine-spavaćice uočavajučetiri mehanička oštećenja, i
+to: oštećenje na 65cm od donje ivice haljine i 22cm od desnogšava prednje i zadnje pole (prikazano na
+fotografijama broj 1 i 2, koje su sastavni dio ovog izvještaja), da je relativna veličina ovog mehaničkog
+oštećenja 0,8cm; oštećenje na 66cm od donje ivice haljine i 23cm od desnogšava prednje i zadnje pole
+(prikazano takođe na fotografijama broj 1 i 2, koje su sastavni dio ovog izvještaja), da je relativna veličina
+ovog mehaničkog oštećenja 0,5cm; oštećenje na 67cm od donje ivice haljine i 26cm od desnogšava prednje i
+zadnje pole (prikazano takođe na fotografijama broj 1 i 2, koje su sastavni dio ovog izvještaja), da je relativna
+velična ovog mehaničkog oštećenja 0,5cm i oštećenje na 65cm od donje ivice haljine i 32cm od desnogšava
+prednje i zadnje pole (prikazano na fotografijama broj 1 i 3, koje su sastavni dio ovog izvještaja), da je
+relativna veličina ovog mehaničkog oštećenja 0,6cm, dok su se na prednjoj strani predmetne haljine uočavali
+tragovi osušene tečnosti tamno braon boje nalik na krv (prikazani na fotografiji broj 1). Nadalje, na zadnjoj
+strani predmetne haljine uočavaju se dva mehanička oštećenja i to: oštećenje na 57 cm od donje ivice haljine
+i 17cm od desnogšava prednje zadnje pole(prikazana na fotografijama broj 4 i 5), pričemu je relativna
+veličina ovog mehaničkog oštećenja 0,4cm; oštećenje na 50 cm od donje ivice haljine i 14cm od desnogšava i
+prednje i zadnje pole (prikazano na fotogarfijama 4 i 6, koje su sastavni dio ovog izvještaja), a da je relativna
+veličina ovog mehainičkog oštećenja 0,3cm i da su se na zadnjoj strani predmetne haljine uočavali tragovi
+osušenih tečnosti tamno braon boje, nalik na krv (prikazane na fotografiji broj 4.) U zaključku ovog izvještaja o
+trasološkom vještačenju je navedeno da sva prethodno opisana mehanička oštećenja na predmetnoj haljini
+oštećene P B, imaju karakteristike oštećenja nastalih dejstom projektila ispaljenog iz vatrenog oružja.
+
+U izvještaju Forenzičkog centra Uprave policije CG o DNK vještačenju br. 1669/22 od 05.08.2022. godine
+i fotodokumentaciji br. 1669/22 od 05.08.2022. godine koja je sastavni dio izvještaja o vještačenju,
+sačinjenom od strane vještaka forenzičke genetike K.S., navedeno je da je po naredbi postupajućeg državnog
+tužioca u VDT-u u Podgorici Kti.br.62/22 od 28.06.2022. godine, određeno DNK vještačenje vatrenog oružjapuške koja je označena kao trag br. 1 i brisa iz mrlje nalik na krv, koja je prilikom vršenja uviđaja u stanu
+oštećene označena kao trag br.4/1, pričemu je dobijene DNK profile trebalo uporediti sa profilima oštećene
+P.B., JMB..... i okrivljenog R.B., JMB...., kao i sa profilima iz baze DNK registra. U mišljenju predmetnog
+izvještaja o DNK vještačenju, navedeno je da se na osnovu izvršenih DNK analiza i bio-statističkog proračuna,
+mož e zaključiti sljedeće: na uzorku izuzetom sa drvenih djelova puške i metalne poluge na prednjem dijelu
+cijevi, koji je označen kao trag br. 1-puška kalibra 22, marke M-57, serijski broj K9460, utvrđeno prisustvo
+biološkog materijala od minimum dvije osobe, pričemu rezultat DNK analize daje ekstremno jaku podršku
+hipotezi da je oštećena P.B.dominantni donor tog materijala, a umjereno jaku podršku hipotezi da je
+okrivljeni R.B. jedan od donora tog biološkog materijala; na uzorku izuzetom sa obarača puške - trag br. 1puška kalibra 22, marke M-57, serijski broj....., utvrđeno je prisustvo biološkog materijala od minimum jedne
+osobe, pričemu rezultat DNK analize daje ekstremno jaku podršku hipotezi da je okrivljeni R.B. donor
+biološkog materijala, uz očitavanje samo jednog alela koji ne pripada njegovom referentnom DNK profilu i da
+je na tragu broj 4/1 – bris izuzet iz mrlje nalik na krv, koja je prilikom vršenja uviđaja zatečena u stanu
+
+oštećene utvrđeno prisustvo krvi ljudskog porijekla, pričemu rezultat DNK analize daje ekstremno jaku
+podršku hipotezi da ta krv potiče od oštećene P.B..
+
+U izvještaju Forenzičkog centra Uprave policije CG o balističkom vještačenju br. 1670/22 od 08.08.2022.
+godine, navedeno je da su tom centru, po naredbi postupajućeg državnog tužioca u VDT-u u Podgorici
+dostavljeni na ispitivanje sljedeći predmeti: puška koja je kritičnog dana, od strane policijskih službenika CB
+Herceg Novi, pronađena i izuzeta iz kuće okrivljenog R.B., za koju pušku je prilikom tog vještačenja utvrđeno
+da je ista marke Crvena Zastava, model 56, kalibar.22 L.R. (5,6 mm), fabrički broj...., (dok je broj na zatvaraču
+puš ke.....); da pri vrhu cijevi te puške postoji trag nepoznate materije svijetle boje, nalik na malter, da je
+predmetna puška tzv. "repetirka", i konstruktivno ne posjeduje magacin za municiju, tako da je, da bi se
+izvršilo ispaljenje projektila iz iste, potrebno metak smjestiti direktno u cijev puške. U tom izvještaju je takođe
+navedeno da su na vještačnje dostavljene i 3čaure, koje su bile posebno upakovane i obilježene brojevima 2 i
+3 (izuzete sa lica mjesta, odnosno iz stana oštećene) i br.2 (izuzeta sa lica mjesta na kojem je pronađena
+predmetna puška, dakle iz kuće okrivljenog) koja je u daljem tekstu izvještaja o vještačenju označena i
+tretirana kao 2/1) i da je prilikom vještačenja konstatovano da na dnu spornih dostavljenihčaura postoji
+oznaka: slovo "V" u trouglu, da se trag od ispaljenja nalazi na obodu dnačaure (tzv."ivično paljenje"), š to je i
+karakteristika za ovaj kalibar i da su u okviru tih tragova ispaljenja na predmetnimčaurama formirane
+individualne karakteristike koje imaju identifikacionu vrijednost. Takođe, pored navedenog, Forenzičkom
+centru Uprave policije je na vještačenje dostavljen i projektil označen kao trag 1/1, koji je izvađen prilikom
+obdukcije iz tijela pokojne oštećene P.B., za koji projektil je prilikom vještačenja utvrđeno da je olovni, znatno
+deformisan na vrhu, da je geometrijskim i težinskim mjerenjem tog projektila utvrđeno da je isti težine 1,98gr
+i kalibra 22 LR. (5,6 mm), te da po njegovom nedeformisanom dijelu postoje tragovi od prolaska kroz
+ožljebljenu cijev vatrenog oružja, izraženi u vidu polja ižljebova i da su u okviru ovih opštih tragova formirane
+individualne karakteristike koje imaju identifikacionu vrijednost. U predmetnom izvještaju o baističkom
+vješ tačenju, i to u rezultatu i mišljenju tog izvještaja je navedeno da je predmetna puška koja je bila predmet
+vješ tačenja ispravna, da je iz predmetne puške pucano nakončega njena cijev iste niječišćena, ni
+podmazivana, da je spomi projektil, koji je prilikom obdukcije izvađen iz tijela oštećene i koji bio predmet
+vješ tačenja, kalibra.22 LR. (5,6 mm) i ispaljen je iz predmetne puške, da su sporne 3čaure, koje su takođe
+bile predmet vještačenja, č aure kalibra.22 L.R. (5,6 mm) i ispaljene su iz predmetne puške (F-3 do F-8) i da je
+komparacijom probnihčaura i projektila ispaljenih iz predmetne puške sačaurama i projektilima
+odgovarajućeg kalibra, koji potiču iz nerasvijetljenih krivičnih djela, nijesu pronađene podudarne
+individualne karakteristike koje nastaju prilikom ispaljenja iz vatrenog oružja.
+
+Sud je prethodno interpretirane izvještaje Forenzičkog centra Uprave policije o trasološkom vještačenju, o
+DNK vještačenju i o balističkom vještačenju, cijenio kao stručne, jasne, pravilne i zasnovane na pravilima
+struke i nauke, pa je iste u cjelosti prihvatio.
+
+U obdukcionom zapisniku KC CG S.br.106/22 od 04.07.2022. godine, koji je sačinjen u formi nalaza i
+mišljenja od strane vještaka sudske medicine dr Č.I.e, navedeno je da je smrt oštećene P.B. bila nasilna i da je
+nastupila usljed oštećenja zaživot važnih moždanih centara i iskrvarenja iz rascjepa pluća, sve dužkanala
+strijelnih rana nanesenih projektilima ispaljenim iz ručnog vatrenog oružja; da je rana kod oštećene u lijevom
+slijepoočnom predjelu, opisana pod tačkom 3 nalaza (koja rana je opisana kao rana u lijevom slijepoočnom
+predjelu, na oko 7 cm ispod ravni svoda tjemena i na oko 15 cm ulijevo od prednje srednje uzdužne linije
+glave, po obliku ovalna, rupičasta rana, prečnika oko 7 mm, neravnih, nagnječenih, krvlju podlivenih ivica i
+
+strana, sa skoro koncentričnim nagnječnim prstenom, koja se kanalom nastavlja ka lobanjskoj duplji) ulazni
+otvor prostrijeline, koja se kanalom nastavlja kroz tkivo poglavine, lijevu slijepoočnu kost, tkivo velikog
+mozga, desnu slijepoočnu kost i završava se izlaznom ranom u desnom predušnom predjelu, opisanom pod
+tačkom 4 nalaza (koja rana je opisana kao rana u desnom predušnom predjelu, na oko 13 cm ispod ravni
+svoda tjemena i na oko 12 cm udesno od prednje srednje uzdužne linije glave, po obliku cjepasta rana,
+promjera oko 0,5x0,2cm, neravnih, krvlju podlivenih i put upolje izvrnutih ivica i strana; da se prostor te rane
+otvara u potkožno meko tkivo, da je koža okoline opisane rane, u promjeru oko 5x5 cm, bila otečena, a koža u
+predjelu upolje od desnog oka, na površini oko 4x2 cm, tačkasto krvlju podlivena) i da je smjer kanala
+opisane rane slijeva u desno, od nazad unaprijed i odozgo naniže; da je rana kod oštećene u zadnjoj trećini
+tjemenog predjela, opisana pod tačkom 5 nalaza (koja rana je opisana kao rana u zadnjoj trećini tjemenog
+predjela, na oko 6 cm ispod ravni svoda tjemena i skoro u nivou zadnje uzdužne linije glave, ovalnog oblika,
+rupičasta rana, prečnika oko 7 mm, neravnih, nagnječenih, krvlju podlivenih ivica i strana, koja se kanalom
+nastavlja ka lobanjskoj duplji) ulazni otvor ustrijeline koja se kanalom nastavlja kroz tkivo poglavine, lijevu
+tjemenu kost, tkivo velikog mozga, lijevu polovinučeone kosti, gdje se na kraju kanala ustanovljava sivkasti
+dio projektila, opisan pod tačkom 6 nalaza i da je smjer kanala ove rane od unazad ka unaprijed. Nadalje, u
+zaključku ovog obdukcionog zapisnika navedeno je i da je rana u desnom dojkinom predjelu, opisana pod
+tačkom 7 nalaza (koja je opisana kao rana u desnom dojkinom predjelu, u gornjoj i unutrašnjojčetvrtini, na
+oko 37 cm ispod ravni svoda tjemena i na oko 5 cm udesno od prednje srednje uzdužne linije tijela, ovalna,
+rupičasta rana, prečnika oko 7 mm, neravnih, nagnječenih, krvlju podlivenih ivica i strana, sa nagnječnim
+prstenom u spoljašnjem poluobimu, koja se kanalom nastavlja ka grudnoj duplji) ulazni otvor prostrijeline
+koja se kanalom nastavlja kroz potkožno meko tkivo, ulazi u grudnu duplju kroz II međurebarni prostor,
+nastavlja se kroz tkivo desnog plućnog krila, lomi VII desno rebro i završava se izlaznom ranom u desno
+lopatičnom predjelu, opisanom pod tačkom 8 nalaza (koja je opisana kao rana u desnom lopatičnom
+predjelu, na oko 36 cm ispod ravni svoda tjemena i na oko 13cm udesno od zadnje srednje uzdužne linije
+tijela, cjepasta rana, promjera oko 1x0,5cm, neravnih, krvlju podlivenih i put upolje izvrnutih ivica i strana,
+koja predstavlja završni dio kanala rane opisane pod tačkom 7) pričemu je smjer kanala ove rane slijeva
+udesno i od naprijed unazad; da je rana kod oštećene u lijevom dojkinom predjelu, opisana pod tačkom 9
+nalaza (koja je opisana kao rana u lijevom dojkinom predjelu, u gornjoj i spoljašnjojčetvrtini, na oko 37 cm
+ispod ravni svoda tjemena i na oko 9cm udesno od prednje srednje uzdužne linije tijela, prečnika oko 7mm,
+neravnih, nagnječenih, krvlju podlivenih ivica i strana, koja se kanalom nastavlja u potkožno meko tkivo)
+ulazni otvor prostrijeline, koja se kanalom nastavlja kroz potkožno meko tkivo i završava se izlaznom ranom u
+lijevom dojkinom predjelu,opisanom pod tačkom 10 nalaza (koja je opisana kao rana u lijevom dojkinom
+predjelu, u gornjoj i unutrašnjojčetvrtini, na oko 37 cm ispod ravni svoda tjemena i na oko 4 cm udesno od
+prednje srednje uzdužne linije tijela, promjera oko 0,7x0,4 cm, neravnih, krvlju podlivenih ivica i strana, koja
+predstavlja završni dio kanala rane opisane pod tačkom 9 nalaza, da se prostor te rane otvara u potkožno
+meko tkivo, uz opis da je koža između rana opisanih pod tačkama 9 i 10 nalaza krvlju podlivena, modrikasta),
+pričemu je smjer kanala ove rane slijeva udesno i moguće je da je projektil koji je nanio ovu povredu nastavio
+svoje kretanje i nanio ranu opisanu prethodno pod tačkom 4 nalaza. U zaključku ovog nalaza i mišljenja
+navedeno je i da su povrede opisane pod tačkom 11. nalaza u vidu krvlju podlivene kože na prednjim
+stranama koljena, ovalno, u promjeru od po oko 5x4 cm, posljedica dejstva tupine mehaničke sile i iste su
+mogle nastati usljed pada i udara o tvrdu podlogu.
+
+Prethodno navedene konstatacije i zaključci iz obdukcionog zapisnika S.br.106/22 od 04.07.2022.godine
+prikazane su u fotodokumentaciji S.br.106/22 od 04.07.2022. godine, koja je sačinjena prilikom obdukcije
+tijela oštećene P.B..
+
+Sud je prethodno interpretirani obdukcioni izvještaj, sačinjen u formi nalaza i mišljenja od strane vještaka
+sudske medicine-obducenta dr Č.I., cijenio kao stručan, jasan, pravilan i zasnovan na pravilima struke i
+nauke.
+
+Medicinska dokumentacija izdata od strane JZU Specijalna bolnica za psihijatriju Kotor matični broj istorije
+bolesti...., koja glasi na ime okrivljenog R.B., je bila predmet vještačenja Komisije sudskih vještaka o stanju
+duš evnog zdravlja okrivljenog R.B. i sadržina iste je elaborirana u okviru nalaza i mišljenja komisije, tako da
+sadržina te medicinske dokumentacije neće biti posebno interpretirana u obrazloženju ove presude.
+
+U nalazu i mišljenju komisije sudskih vještaka o psihijatrijskom vještačenju okrivljenog R.B. br.62/22 od
+26.09.2022.godine, koju komisiju su sačinjavali vještak neuropsihijatar prof. dr M.S., vještak psihijatar dr G.Ž.
+i veštak psiholog R.H., navedeno je da je ta komisija, na osno vu medicinske dokumentacije, neposrednog
+pregleda okrivljenog i svih podataka iz spisa predmeta, analizirala da li je kod okrivljenog u vrijeme izvršenja
+krivičnog djela bila isključena ili smanjena uračunljivost usljed duševne bolesti, privremene duševne
+poremećenosti, zaostalog duševnog razvoja ili druge teže društvene poremećenosti, da je komisija za
+potrebe izrade nalaza i mišljenja izvršila analizu cjelokupne medicinske dokumentacije izdate u period od
+2005.godine do kritičnog dana na ime okrivljenog od strane JZU Specijalna bolnica za psihijatriju Dobrota Kotor i JZU Dom zdravlja o liječenju okrivljenog u tim zdravstvenim ustanovama od zdravstvenih problema
+psihijatrijske prirode i ustanovila da je u toj medicinskoj dokumentaciji navedeno da se okrivljeni u tim
+zdravstvenim ustanovama liječio od oboljenja koje je označeno dijagnozom F31.(psyhocis affectiva bipolaris)
+i da je komisija mišljenja da se, prema toj raspoloživoj medicinskoj dokumentaciji, kod okrivljenog radilo o
+afektivnom poremećaju na psihotičnoj osnovi, koji je klinički bliže označen kao afektivna bipolarna psihoza,
+koja predstavlja trajnu duševnu bolest, koja se karakteriše fluktacijama raspoloženja, odnosno epizodama
+depresije koje se smjenjuju sa epizodama povišenog raspoloženja (euforičnog i hipomaničnog), da je test
+realnosti kod okrivljenog narušen i oslabljen uvid i kritični odnos, a globalni pad efikasnosti uzrokovan
+psihotičnim nivoom funkcionalnosti. Takođe, komisija je za potrebe izrade svog nalaza i mišljenja, obavila
+psihološko testiranje i neposredni psihijatrijski pregled okrivljenog i u svom mišljenju navedela da je
+okrivljeni R.B. osoba ispod prosječnih intelektualnih potencijala, da se kod okrivljenog primarno radi o
+afektivnom poremećaju na psihotičnoj osnovi, koji je klinički bliže označen kao afektivna bipolarna psihoza,
+da se radi o trajnoj duševnoj bolesti koja se karakteriše fluktuacijama raspoloženja, odnosno epizodama
+depresije koje se smenjuju sa epizodama povišenog raspoloženja (euforičnog, hipomaničnog) i da je ta
+duš evna bolest hroničnog, progredijentnog toka; da su pogoršanje osnovne bolesti i epizodične promjene
+raspoloženja kod okrivljenog uslovljene, pored neredovne medikacije i povremenom upotrebom alkohola,
+koji generiše impulsivnost i smanjenu samokontrolu. Navedeno je i da je, po stanovištu komisije, krivično
+djelo kod okrivljenog psihopatološki motivisano afektom razdraženosti jakog intenziteta, koji je generisan
+opsesivnom precijenjenom ljubomorom, a struktura ličnosti okrivljenog se karakteriše površnim odnosom
+prema realnosti, oslabljenog je u uvida i kritičnosti, sa visokim stepenom napetosti i anksioznosti, sa
+nerazriješenim partnerskim relacijama, neadekvatnim objektnim relacijama, nepravilno izgrađenim
+sistemom vrijednosti i nejasnim difuznim socijalnim granicama, š to u krajnjem rezultira emocionlano i
+sociološki nezrelim regresivnim ponašanjem i smanjenom mogućnošću samokontrole okrivljenog, a
+pogotovo u stresnim okolnostima kao što je prekid emotivne veze. U predmetnom mišljenju je navedeno i da
+u konkretnom slučaju komisija ne raspolaže podacima o provokativnom ponašanju oštećene u vrijeme
+izvršenja krivičnog djela, a da u vrijeme izvršenja predmetnog krivičnog djela okrivljeni nije ispoljavao
+manifestne simptome afektivne psihoze (manija ili depresija) i patološke ljubomore, te da se u spisima
+predmeta i tokom pregleda okrivljenog od stranečlanova komisije prezentuje i upotreba alkohola, a ako se ta
+
+okolnost prihvati kao realna, imajući u vidu ponašanje okrivljenog, komisija cijeni da alkohol potencira
+imuplsivno i agresivno vladanje okrivljenog u vrijeme izvršenja predmetnog krivičnog djela. U zaključku
+nalaza i mišljenja ove komisije vještaka je navedeno i da je u vrijeme izvršenja predmetnog krivičnog djela
+sposobnost shvatanja značaja djela i mogućnost upravljanja svojim postupcima kod okrivljenog bila bitno
+smanjena i predloženo je da se prema istom primijeni mjera bezbjednosti obaveznog psihijatrijskog liječenja
+u Specijalnoj bolnici za psihijatriju Dobrota u Kotoru, jer je komisija stanovišta da, ukoliko se okrivljeni ne bi
+liječio, zbog eventualnog pogoršanja osnovne bolesti u budućnosti, postoji visok stepen društvene opasnosti
+i ponavljanja krivičnog djela od strane okrivljenog.
+
+Prilikom saslušanja na glavnom pretresu održanom dana 23.02.2023. godine, predstavnik komisije vještaka
+koja je obavila psihijatrijsko vještačenje okrivljenog-vještak neuropsihijatar prof. dr M.S., izjasnio se da u
+cjelosti ostaje pri nalazu i mišljenju koji je komisija dala u prethodnom postupku istrage pred VDT-om u
+Podgorici i dodao da je osnova nalaza i mišljenja komisije koji se odnosi na uračunljivost okrivljenog
+medicinska dokumentacija koja je citirana u nalazu i mišljenju, a odnosi se na višekratno liječenje okrivljenog
+u Specijalnoj bolnici za psihijatriju Dobrota u Kotoru, u periodu od više godina, počev od 2005.godine, za
+vrijeme kojih liječenja okrivljenog je konstatovano da okrivljeni boluje od trajnog duševnog oboljenja u vidu
+bipolarnog afektivnog poremećaja. Objasnio je da se to duševno oboljenje karakteriše epizodama promjene
+raspoloženja u smislu manije povišenog raspoloženja i epizoda depresije, da u intervalu između tih epizoda
+osoba ne ispoljava manifestne simptome psihoze, kao i da je u konkretnom slučaju kod vještačenja
+urač unljivosti okrivljenog komisija imala u vidu ponašanje okrivljenog u vrijeme izvršenja krivičnog djela i
+nije našla elemente koji bi upućivali na manifestne simptome psihotičnog ponašanja okrivljenog u vrijeme
+izvršenja predmetnog krivičnog djela. Pojasnio je i da podatak da je kod okrivljenog analizom uzorka krvi
+uzetog nakon kritičnog događaja nađena alkoholemija u krvi 0,00 promila, nije ni bio osnov za mišljenje o
+urač unljivosti okrivljenog, većda je to samo podatak koji je naveden u nalazu i mišljenju na temelju iskaza
+okrivljenog. Naveo je i da je komisija prilikom vještačenja uračunljivosti okrivljenog našla da u vrijeme
+izvršenja predmetnog krivičnog djela okrivljeni nije ispoljavao manifestne simptome duševne bolesti, bez
+elemenata psihotičnog ponašanja, š to je komisija ustanovila cijeneći i kazivanje sina oštećene P.B.e-D.M.,
+koji je detaljno opisao ponašanje okrivljenog u vrijeme izvršenja krivičnog djela, tako da izvršenje
+predmetnog krivičnog djela od strane okrivljenog proizilazi iz poremećaja njegove ličnosti, a da samo
+izvršenje krivičnog djela ima niz racionalnih elemenata koji ne upućuju na promjenu svijesti okrivljenog i da
+su iz tog razloga, s obzirom na osnov da okrivljeni boluje od trajnog druševnog oboljenja, da je u prošlosti
+ispoljavao brojne epiozode pogoršanja manije ili depresije, č lanovi komisije smatrali da ima osnova za
+primjenu mjere bezbjednosti obaveznog liječenja prema okrivljenom, jer postoji opasnost, ukoliko se
+okrivljeni ne bi liječio, od ponavljanja krivičnog djela. U odgovorima na pitanja postavljena na glavnom
+pretresu imenovani predstavnik komisije vještaka je naveo i da, ako se može govoriti o nekom riziku koji
+navodi i okrivljeni, da je promijenio svoje ponašanje, koje ga je upućivalo na nevjerstvo bivše supruge sa
+gledanjem njene fotografije na društvenoj internet mreži Facebook, u tom pravcu, susretanje sa oštećenom
+noć prije kritičnog događaja, je imalo uticaja na afektivno stanje okrivljenog, koji je za to većimao osnov, jer
+je zapravo oštećenu kao bivšu suprugu doživljavao kao nevjernu.
+
+Drugi predstavnik te komisije, vještak psihijatar prof. dr G.Ž., u odgovorima na pitanja postavljena na
+glavnom pretresu naveo je da se u konkretnom slučaju jasno može zaključiti da predmetno krivično djelo
+proizilazi iz osnovne bolesti okrivljenog u vidu afektivne psihoze, a koja se karakteriše cikličnim epizodama u
+vidu povremene depresije ili povremene hipomanije i manije, da je u konkretnom slučaju dugogodišnji uticaj
+osnovne duševne bolesti afektivne bipolarne psihoze, kod okrivljenog dovelo do poremećaja više psihičkih
+
+funkcija, a u konkrentom slučaju i neposredni pregled i medicinska dokumentacija i psihološko testiranje
+okrivljenog potvrđuje intelektualni pad po tipu granične inteligencije, a sama bolest upliviše i promjenu
+drugih psihičkih funkcija u smislu orijentacije, a u konkretnom, kod okrivljenog se mišljenje odvija na tzv.
+površnoj osnovi, neadekvatnih je ego granica, odnosno sistema vrijednosti, š to takođe upliviše ponašanje
+okrivljenog da oštećenu doživljava, iako su bili razvedeni, kao sopstveni posjed i da on ima pravo na njen
+život i njeno ponašanje, odnosno da istu na izvjestan način mora kontrolisati, ašto je posljedica osnovne
+duš evne bolesti okrivljenog. Ovo njegovo ponašanje ima refleksiju u psihičkom smislu riječi, tako da kod
+okrivljenog dominira precijenjena ideja ljubomore, koja nema karakteristike patološke ljubomore, jer u
+slučaju da postoji patološka ljubomora, tada bi se moglo raditi o neuračunljivosti okrivljenog, odnosno
+njegovoj nemogućnosti da upravlja svojim postupcima i shvati značaj istih. Dakle, krivično djelo je
+psihopatološki motivisano afektom razdraženosti jakog inteziteta koji je generisan precijenjenom
+opsesivnom ljubomorom, a koje stanje proizilazi iz karakteroloških svojstava okrivljenog i njegove osnovne
+duš evne bolesti, koja u vrijeme izvršenja krivičnog djela nije imala manifestne simptome, kako je to
+navedeno u osnovnom nalazu i mišljenju. Kada se radi o simptomu ljubomore može se reći da je ljubomora
+prisutna i kod zdravih osoba, da je drugi stepen ljubomore precijenjena ljubomora, u kojoj nema
+karakteristika psihotične ljubomore, kao što je bilo u konkretnom slučaju kod okrivljenog, a da je treći stepen
+ljubomore psihotična ljubomora, koja ima psihotičnu simptomatologiju, počev od sumanutih ideja, pa
+nadalje nevjerstva, praćenja, bizarnog ponašanja i sl.
+Sud je nalaz i mišljenje komisije vještaka o stanju duševnog zdravlja okrivljenog, te usmeno izjašnjenje
+predstavnika te komisije vještaka na glavnom pretresu, cijenio kao stručne, jasne, objektivne i zasnovane na
+pravilima struke i nauke, pa je iste u cjelosti prihvatio.
+
+U uvjerenju Ministarstva pravde-izvodu iz kaznene evidencije br....... od 15.07.2022. godine, izdatom na ime
+okrivljenog, navedeno je da u kaznenoj evidenciji za okrivljenog R.B. ne postoje podaci o osuđivanosti.
+
+U dopisu Osnovnog suda u Herceg Novom Kr.br..... od 01.03.2023.godine, navedeno je da je okrivljeni R.B.
+osuđen presudom Osnovnog suda u Herceg Novom K.br..... od 03.06.2013.godine i da okrivljenom nije
+utvrđena rehabilitacija po toj presudi, a u pravosnažnoj presudi Osno vnog suda u Herceg Novom K.br..... od
+03.06.2013.godine, koja je ovom sudu dostavljena uz navedeni dopis, navedeno je da je tom presudom
+okrivljeni R.B. oglašen krivim zbog izvršenja krivičnog djela izazivanje opšte opasnosti izčlana 327 KZCG i
+osuđen na kazna rada u javnom interesu u trajanju od 60 sati, a izrečena mu je i mjera bezbjednosti obavezno
+psihijatrijsko liječenje na slobodi.
+
+Analizirajući provedene dokaze pojedinačno i u njihovoj međusobnoj povezanosti, dovodećih ih u vezu sa
+navodima optužbe, svim provedenim dokazima, sud je na nesumnjiv način utvrdio da je okrivljeni R.B.,
+izvršio krivično djelo teško ubistvo izčlana 144 tačka 1 i 4 KZ CG, u sticaju sa krivičnim djelom nedozvoljeno
+držanje oružja i eksplozivnih materija izčlana 403 stav 1 KZ CG, na način, u vrijeme i na mjestu, kako je to
+bliže opisano u izreci ove presude, pa ga je zbog izvršenja tih krivičnih djela sud oglasio krivim i krivično
+pravno odgovornim iz sljedećih razloga:
+
+Krivično djelo teško ubistvo izčlana 144 tačka 1 i 4 KZ CGčini onaj ko sa umišljajem lišiživota drugo lice, na
+svirep ili podmukao način, iz koristoljublja, radi izvršenja ili prikrivanja drugog krivičnog djela, iz bezobzirne
+
+osvete ili iz drugih niskih pobuda, dok krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija iz
+člana 403 stav 1 KZ CGčini onaj ko neovlašćeno izrađuje, prodaje, nabavlja, vrši razmjenu, nosi ili drži vatreno
+oružje, municiju ili eksplozivne materije.
+
+U ovom postupku je nesumnjivo utvrđeno da je okrivljeni R.B. dana 27.06.2022.godine, oko 05:40časova u
+Herceg Novom, u ulici.......... br.4, u stanu broj 7, koji se nalazi na drugom spratu zgrade, na podmukao način i
+iz drugih niskih pobuda, sa umišljajem, ustanju bitno smanjene uračunljivosti, lišioživota oštećenu P.B., na
+nač inšto je u ranim jutarnjimčasovima, misleći da oštećena spava, a kako bi je iznenadio i bezobzirne
+sebičnosti i osjećaja posjedovanja, jer je smatrao da mu ista kao bivša supruga i dalje pripada i da ne može
+biti sa drugim muškarcem, zbogčega je neopaženo i lukavo došao sa oružjem-puškom marke Crvena
+zastava, model 56, kalibar 22L.R (5,6mm) fabrički broj.....(broj na zatvaraču puške..... koje vatreno oružje je
+neovlašćeno držao, bez odobrenja nadležnog državnog organa, suprotno odredbamačlana 5 stav 2 ičlana 12
+Zakona o oružju (Službeni list CG br. 10/15), ušao u unutrašnjost stana kroz otključana vrata, a zatim u
+spavaću sobu i u oštećenu, koju je zatekao u spavaćoj sobi, pored kreveta, sa udaljenosti 150 cm, iz navedene
+puš ke ispalio dva projektila u grudni košoštećene, nanoseći joj tom prilikom prostrijelne rane u desnom i
+lijevom dojkinom predjelu i ispalio dva projektila u glavu oštećene, nanoseći joj tom prilikom jednu
+prostrijelnu ranu u lijevom slijepoočnom predjelu i jednu ustrijelnu ranu u zadnjoj trećini tjemenog predjela,
+koje povrede su kod oštećene prouzrokovale smrt usljed oštećenja zaživot važnih moždanih centara i
+iskrvavljenja iz rascjepa pluća, sve dužkanala strijelnih rana nanesenih projektilima ispaljenim iz vatrenog
+oružja.
+
+Prethodno navedenečinjenice sud je na nesumnjiv način utvrdio iz sadržine iskaza oštećenog D.M. i svjedoka
+N.S., sadržine uviđajne dokumentacije i to: zapisnika o uviđaju VDT-a u Podgorici Ktr.br. 412/22 od
+27.06.2022. godine, zapisnika o uviđaju Uprave policije, CG CB Herceg Novi 18/3-1 br. 215/22-3364/4 od
+27.06.2022.godine, zapisnika o uviđaju Uprave policije CG CB Herceg Novi 18/3-1 br. 215/22-3364/4 od
+27.06.2022.godine, 2 izvještaja Uprave policije CG CB Herceg Novi o uzorkovanju tragova sa lica mjesta br.
+knjige uviđaja Ku.199/22 od 27.06.2022.godine, Izvještaj Uprave policije CG CB Herceg Novi o uzorkovanju
+tragova sa lica mjesta, broj knjige uvidjaja Ku:200/22 od 27.06.2022. godine, službene zabilješke Uprave
+policije CG CB Herceg Novi 18/3-1 br. 215/22-3526 od 27.06.2022.godine, fotodokumentacije Uprave policije
+CG CB Herceg Novi br. 199/22, 201/22, 202/22, i 206/22, situacionog plana – skice lica mjesta, sadržine pisama
+koje je okrivljeni poslao licima V.I. i R.B., kao i sadržine Izvještaja Forenzičkog centra Uprave policije CG o
+vješ tačenjima i to: o vješ tačenju prisustva GSRčestica br.1671/22 od 08.07.2022. godine; o vještačenju
+prisusutva barutnihčestica br. 1672/22 od 11.07.2022. godine, o vještačenju daljine pucanja br.1673/22 od
+11.07.2022. godine, o trasološkom vještačenju br. 1674/22 od 18.07.2022. godine, o DNK vještačenju
+br.1669/22 od 05.08.2022. godine, o balističkom vještačenju br. 1670/22 od 08.08.2022. godine, kao i na
+osnovu obdukcionog zapisnika KC CG S.br.106/22 od 04.07.2022. godine, koji je sačinjen u formi nalaza i
+mišljenja od strane vještaka sudske medicine dr Č.I..
+
+Naime, prethodno navedenočinjenično stanje, u pogledu načina dešavanja kritičnog događaja, ovaj sud je
+utvrdio iz iskaza svjedoka D.M., koji iskaz je cijenio kao istinit i jasan, potkrijepljen ostalim provedenim
+dokazima, a koji je u tom svom iskazu datom prethodnom postupku i na glavnom pretresu, pojasnio da je
+pokojna oštećena P.B. njegova majka, sa kojom je onživio u porodičnom stanu, koji se nalazi u Herceg
+Novom, na adresi....., na drugom spratu, u kojem stanu ježivio i okrivljeni R.B. u periodu od oko osam
+godina dok je bio u braku sa oštećenom, koji brak i zajednicaživota između okrivljenog i oštećene je prestala
+
+nešto oko jedne godine prije kritičnog događaja i naveo da ga je kritičnog dana, odnosno dana 27.06.2022.
+godine, oko 05:40časova, iz sna trgao i probudio jaki zvuk otvaranja i udara ulaznih vrata stana od zid, riječi
+oštećene: „Nemoj B.!“ i jedan pucanj iz vatrenog oružja i da je odmah zatim on ustao iz kreveta, da vidi o
+čemu se radi, otišao u pavaću sobu oštećene, gdje je vidio svoju majku-oštećenu P.B. kako leži u krvi, na
+podu, pored kreveta, a da kod balkonskih vrata te sobe stoji okrivljeni R.B. sa puškom u ruci, koja puška je
+imala jednu cijev i drvene obloge. Istakao je i da je u momentu kada je ušao u spavaću sobu oštećene i vidio
+šta se desilo, on osjetio ljutnju i okrivljenog R.B.gađao okrivljenog neki peškirom, a da mu je okrivljeni, koji je
+u tom momentu stavljao metak u pušku, tada rekao: „I tebeću ubit pičko jedna!", i nakonšto mu je uputio te
+prijeteće riječi, rekao mu i: „Neće ona meni da se kurva!", a zatim je okrivljeni podigao pušku u njegovom
+pravcu, i krenuo sa puškom prema njemu, našta je on reagovao takošto je on pobjegao u svoju spavaću
+sobu, a okrivljeni krenuo za njim i uspio da kroz prostor između skoro zatvorenih vrata i okvira istih, kako se
+izjasnio „prodre cijev puške“, ali nije uspio da uđe u tu sobu i u toj situaciji on je okrivljenog on molio da ode i
+okrilvjeni je tada izvukao pušku, š to je on iskoristio da zaključa vrata od te sobe i prozor od iste, da okrivljeni
+ne bi ušao u tu njegovu sobu preko kuhinje, a zatim ječuo jošjedan pucanj iz vatrenog oružja, ičuo je kako
+okrivljeni trčeći odlazi iz stana i potom izašao iz svoje spavaće sobe i zaključao ulazna vrata stana i prozore od
+kuhinje da se okrivljeni ne bi vratio u taj stan.
+
+Takođe, č injenično stanje u odnosu na način dešavanja kritičnog događaja sud je utvrdio i na osnovu iskaza
+svjedoka N.S., koji iskaz je cijenio kao istinit i jasan, međusobno saglasan sa iskazom svjedoka oštećenog
+D.M., potkrijepljen ostalim provedenim dokazima, a koji svjedok je u svom iskazu datom u prethodnom
+postupku i na glavnom pretresu naveo da je kritičnog dana, dakle 27.06.2022. godine, oko 05:40časova, iz
+svog stana, koji se nalazi u istoj zgradi kao i stan oštećenih, i to na I spratu, dok se stan oštećenih nalazi na II
+spatu, č uo neku galamu i udar metala od metal, kako mu je to u tom momentu zvučalo, a zatim ječuo i vrisku
+i zvuk pucnja i potom izašao na terasu ispred stana i vidio okrivljenog R.B., kojeg dobro poznaje, kako
+pretrčava ulicu sa puškom u ruci, za koju pušku on misli da se radilo o karabinu, jer je u pitanju bila puška sa
+jednom cijevi i drvenim kundakom, da je potom vidio da je okrivljeni tu pušku ubacio u jedno tamno plavo
+vozilo i sjeo u to vozilo i istim otišao prema Kotoru. Naveo je i da je nakon toga otišao na II sprat, na kojem se
+nalazi stan oštećene, gdje je vidio jednu komšinicu iz susjednog stana, a u tome je D.M.otvorio vrata od
+njihovog stana, nakončega je on ušao u isti i u spavaćoj sobi tog stana vidio oštećenu P.B., u klečećem
+položaju, glavom oslonjenom na krevet, pričemu joj je iz glave i tijela tekla krv. Takođe, objasnio je i da su
+kritičnom prilikom vrata njegovog stana sa južne strane bila zatvorena, tako da su zvuci koje ječuo iz stana
+oštećene zbog toga bili prigušeni i nerazgovijetni i da je, po njegovoj procjeni ta galama i gungula koja je
+dolazila iz stana oštećene trajala ne više od jednog minuta i dodao da se sjeća da je u momentu kada je
+okrivljenog R.B.vidio na prostoru ispred zgrade, sa puškom u ruci, č uo da je okrivljeni, prije ulaska u vozilo,
+izgovorio riječi: „Jebem ti kurvo majku!" ili "majku kurvu", ili nešto u tom smislu i da je njegov utisak kada je
+vidio okrivljenog kako izlazi iz zgrade i ide ka svom vozilu, noseći pušku u ruci i kada je istogčuo da izgovara
+te riječi bio takav da je okrivljeni bio vidno zadovoljan tim „poslom“ koji je obavio, š to je on sve mogao jasno
+da vidi ičuje, jer se u tom momentu nalazio na mjestu na terasi svog stana, koje je od mjesta na kojem je
+vozilo okrivljenog bilo parkirano, udaljeno okošest metara vazdušne linije, pričemu između ta dva mjesta
+nije postojala bilo kakva fizička prepreka (npr. drvo ili stub rasvjete), koja bi mu onemogućavala da
+nesmetano vidi ičuje tošto je opazio kritičnog jutra. Pojasnio je i da je, po njegovoj procjeni, od momenta
+kada ječuo taj prvi zvuk udara metala do momenta kada je izašao na terasu svog stana i vidio okrivljenog da
+pretrčava ulicu, ubacuje pušku u svoje vozilo i zatim sjeda u vozilo, prošlo oko jedan ipo minut, kao i da je
+odmah nakonšto ječuo taj zvuk on prvo otišao do prozora svog stana, gdje je jedno vrijeme gledao kroz
+prozor na prostor ispred zgrade i zatim otišao na balkon i vidio ovošto je prethodno naveo u svom iskazu.
+
+Nadalje, č injenicu da je kritičnom prilikom okrivljeni oštećenu P.B. usmrtio projektilima ispaljenim iz puške
+marke Crvena Zastava, model 56, kalibar.22 L.R. (5,6 mm), fabrički broj... (broj na zatvaraču puške je...), sud
+je nesumnjivo utvrdio na osnovu podataka iz uviđajne dokumentacije, zapisnika o uviđaju Uprave policije, CG
+CB Herceg Novi 18/3-1 br. 215/22-3364/4 od 27.06.2022.godine, zapisnika o uviđaju Uprave policije CG CB
+Herceg Novi 18/3-1 br. 215/22-3364/4 od 27.06.2022.godine, dva izvještaja Uprave policije CG CB Herceg Novi
+o uzorkovanju tragova sa lica mjesta br. knjige uviđaja Ku.br.199/22 od 27.06.2022.godine i Ku.br.200/22 od
+27.06.2022. godine, službene zabilješke Uprave policije CG CB Herceg Novi 18/3-1 br. 215/22-3365 od
+27.06.2022.godine, fotodokumentacije Uprave policije CG CB Herceg Novi br. 199/22, 201/22, 202/22, i 206/22,
+situacionog plana – skice lica mjesta, te sadržine izvještaja Forenzičkog centra Uprave policije CG o
+balističkom vještačenju br. 1670/22 od 08.08.2022. godine, izvještaja Forenzičkog centra Uprave policije CG o
+vješ tačenju prisustva GSRčestica br.1671/22 od 08.07.2022. godine, izvještaja Forenzičkog centra Uprave
+policije CG o DNK vještačenju br.1669/22 od 05.08.2022. godine, izvještaja Forenzičkog centra Uprave policije
+CG o vještačenju daljine pucanja br.1673/22 od 11.07.2022. godine, izvještaja Forenzičkog centra Uprave
+policije CG o trasološkom vještačenju br. 1674/22 od 18.07.2022. godine i obdukcionog zapisnika Kliničkog
+centra CG-Odjeljenja za sudsku medicinu S.br.106/22 od 04.07.2022. godine.
+
+Naime, iz sadržine prethodno navedene uviđajne dokumentacije, nesumnjivo se utvrđuje, da su prilikom
+vršenja uviđaja na licu mjesta u stanu oštećene, od strane policijskih službenika CB Herceg Novi, pronađene 2
+čaure od ispaljenih metaka, koje su izuzete sa lica mjesta radi vještačenja i da je jednačaura pronađena u
+predmetnoj pušci na mjestu pronalska iste, dakle u podrumskoj prostoriji-ostavi kuće okrivljenog, a za koje
+čaure je na osnovu izvještaja Forenzičkog centra Uprave policije CG o balističkom vještačenju br.1670/22 od
+08.08.2022. godine, utvrđeno da su ispaljene iz puš ke marke Crvena Zastava, model 56, kalibar.22 L.R. (5,6
+mm), fabrički broj....(broj na zatvaraču puške je....), koju pušku je u kritičnom događaju koristio okrivljeni, a
+koja puš ka je kritičnog dana, nakon predmetnog događaja i nakonšto se okrivljeni predao službenicima
+Uprave policije CG CB Herceg Novi, od strane policijskih službenika tog centra pronađena u ostavi-podrumu
+od kuće okrivljenog koja se nalazi u Herceg Novom, u......, kako to proizilazi iz zapisnika o uviđaju Uprave
+policije CG CB Herceg Novi 18/3-1 br. 215/22-3364/4 od 27.06.2022.godine i foto-dokumentacije Uprave
+policije CG CB Herceg Novi broj 200/22 od 27.06.2022.godine, dok je jedan projektil izvađen prilikom
+obdukcije iz tijela oštećene P.B., za koji je takođe izvještajem Forenzičkog centra Uprave policije CG o
+balističkom vještačenju br.1670/22 od 08.08.2022. godine utvrđeno da je projektil kalibra.22 L.R. (5,6 mm) i
+da je ispaljen iz predmetne puške.
+
+Da je okrivljeni R.B., ispalilo projektile iz predmetne puške u oštećenu, koji projektili su joj nanijeli
+smrtonosne povrede, sud je nesumnjivo utvrdio i na osnovu sadržine izvještaja Forenzičkog centra Uprave
+policije CG o vješ tačenju prisustva GSRčestica br.1671/22 od 08.07.2022. godine, iz kojeg nesumnjivo
+proizilazi, da je na takozvanim SEM stubićima, skinutim nakon kritičnog događaja od strane ovlašćenog
+policijskog službenika CB Herceg Novi, sašaka okrivljenog R.B., utvrđeno prisustvo karakterističnih GSR
+čestica, i to da je na desnojšaci okrivljenog pronađen mali broj karakterističnih GSRčestica hemijskog
+sastava Pb Sb Ba, a da na lijevojšaci nijesu pronađene karakteristične GSRčestice, dok je iz sadržine izvještaja
+Forenzičkog centra Uprave policije CG o vješ tačenju prisusutva barutnihčestica br.1672/22 od 11.07.2022.
+godine, nesumnjivo utvrđeno da je na garderobi okrivljenog R.B., i to na majici kratkih rukava marke LEGEA,
+koja je nakon kritičnog događaja od strane policijskih sužbenika izuzeta od okrivljenog i koja je bila predmet
+tog vještačenja, pronađeno prisustvo barutnihčestica, što sve upućuje na nesumnjiv zaključak da je
+okrivljeni R.B. bio povezan sa opaljenjem projektila iz vatrenog oružja.
+
+Takođe, prednje navedeno potvrđeno je i iz sadržine izvještaja Forenzičkog centra Uprave policije CG o DNK
+vješ tačenju br.1669/22 od 05.08.2022. godine, u kojem je navedeno da je na uzorku izuzetom sa obarača
+predmetne puške, koja je označena kao trag br. 1- puška kalibra 22, marke M-56, serijskog broja K9460,
+utvrđeno prisustvo biološkog materijala od minimum jedne osobe, pričemu rezultat DNK analize daje
+ekstremno jaku podršku hipotezi da je okrivljeni R.B. donor tog biološkog materijala.
+
+Nadalje, da je smrt oštećene B.P. nasilna i da je nastupila kao posljedica rana nanešenih projektilima iz
+ručnog vatrenog oružja, sud je nesumnjivo utvrdio iz sadržine obdukcionog zapisnika Kliničkog centra CGOdjeljenja za sudsku medicinu S.br.106/22 od 04.07.2022. godine, koji je sačinjen u formi nalaza i mišljenja od
+strane vještaka sudske medicine dr Č.I., i fotodokumentacije koja je sačinjena prilikom obdukcije tijela
+oštećene P.B., iz kojih se nesumnjivo utvrđuje, da je smrt oštećene P.B. nasilna (ubilačkog porijekla) i da je
+nastupila usljed oštećenja zaživot važnih moždanih centara i iskrvarenja iz rascjepa pluća, sve dužkanala
+strijelnih rana nanensenih projektilima ispaljenim iz ručnog vatrenog oružja, a da je oštećena u ovom
+događaju zadobila sljedeće povrede: prostrijelne rane u desnom i lijevom dojkinom predjelu, i to rane u
+desnom dojkinom predjelu (u desnom dojkinom predjelu, u gornjoj i unutrašnjojčetvrtini, na oko 37 cm
+ispod ravni svoda tjemena i na oko 5 cm udesno od prednje uzdužne linije tijela gdje se nalazi ovalna
+rupičasta rana, prečnika oko 7 mm, neravnih, nagnječenih, krvlju podlivenih ivica i strana, sa nagnječnim
+prstenom u spoljašnjem poluobimu, koja rana se kanalom nastavlja ka grudnoj duplji i ulazni je otvor
+prostrijeline, koja se kanalom nastavlja kroz potkožno meko tkivo, ulazi u grudnu duplju kroz II međurebarni
+prostor, nastavlja se kroz tkivo desnog plućnog krila, lomi VII desno rebro i završava se izlaznom ranom u
+desnom lopatičnom predjelu, ( koja rana je na oko 36cm ispod ravni svoda tjemena i na oko 13 cm udesno od
+zadnje srednje uzdužne linije tijela, nalazi se cjepasta rana, promjera ok 1x0,5cm, neravnih, krvlju podlivenih i
+put upolje izvrnutih ivica i strana, koja predstavlja završni dio kanala rane), dok je smjer kanala te rane slijeva
+udesno i od naprijed unazad; rana u lijevom dojkinom predjelu (u lijevom dojkinom predjelu u gornjoj i
+spoljašnjojčetvrtini, na oko 37 cm ispod ravni svoda tjemena i na oko 9cm udesno od prednje strane uzudžne
+linije tijela, nalazi se rana prečnika oko 7mm, neravnih, nagnječenih krvlju podlivenih ivica i strana, koja se
+kanalom nastavlja u potkožno meko tkivo), koja je ulazni otvor prostrijeline, koja se kanalom nastavlja kroz
+potkožno meko tkivo i završava se izlaznom ranom u lijevom dojkinom predjelu (u lijevom dojkinom predjelu
+u gornjoj i unutrašnjojčetvrtini na oko 37cm ispod ravni svoda tjemena i na oko 4cm udesno od prednje
+strane uzdužne linije tijela, gdje se nalazi rana promjera oko 0,7x0,4cm, neravnih, krvlju podlivenih ivica i
+strana, koja predstavlja završni dio kanala rane), dok je smjer kanala te rane slijeva udesno; zatim ranu u
+lijevom slijepoočnom predjelu (u lijevom slijepoočnom predjelu na oko 7cm ispod ravni svoda tjemena i na
+oko 15cm ulijevo od prednje strane uzdužne linije glave, nalazi se ovalna rupičasta rana prečnika oko 7mm,
+neravnih, nagnječenih, krvlju podlivenih ivica i strana, sa skoro koncentričnim nagnječnim prstenom, koja se
+kanalom nastavlja ka lobanjskoj duplji), koja rana je ulazni otvor prostrijeline koja se kanalom nastavlja kroz
+tkivo poglavine, lijevu slijepoočnu kost, tkivo velikog mozga, desnu slijepoočnu kost i završava se izlaznom
+ranom u desnom predušnom predjelu (u desno m predušnom predjelu na oko 13cm ispod ravni svoda
+tjemena i na oko 12cm udesno od prednje srednje uzdužne linije glave, nalazi se cjepasta rana promjera oko
+0,5x0,2cm, neravnih krvlju podlivenih i put upolje izvmutih ivica i strana, koja predstavlja završni dio kanala
+rane), dok je smjer kanala te rane slijeva udesno, od nazad unaprijed i odozgo naniže i ranu u zadnjoj trećini
+tjemenog predjela (na oko 6cm ispod ravni svoda tjemena i skoro u nivou zadnje uzdužne linije glave, nalazi
+se ovalna rupičasta rana prečnika oko 7mm, neravnih, nagnječenih, krvlju podlivenih ivica i strana, koja se
+kanalom nastavlja ka lobanjskoj duplji), koja je ulazni otvor ustrijeline koja se kanalom nastavlja kroz tkivo
+poglavine, lijevu tjemenu kost, tkivo velikog mozga, lijevu polovinučeone kosti, a smjer kanala te rane je od
+nazad unaprijed i ista se završava na mjestu u unutrašnosti glave oštećene, na kojem je prilikom vršenja
+obdukcije vještak sudske medicine pronašao projektil.
+
+Činjenice utvrđene iz sadržine obdukcionog izvještaja, i foto-dokumentacije Uprave policije S.br.106/22 od
+04.07.2022. godine, koja je sačinjena prilikom obdukcije tijela oštećene P.B., saglasne su i sa rezultatima
+izvještaja Forenzičkog centra Uprave policije CG o trasološkom vještačenju br. 1674/22 od 18.07.2022. godine,
+iz kojeg trasološkog vještačenja se nesumnjivo utvrđuje da su na garedrobi koju je oštećena kritičnom
+prilikom imala na sebi-prednjoj strani spavaćice-haljine oštećene P.B., uoč ena četiri mehanička oštećenja
+kao i tragovi osušene tečnosti tamno braon boje nalik na krv, a da se na zadnjoj strani haljine uočavaju dva
+mehanička oštećenja i kao i tragovi osušene tečnosti tamno braon boje nalik na krv, koja mehanička
+oštećenja, imaju karakteristike oštećenja nastalih dejstom projektila ispaljenog iz vatrenog oružja, kao i
+izvještajem Forenzičkog centra Uprave policije CG o vještačenju daljine pucanja br.1673/22 od 11.07.2022.
+godine, u kojem je navedeno da je makroskopskim pregledom dostavljene spavaćice-haljine, teget boje, sa
+bijelim tačkicama, marke LCW CASUAL, veličine 2XL, koja je bila vlasništvo oštećene P.B., sa prednje strane
+tog odjevnog predmeta konstatovano postojanječetiri oštećenja, veličina: 0,8cm, 5cm, 0,5cm i 0,6cm; da se
+oko tih oštećenja primjećuju tragovi osušene tečnosti tamno braon boje nalik na krv; da su sa zadnje strane
+te spavaćice-haljine, konstatovana dva oštećenja veličine 0,3cm i 0,4cm i da se oko navedenih oštećenja
+primjećuju se tragovi osušene tečnosti, tamno braon boje, nalik na krv, te da je nakon izvršenih ispitivanja, u
+okolini gore pomenutih oštećenja na prednjoj strani spavaćice-haljine, koja je bila vlasništvo oštećene P.B.,
+pronađeno prisustvo barutnihčestica, dok u okolini oštećenja na zadnjoj strani predmetne spavaćice-haljine,
+nije pronađeno prisustvo barutnihčestica i da su prethodno opisana oštećenja na prednjoj strani spavaćicehaljine, koja je bila vlasništvo oštećene P.B., nastala od projektila iz vatrenog oružja, ispaljenih sa rastojanja
+usta cijevi od 150cm do tih oštećenja.
+
+Dakle, imajući u vidu prethodno navedene dokaze, sud je na nesumnjiv način utvrdio da je kritičnom
+prilikom okrivljeni R.B. u oštećenu P.B. ispalio ukupnočetiri projektila iz predmetne puške, i to dva projektila
+u grudni košoštećene, nanoseći joj tom prilikom prostrijelnu ranu u desnom dojkinom predjelu, koja se
+završava izlaznom ranom u prdjelu desne lopatice i prostrijelnu ranu u lijevom dojkinom predjelu dva
+projektila u glavu oštećene, nanoseći joj tom prilikom jednu prostrijelnu ranu u lijevom slijepoočnom
+predjelu i jednu ustrijelnu ranu u zadnjoj trećini tjemenog predjela glave. U tom pravcu, po ocjeni ovog suda,
+očigledno je da je navod u stavu 5. zaključka obdukcionog zapisnika vještaka sudske medicine, da je moguće
+da je projektil koji je načinio ranu kod oštećene u lijevom dojkinom predjelu, opisanu pod tačkom 9 tog
+nalaza (koja je opisana kao rana u lijevom dojkinom predjelu, u gornjoj i spoljašnjojčetvrtini, na oko 37 cm
+ispod ravni svoda tjemena i na oko 9cm udesno od prednje srednje uzdužne linije tijela, prečnika oko 7mm,
+neravnih, nagnječenih, krvlju podlivenih ivica i strana, koja se kanalom nastavlja u potkožno meko tkivo) i
+ulazni otvor prostrijeline, koja se kanalom nastavlja kroz potkožno meko tkivo i završava se izlaznom ranom u
+lijevom dojkinom predjelu,opisanom pod tačkom 10 nalaza (koja je opisana kao rana u lijevom dojkinom
+predjelu, u gornjoj i unutrašnjojčetvrtini, na oko 37 cm ispod ravni svoda tjemena i na oko 4 cm udesno od
+prednje srednje uzdužne linije tijela, promjera oko 0,7x0,4 cm, neravnih, krvlju podlivenih ivica i strana, koja
+predstavlja završni dio kanala rane opisane pod tačkom 9 nalaza, da se prostor te rane otvara u potkožno
+meko tkivo, uz opis da je koža između rana opisanih pod tačkama 9 i 10 nalaza krvlju podlivena, modrikasta),
+pričemu je smjer kanala ove rane slijeva udesno, nakon nanošenja te povrede u vidu prostrijelne rane
+nastavio svoje kretanje i nanio ranu opisanu prethodno pod tačkom 4 nalaza (pod kojom tačkom je u nalazu
+obdukcionog zapisnika opisana izlazna rana kod oštećene locirane u desnom predušnom predjelu, dakle u
+predjelu glave, za koju je u tom nalazu navedeno da predstavlja završni dio ulazne razne u slijepoočnom
+predjelu glave oštećene) posljedica očigledne omaške vještaka sudske medicine prilikom sačinjvanja ovog
+obdukcionog zapisnika.
+
+Nadalje, u toku postupka je nesumnjivo utvrđeno i da je okrivljeni prilikom lišenjaživota oštećene P.B.
+postupao na podmukao način.
+
+Naime, ubistvom na podmukao način smatra se ono lišavanježivota koje je izvršeno na prikriven i potajan
+nač in, pričemu je učinilac ispoljio posebnu lukavost i prepredenost, pa je podmuklost objektivnosubjektivna kategorija, pričemu se objektivna strana izražava u načinu djelovanja, a subjektivna u naročito
+ispoljenoj prepredenosti učinioca.
+
+U konkretnom slučaju, po ocjeni ovog suda, objektivna komponenta krivičnog djela teško ubistvo izčlana
+144 KZ CG, u vidu podmuklosti, koja je propisana u tačci 1 navedenogčlana, ogleda se u tomešto je
+okrivljeni, znajućiživotne navike oštećene iz perioda kada je sa oštećenom bio u braku i sa njomživio u tom
+stanu lociranom u ulici... broj..., na drugom spratu, kritičnom prilikom, u ranim jutarnjimčasovima, oko
+05:40časova, dakle u doba dana kada nijedna osoba ne očekuje da u svom domu na bilo koji način može biti
+ugrožena, došao u taj stan, misleći da oštećena tada jošuvijek spava, a kako bi je u toj situaciji u kojoj
+oštećena ne očekuje napad, niti ima mogućnosti da pruži otpor, lišiživota, š to je okrivljeni u kasnijem toku
+događaja i učinio, iako oštećenu nije zatekao na spavanju, i to na načinšto je iz puške ispalio po dva
+projektila u tijelo i glavu oštećene, u momentu dok je ista bila u svojoj spavaćoj sobi i jošuvijek u spavaćici. Iz
+ovakvog postupanja okrivljenog, po ocjeni suda proizilazi i subjektivna komponenta elementa podmuklosti,
+koja se ogleda u tomešto je okrivljeni postupajući na prethodno opisani način, u namjeri da oštećenu liši
+života, u stan oštećene došao u ranim jutarnjimčasovima, i to oko 05:40časova, iz razlogašto je, iz perioda u
+kojem je bio u braku sa oštećenom i sa njom i oštećenim-svjedokom D.M. ž ivio u predmetnom stanu,
+okrivljeni znaoživotne navike oštećene, odnosno znao vrijeme kada se oštećena uobičajeno budila nakon
+noć nog spavanja, misleći daće oštećenu zateći na spavanju i istu lišitiživota dok spava.
+
+Pored navedenog, ovaj sud je na osnovu provedenih dokaza utvrdio i da je okrivljeni R.B. kritičnom prilikom
+oštećenu P.B. lišioživota iz niskih pobuda, odnosno iz bezobzirne sebičnosti i osjećaja posjedovanja, jer je
+smatrao da mu oštećena, kao bivša supruga, i dalje pripada i da ne može da bude sa drugim muškarcem.
+Naime, na osnovu sadržine pisama koje je prije izvršenja predmetnog krivičnog djela okrivljeni napisao i
+naslovio, i to jedno na svog rođenog brata R.B., a drugo na svoju djevojku V.I., utvrđeno je da je motiv
+okrivljenog da oštećenu lišiživota tošto okrivljeni nije mogao da podnese njegovo navodno saznanje da je
+oštećena, nakon razvoda braka sa njim, zasnovala emotivnu vezu sa drugim muškarcem. U prilog ovakvom
+zaključku u vezi sa motivom okrivljenog da oštećenu lišiživota ide ičinjenica koju je sud utvrdio na osnovu
+iskaza svjedoka D.M., u dijelu u kojem je isti naveo da je kritičnom prilikom, kada je ušao u spavaću sobu
+oštećene, u koju je okrivljeni većbio ispalio neke od projektila iz svoje puške u oštećenu i stavljao novi metak
+u tu pušku, oštećenom D., pored ostalog rekao i: „Neće ona meni da se kurva“, misleći pri tom na oštećenu, a
+koja izjava okrivljenog jasno ukazuje na to da je on oštećenu lišioživota kako bi je na taj način onemogućio
+da, nakon razvoda braka sa njim, bude u vezi sa nekim drugim muškarcem. Ovakva pobuda okrivljenog, koji
+je smatarao da mu oštećena, iako je bila njegova bivša supruga i dalje pripada i da ne može biti sa drugim
+muš karcem, po ocjeni ovog suda, prelazi granice moralno negativne pobude, jer se u ovom slučaju ne radi o
+mrž nji, niti o nekom drugom faktoru koji, bi se mogao podvesti pod moralno negativnu pobudu, većse radi o
+pobudi na osnovu koje okrivljeni, kao bivši supružnik, isključivo iz bezobzirne sebičnosti i osjećaja
+posjedovanja, smatrajući da mu oštećena kao bivša supruga i dalje pripada i da zbog toga ne može biti sa
+
+drugim muškarcem, donosi i realizuje svoju odluku da oštećenu lišiživota na način bliže opisan u izreci
+presude. Ubistvo iz ovakve niske pobude je, po ocjeni ovog suda, neprihvatljivo i suprotno moralnim
+nač elima društvene sredine u Crnoj Gori i suprotna je ličnim slobodama i pravima svakogčovjeka da
+samostalno odlučuje o svojoj sudbini i tome da liće i sa kim zasnovati emotivnu vezu, tako da ovakva pobuda
+okrivljenog prilikom lišenjaživota oštećene predstavlja nisku pobudu kao kvalifikatornu okolnost krivičnog
+djela teško ubistvo, koju kvalifikatornu okolnost propisuje odredbačlana 144 tačka 4 KZ CG. Takođe, u pravcu
+zaključka da je kritičnom prilikom okrivljeni R.B. lišenježivota oštećene P.B. izvršio iz prethodno navedenih i
+opisanih niskih pobuda je i zaključak komisije sudskih vještaka koja je izradila nalaz i mišljenje o stanju
+duš evnog zdravlja okrivljenog R.B. u vrijeme izvršenja predmetnog krivičnog djela da je, po stanovištu
+komisije, krivično djelo kod okrivljenog psihopatološki motivisano afektom razdraženosti jakog intenziteta,
+koji je generisan opsesivnom precijenjenom ljubomorom, š to su vještaci koji su biličlanovi te komisije
+detaljno objasnili obrazložili u svom nalazu i mišljenju i izjašnjenju na glavnom pretresu.
+
+Činjenice vezane za stanje duševnog zdravlja okrivljenog, sud je utvrdio na osnovu medicinske
+dokumentacije okrivljenog R.B., izdate od strane JZU Specijalna bolnica za psihijatriju Kotor, nalaza i
+mišljenja komisije sudskih vještaka i njihovim izjašnjenjem na glavnom pretresu. Nalazom i mišljenjem te
+komisije vještaka i izjašnjenjem predstavnika na glavnom pretresu, utvrđeno je da je predmetna krivična
+djela okrivljeni počinio u stanju bitno smanjene uračunljivosti, usljed duševnog oboljenja u vidu bipolarnog
+poremaćaja (F.31), kao i da je predmetno krivično djelo teško ubistvo bilo motivisano afektom razdraženosti
+jakog intenziteta, koji je generisan opsesivnom precijenjenom ljubomorom, a koje stanje proizilazi iz
+karakteroloških svojstava okrivljenog i njegove osnovne duševne bolesti, koja u vrijeme izvršenja krivičnog
+djela nije imala manifestne simptome. Bitno je naglasiti da je ovim dokazima utvrđeno da je i pored bitno
+smanjene uračunljivosti okrivljeni bio svjestan svog djela i posljedica istog, na osnovučega je sud je izveo
+logičan zaključak da uračunljivost okrivljenog, u vrijeme izvršenja krivičnog djela, nije bila isključena, većje
+okrivljeni predmetno djelo izvršio u uračunljivom stanju, ali je njegova uračunljivost usljed duševnog
+oboljenja koje je konstatovano nalazom i mišljenjem komisije vještaka o stanju duševnog zdravlja
+okrivljenog, a očemu je bilo riječi u prethodnom diijelu obrazloženja ove presude, bila smanjena u bitnom
+stepenu, tako da je okrivljeni u vrijeme izvršenja predmetnog krivičnog djela bio svjestan svoga djela i htio
+njegovo izvršenje postupajući u konkretnom slučaju sa direktnim umišljajem, pričemu je predmetno krivično
+djelo izvršio u stanju bitno smanjene uračunljivosti. Ovo iz razlogašto bitno smanjena uračunljivost
+podrazumijeva da kod učinioca postoji sposobnost shvatanja značaja svojih dela i sposobnost upravljanja
+svojim postupcima, koje su u trenutku izvršenja krivičnog dela bitno smanjene, ali ipak ne u potpunosti
+isključene, š to znači da su takvom učiniocu intelektualna svojstva (iako kompromitovana) očuvana u onoj
+mjeri koja je dovoljna da shvati prirodu i značaj dela koje preduzima, pa je, prema tome, moguće da učinilac
+u vrijeme izvršenja krivičnog dela bude bitno smanjeno uračunljiv, a istovremeno i svjestan da je njegovo
+delo zabranjeno.
+
+Takođe, imajući u vidu nalaz i mišljenje komisije vještaka i usmeno izjašnjenje predstavnika komisije vještaka
+na glavnom pretresu, č ija sadržina je interpretirana u prethodnom dijelu obrazloženja ove presude, uzimajući
+pri tom u obzir i nesumnjivo utvrđenečinjenice da kritičnom prilikom, neposredno prije i za svo vrijeme
+trajanja kritičnog događaja, nije postojalo nikakvo, ni verbalno, niti fizički provokativno ponašanje oštećene
+prema okrivljenom R.B., utvrđeno je da motivacija okrivljenog za izvršenje krivičnog djela proizilazi iz
+njegove ličnosti, odnosnočinjenice da se kod okrivljenog radi o poremećaju na psihotičnoj osnovi, klinički
+definisanom kao afektivna bipolarna psihoza (F.31), a kojačinjenica u pogledu karakteristika ličnosti
+
+okrivljenog je utvrđena na osnovu psihijatrijskog vještačenja okrivljenog, koje je obavljeno od strane komisije
+sudskih vještaka.
+
+Dakle, na osnovu svega prethodno navedenog, sud je na nesumnjiv način utvrdio da je okrivljeni R.B. dana
+27.06.2022.godine, oko 05:40časova u Herceg Novom, u ulici..., u stanu broj 7, koji se nalazi na drugom
+spratu zgrade, na podmukao način i iz drugih niskih pobuda, sa umišljajem, u stanju bitno smanjene
+urač unljivosti, lišioživota oštećenu P.B., na načinšto je u ranim jutarnjimčasovima, misleći da oštećena
+spava, a kako bi je iznenadio i bezobzirne sebičnosti i osjećaja posjedovanja, jer je smatrao da mu ista kao
+bivša supruga i dalje pripada i da ne može biti sa drugim muškarcem, zbogčega je neopaženo i lukavo došao
+sa oružjem-puškom marke Crvena zastava, model 56, kalibar 22L.R (5,6mm) fabrički broj.....(broj na
+zatvaraču puške....), koje vatreno oružje je neovlašćeno držao, bez odobrenja nadležnog državnog organa,
+suprotno odredbamačlana 5 stav 2 ičlana 12 Zakona o oružju (Službeni list CG br. 10/15), ušao u
+unutrašnjost stana kroz otključana vrata, a zatim u spavaću sobu i u oštećenu, koju je zatekao u spavaćoj
+sobi, pored kreveta, sa udaljenosti 150 cm, iz navedene puške ispalio dva projektila u grudni košoštećene,
+nanoseći joj tom prilikom prostrijelne rane u desnom i lijevom dojkinom predjelu i ispalio dva projektila u
+glavu oštećene, nanoseći joj tom prilikom jednu prostrijelnu ranu u lijevom slijepoočnom predjelu i jednu
+ustrijelnu ranu u zadnjoj trećini tjemenog predjela, koje povrede su kod oštećene prouzrokovale smrt usljed
+oštećenja zaživot važnih moždanih centara i iskrvavljenja iz rascjepa pluća, sve dužkanala strijelnih rana
+nanesenih projektilima ispaljenim iz vatrenog oružja, pričemu je bio svjestan daće na opisani način
+oštećenu lišitiživota, pa je to i htio, kojim radnjama je okrivljeni izvršio krivično djelo teško ubistvo izčlana
+144 tačka 1 i 4 KZ CG, u sticaju sa krivičnim djelom - nedozvoljeno držanje oružja i eksplozivnih materija iz
+člana 403 stav 1 KZ CG na način, u vrijeme i na mjestu kako je to predstavljeno u izreci presude.
+
+Na ovom mjestu je nepohodno istaći da je sud, na osnovu utvrđenogčinjeničnog stanja, u izreci presude
+djelimično izmijeniočinjenični opis predmetnih krivičnih djela u odnosu načinjenični opis istih koji je
+sadržala optužnica VDT-a u Podgorici povodom koje je vođen ovaj postupak. Tajčinjenični opis je sud
+izmijenio takošto je kao vrijeme izvršenja predmetnih krivičnih djela u izreci presude naveo: „Dana
+27.06.2022.godine oko 05:40časova“, zatošto je na osnovu iskaza svjedoka D.M. i N.S., kao i Izvještaja JZU
+Zavod za hitnu medicinsku pomoć CG od 27.06.2022.godine, nesumnjivo utvrđeno da se kritični događaj
+desio dana 27.06.2022.godine u 05:40časova, a ne toga dana oko 05:55časova, kako je to bilo navedeno u
+optužnici. Takođe, č injenični opis u izreci presude sud je izmijenio na načinšto je, na osnovučinjenica
+utvrđenih izvještajem Forenzičkog centra Uprave policije CG o balističkom vještačenju, učinjenični opis
+presude unio opis ručnog vatrenog oružja kojim je okrivljeni izvršio lišenježivota oštećene, takošto je unio
+opis tog oružja: „puške marke Crvena Zastava, model 56, kalibar 22L.R (5,6mm) fabrički broj... (broj na
+zatvaraču puške...)“, kojim je u manjoj mjeri izmijenjen i preciziran opis tog ručnog vatrenog oružja koji je bio
+naveden u optužnici VDT-a u Podgorici. Istovremeno, sud je učinjenični opis predmetnih krivičnih djela u
+izreci presude unio i to da je okrivljeni kritičnom prilikom postupao u stanju bitno smanjene uračunljivosti,
+jer je psihijatrijskim vještačenjem okrivljenog, koje je izvršeno od strane komisije sudskih vještaka, utvrđeno
+da je prilikom izvršenja predmetnih krivičnih djela okrivljeni bio u stanju bitno smanjene uračunljivosti.
+Pored navedenog, imajući u vidučinjenicu da se na osnovu dokaza provedenih u toku ovog postupka nije
+moglo utvrditi da li je kritičnom prilikom okrivljeni hice iz puške prvo ispalio u grudi, a zatim i u glavu
+oštećene, kako je to bilo predstavljeno optužnicom, sud je učinjeničnom opisu presude izostavio kao
+nedokazan dio optužnice koji s odnosi na redosljed ispaljivanja projektila od strane okrivljenog u oštećenu,
+pričemu time ni na koji način nije dovedeno u sumnju da je kritičnom prilikom okrivljeni oštećenu usmrtio
+takošto je u grudi i glavu oštećene ispalio po dva projektila iz puške. Na ovakve izmjenečinjeničnog opisa
+
+predmetnih krivičnih djela u izreci presude, sud se odlučio smatrajući da ovakvom intervencijom u
+činjeničnom opisu presude nije povrijeđen objektivni identitet optužbe naštetu okrivljenog, jer učinjenim
+izmjenamačinjeničnog opisa okrivljenom na teret nije stavljena kriminalna količina veća od one koju je
+sadržala optužnica VDT-a u Podgorici po kojoj je vođen ovaj krivični postupak.
+
+Prilikom ocjene subjektivnog odnosa okrivljenog prema izvršenom krivičnom djelu teško ubistvo izčlana 144
+tačka 1 i 4 KZ CG, sud je utvrdio da je okrivljeni R.B. to krivično djelo izvršio sa direktnim umišljajem, jer iz
+utvrđenogčinjeničnog stanja proizilazi da je okrivljeni R.B. preduzimajući radnje bliže opisane u izreci
+presude, djelujući pri tom u cilju izvršenja predmetnog krivičnog djela na podmukao način i iz niskih pobuda,
+bio svjestan da pucajući iz vatrenog oružja-puške u tijelo i glavu oštećene P.B., istu može lišitiživota pa je to i
+htio, odakle nedvosmisleno proizilazi da je prilikom preduzimanja radnji bliže opisanih u izreci presude bio
+svjestan da na taj načinčini krivično djelo teško ubistvo izčlana 144 stav 1 i 4 KZ CG, odnosno da postupajući
+na podmukao način i iz niskih pobuda lišavaživota oštećenu P.B. i htio izvršenje tog krivičnog djela, pričemu
+je okrivljeni predmetno krivično djelo izvršio u stanju bitno smanjene uračunljivosti.
+
+Prilikom ocjene subjektivnog odnosa okrivljenog R.B. prema izvršenom krivičnom djelu nedozvoljeno
+držanje oružja i eksplozivnih materija izčlana 403 stav 1 KZ CG, sud je utvrdio da je okrivljeni prilikom
+izvršenja tog krivičnog djela postupao sa direktnim umišljajem, jer iz utvrđenogčinjeničnog stanja proizilazi
+da je okrivljeni preduzimajući radnje tog krivičnog djela, dakle nabavljajući i držeći predmetnu pušku kao
+vatreno oružje, bez izdate isprave o oružju za to oružje od strane MUP-a, kao nadležnog državnog organa bio
+svjestan da na taj način postupa suprotno Zakonu o oružju, odnosno odredbičlana 5 stav 2 tog zakonskog
+akta, kojom je propisano da je građanima nabavljanje, držanje i nošenje vatrenog oružja „B“ kategorije, kojoj
+grupi oružja pripada predmetna puška, dozvoljeno samo ako je za to oružje izdata odgovarajuća isprava o
+oružju u skladu sa tim zakonom, ašto sve predstavljaju opšte poznatečinjenice svim punoljetnim građanima
+Crne Gore, odakle nedvosmisleno proizilazi da je okrivljeni preduzimajući radnje nabavljanja, držanja i
+noš enja na javnom mjestu predmetnog vatrenog oružja opisane u izreci ove presude bio svjestan da na taj
+nač inčini krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija izčlana 403 stav 1 KZ CG i htio
+njegovo izvršenje.
+
+Prilikom donošenja odluke o stanju svijesti okrivljenog R.B. u vrijeme izvršenja predmetnog krivičnog djela,
+sud je imao u vidu nalaz i mišljenje komisije sudskih vještaka, sačinjene od vještaka neuropsihijatra M.S.,
+veštaka psihijatra G.Ž. i vještaka psihologa R.H., koja komisija je, po naredbi suda, izvršila psihijatrijsko
+vješ tačenje okrivljenog i izjašnjenje predstavnika te komisije vještaka na glavnom pretresu, koji nalaz i
+mišljenje i izjašnjenje komisije vještaka je sud prihvatio kao stručne, jasne i objektivne, jer su isti zasnovani na
+pravilima struke i dati na osnovu neposrednog pregleda okrivljenog i fonda podataka iz spisa predmeta.
+Naime, na osnovu tog nalaza i mišljenja komisije sud je utvrdio da su imenovani vještaci procjenom stanja
+svijesti okrivljenog u vrijeme izvršenja krivičnog djela, sa posebnim osvrtom na eventualno postojanje
+afektnog stanja u deliktnoj situaciji, ustanovili da je u neposrednoj deliktnoj situaciji, dakle u vrijeme
+izvršenja predmetnog krivičnog djela, sposobnost okrivljenog R.B.da shvati značaj svoga djela i njegova
+sposobnost da upravlja svojim postupcima bila bitno smanjena, te da okrivljeni boluje od trajnog duševnog
+oboljenja bipolarnog afektivnog poremećaja (F.31), koje se karakteriše epizodama promjene raspoloženja u
+smislu manije povišenog raspoloženja i epizoda depresije. U intervalu između tih epizoda osoba ne ispoljava
+manifestne simptome psihoze. U konkretnom slučaju kod vještačenja uračunljivosti komisija je imala u vidu
+ponašanje okrivljenog u vrijeme izvršenja krivičnog djela i nijesu našli elemente koji bi upućivali na
+
+manifestne simptome afektivne psihoze (manija ili depresija) u vrijeme izvršenja krivičnog djela, tako da je, i
+pored bitno smanjene uračunljivosti, okrivljeni bio svjestan svog djela i posljedica istog, na osnovučega je
+sud je izveo logičan zaključak da uračunljivost okrivljenog, u vrijeme izvršenja krivičnog djela, nije bila
+isključena, većje okrivljeni predmetno djelo izvršio u uračunljivom stanju, ali je njegova uračunljivost, usljed
+duš evnog oboljenja u vidu bipolarnog poremaćaja (F.31), bila bitno smanjena.
+
+Prilikom donošenja odluke o vrsti i visini kazne okrivljenom, sud je u smislučlana 42 stav 1 Krivičnog
+zakonika Crne Gore, cijenio sve okolnosti koje su od uticaja da kazna bude veća ili manja, pa je kao
+olakšavajuće okolnosti na strani okrivljenog utvrdio loše imovne prilike ičinjenicu da je okrivljeni otac dvoje
+djece, dok je kao otežavajuće okolnosti na strani okrivljenog, u sklopu ličnosti okrivljenog, cijenio njegovu
+raniju osuđivanost utvrđenu uvidom u pravosnažnu presudu Osnovnog suda u Herceg Novom K.br..... od
+03.06.2013.godine, jer je očigledno da kazna koja je okrivljenom izrečena prilikom te ranije osuđivanosti na
+istog nije u dovoljnoj mjeri uticala da nečini nova krivična djela, kao i u smislučlana 42 stav 3 KZ CGčinjenicu
+da su u konkretnom slučaju u radnjama okrivljenog postojale dvije kvalifikatorne okolnosti krivičnog djela
+teško ubistvo izčlana 144 KZ CG, i to kvalifikatorna okolnost iz tačke 1 togčlana, da je to djelo izvršeno na
+podmukao način i kvalifikatorna okolnost propisana tačkom 4 togčlana, da je to djelo izvršeno iz niskih
+pobuda, pričemu je za postojanje obilježja predmetnog krivičnog djela, kao težeg oblika krivičnog djela
+ubistvo, bila dovoljna samo jedna od dvije prethodno navedene kvalifikatorne okolnosti. U tom pravcu, sud
+nije mogao prihvatiti kao olakšavajuću okolnost kajanje okrivljenog istaknuto u njegovoj završnoj riječi, iz
+razlogašto samo verbalno iskazano kajanje od strane okrivljenog ne znači i iskreno kajanje zbog lišenja
+života oštećene, a ovo imajući u vidu da okrivljeni nakon kritičnog događaja, odnosno nakon izvršenja
+krivičnog djelačija se radnja sastoji od lišenjaživota oštećene na način opisan u izreci ove presude, nijednom
+svojom radnjom ili postupkom ili izjašnjenjem pred državnim organima i prema oštećenom-svjedoku D.M.,
+koji je sin oštećene P.B., nije pokazao da se iskreno kaje zbog togašto je kritičnom prilikom oštećenu lišio
+života. Cijeneći prethodno navedene olakšavajuće i otežavajuće okolnosti na strani okrivljenog, sud je istom,
+shodno odredbamačlana 36 ičlana 48 stav 1 KZ CG, prethodno utvrdio pojedinačne kazne zatvora za svako
+krivično djelo izvršeno u sticaju. Naime, sud je okrivljenom za krivično djelo teško ubistvo izčlana 144 tačka 1
+i 4 KZ CG utvrdio kaznu zatvora u trajanju od 20 godina, smatrajući da je u slučaju okrivljenog jedino kazna
+zatvora u trajanju od 20 godina, kao maksimalna kazna u konkretnom slučaju za predmetno krivično djelo
+(jer shodno odredbičlana 35 stav 2 tačka 2 KZ CG, kodčinjenice da je okrivljeni krivično djelo teško ubistvo iz
+člana 144 tačka 1 i 4 KZ CG učinio u stanju bitno smanjene uračunljivosti, okrivljenom za to krivično djelo nije
+mogla biti izrečena kazna dugotrajnog zatvora, koja je, pored kazne zatvora od namjanje 10 godina,
+propisana za navedeno krivično djelo), adekvatna kazna za izvršeno krivično djelo teško ubistvo izčlana 144
+tačka 1 i 4 KZ CG. Pored navedenog, sud je okrivljenom za krivično djelo nedozvoljeno držanje oružja i
+eksplozivnih materija izčlana 403 stav 1 KZ CG, prethodno utvrdio kaznu zatvora u trajanju od 6 mjeseci, a
+potom okrivljenog, shodno odredbičlana 48 stav 2 tačka 2 Krivičnog zakonika Crne Gore, osudio na
+jedinstvenu kaznu zatvora u trajanju od 20 godina, smatrajući da je ovako odmjerena jedinstvena kazna
+zatvora srazmjerna stepenu krivice okrivljenog za izvršena krivična djela, težini i konkretnim posljedicama
+izvršenih krivičnih djela i ličnosti okrivljenog, kao učinioca predmetnih krivičnih djela i da ovakva kazna
+predstavlja onu mjeru sa kojomće se na okrivljenog u dovoljnoj mjeri uticati da nečini nova krivična djela i
+daće se na taj način u ovom konkretnom slučaju ostvariti svrha kažnjavanja propisanačlanom 32 KZ CG, u
+okviru opšte svrhe izricanja krivičnih sankcija izčlana 4 stav 2 KZ CG.
+
+Na osnovučlana 51 Krivičnog zakonika Crne Gore, sud je okrivljenom R.B. u izrečenu kaznu zatvora uračunao
+i vrijeme provedeno u pritvoru, počev od dana 27.06.2022. godine od 06:10časova, pa nadalje dok pritvor
+
+bude trajao.
+
+Na osnovučlana 75 Krivičnog zakonika Crne Gore, sud je okrivljenom R.B.izrekao i mjeru bezbjednosti
+obaveznog oduzimanja predmeta i to da se od okrivljenog R.B. trajno oduzime puška marke Crvena zastava,
+model 56, kalibar 22L.R (5,6mm) fabrički broj... (broj na zatvaraču puške...), kao predmet upotrijebljen za
+izvršenje krivičnog djela.
+
+Imajući u vidučinjenice utvrđene nalazom i mišljem komisije sudskih vještaka o stanju duševnog zdravlja
+okrivljenog, i to da je okrivljeni R.B.predmetna krivična djela izvršio u stanju bitno smanjene uračunljivosti,
+usljed trajnog duševnog oboljenja, te da je u cilju otklanjanja opasnosti da okrivljeni ubudućečini nova
+krivična djela, potrebno psihijatrijsko liječenje okrivljenog u zdravstvenoj ustanovi zatvorenog tipa, sud je na
+osnovučlana 69 Krivičnog zakonika Crne Gore, okrivljenom R.B. izrekao i mjeru bezbjednosti obavezno
+psihijatrijsko liječenje ičuvanje u zdravstvenoj ustanovi JZU Specijalna bolnica za psihijatriju Dobrota – Kotor
+i odredio daće se vrijeme provedeno u ustanovi za liječenje okrivljenom uračunati u izrečenu kaznu zatvora,
+s timšto ova mjera bezbjednosti može trajati i duže od izrečene kazne zatvora, asmatrajući da su u
+konkretnom slučaju ispunjeni zakonski uslovi za izricanje ove mjere bezbjednosti i da je izricanje iste
+neophodno kako bi se otklonili stanja i uslovi da okrivljeni ubuduće vrši krivična djela, koji su propisani u
+okviru opšte svrhe propisivanja i izricanja mjera bezbjednosti izčlana 66 Krivičnog zakonika Crne Gore.
+
+Kako je okrivljeni oglašen krivim, sud je shodnočlanu 226 ičlanu 229 Zakonika o krivičnom postupku,
+okrivljenog obavezao na plaćanje troškova krivičnog postupka - iznos od 1.402,50 eura, koji troškovi se
+odnose na ime nagradečlanovima komisije sudskih vještaka vještaku neuropsihijatru M.S., vještaku
+psihijatru dr G.Ž. i vještaku psihologu R.H., za sačinjavanje nalaza i i mišljenja i odbranu tog nalaza i mišljenja
+na glavnom pretresu, a u iznosu od 275,00 eura, odnose na ime nagrade vještaku sudske medicine dr Č.I.za
+izradu obdukcionog zapisnika koji je sačinjen u formi nalaza i mišljenja i obavezao okrivljenog i da na ime
+sudskog paušala, kao dijela troškova krivičnog postupka, plati iznos od 100,00 eura, koji iznos paušala je
+određen shodno dužini trajanja postupka, njegovoj složenosti i imovinskim prilikama okrivljenog. Takođe,
+prilikom donošenja odluke o troškovima ovog krivičnog postupka, sud je odredio daće odluku o visini
+nagrade braniocu okrivljenog postavljenom po službenoj dužnosti za postupanje u predmetnom krivičnom
+postupku i obavezi okrivljenog da nadoknadi te troškove krivičnog postupka, donijeti naknadno, takoštoće
+o tim troškovima krivičnog postupka odlučiti posebnim rješenjem nakon pribavljanja dokaza o ukupnoj visini
+tih troškova postupka i nakon pravosnažnosti odluke o krivici okrivljenog u predmetnom krivičnom
+postupku, odnosno nakon razrješenja branioca postavljenog po službenoj dužnosti.
+
+Na osnovu svega izloženog, primjenom odredbičlana 374 ZKP-a odlučeno je kao u izreci presude.
+
+VIŠI SUD U PODGORICI
+Dana 21.04.2023. godine
+
+Zapisničarka PREDSJEDNIK VIJEĆA-SUDIJA
+Cupara Mila Đuričković Igor
+
+PRAVNA POUKA: Protiv ove presude dozvoljena ježalba u roku od 15 dana od dana prijema pisanog
+otpravka iste, Apelacionom sudu Crne Gore, a preko ovog suda.
+
+Za tačnost otpravka tvrdi i ovjerava</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

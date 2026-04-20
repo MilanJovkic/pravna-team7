@@ -1,0 +1,1470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке39">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке39/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке39"/>
+                    <FRBRdate date="2021-10-22" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке39/sr@2021-10-22/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке39/sr@2021-10-22"/>
+                    <FRBRdate date="2021-10-22"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке39/sr@2021-10-22/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке39/sr@2021-10-22/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Viši Sud u Bijelom Polju"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Ivan Adamović"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Binasa Bektašević"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Rafije Erović"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="N.P."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="P.R."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="E.S."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="U.D."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="M.Š."/>
+                <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="N.R."/>
+                <TLCPerson eId="victim_7" href="/akn/me/ontology/person/victim" showAs="S.C."/>
+                <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="M.D."/>
+                <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="B.B."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zakon-o-krivičnom-postupku-crne-gore" showAs="Zakon o krivičnom postupku Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 12/19</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>Viši Sud u Bijelom Polju</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2021-10-22">2021-10-22</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Ivan Adamović</judge>
+                    <judge>Binasa Bektašević</judge>
+                    <judge>Rafije Erović</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni E. Š. osuđen za nehatno lišenje života.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Nehatno ubistvo</p>
+                    <p>Primena zakonskih propisa</p>
+                    <p>Visina kazne</p>
+                    <p>Troškovi postupka</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Krivični zakonik Crne Gore</ref>
+                    <ref href="#law_2">Zakon o krivičnom postupku Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/2024/!main#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/2024/!main#art_148">Član 148</ref>
+                    <ref href="/akn/me/act/2024/!main#art_10">Član 10</ref>
+                    <ref href="/akn/me/act/2024/!main#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/2024/!main#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/2024/!main#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/2024/!main#art_100">Član 100</ref>
+                    <ref href="/akn/me/act/2024/!main#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/2024/!main#art_370">Član 370</ref>
+                    <ref href="/akn/me/act/2024/!main#art_32">Član 32</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da je okrivljeni, svestan svojih radnji, nehatno lišio života svog brata, što je kvalifikovano kao ubistvo iz nehata.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Osuđen</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="victims">
+                    <person>N.P.</person>
+                    <person>P.R.</person>
+                    <person>E.S.</person>
+                    <person>U.D.</person>
+                    <person>M.Š.</person>
+                    <person>N.R.</person>
+                    <person>S.C.</person>
+                    <person>M.D.</person>
+                    <person>B.B.</person>
+                </block>
+                <block name="witnesses">
+                    <person>H.R.</person>
+                    <person>M.D.</person>
+                    <person>V.K.</person>
+                    <person>N.P.</person>
+                    <person>Š.P.</person>
+                    <person>M.Š.</person>
+                    <person>S.C.</person>
+                    <person>Bijelog Polja Kt</person>
+                    <person>Velije Kalača</person>
+                    <person>N.R.</person>
+                    <person>B.B.</person>
+                    <person>E.Š.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">pistolj</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="location">Danilovgrad</fact>
+                <fact key="location">Bijelo Polje</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="death_result">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="alcohol_intoxication">da</fact>
+                <fact key="narcotics_influence">da</fact>
+                <fact key="attempted_offense">da</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K. br. 12/19-18
+
+U IME CRNE GORE
+
+VIŠI SUD U BIJELOM POLj U u vijeću sastavljenom od sudije Ivana Adamovića, predsjednika vijeća, i sudija
+Binase Bektašević Erovići Rafije Kadić, č lanova vijeća, uz učešće samostalnog referenta zapisničara Radmile
+Duborije, u krivičnom predmetu okrivljenog E.Š. iz R, zbog krivičnog djela ubistvo izčl. 143 Krivičnog
+zakonika Crne Gore, u daljem tekstu (KZ-a CG), na javnom glavnom pretresu u prisustvu državnog tužioca u
+Višem državnom tužilaštvu u Bijelom Polju H. L, okrivljenog E Š, njegovog branioca advokata R. O,
+predstavnika porodice pok. oštećenog N. P, donio je i javno objavio dana 22. 10. 2021. godine,
+
+P R E S U D U
+
+Okrivljeni E. Š, JMBG..., od oca H. i majke F, rođene H, rođen.... godine, u R, sa prebivalištem u mjestu
+rođenja, ul. I, br..., državljanin Crne Gore, sa završenom osnovnomškolom, nezaposlen, otac dvoje
+maloljetno djece, lošeg imovnog stanja, neosuđivan, nalazio se u pritvoru od 15. 04. 2018. godine do 22. 10.
+2021 godine,
+
+Viši Sud u Bijelom Polju
+K 12/2019
+22. Oktobar 2021
+
+K R I V J E
+
+Zatošto je:
+
+Dana, 15. 04. 2018. godine, oko 21,50 h u R, u ul. I, br..., u dvorištu zajedničke porodične kuće, svjestan da
+svojom radnjom može izvršiti krivično djelo, ali je olako držao da do toga neće doći, iz nehata lišioživota svog
+brata oštećenog M. Š, na načinšto je tokom otimanja o pištolj marke M-57 - tetejac, cal. 7,62 mm, ser. broja C191540, ispalio dva projektila u pravcu oštećenog, od kojih ga je jedan pogodio u predjelu grudi, nanijevši mu
+- prostrelnu ranu u lijevom nizdojkinom predjelu sa ulaznom ranom koja se kanalom nastavlja kroz potkožna
+meka tkiva lijeve polovine prednje strane trbuha i završava izlaznom ranom u predjelu lijevog donjeg
+kvadranta prednje strane trbuha, te ponovo ulazi u tijelo ulaznom ranom u predjelu gornje trećine prednje
+strane lijeve butine, koja rana se kanalom nastavlja kroz meka tkiva lijeve butine i završava izlaznom ranom u
+predjelu srednje trećine zadnje strane lijeve butine a potom se nastavlja strijelnim okrznućem u predjelu
+unutrašnje strane srednje trećine desne potkoljenice, a jedan projektil pogodio u predjelu desne bočne
+strane vrata nanijevši mu prostrelnu ranu sa ulaznom ranom koja se kanalom nastavlja kroz pripadajuća
+potkožna meka tkiva vrata, razara mišiće, lijevu zajedničku karotidnu arteriju, potom prolazi kroz zadnji zid
+grkljana, lijevu bočnu stranu vrata, meka tkiva lijevog ramena, lomi gornji okrajak lijeve ramenjače i završava
+se izlaznom ranom u lijevom lopatičnom predjelu, od kojih je kod istog uslijed iskrvarenja iz rascjepa desne
+zajedničke karotidne arterije i raskidanih krvnih sudova dužkanala strijelnih rana prostrelina, nastupila smrt,
+
+-čime je izvršio krivično djelo nehatno lišenježivota izčl. 148 KZ-a CG,
+
+pa ga sud primjenom citiranih zakonskih propisa, tečl. 10, 14, 16, 32, 36, 42, 51 KZ-a CG, ičl. 226, 229 i 374
+Zakona o krivičnom postupku Crne Gore u daljem tekstu (ZKP-a CG),
+
+O S UĐU J E
+
+Na kaznu zatvora od 4 ( č etiri) godine i 6 ( š est) mjeseci, u koju kaznu mu se ima uračunati vrijeme provedeno u
+pritvoru od 15. 04. 2018. godine, pa do 22. 10. 2021. godine.
+
+Okrivljeni se obavezuje da ovom sudu plati na ime paušala iznos od 200,00 eura, kao i na ime ostalih troškova
+krivičnog postupka iznos od 4.022,13 eura, koje iznoseće uplatiti na račun Budžeta Crne Gore broj: 832-7114-
+
+98, u roku od 15 dana, po pravosnažnosti presude, pod prijetnjom prinudnog izvršenja, s timšto je dokaz o
+uplati dužan dostaviti krivičnoj pisarnici ovog suda.
+
+Okrivljeni se obavezuje i da plati troškove krivičnog postupka nastale angažovanjem branioca po službenoj
+duž nosti, o kojimaće biti odlučeno posebnim rješenjem.
+
+Imovinsko pravnog zahtjeva nije bilo.
+
+O b r a z l ože n j e
+
+Viši državni tužilac u Bijelom Polju podnio je ovom sudu optužnicu Kt. br. 25/18 od 04. 06. 2018 godine, protiv
+okrivljenog E.Š. iz R, zbog krivičnog djela ubistvo izčl. 143 Krivičnog zakonika Crne Gore. Sud je shodno
+utvrđ enomčinjeničnom stanju i u granicama svojih ovlašćenja, izmijeniočinjenični opis i pravnu kvalifikaciju
+djela, pa je u tom smislu isto sadržano u izreci presude.
+
+U završnoj riječi državni tužilac u Višem državnom tužilaštvu je izjavio da je izvođenjem dokaza novom
+rekonstrukcijom koja je bila zakazana za dan 09. 10. 2020. godine, omogućeno optuženom, odnosno odbrani
+da prilagodi kako i na koji način se desio događaj, koji je ranijom rekonstrukcijom sasvim drugačije
+predstavljen, posebno pokazujući svoj položaj tijela u odnosu na položaj tijela svog pok. brata, i time je
+optuženi samoželio da dokaže da je do opaljenja prvog projektila, a koji je bio presudan za lišavanježivota
+pok. M. Š, kako kaže, došlo kada ga je oštećeni uhvatio za ruku u kojoj mu se nalazio pištolj i time je pok. M.
+doprinio da dođe do opaljenja. Dodao je da ne treba ispustiti iz vidačinjenicu da je prilikom vještačenja
+pištolja kojim je izvršeno ovo krivično djelo upravo ovaj vještak koji je prisustvovao glavnom pretresu u svom
+nalazu konstatovao da je pištolj ispravan i da do opaljenja nije moglo doćičupanjem, guranjem, kako toželi
+da predstavi optuženi, većjedino povlačenjem obarača pištolja. Međutim, optuženi ni na novoj rekonstrukciji
+nije ni u kom slučaju mogao da pokaže kako je do opaljenja došlo drugi put, koji projektil je oštećenog
+takođe pogodio. Nalaz i mišljenje vještaka medicinske struke koji je sačinjen nakon obavljene rekonstrukcije
+dr N. R, kao i balističara B. B, govori u prilog njegovoj tvrdnji, ovo tim prije, š to vještak medicinske struke dr N.
+R, kaže, ukoliko se prihvati kao istinito, š to je sporno, pokazivanje E.Š. na ponovljenoj rekonstrukciji o
+položaju usta cijevi vatrenog oružja u trenutku opaljenja, da se isto apsolutno podudara sa smjerom kanala
+strijelne rane prostreline u lijevom nizdojkinom predjelu. Takođe, u tom nalazu stoji da ni na ponovljenoj
+rekonstrukciji optuženi nije mogao pokazati trenutak opaljenja drugog projektila koji je u tijelo oštećenog
+ušao u predjelu desne bočne strane vrata, dok vještak balističke struke takođe u svom nalazu konstatuje da je
+drugi projektil morao biti ispaljen prije nego su oštećeni i okrivljeni pali na zemlju, da bi sečaura našla na
+mjestu gdje je pronađena, š to dalje u nalazu taj vještak konstatuje da taj projektil nije mogao biti ispaljen
+kada su se okrivljeni i oštećeni nalazili u ležećem položaju, odnosno na zemlji, jer se u tom slučaju druga
+čaura ne bi mogla naći na mjestu na kojem je prilikom uviđaja pronađena, a optuženi navodno ne zna kada je
+doš lo do opaljenja drugog projektila. Dodao je da sve ovo navodi iz razloga jer optuženiželi da u svakom
+slučaju prikaže događaj onako kako on sam smatra, š to mu je i dozvoljeno, kako bi svoju odgovoronost za
+
+učinjeno krivično djelo doveo u uzročnu vezu sa radnjom sada pok. M, a samim tim sebi olakšao položaj i
+sebe predstavio navodnomžrtvom. Napomenuo je da je okrivljeni na zapisniku o njegovom saslušanju pred
+sudijom za istragu i u prisustvu svog branioca pojasnio da kod tužioca nije iznosio odbranu, da se branio
+ćutanjem, pašto dalje slijedi u ovom zapisniku, smatra da to nije njegova odbrana, jer njegova bi odbrana
+bila ona koja bi u cjelosti prikazala konkretni događaj, kako je to predstavio na glavnim pretresima i na
+rekonstrukciji, većje ovo samo jedan fragment iz onogašto se trenutno desilo i koji je tada optuženi iznio,
+kada je kazao, da priznaje da je izvršio krivično djelo, a razloge je takođe naveo. Dakle, on nije iznosio svoju
+odbranu kako se događaj odigrao, većje samo kazao da je kriv i da je morao da uradi tošto je učinio i ništa
+više. U konačnom, jošjednom je predložio da se optuženi za izvršeno krivično djelo oglasi krivim, da mu se
+izrekne propisana kazna za krivično djelo u pitanju.
+
+Predstavnik oštećene porodice N.P. u završnoj riječi izjasnila se da se ne pridružuje krivičnom gonjenju
+porotiv okrivljenog i da ne postavlja imovinsko pravni zahtjev.
+
+Okrivljeni E.Š. u istražnom postupku koristio se pravom da ne izosi odbranu.
+
+Na ranijem glavnom pretresu, negirao je izvršenje krivičnog djela za koje je optužen braneći se da se sjeća da
+je ispalio jedan projektil u pravcu svog brata, ali da se ne sjeća da je ispalio drugi projektil. Toga dana oko 15
+minuta prije događaja u naselju S.P. ispred kladionice "P" imao je nesporazum sa R.H. Tada je neko pozvao
+njegovog brata, sada pok. M. koji je odmah došao. Prišao je do njih, pa je njega odgurao na jednu, a H. na
+drugu stranu. Zatim je pošao svojoj kući, a za njim sada pok. M. Ušao je u kuću, uzeo pištolj, a potom krenuo
+da izađe iz kuće. Na vratima kuće sreo se sa sa pok. M. Smatra da je M. zapazio da je uznemiren, pa ga je pitao
+kudaće, a misli da je vidio pištolj koji je on držao u ruci koja je bila spuštena niz tijelo, te da je pretpostavio da
+će sa pištoljem da se vrati na mjesto gdje je ostao H.M. je zatražio da mu da pištolj. Pošto je to odbio, došlo je
+do guranja i otimanja između njih oko pištolja. To otimanje je trajalo oko par sekundi. U jednom momentu je
+doš lo do ispaljivanja jednog projektila. Zna kada je ispaljen taj projektil, a drugog projektila se uopšte ne
+sjeća i ne zna da je ispaljen. Pokušao je da pruži pomoćbratu i pozvao je neku službu koja ga je spojila sa
+policijom. Ispričao im ješta se desilo. Tvrdi da nikada sa svojim bratom sada pok. M. nije imao bilo kakav
+sukob. Ž ivjeli su kao braća, zajedno se brinuli o djeci i radili kako bi obezbijedili sredstva za njihovu
+egzistenciju. Godinu dana prije ovog događaja imao je nesporazum sa H. R, kada mu je H. uputio neke
+psovke, ali nije htio da reaguje, jer je sa H. u srodničkim odnosima. Nakon toga više puta se sretao sa njim, ali
+se nijesu družili. Toga dana su se sreli ispred kafeterije slučajno. Tada je bio malo u pripitom stanju, pa smatra
+da je to moguće bio povod raspravke između njih. Tada je nešto pitao H, pa je došlo do raspravke, nakončega
+su se psovali i pogurali. U tom momentu je došao njegov brat sada pok. M. Kada ih je M. razdvojio, M. i H. su
+poš li sa tog mjesta vozilom, a on je ostao. Ne zna u kojem pravcu su pošli M. i H. Ne zna zbogčega je htio da
+se vrati na mjesto gdje je prethodno imao svađu sa H, a posebno kodčinjenice da su njegov brat sada pok. M.
+i R.H. većpošli sa mjesta gdje je prethodno imao nesporazum sa H. Sa mjesta gdje je imao sukob sa H. pošao
+je pješke svojoj kući. Misli da je pištolj repetirao odmah kada ga je uzeo sa vitrine, a ne zna zbogčega ga je
+tada repetirao, a ovo i iz razlogašto je mjesto gdje je imao sukob sa H. udaljeno od njegove kuće oko
+kilometar i po. Koliko se sjeća nalazio se na drugom stepeniku kuće, a njegov brat niže, te je brat krenuo
+prema njemu da mu uzme pištolj i faktički ga uhvatio rukama za zglob ruke u kojoj je držao pištolj kada je
+ispaljen projekti. Tada mu je M. rekao "daj mi to sranje ili govno". Potom je došlo do ispaljivanja projektila, a
+ne zna kako. Nije znao pokazati poziciju njihovih tijela prilikom ispaljivanja projektila. Nakon ispaljivanja
+projektila pali su ispod stepenica na zemljanu podlogu sa strane stepenica. Prije negošto je došlo do
+
+ispaljivanja projektila on se nalazio na prvom ili drugom stepeniku i to u trenutku kada je sada pok. M.
+pokušao da mu otme pištolj. Stepenište počinje podestom koji se nalazi na zemlji, a radi se o ploči dimenzija
+1x1 m, te da sa te ploče ide stepenište prema ulaznim vratima. U momentu kada je došlo do guranja između
+njih on se nalazio na toj ploči, a njegov brat sada pok. M.na zemlji. Zna da je pištolj držao u desnoj ruci. M. ga
+je uhvatio rukom za ruku u kojoj je držao pištolj, misli u predjelu zgloba te ruke. Nije mogao opisati bliže
+položaj ruke, niti u odnosu na njegovo tijelo, niti u odnosu na podlogu. Kada se dešavalo guranje između njih
+nalazili su se u uspravnom položaju, a nakon ispaljivanja projektila oba su pali. Nakon ispaljenja projektila
+uplašio se i ne znašta se dalje dešavalo sa pištoljem. Od momenta kada je ispaljen projektil nijesu govorili
+bilošta jedan drugom. Nije se mogao izjasniti koliko je prošlo vremena od momenta kada su pali, pa do
+momenta kada je on ustao, ali zna da je nakon ispaljenja njegov brat ostao nepomičan. Ne zna da li su se dok
+su padali gurali i tome slično, ali se sjeća da kada su pali da mu je on stavio ruku na vrat, te da mu je ruka bila
+krvava od bratovljene krvi i tada je vidio da on ispušta dušu. Pištolj je držao u ruci sve dok nije vidio da je
+njegov brat mrtav, a nakon toga je pištolj odbacio od sebe, a potom predao policiji. Mjesto gdje su pali ispod
+stepenica se nalazi udaljeno od podesta korak ili dva sa lijeve strane posmatrano od ulaza u kuću. Nije mogao
+objasniti zbogčega je repetirao pištolj odmah nakonšto ga je uzeo. U kući se prije negošto je uzeo pištolj
+zadržao minut-dva. Pojašnjava da je podest na kojem se nalazio visočiji u odnosu na zemlju oko 20 do 25 cm,
+a naredni stepenik za jošoko 20 cm. Misli da je njegov brat imao kontakt sa pištoljem prilikom otimanja. Zna
+da je nakon toga, pored policije pozvao i svoju sestru N. Dodao je da su i on i brat razvedeni i imaju po dvoje
+djece. Djeca njegovog brata su dodijeljena bratu, a njegova-okrivljenog njegovoj supruzi. Ž elja mu je da vodi
+jednaku brigu i o svojoj i o bratovljevoj djeci. Predočava da su on i brat bili iste fizičke konstrukcije i iste
+fizičke snage, te da je M. mlađi od njega 11 godina. Prije negošto je uzeo pištolj vidio je da djeca gledaju
+televizor, pa je nakon toga ušao u spavaću sobu, uzeo pištolj i izašao iz sobe. Stepenište ispred kuće je
+osvijetljeno sijalicom. Drugih lica na tom mjestu gdje se desio događaj nije bilo, pa tako niko nije ni mogao
+vidjetišta se dešavalo. Pretpostavlja da je neko obavijestio njegovog brata o svađi koju je on imao sa R, te da
+je on nakon toga došao na to mjesto. Sjeća se da su toga dana bili izbori, te da je tada popio tri- č etiri rakije, a
+mož da i više i to počev od 10 ili 11časova, pa do događaja koji se desio.
+
+U ponovnom postupnu na glavnom pretresu održanom dana 27. 05. 2019. godine, priznao je da je lišioživota
+svog brata, ali ne na način kako je to predstavljeno optužnicom. Dodao je da nije znao u momentu repetiranja
+koliko u pištolju ima metaka, a siguran je da je u pištolju imalo više od jednog metka, š est ili sedam. Došao je
+izrevoltiran u kuću, a ne sjeća se zbogčega je taj pištolj uzeo, a misli da ga je uzeo mahinalno i mahinalno ga
+repetirao. Pištolj je uzeo zbog prethodne svađe koju je imao kako je opisao, pištolj je uzeo u ruku i
+namjeravao da sjedne u džip da se vrati na mjesto svađe, kako bi ga neko vidio da nosi taj pištolj i da traži tog
+čovjeka, ali mu je bio cilj da sečuje da je pošao sa tom namjerom iako je znao da tajčovjek nije tu. Vjerovatno
+bi narednog dana došlo do neke druge situacije gdje bi se uključili neki drugi ljudi, i došlo bi do nekog
+razgovora. Ne zna tačno gdje se to lice (H) nalazio poslije svađe, ali misli da je otišlo sa tog mjesta, a na tom
+mjestu je ostalo dosta momaka, odnosno lica koja su ih razdvajali. Ne zna da li bi upotrijebio taj pištolj, a
+vjerovatno da su se nakon toga sreli ne bi pucao u H. To mjesto gdje je ostao H. je udaljeno od njegove kuće
+nekih kilometar do kilometar i po. Prije ovog događaja, nakonšto je ustao iz kreveta oko 9časova, pošao je u
+kafić “C” kao i svakodnevno. U kafiću se zadržao možda negdje do podne. Nakon toga je pošao kući, kada ga
+je prijatelj M.D. zv. “J” pozvao, pa je nakon toga pošao kod njegove kuće. J. je tada obarao neko stablo ispred
+kuće. Tu kod njegove kuće bio je sa njima jedan momak M. Kod J. kuće su se zadržali do mraka, kojom
+prilikom su vodili uobičajnu komunikaciju, a sjeća se da su pričali o izborima. Sjeća se da su pozivali njegovog
+pokojnog braka M. i razgovarali da bi negdje trebali da naprave neki roštilj i komentarisali neke događaje koji
+su im se desili na putevima, a koji su im bili smješni. Sa bratom je pričao na interfonu, kao i ostali koji su sa
+njim razgovarali, tako da su svičulišta je ko govorio. Večerali su i negdje prije zatvaranja biračkih mjesta,
+komentarisali su “ajde da ovomčovjeku jošjednom damo podršku, pašta nam da bog”. O tome nije
+
+razgovarao sa svojim bratom M. Za to vrijeme su popili bocuštoka i to J. i on, a M. je pio pivo. Poslije toga J.
+ga je poveo na biračko mjesto. Od momenta kada je pošao na glasanje pa do momenta kada je nakon toga
+poš ao kući nije telefonom razgovarao sa pokojnim bratom M. Nakon glasanja razgovarao je sa licem po
+prezimenu Lj, koji ga je ponudio da ga poveze kući, a da prethodno malo prošetaju po gradu. Kada su došli u
+mjesto S.P. on je došao na ideju da ode do kladionice da uplati tiket i tu se sreo sa H. Istakao je da se na tom
+mjestu prilikom svađe sa H. nalazilo mnogo lica i da su ih oni razvađali i da oni to mogu potvrditi. Boljela ga je
+ta svađa jer mu je on ranije psovao majku, nakončega je došlo do svađe. Nakonšto je ušao u kuću, uzeo je
+pištolj i isti repetirao, sreo se sa bratom na podest, on je u odnosu na njega bio 30-35 cm, niže odnosno dva
+stepenika niže, krenuo je sa pištoljem da pođem pored njega sa njegove desne strane. Pitao ga je gdjećešto i
+rekao mu “daj mi to sranje, nećešti nigdje”, on mu je na to rekao “znašti gdjeću ja”, a on je rekao “nećešti
+nigdje, daj mi to” i krenuo je da mu uzme pištolj. On je pištolj držao niz koljeno, sa ustima cijevi okrenutim
+prema zemlji. Došlo je do otimanja oko pištolja. On ga je uhvatio za ruku ičupali su se oko pištolja, on je
+vukao pištolj nazad, a on je vukao pištolj da ga otme. U samom tom otimanju došlo je do opaljivanja iz
+pištolja. Ne može se sa potpunom sigurnošću izjasniti na koji način je konkretno došlo do otimanja o pištolj
+neposredno prije opaljivanja projektila, a sjeća se kako je došlo do otimanja o pištolj. Misli da je došlo do
+opaljivanja projektila kada je sada pok. M. pokušao da ga prebaci preko sebe, odnosno da mu istrgne pištolj
+iz ruke. Tada je došlo do opaljivanja projektila i sjeća se samo ispaljivanja tog projektila i ne sjeća se da li je
+uopšte ispaljen drugi projektil. A da je ispaljen drugi projektil saznao je kada je pročitao rješenje o
+produženju pritvora. Nakonšto je došlo do ispaljivanja projektila, sjeća se da je M. nekako u stranu pošao
+tijelom odnosno tačnije zapazio je da je izgubio kontrolu i da je padao. Za sve to vrijeme M. ga je držao za
+ruku, povukao ga prema sebi, tako da su pali, i to on preko njega. Sjeća se da je toliko jak bio stisak ruke M. za
+njegovu ruku, tako da ja niječitav minut mogao da istrgne ruku iz njegove i nakon pada. Za sve to vrijeme
+pištolj se nalazio u njegovoj ruci. Bio je u trenerci koja nije imala lastiku i ista nije mogla da izdrži težinu
+pištolja i zbog toga ga je držao u ruci. Dodao je da soba gdje su se nalazila djeca se nalazila suprotno od
+prostorije gdje je uzeo pištolj, tako da djeca nijesu mogla da vide da je ja nosio pištolj. Djeca su stara tada bila
+9 i 13 godina. Brat i on suživjeli na jednom spratu, a prvi sprat su koristili kao pomoćne prostorije. Pojasnio je
+da je pokojni brat zakrkljao, on je pokušao da utvrdi da li ježiv i on je praktično ispustio ruku na njegovim
+rukama i to vrlo brzo nakonšto je ispaljen projektil. Nije bio u sitauciji da to tačno ocijeni, a misli da se to
+desilo po proteku oko minut. Kada je vidio ješta je uradio, udarao je pesnicama u svoju glavu. Pozvao je neki
+broj i misli da je pozvao policiju, javila se služba za spašavanje, oni su ga spojili sa policijom i tada je policiji
+ispričaošta se desilo. Pojasnio je da kad je istrgao ruku iz bratovljeve ruke, odmah je pored ostavio pištolj, da
+bi ga poslije stavio na stepenište kuće i taj pištolj uzeo kada je došla policija i predao ga policajcu. Prije toga
+je pozvao sestru i rekao jojšta se desilo i insistirao da dođu da uzmu djecu. Ranije se nikada nije svađao sa
+svojim bratom. Kada se svađao sa H. bio je prisutan i V.K. iz S. P, kao i jošneki momci koje zna iz viđenja, a
+ukoliko je potrebno preko svjedoka Kalača se može utvrditi koja su to lica. Ističe da nikakvog razloga nije
+imao da lišiživota svog brata i zašto bi njegovu djecu ostavio “na muku i moju i njegovu”, kao i toliko imanje i
+zašto bi upropastio svoju porodicu. Nikada nije bolovao od bilo kakve bolesti na psihičkoj bazi i u tom pravcu
+nema nikakve medicinske dokumentacije.
+
+Na glavnom pretresu u ponovnom postupka negirao je izvršenje krivičnog djela za koje je optužen, navodeći i
+da se za to djelo ne osjeća krivim.
+
+U odbrani je naveo da je kritičnog dana u jutarnjimčasovima pošao iz svoje kuće sa namjerom da popije kafu
+u jednom objektu, gdje se našao i sa S.H. i K.Z. Sjedjeli su do podne i za to vrijeme on je popio dvije kafe i dva
+- tri pelinkovca. Zatim je otišao kući i tu proveo nekih dva sata. Zatim ga je pozvao prijatelj M.D. koji ga je
+
+pitao da li može da dođe kod njega da mu pomogne oko sječe drva, š to je prihvatio i pošao kod njega, gdje se
+zadržao do predveče, a tu sa njima je bio jošjedan D. prijatelj M. Potom ga je D. povezao vozilom na glasačko
+mjesto, s obzirom da su toga dana bili izbori i po završenom glasanju on se sa Š. Lj. uputio prema svojoj kući.
+Tokom kretanja zaustavili su se kod kladionice „P“ jer je imao namjeru da provjeri neke tikete i da nešto
+uplati. Odmah po izlasku iz vozila a prije ulaska u kladionicu, naletio je na H.R. sa kojim je od ranije u
+negovoru i lošim odnosima, jer mu je on svojevremeno psovao majku. Odmah ga je upitao vezano za
+navedene psovke i tu je došlo u jednom trenutku dožučnije raspravke između njih, pa su se umiješali prisutni
+koji su ih razvađali kako ne bi došlo do fizičkog kontakta između njih. Zatim je na lice mjesta došao njegov
+pokojni brat M, a ne zna da li ga je neko pozvao ili je sam slučajno došao, koji ih je razvađao i zatim je ponudio
+da ga poveze do kuće, š to je on odbio, pa se prema kući udaljio pješke. Po dolasku u kuću, popeo se na sprat,
+vidio da u dnevnoj sobi sjede djeca, ušao u spavaću sobu i uzeo pištolj „tetejac“ č iji je vlasnik. Po uzimanju
+pištolja, isti je repetirao i krenuo je da izlazi iz kuće, sa namjerom da se ponovo vrati ispred kladionice. Po
+silasku niz stepenice, a na ulazu u kuću, naišao je njegov sada pokojni brat M. i vidio ga kako drži pištolj u
+desnoj ruci, sa otvorom cijevi prema zemlji, jer pištolj nije mogao da stavi iza pojasa, s obzirom da je nosio
+neku trenerku. M. mu se odmah obratio kazavši „ š taćešto i gdjećeš “, on mu je odgovorio u smislu „znašti
+dobro gdjeću ja“, a on mu je zatim kazao „nećešti nigdje, daj mi to sranje“ misleći na pištolj i tu je došlo do
+guranja između njih. U prvi mah ga je uhvatio za ruku u kojoj je bio pištolj i počeli su da se vuku, uhvatio ga je
+vrlo snažno, preko ruke i pištolja, tako da je u jednom trenutku u takvom položaju došlo do opaljenja. Odmah
+nakon opaljenja njegov pokojni brat je krenuo da pada nekako naprijed i u takvim uslovima on je pao preko
+njega, i u tom trenutku jošje svojom rukom držao njegovu ruku u kojoj je bio pištolj i stisak je bio toliko jak da
+nije mogao da istrgne ni ruku ni pištolj. Začuo je nakon ovog nekakvo gušenje – krkljanje i tada se olabavila
+ruka njegovom pokojnom bratu, sklonio je njegove prste sa ruke i zatim pištolj odbacio od sebe. Prišao je M.
+sa namjerom da mu opipa puls i tada je osjetio krv. Pokušavao je nekako da zaustavi to krvarenje, vukao ga,
+drmao, dozivao, ali odgovora nikakvog nije bilo. Nakon ovoga, okrenuo je neki broj i javila mu se služba za
+spaš avanje, koja ga je spojila sa policijom. Zatim je pozvao svoju sestru N. P, kojoj je predočiošta se desilo.
+Tražio je da dođe da uzme M. djecu koja su bila na spratu. Pojasnio je da dok je bio kod prijatelja M. D, č uo se
+telefonom sa svojim sada pokojnim bratom i tom prilikom su razgovarali na temu nekakvih komičnih
+situacija koje su se dešavale tokom bavljenja prevozničkim poslom i sjeća se da je u jednom trenutku i upalio
+zvučnik na telefonu kako bi prisutni oko njegačulišta pričaju. Sa svojim sada pokojnim bratom M. bio je u
+najboljim mogućim odnosima, dobro su se slagali, zajednički radili posao, zajedno odlučivali. On i M. su
+živjeli zajedno sa djecom u istoj kući, s obzirom da su obojica razvedeni. Pored kuće u kojoj suživjeli,
+zajednički su započeli izgradnju nove kuće.
+Pojasnio je da je tokomčupanja između njega i sada pokojnog brata oko predmetnog pištolja, on bio u
+položaju nekih 30-tak cm visočiji i u takvom položaju je došlo do opaljenja tokomčupanja, kada je njegov
+pokojni brat povukao pištolj prema sebi.
+Nije vidio djecu pokojnog brata, L, niti H. da su izašle nakonšto je došlo do opaljenja metka ispred kuće, a
+nije ih vidio ispred kuće ni kasnije do momenta kada je odveden od strane policije. Nije primijetio nikog ni od
+komšija da je izašao nakonšto je došlo do opaljenja. Sjeća se opaljenja prvog metka, odnosno sjeća se samo
+opaljenja jednog metka, ali ne zna kako da objasni da su na tijelu sada pokojnog brata, pronađene dvije rane
+od projektila. M. je od njega mlađi 11 godina i kritičnog dana ispred kladionice on je razvadio H. i njega, a
+zatim je tražio od njega da pođe kući sa namjerom da ga poveze vozilom, š to je on u toj ljutnji odbio.
+Kritičnog dana je prvo konzumirao pelinkovac, a zatim kod prijatelja P. š tok, gdje su njih dvojica popili cijelu
+flašuštoka zapremine 1 l, s timšto je on ovo piće konzumirao sa koka-kolom. Po njegovom mišljenju nakon
+izlaska iz kuće D, bio je u pripitom stanju. Naveo je joši da je, kada ječuo pucanj, osjetio nekakvu jezu, strah i
+mrak pred očima.
+
+U završnoj riječi branilac okrivljenog E. Š, advokat R.O. je u bitnom naveo da je izvedenim dokazima u
+prethodnom i u ponovljenom postupku nesumnjivo utvrđeno da je optuženi E.Š. izvršio krivično djelo
+ubistvo iz nehata izčlana 148 KZ-a CG, za koje djelo je kriv i krivično pravno odgovoran. Istakao je da je u
+predmetnom slučaju u pitanju jedna nesreća, odnosno teška porodična tragedija, koja je narušila porodičnu
+harmoniju i idiličanživot dva rođena brata i njihovih porodica. Kod optuženog nije postojala namjera,
+htjenje, odnosno volja, tj. pristanak da ubije svog brata, većje optuženi bio svjestan da sa repertiranim
+pištoljem u ruci može učiniti krivično djelo, ali je olako držao da do toga neće doći, ili da to može spriječiti.
+Zastupnik optužbe je ostao pri tvrdnji da se predmetni slučaj desio u dvorištu zajedničke porodične kuće
+optuženog i oštećenog. Međutim, ubistvo iz nehata desio se na stepeništu, a ne u dvorištu predmetne kuće,
+što je dokazano i izvršenom rekonstrukcijom. Takođe, tužilac tvrdi da se ubistvo desilo nakon kraće svađe
+optuženog i oštećenog, a svi izvedeni dokazi nesumnjivo ukazuju da se braća nikada nijesu svađala, većsu
+bila primjer bratske sloge i ljubavi, tj oličenje pravog bratskogživota. S toga je očigledno da dokaza za isto
+nema, većsamo pretpostavka tužioca, a u pravu se odluka ne može temeljiti na pretpostavkama, većna
+nesumnjivo utvrđenimčinjenicama. Nesumnjivo se iz iskaza svjedoka H. R, M. D, V. K, N. P, Š.P. i Š.Lj, utvrđuje
+da se braća nikada nijesu svađala, većsuživjeli u slozi, ljubavi i međusobnom poštovanju, ašto je potvrdila i
+svjedok, bivša supruga oštećenog M. Š, S.C. Dodao je da se iz iskaza svjedoka M.D. utvrđuje da su se braća
+kritičnog dana više putačula putem telefona, a optuženi se prilikom tih razgovora smijao išalio, te da je
+takođe tog dana sa M.D. evocirao uspomene na njihove lijepe događaje, posebno sa putovanja, a planirali su
+i nova zajednička druženja. M.D. je prijatelj sa porodicomŠ, č iji je biočest gost i nikada niječuo niti vidio da
+su se optuženi i oštećeni bilo kada i oko najmanje sitnice posvađali, većje njihovživot bio primjer iskrene
+bratske ljubavi. Braća su zajedno podizala iškolovala njihovu maloljetnu djecu, išla na ljetovanje i zajedno
+gradila novu zajedničku kuću, ašto je takođe posebno istakao i svjedok Š. P, koji odlično zna kako su braća
+živjela jer je njihov zet. Međutim, zastupnik javne optužbe ističe da je optuženi sa umišljajem, dakle namjerno
+lišioživota svoga brata, a za isto nema nijedan jedini dokaz. Dalje, tužilac je ostao pri optužbi da je optuženi u
+pravcu oštećenog ispalio dva projektila od kojih ga je jedan pogodio u predjelu grudi, a jedan u predjelu
+desne bočne strane vrata, ašto takođe nije tačno. Pojasnio je da jedna prostrelna rana prolazi kroz lijevi
+nizdojkin predio oštećenog, sa ulaznom ranom koja se kanalom nastavlja kroz potkožna meka tkiva lijeve
+polovine prednje strane trbuha i završava izlaznom ranom u predjelu lijevog donjeg kvadranta prednje strane
+trbuha, te ponovo ulazi u tijelo ulaznom ranom u predjelu gornje trećine prednje strane lijeve butine, koja
+rana se kanalom nastavlja kroz meka tkiva lijeve butine i završava izlaznom ranom u predjelu srednje trećine
+zadnje strane lijeve butine, a potom se nastavlja strijelnim okrznućem u predjelu unutrašnje strane srednje
+trećine desne potkoljenice. Dakle, očigledno je da optuženi nije držao pištolj usmjeren u pravcu svoga brata,
+već je pri otimanju oko pištolja i pri ispaljenju jednog metka, pištolj bio usmjeren u pravcu zemlje, sa ustima
+cijevi prislonjenim uz tijelo oštećenog, ašto se potvrđuje i nalazom vještaka Forenzičkog centra iz
+Danilovgrada – I. Lj, zatim nalazom vještaka sudske medicine N.R. i nalazom vještaka balističara B.B. Ovaj
+hitac, kao i drugi hitac su ispaljeni iz pištolja iz apsolutne blizine, ašto potvrđuje i vještak N. R, koji ističe i da
+su obje povrede nanesene u veoma kratkom vremenskom intervalu, za koje vrijeme optuženi i oštećeni nijesu
+znatno mijenjali međusoban položaj njihovih tijela, većje samo desna E. ruka u kojoj se nalazio pištolj,
+pomjerena. Vještak je mišljenja, s obzirom na pokazivanje optuženog na rekonstrukciji i načina na koji mu je
+oštećeni povukao ruku i pištolj k sebi, da je prva povreda nastala u desnu bočnu stranu oštećenog i da je ova
+povreda bila uzrok smrti, za razliku od druge povrede koja se kvalifikuje kao obična teška tjelesna povreda.
+Takođe, ovaj vještak je potvrdio iskaz optuženog, odnosno istakao je da je moguće da je oštećeni i dalje
+mogao dačvrsto steže ruku optuženog i nakon zadobijanja oba projektila i da je taj stisak i fizička snaga
+oštećenog mogla da traje oko 10 sekundi do 1 minuta, kada je zbog prestanka dotoka krvi u mozak takvo
+stezanje moralo prestati. Vještak je takođe istakao da je optuženi u ponovljenoj rekonstrukciji pokazao i način
+na koji su on i oštećeni pali nakon opaljenja, a pokazani način je mogućs obzirom na zadobijanje oguljotina u
+predjelu desne slepoočnice i nadlana desnešake oštećenog M. Vještak balističar B.B. je istakao da su obje
+čaure ispaljene sa iste pozicije, s timšto je samo mijenjan položaj uzdužne ose cijevi pištolja, koja je morala
+
+biti usmjerena odozgo na dolje, ukoliko je tijelo pokojnog M. bilo u položaju kako je na rekonstrukciji
+pokazao E. A upravo je ova konstatacija tačna, jer to je optuženi stalno isticao, kao što je tačna i tvrdnja da je
+M. bio nagnut prema naprijed, s obzirom da je lijevom nogom zakoračio na stepenik zajedničke kuće, ašto se
+takođe poklapa sa uslovnom konstatacijom vještaka balističara. Dakle, iz nalaza i mišljenja vještaka sudske
+medicine i balističara se jasno utvrđuje da se prilikom ispaljivanja projektila oštećeni M. nije kretao i da se
+tom prilikom nije kretao ni okrivljeni, č ime se u potpunosti potvrđuje njegova odbrana. Takođe, jedan
+projektil, pogodio je oštećenog u predjelu desne bočne strane vrata, a obzirom da se optuženi koristi
+uglavnom desnom rukom, odnosno prirodno je dešnjak i pištolj mu je bio u desnoj ruci, i ako su, a jesu,
+okrivljeni i oštećeni bili okrenuti licem jedan prema drugom, logično je da bi u slučaju namjernog, svjesnog
+ubistva sa umišljajem, ulazna rana bila na lijevoj bočnoj strani vrata oštećenog, a ne na desnoj, te i ovaj hitac
+dokazuje da je u konkretnom slučaju bio nehat u pitanju, odnosno da je ovaj projektil takođe ispaljen u
+trenutku otimanja oko pištolja. Odbrana ističe ičinjenicu da je oštećeni M. uhvatio optuženog za samušaku i
+prste i za pištolj i naglo povukao ruku prema sebi kako bi optuženom istrgao pištolj iz ruke, kada su se i desila
+opaljenja, a kojom prilikom optuženi nije mogao da kontroliše opaljenja, s obzirom da je sila oštečenog bila
+usmjerana i na sam obaračna kojem se nalazio prst optuženog, koji je ranije repertirani pištolj držao
+usmjeren prema zemlji u desnoj ruci, opuštenoj niz tijelo i dakle sa prstom na obaraču. Na mjestu ovog
+nesrećnog slučaja pronađena je i kesa sa hranom, koju je te večeri donio oštećeni koji je namjeravao da
+nahrani djecu. I ovaj dokaz ukazuje na logičan zaključak da između braće nije bila ni najmanja svađa, jer u
+suprotnom sigurno pokojni M. ne bi kritičnom prilikom kupovao hranu djeci i sa istom u rukama došao kući
+da se svađa sa optuženim. Takođe, nakon ovog nesrećnog slučaja, optuženi je pokušavao da pomogne svom
+bratu, da zaustavi krvarenje, a kad je shvatio da je isti mrtav i da mu nema pomoći, pozvao je nadležne
+organe i rodbinu i bio je vidno utučen. Na kraju je dodao da je sa svega iznijetog nesumnjivo dokazano da
+okrivljeni nije izvršio krivično djelo koje mu se stavlja na teret, većda je isti izvršio krivično djelo ubistvo iz
+nehata za koje je propisana kazna zatvora od jedne do pet godina i samoće takva presuda biti pravična,
+pravilna i zakonita odluka.
+
+Okrivljeni E.Š. je prihvatio završnu riječsvog branioca, s timšto je dodao da se ne bi branio pred sudom da je
+namjerno lišioživota svog brata. Dodao je da jeste kriv za nesreću koja je zadesila njega i njegovu porodicu.
+Mnogo mu teško padašto je optužen da je ovo djelo izvršio sa umišljajem. Naveo je i da se kune pred Bogom i
+pred ljudima, da nije imao nikakvu namjeru da lišiživota svog brata. Sve se desilo u par sekundi, brat je
+pokušao da mu istragne pištolj iz ruke koja mu je bila spuštena niz tijelo, a cijev pištolja usmjerena prema
+zemlji. Prethodno je na spratu kuće mahinalno repetirao ovaj pištolj i nije mogao da ga stavi iza pasa jer je
+imao na sebi trenerku. Razlog uzimanja ovog pištolja je svađa prethodna sa R, odnosno posebno psovka koju
+mu je R. uputio prilikom te svađe. Htio je da se vrati do mjesta gdje se desila svađa sa tim pištoljem i to
+džipom koji je bio parkiran ispred kuće, š to je bila velika greška koju sebi nikada ne može oprostit. Samo je
+htio da ljudi vide ozbiljnost svađe njega i R. i da se po običajima u njegovom kraju ljudi uključe u rešavanju te
+svađe i sukoba. Međutim, pištolj je opalio te noći i kako je od početka tvrdio drugog pucnja se ne sjeća, u
+kojim sekundama se promijenilo sve u njegovomživotu, kao i uživotima svojih bližnjih, izgubio je brata kojeg
+je volio više nego sebe. Zajedno su odrastali, pravili planove, kućili se, pravili novu kuću, zajedno podizali
+djecu, o svemu zajedno odlučivali. Na kraju je dodao da njegova porodica njemu vjeruje i zna da je sve ovo
+jedna velika nesreća koja ih je zadesila. Smrti se ne boji, ali ga mnogo pogađa nepravda koja mu je učinjena
+optužbom da je namjerno lišioživota svog brata.
+
+Sud je u dokaznom postupku na glavnom pretresu izveo dokaze i to saslušao u svojstvu svjedoka
+predstavnicu oštećene porodice N.P, svjedoka Š. P, pročitao iskaze svjedoka, R. H, Š. Lj. S. C, V.K. i M. D,
+pročitao zapisnik o uviđaju Višeg državnog tužilaštva iz Bijelog Polja Kt. br. 25/18 od 04. 05. 2018. godine;
+
+pročitao službenu zabilješku CB B. OB R. 77 br. 02/244/18-4152 od 16. 04. 2018. godine; pročitao obdukcioni
+zapisnik Kliničkog centra Crne Gore S. br. 63/2018 od 06. 05. 2018. godine sačinjen od strane obducenta dr N.
+R; pročitao izvještaj o kriminalističko-tehničkom pregledu lica mjesta i uzrokovanju tragova od 16. 04. 2018.
+godine; pročitao kriminalističko tehnički opis situacionog plana od 16. 04. 2018. godine, sa skicom i vrši uvid
+u skicu lica mjesta i fotografije; pročitao dokumentaciju Uprave policije CB B. - OB R. 82/18 od 16. 04. 2018
+godine, i br. 82/18/1 od 15. 04. 2018. godine, sa izvještajem o kriminalističko-tehničkom pregledu pištolja
+marke M-57-tetejac, cal. 7,62 mm, ser. broja C-191540 od 15. 04. 2018. godine; pročitao dokumentaciju
+Uprave policije CB B. - OB R. br. 82/18 od 16. 04. 2018. godine; pročitao izvještaj Forenzičkog centra
+Danilovgrad o balističkom vještačenju br. 1748-1/18 sa nalazom i mišljenjem vještaka B. B; pročitao izvještaj
+Forenzičkog centra Danilovgrad o vještačenju "prisustva barutnihčestica" br. 1750/18; izvještaj Forenzičkog
+centra Danilovgrad o vještačenju "prisustva GSRčestica" br. 1749/18; pročitao izvještaj Forenzičkog centra
+Danilovgrad o trasološkom vještačenju br. 1752/18/1; pročitao izvještaj Forenzičkog centra Danilovgrad o
+vješ tačenju daljine pucanja br. 1751/18 i pročitao zapisnik o saslušanju vještaka Lj. I; pročitao izvještaj
+Forenzičkog centra Danilovgrad o vještačenju parafinskih rukavica, br. 1749(2)/18; pročitao nalaz i mišljenje
+vještaka psihijatra dr G.K. od 11. 08. 2019. godine i pojašnjenje dato na prethodnom glavnom pretresu,
+pročitao nalaz i mišljenje vještaka psihologa N.V. od 05. 07. 2019. godine, i pojašnjenje dato na ranijem
+glavnom pretresu, pročitao nalaz i mišljenje vještaka sudske medicine dr N.R. od 12. 10. 2020 godine,
+19.11.2019 godine i pojašnjenja data na glavnim pretresima 23.12.2019 godine, 01. 06. 2020 godine i 12. 02.
+2021 godine; pročitao nalaz i mišljenje vještaka balističara B.B. od 28. 11. 2019. godine i pojašnjenje dato na
+glavnom pretresu 23. 12. 2019. godine i saslušao istog na glavnom poretresu, pročitao zapisnik o
+rekonstrukciji 04. 11. 2019. godine i reprodukovao video zapis, pročitao zapisnik o rekonstrukciji 09. 10. 2020
+godine, i reprodukovao video zapis i ivršio uvid u fotodokumentaciju sačinjenu tokom rekonstrukcije i izvršio
+uvid u izvod iz registra kaznenih evidencija Ministarstva pravde Crne Gore, br. 81/2018 od 21.06.2018 godine,
+na ime E.Š.
+
+Sud je odbio predlog državnog tužioca da se na glavnom pretresu pročita zapisnik o saslušanju okrivljenog
+pred sudijom za istragu ovog suda oznake Kri. br. 46/18 od 17. 04. 2018 godine, obzirom da okrivljeni prije
+iznošenja odbrane nije upozoren u smislu odredbičl. 100 i 337 Zakonika o krivičnom postupku Crne Gore, tim
+priješto se okrivljeni tokom istrage odlučio da ne iznosi svoju odbranu, odnosno da se branićutanjem, pa je
+iznošenje odbrane bez pravilnih upozorenja prilikom saslušanja kod sudije za istragu pravno nevaljano i isto
+se ne može koristiti kao njegova odbrana na glavnom pretresu.
+Sud je cijenio iskaz predstavnice oštećene porodice saslušane u svojstvu svjedoka N.P. koja je u svom iskazu
+datom tokom istražnog postupku u bitnom istakla daživi u R, u neposrednoj blizini kuće njene braće sada
+optuženog E. i sada pok. M. Koliko joj je poznato između njene braće nije bilo svađe ili bilo kakvih netrpeljivih
+odnosa. Š ta je razlog zbogčega je E. lišioživota M. ne zna, ali ističe da su odnosi između njih uvijek bili dobri.
+Radili su zajedno, bavili se prevozničkom djelatnošću sa vozilom koje su koristili zajedno i koje je bilo
+zajedničko vlasništvo. Pored porodične kuće zajedno su započeli novu kuću koja je većskoro bila pred
+useljenjem. Poznaje H.R. koji je njihov dalji rođak i poznato joj je da su njena braća sa njim poslovno
+sarađivali i da su bili u dobrim odnosima. Nije joj poznato da li je kritičnog dana bilo svađe između H. i njene
+braće. Povremeno je održavala kuću njene braće u kojoj je primijetila pištolj i uvijek bi govorila braći da isti
+sklone, a oni su govorili da u njemu nema ništa i da odavno niječišćen. Navela je da bi, za slučaj da je
+posumnjala nešto u njihov odnos, odmah sklonila pištolj.
+
+Na glavnom pretresu od 19. 07. 2018. godine ostala je pri iskazu datom u istražnom postupku, s timšto je
+dodala da je nakon događaja koji se desio, pošla prema kući njene braće i zapazila da su se M. djeca nalazila u
+
+dnevnom boravku, a na njeno pitanje su odgovorila da nijesučuli bilo kakvu svađu između E. i M. Tada su joj
+rekli da je M. bio na putu, te da je došao oko 13,00 h, nakončega je pošao da uzme večeru. Smatra da je M.
+bio u kući počev od 13,00 h pa do tog događaja, a stekla je utisak da je povremeno izlazio iz kuće. Mož da oko
+20,30 h pozvao je M. i rekao joj da se E. posvađao sa R. Kao razlog ranijeg nesporazuma između njih naveo je
+neko psovanje. Ona je govorila svome bratu M. da smiri situaciju, kako ne bi došlo do nečega većeg. On joj je
+rekao „dobro, dobro“, a ne zna da li je pošao na mjesto gdje su se nalazili E. i R. U tom momentu se nalazila
+kod svoje kuće koja je udaljena od kuće njene braće 100 metara. Po proteku možda oko pola sata ili 40
+minuta ponovo joj je zazvonio telefon i vidjela je da je zove brat E. i rekao joj „N. ubio sam M, dođi uzmi ovu
+djecu“. Odmah je otišla kod njih kući i tada se E. nalazio na stepenicama, obje ruke je držao na glavi. Dodala
+je da ona sada brine o M. djeci. Misli da je E. posebno pogodilo tošto ga je R. ranije opsovao, a s obzirom na
+njihov srodnički odnos.
+
+Upoznata u pogledu razlika u iskazu sa glavnog pretresa i iz istrage, izjavila je da je tačno da je kod tužioca
+kazala da nije bila upoznata, niti ječula da je kritičnog dana bilo svađe između R.H. i njene braće. Međutim,
+pojasnila je, da niječula da je bilo nekih nesporazuma između njih, sve dok joj brat toga dana nije rekao.
+Označava tačnim onošto je govorila na pretresu. Predočila je da je tačno da je tužiocu kazala da nije bila
+upoznata, niti da ječula da je toga dana njen brat sada okrivljeni imao sukob sa R.H. Međutim, tačno je da joj
+je to brat rekao nakonšto se desio događaj, te da je tačno onošto je kasnije kazala.
+Na glavnom pretresu od 27. 05. 2019. godine dodala je da kada je pozvao M. i kada je vodila razgovor sa njim
+neposredno prije dešavanja u njihovoj kući je bio prisutan S.P. Razgovor su vodili preko mobilnog telefona,
+nije bio uključen interfon na telefonu, a P. je bio udaljen od nje oko tri dočetiri metra. Ona nije govorila P. š ta
+je razgovarala sa M, mada je on moraočuti kada je M. rekla da smiri to da ne bi došlo do nečeg većeg. Dodala
+je da je tačno da se ona u pogledu saznanja vezano za svađu optuženog E. i R. u istražnom postupku izjasnila
+da nije znala sa svađu, a kasnije se izjasnila da je saznala od pok. M, te razliku objašnjava, takošto je pitanje
+tužioca shvatila na način da li je do svađe došlo toga dana, a ne prije nastupanja M. smrti.
+
+Na glavnom pretresu od 28. 01. 2020. godine u bitno je ponovila ranije dati iskaz pojasnivši da nije saopštila
+ukuć animašta je preko telefona razgovarala sa M, jer je ta priča jako uznemirila. Ne može da se sjetitišta je
+imao obučeno na sebi E. kada je došla na lice mjesta. Zna da je E. volio da popije alkohol, ali zna i da nije
+pravio nikakve probleme u takvom stanju, niti se nešto pretjerano opijao. Ne može reći da je E. bio agresivan
+kada bi bio pod dejstvom alkohola. Ne može se sjetiti ni da li je E. bio eventualno pijan kritične večeri kada se
+desio ovaj događaj. Kada je došla kod kuće nakon poziva, zatekla je E. koji je sjedio na stepenicama i držao se
+za glavu i pokojnog M. koji je ležao na zemlji udaljen nekih pola metra od stepenica. Š to se tiče M. djece kada
+je uš la u sobu gdje su se nalazili, po njihovoj reakciji mogla je zaključiti da nijesu znališta se desilo, a nakon
+događaja jedno vrijeme su krili od njihšta se desilo. E. i pokojni M. suživjeli na prvom spratu porodične kuće,
+ima jedan ulaz na kući i svi ga koriste za ulaz u kuću. Na kraju je istakla da je znala za pištolj i da je taj pištolj
+nekada pripadao njenom pokojnom ocu. Iskaz ove svjedokinje sud je prihvatio kao objektivan.
+
+Sud je cijenio iskaz svjedoka Š.P. koji je u svom iskazu u bitnom naveo da je prvi stigao na lice mjesta kada se
+desila tragedija. Došao je sa suprugom i sinom. Došli su vozilom i vozilo su ostavili malo dalje jer nijesu mogli
+parkirati vozilo od auta koja su bila ispred kuće Š. Prvo je primijetio lice koje je sjedjelo na stepeništu, držalo
+se rukama za glavu, sa oborenom glavom prema zemlji. Zatim se okrenuo i vidio lice koje leži na zemlji. Zatim
+je pošao prema licu koje je ležalo i tada je vidio da je to sada pok. M. Okrenuo ga je sa namjerom da mu
+
+pokuša pružiti pomoći tada je E. kroz plačrekao, odnosno teško izgovorio riječi „ja sam Š. pokušao da mu
+pomognem, ali uzalud“. Tada je vidio da je M. ispala „duša“, ušao je u sobu kako bi uzeo nešto da ga prekrije.
+Vratio se iz sobe, uzeo nekoćebe i prolazeći pored E, č uo je njegov plač. Tada su počele da dolaze komšije, a
+po proteku par minuta došla je i policija, pitali su ko je ovo uradio, našta je E. rekao da je on to uradio. Na
+osnovu E. govora i ponašanja, zaključio je da je doživio tešku bol zbog togašto se desilo, te da je iskazivao
+žaljenje zbog nesreće koja se desila. Dodao je da ga je o događaju obavijestila supruga, a sestra okrivljenog.
+Od njegove kuće do kuće okrivljenog potrebno mu je pet minuta pješke. Na mjestu gdje se događaj desio nije
+vidio pištolj. Misli da je tijelo pokojnog bilo udaljeno od stepeništa na kojima je sjedio optuženi E. oko jedan
+metar. Nije pitao bliže E. da mu pojasni, odnosno ispriča kako se događaj desio. Na mjestu gdje se desio
+događaj kada je došao zapazio je samo tragove krvi i neku kesu, u kojoj misli da se nalazila hrana. Na kraju je
+dodao da mu je poznato da ježivot između optuženog i pokojnog bio bratski odnos, da suživjeli u vrlo
+dobrim odnosima, te da nijesu nikadačuli da su imali bilo kakvu vrstu nesporazuma, niti svađe.
+
+Sud je cijenio iskaz svjedoka Velije Kalača, koji je u svom iskazu u bitnom naveo da se ne sjeća datuma a zna
+da su tog dana bili izbori. Pozvao ga je H.R. zv. „G“, da igraju „Jamb“ i dogovorili su se da se nađu u mjestu S.P. Njegova kuća je udaljena od tog mjesta 250 metara. Kada su razgovarali telefonom nijesu odredili mjesto
+gdjeće igrati „Jamb“, ali su se uvijek sastajali ispred jedne kladionice. Kada se približavao kladionici vidio je
+neku veliku gužvu. Na ulici je vidio E. a oko njega se nalazilo nekoliko ljudi. H.R. tada nije vidio, ali je zapazio
+da neka lica mole E. Vidio je da E. trojica drže i tada je rekao „sram vas bilo“, obraćajući se E. Tada mu je E.
+rekao „Ovaj mi je psovao majku“. Zatim je vidio H.R. ispred kojeg je stajalo nekoliko lica. E. je pitao R. „Zašto,
+budi muškarac, zbogčega si mi psovao mrtvu majku“. R. je odgovorio „Nijesam E“. Preko puta mjesta gdje se
+to dešavalo nalazi se perionica, marketi i preko puta je uvijek velika gužva. Na tom mjestu se nalazila
+kladionica, tako da je uvijek bilo dosta prisutnih lica. Tada se on obratio E., govoreći mu „Nemoj zbog mene,
+mož e me neko gurnuti“, a to je rekao zbog fizičkog stanja i bolesti, našta mu je E. rekao „Neću tebe, psovao
+mi je majku“. Sav taj događaj se dešavao u nekim intervalima i okrivljeni je više puta pitao R. zbogčega mu je
+psovao majku. Po njegovoj procjeni to je trajalo i više od pola sata. Č uo je kada je E. pitao R. koji se tada
+nalazio u kladionici „koga zoveš “. Ponovo je istakao da je optuženi više puta pitao R. zbogčega mu je psovao
+majku, kao i to da li mu je on bilo kada uživotu nešto učinio. Za svo to vrijeme E. je pokušavao da udari R.. R.
+se branio, ali je i on pokušavao da udari E. Č uo je kada je R. govorio „Ja neću da se svađam, ali ne
+dozvoljavam da me udariš “. U jednom trenutku je došao sada pok. M, parkirao je vozilo „Pasat“ kojim je
+doš ao i pitao je sa ulice „ Š ta je to, š ta se događa“, a ta udaljenost sa tog mjesta pa do kladionice ječetiri
+metra. Kada je pitao to, gledao je u njegovom pravcu, našta je odgovorio „ništa“. Tada se obratio E, govoreći
+mu „E, idemo kući“, a koliko se sjeća pitao je i R. š ta je to“. Tada je rekao E. „E, idemo kući“, našta je E. rekao
+„neć u“. M. se nije nakon toga puno zadržao na tom mjestu, upalio je auto i otišao sa tog mjesta. Planirao je da
+R. povede do kuće svog strica koja se nalazi u blizini, međutim, on je to niježelio pa se i dalje dešavala svađa
+između njih i nasrtanje više od strane E, nego od strane R. U međuvremenu, pokušao je R. da ugura u dvorište
+svog strica, a nekako je uspio krišom da izađe iz dvorišta poslije izvjesno g vremena i vidiošta se dešava sa E,
+koji je sjedio na braniku. Vratio se do R. i sjedjeli su. Primijetio je E. koji je otišao od tog mjesta oko 800
+metara. Da je to bio E. zaključio je po osnovu njegovog specifičnog hoda. Poslije toga, a po proteku možda
+oko pet minuta, ušli su u auto i pošli sa tog mjesta, a kada su se vraćali neko je pozvao vozača rekao mu da je
+okrivljeni iz nehata ubio brata. Istakao je da sečitavogživota družio sa E, išli su zajedno uškolu. Nije mu
+poznato da je ikada bilo svađe između njega i M, č ak suprotno, poznato mu je da su bili u bratskim odnosima.
+Radili su zajedno sa nekim kamionom. Bio je ičest gost njihove kuće, ačesto su se i družili organizovano i to u
+grupama, pa ih je i po 20-tak bilo na takvim druženjima. Iskaz ovog svjedoka sud je prihvatio.
+
+Sud je cijenio iskaz svjedoka M.D. koji u svom iskazu u bitnom navodi, da se kritičnog dana sreo sa E. negdje
+oko podne. Pošli su kod njega kući, gdje su cijepali drva, a E. mu je pomagao. Tada je uzeo litarštoka i pili su.
+E. je uzštok pio i kolu. Tada se E. telefonom par putačuo sa pokojnim M. Zapazio je da se smijao i da su se
+nešto dogovarali, odnosno da su se dogovarali da narednog dana idu na planinu, kako bi roštiljali.
+Razgovarali su i o dešavanjima nastalim prilikom obavljanja njihovih privatnih poslova, odnosno vožnje
+kamiona, š ta se kome desilo. E. je kod njega sjediočitav dan. Večerali su negdje pred mrak i otišli da glasaju.
+E. je pošao na svoje glasačko mjesto, a on produžio na svoje glasačko mjesto. Potom sečuo sa E. i tada mu je
+on rekao da je on pošao sa nekim drugom vozilom, tako da nema potrebe da ga vozi. Poznato mu je da su se
+E. i pok. M. izvanredno slagali, nikada se nijesu svađali. Služili su kao primjer dobrih odnosa između braće.
+Tačno je da su toga dana razmjenjivali mišljenja koće koga da glasa. Po njegovom mišljenju optuženi nije
+imao nikakve potrebe, niti razloga da ubije svog pokojnog brata. Ne zna da li je sada optuženi vezano za
+glasanje nešto razgovarao sa svojim bratom M. Iskaz ovog svjedoka sud je prihvatio.
+
+Sud je cijenio iskaz svjedoka Š. Lj. koji je u svom iskazu u bitnom naveo da su kritičnog dana bili izbori u R. i
+toga dana je on obavio svoju dužnost uškoli “...”. Po izlasku sa glasanja vidio je u holu E.Š. i ponudio mu da
+ga poveze kolima, š to je on prihvatio. Napravili su jedan krug kroz grad, jer je E. tražio negdje da kupi cigarete.
+Kada su bili na magistrali u mjestu S. P, E. je u jednom trenutku povikao “stani, stani” i otvorio vrata, pa je on i
+poč eo da zaustavlja vozilo, E. je izašao iz vozila i krenuo u pravcu jednog R, koga zovu “G”. Nakon toga,
+kamion koji se kretao za njim se jedva zaustavio i počeo je da svira, nakončega je on pomjerio vozilo i nije
+vidiošta se dešava između E. i R. Nastavio je naprijed kolima i nakon nekog vremena pozvao je sada pok. M.i
+kazao mu kako smatra da postoji mogućnost da dođe do sukoba između E. i R.M. je rekao daće brzo doći da
+vidi očemu se radi, i kazao mu “Nije valjda da se svađaju, nemaju razlog za svađu, sadću ja doći”, i vidio je da
+se sada pokojni M. zaputio prema licu mjesta, jer su se mimoišli na magistrali. Nakon nekog vremena kada je
+svojim vozilom došao kod benzinske pumpe u R, primijetio je iz vozila E. koji se kretao u blizini benzinske
+pumpe. Zaključio je da zbog togašto je E. nekako naglo izašao iz njegovog vozila da može doći do sukoba
+između njega i R, a nije znao neku pozadinu njihovog sukoba. Nakon nekog vremena pozvao ga je otac I. Lj.i
+saopštio mu kako je došlo do pucnjave i kako je nastradao M. Š, s obzirom da se otac tada nalazio u bolnici
+kada su mu ljekari saopštilišta se desilo. U ranijem periodu se više družio sa pokojnim M, a dešavalo se i da
+se povremeno druži i sa E. Kritičnog dana nije primijetio da je E. bio pod dejstvom alkohola. Iz komunikacije
+koju je imao sa pokojnim M, a djelimično i E, nije mogao zaključiti da je između njih bilo, bilo kakvog sukoba i
+nesporazuma. Ne može da se sjeti da li je bio vidni dio dana kada je E. izašao iz njegovog vozila. Iskaz ovog
+svjedoka sud je prihvatio.
+
+Sud je cijenio iskaz svjedoka S.C. koja je u svom iskazu u bitnom navela da ježivjela u braku sa pokojnim M.
+od 2003. godine, do 2010. godine, kada su se razveli. U braku su dobili dvoje djece. Po razvodu braka otišla je
+daživi u inostranstvo. Kada se udala, ž ivjela je u kućnoj zajednici sa M. bratom E. i M. roditeljima. Pokojni M. i
+E. su zajednički radili i bavili su se autoprevozom. U početku su imali jedan kamion, a kasnije su kupili i drugi.
+Što se tiče odnosa između sada pok. M. i E, ti odnosi su bili normalni. Nije primijetila da su se nešto svađali,
+naprotiv, razgovarali su o poslu, putovanjima, odnosno tom njihovom biznisu. Nije primijetila ni da je neko
+od njih sklon alkoholizmu. Dešavalo se da bi popili samo za praznike. Njene kćerke L. i H. joj nikada nijesu
+pričale o njihovim doživljajima svega togašto se desilo kada je stradao M, samo bi pričale o nekim
+uspomenama dok je on bioživ. Dodala je da je nakon razvoda brakaživjela u R. jošnekih tri- č etiri godine.
+Nakonšto se razvela od M, njihove kćerke su ostale kod njega. Nakon razvoda braka sa M. nema saznanja
+kakvi su bili odnosi između njega i E. Kćerke su je posjećivale nakon razvoda braka dok je boravila u R. Kada
+je pošla iz R. u inostranstvo prvo je otišla u Luksemburg, gdje je boravila otprilike godinu dana i dok je bila u
+
+Luksemburgu kćerke su dolazile kod njenih roditelja, koji su tadaživjeli u R. Nikada nije pitala njenu majku o
+odnosu između sada pok. M. i njegovog brata E. Njene kćerke su bile pažene i imale su potrebnu brigu od
+sada pok. M, kao i njegove rodbine i nikada nije primijetila da su nešto bile zapostavljane. Ubrzo nakon
+kritičnog događaja, možda nekih mjesec dana, kćerke su došle dažive kod nje. Iskaz ove svjedokinje sud je
+prihvatio.
+
+Sud je cijenio iskaz svjedoka H.R. koji je u svom iskazu u bitnom naveo da se kritičnog dana putem telefona
+čuo sa pok. M, pa su se dogovorili da pođuo na kafu, te su negdje oko 19,20 h pošli u jedan objekat u kojem
+piju kafu. U tom objektu su igrali karte i slično. Taj objekat je udaljen od njegove kuće od oko 150 metara. Dok
+se kretao ulicom prema tom objektu sreo se sa jednim vozilom koje je zastalo, misli da je bio jedan komšija Lj.
+Iz vozila je izašao E.Š. On je u tom momentu razgovarao telefonom sa komšijom koji ga je pozvao da igraju
+jamb u tom objektu. Lj. je nastavio put tim vozilom, dok je E. nakonšto je izašao iz vozila prešao ulicu i uputio
+se prema njemu. Istakao je da je unazad godinu i po dana bio u negovoru sa E. Misli da je povod negovora bio
+nesporazum kada je kupovao neku skijašku opremu i tada se E. učinilo da ga je on nešto opsovao, tako da su
+tada razgovorali u vezi toga, ali se nijesu svađali. Od tada nijesu govorili. Te večeri kada je E. izašao iz vozila i
+uputio se prema njemu i bez ikakvog razloga uhvatio ga rukama za njegove ruke, došlo je do guranja, a nijesu
+se udarali. Lica koja su se kretala tim prostorom su prišli i razdvojili ih. Sve se to dešavalo ispred tog objekta
+gdje su se ranije dogovorili da piju kafu. Nakon toga došao je M, da vodi kući E. Misli da je E. bio malo u
+pripitom stanju. Naveo je, da je M. pokušao da vodi E. kući, a on-svjedok se udaljio, da li ga je povezao kući ne
+zna. Nakon toga pozvao ga je M. i to je shvatio kao pokušaj izvinjenja zbog događaja koji se desio ranije sa E.
+Naveo je da M. nije dolazio kod njega kući, niti su se nakon toga viđali. Ne zna tačno gdje je pošao M. sa tog
+mjesta, ali je vidio da je ostao zajedno sa E. pokušavajući da ga vodi kući, a da li su pošli kući i gdje, ne zna, ali
+tvrdi da je on pošao kući, a da su oni ostali na tom mjestu. Na to mjesto M. je došao vozilom. Misli da je vozilo
+parkirao ispred tog objekta gdje su pili kafu, zna da je manji parking na kojem može da stane 2-3 auta. U
+momentu kada su se sreli nije bilo prepirke ili svađe između njih. Zna da mu je tada govorio u smislu da je
+slabčovjek. Na tom mjestu se nalazilo 10-tak momaka koji su prišli i razdvojili ih. Za vrijeme za koje nije
+govorio sa E. sretali su se, a nijesu komunicirali, niti je za to vrijeme bilo nekih nesporazuma između njih.
+Deš avalo se da sjede u istom lokalu, ali nije bilo nekih nesporazuma između njih za to vrijeme. Kasnije je
+saznao da je M. pozvao Š. Lj, nakončega je M. došao na to mjesto. Naveo je da ga je M. pozvao po proteku 20
+minuta od događaja koji se desio između E. i njega. Nije imao bilo kakav poslovni odnos sa M, sretali su se po
+R, bili su privatnici-prevoznici i viđali su se. Inače, prevoznici sečesto zajedno skupljaju i druže. Ranije prije
+nesporazuma koji je imao sa njim sretao se i pozdravljao se sa njim, ali se nijesu družili, mada se dešavalo da
+zajedno sjednu i popiju piće. Nije mu poznato u kakavim odnosima su bili E. i M. Zapazio ih je više puta
+zajedno u istom društvu, a nije u saznanju da su bilo kada imali nesporazum. Nije mu poznato da je E. ranije
+imao sukoba sa nekim, da je sklon svađi i tome slično. Nikada nije ni očekivao daće imati sukob sa E, a nije
+smatrao da je taj mali konflikt koji su imali ranije, mogao izazvati neki sukob između njih, s toga nije imao
+razloga da izbjegava susret sa njim. Nije zapazio bilo kakvu promjenu u M. ponašanju, s obzirom da je imao
+mali konflikt sa E, jer je M. „znao“ da između njega i E. praktično nije bilo ništa, tako da to po njemu nije bio
+razlog za ljutnju.
+
+Na glavnom pretresu od 28. 02. 2020. godine svjedok H.R. je izjavio da zna da se kritičnog dana u
+prijepodnevnimčasovima telefonomčuo sa sada pok. M, kada su se dogovorili da se kasnije vide i popiju
+piće. Tog dana bili su izbori u R. Negdje popodne, poslije 19,00 h krenuo je iz svoje kuće prema objektu koji
+drži A. Š, po prethodnom dogovoru sa V. K, da igraju jamb. Krećući se prema tom objektu naišao je vozilom Š.
+Lj. i zaustavio je vozilo i iz vozila je izašao E.Š. Odmah po izlasku zaputio se prema njemu i uhvatili su se
+
+rukama, jer je on nasrnuo na njega i kazao je u smislu „Mislišli ti da sam ja lošč ovjek“. Tada su se umiješala
+lica koja su bila u blizini i razdvojila ih. Nakon nekog vremena na lice mjesta je došao sada pok. M.Š. njegovim
+vozilom marke „Pasat“, izašao je iz vozila i tada je on krenuo da se udaljava sa lica mjesta. Ne znašta je dalje
+bilo između lica koja su ostala na tom mjestu, a on je došao u kuću, odnosno dvorište kod Š. K, kod koga je
+kasnije i popio kafu. Poslije nekog vremena telefonom ga je pozvao sada pok. M, pitao gašta se to desilo
+između njega i E. i izvinio mu se zbog nastalog incidenta. Dalje je dodao da kritičnog dana kada je pošao od
+kuće poslije 19,00 h, nije trebao da se vidi sa M, većsa Velijom Kalačem, da igraju jamb. Kada je rekao na
+ranijem glavnom pretresu da su se prije nesporazuma koji je imao sa njim sretali i pozdravljali, mislio je na E.Š. Kada je pok. M. došao na lice mjesta, on njega i E. nije razdvajao, jer su većbili razdvojeni. Tokom događaja
+sa E, jedan drugom nijesu zadali nijedan udarac, niti su bilošta ružno jedan drugome kazali. Nikada nije
+psovao majku E.Š. Tačno je da je sjedio u jednoj kafani zajedno sa E.Š. i S. K, nakonšto su kupili neku ski
+opremu u mjestu L. u B. P, i on tokom boravka u tom objektu nije psovao E. majku, možda se to njemu
+učinjelo. Nije kritičnog dana pokušao da udari E. Š, jer je on zapravo njega napao. Možda ga je E. kritičnom
+prilikom pitao u smislu zašto mu je psovao majku. Nakon ovog događaja pozvao ga je M. telefonom i pitao ga
+šta se to desilo i izgledalo mu je kao da M. pokušava da se izvini, pa je govorio „Sve je u redu, pripitčovjek“ i
+tome slično. Misli da je pok. M. o događaju možda obavijestio Š. Lj, jer je prethodno on bio sa E. zajedno, u
+kolima prije negošto je nastao konflikt između njega i E. Nikada nije sa M. razgovarao na temu njegovog
+negovora sa E. Od momenta kada je počeo konflikt sa E. do momenta dok nije došao M. na lice mjesta
+proteklo je 20 minuta. Misli da je Š. Lj. znao daće E.Š. da krene na njega, jer je prethodno bio sa njim u
+kolima. Š. mu je pričao nakon ovog događaja da kada je vozio E.Š. i kada su vidjeli njega da hoda pored puta
+u smislu „stani, stani“ i onda je izašao iz vozila i uputio se prema njemu, i iz toga zaključuje da je Š. Lj.
+zaključio daće doći do konflikta između njih dvojice.
+Iskaz ovog svjedoka, nakon pojašnjenja na zadnjem glavnom pretresu sud je prihvatio.
+
+Iz zapisnika o uviđaju Višeg državnog tužilaštva iz Bijelog Polja Kt. br. 25/18 od 04. 05. 2018. godine, proizilazi
+da je dana 15. 04. 2018. godine u prisustvu ovlašćenih lica OB R. izvršen uviđaj u R, ul. R. br.... - dvorište
+porodične kuće E.Š. i sada pok. M.Š. Lice mjesta je slabo osvijetljeno i u vrijeme vršenja uviđaja vidljivost je
+loša. Fiksna tačka (FT) broj 1 je lijeva ivica kuće E.Š. bliža magistralnom putu i centru grada. Fiksna tačka (FT)
+broj 2 je ivica betonske ograde bliža porodičnoj kući E.Š. i M. Š, udaljena od FT broj 1 6,30m gledano u pravcu
+grada. Trag broj 1 je lešudaljen od FT 1. Od FT 1 do nogu leša je 3,30 m, a do glave 5,20 m, a od FT broj 2 do
+glave leša je 1,90m. Trag broj 2 ječaura, od FT 2 na udaljensoti 2,20m, a od FT 1 5,50m. Trag broj 3 je telefon
+udaljen od FT 2 2,30 m, a od FT 1 4,40m. Trag broj 4 je lokva krvi, udalenjena od FT 1 5,70m, a od FT 2 1,70m.
+Duž ina traga broj 4 je 2,20m. Trag broj 5 je lokva krvi udaljena od FT 2 0,80 cm, a od FT 1 5,50m. Trag broj 6 je
+kesa sa sendvičem udaljen od FT 2 2,25m, a od FT 1 4,15 m. Trag broj 7 je više kapljica krvi od FT 1 udaljen
+2,20 m, a od FT 2 4,25m. Trag broj 8 je putničko motorno vozilo marke “Passat”, reg. oznaka RO AT 512
+vlasništvo pokojnog M.Š. i E.Š. Od FT 1 do prednjeg desnog pneumatika udaljenost je 3,60m,a od FT 1 do
+zadnjeg desnog pneumatika 1,65m i od FT 2 do prednjeg desnog pneumatika 4,40m. Od traga broj 1- le š,
+desno stopalo udaljeno od traga broj 8. pmv - prednjeg branika. Trag br. 1 - lešnalazi se leđima na zemljanoj
+podlozi, ruke opružene uz tijelo, na gornejm dijelu jakna crne boje i majca plave boje natopljena krvlju, plave
+farmerice u kojima je kajišcrne boje sa sivom tokom, na nogama crnečarape i patike ljubičasto sive boje,
+marke “Rineva” br. 44, na lijevoj ruci sat crne boje, pored lijeve ruke nalazi se patika palve boje marke
+“Reebok”, a ispod butine lijeve noge papuča crne boje. Rana u predjelu desne strane vrata i u predjelu grudi
+sa lijeve strane iznad struka. Očevidaca događaja nije bilo. Predmeti koji su obilježeni tragovima br. 2 ( jedna
+čaura) i tragovi br. 4, 5 i 7 (crvene mrlje nalik na krv) izuzeti su sa lica mjesta radi vještačenja. Naloženo je
+ovlašćenom licu policije da se u OB R. sašaka E.Š. izuzmu GSRčestice i parafinske rukavice radi vještačenja –
+utvrđ ivanja prisustva barutnih i GSRčestica, kao i da se izuzme odjevni predmet – dukserica, kao i bris iz
+
+njegove usne duplje radi utvrđivanja njegovog DNK profila. Naloženo je ovlašćenom licu policije da sašaka
+leša M.Š. skine parafinske rukakvice. Naloženo je ovlašćenim licima policije da se pištolj koji je policijski
+služ benik uzeo sa lica mjesta ispred porodične kuće i predao u OB R, izuzme radi vještačenja. Naloženo je
+ovlašćenim licima policije da sve predmete kao i tragove koji su izuzeti sa lica mjesta pošalju Forenzičkom
+centru Danilovgrad na balsitičko, DNK, GSR, hemijsko – daljine pucanja i druga vještačenja. Naloženo je da se
+tijelo pok. M.Š. preveze u B. radi vršenja obdukcije i dat je nalog vještaku obducentu dr N.R. da izvrši
+obdukciju tijela. Lice mjesta je skicirano i fotografisano od strane krim. tehničara i isti su sastavni dio
+zapisnika.
+Iz službene zabilješke CB B. OB R. 77 br. 02/244/18-4152 od 16. 04. 2018. godine, koja ima svojstvo zapisnika o
+uviđaju proizilazi da su ovlašćeni policijski službenici dana 16. 04. 2018. godine u ranim jutarnjimčasovima
+izvršili pretragu lica mjesta u cilju pronalaska predmeta i tragova u vezi izvršenog krivičnog djela ubistvo na
+štetu M.Š. koje se dogodilo dana 15. 04. 2018. godine u noćnimčasovima. Na licu mjesta iza porodične kuće
+E.Š. ul. I. br... u travi pronađena je jednačaura koja je dostavljena Forenzičkom centru radi vještačenja.
+
+Iz obdukcionog zapisnika Kliničkog centra Crne Gore S. br. 63/2018 od 06. 05. 2018. godine, sačinjenim od
+strane obducenta dr N. R, proizilazi da je 16. 04. 2018. godine u prostorijama Forenzičkog centru, izvršena
+obdukcija muškog leša dužine 184 cm, ž ivotnog doba 38 godina. Obducent dr N.R. dao je zaključak da je
+smrt kod sada pok. M. nasilna i nastupila je uslijed iskrvarenja iz rascjepa desne zajedničke karotidne arterije
+i raskidanih krvnih sudova dužkanala strijelnih rana prostrelina, nanesenih projektilima ispaljenim iz ručnog
+vatrenog oružja iz apsolutne blizine. Rana u predjelu desne bočne strane vrata je ulazna rana strijelne rane
+protreline koja se kanalom nastavlja kroz pripadajuća potkožna meka tkiva vrata, razara mišiće, lijevu
+zajedničku karotidnu arteriju, potom prolazi kroz zadnji zid grkljana, lijevu bočnu stranu vrata, meka tkiva
+lijevog ramena, lomi gornji okrajak lijeve ramenjače i završava se izlaznom ranom i lijevom lopatičnom
+predjelu, na kom mjestu u garderobi je ustanovljen metalni projektil koji je predat krim tehničaru. Rana u
+lijevom nizdojkinom predjelu je ulazna rana strijeline rane prostreline koja se kanalom nastavlja kroz
+potkožna meka tkiva lijeve polovine prednje strane trbuha i završava izlaznom ranom u predjelu lijevog
+donjeg kvadranta prednje strane trbuha, te potom ponovo ulazi u tijelo ulaznom ranom u predjelu gornje
+trećine prednje strane lijeve butine, koja rana se kanalom nastavlja kroz meka tkiva lijeve butine i završava
+izlaznom ranom u predjelu srednje trećine zadnje strane lijeve butine, te potom se nastavlja strijelnim
+okrznućem u predjelu unutrašnje strane srednje trećine desne potkoljenice. Povrede opisane pod tačkom 7
+su oguljotine koje su mogle nastati uslijed pada i udara o tvrdu i neravnu podlogu. Tok obdukcije je bliže
+prikazan foto-dokumentacijom br. 82/18/2 od 16. 04. 2018. godine. Sadržinu obdukcionog zapsinika i
+izjaš njenje u pogledu uzroka smrti sud je prihvatio.
+
+Dokumentacijom Uprave policije CB B. - OB R. br. 82/18 od 16. 04. 2018. godine, i to: izvještajem o
+kriminalističko-tehničkom pregledu lica mjesta i uzorkovanju tragova, kriminalističko-tehničkim opisom
+situacionog plana za to djelo, skicom lica mjesta i foto-dokumentacijom, bliže je predstavljeno mjesto gdje se
+događaj desio i bliže predstavljeni tragovi nađeni na mjestu gdje se događaj desio.
+
+Dokumentacijom Uprave policije CB B. - OB R. br. 82/18/1 od 15. 04. 2018. godine, i to: izvještajem o
+kriminalističko-tehničkom pregledu pištolja marke M-57-tetejac, cal. 7,62 mm, ser. broja C-191540 od 15. 04.
+2018. godine i fotografijama toga pištolja, je predstavljeno da je pištolj kako je to označeno dat na
+
+vješ tačenje, te konstatovano da je u pištolju nađen jedan metak sa oznakom PPU 7,62 TT, a u okviručetiri
+metka sa oznakom PPU 7,62 TT.
+Iz izvještaja Forenzičkog centra Danilovgrad o vještačenju "prisustva barutnihčestica" br. 1750/18 vještaka
+msc. D. S, proizilazi da je Forenzičkom centru radi hemijskog vještačenja dostavljena dukserica narandžaste
+boje, marke “Tom Tailor”, veličine “L”, vlasništvo E. Š, radi utvrđivanja prisustva odnosno neprisustva
+barutnihčestica. Primjenom određenih metoda dato je mišljenje da je na prednjoj strani dukserice dokazano
+prisustvo barutnihčestica u rasporedu i koncentraciji kako je to dato u prilogu koji sačinjava sastavni dio
+izvještaja. Predmetni izvještaj sud je prihvatio.
+
+Iz zvještaja Forenzičkog centra Danilovgrad o vještačenju "prisustva GSRčestica" br. 1749/18 od 08. 05. 2018.
+godine proizilazi da je Forenzičkom centru radi fizičko hemijskog vještačenja dostavljena dva “SEM stubića”
+da bi se utvrdilo prisustvo odnosno neprisustvo GSRčestica. Nakon završene GSR analize površina “SEM”
+stubića pomoću kojih su izuzeti eventualni tragovi pucanja sašaka E.Š. utvrđeno je da je na desnojšaci
+pronađen manji broj karaktrističnih GSRčestica hemijskog sastava Pb Sb Ba, a na lijevojšaci nijesu pronađene
+karakteristične GSRčestice. Vještak D.S. dao je mišljenje da je ustanovljeno prisustvo karakterističnih GSR
+čestica na desnojšaci E. Š, te da se s toga ne može isključiti mogućnost da je isti bio povezan sa procesom
+opaljenja iz vatrenog oružja. Predmetni izvještaj sud je prihvatio.
+
+Iz izvještaja Forenzičkog centra Danilovgrad o trasološkom vještačenju br. 1752/18/1 od 17. 05. 2018. godine
+proizilazi da je Forenzičkom centru na trasološku analizu dostavljena garderoba M.Š. i to jakna marke
+“Bugatti”, nepoznate veličine, crne boje (na prednjoj i zadnjoj strani jakni nijesu uočena mhanička oštećenja
+osim tragovi osušene tečnosti tamno braon boje nalik na krv); majica kratkih rukava marke “Tom Tailor”,
+veličine M, plave boje (na prednjoj strani majice uočavaju se pet mehaničkih oštećenja i to: na 0,5 cm od
+donje ivice majice i 16 cm od lijevogšava prednje i zadnje pole, relativna veličina ovog mehaničkog oštećenja
+je 1,5 cm; na 2,5 cm od donje ivice majice i 16,5 cm od lijevogšava prednje i zadnje pole, relativna veličina
+ovog mehaničkog oštećenja je 1,5 cm; na 10 cm od donje ivice majice i 17,5 cm od lijevogšava prednje i
+zadnje pole, relativna veličina ovog mehaničkog oštećenja je 1,6 cm; na 24 cm od donje ivice majice i 19 cm
+od lijevogšava prednje i zadnje pole; na prednjoj strani majice uočavaju se tragovi osušene tečnosti tamno
+braon boje nalik na krv; na zadnjoj strani majice nijesu uočena mehanička oštećenja osim tragovi osušene
+tečnosti tamno braon boje nalik na krv); farmerice marke “Diesel” veličine 36 plave boje, sa kožnim kaišem,
+nepoznate marke, crne boje (na prednjoj strani farmerica uočavaju se dva mehanička oštećenja i to: na 16 cm
+od donje ivice lijeve nogavice uz sami unutrašnjišav lijeve nogavice, relativna veličina ovog mehaničkog
+oštećenja je 0,6 cm; na 88 cm od donje ivice lijeve nogavice i 15 cm od spoljašnjegšava lijeve nogavice,
+relativna veličina ovog mehaničkog oštećenja je 2 cm; na prednjoj starni farmerica uočavaju se tragovi
+osušene tečnosti tamno braon boje nalik na krv; na zadnjoj strani farmerica uočavaju sečetiri mehanička
+oštećenja i to: na 4 cm od donje ivice lijeve nogavice i 1 cm od spoljašnjegšava lijeve nogavice, relativna
+veličina ovog mehaničkog oštećenja je 1,5 cm; na 5 cm od donje ivice lijeve nogavice i 2,5 cm od spoljašnjeg
+šava lijeve nogavice, relativna veličina ovog mehaničkog oštećenja je 2 cm; na 10 cm od donje ivice lijeve
+nogavice i 7 cm od spoljašnjegšava lijeve nogavice, relativna veličina ovog mehaničkog oštećenja je 0,7 cm;
+na 12 cm od donje ivice lijeve nogavice i 9 cm od spoljašnjegšava lijeve nogavice, relativna veličina ovog
+mehaničkog oštećenja je 0,6 cm; na 73 cm od donje ivice lijeve nogavice i 17 cm od spoljašnjegšava lijeve
+nogavice, relativna veličina ovog mehaničkog oštećenja je 1,5 cm; na zadnjoj starni farmerica uočavaju se
+tragovi osušene tečnosti tamno braon boje nalik na krv); bokserice marke “Johnadams”, nepoznate veličine,
+plave boje (na prednjoj starni bokserica uočava se jedno mwehaničko oštećenje na 4 cm od lijevogšava
+prednje I zadnje pole i 12 cm od gorenje ivice bokserica, relativna veličina ovog mehaničkog oštećenja je 1,5
+
+cm; na prednjoj strani bokserica uočavaju se tragovi osušene tečnnosti tamno braon boje nalik na krv; na
+zadnjoj strani bokserica nijeus uočena mehanička oštećenja osim tragovi osušene tečnosti tamno braon boje
+nalik na krv); patike marke “Exit” veličine 44, bordo boje (na patikama nijesu uočena mehanička oštećenja
+osim tragovi osušene tečnosti tamno braon boje nalik na krv) ičarape nepoznate marke i veličine, crne boje
+(načarapama nijesu uočena mehanička oštećenja). Nakon izvršenog vještačenja vještak G. D, dao je mišljenje
+da mehanička oštećenja na garderobi sada pok. M. Š, imaju karatkeristike oštećenja nastalih dejstvom
+projektila ispaljenog iz vatrenog oružja. Predmetni izvještaj sud nije prihvatio.
+
+Iz izvještaja Forenzičkog centra Danilovgrad o vještačenju daljine pucanja br. 1751/18 od 24. 05. 2018. godine
+proizilazi da je Forenzičkom centru radi fizičko hemijskog vještačenja dostavljena garderoba vlasništvo M.Š.
+(greškom navedeno E) za utvrđivanje daljine pucanja odnosno rastojanja usta cijevi vatrenog oružja od
+oštećenja na istoj. Dostavljena je sljedeća garderoba: jakna crne boje marke “Bugati”, (ne primjećuje se sa
+prednje i zadnje starne oštećenja); majica kratkih rukava plave boje marke “Tom Tailor” veličine M
+(primjećuju se sa prednje stranečetiri oštećenja veličina 1,5 cm, 1,5 cm, 1,6 cm i 12x9 cm, sa zadnje starne
+strane majice ne primjećuju se oštećenja); farmerice plave boje marke “Disel” veličine 36 sa umetnutim
+kožnim kaišem (primjećuju se sa prednje strane dva oštećenja veličina 0,6 cm i 2 cm, sa zadnje strane
+farmerica primjećuju sečetiri oštećenja veličina 1,5 cm, 2 cm, 0,7 cm, 0,6 cm i 1,5 cm); bokserice plave boje
+marke “Johnadams” (sa prednje strane primjećuje se oštećenje veličine 1,5 cm, sa zadnje strane bokserica ne
+primjećuju se oštećenja); patika bordo boje marke “Exit” veličine 44 (ne primjećuju se oštećenja); č arapa crne
+boje (ne primjećuju se oštećenja).
+Nakon izvršenih ispitivanja u okolini oštećenja sa prednje strane majice kratkih rukava vlasništvo sada pok.
+M. Š, koje je označeno brojem 1 u prilogu, a na skicama brojevima 1 i 2, dokazno je prisustvo barutnihčestica,
+dok u okolini svih ostalih oštećenja nije dokazano prisustvo barutnihčestica. Oštećenje sa prednje strane
+majce kraktih rukava vlasništvo sada pok. M. Š, koje je označeno br. 1 u prilogu, a na slikama br. 1 i 2, nastalo
+je od projektila iz vatrenog oružja sa prislonjenim ustima cijevi na istoj. Ostala oštećenja na majci kraktih
+rukava, farmericama i boksericama nastala su od projektila iz vatrenog oružja kada su usta cijevi bila na
+rastojanju većem od 90 cm do istih.
+Na glavnom pretresu od 12. 11. 2018. godine vještak Lj. I. je pojasnila da daljina pucanja kada se odnosi na
+kratke cijevi predstavlja rastojanje usta cijevi i garderobe oštećenog, te da je domet prostiranja barutnih
+čestica od usta cijevi do garderobe 90 cm. S toga se vještak ne može izjasniti o udaljenosti usta cijevi od
+oštećenja ako je ta udaljenost veća od 90 cm. Dalje je navela da se prilikom ispaljenja, barutnečestice
+raspoređuju u obliku lijevka, te da se radi o polusagorelim i nesagorelimčesticama, te da je najveća
+koncentracija pri izlazu, ašto je udaljenost dalja, koncentracija je manja. Preko 90 cm, se ne može dokazati
+prisustvo barutnihčestica. Daljinu pucanja određuju na osnovu kataloškog ispitivanja i pomoću hemijskog
+testa, kao i to da daljinu pucanja određuju do 90 cm. Navela je i to da preko 90 cm nema barutnihčestica,
+tako da je ta metoda potpuno pouzdana. Predmetni izvještaj kao i pojašnjenje, sud je u cjelosti prihvatio kao
+objektivan.
+
+Iz izvještaja Forenzičkog centra Danilovgrad o vještačenju parafinskih rukavica, br. 1749(2)/18 od 08. 05. 2017.
+godine proizilazi da je Forenzičkom centru radi hemijskog vještačenja dostavljeno osam samolepljivih folija
+izuzetih sašaka M.Š. i E.Š. kako bi se utvrdilo prisustvo odnosno neprisustvo barutnihčestica. Primjenom
+određenih metoda vještak D. S, dao je mišljenje da nakon izvršenih ispitivanja na samolepljivim folijama
+izuzetih sašaka E.Š. i M. Š, nije dokazano prisustvo barutnihčestica. Predmetni izvještaj, sud je prihvatio kao
+objektivan.
+
+Iz izvještaja Forenzičkog centra Danilovgrad o balističkom vještačenju br. 1748-1/18 od 25. 04. 2018. godine
+proizilazi da je Forenzičkom centru radi balističkog vještačenja dostavljen: pištolj marke “CZ” model 57,
+kalibar 7,62 mm, fabrički broj 191540 (po usadniku i navlaci pištolja postoje mrlje tamno crvene boje nalik na
+krv, pištolj je graviran i niklovan i ima drvene ručno rađene korice rukohvata, ušaržeru pištolja nalazilo se 4
+metka, a jedan metak koji je izvađen iz cijevi je posebno upakovan, dostavljeni mecu su kalibra 7,62 mm TT);
+čaure – 2 komada načijem dnu postoje oznake br. 2 PPU – 7,62 TT i br. 11 PPU – 7,62 TT (spornečaure su
+kalibra 7,62 mm TT, na dnučaura postoje tragovi nastali ispaljenjem iz vatrenog oružja od udarne igle, č ela
+zatvarača i izbacača, u okviru ovih opštih tragova formirane su undividualne karakteristike koje imaju
+identifikacionu vrijednost); projektil izvađen iz tijela pok. M.Š. koji je blago deformisan na vrhu kao i srednje
+deformisan pri dnu (geometrijskim i težinskim mjerenjem utvrđeno je da je sporni projektil kalibra 7,62 mm
+TT, po obimu projektila postoji materija tamno crvene boje nalik na krv, u okviru ovih opštih tragova
+formirane su individualne karakteristike koje imaju identifikacionu vrijedniost). Primjenom određenih
+metoda vještak B. B, dao je zaključak da je pištolj koji je dostavljen na vještačenje ispravan, da je iz pištolja
+pucano nakončega njegova cijev niječišćena ni podmazivana, da su dostavljenečaure i to dva komada cal.
+7,62 mm, TT, ispaljene iz pištolja koji je bio predmet vještačenja. Takođe projektil izvađen iz tijela sada pok.
+M.Š. je kalibra 7,62 mm i ispaljen je iz predmetnog pištolja.
+
+Nakon izvršene rekonstrukcije događaja kojoj je prisustvovao i vještak balističar B. B, vještak je dostavio nalaz
+i miš ljenje o balističkom vještačenju br. B-09/19 od 28. 11. 2019. godine iz kojeg proizilazi da prema skici lica
+mjesta sačinjenoj od strane OPS O.B. R, na 1 m su pronađene dviječaure kalibra 7,62 mm TT koje su
+obilježene br. 2 i 11. Obječaure su od FT1 identično udaljene, na rastojanju od 5,5 m. Ovo ukazuje da su obje
+čaure ispaljene sa iste pozicije, s timšto je samo mijenjan položaj uzdužne ose cijevi pištolja u odnosu na lice
+mjesta. Obdukcijom su utvrđeni smjerovi strijelnih kanala kod oštećenog M.Š. Okrivljeni E.Š. je na
+rekonstrukciji pokazao međusobni položaj između njega i M. Pokazano mjesto odigravanja spornog
+događaja, odgovara materijalnim tragovima. Pokazani međusobni položaj od strane okrivljenog kao i sama
+dinamika spornog događaja djelimično je moguća. Naime, uzdužna osa cijevi pištolja mora biti u položaju
+koji zadovoljava smjer strijelnih kanala utvrđenih obdukcijom tijela pok. M, ašto nije u potpunosti pokazano
+od strane okrivljenog. Da bi se zadovoljio taj uslov postoje dvije mogućnosti. Ukoliko je tijelo pok. M. bilo u
+položaju kako je na rekonstrukciji pokazao E. onda uzdužna osa cijevi pištolja mora biti usmjerena odozgo na
+dolje, iznad ulaznih rana oštećenog. Ukoliko je osa pištolja bila u položaju pokazanom od strane E. onda je
+gornji dio tijela pok. M. savijen prema naprijed u tolikoj mjeri da uzdužne ose strijelnih kanala budu
+kompaktna zamišljena prava linija sa uzdužnom osom cijevi pištolja.
+
+Na glavnom pretresu od 23. 12. 2019. godine vještak je ponovio da pokazani međusobni položaj od strane
+okrivljenog, kao i sama dinamika spornog događaja, djelimično je moguća. U svom nalazu nigdje nije rekao
+da se okrivljeni nalazio iznad sada pok. M, niti je to u bilo kojem dijelu nalaza napisao. Konstatovao je da
+postoje dvije varijante da se zadovolje kompatibilnost strijelnih kanala i uzdužne ose cijevi pištolja. Prvo je
+ukoliko je pok. M. bio u stojećem položaju, da je uzdužna osa cijevi pištolja bila iznad ulaznih rana, okrenuta
+prema ulaznim ranama, tako da zamišljena prava linija strijelnog kanala i uzdužne ose cijevi pištolja budu
+saglasne. Drugi način je da je pištolj bio u ruci okrivljenog u položaju približno pokazanom na rekonstrukciji,
+a gornji dio tijela pok. M. u savijenom položaju, ponovo da se zadovolji uslov kompatibilnost strijelnog kanala
+i uzdužne ose cijevi pištolja. Da li je neko mogao da kontroliše ispaljivanje projektila, ne može se izjasniti, jer
+je to pitanje volje, ali kao vješak balističke struke nagalasio je da za ispaljivanje svakog projektila, potrebno je
+ponaosob pritisak na obaraču, š to znači da ne možemo jednim povlačenjem obarače ispaliti dva projektila iz
+
+pištolja. Predmetnim vještačenjem je utvrđeno da je pištolj ispravan, tako da u toj situaciji se moralo povući
+za oroz prilikom svakog ispaljivanja projektila. Pištolj se u ruci drži za rukohvat, a prst na obaraču se stavlja
+jedino kadaželimo da izvršimo opaljenje. Dodao je da je otvor usta cijevi morao biti u nivou ulazne rane (s
+obzirom da se radi o prislonu), a uzdužna osa cijevi pištolja usmjerena u pravcu strijelnog kanala utvrđenog
+od strane vještaka medicinske struke. U svom nalazu je konstatovao da taj položaj uzdužne ose cijevi nije
+kompatibilan sa smjerom strijelnog kanala kod pok. M. i rekao je da je ta pozicija djelimično moguća.
+Dalje je pojasnio da je moguće da su povredu sa ulaznom ranom u predjelu iznad lijeve dojke i sa povredom
+na lijevoj potkoljenici mogle nastati uslijed ispaljivanja jednog projektila. Ukoliko je međusobni položaj
+okrivljenog i oštećenog kao na fotografiji F4 balističkog vještačenja B-09/19, i pištolj u ruci okrivljenog kao na
+fotografiji, ne bi došlo do povrede kod oštećenog M. onakve kakva je konstatovana u nalazu vještaka
+medicinske struke. Vještak je pojasnio da dozvoljava svaki međusobni položaj okrivljenog i oštećenog koji
+zadovoljava dva uslova, a to su udaljenost otvora cijevi od tijela oštećenog (radi se o prislonu), i drugi da su
+kompatibilni uzdužna osa cijevi pištolja i smjerovi strijelnog kanala kod oštećenog.
+
+Na glavnom pretresu od 01. 06. 2020. godine je dodao da je praksa da daljinu pucanja na odjevnim
+predjelima rade vještaci hemijske struke, dok daljinu pucanja na tijelu odnosno koži utvrđuju vještaci
+medicinske struke. U konkretnom slučaju, vještak hemijske struke je u svom nalazu br. 1751/18 od
+24.05.2018. godine, utvrdio da je oštećenje sa prednje strane majice kratkih rukava vlasništvo M.Š. označeno
+brojem „1“ na fotografijama nastalo od projektila ispaljenog iz vatrenog oružja sa prislonjenim ustima cijevi.
+Nadalje navodi da je oštećenje na majci u lijevom dojkinom predjelu nastalo iz apsolutne blizine, a na ostala
+oštećenja nijesu pronađene barutnečestice, pa onda govorimo o daljini pucanja većoj od 90 cm. Pištolj koji je
+bio predmet vještačenja marke „CZ“ model 57, kalibar 7,62 mm TT, spada u poluautomatsko, repetirajuće
+vatreno oružje kratke olučene cijevi. Balističkim vještačenjem br. 1748-1/18 utvrđeno je da je predmetni
+pištolj ispravan. Znači, da bi se ispalio projektil iz pištolja potrebno je smjestiti odgovarajuću municiju u
+šaržer pištolja, zatimšaržer u usadnik, a zatim povlačenjem navlake u zadnji položaj i puštanjem da se kreće
+prema naprijed smjestiti metak u ležište cijevi pištolja. Tada je pištolj spreman za opaljenje. Da bi došlo do
+opaljenja potrebno je povući obaraču. Za svaki naredni ispaljeni projektil potrebno je ponaosob povući
+obaraču. Kod ovog modela ne postoji mehanička kočnica na tijelu pištolja koja bi spriječila udarni
+mehanizam da se aktivira povlačenjem obarače, nakon smještanja metka u cijev pištolja. Nakon ispaljenja
+projektila koji dolazi pritiskom sile dejstva na obaraču, mora se ta sila anulirati, odnosno maći prst sa obarače
+i dozvoliti da se obarača vrati u neki prednji položaj, pa ponovo pritiskom na obaraču dolazi do ispaljenja
+drugog projektila. Ukoliko pritiskom prsta na obaraču dođe do ispaljenja projektila i ta sila ostaje aktivna,
+odnosno ne miče se prst sa obarača, ne može doći do ispaljenja drugog projektila. Š to se tiče pištolja
+konstrukcijski na njemu nijesu primijećene nikakve prepravke, pa sila potrebna za aktiviranje mehanizma za
+opaljenje je onakva kakva je fabrika predvidjela, s timšto nijesu vršili mjerenja potrebne sile za okidanje, jer
+to od njih nije ni traženo, a inače ispitivanjem predmetnog pištolja nije uočio bilo kakve anomalije, odnosno
+odstupanja od uobičajne sile za ovu vrstu pištolja.
+
+Nakon ponovljene rekonstrukcije vještak balističar B.B. je dosavio dopunu nalaza i mišljenja br. B-07/20 od
+21.10. 2020. godine iz kojeg proizilazi prema slici lica mjesta sačinjenoj od strane OPS O.B. R, na 1 m su
+pronađene dviječaure kalibra 7,62 mm TT koje su obilježene br. 2 i 11. Obječaure su od FT1 identično
+udaljene, na rastojanju od 5,5 m. Ovo ukazuje da su obječaure ispaljene sa iste pozicije, s timšto je samo
+mijenjan položaj uzdužne ose cijevi pištolja u odnosu na lice mjesta. Obdukcijom su utvrđeni smjerovi
+strijelnih kanala kod oštećenog M.Š. Okrivljeni E.Š. je na rekonstrukciji pokazao međusobni položaj između
+njega i M. Pokazano mjesto odigravanja spornog događaja odgovara materijalnim tragovima ( č aurama)
+
+pronađenim na 1m. Pokazani međusobni položaj od strane okrivljenog kao i sama dinamika spornog
+događaja djelimično je moguća. Naime, uzdužna osa cijevi pištolja mora biti u položaju koji zadovoljava
+smjer strijelnih kanala utvrđenih obdukcijom tijela pok. M, ašto je i pokazano od strane okrivljenog za
+projektil, za koji je rekao da je prvi ispaljen. Ovaj položaj odgovara i mjestu pronalaženja jedne odčaura na 1
+m. Mjesto pronalaženja drugečaure “određuje” i stajnu tačku lica koje puca. Ta stajna tačka je približno ista
+kao i za prvi projektil, s timštio je cijev malo zakrenuta u odnosu na prvi položaj. Dakle, i drugi projektil je
+morao biti ispaljen prije nego su oštećeni i okrivljeni pali na zemlju, da bi sečaura našla na mjestu gdje je
+pronađena. Znači drugi projektil nije mogao biti ispaljen kada su okrivljeni i oštećeni bili u “ležećem”
+položaju, odnosno na zemlji, jer se u tom slučaju drugačaura ne bi mogla naći na mjestu na kojem je
+prilikom uviđaja pronađena. Položaj pištolja, odnosno usmjerenje uzdužne ose cijevi pištolja koji zadovoljava
+“materijalne” tragove (smjerove strijelnih kanala i mjesto pronalaženjačaura) prikazan je na fotografijama br.
+F-14 do F-117.
+Pojašnjavajući nalaz i mišljenje nakon ponovne rekonstrukcije vještak je naveo da je okrivljeni E.Š. pokazao
+međ usobni položaj njegov i pok. M. u trenutku ispaljenja projektila. Za prvi projektil rekao je da je ispaljen
+nakon njihovog „susreta“ na početku stepeništa na ulazu u kuću. Pokazao je položaj pištolja u trenutku kada
+je ispalio prvi projektil. Taj položaj pištolja odgovara smjeru strijelnog kanala koji je utvrđen od strane
+vještaka medicinske struke. Drugi pokazani položaj, kada je ispaljen drugi projektil ne zadovoljava balističke
+zakonitosti, bez obzira da li se taj položaj pištolja, odnosno uzdužna osa cijevi pištolja poklapa sa drugim
+smjerom strijelnog kanala kod pok. M.
+Naime, na licu mjesta pronađene su dviječaure za koje je nesporno balističkim vještačenjem utvrđeno da su
+ispaljene iz pištolja koji je u spornom momentu koristio Š.E. Mjesto pronalaženjačaura ukazuje i na stajnu
+tačku lica koja je pucalo. Ukoliko je drugi projektil ispaljen onako kako je to na rekonstrukciji pokazao E. Š,
+jedna od ove dvije spornečaure se ne bi mogle naći na mjestu gdje je pronađena.
+Mišljenja je da su oba projektila morala biti ispaljena brzo jedan za drugim i to kada su i okrivljeni i oštećeni
+bili u približno istom položaju u odnosu na prvi i drugi projektil, sa minimalnim pomjeranjem tijela. Kazao je i
+da ne ulazi u razmatranja da li se neko sjeća ispaljivanja projektila ili ne sjeća, ačinjenica je da su nađene
+dviječaure i dvije prostrjelne rane, i dviječaure su približno isto udaljene od fiksne tačke, š to ukazuje na
+činjenicu da su ispaljene sa iste pozicije. Dakle, od svih mogućnih položaja u kojima su se okrivljeni i oštećeni
+nalazili u trenutku ispaljenja projektila, mišljenja je da nije moguće iz ugla struke, da je jedan od projektila
+ispaljen kad su okrivljeni i oštećeni bili u ležećem položaju. Svi drugi položaji su mogući. Analizirajući nalaz i
+mišljenje vještaka balističara sud je isti prihvatio u cjelosti, cijeneći da je nalaz dat u granicama mogućeg, da
+je stručan i objektivan, i dat nakon obavljenih rekonstrukcija na licu mjesta kojima je prisustvovao i ovaj
+vještak.
+
+Iz nalaza i mišljenja vještaka psihologa dr N.V.od 11. 08. 2019. godine proizilazi da je E.Š. upućen na
+vješ tačenje radi psihološke procjene ličnosti i intelektualnih kapaciteta. Tom prilikom vještak je utvrdila da je
+E.Š. č etvrtorođeni u porodici, negira teže povrede i bolesti u djetinjstvu kao i neurotične tegobe i poremećaje
+navika ili ponašanja. Tok psihomotornog razvoja je uredan. Radi kao privatnik, autoprevoznik. Iz vanbračne
+zajednice ima dvoje djece kojažive sa majkom, a do kritičnog događaja ježivio u kući sa bratom i njegovom
+djecom. U psihodijagnostičkom pregledu pored psihološke eksploracije upotrijebljeni Revidirani beta test
+(psihološki mjerni instrument za procjenu opšte inteligencije, neverbalni test koji ispituje spacijalnu
+orjentaciju, perceptivnu brzinu i tačnost, prvenstveno kod manjih obrazovanih osoba), MMPI 202
+(dijagnostička procjena ličnosti), PIE – JRS (psihodijagnostička procjena emocija).
+
+Tokom pregleda kontakt se zadovoljavajuće uspostavlja. Uredne spoljašnosti. Motivisan za rad bez oscilacija.
+Postavljena pitanja razumije bez dodatnih objašnjenja. Svjestan, orjentisan u svim pravcima. Mišljenje se
+odvija na apstraktnom nivou, bez poremećaja u formi I sadržaju. Emotivno i afektno usklađen, ali se stiče
+utisak da pokušava da ne pokazuje previše osjećanja. Događaj koju mu se stavlja na teret ne reprodukuje u
+cjelini. Kaže da se navodno ne sjeća da je ispalio drugi hitac i da je to saznao tek naknadno. Tokom opisa
+kritičnog događaja uočava kod njega grižu savjest i izraženo osjećanje kajanja koje ispoljava i verbalno i
+neverbalno. Navodi da nije psihički liječen, da ne uzima psihoaktivne supstance, ne pije alkohol. Kaže da u
+vrijeme kritičnog događaja nije bio u alkoholisanom stanju, ali da je tokom dana sa prijateljima pio alkohol.
+Revidirani beta test: intelektualno funkcioniše u garnicama prosjeka. MMPI: dobijeni profil ne ukazuje na
+postojanje psihičke bolesti, ne uočavaju se znace psihotičnih a ni neurotičnih znakova. Sve kliničke I
+kontrolne skale osim skala Hs (strah od bolesti) i Hs (ukazuje na potiskivanje i negaciju) koje su blago
+povišene, su u granicama prosjeka. Blago naglašene skale Hs i Hy mogu biti karakteristike ličnosti, ali i
+reakcija na događaj koji se desio, situaciju u kojoj se našao, kao i na boravak u zatvoru i iščekivanja vezana za
+suđ enje i daljiživot. PIE: profil ukazuje na introvertnu osobu, koja je nesigurna u socijalnim kontaktima i ima
+teškoće u prilagođavanju, koja je nesamostalna, nekad nekritična i sugestivna, koja brine o tomešta drugi
+misle o njoj, a sklona je i pogrešnoj interpretaciji okolnosti i međuljudskih odnosa. Radi se o pasivnoj osobi
+kojoj su potrebni uzori kojeće da prati. Ima strah od gubitka samokontrole. Prisutna anksioznost. Na kraju
+vještak je dala mišljene da se na osnovu biološkog pregleda i uvida u sudske spise radi o osobi koja
+intelektualno funkcioniše na nivou prosječne inteligencije, kod koje se ne uočavaju znaci psihoorganskog
+sindroma i kod koje se ne uočavaju znaci psihotičnih procesa, pa se na osnovu psihološkog pregleda
+zaključuje da se radi o osobi koja intelektualno funkcioniše u granicama prosječne inteligencije, kod koje se
+ne uočavaju znaci psihoorganskog sindroma, kao ni psihotičkog reagovanja.
+
+Na glavnom pretresu vještak je pojasnila da je profil indeksa emocija jedan od psiholoških instrumenata u
+ovom slučaju instrument koji daje emocionalni profil ličnosti. Onošto je dato u nalazu je onošto je dobijeno
+psihološkim testiranjem. Dobijene crte ne znače da se ispitivana osoba uvijek u svakom trenutku ponaša po
+dobijenim obrazcima. Profil je kontura uobičajnih obrazaca ponašanja. Da liće se ispitivana osoba u svakoj
+situaciji ponašati onako kako je dao u ovom slučaju profil, zavisi jošod mnogo drugih okolnosti. Dalje vještak
+navodi da su testovi najobjektivnija metoda u psihologiji, te da eksploracija ličnosti može da sadrži stav
+ispitivača, a testovi su objektivna metoda. Nalaz i mišljenje ovog vještaka sud je prihvatio kao objektivan.
+
+Iz nalaza i mišljenja vještaka psihijatra dr G.K. od 27. 08. 2019. godine proizilazi da je dana 02. 07. 2019.
+godine urađen psihijatrijski pregled lica E.Š. Nakon izvršenog pregleda vještak je dala zaključak da u vrijeme
+pregleda kod okrivljenog E.Š. nije dijagnostifikovana trajna ili privremena duševna bolest, kao ni simptomi
+zaostalog duševnog razvoja. Funcioniše u nivou prosječne inteligencije i sposoban je da shvati i razumije
+odnose u svojoj okolini, kao i da predviđa posljedice sopstvenog ponašanja. Ne zapažaju se simptomi
+psihotičnog procesa, niti postoje pokazatelji da je ranije imao sličan poremećaj, te je test realnosti kod E.Š.j
+aktuelno očuvan. U vrijeme kritičnog događaja E. nije bio u stanju patološkog efekta (analiza reproduktivnog
+sadržaja) većse tada mogao nalaziti u stanju ljutnje uslijed osujećenja njegovih namjera. Eventualno
+nesjećanje za period drugog pucanja objašnjava se naknadnim potiskivanjem neprihvatljivog psihičkog
+sadržaja, š to je jedan od mehanizama psiholoških odbrana od neprihvatljivih intrapsihičkih događaja. U
+slučaju da je tačna njegova izjava o motivaciji uslijed dugotrajnog maltretiranja od strane oštećenog, radi se o
+potisnutim afektima. S obzirom da kod optuženog nema simptoma duševne bolesti i duševne zaostalosti,
+mogao je da procijeni način na kojiće reagovati, a u skladu sa sopstvenom ličnošću i mehanizmima
+
+funkcionisanja njegove ličnosti. U oba slučaja E.Š. je bio sposoban da shavati značaj svog djela i upravlja
+svojim postupcima u momentu izvršenja krivičnog djela.
+
+Na glavnom pretresu vještak G.K. je pojasnila da okrivljeni nije osoba koja je psihički bolesna, da kod njega
+ne postoje znaci duševne bolesti, duševne poremećenosti ili zaostalog duševnog razvoja i da on osoba može
+da bira mehanizme kojimaće reagovati na bilo kakve odnose u okolini i može da izabere način na kojiće
+reagovati. Na pitanje da li je sukob optuženog sa određenim licem koji se desio pola sata najviše prije
+kritičnog događaja, dakle prije smrti njegovog brata, mogao da izazove reakciju optuženog, da ode do sovoje
+kuće da uzme pištolj i da krene na mjesto svađe udaljeno oko 700 metara, da se obračuna sa licem sa kojim
+se svađao, pojasnila je da on može da izabere ovakav način potpuno svjesno, ali bez elemenata neke bolesti
+koja bi bila u osnovi takvog načina reagovanja. Ponovila je da je sasvim moguće da se optuženi ne sjeća
+drugog pucnja tj. da se ovakav sadržaj potisne u psihi i to je jedan od mehanizama odbrane. To ne znači da je
+ova osoba u momentu dešavanja kritičnog događaja bila bez svijesti ili da u tom trenu nije bio svjestan, niti
+da je mogao da ne shvati očemu se radi, ali ovaj mehanizam se dešava kasnije, naknadno i potpuno je
+moguće da se i to desi. Nalaz i mišljenje ovog vještaka sud je u cjelosti prihvatio kao objektivan.
+
+Iz nalaza i mišljenja vještaka sudske medicine dr N.R. od 02. 12. 2019. godine proizilazi da je M.Š. kritične
+prilike zadobio sljedeće povrede: a. strijelna rana prostrelina u predjelu desne bočne strane vrata. Zadobijena
+povreda je posljedica dejstva projektila ispaljenog iz ručnog vatrenog oružja iz apsolutne blizine. Smjer
+kanala rane je od naprijed unazad, odozgo nadolje, s desna ulijevo. U vrijeme nanošenja zadobijena povreda
+se kvalifikuje kao teška tjelesna povreda opasna po život. b. strijelna rana prostrelina u lijevom nizdojkinom
+predjelu. Zadobijena povreda je posljedica dejstva projektila ispaljenog iz ručnog vatrenog oružja iz
+apsolutne blizine. Smjer kanala rane je od naprijed unazad, odozgo strmo nadolje, s desna ulijevo. U vrijeme
+nanošenja zadobijena povreda se kvalifikuje kao teška tjelesna povreda. c. oguljotina u predjelu desne
+sljepoočnice. d. oguljotina u predjelu nadlana desnešake. Zadobijene povrede pod c i d su posljedice dejstva
+tupine mehaničke sile i iste su mogle nastati uslijed pada i udara o tvrdu i neravnu podlogu. U vrijeme
+nanošenja zadobijena povrede kvalifikuje kao lake tjelesne povrede.
+Zbirno posmatrano sve zadobijene povrede u vrijeme nanošenja se kvalifikuju kao kvalifikovana (osobito)
+teška tjelesna povreda, odnosno teška tjelesna povreda opasna poživot, a usljed kojih je nastupila i smrt.
+Obje rane su nanesene iz apsolutne blizinešto znači da su usta cijevi u trenutku opaljenja oba projektila bila
+ili čvrsto prislonjena na kožu vrata i garderobu lijevog nizdojkinog predjela ili su bila odmaknuta svega
+nekoliko milimetara od istih. Smjerovi kanala obje strijelne rane su približno međusobno paralelni i govore u
+prilog da su obje povrede nanošene u veoma kratkom vremenskom intervalu za koje vrijeme E. i M. nijesu
+znatno mijenjali međusobni položaj njihovih tijela, većje samo desna E. ruka u kojoj se nalazio pištolj
+pomjerena. Imajući u vidu da E.Š. na rekostrukciji, a ni u izjavama tokom postupka nije mogao precizno da
+pokaže i izjasni se o konkretnom položaju vatrenog oružja u trenutku opaljivanja, njegovo pokazivanje
+događaja na rekonstrukciji u dijelu da se nalazio iznad M.Š. dok su se otimali oko pištolja koji se nalazio u E.
+desnoj ruci, sudskomediicinski je približno moguće za zadobijanje obje strijelne rane kod M. ukoliko to
+dozvoljavaju nalazi ostalih vještačenja.
+
+Na glavnom pretresu od 23. 12. 2019. godine vještak je pojasnio da kada je u tački IV mišljenja naveo da je
+sudsko-medicinski približno moguće da su povrede kod M. zadobijene na način kako je to pokazao E.Š. na
+rekonstrukciji, to približno se odnosilo na okolnost da ni sam E.Š. nije precizno i jasno pokazao kako je držao
+
+pištolj u trenutku opaljenja, č ak nije ni naveo da je drugi put došlo do opaljenja, pa se riječ „približno“
+odnosila na njegovo približno pokazivanje. Pokret rukom i međusobni položaj tijela koji je pokazao na
+rekonstrukciji, približno dozvoljavaju mogućnost da su ove povrede tako nastale. Dodao je da je nakon
+obavljene rekonstrukcije, uz naredbu za vještačenje, kao i uvijek, dobio kompletne spise predmeta i u nalazu
+vješ tačenja citirao sve onošto može biti relevantno za davanje mišljenja. Dalje je dodao da imajući u vidu da
+nijedna od strijelnih rana nije dovela do povrede mozga, kičmene moždine ili nerava, to je M.Š. nakon
+zadobijanja ovih povreda u jednom kratkom vremenskom intervalu mogao da fizički aktivno djeluje, da se
+pokreće, napravi koji korak i slično, pričemu je smrt nastupila uslijed iskrvarenja iz velike arterije na vratu i to
+u vremenu koje se mjeri sa ne više od 10-tak minuta. Imajući u vidu lokalizaciju povreda, najvjerovatnije je
+prvo nanesena povreda u predjelu desne bočne strane vrata, a potom u lijevom nizdojkinom predjelu, a pri
+čemu je imao u vidu pokazivanje E.Š. na rekonstrukciji. Naveo je i da riječnajvjerovatnije, znači da to nije
+jedini mogući redosljed, iz razlogašto oslanjajući se samo na medicinske karakteristike povreda, mogućje i
+drugačiji način nanošenja. Sa sudsko-medicinskog aspekta moguće je samo izjasniti se da su usta cijevi bila
+prislonjena ili odmaknuta svega nekoliko milimetara od mjesta ulaznih rana.
+Na glavnom pretresu od 01. 06. 2020. godine vještak je ponovio da što se tiče isključivo medicinskih
+parametara, nije moguće pouzdano opredijeliti koji je projektil prvi pogodio oštećenog, a koji drugi. Imajući u
+vidu pokazivanje okrivljenog prilikom rekonsrukcije i koje je prikazao sukcesivno na fotografijama na strani 3
+mišljenja po obavljenoj rekonstrukciji, na kojima se vidi da je okrivljeni pokazao da je pištolj držao u desnoj
+ruci, da ga je oštećeni svojom desnom rukom uhvatio za desnu podlakticu, da su se tu otimali oko tog
+pištolja, i da je oštećeni tu desnu ruku okrivljenog povukao sa svoje desne ka svojoj lijevoj strani, logično
+proizilazi da ukoliko se prihvati kao istinito to pokazivanje okrivlijenog, da je prvo zadobijen projektil u
+predjelu desne bočne strane vrata, a potom projektil u lijevom nizdojkinom predjelu. Dakle, samo na osnovu
+medicinskih parametara, moguće je samo reći da su obje povrede nanešene u kratkom vremenskom
+intervalu, tokom koga oštećeni i okrivljeni nisu znatno mijenjali položaj svojih tijela, većda se dominantno
+radilo o promjeni položaja desne ruke okrivljenog u kojoj je držao pištolj, š to zaključuje na osnovu približno
+paralelnih kanala strijelnih rana kroz tijelo ičije ulazne rane se nalaze na putanji desne ruke okrivljenog, kako
+je on to pokazao prilikom rekonstrukcije. Š to se tiče daljine pucanja u konkretnom slučaju i to na osnovu
+spoljašnjeg izgleda ulaznih rana, kao i probe učinjene sa rastvorom difenilamina i sumporne kiseline, sa
+materijalom uzetim iz okoline i početnih djelova kanala svih rana, š to je bliže opisano u tački 22 obdukcionog
+zapisnika, nesumljivo se radi o strijelnim ranama iz apsolutne blizine. Strijelna rana u predjelu vrata je dovela
+do povrede velikog krvnog suda u predjelu vrata i posledičnog iskrvarenja, š to je neposredni uzrok smrti. S
+tim u vezi, ta povreda u predjelu vrata se kvalifikuje u vrijeme nanošenja kao teška tjelesna povreda opasna
+poživot i zbog nje je neposredno nastupio smrtni ishod. Druga povreda sa ulaznom ranom u lijevom
+nizdojkinom predjelu i koja se potkožnim kanalom nastavljala do prednje strane trbuha, gdje je izašla iz
+tijela, i ponovo ušla u tijelo u predjelu lijeve butine, potkožnim kanalom se nastavlja kroz tkiva lijeve butine iz
+koje je ponovo izašla, i potom okrznula unutrašnju stranu desne potkoljenice, je zbog dužine ovih potkožnih
+kanala kvalifikovana kao „obična teška tjelesna povreda“, odnosno usled te povrede opasnost poživot je
+postojala samo na apstraktnom nivou zbog hipotetičkog razvoja infekcije, š to je kvalifikatorni element za
+običnu tešku tjelesnu povredu. Dužcijelog kanala ove rane, bilo je prisutno krvarenje, ali u znatno manjem
+obimu, tako da cjelokupni gubitak krvi koji je doveo do smrti je u ogromnoj većini posledica krvarenja iz
+povrijeđenog krvnog suda na vratu. Rana u predjelu desne bočne strane vrata, odnodno ulazna rana
+prostrelina vrata je mogla biti nanijeta direktnim prislanjanjem usta cijevi vatrenog oružja na kožu, bez
+prethodnog prolaska kroz garderobu, č emu ide u prilog izgled same rane i crnkasta ogarenost kože oko
+ulazno rupičastog defekta. Kretanje tijela nakon zadobijanja projektila dominantno je detemirnisano silama
+koje su djelovale na to tijelo neposredno prije pogađanja projektilom, odnosno sve te sile su mnogo većeg
+intenziteta na samo kretanje tijela negošto projektil može da utiče na to kretanje. Dakle, u konkretnom
+slučaju ukoliko je u trenutku opaljivanja postojalo guranje i otimanje oko pištolja, kao što je to pokazao na
+rekonstrukciji okrivljeni, te sile koje su postojale kao posledica guranja i otimanja su uslovljavale način i
+
+smjer padanja tijela, a ne samo dejstvo projektila. Ponovio je da su oba projektila ispaljena u veoma kratkom
+vremenskom intervalu koji se mjeri sa svega nekoliko sekundi i da je u tom vremenskom periodu pod
+uslovom da je prvi projektil zadobijen u predjelu vrata, oštećeni i dalje imao i fizičke snage i svjesnosti da
+obavlja fizičke radnje koje su u tom trenutku bile započete, ašto svakako važi i da je projektil u predjelu grudi
+prvi zadobijen. Moguće je da je pokojni oštećeni i dalje mogao dačvrsto steže ruku okrivljenog i nakon
+zadobijanja oba projektila dok su se zajedno nalazili na podlozi i to je moglo da traje okvirno govoreći
+desetak sekundi do minut, te po gubitku svijesti zbog prestanka dotoka krvi u mozak, takvo stezanje je
+moralo prestati.
+
+U dopuni nalaza i mišljenja nakon ponovljene rekonstrukcije, vještak je naveo da ukoliko sud prihvati kao
+istinito pokazivanje E.Š. na ponovljenoj rekonstrukciji o polažaju usta cijevi vatrenog oružja u trenutku
+opaljenja, isto se apsolutno podudara sa smjerom kanala strijelne rane prostreline u lijevom nizdojkinom
+predjelu, kako u dijelu usmjerenja usta cijevi vatrenog oružja na mjesto ulazne rane, tako i u odnosu na
+položaj trupa i lijeve noge oštećenog u trenutku opaljenja. Osim navedenog E.Š. je na ponovljenoj
+rekonstrukciji pokazao i način na koji su njih dvojica pali nakon opaljenja i isti je takođe mogućza zadobijanje
+oguljotina u predjelu desne sljepoočnice i nadlana desnešake oštećenog. Ni na ponovljenoj rekonstrukciji E.Š. nije mogao pokazati trenutak opaljenja drugog projektila koji je u tijelo oštećenog ušao u predejlu desne
+boč ne strane vrata.
+
+Na glavnom pretresu od 12. 02. 2021. godine vještak dr. R.je pojasnio da davanje mišljenja po obavljenoj
+rekonstrukciji, predstavlja zadatak vještaku da nesumnjivo utvrđene medicinskečinjenice, uporedi sa
+pokazivanjem aktera događaja, u konkretnom slučaju okrivljenog. To pokazivanje okrivljenog ili drugih
+aktera je njegov subjektivni doživljaj koji može, ali ne mora biti tačan, očemu vještak nema pravo da se
+izjaš njava, većse može samo izjasniti da li to konkretno pokazivanje okrivljenog odgovara nesumljivo
+utvrđenim materijalnim dokazima, tj. č injenicama iz obdukcionog zapisnika. U konkretnom slučaju, a kako je
+to detaljno objašnjeno u tački 2 mišljenja od 12. 10. 2020 godine, pokazivanje E. Š, u potpunosti odgovara
+nač inu zadobijanja povrede – prostreline u lijevom nizdojkinom predjelu, dok njegovo pokazivanje nije
+pružilo element na osnovu koga bi se isto uporedilo u odnosu na zadobijanje povrede – strijelne rane desne
+boč ne strane vrata, š to je objašnjeno u tački IV istog mišljeja. Analizirajući nalaz i mišljenje vještaka sudske
+medicine, te njegove dopune i pojašnjenje sud je isti prihvatio kao objektivan, cijeneći da nema
+nekonzistentnosti, s timšto se u pogledu izjašnjenje vještaka u pogledu prvoispaljenog hitca sud opredijelio
+za mišljenje da je prvospaljeni hitac pogodio tijelo oštećenog u lijevom nizdojkinom predjelu, obzirom da je
+ponovljena rekonstrukcija obavljena u približno istim vremenskim uslovima kada se i desio kritični događaj,
+dok je prethodna rekonstrukcija obavlje u uslovima padanja jake kišešto je ometalo obavljanje rekonstukcije
+do nivoa da tonski zapis iste onemogućava jasno raspoznavanje govora išto je i opredijelilo sud da ponovo
+obavi reknstrukciju, u prisustvu ovog vještaka.
+
+Iz zapisnika o rekonstrukciji od 04. 11. 2019. godine proizilazi da su rekonstrukciji digađaja prisustvovali
+zamjenik VDT-a u Bijelom Polju H. L, okrivljeni E. Š, njegov branilac R. O, predstavnik oštećene porodice N.P. i
+njen punomoćnik V.G. vještak medicinske struke N.R. i vještak balističar B. B, službinici sudskog savjeta S.V. i
+O.J. kao i krim. tehničar A.B. Okrivljeni E.Š. je predočio da je na spratu kuće u sobi repetirao pištolj I sa tim
+pištoljem silazio niz stepenište porodične kuće. Na dnu stepeništa se sreo sa sada pok. M. Držao je pištolj u
+desnoj ruci. M. ga je tada uhvatio za desnu ruku u kojoj je držao pištolj i savio mu je na dolje. U tom momentu
+on se nalazio na stepenici, drugom nivou od zemlje. Nakon toga je došlo do otimanja oko pištolja, a potom i
+
+do opaljenja. Obojica su pali. M. je pao na zemlju, a on iznad njega. Okrivljeni je opisao i predstavio kako se
+desio događaj kao i dao odgovore na pitanja učesnika u rekonstrukciji, ašto je zabilježeno kamerom
+Služ benika Sudskog savjeta koji su prisustvovali vršenju rekonstrukcije. Krim. tehničaru B. naloženo je da
+postavi tragove koji su zatečeni prilikom vršenja uviđaja, a po osnovu zapisnika o uviđaju koji su tom prilikom
+sačinili. Okrivljeni ne osporava da su podaci u zapisniku o uviđaju i u skici vjerno unijeti u pogledu mjesta
+gdje se desio događaj, vremena nastanka događaja, kao i ostalih tragova, te ne osporava da je lice mjesta
+nepromijenjeno u odnosu na vrijeme kada se događaj desio. Rekonstrukcija je vršena uz sudjelovanje
+vještaka balističara B, vještaka medicinske struke R, kojima je naloženo da sačine nalaze o izvršenom
+balističkom vještačenju i medicinskom vještačenju, a krim. tehničaru da sačini skicu, a sve po kazivanju
+okrivljenog E.Š. Predstavnicima Sudskog savjeta je naloženo da dostave snimak izvršene rekonstrukcije.
+
+Iz zapisnika o rekosntrukciji obavljenoj data 09. 10. 2020 godine, odnosno video zapisa sačinjenog tom
+prilikom, proizilazi da su na predmetnoj rekonstrukciji bili prisutni između ostalih, okrivljeni E. Š, svjedokinja
+N.P. i Š. P, kao i vještaci dr. N.R. i B.B. Tokom rekonstrukcije okrivljeni je pokazivao način nastanka i razvoj
+događaja, u prisustvu angažovanih vještaka, koji su se potom u svojim pisanim nalazima i mišljenjima koje su
+dostavili sudu, izjasnili o mogućnostima nastanka i razvoja događaja, kako ga je predstavio okrivljeni, a kako
+je sadržano na predmetnom video zapisu.
+
+Na fotografijama sadržanim u fotodokumentaciji sačinjenoj prilikom vršenja prikazan je slijed događaja kako
+ga je predstavio okrivljeni od momenta dolaska u kuću pa do momenta nastanka i tokom samog kritičnog
+događaja kako ga je predstavio okrivljeni.
+
+Izvodom iz registra kaznenih evidencija Ministarstva pravde Crne Gore, br. 81/2018 od 21. 06. 2018. godine, na
+ime E. Š, se utvrđuje da isti do sada nije osuđivan.
+
+Cijeneći odbranu okrivljenog i dokaze pojedinačno i u međusobnoj vezi, a shodnočl. 370 ZKP-a CG, sud je
+utvrdiočinjenično stanje i na osnovu istog zaključio da je okrivljeni izvršio krivično djelo nehatno lišenje
+života izčl. 148 KZ-a CG, za koje je kriv, a iz sljedećih razloga.
+
+Iz odbrane okrivljenog te iskaza saslušanih svjedoka V. K, M. D, Š. Lj, i H. R, poizilazi da je kritičnog dana došlo
+do sukoba između okrivljenog E.Š. i H. R, kao posledica ranije upućenih psovki R, E.Š. Taj sukob se dešavao
+na ulici u prisustvu većeg broja lica koja su spriječila fizički sukob. U jednom trenutku na lice mjesta stigao je i
+sada pok. M. Š, a koga je o sukobu obavijestio Š. Lj. Merasad se po dolasku na lice mjesta upoznao sa
+razlozima sukoba a zatim je ponudio svog brata okrivljenog E. da ga poveze kućišto je E. odbio, i kući se
+uputio pješke.
+Nadalje iz iskaza svih saslušanih svjedoka nedvosmisleno proizilazi da su E. i M. ž ivjeli u dobrim odnosima,
+zajednički se bavili poslom, zajedno gradili novu kuću, zajedno se starali o djeci obzirom da su obojica bili
+razvedeni. Tako svjedok M.D. i navodi da se E. kritičnog dana telefonom par putačuo sa pokojnim M, da se
+smijao i da su se nešto dogovarali, da narednog dana idu na planinu, kako bi roštiljali, izčega proizilazi da su i
+kritičnog dana bili u dobrim odnosima. Č injenicu da su E. i M. bili u dobrim odnosma posvjedočio je i H.R. sa
+
+kojim se prethodno E. sukobio i sa kojim je od ranije bio u negovoru. Takođe i rođena sestra okrivljenog i sada
+pok oštećenog N.P. je posvjedočila da suživjeli u dobrim odnosima, kao braćašto navodi i njen suprug.
+
+Okrivljeni E.Š. u svojoj odbrani priznaje da je došao do svoje kuće gdje je uzeo pištolj repertirao ga a zatim
+krenuo da izlazi iz kuće držeći pištolj u ruci. Pojasnio je da je za pištolj došao zbog prethodne svađe sa H. R,
+navodno iz razlogašto je time htio da izazove neku vrstu pozornosti kako bi se ljudi, na tradicionalan način
+umiješali u taj njegov sukob sa R, odnosno razrješenje sukoba. Motive okrivljenog kako je htio da izazove
+pozornost radi izazivanja miješanja građana u njegov sukob sa R. sud ne prihvata jer za slučaj da mu je
+prethodno opisano zaista bio cilj, to nije imao potrebe da repertira pištolj odmah nakomšto ga je uzeo, i da
+se ubačenim metkom u cijev vrati nazad do mjesta gdje se prethodno svađao i raspravljao sa R, jer bi po
+ocjeni ovog suda, izazivanje pozornosti građana bilo znatno efektnije da je eventualo tu radnju repertiranja
+izvršio po povratku na mjesto sukaoba sa R, osim ako razlog povratka nazad uz prethodno repertiranje
+pištolja, nije bio u cilju preduzimanja radnji protivživota i tijela lica sa kojim se prethodno verbalno sukobio.
+Nesporno je tokom postupka utvrđeno da je kritičnom prilikom sada pok. M. pogođen sa dva projektila, od
+kojih ga je jedan pogodio u predjelu vrata sa desna strane a drugi u lijevi nizdojkin predio. Oba projektila su
+ispaljena iz pištolja koji je prethodno okrivljeni Er. uzeo iz kuće a na licu mjesta su pronađene i dviječaure, za
+koje je utvrđeno da su ispaljene upravo iz E. pištolja M-57 - tetejac, cal. 7,62 mm. Da je okrivljeni E.Š. kritične
+prilike pucao iz vatrenog oružja dokazano je vještačenjem prisustva GSRčestica Forenzičkog centra u
+Danilovgradu kojem su dostavljena dva “SEM stubića” a iz kojih je utvrđeno prisustvo karakterističnih GSR
+čestica na desnojšaci E. Š, te da se s toga ne može isključiti mogućnost da je isti bio povezan sa procesom
+opaljenja iz vatrenog oružja. Ovakav zaključak sud temelji i na trasološkom vještačenju kojim je utvrđeno da
+mehanička oštećenja na garderobi sada pok. M. Š, imaju karatkeristike oštećenja nastalih dejstvom projektila
+ispaljenog iz vatrenog oružja, kao i na vještačenju daljine pucanja kojim je utvrđeno da je sa prednje strane
+majce kratkih rukava vlasništvo sada pok. M.Š. dokazno prisustvo barutnihčestica, dok u okolini svih ostalih
+oštećenja nije dokazano prisustvo barutnihčestica, a oštećenje sa prednje strane majce kraktih rukava
+vlasništvo sada pok. M.Š. je nastalo od projektila isaljenih iz vatrenog oružja sa prislonjenim ustima cijevi na
+istoj, dok su ostala oštećenja na majci kraktih rukava, farmericama i boksericama nastala od projektila iz
+vatrenog oružja kada su usta cijevi bila na rastojanju većem od 90 cm do istih.
+
+Uzrok M. smrti je utvrđen iz obdukcionog zapisnika odbucenta dr N.R. koji je dao zaključak da je smrt nasilna
+i nastupila je uslijed iskrvarenja iz rascjepa desne zajedničke karotidne arterije i raskidanih krvnih sudova dužkanala strijelnih rana prostrelina, nanesenih projektilima ispaljenim iz ručnog vatrenog oružja iz apsolutne
+blizine.
+
+Priznanje okrivljenog da je svog brata lišioživota, ali iz nehata, jer nije imao namjeru da isto izvrši, većda je to
+bila jedna velika nesreća sud je u potpunosti prihvatio, jer je takva odbrana potvrđena svim izvedenim
+dokazaima.
+Analizirajući iskaze svjedoka i to N. P, Š. P, V. K, M. D, Š. Lj. i H.R. sud je utvrdio da je okrivljeni E. Š, inače
+rođeni brat oštećenog sada pok. M. Š, ž ivio u porodičnoj kući sa bratom i njihovom djecom. Radili su zajedno,
+bavili se prevozničkom djelatnošću vozilom koje je bilo zajedničko vlasništvo. Pored porodične kuće zajedno
+su započeli gradnju novu kuću koja je većskoro bila pred useljenjem, tako da je svima poznato da ježivot
+između okrivljenog i njegovog sada pokojnog brata M. bio bratski odnos, da suživjeli u vrlo dobrim
+
+odnosima, te da nikada nijesu imali bilo kakvu vrstu nesporazuma. Takođe i iz iskaza svjedoka S. C, inače
+bivše supruge pokojnog oštećenog, sa kojim je bila u braku od 2003. do 2010. godine, proizilazi da su u tom
+periodu odnosi između braće E. i M. bili normalni, te da nikada nije primijetila da su se svađali, naprotiv,
+razgovarali su o poslu, putovanjima, odnosno njihovom biznisu, kao i to da su njene kćerke imale potrebnu
+brigu od sada pok. M, kao i njegovih rođaka i da nikada nijesu bile zapostavljane. Tako i iz odbrane
+okrivljenog proizilazi da se nikada sa bratom nije svađao, da ga je volio, zajedno su odrastali, pravili planove,
+zajedno podizali djecu i o svemu zajedno odlučivali.
+Analizirajući iskaze svjedoka V. K, Š. Lj. i H.R. sud je utvrdio da je kritične prilike bilo svađe između okrivljenog
+E.Š. i H. R, kojom prilikom je došlo do raspravke između njih, zbogčega su ih ostali prisutni razdvajli sa
+namjerom da spriječe dalji sukob, dok svađe niti raspravke nije bilo između E. i M. nakonšto je M. došao na
+lice mjesta, s timšto E. nije ušao uvozilo kod M. radi odlaska kući većje pošao pješke. Razloge E. odlaska kući
+uzimanja pištolja, repertiranja istog i pokušaja povratka nazad, sud je prethodno analizirao, i ovi razlozi i
+motivi su po ocjeni ovog suda bili poznati i sada pok. M, kao njegovom bratu koji je najbolje poznavao E.
+narav. Dakle znajući i očigledno osjećajućišta se može desiti, prilikom susreta na dnu stepenica za sud je
+prihvatljivo objašnjenje okrivljenog u pogledu postupaka sada pok M, koji je kako okrivljeni predstavlja,
+kazao u smislu gjećešto, nećešti niđe, daj mi to sranje, odzirom da je vidio pištolj u E. ruci. U takvom
+uslovima, očekivana je i reakcija sada pok. M. kada je pokušao da otme pištolj E, i u tim okolnostima tokom
+otimanja o pištolj dolazi i do ispaljenja prvog projektila, koga se okrivljeni i sjeća. Iz dokaza izvedenih tokom
+postupka, sud nije mogao nedvosmisleno utvrditi gdje je pogodio tijelo oštećenog projektil koji je prvi
+ispaljen. Veštak sudske medicine navodi da nema pouzdanih parametara koji bi ga opredijelili u pravcu
+zaključka koju je povredu prvu zadobio oštećeni, s timšto su kanali strijelnih rana približno paralelni.
+Okrivljeni je na poslednjoj rekonstrukciji pokazao način nastanka kritičnog događaja, nakončega se vještak
+dr R. izjasnio da ga pokazani položaj opredjeljuje u pravcu zaključka da je prvu povredu od prijektila oštećeni
+zadobio u lijevom nizdojkinom predjelu, pa ovaj sud prihvata kao istinito pokazivanje okrivljenog na
+poslednjoj rekonstrukciji, i zključuje da je prvi isplajeni projektil ispaljen u uslovima i na način kako je to
+okrivljeni pokazao na poslednjoj rekonstrukciji, te da je sada pok M. prvu povredu zadobio u lijevom
+nizdojkinom predjelu.
+Okrivljeni se branio da se ne sjeća drugog pucnja, odnosno na koji način u kojem položaju su bili kada je
+ispaljen drugi projektil, za koji je nesporno utvrđeno da je ispaljen i da je pogodio tijelo oštećenog u predjelu
+desne strane vrata. Oba projektila su kako se vještak sudske medicine izjasnio, ispaljena u kratkom
+vremenskom razmaku sa minimalne razdaljine ili prislonjenih usta cijevi na tijelo. Povrede koje su projektili
+izazvali su bili takove prirode da smrt kod oštećenog nije odmah nastupila i mogao je stezati ruku nakomšto
+je pogođen i do jednog minuta. Dakle kodčinjenice da su projektili ispaljeni iz neposredne blizine u kratkom
+vremenskom intervalu upućuju na zaključak i opredjeljuju sud u pravcu prihvatanja odbrane okrivljenog da
+sečupao i otimao o pištolj sa sada pok. bratom M, tokom kog otimanja je došlo do opaljena većranije
+repertiranog pištolja i to dva puta u kratkom razmaku, jer bez obzira koju je povredu prvu zadobio oštećeni,
+kako se izjasnio vještak sudske medicine i dalje je mogao da snažno drži pištolj sve do momenta kada bi
+usled nedopiranje krvi u mozak izgubio svijest. Iz navedenih razloga sudu je prihvatljiva odbrana okrivljenog
+da je oštećeni sada pok. M. snažno držao pištolj, od momenta kada ga je uhvatio preko ruke okrivljenog pa
+sve do momenta kada su pali na podlogu.
+Činjenica da se okrivljeni ne sjeća ispaljenja drugog projektila je moguća kako je to pojsnila vještak psihijatar
+tj. da se ovakav sadržaj potisne u psihi i to je jedan od mehanizama odbrane. To ne znači da je ova osoba u
+momentu dešavanja kritičnog događaja bila bez svijesti ili da u tom trenu nije bio svjestan, niti da je mogao
+da ne shvati očemu se radi, ali ovaj mehanizam se dešava kasnije, naknadno i potpuno je moguće da se i to
+desi.
+
+Kako je nesporno utvrđeno da su povrede kod oštećenog M, posljedica dejstva projektila ispaljenih iz ručnog
+vatrenog oružja iz apsolutne blizine, te imajući u vidu smjerove kanala, odnosno njihove strme uglove, to
+proizilazi da je moguće i za ovo vijeće je prihvatljiva odbrana okrivljenog da mu namjera nije bila da lišiživota
+svog brata, većda je kritični događaj posledica nesrećnih okolnosti, i slučajnosti. Naime i pored utvrđenih
+činjenica da su okrivljeni i pok. oštećeni bili u dobrim odnosima, da se kritičnog dana nijesu sukobljavali niti
+svađali, to sami položaj povreda na tijelu pok. oštećenog i uglovi kanala strijelnih rana, ne daju osnova za
+zaključak da je okrivljeni htio lišitiživota sad pok. M. jer za slučaj da mu je to bila namjera bilo biživotno
+logično, prvo da ispali projektile sa veće razdaljine, a posebno da to učini usmjeravajući cijev pištolja pod
+približno pravim uglom u odnosu na osu tijela pok. š tećenog, a kako se u konkretnom slučaju nije desilo.
+
+U prilog prethodno navedenom je i vještačenje vještaka balističara dr B.B. koji je zaključio da su obje
+pronađenečaure ispaljene sa iste pozicije, s timšto je samo mijenjan položaj uzdužne ose cijevi pištolja. Po
+mišljenju vještaka pokazano mjesto na rekonstrukciji od strane okrivljenog odgovara materijalnim tragovima
+(čaurama) pronađenim na 1m. Pokazani međusobni položaj od strane okrivljenog kao i sama dinamika
+spornog događaja djelimično je moguća. Naime, uzdužna osa cijevi pištolja mora biti u položaju koji
+zadovoljava smjer strijelnih kanala utvrđenih obdukcijom tijela pok. M, ašto je i pokazano od strane
+okrivljenog za projektil, za koji je rekao da je prvi ispaljen, i koga se zapravo i jedino sjeća. Ovaj položaj
+odgovara i mjestu pronalaženja jedne odčaura na 1 m. Mjesto pronalaženja drugečaure “određuje” i stajnu
+tačku lica koje puca. Ta stajna tačka je približno ista kao i za prvi projektil, s timštio je cijev malo zakrenuta u
+odnosu na prvi položaj. Dakle, i drugi projektil je morao biti ispaljen prije nego su oštećeni i okrivljeni pali na
+zemlju, da bi sečaura našla na mjestu gdje je pronađena. Znači drugi projektil nije mogao biti ispaljen kada
+su okrivljeni i oštećeni bili u “ležećem” položaju, odnosno na zemlji, jer se u tom slučaju drugačaura ne bi
+mogla naći na mjestu na kojem je prilikom uviđaja pronađena. Da je okrivljeni mogao postupiti na takav
+nač in potvrđuje i vještak psihijatar dr G.K. koja je na glavnom pretresu pojasnila da je sukob optuženog sa
+određenim licem koji se desio pola sata prije kritičnog događaja mogao da izazove reakciju optuženog, da
+ode do svoje kuće da uzme pištolj i da krene na mjesto svađe udaljeno oko 700 metara, da se obračuna sa
+licem sa kojim se svađao, te da on može da izabere ovakav način potpuno svjesno, ali bez elemenata neke
+bolesti koja bi bila u osnovi takvog načina reagovanja.
+Cijeneći naprijed utvrđenočinjenično stanje, sud je izmijeniočinjenični opis i pravnu kvalifikaciju djela
+shodno svojim ovlašćenjima i u granicama ovlašćenja, obzirom da kako je prethodno analizirano, nije bilo
+dokaza koji bi opredijelili ovaj sud u pravcu zaključka da je okrivljeni E.Š. počinio krivično djelo ubistvo izčl.
+143 KZ-a CG. Naime sud je tokom postupka utvrdio da je okrivljeni E.Š. kritičnog dana i vremena, i na
+kritičnom mjestu, svjestan da svojom radnjom može izvršiti krivično djelo, ali je olako držao da do toga neće
+doć i, iz nehata lišioživota svog brata oštećenog M. Š, na načinšto je tokom otimanja o pištolj marke M-57 -
+tetejac, cal. 7,62 mm, ser. broja C-191540, ispalio dva projektila u pravcu oštećenog, od kojih ga je jedan
+pogodio u predjelu grudi, nanijevši mu - prostrelnu ranu u lijevom nizdojkinom predjelu sa ulaznom ranom
+koja se kanalom nastavlja kroz potkožna meka tkiva lijeve polovine prednje strane trbuha i završava izlaznom
+ranom u predjelu lijevog donjeg kvadranta prednje strane trbuha, te ponovo ulazi u tijelo ulaznom ranom u
+predjelu gornje trećine prednje strane lijeve butine, koja rana se kanalom nastavlja kroz meka tkiva lijeve
+butine i završava izlaznom ranom u predjelu srednje trećine zadnje strane lijeve butine a potom se nastavlja
+strijelnim okrznućem u predjelu unutrašnje strane srednje trećine desne potkoljenice, a jedan projektil
+pogodio u predjelu desne bočne strane vrata nanijevši mu prostrelnu ranu sa ulaznom ranom koja se
+kanalom nastavlja kroz pripadajuća potkožna meka tkiva vrata, razara mišiće, lijevu zajedničku karotidnu
+arteriju, potom prolazi kroz zadnji zid grkljana, lijevu bočnu stranu vrata, meka tkiva lijevog ramena, lomi
+gornji okrajak lijeve ramenjače i završava se izlaznom ranom u lijevom lopatičnom predjelu, od kojih je kod
+istog uslijed iskrvarenja iz rascjepa desne zajedničke karotidne arterije i raskidanih krvnih sudova dužkanala
+
+strijelnih rana prostrelina nastupila smrt. Postupajući na opisani način okrivljeni je u svojim radnjama
+ostavrio sva bitna obilježja bića krivičnog djela nehatno lišenježivota izčl. 148 KZ-a CG.
+Iz okolnosti konkretnog slučaja nesumnjivo proizlazi, da je okrivljeni bio svjestan da postupajući na način
+kako je to prethodno opisano, tokom otimanja o pištolj sa oštećenim istog može lišitiživota, ali je olako
+držao da do toga neće doći, odnosno, da posljedica neće nastupiti, š to znači, da se u radnjama okrivljenog
+kao subjektivni elemenat bića predmetnog krivičnog djela manifestuje svjesni nehat.
+
+Odlučujući o vrsti i visini kazne okrivljenom, sud je cijenio sve okolnosti izčl. 42 KZ-a CG, pa je na strani
+okrivljenog kao olakšvajuće okolnosti našao da se radi o porodičnomčovjeku, ocu dvoje maloljetno djece,
+nezaposlenom licu, lošeg imovnog stanja, kao ičinjenicu da se predstavnik oštećene porodice nije pridružila
+krivičnom gonjenju, da je okrivljeni izrazio kajanje ižaljenje zbog događaja koji se desio, te da se radi o licu
+koje do sada nije osuđivano. Otežavajućih okolnosti na strani okrivljenog sud nije našao, pa je okrivljenog
+osudio na kaznu zatvora od 4 ( č etiri) godine i 6 ( š est) mjeseci, smatrajući da je ista srazmjera težini izvršenog
+krivičnog djela i posledicama djela. Sud je uvjerenja daće se sa izrečenom kaznom moći postići svrha
+kažnjavanja izčl. 32 Kz-a CG, odnosno uticati na okrivljenog da ubuduće ne vrši krivična djela, uticati na
+druge da to nečine, izrazićeće se društena osuda za krivično djelo i ukazati na obavezu poštovanja zakona, a
+samim tim jačaće se moral i uticati na razvijanje društvene odgovornosti.
+Shodnočl. 51 KZ-a CG sud je okrivljenom E. Š, u izrečenu kaznu zatvora, uračunao vrijeme provedeno u
+pritvoru od 15. 04. 2018. godine do 22. 10. 2021. godine.
+
+Shodnočl. 226 i 229 ZKP-a CG, sud je obavezao okrivljenog da ovom sudu plati na ime paušala iznos od
+200,00 €, pričemu je vodio računa o složenosti i trajanju krivičnog postupka i imovinskim prilikama
+okrivljenog, kao i na ime ostalih troškova krivičnog postupka plati iznos od 4.022,13 €, koji troškovi su nastali
+angažovanjem vještaka, te namještenika sudskog savjeta.
+Sud je obavezao okrivljenog i da plati troškove krivičnog postupka nastale angažovanjem branioca po
+služ benoj dužnosti, o kojimaće biti odlučeno posebnim rješenjem.
+
+Imovinsko pravnog zahtjeva nije bilo.
+
+Sa iznijetih razloga, odlučeno je kao u izreci presude shodnočl. 374 ZKP-a CG.
+
+VIŠI SUD U BIJELOM POLj U
+Dana, 22. 10. 2021. godine
+
+Zapisničar, PREDSJEDNIK VIJEĆA-SUDIJA,
+Radmila Duborija,s.r. Ivan Adamović,s.r.
+
+PRAVNA POUKA:
+Protiv ove presude može se izjavitižalba
+Apelacionom sudu Crne Gore u roku
+od 15 dana od dana prijema, a preko ovog
+suda.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

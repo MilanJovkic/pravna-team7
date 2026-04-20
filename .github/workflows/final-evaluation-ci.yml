@@ -9,7 +9,7 @@ on:
 
 jobs:
   final-validation:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     env:
       POSTGRES_HOST: 127.0.0.1
       POSTGRES_PORT: 5433
@@ -46,18 +46,16 @@ jobs:
         run: docker compose up -d postgres
 
       - name: Wait for PostgreSQL
-        shell: pwsh
+        shell: bash
         run: |
-          $max = 30
-          for ($i = 0; $i -lt $max; $i++) {
-            docker exec pravna-postgres pg_isready -U pravna_user -d pravna_cbr
-            if ($LASTEXITCODE -eq 0) {
-              Write-Host "PostgreSQL is ready"
+          for i in {1..30}; do
+            if docker exec pravna-postgres pg_isready -U pravna_user -d pravna_cbr; then
+              echo "PostgreSQL is ready"
               exit 0
-            }
-            Start-Sleep -Seconds 2
-          }
-          Write-Error "PostgreSQL did not become ready in time"
+            fi
+            sleep 2
+          done
+          echo "PostgreSQL did not become ready in time"
           exit 1
 
       - name: Build jColibri CBR jar

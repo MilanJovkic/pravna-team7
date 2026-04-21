@@ -1,0 +1,37 @@
+-- Schema for CBR case base
+
+CREATE TABLE IF NOT EXISTS cases (
+    id SERIAL PRIMARY KEY,
+    case_number VARCHAR(50) NOT NULL,
+    injury_type VARCHAR(100),
+    location VARCHAR(100),
+    weapon VARCHAR(100),
+    weapon_used BOOLEAN,
+    severe_consequence BOOLEAN,
+    death_result BOOLEAN,
+    negligence BOOLEAN,
+    provocation BOOLEAN,
+    fight_participation BOOLEAN,
+    fight_consequence VARCHAR(50),
+    left_without_help BOOLEAN,
+    previous_convictions BOOLEAN,
+    repeat_offender BOOLEAN,
+    confession BOOLEAN,
+    remorse BOOLEAN,
+    plea_agreement BOOLEAN,
+    aggravating_circumstances BOOLEAN,
+    mitigating_circumstances BOOLEAN,
+    family_circumstances BOOLEAN,
+    poor_financial_status BOOLEAN,
+    alcohol_intoxication BOOLEAN,
+    narcotics_influence BOOLEAN,
+    conditional_sentence_requested BOOLEAN,
+    attempted_offense BOOLEAN,
+    outcome VARCHAR(50),
+    verdict_type VARCHAR(50),
+    sanction VARCHAR(200)
+);
+
+CREATE INDEX idx_case_number ON cases(case_number);
+CREATE INDEX idx_injury_type ON cases(injury_type);
+CREATE INDEX idx_location ON cases(location);

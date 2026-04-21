@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке35">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке35/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке35"/>
+                    <FRBRdate date="2021-05-31" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке35/sr@2021-05-31/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке35/sr@2021-05-31"/>
+                    <FRBRdate date="2021-05-31"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке35/sr@2021-05-31/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке35/sr@2021-05-31/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Nada Rabrenović"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Anđela Mitrović"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 952/2020</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2021-05-31">2021-05-31</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Nada Rabrenović</judge>
+                    <judge>Anđela Mitrović</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljena P.M. osuđena za ubistvo djeteta pri porođaju.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Ubistvo djeteta pri porođaju</p>
+                    <p>Mentalno stanje okrivljene</p>
+                    <p>Primjena zakonskih odredbi</p>
+                    <p>Troškovi krivičnog postupka</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_146">Član 146</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_2">Član 2</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_52">Član 52</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da je okrivljena svjesno izvršila krivično djelo, uzimajući u obzir njeno mentalno stanje i dokaze.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Osudna presuda</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="witnesses">
+                    <person>D.G.</person>
+                    <person>P.S.</person>
+                    <person>Zapisniku Kt</person>
+                    <person>P.B.</person>
+                    <person>P.M.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="weapon">nož</fact>
+                <fact key="weapon">puška</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="conditional_sentence_requested">da</fact>
+                <fact key="imposed_prison_sentence_months">12</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K. 952/20
+
+U IME CRNE GORE
+
+OSNOVNI SUD U PODGORICI, po sudiji Nadi Rabrenović, uz učešće Mitrović Anđele, kao zapisničara, u
+krivičnom predmetu protiv okrivljene P.M., zbog krivičnog djela ubistvo djeteta pri porođaju izčl. 146
+Krivičnog zakonika Crne Gore, po Optužnom predlogu Osnovnog državnog tužilaštva u Podgorici, Kt.br..../20
+od 01.12.2020. godine, nakon održanog glavnog i javnog pretresa dana 27.05.2021. godine, u prisustvu
+zastupnika optužbe K.A., državnog tužioca u Osnovnom državnom tužilaštvu u Podgorici i okrivljene P.M.,
+donio je i dana 31.05.2021. godine, javno objavio,
+
+P R E S U D U
+
+OKRIVLJENA:
+
+P.M., JMB:........, od oca S. i majke B., rođene R., rođena..... godine u P., sa prebivalištem u P. - GO G., selo B.P., državljanka Crne Gore, završila srednju hemijskuškolu, nezaposlena, neudata, nema djecu, lošeg imovnog
+stanja, neosuđivana,
+
+K r i v a j e,
+
+Zatošto je:
+
+U periodu od 30.03.2020. godine do 05.04.2020. godine, u P., u selu B.P., svjesna da može učiniti djelo pa je na
+to pristala, kao majka, lišilaživota svoje dijete neposredno poslije porođaja, dok je kod nje trajao poremećaj
+izazvan porođajem u vidu akutnog konfuznog stanja sa težim oblikom prolazne depresije, na načinšto je
+nakon porođaja donešenog i za vanmateričniživot sposobnogženskog novorođenčeta, ž ivorođenog u
+desetom mjesecu materičnogživota, ugušila novorođenče stavljajući ga u PVC kesu, koju je sa
+novorođenčetom ubacila u septičku jamu poljskog toaleta koji se nalazi u dvorištu njene porodične kuće,
+
+- čime je izvršila krivično djelo ubistvo djeteta pri porođaju izčl. 146 Krivičnog zakonika Crne Gore.
+
+Pa sud okrivljenoj, primjenom citiranih zakonskih odredbi, tečl. 2, 4, 5, 15, 42, 52, 53 i 54 Krivičnog zakonika
+Crne Gore, tečl. 229 ičl. 374 Zakonika o krivičnom postupku, i z r iče Osnovni Sud u Podgorici
+K 952/2020
+27. Maj 2021
+
+USLOVNU OSUDU
+
+Kojom okrivljenoj utvrđuje kaznu zatvora u trajanju od 1 (jedne) godine i istovremeno određuje da se
+utvrđena kazna neće izvršiti ako okrivljena za vrijeme od 2 (dvije) godine po pravnosnažnosti presude ne
+izvrši novo krivično djelo.
+
+Obavezuje se okrivljena da, na ime troškova krivičnog postupka, u korist budžeta Crne Gore plati iznos od
+665,50 eura i na ime sudskog paušala iznos od 40,00 eura, sve u roku od 15 dana po pravosnažnosti presude.
+
+O b r a z l ože nj e
+
+Osnovno državno tužilaštvo u Podgorici podnijelo je Osnovnom sudu u Podgorici Optužni predlog, Kt.br..../20 od 01.12.2020. godine, protiv okrivljene P.M., zbog krivičnog djela ubistvo djeteta pri porođaju izčl. 146
+Krivičnog zakonika Crne Gore. Zastupnik optužbe u završnoj riječi navela je da je provedenim dokazima
+nesporno utvrđeno da je okrivljena izvršila krivično djelo za koje se tereti. Odbrana okrivljene je nelogična i
+životno neodrživa pa joj kao takvoj ne treba pokloniti vjeru, većje cijeniti kao sračunatu na izbjegavanje
+krivice. Naime, njena odbrana nije u skladu sa provedenim dokazima, iskazom svjedoka D., rezultatima
+pretresa koji je izvršen u njenoj porodičnoj kući. Naime, nakon izjašnjenja vještaka medicinske struke prof. dr
+Č.I., na glavnom pretresu od 27.05.2021. godine, a i na osnovu cjelokupnog dokaznog postupka, nesporno je
+da je okrivljena majka novorođenčeta, da je to dijeteživorođeno i to kao sposobno za vanmateričniživot, da
+je smrt tog novorođenčeta nasilna, da je njegovo tijelo pronađeno pretresom u poljskom toaletu porodičnog
+objekta okrivljene. Iz odgovora okrivljene na pitanje tužioca nesporno proizilazi da je istoj prije izvršenog
+pretresa bilo poznato gdje se tijelo novorođenčeta nalazilo. Kod takvih nespornihčinjenica odbrana
+okrivljene da joj isprava uopšte nije bilo poznato da se porodil, većda je to tek naknadno saznala, te da je
+navedeno nasilno učinio upravo D.G., no da i pored toga neposrdno po porođaju nije imalačak ni fizičkih
+naznaka da je do porođaja došlo, ježivotno i iskustveno neodrživa, a to posebno ako se ima u viduživotna
+dob okrivljene u vrijeme izvršenja krivičnog djela, č ime je njena odbrana u potpunosti obesmišljena. Kod
+navedenih razloga od suda je tražila da okrivljenu oglasi krivom i da joj izrekne adekvatnu krivičnu sankciju.
+
+Okrivljena P.M. u odbrani pred ovlašćenim tužiocem Osnovnog državnog tužilaštva u Podgorici, na Zapisniku
+Kt.br..../20 od 21.04.2020. godine, iskoristila je svoje zakonsko pravo i nije iznosila svoju odbranu.
+
+Okrivljena P.M., u odbrani na glavnom pretresu od 26.01.2021. godine, navela je da to nije uradila, prije svega
+ne bi dozvolila da joj neko nešto tako uradi, a kamo li njenoj porodici. To je uradio D.G.. Tog dana kada se
+desio taj događaj nije bila kući od 10,00časova do 17,00časova, a to je bio ponedjeljak, ne sjeća se datuma.
+Bila je kod D.G., u stanu, koji je on iznajmio na Z., u L., u Ulici S.B. br.../.., X sprat. D.G. nije državljanin Crne
+Gore, većje državljanin Republike Srbije. D.G. i ona su izlazili skoro dvije godine, bili su u emotivnoj vezi. U
+periodu kada su izlazili D.G. ježivio u Crnoj Gori i radio je u blizni mesare u kojoj je i ona radila, a to je mesera
+"J." koja se nalazi u poslovnom centru "G.". D.G. je pravio leskovačku masu, u nekoj od radionica mesare "J.",
+ali ne zna gdje se tačno nalazila ta radionica u kojoj je D.G. radio. Zna da je D.G. 09.05. rođendan, on je iz
+Leskovca, a ne zna koje je godište. Cijelo vrijeme za koje je bila u vezi sa D.G., on ježivio na adresi koju je
+navela. D.G. i ona su se upoznali u mesari u kojoj je radila, jer je ončesto dolazio u tu mesaru u kojoj je radila,
+
+stupili su u kontakt i počeli su da izlaze. Misli da su izašli prvi put za rođendan D.G. 2017. godine ili 2018.
+godine. D.G. u Crnoj Gori nije imao nikog od porodice, a ne zna da li je imao koga od porodice u Srbiji. Njih
+dvoje su izlazili i sve je bilo normalno. Njena porodica nije znala za vezu između nje i D.G., zatošto ona slabo
+priča o tim stvarima, zatvoren je tip. D.G. i ona su skoro svaki dan izlazili, mimo radnog vremena, a njena
+porodica je nije pitala gdje je bila za to vrijeme. D.G. i ona su izlazili u kafićblizu radnje u kojoj je radila, a ne
+zna kako se zove taj kafić, a onda bi otišli u njegov iznajmljeni stan, a nije joj poznato kod koga je D.G.
+iznajmio taj stan. Nije ga nikada pitala za to, jer je interesovao samo on, ništa drugo je nije interesovalo. Njene
+kolege sa posla nijesu znale da D.G. i ona izlaze, jer je D.G. ž elio da kriju njihovu vezu, ne zna iz kojeg razloga,
+nije ga nikada pitala za razlog, a njoj to nije smetalo. Ne zna kako je došlo do svega toga. D.G. niježelio dijete,
+a ona ježeljela dijete. D.G. i ona su bili u intimnim odnosima i on je znao je ona ostala trudna, a to mu je rekla
+kada je vidjela da nema više ciklus. Nije išla kod ljekara nakonšto je ostala trudna, jer je bilo strah. I nakon
+što je ostala u drugom stanju bila je u vezi sa D.G., a D.G. se nije složio sa timšto je ona zadržala trudnoću, on
+je insistirao da ona abortira, a ona to niježeljela, jer voli djecu, a to joj je bilo prvo dijete. Međutim, u periodu
+njene trudnoće komunikacija između nje i D.G. bila je normalna i oni su se gledali stalno. Njenoj porodici nije
+rekla da je u drugom stanju, ć utala je o tome, a kada joj je stomak postao vidljiv, negirala je da je u drugom
+stanju, iako su postojale glasine da je trudna, a pojma nema ko je prenosio te glasine. Za cijelo to vrijeme
+živjela je kod njenih roditelja, samo je odlazila na posao od 06,00časova do 14,00časova, a nekada i od 06,00
+časova do 16,00časova i stalno se vraćala kući, dakleživjela je kod svojih roditelja. Š ta god da je njena
+porodica pitala u vezi njene trudnoće, ona je to negirala, pitali su je da li je istina toštočuju, odnosno da je
+trudna, rekla im je da nije istina, a nijesu je pitali sa kim je ostala trudna, jer nijesu ni znali da ima dečka.
+Stomak joj zbog trudnoće nije bio puno vidljiv, nije bio veliki, a nije se ni trudila da ga sakriva. Zna da je bio
+ponedjeljak kada je pozvala D.G., dok je bila na poslu i rekla mu je da se ne osjeća dobro, da nešto nije u redu
+sa njom i D.G. je došao po nju, oko 10,00časova i povezao je u njegov stan. Kada su došli u stan D.G., tražila
+je da joj donese nešto da popije jer je bilažedna, on joj je donio sok iz kuhinje, ašta je bilo u tom soku ne zna,
+odnosno ne znašta joj je D.G. stavio u taj sok. Posle izvjesnog vremena je zaspala i ne sjeća se ničegašta je
+dalje bilo sa njom. Kada se probudila i to nakon sat vremena, ponovo je tražila D.G.u da joj da nešto da
+popije i on joj je dao sok i ponovo je zaspala, a nakon toga se ničega ne sjeća. Nakonšto je zaspala drugi put,
+spavala je bašdugo i probudila se oko 14:30časova ili 16,00časova, nije sigurna. Kada se drugi put probudila
+na sebi je imala trikmajicu, a majica koju je bila obukla preko trikmajice bila joj je skinuta i stavljena na drugi
+krevet, a takođe je prije toga na sebi imala i helanke, koje nijesu bile na njoj kada se probudila. Tom prilikom,
+imala je nadogradnju na noktima i ruke su joj bile ljepljive, a ispod noktiju bila joj je krv, zna da je prethodno
+bila oprala ruke i mirisale su joj ruke na vlažne maramice. Kada je pitala D.G. š ta joj je sa rukama, on joj je
+rekao da je možda takla meso u mesari, ali su joj ruke mirisale na vlažne maramice. Kada se probudila drugi
+put, na krevetu na kojem je spavala bila je druga posteljina u odnosu na onušto je bila prije toga. Bila je u 34.
+nedjelji trudnoće, odnosno u osmom mjesecu trudnoće, a kada je bila kod doktora ginekologa u martu 2020.
+godine, doktorica joj je rekla da treba da se porodi u aprilu. Ne zna koji je datum bio kada se sve to desilo, zna
+samo da je bio ponedjeljak, a kada se probudila drugi put u stanu D.G., osjetila je bolove u predjelu stomaka
+i bilo joj je crveno i modro u predjelu stomaka, jer je zavrnula trikmajicu da pogleda stomak, njen stomak je
+izgledao tako kao da je stiskan dio ispod rebara na prednjoj strani. Nije mogla da ustane zbog bolova u
+stomaku, ali nije krvarila. Pitala je D.G. zašto je boli dio u predjelu stomaka, jer je jošuvijek rano da se porodi,
+a on joj je odgovorio: "Nema veze, to je tako normalno.". Onda je ustala iz kreveta, obukla se i krenula je kući,
+a D.G. je odvezao kući autom do ulice u kojoj se nalazi njena kuća, a nije imala blage vezešto se desilo sa
+njom dok je bila u stanu D.G.. Stomak joj je izgledao isto kao i prije negošto je došla u stan kod D.G., bio je
+iste veličine, a sva je bila otečena. Kada je došla kući sjedjela je malo sa njenima i pošla je da legne. Zaspala je
+malo i probudila se na podu krvareći, gdje je našla njena majka, u toku noći. Ustala je, pošla je do WC-a i
+obrisala se, stavila je uložak i legla je. Nakon toga je sve bilo normalno, njeni je kući nijesu pitališta joj je.
+Njena porodica je znala da ima jednu cistu na maloj karlici, a drugu u predjelu prednje strane stomaka, sa
+desne strane. Bila je normalno te večeri i porodica joj te večeri nije rekla da ide kod ljekara. Pozlilo joj je tek u
+
+nedjelju, nije znalašta se dešava sa njom. Od ponedjeljka do nedjelje je ležala kući, nije išla na posao. Njen
+stomak je i dalje bio veliki. Bila je i dalje u komunikaciji sa D.G. i on se normalno ponašao, a pričali su na
+video poziv, rekao joj je daće biti dobro i daće to proći brzo, samo to joj je govorio. U nedjelju joj je pozlilo,
+poč ela je da drhti, nije mogla da diše, pošla je u kupatilo i pala je pored kade, bilo joj je hladno. Nekako se
+vratila od kupatila do sobe i legla je na krevet. Nakon toga, njena porodica je zvala Hitnu pomoći nije ni znala
+da je D.G. porodio 30.03.2020. godine, jer toga nije bila svjesna. Saznala je da se porodila kada su je iz Hitne
+pomoći odveli u Urgentni centar, kada su joj rekli da je posteljica zaboravljena u njoj i da se nasilno porodila.
+D.G. i ona se nijesu gledali nakon toga, samo se sa njim preko video pozivačujala, a telefon su joj oduzeli u
+bolnici. Njena porodica joj je rekla, odnosno njeni roditelji su joj rekli da je beba pronađena u septičkoj jami,
+ali njena porodica o tome nije imala blage veze. Rekli su joj da je dolazila policija, a ona je za to vrijeme bila u
+bolnici na operaciji, zbog posteljice koja joj je ostala i ciste su joj izvukli. Njeni roditelji ne znaju bašništa o
+tome, oni su i dalje ušoku, ne mogu da vjeruju, ali i ona je ušoku, nokte je izgrickala, puši stalno, ne priča,
+zatvorila se u sebe, teško joj je da o tome priča. Nije tražila pomoćljekara, a sa D.G. se niječula, jer nema
+telefon, oduzet joj je. D.G. je nije potražio uopšte nakon toga, a njena majka joj je rekla da je D.G. dolazio na
+terasu njihove kuće, tačnije da ječula korake na terasi i da misli da je to on bio, ali se ona ne sjeća toga
+uopšte, a to je bilo kasno uveče, kada je izašla iz bolnice. Bila je jedno veče napolje, non stop je budna i izašla
+je napolje iz kuće, pa je majka pitala da li je vidjela D.G., rekla joj je da nije, a majka joj je rekla da je D.G. bio
+na terasi, č ula mu je korake. Neki iz komšiluka su vidjeli D.G. i rekli su da se tudašeta. D.G. nije znao tačno
+gdje je kuća u kojoj onaživi, a znao je ulicu u kojojživi. Nakon događaja, nije ni vidjela, ni srela D.G., niti se on
+postarao da dođe da je pita treba li joj pomoć, ništa nije uradio. Iako D.G. nije znao gdježivi, lako mu je bilo
+da nađe njenu kuću, jer je kada bi je dovezaočekao da uđe u kuću pa je vidio gdježivi, a non stop su pričali na
+telefon putem video poziva, pa je tom prilikom vidio i dvorište. Nema psihičkih problema i nikada se nije
+liječila od nekih psihičkih bolesti, normalno je završilaškolu, jedinošto ne spava normalno od tada, a i gricka
+nokte. Nakon tog događaja nije potražila pomoćljekara, jer je bolje da je sama, ne radi nigdje iživi od očeve
+plate. Njena porodica pokušava da je smiri, da sve izgleda normalno, a ona sve izbjegava ićuti, zna da ni
+njima nije lako. Niko od njene porodice, a ni ona nijesu tražili D.G. nakon toga, a tošto je rekla u odbrani na
+glavnom pretresu, nije rekla policiji, ne zna zašto. Ne zna zašto nakon događaja sve tošto je rekla na glavnom
+pretresu nije ispričala policiji, nego tek pred sudom. Nije otišla kod ljekara da se pregleda u toj nedelji kada
+nije išla na posao, većje bila kući, jer je bilo strah, a ni nakon izlaska iz bolnice uopšte nije išla da se pregleda,
+jer ne izlazi nigdje iz kuće. Nije kontaktirala sa D.G.om nakon događaja, ne zna da li je D.G. u Crnoj Gori. Ne
+zna koliko je bila teška prije porođaja, a visoka je 1,73 m, a ne zna ni sada koliko je teška. Uvijek je bila
+srednje građe i težine. D.G. je nekog platio da je porodi nasilno, jer D.G. nije bio u stanu kada se probudila
+drugi put, nego je došao nakon 20 minuta od njenog drugog buđenja, a kada ga je pitala gdje je bio išta je sa
+njom bilo i zašto joj je skinuta odjeća, rekao je da je bio u prodavnici, da joj je možda bilo vruće i da se sama
+skinula. D.G. je samživio u tom stanu. Tog dana kada se porodila u stanu D.G., nije primijetila nekog drugog
+osim njega, sa plavim, hirurškim rukavicama na rukama i maskom. Kada je krenula kući iz stana D.G., on je
+odvezao njegovim vozilom "Volkswagen Sharan" plave boje, leskovačkih registarskih oznaka. Prilikom izlaska
+iz stana, primijetila je da je D.G. nosio neku crnu, veliku kesu. U toj kesi je kupio patike, odnosno zajedno su
+kupili te patike. Kesa je bila od butika "x s." i bio je taj naziv na toj kesi i D.G. je stavio tu kesu na zadnje
+sjedište vozila. Nije pitala D. š ta je u toj kesi, ona ga nikad ništa ne pita, niti kada kupi nešto, niti mu je pravila
+problem oko kupovine, kao ni o tomešta nosi i kako nosi. Kada je D.G. dovezao, ostavio je na glavnu ulicu u
+odnosu na njenu kuću. Nije primijetilašta je D.G. uradio nakon toga, niti gdje njegovo vozilo odlazi, nije
+gledala dalje i nije se okretala, samo je ušla u kuću. Udaljenost od glavne ulice gdje je ostavio D. do njene
+kuće iznosi otprilike 100 m, možda i manje i ta razdaljina može se proći za 2-3 minuta. Vidjela je da je vozilo D.
+stajalo dok je ušla u kuću, ašta je dalje bilo ne zna. Njena kuća se vidi sa glavnog puta, ali se slabo vidi od
+voćnjaka, ali vidi se dovoljno. Sa D. nije razgovarala o tomešta se nalazi u dvorištu njene kuće, ali kada su
+razgovarali telefonom, uvijek su razgovarali na video poziv i pokazivala mu je dvorište, voćke, malu paščad,
+svinje, kokoške. D.G. nikada nije bio kod nje i njene porodice kući u gostima ili u posjeti. Poljski WC se u
+
+odnosu na njenu kuću nalazi na kraju dvorišta kod drvljanika, gdje se nalazi svinjac i drvljanik, a ne zna koliko
+je udaljen od kuće, a WC se vidi sa glavnog puta. Kada se vratila kući, bilo je 17,30časova, bio je sumrak. Dok
+je bila u stanu D. nije primijetila da joj je vešprljav, mokar ili nešto slično, osim da joj je trikmajca bila mokra,
+a veš nije bio na njoj, bio je kod helanki na drugom krevetu. Nije pitala D. zašto je promijenjena posteljina na
+kojoj je spavala. U kućiživi sa ocem, majkom i sestrom. O trudnoći nije razgovarala sa sestrom. Otac djeteta
+koje je nosila je D.G.. Ne zna pol djeteta koje je rodila. Objašnjavajući da li joj je neko prijetio, strašio je da ne
+smije biti trudna, da ne smije roditi dijete i slično, navela je da je D.G. jednom prilikom udario zbog togašto
+je trudna, jer on niježelio dijete. D.G. ježelio da ona makne dijete, a ona to niježeljela, pa je udario po faci i
+išla joj je krv iz nosa. Nema saznanja od kolega i prijateljašta se desilo sa D.G. nakon tog događaja. Nije joj
+poznato da prilikom pretresa kuće nije pronađeno bašništa i da je upravo njen otac pozvao službenike
+policije u poljski WC, jer uopšte ne priča sa roditeljima, zatvori se potpuno i ne priča ni očemu sa roditeljima i
+guta sve u sebi, ako ima problemećuti, riješiće ih sama. Bila je u bolnici na Intenzivnoj njezi kada joj je
+služ benik policije oduzeo telefon. Ne sjeća se da li je službeniku policije rekla eventualno nešto o tome gdje
+se dijete nalazi. Ne zna odakle njenom ocu saznanje gdje se dijete nalazi iako ne razgovara sa njim, možda
+mu je neko od policije rekao, a možda je i ona rekla policajcu kada su je ispitivali. Pojašnjavajući kako zna
+gdje se nalazilo dijete i kako je to rekla policajcu ako ne zna ni da se porodila, navela je da ne zna, možda u
+podsvijesti, s obzirom da se, kada su u bolnici izvadili posteljicu iz nje, sjetila kesešto je D.G. nosio i da je on
+to sigurno bacio tu. Ne zna zašto te sumnje nije iznijela policiji, teško joj je da o tome priča. Pojašnjavajući da
+li je neko vršio uticaj na nju na koji način da iznese svoju odbranu pred sudom, navela je da ne zna i da na nju
+niko nije vršio uticaj. Dodala je da je D.G. koristio 067 i 068 mrežu, ali ne sjeća se njegovog broja telefona. Š to
+se tič e registarskih oznaka njegovog vozila samo zna da su, leskovačkih oznaka, LE. Ž ao joj ješto ne zna kako
+je to dijete rodila, ne zna ni da li je rodilažensko ili muško dijete ižao joj ješto to dijete niježivo.
+
+U završnoj riječi okrivljena P.M. navela je da to nije uradila.
+
+Sud je u dokaznom postupku: saslušao svjedoke P. S, P. B i P. M, saslušao svjedoka D.G., izvršio uvid u
+Otpusnu listu sa epikrizom Kliničkog centra Crne Gore Ginekološko akušerske klinike na ime P. Mirjane
+matični br. istorije bolesti......, na saglasan predlog stranaka pročitao Nalaz i mišljenje Komisije vještaka
+medicinske struke prof. dr S.M., dr Ž.G. i psihologa B.S. I. od 06.07.2020. godine i Dopunu Nalaza i mišljenja
+te Komisije od 23.11.2020. godine, pročitao Zapisnik o pretresanju računara, mobilnih telefona i drugih
+elektronskih uređaja Uprave policije - CB Podgorica od 30.07.2020. godine, na saglasan predlog stranaka
+pročitao Nalaz i mišljenje vještaka za digitalne dokaze B.S. od 22.10.2020. godine, pročitao Zapisnik o uviđaju
+Uprave policije - CB Podgorica Obd.br..../2020 od 06.04.2020. godine, izvršio uvid u Dokumentaciju Uprave
+policije - CB Podgorica br...... od 06.04.2020. godine, Dokumentaciju Uprave policije - CB Podgorica br...... od
+07.04.2020. godine, Dokumentaciju Uprave policije - CB Podgorica br...... od 06.04.2020. godine,
+Dokumentaciju Uprave policije - CB Podgorica br...... od 06.04.2020. godine, pročitao Službenu zabilješku
+Uprave policije - CB Podgorica Odjeljenje bezbjednosti kriminalističke policije, Stanica kriminalističke policije
+za suzbijanje krvnih delikata i nasilja u porodici - Jedinica kriminalističke policije za suzbijanje krvnih i
+seksualnih delikata Obd.br..../20 od 06.04.2020. godine, Službenu zabilješku Uprave policije - CB Podgorica
+Odjeljenje bezbjednosti kriminalističke policije, Stanica kriminalističke policije za suzbijanje krvnih delikata i
+nasilja u porodici - Jedinica kriminalističke policije za suzbijanje krvnih i seksualnih delikata Obd.br..../20 od
+07.04.2020. godine, sa Izvještajem specijaliste "M.C." od 11.03.2020. godine, na ime P.M., pročitao Zapisnik o
+pretresanju stana i drugih prostorija Uprave policije - CB Podgorica Obd.br..../20 od 06.04.2020. godine,
+Potvrdu o privremeno oduzetim predmetima Uprave policije - CB Podgorica Obd.br..../20 od 06.04.2020.
+godine, Potvrdu o ulaženju u stan i druge prostorije Uprave policije - CB Podgorica Obd.br..../20 od
+06.04.2020. godine, Potvrdu o privremeno oduzetim predmetima Uprave policije - CB Podgorica Obd.br..../20
+od 06.04.2020. godine, pročitao Obdukcioni Zapisnik vještaka medicinske struke dr I.Č. S.br.../2020 od
+
+10.04.2020. godine sa fotodokumentacijom, na saglasan predlog stranaka pročitao Nalaz i mišljenje vještaka
+medicinske struke dr I.Č. i dr N.R. od 25.11.2020. godine, saslušao vještaka medicinske struke dr Č.I., na
+glavnom pretresu od 27.05.2021. godine i pročitao Izvod iz registra kaznenih evidencija Ministarstva pravde
+Osnovnog suda u Podgorici Ke.br..../2020 od 18.12.2020. godine.
+
+Iz Zapisnika o uviđaju Uprave policije - CB Podgorica, Obd br..../20 od 06.04.2020. godine, proizilazi da je isti
+sačinjen povodom izlaska na mjesto događaja i povodom obavještenja da je u dvorišnom WC-u, koji se nalazi
+nad septičkom jamom, u dvorištu porodične kuće, vlasništvo P.S., koja se nalazi u mjestu B.P., GO G.,
+pronađeno mrtvo novorođenče. Dana 05.04.2021. godine, u 16,41 h, službenike Stanice policije za poslove
+dežurstva CB Podgorica obavijestilo je medicinsko osoblje Odjeljenja ginekologije Kliničkog centra Crne Gore
+da je u tom centru na liječenju pacijentkinja P.M., koja ima zdravstvene probleme nakon porođaja, koji se
+navodno dogodio prije mjesec dana. Dana 06.04.2020. godine, o navedenim okolnostima obaviješteni su
+služ benici kriminalističke policije, Stanice za krvne i seksualne delikte CB Podgorica, koji su preduzeli
+odgovarajuće mjere i radnje i tim povodom je izvršen pregled i pretres porodične kuće, pomoćnih prostorija,
+kao i porodične grobnice, vlasništvo P.S.. Na okolnosti pronalaska mrtvog novorođenčeta, najprije je izvršen
+pregled porodične grobnice, novoizgrađenog groba, vlasništvo P.S., koji je lociran na mjesnom groblju sela B.P.. Tim pregledom nije pronađeno tijelo mrtvog novorođenčeta. Naknadnim, drugim izlaskom na lice mjesta
+izvršen je pregled porodične kuće i pomoćnih objekata vlasništvo P.S. koje se nalaze u selu B.P. GO G..
+Porodična kuća vlasništvo P.S. je prizemna, a u dvorištu kuće po istočnoj strani u ograđenom dvorištu nalaze
+se pomoćni objekti: ljetnja kuća, ostava, š tala - svinjac, a pravo dvorišni WC. Na tim objektima nalazi se krov i
+nadrstrešnice. Spoljni WC je napravljen odčvrstog materijala, dasaka sa krovom, vratima i betonskom
+pločom učijem se dijelu nalazi otvor iznad septičke jame. U septičkoj jami, u najlonskoj kesi sačvorom
+nalazilo se beživotno tijelo novorođenog djeteta. Nakon vađenja i pranja te najlonske kese konstatovano je
+mrtvo novorođenče koje je fotografisano. Kriminalistički tehničar je izvršio pregled lica mjesta, kojom
+prilikom je isto fotografisano očemu je sačinjena fotodokumentacija kojačini sastavni dio Zapisnika.
+
+Dokumentacija Uprave policije - CB Podgorica br....... od 06.04.2020. godine, sačinjena je povodom
+fotografisanja pretresa kuće P.S. u selu B.P. GO G. i sastoji se od 18 fotografija na kojima je prikazan izgled
+kuće, izgled ulaza u kuću, izgled ulaznih vrata kuće, izgled hodnika kuće, izgled vrata sobe, izgled
+unutrašnjosti sobe, izgled dva metka u ladici ormara i njihov bliži izgled, izgled ulaznih vrata dnevne sobe,
+izgled dnevne sobe, izgled puške, izgled fabričkog broja puške i njegov bliži izgled, izgled oružnog lista i
+njegov bliži izgled, izgled oružnog lista i bliži izgled.
+
+Dokumentacija Uprave policije - CB Podgorica br....... od 07.04.2020. godine, sačinjena je povodom
+fotografisanja obdukcije novorođenčeta na Odjeljenju za sudsku medicinu i Patologiju Kliničkog centra Crne
+Gore i sastoji se od 9 fotografija na kojima je prikazan izgled tijela i tok obdukcije.
+
+Dokumentacija Uprave policije - CB Podgorica br..... od 06.04.2020. godine, sačinjena je povodom
+fotografisanja porodične grobnice vlasništvo P.S. u selu B.P. GO G. i sastoji se od 8 fotografija na kojima je
+prikazan izgled groblja u selu B.P. i izgled porodične grobnice.
+
+Dokumentacija Uprave policije - CB Podgorica br..... od 06.04.2020. godine, sačinjena je povodom
+fotografisanja lica mjesta pronalaska beživotnog tijela novorođenčeta u dvorištu porodične kuće, vlasništvo
+P.S. u selu B.P. GO G. i sastoji se od 10 fotografija na kojima je prikazan izgled kuće i pomoćnog objekta,
+izgled pomoćnog objekta, izgled toaleta pored pomoćnog objekta, izgled unutrašnjosti toaleta i PVC kese u
+
+septičkoj jami, izgled PVC kese nakon vađenja iz septičke jame i njen bliži izgled, izgled fetusa nakon vađenja
+iz PVC kese i njegov bliži izgled.
+
+Iz Službene zabilješke Uprave policije - CB Podgorica Odjeljenje bezbjednosti kriminalističke policije, Stanica
+kriminalističke policije za suzbijanje krvnih delikata i nasilja u porodici - Jedinica kriminalističke policije za
+suzbijanje krvnih i seksualnih delikata Obd.br..../20 od 06.04.2020. godine, proizilazi da je ista sačinjena u
+služ benim prostorijama CB Podgorica u vezi naknadnog izlaska i pregleda dvorišta porodične kuće P.S., u
+kojima stanuje i koje koristi P.M., a u cilju pronalaska beživotnog tijela novorođenčeta. Dana 06.04.2020.
+godine, oko 16,30časova, postupajući po prethodno prikupljenim informacijama da je P.M. nakon porođaja,
+koji se desio u večernjimčasovima dana 30.05.2020. godine/31.03.2020. godine, tijelo svog novorođenčeta
+krijući stavila u PVC kesu koju je nakon toga ubacila u septičku jamu krozšupljinu poljskog WC-a. Policijski
+služ benici su pristupili ispred dvorišta porodične kuće P.S.. Nakon upoznavanja P.S. sa navedenim
+saznanjima, imenovani je pozvao policijske službenike CB Podgorica, JKP za suzbijanje krvnih i seksualnih
+delikata da uđu u dvorište i zajedno sa njim provjere navedene informacije. Prilikom dolaska u poljski WC koji
+se nalazi u dvorištu kuće, P.S. je na ruku navukao PVC kesu uz pomoćkoje je umočio ruku u sadržaj fekalija u
+septičkoj jami i tom prilikom napipao opisanu kesu u kojoj se nalazilo beživotno tijelo novorođenčeta i istu
+izvukao iz fekalija - septičke jame. P.S. je izdata Potvrda o ulasku policijskih službenika u njegov stan. Takođe,
+sve navedeno je dokumentovano od strane službenika CB Podgorica SKP za kriminalističku tehniku, nakon
+čega je vozilom pogrebnih usluga tijelo transportovano na Odjeljenju za sudsku medicinu Kliničkog centra
+Crne Gore, radi vršenja sudsko-medicinske obdukcije.
+
+Iz Službene zabilješke Uprave policije - CB Podgorica Odjeljenje bezbjednosti kriminalističke policije, Stanica
+kriminalističke policije za suzbijanje krvnih delikata i nasilja u porodici - Jedinica kriminalističke policije za
+suzbijanje krvnih i seksualnih delikata Obd.br..../20 od 07.04.2020. godine, proizilazi da je ista sačinjena u
+služ benim prostorijama CB Podgorica u vezi izuzimanja medicinske dokumentacije, pacijenta P.M. iz klinike
+"M.M.", koja se nalazi u Ulici x. j., a koja je dana 05.04.2020. godine, primljena u Klinički centar Crne Gore,
+zbog zdravstvenih problema usled porođaja obavljenog van zdravstvene ustanove.
+
+Iz Izvještaja specijaliste "M.C." od 11.03.2020. godine, na ime P.M., proizilazi da je imenovana došla na
+pregled zbog bolova u gornjem dijelu trbuha i nadimanja. Izvršen je ultrazvučni pregled i konstatovano da je
+otežana vizuelizacija lica kao i srčanih komora, mjerenja toraksa i sagledavanje dugih kostiju ploda, zbog
+miomatozne formacije u istmičnoj regiji bočno desno, promjera 111 x 99 mm ispunjene nepravilnim
+anehogenim dijelom hipereshogabnim odjecima. Abdominalna cirkumiferanca (AC) je 306 mm, dužina femira
+(FI) je 467 mm, srčana radnja ploda ritmična, tjelesna masa ploda 2372 gr. Prema tim parametrima sonorna
+starost trudnoće je 34 nedjelje. Određena je terapija i navedena dijagnoza na latinskom jeziku.
+
+Iz Zapisnika o pretresanju stana i drugih prostorija Uprave policije - CB Podgorica Obd.br..../20 od 06.04.2020.
+godine, proizilazi da je isti sačinjen povodom pretresa porodične kuće vlasništvo P.S., u kojima boravi P.M., a
+koja se sastoji od dnevnog boravka, hodnika, dvije spavaće sobe, kupatila, kuhinje sa trepezarijom i
+pomoćnih objekata. Prilikom pretresa su nađeni i privremeno oduzeti sledeći predmeti: lovačka puška marke
+"IŽ-12" fabričkog broja..., koja je dobrovoljno predata prilikom početka pretresa, koja se nalazila u kući u
+dnevnoj sobi, oružni list na ime P.S., izdat dana 02.06.1981. godine, od SUP-a Titograd, za oružje marke
+"IŽ-12" fabričkog broja..., koji je predat od strane P.S., dva komada sačmene municije kalibra 12 mm, koji su
+pronađeni u fioci ormara, u spavaćoj sobi, koju koriste P.M. i P.B..
+
+Iz Potvrde o privremeno oduzetim predmetima Uprave policije - CB Podgorica Obd.br..../20 od 06.04.2020.
+godine, proizilazi da je od lica P.S. ovlašćeni policijski službenik navedenog dana oduzeo sledeće predmete:
+lovačku pušku marke "I Ž -12" fabričkog broja..., kalibra 12 mm, oružni list na ime P.S., izdat dana 02.06.1981.
+godine, od SUP-a Titograd, za oružje marke "I Ž -12" fabričkog broja..., dva komada sačmene municije kalibra
+12 mm.
+
+Iz Potvrde o ulaženju u stan i druge prostorije Uprave policije - CB Podgorica Obd.br..../20 od 06.04.2020.
+godine, proizilazi da je od P.S. navedenog dana oduzeta kesa u kojoj se nalazi beživotno tijelo
+novorođenčeta,a koju je P.S. pronašao u prisustvu policijskih službenika u septičkoj jami ispod poljskog WC -
+a.
+
+Iz Potvrde o privremeno oduzetim predmetima Uprave policije - CB Podgorica Obd.br..../20 od 06.04.2020.
+godine, proizilazi da je od lica P.M. ovlašćeni policijski službenik navedenog dana oduzeo mobilni telefon
+marke "Samsung" crne boje IMEI broja...../...
+
+Iz Otpusne liste sa epikrizom Kliničkog centra Crne Gore Ginekološko akušerske klinike na ime P.M. matični
+br. istorije bolesti......, proizilazi da je P.M. liječena u toj ustanovi u periodu od 05.04.2020. godine do
+21.04.2020. godine, a da je primljena na to odjeljenje zbog obilnog vaginalnog krvarenja, na prijemu je bila
+febrilna i imala je tjelesnu temperaturu 39,2, malaksala, a pri ginekološkom pregledu kolabirala. Obrađena
+klinički, labaratorijski i ultrazvučno. Kliničkim i ultrazvučnim pregledom uterus izrazito uvećan, sa
+ultrazvučnom slikom, zaostalog posteljičnog tkiva u materici. Odmah po prijemu urađena instrumenatalna
+revizija i pacijentkinja je nakon toga prevedena u Jedinicu intenzivnog liječenja, u kojoj je sprovedena trojna
+antibiotska i antikoagulantna terapija. Na kontrolnom pregledu dana 08.04.2020. godine i dalje ultrazvučno
+perzistira dio posteljičnog tkiva, kao i velike tumorske formacije u maloj karlici dimenzija do 15 cm, opisane
+na CT male karlice, urađena RCUI i dobijen veći dio posteljičnog tkiva. Nakon toga, urađena je laparatomija i
+miomektomija, prilikomčega je konstatovana nekroza velikog miomatoznogčvora na zadnjem zidu.
+Postoperativni tok protekao uredno. Zbog pogoršanja opšteg stanja u smislu srčane dekompenzacije i
+fleuralnog izliva pacijentkinja je ponovo vraćena u Jedinicu intenzivnog liječenja, gdje je konsultovan
+kardiolog. Nakon poboljšanja opšteg stanja i stabilizacije vitalnih parametara, pacijentkinja je dana
+15.04.2020. godine, prevedena na Odjeljenje operativne ginikologije GAK. Na otpustu pacijentkinja stabilna,
+urednih, vitalnih parametara.
+
+Iz Nalaza i mišljenja Komisije vještaka medicinske struke prof. dr S.M., dr Ž.G. i psihologa B.S. I. od
+06.07.2020. godine, proizilazi da na osnovu rezultata psihičkog testiranja, može se govoriti o osobi koja
+sumnja u svoje kvalitete i koja rijetko postavlja ciljeve, međutim, kada ih postavi priličnočvrsto ih se drži, š to
+potkrepljuje i smanjena intelektualnaširina i veća konzervativnost mišljenja. Inicijalno je ekstravertna, ali
+moguće pod uticajem izmijenjenih okolnosti razvila je smanjenu društvenost, skorovi na negativnoj valenciji
+učvršćuju podatke sa skale savjesnosti na način da - ne postoji duboka evaulacija sopstvenog ponašanja i
+vrednovanja. To potvrđuju i odlike temperamenta (podskala anksioznosti) - strašljivost i sklonost negativnim
+emocijama. Registruje se anksioznost osobe, koja se lako osjeti povrijeđenom i kojaće reagovati na kritike,
+sklona da se povuče i da potiskuje. Takođe, registruje se nizak nivo energije, nedostatak sigurnosti u
+sopstveni položaj, a po načinu na koji crta linije - nejednak pritisak i debljina linija registruje se napetost,
+nesigurnost u socijalnom kontekstu. Ispitanica je sniženih intelektualnih potencijala, kod koje su okolnosti
+kritičnog događaja generisale anksioznost, sklonost negativnim emocijama i blago depresivno raspoloženje,
+a sve to je generisano i hormonskim post porođajnim dizbalansom, ali i socijalnim kontekstom u kojem je
+
+živjela (sredina u kojoj ispitanicaživi jošuvijek ne prihvata vanbračno dijete). Opisujući psihičko stanje
+ispitanice u deliktnoj situaciji, može se zaključiti da se nalazila u stanju akutnog konfuznog stanja, navela je
+potpunu amneziju, nesjećanje koje se odnosi na taj period i stanje pojačane pospanosti. U post deliktnom
+periodu opisala je obilno krvarenje kada joj je pružena pomoću bolnici, negirala je izvršenje krivičnog djela
+sa konstatacijom: "Ne bi ja to učinila, možda je to drugi učinio". Po miš ljenju Komisije vještaka, okrivljena P.M. je osoba ispod prosječnih intelektualnih sposobnosti, ne boluje od trajnog duševnog oboljenja
+psihotičnog tipa, niti težeg duševnog poremećaja. Aktuelno ispoljava simptome reaktivne depresije.
+Okrivljena negira krivično djelo kojim se tereti, a pod pretpostavkom da je isto izvršila, vještaci su mišljenja
+da se u vrijeme izvršenja krivičnog djela nalazila u stanju akutnog konfuznog stanja sa težim oblikom
+prolazne depresije. Sposobnost shvatanja značaja djela kao i mogućnost upravljanja svojim postupcima u
+deliktnoj situaciji kod okrivljene je bila bitno smanjena.
+
+Iz Dopune Nalaza i mišljenja Komisije vještaka medicinske struke prof. dr S.M., dr Ž.G. i psihologa B.S. I. od
+23.11.2020. godine, proizilazi da su u pisanom Nalazu i mišljenju naveli da se u vrijeme izvršenja krivičnog
+djela okrivljena nalazila u stanju akutnog konfuznog stanja sa težom slikom prolazne depresije, pa imajući u
+vidu prethodno navedeno, okrivljena se nakon porođaja nalazila u stanju duševnog poremećaja izazvanog
+porođajem, sa konstatacijom da je postojalo akutno konfuzno stanje sa težim oblikom prolazne depresije.
+Prema pravnoj terminologiji, opisani duševni poremećaj odgovara privremenoj duševnoj poremećenosti.
+
+Sud je cijenio Nalaz i mišljenje Komisije vještaka medicinske struke prof. dr S.M., dr Ž.G. i psihologa B.S. I. od
+06.07.2020. godine i Dopunu Nalaza i mišljenja Komisije vještaka medicinske struke prof. dr S.M., dr Ž.G. i
+psihologa B.S. I. od 23.11.2020. godine, pa je iste prihvatio kao jasne, stručne i bazirane na pravilima struke i
+nauke.
+
+Iz Obdukcionog Zapisnika Kliničkog centra Crne Gore S.br.../2020 od 10.04.2020. godine sa
+fotodokumentacijom, proizilazi da je obdukciju izvršila ljekar obducent i vještak dr I.Č., specijalista sudske
+medicine dana 07.04.2020. godine, u 09,00časova, a obdukciji je prisustvovao kriminalistički tehničar MUP-a
+V.L.. Predmet obdukcije bio je lešž enskog pola, koji je bio u stanju truležnih promjena, ali se zaključak o
+smrti može dati. Na osnovu obdukcionog nalaza, mikroskopskog pregleda tkiva i organa, dostavljene
+medicinske dokumentacije majke, fotodokumentacije sa mjesta gdje je lešnađen i podataka o okolnostima
+slučaja, smrt donešenog i za vanmateričniživot sposobnogženskog novorođenčetaživorođenog u desetom
+mjesecu materičnogživota je nasilna i nastala je usled ugušenja. Obukcijom nije utvrđeno postojanje
+anomalija, inkopatibilnih saživotom.
+
+Iz Nalaza i mišljenja vještaka medicinske struke dr I.Č. i dr N.R. od 25.11.2020. godine, proizilazi da se uvidom
+u dostavljene spise predmeta vidi da je P.M. (36 godina) pregledana od strane ljekara ginikološke ordinacije
+"M.M." u Podgorici dana 11.03.2020. godine, zbog bolova u gornjem dijelu trbuha, kada joj je urađen
+ultrazvučni pregled i ustanovljena trudnoća starosti od 34 nedjelje (9 mjeseci) kao i postojanje benignog
+tumora materice (miom), te je dat savjet da se javi ginekologu - akušeru. U spisima predmeta ne postoji
+medicinska dokumentacija o eventualnim pregledima i vođenju trudnoće kod P.M., a ona je od 05. -
+21.04.2020. godine, bolnički liječena na ginekološko - akušerskoj klinici Kliničkog centra Crne Gore u
+Podgorici sa dijagnozama - stanje nakon vanbolničkog porođaja, sepsa, povišena tjelesna temperatura i
+zaostalo tkivo posteljice u materičnojšupljini, kojom prilikom su joj urađene intervencije - vađenje zaostalog
+posteljičnog tkiva, te odstranjivanje postojećeg tumora materice, nakončega je otpuštena na dalje kućno
+liječenje uz odgovarajuću terapiju. Obdukcijom tijela NN ploda majke P.M., mikroskopskim pregledom tkiva i
+
+organa ploda i pregledom fotodokumentacije sa mjesta gdje je plod nađen, utvrđeno je da se radi oženskom
+novorođenčetu, koje je donešeno i za vanmateričniživot sposobno, ž ivorođeno u 10 mjesecu materičnog
+života, a da je smrt nasilna i da je nastupila usled ugušenja. Takođe je navedeno da obdukcijom nije utvrđeno
+postojanje anomalija inkopatibilnih saživotom. Navedeno ugušenje može biti uzrokovano stavljanjem
+novorođenčeta u PVC kesu i stavljanja kese u septičku jamu poljskog toaleta. Ugušenje je takođe moglo
+nastati i zatvaranjem nosa i ustašakom/ š akama druge osobe, ili pak nekim za vazduh nepropusnim
+materijalom. Dakle, sudskomedicinski, imajući u vidu da se lešu vrijeme obdukcije nalazio u fazi truležnih
+promjena, nije moguće pouzdano utvrditi tačan način na koji je plod ugušen, pričemu oba pomenuta
+entiteta (stavljanje u plastičnu kesu i zatvaranje nosa i usta) spadaju u istu grupu asfiktičnih povreda (povrede
+nastale poremećajem disanja) - zapušenje nosa i usta. Smrtženskog novorođenčeta je nastupila u periodu od
+oko 4 do 8 dana prije dana rada obdukcije 07.04.2020. godine, očemu u prilog govori izgled tijela ploda na
+obdukciji kao i vrijeme nastanka zdravstvenih tegoba porodilje, koje su u vezi sa porođajem.
+
+Vještak medicinske struke dr Č.I., u izjašnjenju na glavnom pretresu od 27.05.2021. godine, navela je da u
+svemu ostaje kod Obdukcionog nalaza od 10.04.2020. godine i Nalaza i mišljenja od 25.11.2020. godine i
+dodala da je prilikom rada obdukcije dobila Naredbu ODT-a, u kojoj nije označeno ime i prezime pokojnika. U
+odnosu na isto je u Obdukcionom zapisniku označila da se radi o NNženskom novorođenčetu majke M.P., a
+potom se u odnosu na isto zajedno sa dr N.R. izjašnjavala i u Nalazu i mišljenju. Medicinska dokumentacija
+koju su ljekari vještaci imali na uvid, o pregledima P.M. tokom trudnoće, medicinska dokumentacija o
+bolničkom liječenju P.M. u KCCG, se može dovesti u vezu sa obdukovanim NNženskim plodom, a sve imajući
+u vidu izgled ploda na obdukciji i kliničku simptomatologiju P.M., koju je ista imala prilikom liječenja u KCCG.
+
+Sud je cijenio Obdukcioni Zapisnik Kliničkog centra Crne Gore S.br.../2020 od 10.04.2020. godine, Nalaz i
+mišljenje vještaka medicinske struke dr I.Č. i dr N.R. od 25.11.2020. godine i izjašnjenje vještaka medicinske
+struke dr I.Č. na glavnom pretresu, pa je iste prihvatio kao jasne, stručne i bazirane na pravilima struke i
+nauke.
+
+Iz Zapisnika o pretresanju računara mobilnih telefona i drugih elektronskih uređaja Uprave policije - CB
+Podgorica Ku.br..../20 od 30.07.2020. godine, proizilazi da su policijski službenici navedenog dana izvršili
+pretres mobilnog telefona okrivljene P.M., marke "Samsung" crne boje IMEI broja.......... sa memorijskom
+karticom.
+
+Iz Nalaza i mišljenja vještaka za digitalne dokaze B.S. od 22.10.2020. godine, proizilazi da je vještačenje
+predmetnog telefona urađeno pomoću forenzičkog softvera za vještačenje mobilnih telefona "UFED".
+Vješ tačenje je izvršeno uz pomoćmetode "Phisical". Vještačenjem su rekonstruisani i eksportovani sledeći
+podaci: 423 glasovne komunikacije odčega je 113 izbrisanih, 1326 SMS poruka, odčega je 1022 izbrisanih.
+Korisnik tog telefona je koristio za komunikaciju sledeće aplikacije: "Facebook", "Viber", "Instagram" i "Whats
+app". Analizom podataka utvrđeno je da je u tom uređaju korišćena SIM kartica operatera "M:tel", ICCID br........ Izvještaj koji reprodukuje sam softver je nasnimljen na USB memoriju.
+
+Sud je cijenio Nalaz i mišljenje vještaka za digitalne dokaze B.S. od 22.10.2020. godine, pa je isti prihvatio kao
+jasan, stručan i baziran na pravilima struke i nauke.
+
+Svjedok P.S. u iskazu pred ovlašćenim tužiocem na Zapisniku Kt.br..../20 od 12.06.2020 godine i na glavnom
+pretresu od 26.01.2021. godine, iskoristio je svoje zakonsko pravo da ne svjedoči, imajuči u vidu da mu je
+okrivljena P.M. kćerka.
+
+Svjedok P.B. u iskazu pred ovlašćenim tužiocem na Zapisniku Kt.br..../20 od 12.06.2020 godine i na glavnom
+pretresu od 26.01.2021. godine, iskoristila je svoje zakonsko pravo da ne svjedoči, imajuči u vidu da joj je
+okrivljena P.M. kćerka.
+
+Svjedok P.M. u iskazu pred ovlašćenim tužiocem na Zapisniku Kt.br..../20 od 12.06.2020 godine i na glavnom
+pretresu od 26.01.2021. godine, iskoristila je svoje zakonsko pravo da ne svjedoči, imajuči u vidu da joj je
+okrivljena P.M. sestra.
+
+Svjedok D.G. u iskazu na glavnom pretresu od 06.04.2021. godine, naveo je da poznaje okrivljenu P.M., da je
+zaposlen u mesari "J." i da je i ona tamo bila zaposlena, do prije godinu dana, otprilike. Radi na proizvodnji
+roštilj mase za brzu hranu i to je odvojen objekat od mesare. Taj objekat se trenutno nalazi gdje se nalazi i
+klanica, a to je negdje put T., ne zna kako se zove to mjesto, a K.R. se zove mjesto gdje se nalazi prostor u
+kojem je zaposlen i gdje se nalaze mašine i komore. P.M. poznaje nekih 2-3 godine. Bio je u emotivnoj vezi sa
+P.M., otprilike nekih godinu i po dana, ne zna tačno. U Crnoj Goriživi sigurno 20 godina, ima svoju porodicu u
+L., ima suprugu B.D., ima sina M., snahu J.D. i unuku J.D.. Č lanovi njegove porodice nijesu dolazili u Crnu
+Goru dažive, ali dolaze kada mogu kod njega, njegova supruga je dolazila prije 2 godine kod njega, a 2020
+godine nije niko od njegove porodice bio kod njega zbog korone. Njegov sin je radio jedno vrijeme u "P.", pa je
+boravio u jednom periodu sa njim. Sa P.M. se obično gledao u vozilu, gdje bi popričali ili bi popili kafu u
+nekom kafiću. P.M. je dolazila povremeno i u njegov stan u Ulici S.B., a on nikada nije išao u njenu kuću, zna
+gdje se nalazi selo u kojem onaživi, ali ne zna koja je njena kuća. P.M. je obično koristila gradski prevoz za
+dolazak na posao i odlazak kući. P.M. je povremeno dovozio do centra sela, misli da se to selo zove B.P., ali
+nije je dovozio do njene kuće, nego samo do centra sela. Nekada se dešavalo da je 2-3 puta nedeljno poveze
+do njenog sela, a nekada da je uopšte ne poveze, kada ona ima prevoz. Nije mu poznato da je P.M. bila u
+drugom stanju. Nije vidio P.M. preko godinu dana, tačnije nekih 13-14 mjeseci. Preko novina je saznao da se
+desio taj slučaj, a P.M. je vidio možda 20 dana otprilike prije toga, nije siguran. P.M. i on su samo jednom
+prilikom pričalli o njenoj trudnoći i to 6 mjeseci prije događaja, kada mu je P.M. rekla da ima miom na
+materici i cistu, ali mu nije rekla da je u drugom stanju. Rekla mu je da je bila kod ljekara i da to treba da
+operiše. Po firmi u kojoj je zaposlen kružile su priče da je P.M. trudna, pa je pitao da li je to tačno, a ona mu je
+rekla da to nije tačno, nego da je bolesna. P.M. i on su povremeno imali seksualne odnose. Nije primijetio da
+je P.M. u drugom stanju, jer je ona inače bila krupna. Ima problem, jer mu je majka umrla od kancera, pa je
+sasvim izostavio da priča o tome da je P.M. bolesna od togašto mu je navela, jer niježelio da priča sa njom na
+tu temu, gledao je kao bolesnuženu. Zadnji put je imao seksualne odnose sa P.M. možda nekih 3-4 mjeseca
+prije negošto se desio taj slučaj. Nije tada primijetio da je P.M. u drugom stanju. Nakon toga su se rijetko
+gledali, ali se njihova komunikacija nastavila preko telefona i putem poruka. Misli da P.M. zadnjih 15-20 dana
+prije tog događaja nije dolazila na posao. U odnosu na događaj P.M. je dolazila nekih 20 dana prije događaja,
+kod njega u stan, pričali su i popili su kafu. Nije primijetio ni tada da je P.M. u drugom stanju, većje to
+pripisao njenoj bolesti, a pitao je da li je išla kod ljekara, rekla mu je da zbog korone tu intervenciju ne može
+da uradi. Samo mu je iz medija poznato tošto se desilo sa trudnoćom P.M.. Apsolutno nikakve veze nema sa
+timšto se P.M.stavlja na teret. Ni nakon tog događaja nije išao kod kuće P.M., a i ne zna gdje joj je kuća. P.M.
+ga nikada nije zvala da ode kod nje kući, a i ne zna sa kojim pravom bi išao kod nje kući, jer je oženjen, a ona
+je djevojka. Svakako njihova veza nije bila na njegovu, većna inicijativu P.M.. Sa P.M. je zadnji put telefonom
+komunicirao to veče kada je ona prebačena na odjeljenje u bolnicu i pitao je hoće li konačno da se operiše, a
+
+ona mu je rekla da hoće i nakon toga više nijesu komunicirali. Nakon toga, telefon P.M. je bio ugašen i nijesu
+se vidjeli, niti su komunicirali. Kada su komunicirali telefonom, uobičajeno bi to bili razgovori, a imali su i
+video pozive. P.M. mu nije pokazivala kuću prilikom video poziva, a mogli su da se vide otprilike samo
+kupatilo i dnevna soba. Nije vidio dvorište P.M. na tim video pozivima. Završio je srednju saobraćajnuškolu,
+vozačje motornih vozila i tehničar za preradu mesa. Nema rodbinu u Podgorici, ali ima poznanike i drugove,
+u vezi sa poslom koji radi. P.M. nikada nije prespavala u njegovom stanu. Najduže bi se zadržala sat ili dva
+vremena. Nikada nije upoznaočlanove porodice P.M., a misli da ona ima brata, snahu, oca i majku i misli da
+ima jednu sestru, možda i dvije, u to nije siguran. Ne zna da li su njegove kolege znale da su P.M. i on u vezi,
+ali se po firmi pričalo da je P.M. trudna, a svako pričašta mu je volja. Nije ga niko od kolega pitao da li je u
+vezi sa P.M., a i da ga je pitao rekao bi da nije, zbog nje. Nije znao da je P.M. trudna, tako da nije mogao ni
+preduzeti nešto da ona nasilno prekine tu trudnoću. Bio je fer i korektan prema P.M. i odmah joj je rekao
+kako stoje stvari u vezi njega i njegove porodice, ništa joj nije sakrio, on je matorčovjek, a P.M. je bila prijatna
+djevojka i rekao joj ješta može da očekuje od njega, u smislu da mogu da popiju kafu, da se druže, da se
+razumiju kao ljudi i to je to. Nikada mu P.M. nije rekla daželi dijete. P.M. i on nijesu nikada išli u trgovinu
+garderobe zajedno, možda u market za neke namirnice jesu, ali zajedno nijesu bili, nego ili ona ostane u
+vozilu ili on ostane u vozilu, a P.M. kupi te namirnice, na primjer sok ili tako nešto. P.M. i on su zajedno
+kupovali patike za njega i za nju, misli da je bila u pitanju prodavnica "x s.", koja se nalazi preko puta D., a to se
+desilo možda prije godinu i po, ili dvije, a posmatrano u odnosu na događaj nekih 6-7 mjeseci, možda i
+godinu prije tog događaja, ne zna. Buni ga, jer ne zna da li je bilo proljeće ili jesen i taj jedan put su bili u
+kupovinu i misli da nikad više nisu bili. Patike su im upakovali u kutiju i u kesu, ali nije siguran u to. Ne sjeća se
+ni da li je bila kesa, a i ako je bila koje boje je bila, misli da se radilo o prodavnici "x s.", ali ne pamti te detalje
+za kese. Nakon konkretnog događaja pokušavao je da pozove telefonom okrivljenu, možda nekih dva puta,
+ali bio joj je telefon ugašen, taj broj 068što je koristila išto je on jedino znao. Povremeno dolazi u mesaru
+koja se nalazi na "G.", otprilike na nekih 5-6-10 dana, ali P.M. nije bila na poslu nakon događaja.
+Objašnjavajući zašto se po firmi pričalo da je P.M. moguće trudna, naveo je da je to možda zatošto je počela
+da dobija na kilaži. P.M. je bila pozamašna u tom periodu, bila je krupne građe, nikada nije bila mršava, imala
+je konstituciju, ne zna je kao mršavicu. Pojašnjavajućišta je tošto je sve "pripisao bolesti", naveo je da nije
+ništa pripisao, da je pretpostavio da P.M. ima veću bolest negošto mu je rekla. Majka mu je umrla od kancera
+i ima sasvim drugo mišljenje premaženama i zbog toga možda malo drugačije gleda na bolest od tada. Kada
+se po firmi počelo pričati da je P.M. trudna, onda je pitao o tome, a P.M. mu je rekla da ima miom i da to raste
+i raste i da je zato krupna i da joj se stomak uvećava zbog toga i koliko je razumio da ima vodeni mjehur koji
+raste, koji se proširuje, a prepao se da ne daj Bože ima ono najgore i nije se htio doticati te teme, jer mu je bilo
+glupo da pita, odnosno da je ispituje oko toga ako je to bolest. P.M. je inače bila kompletno krupna i možda
+joj je bio malo veći stomak, ali ne tako da bi se moglo reći da je 100% u drugom stanju. Kada je započinjao
+vezu sa P.M., ona je bila krupnija, a sada je malo mršavija u odnosu na taj period. P.M. i on su se rastali u
+dobrim odnosima, ne zna zašto bi bili u lošim odnosima, P.M. mu je bila prije svega drug. Kao i u svakoj vezi,
+imali sučarke, ali to nije bilo ništa nešto katastrofalno.
+
+Nakonšto je svjedoku D.G.u predočena odbrana koju je okrivljena P.M. dala na glavnom pretresu od
+26.01.2021. godine, svjedok D.G. naveo je da ostaje pri iskazu koji je dao, jer je to jedina istina u cijeloj toj
+priči. Zna da P.M. nikada nije spomenula trudnoću i da uopšte nije informisan da je P.M. trudna. Ne zna gdje
+je njena kuća, niti je bio, niti je prišao blizu njenom dvorištu. Na svu njenu priču ne znašta da kaže. Kesa koju
+P.M. spominje, u pitanju su patike crne sa bijelim polušarama, koje uvijek stoje kući, stare su i možda ih je
+ona i bacila, a tu kesu je ona ponijela kući, ta kesa nije ostala kod njega. Da je znao da je M. trudna, postoji
+milion načina da se to riješi, ako je na vrijeme da se abortira, ako je prošlo vrijeme ima uslova i da podiže to
+dijete. U Crnoj Gori je 20 godina i niko ga ne može osuditi za vezu sa P.M. i daživi sa tim djetetom.
+Samostalan je i sposoban je da izdržava dijete. Nije tačno da je našao nekog da porodi P.M., nikog ne zna
+ovdje, a nije ni porodio P.M., ne razumije se u te stvari, a s obzriom da je mesar po zanimanju, neizvodljivo je
+
+da je on porodi. Objašnjavajući kako je izgledalo kupatilo okrivljene koje je vidio na video pozive, naveo je da
+se sjeća samo da je kupatilo bilo veliko. Zna da ga je P.M. zvala i iz poljskog WC-a i iz dnevne sobe. U toku
+veze je primijetio da mu je P.M. nekoliko puta kroz poruke rekla da je pokušavala samoubistvo, da hoće da
+popije tablete, a s obzirom da mu se sjutradan normalno javljala, bilo mu ježao, htio je i ranije da raskinu, ali
+mu je biložao zbog toga, a pripisuje to tome da svako izgubiživce, a u cijeloj toj situaciji je teškoživjeti i ostati
+normalan u ovom društvu.
+
+Iz Izvoda iz registra kaznenih evidencija Ministarstva pravde Osno vnog suda u Podgorici Ke.br..../2020 od
+18.12.2020. godine, proizilazi da za okrivljenu P.M. u kaznenoj evidenciji ne postoje podaci.
+
+Na osnovu naprijed izložene činjenične građe koja proizilazi iz sadržine dokaza provedenih u postupku, sud
+je nesumnjivo utvrdio da su se u radnjama okrivljene P.M. ostvarili svi bitni elemeniti bića krivičnog djela
+ubistvo djeteta pri porođaju izčl. 146 Krivičnog zakonika Crne Gore. Naime, okrivljena P.M. je u periodu od
+30.03.2020. godine do 05.04.2020. godine, u P., u selu B.P., svjesna da može učiniti djelo pa je na to pristala,
+kao majka, lišilaživota svoje dijete neposredno poslije porođaja, dok je kod nje trajao poremećaj izazvan
+porođajem u vidu akutnog konfuznog stanja sa težim oblikom prolazne depresije, na načinšto je nakon
+porođaja donešenog i za vanmateričniživot sposobnogženskog novorođenčeta, ž ivorođenog u desetom
+mjesecu materičnogživota, ugušila novorođenče stavljajući ga u PVC kesu, koju je sa novorođenčetom
+ubacila u septičku jamu poljskog toaleta koji se nalazi u dvorištu njene porodične kuće.
+
+Krivično djelo ubistvo djeteta pri porođaju, shodno odredbičl. 146 Krivičnog zakonika Crne Gore, čini majka
+koja lišiživota svoje dijete za vrijeme porođaja ili neposredno poslije porođaja, dok kod nje traje poremećaj
+izazvan porođajem. Iz navedene zakonske definicije krivičnog djela, proizilazi da biće krivičnog djela ubistvo
+djeteta pri porođaju izčl. 146 Krivičnog zakonika Crne Gore sadrži tri konstitutivna elementa. Prvi kostitutivni
+element bića navedenog krivičnog djela predstavlja specifično svojstvo lica koje je izvršilac krivičnog djela,
+obzirom da navedeno krivično djelo može izvršiti samo majka djeteta. Nadalje, konstitutivni elementi koji
+moraju biti ostvareni da bi majka djeteta mogla biti označena kao izvršilac predmetnog krivičnog djela
+predstavlja okolnolst da majka lišiživota svoje dijete u toku ili nakon porođaja, kao i okolnost da kod majke
+djeteta u vrijeme kada je izvršila predmetno krivično djelo postoji poremećaj koji je izazvan porođajem.
+
+Da je okrivljena P.M. ostvarila sva navedena obilježja bića krivičnog djela ubistvo djeteta pri porođaju izčl.
+146 Krivičnog zakonika Crne Gore, sud je utvrdio iz materijalnih dokaza koji su provedeni u predmetnom
+krivičnom postupku postupku, i to prije svega iz sadržine Službene zabilješke Uprave policije - CB Podgorica
+Odjeljenje bezbjednosti kriminalističke policije, Stanica kriminalističke policije za suzbijanje krvnih delikata i
+nasilja u porodici - Jedinica kriminalističke policije za suzbijanje krvnih i seksualnih delikata Obd.br..../20 od
+07.04.2020. godine, koja je sačinjena povodom izuzimanja medicinske dokumentacije o liječenju P.M. i
+Izvještaja specijaliste "M.C." od 11.03.2020. godine iz kojih je utvrđeno da je dana 11.03.2020. godine,
+odnosno prije negošto je izvršeno predmetno krivično djelo, kod okrivljene dijagnostikovana trudnoća
+starosti 34 nedjelje. Nadalje, iz otpusne liste sa epikrizom Kliničkog centra Crne Gore, Ginekološko akušerske
+klinike na ime P.M. matični br. istorije bolesti......, utvrđeno je da je okrivljena P.M. liječena u toj ustanovi u
+periodu od 05.04.2020. godine do 21.04.2020. godine i da je ista primljena na to odjeljenje zbog obilnog
+vaginalnog krvarenja, na prijemu je bila febrilna i imala je tjelesnu temperaturu 39,2, malaksala, a pri
+ginekološkom pregledu kolabirala. Tom prilikom, kliničkim i ultrazvučnim pregledom okrivljene P.M.
+utvrđeno je da je uterus izrazito uvećan, sa ultrazvučnom slikom, zaostalog posteljičnog tkiva u materici, š to
+upućuje na zaključak da se u periodu prije negošto je liječena u Kliničkom centru Crne Gore okrivljena P.M.
+
+porodila. Nadalje, iz Zapisnika o uviđaju Uprave policije - CB Podgorica, Obd br..../20 od 06.04.2020. godine i
+Službene zabilješke Uprave policije - CB Podgorica Odjeljenje bezbjednosti kriminalističke policije, Stanica
+kriminalističke policije za suzbijanje krvnih delikata i nasilja u porodici - Jedinica kriminalističke policije za
+suzbijanje krvnih i seksualnih delikata Obd.br..../20 od 06.04.2020. godine, utvrđeno je da je prilikom izlaska
+policije na lice mjesta i pregleda dvorišta kuće P.S., oca okrivljene P.M., u kojoj kućiživi i okrivljena P.M., u
+septičkoj jami poljskog toaleta koji se nalazi u dvorištu navedene porodične kuće, u prisustvu ovlašćenih
+policijskih službenika, otac okrivljene P.S. našao najlonsku kesu u kojoj se nalazilo beživotno tijelo
+novorođenčeta i istu je izvukao iz septičke jame, dok je iz Potvrde o ulaženju u stan i druge prostorije Uprave
+policije - CB Podgorica Obd.br..../20 od 06.04.2020. godine, utvrđeno da je od P.S. navedenog dana oduzeta
+kesa u kojoj se nalazilo beživotno tijelo novorođenčeta, a koju je P.S. pronašao u prisustvu policijskih
+služ benika u septičkoj jami ispod poljskog WC-a, očemu je sačinjena Dokumentacija Uprave policije - CB
+Podgorica br..... od 06.04.2020. godine i Dokumentacija Uprave policije - CB Podgorica br...... od 06.04.2020.
+godine i Potvrda o ulaženju u stan i druge prostorije Uprave policije - CB Podgorica Obd.br..../20 od
+06.04.2020. godine.
+Takođe, iz Obdukcionog Zapisnika Kliničkog centra Crne Gore S.br.../2020 od 10.04.2020. godine sa
+fotodokumentacijom, Dokumentacije Uprave policije - CB Podgorica br..... od 07.04.2020. godine, Nalaza i
+mišljenja vještaka medicinske struke dr I.Č. i dr N.R. od 25.11.2020. godine i Izjašnjenja vještaka medicinske
+struke dr Č.I. na glavnom pretresu od 27.05.2021. godine, utvrđeno je prilikom obdukcije novorođenčeta koje
+je pronađeno u septičkoj jami ispod poljskog Wc-a, koji se nalazi u dvorištu porodične kuće okrivljene, da se
+radi oženskom novorođenčetu, koje je donešeno i za vanmateričniživot sposobno, ž ivorođeno u 10 mjesecu
+materičnogživota, a da je smrt nasilna i da je nastupila usled ugušenja. Takođe je navedeno da obdukcijom
+nije utvrđeno postojanje anomalija inkopatibilnih saživotom. Navedeno ugušenje može biti uzrokovano
+stavljanjem novorođenčeta u PVC kesu i stavljanja kese u septičku jamu poljskog toaleta. Ugušenje je takođe
+moglo nastati i zatvaranjem nosa i ustašakom/ š akama druge osobe, ili pak nekim za vazduh nepropusnim
+materijalom. Dakle, sudskomedicinski, imajući u vidu da se lešu vrijeme obdukcije nalazio u fazi truležnih
+promjena, nije moguće pouzdano utvrditi tačan način na koji je plod ugušen, pričemu oba pomenuta
+entiteta (stavljanje u plastičnu kesu i zatvaranje nosa i usta) spadaju u istu grupu asfiktičnih povreda (povrede
+nastale poremećajem disanja) - zapušenje nosa i usta. Smrtženskog novorođenčeta je nastupila u periodu od
+oko 4 do 8 dana prije dana rada obdukcije 07.04.2020. godine, očemu u prilog govori izgled tijela ploda na
+obdukciji kao i vrijeme nastanka zdravstvenih tegoba porodilje, koje su u vezi sa porođajem. Medicinska
+dokumentacija koju su ljekari vještaci imali na uvid, o pregledima P.M. tokom trudnoće, medicinska
+dokumentacija o bolničkom liječenju P.M. u KCCG, se može dovesti u vezu sa obdukovanim NNženskim
+plodom, a sve imajući u vidu izgled ploda na obdukciji i kliničku simptomatologiju P.M., koju je ista imala
+prilikom liječenja u KCCG.
+Da je kod okrivljene P.M. prilikom izvršenja predmetnog krivičnog djela postojao poremećaj koji je izazvan
+porođajem, sud je utvrdio iz Nalaza i mišljenja Komisije vještaka medicinske struke prof. dr S.M., dr Ž.G. i
+psihologa B.S. I. od 06.07.2020. godine i Dopune Nalaza i mišljenja Komisije vještaka medicinske struke prof.
+dr S.M., dr Ž.G. i psihologa B.S. I. od 23.11.2020. godine, iz kojih je utvrđeno da se okrivljena P.M. nakon
+porođaja nalazila u stanju duševnog poremećaja izazvanog porođajem, sa konstatacijom da je postojalo
+akutno konfuzno stanje sa težim oblikom prolazne depresije, koji duševni poremećaj, prema pravnoj
+terminologiji, odgovara privremenoj duševnoj poremećenosti. Takođe iz navedenog Nalaza i Dopune Nalaza
+sud je utvrdio da je uračunljiost, odnosno sposobnost shvatanja značaja djela, kao i mogućnost upravljanja
+svojim postupcima u deliktnoj situaciji kod okrivljene bila bitno smanjena.
+
+Sud je cijenio odbranu okrivljene P.M., koja je tvrdila da nije izvršila predmetno krivično djelo, većda je to
+uradio D.G. sa kojim je bila u emotivnoj vezi, objašnjavajući da toga dana kada se desio ovaj događaj nije bila
+kući od 10,00časova do 17,00časova, a to je bio ponedjeljak, ne sjeća se datuma. Bila je kod D.G., u stanu,
+koji je on iznajmio na Z., u L., u Ulici S.B. br. xx/x, x sprat. D.G. i ona su bili u intimnim odnosima i on je znao
+
+da je ona ostala trudna, a to mu je rekla kada je vidjela da nema više ciklus. Nije išla kod ljekara nakonšto je
+ostala trudna, jer je bilo strah. I nakonšto je ostala u drugom stanju bila je u vezi sa D.G., a D.G. se nije složio
+sa timšto je ona zadržala trudnoću, on je insistirao da ona abortira, a ona to niježeljela, jer voli djecu, a to joj
+je bilo prvo dijete. Zna da je bio ponedjeljak kada je pozvala D.G., dok je bila na poslu i rekla mu je da se ne
+osjeća dobro, da nešto nije u redu sa njom i D.G. je došao po nju, oko 10,00časova i povezao je u njegov stan.
+Kada su došli u stan D.G., tražila je da joj donese nešto da popije jer je bilažedna, on joj je donio sok iz
+kuhinje, ašta je bilo u tom soku ne zna, odnosno ne znašta joj je D.G. stavio u taj sok. Posle izvjesnog
+vremena je zaspala i ne sjeća se ničegašta je dalje bilo sa njom. Kada se probudila i to nakon sat vremena,
+ponovo je tražila D.G. da joj da nešto da popije i on joj je dao sok i ponovo je zaspala, a nakon toga se ničega
+ne sjeća. Nakonšto je zaspala drugi put, spavala je bašdugo i probudila se oko 14:30časova ili 16,00časova,
+nije sigurna. Kada se drugi put probudila na sebi je imala trikmajicu, a majica koju je bila obukla preko
+trikmajice bila joj je skinuta i stavljena na drugi krevet, a takođe je prije toga na sebi imala i helanke, koje
+nijesu bile na njoj kada se probudila. Tom prilikom, imala je nadogradnju na noktima i ruke su joj bile
+ljepljive, a ispod noktiju bila joj je krv, zna da je prethodno bila oprala ruke i mirisale su joj ruke na vlažne
+maramice. Kada je pitala D.G. š ta joj je sa rukama, on joj je rekao da je možda takla meso u mesari, ali su joj
+ruke mirisale na vlažne maramice. Kada se probudila drugi put, na krevetu na kojem je spavala bila je druga
+posteljina u odnosu na onušto je bila prije toga. Bila je u 34. nedjelji trudnoće, odnosno u osmom mjesecu
+trudnoće, a kada je bila kod doktora ginekologa u martu 2020. godine, doktorica joj je rekla da treba da se
+porodi u aprilu. Ne zna koji je datum bio kada se sve to desilo, zna samo da je bio ponedjeljak, a kada se
+probudila drugi put u stanu D.G., osjetila je bolove u predjelu stomaka i bilo joj je crveno i modro u predjelu
+stomaka, jer je zavrnula trikmajicu da pogleda stomak, njen stomak je izgledao tako kao da je stiskan dio
+ispod rebara na prednjoj strani. Nije mogla da ustane zbog bolova u stomaku, ali nije krvarila. Pitala je D.G.
+zašto je boli dio u predjelu stomaka, jer je jošuvijek rano da se porodi, a on joj je odgovorio: "Nema veze, to je
+tako normalno.". Onda je ustala iz kreveta, obukla se i krenula je kući, a D.G. je odvezao kući autom do ulice u
+kojoj se nalazi njena kuća, a nije imala blage vezešto se desilo sa njom dok je bila u stanu D.G.. Stomak joj je
+izgledao isto kao i prije negošto je došla u stan kod D.G., bio je iste veličine, a sva je bila otečena. Kada je
+doš la kući sjedjela je malo sa njenima i pošla je da legne. Zaspala je malo i probudila se na podu krvareći,
+gdje je našla njena majka, u toku noći. Ustala je, pošla je do WC-a i obrisala se, stavila je uložak i legla je.
+Nakon toga je sve bilo normalno, njeni je kući nijesu pitališta joj je. Njena porodica je znala da ima jednu
+cistu na maloj karlici, a drugu u predjelu prednje strane stomaka, sa desne strane. Bila je normalno te večeri i
+porodica joj te večeri nije rekla da ide kod ljekara. Pozlilo joj je tek u nedjelju, nije znalašta se dešava sa
+njom. Od ponedjeljka do nedjelje je ležala kući, nije išla na posao. U nedjelju joj je pozlilo, počela je da drhti,
+nije mogla da diše, pošla je u kupatilo i pala je pored kade, bilo joj je hladno. Nekako se vratila od kupatila do
+sobe i legla je na krevet. Nakon toga, njena porodica je zvala Hitnu pomoći nije ni znala da je D.G. porodio
+30.03.2020. godine, jer toga nije bila svjesna. Saznala je da se porodila kada su je iz Hitne pomoći odveli u
+Urgentni centar, kada su joj rekli da je posteljica zaboravljena u njoj i da se nasilno porodila, ona je to tako
+shvatila. Njena porodica joj je rekla, odnosno njeni roditelji su joj rekli da je beba pronađena u septičkoj jami.
+Rekli su joj da je dolazila policija, a ona je za to vrijeme bila u bolnici na operaciji, zbog posteljice koja joj je
+ostala i ciste su joj izvukli. D.G. je nekog platio da je porodi nasilno, jer D.G. nije bio u stanu kada se
+probudila drugi put, nego je došao nakon 20 minuta od njenog drugog buđenja, a kada ga je pitala gdje je bio
+i šta je sa njom bilo i zašto joj je skinuta odjeća, rekao je da je bio u prodavnici, da joj je možda bilo vruće i da
+se sama skinula. Kada je krenula kući iz stana D.G., on je odvezao njegovim vozilom "Volkswagen Sharan"
+plave boje, leskovačkih registarskih oznaka. Prilikom izlaska sa stana, primijetila je da je D.G. nosio neku
+crnu, veliku kesu i stavio je na zadnje sjedište vozila.
+Radi provjere navoda odbrane okrivljene P.M., sud je saslušao svjedoka D.G.. U svom svjedočkom iskazu,
+svjedok D.G. je naveo da poznaje okrivljenu P.M., da je zaposlen u mesari "J." i da je i ona tamo bila
+zaposlena. P.M. poznaje nekih 2-3 godine. Bio je u emotivnoj vezi sa P.M., otprilike nekih godinu. Sa P.M. se
+obično gledao u vozilu, gdje bi popričali ili bi popili kafu u nekom kafiću. P.M. je dolazila povremeno i u
+
+njegov stan u Ulici S.B., a on nikada nije išao u njenu kuću, zna gdje se nalazi selo u kojem onaživi, ali ne zna
+koja je njena kuća. P.M. je obično koristila gradski prevoz za dolazak na posao i odlazak kući. P.M. je
+povremeno dovozio do centra sela, misli da se to selo zove B.P., ali nije je dovozio do njene kuće, nego samo
+do centra sela. Nije mu poznato da je P.M. bila u drugom stanju. Preko novina je saznao da se desio taj slučaj,
+a P.M. je vidio možda 20 dana otprilike prije toga, nije siguran. P.M. i on su samo jednom prilikom pričalli o
+njenoj trudnoći i to 6 mjeseci prije događaja, kada mu je P.M. rekla da ima miom na materici i cistu, ali mu
+nije rekla da je u drugom stanju. Rekla mu je da je bila kod ljekara i da to treba da operiše. Po firmi u kojoj je
+zaposlen kružile su priče da je P.M. trudna, pa je pitao da li je to tačno, a ona mu je rekla da to nije tačno,
+nego da je bolesna. Nije primijetio da je P.M. u drugom stanju, jer je ona inače bila krupna. Apsolutno nikakve
+veze nema sa timšto se P.M. stavlja na teret. Sa P.M. je zadnji put telefonom komunicirao to veče kada je ona
+prebačena na odjeljenje u bolnicu i pitao je hoće li konačno da se operiše, a ona mu je rekla da hoće i nakon
+toga više nijesu komunicirali. Nakon toga, telefon P.M. je bio ugašen i nijesu se vidjeli, niti su komunicirali.
+Nije tačno da je našao nekog da porodi P.M., nikog ne zna ovdje, a nije ni porodio P.M., ne razumije se u te
+stvari, a s obzriom da je mesar po zanimanju, neizvodljivo je da je on porodi.
+Nakon analize odbrane okrivljene P.M. i dovođenja iste u vezu sa sadržinom materijalnih dokaza koji su
+provedeni u predmetnom krivičnom postupku, kao i sa iskazom svjedoka D.G., sud je odbranu okrivljene P.M., cijenio kao neistinitu, nelogičnu i usmjerenu na pokušaj okrivljene da izbjegne krivičnu odgovornost za
+krivično djelo koje joj je stavljeno na teret. Naime, nelogična je i za sud neprihvatljiva tvrdnja okrivljene da je
+porodio svjedok D.G. sa kojim je bila u emotivnoj vezi, obzirom da se svjedok D.G. izjasnio da nije ni znao da
+je okrivljena P.M. trudna i da mu je ista pričala da ima miom na materici i da joj od toga raste stomak, koje
+navode svjedoka D. je sud prihvatio kao istinite, obzirom da je i sama okrivljena navela da ječinjenicu da je u
+drugom stanju krila i odčlanova svoje porodice i da ni sa njima nije razgovarala o tome. Takođe, sud je
+prihvatio iskaz svjedoka D.G. da nije znao gdje okrivljena P.M. tačnoživi, jer je istu, kada bi je dovezao
+ostavljao dalje od kuće, imajući u vidu da se u tom dijelu svoje odbrane okrivljena o navedenoj okolnosti
+izjasnila na istovjetan način. Imajući u vidu navedene okolnosti, sud je odbranu okrivljene cijenio naknadno
+iskonstruisanom sa ciljem da predstavi da je svjedok D.G. angažovao neko lice da je bez njenog znanja
+navodno porodi u njegovom stanu, a da zatim stavi novorođenče u kesu, koju je zatim stavio na zadnje
+sjedište vozila u kojem se nalazila i okrivljena i odveze je do blizu njene kuće, a nakon toga neopaženo uđe u
+dvorište kuće okrivljene, a zatim i u poljski WC i tamo ubaci kesu u kojoj se nalazio tijelo njenog djeteta. Osim
+navedenog, nelogično je da je okrivljena nakon boravka u stanu okrivljenog viđela da joj je stomak bio crven i
+modar a da nije zatražila ljekarsku pomoćzbog toga, iako je znala da je u drugom stanju, a ljekarsku pomoćnije zatražila ni u periodu od ponedeljka do nedelje, iako se po sopstvenom kazivanju loše osjećala.
+
+Cijeneći psihički odnos okrivljene P.M. prema izvršenom krivičnom djelu, sud je našao da je okrivljena
+postupajući na prethodno opisani način, odnosno na načinšto je kao majka, lišilaživota svoje dijete
+neposredno poslije porođaja, dok je kod nje trajao poremećaj izazvan porođajem u vidu akutnog konfuznog
+stanja sa težim oblikom prolazne depresije, na načinšto je nakon porođaja donešenog i za vanmateričniživot
+sposobnogženskog novorođenčeta, ž ivorođenog u desetom mjesecu materičnogživota, ugušila
+novorođenče stavljajući ga u PVC kesu, koju je sa novorođenčetom ubacila u septičku jamu poljskog toaleta
+koji se nalazi u dvorištu njene porodične kuće, pričemu je bila svjesna da može učiniti djelo pa je na to
+pristala, č ime se njen psihički odnos prema izvršenom krivičnom djelu manifestuje kao eventualni umišljaj.
+
+Sud je prilikom odlučivanja o vrsti i visini krivične sankcije imao u vidu sve okolnosti na strani okrivljene koje
+su od značaja za njen izbor i visinu pa je u smislučl. 42 Krivičnog zakonika Crne Gore od olakšavajućih
+okolnosti na strani okrivljene cijenio njenu neosuđivanost, ašto je utvrdjeno iz Izvoda iz registra kaznenih
+evidencija Ministarstva pravde Osnovnog suda u Podgorici Ke.br..../2020 od 18.12.2020. godine, dok
+otež avajućih okolnosti nije bilo.
+
+Sud je imajući u vidu naprijed navedene olakšavajuće okolnosti, a u odsustvu otežavajućih okolnosti
+okrivljenoj izrekao uslovnu osudu, kojom joj je utvrdio kaznu zatvora u trajanju od 1 (jedne) godine i
+istovremeno je odredio rok provjeravanja od 2 (dvije) godine, odnosno da se utvrđena kazna neće izvršiti ako
+okrivljena za vrijeme od 2 (dvije) godine po pravosnažnosti presude ne učini novo krivično djelo. Sud je našao
+da se u konkretnom slučaju, imajući u vidu sve navedeno, može očekivati daće se upozorenjem uz prijetnju
+kaznom uticati na okrivljenu da ubuduće ne vrši krivična djela, te da nije nužno da se kazna primjeni radi
+krivičnopravne zaštite, pa je sud mišljenja daće se u konkretnom slučaju uslovnom osudom iz izreke ove
+presude u potpunosti ostvariti svrha izricanja ove krivične sankcije izčl. 52 Krivičnog zakonika Crne Gore, u
+okviru opšte svrhe izricanja krivičnih sankcija izčl. 4 st. 2 Krivičnog zakonika Crne Gore.
+Na osnovu čl. 226 Zakonika o krivičnom postupku okrivljena je obavezna da na ime troškova krivičnog
+postupka u korist budžeta Crne Gore plati iznos od 665,50 eura, od čega iznos od 363,00 eura, koji se odnosi
+na ime troškova za angažovanje Komisije vještaka medicinske struke prof. dr S.M., dr Ž.G. i psihologa B.S. I.,
+iznos od po 66,00 eura, koji se odnosi na ime troškova za angažovanje vještaka medicinske struke dr N.R. i dr
+I.Č., iznos od 44,00 na ime izjašnjenja vještaka medicinske struke na glavnom pretresu i iznos od 126,50 eura
+koji se odnosi na ime troškova za angažovanje vještaka za digitalne dokaze B.S., a na ime sudskog paušala
+iznos od 40,00 eura, a koji paušal je odmjeren shodno složenosti predmeta, trajanju postupka i imovnim
+prilikama okrivljene.
+
+Sud je cijenio sadržinu Zapisnika o pretresanju stana i drugih prostorija Uprave policije - CB Podgorica
+Obd.br..../20 od 06.04.2020. godine Potvrde o privremeno oduzetim predmetima Uprave policije - CB
+Podgorica Obd.br..../20 od 06.04.2020. godine, na ime P.S. o oduzimanju lovačke puške i municije,
+Dokumentacije Uprave policije - CB Podgorica br..... od 06.04.2020. godine, Potvrde o privremeno oduzetim
+predmetima Uprave policije - CB Podgorica Obd.br..../20 od 06.04.2020. godine na ime P.M., Zapisnika o
+pretresanju računara mobilnih telefona i drugih elektronskih uređaja Uprave policije - CB Podgorica Ku.br..../20 od 30.07.2020. godine i Nalaza i mišljenja vještaka za digitalne dokaze B.S. od 22.10.2020. godine, pa je
+našao da isti nijesu od uticaja na donošenje drugačije odluke u konkretnoj krivičnopravnoj stvari.
+
+Na osnovu izloženog, a shodnočl.374 Zakonika o krivičnom postupku, odlučeno je kao u izreci presude.
+
+OSNOVNI SUD U PODGORICI Dana 27.05.2021. godine
+
+ZAPISNIČARKA, S U D I J A,
+Mitrović Anđela Nada Rabrenović DN-a: Po primjerak presude dostaviti: - ODT Podgorica, - okrivljenoj P.M.
+- a/a
+
+Postupljeno dana: 14.06.2021 godine
+Služ benik Suda, __________________
+
+ZAPISNIČARKA, S U D I J A,
+Mitrović Anđela, s.r. Nada Rabrenović, s.r.
+
+PRAVNA POUKA: Protiv ove presude može se izjavitižalba
+Višem sudu u Podgrici, u roku od 8 dana
+od dana prijema pisanog otpravka,
+a preko ovog Suda.
+
+ZTO:</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

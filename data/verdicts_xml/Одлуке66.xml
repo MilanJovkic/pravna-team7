@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке66">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке66/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке66"/>
+                    <FRBRdate date="2019-12-20" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке66/sr@2019-12-20/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке66/sr@2019-12-20"/>
+                    <FRBRdate date="2019-12-20"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке66/sr@2019-12-20/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке66/sr@2019-12-20/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U KOTORU"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Momirka Tešić"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="Đ.B."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="R.B."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="K.N."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="L.M."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="B.G."/>
+                <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="P.N."/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 336/19</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U KOTORU</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2019-12-20">2019-12-20</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Momirka Tešić</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni P.N. je kriv za učestvovanje u tuči.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Učestvovanje u tuči</p>
+                    <p>Teške tjelesne povrede</p>
+                    <p>Uslovna osuda</p>
+                    <p>Troškovi postupka</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_153">Član 153</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_3">Član 3</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_368">Član 368</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_457">Član 457</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da su se stekli uslovi za izricanje uslovne osude, uzimajući u obzir prethodno neosuđivanje okrivljenog.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Uslovna osuda</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="victims">
+                    <person>Đ.B.</person>
+                    <person>R.B.</person>
+                    <person>K.N.</person>
+                    <person>L.M.</person>
+                    <person>B.G.</person>
+                    <person>P.N.</person>
+                </block>
+                <block name="witnesses">
+                    <person>Đ.B.</person>
+                    <person>R.B.</person>
+                    <person>M.L.</person>
+                    <person>L.S.</person>
+                    <person>K.N.</person>
+                    <person>P.I.</person>
+                    <person>P.N.</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="amount">09.1978 g</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Kotor</fact>
+                <fact key="location">Tivat</fact>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="conditional_sentence_requested">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">3</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>U IME CRNE GORE
+Posl. br. K.336/19/19
+OSNOVNI SUD U KOTORU, kao nadležni prvostepeni krivični sud, po sudiji Momirki Tešić, uz učešće
+zapisničara Ana-Marije Petković, u krivičnom predmetu protiv okrivljenog P.N., zbog krivičnog djela
+učestvovanje u tuči izčl.153 Krivičnog zakonika Crne Gore, koji se vodi po optužnom predlogu ODT Kotor Kt.
+broj 336/19 od 20.12.2019 godine, nakon održanog glavnog i javnog pretresa dana 4.6.2020 godine, u
+prisustvu državne tužiteljke iz ODT Kotor Lj. M., a u odsustvu uredno pozvanog okrivljenog P.N., koji je
+prethodno ispitan, a svoj izostanak je opravdao, ačije prisustvo nije nužno, shodno odredbičl. 457. ZKP-a,
+istog dana donio je i javno objavio sledeću:
+P R E S U D U
+Okrivljeni P.N., JMBG., od oca S. i majke N., rođene K., rođen 11.09.1978 g. u T., stalno nastanjen u T., K. II/8,
+državljanin Crne Gore, vatrogasac, oženjen, otac dvoje maloljetne djece, sa završenom SSS, srednjeg
+imovnog stanja, ranije neosuđivan, protiv kojeg se ne vodi postupak za neko drugo krivično djelo
+
+Kriv je
+
+Što je
+
+dana 22.05.2019.g., oko 23,00h, ispred kafe bara “Propela” u Tivtu, svjestan svog djelačije izvršenje je htio,
+učestvovao u tuči u kojoj su sa jedne strane bili P.N. i P.I.a sa druge B.G., na načinšto je nakon kraće verbalne
+rasprave sa osobljem lokala i bacanjačaša u njihovom pravcu, zajedno sa P.I. zadao više udaraca oštećenom
+Đ.B. u predjelu glave i tijela, nakončega je B.G., u namjeri da zaštiti oštećenog, zadao nekoliko udaraca P. i P.,
+kojom prilikom je oštećeni Đ.B.zadobio tešku tjelesnu povredu u vidu potresa mozga, krvnog podliva u
+tjemenom ičeonom predjelu sa oguljotinama kože promjera 5x4cm, oguljotine kože učeonom predjelu
+promjera 3x0,2cm, krvni podliv ispod lijevog oka, krvni podliv u predjelu desne strane vrata, tri oguljotine
+kože u predjelu lijeve podlaktice, promjera 0,4x0,3cm i nagnječenje nosa sa krvarenjem iz nosa
+
+-čime je izvršio krivično djelo učestvovanje u tuči izčl.153 Krivičnog zakonika Crne Gore.
+Pa sud okrivljenom na osnovu naprijed navedenih krivično-pravnih odredbi, te odredbi čl.
+3,5,8,13,15,36,42,52,53. i 54. Krivičnog zakonika, te čl.368. i 374. Zakonika o krivičnom postupku izriče
+USLOVNU OSUDU
+Kojom mu utvrđuje kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno određuje da se kazna neće
+izvršiti ukoliko okrivljeni za vrijeme od jedne godine od dana pravosnažnosti presude ne učini novo krivično Osnovni Sud u Kotoru
+K 336/2019
+04. Jun 2020
+
+djelo.
+Duž an je okrivljeni na ime sudskog paušala platiti iznos od 80,00 eura, i na ime troškova krivičnog postupka
+iznos od 49,50 eura, u roku od mjesec dana od dana pravosnažnosti presude, na žiro račun br. 832-16-52, u
+korist budžeta CG, a dokaz o uplati dostaviti ovom sudu s pozivom na broj K. 336/19/19.
+O b r a z l ože nj e
+ODT Kotor je aktom Kt.broj336/19 od 20.12.2019,godine stavilo na teret okrivljenom P.N.,izvršenje krivičnog
+djela učestvovanje u tuči izčl.153 Krivičnog zakonika CG.
+Okrivljeni P.N. je u svojoj odbrani na zapisnik pred ODT Kotor dana 10.07.2019 godine, izjavio da se ne sjeća
+tačno datuma, ali misli da je bilo u maju, 2019 godine, oko 23,30časova, kada je sa kolegama P. i L. došao u
+kafe bar ''Propela''. Stali su zašank i tada im je prišla konobarica koja je bila malo neljubazna, misli da je
+nijesu vrijeđali, a ne sjeća se da su bacali bilo kakvečaše u njenom pravcu, pa je nakon nje došao konobar i
+poručili su piće, ali se ne sjeća da li su to piće dobili. Na suprotnoj stranišanka je bila grupa od tri, č etiri
+muš ka lica i prolazeći odšanka do toaleta, samo je osjetio udarac u predjelu poglavine od kojeg je pao na
+podlogu i od tog momenta se ne sjećašta se dalje dešavalo, sve do dolaska policije koja ga je povela u
+stanicu ali je o tome naknadno saznao. Nije mogao da se izjasni da li se podigao sa tog poda ili eventualno
+zadavao udarce, niti se sjeća da li je nakon toga zadobio jošudaraca. Zbog okolnosti koje je naveo, ne sjeća
+se da li je P. zadavao bilo kome udarac, niti je vidio da je isti zadobio bilo kakav udarac, a ne sjeća se ni da je
+neko lice osim njega ležalo na podlozi. Tom prilikom je zadobio tjelesne povrede, očemu posjeduje
+medicinsku dokumentaciju. Ne sjeća se da su nakon dolaska konobarice, istu vrijeđali i gađaličašama, zna da
+je poslije nje došao konobar, ali njihovoj stranišanka nije prilazio vlasnik lokala i sa njima raspravljao u vezi
+konobarice.
+
+U dokaznom postupku koji je proveden u cilju utvrđenjačinjeničnog stanja i krivice okrivljenog, sud je proveo
+sledeće dokaze: izvršio uvid u: Izvještaj ljekara u HMP u Tivat br. protokola 2657 od 22.05.2019.godine na ime
+Đ.B.; Izvještaj ljekara u HMP u Tivat br. protokola 2655 od 22.05.2019.godine na ime P.I.; Izvještaj ljekara u
+HMP u Tivat br. protokola 2656 od 22.05.2019.godine na ime P.N.; Izvod iz registra kaznenih evidencija
+Ministarstva pravde za okrivljenog od 25.12.2019.godine; te pročitao nalaz i mišljenje vještaka medicinske
+struke, dr K.N. od 17.06.2019.godine; i pročitao iskaze: svjedoka oštećenog Đ.B. sa zapisnika pred ODT Kotor
+od 12.7.2019 godine; svjedoka R.B. sa zapisnika pred ODT Kotor od 11.7.2019 godine; svjedoka M.L. sa
+zapisnika pred ODT Kotor od 11.7.2019 godine i svjedoka L.S. sa zapisnika pred ODT Kotor od 12.7.2019
+godine.
+
+Medicinska dokumentacija i to: Izvještaj ljekara u HMP u Tivat br. protokola 2657 od 22.05.2019.godine na ime
+Đ.B., Izvještaj ljekara u HMP u Tivat br. protokola 2655 od 22.05.2019.godine na ime P.I. i Izvještaj ljekara u
+HMP u Tivat br. protokola 2656 od 22.05.2019.godine na ime P.N., je bila predmet vještačenja po vještaku
+medicinske struke, pa je sud posebno neće obrazlagati.
+Uvidom u Izvod iz registra kaznenih evidencija Ministarstva pravde za okrivljenog P.N. od 25.12.2019 godine,
+je utvrđeno da isti nije ranije osuđivan.
+Na osnovu nalaza i mišljenja vještaka medicinske struke, dr K.N. od 17.06.2019.godine, utvrđeno je da je
+kritične prilike P.N. zadobio sledeće tjelesne povrede i to: oguljotine kože u predjelu lijevog koljena sa
+otokom u predjelu lijevog koljena, povredu u vidu otoka u predjelu poglavine i nagnječenje prstiju desne
+šake. Navedene povrede koje je zadobio P.N. predstavljaju u vrijeme nanošenja, procijenjene kako
+
+pojedinačno tako i u svom ukupnom djelovanju, laku tjelesnu opovredu. Oguljotina kože u predjelu lijevog
+koljena sa otokom u predjelu lijevog koljena nastala je najvjerovatnije usled pada P.N. i njegovog kontakta sa
+podlogom, mada se ne može sa potrebnom pouzdanošću isključiti mogućnost da je ista nanešena dejstvom
+aktivno zamahnutog mehaničkog orudja, ušta bi spadalo: noga i slično. Povreda u vidu otoka u predjelu
+poglavine nanešene dejstvom aktivno zamahnutog mehaničkog orudja, ušta bi spadlo: stisnuta pesnica,
+moga i slično. Nagnječenje prstiju desnešake nastalo je najvjerovatnije usled udara desnomšakom P.N. u
+tupo-tvrdi predmet, mada se ne može sa potrebnom pouzdanošću isljučiti mogućnost da je isto nanešeno
+dejstvom tupine aktivno zamahnutog mehaničkog orudja, ušto bi spadao: noga i slično. Dalje je utvrđeno i
+da je P.I. je zadobio sledeće tjelesne povrede: krvni podliv u tjemenom predjelu sa otokom u tjemenom
+predjelu, krvni podliv u desnom jagodičnom predjelu promejra 4 x 3 cm, krvni podliv učeonom predjelu
+promjera 4 x 3 cm i nagnječno - razderna rana u predjelu lijevešake promejra 3 x 0,4 cm. Navedene povrede
+koje je zadobio P.I. predstavljaju u vrijeme nanošenja, procjenjene kako poejdinačno, tako i u svom ukupnom
+djelovanju, laku tjelesnu pvoredu. Krvni podliv u tjemenom predjelu sa otokom u tjemenom predjelu i
+nagnječno-razderna rana u predjelu lijevešake nanošeni su višeskrtnim dejstvom tupine aktivno
+zamahnutog mehaničkog orudja, ušta bi spadalo: stolica i slično. Krvni podliv učenom predjelu promjera
+4x3 cm nanešen je dejstvom tupine aktivno zamahnutog mehaničkog orudja,ušta bi spadalo: stisnuta
+pesnica i slično.U konačnom je utvrđeno i da je Đ.B. kritične prilike zadobio sledeće tjelesne povrede: potres
+mozga, krvni podliv u tjemenom predjelu i učeonom predjelu sa oguljotinom kože u tjemenom i učeono
+predjelu promjera 5x4 cm, oguljotine kože učenom predjelu promjera 3x0,2 cm, krvni podliv u predjelu
+ispodlijevog oka, krvni podliv u predjelu desne strane vrata, tri oguljotine kože u predjelu lijeve podlaktice
+promjera 0,4x0,3 cm, nagnječenje nosa sa krvarenjem iz nosa.Vještak je naveo da navedene povrede koje je
+zadobio Đ.B. predstavljaju u vrijeme nanošenja skupno procijenjeno, tešku tjelesnu povredu. Potres mozga
+predstavlja u vrijeme nanošenja, sam za sebe, pojedinačno procijenjen, tešku tjelesnu pvoredu i nanešen je
+dejstvom tupine aktivno - zamahnutog mehaničkog orudja, ušto bi spadalo: noga, stisnuta pesnica i slično.
+Krvni podliv u tjemenom predjeli i učeonom predjelu sa oguljotinom kože u tjemenom i učeonom predjelu
+promejra 5x4 cm, oguljotina kože učeonom predjelu promjera 3x0,2 cm i krvni podliv u predjelu desne strane
+vrata predstavljaju u vrijeme nanošenja, sami za sebe, pojedinačno procijenjeni, laku tjelesnu povredu i
+nanešeni su dejstvom tupine aktivno zamahnutog mehaničkog orudja, ušto bi spadalo: noga i slično.Krvni
+podliv u predjelu ispod lijevog oka i nagnječenje nosa sa krvarenjem iz nosa predstvlaju u vriejme
+nanošenja,same za sebe, pojedinačno procjenjene,laku tjelesnu povredu i naneše su dejstvom tupine
+aktivno zamahnutog mehaničkog orudja, ušto bi spadalo: stisnuta pesnica i slično.Tri oguljotine kože u
+predjelu lijeve podlaktice promejra 0,4x0,3 cm predstavljaju u vrijeme nanošenja,same za sebe, pojedinačno
+procijenjene,laku tjelesnu pvoredu i nastale su najvjerovatnije grebanjem (dejstvom noktinu) od strane druge
+osobe.
+Svjedok oštećeni Đ.B. je izjavio da se ne sjeća tačno datuma ali zna da je bilo to negdje u maju, kada je oko
+23,00časa,bio u kafe baru ''Propela''.Sa njim u društvu su bili L.M. i B.G.. Stajali su zašankom i odjednom se
+čula nekakva rasprava, kada je L. pitao konobara učemu je problem,međutim,mora da naglasi da je B. većbio izašao da kupi cigarete prije ove rasprave.U jednom trenutku je primijetio da jedno od ova dva lica, za
+koje je kasnije saznao da se preziva P., ide u njegovom pravcu, gdje su se raspravljali i gurali,ali ga isti nije
+udario,većje osjetio udarac odpozadi u predjelu glave i od tog udarca je pao na podlogu, pa je vjerovatno
+izgubio svijest jer se daljih dešavanja u lokalu ne sjeća. Sledećečega se sjeća jeste da ga neko vuče ispred
+lokala na neku klupu, ne zna ko je to bio niti je ikoga tu vidio, mada kažu da je tu bila masa ljudi. Tu je pao
+ponovo u nesvijest, vjerovatno od udarca, ali se ne sjeća ko mu je te udarce zadavao, a kasnije su mu rekli da
+su mu P. i P.I. zadavali udarce dok je ležao na podlozi, i van i unutar lokala. Tom prilikom je zadobio povrede o
+čemu posjedujem medicinsku dokumentaciju, a u bolnici je boravio jedan dan. Nije vidio da je L.udario bilo
+koga ili da je njega neko udario. Ne sjeća se odnosno nije vidio da je bilo ko udarao P.i P., koje inače od ranije
+ne poznaje, ačija je imena naknadno saznao. B.je vidio tek ispred stanice policije. U društvu P.N. i P.I. je bila
+jedna starija muška osoba, ali se ne sjeća da je isti uopšte učestvovao u ovom događaju. Nije uspio zadati niti
+
+jedan udarac P.niti bilo kome drugo. Nije se pridružio krivičnom gonjenju, niti postavio imovinsko pravni
+zahtjev.
+
+Svjedok R.B.je izjavio da je kritične prilike bio u lokalu gdje radi kao šanker, sjeća se da je konobarica prišla
+šanku za koji su stajala tri muškarcačija imena ne zna, da bi se nakon par minua vratila i tražila od njega da
+joj pomogne, pa je prišao došanka, kada su dvojica od ova tri lica, misli da su to bili P. i P. počeli da psjuju
+konobaricu i bahato se ponašali, pa je u jednom trenutku neko od njih njega uhvatio za ruku, a on je uspio da
+je istrgne, i tada ga je menadžer L.pitao je li sve u redu, a on rekao da jeste da bi ponovo prišao kod njih kako
+bi im nasuo piće, a oni su i dalje psovali konobaricu, da bi kada je L. pitao učemu je problem, P. krenuo u
+pravcu istog, govorio „sadćešda vidišučemu je problem“. Kada su prišli L. i Đ. ovaj krupniji momak za koga
+je saznao da se preziva P.je prvo smirivao P., a potomšakom udario Đ. u predjelu glave, od kojeg udarca je isti
+pao. Tad je nastala gužva, zna da je zašankom sa L. i Đ. bio i B., ali B. je izašao prije ovih dešavanja. Nije vidio
+da je P. zadao udarac L., ali zna da je P. bacao flaše ičaše u pravcu L.,a misli da ga je i pokušao udariti, dok L.
+nije zadao nijedan udarac ni P. ni P., a takođe ni Đ. nije uspio da zada nijedan udarac. Dok je Đ.ležao na
+podlozi, nije vidio da je istog neko udarao, a on je razdvajao P.od L., a ovo treće lice koje je bilo sa P. i P., nije
+vidio da je zadavalo bilo kome udarce, zapravo istog uopšte nije primijetio u toj gužvi. Ne zna ko je Đ. izveo iz
+lokala, a on je ostao u lokalu, a kada je kasnije izašao vidio je Đ. kako pognut stoji na pločniku, sa vidnim
+krvarenjem u predjelu lica, a P.i P. su stajala u njegovoj blizini, i on je iste spriječavao da priđu Đ. jer su imali
+namjeru da ga i dalje udaraju. Kasnije je kada je većdošla policija primijetio B. kako ide u pravcu Đ., a ne zna
+ko je zadavao udarce P. i P.. Konobarica je nakonšto su bacanečaše i flaše u njenom pravcu, pobjegla u
+magacin, i ona nije vidjela događaj. Za vrijeme dok je Đ.ležao na podlozi i u lokalu i van lokala, nije vidio da su
+istom P.i P.ili bilo ko drugi zadavali udarce, jer je bio ušanku i sa tog mjesta mu je bio zaklonjen vidik od ove
+grupe koja je pokušavala da razdvoji tuču.
+
+Svjedok M.L. je naveo da je menadžer u kafe baru „Propele“ u Tivtu i kritične večeri je bio prisutan u lokalu,
+sjedio je zašankom sa Đ. i B.G., kada su u lokal ušli P.i P. koje poznaje, od ranije, pričao je sa Đ.i primijetio da
+se konobarica vratila došanka i tražila odšankera da ih usluži, pa je B. prišao za njihov sto, a jedan od njih ga
+je uhvatio za ruku i za to vrijeme su oni psovali konobaricu, pa je pitao B. očemu se radi i isti mu je rekao da je
+sve ok, i nije se obraćao P. i P.. Nakon toga P. prilazi njemu sa namjerom da ga udari i tu je došlo do guranja
+između njega i P., za koje vrijeme P. prilazi Đ. išakom istog udara u predjelu glave od kojeg udarca Đ.pada na
+pod, i nastavlja da istog da udara pesnicama dok leži na podlozi. Tada P. uzimačaše i baca ih u pravcu
+konobarice i njega, ona je pobjegla u magacin, a on izveo Đ.ispred lokala koji je bio sav krvav. Tu su sjeli na
+jednu klupu i primijetio je kako su iz lokala izašli P. i P. gdje su ih neki ljudi pokušali zaustraviti međutim oni
+su se uputili u njihovom pravcu, i po dolasku je P.udario Đ. š akom u predjelu glave od kojeg udarca je isti
+ponovo pao, za koje vrijeme se P.gurao sa njim i udario ga stolicom u leđa, a on nije uspio da zada nijedan
+udarac ni P.ni P.. Za vrijem dok je Đ. ležao na podlozi, nogama je istog udarao P., a zna da ga je jednom nogom
+udario i P., i Đ. je bio bez svijesti. Dok je izvodio Đ. iz lokala, pozvao je policiju i policija je upravo stigla u
+momentu kada je Đ.ležao bez svijesti van lokala. Ne zna kako se zvalo ovo lice koje je bilo sa P. i P., ali isti nije
+zadavao udarce nikome, većje pokušao da razdvoji, odnosno da smiri situaciju. B.je bio u lokalu, ali je pošao
+prije negošto je počela tuča, i više se nije vraćao, zapravo vidio je istog tek kada se sve završilo, i kada je
+doš la policija da je stojao ispred lokala.Nije vidio da je iko od lica sa kojima je bio, udario P. ili P..U poslednjih
+dvadest dana ne posjeduje video nadzor u lokalu, a kamere „Prve“ banke su vjerovatno zabilježile događaj
+ispred lokala.U ovu tuču se nije miješao ni B.R., a Đ.nije uspio nikoga da udari.Zna da mu je P. prijetio daće
+mu zapaliti lokal,dok ga je policija odvodila u stanicu.Konobarica je nakonšto su bacaličaše u njenom
+pravcu,pobjegla u magacin,a on se nije javljao ljekaru radi ovog događaja.
+
+Svjedok L.S. je izjavio da se ne sjeća tačno datuma, ali zna da je to bilo oko maja 2019 godine,kada je oko
+21,30časova,ušao u lokal ''Propela'',sa P.N. i P.I. i stali su zašank da popijemo piće. Potom je prišla
+konobarica koja je bila gruba, pa su P.i P. nešto negodovali, nakončega je prišaošanker koji im je donio piće.
+Vidio je kako je P. š ankera uhvatio za ruku, tražeći od njega da pošalje gazdu i u tom momentu je imao
+telefonski poziv pa je izašao iz lokala i taj razgovor je trajao desetak minuta, kada je u jednom momentu
+začuo neku galamu i ušao u lokal, gdje je na podu vidio P., P., misli oštećenog i jošjedno licečije ime ne zna.
+Uspio je da ih razdvoji, odnosno pojašnjava da su se ta lica međusobno tukla, odnosno P. i P. sa jedne strane,
+a ova dva lica sa druge strane, mada ne zna da li je jedno od ta dva lica možda bio taj menadžer jer ne
+poznaje nikoga od tih lica i uspio je da ih razdvoji, pa su ova dva lica izašla iz lokala a on je zadržavao P. i P., ali
+nije uspio, pa su i oni izašli ispred lokala. Bio ješokiran cijelom situacijom pa je i on izašao napolje iza P. i P.,
+vidio je da su oni prišli momku koji je bio krvav i da su ga oba udarali u predjelu glavešakama i od tih udaraca
+je taj momak pao, a u tom momentu je primijetio da je neko od tih lica udario I. u predjelu glave, ne može da
+se sjeti da li je nekim sredstvom ilišakama i I.je pao od tog udarca, a vidio je da jedan momak u crvenoj
+majicišakom udara P.koji je od tog udarca pao u nesvijest i pritrčao je da istom pomognem. Ne zna ko je
+momak koji je bio u crvenoj majici, niti se sjeća da je istog prethodno vidio u lokalu, a misli da nije. Nije vidio
+da više nijedno lice zadaje udarce P.i P.. Dok je boravio u lokalu, nije vidio da su P.i P. bacaličaše u pravcu
+konobarice, a ne poznaje lice sa prezimenom B.. Nije zadao nijedan udarac nikome ali je zadobio udarac u
+predjelu lijevog koljena koje mu je kasnije oteklo, a ne zna od kojeg lica i nije se javljao ljekaru zbog te
+povrede. Ž ao mu ješto se ovo sve izdešavalo, zapravo mu ježaošto se nalazio na tom mjestu.
+
+Cijeneći sve provedene dokaze pojedinačno i u uzajamnoj povezanosti shodnočlanu 370 stav 3 Zkp-a, a u
+odnosu na odbrane okrivljenog P.N., sud je utvrdiočinjenično stanje bliže navedeno u izreci presude.
+Krivično pravno ocjenjujući ovako utvrđenočinjenično stanje sud je našao da je okrivljeni P.N. izvršio krivično
+djelo učestvovanje u tuči izčl.153. Krivičnog zakonika CG.
+Ovakvočinjenično stanje sud je utvrdio na osnovu pisano provedenih dokaza i to medicinske dokumentacije
+na ime svjedoka oštećenog Đ.B. i nalaza i mišljenja vještaka medicinske struke dr K.N. od 17.6.2019 godine, a
+koje dokaze je sud prihvatio.
+U konkretnom slučaju nesporno je da je svjedok oštećeni Đ.B. kritične prilike, zadobio tešku tjelesnu povredu
+u vidu potresa mozga, krvnog podliva u tjemenom ičeonom predjelu sa oguljotinama kože promjera 5x4cm,
+oguljotine kože učeonom predjelu promjera 3x0,2cm, krvni podliv ispod lijevog oka, krvni podliv u predjelu
+desne strane vrata, tri oguljotine kože u predjelu lijeve podlaktice, promjera 0,4x0,3cm i nagnječenje nosa sa
+krvarenjem iz nosa, ašto je utvrđeno na osnovu medicinske dokumentacije na njegovo ime i nalaza i
+mišljenja vještaka medicinske struke dr K.N. od 17.6.2019 godine, a koje dokaze je sud prihvatio.
+Svjedok oštećeni Đ.B.je u svom iskazu u bitnom naveo da je kritične prilike bio u kafe baru ''Propela'', u
+društvu sa L.M. i B.G. i da su stajali zašankom i odjednom sečula nekakva rasprava, kada je L. pitao konobara
+u čemu je problem, a B. je većbio izašao da kupi cigarete prije ove rasprave. U jednom trenutku je primijetio
+da jedno od ova dva lica, za koje je kasnije saznao da se preziva P., ide u njegovom pravcu, gdje su se
+raspravljali i gurali, ali ga isti nije udario, većje osjetio udarac odpozadi u predjelu glave i od tog udarca je
+pao na podlogu, pa je vjerovatno izgubio svijest jer se daljih dešavanja u lokalu ne sjeća. Sledećečega se
+sjeća jeste da ga neko vuče ispred lokala na neku klupu, ne zna ko je to bio niti je ikoga tu vidio, i da je tu pao
+ponovo u nesvijest, vjerovatno od udarca, ali se ne sjeća ko mu je te udarce zadavao, a kasnije su mu rekli da
+su mu P. i P.I. zadavali udarce dok je ležao na podlozi, i van i unutar lokala. Nije vidio da je L. udario bilo koga
+ili da je njega neko udario, a nije vidio ni da je bilo ko udarao P.i P., ačija je imena naknadno saznao, a B.je
+
+vidio tek ispred stanice policije, te da je u društvu P.N.i P.I. bila jedna starija muška osoba, ali se ne sjeća da je
+isti uopšte učestvovao u ovom događaju. Tvrdio je da nije uspio zadati niti jedan udarac P. niti bilo kome
+drugo. Navodi iskaza svjedoka oštećenog Đ.B. su potkrijepljeni i medicinskom dokumetacijom na njegovo
+ime, kao i nalazom i mišljenjem veštaka medicinske struke dr K.N., na osnovu kojeg je utvrđeno da je isti
+kritične prilike zadobio povrede bliže pobrojane u izreci presude, a koje povrede predstavljaju u vrijeme
+nanošenja, skupno procjenjeno, tešku tjelesnu povredu, te da potres mozga predstavlja u vrijeme nanošenja,
+sam za sebe, pojedinačno procijenjen, tešku tjelesnu pvoredu, i nanesen dejstvom tupine aktivno -
+zamahnutog mehaničkog orudja, ušto bi spadalo: noga, stisnu ta pesnica i slično, te da krvni podliv u
+tjemenom predjeli i učeonom predjelu sa oguljotinom kože u tjemenom i učeonom predjelu promejra 5x4
+cm, oguljotina kože učeonom predjelu promjera 3x0,2 cm i krvni podliv u predjelu desne strane vrata
+predstavljaju u vrijeme nanošenja, sami za sebe, pojedinačno procijenjeni, laku tjelesnu povredu i da su
+naneseni dejstvom tupine aktivno zamahnutog mehaničkog orudja, ušto bi spadalo: noga i slično, a da krvni
+podliv u predjelu ispod lijevog oka i nagnječenje nosa sa krvarenjem iz nosa predstvlaju u vrijeme nanošenja,
+sami za sebe, pojedinačno procjenjene, laku tjelesnu povredu i naneše su dejstvom tupine aktivno
+zamahnutog mehaničkog orudja, ušto bi spadalo: stisnuta pesnica i slično, dok tri oguljotine kože u predjelu
+lijeve podlaktice promejra 0,4 x 0,3 cm predstavljaju u vrijeme nanošenja, same za sebe, pojedinačno
+procijenjene, laku tjelesnu pvoredu i nastale su najvjerovatnije grebanjem (dejstvom noktinu) od strane
+druge osobe.
+Okrivljeni P.N. je u svojoj odbrani negirao izvršenje predmetnog krivičnog djela, navodeći da se branio,
+odnosno u bitnom navodeći da je sa kolegama P.i L.došao u kafe bar ''Propela'' i da su stajali zašank i tada im
+je prišla konobarica koja je bila malo neljubazna, i da misli da je nijesu vrijeđali, a nije se sjećao da su bacali
+bilo kakvečaše u njenom pravcu, pa je nakon nje došao konobar i poručili su piće, ali se ne sjeća da li su to
+piće dobili. Na suprotnoj stranišanka je bila grupa od tri, č etiri muška lica i prolazeći odšanka do toaleta,
+samo je osjetio udarac u predjelu poglavine od kojeg je pao na podlogu i od tog momenta se ne sjećašta se
+dalje dešavalo, sve do dolaska policije koja ga je povela u stanicu ali je o tome naknadno saznao. Nije mogao
+da se izjasni da li se podigao sa tog poda ili eventualno zadavao udarce, niti se sjeća da li je nakon toga
+zadobio jošudaraca. Dalje je naveo da se zbog okolnosti koje je naveo, ne sjeća se da li je P. zadavao bilo
+kome udarac, niti je vidio da je isti zadobio bilo kakav udarac, a ne sjeća se ni da je neko lice osim njega ležalo
+na podlozi.
+Sud je prihvatio navode odbrane okrivljenog P.N. u dijelu u kojem je naveo da je kritične večeri bio u društvu
+sa P.I. i L.S.u kafe baru " Propela", te da im je prvo prišla konobarica da ih usluži, a zatim konobar, š to je
+potvrdio i svjedok L.S., a i ostali saslušani svjedoci. Međutim, sud nije prihvatio njegovu odbranu u dijelu u
+kojem je opisao dalje dešavanje kako u lokalu tako i van lokala. Ovo sa razlogašto je njegova odbrana u dijelu
+u kojem opisuje dalja dešavanja u lokalu, opovrgnuta navodima iskaza svjedoka L.M. i R.B., ačije iskaze je
+sud prihvatio, s timšto je cijenio i razlike u njihovim iskazima, pa je mišljenja da iste nijesu od uticaja na
+drugačije presuđenje, niti na vjerodostojnost njihovih iskaza, većsu posledica ličnog doživljaja ovog
+događaja u kojem je svjedok oštećeni Đ.B. zadobio tešku tjelesnu povredu, kao i položaju u kojem su se
+nalazili dok se događaj odigravao, i mogućnosti da vide svešto se dešava.
+Tako je svjedok L.M. u bitnom naveo da je vidio da su u lokal ušli P. i P., i da je primijetio da se konobarica
+vratila došanka i tražila odšankera da ih usluži, pa je B.prišao za njihov sto, a jedan od njih ga je uhvatio za
+ruku i za to vrijeme su oni psovali konobaricu, pa je pitao B. očemu se radi i isti mu je rekao da je sve ok, i nije
+se obraćao P.i P.. Nakon toga P. prilazi njemu sa namjerom da ga udari i tu je došlo do guranja između njega i
+P., za koje vrijeme P. prilazi Đ.išakom istog udara u predjelu glave od kojeg udarca Đ. pada na pod, i nastavlja
+da istog da udara pesnicama dok leži na podlozi. Tada P.uzimačaše i baca ih u pravcu konobarice i njega, ona
+je pobjegla u magacin, a on izveo Đ.ispred lokala koji je bio sav krvav i sjeli su na jednu klupu i primijetio je
+kako su iz lokala izašli P. i P. gdje su ih neki ljudi pokušali zaustraviti međutim oni su se uputili u njihovom
+
+pravcu, i po dolasku je P. udario Đ. š akom u predjelu glave od kojeg udarca je isti ponovo pao, za koje vrijeme
+se P. gurao sa njim i udario ga stolicom u leđa, a on nije uspio da zada nijedan udarac ni P. ni P.. Za vrijem dok
+je Đ.ležao na podlozi, nogama je istog udarao P., a zna da ga je jednom nogom udario i P., i Đ. je bio bez
+svijesti. Dok je izvodio Đ. iz lokala, pozvao je policiju i policija je upravo stigla u momentu kada je Đ. ležao bez
+svijesti van lokala. Ne zna kako se zvalo ovo lice koje je bilo sa P. i P., ali isti nije zadavao udarce nikome, većje
+pokušao da razdvoji, odnosno da smiri situaciju. B.je bio u lokalu, ali je pošao prije negošto je počela tuča, i
+više se nije vraćao, zapravo vidio je istog tek kada se sve završilo, i kada je došla policija da je stojao ispred
+lokala.
+Svjedok B.R. je u bitnom naveo da je konobarica prišlašanku za koji su stajala tri muškarca, da bi se nakon
+par minua vratila i tražila od njega da joj pomogne, pa je prišao došanka, kada su dvojica od ova tri lica, misli
+da su to bili P.i P. počeli da psjuju konobaricu i bahato se ponašali, pa je u jednom trenutku neko od njih njega
+uhvatio za ruku, a on je uspio da je istrgne, i tada ga je menadžer L. pitao je li sve u redu, a on rekao da jeste
+da bi ponovo prišao kod njih kako bi im nasuo piće, a oni su i dalje psovali konobaricu, da bi kada je L. pitao u
+čemu je problem, P. krenuo u pravcu istog, govorio „sadćešda vidišučemu je problem“. Kada su prišli L. i Đ.,
+P.je prvo smirivao P., a potomšakom uadario Đ. u predjelu glave, od kojeg udarca je isti pao i tada je nastala
+gužva, zna da je zašankom sa L. i Đ. bio i B., ali B. je izašao prije ovih dešavanja. Nije vidio da je P. zadao
+udarac L., ali zna da je P. bacao flaše ičaše u pravcu L., dok L. nije zadao nijedan udarac ni P. ni P., a takođe ni
+Đ. nije uspio da zada nijedan udarac. Dok je Đ. ležao na podlozi, nije vidio da je istog neko udarao, a on je
+razdvajao P.od L., a ovo treće lice koje je bilo sa P. i P., nije vidio da je zadavalo bilo kome udarce, zapravo
+istog uopšte nije primijetio u toj gužvi. Ne zna ko je Đ. izveo iz lokala, a on je ostao u lokalu, a kada je kasnije
+izašao vidio je Đ.kako pognut stoji na pločniku, sa vidnim krvarenjem u predjelu lica, a P.i P. su stajala u
+njegovoj blizini, i on je iste spriječavao da priđu Đ. jer su imali namjeru da ga i dalje udaraju. Kasnije je kada je
+već došla policija primijetio B. kako ide u pravcu Đ., a ne zna ko je zadavao udarce P. i P.. Za vrijeme dok je Đ.
+ležao na podlozi i u lokalu i van lokala, nije vidio da su istom P. i P. ili bilo ko drugi zadavali udarce, jer je bio u
+šanku i sa tog mjesta mu je bio zaklonjen vidik od ove grupe koja je pokušavala da razdvoji tuču.
+
+Čak je i svjedok L.S. naveo, a koji je bio kritične prilike u društvu sa okrivljenim i P.I. naveo da iako sam
+poč etak događaja koji se odigrao u kafe baru nije vidio, jer je izašao da razgovara na telefon, da je kada je u
+jednom momentu začuo neku galamu i ušao u lokal, na podu vidio P., P., misli oštećenog i jošjedno licečije
+ime ne zna, te da je uspio da ih razdvoji, jer su se ta lica međusobno tukla, odnosno P.i P. sa jedne strane, a
+ova dva lica sa druge strane, pa su ova dva lica izašla iz lokala a on je zadržavao P. i P., ali nije uspio, pa su i oni
+izašli ispred lokala, te da je i on izašao za njima, i vidio da su oni prišli momku koji je bio krvav i da su ga oba
+udarali u predjelu glavešakama i od tih udaraca je taj momak pao, i da je u tom momentu primijetio da je
+neko od tih lica udario Igora u predjelu glave, i I. je pao od tog udarca, a vidio je da jedan momak u crvenoj
+majicišakom udara P.koji je od tog udarca pao u nesvijest i pritrčao je da istom pomogne, a nije vidio da više
+nijedno lice zadaje udarce P. i P.
+
+Dakle, imajući u vidu iskaze svjedoka L.M., B.R. i L.S., č ije razlike u iskazima, po mišljenju suda nijesu od
+uticaja na drugačije presuđenje, niti na vjerodostojnost njihovih iskaza, većsu posledica ličnog doživljaja
+ovog događaja u kojem je svjedok oštećeni Đ.B. zadobio tešku tjelesnu povredu, kao i položaju u kojem su se
+nalazili dok se događaj odigravao, i mogućnosti da vide svešto se dešava, neprihavtljivi su po mišljenju suda,
+odnosno opovrgnuti su navodi okrivljenog P.N. da se ostatka događaja od momenta od kada je u kafe baru
+prolazeći odšanka do toaleta, osjetio udarac u predjelu poglavine od kojeg je pao na podlogu i od tog
+momenta se ne sjećašta se dalje dešavalo, jer iz iskaza ova tri svjedoka proizilazi da je okrivljeni aktivno
+učestvovao učitavoj tuči kako u kafe baru tako i van njega. Uostalom odbrana okrivljenog je opovrgnuta i
+
+nalazom i mišljenjem vještaka medicinske struke dr K.N., u dijelu u kojem je vještak naveo koje povrede je
+kritične prilike okrivljeni zadobio, jer okrivljeni niti je zadobio potres mozga, niti neku tešku tjelesnu povredu
+u predjelu glave, koja bi po mišljenju suda mogla prouzrokovati nesjećanje ostatka događaja, većje zadobio
+povrede koje u vrijeme nanošenja, procijenjene kako pojedinačno tako i u svom ukupnom djelovanju,
+predstavljaju laku tjelesnu opovredu, zbogčega je njegove navode da se ne sjeća ostatka događaja od kada je
+zadobio udarac u predjelu poglavine od kojeg je pao na podlogu, smatrao usmjerenim na izbjegavanje
+krivice.
+
+Iz svega navedenog, sud je utvrdio da je kritične prilike došlo do tuče u kojoj je svjedok oštećeni Đ.B.zadobio
+tešku tjelesnu povredu, pa obzirom da je okr. P.N.aktivno učestvovao u toj tuči u kojoj su sa jedne strane bili
+on i P.I., koji su zadali više udaraca oštećenom Đ.B.u predjelu glave i tijela, nakončega je B.G., u namjeri da
+zaštiti oštećenog, zadao nekoliko udaraca P.i P., a kojom prilikom je svjedo oštećeni Đ.B. zadobio tešku
+tjelesnu povredu, bliže navedenu u izreci presude, to je u konkretnom slučaju svijest okrivljenog
+P.N.obuhvatala i svijest o mogućnosti nastupanja teške tjelesne povrede kod nekog od učesnika tuče, pa i
+kod oštećenog, pa je izvršenje ovog djela i htio.
+Imajući u vidu sve naprijed navedeno, sud smatra da su se u radnjama okrivljenog P.N. bliže opisanim u izreci
+presude, ostvarili svi bitni elementi krivičnog djela učestvovanje u tuči izčlana 153 Krivičnog zakonika CG, pa
+ga je sud oglasio krivim za isto.
+Prilikom odluke o vrsti i visini krivične sankcije koju okrivljenom treba izreći sud je pošao od toga da je za
+krivično djelo učestvovanje u tuči izčlana 153 KZ CG propisana kazna zatvora u trajanju od tri mjeseca do tri
+godine. U smislučlana 42 KZ CG, sud je na strani okrivljenog kao olakšavajuće okolnosti cijenio tošto nije
+ranije osuđivan, te tošto se oštećeni nije pridružio krivičnom gonjenju protiv ovog okrivljenog, dok
+otež avajućih okolnosti na strani okrivljenog nije bilo. Imajući naprijed navedeno u vidu, sud je okrivljenom
+izrekao uslovnu osudu, kojim mu je utvrdio kaznu zatvora u trajanju od 3 (tri) mjeseca i istovremeno odredio
+da se ista neće izvršiti ukoliko okrivljeni za vrijeme od 1 (jedne)godine od dana pravosnažnosti presude ne
+učini novo krivično djelo. Sud smatra da su se stekli uslovi za izricanje uslovne osuda, te daće se istom
+dovoljno uticati na okrivljenog da ubuduće nečini ovakva i slična krivična djela, tj. daće se ostvariti ciljevi
+specijalne prevencije.
+Na osnovu naprijed navedenih krivičnopravnih odredbi, te odredbičlana 3,5,8, 13,15,36,42,52,53 i 54 Kz-a ičl.
+368 i 374 Zkp-a, sud je odlučio kao u izreci presude.
+Sud je obavezao okrivljenog da na ime sudskog paušala uplati iznos od 80,00 eura, i na ime troškova
+krivičnog postupka iznos od 49,50 eura (koji troškovi se odnose na trećinu dijela troškova vještačenja po
+veštaku medicinske struke ) u roku od mjesec dana od dana pravosnažnosti presude, na žiro račun br.832-1652, u korist budžeta Crne Gore, a dokaz o uplati dostaviti ovom sudu s pozivom na broj K. 336/19/19.
+Na naprijed navedenim razlozima, sud je zasnovao svoju odluku.
+OSNOVNI SUD U KOTORU
+Dana, 4.06.2020 godine
+Zapisničarka, S U D I J A,
+Ana-Marija Petković Momirka Tešić PRAVNA POUKA: Protiv ove presude ima se pravožalbe u roku od 8 dana od dana prijema iste, Višem sudu u
+Podgorici, a preko ovog suda.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

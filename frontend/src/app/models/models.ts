@@ -1,0 +1,218 @@
+export interface LawArticle {
+  number: string;
+  chapter_number?: string;
+  title?: string;
+  content: string;
+  norm_type?: string;
+  subjects?: string[];
+  legal_concepts?: string[];
+  sanctions?: any;
+  conditions?: string[];
+  references?: Array<Record<string, any>>;
+}
+
+export interface LawChapter {
+  number: string;
+  title: string;
+  articles?: LawArticle[];
+  article_count?: number;
+}
+
+export interface VerdictMetadata {
+  case_id: string;
+  case_number?: string;
+  court_name?: string;
+  date?: string;
+  judges?: string[];
+  summary?: string;
+  legal_issues?: string[];
+  applied_laws?: string[];
+  applied_articles?: string[];
+  decision?: string;
+  outcome?: string;
+  legal_concepts?: string[];
+  parties?: Record<string, string[]>;
+  factual_state?: Record<string, string[]>;
+}
+
+export interface VerdictDetail extends VerdictMetadata {
+  legal_reasoning?: string;
+  precedent_value?: string;
+  confidence?: number;
+  full_text?: string;
+}
+
+export interface VerdictOverrideUpdate {
+  summary?: string | null;
+  legal_issues?: string[] | null;
+  applied_laws?: string[] | null;
+  applied_articles?: string[] | null;
+  decision?: string | null;
+  outcome?: string | null;
+  legal_concepts?: string[] | null;
+  legal_reasoning?: string | null;
+  court_name?: string | null;
+  date?: string | null;
+  judges?: string[] | null;
+  parties?: Record<string, string[]> | null;
+  factual_state?: Record<string, string[]> | null;
+}
+
+export interface CaseFacts {
+  defendant?: string;
+  injury_type?: string;
+  location?: string;
+  weapon?: string;
+  weapon_used?: boolean | null;
+  severe_consequence?: boolean | null;
+  death_result?: boolean | null;
+  negligence?: boolean | null;
+  provocation?: boolean | null;
+  fight_participation?: boolean | null;
+  fight_consequence?: string;
+  left_without_help?: boolean | null;
+
+  // Sentencing factors (individualization)
+  previous_convictions?: boolean | null;
+  repeat_offender?: boolean | null;
+  confession?: boolean | null;
+  remorse?: boolean | null;
+  plea_agreement?: boolean | null;
+  aggravating_circumstances?: boolean | null;
+  mitigating_circumstances?: boolean | null;
+  family_circumstances?: boolean | null;
+  poor_financial_status?: boolean | null;
+  alcohol_intoxication?: boolean | null;
+  narcotics_influence?: boolean | null;
+  conditional_sentence_requested?: boolean | null;
+  attempted_offense?: boolean | null;
+
+  // Group 1: victim data
+  victim_status?: string[];
+  victim_health_state?: string;
+  victim_accountability?: string;
+  victim_previously_abused?: boolean | null;
+  victim_count?: string;
+  victim_explicit_request?: string;
+  victim_subordination?: boolean | null;
+
+  // Group 2: result/consequence
+  life_consequence_type?: string;
+  injury_severity_level?: string;
+  severe_injury_specific_consequences?: string[];
+  danger_to_third_parties?: boolean | null;
+  suicide_outcome?: string;
+  abortion_outcomes?: string[];
+
+  // Group 3: execution method and motive
+  execution_manner?: string[];
+  offender_motive?: string[];
+  provocation_types?: string[];
+  injury_means_type?: string;
+  victim_consent?: string;
+  guardian_consent?: string;
+  abortion_action_mode?: string;
+  sterilization_goal?: string;
+
+  // Group 4: subjective relation (guilt)
+  guilt_form?: string;
+  offender_psych_state?: string;
+  high_intensity_distress?: boolean | null;
+  offender_is_mother?: boolean | null;
+  death_attributed_to_negligence?: string;
+
+  // Group 5: abandonment / failure to provide help
+  danger_to_life?: boolean | null;
+  danger_to_health?: boolean | null;
+  danger_caused_by_offender?: boolean | null;
+  offender_victim_relationship?: string;
+  help_provision_ability?: string;
+  failure_to_help_consequence?: string;
+
+  // Group 6: service context and special acts
+  duty_connection?: string;
+  special_action_types?: string[];
+  inhuman_treatment?: boolean | null;
+}
+
+export interface RuleReasoningResult {
+  applied_norms: string[];
+  proofs: string[];
+}
+
+export interface CbrMatch {
+  case_number?: string;
+  verdict_case_id?: string;
+  similarity: number;
+  outcome?: string;
+}
+
+export interface CbrResult {
+  matches: CbrMatch[];
+}
+
+export interface AppliedLawText {
+  article_number: string;
+  title?: string;
+  content?: string;
+}
+
+export interface ReasoningConfidence {
+  decision_basis: string;
+  final_confidence: number;
+  rule_signal: string;
+  cbr_signal: string;
+  cbr_confidence: number;
+  cbr_top_similarity: number;
+  conflict: boolean;
+}
+
+export interface ReasoningRequest {
+  facts: CaseFacts;
+  top_k: number;
+}
+
+export interface ReasoningResponse {
+  rule_reasoning: RuleReasoningResult;
+  cbr: CbrResult;
+  subsystem_status?: Record<string, string>;
+  applied_articles: string[];
+  applied_law_texts: AppliedLawText[];
+  suggested_verdict?: string;
+  suggested_sanction?: string;
+  reasoning_confidence?: ReasoningConfidence;
+}
+
+export interface VerdictGenerationRequest {
+  facts: CaseFacts;
+  reasoning: ReasoningResponse;
+  case_number?: string;
+  court_name?: string;
+  date?: string;
+  judges?: string[];
+  selected_verdict?: string;
+  selected_sanction?: string;
+}
+
+export interface VerdictGenerationResponse {
+  case_id: string;
+  case_number: string;
+  xml_file: string;
+  verdict_text: string;
+}
+
+export interface NewCaseRequest {
+  case_number?: string;
+  outcome?: string;
+  verdict_type?: string;
+  sanction?: string;
+  selected_verdict?: string;
+  selected_sanction?: string;
+  user_confirmation?: boolean;
+  facts: CaseFacts;
+}
+
+export interface NewCaseResponse {
+  id: number;
+  case_number: string;
+}

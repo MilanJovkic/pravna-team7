@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке47">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке47/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке47"/>
+                    <FRBRdate date="2013-04-17" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке47/sr@2013-04-17/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке47/sr@2013-04-17"/>
+                    <FRBRdate date="2013-04-17"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке47/sr@2013-04-17/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке47/sr@2013-04-17/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="OSNOVNI SUD U NIKŠIĆU"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Igor Djuričković"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Budimirka Papović"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="Kosović Željka"/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="K.Ž."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="C.G."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="P.J."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="Kapino Pol"/>
+                <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="R.M."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovni sud u Nikšiću"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Uprava policije CG"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/kz" showAs="KZ"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/zkp" showAs="ZKP"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 887/2012</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>OSNOVNI SUD U NIKŠIĆU</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2013-04-17">2013-04-17</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Igor Djuričković</judge>
+                    <judge>Budimirka Papović</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Okrivljeni R.M. osuđen na novčanu kaznu zbog ugrožavanja opasnim orudjem.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Ugrožavanje opasnim orudjem</p>
+                    <p>Primjena zakonskih odredbi</p>
+                    <p>Ranija osudjivanost</p>
+                    <p>Mjera bezbjednosti</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">KZ</ref>
+                    <ref href="#law_2">ZKP</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/kz#art_154">Član 154</ref>
+                    <ref href="/akn/me/act/kz#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/kz#art_32">Član 32</ref>
+                    <ref href="/akn/me/act/kz#art_39">Član 39</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da je okrivljeni izvršio krivično djelo ugrožavanja opasnim orudjem, uzimajući u obzir raniju osudjivanost i okolnosti slučaja.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Osudjen</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="victims">
+                    <person>Kosović Željka</person>
+                    <person>K.Ž.</person>
+                    <person>C.G.</person>
+                    <person>P.J.</person>
+                    <person>Kapino Pol</person>
+                    <person>R.M.</person>
+                </block>
+                <block name="witnesses">
+                    <person>K.Ž.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Osnovni sud u Nikšiću</organization>
+                    <organization>Uprava policije CG</organization>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="location">Nikšić</fact>
+                <fact key="location">Bar</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="previous_convictions">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="family_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="alcohol_intoxication">da</fact>
+                <fact key="conditional_sentence_requested">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">23988</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>CRNA GORA
+OSNOVNI SUD U NIKŠIĆU
+K.br. 887/2012
+Dana 29.04.2013. godine
+
+U IME CRNE GORE
+
+OSNOVNI SUD U NIKŠIĆU, kao prvostepeni krivični, sudija pojedinac Djuričković Igor, uz sudjelovanje
+namještenika Papović Budimirke kao zapisničara, rješavajući u krivičnom predmetu okrivljenog R.M.a, zbog
+krivičnog djela ugrožavanje opasnim orudjem pri tuči ili svadji izčlana 154 KZ, postupajući po optužnom
+predlogu ODT Nikšić Kt.br.636/12 od 02.10.2012. godine, nakon javnog glavnog pretresa održanog dana
+25.04.2013.godine, u prisustvu zamjenika ODT-a Sindjić Vanje i okrivljenog, donio je i dana 17.04.2013.godine
+javno objavio
+
+P R E S U D U
+
+Okrivljeni:
+R.M., od oca D. i majke D. rodjene P.rodjen.. godine u. sa prebivalištem u Nikšiću-. bb, državljanin Crne Gore,
+nezaposlen, razveden, otac 2 djece, lošeg imovnog stanja, ranije osudjivan presudama Osnovnog suda u Baru
+K.br. 29/82 od 07.03.1983. godine, zbog krivičnog djela izčlana 208 stav 1 KZ SRCG, uslovnom osudom, 3
+mjeseca zatvora uslovno na 1 godinu, K.br. 45/84 od 06.10.1987. godine, zbog krivičnog djela izčlana 203 stav
+2/1 KZ SRCG, uslovnom osudom, 8 mjeseci zatvora uslovno na 2 godinu, K.br. 266/93 od 07.04.1994. godine,
+zbog krivičnog djela izčlana 204 stav 1 KZ RCG, na kaznu zatvora u trajanju od 30 dana i K.br. 17/99 od
+11.11.1999. godine, zbog krivičnog djela izčlana 204 stav 1 KZ RCG, na kaznu zatvora u trajanju od 3 mjeseca,
+
+K r i v j e:
+
+Što je:
+Dana 24.08.2012.godine u Nikšiću, u naselju Kapino Polje, pri svadji sa oštećenim Kosović Željkom, mašio se
+kosijera kao sredstva podobnog da tijelo teško povrijedi ili zdravlje teško naruši, na načinšto je istim Osnovni Sud u Nikšiću
+K 887/2012
+29. April 2013
+
+zamahnuo u pravcu oštećenog Kosović Željka
+
+- čime je počinio krivično djelo ugrožavanje opasnim orudjem pri tuči ili svadji izčlana 154 Krivičnog zakonika
+
+-pa sud okrivljenog zbog izvršenja navedenog krivičnog djela primjenom citiranih zakonskih odredbi i
+odredbičlana 4 stav 2, č lana 32, 39 i 42 KZ i odredbi izčlana 226, 229 ičlana 374 ZKP-a
+
+OSUDJUJE
+
+Na plaćanje novčane kazne u iznosu od 400,00 eura (slovima: č etiristotine) eura, koju kaznu je okrivljeni
+duž an platiti u roku od tri mjeseca od dana pravosnažnosti presude. Ukoliko okrivljeni navedeni iznos
+novčane kazne ne plati u ostavljenom roku istaće biti zamijenjena kaznom zatvora takoštoće se za svakih
+započetih 25,00 eura novčane kazne okrivljenom odrediti po jedan dan zatvora ili kaznom rada u javnom
+interesu, ukoliko okrivljeni na to pristane, takoštoće se za svakih započetih 25,00 eura novčane kazne
+okrivljenom odrediti po 8časova rada u javnom interesu..
+Obavezuje se okrivljeni da na ime troškova krivičnog postupka plati iznos od 74,00 eura u roku od 15 dana od
+dana pravosnažnosti presude, pod prijetnjom prinudnog izvršenja nažiro račun Osnovnog suda u Nikšiću
+832-32-152, na kojižiro račun je okrivljeni dužan platiti i navedeni iznos novčane kazne i da sudu dostavi
+dokaze o izvršenim uplatama.
+
+Na osnovučlana 75 KZ prema okrivljenom se izriče:
+
+MJERA BEZBJEDNOSTI
+
+Od okrivljenog se kao predmet izvršenja krivičnog djela trajno oduzima kosijer, koji su službenici Uprave
+policije CG PJ Nikšićdana 24.08.2013.godine privremeno oduzeli od okrivljenog.
+
+O b r a z l ože n j e
+
+Osnovni državni tužilac u Nikšiću svojim optužnim predlogom Kt.br.636/2012 od 02.10.2012.godine, stavio
+je na teret okrivljenom R.M.izvršenje krivičnog djela ugrožavanje opasnim orudjem pri tuči ili svadji izčlana
+154 KZ, koje krivično djelo ječinjenično opisano u izreci presude. Zamjenik ODT-a Sindjić Vanja, koja je
+
+zastupala optužni akt na glavnom pretresu, u svojoj završnoj riječi, ostajući pri navodima podnijetog
+optužnog akta predložila je sudu da okrivljenog oglasi krivim i osudi po zakonu.
+Okrivljeni R.M.u svojoj odbrani datoj na glavnom pretresu, negirajući izvršenje krivičnog djela koje mu je
+stavljeno na teret otpužbom, u bitnom je istakao da stanuje u barakama koje se nalaze u naselju Kapino Polje
+i da je oštećeni K.Ž. njegov prvi komšija, da je dana 24.08.2012. godine u pripitom stanju došao kući i dok je
+dolazio do barake u kojoj stanuje vidio da je brat oštećenog K.Ž.S. svoje vozilo parkirano tako da on nije
+mogao da prodje do svojih ulaznih vrata i pošto su i K.Ž. i S. tu bili prisutni on pitao zašto je to vozilo tako bilo
+parkirano, nakončega je došlo do prepirke izmedju njega sa jedne i K.Ž. i S. sa druge strane prilikom koje
+prepirke ga je K.Ž. prvi odgurnuo rukom u predjelu lijevog ramena, nakončega su ga Kosović Ž. i Svetozar
+udarališakama po licu od kojih udaraca se on zateturao a možda i jednom pao, da bi zatim uspio da dodje do
+svog dijela barake odakle je uzeo jedan kosijer, ali sa tim kosijerom u ruci nije zamahivao ka K.Ž. već je isti
+samo držao u ruci kako bi K.Ž. i S. spriječio da nastave da ga udaraju. Takodje je istakao da je od udaraca koje
+su mu kritičnom prilikom zadali oštećšeni Kosović Željko i njegov brat Svetozar imao povredu u predjelu lica
+zbog kojih se javio ljekaru istog dana.
+
+U svojoj završnoj riječi okrivljeni je, osatjući pri svojoj odbrani predložio sudu da ga oslobodi od optužbe.
+
+Sud je na glavnom pretresu u dokaznom postupku na saglasan predlog stranaka pročitao iskaz oštećenog K.Ž., pročtao potvrdu Uprave policije CG PJ NIkšićo privremenom oduzimanju predmeta od okrivljenog izdatu
+dana 24.08.2012. godine, izvršio uvid u prepis protokola Hitno prijavne službe Opšta bolnica Nikšićbroj
+protokola 5696 od 24.08.2012. godine, neposredno saslušao stalnog sudskog vještaka medicinske struke dr.
+Bulatović Veselina i pročitao izvod iz kaznene evidencije za okrivljenog dat od Uprave policije CG- PJ Bar.
+
+Analizirajući provedene dokaze pojedinačno i u njihovoj medjusobnoj povezanosti, dovodeći ih u vezi sa
+navodima optužbe i odbranom okrivljenog sud je na nesumnjiv način utvrdio da je okrivljeni R.M.poč inio
+krivično djelo koje mu je stavljeno na teret optužbom i istog oglasio krivim i krivično pravno odgovornim iz
+sljedećih razloga:
+
+Oštećeni K.Ž. u svom iskazu u bitnom je naveo da se dana 24.08.2012. godine, nalazio ispred barake locirane
+u naselju Kapino Polje u kojem stanuje njegova majka, kojom prilikom se sreo sa okrivljenim R.M.om, koji je
+njegov komšija i koji je bio u vidno alkoholisanom stanju, prilikom kojeg susreta je došlo do rasprave izmedju
+njega i okrivljenog oko zemljišta na kojem je on parkirao voje vozilo i u kojoj raspravi je okrivljeni pokušao da
+ga udari pesnicom i tom prilikom ga zakačio pesnicom u predjelu ramena, da bi zatim okrivljeni R. utrčao u
+svoj dio barake i iz istog se vratio noseći u rukama kosijer i dok mu se približavao okrivljeni mu je uputio niz
+psovki i kada mu je prišao na oko metar i po do dva udaljenosti sa kosijerom je zamahnuo kako bi ga udario u
+gornji dio tijela, ali je on uspio da se izmakne i izbjegne taj udarac, a zatim je prišao okrivljenom R. i uhvatio
+ga za ruku u kojoj je držao kosijer i zatim je došlo do medjusobnogčupanja izmedju njega i okrivljenog u
+kojem je on okrivljenog nekoliko puta udario pesnicom u predjelu glave, nakončega su on i okrivljeni
+zajedno pali na trotoar kada je on okrivljenog nekoliko puta udario otvorenim dlanom po licu i tek nakon
+toga uspio da okrivljenom Radoviću iz ruke uzme kosijer i isti nakon toga odbaci u jednu glavicu koja se
+nalazi u nepsorednoj blizini barake. Takodje je istakao da je za vrijeme dešavanja kritičnog dogadjaja ispred
+barake bio i njegov brat K.S., koji je taj dogadjaj samo posmatrao i nije se miješao u isti, a da je nakonšto se
+
+sve završilo on telefonom pozvao radnike policije koji su ubrzo došli na lice mjesta i kojima je on pokazao
+mjesto gdje je odbacio kosijer koji je prethodno odbacio od okrivljenog R.M..
+
+Uvidom u potvrdu o privremenom oduzimanju predmeta od okrivljenog izdatu od Uprave policije CG PJ
+Nikš ićdana 24.08.2012.godine utvrdjeno je da navedenog datuma od okrivljenog R.M.oduzet jedan kosijer.
+
+Stalni sudski vještak medicinske struke dr. Bulatović Veselin u svom nalazu i mišljenju u bitnom je naveo da je
+u prepisu protokola hitno prijavne službe JZU Opšta bolnica Nikšićbroj protokola 5696 od 24.08.2012.
+godine, navedeno da se okrivljeni R.M. javio na pregled u hitnu službu zbog povreda zadobijenih od strane
+drugog lica i da se kliničkom pregledom kod okrivljenog konstatovane povrede u vidu krvnog podliva u
+predjelu lica, oguljotine kože u predjelu nosa, nagnječenje zida grudnog koša i krvnog podliva u predjelu
+lijevog skočnog zgloba, koje povrede su po svojoj prirodi lake tjelesne povrede, koje su mogle nastati
+višekratnim dejstvom tupine zamahnutog mehaničkog orudja kao što je stisnuta pesnica, noga na kojoj je
+obuća sa tvrdim djonom, drvena motka i slično, s timšto je povreda u predjelu lijevog skočnog zgloba mogla
+nastati i prilikom pada, odnosno takozvanog izvrtanja lijevog skočnog zgloba (djelimično iščašenje).
+Imenovani vještak je naveo i da je uvidom u otpusnu listu sa epikrizom JZU Opšta bolnica Nikšić -
+neurološkog odjeljenja navedeno da je okrivljeni R.M.na liječenju u navedenom odjeljenju proveo vrijeme od
+04.02.2013. godine, do 08.02.2013. godine, i da je u dijagnozi okrivljenog navedeno da je isti liječen od
+epilepsije uzrokovane hroničnim alkoholizmom i oštećenja jetre prouzrokovanog alkoholom.
+
+Na osnovu navedenog iskaza oštećenog K.Ž. koji je sud cijenio kao istinit jer je imenovani oštećeni kritični
+dogadjaj predstavio odredjeno i uvjerljivo, sud je na nesumnjiv način utvrdio da je kritičnog dana u mjestu
+Kapino Polje došlo do medjusobne svadje izmedju okrivljenog R.M.i oštećenog K.Ž., kojučinjenicu nije
+negirao ni okrivljeni R. u svojoj odbrani, za vrijeme trajanja koje svadje je R.M.u jednom momentu uzeo
+kosijer iz svog dijela barake, sa kojim je dok je trajala svadja krenuo ka oštećenom i sa istim zamahnuo da
+udari oštećenog K.Ž. u gorni dio tijela, koji udarac je oštećeni uspio da izbjegne, nakončega je došlo do
+čupanja i fizičkog obračuna izmedju okrivljenog i oštećenog R. u kojem je oštećeni K. okrivljenom R. nanio
+povrde po licu i glavi navedene u nalazu i mišljenju vještaka medicinske struke, na osnovu kojihčinjenica je
+sud na nesumnjiv način utvrdio da je okrivljeni R.M.dana 24.08.2012.godine u Nikšiću, u naselju Kapino Polje,
+pri svadji sa oštećenim K. Že.maš io se kosijera kao sredstav podobnog da tijelo teško povrijedi ili zdravlje
+teško naruši, na načinšto je istim zamahnuo u pravcu oštećenog K.Ž. kojim radnjama je okrivljeni poč inio
+krivično djelo ugrožavanje opasnim orudjem pri tuči ili svadji izčlana 154 KZ na način, u vrijeme i na mjestu
+kako je to predstavljeno u izreci presude.
+
+Prilikom donošenja odluke o krivici okrivljenog sud je, cijeneći odbranu okrivljenog istu odbacio kao
+neosnovanu i usmjerenu na izbjegavanje krivično pravne odgovornosti, jer je odbrana okrivljenog u
+potpunosti opovrgnuta iskazom svjedok K.Ž.kojem dokazu je sud iz većnavedenih razloga poklonio
+povjerenje i na istom zasnovao odluku o krivici okrivljenog u predmetnom postupku.
+
+Cijeneći subjektivni odnos okrivljenog prema izvršenom krivičnom djelu, sud je utvrdio da je okrivljeni
+prilikom izvršenja predmetnog krivičnog djela postupao sa direktnim umišljajem, jer iz utvrdjenog
+
+činjeničnog stanja proizilazi da je okrivljeni preduzimejući radnje bliže opisane u izreci presude bio svjestan
+da na taj način prilikom svadje sa okrivljenim radi upotrebe uzima kosijer kao sredstvo podobno da tijelo
+teško povrijedi ili zdravlje teško naruši, odakle nedvosmisleno proizilazi da je okrivljeni preduzimajući radnje
+bliže opisane u izreci presude bio svjestan da na taj načinčini predmetno krivično djelo i htio njegovo
+izvršenje. prilikom donošenja navedene odluke o stepenu vinoti okrivljenog sud je cijenio ičinjenicu
+utvrdjenu kazivanjem oštećenog K. i odbranom okrivljenog da je okrivljeni kritičnom prilikom bio u
+alkoholisanom stanju i našao da tačinjenica nije od uticaja na donošenje drugačije odluke o stepenu visnosti
+okrivljenog u predmetnom postupku.Naime, č injenica da je okrivljeni R.M.na glavnom pretresu iznio
+odbranu u kojoj je detaljno opisao svoje vidjenje kritičnog dogadjaja po ocjeni suda upućuje na zaključak da
+je okrivljeni R.kritičnom prilikom bio u stanju takozvanog običnog pijanstva, odnosno da alkohlisanost
+okrivljenog nije bila takvog stepena da je mogla uticati na njegovu sposobnost da upravlja svojim
+postupcima, jer po ocjeni suda okrivljeni da je bio u tolikoj mjeri pod desjstvom alkohola ne bi bio
+umogućnosti da kritični dogadjaj u svojoj odbrani rekonstruiše na način kako je to učinio u predmetnom
+postupku..
+Prilikom donošenja odluke o vrsti i visini kazne okrivljenom sud je u smislučlana 42 stav 1 KZ na strani
+okrivljenog kao olakšavajuće okolnosti našao loše imovne prilike ičinjenicu da je okrivljeni otac dvoje djece,
+dok je raniju osudjivanost okrivljenog utvrdjenu uvidom u izvod iz kaznene evidencije sud istom cijenio kao
+otež avajuću okolnost u sklopu ličnosti okrivljenog, jer je očigledno da krivične sankcije i kazne koja su
+okrivljenom izricane prilikom ranije osudjivanosti, nijesu u dovoljnoj mjeri uticale na okrivljenog da nečini
+nova krivična djela. Imajući u vidu navedene okolnosti, cijeneći pri tom u smislu odredbečlana 42 stav 2 KZ
+imovne prilike okrivljenog za koje je sud utvrdio da su loše, sud je okrivljenog na osnovučlana 39 KZ osudio
+na plaćanje novčane kazne u iznosu od 400,00 eura, koaja kazna predstavlja zakonom propisani minimum
+kazne zbog izvršenja predmetnog krivičnog djela, smatrajući da je ovakva kazna primjerena težini izvršenog
+krivičnog djela i okrivljenom kao učiniocu istog i daće se sa ovakvom kaznom na okrivljenog u dovoljnoj
+mjeri uticati da ubuduće ne vrši nova krivična djela, odnosno daće se na taj način u ovom konkretnom
+slučaju ostvariti svrha kažnjavanja izčlana 32 KZ, u okviru opšte svrhe izricanja krivičnih sankcija izčlana 4
+stav 2 KZ
+
+Imajući u vidu sve navedene okolnosti, cijeneći pri tom naročito loše imovne prilike okrivljenog zbog kojih
+mu je kao licu u stanju socijalne potrebe dodijeljena na korišćenje predmetna baraka u naselju Kapino Polje,
+sud je, pored togašto je odredio daće ukoliko okrivljeni novčanu kaznu na koju je osudjen ovom presudom
+ne plati u roku od tri mjeseca od dana pravosnažnosti presude istu zamijeniti kaznom zatvora, alternativno
+odredio daće se navedena novčana kazna ukoliko okrivljeni istu ne plati u ostavljenom roku zamijeniti
+kaznom rada u javnom interesu, ukoliko okrivljeni na to pristane, takoštoće se za svakih započetih 25,00
+eura novčane kazne okrivljenom odrediti po 8časova rada u javnom interesu.
+
+Odluku o troškovima sud je donio na osnovučlana 226 i 229 ZKP-a i istom okrivljenog obavezao da na ime
+troškova krivičnog postupka plati novčani iznos od 74,00 eura, odčega se iznos od 44,00 eura odnosi na ime
+nagrade vještaku medicinske struke za dati nalaz i mišljenje, dok se iznos od 30,00 eura odnosi na ime
+paušala kao dijela troškova krivičnog postupka, koji iznos je odredjen imajući u vidu složenost predmeta,
+trajanje postupka i imovne prilike okrivljenog.
+
+Na osnovučlana 75 KZ prema sud je okrivljenom izrekao mjeru bezbjednosti, sa kojom je odokrivljenog se
+kao predmet izvršenja krivičnog djela trajno oduzet kosijer koji službenici Uprave policije CG PJ Nikšićdana
+24.08.2013.godine privremeno oduzeli od okrivljenog.
+
+Na osnovu svega izloženog, primjenomčlana 374 ZKP-a odlučeno je kao u izreci presude.
+
+OSNOVNI SUD U NIKŠIĆU, dana 29.04.2013. godine
+Zapisničar S U D I J A
+Papović Budimirka s.r. Djuričković Igor s.r.
+
+Za tačnost otpravki tvrdi i ovjerava službenimk suda
+
+PRAVNA POUKA: Protiv ove presude dozvoljena ježalba uroku od 8 dana od dana prijema
+Iste preko ovog suda Višem sudu Podgorica</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

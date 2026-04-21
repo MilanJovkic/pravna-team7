@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке19">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке19/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке19"/>
+                    <FRBRdate date="2022-10-06" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке19/sr@2022-10-06/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке19/sr@2022-10-06"/>
+                    <FRBRdate date="2022-10-06"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке19/sr@2022-10-06/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке19/sr@2022-10-06/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="N.R."/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="V.R."/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="N.T."/>
+                <TLCPerson eId="judge_4" href="/akn/me/ontology/person/judge" showAs="T.M."/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="F.G."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="H.N."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="P.R."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="U.P."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="C.B."/>
+                <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="A.R."/>
+                <TLCPerson eId="victim_7" href="/akn/me/ontology/person/victim" showAs="J.J."/>
+                <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="R.N."/>
+                <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="P.G."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Osnovni sud"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 32/23</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>VIŠI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2022-10-06">2022-10-06</docDate>
+                </block>
+                <block name="judges">
+                    <judge>N.R.</judge>
+                    <judge>V.R.</judge>
+                    <judge>N.T.</judge>
+                    <judge>T.M.</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Optuženi P.R. osuđen za pokušaj ubistva.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Pokušaj ubistva</p>
+                    <p>Umišljaj</p>
+                    <p>Lakše tjelesne povrede</p>
+                    <p>Prethodne presude</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_35">Član 35</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_245">Član 245</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_36">Član 36</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_194">Član 194</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_374">Član 374</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_30">Član 30</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_53">Član 53</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_206">Član 206</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_356">Član 356</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da je optuženi s namerom pokušao da liši života oštećenog, što je kvalifikovano kao pokušaj ubistva.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Optuženi P.R. osuđen na kaznu zatvora od 3 godine.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="victims">
+                    <person>F.G.</person>
+                    <person>H.N.</person>
+                    <person>P.R.</person>
+                    <person>U.P.</person>
+                    <person>C.B.</person>
+                    <person>A.R.</person>
+                    <person>J.J.</person>
+                    <person>R.N.</person>
+                    <person>P.G.</person>
+                </block>
+                <block name="witnesses">
+                    <person>F.G.</person>
+                    <person>U.P.</person>
+                    <person>C.B.</person>
+                    <person>H.N.</person>
+                    <person>A.R.</person>
+                    <person>O.B.</person>
+                    <person>D.T.</person>
+                    <person>V.N.</person>
+                    <person>P.R.</person>
+                    <person>Ć.P.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Osnovni sud</organization>
+                    <organization>Više državno tužilaštvo</organization>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="death_result">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="family_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="narcotics_influence">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">12</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K. br. 32/23
+U IME CRNE GORE
+VIŠI SUD U PODGORICI, kao prvostepeni krivični, u vijeću sastavljenom od sudije V.R., kao predsjednika
+vijeća, sudija N.R. i N.T., kao članova vijeća, uz učešće T.M., kao zapisničara, u krivičnom predmetu protiv
+optuženog P.R., zbog krivičnog djela ubistvo u pokušaju izčlana 143 u vezičlana 20 Krivičnog zakonika Crne
+Gore, odlučujući po Optužnici Višeg državnog tužilaštva u P. Kt. br.314/21 od 25.03.2022. godine, nakon
+održanog glavnog i javnog pretresa, dana 02.10.2023. godine, u prisustvu zastupnika optužbe D.I. Đ.,
+državnog tužioca u VDT P., optuženog P.R. i branioca optuženog, advokata V.M. iz H.N., nakon tajnog
+vijećanja i glasanja, dana 06.10.2022. godine, donio je i istog dana javno objavio,
+
+P R E S U D U
+
+Optuženi P.R., od oca V. i majke Z., rođene G., rođen 20.02.1975. godine u M., sa prebivalištem u M., i
+boravištem u I., opština H.N., po zanimanju mašinski tehničar, završio srednjuškolu, nezaposlen, razveden,
+otac sedmoro djece, od kojih je petoro maloljetno, srednjeg imovnog stanja, osuđivan: presudom Osnovnog
+suda u P., K.br.90/13-78, koja je postala pravosnažna dana 19.02.2014. godine, zbog krivičnog djela
+razbojništvo izčl.206 st.1 u vezičl.30 Krivičnog zakonika R.S., na kaznu zatvora u trajanju od 1 godine,
+presudom Osnovnog suda u P., K.br.232/12-69, koja je postala pravosnažna dana 10.09.2012. godine zbog
+krivičnog djela nasilje u porodici izčl.194 st.1 u vezi sačl.30 Krivičnog zakonika R.S. na kaznu zatvora od 1
+godine i 2 mjeseca, presudom Okružnog suda u P.K.br.22/03 koja je postala pravosnažna dana 11.12.2003.
+godine, zbog krivičnog djela teška tjelesna povreda izčl.53 st.1 Krivičnog zakonika R.S., na kaznu zatvora u
+trajanju od 2 godine i 6 mjeseci, presudom Osnovnog suda u P.K.br.80/01 koja je postala pravosnažna dana
+24.06.2003. g, zbog krivičnog djela neovlašćena proizvodnja i stavljanje u promet opojnih droga izčl.245 st.1
+Krivičnog zakonika R.S., 6 mjeseci uslovno na 2 godine i presudom Osnovnog suda u B.P. K.br.121/96 koja je
+postala pravosnažna 19.06.1996. godine zbog krivičnog djela teška tjelesna povreda izčl.36 st.1 KZCG, na
+kaznu zatvora u trajanju od 45 dana, u pritvoru od 01.12.2021. godine u 22,40časova, ne vodi se postupak za
+drugo krivično djelo,u pritvoru od od 01.12.2021. godine u 22,40časova, pa nadalje
+
+KRIV JE
+
+Zatošto je:
+Viši Sud u Podgorici
+K 32/2023
+06. Oktobar 2023
+
+U noći između 30.11.2021. godine i 01.12.2021. godine, u H.N., u iznajmljenom stanu koji je koristio optuženi,
+na adresi Ulica o. N.K., umišljajno pokušao da lišiživota oštećenog F.G., a na načinšto je tokom verbalne
+rasprave oštećenog uboo dva puta nožem u predjelu grudi i vrata, odčega je oštećeni zadobio lake tjelesne
+povrede u vidu ubodno rezne rane u predjelu lijeve bočne strane grudnog koša i ubodno rezne rane u
+predjelu desne bočne strane vrata, pričemu je bio svjestan da ga na taj način, ubadanjem nožem u
+navedenim djelovima tijela, gdje se nalaze veliki krvni sudovi i vitalni organi, može lišitiživota, pa je to i htio,
+-čime je izvršio krivično djelo ubistvo u pokušaju izčlana 143 u vezičlana 20 Krivičnog zakonika Crne Gore
+Pa ga sud primjenom citiranih zakonskih odredbi, te odredbičl. 4, 5, 6, 7, 8, 13, 14,15, 32, 36, 42, 45, 46 i 51
+Krivičnog zakonika Crne Gore i odredbičl. 226,229, i 374 Zakonika o krivičnom postupku
+
+OSUĐUJE
+
+Na kaznu zatvora u trajanju od 3 (tri) godine, u koju kaznu mu se uračunava vrijeme provedeno u pritvoru
+poč ev od 01.12.2021. godine u 22,40časova, pa nadalje.
+OBAVEZUJE SE optuženi da na ime troškova krivičnog postupka, u korist budžeta Crne Gore plati iznos od
+192,50 eura i na ime sudskog paušala iznos od 150,00 eura, sve u roku od 15 dana po pravosnažnosti presude.
+
+O b r a z l ože nj e
+
+Više državno tužilaštvo u P. podiglo je Optužnicu Kt. br. 314/21 od 25.03.2022. godine protiv optuženog P.R.,
+zbog krivičnog djela ubistvo u pokušaju izčlana 143 u vezičlana 20 Krivičnog zakonika Crne Gore. Zastupnik
+optužbe je u završnoj riječi u bitnom navela da u cjelosti ostaje pri podignutoj optužnici, jer smatra da iz
+dokaza koji su prikupljeni tokom istrage i sprovedeni na glavnom pretresu nesporno proizilazi da je optuženi
+izvršio krivično djelo ubistvo u pokušaju u vrijeme, mjesto i na način kako je to opisano predmetnom
+optužnicom, bez obzirašto optuženi ne priznaje izvršenje krivičnog djela, koju odbranu cijeni kao sračunatu
+na izbjegavanje krivičnopravne odgovornosti. To iz razlogašto je, nasuprot odbrani optuženog, oštećeni u
+dva navrata predstavio događaje na koji način je zadobio povrede od optuženog, a njegov iskaz je u
+potpunosti u saglasnosti sa medicinskim vještačenjem i izjašnjenjem vještaka medicinske struke na glavnom
+pretresu. Dakle, oštećeni je tvrdio da je u kritičnom događaju od optuženog zadobio dvije povrede koje su
+vješ tačenjem okarakterisane kao ubodne rane i to jedna u predjelu grudi i to u predjelu lijeve bočne strane
+grudnog koša, gdje se nalaze veliki krvni sudovi i vitalni organi srce i pluća, a druga u predjelu vrata gdje se
+takođe nalaze veliki krvni sudovi, a koje povrede su nastale kao posledica dejstva vrha i oštrice aktivno
+zamahnutog mehaničkog oruđa, konkretno noža. Po mišljenju vještaka povrede se nalaze u neposrednoj
+blizini krvnih sudova i vitalnih organa, č ijom povredom je bio ugroženživot oštećenog zbogčega je
+predmetni događaj kvalifikovan kao ubistvo u pokušaju. Nadalje, na nožu za koji oštećeni tvrdi da je njime
+uboden je pronađen i to na dršci, biološki materijal optuženog a na oštrici biološki materijal oštećenog, a da
+se radi upravo o nožu kojim je oštećeni uboden govori i sadržina trasološkog vještačenja. Zbog svega
+navedenog, zastupnik optužbe cijeni da se u radnjama optuženog stiču svi bitni elementi krivičnog djela koje
+mu je stavljeno na teret, pa je predložila sudu da istog oglasi krivim i da ga, cijeneći olakšavajuće i
+otež avajuće okolnosti osudi na kaznu zatvora propisanu zakonom.
+
+Na glavnom pretresu od 02.10.2023 godine zastupnik optužbe je naveo da ostaje pri ranije datim završnim
+riječima i predlogu za kažnjavanje s timšto je dodao da je saslušanjem svjedoka u ponovljenom postupku a
+posebno svjedoka V. Nikole potvrđen stav tužilaštva da je optuženi izvršio krivično djelo stavljeno mu na teret
+predmetnom optužnicom.
+
+Optuženi P.R. je u svojoj odbrani u prethodnom postupku, na zapisniku o saslušanju pred ODT H.N. Kt.
+br.351/21 od 02.12.2021. godine, u bitnom naveo da je trenutno nastanjen u I., u U. o. N.K..br. 64/6 A. Razlog
+zašto je došao u I. je tajšto je trebao da počne da radi na građevini kod I., koji ima firmu "L. g.", F.G., zvanog
+K., upoznao je oko mjesec dana prije predmetnog događaja, jer se isti nastanio u istoj zgradi u kojoj je i on
+iznajmio stan. F.G. mu je tražio da mu pozajmljuje novac, pa mu je on u više navrata pozajmljivao od 10 do 50
+eura i on je obećavao daće mu vratiti taj novac. F. je pozajmio oko 250 do 270 eura, koji novac mu F. nije
+vratio. Zvao je F. telefonom, ali mu se on nije javljao, a onda su mu neki poznanici,kada su ga vidjeli sa F., rekli
+o kakvom licu se radi, da je isti sklon da podvaljuje drugim ljudima i da ima probleme sa zakonom, te da je
+više puta osuđivan. Poslednji put je F.G. vidio u subotu, 27.11.2021. godine ispred njegovog stana, dok je F.G.
+izlazio iz svog stana. Pitao ga je: "G., kad cešmi sjutra vratiti dug", jer su se dogovorili da mu F.G. dug vrati u
+nedelju, jer mu je F. obećavao daće mužena poslati novac iz B. Međutim, F.G. mu je rekao: " Š ta da ti vratim
+pare, odakle mi pare, kad nemam pare. Neću da ti vratim, niti imam." Govorio je F. kako mu pare trebaju da
+plati gazdarici stan i struju, našta mu je F.G. odgovorio: "Nemoj da se igraš, ne znašti ko sam ja, prijaviću te u
+policiju". Pitao je F. zašto da ga prijavi u policiju i to mu je bilo smiješno, našta mu je F. odgovorio: "Pitaj ti u
+gradu za mene, mene svi znaju, ovo je moj grad", a na kraju je rekao: "Ako ja budem htio i budem imao,
+mož da ti vratim", a zatim je odmahnuo rukom i otišao. Dakle, od subote 27.11.2021. godine, nije ni vidio ni
+čuo F.G., niti je tačno da je izvršio krivično djelo koje mu se stavlja na teret. Ništa mu u vezi sa povređivanjem
+F.G. nije poznato, osim togašto ječuo u policiji. Poznato mu je da je oštećeni u ranijem periodu prijavljivao
+poslodavca da je pao sa skele i da je povrijedio nogu, ašto nije bilo tačno, jer on u tom periodu nije radio, a to
+je činio kako bi dobio pare. Nije mu jasno kako je moguće da je neko ko je ranjen slučaj prijavio nakon 24časa
+od momenta kada se to navodno desilo, te zašto iz Doma zdravlja nisu odmah prijavili slučaj policiji, š to ga
+navodi na zaključak da je isti povrijeđen u noći između 30.11.2021. godine i 01.12.2021. godine i da hoće da
+mu podvali da je on to uradio. Oštećenog je stalno zvao telefonom jednom ili dvaput dnevno, ali mu se on
+nikada nije javljao. Poslao mu je poruku, u kojoj je naveo daće mu svakog petka i subote vraćati pare i daće
+mu vratiti sve pare, ali u ratama, ali mu nije odgovarao na tu poruku.
+
+Optuženi P.R. je u svojoj odbrani u prethodnom postupku, na zapisniku pred VDT P. Kt.br. 154/21 od
+29.12.2021. godine, u bitnom naveo da u cjelosti ostaje pri odbrani koju je dao na zapisniku pred ODT H.N. Kt.
+br.351/21 od 02.12.2021. godine, s timšto je dodao da nije tačno da je F.G. izbo nožem, jer ga nije ni gledao
+toga dana. F.G. mu je dugovao neke pare i trebao je da mu ih vrati u nedelju, jer se približavao prvi u mjesecu,
+kad je trebao da plati stanarinu i on se nije pojavljivao, a zadnji put kada su se vidjeli je bilo nekoliko dana
+prije nedjelje, kad mu je F.G. rekao da neće da mu vrati dug i da mu ne pada na pamet da mu to vrati i da mu
+ih ne bi vratio i da ima novca i da mu više ne traži dug, jer u suprotnomće mu napraviti problem, takoštoće
+ga prijaviti policiji. Rekao je F.G.: "Zašto bi me ti prijavljivao policiji, ti meni duguješnovac?", našto mu je F.G. odgovorio: "Ne sjekiraj se ti za to". F.G. je vidio sa flasterima u sudnici, kad je F.G. davao svoju izjavu kod
+tužioca ičuo je F. kad je rekao da je od njega pozajmljivao novac, ali i da duguje novac njegovoj familiji, ali on
+ne zna za to, jer mu F.G. nije rekao ni kome ni zašto duguje, a nije rekao ni tužiocu. Nije uboo nožem F.G., jer
+ga nije vidio. F.G. mu je samo poslao na taj dan kad je bio povrijeđen poruku daće mu vraćati novac
+nedjeljno po 50,00 € i da nije u mogućnosti da mu vraća u većem iznosu, a po njegovoj procjeni, on mu je
+
+dugovao oko 260,00 €, a on je naveo da mu je dug 1.700,00 €, pa se postavlja pitanje zašto bi F.G. umanjivao
+taj svoj dug tako drastično. Koliko mu je poznato, F.G. je liječeni narkoman, č uo je da se liječio u Specijalnoj
+bolnici u D. i da uzima ljekove iz Doma zdravlja gdje je i registrovan i gdje ide na liječenje, a to zna iz kazivanja
+F.G. Ima kuhinju u stanu, koji je u to vrijeme koristio i ima pašadu u kuhinji, noževe, kašike, viljuške. Među
+tom pašadom nije imao plavo-bijeli no ž, zna da je policija tražila taj nožkad je vršila pretres cijelog stana i da
+ga nijesu našli. U stanu je imao dvije jakne i prsluk, jednu jaknu je nosio prilikom saslušanja kod tužioca, a
+druga jakna mu je perjana i ta jakna mu je ostala u stanu, tamno sive je boje, prsluk je isto tamno sive boje,
+kao i jakna. F.G. poznaje od kako se F.G. doselio u njegov komšiluk, a F.G. je iznajmio stan odmah do
+njegovog, praktično su vrata do vrata. Nekad su stan F.G. i njegov stan bili jedan stan, a sad su razdvojeni
+zaključanim vratima, koja su po sredini stana. Nije im zajednički ulaz, F.G. ima svoja ulazna vrata za svoj stan,
+a on ima svoja vrata za svoj stan. F.G. zna mjesec-dva, od kako se doselio u taj stan. Telefon mu je oduzet od
+strane policije. Nije upućivao nikakve prijetnje F.G. zbog tog duga. Bio je prisutan cijelo vrijeme kod tužioca u
+H.N., kad je F.G. davao svoju izjavu ičak je postavljao pitanja.
+
+Optuženi P.R. je u svojoj odbrani na glavnom pretresu, u bitnom ponovio svoju odbranu iz prethodnog
+postupka, s timšto je dodao da smatra da su navodi iz iskaza svjedoka oštećenog potpuno kontradiktorni, te
+da smatra da je potrebno da se saslušaju i policajci koji su navodno svjedoku oštećenom toga dana uručili
+poziv, kao i da li su isti kod svjedoka oštecenog primijetili krv, a takođe da se saslušaju i policajci koji su
+narednog dana vršili pretres njegovog stana. Š to se tiče predmetnog noža, ponovio je da taj nožnema kod
+sebe, a taj nožkojim je on navodno uboo oštećenog je zapravo nožoštećenog, a razlog zašto je njegov DNK
+pronađen na tom nožu, jeste tajšto su se on i oštećeni kao komšije prethodno družili spremall su hranu, pa je
+moguće da je koristio taj noži to tako sto bi, na primjer, sjekao meso. Takođe je nelogičan iskaz svjedoka
+oštećenog u vezi toga da je on navodno zaključavao vrata, jer je oštećeni prethodno rekao da su vrata bila
+otključana. On oštećenog nije ni vidio tri dana prije predmetnog događaja. Svjedok oštećeni ga je sjutra dan
+oko 12 sati zvao na telefon da popiju kafu, pa se postavlja pitanje, ukoliko je stvarno uboo oštećenog, zašto bi
+ga oštećeni zvao. Nakonšto je optuženi upoznat sa time da u svojoj odbrani koju je dao pred ODT H.N. i VDT
+P. nije pominjao da je predmetni plavo-bijeli nožzapravo vlasništvo svjedoka oštećenog, te da je optuženi taj
+nož koristio i to na načinšto bi zajedno sa svjedokom oštećenim spremao hranu, optuženi P.R. je naveo da su
+ga u tužilaštvu samo pitali da li je taj nožnjegov, ali ga nijesu pitaličiji je taj no ž, pa zbog toga on to nije ni
+pominjao. kao što je i objasnio, on i svjedok oštećeni su bili komšije, a stan im je bio jedan do drugog i njihovi
+stan, gdje suživjeli su imali zajedničku terasu, a razdaljina između to dvoje vrata od njegovog stana i stana
+svjedoka oštećenog, koja vrata izlaze na zajedničku terasu, nije viša od 2 metra, a pojasnio je da je to prije bio
+jedan stan koji je u međuvremenu pregrađen. Misli da se gazdarica prostora gdje su on i oštećeni iznajmljivali
+stan zove J. ili I., a ne zna joj prezime. Svjedok oštećeni mu je dugovao novac u iznosu od ukupno jedno
+250,00-270,00 eura, a u tom periodu nije nigdje radio, a pomagao mu je brat iz Nj., kao i najstariji brat.
+Oštećenog je upoznao kada se doselio u taj stan, a to je bilo jedno mjesec dana prije predmetnog događaja.
+
+U svojim navodima odbrane na glavnom pretresu od 10.04.2023 godine,optuženi P.R. je naveo da ostaje kod
+svojih navoda odbrane na zapisniku kod ODT H.N.. Kt.br.351/21 od 02.12.2021 godine,zapisniku VDT P.
+Kt.br.154/21 od 29.12.2021 godine i sa glavnog pretresa od 06.06.2022 godine sa timšto je naveo da koliko se
+sjeća moguće da je predmetni nožkoristio možda jedno 2-3 dana prije predmetnog događaja.
+
+Branilac optuženog, advokat M.V. je u završnoj riječi u bitnom naveo da u toku dokaznog postupka optužba
+nije dokazala da je na strani optuženog postojao umišljaj, kao jedan od glavnih elemenata krivičnog djela
+
+koje mu je stavljeno na teret. Takođe, kroz dokazni postupak optužba nije dokazala da je optuženi bio na
+mjestu izvršenja krivičnog djela, š to samo govori da je u konkretnom slučaju optužnica podignuta
+neosnovano. Kroz cijeli tok postupka, kako pred ODT u H.N., tako i pred VDT P., imamo kontradiktorne izjave
+oštećenog, ačije izjave oko bitnih elemenata predmetnog krivičnog djela su u sumnji, a posebno imajući u
+vidu izjavu oštećenog da je isti imao psihičkih problema. kao i da je kokainski zavisnik, usljedčega se liječio
+pet godina. U izjavama pred nadležnim tužilaštvima, oštećeni je naveo da je obilno krvario, da mu je odjeća
+bila natopljena krvlju, a koju izjavu je vještak na saslušanju pred sudom opovrgnuo, gdje je naveo da po
+njegovom mišljenju, s obzirom na prirodu rana tolike količine krvi nije moglo biti. U prilog izjavi vještaka,
+postoji i zapisnik o pretresu kao javna isprava u kojoj je jasno navedenošta je u stanu optužemog na dan
+pretresa pronađeno. Imajući u vidu sadržaj zapisnika, nesporno je da je pronađen samo telefon, dok sredstvo
+izvršenja, kao ni bilo koji oblik krvnih mrlja nijesu pronađeni prilikom pretresa. Druga kontradiktornost u
+izjavi oštećenog ogleda se učinjenici da je pred dva tužilaštva dobijene rane objasnio na različite način. Pred
+VDT u P. jasno je naveo da ječak napao optuženog, fizički ga je savladao i da je pri tom kako je on naveo
+izvadio nožiz tijela. Takođe je ta izjava opovrgnuta mišljenjem vještaka, koji je jasno naveo da s obzirom na
+prirodu rana, sredstvo izvršenja, odnosno no ž, nije mogao ostati u tkivima ni kod jedne, ni kod druge rane.
+Izjave oštećenog takođe su kontradiktorne u dijelu gdje je pred ODT H.N. naveo da mu je optuženi navodno
+otvorio vrata i rekao zašto ne bježi, a našta je on optuženom odgovorio da ga je strah i da zbog straha nije
+pobjegao, dok je pred VDT P., ispravljajući svoj iskaz, naveo da je posebno obratio pažnju na vrata koja su bila
+zatvorena i zaključana, te da je sve vrijeme gledao u njih i da ježelio da pobjegne. Nadalje, š to se tiče
+sredstva izvršenja, posebno je naveo da je to sredstvo nađeno od strane oštećenog, te se postavlja logičko
+pitanje kako je moguće da sredstvo izvršenja ne pronađu ovlaščena službena lica koja su pritom iskusna u
+vršenju pretresa, budući da je pretres vršen više od sat vremena, a da je sredstvo izvršenja nađeno bašod
+strane oštećenog i to na stolici koja se nalazila na zajedničkoj terasi, a do koje pristup ima svako lice, posebno
+oštećeni. Postavlja se jošjedno pitanje, a koje nije razjašnjeno u predmetnom postupku, pod pretpostavkom
+da je došlo do izvršenja krivičnog djela, te da je sredstvo izvršenja sakriveno od strane optuženog, č ak iako je
+prošao detaljan pretres ovlaščenih službenih lica, zašto bi isti mijenjao mjesto sakrivenog noža. Istakao je
+činjenicu da je optuženi imao dovoljno vremena da isti no ž, budući da je H.N. grad na moru, baci u more.
+Optuženi je na bezbroj načina mogao da se oslobodi sredstva izvršenja, a on ga je bašostavio na stolici i to na
+zajedničkoj terasi. Napomenuo je da je odbrana tokom postupka predložila saslušanje ovlašćenih policijskih
+službenika koji su vršili pretres, a na okolnosti da je jedan od policajaca upravo sijedao na toj stolici tokom
+pretresa, ali je isti odbijen od strane suda. Č l.35 st.1 Ustava C.G. jasno je navedeno da se svako smatra
+nevinim, dok se njegova krivica ne utvrdi pravosnažnom odlukom suda, ašto u konkretnom slučaju
+podrazumijeva da sud u svakom postupku mora pristupiti utvrđivanju vinosti, odnosno da li je i kakav je
+psihički odnos počinioca prema krivčnom djelu. U toku predmetnog postupka optužba nije dokazala da na
+strani optuženog nije postojao nikakav oblik vinosti, niti je povezao na bilo koji način optuženog sa mjestom
+izvršenja krivičnog djela. Kodčinjenice da je to jedan od osnovnih uslova za ostvarenje bića konkretnog
+krivičnog djela, smatra da nema krivice na strani optuženog. Takođe, naveo je da su optuženi i oštećeni na
+zapisnicima saglasno izjavili da su se poznavali nepunih mjesec dana, da su bili komšije, koje je razdvajao
+gipsani zid, da su se družili, te da je optuženi u svojoj izjavi naveo da je nesporno da je koristio nožprilikom
+spremanja zajedničkog obroka. U tom dijelu, naveo je da je nesporno da je optuženi koristio sredstvo, ali je
+takođe naveo da to sredstvo nije njegovo, ašto govori ičinjenica da je bio u vlasništvu oštećenog, š to je
+potvrdio i zapisnik o pretresu. Imajući u vidu sve prednje navedeno, budući da postoji sumnja u odlučne
+činjenice, smatra da se ostvaruju uslovi da sud primijeni načelo in dubio pro reo, odnosno da u slučaju
+sumnje o ključnimčinjenicama, sud odluči u korist optuženog. U slučaju da sud odluči da izrekne sankciju
+optuženom, predložio je da uzme u obzir olakšavajuću okolnost da je optuženi porodičančovjek, njegovo
+držanje na pretresu, kao ičinjenicu da se oštećeni na salušanju pred ODT H.N. nije pridružio krivičnom
+gonjenju.
+
+Na glavnom pretresu od 02.10.2023 godine branilac optuženog je naveo da ostaje pri ranije datim završnim
+riječima s timšto je dodao da je u toku postupka utvrđeno da ne postoji subjektivni odnos učinioca prema
+krivičnom djelu,tačnije nema umišljaja. Postoji znatna protivrječnost između onogašto oštećeni navodi i
+dokaza u toku postupka. Vjerodostojnost iskaza svjedoka oštećenog nije dokazana. Ašto samo potvrđuju i
+izjave svjedoka posebno u dijelu kojem se navodi da nije bilo krvi kod oštećenog prilikom potpisa naloga iz
+Osnovnog suda u K., da oštećeni nije pokazivao nikakve naznake bola ni utrnulosti ruka a posebno kod
+činjenice da su sva tri svjedoka potvrdila da je oštećeni imao jednu verziju priče napada na sebe i uopšte nije
+pominjao optuženogšto samo pokazuje prednje navedene navode da njegov iskaz tokom cijelog postupka
+nije vjerodostojan. Takođe sredstvo izvršenja odnosno nožnije pribavljen shodno procesnim pravilima.
+Veštak za dnk vještačenje J.J. jasno je navela da je moguće da je nakon eventualnog pranja noža mogla
+ostati količina dnk materijala utvrđena u spisima predmeta. Takođe je navela da je krv mogla biti i iz prsta ili
+na neki drugi način. Dakle ne nužno ubodom a pogotovo ne na način kako je to navedeno optužnim aktom.
+Veštak N.R. se nije mogao sudsko medicinski izjasniti da li je nožbio u desno j ili lijevoj ruci i da se
+vješ tačenje međusobnog položaja vrši uz pretpostavku a budući da imamo oprečno nedovoljno jasne izjave
+oštećenog o nastanku povreda, položaja tijela jasno je da se odluka ne može zasnivati samo na
+pretpostavkama. I nakon pribavljanja svih raspoloživih dokaza i njihovog izvođenja ostala je sumnja u vezi
+povredjivanja, umišljaja, predmeta izvršenja krivičnog djela kao i način izvršenja krivičnog djela. Ne postoje
+neposredni dokazi da je optuženi počinio krivično djelo, međutim ne postoje ni posredni dokazi budući da
+nije na nesumnjiv način utvrđeno niti sučinjenicečvrsto i logički povezane tako da predstavljaju zatvoreni
+krug i da se sa punom sigurnošću upućuju na jedini mogući zaključak da je upravo optuženi izvršio krivično
+djelo i da se izvedenim dokazima isključuje svaka druga mogućnost.
+Optuženi P.R. je u završnoj riječi u bitnom naveo da u potpunosti prihvata završnu riječsvog branioca i
+ukazao je na to da su izjave oštećenog kontradiktorne, te da je tačno da je koristio i taj nožkoji je pronađen,
+odnosno koji je oštećeni dostavio policiji, ali taj nožje koristio prilikom spremanja hrane sa oštećenim.
+Takođe je ukazao na nelogičnosti u iskazima oštećenog, a u vezi nanošenja druge rane u predjelu desne
+boč ne strane vrata, kao i da je oštećeni kazao da ga je toga dana on stalno bockao nožem, a da te povrede
+nijesu evidentirane od strane vještaka.
+
+Sud je u dokaznom postupku: pročitao: zapisnik UP CB H.N. o pretresanju stana i drugih prostorija koje
+koristi P.R., 21-03-1 br. 215/21-7353/2 od 01.12.2021. godine, potvrdu Uprave policije CB H.N. stanica
+kriminalističke policije, 21/03-1 br. 215/21-7353/3 od 01.12.2021. godine, o privremeno oduzetim
+predmetima-mobilnog telefona od P.R., zapisnik UP CB H.N. o pretresanju računara, mobilnih telefona i
+drugih elektronskih uređaja koje koristi P.R., 18/3-1 br. 215/21-21-8907 od 29.12.2021. godine, izvršio uvid u:
+fotodokumentaciju UP CB H.N. br.419/21 od 01.12.2021. godine, fotodokumentaciju UP CB H.N. br.420/21 od
+01.12.2021. godine, fotodokumentaciju UP CB H.N.. broj 24-22 od 31.01.2022 godine izvještaj ljekara
+specijaliste Doma zdravlja H.N.-Centar za mentalno zdravlje DZ H.N., na ime F.G. br.3805 od 17.12.2021.
+godine, izvještaj ljekara specijaliste hirurškog odjeljenja bolnice M., na ime F.G. br.6487 od 15.12.2021.
+godine, uputnicu hirurškog odjeljenja bolnice M. br.978 od 01.12.2021. godine, izvještaj ljekara specijaliste
+bolnice M., na ime F.G. br.6257 od 01.12.2021. godine, uput JZU Dom zdravlja H.N., na ime F.G., rješenje JU
+Centar za socijalni rad za opštinu H.N. br. 1001-1213 od 04.06.2021. godine, na ime svjedoka oštećenog F.G.,
+pročitao službenu zabilješku UP CB H.N., 18/3-1 br.215/21-8097/2 od 31.01.2022. godine, pročitao izvještaj
+forenzičkog centra D. o DNK vještačenju br.249/22 od 01.03.2022. godine te saslušao vještaka za DNK
+vješ tačenja J.J. sa pratećom dokumentacijom, kao i izvještaj forenzičkog centra D. o trasološkom vještačenju
+br.250/22 od 04.03.2022. godine, sa pratećom fotodokumentacijom, pročitao izvod iz matičnog registra
+umrlih za svjedoka oštećenog F.G., izdat od opštine K., pod tekućim brojem 97 za 2022. godinu od
+10.06.2022. godine, shodnočl.356 st.1 ta č.1 Zakonika o krivičnom postupku pročitao iskaze svjedoka
+
+oštećenog F.G., koji su dati pred ODT H.N. Kt.br.351/21 od 02.12.2021. godine i VDT u P. Kti.br.154/21 od
+11.03.2022. godine, pročitao Nalaz i mišljenje vještaka sudske medicine dr R.N., rađen za potrebe ODT H.N.
+Kt.br.351/21 od 25.12.2021. godine i saslušao imenovanog vještaka pročitao izvod iz kaznenih evidencija na
+ime optuženog,saslušao svjedoke V.N., A.R. i D.T. i pročitao izvještaj o uzorkovanju tragova sa lica mjesta
+broj knjige uviđaja 419, patrolni list broj 4234/21 te izvršio uvid u fotografije sa cd-om koji je dostavljen od
+strane UP OB H.N.
+Svjedok oštećeni F.G. je u iskazu u prethodnom postupku, na zapisniku o saslušanju pred ODT H.N. Kt.
+br.351/21 od 02.12.2021. godine, u bitnom naveo da duguje izvjesnu sumu novca optuženom P.R. i od petka
+do ponedeljka P. ga je više puta pozivao na telefon, ali mu se nije javljao. Prethodno su imali neki dogovor da
+on P.u u nedjelju vrati novac. Dana 30.11.2021. godine oko 21,15časova pozvao je optuženog i rekao mu je da
+je vidio da ga je zvao, a optuženi mu je rekao da dođe kod njega. Otišao je u stan u kojemživi optuženi, a koji
+se nalazi u Ulici o. N.K., odmah do njegovog stana, jer ih faktički dijeli samo jedan zid. Kada je ušao u stan,
+optuženi nije htio da mu pruži ruku i samo mu je rekao: "Sjedi tamo". Sjeo je na trosjed ili dvosjed koji se
+nalazi pravo naspram vrata i optuženi ga je pitao u vezi tog duga i da li znašta je njihov dogovor. Rekao je
+optuženom da znašta je njihov dogovor, ali da nije u mogućnosti da vrati odjednom novac koji mu duguje i
+da je pokušavao da pozajmi novac, č ak i na kamatu, ali da nije uspio. Rekao mu je daće mu vraćati novac na
+jedini način na koji to može da učini i to po 50 eura sedmično. Od kada je ušao u stan optuženog P.R.,
+raspoloženje optuženog je bilo takvo da ga je bilo strah. Optuženi mu je govorio: "Ja ti nisam kao ovi N., tek
+ćeš da vidiško sam ja i kakav sam". Rekao je optuženom da zna kakav je ončovjek, našta mu je optuženi
+rekao da ne zna i osmjehnuo mu se, ali ne dobrodušnim osmjehom. Nastavili su razgovor i u jednom
+momentu, optuženi mu je rekao povišenim tonom: " Ć uti, ć uti dok ja pričam" i izvadio je nožispodćebeta na
+dvosjedu na razvlačenje. Radilo se o kuhinjskom nožu sa plavo-bijelom drškom, dužine sječiva od 25 do 35
+cm. Bio je u sjedećem položaju, a optuženi je noždržao u svojoj desnoj ruci i sa njim je mahao ispred njega i
+zastrašivao ga je. Optuženi mu je naslanjao nožispred oka i govorio mu je: "Okoću ti iskopati", a on mu je
+govorio da to nečini. U jednom momentu, nakon nekih pola sata od kako je ušao u njegov stan, optuženi je
+nazvao nekog na video poziv i sa njim je razgovarao i govorio mu je nešto u smislu: "Evo kako prolaze ovi", a u
+pozadini su sečula neka razna dobacivanja i misli da su ta dobacivanja bila na njegov račun, ali ne zna ko je
+osoba ili više osoba sa kojima je optuženi pričao. Optuženi mu je naredio da legne na trosjed i on je ležao, a u
+jednom momentu je krenuo da dohvati telefon optuženog, dok je optuženi razgovarao sa tom njemu
+nepoznatom osobom, kako bi vidio o kome se radi. Ležao je na desnom boku i krenuo je da dohvati ruku od
+optuženog u kojoj se nalazio telefon. Tada je optuženi trgao njegovu ruku i u tom momentu ga je uboo nožem
+u predjelu lijeve strane grudi. Osjetio je jak bol i tekla mu je krv, a optuženi mu je govorio da legne, našta je
+odgovorio da ne može, jer ima velike bolove. Ima hipoglikemiju i posle određenog perioda, osjećao je da se
+koči. Optuženi je za to vrijeme telefonirao i pokušavao je razgovorom da dopre do optuženom i da mu objasni
+da ništa od toga nije vrijedno toga i daće mu vratiti dug, a optuženi mu je rekao da ga je slagao. Pitao je
+optuženog može li da zapali cigaru i optuženi je u početku odbijao da mu to dozvoli, a zatim mu je rekao:
+"Ajde da zapališ, moždaće ti ovo biti poslednja". U jednom momentu, optuženi je otključao vrata i rekao mu
+je: "Š to ne bježiš?". Rekao je optuženom da mu ne pada na pamet da bježi, da hoće to da riješe ljudski i da mu
+neželi zlo i da neće otići ništašto se desilo. Optuženi je dva-tri puta izlazio na terasu. Na sebi je imao trenerku
+sa dž epovima po sredini stomaka i krenuo je da izvadi telefon kako bi se javio svojoj supruzi. U tom
+momentu, P.R. je vidio telefon u njegovim rukama i počeo je haos i P.R. mu je rekao: "Taman sam mislio da
+te pustim, a sad si ugasio". Govorio je P.u da je telefon izgašen i krenuo je da stavi telefon u džep od jakne.
+Tada je vidio da optuženi zamahuje istim kuhinjskim nožem prema njemu. Malo se izmakao i osjetio je ubod
+u predjelu desne strane vrata. Rekao je optuženom: "R., R., aorta, sveži, daj mi krpu da zaustavim krv" jer je
+mislio da mu je optuženi prekinuo aortu. Optuženi mu je govorio da ide u WC i gledao ga je izbezumljenim
+pogledom i on je ušao u WC. Kako je jako sa obje ruke stiskao ranu na vratu, počeo je polako da popušta i
+kada je vidio da mu nema velike količine krvi na rukama, shvatio je da mu nije prekinuta aorta i bilo mu je
+malo lakše. Nakon toga, on i optuženi su su jošnekih 10-ak minuta i onda mu je optuženi dozvolio da izađe iz
+
+njegovog stana a to se desilo između 02,00 i 03,00časa posle ponoći i otišao je u svoj stan. Popio je tablete za
+smirenje i dezinfikovao je rane i legao je da spava. Zna da se probudio oko 11 sati, jer ga je probudila
+utrnulost lijeve ruke, koju nije mogao uopšte da pomjeri, a kako mu bolovi nisu prolazili, krenuo je da ide u
+Dom zdravlja. Na putu do Doma zdravlja kod bivše diskoteke "B." naišao je na patrolu policije i isti su mu rekli
+da im treba i uručili su mu poziv da se javi u stanicu policije, ali nisu mu rekli u vezičega. Odatle je otišao u
+Dom zdravlja. Iz Doma zdravlja su ga uputili u Hitnu pomoć, a iz Hitne pomoći su ga sanitetskim vozilom
+prevezli u bolnicu M.. U bolnici su mu dali neke injekcije i u tome se pojavila patrola policije koja mu je
+prethodno uručila poziv. Policajci su ga pitali zašto im nije rekaošta se desilo i da su im doktori rekli da je
+izboden nožem, te da mora da ide sa njima u stanicu policije nakon završenog medicinskog pregleda i
+obrade. Kada je završio taj pregled, sa službenicima policije je došao u stanicu policije i naveo ješta se desilo.
+Razlog zašto nije pobjegao kada je optuženi otvorio vrata od stana i kada mu je rekao " Š to ne bježiš?", jeste
+zatošto je osjećao veliki strah. Osjećao je da optuženi namjerno to radi, ne bi li on pokušao da pobjegne. Iz
+razgovora sa optuženim u prethodnom periodu, saznao je da se radi o opasnomčovjeku koji je prošao ratište
+i koji je dobarčovjek, ali ako neko nešto pogrješi prema njemu, zna da bude jako surov. Tog momenta je
+osjetio iskonski strah od optuženog. Kuhinjski nožje imao oštricu i bio je zašiljen na vrhu. Prvi put kada ga je
+optuženi uboo, ležao je na desnom boku i pokušavao je da dohvati telefon, a onda je optuženi krenuo nožem
+prema njemu i uboo ga je u predjelu lijeve strane grudi. Misli da su se prije navedenog događaja vidjeli u
+petak veče ili u subotu oko 16,55časova. Tada je rekao P.R. daće učiniti sve od sebe da mu vrati novac, a P.R.
+mu je rekao: "Moj ti je savjet je da me poslušaši da mi vratišpare". Optuženi nije uzeo njegov telefon, a vidio
+je da je isti ugašen. Tada mu je optuženi rekao: "Mislio sam te pustiti, ali si ga tek sad ugasio". Krvi je bilo na
+njemu i na njegovoj garderobi, a ne zna da li je bilo krvi u sobi. Optuženi ga nije tukao, osimšto ga je dva puta
+naboo nožem, a prinosio mu je nožispod oka i govorio je daće oko da mu iskopa. Da se prilikom drugog
+napada optuženog nožem na njega, nije instiktivno odmakao, sigurno da ne bi bioživ. Tačno je da je podnio
+tužbu protiv poslodavca kod kojeg je izvodio radove, ali to nema nikakve veze sa predmetnim događajem.
+Ušao je u stan kod optuženog, jer se do tada nije bojao od njega i nije mislio daće optuženi tako postupiti
+prema njemu. Razlog zašto nije pozvao policiju je tajšto je imao kriminalnu prošlost i nije toželio da prijavi
+policiji, a taj događaj nije prijavio policiji ni nakon toga, većsu oni sami došli do saznanja nakon događaja. Da
+je htio da zove policiju, zvao bi je istog momenta. Odgovarajući na pitanje branioca kako može da objasni
+borbu za telefon, ako je većbio uboden u rame, oštećeni je naveo da nije uboden u rame, nego u grudni ko š,
+a borbu je objasnio kao nagon za preživljavanje i strah za sopstveniživot. Razlog zašto nije odmah otišao u
+Hitnu pomoćjeste strah, a do Doma zdravlja je došao pješke. Optuženom je dugovao 1.700 eura duže od pola
+godine. Konkretno, ne radi se o dugu prema optuženom, nego prema njegovoj familiji. Optuženog je upoznao
+21. oktobra 2021. godine, a do tada ga nije poznavao. Bio je u obezbjeđenju bratu optuženog P.G. i P.G. mu je
+rekao da je ostao dužan neke pare i to tih 1.700 eura, a ne zna kako je napravio taj dug. Optuženi P.R. mu je
+dva ili tri puta dao po 10 eura za hranu, ali više od toga mu nije pozajmio. Ne može da se sjeti da li mu je
+optuženi upućivao jošneke prijetnje. Kritične večeri je imao na sebi majicu kratkih rukava, gornji dio trenerke
+i jaknu na gornjem dijelu tijela i sve te stvari mu je oduzela policija.
+
+Svjedok oštećeni F.G. je u iskazu u prethodnom postupku, na zapisniku o saslušanju pred VDT u P.
+Kti.br.154/21 od 11.03.2022. godine, u bitnom naveo da se ne sjeća svih detalja predmetnog događaja, jer je
+prež iviošok tokom predmetnog događaja, a nakon tog događaja je konstantno ušoku, dao je iskaz pred
+tužiocem u H.N. i svešto je tada rekao je apsolutno tačno, a ne sjeća se svih detalja, odnosno brka mu se sve
+u glavi. Inače, od trenutka kada je lišen slobode dobijao je neke prijetnje usmjerene prema njemu i od ludi
+koji su mu nepoznati. Inače je lice sa invaliditetom, jer ima psihičkih problema i u prilogu iskaza dostavio je
+Rešenje Centra za socijalni rad za H.N. broj 1001-1213/2021/3 od 04.06.2021. godine. Inače, nema staratelja.
+Ima vanbračnu suprugu, ali onaživi u B.. Većpet godina mu je zabranjen ulazak u S. zbog krivičnog postupka
+koji se tamo vodio protiv njega, pa ta djevojka dolazi kod njega jednom mjesečno i ostaje 7-10 dana, a ta
+
+djevojka se zove A.K. Kada je ušao u UIKS, imao je strah i paranoju od P.R., iako mu on, niti bilo ko drugi u
+tom trenutku nije prijetio. Prvobitno je bio smješten u grupnu sobu, a na svoju inicijativu je izmješten u
+samicu, odnosno u dvokrevetnu sobu, tako da sam boravi u sobi sa osobom koja je normalna i od te osobe
+nema nikakav strah. U UIKS-u prima terapiju, jer od tih psihičkih tegoba na može da spava. Bio je kokainski
+zavisnik i liječi se većpet godina. Ne sjeća se tačno koji je bio dan kada se desio taj kritični događaj. P.R. je
+poznavao nepunih mjesec dana prije kritičnog događaja. Njih dvojica suživjeli kao podstanari u porodičnoj
+kući gdje ima osam stanova za izdavanje. Ž ivjeli su u stanu do stana, dijelio ih je jedan zid, a dijelili su i struju
+zajedno. U tom periodu njih dvojica su imali relativno normalnu komunikaciju. Primijetio je da se P.R. prema
+njemu maločudno ponaša, a na takvo ponašanje P.R. mu je skrenula pažnju njegova vanbračna supruga.
+Osuđivan je više puta, a i bio je zavisnik, pa pretpostavlja da je to uticalo na P.R. da sa nekim podozrenjem
+gleda na njega. Inače, P.R. je brat P.G., č ovjeka koji je izvršio ubistvo pokojnog A. u M., a on je prije tog
+događaja radio kao obezbjeđenje P.G. i to do sedam ili osam dana prije negošto je P.G. izvršio navedeno
+ubistvo. P.R. nije znao u tom periodu, iz razlogašto je P.R. bio u zatvoru. Tokom tog perioda od nepunih
+mjesec dana, osjetio je da P.G. upućuje kao neke prijetnje prema njemu, zatim da potražuje od njega neki
+nepostojaći dug i tražio je od njega da ga sluša. Više puta je P.G. zvao na telefon P.R. i to iz zatvora i P.R. bi
+mu dao P.G. da sečuju i tom prilikom mu je P.G. govorio:,,Sve ti je oprošteno, samoćešreći na sudu tošto ti
+kaže moj advokat". Nakon tih razgovora, P.R. bi mu govorio da treba pred sudom da kaže da je pokojni A.
+prijetio njegovom bratu P.G. i njegovoj djeci, a on je P.R. rekao da neće lažno da svjedoči. Ne sjeća se da li je
+zvao P.R. ili je P.R. zvao njega, uglavnom je došao do P.R. Prilikom ulaska u stan, primijetio je da je P.R.
+zaključao stan i izvadio je ključiz brave. U tom stanu je bio 4-5 sati. Molio je P.R. da ga pusti, govoreći mu:
+„Molim te R., dođi sebi, pusti me.“ P.R. je vitlao nožem ispred njega, zvao je svog brata G. i jošneke ljude na
+telefon i hvalio se kakoće da ga ubije. Sve vrijeme je gledao u zaključana vrata, jer ne može da pobjegne, a
+nije ni mogao da odvali vrata. U tih 4-5 sati, P.R. je u više navrata primicao nožprema njemu, bockao ga je,
+zamahivao je nožem ispod vrata, bockao ga je po glavi i tijelu, a nakon nekih dva sata ga je uboo u predjelu
+grudi i to s lijeve strane. U tom trenutku, kada ga je P.R. uboo, sjedio je na trosijedu koji se nalazi naspram
+ulaznih vrata, a P.R. se nalazio naspram njega u stojećem položaju. Kada je osjetio ubod, sa svoje obje ruke
+uhvatio je P.R., za ruku u kojoj mu se nalazio noži držao ga je snažno. Ima snage, jer se bavio borilačkim
+vješ tinama, međutim i P.R. je snažan. Međutim, kako je P.R. držao sa obje ruke, P.R. je ruka popustila. Inače,
+u tom trenutku, koliko se sjeća, na sebi je imao majicu, duksericu i jaknu i sva ta garderoba je predata policiji
+na vještačenje. Dakle, P.R. je snaga u rukama popustila i P. je izvadio nožiz njegovog tijela. Za sve to vrijeme
+je molio P.R. da prestane da mu to radi i cijelo to vrijeme ga je molio da prestane da ga maltretira. Zna da se i
+P.R. bavio borilačkim vještinama i zna da je isti, kao stariji, u tom dijelu iskusniji od njega, pa se nije smio
+upustiti u borbu sa P.R.m, a posebnošto je isti cijelo vrijeme držao no ž. Taj nožje imao plavo-bijelu dršku i
+oštricu preko 30 cm, ali ne zna tačno koliko, ali zna da se radi o ogromnom nožu. Policija nije pronašla taj nožsjutradan, većga je on pronašao sjutradan i to na terasi koja je zajednička, na stolici. Na toj stolici obično
+spavaju mačke, a na stolici je bilo i jednoćebe. Taj dan je dobio otkaz od gazdarice stana, pa je htio da očisti
+cijeli stan i dok ječistio terasu, podigao je toćebe da ga otrese, pa je tada na stolici vidio taj nožsa kojim ga je
+uboo P.R. i tada je doživiošok. Tada je zvao policiju i došao je inspektor i uzeo je taj no ž, a P.R. je tada bio
+uhapšen. Nakon tog uboda, P.R. je nastavio da se prema njemu ponaša kao zvijer. Upućivao mu je strahovite
+prijetnje i govorio mu je da ima svakakve drugove, da mu nema mjesta nigdje zaživot, ali da neće morati ni
+da ga traži i daće ga on likvidirati i to je trajalo jošsat i po ili dva nakon uboda. Sjeća se da je P.R. nekoliko
+puta odlazio do kuhinje, ali ne znašto je tamo radio, možda je pio ili se drogirao, jer je bio nenormalan. U
+jednom trenutku, molio je P.R. da ga pusti i govorio mu je:,,R. molim te, pusti me, obećavam ti daću
+svjedočiti za tvog brata, samo me pusti da idem" i u jednom trenutku, P.R. je prišao sa lijeve strane njegovog
+tijela i jako je zamahnuo nožem u predjelu njegovog vrata. U tom trenutku je isto sjedio na tom trosjedu. P.R.
+je držao nožu svojoj lijevoj ruci tada i zamahnuo ka desnoj strani njegovog vrata, a on je u tom trenutku
+napravio,,polugu", odnosno, uhvatio ga je za lijevu ruku i cijelim tijelom ga je pomjerio ka svojoj desnoj
+strani, oborio ga je na pod, a u tom trenutku je i on pao tijelom na pod. Držao je P.R. za ruku i rekao mu je:,,Jaću da te pustim, samo mi daj peškir, jer si mi povrijedio aortu na vratu". Tada se digao, a digao se i P.R.,
+dodao mu je peškir i rekao mu je: „Mršnapolje!“ Zatim je P.R. otključao vrata od stana i rekao mu je: "Nemoj
+ovo slučajno da si prijavio." To je taj kodeks da nema prijavljivanja i da rješavaju probleme sami između sebe.
+Da P.R. nije prijetio njegovojženi, bio je spreman da povuče kompletnu izjavu, č ak i na svojuštetu, a s
+obzirom da je P.R. prijetio njegovojženi, a zna da je i ubio većjednuženu, odlučio je da pred ovlašćenim
+tužiocem ispriča tošto se zaista desilo. Nakonšto je izašao iz stana P.R., ušao je u svoj stan. U svom stanu je
+otvorio komodicu sa ljekovima i zavojima, ušao je u kupatilo, skinuo je garderobu sa sebe, pogledao je rane u
+ogledalu, očistio je rane i tu je bilo puno krvi i njegova jakna je bila sva natopljena krvlju. Nakon toga, popio
+je tri tablete "Ksalola" i zaspao je. Tada je bilo većizmeđu dva i tri sata ujutro. Sjutradan se probudio oko
+11:00časova, probudili su ga grčevi i bolovi, a vidio je da mu je cijeli krevet krvav, uhvatila ga je panika i strah,
+zvao je taksi i otišao je taksijem u Hitnu pomoć, a Hitna pomoćga je povezla u bolnicu u M. i tada je došla
+policija. Inače, kada je bio u bolnici, javio je svojojženišto mu se desilo, jer je bila u B. tada. Inače, njegova
+žena ne može da dođe u Crnu Goru da ga posjeti od straha, jer su joj uputili prijetnje nakon tog događaja, ali
+ne zna ko joj je prijetio. Inače, njegovažena je došla nakonšto je zadobio povrede od P.R. i to par dana nakon
+tog događaja, autom marke "Audi" i to iz S. u Crnu Goru i zajedno su oko 24.12.2021. godine ili 25.12.2021.
+godine otišli u Albaniju, na doček Nove godine, odnosno, cilj im je bio da se on oporavi. Njegova supruga ga je
+vratila autom do P., a ona je nastavila put za S. Sledeći dolazak njegove supruge je bio na dan kada je
+uhapšen, a sjeća se da je to bio 17. ili 18.01.2022. godine. Zna da ga je njegova supruga posjetila jošdok je bio
+u policijskoj stanici i sve je bilo normalno. Očekivao je daće njegova supruga da ga posjeti u zatvoru i kad je
+dobio pravo na telefonski poziv, njegova supruga A. mu je saopštila da ona ne smije da dođe u C.G., jer je
+policija obavijestila da joj je bebjednost ugrožena zbog njegovog problema sa P.ima. Kritične prilike na sebi je
+imao plavu jaknu, marke „Nike“, u gornjem dijelu je imao trenerku marke "Rasel atletic" i to je garderoba koju
+je predao policiji, jer su na toj garderobi bila oštećenja od noža. Nije imao nikakvih novčanih dugovanja
+prema P.R., niti prema njegovom bratu P.G. Ne sjeća se da li mu je P.R., nakonšto je izašao iz njegovog stana,
+rekao da ga probudi tog dana oko podne. Ne sjeća se tačnog momenta kada mu je gazdarica dala otkaz, da li
+sjutradan po događaju ili nakon događaja, ali zna da ga je gazdarica nazvala i rekla da zna svešto se desilo u
+stanu, da mu daje otkaz i daće mu vratiti depozit, jer ne može da vjeruje koga je držala u stanu, a to se
+odnosilo i na P.R. i na njega. Njegova supruga i on su bili u Albaniji do 31.12.2021. godine, jer je C.G. uvodila
+nove kovid mjere, a on i njegova supruga nijesuželjeli da troše novac nepotrebno. Nije se pridružio krivičnom
+gonjenju protiv optuženog P.R. i nije postavio imovinskopravni zahtjev, a takav njegov stav je zbog togašto je
+upoznao cijelu porodicu P.R. išto je tog dana kod P.R. vidio smrt u očima, jer P.R. nije bio normalančovjek i
+ne znašto se s njim desilo tog dana. Tražio je apsolutnu zabranu prilaska i kontakta od strane P.R. i njegove
+porodice njemu i njegovoj supruzi.
+
+Iz izvoda iz matičnog registra umrlih za svjedoka oštećenog F.G., koji je izdat od opštine K., pod tekućim
+brojem 97 za 2022. godinu od 10.06.2022. godine, proizilazi da je svjedok oštećeni F.G. preminuo dana
+06.04.2022. godine u 20,00časova.
+
+Svjedok A.R. je u svom iskazu u bitnom istakao da je 01.12.2021. godine bio zaposlen kao pollicajac u UP OB
+H.N. i kao što piše u svakom patrolnom listu on je taj dan sa kolekom D.T. obavljao redovne aktivnosti i sjeća
+se da su tada na ulici zatekli F.G., koga su inače tog dana tražili da mu uruče neki poziv za sud u K. a
+prethodno ga nisu mogli naći i sjeća se da su mu uručili taj poziv a on im tada nije ništa rekao u vezi nekog
+povređivanja niti da je od bilo koga napadnut većda je krenuo da ide u bolnicu u dom zdravlja a kako je tada
+bilo doba korone oni su vjerovatno pretpostavili nešto u vezi toga. Toga istog dana neđe oko 12,30 su ih zvali
+iz bolnice u Meljinama jer je hitna pomoćdovezla jedno lice sa povredama u M. i zna da je tada F. njima rekao
+
+kad su ga pitališta se desilo u vezi tih povreda, da je navodnočuo neku galamu ispred stana dježivi, da je
+izašao i da su ga dva maskirana lica napala. To je svešto ja znam u vezi toga jer kasnije oni više nisu imali
+posla sa tim. Inače, to je bilo nedje zimsko doba, zna da je F. imao zimsku jaknu, a kod njega nije primijetio
+bilo kakve povrede niti krv na jakni, jer da jeste, naravno da bi odmah reagovao i postupio po pravilima
+službe. Nije se mogao sjetiti na koji način je F. njima potpisao ovaj sudski poziv koji su mu uručili.
+Svjedok D.T. je u svom iskazu u bitnom istakao da je zaposlen u UP OB H.N. i nakonšto je upoznat sa
+sadržinom patrolnog lista naveo je da se sjeća da su dana 01.12.2021. godine, kontrolisali lice F.G. koga
+poznaje po nadimku Kvisko a koji je poznat kao bezbjedonosno interesantno lice i taj dan koliko se sjeća
+trebali su da mu uruče neki poziv od suda, ne znašta tačno, i sjeća se da im je Kvisko tada rekao da mora
+hitno da ide u bolnicu odnosno Hitnu pomoćjer ima nekih problema, ali im sigurno nije rekao da je bio
+povrijeđen od strane nekoga niti je na njemu vidio bilo kakve povrede niti krv na jakni jer da jeste drugačije bi
+postupali. Sjeća sešto je bilo karakteristično da je toga dana njih zvalo neko lice iz bolnice M. preko dežurne
+službe da se u bolnici M. nalazi lice koje je dovedeno od strane Hitne pomoći a koje je imalo određene
+povrede. Otišli su u bolnicu M., znači on i kolega A. i tamo su zatekli F.G. koji je bio u prostoriji gdje se pruža
+pomoći na njihovo pitanješta je to bilo u vezi povreda, isti im je rekao da su ga napala neka dva nn
+maskirana lica ispred zgrade dježivi, ali im on tada nije pominjao ime optuženog P.R. Zna da su mu mi tada
+rekli da kad završi hospitalizaciju u bolnici da se javi nadležnim policajcima u CB H.N. da da izjavu u vezi
+ovog događaja. Pošto je to bio posao za kriminalistiku više nisu imali posla sa F. Nije se mogao sjetiti da li je
+učestvovao prilikom pretresanja stana optuženog a dešavalo se da kao pripadnik interventne jedinice
+učestvuje u pretresima kada to od njih traži kriminalistika.
+Svjedok V.N. je u svom iskazu u bitnom istakao da je zaposlen u kriminalistici UP OB H.N. išto se tiče ovog
+događaja od 30.11.2021. godine onošto zna jeste da je njemu poznato lice F.G. koji se operativno vodi kao
+bezbjedonosno interesantno lice i onošto mu je poznato od kolega a dje on nije ucestvovao jeste da je od
+strane bolnice prijavljeno da je F.G. tamo primljen sa nekim povredama i da je on tada policajcima ispričao
+neku priču u vezi nekih maskiranih lica a kada je došao u Stanicu kriminalističke policije onda je takođe i
+njima počeo neku sličnu priču o nekim koji su ga napali pa pošto je njima kao policajcima sve to izgledalo
+sumnjivo i kontradiktorno on je onda ispričao ovu priču u vezi toga da ga je povrijedio P.R. a kad su ga mi
+pitali zasto odmah to nije pomenuo rekao je da je bio u stalnom strahu od P., da mu poznaje i brata, da je sa
+tim njegovim bratom imao neke neraščišćene odnose te da iz tog straha nije odmah prijavio P. kao lice koje
+ga je povrijedilo. Onošto jošzna jeste da ga je poslije jedno 2-3 dana F. nazvao telefonom i rekao da je na
+zajedničkoj terasi njegovog stana dje ježivio i stana dje ježivio P. našao ispod stolice nožkojim je P. njega
+uboo te noći. Postupio je po tom pozivu, poveo sa sobom krim.tehničara koji je fotografisao to lice mjesta dje
+je pronađen noži tada je F. njima rekao da on nije dirao taj noža nožsu izuzeli i dalje poslali na vještačenje.
+Onošto takođe zna jeste da prilikom pretresa stana nije pronađen noža pretres je vršen isti dan kada se
+saznalo za događaj. Nije se mogao sjetiti da li je sačinjavana posebna službena zabilješka u vezi pronalaska
+nož a ili da li je vršen zapisnik o uviđaju odnosno da li je vršen uviđaj a moguće je da je to samo konstatovano
+u ovom izvještaju o uzorkovanju tragova sa lica mjesta.
+Iz zapisnika UP CB H.N. o pretresanju stana i drugih prostorija koje koristi P.R., 21-03-1 br. 215/21-7353/2 od
+01.12.2021. godine, proizilazi da su dana 01.12.2021. godine, u 18,55časova, u H.N., u mjestu I., ovlašćeni
+policijski službenici izvršili radnju pretresanja stana, č iji je držalac P.R., koji stan se sastoji od: dnevnog
+boravka, kuhinje, kupatila, trpezarije i spavaće sobe. Pretresanje navedenog stana naredio je sudija za istragu
+Osnovnog suda u H.N., naredbom Kri. br. 86/21, dana 01.12.2021. godine, koja naredba je u smislučlana 80
+stav 1 Zakonika o krivičnom postupku predata P.R.. Pretresanju je prisustvovao P.R., kao i svjedoci M.J. i V.V.
+Prilikom pretresanja, nađeni su predmeti koji su na osnovučlana 81 stav 1 Zakonika o krivičnom postupku
+privremeno oduzeti i to mobilni telefon marke "Iphone", bijele boje, sa SIM karticom mobilnog operatera
+"Telenor", serijskog broja 898201119 0904849538, koji je pronađen na stolu u dnevnom boravku. Pretresanje
+
+je završeno dana 01.12.2021. godine, u 20,00časova, a zapisnik je pored prisutnih građana i policijskih
+službenika potpisao i držalac stana P.R.
+
+Iz potvrde Uprava policije CB H.N. stanica kriminalističke policije, 21/03-1 br. 215/21-7353/3 od 01.12.2021.
+godine, o privremeno oduzetim predmetima-mobilnog telefona od P.R., proizilazi da je policijski službenik
+Uprave policije CB H.N., navedenog dana od lica P.R., na osnovučlana 85 stav 9 Zakonika o krivičnom
+postupku, privremeno oduzeo mobilni telefon marke "Iphone", bijele boje, sa SIM karticom mobilnog
+operatera "Telenor", serijskog broja 898201119 0904849538.
+
+Iz zapisnika UP CB H.N. o pretresanju računara, mobilnih telefona i drugih elektronskih uređaja koje koristi P.R., 18/3-1 br. 215/21-21-8907 od 29.12.2021. godine, proizilazi da su dana 29.12.2021. godine, u 11,00časova,
+u SBPK, u P., ovlašćeni policijski službenici izvršili radnju pretresanja računara, mobilnih telefona i drugih
+elektronskih uređaja koje koristi P.R. Pretresanje navedenih predmeta naredio je sudija za istragu Osnovnog
+suda u H.N., naredbom Kri. br. 96/21, dana 17.12.2021. godine, koja naredba je u smislučlana 80 stav 1
+Zakonika o krivičnom postupku predata V.B., zastupniku P.R. Pretresanju je prisustvovao V.B., zastupnik P.R., kao i svjedoci G.I. i G.D. Prilikom pretresanja, nađeni su predmeti koji su na osnovučlana 81 stav 1
+Zakonika o krivičnom postupku privremeno oduzeti, odnosno izvršen je pretres ICCID broja
+8938201119090489538, pomoću forenzičkog alata XRY, metodom "Logical" (full read) i izuzeti podaci sa SIM
+karice su narezani na CD i predstavljaju sastavni dio predmetnog zapisnika. Pretres mobilnog telefona marke
+"Iphone" IMEI broja 353798084817115, nije bilo moguće izvršiti, zbog nemogućnosti povezivanja predmetnog
+mobilnog telefona sa računarom. Pretresanje je završeno dana 29.12.2021. godine, u 12,10časova, a zapisnik
+je pored prisutnih građana i policijskih službenika potpisao i V.B., zastupnik P.R.
+
+Iz službene zabilješke UP CB H.N., 18/3-1 br.215/21-8097/2 od 31.01.2022. godine, proizilazi da je ista
+sačinjena dana 31.01.2022. godine u službenim prostorijama CB H.N., od strane policijskog službenika, a
+povodom sledećeg: dana 29.12.2021. godine, na osnovu Naredbe Kri. 96/21 koja je izdata dana
+17.12.2021.godine od strane sudije za istragu Osnovnog suda u H.N. od strane policijskih službenika SBPK u
+P. izvršen je pretres SIM kartice koja se nalazila u mobilnom telefonu marke "Iphone", vlasništvo P.R., a u vezi
+krivičnog djela ubistvo u pokušaju izčl. 143. u vezičl. 20. Krivičnog zakonika C.G., koje je izvršeno dana
+01.12.2021. godine u H.N., naštetu F.G., očemu je sačinjen Zapisnik. Tom prilikom, zbog nemogućnosti
+spajanja predmetnog mobilnog telefona sa računarom, nije izvršen pretres mobilnog telefona, š to je takođe
+konstatovano u Zapisniku o pretresanju računara, mobilnih telefona i drugih elektronskih uređaja. S tim u
+vezi, u službenim prostorijama Centra bezbjednosti H.N., od strane kriminalističkog tehničara, fotografisan je
+mobilni telefon marke „Iphone“ kao i SMS poruke u njemu, očemu je sačinjen fotoelaborat.
+
+Iz fotodokumentacije UP CB H.N. br.419/21 od 01.12.2021. godine, proizilazi da je ista sačinjena povodom
+fotografisanja povreda i garderobe F.G. i sadrži 8 fotografija na kojima je prikazan izgled jakne i oštećena na
+jakni F.G., zatim izgled majice oštećenog F.G., oštećenja na majici i izgled mrlje crvene boje nalik na krv, koja
+se nalazi na majici i izgled gornjeg dijela tijela oštećenog F.G.
+
+Iz fotodokumentacije UP CB H.N. br.420/21 od 01.12.2021. godine, proizilazi da je ista sačinjena povodom
+pretresa stana P.R., koji se nalazi u I., u u. o. N.K.. i sadrži 11 fotografija, od kojih je na 1 fotografiji prikazan
+izgled zajedničkih prostorija u navedenoj stambenoj zgradi, pričemu strelica označava ulazna vrata stana u
+kojem boravi P.R., zatim je na 1 fotografiji prikazan izgled ulaznih vrata stana i na 9 fotografija prikazan je
+izgled unutrašnjosti stana, kao i izgled mobilnog telefona optuženog P.R. i izgled SIM kartice.
+
+Iz sadržine izvještaja o uzorkovanju tragova sa lica mjesta broj knjige uviđaja 419/21 od 04.12.2021 godine
+utvrđeno je da su dana 01.12.2021 godine u prostorijama Uprave policije OB H.N. od F.G. izuzeti odjevni
+predmeti i to jakna plave boje nepoznate marke sa oštećenjem po lijevoj starni,siva dukserica sa kapuljačom
+sa natpisom RUSSEL ATHLETIC sa oštećenjem po lijevoj strani,majica kratkih rukava plave boje sa natpisom
+CONVERSE sa oštećenjem po lijevoj strani a da je dana 04.12.2021 godine F.G. prijavio da je pronašao nožsa
+plavo bijelom drškom sa kojim ga je kako je navedeno najvjerovatnije povrijedio P.R. kao i da je predmetni
+izvještaj sačinio krim. tehničar R.M.
+
+Iz sadržine patrolnog lista Uprave policije CB H.N. broj 4234/21 od 01.12.2021 godine utvrđeno je da su isti
+sačinili ovlašćeni policijski službenici A.R. i D.T. i da je između ostalog konstatovano da su dana 01.12.2021
+godine legitimisali bezbjedno interesantno lice F.G. kome su uručili poziv K.br.274/21 Osnovnog suda u K..
+
+Iz sadržine fotoelaborata broj 1421/21 od 04.12.2021 godine koji je dostavljen od strane Uprave policije Ob H.N. ovom sudu dana 20.04.2023 godine a na CD-u utvrđeno je da se isti odnosi na prijavu F.G. u vezi
+pronalaska noža u I. da je na prvoj fotografiji prikazan hodnik i ulazna vrata stana u kojem boravi F.G., na
+drugoj fotografiji unutrašnjost stana F.G. pokazuje nožna stolici,zatim na trećoj fotografiji izgled noža na
+stolici i načetvrtoj fotografiji izgled noža fotografisan sa razmjernikom.
+
+Iz sadržine fotodokumentacije broj 24-22 od 31.01.2022 godine utvrđeno je da se ista odnosi na fotografisanje
+poruke iz mobilnog telefona vlasništvo P.R. iz H.N. i da se radi o poruci sadržine „ I ovaj komšija duguje
+hiljadu i sedamsto evra sinoćsam ga pito kaže nemoze do sedmog ništa i to kao da mi daje na rate“ upućena
+na broj telefona koji je memorisan kao G. ali da ista poruka nije isporučena a radi se o tekstualnoj poruci od
+29.oktobra od 11:11.
+
+Iz izvještaja Forenzičkog centra D. o DNK vještačenju br.249/22 od 01.03.2022. godine, sa pratećom
+dokumentacijom, proizilazi da je predmet vještačenja bilo sledeće: nožsa plavo-bijelom drškom, koji je
+zatečen u braon papirnoj vrećici sa printom za pakovanje dokaznog materijala i oznakama (slika 1), prčemu
+je konstatovano da je ukupna dužina noža oko 28 cm, odčega je sječivo oko 15.5 cm (slika 2 i 3). Sitnija mrlja
+na sječivu je testirana sa "Hemastix" testom i dobijena je pozitivna reakcija, a zatim sa "Bluestar Obti" testom
+i dobijena je pozitivna reakcija. Za potrebe DNK analiza izuzeti su sledeći uzorci: bris sa ručke noža (slika 5),
+od kojeg je kompletnim utroškom sačinjen uzorak označen laboratorijskim brojem 249_22_4/1 i bris sa
+vidljive mrlje na vrhu sječiva noža (slika 3), od kojeg je kompletnim utroškom sačinjen uzorak označen
+laboratorijskim brojem 249_22_4/2. Takođe, predmet DNK vještačenja su bili nesporni uzorak P.R., koji
+uzorak je dostavljen na FTA kartici, a utroškom djelića je sačinjen uzorak označen laboratorijskim brojem
+249_22_1R i DNK profil F.G., koji je dobijen iz baze DNK registra. DNK analizom uzorka laboratorijskog broja
+
+249_22_4_1 dobijen je miješani DNK profil od minimum dvije osobe. Na osnovu visine pikova na genskim
+lokusima moguće je izdvojiti glavnu komponentu muške osobe koja se podudara sa referentnim DNK
+profilom P.R. Sporedna komponenta je pod stohastičkim fenomenima i nedovoljna za interpretaciju. DNK
+analizom uzorka laboratorijskog broja 249_22_4_2 dobijen je kompletan DNK profil muške osobe, koji se u
+potpunosti podudara sa referentnim DNK profilom F.G. DNK analizom uzorka laboratorijskog broja
+249_22_1R dobijen je referentni DNK profil P.R. Bio-statističkim proračunom je ocijenjena vjerovatnoća
+dobijenog rezultata na uzorcima laboratorijskih brojeva 249_22_4_2, uzimajući u obzir sledeće hipoteze:
+HI: DNK profil potiče od F.G.;
+H2: DNK profil potiče od nepoznate nesrodne osobe.
+Pri tome je utvrđeni DNK profilšest i po biliona puta (LR-6.5 x1012) vjerovatnije dobiti ukoliko potiče od F.G.,
+nego ako potiče od nepoznate nesrodne osobe. Bio-statističkim proračunom je ocijenjena vjerovatnoća
+dobijenog rezultata na uzorcima laboratorijskih brojeva 249_22_4_1, uzimajući u obzir sledeće hipoteze:
+HI: DNK profil glavne komponente potiče od P.R.;
+H2: DNK profil glavne komponente potiče od nepoznate nesrodne osobe.
+Pri tome je utvrdeni DNK profil pet triliona Išesto hiljada puta (LR= 5.6x1018) vjerovatnije dobiti ukoliko
+potiče od P.R., nego ako potiče od nepoznate nesrodne osobe. U konačnom, na osnovu izvršenih seroloških,
+DNK analiza i bio-statističkog proračuna, zaključeno je da je na uzorku izuzetom sa ručke noža sa plavobijelom drškom, utvrđeno prisustvo biološkog materijala od minimum dvije osobe, te da dobijeni rezultat
+DNK analize ekstremno jako podržava hipotezu da je glavni donor biološkog materijala P.R., dok je sporedna
+komponenta nedovoljna za interpretaciju. Na uzorku izuzetom sa mrlje na sječivu noža (nožsa plavo-bijelom
+drškom), utvrđeno je prisustvo krvi, a dobijeni rezultat DNK analize ekstremno jako podržava hipotezu da je
+F.G. donor krvi. Uz navedeni izvještaj dostavljena je fotodokumentacija, na kojoj je prikazan izgled noža sa
+plavo-bijelom drškom.
+
+U svom izjašnjenju na glavnom pretresu od 10.04.2023 godine vještak za DNK vještačenja J.J. je u bitnom
+istakla da što se tiče količine boiološkog materijala na sječivu noža, tu je dobijen DNK profil sa mrlje krvi. U
+krvi je bilo sasvim dovoljno materijala za dobijanje DNK profila. Tačna koncentracija sa sječiva noža je 0,0525
+nanograma po mikrolitru. Radi se o tragovima krvi a koji tragovi nikad nisu sporni za dobijanje DNK profila.
+Što se tiče uzorka izuzetog sa drške noža njegova koncentracija je veća i iznosi 0,285 nanograma po
+mikrolitru. U ovom slučaju nije bilo vidljivo da postoje tragovi krvi na dršci koji znači nisu bili vidljivi golim
+okom. Moglo bi se pretpostaviti da se radi o kontaktnom tragu, međutim ne može se eliminisati nikada da je i
+na ručki noža postojala određena manja količina tjelesne tečnosti.kao što se vidi u poređenju koncentracije,
+veća je koncentracija koja je dobijena sa drške, pa se može reći da na osnovu vrijednosti koncentracija obično
+je veća koncentracija kod prisustva tjelesnih tečnosti. Kod pranja noževa očekuje se da se spere količina
+biološkog materijala koja je postojala na predmetnom nožu. A da se nožprao nakon izvršenja djela, sigurno
+se ne bi očekivalo i utvrdila ovolika količina prisustva biološkog materijala optuženog. Ako se uzme u obzir
+izjava optuženog da je nožkoristio dva-tri dana prije ovog događaja, njegova količina biološkog materijala bi
+mogla ostati na dršci noža jedino u slučaju da niko nije dolazio u kontakt sa predmetnim nožem odnosno sa
+dijelom drške. Ukoliko je neko lice nakon izvršenja ovog djela pralo nožodnosno samo sječivo noža a da nisu
+korišćenje rukavice te ako je manipulisalo nožem na način sto je samo dodirivalo krajevima dršku od noža,
+moguće bi bilo da je i nakon ovakvog pranja ostala ovolika količina biološkog materijala. Moguće je takođe
+
+da je na sječivu noža i nanešena kap krvi na primjer iz prsta il na neki drugi način a ovo imajući u vidu količinu
+biološkog materijala koja je nađena na sječivu.
+Sud je izvještaj Forenzičkog centra D. o DNK vještačenju br.249/22 od 01.03.2022. godine kao i usmeno
+izjaš njenje vještaka za DNK vještačenja J.Jelene cijenio kao stručan, jasan i baziran na pravilima struke i
+nauke, pa je isti prihvatio.
+
+Iz izvještaja Forenzičkog centra D. o trasološkom vještačenju br.250/22 od 04.03.2022. godine, proizilazi da su
+dana 03.03.2022. godine, na trasološko vještačenje, dostavljeni garderoba F.G. i no ž, te da su isti pravilno
+upakovani i označeni. Trasološkim pregledom garderobe F.G., konstatovano je da je na prednjoj strani jakne
+marke „Nike“, plave boje, veličine L, na lijevom ramenom dijelu konstatovano jedno mehaničko oštećenje
+koje se nalazi na rastojanju 60,0 cm od donje ivice jakne i 4,0 cm odšava lijevog rukava. Relativna veličina
+navedenog oštećenja iznosi 2,0 cm. Na prednjoj strani jakne, nijesu konstatovana mehanička oštećenja. Na
+prednjoj strani dukserice sa kapuljačom, marke "Russel ", sive boje, veličine XL, na lijevom ramenom dijelu,
+konstatovano je jedno mehaničko oštećenje koje se nalazi na rastojanju 54,0 cm od donje ivice dukserice i 1,5
+cm odšava lijevog rukava. Relativna veličina navedenog oštećenja iznosi 1,0 cm. Oko navedenog oštećenja
+konstatovani su tragovi osušene tečnosti tamno braon boje nalik na krv. Na zadnjoj strani dukserice, nijesu
+konstatovana mehanička oštećenja. Na prednjoj strani majice kratkih rukava, marke "Converse", plave boje,
+veličine XXL, na lijevom ramenom dijelu, konstatovano je jedno mehaničko oštećenje koje se nalazi na
+rastojanju 57,0 cm od donje ivice majice i 3,0 cm odšava lijevog rukava. Relativna veličina navedenog
+oštećenja iznosi 1,0 cm. Oko navedenog oštećenja konstatovani su tragovi osušene tečnosti tamno braon
+boje, nalik na krv. Na zadnjoj strani majice nijesu konstatovana mehanička oštećenja. Kuhinjski no ž,
+nepoznate marke, plavo-bijele ručke je nožsa jednostranim sječivom i oštrim vrhom, ukupne dužine 29,0 cm,
+duž ine sječiva 15,0 cm i najvećeširine 2,5 cm. U konačnom, iz navedenog izvještaja proizilazi da su
+mehanička oštećenja koja su konstatovana na lijevom ramenom dijelu gornjih odjevnih predmeta F.G.,
+karakteristična za oštećenja koja nastaju kao posledica dejstva zamahnute sile i metalnog predmeta sa
+oštrim vrhom i jednostranim sječivom i mogla su nastati kao posledica dejstva predmetnog noža.
+
+Sud je izvještaj Forenzičkog centra D. o trasološkom vještačenju br.250/22 od 04.03.2022. godine cijenio kao
+stručan, jasan i baziran na pravilima struke i nauke, pa je isti prihvatio.
+
+Iz izvještaja ljekara specijaliste Doma zdravlja H.N.-Centar za mentalno zdravlje DZ H.N., na ime F.G. br.3805
+od 17.12.2021. godine, proizilazi da je imenovani pregledan navedenog dana u navedenoj zdravstvenoj
+ustanovi, data je anamneza i klinički nalaz, konstatovana je dijagnoza na latinskom jeziku i propisana je
+terapija.
+
+Iz izvještaja ljekara specijaliste hirurškog odjeljenja bolnice M., na ime F.G. br.6487 od 15.12.2021. godine,
+proizilazi da je imenovani pregledan navedenog dana u navedenoj zdravstvenoj ustanovi, kojom prilikom je
+konstatovano da je hirurško liječenje F.G. završeno i konstatovana je dijagnoza na latinskom jeziku.
+
+Iz uputnice hirurškog odjeljenja bolnice M. br.978 od 01.12.2021. godine, proizilazi da je imenovani
+pregledan, konstatovana je dijagnoza na latinskom jeziku i upućen je na hirurško liječenje.
+
+Iz izvještaja ljekara specijaliste bolnice M., na ime F.G. br.6257 od 01.12.2021. godine, proizilazi da je
+imenovani pregledan navedenog dana u navedenoj zdravstvenoj ustanovi, data je anamneza i klinički nalaz,
+konstatovana je dijagnoza na latinskom jeziku i propisana je terapija.
+
+Iz uputa JZU Dom zdravlja H.N., na ime F.G., proizilazi da je imenovani pregledan navedenog dana u
+navedenoj zdravstvenoj ustanovi, konstatovana je dijagnoza na latinskom jeziku i upućen je na previjanje.
+
+Iz Nalaza i mišljenja vještaka sudske medicine dr R.N., koji je rađen za potrebe ODT H.N. Kt.br.351/21 od
+25.12.2021. godine, proizilazi da je dana 01.12.2021. godine od strane ljekara zdravstvenih ustanova u H.N.,
+kao i nakon toga, kontrolno, pregledan F.G., kojom prilikom su kod njega dijagnostikovane sledeće tjelesne
+povrede ubodno-rezna rana u predjelu lijeve bočne strane grudnog koša i ubodno-rezna rana u predjelu
+desne bočne strane vrata. Navedene povrede su posledica dvokratnog direktnog dejstva vrha i oštrice
+aktivno zamahnutnog mehaničkog oruđa - tipično noža. Povrede su se nalazile u predjelima tijela gdje se u
+neposrednoj blizini kanala rana nalaze veliki krvni sudovi i vitalni organičijom bi eventualnom povredom
+mogao biti neposredno doveden u opasnostživot oštećenog da je sila djelovala nešto jačim intenzitetom. U
+vrijeme nanošenja zadobijene povrede, pojedinačno i zbirno se kvalifikuju kao lake tjelesne povrede.
+Povrede su mogle biti nanijete na način kako je to u svojoj izjavi pred ODT H.N. naveo oštećeni: da je ležao na
+desnom boku kada je zadobio povredu u predjelu lijeve bočne strane grudnog koša, odnosno da je nakon
+toga, prilikom izmicanja zadobio i povredu u predjelu desne bočne strane vrata (jer je glava pokretni dio
+tijela).
+
+U izjašnjenju na glavnom pretresu od 19.09.2022. godine, vještak medicinske struke dr R.N. je u bitnom
+naveo da ostaje pri svom nalazu i mišljenju od 25.12.2021. godine i dodao je da je hipoglikemija stanje
+snižene koncentraciješećera u krvi i veoma rijetko postoji, osim kod osoba oboljelih odšećerne bolesti koje
+su na terapiji insulinom. Kod takvih osoba se može pojaviti hipoglikemija, ukoliko bez obroka uzmu insulin i u
+stanju hipoglikemije osoba može biti poremećenog stanja svijesti, možečak upasti i u komu, tako da je
+moguće da u vrijeme trajanja hipoglikemije postoje i periodi amnezije, odnosno nesjećanja ili nepotpunog
+sjećanja. Predmetne povrede kod F.G. su mogle nastati na najrazličitije moguće načine i u različitim
+položajima tijela njega kao oštećenog i osobe koja mu zadaje te povrede. Sudsko - medicinsko izjašnjenje se
+u takvom slučaju može kretati samo u nivou dozvoljavanja ili nedozvoljavanja mogućnosti koje proizilaze iz
+iskaza aktera događaja. U konkretnom slučaju, vještak je na uvid imao samo izjavu F.G. koju je dao pred ODT
+H.N., pa se u skladu sa tim i izjasnio da su povrede mogle nastati na način i u položaju kako je to F.G. opisao
+u toj izjavi. Obje rane su krvarile i mogle su dovesti do zaostajanja tragova krvi kako na odjeći tako i na
+okolnim predmetima. S obzirom na dubinu rana, vještak je mišljenja da se nije radilo o velikoj količini krvi.
+Medicinski pojamšoka je definisan kao stanje opšte nedovoljnosti dotoka krvi u organizmu. Može biti
+uslovljeno različitim faktorima, od kojih su najčešći gubitak velike količine krvi, srčani udar, neurološka
+oboljenja i povrede i sepsa. Međutim, u svakodnevnom govoru, laici koriste terminšok za opise raznoraznih
+drugih njihovih osjećaja, tako da se navod iz izjave oštećenog da je bio u stanjušoka nikako ne može
+medicinski tumačiti, niti ima medicinskihčinjenica za to da se oštećeni nalazio u poživot opasnoj situaciji
+
+zbog, na primjer, velikog gubitka krvi. Smatra da je oštećeni upotrijebio taj izraz u smislu zaprepašćenosti
+događajem i eventualno prisutnim bolom. S tim u vezi, okolnost da je nakon događaja oštećeni spavao je
+sudsko - medicinski irelevantna. Zadobijene povrede nisu onemogućile oštećenog da se kreće i aktivno fizički
+djeluje. Sudsko - medicinski se može cijeniti samo intenzitet sile koja je djelovala na tijelo, a ne može se
+cijeniti intenzitet zamaha oruđem ka tijelu. Intenzitet zamaha može biti usporen, ublažen različitim
+faktorima, kao što su prisutna garderoba, izmicanje tijela unazad i slično, tako da u konkretnom slučaju, a i u
+nijednom drugom se vještak ne može izjasniti da li je intenzitet zamaha bio jak. S obzirom na veličinu
+zadobijenih povreda, intenzitet sile koji je djelovao na tijelo je bio lak. U medicinskoj dokumentaciji nisu
+precizno opisane dubine kanala rana, ali je navedeno da su iste bile dubine koja je zahvatala potkožno tkivo,
+što znači da je rana u predjelu vrata bila dubine manjeg od jednog centimetra, a rana u predjelu grudnog
+koša oko jednog centimetra. Kod tako procijenjene dubine rana, nožnije mogao ostati u tkivima, a to se
+odnosi i na jednu i na drugu povredu. Brzina zaustavljanja krvarenja je individualna karakteristika, koja zavisi
+od ličnih karakteristika organizma. Na brzinu krvarenja mogu uticati brojni ljekovi i oboljenja. Kod zdrave
+osobe, krvarenje iz takvih rana uobičejeno spontano prestaje unutar 30-60 minuta.
+
+U izjašnjenju na glavnom pretresu na zapisniku od 10.04.2023 godine vještak dr. R.N. je u bitnom istakao da
+nakonšto se upoznao sa izjavom F.G. datom pred VDT P. od 11.03.2022. godine, a imajući u vidu sudsko
+medicinske karakteristike, posebno dimenzije rana koje je zadobio oštećeni, pojasnio je da ove dvije ubodno
+rezne rane koje je zadobio F.G. nisu mogle nastati bockanjem noža, većda se radilo o dvokratnom direktnom
+dejstvu aktivno zamahnutim mehaničkim oruđem, tipično nožem. Iz izjave F.G. pred VDT-om, ne može da se
+zaključi u kojem se položaju oštećeni nalazio, ali pretpostavlja da je sjedio na trosjedu tako da je moguće da
+je povredu u predjelu lijeve bočne strane grudnog koša zadobio u sjedećem položaju, a moguće i oslonjen na
+desnu bočnu stranu tijela. Po pitanju povrede u predjelu desne bočne strane vrata, moguće je da je ista
+nanešena takođe dok je bio na trosjedu u sjedećem položaju, licem u lice sa napadačem, ukoliko je napadačpovredno oruđe držao u lijevoj ruci. Ukoliko je oruđe držano u desno j ruci, tada bi međusobni položaj
+napadača i oštećenog morao biti drugačiji odnosno napadačbi se morao naći ili sa desne bočne strane
+oštećenog ili sa leđa, imajući istovremeno u vidu da je glava pokretni dio tijela. Za obije rane nije data dubina
+u med.dokumentaciji, ali imajući u vidu opis povreda spolja na koži, kao i okolnost da iste nijesu ušivane,
+radilo se o plitkim ranama. Š to je bio i osnov za kvalifikaciju povreda kao lakih.Nakonšto je optuženi izjavio
+da je dešnjak, vještak je pojasnio da se povreda u predjelu grudi nalazila u predjelu lijeve bočne strane
+grudnog koša, a u predjelu vrata na desnoj bočnoj strani vrata. Sa sudsko medicinskog aspekta, da li je
+napadačdesnoruk ili ljevoruk može samo donekle biti značajno u okolnostima kada se imaju za vještačenje
+veoma duboke povrede za koje je potreban veoma jak intenzitet sile, dok za površne povrede nije od tolikog
+značaja da li je osoba desnoruka ili ljevoruka jer se takve povrede mogu nanijeti i dominantnom i
+nedominantnom rukom. S tim u vezi, u ovakvim slučajevima vještačenje međusobnog položaja se vrši uz
+pretpostavku da je noždržan u desnoj ili u lijevoj ruci dakle desno ruka osoba može zadati povredu desne
+boč ne strane vrata svojom desnom rukom ukoliko se nalazila iza oštećenog ili sa njegove desne bočne strane,
+ili pak svojom lijevom rukom u položaju licem u lice ili sa lijeve bočne strane oštećenog. Sudsko medicinski se
+ne može izjasniti da li je napadačnoždržao u desnoj ili lijevoj ruci.
+Sud je nalaz i mišljenje sudskog vještaka medicinske struke dr R.N., koji je rađen za potrebe ODT H.N.
+Kt.br.351/21 od 25.12.2021. godine i izjašnjenje imenovanog vještaka na glavnim pretresima od 29.09.2022.
+godine i 10.04.2023 godine, cijenio kao stručne, jasne i bazirane na pravilima struke i nauke, pa je iste
+prihvatio.
+
+Iz rješenja JU Centar za socijalni rad za opštinu H.N. br. 1001-1213 od 04.06.2021. godine, proizilazi da je
+svjedoku oštećenom F.G. priznato pravo na dodatak za njegu i pomoću iznosu od 68,86 eura mjesečno,
+poč ev od 01.07.2021. godine, do 30.06.2022. godine.
+
+Iz izvoda iz registra kaznenih evidencija na ime optuženog, proizilazi da je optuženi P.R. osuđivan i to:
+presudom Osnovnog suda u P., K.br.90/13-78, koja je postala pravosnažna dana 19.02.2014. godine, zbog
+krivičnog djela razbojništvo izčl.206 st.1 u vezičl.30 Krivičnog zakonika Republike S., na kaznu zatvora u
+trajanju od 1 godine, presudom Osnovnog suda u P., K.br.232/12-69, koja je postala pravosnažna dana
+10.09.2012. godine zbog krivičnog djela nasilje u porodici izčl.194 st.1 u vezi sačl.30 Krivičnog zakonika
+Republike S.. na kaznu zatvora od 1 godine i 2 mjeseca, presudom Okružnog suda u P.K.br.22/03 koja je
+postala pravosnažna dana 11.12.2003. godine, zbog krivičnog djela teška tjelesna povreda izčl.53 st.1
+Krivičnog zakonika Republike S., na kaznu zatvora u trajanju od 2 godine i 6 mjeseci, presudom Osnovnog
+suda u P.K.br.80/01 koja je postala pravosnažna dana 24.06.2003. godine, zbog krivičnog djela neovlašćena
+proizvodnja i stavljanje u promet opojnih droga izčl.245 st.1 Krivičnog zakonika Republike S., 6 mjeseci
+uslovno na 2 godine i presudom Osnovnog suda u B.P. K.br.121/96 koja je postala pravosnažna 19.06.1996.
+godine, zbog krivičnog djela teška tjelesna povreda izčl.36 st.1 KZCG, na kaznu zatvora u trajanju od 45 dana.
+
+Ocjenom navoda optužbe, odbrane optuženog i svih provedenih dokaza, kako pojedinačno, tako i u njihovoj
+međ usobnoj vezi, ovaj sud je nesumnjivo utvrdio da je optuženi P.R. izvršio krivično djelo ubistvo u pokušaju
+iz člana 143 u vezičlana 20 Krivičnog zakonika Crne Gore, u vrijeme, u mjestu i na način kako je to
+predstavljeno u izreci presude.
+
+Naime, u dokaznom postupku je nesumnjivo utvrđeno da je optuženi P.R. u noći između 30.11.2021. godine i
+01.12.2021. godine, u H.N., u iznajmljenom stanu koji je koristio optuženi, na adresi Ulica obala N.K.br.64/A,
+umiš ljajno pokušao da lišiživota oštećenog F.G., a na načinšto je tokom verbalne rasprave oštećenog uboo
+dva puta nožem u predjelu grudi i vrata, odčega je oštećeni zadobio lake tjelesne povrede u vidu ubodno
+rezne rane u predjelu lijeve bočne strane grudnog koša i ubodno rezne rane u predjelu desne bočne strane
+vrata, pričemu je bio svjestan da ga na taj način, ubadanjem nožem u navedenim djelovima tijela, gdje se
+nalaze veliki krvni sudovi i vitalni organi, može lišitiživota, pa je to i htio.
+
+Naprijed navedenečinjenice, sud je utvrdio iz dokaza koji su provedeni u predmetnom krivičnom postupku,
+prije svega iz iskaza svjedoka oštećenog F.G., u prethodnom postupku, na zapisniku o saslušanju pred ODT H.N. Kt. br.351/21 od 02.12.2021. godine, koji je prilikom tog saslušanja naveo da je dugovao izvjesnu sumu
+novca optuženom P.R. i da ga je u danima koji su prethodili predmetnom događaju, P.R. više puta pozivao na
+telefon, ali mu se on nije javljao. Dana 30.11.2021. godine oko 21,15časova pozvao je optuženog i rekao mu je
+da je vidio da ga je zvao, a optuženi mu je rekao da dođe kod njega. Otišao je u stan u kojemživi optuženi, a
+koji se nalazi u u. o. N.K., odmah do njegovog stana, jer ih faktički dijeli samo jedan zid i kada je ušao u stan
+optuženog, optuženi ga je pitao u vezi tog duga i da li znašta je njihov dogovor, našta je optuženom
+odgovorio da znašta je njihov dogovor, ali da nije u mogućnosti da vrati odjednom novac koji mu duguje i da
+će mu vraćati novac na jedini način na koji to može da učini i to po 50 eura sedmično. Nakon toga su nastavili
+i u jednom momentu, optuženi mu je rekao povišenim tonom: " Ć uti, ć uti dok ja pričam" i izvadio je nožispod
+ćebeta na dvosjedu na razvlačenje, a radilo se o kuhinjskom nožu sa plavo-bijelom drškom, dužine sječiva od
+
+25 do 35 cm. Bio je u sjedećem položaju, a optuženi je noždržao u svojoj desnoj ruci i sa njim je mahao ispred
+njega i zastrašivao ga je, na načinšto mu je naslanjao nožispred oka i govorio mu je: "Okoću ti iskopati", a on
+mu je govorio da to nečini. U jednom momentu, nakon nekih pola sata od kako je ušao u njegov stan,
+optuženi je nazvao nekog na video poziv i sa njim je razgovarao i govorio mu je nešto u smislu: "Evo kako
+prolaze ovi", a u pozadini su sečula neka razna dobacivanja i misli da su ta dobacivanja bila na njegov račun,
+ali ne zna ko je osoba ili više osoba sa kojima je optuženi pričao. Optuženi mu je naredio da legne na trosjed i
+on je ležao, a u jednom momentu je krenuo da dohvati telefon optuženog, dok je optuženi razgovarao sa tom
+njemu nepoznatom osobom, kako bi vidio o kome se radi. Ležao je na desnom boku i krenuo je da dohvati
+ruku od optuženog u kojoj se nalazio telefon. Tada je optuženi trgao njegovu ruku i u tom momentu ga je
+uboo nožem u predjelu lijeve strane grudi. Osjetio je jak bol i tekla mu je krv, a optuženi mu je govorio da
+legne, našta je odgovorio da ne može, jer ima velike bolove. Ima hipoglikemiju i posle određenog perioda,
+osjećao je da se koči. Optuženi je za to vrijeme telefonirao i pokušavao je razgovorom da dopre do
+optuženom i da mu objasni da ništa od toga nije vrijedno toga i daće mu vratiti dug, a optuženi mu je rekao
+da ga je slagao. Pitao je optuženog može li da zapali cigaru i optuženi je u početku odbijao da mu to dozvoli, a
+zatim mu je rekao: "Ajde da zapališ, moždaće ti ovo biti poslednja". U jednom momentu, optuženi je
+otključao vrata i rekao mu je: " Š to ne bježiš?". Rekao je optuženom da mu ne pada na pamet da bježi, da hoć e
+to da riješe ljudski i da mu neželi zlo i da neće otići ništašto se desilo. Optuženi je dva-tri puta izlazio na
+terasu. Na sebi je imao trenerku sa džepovima po sredini stomaka i krenuo je da izvadi telefon kako bi se
+javio svojoj supruzi. U tom momentu, P.R. je vidio telefon u njegovim rukama i počeo je haos i P.R. mu je
+rekao: "Taman sam mislio da te pustim, a sad si ugasio". Govorio je P.u da je telefon izgašen i krenuo je da
+stavi telefon u džep od jakne. Tada je vidio da optuženi zamahuje istim kuhinjskim nožem prema njemu. Malo
+se izmakao i osjetio je ubod u predjelu desne strane vrata. Rekao je optuženom: "R., R., aorta, sveži, daj mi
+krpu da zaustavim krv" jer je mislio da mu je optuženi prekinuo aortu. Optuženi mu je govorio da ide u WC,
+gdje je sa obje ruke stiskao ranu na vratu, nakončega je počeo polako da popušta i kada je vidio da mu nema
+velike količine krvi na rukama, shvatio je da mu nije prekinuta aorta i bilo mu je malo lakše. Bilo je krvi i na
+njemu i na njegovoj garderobi. Rekao je optuženom: "Prestani više da me mučiš, ili me ubij ili me pusti".
+Optuženi mu je tada rekao: "Vidišlišta napravi riječ, vjerovao sam ti, ali isti si kao drugi, no ajde, imao si
+sreće". Nakon toga, pričali su jošnekih 10-ak minuta i onda mu je optuženi dozvolio da izađe iz njegovog
+stana i kada je izašao iz stana, optuženi mu je rekao da ga probudi u 12 sati. Iz stana optuženog je izašao
+između 02,00 i 03,00časa posle ponoći i otišao je u svoj stan, nakončega je popio tablete za smirenje i
+dezinfikovao je rane i legao je da spava. Zna da se probudio oko 11 sati, jer ga je probudila utrnulost lijeve
+ruke, koju nije mogao uopšte da pomjeri, a kako mu bolovi nisu prolazili, krenuo je u dom zdravlja. Na putu
+do Doma zdravlja kod bivše diskoteke "B." naišao je na patrolu policije i isti su mu rekli da im treba i uručili su
+mu poziv da se javi u stanicu policije, ali nisu mu rekli u vezičega a odatle je otišao u Dom zdravlja. Iz Doma
+zdravlja su ga uputili u Hitnu pomoć, a iz Hitne pomoći su ga sanitetskim vozilom prevezli u bolnicu M.. U
+bolnici su mu dali neke injekcije i u tome se pojavila patrola policije koja mu je prethodno uručila poziv.
+Policajci su ga pitali zašto im nije rekaošta se desilo i da su im doktori rekli da je izboden nožem, te da mora
+da ide sa njima u stanicu policije nakon završenog medicinskog pregleda i obrade. Kada je završio taj pregled,
+sa službenicima policije je došao u stanicu policije i naveo ješta se desilo. Sud je prihvatio iskaz oštećenog F.G. iz prethodnog postupka, tačnije iskaz na zapisniku o saslušanju pred ODT H.N. Kt. br.351/21 od 02.12.2021.
+godine, obzirom da se tom prilikom oštećeni F.G. o odlučnimčinjenicama, odnosno o detaljima predmetnog
+događaja, načina na koji mu je optuženi P.R. nanio označene tjelesne povrede, kao i sredstva kojim mu je
+optuženi nanio te povrede izjasnio na jasan i precizan način, te da je njegov iskaz u pogledu tihčinjenica
+potvrđen sadržinom svih materijalnih dokaza. Prije svega, sud ukazuje da je iz izvještaja Forenzičkog centra
+D. o DNK vještačenju br.249/22 od 01.03.2022. godine, sa pratećom dokumentacijom, utvrđeno da je predmet
+vješ tačenja bio nožsa plavo-bijelom drškom, č ija je ukupna dužina oko 28 cm, odčega je dužina sječiva oko
+15.5 cm, te da je na uzorku izuzetom sa ručke noža sa plavo-bijelom drškom, utvrđeno prisustvo biološkog
+materijala od minimum dvije osobe, te da dobijeni rezultat DNK analize ekstremno jako podržava hipotezu
+
+da je glavni donor biološkog materijala P.R., dok je na uzorku koji je izuzet sa mrlje na sječivu noža (nožsa
+plavo-bijelom drškom), utvrđeno prisustvo krvi, a dobijeni rezultat DNK analize ekstremno jako podržava
+hipotezu da je F.G. donor krvi, odnosno da je u postupku DNK vještačenja utvrđeno da je optuženi P.R.
+predmetnom prilikom bio u posjedu navedenog noža, te da je sa istim uboo oštećenog F.G., našta naročito
+ukazuje DNK materijal koji potiče od oštećenog F.G., koji je pronađen na oštrici predmetnog noža a takođe je
+vješ tak za DNk vještačenje J.J. u svom izjašnjenju sa glavnog pretresa od 10.04.2023. godine u bitnom navela
+da je biološki materijal na sječivu noža dobijen DNK profil sa mrlje krvi, da se radi o tragovima krvi a koji
+tragovi nikad nisu bili sporni za dobijanje DNK profila te sto se tiče uzorka izuzetog sa drške noža, njegova
+koncentracija je veća i iznosi 0,285 nanograma po mikrolitru i da bi se moglo pretpostaviti da se radi o
+kontaktnom tragu na dršci noža ali da se ne može eliminisati nikada da je i na ručki noža postojala određena
+manja količina tjelesne tečnosti kao i ako se uzme obzir izjava optuženog da je nožkoristio dva tri dana prije
+ovog događaja, njegova količina biološkog materijala bi mogla ostati na dršci noža jedino u slučaju da niko
+nije dolazio u kontakt sa predmetnim nožem odnosno sa dijelom drške a ukoliko je neko lice nakon izvršenja
+djela pralo nožodnosno samo sječivo noža a da nisu korišćene rukavice, te ako je manipulisalo nožem na
+nač inšto je samo dodirivalo krajevima dršku od noža, moguće bi bilo da je i nakon ovakvog pranja ostala
+ovolika količina biološkog materijala. Takođe, č injenicu da je predmetnom prilikom optuženi P.R. nožem
+uboo oštećenog F.G., sud je utvrdio iz izvještaja Forenzičkog centra D. o trasološkom vještačenju br.250/22
+od 04.03.2022. godine. Naime, u postupku trasološkog vještačenja utvrđeno je da se na prednjoj strani jakne
+marke,,Nike ", plave boje, veličine L, na lijevom ramenom dijelu nalazi jedno mehaničko oštećenje, na
+rastojanju 60,0 cm od donje ivice jakne i 4,0 cm odšava lijevog rukava, te da relativna veličina navedenog
+oštećenja iznosi 2,0 cm, zatim da se na prednjoj strani dukserice sa kapuljačom, marke "Russel ", sive boje,
+veličine XL, na lijevom ramenom dijelu, nalazi jedno mehaničko oštećenje, na rastojanju 54,0 cm od donje
+ivice dukserice i 1,5 cm odšava lijevog rukava, te da relativna veličina navedenog oštećenja iznosi 1,0 cm, a
+da su oko navedenog oštećenja konstatovani tragovi osušene tečnosti, tamno braon boje, nalik na krv, kao i
+da se na prednjoj strani majice kratkih rukava, marke "Converse", plave boje, veličine XXL, na lijevom
+ramenom dijelu, nalazi jedno mehaničko oštećenje, na rastojanju 57,0 cm od donje ivice majice i 3,0 cm od
+šava lijevog rukava, te da relativna veličina navedenog oštećenja iznosi 1,0 cm, te da su oko navedenog
+oštećenja konstatovani tragovi osušene tečnosti tamno braon boje, nalik na krv, kao i da su sva mehanička
+oštećenja koja su konstatovana na lijevom ramenom dijelu gornjih odjevnih predmeta F.G., karakteristična za
+oštećenja koja nastaju kao posledica dejstva zamahnute sile i metalnog predmeta sa oštrim vrhom i
+jednostranim sječivom i da su ista mogla nastati kao posledica dejstva noža sa jednostranim sječivom i
+oštrim vrhom, ukupne dužine 29,0 cm, dužine sječiva 15,0 cm i najvećeširine 2,5 cm. U konačnom, č injenicu
+da je oštećeni F.G. u predmetnom događaju zadobio tjelesne povrede, te da su iste nastale na način kako je
+to oš tećeni opisao u iskazu pred ODT H.N., sud je utvrdio iz medicinske dokumentacije o liječenju oštećenog,
+Nalaza i mišljenja vještaka sudske medicine dr R.N., koji je rađen za potrebe ODT H.N. Kt.br.351/21 od
+25.12.2021. godine i izjašnjenja imenovanog vještaka na glavnom pretresu od 19.09.2022. godine, iz kojih je
+utvrđeno da je u predmetnom događaju oštećeni F.G. zadobio sledeće tjelesne povrede: ubodno-reznu ranu
+u predjelu lijeve bočne strane grudnog koša i ubodno-reznu ranu u predjelu desne bočne strane vrata, koje
+povrede su posledica dvokratnog direktnog dejstva vrha i oštrice aktivno zamahnutnog mehaničkog oruđa -
+tipično noža i iste su se nalazile u predjelima tijela gdje se u nesporednoj blizini kanala rana nalaze veliki
+krvni sudovi i vitalni organičijom bi eventualnom povredom mogao biti neposredno doveden u opasnost
+život oštećenog da je sila djelovala nešto jačim intenzitetom, i koje povrede se, u vrijeme nanošenja,
+pojedinačno i zbirno kvalifikuju kao lake tjelesne povrede. Dalje je u postupku medicinskog vještačenja
+utvrđeno da su navedene povrede mogle biti nanijete na način kako je to u svojoj izjavi pred ODT H.N. naveo
+oštećeni, odnosno da povrede u predjelu lijeve bočne strane grudnog koša zadobio dok je ležao na desnom
+boku, a da je nakon toga, prilikom izmicanja zadobio i povredu u predjelu desne bočne strane vrata, obzirom
+da je glava pokretni dio tijela. Ovakav iskaz svjedoka oštećenog F.G. koji je dao na zapisniku o saslušanju
+pred ODT H.N. K.br.351/21 od 02.12.2021. godine je u bitnom potvrđen iskazima saslušanih svjedoka A.R. i D.T., policajaca zaposlenih u UP OB H.N. koje iskaze je sud u potpunosti prihvatio kao jasne i istinite koji su se
+na saglasan način izjašnjavali o tome da su dana 01.12.2021. godine kontrolisali lice F.G. te da su istome tog
+dana uručili poziv od suda a da im je on tada rekao da mora da ide u bolnicu u Dom zdravlja koji iskazi
+saslušanih svjedoka su u ovom dijelu potvrđeni i sadržinom patrolnog lista UP CB H.N. broj 4234/21 od
+01.12.2021. godine.Takođe je iskaz svjedoka oštećenog F.G. potvrđen i iskazom svjedoka V. Nikolečiji iskaz je
+sud prihvatio kao jasan i istinit,koji je u istom naveo da mu je poznato lice F.G., da je od strane bolnice
+prijavljeno i to dana 01.12.2021. godine, da je F.G. tamo primljen sa nekim povredama, te da je kasnije tog
+dana saslušan u Stanici krim. policije povodom toga i da se sjeća da ga je oštećeni F.G. jedno dva-tri dana
+poslije ovoga nazvao telefonom i rekao da je na zajedničkoj terasi njegovog stana dje ježivio našao ispod
+stolice nožkojim ga je P. uboo te noći pa je on postupio po tom pozivu, poveo sa sobom krim. tehničara koji
+je fotografisao to lice mjesta dje je pronađen nožsto je sve konstatovano u izvještaju o uzorkovanju tragova
+sa lica mjesta.
+
+Ovakav iskaz svjedoka oštećenog F.G. koji je dao kod ODT H.N., a u dijelu gdje je isti naveo da je dugovao
+izvjesnu sumu novca optuženom P.R. se potvrđuje iz sadržine fotodokumentacije broj 24-22 od 31.01.2022.
+godine koja fotodokumentacija se odnosi na fotografisanje poruke iz mobilnog telefona vlasništva P.R. iz H.N. i da se radi o poruci sadržine „I ovaj komšija duguje 1.700,00 eura, sinoc sam ga pito, kaže ne može do
+7.nista i to kao da mi daje na rate“ upućena na broj telefona koji je memorisan kao G. ali da ista poruka nije
+isporučena a radi se o tekstualnoj poruci od 29. oktobra od 11:11časova.
+
+Imajući u vidu prethodno utvrđenečinjenice, sud nije prihvatio navode iz iskaza svjedoka oštećenog, koji je
+dao u prethodnom postupku pred VDT u P., kojom prilikom je tvrdio da ga je predmetnom prilikom optuženi
+"bockao" više puta po glavi i tijelu, zatim da je P.R. izvadio nožiz njegovog tijela, da ga je jako uboo u vrat i da
+je, kada je ušao u kupatilo vidio veliku količinu krvi i takve navode je cijenio neistinitim, obzirom da takve
+tvrdnje nemaju utemeljenja u sadržini bilo kog od materijalnih dokaza koji su provedeni u ovom krivičnom
+postupku. Prije svega, sud ukazuje da bi u slučaju da je optuženi više puta ubadao oštećenog, a kako je to u
+svom iskazu pred VDT P. pokušao da predstavi oštećeni, na tijelu oštećenog bio konstatovan veći broj
+tjelesnih povreda. Takođe, sud ukazuje da je prilikom izjašnjenja na glavnom pretresu vještak medicinske
+struke dr R.N. decidno naveo da se, s obzirom na dubinu rana, nije radilo o velikoj količini krvi, zatim da je
+obzirom na veličinu zadobijenih povreda, intenzitet sile koji je djelovao na tijelo je bio lak, te da su rane kod
+oštećenog bile dubine koja je zahvatala potkožno tkivo, š to znači da je rana u predjelu vrata bila dubine
+manjeg od jednog centimetra, a rana u predjelu grudnog koša oko jednog centimetra i da kod tako
+procijenjene dubine rana, nožnije mogao ostati u tkivima, a to se odnosi i na jednu i na drugu povredu.
+Obzirom da izjašnjenje vještaka medicinske struke opovrgava navode oštećenog F.G. koje je u pogledu
+odlučnihčinjenica iznio pred VDT u P., sud je cijenio da je oštećeni imao intenciju predstaviti da je optuženi
+na njegovo tijelo djelovao jačom silom negošto je to utvrđeno u postupku medicinskog vještačenja i da na taj
+nač in oteža položaj optuženog P.R. u krivičnom postupku, zbogčega je sud njegov iskaz, koji je dao pred VDT
+P. cijenio neistinitim i usmjerenim na otežavanje položaja optuženog u krivičnom postupku, pričemu je sud
+posebno imao u vidu izjaš njenje vještaka medicinske struke R.N. sa glavnog pretresa od 10.04.2023. godine u
+kom je naveo da dvije ubodno rezne rane koje je zadobio F.G. nisu mogle nastati bockanjem noža, ali da se iz
+izjave oštećenog F.G. pred VDT-om P. ne može zaključiti u kojem se tačno položaju nalazio oštećeni, ali da
+oštećeni pretpostavlja da je sjedio na trosjedu, tako da je moguće da je povredu u predjelu lijeve bočne
+strane grudnog koša zadobio u sjedećem položaju a moguće i oslonjen na desnu bočnu stranu tijela a po
+pitanju povred eu predjelu desne bočne strane vrata moguće je da je ista nanešena takođe dok je bio na
+trosjedu u sjedećem položaju licem u lice sa napadačem, ukoliko je napadačpovredno oruđe držao u lijevoj
+
+ruci. A ukoliko je oruđe držano u desnoj ruci, tada bi međusobni položaj napadača i oštećenog morao biti
+drugačiji odnosno napadačbi se morao naći ili sa desne bočne strane oštećenog, ili sa leđa, imajući
+istovremeno u vidu da je glava pokretni dio tijela a da se radilo i o plitkim ranama te da je nakonšto je
+optuženi izjavio da je dešnjak, vještak je pojasnio da se povreda u predjelu grudi nalazila u predjelu lijeve
+boč ne strane grudnog koša, a u predjelu vrata na desnoj bočnoj strani vrata, a sa sudsko medicinskog
+aspekta, č injenica da li je napadačdesnoruk ili ljevoruk može samo donekle biti značajno u okolnostima
+kada se imaju za vještačenje veoma duboke povrede za koje je potreban veoma jak intenzitet sile dok za
+površne povrede nije od tolikog značaja da li je osoba desnoruka ili ljevoruka pa se povrede mogu nanijeti i
+dominantnom i nedominantnom rukom.
+
+Sud je cijenio navode odbrane optuženog P.R., koji je tokomčitavog toka krivičnog postupka tvrdio da nije
+izvršio krivično djelo koje mu je optužbom stavljeno na teret, odnosno da predmetnom prilikom nije uboo
+oštećenog F.G., većje tvrdio da oštećenog nije vidio te večeri, kao ni par dana prije toga, zatim da plavo-bijeli
+nož, koji je označen kao sredstvo izvršenja predmetnog krivičnog djela nije pripadao njemu, većoštećenom,
+te da je taj nožon koristio kada je spremao hranu sa oštećenim. Ovakve navode odbrane optuženog P.R., sud
+je cijenio neistinitim, nelogičnim i usmjerenim na izbjegavanje krivice. Prije svega, sud ukazuje da ni na koji
+nač in nije doveden u sumnju iskaz oštećenog F.G. koji je dao pred ODT u H.N., većje isti potvrđen sadržinom
+svih materijalnih dokaza, š to implicira da su navodi odbrane optuženog neistiniti i dati u cilju izbjegavanja
+krivice. Takođe, sud ukazuje da oštećeni nije imao nikakav motiv da neistinito predstavi da je optuženi
+kritične večeri bio kod njega u stanu i da je izvršio predmetno krivično djelo na njegovuštetu, jer za to nije
+imao nikakav motiv, obzirom da nije sporio da je optuženom dugovao određeni iznos novca. Nadalje, sud nije
+prihvatio navode optuženog da je predmetni nožkoristio ranije, kada je spremao hranu sa oštećenim, a ne
+prilikom predmetnog događaja, obzirom da količina DNK materijala optuženog, č ije prisustvo je utvrđeno iz
+izvještaja Forenzičkog centra D. o DNK vještačenju br.249/22 od 01.03.2022. godine, u kojem je konstatovano
+da je na uzorku izuzetom ručke noža sa plavo-bijelom drškom, utvrđeno prisustvo biološkog materijala od
+minimum dvije osobe, te da dobijeni rezultat DNK analize ekstremno jako podržava hipotezu da je glavni
+donor biološkog materijala P.R., dok je na uzorku izuzetom sa mrlje na sječivu navedenog noža utvrđeno
+prisustvo krvi, a dobijeni rezultat DNK analize ekstremno jako podržava hipotezu da je oštećeni F.G. donor te
+krvi, koji zaključak je vještak za dnk vještačenja i potvrdio u svom izjašnjenju na glavnom pretresu, š to
+nedvosmisleno upućuje na zaključak da se predmetnom prilikom optuženi nalazio u posjedu noža i da je
+njime dva puta uboo oštećenog F.G., usledčega je oštećeni zadobio opisane tjelesne povrede. Sud naročito
+ukazuje da zbogčinjenice da je oštećeni F.G. preminuo dana 06.04.2022. godine, a kojačinjenica je utvrđena
+iz izvoda iz matičnog registra umrlih za svjedoka oštećenog F.G., koji je izdat od opštine K., pod tekućim
+brojem 97 za 2022. godinu od 10.06.2022. godine, a da su iz navedenog razloga njegovi iskazi iz prethodnog
+postupka, shodno odredbičl.356 Zakonika o krivičnom postupku pročitani na glavnom pretresu, nije bio u
+mogućnosti da neposredno sasluša oštećenog F.G.
+
+Sud je cijenio neosnovanim i prigovor branioca optuženog u pogledu načina na koji je izvršen pretres stana
+optuženog ičinjenice da tom prilikom nije pronađen predmetni no ž. S tim u vezi, sud ukazuje da uviđaj
+predstavlja kriminalističko-taktičku i procesnu radnju koja se izvodi radi neposrednog opažanja lica mjesta
+izvršenja krivičnog djela, pronalaska tragova izvršenja krivičnog djela i predmeta koji su upotrijebljeni za
+izvršenje krivičnog djela i njihovog izuzimanja, kako bi ti tragovi i predmeti mogli biti korišćeni kao dokaz u
+krivičnom postupku. Pored toga, uviđaj se sastoji od tri faze i to najprije orjentaciono-komunikacione, koja se
+sastoji od saslušavanja i prikupljanja obavještenja od lica koja su zatečena na licu mjesta izvršenja krivičnog
+djela, zatim statičke faze, u kojoj se vrši samo opservacija lica mjesta izvršenja krivičnog djela radi uočavanja
+
+tragova krivičnog djela i predmeta koji bi mogli poslužiti kao dokaz u krivičnom postupku i na kraju, u
+dinamičkoj fazi, dolazi do fiksiranja navedenih tragova i izuzimanja navedenih predmeta. Imajući u vidu
+nač in na koji se vrši uviđaj i redosled faza iz kojih se uviđaj sastoji, kao i da je iz zapisnika UP CB H.N. o
+pretresanju stana i drugih prostorija koje koristi P.R., 21-03-1 br. 215/21-7353/2 od 01.12.2021. godine
+utvrđeno da su ovlašćeni policijski službenici navedenog dana izvršili radnju pretresanja stana, č iji je držalac
+P.R., koji stan se sastoji od: dnevnog boravka, kuhinje, kupatila, trpezarije i spavaće sobe, koji pretres je
+izvršen na osnovu naredbe sudije za istragu Osnovnog suda u H.N., Kri. br. 86/21, dana 01.12.2021. godine, to
+policijski službenici nijesu imali nikakvog razloga da vrše pretres zajedničkih prostorija, obzirom da iz svih
+okolnosti proizilazi da u orjentaciono-komunikacionoj fazi niko od saslušanih lica policijskim službenicima
+nije ukazao na mjesto gdje se nalazi no ž, a da je shodno navedenoj naredbi suda pretres bio ograničen
+isključivo na stan koji je koristio optuženi, a koji stan predstavlja mjesto gdje je izvršeno predmetno krivično
+djelo. Imajući u vidu navedenečinjenice, sud je odbio predlog branioca optuženog da se u dokaznom
+postupku saslušaju ovlašćeni policijski službenici N.V., B.S., R.M., V.D. i J.V., a na okolnosti da li su, pored
+ostalih prostorija vršili i pretres zajedničke terase, obzirom da je u navedenom zapisniku o pretresanju stana i
+drugih prostorija koje koristi P.R., opisano na koji način je izvršen pretres stana koji je koristio optuženi išta
+je pronađeno tom prilikom, te da se, po nalaženju suda eventualno saslušani svjedoci, naročito zbog proteka
+vremena, ne bi mogli izjasniti na navedene okolnosti na drugačiji način, osim na način kako je to
+konstatovano u zapisniku o uviđaju, koji je sačinjen neposredno nakon izvršenog uviđaja. Sud je odbio i
+predlog branioca optuženog da se sasluša svjedok Ć.P., a na okolnosti da je isti našao smještaj optuženom u
+predmetnom stanu i da je isti upoznat sa tim da predmetni stan koji je koristio optuženi i stan koji je koristio
+oštećeni imaju zajedničku terasu, obzirom da imenovani svjedok nije prisustvovao sukobu optuženog i
+oštećenog, niti je bio prisustan kada je vršen uviđaj, pa obzirom da predloženi svjedok nema saznanja o
+odlučnimčinjenicama od kojih zavisi odluka u ovoj krivičnopravnoj stvari, to njegov iskaz ne bi doprinio
+rasvjetljavanju tihčinjenica i vodio bi samo odugovlačenju predmetnog krivičnog postupka.
+
+Sud je cijenio navode branioca optuženog da sredstavo izvršenja odnosno nožnije pribavljen shodno
+procesnim pravilima pa je našao da su ovakvi navodi branioca optuženog neosnovani a ovo iz razlogašto se
+svjedok V.N. koji je zaposlen u kriminalistici UP OB H.N. na jasan način izjašnjavao o tome da je kao službeno
+lice po pozivu svjedoka oštećenog F.G. izašao na lice mjesta, sa sobom poveo krim. tehničara koji je
+fotografisao lice mjesta dje je pronađen no ž, da je to konstatovano u izvještaju o uzorkovanju tragova sa lica
+mjesta, te da je noždalje poslat na vještačenje koji iskaz je u saglasnosti sa sadržinom izvještaja o
+uzorkovanju tragova sa lica mjesta broj. Knjige uviđaja 419/21 od 04.12.2021. godine i sadržine fotoelaborata
+broj 1421/21 od 04.12.2021. godine koji je dostavljen od strane UP OB H.N. ovom sudu podneskom od
+20.04.2023. godine.
+
+Krivično djelo ubistvo, shodnočl.143 Krivičnog zakonika Crne Gore, vrši onaj ko drugog lišiživota. Obzirom
+da je optuženi P.G., u namjeri da lišiživota oštećenog P.G., istog uboo dva puta nožem u predjelu grudi i
+vrata, odčega je oštećeni zadobio lake tjelesne povrede u vidu ubodno rezne rane u predjelu lijeve bočne
+strane grudnog koša i ubodno rezne rane u predjelu desne bočne strane vrata, u radnjama optuženog P.G.
+stekla su se obilježja bića krivičnog djela ubistvo u pokušaju izčlana 143 u vezičlana 20 Krivičnog zakonika
+Crne Gore, obzirom da kod oštećenog F.G. predmetnom prilikom nije nastupila smrt.
+
+Cijeneći psihički odnos optuženog prema izvršenom krivičnom djelu, sud je našao da je optuženi postupajući
+na opisani način, odnosno na načinšto je pokušao da lišiživota oštećenog F.G., takošto je tokom verbalne
+
+rasprave oštećenog uboo dva puta nožem u predjelu grudi i vrata, odčega je oštećeni zadobio lake tjelesne
+povrede u vidu ubodno rezne rane u predjelu lijeve bočne strane grudnog koša i ubodno rezne rane u
+predjelu desne bočne strane vrata, predmetno krivično djelo izvršio sa direktnim umišljajem, obzirom da je
+bio svjestan da preduzimajući opisane radnje može lišitiživota oštećenog F.G. i da je to i htio, na koji način je,
+pored objektivnih, optuženi ostvario i subjektivna obilježja predmetnog krivičnog djela, obzirom da je kod
+njega postojala svijest o svim obilježjima bića predmetnog krivičnog djela i da je htio njegovo izvršenje.
+
+Sud je prilikom odlučivanja o visini kazne za optuženog P.R. cijenio sve okolnosti koje utiču da kazna bude
+manja ili veća, pa je u smislučl. 42 Krivičnog zakonika Crne Gore od olakšavajućih okolnosti na strani
+optuženog cijenio njegove porodične prilike, odnosno da je otac sedmoro djece, od kojih je petoro
+maloljetno, dok je od otežavajućih okolnosti na strani optuženog cijenio njegovu raniju osuđivanost, ašto je
+utvrđeno iz izvoda iz registra kaznenih evidencija na ime optuženog. Imajući u vidu naprijed navedene
+olakšavajuće i otežavajuće okolnosti, pričemu je olakšavajuće okolnosti koje stoje na strani optuženog, sud
+cijenio kao naročito olakšavajuće, sud je optuženom, shodno odredbama 45 i 46 Krivičnog zakonika Crne
+Gore najprije ublažio kaznu ispod zakonskog minimuma i osudio ga na kaznu zatvora u trajanju od 3 (tri)
+godine, nalazeći da je ovako odmjerena kazna srazmjerna stepenu krivice optuženog za izvršeno krivično
+djelo, kao i težini krivičnog djela i da predstavlja onu mjeru koja je potrebna za postizanje svrhe kažnjavanja
+iz člana 32 Krivičnog zakonika Crne Gore, kao i daće se ostvariti svrha specijalne prevencije, odnosno da
+optuženi ubuduće nečini krivična djela u okviru opšte svrhe izricanja krivičnih sankcija izčlana 4 stav 2
+Krivičnog zakonika Crne Gore.
+
+Shodnočl. 51 Krivičnog zakonika Crne Gore, sud je optuženom P.R. u kaznu zatvora uračunao vrijeme
+provedeno u pritvoru od 01.12.2021. godine u 22,40časova, pa nadalje.
+
+Poš to je optuženi P.R. oglašen krivim, shodno odredbičl. 229 Zakonika o krivičnom postupku obavezan je da
+u korist Budžeta Crne Gore plati iznos od 192,50 eura, koji se odnosi na ime troškova vještačenja sudskog
+veštaka medicinske struke dr R.N. (iznos od 60,50 eura na ime izrade nalaza i mišljenja, koji je rađen za
+potrebe ODT H.N. Kt.br.351/21 od 25.12.2021. godine i 88,00 eura na ime izjašnjenja imenovanog vještaka na
+glavnim pretresima od 19.09.2022. godine i 10.04.2023 godine te na ime usmenog izjašnjenja vještaka za DNK
+vješ tačenja J.J. iznos od 44,00 eura sa glavnog pretresa od 10.04.2023 godine i na ime sudskog paušala iznos
+od 150,00 eura, koji paušal je odmjeren shodno složenosti predmeta, trajanju postupka i imovnim prilikama
+optuženog.
+
+Na osnovu izloženog, a shodno odredbičl. 374 Zakonika o krivičnom postupku, odlučeno je kao u izreci
+presude.
+
+VIŠI SUD U PODGORICI
+Dana 06.10.2023. godine
+
+ZAPISNIČAR PREDSJEDNIK VIJEĆA - SUDIJ A
+T.M. V.R.
+
+PRAVNA POUKA:
+Protiv ove Presude može se izjavitižalba,
+u roku od 15 dana od dana prijema pisanog otpravka,
+Apelacionom sudu Crne Gore, a preko ovog Suda.
+
+Tačnost otpravka ovjerava
+Namještenik suda
+
+___________________</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

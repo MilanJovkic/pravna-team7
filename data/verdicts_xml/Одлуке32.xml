@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке32">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке32/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке32"/>
+                    <FRBRdate date="2020-07-28" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке32/sr@2020-07-28/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке32/sr@2020-07-28"/>
+                    <FRBRdate date="2020-07-28"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке32/sr@2020-07-28/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке32/sr@2020-07-28/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Tabaš Predrag"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Slobodanka Novčić"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="M.D."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="C.T."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="A.S."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="K.A."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="K.N."/>
+                <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="M.R."/>
+                <TLCPerson eId="victim_7" href="/akn/me/ontology/person/victim" showAs="K.R."/>
+                <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="G.M."/>
+                <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="C.B."/>
+                <TLCPerson eId="victim_10" href="/akn/me/ontology/person/victim" showAs="R.N."/>
+                <TLCPerson eId="victim_11" href="/akn/me/ontology/person/victim" showAs="Mašković Dragana"/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Uprava policije CB Budva"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo u Podgorici"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 37/20</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>VIŠI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2020-07-28">2020-07-28</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Tabaš Predrag</judge>
+                    <judge>Slobodanka Novčić</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Optuženi P.M. proglašen krivim za pokušaj ubistva.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Pokušaj ubistva</p>
+                    <p>Priznanje krivice</p>
+                    <p>Kaznena politika</p>
+                    <p>Troškovi postupka</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_145">Član 145</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_229">Član 229</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_399">Član 399</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_240">Član 240</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_45">Član 45</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_300">Član 300</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da je optuženi, nakon provokacije, pokušao da liši života oštećenog, što se kvalifikuje kao pokušaj ubistva.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Optuženi je osuđen na kaznu zatvora.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="victims">
+                    <person>M.D.</person>
+                    <person>C.T.</person>
+                    <person>A.S.</person>
+                    <person>K.A.</person>
+                    <person>K.N.</person>
+                    <person>M.R.</person>
+                    <person>K.R.</person>
+                    <person>G.M.</person>
+                    <person>C.B.</person>
+                    <person>R.N.</person>
+                    <person>Mašković Dragana</person>
+                </block>
+                <block name="witnesses">
+                    <person>K.N.</person>
+                    <person>M.D.</person>
+                    <person>K.A.</person>
+                    <person>M.R.</person>
+                    <person>K.R.</person>
+                    <person>G.M.</person>
+                    <person>C.B.</person>
+                </block>
+                <block name="organizations">
+                    <organization>Uprava policije CB Budva</organization>
+                    <organization>Više državno tužilaštvo u Podgorici</organization>
+                </block>
+            </participants>
+            <facts>
+                <fact key="weapon">nož</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Nikšić</fact>
+                <fact key="location">Kotor</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="remorse">da</fact>
+                <fact key="plea_agreement">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="narcotics_influence">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">24</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>U IME CRNE GORE
+
+K.br. 37/20
+
+VIŠI SUD U PODGORICI, kao prvostepeni krivični po predsjedniku vijeća - sudiji Tabaš Predragu, uz učešće
+namještenika Novčić Slobodanke kao zapisničara, u predmetu protiv optuženog P.M., koga po službenoj
+duž nosti brani S.J., advokat iz Podgorice, zbog krivičnog djela ubistvo na mah u pokušaju izčl. 145. u vezičl.
+20. Krivičnog zakonika Crne Gore, po optužnici Višeg državnog tužilaštva u Podgorici Kt.br. 54/19 od
+03.03.2020. godine, koju je na ročištu povodom odlučivanja o sporazumu o priznanju krivice zastupala
+Begović Tatjana - državna tužiteljka u Višem državnom tužilaštvu u Podgorici, nakon pravosnažnosti rješenja
+o usvajanju sporazuma o priznanju krivice, dana 28.07.2020.godine, donio je
+
+P R E S U D U
+Optuženi:
+
+P.M., zv. "M.", JMB..., od oca M. i majke A., rođ ene B., rođ en.... godine u N..., sa prebivalištem u B... - M......,
+privatnoživi kod stanodavca K.S. iz C..., drž avljanin Crne Gore, završio gimnaziju, konobar, nezaposlen, ž ivi u
+vanbračnoj zajednici, bez djece, lošeg imovnog stanja, osuđivan i to: presudom Višeg suda u Podgorici K.br.
+96/2006 od 17.01.2007. godine, zbog krivičnog djela neovlašćena proizvodnja, držanje i stavljanje u promet
+opojnih droga izčl. 300. st.2. u vezi st.1. KZCG i osuđen na kaznu zatvora u trajanju od 2 (dvije) godine,
+presudom Osnovnog suda u Nikšiću K.br. 331/09 od 05.12.2009.godine, zbog krivičnog djela nedozvoljeno
+držanje oružja i eksplozivnih materija izčl. 403. st.1. KZCG i osuđen na kaznu zatvora u trajanju od 45
+(četrdesetpet) dana, presudom Višeg suda u Podgorici K.br. 348/2009 od 25.05.2010.godine, zbog krivičnog
+djela neovlašćena proizvodnja, držanje i stavljanje u promet opojnih droga izčl. 300. st.1. KZCG i osuđen na
+kaznu zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci, presudom Osno vnog suda u Nikšiću K.br.
+305/11 od 03.06.2011. godine, zbog krivičnog djela treška krađa izčl. 240. st. 1. ta č.1. u vezičl. 20. KZCG i
+osuđen na kaznu zatvora u trajanju od 5 (pet) mjeseci, presudom Višeg suda u Podgorici Kv.br.969/11 od
+14.11.2011.godine, zbog krivičnog djela neovlašćena proizvodnja, držanje i stavljanje u promet opojnih droga
+iz čl. 300. st.1. KZCG i osuđen na kaznu zatvora u trajanju od 2 (dvije) godine i 4( č etri) mjeseca, presudom
+Osnovnog suda u Kotoru K.br. 188/17 od 03.11.2017. godine, zbog krivičnog djela nasilničko ponašanje izčl.
+399. KZ i osuđena na kaznu zatvora u trajanju od 6 ( š est) mjeseci, u pritvoru od 13.11.2019. godine od 01,45
+časova, pa na dalje.Viši Sud u Podgorici
+K 37/2020
+28. Jul 2020
+
+KRIV JE
+Zatošto je:
+Dana 2.11.2019.godine, oko 00,00časova, u B..., u ulici Ž... f..., ispred lokala "B...", prethodno doveden bez
+svoje krivice u jaku razdraženost teškim vrijeđanjem od strane oštećenog M.D. koji je prilikom rasprave u
+restoranu "B...", optuženom uputio riječi "narkomančino jedna!", " ko je tebe tu zaposlio?!" i daće ostati bez
+posla, da bi zatim optuženog, koji je stajao udario nogom u zadnjicu u namjeri da istog ponizi, pa je optuženi
+postupajući na mah, sa umišljajem pokušao da lišiživota oštećenog M.D., na načinšto je nakon ovog
+verbalnog i fizičkog sukoba u trenutku kada je oštećeni izašao iz restorana, optuženi P. iz suvozačevih vrata
+svog vozila marke "A...r..." reg. oznaka CT AS 754, uzeo noži krenuo za oštećenim, koji se uputio ka restoranu
+"V... P...", a koji se nalazi preko puta restorana "B...", a zatim mu zadao nekoliko udaraca u predjelu tijela,
+nakončega se oštećeni, kako bi se zaštitio, dao u bjekstvo pored parkiranih vozila ispred restorana "V...P...", a
+optuženi krenuo za njim trčeći, te kada ga je sustigao nožem mu ponovo zadao udarce u predjelu leđa i vrata,
+od kojih udaraca je oštećeni pao, a optuženi nastavio da ga nožem ubada u predjelu tijela, za koje vrijeme je
+oštećeni vikao "ubi me!", nanoseći mu tom prilikom teške tjelesne povrede opasne poživot u vidu dvije
+ubodnorezne rane u lijevom podlopatičnom predjelu, ubodnoreznu ranu u desnom podlopatičnom predjelu,
+ubodnoreznu ranu u lijevom podušnom predjelu - lijeva bočna strana vrata, u kom trenutku je prišao svjedok
+K.N. i odgurnuo optuženog P. od oštećenog, koji se zatim udaljio sa lica mjesta,
+
+- čime je izvršio krivično djelo ubistvo na mah u pokušaju izčl. 145. u vezičl. 20. Krivičnog zakonika Crne Gore
+
+Pa ga sud primjenom citiranih zakonskih odredbi, te odredbičl. 32, 33, 36, 42, i 51., Krivičnog zakonika Crne
+Gore,
+O S UĐU J E
+
+Na kaznu zatvora u trajanju od 1(jedne) godine i 2 (dva) mjeseca, s timštoće mu se u kaznu uračunti vrijeme
+provedeno u pritvoru od 13.11.2019. godine od 01,45časova, pa na dalje.
+
+OBAVEZUJE SE optuženi da na ime troškova krivičnog postupka nastalih tokom istrage i tokom zaključenja
+sporazuma o priznanju krivice uplati troškove i to: na ime nagrade sudskom vještaku medicinske struke dr
+R.N. iznos od 82,50 eura, na ime izvršenog vještačenja komisiji vještaka - neuropsihijatru prof. dr. M.S.,
+specijalisti psihijatru dr. G.Ž. i specijalisti psihologu S.I.B. u ukupnom iznosu od 990,00 eura, na ime nagrade i
+nuž nih izdataka branioca po službenoj dužnosti adv. S.J. iznos od 3.025 eura, sve u roku od 15 dana od dana
+pravosnažnosti presude donijete na osnovu sporazuma o priznanju krivice.
+O b r a z l ože nj e
+
+Optužnicom Višeg državnog tužilaštva u Podgorici Kt.br. 254/19 od 03.03.2020. godine, optuženom P.M.,
+stavljeno je na teret izvršenje krivičnog djela ubistvo na mah u pokušaju izčl. 145. u vezi sačl. 20. Krivičnog
+zakonika Crne Gore.
+
+Dana 10.07.2020. godine, Više državno tužilaštvo u Podgorici dostavilo je sudu, zapisnik o pregovaranju,
+zapisnik i sporazum o priznanju krivice.
+
+Rješ enjem K.br. 37/20 od 15.07.2020. godine, usvojen je sporazum o priznanju krivice, a koje rješenje je
+postalo pravosnažno dana 28.07.2020.godine.
+
+Na ročištu za razmatranje sporazuma, održanom dana 15.07.2020.godine, sud je na saglasan predlog
+stranaka pročitao dokaze predložene optužnicom i to: svjedoka oštećenog M.D., svjedoka K.A., K.N., M.R., K.R.
+i G.M., zapisnik o uviđaju Uprave policije CB Budva 20/3-1 br. 02-240/19-12279 od 13.11.2019. godine i izvršio
+uvid u fotodokumentaciju Uprave policije CB Budva broj 521/19 od 12.11.2019. godine, pročitao potvrdu
+Uprave policije CB Budva 20/2-240/19-12245 od 13.11.2019. godine, potvrdu o privremeno oduzetim
+predmetima Uprave policije CB Budva 20/3-1 02-240/19-12246 od 13.11.2019. godine, na ime P.M., služ benu
+zabilješku Uprave policije CB Budva 20/2 br. 03-240/19 od 13.11.2019. godine, službenu zabilješku Uprave
+policije CB Budva 20/3-1 br. 02-240/19-12355 od 14.11.2019. godine, vezano za izuzimanje video zapisa sa
+sigurnosnih kamera, izvršio uvid u CD na kome se nalazi video materijal izuzet sa nadzornih kamera sa
+objekta "B...", pročitao mecicinsku dokumentaciju JZU Opšte bolnice Kotor na ime oštećenog Mašković Dragana, nalaz i mišljenje sudskog vještaka medicinske struke dr. R.N. od 21.12.2019. godine, nalaz i mišljenje
+komisije vještaka psihijatrijskog vještačenja od 26.02.2020. godine, izvod iz kaznene evidencije za optuženog
+P.M., broj 05/2-72-15685/19 od 19.11.2019. godine, zapisnik o pregovaranju Kt. Sp.br. 54/20 od 10.07.2020.
+godine, zapisnik o priznanju krivice Kt. Sp.br. 54/20 od 10.07.2020. godine i sporazum o priznanju krivice Kt.
+Sp.br. 54/20 od 10.07.2020.godine.
+
+Iz sadržine pročitanih dokaza, na koje optuženi i njegov branilac nijesu imali primjedbi, sud zaključuje da je
+državna tužiteljka pružila dovoljno dokaza o krivici optuženog, te da je optuženi izvršio krivično djelo ubistvo
+na mah u pokušaju izčl. 145. u vezi sačl. 20. Krivičnog zakonika Crne Gore.
+
+Odlučujući o visini kazne za optuženog iz sporazuma o priznanju krivice, zaključenog između stranaka, sud je
+našao da je predlog stranaka u vezi sa kaznom prihvatljiv. Naime, po ocjeni ovog suda, priznanje optuženog
+za izvršeno krivično djelo, izraženo iskreno kajanje i prihvatanje krivice za isto, te činjenice da je krivično djelo
+ubistvo na mah izčl. 145. Krivičnog zakonika Crne Gore ostalo u pokušaju, a da Zakon propisuje, da se za
+pokušaj krivičnog djela shodnočl. 20. st.3. Kriviničnog Zakonika Crne Gore, učinilac može blaže kazniti, u
+svojoj ukupnosti jesu okolnosti koje opravdavaju ublažavanje kazne zatvora ispod zakonom propisanog
+minimuma za predmetno krivično djelo shodnočl. 45. i 46. Krivičnog zakonika Crne Gore, a pri tom sud nalazi
+i daće se kaznom zatvora u trajanju od 1 (jedne) godine i 2 (dva) mjeseca, ostvariti svrha kažnjavanja izčl. 32.
+Krivičnog zakonika Crne Gore, da optuženi ubuduće ne vrši krivična djela, u okviru opšte svrhe izricanja
+krivičnih sankcija izčl. 4. st. 2. Krivičnog zakonika Crne Gore.
+
+Kako je optuženi oglašen krivim, sud ga je shodnočl. 226. i 229. Zakonika o krivičnom postupku, obavezao i
+na plaćanje troškova krivičnog postupka i to na ime vještačenja vještaku medicinske struke dr R.N. iznos od
+82,50 eura, komisiji vještaka - neuropsihijatru prof. dr. M.S., specijalisti psihijatru dr G.Ž. i specijalisti
+psihologu S.I.B. ukupan iznos od 990,00 eura, te na ime nagrade i nužnih izdataka branioca po službenoj
+duž nosti adv. S.J. iznos od 3.025 eura, sve u roku od 15 dana od dana pravosnažnosti presude donijete na
+osnovu sporazuma o priznanju krivice, a sve u skladu sa sporazumom o priznanju krivice, koji je zaključen
+između stranaka.
+
+Sa izloženog, a shodno odredbičl. 303. st. 1. Zakonika o krivičnom postupku, odlučeno je kao u dispozitivu
+presude.
+
+VIŠI SUD U PODGORICI
+Dana, 28.07.2020.godine
+
+Zapisničar PREDSJEDNIK VIJEĆA-SUDIJA
+Novčić Slobodanka,s.r Tabaš Predrag,s.r
+
+PRAVNA POUKA
+Protiv ove presude nije dozvoljenažalba
+
+Tačnost otpravka ovjerava namještenik suda
+Novčić Slobodanka</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

@@ -1,0 +1,60 @@
+# --- General / OS ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.log
+
+# --- Python (FastAPI / Scripts) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+.venv/
+ENV/
+.env
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# --- Java (CBR JColibri) ---
+**/target/
+*.class
+*.jar
+*.war
+*.ear
+.factorypath
+.project
+.settings/
+.classpath
+
+# --- Frontend (Angular) ---
+**/node_modules/
+/dist/
+/tmp/
+/out-tsc/
+.angular/
+# Karma i test report-ovi
+/frontend/coverage/
+/frontend/test-results/
+
+# --- Project Specific (Pravna-Team7) ---
+# Veliki generisani XML i JSON fajlovi
+data/verdicts_xml/GEN-*
+output/
+*_annotated.xml
+*_annotations.json
+*_graph.ttl
+*_graph.jsonld
+*_graph.cypher
+*.csv
+
+# --- Docs & Reports ---
+# Ako ne želiš da deliš lokalne PDF-ove ili izveštaje o evaluaciji
+# output/nlp_eval_report.json

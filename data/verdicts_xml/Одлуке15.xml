@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке15">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке15/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке15"/>
+                    <FRBRdate date="2021-10-21" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке15/sr@2021-10-21/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке15/sr@2021-10-21"/>
+                    <FRBRdate date="2021-10-21"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке15/sr@2021-10-21/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке15/sr@2021-10-21/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Ognjane Boljević"/>
+                <TLCPerson eId="judge_2" href="/akn/me/ontology/person/judge" showAs="Vesna Jelenić"/>
+                <TLCPerson eId="judge_3" href="/akn/me/ontology/person/judge" showAs="Vesne Kovačević"/>
+                <TLCPerson eId="judge_4" href="/akn/me/ontology/person/judge" showAs="Zorana Radović"/>
+                <TLCPerson eId="defendant_1" href="/akn/me/ontology/person/defendant" showAs="Topljanović Dalibor"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="P.R."/>
+                <TLCPerson eId="victim_2" href="/akn/me/ontology/person/victim" showAs="E.S."/>
+                <TLCPerson eId="victim_3" href="/akn/me/ontology/person/victim" showAs="U.D."/>
+                <TLCPerson eId="victim_4" href="/akn/me/ontology/person/victim" showAs="T.T."/>
+                <TLCPerson eId="victim_5" href="/akn/me/ontology/person/victim" showAs="Đurišić Momčila"/>
+                <TLCPerson eId="victim_6" href="/akn/me/ontology/person/victim" showAs="Mila Muharema"/>
+                <TLCPerson eId="victim_7" href="/akn/me/ontology/person/victim" showAs="Sulejmanović Ruždija"/>
+                <TLCPerson eId="victim_8" href="/akn/me/ontology/person/victim" showAs="Sulejmanović Argitu"/>
+                <TLCPerson eId="victim_9" href="/akn/me/ontology/person/victim" showAs="Đurišić Momčilo"/>
+                <TLCPerson eId="victim_10" href="/akn/me/ontology/person/victim" showAs="Kolaj Nir"/>
+                <TLCPerson eId="victim_11" href="/akn/me/ontology/person/victim" showAs="Sulejmanović Ružda"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 18/20</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>VIŠI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2021-10-21">2021-10-21</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Ognjane Boljević</judge>
+                    <judge>Vesna Jelenić</judge>
+                    <judge>Vesne Kovačević</judge>
+                    <judge>Zorana Radović</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Optuženi oglašen krivim za ubistvo u pokušaju i nedozvoljeno držanje oružja.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Pokušaj ubistva</p>
+                    <p>Nedozvoljeno držanje oružja</p>
+                    <p>Primjena zakonskih odredbi</p>
+                    <p>Visina kazne</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_143">Član 143</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_20">Član 20</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_403">Član 403</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_48">Član 48</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_113">Član 113</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_109">Član 109</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_115">Član 115</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_42">Član 42</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_2">Član 2</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Sud je utvrdio da je optuženi s umišljajem pokušao da liši života oštećenog, koristeći neovlašćeno oružje.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Osuđen</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="defendants">
+                    <person>Topljanović Dalibor</person>
+                </block>
+                <block name="victims">
+                    <person>P.R.</person>
+                    <person>E.S.</person>
+                    <person>U.D.</person>
+                    <person>T.T.</person>
+                    <person>Đurišić Momčila</person>
+                    <person>Mila Muharema</person>
+                    <person>Sulejmanović Ruždija</person>
+                    <person>Sulejmanović Argitu</person>
+                    <person>Đurišić Momčilo</person>
+                    <person>Kolaj Nir</person>
+                    <person>Sulejmanović Ružda</person>
+                </block>
+                <block name="witnesses">
+                    <person>Đurišić Momčila</person>
+                    <person>Mila Muharem</person>
+                    <person>Sulejmanović Ruždija</person>
+                    <person>Sulejmanović Argitu</person>
+                    <person>Đurišić Momčilo</person>
+                    <person>Sulejmanović Ružda</person>
+                    <person>Šurla Mario</person>
+                    <person>Sulejmanović Argita</person>
+                    <person>Šurla Maria</person>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">teška tjelesna povreda</fact>
+                <fact key="weapon">pistolj</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="weapon">puška</fact>
+                <fact key="amount">100 kg</fact>
+                <fact key="amount">120 kg</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Ulcinj</fact>
+                <fact key="severe_consequence">da</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="confession">da</fact>
+                <fact key="mitigating_circumstances">da</fact>
+                <fact key="aggravating_circumstances">da</fact>
+                <fact key="poor_financial_status">da</fact>
+                <fact key="attempted_offense">da</fact>
+                <fact key="imposed_prison_sentence_months">26</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>K.br. 18/20
+
+U IME CRNE GORE
+VIŠI SUD U PODGORICI, kao prvostepeni krivični, u vijeću stastavljenom od sudije Kovačević Vesne, kao
+predsjednika vijeća i sudija Boljević Ogn jane i Radović Zorana, kao članova vijeća, uz učešće zapisničara
+Jelenić Vesne, u krivičnom predmetu protiv optuženog Topljanović Dalibora koga po službenoj dužnosti
+brani Raspopović Andrej, advokat iz Podgorice, zbog krivičnog djela ubistvo u pokušaju izčlana 143 u vezi
+člana 20 Krivičnog Zakonika Crne Gore u sticaju sa krivičnim djelom nedozvoljeno držanje oružja i
+eksplozivnih materija izčlana 403 stav 1 Krivičnog Zakonika Crne Gore, nakon završenog glavnog pretresa
+dana 14.10.2021. godine u prisustvu zastupnika optužbe optuženog i branioca optuženog, a u odsustvu
+uredno obaviještenog punomoćnika oštećenog, nakon tajnog vijećanja i glasanja, dana 21.10.2021. godine
+donio je i javno objavio:
+
+P R E S U D U
+Optuženi:
+TOPLJANOVIĆDALIBOR, JMB 0409983750931, od oca Siniše i majke Silvane, rođene Čogić, rođen 04.09.1983.
+godine u Zaječaru, sa prebivalištem u Zaječaru, ul. Dubrovačka broj 25, državljanin Republike Srbije,
+razveden, otac jednog maloljetnog djeteta, završio srednju frizerskuškolu, nezaposlen, srednjeg imovnog
+stanja, u pritvoru od 08.10.2019. godine od 20,00časova,
+
+K R I V J E
+Zatošto je:
+Dana 10.09.2019. godine, oko 06,00časova, u Ulcinju, u ul. Ivana Milutinovića, sa umišljajem pokušao da liši
+života oštećenog Đurišić Momčila, na načinšto je istome prišao na ulici i bez povoda, iz pištolja nepoznate
+marke, kalibra 7,62 mm TT, koji je suprotnočlanu 5 ičlanu 33 Zakona o oružju, neovlašćeno nabavio i nosio
+na javnom mjestu, ispalio jedan projektil u oštećenog koji ga je pogodio u lijevo uho i lijevo rame, nanoseći
+mu tešku tjelesnu povredu u vidu strijelne rane prostreline gornjeg pola lijeve ušneškoljke, strijelog okrznuća
+u lijevom zaušnom predjelu i strijelnog okrznuća u lijevom nadlopatičnom predjelu, praćenog djelimičnom
+amputacijom lijeve ušneškoljke, pričemu je bio svjestan svojih djela i htio je njihovo izvršenje,
+čime je izvršio krivično djelo ubistvo u pokušaju izčlana 143 u vezičlana 20 Krivičnog Zakonika Crne Gore u
+sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija izčlana 403 stav 1 Krivičnog
+Zakonika Crne Gore Viši Sud u Podgorici
+K 18/2020
+21. Oktobar 2021
+
+Pa sud optuženom Topljanović Daliboru primjenom naprijed navedenih zakonskih odredbi, te odredbičl. 2,
+4, 5, 6, 14, 15, 32, 36, 42. i 48. Krivičnog zakonika Crne Gore, prethodno
+U T V RĐU J E
+za krivično djelo ubistvo u pokušaju izčlana 143 u vezičlana 20 Krivičnog Zakonika Crne Gore kaznu zatvora u
+trajanju od 2 (dvije) godine i 2 (dva) mjeseca.
+za krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija izčlana 403 stav 1 Krivičnog Zakonika
+Crne Gore, kaznu zatvora u trajanju od 6 (šest) mjeseci.
+Pa sud optuženog primjenom citiranih zakonskih odredbi, te odredbičl. 48. st. 2. tačka 2. i 51. Krivičnog
+zakonika Crne Gore, te odredbičl. 226, 229. i 374. Zakonika o krivičnom postupku,
+O S UĐU J E
+Na jedinstvenu kaznu zatvora u trajanju od 2 (dvije) godine i 6 ( š est) mjeseci, u koju kaznu mu se uračunava
+vrijeme provedeno u pritvoru, počev od 08.10.2019. godine od 20,00časa, pa nadalje, dok pritvor bude
+trajao.
+OBAVEZUJE SE optuženi da na ime troškova krivičnog postupka-sudskog paušala plati ovom sudu novčani
+iznos od 200,00 eura, te da na ime ostalih troškova krivičnog postupka plati novčani iznos od 493,75 eura, a
+koji troškovi se odnose na vještačenja koja su sprovedena u toku postupka i na putne troškove svjedoka koji
+su saslušani u predmetnom postupku, sve u roku od 15 dana po pravosnažnosti presude, pod prijetnjom
+prinudne naplate, dokće o ostalim troškovima krivičnog postupka, Sud odlučiti naknadno, posebnim
+rješ enjem, po pribavljanju podataka o njihovoj visini.
+
+O b r a z l ože nj e
+Optužnicom VDT – a Podgorica Kt.br. 215/19 od 03.02.2020. godine, optuženom Topljanović Daliboru
+stavljeno je na teret izvršenje krivičnog djela ubistvo u pokušaju izčlana 143 u vezičlana 20 Krivičnog
+Zakonika Crne Gore u sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija izčlana
+403 stav 1 Krivičnog Zakonika Crne Gore, pa je zastupnik optužbe u konačnom ostao pri podignutoj optužnici
+i predlozima iz iste, predlažući sudu da optuženog oglasi krivim i osudi po zakonu, kao i da mu produži
+pritvor iz razloga koji su određeni.
+Optuženi Topljanović Dalibor je u prethodnom postupku pred VDT iskoristio svoje pravo koje mu pripada po
+zakonu i nije htio da iznosi odbranu.
+Na glavnom pretresu optuženi je u svojoj odbrani naveo da je u Ulcinju došao iz Srbije na poziv jedne svoje
+prijateljice, sa kojom je bio u emotivnoj vezi i da je i dan danas sa njom u vezi. Međutim, pošto je u ona u
+braku sa njegovim poznanikom, niježelio da kaže njene lične podatke, ali je naveo da ona radi u jednom
+hotelu u Ulcinju, pa je iz tog razloga došao u Ulcinj kako bi zajedno išli za Srbiju. Naveo je da je radio kao
+građ evinski radnik, međutim kako u Ulcinju nije našao posao, pošto nije bilo građevinskih objekata, i kako je
+nakon 7-8 dana ostao bez novca otišao je u Drač - Albaniju da radi, a sve po dogovoru sa tom osobom.
+Prilikom povratka u Crnu Goru uhapsili su ga u Ulcinju, odveli ga u stanicu policije i tamo ga dva dana tukli da
+prizna da je pucao u nekog starijegčovjeka, a kojeg on ne poznaje. Nakon toga pošli su u neku sobu sa
+ogledalima gdje je stajalo njih 4-5 lica držeći brojeve u rukama i sjeća se da su među nijima bila dva
+inspektora jer su ulazili sa motorolama u kancelariji dok su ga ispitivala i zna da su dvojica bila viša od njega
+
+za glavu i stariji sigurno po desetak godina, a jedan je bio niži od njega. Poslije toga ječuo da su mu oduzeli
+neke stvari i tošorc, papuče, naočare i to zaista jesu njegove stvari. Međutim, dukserica i neke bermude sa
+šarama i bijele patike nijesu njegove stvari i to su mu podmetnuli kako bi bio kriv. Govorili su mu da prizna, da
+imaju njegov DNK ičitavo vrijeme su ga tukli. Nikakvog motiva nije imao da puca u ovogčovjeka, jer ga nije
+poznavao i prvi put ga je vidio kod tužioca.
+Branilac optuženog Topljanović Dalibora je u završnoj riječi naveo da predmetnom optužnicom nije
+dokazano da je njegov branjenik kriv za krivična djela koja mu se stavljaju na teret, jer nema dokaza da je
+optuženi sa umišljajem pokušao da lišiživota, sada pok. oštećenog, niti navedeni dokazi upućuju na
+zaključak da je njegov branjenik napadač, a našta nažalost ukazuje i cjelokupan razvoj događaja od početka
+ovog procesa. Branilac je naveo da tužilaštvo nije dokazalo ni namjeru optuženog da izvršio ovo djelo, niti je
+utvrđen motiv, niti je nađeno oružje kao predmet izvršenja, nije bilo barutnihčestica, nije bilo poklapanja
+DNK njegovog branjenika, takođe navodi da nema subjektivnog odnosa učinioca prema ovom krivičnom
+djelu. Iz svega navedenog predložio je sudu da optuženog oslobodi od optužbe, jer nije dokazano da je učinio
+krivično djelo za koje je optužen.
+Optuženi Topljanović Dalibor se pridružio završnim riječima svog branioca.
+Sud je u dokaznom postupku neposredno saslušao svjedoka – oštećenog Đurišić Momčila, svjedoke Mila
+Muharema, Sulejmanović Ruždija, Š urla Maria i Sulejmanović Argitu, pročitao zapisnik o prepoznavanju ODT
+u Ulcinju Kt.br. 89/19 od 08.10.2019. godine i izvršio uvid u fotoelaborat sačinjen povodom prepoznavanja
+lica Topljanović Dalibora, obavljenog u prostorijama OB Ulcinj od 08.10.2019. godine, izvršio uvid učetiri
+potvrde o privremeno oduzetim predmetima OB Ulcinj Ku.br. 132/19 od 08.10.2019. godine, izvršio uvid u
+dvije potvrde o privremeno oduzeti predmetima OB Ulcinj Ku.br.132/19 od 09.10.2019. godine, potvrdu o
+ulaženju u stan i druge prostorije OB Ulcinj Ku.br. 132/19 od 09.10.2019. godine, zapisnik o uviđaju OB Ulcinj
+Ku.br. 132/19 od 10.09.2019. godine, na saglasan predlog stranaka pročitao izvještaj Forenzičkog centra o
+DNK vještačenju br. 3824/19 od 16.10.2019. godine, izvještaj Forenzičkog centra o DNK vještačenju br. 3821/19
+od 16.10.2019. godine, izvještaj Forenzičkog centra o vještačenju daljine pucanja broj 3823/19 od 22.10.2019.
+godine, izvještaj Forenzičkog centra o balističkom vještačenju br. 3822/19 od 21.10.2019. godine, izvještaj
+Forenzičkog centra o vještačenju prisustva barutnihčestica broj 4106/19 od 01.11.2019. godine, izvještaj
+Forenzičkog centra o informaciono tehničkom vještačenju broj 4225/19 od 14.11.2019. godine, nalaz i
+mišljenje sudskog vještaka medicinske struke od 19.12.2019. godine Radojević Nemanje, odredio i pročitao
+antropološko vještačenje od strane vještaka Nemanje Radojevića i analize stop frejmova video snimaka i
+antropološke osobenosti osobe koja se pojavljuje na video snimcima koji se nalaze u spisima predmeta,
+neposredno saslušao vještaka medicinske struke Radojević Nemanju na glavnom pretzresu, izvršio
+vješ tačenje po vještačenju za digitalne dokaze Savić Balše, izvršio uvid u fotoelaborat sačinjen od strane OB
+Ulcinj broj knjige 195/19 od 09.10.2019. godine, izvršio uvid u fotodokumentaciju koja se nalazi u spisima
+predmeta, izvršio uvid u CD koji je sastavni dio izvještaja Forenzičkog centra o informaciono tehničkom
+vješ tačenju, pročitao dopis Odjeljenju bezbjednosti Ulcinj broj 19/4-2 broj 215/20-3377/2 od 21.07.2020.
+godine, pročitao dopis Uprave policije Crne Gore broj 15-074/20-17736 od 23.07.2020. godine, i izvršio uvid u
+uvjerenje iz kaznene evidencije Ministarstva pravde broj 05/2-041-3249/20 od 05.03.2020. godine na ime
+optuženog Topljanović Dalibora.
+Svjedok – oštećeni Đurišić Momčilo je u svom iskazu pred VDT – om u bitnom naveo da se kritični događaj
+desio dana 10.09.2019. godine, da je u ranim jutarnim satima krenuo iz svoje kuće prema centru grada i nekih
+150 metara od kuće, sa njegove desne strane otpozadi naišlo je jedno njemu nepoznato lice i prošlo pored
+njega nekih desetak koraka, a zatim se okrenuo i stalo ispred njega gledajući ga pravo u lice. Vidio je da ima
+pištolj u desnoj ruci, misli da je bio niklovani pištolj, sivkaste boje. Odmah je znao daće da ga ubije, pa je
+instiktivno napravio pokret tijelom takošto se sagnuo sa svojom desno m stranom prema podu, i u tom
+
+trenutku je to lice ispalilo projektil u njegovom pravcu, pa kako se sagnuo metak ga je pogodio u lijevo uho i
+lijevo rame. Naslonio se na jedno vozilo koje je bilo pored puta, a zatim na motor, koji se nalazio pored tog
+vozila, nakončega je pao na asfalt i otkotrljao se nekoliko metara jer nije mogao da se zadrži na nogama.
+Okrenuo se i vidio da ovo lice koje je pucalo u njega bježi ubrzanim koracima prema hotelu „Hoti“. Njegov
+utisak je da se ovom licu zaglavio pištolj i da se zato nije vratio da ga dokrajči. Izvadio je mobilni telefon i
+pozvao policiju, a potom držeći se za ogradu pored puta, otišao je kući. Sjeća se da je ovo lice koje je pucalo
+na njega imalo bermude negdje do koljena, koje su bile ili na pruge ili karirane i jaknu ili duksericu sa
+kapuljačom koja mu je bila navučena preko glave, a misli da je ispod kapuljače imao kačket. Imao je nešto u
+rukama, da li kesu ili torbu, nije mogao da se izjasni. Takođe je naveo da je prepoznao to lice prilikom radnje
+prepoznavanja u prisustvu tužioca iz Ulcinja, jer ga je dobro vidio, s obzirom da je bio licem u lice sa njim, te
+je naveo i da ga je prepoznao i prilikom saslušanja u tužilaštvu, obzirom da je to lice prisustvovao saslušanju i
+nema nikakvu dilemu da je to lice koje je kritičnog dana pucalo u njega. Oštećeni dalje navodi da ovo lice koje
+je pucalo u njega nikada ranije nije vidio i da je jedini motiv zbog kojeg je ovo lice moglo da puca u njega, taj
+što je njegov sin prije tri godine ubio jedno lice sa Kosova, pa pretpostavlja da je ovo lice plaćeno da njega liši
+života i to od strane porodice lica koje je njegov sin lišioživota. Na kraju je istakao da je kritične prilike na
+njega ispaljen samo jedan projektil.
+Na glavnom pretresu oštećeni je pojasnio da je poslije jedno mjesec dana nakon ovog događaja saznao da se
+optuženi „mota“ oko njegove kuće i da je stanovao u blizini njegove kuće i da je na dan kada je lišen slobode
+sjedio u jednoj piceriji da popije kafu kada ga je pripravnik Dervišprimijetio i pozvao policiju. Dalje
+pojašnjava da je u momentu kada mu je optuženi prilazio i kada je pucao u njega jasno vidio njegovo lice a
+zatim i prilikom pada na vozilo „golf“ kada je podigao glavu i ponovo vidio facu tog lica, jer se u jednom
+trenutku okrenuo prema njemu a zatim nastavio da bježi, š to znači da mu je dva puta vidio facu lica, jer da ga
+nije tako dobro vidio sigurno ga ne bi prepoznao kada je vršena radnja prepoznavanja. Dalje je istakao da je
+kuća Sulemjanović Argite kod koje je optuženi uzeo bio sobu koja je udaljena od njegove kuće vazdušne linije
+nekih hiljadu metara i da se iz te kuće može vidjeti sve kao na dlanu, pačak i njegova terasa, balkonska i
+ulazna vrata, kao i da li neko izlazi u dvorište, š to znači da je iz kuće Sulejmanovića mogao da prati njegovo
+kretanje.
+Svjedok Mila Muharem je u svom iskazu pred VDT – om u bitnom naveo daživi u Ulcinju gdje izdaje
+aparmane, te da je sredinom avgusta prošle godine jedno muško lice iznajmilo sobu na sedam dana i da mu
+je tom prilikom izdao dvokrevetnu sobu jer nije imao jednokrevetnu, da mu je skrenuo pažnju da mu se
+mož da ne isplati da plaća dvokrevetnu sobu, međutim, tom licu isto nije bilo problem, da je uzeo njegova
+lična dokumenta i utvrdio da se radi o Topljanović Daliboru a zatim mu naplatio sobu unaprijed za sedam
+dana, kao što to inače radi sa svim gostima. Taj momak je bio pristojan, jedinošto je zapazio jeste da je
+spavao do kasno, nekad do 12 ili 13časova, da je nakon sedam dana tražio da produži jošjednu no ć, ali kada
+je trebalo da plati rekao je da nema novca, međutim, nije htio zbog toga da mu pravi problem. Kasnije je
+saznao da je to isto lice boravilo jedan dan u kući njegovog poznanika Sulemjanović Ružda i da je bio i kod jošnekih Ulcinjana. Inače, nema kontakt sa gostima, ali je sa Topljanovićem jedne prilike razgovorao i isti mu je
+kazao da nikada ne ide na plažu, nego dašeta okolo, da ide kroz borovušumu, a koje je inačešetalište u
+Ulcinju.
+Na glavnom pretresu svjedok je dodao da mu je to lice koje je bilo smješteno kod njega jednom prilikom
+kazao da radi u Austriji, ali da ga nije pitao zašto je došao u Ulcinj.
+Svjedok Sulejmanović Ružda je u svom iskazu pred VDT – om u bitnom naveo da je u njegovoj kući koja se
+nalazi u Ulcinju tokom ljeta u popodnevnim satima došao nepoznati muškarac koji je rekao da je iz Srbije i
+tražio da mu se iznajmi soba na pet dana i unaprijed je platio 50 eura. Nakon izdavanja sobe i pošto su istom
+predali ključviše nisu sretali sa tim licem.
+
+Svjedok Šurla Mario je u svom iskazu pred VDT – om u bitnom naveo da se ne može sjetiti datuma, da se sjeća
+da je bilo toplo, da je tog jutra prije 06,00časova sjedio na terasi i pio kafu, te da je u tom trenutku začuo
+pucanj, a ubrzo je pored njegove kuće da je protrčalo jedno lice. To lice je imalo duksericu ne sjeća se koje
+boje je bila i kapuljaču prebačenu preko glave, a takođe je na sebi imalošorc i patike. Primijetio je da u
+desnoj ruci, koju je spustio uz tijelo, drži pištolj. To lice je otišlo stepenicama prema hotelu „Hoti“. Pored
+pištolja u rukama je držao jošnešto, ali nije mogao tačno da vidišta. Objašnjava da ječuo samo jedan pucanj
+i da je to lice u ruci držao veći pištolj, kao da je pucao iz malokalibarske puške.
+Na glavnom pretresu svjedok je objasnio da je taj pucanj bio više kao pisak i da je dobro vidio da to lice u
+rukama ima neki pištolj, malo duži, ali ne može detaljnije da ga opiše jer je bio udaljen od njegove kuće nekih
+7-8 metara, međutim, pošto je on sjedio na spratu kuće možda i 10 do 12 metara ima visine do prvog sprata, a
+policijska traka koja je bila postavljena na mjestu događaja udaljena je bila nekih 40 metara.
+Svjedok Sulejmanović Argita na glavnom pretresu je u bitnom istakla da je jedno lice kod nje iznajmio
+smještaj za 5 dana i platio 50 eura, rekao joj je da je iz Srbije, međutim ona nije dalje komunicirala sa njim,
+niti je znala njegovo ime niti je izvršila uvid u njegovu ličnu kartu jer je odmah izašao napolje, a ona je ostala
+da sredi smještaj. Takođe, navela je da je trećeg dana došla policija i odvela ga, dok su od nje tražili da ode i
+da izjavu u policiji i tada je saznala da se zove Topljanović Dalibor. Svjedok je navela da kasnije nije gledala to
+lice jer je soba izvdojena, te da nije provjerala da li je boravio u njoj, a kada je u toku ta dva dana pošla do
+vrata da vidi da li se nalazi u sobi, vrata su bila zaključena, tako da ga je vidjela samo taj prvi dan kada mu je
+izdala sobu, ali je navela da je to lice u sudnici pokazujući na optuženog.
+Iz zapisnika o prepoznavanju ODT u Ulcinju Kt.br. 89/19 od 08.10.2019. godine proizilazi da je radnja
+prepoznavanja sačinjena shodno odredbičl. 115 ZKP-a u prostorijama UP OB Ulcinj po ovlašćenju državne
+tužiteljke u VDT u Podgorici Maje Jovanović, sa početkom u 21:10časova, u vezi izvršenja krivičnog djela
+ubistvo u pokušaju izčl. 143 st. 1 u vezičl. 20 KZ CG, izvršenog naštetu Đurišić Momčila iz Ulcinja, dana
+10.09.2019. godine. Prepoznavanje se vršilo od strane svjedoka-oštećenog Đurišić Momčila koji je prije
+izvršenog prepoznavanja upoznat sa odredbamačl. 113 st. 2 ZKP-a ičl. 109 st. 1 ZKP-a, pa nakon toga opisao
+lice koje je tom prilikom pucalo na njega, da je u pitanju osoba starosne dobi od 35-40 godina, visoka oko
+185cm i teška oko 100 kg, da zbog kapuljače nije mogao vidjeti boju kose i da li uopšte ima kosu, ašto se tiče
+brade ostavlja mogućnosti da je imao bradu neobrijanu nekoliko dana, dakle nikako ne veliku bradu, ašto se
+tiče crta lica, nema nikakvih posebnih karakteristika koje bi se riječima mogle opisati, jedino je mogao reći da
+se radi o dosta grubim i oštrim crtama lica. Prepoznavanje je obavljeno u prostoriji posebno namijenjenoj u
+tu svrhu tako da lice koje je predmet prepoznavanja ne može da vidi oštećenog, niti oštećeni može da vidi to
+lice, prije negošto pristupi prepoznavanju, u koju prostoriju je prethodno uvedeno pet lica, među kojima i
+lice za koje postoji osnov sumnje da je jedno lice koje je kritičnom prilikom pucao u oštećenog, te da su
+poređana sljedećim redosljedom, posmatrano sa lijeva na desno: pod 1. Kolaj Nir, rođen 27.06.1988. godine u
+Republici Albaniji, personalni broj I80627064N, koji u ruci drži broj „1“; 2. Topljanović Dalibor, rođen
+04.09.1983. godine u Zaječaru, R.Srbija, JMB 0409983750031, koji u ruci drži broj „2“; 3.Milikić Milenko, rođen
+13.01.1982. godine u Podgorici, JMB 1301982210023, koji u ruci drži broj „3“; 4. Visha Lulash, rođen
+27.06.1979. godine u Albaniji, personalni broj H90627037Q, koji u ruci drži broj „4“ i 5. Tema Adrijan, rođen
+28.07.1983. godine u Ulcinju, JMB 2807983223018, koji u ruci drži broj „5“. Svjedoku Đurišić Momčilu su
+pokazana sva lica, pa nakonšto ih je dobro razgledao, izjavio je da od lica koja je vidio sa sigurnošću može da
+prepozna i potvrdi da je lice koje je na način koji je prethodno opisao pucalo u njega lice koje se nalazi na
+poziciji broj „2“ na redu za prepoznavanje i da u ruci drži broj „2“ i da je u to sto-posto siguran. Takođe je
+izjavio da od ostalih lica koja se nalaze na redu za prepoznavanje nikog ranije nije gledao, niti poznavao, osim
+ovo lice koje je prepoznao. Uz navedeni zapisnik sačinjen je i zajednički foto snimak lica koja se prepoznaju
+koji je sastavni dio navedenog zapisnika.
+
+Iz izvršenog uvida u fotoelaborat sačinjen povodom prepoznavanja lica Topljanović Dalibora obavljenog u
+prostorijama OB Ulcinj 08.10.2019. godine u predmetu KD „ubistvo u pokušaju“ naštetu Đurišić Momčila
+proizilazi da se u redu za prepoznavanje postavljeno pet lica i prikazan je izgled lica koje su se nalazile u
+prostorijama za prepoznavanje.
+Iz sadržinečetiri potvrde o privremeno oduzeti predmetima OB Ulcinj Ku.br. 132/19 od 08.10.2019. godine
+proizilazi da je od Topljanović Dalibora privremeno oduzetoi to: iz prve potvrde utvđuje se da je oduzet
+mobilni telefon marke Samsung, IMEI broj 354609072244361/01, iz druge potvde oduzeta je putna isprava
+pasošbroj 013789306 na ime Topljanović Dalibor, izdat od strane R. Srbije, iz treće potvrde utvrđuje se da je
+oduzeto: 1.muška crna torbica sa natpisom GIORGIO ARMANILR COLLEZIOM, 2.okvir od SIM kartice TELENOR
+broj 062 1787262, PUK 1 30531476, PUK 2 83221399, 3.kabal crne boje od punjača mobilnog telefona, 4.
+Power bank- eksterna baterija za punjenje mobilnog telefona marke WST, 5.vizit kartica hotela Samedi broj
+telefona +355(0)692821234, 6. visit kartica beko taxi, 7.okvir od SIM kartice „ T“ crvene boje, Pin 1 6114, Pin 2
+2534, 8.okvir od SIM kartice crvene boje M:tel-a, pretplatničkog broja 068256942, izčetvrte potvrde utvrđuje
+se da je oduzeta majica kratkih rukava crvene boje sa natpisom bijele boje „ Nike“.
+Iz sadržine dvije potvrde o privremeno oduzetim predmetima OB Ulcinj Ku.br. 132/19 od 09.10.2019. godine
+proizilazi da su od Topljanović Dalibora prvom potvrdom oduzete: 1. bermude bijele sa kariranimšarama, 2.
+kačket crne boje sa aplikacijom bijeli lav, 3. gumene papuče bijelo crne boje, 4.majica kratkih rukava „
+replay“, 5. bermude bijelo-crveno-teget plave boje, 6. 8 pari naočara za sunce, 7. ručno pravljena cigareta tkz.
+„ dž oint“ sa suvom bijelom materijom nalik na opojnu drogu „marihuana“, 8. š orts jarko crvene boje „
+reebok“, a drugom potvrdom su mobilni telefon marke Noa, imei 1 broj 352396090006434 I, imei 2 broj
+352396090006442, 2. punjačod gore navedenog telefona.
+Uvidom u potvrdu o ulaženju u stan i druge prostorije OB Ulcinj Ku.br. 132/19 od 09.10.2019. godine proizilazi
+da su policijski službenici ušli u stan i druge prostorije i od Topljanović Dalibora kao držaoca stana i oduzeli
+bermude bijele sa kariranimšarama, 2. kačket crne boje sa aplikacijom bijeli lav, 3. gumene papuče bijelo
+crne boje, 4.majica kratkih rukava„ replay“, 5. Bermude bijelo-crveno-teget plave boje, 6. 8 pari naočara za
+sunce, 7. ručno pravljena cigareta tkz. „ džoint“ sa suvom bijelom materijom nalik na opojnu drogu
+„marihuanu“, 8. š orts jarko crvene boje„ Reebok“, očemu je bio obaviješten Viši državni tužilac Maja
+Jovanović.
+Iz zapisnika o uviđaju OB Ulcinj Ku br.132/19 od 10.09.2019. godine proizilazi da je izlazak na mjesto događaja
+izvršen povodom prijave toga dana 10.09.2019. godine u 06:05časova gdje su putem telefona službenici
+policije obaviješteni od strane Đurišić Momčila da ga je, dok se kretao pješice ulicom Ivana Milutinovića ka
+poslu, i dolaskom naspram kuće Jamiza Elezagića, presrelo njemu nepoznato lice i pucalo iz pištolja u
+njegovom pravcu, kojom ga je prilikom pogodilo u predjelu uha i ramena, nakončega lice starosti oko 35
+godina, srednjeg rasta koje je na sebi imalošuškavu jaknu sa kapuljačom, š orts na kocke i bijele patike, bježi
+prema Maloj plaži, da je o gore navedenom obaviješten VDT Maja Jovanović, pa su nakon toga pristupili
+vršenju uviđaja na licu mjesta u ulici Mujo Ulqinaku u blizini kuća Isata Dragovoje i Milorada Kneževića.
+Prilikom uviđaja označeni su tragovi i to kao trag broj 1. da se na asfaltnoj površini koja ješirine 6,20 metara
+nalazi ispaljenačaura, na udaljenosti od 1,65 metara od desne ivice kolovoza, gledano iz pravca Prve banke u
+pravcu hotela „Senator“ a naspram metalne kapije porodične kuće Milorada Kneževića iz Ulcinja, kao trag
+broj 2. označen je trag koji se nalazi na asfaltnoj površini i to u vidu koncentracije kapljica nalik na krv, na
+udaljenosti 3,90 metara od desne ivice kolovoza, gledano iz pravca Prve banke u pravcu hotela „Senator“,
+pored parkiranog vozila „ š koda oktavia“ registarskih oznaka UL AN773, a naspram porodične kuće Isata
+Dragovoje iz Ulcinja. Na navednom vozilu „ Š koda okcavia“ na zadnjim lijevim vratima nalaze se tragovi nalik
+na krv, označeni kao trag broj 5. Kao trag broj 3 označen je trag koji se nalazi na asfaltnoj površini u vidu
+koncentracija kapljica nalik na krv, na udaljenosti od tri metra (u površini 2,7 metara x 1,50 metara) od desne
+
+ivice kolovoza, gledano iz pravca Prve banke u pravcu hotela „Sentor“, pored parkiranog motocikla „Honda
+octavia“, bez registarskih oznaka a naspram kuće Isata Dragovoja iz Ulcinja. Dalje je konstatovano da je krim.
+tehničar konstatovao i odradio lice mjesta i da je uviđaj završen u 09:00časova.
+Iz sadržine izvještaja Forenzičkog centra o DNK vještačenju br. 3824/19 od 16.10.2019. godine proizilazi da su
+dostavljeni tragovi koji su izuzeti sa lica mjesta gdje se desio predmetni događaj naštetu Đurišić Momčila i to
+bris sa površina betonskih ivica zadnjeg stepeništa, brisevi sa betonske podloge zadnjeg stepeništa, sa
+drvenih daski (spoljne strane), sa daske kojima su napravljena improvizovana vrata, sa ram daske ulaznih
+vrata, sa drvenih daski (unutrašnja i spoljašnja strana) koje zatvaraju lijevu i desnu stranu otvora terase na
+spratu kao izuzeti tragovi 1/1, ½, 2/1, 2/2, 1, 2, 3/1, 3/2, 4/1 i 4/2 i da je zadatak vještačenja da se utvrdi da li na
+istima ima biološkog materijala, utvrditi DNK profile i uporediti ih sa bazom DNK registra i da vještačenjem
+nije utvrđeno prisustvo biološkog materijala.
+Iz sadržine izvještaja Forenzičkog centra o DNK vještačenju br. 3821/19 od 16.10.2019.godine proizilazi da su
+na vještačenje dostavljeni ispaljenačaura i bris sa rukohvata stepeništa hotela „ Hot“ i da je zadatak da se
+utvrdi da li na istima ima biološkog materijala i da se isti uporedi sa bazom DNK registra i konačan rezultat
+vješ tačenja je da na izuzetom uzorku sačaure i na brisu rukohvata stepeništa hotela nije utvrđeno prisustvo
+biološkog materijala.
+Iz sadržine izvještaj Forenzičkog centra o vještačenju daljine pucanja broj 3823/19 od 22.10.2019. godine
+proizilazi da je Forenzičkom centru dana 27.09.2919. godine od strane OB Ulcinj dostavljena majca kratkih
+rukava vlasništvo Đurišić Momčila za analizu utvrđivanje daljine pucanja, odnosno rastojanja usta cijevi od
+vatrenog oružja do oštećenja na istom i zaključak navedenog izvještaja je da, ukoliko su oštećenja na majici
+vlasništvo Đurišić Momčila, nastala od projektila iz vatrenog oružja, tada su usta cijevi bila na rastojanju
+većem od 90 cm.
+Iz sadržine izvještaja Forenzičkog centra o balističkom vještačenju br. 3822/19 od 21.10.2019. godine
+proizilazi da je na ispitivanje dostavljena jednačaura gdje na dnu iste postoji oznaka 11- 64, da je kalibra 7,62
+mm TT, da na njenom dnu postoje tragovi od ispaljenja od vatrenog oružja i to od udarne igre, č ela zatvarača i
+izbacača, a koji imaju indentifikacione karakteristike i da se na osnovu opštih karakteristika može zaključiti
+da je spornačaura ispaljena iz pištolja odgovarajućeg kalibra.
+Iz sadržine izvještaja Forenzičkog centra o vještačenju prisustva barutnihčestica broj 4106/19 od 01.11.2019.
+godine, proizilazi da je Forenzičkom centru dana 18.10.2019. godine od strane OB Ulcinj dostavljena
+garderoba i to majca kratkih rukava, bermude i kačket, vlasništvo Topljanović Dalibora na hemijsku analizu
+za utvrđivanje postojanja, odnosno nepostojanja barutnihčestica i da je nakon izvršenog ispitivanja utvrđeno
+da na garderobi vlasništvo Topljanović Dalibora nije dokazano prisustvo barutnihčestica.
+Iz izvještaja Forenzičkog centra o informaciono tehničkom vještačenju i CD proizilazi da je uvidom u sadržaj
+memorije dostavljenog eksternog hard diska sa pet foldera sa nadzornih kamera i to: „Hipotekarna banka“,
+kazino „Volcano“, „Milan Vukićević “, „Prva banka CG“ i „Resulbegović Mehmem“, disk neobilježen, a na
+drugom disku je napisano „19-4225“., za period 9.09.2019 godine i 10.09.2019 godine i da je na osnovu
+izvršenih informaciono tehničkih analiza a u skladu sa naredbom VDT izvršena analaza i digitalna obrada
+dostavljenjih video zapisa koliko je maksimalno moguće za iste i bez povređivanja njihove suštine, te da su
+ključni frejmovi snimljeni na jednom kompakt disku CD u i da predstavljaju sastavni dio izvještaja a uvidom u
+dostavljeni CD uočava se kretanje jedne osobe.
+Iz sadržine nalaza i mišljenja sudskog vještaka medicinske struke Radojević Nemanje od 19.12.2019. godine
+proizilazi da je oštećeni Đurišić Momčilo kritične prilike zadobio tjelesne povrede i to strijelna rana –
+prostrelina gornjeg pola lijeve ušneškoljke, koja se nakon izlaska iz ušneškoljke nastavlja strijelnim
+
+okrznućem u lijevom zaušnom predijelu, te se nastavlja jošjednim strijelnim okrznućem u lijevom
+nadlopatičnom predijelu, praćena djelimičnom amputacijom lijeve ušneškoljke, da je zadobijena povreda
+posljedica dejstva projektila ispaljenog iz ručnog vatrenog oružja, iz daljine, rastojanje (usta cijevi od ušne
+školjke veće od 90 cm), te da je smjer kanala rane od naprijed unazad, odozgo nadolje, približno u poprečnoj
+ravni i da se u vrijeme nanošenja zadobijene povrede kvalifikuju kao teška tjelesna povreda.
+Na glavnom pretresu je pojasnio a imajući u vidu smjer strijelnog kanala opisane strijelne rane kod Đurišić Momčila, međusobni položaj između osobe koja je držala vatreno oružje odnosno između usta cijevi i
+oštećenog je bio takav da su se usta cijevi nalazila ispred i iznad njega posmatrano u anatomskom položaju
+tijela, odnosno u konkretnom slučaju moguće je da je oštećeni bio sagnut ka naprijedčime se onda
+zadovoljava smjer strijelnog kanala i smjer balističke putanje.
+Uvidom u fotoelaborat OB Ulcinj, broj knjige uviđaja 195/19 od 09.10.2019. godine utvrđeno je da se na prvoj
+slici nalaze 1. Bermude bijele sa kariranimšarama, 2. Kačket crne boje sa aplikacijom bijeli lav, 3. Gumene
+papuče bijelo crne boje, 4.Majica kratkih rukava „Replay“, 5. Bermude bijelo-crveno-teget plave boje, 6. 8 pari
+naočara za sunce, 7. Ručno pravljena cigareta tkz. „džoint“ sa suvom bijelom materijom nalik na opojnu
+drogu „marihuana“, 8. Š orts jarko crvene boje „Reebok“.
+Iz antropološkog vještačenja od strane vještaka Radojević Nemanje proizilazi da se vršila analiza stop
+frejmova, video-snimaka i antropološke osobenosti osobe koja se pojavljuje na istima, kao i opšte i specifične
+antropološke karakteristike Topljanović Dalibora da su na vještačenje dostavljene dva CD-a sa identičnim
+sadržajem u vidu pet foldera: „Hipotekarna banka“, kazino „Volcano“, „Milan Vukićević “, „Prva banka CG“ i
+„Resulbegović Mehmem“. Jedan disk je neobilježen, a na drugom disku je napisano „19-4225“. U ovim
+folderima se nalaze stop-frejmovi koji su prikazani niže i da navedeno antropološko vještačenje polazi od
+pretpostake da se na svim dostavljenim stop-frejmovima koji su prikazani u nalazu ovog vještačenja nalazi
+ista osoba, š to se može potvrditi poređenjem pojedinačnih antropoloških osobina osoba tj. osobe koja se
+nalazi na tim stop-frejmovima, a dijelom i podudarnošću garderobe.
+Posebno su obrađeni stop-frejmovi iz foldera „Resulbegović Mehmed/10.09.2019/ kamera broj 2“ a po
+naredbi suda jer se isti odnosi na vrijeme i mjesto izvršenja krivičnog djela.
+Na dostavljenim video snimcima i stop-frejmovima se vidi osoba koja je obučena sledeću garderobu; teget
+šuškavu jaknu, crvenu majicu, teget kačket, karirane svijetlije bermude i bijele patike, sa teget-bijelom
+tašnom na desnom ramenu; potom bijelu i plavu majicu kratkih rukava, plavo-narandžastišorts, teget kačket
+i bijele ljetnje papuče, sa crnom torbicom preko ramena; potom na nekim snimcima u desnoj ruci drži bijelu i
+narandžastu kesu; i sl. Nisu analizirani stop-frejmovi na kojima se ne vide jasno pojedine antropološke
+kararkteristike, a koje se bolje vide na drugim stop-frejmovima. Detaljnim pregledom dostavljenih stopfrejmova moguće je opisati antropološke karakteristike osobe koja je predmet interesovanja ovog postupka.
+Antropološkom analizom, radi se o osobi koja ima sledeće opšte antropološke karakteristike: muška osoba,
+srednježivotne dobi, osrednje tjelesne visine, dobre koštano-mišićne građe, dobre uhranjenosti, š irokog
+jakog vrata, izrazitoširokog, atletski jakog grudnog koša, š irokih nadlaktica i podlaktica, š irokih ramena,
+uspravnih leđa, trbuha ispred ravni grudnog koša, š irokog struka, jačih butina, osrednješirokih potkoljenica,
+pravilnog hoda, vrhovi stopala ne deviraju pri hodu, i sljedeće specifične antropološke karakteristike lica,
+glava i lice ovalni, kosa kraća, svjetlosmeđa, tjemeno prorijeđena, č eločetvrtasto, obrve tamnosmeđe, pune,
+debelje, jagodice osrednje izražene, obrazi obli, pastozni, nos veći, srednješirok, usno-nosne brazde izražene,
+usne osrednje debele, vodoravne, lako istaknute profilno, vrh bradečetvrtast, mali, donjovilični predio
+izražen, pričemu nije moguće opisati ostale specifične antropološke karakteristike lica.
+Posebno je obrađen opis osobe koja se pojavljuje na stop frajmovima iz folder Resulbegović Mehmed/10.09.2019/ kamera broj 2“. U konkretnom se radi o stop frejmovima slabe rezolucije, na kojima se
+
+vidi osoba obučena u jaknu sa kapuljačom, bermude i patike ( č ija se boja ne može odrediti jer se radi o crno
+bijelom snimku). Detaljnim pregledom dostavljenih stopfrejmova iz ovog foldera moguće je opisati neke
+antropološke karakteristike osobe koja je predmet ineresovanja ovog postupka. Antropološkom analizom,
+radi se o osobi koja ima sledeće opšte antropološke karakteristike: muška osoba, osrednje tjelesne visine,
+dobre koštano-mišićne građe, dobre uhranjenosti, izrazitoširokog jakog grudnog koša, š irokih ramena,
+osrednješirokih potkoljenica, pravilnog hoda, vrhovi stopala ne deviraju pri hodu, pričemu nije moguće
+opisati nijednu specifičnu antropološku karakteristiku lica.
+Dalje je navedeno da je Topljanović Dalibor osoba koja ima sledeće opšte antropološke karakteristike:
+muš ka osoba, ž ivotne dobi 37 godina (srednježivotne dobi), visine oko 185 cm, dobre koštano-mišićne građe,
+težine oko 120 kg (po sopstvenom kazivanju), tj. dobre uhranjenosti, š irokog jakog, gušavog vrata sa
+naglašenim podbratkom, izrazitoširokog, atletski jakog grudnog koša sa izraženim grudnim mišićima, š irokih
+nadlaktica i podlaktica, š irokih ramena, uspravnih leđa, trbuha ispred ravni grudnog koša, š irokog struka,
+obič noširoke profilno isturene zadnjice, jačih butina, osrednješirokih potkoljenica, pravilnog hoda, vrhovi
+stopala ne deviraju pri hodu, stava naširoj osno vi, dok Topljnaović Dalibor ima sledeće specifične
+antropološke karakteristike lica: glava i lice ovalni, potiljak zaravnjen neisturen, kosa kraća, svjetlosmeđa,
+sljepoočno i potiljačno oko 1mm, tjemeno nešto duža, prorijeđena, brada i brkovi svjetlosmeđi, dužina do
+oko 1 mm, č eločetvrtasto, profilno strmo, obrve tamosmeđe, pune, deblje, u unutrašnje dvije trećine
+vodoravne, a u spoljašnjoj oborene, oči tamnosmeđe, očni prorezi vodoravni, uži, jagodice osrednje izražene,
+obrazi obli, pastozni, nos veći, srednješirok, ravnih leđa profilno, uši veće, pripijene uz glavu, usno-nosne
+brazde izražene, usne osrednje debele, vodoravne, lako istaknute profilno, vrh bradečetvrtast, mali, osrednje
+istaknut profilno, donjovilični predio izražen, bez tetovaža i ožiljaka. Š to se tiče proračuna tjelesne visine
+vještak je naveo u svom nalazu da antropometrijski proračun tjelesne visine nije moguće obaviti na osnovu
+poređenja tjelesne visine osobe sa video snimka u odnosu neke okolne predmete poznate visine zbog ugla
+snimanja kamere, kvaliteta snimka isl., š to svakako ne bi uticalo na drugačije mišljenje od kvalitativnog opisa
+tjelesne visine kakošto je većdato.S tim u vezi, tjelesna visina se eventualno može provjeriti digitalnom
+sofrverskom metodom od strane odgovarajućeg vještaka.
+Sve opšte i specifične antropološke karakteristike koje je moguće opisati kod osobe sa prikazanih stopfrejmova posjeduje i Tpoljanović Dalibor. Osobe sa stop - frejmova, ne posjeduju njednu antropološku
+karakteristiku na osnovu koje bi se Topljanović Dalibor mogao isključiti kao moguća osoba za poređenje.
+Imajući u vidu da se poređenje može izvršiti i na osnovu upoređivanja opštih i brojnih specifičnih
+antropoloških karakteristika, od kojih su neke od opštih i same po sebi djelimično specifične, može se reći da
+je Topljanović Dalibor vrlo vjerovatno osoba sa prikazanih stopo - frejmova.
+U odnosu stop - frejmove iz foldera: „Resulbegović Mehmed/10.09.2019/Kamera broj 2“, a imajući u vidu
+kvalitet istih i posmatrajući ih izolovano od stalih stop - frejmova iz drugih foldera, može se reći da je
+Topljanović Dalibor moguće osoba sa prikazanih stop-frejmova, odnosno on se ne može isključiti kao
+moguća osoba sa tih stop - frejmova. Navedeno iz razlogašto se na tim stop-frejmovima ne mogu opisati
+antropološke karakteristike osobe koja je predmet interesovanja, a sa druge strane, sve opšte antropološke
+krakteristike koje je moguće opisati kod ove osobe posjeduje i Topljanović Dalibor.
+U svojoj napomeni vještak sudske medicine, a prilikom određivanja antropološkog vještačenja naveo da je
+utvrđ ivanje indetiteta asobe koje je zasnovano na procjeni DNK podudarnosti ima veoma visok stepen
+pouzdanosti, dok antropološko vještačenje može pružiti određeni stepen vjerovatnoće koji se kreće od
+mogućeg, vjerovatnog ili vrlo vjerovatnog, ili pak može isključiti mogućnost da se radi o istoj osobi. U okviru
+antropološkog vještačenja, najbolji rezultati, tj. visoki stepeni pouzdanosti se dobijaju poređenjem
+antropoloških karakteristika lica, a manje pouzdani poređenjem drugih (opštih) antropoloških karakteristika:
+tjelesne građe, uhranjenosti, visine, oblika pojedinih djelova tijela, osobenosti pokreta i slično. Stepen
+
+pouzdanosti se dominantno bazira na broju karakteristika koje je moguće opisati kod osoba sa snimka i koji
+je često determinisan kvalitetom snimaka, uglom snimanja, nošenjem kapa, maski i drugih sličnih okolnosti,
+a manje se bazia na subjektivnom dojmu vještaka o sličnosti osoba koje se porede. Prilikom izrade
+antropološkog vještačenja vještak je dužan eliminisati sve promjenjive parametre i ne uzimati ih u obzir
+prilikom izjašnjenja, npr. nije poželjno porediti garderobu, akcesora (naočare, kape, rukavice, satove i sl.)
+duž inu kose, brade i brkova (naročito ako je protekao duži vremenski period od događaja do pregleda
+osumnjičenog), nije dozvoljeno postavljlati osumnjičenog u specifične položaje kako bi se stvorio prividni
+osjećaj podudarnosti, niti tražiti od osumnjičenog da hoda, trči sl., jer se time mogu dobiti lažni parametri
+(osumnjičeni može svjesno izvoditi njemu nesvojstvene pokrete, zabacivati stopala, gegati se, hramati i sl.),
+već se pokreti posmatraju isključivo spontano, a najpoželjnije je pri prvom kontaktu vještaka i osumnjičenog,
+prije nego osumnjičeni uopšte i bude upoznat sa predmetom vještačenja.
+Na glavnom pretresu vještak Radojević Nemanja je pojasnio a odgovarajući na pitanja vezano za mišljenje
+osobe sa kamere br.2 sa snimka »Resulbegović Mehmet/10.09.2019...« u vezi antropološke podudarnosti
+Topljanović Dalibora sa osobom sa navedenog video snimka uz uslov da se taj snimak posmatra izolovano od
+drugih video snimaka, izjašnjenje samo za taj snimak je sa nešto nižim stepenom vjerovatnoće odnosno da je
+Topljanović Dalibor moguća osoba sa tog snimka, tj on se ne može isključiti kao moguća. Razlog za ovakvo
+mišljenje je okolnost da se ne vidi odnosno ne može se opisati ni jedna specifična antropološka karakteristika
+lica kod osobe sa video snimka, te kako je poređenje dato samo na osno vu opštih antropoloških
+karakteristika tada ni stepen vjerovatnoće ne može biti veći od ovoga.
+Sud je cijenio i prihvatio u cjelosti kao zakonit nalaz i mišljenje vještaka Radojević Nemanje iz kog razloga je
+odbio predlog branioca optuženog da se isti izuzme kao pravno nevaljan dokaz.
+Iz nalaza i mišljenja vještaka iz digitalnih dokaza Savić Balše proizilazi da nije bio u mogućnosti da postupi po
+naredbi i odredi antropološke opšte i specifične karakteristike lica koje se pojavljuje na fotografijama
+frejmova iz foldera koji je bio prethodno zadatak vještačenja vještaka Radojević Nemanje jer nije u domenu
+njegovog vještačenja, ašto se tiče određivanja antrpološkog proračuna tjelesne visine navedenog lica utvrdio
+je da nije moguće izvršiti traženi zadatak jer forenzički softver “amped five” tačnije, funkcije “measure” nijesu
+u mogućnosti da izvrše komparaciju i mjerenje predmetnog objekta. Naime, zbog pozicije sigurnosne kamere
+i pozicije objekata koji bi služili za komparaciju nije moguće koristiti gore navedene funkcije koje pružaju
+preciznije metode mjerenja i iz tog razloga nije moguće odrediti x, y i z koordinate koje bi izračunale uticaj
+ugla kamere, dubinu prostora i ostale neophodne parametre. Naime, metoda “measure 1D” obavlja
+jednostavno upoređivanje dimenzija objekata koji nas zanimaju, ali u ovom slučaju nije ni on upotrebljiv, jer
+objekti kao što su vozila i ograda na konkretnom snimku gdje se pojavljuje lice koje je pucalo u oštećenog ne
+omogućava da se izvrši takozvano “preklapanje” objekata koje bi omogućilo kvalitetnu komparaciju. Iz gore
+navedenih razloga nije u mogućnosti da postupi po naredbi.
+Iz dopisa Uprave policije OB Ulcinj broj 19/4-2, broj 215/20-3377/2 od 21.07.2020. godine proizilazi da lice
+Milikić Milenko i lice Atema Adrijan nijesu službenici policije OB Ulcinj, niti bilo koje druge organizovane
+jedinice u Upravi policije. Navedena lica su nasumično pronađena na ulici dana 8.10.2019. godine te pozvane
+u prostorije OB Ulcinj prilikom vršenja prepoznavanja od strane Đurišić Momčila, gdje je vođeno računa da su
+slične starosne dobi, kao osumnjičeni Topljanović Dalibor, kao i da su slične tjelesne građe, a iz dopisa
+Uprave policije Crne Gore - Službe za ljudske resurse kadrovske i pravne poslove broj 15074/20-17736 od
+23.07.2020. godine proizilazi da uvidom u centralnu kadrovsku evidenciju lica Milekić Milenko i Atema Adrijan
+nijesu slulžbenici Uprave policije Crne Gore.
+Cijeneći rezultate cjelokupnog dokaznog postupka, navode optužbe i odbrane optuženog, te sve provedene
+dokaze kako pojedinačno, tako i u njihovoj međusobnoj vezi, ovaj sud nalazi da je optuženi Topljanović Dalibor izvršio krivično djelo ubistvo u pokušaju izčlana 143 u vezičlana 20 Krivičnog Zakonika Crne Gore u
+
+sticaju sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija izčlana 403 stav 1 Krivičnog
+Zakonika Crne Gore, na način, mjesto i vrijeme, kako je to bliže predstavljeno u izreci presude.
+Naime, u postupku je nesumnjivo utvrđeno da je optuženi dana 10.09.2019. godine, oko 06,00časova, u
+Ulcinju, u ul. Ivana Milutinovića, sa umišljajem pokušao da lišiživota oštećenog Đurišić Momčila, na načinšto
+je istome prišao na ulici i bez povoda, iz pištolja nepoznate marke, kalibra 7,62 mm TT, koji je suprotnočlanu
+5 ičlanu 33 Zakona o oružju, neovlašćeno nabavio i nosio na javnom mjestu, ispalio jedan projektil u
+oštećenog koji ga je pogodio u lijevo uho i lijevo rame, nanoseći mu tešku tjelesnu povredu u vidu strijelne
+rane prostreline gornjeg pola lijeve ušneškoljke, strijelog okrznuća u lijevom zaušnom predjelu i strijelnog
+okrznuća u lijevom nadlopatičnom predjelu, praćenog djelimičnom amputacijom lijeve ušneškoljke.
+Naprijed utvrđenočinjenično stanje ovaj sud je nesumnjivo utvrdio provedenim dokazima na glavnom
+pretresu. Da se predmetni događaj zaista desio dana 10.09.2019. godine u Ulcinju oko 06:00časova, u Ulici
+Ivana Milutinovića nesumnjivo se zaključuje izčinjenica utvrđenih iz sadržine zapisnika o uviđaju OB Ulcinj
+Ku.br.132/19 od 10.09.2019. godine iz kojeg je sud utvrdio da je mjesto nezgode u Ulici Mujo Ulqinaku u blizini
+kuća Isata Dragovoje i Milorada Kneževića, da su prilikom uviđaja označeni kao tragovi trag broj „1“ na
+asfaltnoj površini koja ješirine 6,20 metara - č aura, a naspram metalne kapije porodične kuće Milorada
+Knež evića kao trag broj „2“ označen je trag koji se nalazi na afaltnoj površinu i to u vidu koncentracije
+kapljica nalik na krv, da se u blizini mjesta nezgode nalazilo parkirano vozilo „ Š koda Octavia“ a na zadnjim
+lijevim vratima navedenog vozila i tragovi nalik na krv, označeni kao trag broj „5“, dok je kao trag broj „3“
+označen trag koji se nalazi na asfaltnoj površini u vidu koncentracija kapljica nalik na krv, na udaljenosti od 3
+metra od desne ivice kolovoza, gledano iz pravca Prve banke u pravcu hotela „Senator“, pored parkiranog
+motocikla „Honda Octavia“, š to znači da je na licu mjesta pronađena i jednačaura koja je tom prilikom
+ispaljena iz pištolja nepoznate marke, kalibra 7,62 mm TT, ašto je utvrđeno izvještajem Forenzičkog centra o
+balističkom vještačenju broj 3822/19 od 21.10.2019. godine, s obzirom da je na vještačenju dostavljena jedna
+čaura gdje na dnu iste postoji oznaka 11-64 i da je kalibra 7,62 mm TT, jer na njenom dnu postoje tragovi od
+ispaljenog vatrenog oružja i to od udarne igle, č ela zatvarača i izbacača, a koje ima identifikacione
+karakteristike, pa se na osnovu opštih karakteristika može zaključiti da je spornačaura ispaljena iz pištolja
+odgovarajućeg kalibra.
+Da je upravo optuženi Topljanović Dalibor lice koje je konkretnom prilikom pucalo u oštećenog Đurišić Momčila sud nesumnjivo utvrđuje iz dosljednog iskaza oštećenog, kako prilikom davanja svoje izjave pred
+VDT, tako i na glavnom pretresu, da se navedenog dana u ranim jutarnjim satima kretao od svoje kuće prema
+centru grada i da mu je na nekih 150 metara od kuće sa njegove desne strane, otpozadi, naišlo jedno njemu
+nepoznato lice i prošlo pored njega nekih desetak koraka, a zatim se okrenulo i stalo ispred njega gledajući ga
+pravo u lice, da je vidio kako to lice u desnoj ruci drži pištolj, i da je odmah znao daće to lice da puca u
+njegovom pravcu, pa je instiktivno napravio pokret tijelom takošto se sagnuo svojom desnom stranom
+prema podu u kom trenutku je to lice ispalilo projektil u njegovm pravcu, pa kako se on u međuvremenu
+sagnuo metak ga je pogodio u lijevo uho i lijevo rame, pa se zatim naslonio na jedno vozilo koje je bilo pored
+puta a zatim i na motor koji se nalazio pored tog vozila (da se navedeni motor i vozilo nalazilo na licu mjesta
+potvrđeno je naprijed navedenim zapisnikom o uviđaju, ašto daje kredibilitet iskazu ovog svjedoka), nakon
+čega je pao na asfalt i otkotrljao se nekoliko metara jer nije mogao da se zadrži na nogama, da se zatim
+okrenuo i vidio da ovo lice koje je pucalo u njega bježi ubrzanim koracima prema hotelu „Hot“, pa je njegov
+utisak da se istom zaglavio pištolj i da iz tog razloga nije ponovo pucao, da se sjeća da je to lice imalo
+bermude negdje do koljena koje su bili ili na pruge, ili karirane i jaknu ili duksericu sa kapuljačom koja mu je
+bila navučena preko glave i misli da je ispod kapuljače imao kačket, i da je navedeno lice prepoznao prilikom
+radnje prepoznavanja, jer ga je jasno vidio dva puta, jer u momentu kada mu je optuženi prišao bio je licem u
+lice sa njim i kada je pucao u njega jasno je vidio njegovo lice a zatim i prilikom pada na vozilo „golf“ kada je
+podigao glavu, ponovo je vidio facu lica optuženog jer se u jednom trenutku okrenuo prema njemu a zatim
+
+nastavio da bježi, ašto je potvrđeno i zapisnikom o prepoznavanju koje je izvršeno u OB Ulcinj, u prisustvu
+VDT kojoj radnji prepoznavanja je prisustvovao oštećeni koji prethodno opisao lice koje je trebao da
+prepozna, da je u pitanju osoba starosne dobi od 35 do 40 godina, visoka oko 185 cm i teška oko 100 kg, a da
+zbog kapuljače nije mogao da vidi boju kose i da li uopšte ima kosu, ašto se tiče brade da ostavlja mogućnost
+da je imao neobrijanu bradu nekolika dana, znači ne veliku bradu, ašto se tiče crta lica nema nikakvih
+posebnih karakteristika koje bi se riječima mogle opisati, jedino da se radi o dosta grubim i oštrim crtama
+lica. Nakonšto je oštećeni opisao ovo lice, pristupio je radnji prepoznavanja koje je obavljeno u posebnoj
+prostoriji koja je namijenjena u tu svrhu, tako da lice koje je predmet prepoznavanja ne može da vidi
+oštećenog, niti oštećeni može da vidi to lice, a prije negošto je pristupio prepoznavanju u navedenoj
+prostoriji je prethodno uvedeno pet lica, slične fizičke konstitucije, visine, građe i starosne dobi, među kojima
+je bio i optuženi Topljanović Dalibor, te da su ta lica poređana u redu po brojevima od 1 do 5 i da je
+Topljanovićbio pod brojem 2, pa pošto su oštećenom Đurišiću pokazana sva lica i nakonšto ih je dobro
+razgledao, potvrdio je da je lice koje je prethodno opisao i lice koje je zaista tog dana pucalo u njega lice koje
+se nalazi na poziciji broj 2 u redu za prepoznavanje i da u ruci drži broj 2 i da je u to sto posto siguran, ašto je
+prikazano fotoelaboratom koji je sastavni dio navedenog zapisnika o prepoznavanju, tako da je po mišljenju
+suda navedeno prepoznavanje izvršeno shodno odredbamačl. 115 ZKP-a, iz kog razloga je sud i odbio
+predlog odbrane da se isti izuzme iz spisa predmeta, kao pravno nevaljan dokaz, odnosno dokaz na kojem se
+ne može zasnivati presuda.
+Da je optuženi zaista lice koje je pucalo u oštećenog i tom prilikom mu nanijelo teške tjelesne povrede
+oštećeni je potvrdio i na glavnom pretresu kada je rekao da je optuženog jasno vidio i to dva puta, tako da se
+njegov iskaz ne dovodi u sumnju, cijeneći pri tome i nalaz i mišljenje vještaka medicinske struke koji je u
+saglasnosti sa iskazom oštećenog da je oštećeni tom prilikom zadobio tjelesne povrede koja je posljedica
+dejstva projektila ispaljena iz ručnog vatrenog oružja i to strijelna rana – prostrelina gornjeg pola lijeve ušne
+školjke, koja se nakon izlaska iz ušneškoljke nastavlja strijelnim okrznućem u lijevom zaušnom predjelu, te
+se nastavlja jošjednim strjelnim okznućem u lijevom nadlopatičnim predijelu, praćena djelimičnom
+amputacijom lijeve ušneškoljke a da se oštećeni kako kaže sagnuo u momentu kada je shvatio daće
+optuženi da puca u njega potvrđeno je i pojašnjenjem vještaka na glavnom pretresu da je međusobni položaj
+između osobe koja je držala vatreno oružje, odnosno između usta cijevi i oštećenog Đurišić Momčila bio
+takav da su se usta cijevi nalazila ispred i iznad njega, posmatrano u anatomskom položaju tijela, odnosno da
+je u konkretnom slučaju moguće da je oštećeni bio sagnut ka naprijed, čime se onda zadovoljava smjer
+strijelnog kanala i smjer balističke putanje ašto dodatno daje kredibilitet iskazu oštećenog, a sve prednje
+potvrđeno i izvještajem o daljini pucanja broj 3823/19 od 22.10.2019. godine iz kog se utvrđuje da je na
+vješ tačenje dostavljena majca kratkih rukava vlasništva oštećenog Đurišić Momčila radi utvrđivanja daljine
+pucanja, odnosno rastojanja usta cijevi od vatrenog oružja do oštećenja na istom i zaključak je da su
+navedena oštećenja od usta cijevi bila na rastojanju veće od 90 cm.
+Sud je cijenio i odbranu optuženog Topljanović Dalibora da je u Ulcinj došao iz Srbije na poziv jedne svoje
+prijateljice sa kojom je u emotivnoj vezi, ačije lične podatke nije htio da da pred sudom jer je ista u braku sa
+njegovim poznanikom, ali da radi u jednom hotelu u Ulcinju i da je htio sa njom zajedno da ide u Srbiju, da je
+inače građevinski radnik, ali da u Ulcinju nije našao posao, pošto nije bilo građevinskih objekata, pa pošto je
+posle 7-8 dana ostao bez novca, otišao je u Drač – Albaniju da radi a sve po dogovoru sa tomženskom
+osobom, da su ga prilikom povratka u Crnu Goru uhapsili gdje su ga poveli u stanicu policije i tamo dva dana
+tukli da prizna da je pucao nekog starijegčovjeka kojeg on ne poznaje, da su nakon toga pošli u neku sobu sa
+ogledalima gdje je stajalo njih 4-5 lica, držeći brojeve u rukama i sjeća se da su među njima bila dva
+inspektora jer su ulazili sa motorolama u kancelariju dok su ga ispitivali, međutim, isto je demantovano
+dopisom UP Crne Gore i OB Ulcinj da lica Milikić Milenko i Atem Adrijan a koji su bili u redu za prepoznavanja
+nijesu službenici policije OB Ulcinj i uopšte službenici Uprave policije Crne Gore, dok su ostala dva lica koja su
+bila u redu za prepoznavanje albanski državljani (iz kog razloga sud za njih nije tražio provjeru da li su
+
+služ benici polocije), tako da sigurno ni oni ne mogu biti službenici Uprave policije Crne Gore i to Kolaj Nir i
+Visha Lulash.
+Da je optuženi pratio kretanje oštećenog neposredno prije kritičnog događaja ukazuje ičinjenica da je
+prethodno bio smješten u kući Sulejmanović Ružda i Argite i to pet dana, s obzirom da je po kazivanju
+oštećenog navedena kuća udaljena od kuće oštećenog vazdušne linije nekih 1000 metara i da se iz te kuće
+mož e vidjeti ne samo kuća oštećenog, veći terasa, balkonska i ulazna vrata, dvorište, odnosno po kazivanju
+oštećenog može se vidjeti „sve kao na dlanu“, š to na dalje ukazuje da je optuženi pratio kretanje oštečenog
+prije kritičnog događaja i tražio najpogodniju priliku kada bi pucao u istog.
+Sud je cijenio i odbrana optuženog da mu je policija podmetnula odjevne predmete koji su pronađeni
+prilikom pretresa u stanu koji je koristio i to crni kačket i karirane bermude i patike, jer ti odjevni predmeti
+nijesu njegovi, međutim isto je krajnje nelogično i apsurdno pa je po mišljenju suda odbrana u tom dijelu
+usmjerena kako bi neuspjelo oborio iskaz svjedoka oštećenog koji je naveo da je lice koje je pucalo u njega
+imalo bermude negdje do koljena, koje su bile ili na pruge ili karirane i jaknu ili duksericu sa kapuljačom koja
+mu je bila navučena preko glave, a ispod kapuljače kačket, a koji iskaz je potvrđen i uvidom u CD snimak na
+kojima se vidi osoba obučena u jaknu sa kapuljačom, bermude i patike ( č ija se boja ne može odrediti jer se
+radi o crno bijelom snimku) i iskazom svjedoka Šurla Maria da je konkretnog jutra u vrijeme kritičnog
+događaja sjedio na terasi i pio kafu, te da je u tom trenutku začuo pucanj, a ubrzo da je pored njegove kuće
+protrčalo jedno lice koje je imalo duksericu sa kapuljačom prebačenu preko glave, a takođe je na sebi imalo
+šorc i patike, da je u desnoj ruci, koju je spustio uz tijelo, držao pištolj a da je pored pištolja u rukama držao
+još nešto, ali nije mogao tačno da vidišta i da ječuo samo jedan pucanj ašto je sve prednje u saglasnosti sa
+iskazom oštećenog Đurišić Momčila.
+Sud je cijenio u sklopu dokaza i antropološko vještačenje i to posebno upoređivanje antropoloških
+karakteristika opštih i specifičnih optuženog i lica koje je pojavlju na stop - frejmove iz foldera: „Resulbegović Mehmed/10.09.2019/Kamera broj 2“, a koji snimak se odnosi upravo na kritični događaj kada je to lice prišlo
+oštećenom i pucalo u njega, te izjašnjenje vještaka da se a imajući u vidu kvalitet istih i posmatrajući ih
+izolovano od ostalih stop frejmova iz drugih foldera, može reći da je optuženi Topljanović Dalibor moguća
+osoba sa prikazanh stop frejmova, odnosno da se ne može isključiti kao moguća osoba sa tih stop frejmova iz
+razlogašto sve opšte antropološke karakteristike koje je moguće opisati kod navedene osobe sa snimka
+posjeduje i optuženi Topljanović Dalibor. Razlog za ovakvo mišljenje je kao prvošto se radi o stop frejmovima
+slabe rezolucije, tako da se osoba ne vidi dobro, odnosno ne može se opisati ni jedna specifična antropološka
+karakteristika lica kod osobe sa video snimka, te kako je poređenje dato samo na osno vu opštih
+antropoloških karakteristika tada ni stepen vjerovatnoće ne može biti veći od ovoga u odnosu na snimke sa
+ostalih foldera: „Hipotekarna banka“, kazino „Volcano“, „Milan Vukićević “, „Prva banka CG“ gdje se na
+osnovu upoređivanja opštih i brojnih specifičnih antropoloških karakteristika, od kojih su neke od opštih i
+same po sebi djelimično specifične, može se reći da je Topljanović Dalibor vrlo vjerovatno osoba sa
+prikazanih stop - frejmova.
+Cijeneći naprijed utvrdjenočinjenično stanje ovaj sud nalazi, da su se u radnjama optuženog stekli svi bitni
+elementi bića krivičnog djela ubistvo u pokušaju izčl. 143. u vezičl. 20 Krivičnog zakonika Crne Gore u sticaju
+sa krivičnim djelom nedozvoljeno držanje oružja i eksplozivnih materija izčl. 403. st. 1. Krivičnog zakonika
+Crne Gore, obzirom da je u postupku nesumnjivo utvrdjeno da je optuženi postupajući na nač in kako je to
+prethodno opisano, dana 10.09.2019. godine, oko 06,00časova, u Ulcinju, u ul. Ivana Milutinovića, pokušao
+da lišiživota oštećenog Đurišić Momčila, na načinšto je istome prišao na ulici i bez povoda, iz pištolja
+nepoznate marke, kalibra 7,62 mm TT, koji je suprotnočlanu 5 ičlanu 33 Zakona o oružju, ispalio jedan
+projektil u oštećenog koji ga je pogodio u lijevo uho i lijevo rame, nanoseći mu tešku tjelesnu povredu u vidu
+strijelne rane prostreline gornjeg pola lijeve ušneškoljke, strijelog okrznuća u lijevom zaušnom predjelu i
+
+strijelnog okrznuća u lijevom nadlopatičnom predjelu, praćenog djelimičnom amputacijom lijeve ušne
+školjke. Sve okolnosti konkretnog slučaja doveli su ovaj sud do nesumnjivog zaključka, da je optuženi
+predmetna krivična djela izvršio sa direktnim umišljajem. Optuženi je bio svjestan da pucajući iz pištolja u
+pravcu tijela oštećenog iz blizine istog može lišitiživota, pa je to i htio, a kako je to nesumnjivo utvrdjeno
+tokom postupka, dok se odsustvo posljedice (lišenježivota oštećenog) ne može pripisati volji i htjenju
+optuženog, većsticaju drugih okolnosti. Sud je takođe utvrdio na osnovu balističkog vještačenju br. 3822/19
+od 21.10.2019. godine da je iz predmetnog događaja obzirom da je izuzeta sa lica mjesta na ispitivanje
+dostavljena jednačaura gdje na dnu iste postoji oznaka 11- 64, da je kalibra 7,62 mm TT, da na njenom dnu
+postoje tragovi od ispaljenja od vatrenog oružja i to od udarne igre, č ela zatvarača i izbacača, a koji imaju
+indentifikacione karakteristike i da se na osnovu opštih karakteristika može zaključiti da je spornačaura
+ispaljena iz pištolja odgovarajućeg kalibra, š to daje zaključak da je optuženi pucao iz pištolja nepoznate
+marke, kalibra 7,62 mm TT, tako da je u odnosu na drugo krivično djelo optuženi bio svjestan da je
+nabavljanje bez odobrenja i nošenje oružja gradjanima zabranjeno, pa je to i htio, š to znači da je optuženi bio
+svjestan svojih djela i htio njihovo izvršenje.
+
+Na osnovučlana 51 KZ CG sud je optuženom u kaznu zatvora uračunao vrijeme provedeno u pritvoru, počev
+od 08.10.2019. godine od 20,00časova pa nadalje dok pritvor bude trajao.
+
+Sud je odbio predlog punomoćnika oštećenog da se pribavi presuda ovog suda K.br.65/17 kojom je osuđen
+sin oštećenog Đurišić Momčila zbog krivičnog djela ubistvo, jer punomoćnik smatra da ovo krivično djelo
+proističe iz tog događaja, međutim, sud je mišljenja da provođenje navedenog dokaza ne bi uticalo na
+drugačiju odluku suda. Isto tako, sud je odbio predlog branioca optuženog da se provede kao dokaz nalaz i
+mišljenje vještaka medicinske struke koji se odnosi na povrede optuženog od 16.10.2019. godine, koje je po
+navodima branioca optuženog zadobio od strane službenika policije koji su ga prilikom privođenja
+optuženog tukli da prizna da je izvršio predmetno krivično djelo, međutim, po mišljenju ovog suda navedeno
+takođe nije od uticaja na drugačiju odluku u ovom predmetnom postupku, imajući upravočinjenicu da
+optuženi nije priznao izvršenje krivičnog djela, da pred VDT-om nije iznosio odbranu, a da je na glavnom
+pretresu negirao da je izvršio predmetno krivično djelo.
+Sud je cijenio i ostale provedene dokaze ali isti nijesu uticali na drugačiju odluku suda u predmetnom
+postupku.
+
+Odlučujući o kazni za optuženog sud, sud je najprije u smislučl. 42 Krivičnog zakonika Crne Gore, cijenio sve
+okolnosti od kojih zavisi da kazna bude manja ili veća (olakšavajuće i otežavajuće okolnosti), pa je od
+olakšavajućih okolnosti na strani optuženog cijenio porodičnost, odnosnočinjenicu da je otac jednog
+maloljetnog djeteta, dok je kao otežavajuću okolnost sud nije našao, pri tome imajući u vidučinjenicu da nije
+pribavljao izvod iz kaznene evidencije na ime optuženog s obzirom da je strani državljanin i da bi isto vodilo
+odugovlačenju krivičnog postupka, pa je cijeneći naprijed navedene okolnosti, a posebnočinjenicu da je
+krivično djelo izčl. 143. Krivičnog zakonika Crne Gore ostalo u pokušaju, a da zakon propisuje da se za
+pokušaj krivičnog djela učinilac može blaze kazniti, shodnočl. 20. st. 3. Krivičnog zakonika Crne Gore,
+optuženom ublažio kaznu ispod zakonom propisanog minimuma za krivično djelo ubistvo u pokušaju izčl.
+143. Krivičnog zakonika, pa je shodno odredbičl. 48.st.1. Krivičnog zakonika Crne Gore optuženom najprije
+utvrdio pojedinačne kazne zatvora za svako krivično djelo, na nač inšto je za krivično djelo ubistvo u pokušaju
+iz čl. 143 u vezičl. 20. Krivičnog zakonika Crne Gore, utvrdio kaznu zatvora u trajanju od 2 (dvije) godine i 2
+
+(dva) mjeseca, a za krivično djelo nedozvoljeno držanje oružja i eksplozivnih materija izčl. 403. st. 1.
+Krivičnog zakonika Crne Gore kaznu zatvora u trajanju od 6 (š est) mjeseca, a zatim ga shodno odredbičl. 48.
+st. 2. Krivičnog zakonika Crne Gore osudio na jedinstvenu kaznu zatvora u trajanju od 2 (dvije) godine i 6
+(šest) mjeseci, koja kazna je po ocjeni suda srazmjerna stepenu krivice optuženog i težini počinjenih krivičnih
+djela i da predstavlja onu kaznu kaja je nužno potrebna da se ostvari svrha kažnjavanja izčl. 32. Krivičnog
+zakonika, da optuženi ubuduće ne vrši krivična djela, u okviru opšte svrhe izricanja krivičnih sankcija izčl. 4.
+st. 2. Krivičnog zakonika Crne Gore.
+Kako je sud optuženog oglasio krivim, to ga je shodnočl. 226. i 229. Zakonika o krivičnom postupku,
+obavezao na plaćanje troškova krivičnog postupka-sudskog paušala u iznosu od 200,00 eura, koji paušal je
+odredjen srazmjerno složenosti postupka, dužini njegovog trajanja, te imovinskim prilikama optuženog, te da
+na ime ostalih troškova plati novčani iznos od 493,50 eura, a koji toškovi se odnose na nagradu vještaku
+medicinske struke dr. Radojević Nemanji iznos od 374,00 eura, vještaku za digitalne dokaze Savić Balši iznos
+od 49,50 € i na ime putnih troškova svjedoka koji su saslušani u predmetnom postupku u iznosu od 70,00 €,
+sve u roku od 15 dana po pravosnažnosti presude, pod prijetnjom prinudne naplate, dokće o ostalim
+troš kovima krivičnog postupka sud odlučiti naknadno, posebnim rješenjem, po pribavljanju podataka o
+njihovoj visini.
+Na osnovu izloženog, odlučeno je kao u dispozitivu presude.
+
+VIŠI SUD U PODGORCI
+Dana 21.10.2021. godine
+
+Zapisničar PREDSJEDNIK VIJEĆA - SUDIJA
+Jelenić Vesna, s.r. Kovačević Vesna, s.r.
+
+PRAVNA POUKA:
+Protiv ove presude je dozvoljenažalba,
+u roku od 15 dana od dana prijema
+pisanog otpravka, Apelacionom sudu Crne Gore,
+preko ovog suda.</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>

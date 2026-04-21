@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:akomaNtoso xmlns:ns0="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <judgment name="Одлуке25">
+        <meta>
+            <identification source="#court">
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/Одлуке25/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке25"/>
+                    <FRBRdate date="2020-04-27" name="judgment"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRcountry value="me"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/Одлуке25/sr@2020-04-27/!main"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке25/sr@2020-04-27"/>
+                    <FRBRdate date="2020-04-27"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/Одлуке25/sr@2020-04-27/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/Одлуке25/sr@2020-04-27/!main.akn"/>
+                    <FRBRdate date="2026-04-15"/>
+                    <FRBRauthor href="#court"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#court">
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="VIŠI SUD U PODGORICI"/>
+                <TLCPerson eId="judge_1" href="/akn/me/ontology/person/judge" showAs="Vesna Moštrokol"/>
+                <TLCPerson eId="victim_1" href="/akn/me/ontology/person/victim" showAs="Š.I."/>
+                <TLCOrganization eId="org_1" href="/akn/me/ontology/organization" showAs="Vrhovno državno tužilaštvo Crne Gore"/>
+                <TLCOrganization eId="org_2" href="/akn/me/ontology/organization" showAs="Više državno tužilaštvo u Podgorici"/>
+                <TLCLaw eId="law_1" href="/akn/me/act/zakonik-o-krivičnom-postupku" showAs="Zakonik o krivičnom postupku"/>
+                <TLCLaw eId="law_2" href="/akn/me/act/2024/!main" showAs="Krivični zakonik Crne Gore"/>
+            </references>
+            <classification source="#court">
+                <keyword value="criminal_case" showAs="Krivična stvar"/>
+            </classification>
+        </meta>
+        <judgmentBody>
+            <header>
+                <block name="caseNumber">
+                    <docNumber>K.br. 28/20</docNumber>
+                </block>
+                <block name="court">
+                    <docTitle>VIŠI SUD U PODGORICI</docTitle>
+                </block>
+                <block name="date">
+                    <docDate date="2020-04-27">2020-04-27</docDate>
+                </block>
+                <block name="judges">
+                    <judge>Vesna Moštrokol</judge>
+                </block>
+            </header>
+            <introduction>
+                <block name="summary">
+                    <p>Optužena Z.D. osuđena za ubistvo na mah.</p>
+                </block>
+                <block name="legalIssues">
+                    <p>Ubistvo na mah</p>
+                    <p>Priznanje krivice</p>
+                    <p>Kazna zatvora</p>
+                    <p>Troškovi postupka</p>
+                </block>
+            </introduction>
+            <background>
+                <block name="appliedLaws">
+                    <ref href="#law_1">Zakonik o krivičnom postupku</ref>
+                    <ref href="#law_2">Krivični zakonik Crne Gore</ref>
+                </block>
+                <block name="appliedArticles">
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_145">Član 145</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_4">Član 4</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_5">Član 5</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_226">Član 226</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_51">Član 51</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_303">Član 303</ref>
+                    <ref href="/akn/me/act/zakonik-o-krivičnom-postupku#art_32">Član 32</ref>
+                </block>
+            </background>
+            <motivation>
+                <block name="reasoning">
+                    <p>Optužena je priznala krivicu i sud je na osnovu dokaza donio presudu.</p>
+                </block>
+            </motivation>
+            <decision>
+                <block name="verdict" outcome="osudjen">
+                    <p>Optužena Z.D. je osuđena na 4 godine zatvora.</p>
+                </block>
+            </decision>
+            <participants>
+                <block name="victims">
+                    <person>Š.I.</person>
+                </block>
+                <block name="witnesses">
+                    <person>K.M.</person>
+                    <person>M.J.</person>
+                    <person>Podgorici Ktr</person>
+                </block>
+                <block name="organizations">
+                    <organization>Vrhovno državno tužilaštvo Crne Gore</organization>
+                    <organization>Više državno tužilaštvo u Podgorici</organization>
+                </block>
+            </participants>
+            <facts>
+                <fact key="injury_type">laka tjelesna povreda</fact>
+                <fact key="weapon">nož</fact>
+                <fact key="location">Podgorica</fact>
+                <fact key="location">Danilovgrad</fact>
+                <fact key="weapon_used">da</fact>
+                <fact key="confession">da</fact>
+                <fact key="plea_agreement">da</fact>
+            </facts>
+            <conclusions>
+                <block name="fullText">
+                    <p>U IME CRNE GORE
+
+K.br. 28/20
+
+VIŠI SUD U PODGORICI, kao prvostepeni krivični po sudiji Vesni Moštrokol, kao pojedincu, uz učešće
+namještenika Anke Raković, kao zapisničara, u predmetu protiv optužene Z.D.iz K., koju brani M.B., advokat
+iz P., zbog krivičnog djela ubistvo na mah izčl. 145 Krivičnog zakonika Crne Gore, po optužnici Višeg državnog
+tužioca u Podgorici Kt.br.188/19 od 14.02.2020. godine, koju je na ročištu povodom odlučivanja o sporazumu
+o priznanju krivice zastupao Šoškić Miloš, Državni tužilac u VDT-a u Podgorici, nakon donešenog rješenja o
+usvajanju sporazuma o priznanju krivice, dana 27.04.2020. godine, donio je
+
+P R E S U D U
+
+Optužena:
+
+Z.D., od oca H. i majke S., rođene A., rođene...godine u A.K., sa prebivalištem u A.-Ul B. br.., državljanka K.,
+maternji jezik ruski, ekonomista, penzionerka, majka jednog djeteta, završila ekonomski fakultet, srednjeg
+imovnog stanja, neosuđivana, u pritvoru od 15.09.2019.godine od 23,30časova.
+
+KRIVA JE
+
+Zatošto je:
+
+Dana....godine, oko 17,00časova, u B., u naselju B. br.., sa umišljajem lišilaživota oštećenog Š.I.na mah
+dovedena bez svoje krivice u jaku razdraženost napadom od strane oštećenog, na načinšto je oštećenom,
+koji joj je zadao više udaraca i nanio joj lake tjelesne povrede u vidu nagnječenja ispod lijevog oka, krvnog Viši Sud u Podgorici
+K 28/2020
+27. April 2020
+
+podliva ispod desne ušneškoljke, krvnog podliva u desnom sljepoočnom predjelu gornjeg pola desne ušne
+školjke, krvnog podliva u desnoj polovini tjemenog predjela, ogrebotine u predjelu desne bočne strane vrata,
+dvije ogrebotine u predjelu lijeve bočne strane vrata, krvnog podliva u predjelu unutrašnje strane srednje
+trećine lijeve podlaktice, tri krvna podliva u predjelu spoljašnje strane lijevog ramena, prednje i spoljašnje
+strane lijeve nadlaktice, krvnog podliva u predjelu dlanene strane desne podlaktice i krvnog podliva u
+predjelu dlanene strane korijena drogog prsta desnešake, zbog kojeg napada je dovedena u jaku
+razdraženost, zadalačetiri uboda nožem nanoseći mu teške tjelesne povrede u vidu ubodno reznih rana u
+središnjem grudnom predjelu, uželudačnom predjelu, u predjelu desnog gornjeg kvadranta prednje strane
+trbuha i u predjelu desnog donjeg kvadrantna prednje strane trbuha, od kojih povreda je usljed iskrvarenja iz
+povreda pluća, veza crijeva i raskidanih krvnih sudova nastupila njegova smrt, iako je bila svjesna da
+zadavanjem uboda u vitalni dio tijela oštećenog može lištitiživota, pa je to i htjela,
+
+- čime je izvršila krivično djelo – ubistvo na mah izčlana 145 Krivičnog zakonika Crne Gore.
+
+Pa je sud primjenom citiranih zakonskih odredbi, te odredbičl. 4, 5,13, 14, 15, 32, 36, 42 i 51 Krivičnog
+zakonika Crne Gore, te odredbičl. 226, 229, 303 i 374 Zakonika o krivičnom postupku.
+
+O S U DJ U J E
+
+Na kaznu zatvora u trajanju od 4 ( č etiri) godine, u koju kaznuće joj se uračunati vrijeme provedeno u pritvoru
+od 15.09.2019. godine od 23,30časova, pa nadalje.
+
+OBAVEZUJE SE optužena da na ime troškova krivičnog postupka, Budžetu CG uplati iznos od 2.111,25 eura
+(dvijehiljadestojedanaest eura i dvadesetpet centi), a na ime paušala iznose od po 50,00 € (pedeset eura) na
+račun Vrhovnog državnog tužilaštva Crne Gore, i Višem sudu u Podgorici na račun Budžeta CG, sve u roku od
+15 dana po pravosnažnosti presude pod prijetnjom prinudnog izvršenja.
+
+O b r a z l ože nj e
+
+Optužnicom Višeg Državnog tužilaštva u Podgorici Kt.br. 188/19 od 14.02.2020. godine, optuženoj
+Z.D.stavljeno je na teret izvršenje krivičnog djela ubistvo na mah izčl. 145 Krivičnog zakonika Crne Gore.
+
+Dana 13.03.2020. godine, zastupnik optužbe je dostavio sudu sporazum o priznanju krivice, zapisnik o
+pregovaranju i zapisnik o priznanju krivice optužene.
+
+Na ročištu za razmatranje sporazuma, održanom dana 27.04.2020. godine, zastupnik optužbe je izjavio da su
+branilac i optužena predložili da se zaključi sporazum o priznanju krivice, š to je od strane VDT-a prihvaćeno,
+nakončega se pristupilo pregovaranju, očemu je sačinjen zapisnik o pregovaranju, zapisnik o saslušanju
+optužene i njeno priznanje krivice, kao i sporazum o priznanju krivice, ašto je dostavljeno sudu.
+Iz sadržine zapisnika o pregovaranju, zapisnika o saslušanju optužene i sporazuma o priznanju krivice
+proizilazi da su zastupnik optužbe i optužena saglasni da Viši sud u Podgorici optuženoj Z.D., za krivično djelo
+ubistvo na mah izčl. 145 Krivičnog zakonika Crne Gore, stavljenog joj na teret optužnicom VDT u Podgorici
+Kt.br.188/19 od 14.02.2020. godine, izrekne kaznu zatvora u trajanju od 4 ( č etiri) godine, te da optužena, na
+ime troškova krivičnog postupka, uplati iznos od 2.111,25 eura Budžetu CG, a VDT-u Podgorici, na ime
+paušala iznos od po 50,00 eura, Višem državnom tužilaštvu u Podgorici i Višem sudu u Podgorici, sve u roku
+od 15 dana po pravosnažnosti presude.
+
+Optužena i njen branilac su izjavili da pomenuti sporazum jeste njihov sporazum i da od istog nijesu odustali.
+
+Iz sadržine dokaza koji se nalaze u spisima predmeta i koji su predloženi optužnicom: zapisnika o saslušanju
+svjedoka K.M. i Kapa M.J., zapisnika o uviđaju Višeg državnog tužilaštva u Podgorici Ktr.br.822/19 od
+15.09.2019.godine; službene zabilješke o uviđaju Uprave policije Centra Bezbjednosti Bar Ku.br.312/19 od
+15.09.2019.godine, izvještaja o uzorkovanju tragova sa lica mjesta UP CB Bar broj knjiga uviđaja 646/19,
+obdukcionog zapisnika Kliničkog centra Crne Gore S.br.173/19 od 29.09.2019.godine i fotodokumentacije,
+nalaza i mišljenja sudskog vještaka medicinske struke dr. Nemanje Radojevića od 16.10.2019.godine,
+izvještaja o DNK vještačenju Forenzičkog centra u Danilovgradu broj 3809/19 od 16.01.2020.godine, izvještaja
+o trasološkom vještačenju Forenzičkog centra u Danilovgradu broj 3810/19 od 20.01.2020.godine, nalaza i
+mišljenja komisije vještaka dr Stanka Milića, dr Željka Golubovića i Branke Stepanović Ilić Kti.br.116/19 od
+13.02.2020.godine, CD-a sa fotoelaboratom UP CB Bar, potvrdjeno je priznanje optužene, te da je optužena
+izvršila krivično djelo ubistvo na mah izčl. 145 Krivičnog zakonika Crne Gore, na način, u vrijeme i na mjestu
+kako je to opisano izrekom ove presude, a nakonšto je u svemu prihvatila sporazum o priznanju krivice.
+
+Odlučujući o visini kazne za optuženu iz sporazuma o priznanju krivice zaključenog izmedju stranaka, sud je
+našao da je predlog stranaka u vezi sa kaznom prihvatljiv, a ovo posebno imajući u vidu ranijiživot optužene,
+koji se ogleda u tome da je neosuđivana, njene lične prilike koje se ogledaju u tome da je optužena porodična
+žena, majka jednog djeteta, penzionerka, i starija osoba, koja je u vrijeme izvršenja krivičnog djela imala 61
+godinu, te da je svojim priznanjem, u bitnome doprinijela bržem i efikasnijem okončanju krivičnog postupka,
+pa u nedostatku otežabakjućih okolnosti, po ocjeni suda kazna zatvora u trajanju od 4 ( č etiri) godine je
+srazmjerna stepenu krivice optužene i težini počinjenog krivičnog djela, te daće se sa istom postići svrha
+kažnjavanja izčl. 32 Krivičnog zakonika Crne Gore, da optužena ubuduće ne vrši krivična djela, u okviru opšte
+svrhe izricanja krivičnih sankcija izčl. 4. st. 2. Krivičnog zakonika Crne Gore (KZ CG).
+
+Shodnočl.51 Zakonika o krivičnom postupku (ZKP-a), optuženoj je u kaznu zatvora uračunato vrijeme
+provedeno u pritvoru i to od 15.09.2019.godine od 23,30časova, pa nadalje.
+
+Kako je optužena oglašena krivim, sud je shodnočl. 226 i 229 ZKP-a, obavezao na plaćanje troškova krivičnog
+postupka, koji se odnose na troškove preduzeću „Komunalne djelatnosti“ DOO Bar u iznosu od 471,00 €,
+troškova Kliničkom centru CG u iznosu od 57,00 € i 57,00 €, nagrade sudskom vještaku medicinske struke dr.
+Radojević Nemanji u iznosu od 415,25 € i 71,50 €, nagrade sudskom vještaku psihijatru dr Golubović Željku u
+iznosu od 346,50 €, nagrade sudskom vještaku psihijatru dr Stanku Miliću u iznosu od 346,50 €, nagrade
+sudskom vještaku psihologu Branki Stepanović Iliću iznosu od 346,50 €, ukupno 2.111,25 eura
+(dvijehiljadestojedanaest eura i dvadesetpet centi), koje je dužna uplatiti Budžetu CG, kao i na paušal u
+iznosu od po 50,00 eura koji je dužna uplatiti Vrhovnom državnom tužilaštvu Crne Gore, i Višem sudu u
+Podgorici na račun Budžeta CG, sve u roku od 15 dana po pravosnažnosti presude pod prijetnjom prinudnog
+izvršenja, a sve u skladu sa sporazumom o priznanju krivice koji je zaključen izmedju stranaka.
+
+Sa izloženog, a shodno odredbičl. 303 st.1 i 2 i 374 Zakonika o krivičnom postupku, odlučeno je kao u izreci
+presude.
+
+VIŠI SUD U PODGORICI
+Dana, 27.04.2020. godine
+
+SUDIJA
+Vesna Moštrokol s.r.
+
+PRAVNA POUKA:
+Protiv ove presude nije dozvoljenažalba.
+
+Za tačnost otpravka ovjerava
+Anka Raković</p>
+                </block>
+            </conclusions>
+        </judgmentBody>
+    </judgment>
+</ns0:akomaNtoso>
